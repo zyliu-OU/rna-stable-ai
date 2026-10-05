@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "component_exit_codes": [
+    0,
+    0
+  ],
+  "event_log": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T035944.651351Z/driver_events/20261005T035944.652014Z/events.jsonl",
+  "completed_batches": 2,
+  "saved_searches": 4
+}

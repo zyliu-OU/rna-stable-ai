@@ -1,0 +1,1 @@
+Resume integrity passed: 164 raw fold file mtimes/sizes unchanged; all16 merged rows identical.

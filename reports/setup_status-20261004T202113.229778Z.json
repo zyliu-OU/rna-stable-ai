@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-04T20:18:15.273959+00:00",
+  "status": "incomplete",
+  "required_failures": [
+    "Python 3.12 unavailable; .venv not created",
+    "LinearFold clone failed: see commands.jsonl",
+    "LinearPartition clone failed: see commands.jsonl"
+  ],
+  "optional_failures": [
+    "EternaFold clone failed: see commands.jsonl"
+  ],
+  "cuda_note": "CUDA runtime availability is recorded in commands.jsonl; GPU unavailability does not fail CPU installation"
+}

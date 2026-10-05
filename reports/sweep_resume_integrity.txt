@@ -1,0 +1,1 @@
+Resume verification passed: 36 completed cells reused without new search folds; all saved rows and aggregates unchanged.

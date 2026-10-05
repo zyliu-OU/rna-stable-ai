@@ -1,0 +1,12 @@
+{
+  "utc": "20261005T040113.264830Z",
+  "files": {
+    "src/rnastable/batch_audit.py": "64be355152bbfb7e61a3f1992db5451617d2d19bda310bbb12a46ec1d422f2e4",
+    "scripts/run_robustness_batches.py": "209862a5a3e72eaa7fec9f5271842df690324b267e942088c770caa63b0fc22c",
+    "scripts/verify_batch_study.py": "70a89ad4c9aac3171e042f09c97527b9ab1952808680c81225a1e392bed4a128",
+    "tests/test_batch_audit.py": "7e82f3e89b3983cc42f8ad0895f643c078113781f683ccaed9417fdda927db98",
+    "README.md": "ea7470afc886b3aba35535e7752f1270c31672b00a3f064960d8c076eccfc84b"
+  },
+  "legacy_run": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T033230.651381Z",
+  "direct_regression_run": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T035944.651351Z"
+}

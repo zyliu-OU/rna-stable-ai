@@ -1,0 +1,5 @@
+length,batch_size,status,cpu_seconds,gpu_seconds,transfer_seconds,peak_gpu_memory_mib,gpu_reserved_mib,repeats,cpu_threads,torch_version,cuda_build,cuda_available,gpu_name,python_version,error
+1000,1,skipped,0.00029198599997926067,,,,,20,4,2.11.0+cu130,13.0,False,,3.13.14,"CUDA unavailable; GPU timing, transfer and memory left blank"
+2000,1,skipped,0.00046031950000724464,,,,,20,4,2.11.0+cu130,13.0,False,,3.13.14,"CUDA unavailable; GPU timing, transfer and memory left blank"
+5000,1,skipped,0.001235658500036152,,,,,20,4,2.11.0+cu130,13.0,False,,3.13.14,"CUDA unavailable; GPU timing, transfer and memory left blank"
+10000,1,skipped,0.0024082325001018035,,,,,20,4,2.11.0+cu130,13.0,False,,3.13.14,"CUDA unavailable; GPU timing, transfer and memory left blank"

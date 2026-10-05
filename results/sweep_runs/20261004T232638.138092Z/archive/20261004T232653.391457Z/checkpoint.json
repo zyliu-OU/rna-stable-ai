@@ -1,0 +1,42 @@
+{
+  "completed_jobs": 1,
+  "rows": [
+    {
+      "job_id": "mixed_1000_seq1729_search2718_beam200",
+      "kind": "mixed",
+      "length": 1000,
+      "sequence_seed": 1729,
+      "search_seed": 2718,
+      "beam_size": 200,
+      "status": "validated",
+      "input_sha256": "79dd640b9b3aaeb270222e9bca6b45e09aaa8418ba52d5b75d0e26e3cd6974b5",
+      "reference_reused": false,
+      "reference_wall_seconds": 0.7181348180001805,
+      "search_wall_seconds": 5.4097600690001855,
+      "finalist_sha256": "a8d77450d612397d13e405d8427bdd657c11ed7ce08b054f2e73a328fe34ed9f",
+      "finalist_fasta": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261004T232638.138092Z/jobs/mixed_1000_seq1729_search2718_beam200/20261004T232638.858577Z/finalist.fasta",
+      "constraints_passed": true,
+      "steps_attempted": 8,
+      "accepted_steps": 4,
+      "failed_proposals": 0,
+      "mutations_from_input": 8,
+      "input_lf_wall_seconds": 0.6165139370004908,
+      "linearfold_delta_kcal_mol": -4.199999999999989,
+      "input_pair_f1": 0.892018779342723,
+      "input_energy_gap_kcal_mol": 1.3999999999999773,
+      "finalist_validation_wall_seconds": 0.7164114000006521,
+      "vienna_delta_kcal_mol": -2.8000000000000114,
+      "vienna_delta_kcal_mol_per_nt": -0.0028000000000000112,
+      "vienna_improvement_confirmed": true,
+      "finalist_pair_f1": 0.9853801169590644,
+      "finalist_energy_gap_kcal_mol": 0.0,
+      "selected_fasta": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261004T232638.138092Z/jobs/mixed_1000_seq1729_search2718_beam200/20261004T232638.858577Z/selected.fasta",
+      "selected_sha256": "a8d77450d612397d13e405d8427bdd657c11ed7ce08b054f2e73a328fe34ed9f",
+      "selected_mutations_from_input": 8,
+      "selection_source": "finalist",
+      "selection_reason": "confirmed_improvement",
+      "selected_vienna_delta_kcal_mol": -2.8000000000000114,
+      "summary_path": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261004T232638.138092Z/jobs/mixed_1000_seq1729_search2718_beam200/20261004T232638.858577Z/summary.json"
+    }
+  ]
+}

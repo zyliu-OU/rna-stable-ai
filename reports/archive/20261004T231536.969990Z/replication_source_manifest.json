@@ -1,0 +1,9 @@
+{
+  "utc": "20261004T223204.815793Z",
+  "files": {
+    "configs/evaluation_replication.json": "d1499ed05f4445296d9568e3a237d3451935ca0f7f7f74faedeeb888333e701b",
+    "scripts/summarize_replication.py": "32e56b0c40be58b5e45c9aa9eea7e3d0aa8f20b8a1adf0491a6ccf6af898e8a9",
+    "src/rnastable/replication.py": "8fe7b18fa7597c8dabf4908a88f31911dabf0fe4eaef0f4a91c01f41aad3a45d",
+    "tests/test_replication.py": "1045a9939006ff668aaf5c4a18324855f4e635ad8ae630ec6432678fabf574d0"
+  }
+}

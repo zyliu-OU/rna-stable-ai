@@ -1,0 +1,18 @@
+# Local dependencies and machine state
+.venv/
+.tools/
+.cache/
+external/*
+!external/.gitkeep
+checkpoints/*
+!checkpoints/.gitkeep
+exports/
+.agents/
+.codex/
+.aws/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.env
+.env.*

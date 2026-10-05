@@ -1,0 +1,5 @@
+{"utc": "20261005T035944.652633Z", "event": "started", "component": "mixed_1000_seed1729", "pid": 4}
+{"utc": "20261005T035944.662371Z", "event": "started", "component": "mixed_1000_seed1730", "pid": 5}
+{"utc": "20261005T035949.473940Z", "event": "finished", "component": "mixed_1000_seed1729", "returncode": 0}
+{"utc": "20261005T035950.481932Z", "event": "finished", "component": "mixed_1000_seed1730", "returncode": 0}
+{"utc": "20261005T035951.250294Z", "event": "complete"}

@@ -1,0 +1,25 @@
+step,status,accepted,proposal_sha256,changed_positions,mutations_from_input,gc_fraction,proposed_energy_kcal_mol,best_energy_kcal_mol,best_energy_per_nt,wall_seconds,peak_rss_mib,error
+1,ok,False,f343c8c2eb6be9eddea62af117b7f80922649f783d5de655e22e784adae258da,"[38, 247]",2,0.596,-427.7,-429.2,-0.42919999999999997,0.8665974590003316,76.16796875,"/home/zyliu/Documents/rna-stable-ai/external/LinearFold/gflags.py:584: SyntaxWarning: invalid escape sequence '\S'
+  doc = re.sub('(?<=\S)\n(?=\S)', ' ', doc, re.M)
+"
+2,ok,False,233e4d190539b219c38eabfc8fd43267873e93a64a1b907f595dea1c41fadda3,"[300, 347]",2,0.596,-428.9,-429.2,-0.42919999999999997,0.866742432997853,75.9921875,"/home/zyliu/Documents/rna-stable-ai/external/LinearFold/gflags.py:584: SyntaxWarning: invalid escape sequence '\S'
+  doc = re.sub('(?<=\S)\n(?=\S)', ' ', doc, re.M)
+"
+3,ok,False,8d41e66eada77d858b16a4ab0725b0146b1c159ebfb7f50d129157d2f3ba821f,"[31, 365]",2,0.596,-426.5,-429.2,-0.42919999999999997,0.8667020769971714,75.77734375,"/home/zyliu/Documents/rna-stable-ai/external/LinearFold/gflags.py:584: SyntaxWarning: invalid escape sequence '\S'
+  doc = re.sub('(?<=\S)\n(?=\S)', ' ', doc, re.M)
+"
+4,ok,False,929424a3b790752ada46f7d4468342bfb035753510e3e2033cf9a72d2078373a,"[28, 262]",2,0.596,-425.9,-429.2,-0.42919999999999997,0.8666679010020744,76.2109375,"/home/zyliu/Documents/rna-stable-ai/external/LinearFold/gflags.py:584: SyntaxWarning: invalid escape sequence '\S'
+  doc = re.sub('(?<=\S)\n(?=\S)', ' ', doc, re.M)
+"
+5,ok,True,dd18b438724f66c88fbd7f69c9bf7cd1627c11f0fe032f7b613de24506deb1bf,"[826, 895]",2,0.596,-430.0,-430.0,-0.43,0.916579423002986,76.19140625,"/home/zyliu/Documents/rna-stable-ai/external/LinearFold/gflags.py:584: SyntaxWarning: invalid escape sequence '\S'
+  doc = re.sub('(?<=\S)\n(?=\S)', ' ', doc, re.M)
+"
+6,ok,True,3d682f4fe3b17629834f28a627c0310a66368a132127aad9bf638ae040d94e12,"[314, 547]",4,0.596,-430.1,-430.1,-0.43010000000000004,0.8664599490002729,75.95703125,"/home/zyliu/Documents/rna-stable-ai/external/LinearFold/gflags.py:584: SyntaxWarning: invalid escape sequence '\S'
+  doc = re.sub('(?<=\S)\n(?=\S)', ' ', doc, re.M)
+"
+7,ok,True,e72438c357d545ecbbc9a1869b7fe61113f4cc5f9c46a80ada958cd6aa32caf3,"[166, 943]",6,0.596,-432.0,-432.0,-0.432,0.8670467769989045,76.4296875,"/home/zyliu/Documents/rna-stable-ai/external/LinearFold/gflags.py:584: SyntaxWarning: invalid escape sequence '\S'
+  doc = re.sub('(?<=\S)\n(?=\S)', ' ', doc, re.M)
+"
+8,ok,False,1b7da79858f1c217ae9914e7856a7dc2bd1d68c406f42af5f9413891e02071f8,"[121, 598]",8,0.596,-427.8,-432.0,-0.432,0.8671705199994904,76.71484375,"/home/zyliu/Documents/rna-stable-ai/external/LinearFold/gflags.py:584: SyntaxWarning: invalid escape sequence '\S'
+  doc = re.sub('(?<=\S)\n(?=\S)', ' ', doc, re.M)
+"

@@ -1,0 +1,2 @@
+Sweep audit passed: 36 validated runs, 0 recorded failures, 288 proposal folds; constraints, raw outputs, decisions and aggregate denominators verified.
+Robustness audit passed: 36 searches, 6 inputs, 18 paired beams; within-input and across-input denominators verified.

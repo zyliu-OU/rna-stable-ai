@@ -1,0 +1,13 @@
+{
+  "lengths": [5000, 10000],
+  "kinds": ["mixed"],
+  "sequence_seeds": [1729, 1730],
+  "search_seeds": [2718, 2719],
+  "beam_sizes": [200, 400],
+  "optimization_config": "optimization.json",
+  "optimization_overrides": {
+    "steps": 8,
+    "timeout_seconds": 120,
+    "finalist_timeout_seconds": 600
+  }
+}

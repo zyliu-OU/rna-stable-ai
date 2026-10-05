@@ -1,0 +1,239 @@
+{
+  "utc": "20261005T024600.985769Z",
+  "config": {
+    "lengths": [
+      5000,
+      10000
+    ],
+    "kinds": [
+      "mixed"
+    ],
+    "sequence_seeds": [
+      1729,
+      1730
+    ],
+    "search_seeds": [
+      2718,
+      2719
+    ],
+    "beam_sizes": [
+      200,
+      400
+    ],
+    "optimization_config": "optimization.json",
+    "optimization_overrides": {
+      "steps": 8,
+      "timeout_seconds": 120,
+      "finalist_timeout_seconds": 600
+    },
+    "optimization": {
+      "seed": 2718,
+      "steps": 8,
+      "max_mutations": 40,
+      "protected_positions": [],
+      "preserve_protein": false,
+      "min_improvement_kcal_mol": 0.1,
+      "beam_size": 100,
+      "temperature_c": 37,
+      "timeout_seconds": 120,
+      "finalist_timeout_seconds": 600,
+      "memory_limit_gib": 8
+    }
+  },
+  "config_sha256": "9156360748705294076fc0bd3b8353e343cc5636d9a8cd5a551a78cfe6ec6578",
+  "provenance": {
+    "versions": {
+      "python": "3.12.14",
+      "executable": "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+      "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+      "RNA-StableAI": "0.1.0",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "pandas": "3.0.6",
+      "biopython": "1.88",
+      "psutil": "7.2.2",
+      "tqdm": "4.70.1",
+      "pyyaml": "6.0.3",
+      "pytest": "9.1.1",
+      "matplotlib": "3.11.2",
+      "torch": "2.14.1+cu130",
+      "ViennaRNA": "2.7.2"
+    },
+    "file_sha256": {
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sweep.py": "fa88aad42edf6e33c8d89546c37298de4317018de58dfd33889c51d97f1c4fa4",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/optimization.py": "988543f0686bf4ea4e67f7f6c6b8a101a61c99809571468aa7953ae346a3e869",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/folding.py": "6b166164dc7e5ef915484409a643fec2059819c319650afd415b0e74afa9297b",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/scoring.py": "aefa252f8765861a15e7265fd69c716c598ff3e3d1925c71e0564e9ef9baf349",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sequences.py": "3e970de56b2b6d38ae6fbe276032a51fe570ac2bc4d84288e49cb1a32e335960",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/selection.py": "cf2eadcc5dcb3a829cb2460b6898edae68a2ade1c8ac8bffe64cc1511aba37fd",
+      "/home/zyliu/Documents/rna-stable-ai/external/LinearFold/bin/linearfold_v": "5a6f8924d15b27058d89ec85cde41c890c68b43cd9d319828d273c8da2e797eb"
+    }
+  },
+  "jobs": [
+    {
+      "job_id": "mixed_5000_seq1729_search2718_beam200",
+      "kind": "mixed",
+      "length": 5000,
+      "sequence_seed": 1729,
+      "search_seed": 2718,
+      "beam_size": 200
+    },
+    {
+      "job_id": "mixed_5000_seq1729_search2718_beam400",
+      "kind": "mixed",
+      "length": 5000,
+      "sequence_seed": 1729,
+      "search_seed": 2718,
+      "beam_size": 400
+    },
+    {
+      "job_id": "mixed_5000_seq1729_search2719_beam200",
+      "kind": "mixed",
+      "length": 5000,
+      "sequence_seed": 1729,
+      "search_seed": 2719,
+      "beam_size": 200
+    },
+    {
+      "job_id": "mixed_5000_seq1729_search2719_beam400",
+      "kind": "mixed",
+      "length": 5000,
+      "sequence_seed": 1729,
+      "search_seed": 2719,
+      "beam_size": 400
+    },
+    {
+      "job_id": "mixed_5000_seq1730_search2718_beam200",
+      "kind": "mixed",
+      "length": 5000,
+      "sequence_seed": 1730,
+      "search_seed": 2718,
+      "beam_size": 200
+    },
+    {
+      "job_id": "mixed_5000_seq1730_search2718_beam400",
+      "kind": "mixed",
+      "length": 5000,
+      "sequence_seed": 1730,
+      "search_seed": 2718,
+      "beam_size": 400
+    },
+    {
+      "job_id": "mixed_5000_seq1730_search2719_beam200",
+      "kind": "mixed",
+      "length": 5000,
+      "sequence_seed": 1730,
+      "search_seed": 2719,
+      "beam_size": 200
+    },
+    {
+      "job_id": "mixed_5000_seq1730_search2719_beam400",
+      "kind": "mixed",
+      "length": 5000,
+      "sequence_seed": 1730,
+      "search_seed": 2719,
+      "beam_size": 400
+    },
+    {
+      "job_id": "mixed_10000_seq1729_search2718_beam200",
+      "kind": "mixed",
+      "length": 10000,
+      "sequence_seed": 1729,
+      "search_seed": 2718,
+      "beam_size": 200
+    },
+    {
+      "job_id": "mixed_10000_seq1729_search2718_beam400",
+      "kind": "mixed",
+      "length": 10000,
+      "sequence_seed": 1729,
+      "search_seed": 2718,
+      "beam_size": 400
+    },
+    {
+      "job_id": "mixed_10000_seq1729_search2719_beam200",
+      "kind": "mixed",
+      "length": 10000,
+      "sequence_seed": 1729,
+      "search_seed": 2719,
+      "beam_size": 200
+    },
+    {
+      "job_id": "mixed_10000_seq1729_search2719_beam400",
+      "kind": "mixed",
+      "length": 10000,
+      "sequence_seed": 1729,
+      "search_seed": 2719,
+      "beam_size": 400
+    },
+    {
+      "job_id": "mixed_10000_seq1730_search2718_beam200",
+      "kind": "mixed",
+      "length": 10000,
+      "sequence_seed": 1730,
+      "search_seed": 2718,
+      "beam_size": 200
+    },
+    {
+      "job_id": "mixed_10000_seq1730_search2718_beam400",
+      "kind": "mixed",
+      "length": 10000,
+      "sequence_seed": 1730,
+      "search_seed": 2718,
+      "beam_size": 400
+    },
+    {
+      "job_id": "mixed_10000_seq1730_search2719_beam200",
+      "kind": "mixed",
+      "length": 10000,
+      "sequence_seed": 1730,
+      "search_seed": 2719,
+      "beam_size": 200
+    },
+    {
+      "job_id": "mixed_10000_seq1730_search2719_beam400",
+      "kind": "mixed",
+      "length": 10000,
+      "sequence_seed": 1730,
+      "search_seed": 2719,
+      "beam_size": 400
+    }
+  ],
+  "config_path": "/home/zyliu/Documents/rna-stable-ai/configs/evaluation_robustness_long.json",
+  "batch_driver_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/run_robustness_batches.py": "f4f273020c356ecc37c281197c712d759795be0d8cd02152d524cb6bfbbd196b",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/batching.py": "cc0d055de7b2d4666a54266e497a92b7074766f6c881f70433b5fc1c9c2702dd",
+    "/home/zyliu/Documents/rna-stable-ai/scripts/log_command.py": "79f46b445b6ffc98063ceeb3b0cac6ac67e390ac1e43a3d8c53ed3d4506a226a"
+  },
+  "execution": {
+    "mode": "independent_input_batches",
+    "max_cpu_jobs": 2,
+    "timing_scope": "Concurrent CPU wall times include contention; not isolated benchmark timing."
+  },
+  "components": [
+    {
+      "id": "mixed_5000_seed1729",
+      "root": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729",
+      "config": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/config.json",
+      "log": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/driver_output.txt"
+    },
+    {
+      "id": "mixed_5000_seed1730",
+      "root": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730",
+      "config": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/config.json",
+      "log": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/driver_output.txt"
+    },
+    {
+      "id": "mixed_10000_seed1729",
+      "root": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729",
+      "config": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/config.json",
+      "log": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/driver_output.txt"
+    },
+    {
+      "id": "mixed_10000_seed1730",
+      "root": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730",
+      "config": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/config.json",
+      "log": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/driver_output.txt"
+    }
+  ]
+}

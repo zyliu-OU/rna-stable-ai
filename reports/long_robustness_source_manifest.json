@@ -1,0 +1,36 @@
+{
+  "utc": "20261005T031253.199380Z",
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T024600.985769Z",
+  "files": {
+    "configs/evaluation_robustness_long.json": "b98d5c015e56788c7215a3e23a0c6cb1965b48532b31b8388d58a96c6a0aa58c",
+    "src/rnastable/batching.py": "cc0d055de7b2d4666a54266e497a92b7074766f6c881f70433b5fc1c9c2702dd",
+    "scripts/run_robustness_batches.py": "f4f273020c356ecc37c281197c712d759795be0d8cd02152d524cb6bfbbd196b",
+    "scripts/verify_batch_study.py": "3c742062894383a8ddd4c94b95c6857b9b1ac11f7aabfd5653ef9089ba08e182",
+    "scripts/summarize_robustness.py": "28f49ab563fe7ffa91f82217d2b7a3557829361911dc95b3f189d7015351564e",
+    "scripts/verify_robustness.py": "7b51f49ffd7b3acbc94867e0a00518f043fd47d1fa079e6c22c74c22bbd7c43f",
+    "tests/test_batching.py": "fb08644cb7870184dbd2fa5476d6eedced780df4723fd542896b8f1b46f19ba4",
+    "README.md": "69597d14ee593aa447d4f952e5be1cdf7f8e4300bdd7e0e818c17b8c230b432d"
+  },
+  "versions": {
+    "python": "3.12.14",
+    "executable": "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+    "RNA-StableAI": "0.1.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "biopython": "1.88",
+    "psutil": "7.2.2",
+    "tqdm": "4.70.1",
+    "pyyaml": "6.0.3",
+    "pytest": "9.1.1",
+    "matplotlib": "3.11.2",
+    "torch": "2.14.1+cu130",
+    "ViennaRNA": "2.7.2"
+  },
+  "execution": {
+    "mode": "independent_input_batches",
+    "max_cpu_jobs": 2,
+    "timing_scope": "Concurrent CPU wall times include contention; not isolated benchmark timing."
+  }
+}

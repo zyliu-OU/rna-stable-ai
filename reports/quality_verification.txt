@@ -1,0 +1,1 @@
+Quality audit passed: 8 exact-input comparisons, raw structures and all pair/energy metrics verified.

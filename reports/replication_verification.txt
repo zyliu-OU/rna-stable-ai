@@ -1,0 +1,2 @@
+Sweep audit passed: 18 validated runs, 0 recorded failures, 144 proposal folds; constraints, raw outputs, decisions and aggregate denominators verified.
+Replication audit passed: 9 matched pairs; differences, timing ratios and CSV verified.

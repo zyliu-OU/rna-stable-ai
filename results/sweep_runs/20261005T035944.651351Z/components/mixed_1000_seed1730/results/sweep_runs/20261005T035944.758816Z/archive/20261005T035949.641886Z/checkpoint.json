@@ -1,0 +1,42 @@
+{
+  "completed_jobs": 1,
+  "rows": [
+    {
+      "job_id": "mixed_1000_seq1730_search2718_beam200",
+      "kind": "mixed",
+      "length": 1000,
+      "sequence_seed": 1730,
+      "search_seed": 2718,
+      "beam_size": 200,
+      "status": "validated",
+      "input_sha256": "b53ab1d3122c17d6df71891dbb5e713962f8aa83b236794efebffbe72ae145d4",
+      "reference_reused": false,
+      "reference_wall_seconds": 0.7171529059996828,
+      "search_wall_seconds": 1.1860928060013975,
+      "finalist_sha256": "9d4ab591edf765383593389bb67932729b5e2799cde73e88810625f09e5a59d4",
+      "finalist_fasta": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T035944.651351Z/components/mixed_1000_seed1730/results/sweep_runs/20261005T035944.758816Z/jobs/mixed_1000_seq1730_search2718_beam200/20261005T035945.478442Z/finalist.fasta",
+      "constraints_passed": true,
+      "steps_attempted": 1,
+      "accepted_steps": 1,
+      "failed_proposals": 0,
+      "mutations_from_input": 2,
+      "input_lf_wall_seconds": 0.5662844150028832,
+      "linearfold_delta_kcal_mol": -4.699999999999989,
+      "input_pair_f1": 0.40327868852459015,
+      "input_energy_gap_kcal_mol": 0.9000000000000341,
+      "finalist_validation_wall_seconds": 0.6664127660005761,
+      "vienna_delta_kcal_mol": -3.7999999999999545,
+      "vienna_delta_kcal_mol_per_nt": -0.0037999999999999545,
+      "vienna_improvement_confirmed": true,
+      "finalist_pair_f1": 0.9776357827476039,
+      "finalist_energy_gap_kcal_mol": 0.0,
+      "selected_fasta": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T035944.651351Z/components/mixed_1000_seed1730/results/sweep_runs/20261005T035944.758816Z/jobs/mixed_1000_seq1730_search2718_beam200/20261005T035945.478442Z/selected.fasta",
+      "selected_sha256": "9d4ab591edf765383593389bb67932729b5e2799cde73e88810625f09e5a59d4",
+      "selected_mutations_from_input": 2,
+      "selection_source": "finalist",
+      "selection_reason": "confirmed_improvement",
+      "selected_vienna_delta_kcal_mol": -3.7999999999999545,
+      "summary_path": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T035944.651351Z/components/mixed_1000_seed1730/results/sweep_runs/20261005T035944.758816Z/jobs/mixed_1000_seq1730_search2718_beam200/20261005T035945.478442Z/summary.json"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+Sweep 1/2: mixed_1000_seq1730_search2718_beam200
+Sweep 2/2: mixed_1000_seq1730_search2718_beam400
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T035944.651351Z/components/mixed_1000_seed1730/results/sweep_runs/20261005T035944.758816Z",
+  "planned_runs": 2,
+  "completed_runs": 2,
+  "status_counts": {
+    "validated": 2
+  }
+}

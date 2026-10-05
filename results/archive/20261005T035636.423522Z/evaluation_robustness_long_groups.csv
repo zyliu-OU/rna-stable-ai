@@ -1,0 +1,5 @@
+kind,length,beam_size,input_count,search_runs,validated_candidates,failed_candidates,selected_finalists,returned_inputs,selection_missing_runs,inputs_with_measured_selection,mean_input_mean_selected_delta_kcal_mol,sd_input_mean_selected_delta_kcal_mol
+mixed,5000,200,2,4,4,0,3,1,0,2,-1.7500000000000568,0.707106781186628
+mixed,5000,400,2,4,4,0,4,0,0,2,-3.775000000000034,0.8131727983645136
+mixed,10000,200,2,4,4,0,2,2,0,2,-2.357499999999959,0.3429467888754048
+mixed,10000,400,2,4,4,0,3,1,0,2,-0.4249999999999545,0.5303300858899106

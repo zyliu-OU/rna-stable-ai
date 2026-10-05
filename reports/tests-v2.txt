@@ -1,0 +1,35 @@
+................................F.............                           [100%]
+=================================== FAILURES ===================================
+____________________ test_cli_benchmark_outputs_and_archive ____________________
+
+tmp_path = PosixPath('/tmp/pytest-of-zyliu/pytest-3/test_cli_benchmark_outputs_and0')
+
+    def test_cli_benchmark_outputs_and_archive(tmp_path):
+        # Current host has no folding tools. Fake external executables are not treated as measurements.
+        config = load_config(ROOT/'configs/benchmark.json')
+        config.update(lengths=[32], kinds=['mixed'], repeats=1, warmup=0, timeout_seconds=0.2)
+        path = tmp_path/'config.json'; path.write_text(json.dumps(config))
+        command = [str(ROOT/'scripts/rnastable'), 'benchmark', '--config', str(path), '--output-root', str(tmp_path)]
+        first = subprocess.run(command, capture_output=True, text=True)
+>       assert first.returncode == 0, first.stderr
+E       AssertionError: Traceback (most recent call last):
+E           File "<frozen runpy>", line 198, in _run_module_as_main
+E           File "<frozen runpy>", line 88, in _run_code
+E           File "/home/zyliu/Documents/rna-stable-ai/src/rnastable/__main__.py", line 2, in <module>
+E             main()
+E           File "/home/zyliu/Documents/rna-stable-ai/src/rnastable/cli.py", line 148, in main
+E             run_benchmarks(root, config, args.gpu_python)
+E           File "/home/zyliu/Documents/rna-stable-ai/src/rnastable/cli.py", line 98, in run_benchmarks
+E             render_benchmark_report(root, summary)
+E           File "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reporting.py", line 15, in render_benchmark_report
+E             f'Status counts: {summary["folding_status"]}. Timeout: {config["timeout_seconds"]} s/tool/sequence; address-space cap: {config["memory_limit_gib"]} GiB/process.', '',
+E                                                                     ^^^^^^
+E         NameError: name 'config' is not defined
+E         
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['/home/zyliu/Documents/rna-stable-ai/scripts/rnastable', 'benchmark', '--config', '/tmp/pytest-...'\',\n                                                            ^^^^^^\nNameError: name \'config\' is not defined\n').returncode
+
+tests/test_pipeline.py:109: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_pipeline.py::test_cli_benchmark_outputs_and_archive - Asser...
+1 failed, 45 passed in 2.21s

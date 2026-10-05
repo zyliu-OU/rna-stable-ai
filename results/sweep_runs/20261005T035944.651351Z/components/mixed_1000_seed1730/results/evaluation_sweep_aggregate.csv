@@ -1,0 +1,3 @@
+kind,length,beam_size,planned_runs,completed_runs,validated_runs,failed_runs,confirmed_improvements,unchanged,worsened,improvement_fraction_validated,mean_vienna_delta_kcal_mol_per_nt,sd_vienna_delta_kcal_mol_per_nt,median_input_pair_f1,median_finalist_pair_f1,median_input_lf_wall_seconds,median_search_wall_seconds,median_mutations_from_input
+mixed,1000,200,1,1,1,0,1,0,0,1.0,-0.0037999999999999545,,0.40327868852459015,0.9776357827476039,0.5662844150028832,1.1860928060013975,2
+mixed,1000,400,1,1,1,0,1,0,0,1.0,-0.0037999999999999545,,0.9772727272727273,0.9776357827476039,0.8173323829978472,1.6374966700022924,2

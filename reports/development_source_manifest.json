@@ -1,0 +1,37 @@
+{
+  "utc": "20261005T024013.433694Z",
+  "files": {
+    "configs/evaluation_robustness.json": "8c06a7fcf474557844e38b4d367af7d165472bab84e4d1b8ec56f1837da6dc4b",
+    "configs/optimization_protected_demo.json": "37906eff05eee908048d6333ad030caf6ee9662c0ea8d3257c771166e3cda2b2",
+    "configs/constraints_synthetic_example.json": "1a89e74d9343c41213d99a3f317a456a086c0119281fb0ec29b86a99bb360162",
+    "src/rnastable/robustness.py": "3b2d6092323ce3123517a5631d18e61df7cc0e1294dab2d716bdb6f6c421ee32",
+    "src/rnastable/annotations.py": "c1855064faed6a7ab30dc45f70bbd7aeac4bb783da20eb2f826c36c236e20271",
+    "scripts/summarize_robustness.py": "8e1abb3f978196c79f0b1962033ab79b8c6606a9006ce722565db6fd37d4f6e8",
+    "scripts/verify_robustness.py": "d97f95aa2954d7f60aa2af4f8f3ecf00dc8d3e7a2f3e5c146dade5002c131d69",
+    "tests/test_robustness.py": "db2b3027fe76b454165bca2051c7c20a52e93d56bc86603bbc1fe8e669e2945d",
+    "tests/test_command_logging.py": "b4888194b3a113ab1f5c348a799dc38d041b11a818ace7f84cad2d3a2cee94e4",
+    "tests/test_annotations.py": "86b7973889d97f4b8c4b83cd3cdd697f22a4d0cafd9aa0860ead08d419da6dc9",
+    "src/rnastable/cli.py": "3c9a8be9b314e9a3f01e6c0c2af58db72e6d4afcca6b875af0814b1a00dac699",
+    "scripts/log_command.py": "79f46b445b6ffc98063ceeb3b0cac6ac67e390ac1e43a3d8c53ed3d4506a226a",
+    "README.md": "b05f7e763c27c4ba2ec9afeabb7f4e838edeb53af0fbb76a99b85ee11e6839d9"
+  },
+  "robustness_run": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T022904.959274Z",
+  "protected_demo_run": "/home/zyliu/Documents/rna-stable-ai/results/optimization_runs/20261005T023719.583673Z",
+  "versions": {
+    "python": "3.12.14",
+    "executable": "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+    "RNA-StableAI": "0.1.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "biopython": "1.88",
+    "psutil": "7.2.2",
+    "tqdm": "4.70.1",
+    "pyyaml": "6.0.3",
+    "pytest": "9.1.1",
+    "matplotlib": "3.11.2",
+    "torch": "2.14.1+cu130",
+    "ViennaRNA": "2.7.2"
+  }
+}

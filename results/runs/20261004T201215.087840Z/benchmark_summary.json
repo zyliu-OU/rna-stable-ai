@@ -1,0 +1,396 @@
+{
+  "utc": "20261004T201101.111884Z",
+  "config": {
+    "lengths": [
+      1000,
+      2000,
+      5000,
+      10000
+    ],
+    "seed": 1729,
+    "kinds": [
+      "structured",
+      "mixed"
+    ],
+    "timeout_seconds": 120,
+    "memory_limit_gib": 8,
+    "beam_size": 100,
+    "temperature_c": 37,
+    "batch_size": 1,
+    "warmup": 5,
+    "repeats": 20,
+    "cpu_threads": 4,
+    "embedding_dim": 32,
+    "channels": 64
+  },
+  "config_sha256": "ef197413d66e044f02370b0b3f7f859b5a96f4e1c3b330913e157ba8f7bcdb4e",
+  "versions": {
+    "python": "3.14.6",
+    "executable": "/home/zyliu/anaconda3/bin/python3",
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+    "RNA-StableAI": "not installed in this interpreter",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.3",
+    "biopython": "not installed in this interpreter",
+    "psutil": "7.2.2",
+    "tqdm": "4.68.2",
+    "pyyaml": "6.0.3",
+    "pytest": "9.0.3",
+    "matplotlib": "3.11.0",
+    "torch": "not installed in this interpreter",
+    "ViennaRNA": "not installed in this interpreter"
+  },
+  "gpu_interpreter": "/home/zyliu/anaconda3/envs/vllm-lab/bin/python",
+  "synthetic_manifest": [
+    {
+      "id": "structured_1000_seed1729",
+      "kind": "structured",
+      "length": 1000,
+      "seed": 1729,
+      "sha256": "605331111c0efcdf4e024e4d626c5e6dbd66229625615d182cc2f2df1e57ebb0",
+      "path": "/home/zyliu/Documents/rna-stable-ai/data/synthetic/structured_1000_seed1729.fasta"
+    },
+    {
+      "id": "mixed_1000_seed1729",
+      "kind": "mixed",
+      "length": 1000,
+      "seed": 1729,
+      "sha256": "79dd640b9b3aaeb270222e9bca6b45e09aaa8418ba52d5b75d0e26e3cd6974b5",
+      "path": "/home/zyliu/Documents/rna-stable-ai/data/synthetic/mixed_1000_seed1729.fasta"
+    },
+    {
+      "id": "structured_2000_seed1729",
+      "kind": "structured",
+      "length": 2000,
+      "seed": 1729,
+      "sha256": "11c31c9bc4168dc753570b965909c041dad40fee3042f32e3a979111e61cae2a",
+      "path": "/home/zyliu/Documents/rna-stable-ai/data/synthetic/structured_2000_seed1729.fasta"
+    },
+    {
+      "id": "mixed_2000_seed1729",
+      "kind": "mixed",
+      "length": 2000,
+      "seed": 1729,
+      "sha256": "24d7efa7afe8ee318e0015355a23a35db8b10d646e5ecf0407a753cdcbefe851",
+      "path": "/home/zyliu/Documents/rna-stable-ai/data/synthetic/mixed_2000_seed1729.fasta"
+    },
+    {
+      "id": "structured_5000_seed1729",
+      "kind": "structured",
+      "length": 5000,
+      "seed": 1729,
+      "sha256": "1155aae75ff3c3996afc0b269fdb0529bab51e6235b067b1a3e3d1e445fbad0b",
+      "path": "/home/zyliu/Documents/rna-stable-ai/data/synthetic/structured_5000_seed1729.fasta"
+    },
+    {
+      "id": "mixed_5000_seed1729",
+      "kind": "mixed",
+      "length": 5000,
+      "seed": 1729,
+      "sha256": "36283f34767cb10ec11bdaf8f77e969c151b74de9dfbf6ffb85840b95057ed38",
+      "path": "/home/zyliu/Documents/rna-stable-ai/data/synthetic/mixed_5000_seed1729.fasta"
+    },
+    {
+      "id": "structured_10000_seed1729",
+      "kind": "structured",
+      "length": 10000,
+      "seed": 1729,
+      "sha256": "e579ff0f0e6d0b10427fec065b2075e4d07ea5d9c3774ea9e73826dca72b3dea",
+      "path": "/home/zyliu/Documents/rna-stable-ai/data/synthetic/structured_10000_seed1729.fasta"
+    },
+    {
+      "id": "mixed_10000_seed1729",
+      "kind": "mixed",
+      "length": 10000,
+      "seed": 1729,
+      "sha256": "636f86f2086894133479c102a78a4d0d956f578ffaa3ee791c9dc27dc5639e27",
+      "path": "/home/zyliu/Documents/rna-stable-ai/data/synthetic/mixed_10000_seed1729.fasta"
+    }
+  ],
+  "folding_status": {
+    "unavailable": 24
+  },
+  "gpu_status": {
+    "skipped": 4
+  },
+  "folding": [
+    {
+      "sequence_id": "structured_1000_seed1729",
+      "kind": "structured",
+      "length": 1000,
+      "tool": "ViennaRNA",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "structured_1000_seed1729",
+      "kind": "structured",
+      "length": 1000,
+      "tool": "LinearFold",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "structured_1000_seed1729",
+      "kind": "structured",
+      "length": 1000,
+      "tool": "LinearPartition",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "mixed_1000_seed1729",
+      "kind": "mixed",
+      "length": 1000,
+      "tool": "ViennaRNA",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "mixed_1000_seed1729",
+      "kind": "mixed",
+      "length": 1000,
+      "tool": "LinearFold",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "mixed_1000_seed1729",
+      "kind": "mixed",
+      "length": 1000,
+      "tool": "LinearPartition",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "structured_2000_seed1729",
+      "kind": "structured",
+      "length": 2000,
+      "tool": "ViennaRNA",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "structured_2000_seed1729",
+      "kind": "structured",
+      "length": 2000,
+      "tool": "LinearFold",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "structured_2000_seed1729",
+      "kind": "structured",
+      "length": 2000,
+      "tool": "LinearPartition",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "mixed_2000_seed1729",
+      "kind": "mixed",
+      "length": 2000,
+      "tool": "ViennaRNA",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "mixed_2000_seed1729",
+      "kind": "mixed",
+      "length": 2000,
+      "tool": "LinearFold",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "mixed_2000_seed1729",
+      "kind": "mixed",
+      "length": 2000,
+      "tool": "LinearPartition",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "structured_5000_seed1729",
+      "kind": "structured",
+      "length": 5000,
+      "tool": "ViennaRNA",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "structured_5000_seed1729",
+      "kind": "structured",
+      "length": 5000,
+      "tool": "LinearFold",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "structured_5000_seed1729",
+      "kind": "structured",
+      "length": 5000,
+      "tool": "LinearPartition",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "mixed_5000_seed1729",
+      "kind": "mixed",
+      "length": 5000,
+      "tool": "ViennaRNA",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "mixed_5000_seed1729",
+      "kind": "mixed",
+      "length": 5000,
+      "tool": "LinearFold",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "mixed_5000_seed1729",
+      "kind": "mixed",
+      "length": 5000,
+      "tool": "LinearPartition",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "structured_10000_seed1729",
+      "kind": "structured",
+      "length": 10000,
+      "tool": "ViennaRNA",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "structured_10000_seed1729",
+      "kind": "structured",
+      "length": 10000,
+      "tool": "LinearFold",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "structured_10000_seed1729",
+      "kind": "structured",
+      "length": 10000,
+      "tool": "LinearPartition",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "mixed_10000_seed1729",
+      "kind": "mixed",
+      "length": 10000,
+      "tool": "ViennaRNA",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "mixed_10000_seed1729",
+      "kind": "mixed",
+      "length": 10000,
+      "tool": "LinearFold",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    },
+    {
+      "sequence_id": "mixed_10000_seed1729",
+      "kind": "mixed",
+      "length": 10000,
+      "tool": "LinearPartition",
+      "device": "CPU",
+      "status": "unavailable",
+      "error": "Tool not installed or not discoverable"
+    }
+  ],
+  "gpu": [
+    {
+      "length": 1000,
+      "batch_size": 1,
+      "status": "skipped",
+      "repeats": 20,
+      "cpu_threads": 4,
+      "torch_version": "2.11.0+cu130",
+      "cuda_build": "13.0",
+      "cuda_available": false,
+      "python_version": "3.13.14",
+      "error": "CUDA unavailable; GPU timing, transfer and memory left blank",
+      "cpu_seconds": 0.0003200684999455916
+    },
+    {
+      "length": 2000,
+      "batch_size": 1,
+      "status": "skipped",
+      "repeats": 20,
+      "cpu_threads": 4,
+      "torch_version": "2.11.0+cu130",
+      "cuda_build": "13.0",
+      "cuda_available": false,
+      "python_version": "3.13.14",
+      "error": "CUDA unavailable; GPU timing, transfer and memory left blank",
+      "cpu_seconds": 0.0005055205000417118
+    },
+    {
+      "length": 5000,
+      "batch_size": 1,
+      "status": "skipped",
+      "repeats": 20,
+      "cpu_threads": 4,
+      "torch_version": "2.11.0+cu130",
+      "cuda_build": "13.0",
+      "cuda_available": false,
+      "python_version": "3.13.14",
+      "error": "CUDA unavailable; GPU timing, transfer and memory left blank",
+      "cpu_seconds": 0.0012065105000829135
+    },
+    {
+      "length": 10000,
+      "batch_size": 1,
+      "status": "skipped",
+      "repeats": 20,
+      "cpu_threads": 4,
+      "torch_version": "2.11.0+cu130",
+      "cuda_build": "13.0",
+      "cuda_available": false,
+      "python_version": "3.13.14",
+      "error": "CUDA unavailable; GPU timing, transfer and memory left blank",
+      "cpu_seconds": 0.0024545850001231884
+    }
+  ],
+  "limitations": [
+    "CPU folding tools do not use GPU.",
+    "LinearFold-V energy is an approximate minimum; LinearPartition ensemble free energy is not MFE.",
+    "Synthetic structured controls contain designed stems, not verified secondary structures.",
+    "Encoder uses random fixed weights; inference throughput does not measure RNA stability.",
+    "No training performed; single folding replicate per sequence; no statistical speedup claim."
+  ]
+}

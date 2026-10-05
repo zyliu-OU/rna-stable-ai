@@ -1,0 +1,1 @@
+Artifact verification passed: 8 FASTA records, 24 CPU folding rows, 4 encoder rows.

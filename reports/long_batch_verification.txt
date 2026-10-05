@@ -1,0 +1,2 @@
+Sweep audit passed: 16 validated runs, 0 recorded failures, 128 proposal folds; constraints, raw outputs, decisions and aggregate denominators verified.
+Batch audit passed: 4 components, 16 exact merged rows; peak 2 concurrent CPU batches within the recorded limit.

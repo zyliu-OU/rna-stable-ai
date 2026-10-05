@@ -1,0 +1,44 @@
+Sweep resume 1/36: structured_1000_seq1729_search2718_beam50
+Sweep resume 2/36: structured_1000_seq1729_search2718_beam100
+Sweep resume 3/36: structured_1000_seq1729_search2718_beam200
+Sweep resume 4/36: structured_1000_seq1729_search2719_beam50
+Sweep resume 5/36: structured_1000_seq1729_search2719_beam100
+Sweep resume 6/36: structured_1000_seq1729_search2719_beam200
+Sweep resume 7/36: structured_1000_seq1730_search2718_beam50
+Sweep resume 8/36: structured_1000_seq1730_search2718_beam100
+Sweep resume 9/36: structured_1000_seq1730_search2718_beam200
+Sweep resume 10/36: structured_1000_seq1730_search2719_beam50
+Sweep resume 11/36: structured_1000_seq1730_search2719_beam100
+Sweep resume 12/36: structured_1000_seq1730_search2719_beam200
+Sweep resume 13/36: structured_1000_seq1731_search2718_beam50
+Sweep resume 14/36: structured_1000_seq1731_search2718_beam100
+Sweep resume 15/36: structured_1000_seq1731_search2718_beam200
+Sweep resume 16/36: structured_1000_seq1731_search2719_beam50
+Sweep resume 17/36: structured_1000_seq1731_search2719_beam100
+Sweep resume 18/36: structured_1000_seq1731_search2719_beam200
+Sweep resume 19/36: mixed_1000_seq1729_search2718_beam50
+Sweep resume 20/36: mixed_1000_seq1729_search2718_beam100
+Sweep resume 21/36: mixed_1000_seq1729_search2718_beam200
+Sweep resume 22/36: mixed_1000_seq1729_search2719_beam50
+Sweep resume 23/36: mixed_1000_seq1729_search2719_beam100
+Sweep resume 24/36: mixed_1000_seq1729_search2719_beam200
+Sweep resume 25/36: mixed_1000_seq1730_search2718_beam50
+Sweep resume 26/36: mixed_1000_seq1730_search2718_beam100
+Sweep resume 27/36: mixed_1000_seq1730_search2718_beam200
+Sweep resume 28/36: mixed_1000_seq1730_search2719_beam50
+Sweep resume 29/36: mixed_1000_seq1730_search2719_beam100
+Sweep resume 30/36: mixed_1000_seq1730_search2719_beam200
+Sweep resume 31/36: mixed_1000_seq1731_search2718_beam50
+Sweep resume 32/36: mixed_1000_seq1731_search2718_beam100
+Sweep resume 33/36: mixed_1000_seq1731_search2718_beam200
+Sweep resume 34/36: mixed_1000_seq1731_search2719_beam50
+Sweep resume 35/36: mixed_1000_seq1731_search2719_beam100
+Sweep resume 36/36: mixed_1000_seq1731_search2719_beam200
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261004T205442.491896Z",
+  "planned_runs": 36,
+  "completed_runs": 36,
+  "status_counts": {
+    "validated": 36
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "event": "heartbeat",
+  "completed_batches": 2,
+  "total_batches": 4,
+  "saved_searches": 12,
+  "complete": false
+}

@@ -1,0 +1,1 @@
+Real search reproducibility passed: identical proposals, accept/reject decisions, finalist hash, mutation list, and ViennaRNA energy delta across two runs.

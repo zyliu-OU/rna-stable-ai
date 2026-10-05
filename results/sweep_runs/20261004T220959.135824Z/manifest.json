@@ -1,0 +1,121 @@
+{
+  "utc": "20261004T220959.135824Z",
+  "config": {
+    "lengths": [
+      2000,
+      5000,
+      10000
+    ],
+    "kinds": [
+      "structured",
+      "mixed"
+    ],
+    "sequence_seeds": [
+      1729
+    ],
+    "search_seeds": [
+      2718
+    ],
+    "beam_sizes": [
+      200
+    ],
+    "optimization_config": "optimization.json",
+    "optimization_overrides": {
+      "steps": 8,
+      "timeout_seconds": 60,
+      "finalist_timeout_seconds": 600
+    },
+    "optimization": {
+      "seed": 2718,
+      "steps": 8,
+      "max_mutations": 40,
+      "protected_positions": [],
+      "preserve_protein": false,
+      "min_improvement_kcal_mol": 0.1,
+      "beam_size": 100,
+      "temperature_c": 37,
+      "timeout_seconds": 60,
+      "finalist_timeout_seconds": 600,
+      "memory_limit_gib": 8
+    }
+  },
+  "config_sha256": "bf7ba93499cc09a3a6d0d8eedaf882b3dbf6d30733b71f83b2b2a2799cf83854",
+  "provenance": {
+    "versions": {
+      "python": "3.12.14",
+      "executable": "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+      "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+      "RNA-StableAI": "0.1.0",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "pandas": "3.0.6",
+      "biopython": "1.88",
+      "psutil": "7.2.2",
+      "tqdm": "4.70.1",
+      "pyyaml": "6.0.3",
+      "pytest": "9.1.1",
+      "matplotlib": "3.11.2",
+      "torch": "2.14.1+cu130",
+      "ViennaRNA": "2.7.2"
+    },
+    "file_sha256": {
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sweep.py": "0b26b51734ac798e576f48b49647ffd23c5e6b75df170fbf82fa41ef64cb1cc3",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/optimization.py": "63acba5541b7cd4cdb2b0a537abc22b58f3cf409f6d28e784aa824c2b3621c4e",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/folding.py": "6b166164dc7e5ef915484409a643fec2059819c319650afd415b0e74afa9297b",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/scoring.py": "aefa252f8765861a15e7265fd69c716c598ff3e3d1925c71e0564e9ef9baf349",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sequences.py": "3e970de56b2b6d38ae6fbe276032a51fe570ac2bc4d84288e49cb1a32e335960",
+      "/home/zyliu/Documents/rna-stable-ai/external/LinearFold/bin/linearfold_v": "5a6f8924d15b27058d89ec85cde41c890c68b43cd9d319828d273c8da2e797eb"
+    }
+  },
+  "jobs": [
+    {
+      "job_id": "structured_2000_seq1729_search2718_beam200",
+      "kind": "structured",
+      "length": 2000,
+      "sequence_seed": 1729,
+      "search_seed": 2718,
+      "beam_size": 200
+    },
+    {
+      "job_id": "mixed_2000_seq1729_search2718_beam200",
+      "kind": "mixed",
+      "length": 2000,
+      "sequence_seed": 1729,
+      "search_seed": 2718,
+      "beam_size": 200
+    },
+    {
+      "job_id": "structured_5000_seq1729_search2718_beam200",
+      "kind": "structured",
+      "length": 5000,
+      "sequence_seed": 1729,
+      "search_seed": 2718,
+      "beam_size": 200
+    },
+    {
+      "job_id": "mixed_5000_seq1729_search2718_beam200",
+      "kind": "mixed",
+      "length": 5000,
+      "sequence_seed": 1729,
+      "search_seed": 2718,
+      "beam_size": 200
+    },
+    {
+      "job_id": "structured_10000_seq1729_search2718_beam200",
+      "kind": "structured",
+      "length": 10000,
+      "sequence_seed": 1729,
+      "search_seed": 2718,
+      "beam_size": 200
+    },
+    {
+      "job_id": "mixed_10000_seq1729_search2718_beam200",
+      "kind": "mixed",
+      "length": 10000,
+      "sequence_seed": 1729,
+      "search_seed": 2718,
+      "beam_size": 200
+    }
+  ],
+  "config_path": "/home/zyliu/Documents/rna-stable-ai/configs/evaluation_long.json"
+}

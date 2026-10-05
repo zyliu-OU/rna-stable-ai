@@ -1,0 +1,658 @@
+{
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/references/636f86f2086894133479c102a78a4d0d956f578ffaa3ee791c9dc27dc5639e27.txt": {
+    "mtime_ns": 1791168842393325164,
+    "size": 20022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/references/bc0273eab6caf38eaf8fa4b8c7368ff06ed721eeee9678128205e9dbca0e0138.txt": {
+    "mtime_ns": 1791168845063682851,
+    "size": 20022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/references/675f11d7b6658f1491c421f60410946265a79093b82a0d2d8bfae13b5f45ec1c.txt": {
+    "mtime_ns": 1791168385500283908,
+    "size": 10022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/references/36283f34767cb10ec11bdaf8f77e969c151b74de9dfbf6ffb85840b95057ed38.txt": {
+    "mtime_ns": 1791168386051205916,
+    "size": 10022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam400/20261005T025732.953106Z/finalist_ViennaRNA.txt": {
+    "mtime_ns": 1791169343720773518,
+    "size": 20022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam400/20261005T025732.953106Z/step_0003.txt": {
+    "mtime_ns": 1791169123749744025,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam400/20261005T025732.953106Z/step_0000.txt": {
+    "mtime_ns": 1791169070298403811,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam400/20261005T025732.953106Z/step_0002.txt": {
+    "mtime_ns": 1791169106048587080,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam400/20261005T025732.953106Z/step_0007.txt": {
+    "mtime_ns": 1791169194149478978,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam400/20261005T025732.953106Z/step_0005.txt": {
+    "mtime_ns": 1791169159601141334,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam400/20261005T025732.953106Z/step_0001.txt": {
+    "mtime_ns": 1791169087897904702,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam400/20261005T025732.953106Z/step_0008.txt": {
+    "mtime_ns": 1791169211448674825,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam400/20261005T025732.953106Z/step_0004.txt": {
+    "mtime_ns": 1791169142400893121,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam400/20261005T025732.953106Z/step_0006.txt": {
+    "mtime_ns": 1791169176901557926,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam200/20261005T030223.735108Z/finalist_ViennaRNA.txt": {
+    "mtime_ns": 1791169555966072479,
+    "size": 20022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam200/20261005T030223.735108Z/step_0003.txt": {
+    "mtime_ns": 1791169378872589034,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam200/20261005T030223.735108Z/step_0000.txt": {
+    "mtime_ns": 1791169352317229720,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam200/20261005T030223.735108Z/step_0002.txt": {
+    "mtime_ns": 1791169370237804491,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam200/20261005T030223.735108Z/step_0007.txt": {
+    "mtime_ns": 1791169413563692839,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam200/20261005T030223.735108Z/step_0005.txt": {
+    "mtime_ns": 1791169396342667219,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam200/20261005T030223.735108Z/step_0001.txt": {
+    "mtime_ns": 1791169361201896232,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam200/20261005T030223.735108Z/step_0008.txt": {
+    "mtime_ns": 1791169422149199401,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam200/20261005T030223.735108Z/step_0004.txt": {
+    "mtime_ns": 1791169387606943745,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam200/20261005T030223.735108Z/step_0006.txt": {
+    "mtime_ns": 1791169404978865822,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam400/20261005T030555.980174Z/finalist_ViennaRNA.txt": {
+    "mtime_ns": 1791169843988862255,
+    "size": 20022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam400/20261005T030555.980174Z/step_0003.txt": {
+    "mtime_ns": 1791169626036825879,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam400/20261005T030555.980174Z/step_0000.txt": {
+    "mtime_ns": 1791169573375044093,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam400/20261005T030555.980174Z/step_0002.txt": {
+    "mtime_ns": 1791169608486313153,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam400/20261005T030555.980174Z/step_0007.txt": {
+    "mtime_ns": 1791169695984032177,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam400/20261005T030555.980174Z/step_0005.txt": {
+    "mtime_ns": 1791169660985408687,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam400/20261005T030555.980174Z/step_0001.txt": {
+    "mtime_ns": 1791169590936600477,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam400/20261005T030555.980174Z/step_0008.txt": {
+    "mtime_ns": 1791169713532339341,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam400/20261005T030555.980174Z/step_0004.txt": {
+    "mtime_ns": 1791169643635857283,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2719_beam400/20261005T030555.980174Z/step_0006.txt": {
+    "mtime_ns": 1791169678485166163,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam200/20261005T025402.394466Z/finalist_ViennaRNA.txt": {
+    "mtime_ns": 1791169052938355681,
+    "size": 20022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam200/20261005T025402.394466Z/step_0003.txt": {
+    "mtime_ns": 1791168877381633150,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam200/20261005T025402.394466Z/step_0000.txt": {
+    "mtime_ns": 1791168851226428593,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam200/20261005T025402.394466Z/step_0002.txt": {
+    "mtime_ns": 1791168868546179967,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam200/20261005T025402.394466Z/step_0007.txt": {
+    "mtime_ns": 1791168911920349587,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam200/20261005T025402.394466Z/step_0005.txt": {
+    "mtime_ns": 1791168894651702561,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam200/20261005T025402.394466Z/step_0001.txt": {
+    "mtime_ns": 1791168859911584902,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam200/20261005T025402.394466Z/step_0008.txt": {
+    "mtime_ns": 1791168920654994456,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam200/20261005T025402.394466Z/step_0004.txt": {
+    "mtime_ns": 1791168886116248803,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1729/results/sweep_runs/20261005T025148.863917Z/jobs/mixed_10000_seq1729_search2718_beam200/20261005T025402.394466Z/step_0006.txt": {
+    "mtime_ns": 1791168903185884528,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam200/20261005T030221.431780Z/finalist_ViennaRNA.txt": {
+    "mtime_ns": 1791169550804682514,
+    "size": 20022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam200/20261005T030221.431780Z/step_0003.txt": {
+    "mtime_ns": 1791169376166133355,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam200/20261005T030221.431780Z/step_0000.txt": {
+    "mtime_ns": 1791169350113612490,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam200/20261005T030221.431780Z/step_0002.txt": {
+    "mtime_ns": 1791169367482783584,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam200/20261005T030221.431780Z/step_0007.txt": {
+    "mtime_ns": 1791169410706952500,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam200/20261005T030221.431780Z/step_0005.txt": {
+    "mtime_ns": 1791169393435224490,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam200/20261005T030221.431780Z/step_0001.txt": {
+    "mtime_ns": 1791169358747607884,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam200/20261005T030221.431780Z/step_0008.txt": {
+    "mtime_ns": 1791169419341605164,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam200/20261005T030221.431780Z/step_0004.txt": {
+    "mtime_ns": 1791169384800133057,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam200/20261005T030221.431780Z/step_0006.txt": {
+    "mtime_ns": 1791169402070258524,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam400/20261005T030550.817937Z/finalist_ViennaRNA.txt": {
+    "mtime_ns": 1791169838074708438,
+    "size": 20022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam400/20261005T030550.817937Z/step_0003.txt": {
+    "mtime_ns": 1791169620020222811,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam400/20261005T030550.817937Z/step_0000.txt": {
+    "mtime_ns": 1791169568216838375,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam400/20261005T030550.817937Z/step_0002.txt": {
+    "mtime_ns": 1791169602769731753,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam400/20261005T030550.817937Z/step_0007.txt": {
+    "mtime_ns": 1791169688717078080,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam400/20261005T030550.817937Z/step_0005.txt": {
+    "mtime_ns": 1791169654270299586,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam400/20261005T030550.817937Z/step_0001.txt": {
+    "mtime_ns": 1791169585319046049,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam400/20261005T030550.817937Z/step_0008.txt": {
+    "mtime_ns": 1791169706218244862,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam400/20261005T030550.817937Z/step_0004.txt": {
+    "mtime_ns": 1791169637120095439,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2719_beam400/20261005T030550.817937Z/step_0006.txt": {
+    "mtime_ns": 1791169671519349445,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam400/20261005T025733.903072Z/finalist_ViennaRNA.txt": {
+    "mtime_ns": 1791169341417201906,
+    "size": 20022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam400/20261005T025733.903072Z/step_0003.txt": {
+    "mtime_ns": 1791169123899929588,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam400/20261005T025733.903072Z/step_0000.txt": {
+    "mtime_ns": 1791169071100159975,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam400/20261005T025733.903072Z/step_0002.txt": {
+    "mtime_ns": 1791169106149192992,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam400/20261005T025733.903072Z/step_0007.txt": {
+    "mtime_ns": 1791169193799587649,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam400/20261005T025733.903072Z/step_0005.txt": {
+    "mtime_ns": 1791169158898079889,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam400/20261005T025733.903072Z/step_0001.txt": {
+    "mtime_ns": 1791169088849829327,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam400/20261005T025733.903072Z/step_0008.txt": {
+    "mtime_ns": 1791169211399452597,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam400/20261005T025733.903072Z/step_0004.txt": {
+    "mtime_ns": 1791169141499734403,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam400/20261005T025733.903072Z/step_0006.txt": {
+    "mtime_ns": 1791169176350649454,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam200/20261005T025405.064631Z/finalist_ViennaRNA.txt": {
+    "mtime_ns": 1791169053890056814,
+    "size": 20022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam200/20261005T025405.064631Z/step_0003.txt": {
+    "mtime_ns": 1791168880098301520,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam200/20261005T025405.064631Z/step_0000.txt": {
+    "mtime_ns": 1791168853747193474,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam200/20261005T025405.064631Z/step_0002.txt": {
+    "mtime_ns": 1791168871265206767,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam200/20261005T025405.064631Z/step_0007.txt": {
+    "mtime_ns": 1791168915386655980,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam200/20261005T025405.064631Z/step_0005.txt": {
+    "mtime_ns": 1791168897817289329,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam200/20261005T025405.064631Z/step_0001.txt": {
+    "mtime_ns": 1791168862530724651,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam200/20261005T025405.064631Z/step_0008.txt": {
+    "mtime_ns": 1791168924121752981,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam200/20261005T025405.064631Z/step_0004.txt": {
+    "mtime_ns": 1791168888982853125,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_10000_seed1730/results/sweep_runs/20261005T025154.066547Z/jobs/mixed_10000_seq1730_search2718_beam200/20261005T025405.064631Z/step_0006.txt": {
+    "mtime_ns": 1791168906702343984,
+    "size": 20187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam400/20261005T024727.572755Z/finalist_ViennaRNA.txt": {
+    "mtime_ns": 1791168550182015507,
+    "size": 10022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam400/20261005T024727.572755Z/step_0003.txt": {
+    "mtime_ns": 1791168481602829489,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam400/20261005T024727.572755Z/step_0000.txt": {
+    "mtime_ns": 1791168456304135040,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam400/20261005T024727.572755Z/step_0002.txt": {
+    "mtime_ns": 1791168472969714586,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam400/20261005T024727.572755Z/step_0007.txt": {
+    "mtime_ns": 1791168515984801330,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam400/20261005T024727.572755Z/step_0005.txt": {
+    "mtime_ns": 1791168498970073467,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam400/20261005T024727.572755Z/step_0001.txt": {
+    "mtime_ns": 1791168464786631843,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam400/20261005T024727.572755Z/step_0008.txt": {
+    "mtime_ns": 1791168524868792966,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam400/20261005T024727.572755Z/step_0004.txt": {
+    "mtime_ns": 1791168490686740784,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam400/20261005T024727.572755Z/step_0006.txt": {
+    "mtime_ns": 1791168507352391033,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam400/20261005T025013.614506Z/finalist_ViennaRNA.txt": {
+    "mtime_ns": 1791168712844579302,
+    "size": 10022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam400/20261005T025013.614506Z/step_0003.txt": {
+    "mtime_ns": 1791168646252184517,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam400/20261005T025013.614506Z/step_0000.txt": {
+    "mtime_ns": 1791168621649346181,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam400/20261005T025013.614506Z/step_0002.txt": {
+    "mtime_ns": 1791168638017020172,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam400/20261005T025013.614506Z/step_0007.txt": {
+    "mtime_ns": 1791168679739116735,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam400/20261005T025013.614506Z/step_0005.txt": {
+    "mtime_ns": 1791168663070564580,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam400/20261005T025013.614506Z/step_0001.txt": {
+    "mtime_ns": 1791168629783129902,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam400/20261005T025013.614506Z/step_0008.txt": {
+    "mtime_ns": 1791168688123539143,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam400/20261005T025013.614506Z/step_0004.txt": {
+    "mtime_ns": 1791168654686225890,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam400/20261005T025013.614506Z/step_0006.txt": {
+    "mtime_ns": 1791168671302185128,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam200/20261005T024910.199328Z/finalist_ViennaRNA.txt": {
+    "mtime_ns": 1791168613606577155,
+    "size": 10022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam200/20261005T024910.199328Z/step_0003.txt": {
+    "mtime_ns": 1791168567704624301,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam200/20261005T024910.199328Z/step_0000.txt": {
+    "mtime_ns": 1791168554624204391,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam200/20261005T024910.199328Z/step_0002.txt": {
+    "mtime_ns": 1791168563428138120,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam200/20261005T024910.199328Z/step_0007.txt": {
+    "mtime_ns": 1791168584708025628,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam200/20261005T024910.199328Z/step_0005.txt": {
+    "mtime_ns": 1791168576256597769,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam200/20261005T024910.199328Z/step_0001.txt": {
+    "mtime_ns": 1791168559151581526,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam200/20261005T024910.199328Z/step_0008.txt": {
+    "mtime_ns": 1791168588933797407,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam200/20261005T024910.199328Z/step_0004.txt": {
+    "mtime_ns": 1791168572030446634,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2719_beam200/20261005T024910.199328Z/step_0006.txt": {
+    "mtime_ns": 1791168580482594502,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam200/20261005T024625.500946Z/finalist_ViennaRNA.txt": {
+    "mtime_ns": 1791168447564716795,
+    "size": 10022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam200/20261005T024625.500946Z/step_0003.txt": {
+    "mtime_ns": 1791168402103512054,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam200/20261005T024625.500946Z/step_0000.txt": {
+    "mtime_ns": 1791168389727391938,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam200/20261005T024625.500946Z/step_0002.txt": {
+    "mtime_ns": 1791168397978869013,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam200/20261005T024625.500946Z/step_0007.txt": {
+    "mtime_ns": 1791168418659793706,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam200/20261005T024625.500946Z/step_0005.txt": {
+    "mtime_ns": 1791168410255604346,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam200/20261005T024625.500946Z/step_0001.txt": {
+    "mtime_ns": 1791168393852789993,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam200/20261005T024625.500946Z/step_0008.txt": {
+    "mtime_ns": 1791168422785659704,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam200/20261005T024625.500946Z/step_0004.txt": {
+    "mtime_ns": 1791168406181591583,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z/jobs/mixed_5000_seq1730_search2718_beam200/20261005T024625.500946Z/step_0006.txt": {
+    "mtime_ns": 1791168414433219112,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam400/20261005T025011.560611Z/finalist_ViennaRNA.txt": {
+    "mtime_ns": 1791168707582573786,
+    "size": 10022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam400/20261005T025011.560611Z/step_0003.txt": {
+    "mtime_ns": 1791168644298750205,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam400/20261005T025011.560611Z/step_0000.txt": {
+    "mtime_ns": 1791168619745974581,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam400/20261005T025011.560611Z/step_0002.txt": {
+    "mtime_ns": 1791168636314011906,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam400/20261005T025011.560611Z/step_0007.txt": {
+    "mtime_ns": 1791168675732317923,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam400/20261005T025011.560611Z/step_0005.txt": {
+    "mtime_ns": 1791168660164433619,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam400/20261005T025011.560611Z/step_0001.txt": {
+    "mtime_ns": 1791168628030571380,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam400/20261005T025011.560611Z/step_0008.txt": {
+    "mtime_ns": 1791168683565312078,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam400/20261005T025011.560611Z/step_0004.txt": {
+    "mtime_ns": 1791168652281790800,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam400/20261005T025011.560611Z/step_0006.txt": {
+    "mtime_ns": 1791168667898142419,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam200/20261005T024909.248194Z/finalist_ViennaRNA.txt": {
+    "mtime_ns": 1791168611552441801,
+    "size": 10022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam200/20261005T024909.248194Z/step_0003.txt": {
+    "mtime_ns": 1791168566302620737,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam200/20261005T024909.248194Z/step_0000.txt": {
+    "mtime_ns": 1791168553572914945,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam200/20261005T024909.248194Z/step_0002.txt": {
+    "mtime_ns": 1791168562176055490,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam200/20261005T024909.248194Z/step_0007.txt": {
+    "mtime_ns": 1791168582955295883,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam200/20261005T024909.248194Z/step_0005.txt": {
+    "mtime_ns": 1791168574553829486,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam200/20261005T024909.248194Z/step_0001.txt": {
+    "mtime_ns": 1791168557999897006,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam200/20261005T024909.248194Z/step_0008.txt": {
+    "mtime_ns": 1791168587180989435,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam200/20261005T024909.248194Z/step_0004.txt": {
+    "mtime_ns": 1791168570427946356,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2719_beam200/20261005T024909.248194Z/step_0006.txt": {
+    "mtime_ns": 1791168578779125156,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam200/20261005T024626.051861Z/finalist_ViennaRNA.txt": {
+    "mtime_ns": 1791168447564716795,
+    "size": 10022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam200/20261005T024626.051861Z/step_0003.txt": {
+    "mtime_ns": 1791168402755607364,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam200/20261005T024626.051861Z/step_0000.txt": {
+    "mtime_ns": 1791168390225768759,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam200/20261005T024626.051861Z/step_0002.txt": {
+    "mtime_ns": 1791168398579829167,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam200/20261005T024626.051861Z/step_0007.txt": {
+    "mtime_ns": 1791168419209094495,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam200/20261005T024626.051861Z/step_0005.txt": {
+    "mtime_ns": 1791168411057784133,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam200/20261005T024626.051861Z/step_0001.txt": {
+    "mtime_ns": 1791168394402579334,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam200/20261005T024626.051861Z/step_0008.txt": {
+    "mtime_ns": 1791168423336540985,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam200/20261005T024626.051861Z/step_0004.txt": {
+    "mtime_ns": 1791168406882645644,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam200/20261005T024626.051861Z/step_0006.txt": {
+    "mtime_ns": 1791168415084312933,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam400/20261005T024727.571864Z/finalist_ViennaRNA.txt": {
+    "mtime_ns": 1791168549230177708,
+    "size": 10022
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam400/20261005T024727.571864Z/step_0003.txt": {
+    "mtime_ns": 1791168480651235347,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam400/20261005T024727.571864Z/step_0000.txt": {
+    "mtime_ns": 1791168456103750697,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam400/20261005T024727.571864Z/step_0002.txt": {
+    "mtime_ns": 1791168472318542306,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam400/20261005T024727.571864Z/step_0007.txt": {
+    "mtime_ns": 1791168514833585862,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam400/20261005T024727.571864Z/step_0005.txt": {
+    "mtime_ns": 1791168497818164033,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam400/20261005T024727.571864Z/step_0001.txt": {
+    "mtime_ns": 1791168464336238371,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam400/20261005T024727.571864Z/step_0008.txt": {
+    "mtime_ns": 1791168523015715215,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam400/20261005T024727.571864Z/step_0004.txt": {
+    "mtime_ns": 1791168489234279021,
+    "size": 10187
+  },
+  "results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1729/results/sweep_runs/20261005T024601.088634Z/jobs/mixed_5000_seq1729_search2718_beam400/20261005T024727.571864Z/step_0006.txt": {
+    "mtime_ns": 1791168506450830469,
+    "size": 10187
+  }
+}

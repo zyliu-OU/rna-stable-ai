@@ -1,0 +1,12 @@
+Sweep resume 1/4: mixed_5000_seq1730_search2718_beam200
+Sweep resume 2/4: mixed_5000_seq1730_search2718_beam400
+Sweep resume 3/4: mixed_5000_seq1730_search2719_beam200
+Sweep resume 4/4: mixed_5000_seq1730_search2719_beam400
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/sweep_runs/20261005T024600.985769Z/components/mixed_5000_seed1730/results/sweep_runs/20261005T024601.086969Z",
+  "planned_runs": 4,
+  "completed_runs": 4,
+  "status_counts": {
+    "validated": 4
+  }
+}
