@@ -1,0 +1,64 @@
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261006_baseline/results/reference_runs/20261007T013132.913432Z"
+}
+Pair-head component audit passed: seed 20261006, baseline, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261006_stack/results/reference_runs/20261007T013153.730335Z"
+}
+Pair-head component audit passed: seed 20261006, stack, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261006_helix/results/reference_runs/20261007T013217.104451Z"
+}
+Pair-head component audit passed: seed 20261006, helix, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261007_baseline/results/reference_runs/20261007T013236.445407Z"
+}
+Pair-head component audit passed: seed 20261007, baseline, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261007_stack/results/reference_runs/20261007T013256.331184Z"
+}
+Pair-head component audit passed: seed 20261007, stack, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261007_helix/results/reference_runs/20261007T013319.016405Z"
+}
+Pair-head component audit passed: seed 20261007, helix, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261008_baseline/results/reference_runs/20261007T013337.136969Z"
+}
+Pair-head component audit passed: seed 20261008, baseline, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261008_stack/results/reference_runs/20261007T013355.537511Z"
+}
+Pair-head component audit passed: seed 20261008, stack, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261008_helix/results/reference_runs/20261007T013417.011112Z"
+}
+Pair-head component audit passed: seed 20261008, helix, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+Pair-head study audit passed: 9/9 fits, full development replay and matched initializations.

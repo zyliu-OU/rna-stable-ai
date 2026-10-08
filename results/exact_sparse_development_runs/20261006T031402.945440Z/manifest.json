@@ -1,0 +1,19 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/exact_sparse_development_runs/20261006T031402.945440Z",
+  "sources": {
+    "long_comparative_development": "a52dff397efe57a40c34e55493ff73c8a45eef5f005eee19a3f27109a07691bb",
+    "sampled_comparative_development": "9f3bd7e12db62fe1e0d148b9ad35d3b458765b959d7ebe6f39ecd4dd874f34e0"
+  },
+  "validation_sha256": "bea47dac135ef17e9bc213d563fbda8f8934769bc080d111bdf1a5906a892746",
+  "candidate_sha256": {
+    "long_comparative_development": "74880b3e5dfd803595a25513cb38628e3343e161edac475a2b1ba2730e3c6614",
+    "sampled_comparative_development": "3987dafa111ad5837250a5f6b093c338abbb7a470c0a713c7cb1c07ae30e8baf"
+  },
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/compare_exact_sparse_development.py": "f40b7597e79816568a331ac60e314534707808bd85971c6ddd7de071811615b7",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/exact_sparse_pairs.py": "19d25a49142f314801addf9b21911358c2d8e5bacb363f609fa401566ca143bc",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/global_sparse_pairs.py": "2ec5afad5ec15cc9cd1d559e093cdfb5db5c71a20947728fb6d8b1c02ef0fe4f",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sparse_refinement.py": "dd62f857b0cd7ccf75bb7e608e9332cbc24afcadc6e9db8ef039e7b5c9e9ae5c"
+  },
+  "policy": "Identical exposed development records and candidates. Exact maximum summed logits under noncrossing constraints, not maximum label agreement or unrestricted pair search. Bounded to1024 nt/64 candidates per endpoint. No fitting or fresh test."
+}

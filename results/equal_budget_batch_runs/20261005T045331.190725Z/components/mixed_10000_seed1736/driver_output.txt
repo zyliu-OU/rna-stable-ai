@@ -1,0 +1,56 @@
+Prespecified CPU equal-budget study: /home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_10000_seed1736/results/equal_budget_runs/20261005T050102.658561Z
+CPU budget arm: long
+Sweep 1/1: mixed_10000_seq1736_search2740_beam200
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_10000_seed1736/results/equal_budget_runs/20261005T050102.658561Z/long/results/sweep_runs/20261005T050102.671100Z",
+  "planned_runs": 1,
+  "completed_runs": 1,
+  "status_counts": {
+    "validated": 1
+  }
+}
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_10000_seed1736/results/equal_budget_runs/20261005T050102.658561Z/long/results/portfolio_runs/20261005T051006.531222Z",
+  "input_count": 1,
+  "search_count": 1,
+  "proposals_attempted": 32,
+  "selected_finalists": 1,
+  "returned_inputs": 0
+}
+CPU budget arm: restarts
+Sweep 1/4: mixed_10000_seq1736_search2740_beam200
+Sweep 2/4: mixed_10000_seq1736_search2741_beam200
+Sweep 3/4: mixed_10000_seq1736_search2742_beam200
+Sweep 4/4: mixed_10000_seq1736_search2743_beam200
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_10000_seed1736/results/equal_budget_runs/20261005T050102.658561Z/restarts/results/sweep_runs/20261005T051006.543360Z",
+  "planned_runs": 4,
+  "completed_runs": 4,
+  "status_counts": {
+    "validated": 4
+  }
+}
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_10000_seed1736/results/equal_budget_runs/20261005T050102.658561Z/restarts/results/portfolio_runs/20261005T052548.512191Z",
+  "input_count": 1,
+  "search_count": 4,
+  "proposals_attempted": 32,
+  "selected_finalists": 1,
+  "returned_inputs": 0
+}
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_10000_seed1736/results/equal_budget_runs/20261005T050102.658561Z",
+  "paired_inputs": 1,
+  "aggregates": [
+    {
+      "length": 10000,
+      "planned_inputs": 1,
+      "measured_pairs": 1,
+      "unknown_pairs": 0,
+      "winners": {
+        "long": 1
+      },
+      "mean_restart_minus_long_kcal_mol": 1.199999999999818
+    }
+  ]
+}

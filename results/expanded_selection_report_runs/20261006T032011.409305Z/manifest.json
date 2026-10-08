@@ -1,0 +1,21 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/expanded_selection_report_runs/20261006T032011.409305Z",
+  "sources": {
+    "expanded_development_comparison": {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/expanded_comparison_runs/20261006T030945.216172Z/summary.json",
+      "sha256": "1230a8acfa82a3d9bec25f24474d5fd12c3fac5a1c3280b76a709e76eebe4fe9"
+    },
+    "exact_comparative_development": {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/exact_comparative_development_runs/20261006T031734.025839Z/summary.json",
+      "sha256": "b9f2f7046a06ea07a4b068200f886ebda947185052dfc3df0f0f7e759052f0e8"
+    },
+    "exact_sparse_development": {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/exact_sparse_development_runs/20261006T031402.945440Z/summary.json",
+      "sha256": "29d7a97074eea3bdb7f00ce34b58699196d25903ba94b407f7eaa4c42e14227c"
+    }
+  },
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/report_expanded_checkpoint_selection.py": "fd9b8bf4501d232a9dc8c2bbb67576f4d0f6ab29ee2e0093b1305eb12383c621"
+  },
+  "policy": "Same exposed47-record development cohort. Original models selected with refinement; posthoc exact uses that frozen checkpoint; exact-selected model uses exact decoding during validation selection. One seed; no new fitting, folding or test evaluation in this report."
+}

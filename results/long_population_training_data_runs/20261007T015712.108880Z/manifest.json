@@ -1,0 +1,8 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/long_population_training_data_runs/20261007T015712.108880Z",
+  "source_summary_sha256": "b9f2f7046a06ea07a4b068200f886ebda947185052dfc3df0f0f7e759052f0e8",
+  "import_sha256": "699ead33749c9cceb09b10d84c36733707740bd63a2c9d71a048471229d45a21",
+  "extra_training_sha256": "fada937e22117f67727e4789dac9f0f4eb5c7d024121d6653928018c47a9ce3e",
+  "exposure_event": null,
+  "policy": "Fixed sorted-ID training-only longer annotation extension. Existing development accession/sequence separation checked; no fresh validation or test curation."
+}

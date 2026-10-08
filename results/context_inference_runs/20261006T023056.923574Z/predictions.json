@@ -1,0 +1,14 @@
+[
+  {
+    "id": "synthetic_inference_demo",
+    "sequence": "GGGAAACCCGGGAAACCC",
+    "structure": "(((....))(.(...)))",
+    "objective": 11.725796461105347,
+    "max_pair_span": 128,
+    "effective_band_width": 17,
+    "dp_array_bytes": 4104,
+    "score_array_bytes": 2592,
+    "interpretation": "Exact within fixed maximum pair span; contacts outside band excluded. Scores are logits, not energy.",
+    "wall_seconds": 0.004803755000466481
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/sparse_refinement_runs/20261006T024805.424842Z",
+  "test_evaluated": false,
+  "manifest_sha256": "9cd13b2ae1365a9fd69dd480fb52787c4ce13afdb1c7d019d97ce0888a2be934",
+  "validation_sha256": "615a512a63b38f0bf2c2c889e77877ef54f48a5ed1eca98119426ce07d391bad",
+  "synthetic_sha256": "423b8e75201a400139242a9c001ae833a8f68f7a27ea066e62f9851d2fff995d",
+  "validation_records": 35,
+  "validation_decoder_f1": {
+    "greedy_pair_f1": 0.1621174685121644,
+    "refined_pair_f1": 0.20048209405661002,
+    "sparse_exact_pair_f1": 0.308224571509346
+  },
+  "synthetic": [
+    {
+      "id": "synthetic_1000",
+      "length": 1000,
+      "objective": 49.78313663601875,
+      "accepted_pairs": 99,
+      "greedy_objective": 46.62677647173405,
+      "objective_history": [
+        46.62677647173405,
+        48.37350767850876,
+        49.78313663601875
+      ],
+      "accepted_moves": 16,
+      "group_cap_discarded_candidates": 252,
+      "passes": 2,
+      "max_remove": 2,
+      "group_cap": 8,
+      "interpretation": "Approximate local replacement of at most two pairs by one/two candidates; strictly improving moves, fixed passes/group cap; not global optimization.",
+      "refinement_wall_seconds": 0.24437533599939343,
+      "source_candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/global_sparse_scalability_runs/20261006T024346.509793Z/synthetic_1000_candidates.npz",
+      "source_candidate_sha256": "083499c4495bfc30ad2e170e0c312dca11e98a2760e3a9aa25f7872d41cfc496"
+    },
+    {
+      "id": "synthetic_5000",
+      "length": 5000,
+      "objective": 117.79253007471561,
+      "accepted_pairs": 270,
+      "greedy_objective": 108.87058062851429,
+      "objective_history": [
+        108.87058062851429,
+        115.09702704846859,
+        117.79253007471561
+      ],
+      "accepted_moves": 44,
+      "group_cap_discarded_candidates": 1411,
+      "passes": 2,
+      "max_remove": 2,
+      "group_cap": 8,
+      "interpretation": "Approximate local replacement of at most two pairs by one/two candidates; strictly improving moves, fixed passes/group cap; not global optimization.",
+      "refinement_wall_seconds": 1.3056879749992731,
+      "source_candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/global_sparse_scalability_runs/20261006T024346.509793Z/synthetic_5000_candidates.npz",
+      "source_candidate_sha256": "7dc59d600e5f217b51d7c1f6f89684f3b5736f46f37d1d9f9d2b6ea71ccb0cc5"
+    },
+    {
+      "id": "synthetic_10000",
+      "length": 10000,
+      "objective": 203.6989175826311,
+      "accepted_pairs": 460,
+      "greedy_objective": 182.7781585007906,
+      "objective_history": [
+        182.7781585007906,
+        195.18037301301956,
+        203.6989175826311
+      ],
+      "accepted_moves": 91,
+      "group_cap_discarded_candidates": 3677,
+      "passes": 2,
+      "max_remove": 2,
+      "group_cap": 8,
+      "interpretation": "Approximate local replacement of at most two pairs by one/two candidates; strictly improving moves, fixed passes/group cap; not global optimization.",
+      "refinement_wall_seconds": 2.775209480999365,
+      "source_candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/global_sparse_scalability_runs/20261006T024346.509793Z/synthetic_10000_candidates.npz",
+      "source_candidate_sha256": "cb2b60a3f5008a3153fa31a5db5c585fcf0d51d62316b86f2949806df31f3bba"
+    }
+  ],
+  "limitations": [
+    "Objective improvement is guaranteed for accepted moves; F1 improvement is not guaranteed.",
+    "Fixed passes/group caps can miss improving exchanges and do not establish global optimality.",
+    "Synthetic candidate reuse measures decoder computation, not neural accuracy; all labelled metrics are reused development."
+  ]
+}

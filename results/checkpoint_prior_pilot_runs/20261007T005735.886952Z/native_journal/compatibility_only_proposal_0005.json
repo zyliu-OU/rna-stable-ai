@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "payload": {
+    "binding_sha256": "09b2a193cc1ce3647235db3c227232332e4458eda77c2ae8d179b1440b377ede",
+    "key": "compatibility_only_proposal_0005",
+    "sequence_sha256": "0230b589d8606f7d38510a4820f690f66750d8dda708053c4b7c7ff854ee7c04",
+    "parameters": {
+      "command": [
+        "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+        "/home/zyliu/Documents/rna-stable-ai/external/LinearFold/linearfold",
+        "-V",
+        "-b",
+        "100"
+      ],
+      "config": {
+        "beam_size": 100,
+        "finalist_timeout_seconds": 30,
+        "max_mutations": 16,
+        "memory_limit_gib": 4,
+        "min_improvement_kcal_mol": 0.1,
+        "pool_size": 16,
+        "preserve_protein": false,
+        "protected_positions": [
+          1,
+          2,
+          3
+        ],
+        "seed": 20261007,
+        "steps": 8,
+        "temperature_c": 37,
+        "timeout_seconds": 30
+      },
+      "cwd": "/home/zyliu/Documents/rna-stable-ai/external/LinearFold",
+      "device": "CPU",
+      "raw_output": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005735.886952Z/compatibility_only/proposal_0005_LinearFold.txt",
+      "tool": "LinearFold"
+    },
+    "state": "complete",
+    "started_at": "2026-10-07T00:57:44.491411+00:00",
+    "driver_pid": 191,
+    "result": {
+      "status": "ok",
+      "wall_seconds": 0.38018413499997905,
+      "returncode": 0,
+      "error": "",
+      "peak_rss_mib": 31.45703125,
+      "memory_method": "GNU time maximum RSS (largest process; not process-tree sum)",
+      "tool": "LinearFold",
+      "device": "CPU",
+      "command": [
+        "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+        "/home/zyliu/Documents/rna-stable-ai/external/LinearFold/linearfold",
+        "-V",
+        "-b",
+        "100"
+      ],
+      "raw_output": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005735.886952Z/compatibility_only/proposal_0005_LinearFold.txt",
+      "structure": "(((((((((..((((...((((.....))))...((((....))))((((((.(((((....((((((((.((.........((.((((((.((.((((.((....)))))).))))).))).))..)).)))))))).....(((((((....(((....)))....))))))).))))).))).))).((((((....)))))).(((((((...((((....)))))))))))..))))))))))))).((((((((..(((((((((..........(((((((((((((..(((((...)))))..))).)))))).(((((.(((..((((.((....((((((............)))))).......)).))))))).)))))....((((((((((((...)))).............))))))))((((((((..(((((((...(((((((((.((((((..((.(((........(((((((.((.......(((((...((((((....).)))))....)))))....)).)))))))))).))..)))))).)).....(((((....))))).)))))))((((.(((((....((((((..(......(((((((..........((((........))))....(((..((((((...))))))..))))))))))....)..))))))...))))).)))).....((((((..((((.......))))..)))))))))))))...))))))))..............))))))))))))).............((((((....(((.(((((((.(((.((((.(((((..((((...))....))..))))).))))...))).)))))).).))))))))).....(((((.((((.((((((......((((((((.............))))))))....))))..)).)))))))))...))))))))......",
+      "mfe_kcal_mol": -270.7,
+      "paired_fraction": 0.626,
+      "raw_sha256": "97e5e5f3b0c27113648003da4de3c7661b9a2dd8b05ec7ed4352aaa348d18d27"
+    },
+    "completed_at": "2026-10-07T00:57:44.884914+00:00"
+  },
+  "payload_sha256": "d0a6cbc963a799d5d2130b670df3a553e60d34386496ee1bb10bc7486485331a"
+}

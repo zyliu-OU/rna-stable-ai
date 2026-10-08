@@ -1,0 +1,183 @@
+{
+  "complete": true,
+  "mode": "global_sparse_development_only",
+  "test_evaluated": false,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/global_sparse_development_runs/20261006T024235.048398Z",
+  "manifest_sha256": "2cff86a733e03e5ee9627939114e3cc328fb5c4192cee82696fe22c3f7d20621",
+  "config": {
+    "mode": "global_sparse_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 256,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0
+  },
+  "counts": {
+    "train": 65,
+    "validation": 35
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "mean_train_loss": 2.3323923331040604,
+      "validation_mean_pair_f1": 0.0630339408490669,
+      "mean_validation_loss": 1.8052423102515085
+    },
+    {
+      "epoch": 2,
+      "mean_train_loss": 1.994353776711684,
+      "validation_mean_pair_f1": 0.09842929000823737,
+      "mean_validation_loss": 1.712302224976676
+    },
+    {
+      "epoch": 3,
+      "mean_train_loss": 1.8890577893990737,
+      "validation_mean_pair_f1": 0.10693169070335896,
+      "mean_validation_loss": 1.6424724067960466
+    },
+    {
+      "epoch": 4,
+      "mean_train_loss": 1.8399468366916363,
+      "validation_mean_pair_f1": 0.15040057699953407,
+      "mean_validation_loss": 1.6920774868556432
+    },
+    {
+      "epoch": 5,
+      "mean_train_loss": 1.7426333023951603,
+      "validation_mean_pair_f1": 0.11849462236738599,
+      "mean_validation_loss": 1.6535220827375139
+    },
+    {
+      "epoch": 6,
+      "mean_train_loss": 1.7631212041928217,
+      "validation_mean_pair_f1": 0.1621174685121644,
+      "mean_validation_loss": 1.5031551258904594
+    },
+    {
+      "epoch": 7,
+      "mean_train_loss": 1.5590123974359953,
+      "validation_mean_pair_f1": 0.15200500712512505,
+      "mean_validation_loss": 1.4527983733585903
+    },
+    {
+      "epoch": 8,
+      "mean_train_loss": 1.4141661332203792,
+      "validation_mean_pair_f1": 0.15942691556864907,
+      "mean_validation_loss": 1.4485407454626902
+    },
+    {
+      "epoch": 9,
+      "mean_train_loss": 1.3985950442460866,
+      "validation_mean_pair_f1": 0.1049502146101582,
+      "mean_validation_loss": 1.5302055154527936
+    },
+    {
+      "epoch": 10,
+      "mean_train_loss": 1.265741686637585,
+      "validation_mean_pair_f1": 0.13243908713051042,
+      "mean_validation_loss": 1.2956953423363822
+    }
+  ],
+  "selected_epoch": 6,
+  "selected_validation_pair_f1": 0.1621174685121644,
+  "train_positive_pairs": 1123,
+  "train_negative_pairs": 63809,
+  "train_only_positive_weight": 56.82012466607302,
+  "excluded_train_contacts": 0,
+  "excluded_validation_contacts": 0,
+  "parameters": 25874,
+  "encoder_receptive_field_nt": 91,
+  "checkpoint_sha256": {
+    "initial_context_model.pt": "c66aef2bc8897e3ffac20af6d335f1b46a327e01a220f98030d7bf09440e1a75",
+    "best_context_model.pt": "2827a5788770d3a134177da5dc6db6e505a06be9b19bb6ab20e1df47780879df"
+  },
+  "exposure_events": [
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/global_sparse_development_runs/20261006T024235.048398Z/exposures/20261006T024235.049990Z.json",
+      "sha256": "551a24c12be93122224175a760ac4732c12c9013f8682ec415a5c1546e0d8e7c",
+      "stage": "training_started"
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/global_sparse_development_runs/20261006T024235.048398Z/exposures/20261006T024235.065103Z.json",
+      "sha256": "42e31499f5b27237d61a21c589b924e11750bcec32e09a4b8668419c41d62f12",
+      "stage": "validation_started"
+    }
+  ],
+  "predictions_sha256": "5cffbd2465e4caccfe5ebc9c3b9748c1c082575f5c8e728e9b886d82f946da35",
+  "aggregates": [
+    {
+      "method": "trained_global_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 23,
+      "measured_inputs": 23,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 23
+      },
+      "mean_pair_precision": 0.07418727979368711,
+      "mean_pair_recall": 0.047941951628152,
+      "mean_pair_f1": 0.05804253516489849
+    },
+    {
+      "method": "trained_global_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.3878968253968254,
+      "mean_pair_recall": 0.3442460317460317,
+      "mean_pair_f1": 0.36159442409442405
+    },
+    {
+      "method": "untrained_global_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 23,
+      "measured_inputs": 23,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 23
+      },
+      "mean_pair_precision": 0.004140786749482401,
+      "mean_pair_recall": 0.003105590062111801,
+      "mean_pair_f1": 0.0035492457852706297
+    },
+    {
+      "method": "untrained_global_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.05555555555555555,
+      "mean_pair_recall": 0.05092592592592592,
+      "mean_pair_f1": 0.05310457516339869
+    }
+  ],
+  "limitations": [
+    "One seed, fixed configuration, already reused development data: no independent accuracy claim.",
+    "All-distance scoring has quadratic work; fixed tile/top-k retention bounds inference storage.",
+    "Greedy decoder is approximate and can miss the optimum.",
+    "Short labels supervise distances only within observed development lengths; extrapolation to distant contacts is unvalidated."
+  ]
+}

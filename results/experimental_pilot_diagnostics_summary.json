@@ -1,0 +1,7 @@
+{
+  "source_summary": "/home/zyliu/Documents/rna-stable-ai/results/experimental_pilot_summary.json",
+  "source_sha256": "e6474aa756d0b39fc5df97b2f6ecdd08dba623727dc43b7bc692369a95b201a3",
+  "figure": "/home/zyliu/Documents/rna-stable-ai/results/experimental_pilot_runs/20261006T010347.964097Z/figures/20261006T010807.239562Z/diagnostics.png",
+  "figure_sha256": "021228a40e5ee73f161961e5f4df4090b5e0ff8892705cce9992c6fb4efc5e50",
+  "interpretation": "Validation selected the checkpoint; test results were not used for tuning. Processed PDB annotations are not biological stability measurements."
+}

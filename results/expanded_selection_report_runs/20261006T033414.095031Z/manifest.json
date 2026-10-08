@@ -1,0 +1,29 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/expanded_selection_report_runs/20261006T033414.095031Z",
+  "sources": {
+    "expanded_development_comparison": {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/expanded_comparison_runs/20261006T030945.216172Z/summary.json",
+      "sha256": "1230a8acfa82a3d9bec25f24474d5fd12c3fac5a1c3280b76a709e76eebe4fe9"
+    },
+    "exact_comparative_development": {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/exact_comparative_development_runs/20261006T031734.025839Z/summary.json",
+      "sha256": "b9f2f7046a06ea07a4b068200f886ebda947185052dfc3df0f0f7e759052f0e8"
+    },
+    "exact_sparse_development": {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/exact_sparse_development_runs/20261006T031402.945440Z/summary.json",
+      "sha256": "29d7a97074eea3bdb7f00ce34b58699196d25903ba94b407f7eaa4c42e14227c"
+    },
+    "structured_comparative_development": {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/structured_comparative_development_runs/20261006T032540.594773Z/summary.json",
+      "sha256": "7fa11afb7d5014087902b68bfac08d01b9e305727152dd78a3714e775a474b8b"
+    },
+    "stack_comparative_development": {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/summary.json",
+      "sha256": "b1d638959b26aa82a8664c0b8f5b54c92a67ce13cb1136d3e660c0fefa62b128"
+    }
+  },
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/report_expanded_checkpoint_selection.py": "1ab346c5eb13fb7d61d67692f4089e3f837340d77d864cbe61d4fce81e9bbe04"
+  },
+  "policy": "Same exposed47-record development cohort. Original models selected with refinement; posthoc exact uses that frozen checkpoint; exact-selected model uses exact decoding during validation selection. Structured training uses a pruned margin hinge plus0.1BCE; stack model adds2 sequence-only adjacent pair compatibility weights; both use exact validation selection. One seed; no new fitting, folding or test evaluation in this report."
+}

@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/long_population_training_data_runs/20261007T015712.108880Z",
+  "manifest_sha256": "af07b65590ad2af3e5688f165e077aa373f192137fe222651e416c4aba3a84ca",
+  "holdout_sources_read": false,
+  "test_sources_read": false,
+  "model_fitted": false,
+  "availability": "no_records_in_fixed_plan",
+  "maximum_raw_crw_training_length": 674,
+  "training_crw_member_count": 503,
+  "rows": [],
+  "extra_training": "/home/zyliu/Documents/rna-stable-ai/results/long_population_training_data_runs/20261007T015712.108880Z/extra_training.json",
+  "limitations": [
+    "Additional upstream training annotations only; the existing validation cohort remains unchanged.",
+    "Processed comparative annotations are not new experimental measurements.",
+    "Sequence/accession separation does not establish family/clan independence or generalization."
+  ]
+}

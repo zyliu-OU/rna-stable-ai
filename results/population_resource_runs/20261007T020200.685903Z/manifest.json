@@ -1,0 +1,49 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/population_resource_runs/20261007T020200.685903Z",
+  "lengths": [
+    1000,
+    5000,
+    10000
+  ],
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse",
+    "pair_features": "local_helix_context_v1"
+  },
+  "sampling": {
+    "seed": 20261006,
+    "negatives_per_positive": 32,
+    "minimum_negatives": 128,
+    "max_length": 10000
+  },
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/run_population_resource.py": "12ba17a2c5fb458d6d310b973ce18699b52cff609dbe3de25ef831ea9421380e",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/population_resource.py": "dc2f6388d69bda3587fe51d500e39faad1881f73e0483229b65987005f754cfd",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/population_sampling.py": "bfa94034557ac7018acdcbe2382865720c818316f8a01387668fe133f24b5b67",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/helix_pairs.py": "d4451dc21fe06cfec647e2deebfcc2d8a7d7462ce5b72ab4533425d6ee17723a",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/global_sparse_pairs.py": "9cd50c88b5d497ee9a6d8d4e6a6f6289977d9fff96e94a823b92b5bcb72c2dc7",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_pairs.py": "f103e56bb315e35ae2646ff33717b53d58f163464787893699129f28a2585756",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/process_guard.py": "999ad819c513e8dee29d9a69c00b4ebf67675ecc1872963cfe798a88b79f5b44",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/folding.py": "f8ab954544c5423115f1b12f8f252d4ea2319c1219220c1a881884cf25afa5f9"
+  },
+  "timeout_seconds": 180,
+  "memory_limit_gib": 8,
+  "policy": "Constructed nested reverse-complement labels; one sampled gradient/Adam step per length in separate bounded processes. No all-pair label enumeration, model checkpoint selection, biological accuracy or stability."
+}

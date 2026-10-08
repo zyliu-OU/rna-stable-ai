@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "payload": {
+    "binding_sha256": "f9b3dfe67b815bba9ab1afd9dffb78946df746a76fe8788fe7034e47c0116356",
+    "key": "compatibility_only_validation_input_0000",
+    "sequence_sha256": "635bbaa217c4f81dc510e70acd4d8f995513c51f9e7dc354c5349e27e5efdfa4",
+    "parameters": {
+      "command": [
+        "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+        "-m",
+        "rnastable.vienna_worker",
+        "37"
+      ],
+      "config": {
+        "beam_size": 100,
+        "finalist_timeout_seconds": 300,
+        "max_mutations": 16,
+        "memory_limit_gib": 4,
+        "min_improvement_kcal_mol": 0.1,
+        "pool_size": 16,
+        "preserve_protein": false,
+        "protected_positions": [
+          1,
+          2,
+          3
+        ],
+        "seed": 20261007,
+        "steps": 8,
+        "temperature_c": 37,
+        "timeout_seconds": 300
+      },
+      "cwd": null,
+      "device": "CPU",
+      "raw_output": "/home/zyliu/Documents/rna-stable-ai/results/helix_prior_replication_runs/20261007T023827.967339Z/snapshot/results/checkpoint_prior_pilot_runs/20261007T030004.032459Z/compatibility_only/validation_input_0000_ViennaRNA.txt",
+      "tool": "ViennaRNA"
+    },
+    "state": "started",
+    "started_at": "2026-10-07T03:05:29.747978+00:00",
+    "driver_pid": 1168
+  },
+  "payload_sha256": "1b436bbf4eceb9ad7b113847bf3b263d3887deffbfbc3a594b63b45e4fe64414"
+}

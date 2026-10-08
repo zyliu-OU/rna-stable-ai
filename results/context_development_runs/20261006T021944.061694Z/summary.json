@@ -1,0 +1,180 @@
+{
+  "complete": true,
+  "mode": "development_validation_only",
+  "test_evaluated": false,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/context_development_runs/20261006T021944.061694Z",
+  "manifest_sha256": "750a49c8324168eeadd56511ba7be5d5ea0d8084f8becd452503b0c417c8cb6c",
+  "config": {
+    "mode": "development_validation_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "max_pair_span": 64,
+    "decoder_threshold": 0
+  },
+  "counts": {
+    "train": 65,
+    "validation": 35
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "mean_train_loss": 0.8569812233631428,
+      "validation_mean_pair_f1": 0.09977711177711178,
+      "mean_validation_loss": 0.6045132977621895
+    },
+    {
+      "epoch": 2,
+      "mean_train_loss": 0.8059731538479145,
+      "validation_mean_pair_f1": 0.102000222000222,
+      "mean_validation_loss": 0.5857470486845289
+    },
+    {
+      "epoch": 3,
+      "mean_train_loss": 0.770392692547578,
+      "validation_mean_pair_f1": 0.1315196708053851,
+      "mean_validation_loss": 0.568591159582138
+    },
+    {
+      "epoch": 4,
+      "mean_train_loss": 0.7310928372236398,
+      "validation_mean_pair_f1": 0.13474728420580953,
+      "mean_validation_loss": 0.5525749342782157
+    },
+    {
+      "epoch": 5,
+      "mean_train_loss": 0.6570130329865675,
+      "validation_mean_pair_f1": 0.17847818847818847,
+      "mean_validation_loss": 0.5210746594837734
+    },
+    {
+      "epoch": 6,
+      "mean_train_loss": 0.6097377153543325,
+      "validation_mean_pair_f1": 0.18587766627240312,
+      "mean_validation_loss": 0.5351248145103454
+    },
+    {
+      "epoch": 7,
+      "mean_train_loss": 0.5881774966533367,
+      "validation_mean_pair_f1": 0.19225365903937333,
+      "mean_validation_loss": 0.4588864471231188
+    },
+    {
+      "epoch": 8,
+      "mean_train_loss": 0.5089848747620216,
+      "validation_mean_pair_f1": 0.19966640792424767,
+      "mean_validation_loss": 0.5141814913068499
+    },
+    {
+      "epoch": 9,
+      "mean_train_loss": 0.4957206315719164,
+      "validation_mean_pair_f1": 0.15926282711997,
+      "mean_validation_loss": 0.4754464881760733
+    },
+    {
+      "epoch": 10,
+      "mean_train_loss": 0.41646342323376584,
+      "validation_mean_pair_f1": 0.21773512713604878,
+      "mean_validation_loss": 0.43257240312440054
+    }
+  ],
+  "selected_epoch": 10,
+  "selected_validation_pair_f1": 0.21773512713604878,
+  "train_positive_pairs": 913,
+  "train_negative_pairs": 51287,
+  "train_only_positive_weight": 7.494941704246589,
+  "excluded_train_contacts": 210,
+  "excluded_validation_contacts": 208,
+  "parameters": 26097,
+  "encoder_receptive_field_nt": 91,
+  "exposure_events": [
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/context_development_runs/20261006T021944.061694Z/exposures/20261006T021944.063726Z.json",
+      "sha256": "3d58a2dfff7f38dc79219b8faa8a0a748765f01b240cd194d6378b1ba4ae90f2",
+      "stage": "training_started"
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/context_development_runs/20261006T021944.061694Z/exposures/20261006T021944.078771Z.json",
+      "sha256": "9c4a7013effc5d188090daf2655f3eb8f06839646f9c4c03b690c97ac29cb5d4",
+      "stage": "validation_started"
+    }
+  ],
+  "checkpoint_sha256": {
+    "initial_context_model.pt": "4f5a5f97197feaf2d147c996f4e4c963911474917ac6cfb3263980c9d71d405c",
+    "best_context_model.pt": "d2cf1a2e78c24502dc6024b4a0e768f722d34063335462330d51a3f9b9908ec5"
+  },
+  "predictions_sha256": "a1908c4b6b5a7b8629348915e68c6a594c50fd1aa00981f3ae06bdbe8a38d824",
+  "aggregates": [
+    {
+      "method": "trained_context",
+      "reference_kind": "computational",
+      "planned_inputs": 23,
+      "measured_inputs": 23,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 23
+      },
+      "mean_pair_precision": 0.02360248447204969,
+      "mean_pair_recall": 0.005374194173816102,
+      "mean_pair_f1": 0.008715688238829894
+    },
+    {
+      "method": "trained_context",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6934523809523809,
+      "mean_pair_recall": 0.578042328042328,
+      "mean_pair_f1": 0.6183557183557183
+    },
+    {
+      "method": "untrained_context",
+      "reference_kind": "computational",
+      "planned_inputs": 23,
+      "measured_inputs": 23,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 23
+      },
+      "mean_pair_precision": 0.013764906590993548,
+      "mean_pair_recall": 0.011412383870176712,
+      "mean_pair_f1": 0.012468288947610262
+    },
+    {
+      "method": "untrained_context",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.24662698412698414,
+      "mean_pair_recall": 0.1865079365079365,
+      "mean_pair_f1": 0.2111222111222111
+    }
+  ],
+  "limitations": [
+    "All development records are already exposed; no fresh test evaluation or test-driven checkpoint selection.",
+    "Combined PDB/comparative development labels; PDB family identities unresolved.",
+    "Fixed maximum pair span64 excludes longer contacts; no unrestricted long-RNA accuracy claim."
+  ]
+}

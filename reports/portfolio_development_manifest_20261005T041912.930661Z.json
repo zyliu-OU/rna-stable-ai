@@ -1,0 +1,32 @@
+{
+  "versions": {
+    "python": "3.12.14",
+    "executable": "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+    "RNA-StableAI": "0.1.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "biopython": "1.88",
+    "psutil": "7.2.2",
+    "tqdm": "4.70.1",
+    "pyyaml": "6.0.3",
+    "pytest": "9.1.1",
+    "matplotlib": "3.11.2",
+    "torch": "2.14.1+cu130",
+    "ViennaRNA": "2.7.2"
+  },
+  "commands_log": "reports/commands.jsonl",
+  "source_summary_sha256": "f955a57b903b4ead056535959ae70326a84a0684e89a2be216a1ecd707c53511",
+  "files": {
+    "src/rnastable/portfolio.py": "348f37767da06329635117b36c209bb0be8a78db6223fd0f04b512779831cf46",
+    "src/rnastable/cli.py": "19f1934fb4fa11e937c81af37d537e4a30542e0509029dd3d402f3ab11494897",
+    "scripts/verify_portfolio.py": "656c54d86dc01bd4c79efc1ddef794902681296f276d40ba27b7f099ed79af62",
+    "tests/test_portfolio.py": "684df332d654f19b4af3d42e3de823c291ed060151086354aa25a2c6d4d7e86a",
+    "README.md": "f94d1e3191be53c444181d1c5d8c31e77e1ff3d3296496091bf79f3fa4338f15"
+  },
+  "tests_passed": 137,
+  "portfolio_summary": "/home/zyliu/Documents/rna-stable-ai/results/portfolio_summary.json",
+  "integrity_regression": "/home/zyliu/Documents/rna-stable-ai/reports/verification_checks/portfolio_tamper_20261005T041912.021566Z",
+  "github_status": "These new development changes have not been pushed."
+}

@@ -1,0 +1,17 @@
+{
+  "repository": "zyliu-OU/rna-stable-ai",
+  "project": "RNA-StableAI",
+  "status": "work_in_progress",
+  "snapshot": "/home/zyliu/Documents/rna-stable-ai/exports/20261005T040714.078931Z/rna-stable-ai",
+  "commit": "9169b03895074637b320db3090c4495cbab22120",
+  "tracked_files": 4916,
+  "tests": "118 passed",
+  "secret_pattern_scan": "passed",
+  "evidence_integrity": "passed",
+  "upload_status": "blocked: error connecting to api.github.com",
+  "release_created": false,
+  "git_version": "git version 2.53.0",
+  "gh_version": "gh version 2.46.0 (2025-12-13 Ubuntu 2.46.0-4)",
+  "commands_log": "reports/commands.jsonl",
+  "publish_command": "./scripts/publish_github.sh exports/20261005T040714.078931Z/rna-stable-ai"
+}

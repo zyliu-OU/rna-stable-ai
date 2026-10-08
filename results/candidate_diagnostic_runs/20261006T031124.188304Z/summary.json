@@ -1,0 +1,119 @@
+{
+  "complete": true,
+  "test_evaluated": false,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/candidate_diagnostic_runs/20261006T031124.188304Z",
+  "manifest_sha256": "e8871a45200eaeb663f64947eb6e309111569ce11bf6d0dcc81a1f7e7cedf8d8",
+  "rows_sha256": "261da432a4eacd32067775ded6503d9da609683f749cbf1e10dcfe699db172c6",
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/candidate_diagnostic_runs/20261006T031124.188304Z/exposures/20261006T031124.189134Z.json",
+    "sha256": "4fa43e8760913bda365348b934e69ea44374a1ff2110362a7a8f079d6b3dbcb4",
+    "stage": "validation_started"
+  },
+  "groups": [
+    {
+      "method": "trained_expanded_sparse",
+      "group": "all",
+      "records": 47,
+      "reference_pairs": 2351,
+      "unsupported_reference_pairs": 7,
+      "nonpositive_reference_pairs": 1193,
+      "top_k_removed_reference_pairs": 222,
+      "decoder_omitted_reference_pairs": 762,
+      "retained_reference_recall": 0.6643282217973858,
+      "oracle_candidate_f1_upper_bound": 0.7574771609091185,
+      "decoded_pair_f1": 0.20857850721519425
+    },
+    {
+      "method": "trained_expanded_sparse",
+      "group": "PDB-derived annotation",
+      "records": 12,
+      "reference_pairs": 107,
+      "unsupported_reference_pairs": 0,
+      "nonpositive_reference_pairs": 7,
+      "top_k_removed_reference_pairs": 2,
+      "decoder_omitted_reference_pairs": 46,
+      "retained_reference_recall": 0.9659090909090909,
+      "oracle_candidate_f1_upper_bound": 0.9785714285714286,
+      "decoded_pair_f1": 0.5622727175358754
+    },
+    {
+      "method": "trained_expanded_sparse",
+      "group": "Rfam comparative",
+      "records": 23,
+      "reference_pairs": 623,
+      "unsupported_reference_pairs": 0,
+      "nonpositive_reference_pairs": 144,
+      "top_k_removed_reference_pairs": 28,
+      "decoder_omitted_reference_pairs": 391,
+      "retained_reference_recall": 0.7310310921819297,
+      "oracle_candidate_f1_upper_bound": 0.8402134434751342,
+      "decoded_pair_f1": 0.10762048692752478
+    },
+    {
+      "method": "trained_expanded_sparse",
+      "group": "CRW comparative",
+      "records": 12,
+      "reference_pairs": 1621,
+      "unsupported_reference_pairs": 7,
+      "nonpositive_reference_pairs": 1042,
+      "top_k_removed_reference_pairs": 192,
+      "decoder_omitted_reference_pairs": 325,
+      "retained_reference_recall": 0.23490018444863806,
+      "oracle_candidate_f1_upper_bound": 0.3778050183286114,
+      "decoded_pair_f1": 0.04838716911254617
+    },
+    {
+      "method": "trained_sampled_sparse",
+      "group": "all",
+      "records": 47,
+      "reference_pairs": 2351,
+      "unsupported_reference_pairs": 7,
+      "nonpositive_reference_pairs": 990,
+      "top_k_removed_reference_pairs": 385,
+      "decoder_omitted_reference_pairs": 806,
+      "retained_reference_recall": 0.5022739143257683,
+      "oracle_candidate_f1_upper_bound": 0.6500046183577534,
+      "decoded_pair_f1": 0.20172616105030025
+    },
+    {
+      "method": "trained_sampled_sparse",
+      "group": "PDB-derived annotation",
+      "records": 12,
+      "reference_pairs": 107,
+      "unsupported_reference_pairs": 0,
+      "nonpositive_reference_pairs": 36,
+      "top_k_removed_reference_pairs": 0,
+      "decoder_omitted_reference_pairs": 22,
+      "retained_reference_recall": 0.7479256854256854,
+      "oracle_candidate_f1_upper_bound": 0.8359188197423492,
+      "decoded_pair_f1": 0.5815512095117358
+    },
+    {
+      "method": "trained_sampled_sparse",
+      "group": "Rfam comparative",
+      "records": 23,
+      "reference_pairs": 623,
+      "unsupported_reference_pairs": 0,
+      "nonpositive_reference_pairs": 353,
+      "top_k_removed_reference_pairs": 3,
+      "decoder_omitted_reference_pairs": 230,
+      "retained_reference_recall": 0.4322644305673443,
+      "oracle_candidate_f1_upper_bound": 0.599622848317183,
+      "decoded_pair_f1": 0.07731531795060397
+    },
+    {
+      "method": "trained_sampled_sparse",
+      "group": "CRW comparative",
+      "records": 12,
+      "reference_pairs": 1621,
+      "unsupported_reference_pairs": 7,
+      "nonpositive_reference_pairs": 601,
+      "top_k_removed_reference_pairs": 382,
+      "decoder_omitted_reference_pairs": 554,
+      "retained_reference_recall": 0.3908069870961637,
+      "oracle_candidate_f1_upper_bound": 0.560655476217584,
+      "decoded_pair_f1": 0.06035522852994927
+    }
+  ],
+  "interpretation": "Reference-informed diagnostic on already exposed development records. Oracle candidate upper bounds are not predictions. No fitting, fresh test or threshold selection."
+}

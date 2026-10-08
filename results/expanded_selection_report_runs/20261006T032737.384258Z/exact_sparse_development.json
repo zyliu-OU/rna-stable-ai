@@ -1,0 +1,207 @@
+{
+  "complete": true,
+  "test_evaluated": false,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/exact_sparse_development_runs/20261006T031402.945440Z",
+  "manifest_sha256": "b61fb26c17556f3b7d5a4476b493f0e0b0e2d53b19097c66ea013fb59ff7cf1e",
+  "rows_sha256": "bd1bcec7544286c23c66bf1fb92b5c38612a5b42cda0fd91574723010fa63a8b",
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/exact_sparse_development_runs/20261006T031402.945440Z/exposures/20261006T031402.946085Z.json",
+    "sha256": "f1c7077e862f5af9ca36e826024e85fa00591303a9828bb9e073492eb9171259",
+    "stage": "validation_started"
+  },
+  "groups": [
+    {
+      "model": "trained_expanded_sparse",
+      "group": "all",
+      "decoder": "greedy",
+      "records": 47,
+      "mean_pair_f1": 0.1407018641905426,
+      "mean_objective": 29.45641081447297
+    },
+    {
+      "model": "trained_expanded_sparse",
+      "group": "all",
+      "decoder": "refined",
+      "records": 47,
+      "mean_pair_f1": 0.20857850721519425,
+      "mean_objective": 33.740908401443605
+    },
+    {
+      "model": "trained_expanded_sparse",
+      "group": "all",
+      "decoder": "exact_sparse",
+      "records": 47,
+      "mean_pair_f1": 0.342535080846632,
+      "mean_objective": 40.060072577063075
+    },
+    {
+      "model": "trained_expanded_sparse",
+      "group": "PDB-derived annotation",
+      "decoder": "greedy",
+      "records": 12,
+      "mean_pair_f1": 0.3838841713841714,
+      "mean_objective": 24.443362119297188
+    },
+    {
+      "model": "trained_expanded_sparse",
+      "group": "PDB-derived annotation",
+      "decoder": "refined",
+      "records": 12,
+      "mean_pair_f1": 0.5622727175358754,
+      "mean_objective": 28.470229104161263
+    },
+    {
+      "model": "trained_expanded_sparse",
+      "group": "PDB-derived annotation",
+      "decoder": "exact_sparse",
+      "records": 12,
+      "mean_pair_f1": 0.6806178026766262,
+      "mean_objective": 31.97589456786712
+    },
+    {
+      "model": "trained_expanded_sparse",
+      "group": "Rfam comparative",
+      "decoder": "greedy",
+      "records": 23,
+      "mean_pair_f1": 0.07265295628779263,
+      "mean_objective": 27.24666307218697
+    },
+    {
+      "model": "trained_expanded_sparse",
+      "group": "Rfam comparative",
+      "decoder": "refined",
+      "records": 23,
+      "mean_pair_f1": 0.10762048692752478,
+      "mean_objective": 31.406381054416947
+    },
+    {
+      "model": "trained_expanded_sparse",
+      "group": "Rfam comparative",
+      "decoder": "exact_sparse",
+      "records": 23,
+      "mean_pair_f1": 0.29725327247702216,
+      "mean_objective": 38.120016268414
+    },
+    {
+      "model": "trained_expanded_sparse",
+      "group": "CRW comparative",
+      "decoder": "greedy",
+      "records": 12,
+      "mean_pair_f1": 0.027946630477184587,
+      "mean_objective": 38.704809349030256
+    },
+    {
+      "model": "trained_expanded_sparse",
+      "group": "CRW comparative",
+      "decoder": "refined",
+      "records": 12,
+      "mean_pair_f1": 0.04838716911254617,
+      "mean_objective": 43.486098447193704
+    },
+    {
+      "model": "trained_expanded_sparse",
+      "group": "CRW comparative",
+      "decoder": "exact_sparse",
+      "records": 12,
+      "mean_pair_f1": 0.09124249172505657,
+      "mean_objective": 51.86269184450308
+    },
+    {
+      "model": "trained_sampled_sparse",
+      "group": "all",
+      "decoder": "greedy",
+      "records": 47,
+      "mean_pair_f1": 0.16892827657306964,
+      "mean_objective": 39.62177299232559
+    },
+    {
+      "model": "trained_sampled_sparse",
+      "group": "all",
+      "decoder": "refined",
+      "records": 47,
+      "mean_pair_f1": 0.20172616105030025,
+      "mean_objective": 43.46458495059546
+    },
+    {
+      "model": "trained_sampled_sparse",
+      "group": "all",
+      "decoder": "exact_sparse",
+      "records": 47,
+      "mean_pair_f1": 0.23460531347731278,
+      "mean_objective": 47.61734664709644
+    },
+    {
+      "model": "trained_sampled_sparse",
+      "group": "PDB-derived annotation",
+      "decoder": "greedy",
+      "records": 12,
+      "mean_pair_f1": 0.5154780805709599,
+      "mean_objective": 17.634390644729137
+    },
+    {
+      "model": "trained_sampled_sparse",
+      "group": "PDB-derived annotation",
+      "decoder": "refined",
+      "records": 12,
+      "mean_pair_f1": 0.5815512095117358,
+      "mean_objective": 18.17781274020672
+    },
+    {
+      "model": "trained_sampled_sparse",
+      "group": "PDB-derived annotation",
+      "decoder": "exact_sparse",
+      "records": 12,
+      "mean_pair_f1": 0.6315505565699064,
+      "mean_objective": 18.50049811353286
+    },
+    {
+      "model": "trained_sampled_sparse",
+      "group": "Rfam comparative",
+      "decoder": "greedy",
+      "records": 23,
+      "mean_pair_f1": 0.058790993715267054,
+      "mean_objective": 28.4840658252006
+    },
+    {
+      "model": "trained_sampled_sparse",
+      "group": "Rfam comparative",
+      "decoder": "refined",
+      "records": 23,
+      "mean_pair_f1": 0.07731531795060397,
+      "mean_objective": 30.884919025651786
+    },
+    {
+      "model": "trained_sampled_sparse",
+      "group": "Rfam comparative",
+      "decoder": "exact_sparse",
+      "records": 23,
+      "mean_pair_f1": 0.09919659083689489,
+      "mean_objective": 33.19801564903363
+    },
+    {
+      "model": "trained_sampled_sparse",
+      "group": "CRW comparative",
+      "decoder": "greedy",
+      "records": 12,
+      "mean_pair_f1": 0.033474931385967736,
+      "mean_objective": 82.95642741024494
+    },
+    {
+      "model": "trained_sampled_sparse",
+      "group": "CRW comparative",
+      "decoder": "refined",
+      "records": 12,
+      "mean_pair_f1": 0.06035522852994927,
+      "mean_objective": 92.86238351712625
+    },
+    {
+      "model": "trained_sampled_sparse",
+      "group": "CRW comparative",
+      "decoder": "exact_sparse",
+      "records": 12,
+      "mean_pair_f1": 0.09719345544552005,
+      "mean_objective": 104.37124626028042
+    }
+  ],
+  "interpretation": "Identical exposed development records and candidates. Exact maximum summed logits under noncrossing constraints, not maximum label agreement or unrestricted pair search. Bounded to1024 nt/64 candidates per endpoint. No fitting or fresh test."
+}

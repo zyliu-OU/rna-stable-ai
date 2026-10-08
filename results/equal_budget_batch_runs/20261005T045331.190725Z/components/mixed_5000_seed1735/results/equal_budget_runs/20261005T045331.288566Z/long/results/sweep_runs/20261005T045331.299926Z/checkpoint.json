@@ -1,0 +1,42 @@
+{
+  "completed_jobs": 1,
+  "rows": [
+    {
+      "job_id": "mixed_5000_seq1735_search2740_beam200",
+      "kind": "mixed",
+      "length": 5000,
+      "sequence_seed": 1735,
+      "search_seed": 2740,
+      "beam_size": 200,
+      "status": "validated",
+      "input_sha256": "1b2611a1f82ae6561e5bc1b0055adb8e01ac65e1be550c7648de942251bac450",
+      "reference_reused": false,
+      "reference_wall_seconds": 24.20758336599829,
+      "search_wall_seconds": 134.63244038099947,
+      "finalist_sha256": "73efba88d647e0f4c03972f7f5986cb26d56278623e956fd017dbf0d47b4b68c",
+      "finalist_fasta": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_5000_seed1735/results/equal_budget_runs/20261005T045331.288566Z/long/results/sweep_runs/20261005T045331.299926Z/jobs/mixed_5000_seq1735_search2740_beam200/20261005T045355.512685Z/finalist.fasta",
+      "constraints_passed": true,
+      "steps_attempted": 32,
+      "accepted_steps": 11,
+      "failed_proposals": 0,
+      "mutations_from_input": 22,
+      "input_lf_wall_seconds": 4.122595038999862,
+      "linearfold_delta_kcal_mol": -29.799999999999955,
+      "input_pair_f1": 0.7281163006495515,
+      "input_energy_gap_kcal_mol": 11.200000000000045,
+      "finalist_validation_wall_seconds": 24.307175329995516,
+      "vienna_delta_kcal_mol": -27.0,
+      "vienna_delta_kcal_mol_per_nt": -0.0054,
+      "vienna_improvement_confirmed": true,
+      "finalist_pair_f1": 0.6133909287257019,
+      "finalist_energy_gap_kcal_mol": 8.400000000000091,
+      "selected_fasta": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_5000_seed1735/results/equal_budget_runs/20261005T045331.288566Z/long/results/sweep_runs/20261005T045331.299926Z/jobs/mixed_5000_seq1735_search2740_beam200/20261005T045355.512685Z/selected.fasta",
+      "selected_sha256": "73efba88d647e0f4c03972f7f5986cb26d56278623e956fd017dbf0d47b4b68c",
+      "selected_mutations_from_input": 22,
+      "selection_source": "finalist",
+      "selection_reason": "confirmed_improvement",
+      "selected_vienna_delta_kcal_mol": -27.0,
+      "summary_path": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_5000_seed1735/results/equal_budget_runs/20261005T045331.288566Z/long/results/sweep_runs/20261005T045331.299926Z/jobs/mixed_5000_seq1735_search2740_beam200/20261005T045355.512685Z/summary.json"
+    }
+  ]
+}

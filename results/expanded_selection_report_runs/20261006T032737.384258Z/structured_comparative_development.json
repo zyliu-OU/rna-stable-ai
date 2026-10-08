@@ -1,0 +1,193 @@
+{
+  "complete": true,
+  "mode": "long_comparative_development_only",
+  "test_evaluated": false,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/structured_comparative_development_runs/20261006T032540.594773Z",
+  "manifest_sha256": "a6649a8066b67631cc077889cb5fbb74ac06f218882d268ed3f4f9c44aef3fe9",
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse",
+    "structured_loss": {
+      "top_k": 16,
+      "margin": 1.0,
+      "bce_coefficient": 0.1,
+      "validation_loss": "full_weighted_bce",
+      "normalizer": "supported_gold_count"
+    }
+  },
+  "counts": {
+    "train": 89,
+    "validation": 47
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "mean_train_loss": 2.7245397209633753,
+      "validation_mean_pair_f1": 0.2563846685463515,
+      "mean_validation_loss": 2.738285810389417
+    },
+    {
+      "epoch": 2,
+      "mean_train_loss": 2.4722650038445853,
+      "validation_mean_pair_f1": 0.31288613175669067,
+      "mean_validation_loss": 2.796884942562022
+    },
+    {
+      "epoch": 3,
+      "mean_train_loss": 2.318209340346639,
+      "validation_mean_pair_f1": 0.2980908368048752,
+      "mean_validation_loss": 2.7035125189639153
+    },
+    {
+      "epoch": 4,
+      "mean_train_loss": 2.2019047770149554,
+      "validation_mean_pair_f1": 0.25266494525884603,
+      "mean_validation_loss": 2.7685526482602385
+    },
+    {
+      "epoch": 5,
+      "mean_train_loss": 2.083138741600516,
+      "validation_mean_pair_f1": 0.2785978232781272,
+      "mean_validation_loss": 2.8443039123048175
+    },
+    {
+      "epoch": 6,
+      "mean_train_loss": 1.9255445596482772,
+      "validation_mean_pair_f1": 0.24288074983149618,
+      "mean_validation_loss": 2.744743430868108
+    },
+    {
+      "epoch": 7,
+      "mean_train_loss": 1.802598435667976,
+      "validation_mean_pair_f1": 0.22351570357871306,
+      "mean_validation_loss": 2.7753544284942304
+    },
+    {
+      "epoch": 8,
+      "mean_train_loss": 1.7028565664231494,
+      "validation_mean_pair_f1": 0.26282151954245647,
+      "mean_validation_loss": 2.8441449048671315
+    },
+    {
+      "epoch": 9,
+      "mean_train_loss": 1.610228367571253,
+      "validation_mean_pair_f1": 0.23554870113953313,
+      "mean_validation_loss": 2.895218735045575
+    },
+    {
+      "epoch": 10,
+      "mean_train_loss": 1.4420562913398165,
+      "validation_mean_pair_f1": 0.21508066948839982,
+      "mean_validation_loss": 3.1838832916097437
+    }
+  ],
+  "selected_epoch": 2,
+  "selected_validation_pair_f1": 0.31288613175669067,
+  "train_positive_pairs": 4462,
+  "train_negative_pairs": 1180545,
+  "train_only_positive_weight": 264.57754370237564,
+  "excluded_train_contacts": 26,
+  "excluded_validation_contacts": 7,
+  "parameters": 25874,
+  "encoder_receptive_field_nt": 91,
+  "checkpoint_sha256": {
+    "initial_context_model.pt": "c66aef2bc8897e3ffac20af6d335f1b46a327e01a220f98030d7bf09440e1a75",
+    "best_context_model.pt": "e0874bfdbe510eb073e0c99417be0a474db28955683c1c87407d97d762559686"
+  },
+  "exposure_events": [
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/structured_comparative_development_runs/20261006T032540.594773Z/exposures/20261006T032540.595990Z.json",
+      "sha256": "3ce27ed343877b442b62268ebf4e167c106a67362ff47270a8cb12f85a70129b",
+      "stage": "training_started"
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/structured_comparative_development_runs/20261006T032540.594773Z/exposures/20261006T032540.611326Z.json",
+      "sha256": "34616ba912428515fda07507b082596d508beda9ce823adb4ac6415cc0d3be11",
+      "stage": "validation_started"
+    }
+  ],
+  "loss_decisions_sha256": "933de7ea932ea1d01cac7cf4f8057b847064ea9f835f0b79a8146a2486d188ae",
+  "training_decisions": 890,
+  "predictions_sha256": "690b5f6a577a772e43fe09950ed2ef1d9f1faedd5816f1d3d47bff8f76ae6eae",
+  "aggregates": [
+    {
+      "method": "trained_structured_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.2007329204332946,
+      "mean_pair_recall": 0.23841047791670802,
+      "mean_pair_f1": 0.2165821636848313
+    },
+    {
+      "method": "trained_structured_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.5546477596477596,
+      "mean_pair_recall": 0.6411135161135161,
+      "mean_pair_f1": 0.5937727052996139
+    },
+    {
+      "method": "untrained_structured_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.060399103400330945,
+      "mean_pair_recall": 0.06777999250591034,
+      "mean_pair_f1": 0.06382743292847529
+    },
+    {
+      "method": "untrained_structured_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.3075727513227513,
+      "mean_pair_recall": 0.3611111111111111,
+      "mean_pair_f1": 0.33154372860255216
+    }
+  ],
+  "limitations": [
+    "Pruned structured objective, not full-graph SVM optimization or a calibrated energy.",
+    "One seed, exposed validation and approximate candidate pruning; no independent generalization claim.",
+    "Gold and margin augmentation are training-only; prediction uses unaugmented positive top16 candidates.",
+    "Exact sparse inference bounded to1024 nt; comparative annotations are not new experimental assays."
+  ]
+}

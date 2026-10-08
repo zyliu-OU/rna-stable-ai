@@ -1,0 +1,6 @@
+method,reference_kind,planned_inputs,measured_inputs,missing_inputs,failed_inputs,status_counts,mean_pair_precision,mean_pair_recall,mean_pair_f1
+LinearFold,computational,12,12,0,0,{'ok': 12},0.41200771464519154,0.5804518339254415,0.47994718111707635
+ViennaRNA,computational,12,12,0,0,{'ok': 12},0.4100037126505623,0.5789457601154462,0.4780596903544601
+all_unpaired,computational,12,12,0,0,{'ok': 12},0.0,0.0,0.0
+trained_context,computational,12,12,0,0,{'ok': 12},0.0033005189255189255,0.004070783405954975,0.003643045940328309
+untrained_context,computational,12,12,0,0,{'ok': 12},0.004395955661778447,0.0051124500726216415,0.0047127108236874595

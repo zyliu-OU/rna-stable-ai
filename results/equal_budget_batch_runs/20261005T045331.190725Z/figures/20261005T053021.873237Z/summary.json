@@ -1,0 +1,53 @@
+{
+  "mode": "audited_equal_budget_cost_report",
+  "source_summary": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_long_summary.json",
+  "source_summary_sha256": "99a230727266ef94535a300066537eafbd1b4b3c8c3936244efbff509c248ec9",
+  "versions": {
+    "python": "3.12.14",
+    "executable": "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+    "RNA-StableAI": "0.1.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "biopython": "1.88",
+    "psutil": "7.2.2",
+    "tqdm": "4.70.1",
+    "pyyaml": "6.0.3",
+    "pytest": "9.1.1",
+    "matplotlib": "3.11.2",
+    "torch": "2.14.1+cu130",
+    "ViennaRNA": "2.7.2"
+  },
+  "totals": {
+    "long": {
+      "searches": 4,
+      "validated_candidates": 4,
+      "planned_proposals": 128,
+      "attempted_proposals": 128,
+      "search_wall_seconds": 836.5606279950007,
+      "reference_wall_seconds": 314.2285843159916,
+      "validation_wall_seconds": 318.8319724059911,
+      "baseline_fold_requests": 4,
+      "proposals_fold_requests": 128,
+      "reference_fold_requests": 4,
+      "validation_fold_requests": 4
+    },
+    "restarts": {
+      "searches": 16,
+      "validated_candidates": 16,
+      "planned_proposals": 128,
+      "attempted_proposals": 128,
+      "search_wall_seconds": 915.4188578950052,
+      "reference_wall_seconds": 309.7154671190001,
+      "validation_wall_seconds": 1212.565203154998,
+      "baseline_fold_requests": 16,
+      "proposals_fold_requests": 128,
+      "reference_fold_requests": 4,
+      "validation_fold_requests": 16
+    }
+  },
+  "figure": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/figures/20261005T053021.873237Z/equal_budget.png",
+  "figure_sha256": "14b51a2d33d0af85adc45c1cebf20ed01a0e487d014123f7e07f2bf86fe42e29",
+  "timing_scope": "Sum of search (including baseline), nonreused input references and finalist validations; excludes plotting/reporting/driver overhead. One observation per request; no speedup claim. Concurrent CPU wall times include contention; not isolated benchmark timing."
+}

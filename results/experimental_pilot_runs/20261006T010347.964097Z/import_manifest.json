@@ -1,0 +1,322 @@
+{
+  "source_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/input_data.zip": "e9b1b8734e43b1211b9aca47b35dbaf82e9c91667fb1ff97ea8e0d41143ecbe6",
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/datasets_in_fasta_form/train_datasets/S-Processed-TRA.fasta": "4f80e64e779421fc1d22323e3655d272f4a69687fc44338315cd67fe34f656d7",
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/datasets_in_fasta_form/holdout_datasets/S-Processed-VAL.fasta": "22e208ac0867af92ec1ee404d242def048ac3dab125a282141b05b483ce8d02c",
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/datasets_in_fasta_form/test_datasets/S-Processed-TES.fasta": "0d7183166f63df65d23bfc453c8f042d4625296d4a24f57722b1dfff2759be29"
+  },
+  "rejected": [
+    {
+      "id": "train_PDB_00014",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00028",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00051",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00066",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00069",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00087",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00089",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00097",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00103",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00111",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00114",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00117",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00118",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00131",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00146",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00151",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00180",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00187",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00191",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00210",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00225",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00226",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00231",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "train_PDB_00233",
+      "split": "train",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "validation_PDB_00007",
+      "split": "validation",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "validation_PDB_00024",
+      "split": "validation",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "validation_PDB_00029",
+      "split": "validation",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "validation_PDB_00068",
+      "split": "validation",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "validation_PDB_00091",
+      "split": "validation",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "validation_PDB_00100",
+      "split": "validation",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "validation_PDB_00147",
+      "split": "validation",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "validation_PDB_00232",
+      "split": "validation",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "test_PDB_00008",
+      "split": "test",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "test_PDB_00015",
+      "split": "test",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "test_PDB_00016",
+      "split": "test",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "test_PDB_00216",
+      "split": "test",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "test_PDB_00227",
+      "split": "test",
+      "reason": "Outside prespecified pilot length range"
+    },
+    {
+      "id": "test_PDB_00173",
+      "split": "test",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "test_PDB_00141"
+    },
+    {
+      "id": "test_PDB_00187",
+      "split": "test",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "test_PDB_00029"
+    },
+    {
+      "id": "test_PDB_00194",
+      "split": "test",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "test_PDB_00159"
+    },
+    {
+      "id": "validation_PDB_00065",
+      "split": "validation",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "test_PDB_00004"
+    },
+    {
+      "id": "validation_PDB_00081",
+      "split": "validation",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "validation_PDB_00019"
+    },
+    {
+      "id": "train_PDB_00012",
+      "split": "train",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "train_PDB_00010"
+    },
+    {
+      "id": "train_PDB_00022",
+      "split": "train",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "validation_PDB_00160"
+    },
+    {
+      "id": "train_PDB_00029",
+      "split": "train",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "test_PDB_00029"
+    },
+    {
+      "id": "train_PDB_00040",
+      "split": "train",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "validation_PDB_00049"
+    },
+    {
+      "id": "train_PDB_00043",
+      "split": "train",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "test_PDB_00042"
+    },
+    {
+      "id": "train_PDB_00045",
+      "split": "train",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "test_PDB_00095"
+    },
+    {
+      "id": "train_PDB_00058",
+      "split": "train",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "train_PDB_00057"
+    },
+    {
+      "id": "train_PDB_00075",
+      "split": "train",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "validation_PDB_00019"
+    },
+    {
+      "id": "train_PDB_00098",
+      "split": "train",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "validation_PDB_00201"
+    },
+    {
+      "id": "train_PDB_00133",
+      "split": "train",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "train_PDB_00124"
+    },
+    {
+      "id": "train_PDB_00150",
+      "split": "train",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "train_PDB_00057"
+    },
+    {
+      "id": "train_PDB_00154",
+      "split": "train",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "train_PDB_00107"
+    },
+    {
+      "id": "train_PDB_00183",
+      "split": "train",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "test_PDB_00185"
+    },
+    {
+      "id": "train_PDB_00237",
+      "split": "train",
+      "reason": "accession_or_sequence_overlap",
+      "retained_id": "train_PDB_00121"
+    }
+  ],
+  "candidate_counts": {
+    "train": 55,
+    "validation": 14,
+    "test": 19
+  },
+  "retained_counts": {
+    "test": 16,
+    "validation": 12,
+    "train": 41
+  },
+  "policy": "upstream_splits_test_priority_one_accession_and_symmetric_sequencematcher_filter_v1",
+  "similarity_threshold": 0.8,
+  "interpretation": "Processed PDB-derived annotations, not raw experimental pair measurements; sequence heuristic does not establish RNA-family independence."
+}

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+    "scripts/verify_portfolio.py",
+    "--summary",
+    "reports/verification_checks/portfolio_tamper_20261005T041912.021566Z/portfolio_summary.json"
+  ],
+  "untampered_exit": 0,
+  "tampered_exit": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"/home/zyliu/Documents/rna-stable-ai/scripts/verify_portfolio.py\", line 104, in <module>\n    main()\n  File \"/home/zyliu/Documents/rna-stable-ai/scripts/verify_portfolio.py\", line 83, in main\n    assert len(records) == 1 and records[0][1] == expected\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

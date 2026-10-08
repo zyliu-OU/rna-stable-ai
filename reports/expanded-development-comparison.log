@@ -1,0 +1,582 @@
+Development baseline ViennaRNA: validation_PDB_00002: ok
+Development baseline LinearFold: validation_PDB_00002: ok
+Development baseline ViennaRNA: validation_PDB_00019: ok
+Development baseline LinearFold: validation_PDB_00019: ok
+Development baseline ViennaRNA: validation_PDB_00049: ok
+Development baseline LinearFold: validation_PDB_00049: ok
+Development baseline ViennaRNA: validation_PDB_00108: ok
+Development baseline LinearFold: validation_PDB_00108: ok
+Development baseline ViennaRNA: validation_PDB_00130: ok
+Development baseline LinearFold: validation_PDB_00130: ok
+Development baseline ViennaRNA: validation_PDB_00149: ok
+Development baseline LinearFold: validation_PDB_00149: ok
+Development baseline ViennaRNA: validation_PDB_00160: ok
+Development baseline LinearFold: validation_PDB_00160: ok
+Development baseline ViennaRNA: validation_PDB_00169: ok
+Development baseline LinearFold: validation_PDB_00169: ok
+Development baseline ViennaRNA: validation_PDB_00178: ok
+Development baseline LinearFold: validation_PDB_00178: ok
+Development baseline ViennaRNA: validation_PDB_00182: ok
+Development baseline LinearFold: validation_PDB_00182: ok
+Development baseline ViennaRNA: validation_PDB_00187: ok
+Development baseline LinearFold: validation_PDB_00187: ok
+Development baseline ViennaRNA: validation_PDB_00201: ok
+Development baseline LinearFold: validation_PDB_00201: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_RFA_00476: ok
+Development baseline LinearFold: input_data_StructureData_holdout_RFA_00476: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_RFA_00508: ok
+Development baseline LinearFold: input_data_StructureData_holdout_RFA_00508: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_RFA_00510: ok
+Development baseline LinearFold: input_data_StructureData_holdout_RFA_00510: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_RFA_00511: ok
+Development baseline LinearFold: input_data_StructureData_holdout_RFA_00511: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_RFA_00518: ok
+Development baseline LinearFold: input_data_StructureData_holdout_RFA_00518: ok
+Development baseline ViennaRNA: input_data_StructureData_test_RFA_00473: ok
+Development baseline LinearFold: input_data_StructureData_test_RFA_00473: ok
+Development baseline ViennaRNA: input_data_StructureData_test_RFA_00480: ok
+Development baseline LinearFold: input_data_StructureData_test_RFA_00480: ok
+Development baseline ViennaRNA: input_data_StructureData_test_RFA_00486: ok
+Development baseline LinearFold: input_data_StructureData_test_RFA_00486: ok
+Development baseline ViennaRNA: input_data_StructureData_test_RFA_00488: ok
+Development baseline LinearFold: input_data_StructureData_test_RFA_00488: ok
+Development baseline ViennaRNA: input_data_StructureData_test_RFA_00490: ok
+Development baseline LinearFold: input_data_StructureData_test_RFA_00490: ok
+Development baseline ViennaRNA: input_data_StructureData_test_RFA_00493: ok
+Development baseline LinearFold: input_data_StructureData_test_RFA_00493: ok
+Development baseline ViennaRNA: input_data_StructureData_test_RFA_00495: ok
+Development baseline LinearFold: input_data_StructureData_test_RFA_00495: ok
+Development baseline ViennaRNA: input_data_StructureData_test_RFA_00496: ok
+Development baseline LinearFold: input_data_StructureData_test_RFA_00496: ok
+Development baseline ViennaRNA: input_data_StructureData_test_RFA_00512: ok
+Development baseline LinearFold: input_data_StructureData_test_RFA_00512: ok
+Development baseline ViennaRNA: input_data_StructureData_test_RFA_00515: ok
+Development baseline LinearFold: input_data_StructureData_test_RFA_00515: ok
+Development baseline ViennaRNA: input_data_StructureData_train_RFA_00474: ok
+Development baseline LinearFold: input_data_StructureData_train_RFA_00474: ok
+Development baseline ViennaRNA: input_data_StructureData_train_RFA_00477: ok
+Development baseline LinearFold: input_data_StructureData_train_RFA_00477: ok
+Development baseline ViennaRNA: input_data_StructureData_train_RFA_00479: ok
+Development baseline LinearFold: input_data_StructureData_train_RFA_00479: ok
+Development baseline ViennaRNA: input_data_StructureData_train_RFA_00481: ok
+Development baseline LinearFold: input_data_StructureData_train_RFA_00481: ok
+Development baseline ViennaRNA: input_data_StructureData_train_RFA_00482: ok
+Development baseline LinearFold: input_data_StructureData_train_RFA_00482: ok
+Development baseline ViennaRNA: input_data_StructureData_train_RFA_00483: ok
+Development baseline LinearFold: input_data_StructureData_train_RFA_00483: ok
+Development baseline ViennaRNA: input_data_StructureData_train_RFA_00492: ok
+Development baseline LinearFold: input_data_StructureData_train_RFA_00492: ok
+Development baseline ViennaRNA: input_data_StructureData_train_RFA_00507: ok
+Development baseline LinearFold: input_data_StructureData_train_RFA_00507: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_CRW_00002: ok
+Development baseline LinearFold: input_data_StructureData_holdout_CRW_00002: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_CRW_00012: ok
+Development baseline LinearFold: input_data_StructureData_holdout_CRW_00012: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_CRW_00045: ok
+Development baseline LinearFold: input_data_StructureData_holdout_CRW_00045: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_CRW_00050: ok
+Development baseline LinearFold: input_data_StructureData_holdout_CRW_00050: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_CRW_00051: ok
+Development baseline LinearFold: input_data_StructureData_holdout_CRW_00051: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_CRW_00061: ok
+Development baseline LinearFold: input_data_StructureData_holdout_CRW_00061: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_CRW_00063: ok
+Development baseline LinearFold: input_data_StructureData_holdout_CRW_00063: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_CRW_00074: ok
+Development baseline LinearFold: input_data_StructureData_holdout_CRW_00074: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_CRW_00082: ok
+Development baseline LinearFold: input_data_StructureData_holdout_CRW_00082: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_CRW_00098: ok
+Development baseline LinearFold: input_data_StructureData_holdout_CRW_00098: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_CRW_00100: ok
+Development baseline LinearFold: input_data_StructureData_holdout_CRW_00100: ok
+Development baseline ViennaRNA: input_data_StructureData_holdout_CRW_00101: ok
+Development baseline LinearFold: input_data_StructureData_holdout_CRW_00101: ok
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/expanded_comparison_runs/20261006T030945.216172Z/results/reference_runs/20261006T030952.701916Z",
+  "dataset_id": "expanded_comparative_validation",
+  "aggregates": [
+    {
+      "method": "LinearFold",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.6127480097793995,
+      "mean_pair_recall": 0.6992574388254995,
+      "mean_pair_f1": 0.6527075781904216
+    },
+    {
+      "method": "LinearFold",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.8980218855218856,
+      "mean_pair_recall": 0.9318181818181818,
+      "mean_pair_f1": 0.9138701254026332
+    },
+    {
+      "method": "ViennaRNA",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.6109162638107525,
+      "mean_pair_recall": 0.6966687163308336,
+      "mean_pair_f1": 0.6505401656217784
+    },
+    {
+      "method": "ViennaRNA",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.8980218855218856,
+      "mean_pair_recall": 0.9318181818181818,
+      "mean_pair_f1": 0.9138701254026332
+    },
+    {
+      "method": "all_unpaired",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "method": "all_unpaired",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "method": "trained_expanded_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.10718499539030446,
+      "mean_pair_recall": 0.0770739473290805,
+      "mean_pair_f1": 0.0873119208195321
+    },
+    {
+      "method": "trained_expanded_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.5499999999999999,
+      "mean_pair_recall": 0.5849867724867724,
+      "mean_pair_f1": 0.5622727175358754
+    },
+    {
+      "method": "trained_sampled_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.09064273429692814,
+      "mean_pair_recall": 0.05918718749047929,
+      "mean_pair_f1": 0.07150043014923664
+    },
+    {
+      "method": "trained_sampled_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6411706349206349,
+      "mean_pair_recall": 0.5403288840788841,
+      "mean_pair_f1": 0.5815512095117358
+    }
+  ]
+}
+{
+  "complete": true,
+  "test_evaluated": false,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/expanded_comparison_runs/20261006T030945.216172Z",
+  "manifest_sha256": "72e1f32dd8f81486008fd99a5a07dda24625681d990bc34758e3889f1a2f3716",
+  "artifacts_sha256": {
+    "folds.json": "ad3ac2520d0f3bcfbc0e6873e2f5b953b768613798212ba8ff6827b347cca167",
+    "predictions.json": "a3a63e8d571ce07ecd404fc6ad84d9bab349c6d1f9e8d90f46a642e83e74a3d9",
+    "results/reference_evaluation_summary.json": "7fec72d90669b23b4cbc9f9fad2cce9a5d18b35076316cd6a8665d8056204fd8"
+  },
+  "validation_records": 47,
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/expanded_comparison_runs/20261006T030945.216172Z/exposures/20261006T030945.216896Z.json",
+    "sha256": "16cf4ddb2efbc9c528d98936a17a84a2e29b32e1cc5cb5260fb7a75b7820d1fb",
+    "stage": "validation_started"
+  },
+  "rows": [
+    {
+      "group": "all",
+      "method": "trained_expanded_sparse",
+      "planned": 47,
+      "measured": 47,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.20857850721519425
+    },
+    {
+      "group": "all",
+      "method": "trained_sampled_sparse",
+      "planned": 47,
+      "measured": 47,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.20172616105030025
+    },
+    {
+      "group": "all",
+      "method": "all_unpaired",
+      "planned": 47,
+      "measured": 47,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "group": "all",
+      "method": "ViennaRNA",
+      "planned": 47,
+      "measured": 47,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.7177733468424221
+    },
+    {
+      "group": "all",
+      "method": "LinearFold",
+      "planned": 47,
+      "measured": 47,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.7193873774786459
+    },
+    {
+      "group": "PDB-derived annotation",
+      "method": "trained_expanded_sparse",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.5622727175358754
+    },
+    {
+      "group": "PDB-derived annotation",
+      "method": "trained_sampled_sparse",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.5815512095117358
+    },
+    {
+      "group": "PDB-derived annotation",
+      "method": "all_unpaired",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "group": "PDB-derived annotation",
+      "method": "ViennaRNA",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.9138701254026332
+    },
+    {
+      "group": "PDB-derived annotation",
+      "method": "LinearFold",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.9138701254026332
+    },
+    {
+      "group": "Rfam comparative",
+      "method": "trained_expanded_sparse",
+      "planned": 23,
+      "measured": 23,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.10762048692752478
+    },
+    {
+      "group": "Rfam comparative",
+      "method": "trained_sampled_sparse",
+      "planned": 23,
+      "measured": 23,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.07731531795060397
+    },
+    {
+      "group": "Rfam comparative",
+      "method": "all_unpaired",
+      "planned": 23,
+      "measured": 23,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "group": "Rfam comparative",
+      "method": "ViennaRNA",
+      "planned": 23,
+      "measured": 23,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.6898054001587578
+    },
+    {
+      "group": "Rfam comparative",
+      "method": "LinearFold",
+      "planned": 23,
+      "measured": 23,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.7038432351685264
+    },
+    {
+      "group": "CRW comparative",
+      "method": "trained_expanded_sparse",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.04838716911254617
+    },
+    {
+      "group": "CRW comparative",
+      "method": "trained_sampled_sparse",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.06035522852994927
+    },
+    {
+      "group": "CRW comparative",
+      "method": "all_unpaired",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "group": "CRW comparative",
+      "method": "ViennaRNA",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.5752817994259013
+    },
+    {
+      "group": "CRW comparative",
+      "method": "LinearFold",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.5546975689823873
+    }
+  ],
+  "aggregates": [
+    {
+      "method": "LinearFold",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.6127480097793995,
+      "mean_pair_recall": 0.6992574388254995,
+      "mean_pair_f1": 0.6527075781904216
+    },
+    {
+      "method": "LinearFold",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.8980218855218856,
+      "mean_pair_recall": 0.9318181818181818,
+      "mean_pair_f1": 0.9138701254026332
+    },
+    {
+      "method": "ViennaRNA",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.6109162638107525,
+      "mean_pair_recall": 0.6966687163308336,
+      "mean_pair_f1": 0.6505401656217784
+    },
+    {
+      "method": "ViennaRNA",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.8980218855218856,
+      "mean_pair_recall": 0.9318181818181818,
+      "mean_pair_f1": 0.9138701254026332
+    },
+    {
+      "method": "all_unpaired",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "method": "all_unpaired",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "method": "trained_expanded_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.10718499539030446,
+      "mean_pair_recall": 0.0770739473290805,
+      "mean_pair_f1": 0.0873119208195321
+    },
+    {
+      "method": "trained_expanded_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.5499999999999999,
+      "mean_pair_recall": 0.5849867724867724,
+      "mean_pair_f1": 0.5622727175358754
+    },
+    {
+      "method": "trained_sampled_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.09064273429692814,
+      "mean_pair_recall": 0.05918718749047929,
+      "mean_pair_f1": 0.07150043014923664
+    },
+    {
+      "method": "trained_sampled_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6411706349206349,
+      "mean_pair_recall": 0.5403288840788841,
+      "mean_pair_f1": 0.5815512095117358
+    }
+  ],
+  "interpretation": "Same exposed development cohort. One seed and validation-selected checkpoints; no generalization, assay, family independence or biological stability claim."
+}

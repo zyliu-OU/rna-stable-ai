@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "utc": "20261006T032011.448844Z",
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/expanded_selection_report_runs/20261006T032011.409305Z/results/reference_runs/20261006T032011.448844Z",
+  "dataset_id": "expanded_comparative_validation",
+  "sources": {
+    "references": {
+      "original_path": "/home/zyliu/Documents/rna-stable-ai/results/expanded_selection_report_runs/20261006T032011.409305Z/validation.json",
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/expanded_selection_report_runs/20261006T032011.409305Z/results/reference_runs/20261006T032011.448844Z/references.json",
+      "sha256": "bea47dac135ef17e9bc213d563fbda8f8934769bc080d111bdf1a5906a892746"
+    },
+    "predictions": {
+      "original_path": "/home/zyliu/Documents/rna-stable-ai/results/expanded_selection_report_runs/20261006T032011.409305Z/predictions.json",
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/expanded_selection_report_runs/20261006T032011.409305Z/results/reference_runs/20261006T032011.448844Z/predictions.json",
+      "sha256": "ef4cb8e822d3fd3193f9a211bec09223b309f97cba9ac402ee226631a64a2193"
+    }
+  },
+  "methods": [
+    "trained_expanded_sparse",
+    "trained_sampled_sparse",
+    "all_unpaired",
+    "ViennaRNA",
+    "LinearFold",
+    "trained_exact_sparse",
+    "trained_expanded_sparse_posthoc_exact"
+  ],
+  "reference_ids": [
+    "validation_PDB_00002",
+    "validation_PDB_00019",
+    "validation_PDB_00049",
+    "validation_PDB_00108",
+    "validation_PDB_00130",
+    "validation_PDB_00149",
+    "validation_PDB_00160",
+    "validation_PDB_00169",
+    "validation_PDB_00178",
+    "validation_PDB_00182",
+    "validation_PDB_00187",
+    "validation_PDB_00201",
+    "input_data_StructureData_holdout_RFA_00476",
+    "input_data_StructureData_holdout_RFA_00508",
+    "input_data_StructureData_holdout_RFA_00510",
+    "input_data_StructureData_holdout_RFA_00511",
+    "input_data_StructureData_holdout_RFA_00518",
+    "input_data_StructureData_test_RFA_00473",
+    "input_data_StructureData_test_RFA_00480",
+    "input_data_StructureData_test_RFA_00486",
+    "input_data_StructureData_test_RFA_00488",
+    "input_data_StructureData_test_RFA_00490",
+    "input_data_StructureData_test_RFA_00493",
+    "input_data_StructureData_test_RFA_00495",
+    "input_data_StructureData_test_RFA_00496",
+    "input_data_StructureData_test_RFA_00512",
+    "input_data_StructureData_test_RFA_00515",
+    "input_data_StructureData_train_RFA_00474",
+    "input_data_StructureData_train_RFA_00477",
+    "input_data_StructureData_train_RFA_00479",
+    "input_data_StructureData_train_RFA_00481",
+    "input_data_StructureData_train_RFA_00482",
+    "input_data_StructureData_train_RFA_00483",
+    "input_data_StructureData_train_RFA_00492",
+    "input_data_StructureData_train_RFA_00507",
+    "input_data_StructureData_holdout_CRW_00002",
+    "input_data_StructureData_holdout_CRW_00012",
+    "input_data_StructureData_holdout_CRW_00045",
+    "input_data_StructureData_holdout_CRW_00050",
+    "input_data_StructureData_holdout_CRW_00051",
+    "input_data_StructureData_holdout_CRW_00061",
+    "input_data_StructureData_holdout_CRW_00063",
+    "input_data_StructureData_holdout_CRW_00074",
+    "input_data_StructureData_holdout_CRW_00082",
+    "input_data_StructureData_holdout_CRW_00098",
+    "input_data_StructureData_holdout_CRW_00100",
+    "input_data_StructureData_holdout_CRW_00101"
+  ],
+  "provenance": {
+    "versions": {
+      "python": "3.12.14",
+      "executable": "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+      "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+      "RNA-StableAI": "0.1.0",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "pandas": "3.0.6",
+      "biopython": "1.88",
+      "psutil": "7.2.2",
+      "tqdm": "4.70.1",
+      "pyyaml": "6.0.3",
+      "pytest": "9.1.1",
+      "matplotlib": "3.11.2",
+      "torch": "2.14.1+cu130",
+      "ViennaRNA": "2.7.2"
+    },
+    "source_sha256": {
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reference.py": "34bf934880947040d56aa8fa51f60967b209c7c7537dc181ac59b94623051d75",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/scoring.py": "aefa252f8765861a15e7265fd69c716c598ff3e3d1925c71e0564e9ef9baf349",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sequences.py": "3e970de56b2b6d38ae6fbe276032a51fe570ac2bc4d84288e49cb1a32e335960"
+    }
+  },
+  "policy": "exact_pairs_complete_dot_bracket_macro_by_method_and_reference_kind_v1"
+}

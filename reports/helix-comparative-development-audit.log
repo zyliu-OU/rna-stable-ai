@@ -1,0 +1,7 @@
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/helix_comparative_development_runs/20261007T012503.364229Z/results/reference_runs/20261007T012525.145290Z"
+}
+Local-helix training audit passed: {'train': 89, 'validation': 47}; 4462 positives/1180545 full negatives; selected epoch 5; full validation labels, no test inference.

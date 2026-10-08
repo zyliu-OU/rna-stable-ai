@@ -1,0 +1,43 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/helix_scalability_runs/20261007T015820.198624Z",
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse",
+    "pair_features": "local_helix_context_v1"
+  },
+  "refinement": {
+    "passes": 2,
+    "max_remove": 2,
+    "group_cap": 8,
+    "include_subsets": true
+  },
+  "source_summary_sha256": "e259030c64020cb9127a014697a2167fe06e2669adebbdef58ff67d23ec11989",
+  "checkpoint": "/home/zyliu/Documents/rna-stable-ai/results/helix_comparative_development_runs/20261007T012503.364229Z/best_context_model.pt",
+  "checkpoint_sha256": "1dba0f5983a796aad996c5d71b77b282c8eec7b7497dae610f226f39aff4050d",
+  "inputs_sha256": "add6a23d6329996bab7e8432313b1988e3f56cfaae717dafd9090eab5794b10b",
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/run_helix_scalability.py": "5d52a1168bc402d8bda64dd94b6663b26a74a591c295baa36079ceaf2c884e95",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/helix_pairs.py": "d4451dc21fe06cfec647e2deebfcc2d8a7d7462ce5b72ab4533425d6ee17723a",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/global_sparse_pairs.py": "9cd50c88b5d497ee9a6d8d4e6a6f6289977d9fff96e94a823b92b5bcb72c2dc7",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sparse_refinement.py": "dd62f857b0cd7ccf75bb7e608e9332cbc24afcadc6e9db8ef039e7b5c9e9ae5c",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_inference.py": "a649667be83e1571a60bbc56785177dc17795af8a0f21923ec8baa82ef22dbd1"
+  },
+  "policy": "Unlabelled synthetic resource benchmark, not checkpoint accuracy. Explicitly substitute approximate greedy/refinement decoding for the source exact decoder; never silently change FASTA behavior."
+}

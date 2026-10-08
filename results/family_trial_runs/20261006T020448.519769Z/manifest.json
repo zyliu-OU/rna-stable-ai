@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/family_trial_runs/20261006T020448.519769Z",
+  "utc": "20261006T020448.519769Z",
+  "config": {
+    "families": {
+      "train": [
+        "RF00001"
+      ],
+      "validation": [
+        "RF00169"
+      ],
+      "test": [
+        "RF00008"
+      ]
+    },
+    "min_length": 20,
+    "max_length": 256,
+    "max_records_per_family": 24,
+    "training": {
+      "seed": 20261006,
+      "epochs": 10,
+      "learning_rate": 0.001,
+      "embedding_dim": 16,
+      "channels": 32,
+      "pair_dim": 16,
+      "cpu_threads": 2,
+      "max_length": 256,
+      "decoder_threshold": 0,
+      "mode": "family_disjoint_comparative_trial"
+    },
+    "folding": {
+      "temperature_c": 37,
+      "beam_size": 100,
+      "timeout_seconds": 30,
+      "memory_limit_gib": 4
+    }
+  },
+  "family_plan_sha256": "ee1a52817ed54d7bb4cc162809fe9074d83ec65ca5f9b614086803e5ab8acc64",
+  "import_sha256": "874135dfe716295f92c9bcbeb45bc32d1054b5912b26a244b03bb230158861a8",
+  "provenance": {
+    "versions": {
+      "python": "3.12.14",
+      "executable": "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+      "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+      "RNA-StableAI": "0.1.0",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "pandas": "3.0.6",
+      "biopython": "1.88",
+      "psutil": "7.2.2",
+      "tqdm": "4.70.1",
+      "pyyaml": "6.0.3",
+      "pytest": "9.1.1",
+      "matplotlib": "3.11.2",
+      "torch": "2.14.1+cu130",
+      "ViennaRNA": "2.7.2"
+    },
+    "code_sha256": {
+      "/home/zyliu/Documents/rna-stable-ai/scripts/run_family_trial.py": "05c5bbb6cf063577c3f9a58292b73f32f4664916e668542c2f46462e01700c5d",
+      "/home/zyliu/Documents/rna-stable-ai/scripts/train_pair_development.py": "ef1c8bed0c6648fbd92a29fd478a2072d835504c76a6132eb13e8eff6b5cd76d",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/rfam_data.py": "333998abecc3b4d6d12010e11493d8bd745c089756c754b5eec0cdbdbb017e5e",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/exposures.py": "375318dc6e2dc00e760dfdabd09e9ad9d29b54417c3ea80807c5ff0a2a6abcc3",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/family_plan.py": "b80cb13ce6359b7612a4b0718300d7bc608c483758a8ce276ada9328bd993add",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/pair_model.py": "9d2b406acf7f1147dcbfb735281e899d11c98af9f804238a577a26c0162b4b02",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reference.py": "34bf934880947040d56aa8fa51f60967b209c7c7537dc181ac59b94623051d75",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/scoring.py": "aefa252f8765861a15e7265fd69c716c598ff3e3d1925c71e0564e9ef9baf349",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/experimental_data.py": "410f72420c8a8b5ca659dee75e46689e5349c2daab8b21d2f0b8c115a6b5e64e",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/structure_model.py": "01696835cfee1e7f9cd35f6f0634f27a9fec8add90ee8b4509bf83f4874ce8fe",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/folding.py": "6b166164dc7e5ef915484409a643fec2059819c319650afd415b0e74afa9297b",
+      "/home/zyliu/Documents/rna-stable-ai/external/LinearFold/bin/linearfold_v": "5a6f8924d15b27058d89ec85cde41c890c68b43cd9d319828d273c8da2e797eb"
+    }
+  },
+  "methods": [
+    "trained_pair",
+    "untrained_pair",
+    "all_unpaired",
+    "ViennaRNA",
+    "LinearFold"
+  ],
+  "policy": "Family IDs disjoint within trial; checkpoint selection uses validation only; test exposure recorded before inference.",
+  "reference_interpretation": "Processed comparative annotations; not a new experimental measurement. Legacy tool-training overlap and clan independence are unestablished."
+}

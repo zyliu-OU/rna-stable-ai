@@ -1,0 +1,260 @@
+Context epoch 1/10: loss 4.0453, reused validation F1 0.3083
+Context epoch 2/10: loss 2.7519, reused validation F1 0.3737
+Context epoch 3/10: loss 2.6464, reused validation F1 0.4118
+Context epoch 4/10: loss 2.6300, reused validation F1 0.3813
+Context epoch 5/10: loss 2.5172, reused validation F1 0.4234
+Context epoch 6/10: loss 2.4291, reused validation F1 0.3915
+Context epoch 7/10: loss 2.3366, reused validation F1 0.3930
+Context epoch 8/10: loss 2.2369, reused validation F1 0.3498
+Context epoch 9/10: loss 2.2069, reused validation F1 0.3722
+Context epoch 10/10: loss 2.1315, reused validation F1 0.3607
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/results/reference_runs/20261006T033155.733528Z",
+  "dataset_id": "expanded_comparative_validation",
+  "aggregates": [
+    {
+      "method": "trained_stack_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.3130687157130505,
+      "mean_pair_recall": 0.3654230500728364,
+      "mean_pair_f1": 0.3354511756117352
+    },
+    {
+      "method": "trained_stack_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6369725182225182,
+      "mean_pair_recall": 0.7317821067821068,
+      "mean_pair_f1": 0.6798373793962029
+    },
+    {
+      "method": "untrained_stack_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.060399103400330945,
+      "mean_pair_recall": 0.06777999250591034,
+      "mean_pair_f1": 0.06382743292847529
+    },
+    {
+      "method": "untrained_stack_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.3075727513227513,
+      "mean_pair_recall": 0.3611111111111111,
+      "mean_pair_f1": 0.33154372860255216
+    }
+  ]
+}
+{
+  "complete": true,
+  "mode": "long_comparative_development_only",
+  "test_evaluated": false,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z",
+  "manifest_sha256": "048eb0b35475c25696378092fc9de07ab11bd34d10ca60a983133702ece02f5b",
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse",
+    "pair_features": "adjacent_stackability"
+  },
+  "counts": {
+    "train": 89,
+    "validation": 47
+  },
+  "stack_weights": [
+    0.09501677751541138,
+    0.09039974212646484
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "mean_train_loss": 4.045272870010205,
+      "validation_mean_pair_f1": 0.3082933359609502,
+      "mean_validation_loss": 2.7351840277935597
+    },
+    {
+      "epoch": 2,
+      "mean_train_loss": 2.7519186480661455,
+      "validation_mean_pair_f1": 0.37371206034201065,
+      "mean_validation_loss": 2.6633952272699233
+    },
+    {
+      "epoch": 3,
+      "mean_train_loss": 2.646441503856959,
+      "validation_mean_pair_f1": 0.41184650700339986,
+      "mean_validation_loss": 2.4777982082772763
+    },
+    {
+      "epoch": 4,
+      "mean_train_loss": 2.629976272583008,
+      "validation_mean_pair_f1": 0.3812721323236105,
+      "mean_validation_loss": 2.5400167221718646
+    },
+    {
+      "epoch": 5,
+      "mean_train_loss": 2.5172329417775186,
+      "validation_mean_pair_f1": 0.423379568067344,
+      "mean_validation_loss": 2.476419207897592
+    },
+    {
+      "epoch": 6,
+      "mean_train_loss": 2.42907794271962,
+      "validation_mean_pair_f1": 0.39149883115411593,
+      "mean_validation_loss": 2.3932412659868283
+    },
+    {
+      "epoch": 7,
+      "mean_train_loss": 2.336630768990249,
+      "validation_mean_pair_f1": 0.39297250102789105,
+      "mean_validation_loss": 2.258942431591927
+    },
+    {
+      "epoch": 8,
+      "mean_train_loss": 2.236906760194328,
+      "validation_mean_pair_f1": 0.3497789444927788,
+      "mean_validation_loss": 2.324099804492707
+    },
+    {
+      "epoch": 9,
+      "mean_train_loss": 2.206941581843944,
+      "validation_mean_pair_f1": 0.37223376906603284,
+      "mean_validation_loss": 2.2018853248433863
+    },
+    {
+      "epoch": 10,
+      "mean_train_loss": 2.131531821208054,
+      "validation_mean_pair_f1": 0.36069727493102083,
+      "mean_validation_loss": 2.3512725830078125
+    }
+  ],
+  "selected_epoch": 5,
+  "selected_validation_pair_f1": 0.423379568067344,
+  "train_positive_pairs": 4462,
+  "train_negative_pairs": 1180545,
+  "train_only_positive_weight": 264.57754370237564,
+  "excluded_train_contacts": 26,
+  "excluded_validation_contacts": 7,
+  "parameters": 25876,
+  "encoder_receptive_field_nt": 91,
+  "checkpoint_sha256": {
+    "initial_context_model.pt": "4da2adb1c024cf3b780ced64c05371bd1c3fb1551e381ea400f0925c4f4cb3dc",
+    "best_context_model.pt": "531a27e889496ce35f7e5e526edd6092e15107735dc19804d71c27b0654bbfa8"
+  },
+  "exposure_events": [
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/exposures/20261006T033137.607730Z.json",
+      "sha256": "4f52d25f79102de19add56b38ab061689186963f38777759021610f2fb04bdbb",
+      "stage": "training_started"
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/exposures/20261006T033137.623154Z.json",
+      "sha256": "a9e931e87cd1408c846fffd7531d625ea8135bdb02fcbf9fb14036920c45e9b9",
+      "stage": "validation_started"
+    }
+  ],
+  "predictions_sha256": "bd481532d428416a537bab400953f4203cc9d2c9041aa3667cb5682b5be6caae",
+  "aggregates": [
+    {
+      "method": "trained_stack_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.3130687157130505,
+      "mean_pair_recall": 0.3654230500728364,
+      "mean_pair_f1": 0.3354511756117352
+    },
+    {
+      "method": "trained_stack_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6369725182225182,
+      "mean_pair_recall": 0.7317821067821068,
+      "mean_pair_f1": 0.6798373793962029
+    },
+    {
+      "method": "untrained_stack_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.060399103400330945,
+      "mean_pair_recall": 0.06777999250591034,
+      "mean_pair_f1": 0.06382743292847529
+    },
+    {
+      "method": "untrained_stack_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.3075727513227513,
+      "mean_pair_recall": 0.3611111111111111,
+      "mean_pair_f1": 0.33154372860255216
+    }
+  ],
+  "limitations": [
+    "One seed on already exposed development; validation selection does not establish generalization.",
+    "Exact maximum logits over top16 positive candidates, not all legal pairs or reference agreement; bounded to1024 nt with quadratic storage.",
+    "Comparative annotation is not an experimental assay; biological stability/family independence remain unresolved."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "seed": 20261006,
+  "epochs": 10,
+  "learning_rate": 0.001,
+  "embedding_dim": 16,
+  "channels": 32,
+  "pair_dim": 16,
+  "cpu_threads": 2,
+  "max_length": 256,
+  "decoder_threshold": 0,
+  "mode": "development_validation_only"
+}

@@ -1,0 +1,28 @@
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/population_development_runs/20261007T015651.055902Z/sampling_20261006/results/reference_runs/20261007T015707.705765Z"
+}
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/population_development_runs/20261007T015651.055902Z/sampling_20261007/results/reference_runs/20261007T015722.879189Z"
+}
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/population_development_runs/20261007T015651.055902Z/sampling_20261008/results/reference_runs/20261007T015738.182036Z"
+}
+Population study audit passed: three fixed draws, full training-population weights and full validation labels; no test.
+Population resource audit passed: three exact sampled-gradient/model-state replays; no accuracy evaluation.
+Development slices audit passed:423 stored checkpoint predictions, fixed source/length slices and all47 per-record differences; no new inference, fitting or test.
+Development figure audit passed: bound existing metrics and static PNG/SVG; no inference or new evaluation.

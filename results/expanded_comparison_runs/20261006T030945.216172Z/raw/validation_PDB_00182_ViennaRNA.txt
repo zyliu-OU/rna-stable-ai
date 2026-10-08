@@ -1,0 +1,4 @@
+GAGCGAAGACGAAAGUCGAGCUC
+((((...(((....)))..)))) (-8.80)
+
+STDERR:

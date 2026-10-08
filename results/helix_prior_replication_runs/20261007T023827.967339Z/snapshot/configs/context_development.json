@@ -1,0 +1,13 @@
+{
+  "mode": "development_validation_only",
+  "seed": 20261006,
+  "epochs": 10,
+  "learning_rate": 0.001,
+  "embedding_dim": 16,
+  "channels": 32,
+  "pair_dim": 16,
+  "dilations": [1, 2, 4, 8],
+  "cpu_threads": 2,
+  "max_pair_span": 64,
+  "decoder_threshold": 0
+}

@@ -1,0 +1,671 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/expanded_selection_report_runs/20261006T032011.409305Z/results/reference_runs/20261006T032011.448844Z",
+  "dataset_id": "expanded_comparative_validation",
+  "aggregates": [
+    {
+      "method": "LinearFold",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.6127480097793995,
+      "mean_pair_recall": 0.6992574388254995,
+      "mean_pair_f1": 0.6527075781904216
+    },
+    {
+      "method": "LinearFold",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.8980218855218856,
+      "mean_pair_recall": 0.9318181818181818,
+      "mean_pair_f1": 0.9138701254026332
+    },
+    {
+      "method": "ViennaRNA",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.6109162638107525,
+      "mean_pair_recall": 0.6966687163308336,
+      "mean_pair_f1": 0.6505401656217784
+    },
+    {
+      "method": "ViennaRNA",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.8980218855218856,
+      "mean_pair_recall": 0.9318181818181818,
+      "mean_pair_f1": 0.9138701254026332
+    },
+    {
+      "method": "all_unpaired",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "method": "all_unpaired",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "method": "trained_exact_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.2647869853812261,
+      "mean_pair_recall": 0.31028173479701726,
+      "mean_pair_f1": 0.28398885222358006
+    },
+    {
+      "method": "trained_exact_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6500494412994413,
+      "mean_pair_recall": 0.7456709956709956,
+      "mean_pair_f1": 0.6933184668666521
+    },
+    {
+      "method": "trained_expanded_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.10718499539030446,
+      "mean_pair_recall": 0.0770739473290805,
+      "mean_pair_f1": 0.0873119208195321
+    },
+    {
+      "method": "trained_expanded_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.5499999999999999,
+      "mean_pair_recall": 0.5849867724867724,
+      "mean_pair_f1": 0.5622727175358754
+    },
+    {
+      "method": "trained_expanded_sparse_posthoc_exact",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.23847304084102428,
+      "mean_pair_recall": 0.22500864659309136,
+      "mean_pair_f1": 0.22662100479063396
+    },
+    {
+      "method": "trained_expanded_sparse_posthoc_exact",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6384572955225128,
+      "mean_pair_recall": 0.7317821067821068,
+      "mean_pair_f1": 0.6806178026766262
+    },
+    {
+      "method": "trained_sampled_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.09064273429692814,
+      "mean_pair_recall": 0.05918718749047929,
+      "mean_pair_f1": 0.07150043014923664
+    },
+    {
+      "method": "trained_sampled_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6411706349206349,
+      "mean_pair_recall": 0.5403288840788841,
+      "mean_pair_f1": 0.5815512095117358
+    }
+  ]
+}
+{
+  "audit": "passed",
+  "planned_predictions": 329,
+  "measured_predictions": 329,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/expanded_selection_report_runs/20261006T032011.409305Z/results/reference_runs/20261006T032011.448844Z"
+}
+Expanded selection report audit passed: 47 identical development references, 329 exact composed predictions, subgroup metrics and exports verified.
+{
+  "complete": true,
+  "test_evaluated": false,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/expanded_selection_report_runs/20261006T032011.409305Z",
+  "manifest_sha256": "b03ec5589d1b26274be5c26681bf39a123e2c8547d0a8df6d3f7c7db10b71b1c",
+  "rows": [
+    {
+      "group": "all",
+      "method": "trained_expanded_sparse",
+      "planned": 47,
+      "measured": 47,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.20857850721519425
+    },
+    {
+      "group": "all",
+      "method": "trained_sampled_sparse",
+      "planned": 47,
+      "measured": 47,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.20172616105030025
+    },
+    {
+      "group": "all",
+      "method": "all_unpaired",
+      "planned": 47,
+      "measured": 47,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "group": "all",
+      "method": "ViennaRNA",
+      "planned": 47,
+      "measured": 47,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.7177733468424221
+    },
+    {
+      "group": "all",
+      "method": "LinearFold",
+      "planned": 47,
+      "measured": 47,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.7193873774786459
+    },
+    {
+      "group": "all",
+      "method": "trained_exact_sparse",
+      "planned": 47,
+      "measured": 47,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.38849854106861975
+    },
+    {
+      "group": "all",
+      "method": "trained_expanded_sparse_posthoc_exact",
+      "planned": 47,
+      "measured": 47,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.342535080846632
+    },
+    {
+      "group": "PDB-derived annotation",
+      "method": "trained_expanded_sparse",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.5622727175358754
+    },
+    {
+      "group": "PDB-derived annotation",
+      "method": "trained_sampled_sparse",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.5815512095117358
+    },
+    {
+      "group": "PDB-derived annotation",
+      "method": "all_unpaired",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "group": "PDB-derived annotation",
+      "method": "ViennaRNA",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.9138701254026332
+    },
+    {
+      "group": "PDB-derived annotation",
+      "method": "LinearFold",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.9138701254026332
+    },
+    {
+      "group": "PDB-derived annotation",
+      "method": "trained_exact_sparse",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.6933184668666521
+    },
+    {
+      "group": "PDB-derived annotation",
+      "method": "trained_expanded_sparse_posthoc_exact",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.6806178026766262
+    },
+    {
+      "group": "Rfam comparative",
+      "method": "trained_expanded_sparse",
+      "planned": 23,
+      "measured": 23,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.10762048692752478
+    },
+    {
+      "group": "Rfam comparative",
+      "method": "trained_sampled_sparse",
+      "planned": 23,
+      "measured": 23,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.07731531795060397
+    },
+    {
+      "group": "Rfam comparative",
+      "method": "all_unpaired",
+      "planned": 23,
+      "measured": 23,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "group": "Rfam comparative",
+      "method": "ViennaRNA",
+      "planned": 23,
+      "measured": 23,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.6898054001587578
+    },
+    {
+      "group": "Rfam comparative",
+      "method": "LinearFold",
+      "planned": 23,
+      "measured": 23,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.7038432351685264
+    },
+    {
+      "group": "Rfam comparative",
+      "method": "trained_exact_sparse",
+      "planned": 23,
+      "measured": 23,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.39591621748678685
+    },
+    {
+      "group": "Rfam comparative",
+      "method": "trained_expanded_sparse_posthoc_exact",
+      "planned": 23,
+      "measured": 23,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.29725327247702216
+    },
+    {
+      "group": "CRW comparative",
+      "method": "trained_expanded_sparse",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.04838716911254617
+    },
+    {
+      "group": "CRW comparative",
+      "method": "trained_sampled_sparse",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.06035522852994927
+    },
+    {
+      "group": "CRW comparative",
+      "method": "all_unpaired",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "group": "CRW comparative",
+      "method": "ViennaRNA",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.5752817994259013
+    },
+    {
+      "group": "CRW comparative",
+      "method": "LinearFold",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.5546975689823873
+    },
+    {
+      "group": "CRW comparative",
+      "method": "trained_exact_sparse",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.06946140213576714
+    },
+    {
+      "group": "CRW comparative",
+      "method": "trained_expanded_sparse_posthoc_exact",
+      "planned": 12,
+      "measured": 12,
+      "failed": 0,
+      "missing": 0,
+      "mean_pair_f1": 0.09124249172505657
+    }
+  ],
+  "aggregates": [
+    {
+      "method": "LinearFold",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.6127480097793995,
+      "mean_pair_recall": 0.6992574388254995,
+      "mean_pair_f1": 0.6527075781904216
+    },
+    {
+      "method": "LinearFold",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.8980218855218856,
+      "mean_pair_recall": 0.9318181818181818,
+      "mean_pair_f1": 0.9138701254026332
+    },
+    {
+      "method": "ViennaRNA",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.6109162638107525,
+      "mean_pair_recall": 0.6966687163308336,
+      "mean_pair_f1": 0.6505401656217784
+    },
+    {
+      "method": "ViennaRNA",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.8980218855218856,
+      "mean_pair_recall": 0.9318181818181818,
+      "mean_pair_f1": 0.9138701254026332
+    },
+    {
+      "method": "all_unpaired",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "method": "all_unpaired",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "method": "trained_exact_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.2647869853812261,
+      "mean_pair_recall": 0.31028173479701726,
+      "mean_pair_f1": 0.28398885222358006
+    },
+    {
+      "method": "trained_exact_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6500494412994413,
+      "mean_pair_recall": 0.7456709956709956,
+      "mean_pair_f1": 0.6933184668666521
+    },
+    {
+      "method": "trained_expanded_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.10718499539030446,
+      "mean_pair_recall": 0.0770739473290805,
+      "mean_pair_f1": 0.0873119208195321
+    },
+    {
+      "method": "trained_expanded_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.5499999999999999,
+      "mean_pair_recall": 0.5849867724867724,
+      "mean_pair_f1": 0.5622727175358754
+    },
+    {
+      "method": "trained_expanded_sparse_posthoc_exact",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.23847304084102428,
+      "mean_pair_recall": 0.22500864659309136,
+      "mean_pair_f1": 0.22662100479063396
+    },
+    {
+      "method": "trained_expanded_sparse_posthoc_exact",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6384572955225128,
+      "mean_pair_recall": 0.7317821067821068,
+      "mean_pair_f1": 0.6806178026766262
+    },
+    {
+      "method": "trained_sampled_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.09064273429692814,
+      "mean_pair_recall": 0.05918718749047929,
+      "mean_pair_f1": 0.07150043014923664
+    },
+    {
+      "method": "trained_sampled_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6411706349206349,
+      "mean_pair_recall": 0.5403288840788841,
+      "mean_pair_f1": 0.5815512095117358
+    }
+  ],
+  "exports_sha256": {
+    "development_selection.png": "b77f4834c8200af47f745e61e92d82b61d3d9017b73966eb2c9b9ccacba883c0"
+  },
+  "interpretation": "Same exposed47-record development cohort. Original models selected with refinement; posthoc exact uses that frozen checkpoint; exact-selected model uses exact decoding during validation selection. One seed; no new fitting, folding or test evaluation in this report."
+}

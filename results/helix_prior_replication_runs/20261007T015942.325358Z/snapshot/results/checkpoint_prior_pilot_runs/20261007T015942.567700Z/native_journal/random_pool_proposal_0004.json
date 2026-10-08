@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "payload": {
+    "binding_sha256": "0674ed2d465dab7d9a67c28de152eef112c425f62eb354588df67d1c0e2113c3",
+    "key": "random_pool_proposal_0004",
+    "sequence_sha256": "c758b309985c455b77acab8433600957f11850c21ce3ccd247b94baaea83f4ab",
+    "parameters": {
+      "command": [
+        "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+        "/home/zyliu/Documents/rna-stable-ai/results/helix_prior_replication_runs/20261007T015942.325358Z/snapshot/external/LinearFold/linearfold",
+        "-V",
+        "-b",
+        "100"
+      ],
+      "config": {
+        "beam_size": 100,
+        "finalist_timeout_seconds": 300,
+        "max_mutations": 16,
+        "memory_limit_gib": 4,
+        "min_improvement_kcal_mol": 0.1,
+        "pool_size": 16,
+        "preserve_protein": false,
+        "protected_positions": [
+          1,
+          2,
+          3
+        ],
+        "seed": 20261006,
+        "steps": 8,
+        "temperature_c": 37,
+        "timeout_seconds": 30
+      },
+      "cwd": "/home/zyliu/Documents/rna-stable-ai/results/helix_prior_replication_runs/20261007T015942.325358Z/snapshot/external/LinearFold",
+      "device": "CPU",
+      "raw_output": "/home/zyliu/Documents/rna-stable-ai/results/helix_prior_replication_runs/20261007T015942.325358Z/snapshot/results/checkpoint_prior_pilot_runs/20261007T015942.567700Z/random_pool/proposal_0004_LinearFold.txt",
+      "tool": "LinearFold"
+    },
+    "state": "complete",
+    "started_at": "2026-10-07T01:59:45.728736+00:00",
+    "driver_pid": 63,
+    "result": {
+      "status": "ok",
+      "wall_seconds": 0.4302442770003836,
+      "returncode": 0,
+      "error": "",
+      "supervisor": "linux_parent_death_guard_v1",
+      "peak_rss_mib": 31.41015625,
+      "memory_method": "GNU time maximum RSS of tool descendants (excludes supervisor; not process-tree sum)",
+      "tool": "LinearFold",
+      "device": "CPU",
+      "command": [
+        "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+        "/home/zyliu/Documents/rna-stable-ai/results/helix_prior_replication_runs/20261007T015942.325358Z/snapshot/external/LinearFold/linearfold",
+        "-V",
+        "-b",
+        "100"
+      ],
+      "raw_output": "/home/zyliu/Documents/rna-stable-ai/results/helix_prior_replication_runs/20261007T015942.325358Z/snapshot/results/checkpoint_prior_pilot_runs/20261007T015942.567700Z/random_pool/proposal_0004_LinearFold.txt",
+      "structure": "..(((.(((..((((...((((.....))))....((((((((.((((((((.(((....((((..((..((((........((.((((((((((((((....(((((...)))))..)))).))..))))...)))).))......(((((......))))).........(((.(((....))).)))((((((....))))))..((((((((((.((.((((....))))..)).)))))).)))).......))))..))..))))....)))))))))))((((((((..(((((...)))))..))).)))))(.(((((.(((..((((.((....((((................)))).......)).))))))).))))).)..((((((((..((.((..........)).))..)))))))).....................(((((((((...(((((.....)))))....(((((((.((.......(((((...((((((....).)))))....)))))....)).)))))))..(((((.(......)))))).(((((....))))).....(((((.(((.......)))..)))))....)))))))))...........(((((((((..((.((...(((..((((((...))))))..)))...)).)).)))))))))......)))))))).....(((((((..((((.......))))..)))))))..((((.((((((((((.....((((((........))).)))((....))((((((.((((..((...((((..........)))).....))..)))).))))))......((((..((.((((((((.((((.......)))).)))).)))).))))))..((((......((((((((.............))))))))....))))))))))))))..))))..)))).))).))).",
+      "mfe_kcal_mol": -266.8,
+      "paired_fraction": 0.59,
+      "raw_sha256": "97a21100ca5b5d11ec15239fb39b3ef217b5631def49f65f267e611c165f287d"
+    },
+    "completed_at": "2026-10-07T01:59:46.172507+00:00"
+  },
+  "payload_sha256": "3dd2d9dfb9d7f8fcda2e567e230f8729d48412e685f42fff69a1df7a8380c341"
+}

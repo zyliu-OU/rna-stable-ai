@@ -1,0 +1,29 @@
+........................................................................ [ 15%]
+........................................................................ [ 31%]
+........................................................................ [ 47%]
+..................................................................F..... [ 63%]
+........................................................................ [ 79%]
+........................................................................ [ 95%]
+.....................                                                    [100%]
+=================================== FAILURES ===================================
+____________________ test_cli_benchmark_outputs_and_archive ____________________
+
+tmp_path = PosixPath('/tmp/pytest-of-zyliu/pytest-20/test_cli_benchmark_outputs_and0')
+
+    def test_cli_benchmark_outputs_and_archive(tmp_path):
+        # Current host has no folding tools. Fake external executables are not treated as measurements.
+        config = load_config(ROOT/'configs/benchmark.json')
+        config.update(lengths=[32], kinds=['mixed'], repeats=1, warmup=0, timeout_seconds=0.2)
+        path = tmp_path/'config.json'; path.write_text(json.dumps(config))
+        command = [str(ROOT/'scripts/rnastable'), 'benchmark', '--config', str(path), '--output-root', str(tmp_path)]
+        first = subprocess.run(command, capture_output=True, text=True)
+>       assert first.returncode == 0, first.stderr
+E       AssertionError: rnastable: dict contains fields not in fieldnames: 'supervisor'
+E         
+E       assert 2 == 0
+E        +  where 2 = CompletedProcess(args=['/home/zyliu/Documents/rna-stable-ai/scripts/rnastable', 'benchmark', '--config', '/tmp/pytest-...ding: LinearPartition mixed_32_seed1729\n', stderr="rnastable: dict contains fields not in fieldnames: 'supervisor'\n").returncode
+
+tests/test_pipeline.py:109: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_pipeline.py::test_cli_benchmark_outputs_and_archive - Asser...
+1 failed, 452 passed in 217.75s (0:03:37)

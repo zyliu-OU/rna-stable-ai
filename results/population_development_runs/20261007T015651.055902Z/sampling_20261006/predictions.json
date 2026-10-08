@@ -1,0 +1,667 @@
+{
+  "schema_version": 1,
+  "methods": [
+    "untrained_population_helix_sparse",
+    "trained_population_helix_sparse"
+  ],
+  "records": [
+    {
+      "id": "validation_PDB_00002",
+      "sequence": "GGCGUAAGGAUUACCUAUGCC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((.(((....))))))))"
+    },
+    {
+      "id": "validation_PDB_00019",
+      "sequence": "GGGAUACUGCUUCGGUAAGUCCC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((((((...)))))..))))"
+    },
+    {
+      "id": "validation_PDB_00049",
+      "sequence": "GGCGAAGUCGAAAGAUGGCGCC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((...)))(.(...)(...))"
+    },
+    {
+      "id": "validation_PDB_00108",
+      "sequence": "GGCGGUGCUGAGAUGCCCGUC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((((.(...))))).)))"
+    },
+    {
+      "id": "validation_PDB_00130",
+      "sequence": "GGAAGGCCCUUUUCAGGGCCACCC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": ".(((((...))))).(((...)))"
+    },
+    {
+      "id": "validation_PDB_00149",
+      "sequence": "GCGCAGGACUCGGCUUCUUCGGAAGGGACGAGGGGCGC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((...)(.(...)))((((...))))(.(..(...)))"
+    },
+    {
+      "id": "validation_PDB_00160",
+      "sequence": "GGCGUAACGUUGAAAAGUUACGCC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((((.((...))))))))))"
+    },
+    {
+      "id": "validation_PDB_00169",
+      "sequence": "GGACCUCUCGAAAGAGUUGUCC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((....))((((...)).)))"
+    },
+    {
+      "id": "validation_PDB_00178",
+      "sequence": "GGCGAUACCAGCCGAAAGGCCCUUGGCAGCGUC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((..(...))))..(((...)))(((...)))"
+    },
+    {
+      "id": "validation_PDB_00182",
+      "sequence": "GAGCGAAGACGAAAGUCGAGCUC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((...).(((...)))..)))"
+    },
+    {
+      "id": "validation_PDB_00187",
+      "sequence": "CUCCCGGAAGACCACCGGGUUAAGAGGCCAGGCGUGCACGCAUAGCAAUGUGUUCAGCGGACUGGUGCUCAUCAG",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((...)).).((...))(((...)(((...)).))).(((((...).))))(((...)))(((((....)))))"
+    },
+    {
+      "id": "validation_PDB_00201",
+      "sequence": "GGACACGAAAUCCCGAAGUAGUGUCC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((.(...).(.(...).))))))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00476",
+      "sequence": "UUGCUGGUGCAGCGCAGCGCGGACGCCCGAACCUGGUCAGAGCCGGAAGGCAGCAGCCAUAAGGGAUGCUUUGCGGGUGCCGUUGCCUUCCGGCAAUGCU",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((...))))).)(((.((...))))..)(((((...).))))(.(((....))).).((((...))))((((...))))(((.(...))))(...)"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00508",
+      "sequence": "GGAGCGGGUCCUGUGCAACGCGAACCCAUGAACCUGGUCAGGUCCGGAAGGAAGCAGCCAUAAGUGGAUCAUCGCGUGUGCCGCAGGGUAGCCUGCUCUGAGC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(...)((...))(((...)))(...)(.((.((...)))))((((....))).(((((((....))).)(((...)))))))((((((((...)))))))..)"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00510",
+      "sequence": "AGCCGUCACAUCAUUACGGUCGAAUCGUGUCAGGCCAGAAAUGGAGCAGCAUUAAGACUAUUUAAUGAGUGUGAUGGUU",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((..((...))).)((((((...)))))((...))(.(...))(((...).)).)((((((((...)))))(...))))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00511",
+      "sequence": "AGGUUGGGUCUUGCGCAAUGGGAACCUUGUGAACCAUGUCAGGUCCGGAAGGAAGCAGCAUUAAGCAGUGUUCUCAUGUGCCGCGAGUCGCCUGGCCCGAGC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((...))))((((...))((...))))((((...).)))(((((....)))((...).))((((...)))((..(((...)))))))((.((...)).))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00518",
+      "sequence": "GCCGCGAUAAGAAUAACAUCUGAACGAGUUAGGACCGGAAGGUAGCAGCUAUAAGGAAAAGUGUUCUGUAUUGCGGU",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": ".(((...)(.(.((...)))))..((...).))(((....))(((...)))).(((((...).))))((.(...)))"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00473",
+      "sequence": "UAUUUAGACCUAUGCAAUAGGAUUUUAGGGUAACGCUUCAGGGUAGGAAUACAGCAGAGUCCCCUAAUUUCUUGUGUGCCUUAGCCAUCUGAAUAGGAG",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(.(...))(((((...))))).((((.((((...))).))))((.(...))))(.((((...).)..)))(((((.((...)))).)(((....)))))"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00480",
+      "sequence": "CCCUGGUCCUCCCGCAACACUAGUUCGUGAACCUGGUCAGAUCCGGAAGGAAGCAGCCACAGCGGAUGAUGUGUGUGCCGGGAUGUGGCUGGGGUCUC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "...(((...))(((.(((....)))))((.((...))))))(((....))).((.(((.(...))(((...)))))))(.((.(...))))((...))"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00486",
+      "sequence": "UGUUAGUCCUAAACACUGUUAAAUUGAAUAAUUGGUCAGAUCUGGAAAGAAGCAGCCAAAUCAAUCGAUACAGGUGUUUUGAUAUAGCUAACAGAAU",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((.(...)))((...))))((((....))))(((...)))(((...(...)..)))(.((..(.(...)))))((((((...)))((...)))))"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00488",
+      "sequence": "AGAUUUCGGUCCUAUGCAAUAUGAACCCAUGAACCAUGUCAGGUCCUGACGGAAGCAGCAUUAAGUGGAUCAUCAUAUGUGCCGUAGGGUAGCCGAGAUUUAGC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((...).)).)(((...)))(...)((((...)))(((((...))))))(...).((((...)))(.((((...)))((((...)).))))(((...)).))"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00490",
+      "sequence": "GCUAGUAGUGGGCAUUGCUCUUGCUUAGUUGGUCAGGUCUGAAAAGAAGCAGCCAGGGUAAGAUUCUGUGGGUCAUUACUAGU",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((...)))((((...))))((((...))((((...)))(...))(...))(.(...)).)(((((...)))))(((...)))"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00493",
+      "sequence": "GGCGGGUCUCCCCGCAUGGCAAAUCGGAACACCGGGUCAGGGGCGGAAGCCAGCAGCCCACUCCGGUGCGCCAGUGCCGGGGGUUUGGCCCGCC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((...))).)).(((....))(...)))((...).)((((((...)).))((....))))(((((....)))))((((((...)))).))"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00495",
+      "sequence": "GACGGGCCUCCUCGCAUGGUGGCGCGGUCAACCUGGUCAGGUCGGGAACGAAGCAGCCACAGCCGUUUUCCGCCAGUGCCGAGGGUCAGGCUCGUCCCCC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((..((...))))((...))(((...))).(((((((...))))))((((..((.(...).)))))))(.((.(...)).))((((...))))(...).."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00496",
+      "sequence": "CCCUCACGCGGCGCUAUCUGACUGAACUCCCCCAGGGCCGGAAGGCAGCAAGGGUAGGUCGGCUCUGGCGGGUGCGUGGGGG",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((...).)).).(((...).))...((((...)))((....))(.((...).).))((.(((((...))).)))(...))"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00512",
+      "sequence": "UUAUUGGUUUCUCGCAGCAGAAUUCAGCUUACUUAGUCAGGGCCGGAAGGAAGCAGCUUGGGUUGAAUUUCUGGGUGCCGGGAGUCGCUGGUAAUACC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((...))(((((...)).)))((...).)(((...))(...)((....))(((...))))(((...)))(((((...)))))((...))(((...)))"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00515",
+      "sequence": "CCCCCGGUCCAGCGCGGCGGGCCAGGCGUGAACCGGGUCAGGUCCGGAAGGAAGCAGCCCUAAGCGCCUCGGUCCGGGCGCCGCUGGGAAGCCGGGGGCGCU",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((...))(((.((...))))((...)))(...((((((...)))))))(((..(...)))).((...))(((((...).))))((.((...))))((...))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00474",
+      "sequence": "GCCCUGCGGCGGGACAGGGUGAACUCCCCCAGGCCCGAAAGGGAGCAAGGGUAAGCCCGCCGUCCCGUGCGCAGGGU",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((...))))((...)))..)((((...))(((....))).)..)(((....)))(.(((...))))((...))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00477",
+      "sequence": "AAUAUAUAUGUCAUUACAAUAUUAAGUAGCGAACCUUGUCAGGCCAGAGAUGGAGCAGCAAUAGCAAUAUCUUUUUAUGUGUGAUGACAUAUAUUAA",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": ".(((....)))(.((...)(((...)))((((...)))).))(((...).((...))))((.((.(...)))))(((.(((((.(...)))))))))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00479",
+      "sequence": "CUGCCGGUCCCUCGCAACGCUAGAUCGAAAACCCCGCCAGGGCCGGAAGGCAGCAACGGUAUUGAUUGAUGCGGGUGCCGAGAUCAACCGGUGGGGCC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((...))(..((.((...)).)))(...)..((((....)))((....))(.(...))(((((....))))))(((((...).)..)))(((...)))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00481",
+      "sequence": "UUCUCGGUUCCUCGCAAUGGUGUCUGGUUUACCCGGUCAGGUUCGGAAGAAAGCAGCCAAAGUCAGAAUUUCUGUGUGCCGAGAUCAAGCUGGGAAGGUU",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((...))(((...).))(((...)))((((((...)).)))(((....)))((...)(...)))((...))((.((...)))).(((...)))((...))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00482",
+      "sequence": "GAAUUGGGUCCCACGCAACGGAAAUUCAUGAACUCCGUCAGGUCCGGAAGGAAGCAGCGGUAAGUGAAAUCUUCCGUGUGCCGUGGAUAAAUCUGAUUUGAGU",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(.((...)))((.((...)))(...)(.((.((...))))))(((....))).((...).)(((.(...))))(((((...)))))((((((...)))).).)"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00483",
+      "sequence": "GGAGGUUGGUGGUGGACGAGCCACUCGCCAACCGGGUCAGGUCCGGAAGGAAGCAGCCCUAACGAGCCAGGCACGGGUCGCCGUGCCAGCCUCCCACC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((...)).((..(((.((((...)))))))))(((((...)))))(.(((..(...))))..)(.((...)).)(((.((...)))).(..(...)))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00492",
+      "sequence": "UUCUUAGACCUGUGCAAUGCUAUUUUUAAGCACCGCUUCAGGGUGGGAACACAGCAGAGCACUUGAUUUUAGUGUGUGCCGCAGUUAUCUGGGGAAGGG",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((...))(..((((...))).))((((((((...)))).))))(((...).))((...))((((.(...)))((((...))))))(.(((...)..)))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00507",
+      "sequence": "CGUUGGGUUCUACGCAACGAAAACCCACGAACCCUGUCAGGUCCGGAAGGAAGCAGCAGUAAGUGGCCCCUUUCGUGUGCCGUAGAGUCGCUGGGCCGAGC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(...)((((.(.((...))))).))(.((.((...))).))(((....))).((....))(((.(...))))((.(((...)))))(((((...)).)).)"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00002",
+      "sequence": "CUGAAAGUUAUCAUAAAUAAUAUUUACCAUAUAAUAAUGGAUAAAUUAUAUUUUUAUCAAUAUAAGUCUAAUUACAAGUGUAUUAAAAUGGUAACAUAAAUAUGCUAAGCUGUAAUGACAAAAGUAUCCAUAUUCUUGACAGUUAUUUUAUAUUAUAAAAAAAAGAUGAAGGAACUUUGACUGAUCUAAUAUGCUCAACGAAAGUGAAUCAAAUGUUAUAAAAUUACUUACACCACUAAUUGAAAACCUGUCUGAUAUUCAAUUAUUAUUUAUUAUUAUAUAAUUAUAUAAUAAUAAAUAAAAUGGUUGAUGUUAUGUAUUGGAAAUGAGCAUACGAUAAAUCAUAUAACCAUUAGUAAUAUAAUUUGAGAGCUAAGUUAGAUAUUUACGUAUUUAUGAUAAAACAG",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": ".((((...).)))(((((...)))))(((((...).))))((((((...))))((((....)))))).(((((...))).))(((...))(((...).).))(((...))(((...).)))(((((....)))).)(((...)))((((.(.((...)))))))(.(((((...)))).))((((...)).))(((...).).)((...))(((.((...)))))(.((..(....))).)(.((...).))((((((...)).))))((((.((...))))(((((...))))))((((...)).)))(((...)))(((...)))((...).)((....))((.(((...)))))(((...)))(..((((...)))((...))))(((.((((...)))))).)"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00012",
+      "sequence": "GUAACAAGGUUUUAUCCUAUGGAAGCCUUUGCAGCCCGAUGAAGGGUGGGCGCUCGCGACUAGAUAAAUAAUGACGAAUGCCUGAAAUGCAAGCGGCGGAACAUCUCUUUUAGGGUGUUUGGCCGCGAUCUUCUCAAAUUGCGGGAAAAGUGCUCAAAUUGGCCGUAAAGACACCGCGGCUCUUGUGGACAACACAGAGUGCAGCAGGCGGGGUAGCACCCUGCUGGAUGGUAACAGAUCUUUCGGACACGGGCCUAAUCCGCAGCCAAGCUCCGUAGCGCAUUUUUGUUAGUGCGUCGGAGAAGGUUCACAGACUGUAAGGGAAGGGGUUCGCACUUGUGUGCGGGCUUAAGAGACAGUCGGUCCCUCUGUGAGAGCAGAGUUCCGGGUUUGAGGAAGGUGCGCCGCCGACAAAUGGGCCACCAGAGAGCGCCUGGAGAGUCGUGUGUUUUGCGGGUGUUUGCGGAUAACUCGCGCGCGUGAUUGGCUUUUCUGAACGGAAUCAAAAAAUGUUCCGUAGGUGAACCUGCAGAAGGAUCAGAA",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(.(((...))))((...))(((((...))).))((((...)..))(((((...)).)).))((((....).)((....).)))(.((((....))(.(((...))))))(((((...))))))((((((.((...))))))))(((....)(.(((...)))))((...).).((((((...)))))).)(.(((...)))(....)(((((((...))))))))((((..(...)).)))(((.(...))(...)))(.((.(((...))).))(((((.(...)))))))(((.((...).)).)((...))((...)))(.((...)))(((.(...))))((((((...)((...)))))))((((((...).)))))((...))(((...)))((((...))))((....)(...).)(((.(....))))((...))(((((...))))(((.(((...)).)))))((.((.(...)))))(((...)))(((((.(..(...)))))))((((....))))(.((....)).).."
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00045",
+      "sequence": "AUUGAACGCUGGCGGCAGGCUUAACACAUGCAAGUCGAGCGGGGAAGGUUGCUUCGGUAACUGACUAGCGGCGGACGGGUGAGUAAUGCUUAGGAAUCUGCCAUUUAGUGGGGGACAACAUUCCGGAAUGCUAAUACCGCAUACGUCCUACAGGAGAAAGCAGGGGAUCUCCGGACCUUGCGCUAAAUGAUGAGCCUAAGUCGGAUUAGCUAGUUGGUGGGGUAAAGGCCUACCAAGGCGACGAUCUGUAGCGGGUCUGAGAGGAUGAUCCGCCACACUGGGACUGAGACACGGCCCAGACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGACAAUGAUCCAGCCAUGCCGCGUGUGUGAAGAAGGCCUUUUGGUUGUAAAGCACUUUAAGCGAGGAGGAGGCUCUCUUAGUUAAUACCUAAGAUGAGUGGACGUUACUCGCAGAAUAAGCACGUGCGAGCGUUAAU",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": ".(...)((((...))).)((((...)(((....)).)))).((((...)).))((((...))))((.((...)..)))((((((...)))))(...))(.((((...)))))(((.(...))))((.((...).).)((....))((((...)).).).(.(((...))))(((...))))(((..(...)).))((.(((...))))(((....))))((((...).))(.((...).)))((((((...))))))(...)(((...)))(((.(...))).)((...))((((...).))(((...)).))((....))((...).((((((...).))))))((((...))))(((...)(((...)))))(((.((.((...)))))))(.((.((...)))))((((.(...)).)))(.(((((((...))))))(((...)..))))((..((...))).)"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00050",
+      "sequence": "CGGGGGCCCGCACAAGCGGCGGAGCAUGCGGAUUAAUUCGAUGCAACGCGAAGAACCUUACCAGGGCUUGACAUGGGCCGGCUGCUCCUGGAGACGGGGGCCUCCCUUUUUGGGCUGGUUCACAGGUGGUGCAUGGUUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCUGUCCCGUGUUGCCAGCGUGUUGUGGCGGGGACUCGCGGGAGACUGCCGGGGUUAACUCGGAGGAGGGUGGGGACGACGUCAAAUCAUCAUGCCCCUUAUGUCCUGGGCUUCACGCAUGCUACAAUGGCCGGUACAGUGGGUUGCGAUGUCGUGAGGCGGAGCGAAUCCCUUAAAGCCGGUCUCAGUUCGGAUCGGUGUCUGCAACUCGACACCGUGAAGCUGGAGUCGCUAGUAAUCGCAGAUCAGCAGUGCUGCGGUGAAUACGUCCUCGGGCCUUG",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": ".((...))(((....)))((...))((.((((....))))))((...))((((...))).)(((...)))((.((...))).)((((...))).)(((((...)))))((((...)))(((...)).))((.((((...))))))((((((...))))).)(((((((...))))((...)))))(((....)))((((((((...))))))(((...))))).((((.(((...)).)))))(((..(((...)).))))((((((...)))...))(.((((...)..)))))((((...))).)(.(((((...))))(.((...)))))(((...))((((...)))))(.(...))((...))((((.(...))).)).((((...))).)(((((.(...))).))((((...).).))).(((...)))((((...)))).((((....))))..(((...)))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00051",
+      "sequence": "UGGCGGGGGCCCGCACAACCGGUGGAGCGUCUGGUUCAAUUCGAUGCUAACCGAAGAACCUUACCCGGGCUUGACAUGCCGGGGAGACUCCGCGAAAGCGGAGUUGUGGAAGUCUCUGACUUCCCCCCGGCACAGGUGGUGCAUGGCCGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUGCCCCUAGUUGCUACCCCGAGAGGGGAGCACUCUAGGGGGACCGCCGGCGAUAAGCCGGAGGAAGGGGGGGAUGACGUCAGGUCAGUAUGCCCUUUAUGCCCGGGGCCACACAGGCGCUACAGUGGCCGGGACAAUGGGAAGCGACCCCGCAAGGGGGAGCUAAUCCCAGAAACCCGGUCAUGGUGCGGAUUGGGGGCUGAAACUCGCCCCCAUGAAGCCGGAAUCGGUAGUAACGGGGUAUCAGCGAUGUCCCCGUGAAUACGUUCUCGGGCCUUGCACA",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((.((...)))).))(..((((...)))))((((.(((...))..)))))((((...))).)(...).(((...))((((((...))))).))((((...))).)(((((((...)))))))(((((...).)).))((.((((...))))))((((((...))))).)(.(((((...))))((...)))(.(...)))(((...).))(((((.((((....))))))))(((...)))(.((...)))..(...((...))))...((((((...)))(((.((...)))).))).)(((...)))(.(...))(((((...)))).)(((...)(((...)..))))((...)(((.(....)))).(...))(((((.((...)))))))((((.(((...))))))).((...)((.(...)))).(...)((((((((...))))))))(((....)))((...)(((...)).))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00061",
+      "sequence": "GACGGGGGCCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGAUGAUACGCGAGGAACCUUACCAGGGCUUGACAUAUAUAGGAUAUAGUUAGAGAUAAUUAUUCCCCGUUUGGGGUCUAUAUACAGGUGCUGCAUGGUUGUCGUCAGCUCGUGCUGUGAGGUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCUUGUUAUCUGUUACCAGCAUGUAAUGGUGGGGACUCAGAUAAGACUGCCGGUGAUAAGUCGGAGGAAGGUGAGGAUGACGUCAAAUCAUCAUGGCCCUUAUGUCCUGGGCUACACACGUGCUACAAUGGCCUGUACAAAGCGAAGCGAAACAGUGAUGUGAAGCAAAACGCAUAAAGCAGGUCUCAGUCCGGAUUGAAGUCUGAAACUCGACUUCAUGAAGUUGGAAUCGCUAGUAAUCGUAUAUCAGAAUGAUACGGUGAAUACGUUCUCGGGCCUUGUAC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(.(...).)((((....)))(((...))))((((...)))((.((...)))))((((((((...)))).))(((.(((((...))))))))(((((...)).))((((....))))))(((.(...)))))((.((((...))))))((((((...))))).)(((((((...))))((...)))))((((...))))((((((...).))(((...)))))((...))(((.(...))))(((((...)..)))))(((.((((....).))((...))).))((((...))))(((...)))(((....)))(((...))))((.(...)))(...)((...).)(..(((...))))((((..(...)).).).)((((...).)))((((.(((...)))))))(((...))(((...).).))((.(...))((((...)))))(((.(((....))))))(((...)).)"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00063",
+      "sequence": "GACGGGGGCCCGCACAAGCGGAGGAACAUGUGGUUUAAUUCGAUGAUACGCGAGGAACCUUACCCGGGCUUAAAUUGCAGUGGAAUGAUGUGGAAACAUGUCAGUGAGCAAUCACCGCUGUGAAGGUGCUGCAUGGUUGUCGUCAGCUCGUGCCGUGAGGUGUCGGCUUAAGUGCCAUAACGAGCGCAACCCUUAUCUUUAGUUACUAACAGGUUAUGCUGAGGACUCUAGAGAGACUGCCGUCGUAAGAUGUGAGGAAGGUGGGGAUGACGUCAAAUCAGCACGGCCCUUACGUCCGGGGCUACACACGUGUUACAAUGGGGGGUACAGAAGGCAGCUAGCGGGUGACCGUAUGCUAAUCCCAAAAUCCUCUCUCAGUUCGGAUCGAAGUCUGCAACCCGACUUCGUGAAGCUGGAUUCGCUAGUAAUCGCGCAUCAGCCACGGCGCGGUGAAUACGUUCCCGGGCCUUGUAC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(.(...).)((((....))))((...).)(((((...))((...)))))(.((((...))).))((.(.(...))))(.((...)))(((((....)))))(((((.(...))))(.((...).))))(((.((((...)))))))(((((...)))))((((.((((...).))))).))(((.(...).)))((((((((...)))).))))(.(.(...)))((...)((...)))((.(((((...)))))))(.(((.(...).))((...)))(((...))..)).((((...)))(((....)))(((...))))((((.(....)))..)((((((....)))).)))(..(...))((...)((...)))(((...)))(((((...)...))))((((...)).)((((.(....))))))((..((.(...)))))(((.(((....))))))(((...)).)"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00074",
+      "sequence": "GACGAACGCUGGCGGCGUGCCUAAUACAUGCAAGUCGAGCGGACAGGUGGGAGCUUGCUCCCGAUGUUAGCGGCGGACGGGUGAGUAACACGUGGGUAACCUGCCUGUAAGACUGGGAUAACUCCGGGAAACCGGGGCUAAUACCGGAUGGUUGUUUGAACCGCAUGGUUCAAACAUAAAAGGUGGCUUCGGCUACCACUUACAGAUGGACCCGCGGCGCAUUAGCUAGUUGGUGAGGUAACGGCUCACCAAGGCAACGAUGCGUAGCCGACCUGAGAGGGUGAUCGGCCACACUGGGACUGAGACACGGCCCAGACUCCUACGGGAGGCAGCAGUAGGGAAUCUUCCGCAAUGGACGAAAGUCUGACGGAGCAACGCCGCGUGAGUGAUGAAGGUUUUCGGAUCGUAAAGCUCUGUUGUUAGGGAAGAACAAGUACCGUUCGAAUAGGGCGGUACCUUGACGGUACCUAACCAGAAAGCCACGGCUAACUACGUGCCAGCAGCCGCGGUAAUACGUAGGUGGCAAGCGUUGUC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(.(....))(((((...))))(...).)(...)((...))((.(((((...).))))))((((.((((...))))..))))(.(((...)).))((((...))))(((...))((...)))((((.((...))))))((.((...)..)))(((((((((((....))))))))))(...)((((((...).))))))(((...))(((...).)((((...).)))))(((((((.((...).))))))))(((.(((...))).)))(.(((...)))(...))((((.(...))).)((...)))(((...).))(((...)).)((....))(((...)))((((...))))(((...))((.(...)))(((...))))((.(((...).))))((((..((...))))))((.((...))))(((..(...)))(...))((((...).)))(((...).)((....)).)(((...).))(.((.((...).).))((((.((...)))).)))(((((...)))))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00082",
+      "sequence": "GGCGUAAAGAGCUCGUAGGUGGUUUGUCGCGUCGUCUGUGAAAUUCCGGGGCUUAACUUCGGGCGUGCAGGCGAUACGGGCAUAACUUGAGUGCUGUAGGGGAGACUGGAAUUCCUGGUGUAGCGGUGGAAUGCGCAGAUAUCAGGAGGAACACCGAUGGCGAAGGCAGGUCUCUGGGCAGUAACUGACGCUGAGGAGCGAAAGCAUGGGGAGCGAACAGGAUUAGAUACCCUGGUAGUCCAUGCCGUAAACGGUGGGCGCUAGGUGUGAGGGUCUUCCACGACUUUCGUGCCGUAGCUAACGCAUUAAGCGCCCCGCC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((.(...).)))(((.((((...)))))))((.((((.((...)))))))((((...).)))(((...).)))(((((((.((...)).)).)))))((((...))(...)))(((...)))(((((...))).).).(.((.((.(...).))))((.(...).)))((((...))(((...)))))(((....)))(....).(.((...)...))((((...)).))((((...).))(((((....))))))((((...))))((((((((...).)))))))(((...))(((((....))).))((...)))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00098",
+      "sequence": "UGACGGGGGCCCGCACAAGCAGUGGAGCAUGUGGUUUAAUUCGAUGCAACGCGAAGGACCUUACCUGGGUUUGACAUGUAUAUGACCGCGGCAGAAAUGUCGUUUUCCGCAAGGACAUAUACACAGGUGCUGCAUGGCUGUCGUCAGCUCGUGCCGUGAGGUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCUUAUCGUUAGUUGCCAGCACUUAGGGUGGGAACUCUAACGAGACUGCCUGGGUUAACCAGGAGGAAGGCGAGGAUGACGUCAAGUCAGCAUGGCCCUUAUGCCCAGGGCGACACACGUGCUACAAUGGCCAGUACAGAAGGUGGCAAGAUCGCGAGAUGGAGCAAAUCCUCAAAGCUGGCCCCAGUUCGGAUUGUAGUCUGCAACUCGACUACAUGAAGUCGGAAUUGCUAGUAAUGGCGUGUCAGCCAUAACGCCGUGAAUACGUUCCCGGGCCUUGUACA",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((.(.((...)))))(..((.(((...))))))((...))(((.((...)))))((((...).)))(((((((...)).).))..))(((((.(...))))))(.(((....))).)(((.(...))))(((.((((...)))))))(((((...)))))(((((((((...))))((...)))))))((...)).((((..(((...)))))(((...)))).)((((...).))((.(((.((....))))))))..(((((...)..))))((((((...))))..)).((((...))))((....))((((...))))(.((.(....))))(((...).))(.((((...))..)))(...)((((...).)))((.(((((((...))))).))))((.(((...)).))((((...)))..))((((.(..(...))))))(((....)))((...)(((...)).))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00100",
+      "sequence": "GACGGGGGCCCACACAAGCGGUGGAUCAUGUGGUUUAAUUCGAUGCAACGCGAAGAACCUUACCCGGGCUUGAAAGGCUGGCUAAACCUCCUGAAAGGGAGGGUUCUUCGGGGAGCCAGUACAGGUGCUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUACAAUUAGUUGCUAGCAGGUAAAGCUGAGGACUCUAAUUGAACUGCCUACGCAAGUAGAGAGGAAGGAGGGGAUGACGUCAAGUCCUCAUGGCCCUUACGUCCGGGGCUACACACGUGAUACAAUGGUAACUACAGAGGGCAAAGCCGCGAGGCAGAGGAAAUCCCUUAAAAGUUAUCCUAGUCCGGAUCGGAGUCUGCAACUCGACUCCGUGAAGCUGGAAUCGCUAGUAAUCGCAGAUCAGCAUGCUGCGGUGAAUGUGUUCCUGGGCCUUGUAC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((...))(((.(....))))).))((.((((...))).)))((...))((((...))).)(((.((((...)))))))((.(...)(((...)).)))((((((...))).))(((((....))))))((((...))))(.((((((...))))).))((((((...))))((...)))(.(...))(((...)((((...))))(((.(...)))).)))((...)(((...))(((((....)))).)))...(((((((((...)))...))))).(((...))))(((...)))(((....)))((...))((...)).(...)(((...)))((...)).(.((...)))(((...))(((...)))((((...)))))(.((...)((.((...)))))(((((...).).))))(((...)))(.(((...)))((.(((....))))))(((...)).)"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00101",
+      "sequence": "GAUGAACGCUGGCGGUAUGCAUAACACAUGCAAGUCGAACGGUCUGGAAACAGACAGUGGCGGACGGGUGAGUAACGCGUGAGAAUCUAACUUGUGGUUCGGGAUAACCACUGGAAACGGUGGCUAAGACCGGAUGUGCCGGGAGGUGAAAGGGAGACCGCCACAAGAGGAGCUCGCGUCCGAUUAGCUAGAUGGUGGGGUAAAGGCCUACCAUGGCGACGAUCGGUAGCUGGUCUGAGAGGACGAACAGCCACACUGGGACUGAGACACGGCCCAGACUCCUACGGGAGGCAGCAGUGGGGAAUUUUCCGCAAUGGGCGCCUGACGGAGCAAUACCGCGUGAGGGAGGAAGGCCCUUGGGUUGUAAACCUCUUUUCUCAGGGAAGAAGAAAUUGACGGUACCUGAGGAAAAAGCAUCGGCUAACUCCGUGCCAGCAGCCGCGGUAAUACGGAGGAUGCAAGCGUUAUC",
+      "method": "untrained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(.(....))(((((...))).)).(.(.(...)((...))))(((.(...))))(.((...)..)).((..((...))))((...))((...))(((((.(...))))))((.(...)))((((...).)))(.(.((((....)))))..(((...)).)).(.((((...)))((((...).).))).)(((((((.((...).))))))))(((...).))((...))(((((...))).)(..(..(((...)))).)((...)))(((...).))(((...)).)((....))(((...)))((((...))))(((((...)).))..(((...)))(.((.((....))))))((((...))))((((((((...))))))((...))))(((...))).((...((((...).))...)))(((((.((....))))))((.(...)((((....)))))))"
+    },
+    {
+      "id": "validation_PDB_00002",
+      "sequence": "GGCGUAAGGAUUACCUAUGCC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((.(((....))))))))"
+    },
+    {
+      "id": "validation_PDB_00019",
+      "sequence": "GGGAUACUGCUUCGGUAAGUCCC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((((((...)))))..))))"
+    },
+    {
+      "id": "validation_PDB_00049",
+      "sequence": "GGCGAAGUCGAAAGAUGGCGCC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((..((....)))..))))"
+    },
+    {
+      "id": "validation_PDB_00108",
+      "sequence": "GGCGGUGCUGAGAUGCCCGUC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((.(((...).)))))))"
+    },
+    {
+      "id": "validation_PDB_00130",
+      "sequence": "GGAAGGCCCUUUUCAGGGCCACCC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((..(((((.(...)))))).))."
+    },
+    {
+      "id": "validation_PDB_00149",
+      "sequence": "GCGCAGGACUCGGCUUCUUCGGAAGGGACGAGGGGCGC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((....((((.(.((((...))))).))))..))))"
+    },
+    {
+      "id": "validation_PDB_00160",
+      "sequence": "GGCGUAACGUUGAAAAGUUACGCC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((((.((...))))))))))"
+    },
+    {
+      "id": "validation_PDB_00169",
+      "sequence": "GGACCUCUCGAAAGAGUUGUCC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((((....))))..))))"
+    },
+    {
+      "id": "validation_PDB_00178",
+      "sequence": "GGCGAUACCAGCCGAAAGGCCCUUGGCAGCGUC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((.(.((((((....)))...))).).))))"
+    },
+    {
+      "id": "validation_PDB_00182",
+      "sequence": "GAGCGAAGACGAAAGUCGAGCUC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((...(....)))..))))"
+    },
+    {
+      "id": "validation_PDB_00187",
+      "sequence": "CUCCCGGAAGACCACCGGGUUAAGAGGCCAGGCGUGCACGCAUAGCAAUGUGUUCAGCGGACUGGUGCUCAUCAG",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((...(((.(..(((((((((..(((((...))...)((((((....)))))))))))...)))))))))..)))"
+    },
+    {
+      "id": "validation_PDB_00201",
+      "sequence": "GGACACGAAAUCCCGAAGUAGUGUCC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((.(..(....)..).))))))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00476",
+      "sequence": "UUGCUGGUGCAGCGCAGCGCGGACGCCCGAACCUGGUCAGAGCCGGAAGGCAGCAGCCAUAAGGGAUGCUUUGCGGGUGCCGUUGCCUUCCGGCAAUGCU",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((((.(.((.((((((..(.((((((((((((((...).))))..)((...(....(.....))))))..)))))))))))))))))))))))...."
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00508",
+      "sequence": "GGAGCGGGUCCUGUGCAACGCGAACCCAUGAACCUGGUCAGGUCCGGAAGGAAGCAGCCAUAAGUGGAUCAUCGCGUGUGCCGCAGGGUAGCCUGCUCUGAGC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((((((((((((((((((((.(((((.((((....))))((....))...)).(.....)))).)..)))))).)).))))))..).)))))))....)"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00510",
+      "sequence": "AGCCGUCACAUCAUUACGGUCGAAUCGUGUCAGGCCAGAAAUGGAGCAGCAUUAAGACUAUUUAAUGAGUGUGAUGGUU",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((((((((((((((((...)))))((...))...((((((((...).)(...)))))))))))).))))))))))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00511",
+      "sequence": "AGGUUGGGUCUUGCGCAAUGGGAACCUUGUGAACCAUGUCAGGUCCGGAAGGAAGCAGCAUUAAGCAGUGUUCUCAUGUGCCGCGAGUCGCCUGGCCCGAGC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": ".((((((((((((((((((((((((((((((...))))..))))((....))(.....((.(....).))))))))).)).))))))..)))))))(...))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00518",
+      "sequence": "GCCGCGAUAAGAAUAACAUCUGAACGAGUUAGGACCGGAAGGUAGCAGCUAUAAGGAAAAGUGUUCUGUAUUGCGGU",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((((((((((((.(.(((..(..((((.(.(((....)))..))))).).).))...))))))).)))))))))"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00473",
+      "sequence": "UAUUUAGACCUAUGCAAUAGGAUUUUAGGGUAACGCUUCAGGGUAGGAAUACAGCAGAGUCCCCUAAUUUCUUGUGUGCCUUAGCCAUCUGAAUAGGAG",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((((((((((...))))).(.((((((((((.((....)).((((((.(....)((....)).))).))))).))))))))..)))))))))...."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00480",
+      "sequence": "CCCUGGUCCUCCCGCAACACUAGUUCGUGAACCUGGUCAGAUCCGGAAGGAAGCAGCCACAGCGGAUGAUGUGUGUGCCGGGAUGUGGCUGGGGUCUC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((((((((((((((((.((((((((..((((((...).))...)))..(...)))...)))))..))))).)).))))).).))))))))...."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00486",
+      "sequence": "UGUUAGUCCUAAACACUGUUAAAUUGAAUAAUUGGUCAGAUCUGGAAAGAAGCAGCCAAAUCAAUCGAUACAGGUGUUUUGAUAUAGCUAACAGAAU",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((((..(((((((((.(.(((((.(..(((((...).(((........)))))))))))))...)))).))))).)))(...)))))))...."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00488",
+      "sequence": "AGAUUUCGGUCCUAUGCAAUAUGAACCCAUGAACCAUGUCAGGUCCUGACGGAAGCAGCAUUAAGUGGAUCAUCAUAUGUGCCGUAGGGUAGCCGAGAUUUAGC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((((((((((((((((((((((((((((...)))(((((...)))))))(.(...).)...))(...).)))))).)).))))))..).)))))))))..."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00490",
+      "sequence": "GCUAGUAGUGGGCAUUGCUCUUGCUUAGUUGGUCAGGUCUGAAAAGAAGCAGCCAGGGUAAGAUUCUGUGGGUCAUUACUAGU",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((((((((((...))((((((((.((((..(...(((....))).))))).).)))))))(((...))))))))))))))"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00493",
+      "sequence": "GGCGGGUCUCCCCGCAUGGCAAAUCGGAACACCGGGUCAGGGGCGGAAGCCAGCAGCCCACUCCGGUGCGCCAGUGCCGGGGGUUUGGCCCGCC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((((.((((((((((((..((((....))((((...((((((...))....)))))).)))))..)))).))).))))....))))))))"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00495",
+      "sequence": "GACGGGCCUCCUCGCAUGGUGGCGCGGUCAACCUGGUCAGGUCGGGAACGAAGCAGCCACAGCCGUUUUCCGCCAGUGCCGAGGGUCAGGCUCGUCCCCC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((((((((((((((((((((.((((((...))))).))))((.((((......(....).))))..)))))).)).)))))...)))))))))...."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00496",
+      "sequence": "CCCUCACGCGGCGCUAUCUGACUGAACUCCCCCAGGGCCGGAAGGCAGCAAGGGUAGGUCGGCUCUGGCGGGUGCGUGGGGG",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((((((.(((((.((((((..((((((...))(((....))).....))))).)))))...)))))..))))))))))"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00512",
+      "sequence": "UUAUUGGUUUCUCGCAGCAGAAUUCAGCUUACUUAGUCAGGGCCGGAAGGAAGCAGCUUGGGUUGAAUUUCUGGGUGCCGGGAGUCGCUGGUAAUACC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((((((((((((.(((((((((((((((((....)))(((....)(...).)).)))))))))).))))..)).))))))..))))))))...."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00515",
+      "sequence": "CCCCCGGUCCAGCGCGGCGGGCCAGGCGUGAACCGGGUCAGGUCCGGAAGGAAGCAGCCCUAAGCGCCUCGGUCCGGGCGCCGCUGGGAAGCCGGGGGCGCU",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((((((((((((.((((((((((((((..(((((.....))))).......))........))))).))))))..)).)))))).)..)))))))...."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00474",
+      "sequence": "GCCCUGCGGCGGGACAGGGUGAACUCCCCCAGGCCCGAAAGGGAGCAAGGGUAAGCCCGCCGUCCCGUGCGCAGGGU",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((((((((((((..((((..(((((.(.(...))...))))))..(((....))))))))))))).))))))))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00477",
+      "sequence": "AAUAUAUAUGUCAUUACAAUAUUAAGUAGCGAACCUUGUCAGGCCAGAGAUGGAGCAGCAAUAGCAAUAUCUUUUUAUGUGUGAUGACAUAUAUUAA",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((..(((((((((((.((.(((((.((((...))).))..).(.(((((...).((....))...)))).)))))))))))))))))))))).."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00479",
+      "sequence": "CUGCCGGUCCCUCGCAACGCUAGAUCGAAAACCCCGCCAGGGCCGGAAGGCAGCAACGGUAUUGAUUGAUGCGGGUGCCGAGAUCAACCGGUGGGGCC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((((((..(((...))..))(((((..(((((....))(((....))).(...)))).)))))((((.(((...)))..))))))))))))...."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00481",
+      "sequence": "UUCUCGGUUCCUCGCAAUGGUGUCUGGUUUACCCGGUCAGGUUCGGAAGAAAGCAGCCAAAGUCAGAAUUUCUGUGUGCCGAGAUCAAGCUGGGAAGGUU",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((((((.(((((((((((((((((((.....)))))))(((....)))..)).)))....((((...))))).)).))))....)))))))))...."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00482",
+      "sequence": "GAAUUGGGUCCCACGCAACGGAAAUUCAUGAACUCCGUCAGGUCCGGAAGGAAGCAGCGGUAAGUGAAAUCUUCCGUGUGCCGUGGAUAAAUCUGAUUUGAGU",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((((((.((((((((((((((((((..(..((((...((((....)))..).))))))..)))).).)))))).)).)))))....)))))))))...."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00483",
+      "sequence": "GGAGGUUGGUGGUGGACGAGCCACUCGCCAACCGGGUCAGGUCCGGAAGGAAGCAGCCCUAACGAGCCAGGCACGGGUCGCCGUGCCAGCCUCCCACC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((((((.((((.(((.((.((((((..((((((...))))))..)......)......))))(..(...)))))))))))))))))))))...."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00492",
+      "sequence": "UUCUUAGACCUGUGCAAUGCUAUUUUUAAGCACCGCUUCAGGGUGGGAACACAGCAGAGCACUUGAUUUUAGUGUGUGCCGCAGUUAUCUGGGGAAGGG",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((((.(((((((((((((((((.((((...)))).)))))((...).)))))...((((.......))))).)).)))))...)))))).))..."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00507",
+      "sequence": "CGUUGGGUUCUACGCAACGAAAACCCACGAACCCUGUCAGGUCCGGAAGGAAGCAGCAGUAAGUGGCCCCUUUCGUGUGCCGUAGAGUCGCUGGGCCGAGC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": ".(((((((((((((((((((((..(((((...)((((...((((....)))..).))))...))))....)))))).)).)))))))))((...))))).)"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00002",
+      "sequence": "CUGAAAGUUAUCAUAAAUAAUAUUUACCAUAUAAUAAUGGAUAAAUUAUAUUUUUAUCAAUAUAAGUCUAAUUACAAGUGUAUUAAAAUGGUAACAUAAAUAUGCUAAGCUGUAAUGACAAAAGUAUCCAUAUUCUUGACAGUUAUUUUAUAUUAUAAAAAAAAGAUGAAGGAACUUUGACUGAUCUAAUAUGCUCAACGAAAGUGAAUCAAAUGUUAUAAAAUUACUUACACCACUAAUUGAAAACCUGUCUGAUAUUCAAUUAUUAUUUAUUAUUAUAUAAUUAUAUAAUAAUAAAUAAAAUGGUUGAUGUUAUGUAUUGGAAAUGAGCAUACGAUAAAUCAUAUAACCAUUAGUAAUAUAAUUUGAGAGCUAAGUUAGAUAUUUACGUAUUUAUGAUAAAACAG",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((...)(((((((((((((((((((((((...).)))).))))).)(((((((((....))).(((...((((((((.(((((...)(....)...)))).)))....))))).)))).)))))).((((((.....((((.(((((.(...).)))......)).(((...)))..))))....))))))(((...)..).(.(.....((.((........(.........(((((((((......(...)..))))))(...(((((((((((((......))))))))))))))..(((((((.(.(((((.(((...)))...)))).....)).)....)))))))))))).(.(((((.......)))))...)))).).))))))))))))...)))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00012",
+      "sequence": "GUAACAAGGUUUUAUCCUAUGGAAGCCUUUGCAGCCCGAUGAAGGGUGGGCGCUCGCGACUAGAUAAAUAAUGACGAAUGCCUGAAAUGCAAGCGGCGGAACAUCUCUUUUAGGGUGUUUGGCCGCGAUCUUCUCAAAUUGCGGGAAAAGUGCUCAAAUUGGCCGUAAAGACACCGCGGCUCUUGUGGACAACACAGAGUGCAGCAGGCGGGGUAGCACCCUGCUGGAUGGUAACAGAUCUUUCGGACACGGGCCUAAUCCGCAGCCAAGCUCCGUAGCGCAUUUUUGUUAGUGCGUCGGAGAAGGUUCACAGACUGUAAGGGAAGGGGUUCGCACUUGUGUGCGGGCUUAAGAGACAGUCGGUCCCUCUGUGAGAGCAGAGUUCCGGGUUUGAGGAAGGUGCGCCGCCGACAAAUGGGCCACCAGAGAGCGCCUGGAGAGUCGUGUGUUUUGCGGGUGUUUGCGGAUAACUCGCGCGCGUGAUUGGCUUUUCUGAACGGAAUCAAAAAAUGUUCCGUAGGUGAACCUGCAGAAGGAUCAGAA",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": ".((((...)))(((((((.(((((((((((((((((((..((((((((((((((((((.(.(.((.....))....(((((((((((.((.....)).((...))..))))).))))))).).))(.((.((...)))).))).....))))))))......((((......)...))))((.((((.....))))))...(((((....((((...))))))))).((........))))))).....))))(((..((((((((...))).....)((((..........)))).))))..)))((...).))))))))))...(((..(((((....)))))..).......(.......))))((((......)))).)))).((((((.....((.(...).))..))..(((....))).....(.(((.((.(((((.(.(....(((.((.(......)..)).))).).).)))....))..))....(((((..........))))).))).)))))(...))))))).).))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00045",
+      "sequence": "AUUGAACGCUGGCGGCAGGCUUAACACAUGCAAGUCGAGCGGGGAAGGUUGCUUCGGUAACUGACUAGCGGCGGACGGGUGAGUAAUGCUUAGGAAUCUGCCAUUUAGUGGGGGACAACAUUCCGGAAUGCUAAUACCGCAUACGUCCUACAGGAGAAAGCAGGGGAUCUCCGGACCUUGCGCUAAAUGAUGAGCCUAAGUCGGAUUAGCUAGUUGGUGGGGUAAAGGCCUACCAAGGCGACGAUCUGUAGCGGGUCUGAGAGGAUGAUCCGCCACACUGGGACUGAGACACGGCCCAGACUCCUACGGGAGGCAGCAGUGGGGAAUAUUGGACAAUGAUCCAGCCAUGCCGCGUGUGUGAAGAAGGCCUUUUGGUUGUAAAGCACUUUAAGCGAGGAGGAGGCUCUCUUAGUUAAUACCUAAGAUGAGUGGACGUUACUCGCAGAAUAAGCACGUGCGAGCGUUAAU",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((.((((((..(.(((((((((((((((((.((((((((..........))).))(...)..))).)((((((.((((((((.....))..(....)...)(.((((((.....).)((((....)))))))))))).....))((((..((((((..........))))).((((...(((((...(((......)..)).((((....)((((((.((.......)).))))).....).)))..))))))))))...))))....))).....(((((..(.....)...))))).((((...).))).((....(((.......((((......)))).))))))))))))))).......(((((((......)))...(((......)..)).)))).(((((((.......)))))).).((.......))((...)).))))).).)))))))))))))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00050",
+      "sequence": "CGGGGGCCCGCACAAGCGGCGGAGCAUGCGGAUUAAUUCGAUGCAACGCGAAGAACCUUACCAGGGCUUGACAUGGGCCGGCUGCUCCUGGAGACGGGGGCCUCCCUUUUUGGGCUGGUUCACAGGUGGUGCAUGGUUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCUGUCCCGUGUUGCCAGCGUGUUGUGGCGGGGACUCGCGGGAGACUGCCGGGGUUAACUCGGAGGAGGGUGGGGACGACGUCAAAUCAUCAUGCCCCUUAUGUCCUGGGCUUCACGCAUGCUACAAUGGCCGGUACAGUGGGUUGCGAUGUCGUGAGGCGGAGCGAAUCCCUUAAAGCCGGUCUCAGUUCGGAUCGGUGUCUGCAACUCGACACCGUGAAGCUGGAGUCGCUAGUAAUCGCAGAUCAGCAGUGCUGCGGUGAAUACGUCCUCGGGCCUUG",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((.(((((((((((((((((((((((((((((((((((...(...)))))(..((.(...).)))))))((((.((((((.(((((.(....).)))))(...(.....)))))))).))....((....(((.((((((((..(((...((....)).(((((........)..)))))))....(((((.((((.....(((..........))))).))((..(.(....).)(((.(.....).))))).)))))...))))))....)).)))))(.......))))).(.......)))))))))(...)..((((.....(.(.((((.....((.....))..)).)).)....)...)))).))(((((.....(((((((........)))))))..)).)))..)))))).....)((((......(...).)))))))((....)..))))))))))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00051",
+      "sequence": "UGGCGGGGGCCCGCACAACCGGUGGAGCGUCUGGUUCAAUUCGAUGCUAACCGAAGAACCUUACCCGGGCUUGACAUGCCGGGGAGACUCCGCGAAAGCGGAGUUGUGGAAGUCUCUGACUUCCCCCCGGCACAGGUGGUGCAUGGCCGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUGCCCCUAGUUGCUACCCCGAGAGGGGAGCACUCUAGGGGGACCGCCGGCGAUAAGCCGGAGGAAGGGGGGGAUGACGUCAGGUCAGUAUGCCCUUUAUGCCCGGGGCCACACAGGCGCUACAGUGGCCGGGACAAUGGGAAGCGACCCCGCAAGGGGGAGCUAAUCCCAGAAACCCGGUCAUGGUGCGGAUUGGGGGCUGAAACUCGCCCCCAUGAAGCCGGAAUCGGUAGUAACGGGGUAUCAGCGAUGUCCCCGUGAAUACGUUCUCGGGCCUUGCACA",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((((.((((.((.((((((((((((((((((((..((((.(....).))))))).......(((.(.(((((((((((((..(((((((....)))))))....((((((...))))))).)))))(((.....))))))).(.(((.(..((((...((....)).(((((........)..)))))))).....((((.(((((((.((((....(....)...))))..))))).))....(((((.....)))))....))).)...).))))))).).....((.......))..)))...))....)))))))(...)((((((.....((((......((((....)).))(.....))))).....))))))((..(....)..(((((((...)...))))))))....))...)))))).)..(((((..(((...)))..).))))(((....)))))))))))))).))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00061",
+      "sequence": "GACGGGGGCCCGCACAAGCGGUGGAGCAUGUGGUUUAAUUCGAUGAUACGCGAGGAACCUUACCAGGGCUUGACAUAUAUAGGAUAUAGUUAGAGAUAAUUAUUCCCCGUUUGGGGUCUAUAUACAGGUGCUGCAUGGUUGUCGUCAGCUCGUGCUGUGAGGUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCUUGUUAUCUGUUACCAGCAUGUAAUGGUGGGGACUCAGAUAAGACUGCCGGUGAUAAGUCGGAGGAAGGUGAGGAUGACGUCAAAUCAUCAUGGCCCUUAUGUCCUGGGCUACACACGUGCUACAAUGGCCUGUACAAAGCGAAGCGAAACAGUGAUGUGAAGCAAAACGCAUAAAGCAGGUCUCAGUCCGGAUUGAAGUCUGAAACUCGACUUCAUGAAGUUGGAAUCGCUAGUAAUCGUAUAUCAGAAUGAUACGGUGAAUACGUUCUCGGGCCUUGUAC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((.(((((.(((((((((((((((((((((((..((((.(...)..))))))))(((((.(...(((.((((((((((.((..(((((....))))))).((((....)))).)))))))((.....))((.(((((....)))).).))(......))))((((.....((((.((((.(.........).)))(....((((......))))).).))).)))))...)))..).(((.........)))......))))).((((.......))))))(.((((..(.....))))).)....))))(.(...).)(((((......(...)....)...(.(((.(........).))))...)))).)....)))..)((.(((((........)))))((......)).)))))))..)...((((..(((...)))))))).(((....)))))))))))))).)"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00063",
+      "sequence": "GACGGGGGCCCGCACAAGCGGAGGAACAUGUGGUUUAAUUCGAUGAUACGCGAGGAACCUUACCCGGGCUUAAAUUGCAGUGGAAUGAUGUGGAAACAUGUCAGUGAGCAAUCACCGCUGUGAAGGUGCUGCAUGGUUGUCGUCAGCUCGUGCCGUGAGGUGUCGGCUUAAGUGCCAUAACGAGCGCAACCCUUAUCUUUAGUUACUAACAGGUUAUGCUGAGGACUCUAGAGAGACUGCCGUCGUAAGAUGUGAGGAAGGUGGGGAUGACGUCAAAUCAGCACGGCCCUUACGUCCGGGGCUACACACGUGUUACAAUGGGGGGUACAGAAGGCAGCUAGCGGGUGACCGUAUGCUAAUCCCAAAAUCCUCUCUCAGUUCGGAUCGAAGUCUGCAACCCGACUUCGUGAAGCUGGAUUCGCUAGUAAUCGCGCAUCAGCCACGGCGCGGUGAAUACGUUCCCGGGCCUUGUAC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((.(((((((((((((((((..((((((((((((.(((..(...).)))(...((.......))))))))(..(((((...(((((((....)))))))((((....)))))))))..).....)))))))((((.(.....(((((.((....))((...((......)))..)))))).))))))))..((((((.((...))...((..........))..))))))..))))..)(....).))).......)..((.(...(.(.....((.((((((((.........))))......))))(....)((((((.(............((((((....))....))))........).)).).).))(((((...))((((((...)...)))))....)).))).((((.(.......(((((..........)))))).))))).)).)))))))))))).)"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00074",
+      "sequence": "GACGAACGCUGGCGGCGUGCCUAAUACAUGCAAGUCGAGCGGACAGGUGGGAGCUUGCUCCCGAUGUUAGCGGCGGACGGGUGAGUAACACGUGGGUAACCUGCCUGUAAGACUGGGAUAACUCCGGGAAACCGGGGCUAAUACCGGAUGGUUGUUUGAACCGCAUGGUUCAAACAUAAAAGGUGGCUUCGGCUACCACUUACAGAUGGACCCGCGGCGCAUUAGCUAGUUGGUGAGGUAACGGCUCACCAAGGCAACGAUGCGUAGCCGACCUGAGAGGGUGAUCGGCCACACUGGGACUGAGACACGGCCCAGACUCCUACGGGAGGCAGCAGUAGGGAAUCUUCCGCAAUGGACGAAAGUCUGACGGAGCAACGCCGCGUGAGUGAUGAAGGUUUUCGGAUCGUAAAGCUCUGUUGUUAGGGAAGAACAAGUACCGUUCGAAUAGGGCGGUACCUUGACGGUACCUAACCAGAAAGCCACGGCUAACUACGUGCCAGCAGCCGCGGUAAUACGUAGGUGGCAAGCGUUGUC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((.(((((((((((((((((((((((((((.(((.....)))...))((((....))))).))))((((.((..(((..((.....))))).((...)).))((((((.((.((.((..(.((((....)))).)...)).)).....))((((((((((....))))))))))......(((((....))...)))))))))(((...(...)...)))..)))))))((((((.......)))))).))))(....))((((((((((((...).)))...)))((...(((((..(.....)...))))(((((((((...........))))).....((((.....)))...)))))(((((((((.(.(...).)....(((..(....)....))).....)))))))(((.(.(.........((((((..(.....)..))))))).).)))((.....)))))........)))....)))))))).))..((.(..(...)(...)).))).)))))))))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00082",
+      "sequence": "GGCGUAAAGAGCUCGUAGGUGGUUUGUCGCGUCGUCUGUGAAAUUCCGGGGCUUAACUUCGGGCGUGCAGGCGAUACGGGCAUAACUUGAGUGCUGUAGGGGAGACUGGAAUUCCUGGUGUAGCGGUGGAAUGCGCAGAUAUCAGGAGGAACACCGAUGGCGAAGGCAGGUCUCUGGGCAGUAACUGACGCUGAGGAGCGAAAGCAUGGGGAGCGAACAGGAUUAGAUACCCUGGUAGUCCAUGCCGUAAACGGUGGGCGCUAGGUGUGAGGGUCUUCCACGACUUUCGUGCCGUAGCUAACGCAUUAAGCGCCCCGCC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((((....)(((((((((((((((((((((((((((((((...)((((.(.....).)))).)..))))))))((((.(((...(....)))))))((......))...)((((((((((.........)..)......)))))))...)..)(...)))))...))))))...)..).....)).))(((....)))))..)(((((............(.(((.....))...).))))))(((....)))..(((((((((.(.(((((((......))))))).).)).)))((((....)).)))))))))))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00098",
+      "sequence": "UGACGGGGGCCCGCACAAGCAGUGGAGCAUGUGGUUUAAUUCGAUGCAACGCGAAGGACCUUACCUGGGUUUGACAUGUAUAUGACCGCGGCAGAAAUGUCGUUUUCCGCAAGGACAUAUACACAGGUGCUGCAUGGCUGUCGUCAGCUCGUGCCGUGAGGUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCUUAUCGUUAGUUGCCAGCACUUAGGGUGGGAACUCUAACGAGACUGCCUGGGUUAACCAGGAGGAAGGCGAGGAUGACGUCAAGUCAGCAUGGCCCUUAUGCCCAGGGCGACACACGUGCUACAAUGGCCAGUACAGAAGGUGGCAAGAUCGCGAGAUGGAGCAAAUCCUCAAAGCUGGCCCCAGUUCGGAUUGUAGUCUGCAACUCGACUACAUGAAGUCGGAAUUGCUAGUAAUGGCGUGUCAGCCAUAACGCCGUGAAUACGUUCCCGGGCCUUGUACA",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((((.((((.((((((((((((((((((((((...((((...(...))))).))(....(((((..((((((((((((((.(.(((...((((.....))).))))...).))))))..((.....)))))).(.(((.(((.((((..((....))(((((((......))).((((.(.((..........)).).))))..)))).(((((((....)))))))))))..)((((((.....))).......)))...)).)))))))).....(((.......))).)))))))....)))))))((((...(.(............).).(..((....))(.......)(((....(.(((....))).).)))))))).))))).(..(((((......)))))...))))).....)(((((.(.....)..)))))))(((....))).)))))))))).))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00100",
+      "sequence": "GACGGGGGCCCACACAAGCGGUGGAUCAUGUGGUUUAAUUCGAUGCAACGCGAAGAACCUUACCCGGGCUUGAAAGGCUGGCUAAACCUCCUGAAAGGGAGGGUUCUUCGGGGAGCCAGUACAGGUGCUGCAUGGCUGUCGUCAGCUCGUGUCGUGAGAUGUUGGGUUAAGUCCCGCAACGAGCGCAACCCCUACAAUUAGUUGCUAGCAGGUAAAGCUGAGGACUCUAAUUGAACUGCCUACGCAAGUAGAGAGGAAGGAGGGGAUGACGUCAAGUCCUCAUGGCCCUUACGUCCGGGGCUACACACGUGAUACAAUGGUAACUACAGAGGGCAAAGCCGCGAGGCAGAGGAAAUCCCUUAAAAGUUAUCCUAGUCCGGAUCGGAGUCUGCAACUCGACUCCGUGAAGCUGGAAUCGCUAGUAAUCGCAGAUCAGCAUGCUGCGGUGAAUGUGUUCCUGGGCCUUGUAC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "((((((.((((((((((((((((((((((((((((.....((...(...)))((((((((((.((..((((...)))).)).)))..(((((...).)))))))))))(...)))))((.(....).))))))))(((((.((.((((...((....)).(((((........))..))))))).....((((.(((((((((.(......).))..)).........)))))......((((....)))).........)))))).)))....)))((((((.((((.........)))).)(....))).(........).......))).(...))).(((((((((.((................))....((((...)))).)))))..))))))(((........)))..))))....(.((((..(....)...)))).)...))))....)))))))))).)"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00101",
+      "sequence": "GAUGAACGCUGGCGGUAUGCAUAACACAUGCAAGUCGAACGGUCUGGAAACAGACAGUGGCGGACGGGUGAGUAACGCGUGAGAAUCUAACUUGUGGUUCGGGAUAACCACUGGAAACGGUGGCUAAGACCGGAUGUGCCGGGAGGUGAAAGGGAGACCGCCACAAGAGGAGCUCGCGUCCGAUUAGCUAGAUGGUGGGGUAAAGGCCUACCAUGGCGACGAUCGGUAGCUGGUCUGAGAGGACGAACAGCCACACUGGGACUGAGACACGGCCCAGACUCCUACGGGAGGCAGCAGUGGGGAAUUUUCCGCAAUGGGCGCCUGACGGAGCAAUACCGCGUGAGGGAGGAAGGCCCUUGGGUUGUAAACCUCUUUUCUCAGGGAAGAAGAAAUUGACGGUACCUGAGGAAAAAGCAUCGGCUAACUCCGUGCCAGCAGCCGCGGUAAUACGGAGGAUGCAAGCGUUAUC",
+      "method": "trained_population_helix_sparse",
+      "status": "ok",
+      "structure": "(((.((((((((((((((((((.....)))((((((....)(((((....))))).(((((((((..((.....))((..(((..(((..(((((((((......))))((.(....).))((((....((((.....)))).)...(..........))))))))))).).)))))))))(((..((.(..((((.((.......)).))))).))....))).(...)((((((...).)))...))))))).(((((..(.....)...)))))))(((.((...........)).)).)..))(((((.....).......)))))).)))))))...((((.......))))..((((...)))).(((((((((((...................)))))).))).))(.((......((((((.((..(....).))....)))))))).)).)))))))))"
+    }
+  ]
+}

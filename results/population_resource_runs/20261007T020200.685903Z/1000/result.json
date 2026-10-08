@@ -1,0 +1,31 @@
+{
+  "id": "synthetic_nested_1000",
+  "length": 1000,
+  "metadata": {
+    "id": "synthetic_nested_1000",
+    "seed": 20261006,
+    "population_positive": 498,
+    "population_negative": 186133,
+    "sampled_positive": 498,
+    "sampled_negative": 15936,
+    "excluded_contacts": 0,
+    "negative_inclusion_probability": 0.08561619916941111,
+    "indices_sha256": "60426262c1c272bbc5288f922da9525d519c75d07f685968a2bb5573ba62cb46",
+    "labels_sha256": "0aadc0bb49ba0a18a8f9c9247f91844adfe0dc24b266ee10cc53025d7f19680f",
+    "retained_tensor_bytes": 328680,
+    "policy": "All representable positives and a uniform sample without replacement from canonical negatives; rank counting/unranking avoids dense pair enumeration. Tensor bytes exclude Python metadata and model allocations."
+  },
+  "initial_state_tensor_sha256": "3ebac1d9ef3afbe32935de91dfb695957685639f73ddf7bfd26ac5233d419ff9",
+  "final_state_tensor_sha256": "62f1c63601c480d613407773c36ec380ed5420364f329c4d49987c013781ae48",
+  "initial_sampled_population_loss": 1.3874846696853638,
+  "after_step_sampled_population_loss": 1.3844388723373413,
+  "gradient_l2_norm": 1.0253845443931127,
+  "train_only_positive_weight": 373.76104417670683,
+  "parameters": 25882,
+  "full_label_tensor_bytes_if_materialized": 3732620,
+  "full_pair_labels_materialized": false,
+  "accuracy_evaluated": false,
+  "optimizer_steps": 1,
+  "step_wall_seconds": 1.6852650839991838,
+  "sample_sha256": "4564549a0bf78823d9e5e10259330c5aa51f75e344e52111a443af4b1a58bb6a"
+}

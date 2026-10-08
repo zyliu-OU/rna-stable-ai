@@ -1,0 +1,13 @@
+{
+  "seed": 2718,
+  "steps": 8,
+  "max_mutations": 40,
+  "protected_positions": [],
+  "preserve_protein": false,
+  "min_improvement_kcal_mol": 0.1,
+  "beam_size": 400,
+  "temperature_c": 37,
+  "timeout_seconds": 120,
+  "finalist_timeout_seconds": 600,
+  "memory_limit_gib": 8
+}

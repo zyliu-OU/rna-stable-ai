@@ -1,0 +1,35 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/global_sparse_scalability_runs/20261006T024346.509793Z",
+  "config": {
+    "mode": "global_sparse_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 256,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0
+  },
+  "seed": 20261006,
+  "checkpoint": "/home/zyliu/Documents/rna-stable-ai/results/global_sparse_development_runs/20261006T024235.048398Z/best_context_model.pt",
+  "checkpoint_sha256": "2827a5788770d3a134177da5dc6db6e505a06be9b19bb6ab20e1df47780879df",
+  "development_sha256": "c39b3c4337e2336c55033c6ee2e785efe332a35b302a5ab3c731c91b159909b6",
+  "inputs_sha256": "add6a23d6329996bab7e8432313b1988e3f56cfaae717dafd9090eab5794b10b",
+  "validation_sha256": "93e85efb20b457462ca714977e7a6296f582166ad532a59ce1c6e1d4c26c9081",
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/run_global_sparse_scalability.py": "10eb254a3903e686eec3136b4459703068f5ab9ef5e273e0b811346143e02db6",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/global_sparse_pairs.py": "2ec5afad5ec15cc9cd1d559e093cdfb5db5c71a20947728fb6d8b1c02ef0fe4f",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/pair_model.py": "9d2b406acf7f1147dcbfb735281e899d11c98af9f804238a577a26c0162b4b02"
+  },
+  "policy": "Synthetic long inputs plus reused short validation decoder diagnostics only; no test evaluation."
+}

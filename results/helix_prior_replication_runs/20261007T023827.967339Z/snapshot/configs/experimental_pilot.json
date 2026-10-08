@@ -1,0 +1,15 @@
+{
+  "min_length": 20,
+  "max_length": 256,
+  "similarity_threshold": 0.8,
+  "seed": 20261005,
+  "epochs": 20,
+  "learning_rate": 0.003,
+  "embedding_dim": 16,
+  "channels": 32,
+  "cpu_threads": 2,
+  "temperature_c": 37,
+  "beam_size": 100,
+  "timeout_seconds": 30,
+  "memory_limit_gib": 4
+}

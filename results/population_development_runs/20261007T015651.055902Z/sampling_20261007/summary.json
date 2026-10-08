@@ -1,0 +1,216 @@
+{
+  "complete": true,
+  "mode": "long_comparative_development_only",
+  "test_evaluated": false,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/population_development_runs/20261007T015651.055902Z/sampling_20261007",
+  "manifest_sha256": "f3d88cbc6e2eb0db863a90ff0b94876e12539491db454fa5867fd553fe7cfdaf",
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse",
+    "pair_features": "local_helix_context_v1",
+    "population_sampling": {
+      "seed": 20261007,
+      "negatives_per_positive": 32,
+      "minimum_negatives": 128,
+      "max_length": 1024,
+      "policy": "full_population_importance_weighted_fixed_draw_v1"
+    }
+  },
+  "counts": {
+    "train": 89,
+    "validation": 47
+  },
+  "feature_names": [
+    "outer_1",
+    "inner_1",
+    "outer_2",
+    "inner_2",
+    "outer_3",
+    "inner_3",
+    "gc_pair",
+    "gu_pair"
+  ],
+  "helix_weights": [
+    0.09340976923704147,
+    0.08901751786470413,
+    0.10645509511232376,
+    0.10108285397291183,
+    0.10526279360055923,
+    0.10003264248371124,
+    0.057366229593753815,
+    -0.28485676646232605
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "mean_train_loss": 3.9960747367880316,
+      "validation_mean_pair_f1": 0.393387691067458,
+      "mean_validation_loss": 2.701585625080352
+    },
+    {
+      "epoch": 2,
+      "mean_train_loss": 2.694826852069812,
+      "validation_mean_pair_f1": 0.4543694080907745,
+      "mean_validation_loss": 2.6057427005564913
+    },
+    {
+      "epoch": 3,
+      "mean_train_loss": 2.5659482144237904,
+      "validation_mean_pair_f1": 0.46249416641480473,
+      "mean_validation_loss": 2.393022501722295
+    },
+    {
+      "epoch": 4,
+      "mean_train_loss": 2.515205380621921,
+      "validation_mean_pair_f1": 0.499932992559898,
+      "mean_validation_loss": 2.436599863336441
+    },
+    {
+      "epoch": 5,
+      "mean_train_loss": 2.393665221300018,
+      "validation_mean_pair_f1": 0.5195605741107528,
+      "mean_validation_loss": 2.350805247083623
+    },
+    {
+      "epoch": 6,
+      "mean_train_loss": 2.289024050316114,
+      "validation_mean_pair_f1": 0.4904243487511411,
+      "mean_validation_loss": 2.322152003328851
+    },
+    {
+      "epoch": 7,
+      "mean_train_loss": 2.152448753292641,
+      "validation_mean_pair_f1": 0.5105926935475623,
+      "mean_validation_loss": 2.1017407305697176
+    },
+    {
+      "epoch": 8,
+      "mean_train_loss": 2.056550670205877,
+      "validation_mean_pair_f1": 0.4777478754516662,
+      "mean_validation_loss": 2.2089570456362786
+    },
+    {
+      "epoch": 9,
+      "mean_train_loss": 1.9970506443066542,
+      "validation_mean_pair_f1": 0.44420526177959807,
+      "mean_validation_loss": 1.9902592478914465
+    },
+    {
+      "epoch": 10,
+      "mean_train_loss": 1.9225036033083884,
+      "validation_mean_pair_f1": 0.468104369395969,
+      "mean_validation_loss": 2.0619814865132597
+    }
+  ],
+  "selected_epoch": 5,
+  "selected_validation_pair_f1": 0.5195605741107528,
+  "train_positive_pairs": 4462,
+  "train_negative_pairs": 136538,
+  "train_only_positive_weight": 264.57754370237564,
+  "excluded_train_contacts": 26,
+  "excluded_validation_contacts": 7,
+  "parameters": 25882,
+  "encoder_receptive_field_nt": 91,
+  "checkpoint_sha256": {
+    "initial_context_model.pt": "f25db4ed56298209f6a4a079368ee3fc769796878b371a3a3ac6eed81a7d5603",
+    "best_context_model.pt": "f08b0f5b646469a0d36a60c70904790442ff59e9973d0e050f138e7f90c91a1e"
+  },
+  "train_population_positive_pairs": 4462,
+  "train_population_negative_pairs": 1180545,
+  "positive_weight_population": "full_canonical_training_pairs",
+  "exposure_events": [
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/population_development_runs/20261007T015651.055902Z/sampling_20261007/exposures/20261007T015708.174555Z.json",
+      "sha256": "c5722f0f8ef086923649f442478b90d7411b6f8e93f9369f28e278bdc6b29780",
+      "stage": "training_started"
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/population_development_runs/20261007T015651.055902Z/sampling_20261007/exposures/20261007T015708.181408Z.json",
+      "sha256": "0ac586823a11376f0b5fa9d79c2b8f519e9a9337f31d3419f97c16883f697110",
+      "stage": "validation_started"
+    }
+  ],
+  "predictions_sha256": "b39859ebf895c996a7c40911968d8a452e8ee558103d856385020a9fe0cb7b5b",
+  "aggregates": [
+    {
+      "method": "trained_population_helix_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.42503282576976703,
+      "mean_pair_recall": 0.5030816813946842,
+      "mean_pair_f1": 0.459547302094517
+    },
+    {
+      "method": "trained_population_helix_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6507087819587819,
+      "mean_pair_recall": 0.7476551226551226,
+      "mean_pair_f1": 0.6945992841581076
+    },
+    {
+      "method": "untrained_population_helix_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.060399103400330945,
+      "mean_pair_recall": 0.06777999250591034,
+      "mean_pair_f1": 0.06382743292847529
+    },
+    {
+      "method": "untrained_population_helix_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.3075727513227513,
+      "mean_pair_recall": 0.3611111111111111,
+      "mean_pair_f1": 0.33154372860255216
+    }
+  ],
+  "sample_tensor_bytes": 2820000,
+  "limitations": [
+    "Fixed sampling draw reused across epochs; unbiased loss/gradient over random draws does not make each fitted trajectory equivalent to full training.",
+    "Existing development labels and model seed reused. Sampling seeds are not independent biological replicates.",
+    "Full validation labels and exact sparse decoder remain bounded to1024nt. Long synthetic sampling is a resource demonstration, not long-RNA accuracy.",
+    "Comparative annotations are not new experimental measurements; family independence and generalization remain unresolved."
+  ]
+}

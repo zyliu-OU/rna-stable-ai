@@ -1,0 +1,281 @@
+{
+  "utc": "20261005T042847.705058Z",
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_runs/20261005T042508.068755Z/long/results/portfolio_runs/20261005T042847.705058Z",
+  "mode": "saved_cpu_restart_portfolio",
+  "policy": "lowest_confirmed_vienna_energy_then_job_id_v1",
+  "source_summary": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_runs/20261005T042508.068755Z/long/results/evaluation_sweep_summary.json",
+  "source_summary_sha256": "797b0dab3dd7c4d1c82da035bf67ea57cc78a63bf735819ffe33ef4926e61e10",
+  "source_audit": "Sweep audit passed: 6 validated runs, 0 recorded failures, 192 proposal folds; constraints, raw outputs, decisions and aggregate denominators verified.\n",
+  "source_versions": {
+    "python": "3.12.14",
+    "executable": "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+    "RNA-StableAI": "0.1.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "biopython": "1.88",
+    "psutil": "7.2.2",
+    "tqdm": "4.70.1",
+    "pyyaml": "6.0.3",
+    "pytest": "9.1.1",
+    "matplotlib": "3.11.2",
+    "torch": "2.14.1+cu130",
+    "ViennaRNA": "2.7.2"
+  },
+  "portfolio_code_sha256": "348f37767da06329635117b36c209bb0be8a78db6223fd0f04b512779831cf46",
+  "input_count": 6,
+  "search_count": 6,
+  "proposals_attempted": 192,
+  "selected_finalists": 6,
+  "returned_inputs": 0,
+  "rows": [
+    {
+      "input_id": "mixed_1000_seed1732",
+      "kind": "mixed",
+      "length": 1000,
+      "sequence_seed": 1732,
+      "input_sha256": "acbd0db1f9783ea39d667f20f6d40af6b7d6934c38e3b99a57161caf97a3b79b",
+      "selected_job_id": "mixed_1000_seq1732_search2740_beam200",
+      "selection_source": "finalist",
+      "selection_reason": "best_confirmed_improvement",
+      "input_vienna_energy_kcal_mol": -390.3,
+      "selected_vienna_energy_kcal_mol": -407.2,
+      "selected_vienna_delta_kcal_mol": -16.899999999999977,
+      "search_count": 1,
+      "eligible_candidates": 1,
+      "candidate_decisions": [
+        {
+          "job_id": "mixed_1000_seq1732_search2740_beam200",
+          "policy": "require_vienna_improvement_v1",
+          "source": "finalist",
+          "reason": "confirmed_improvement",
+          "vienna_improvement_confirmed": true,
+          "candidate_vienna_delta_kcal_mol": -16.899999999999977,
+          "selected_vienna_energy_kcal_mol": -407.2,
+          "selected_vienna_delta_kcal_mol": -16.899999999999977
+        }
+      ],
+      "selected_sha256": "503a246d7a861d865a0007d4d0c57d2606f29c1c186c0111ac483afca1f080e0",
+      "selected_mutations_from_input": 12,
+      "selected_beam_size": 200,
+      "selected_search_seed": 2740,
+      "proposals_attempted": 32,
+      "candidate_worsenings": 0,
+      "source_evidence": [
+        {
+          "path": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_runs/20261005T042508.068755Z/long/results/sweep_runs/20261005T042508.084755Z/jobs/mixed_1000_seq1732_search2740_beam200/20261005T042508.754319Z/summary.json",
+          "sha256": "863bae3bbd3bbd82c24eef95b1171a2412956ac2cc84195d0450fcf3eb415e10"
+        }
+      ],
+      "selected_fasta": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_runs/20261005T042508.068755Z/long/results/portfolio_runs/20261005T042847.705058Z/mixed_1000_seed1732_selected.fasta"
+    },
+    {
+      "input_id": "mixed_1000_seed1733",
+      "kind": "mixed",
+      "length": 1000,
+      "sequence_seed": 1733,
+      "input_sha256": "b7bab5840cbb1d93ef285e6ba1ec94dce7eeb4ee74f450c1b5306125aecbca98",
+      "selected_job_id": "mixed_1000_seq1733_search2740_beam200",
+      "selection_source": "finalist",
+      "selection_reason": "best_confirmed_improvement",
+      "input_vienna_energy_kcal_mol": -415.7,
+      "selected_vienna_energy_kcal_mol": -427.1,
+      "selected_vienna_delta_kcal_mol": -11.400000000000034,
+      "search_count": 1,
+      "eligible_candidates": 1,
+      "candidate_decisions": [
+        {
+          "job_id": "mixed_1000_seq1733_search2740_beam200",
+          "policy": "require_vienna_improvement_v1",
+          "source": "finalist",
+          "reason": "confirmed_improvement",
+          "vienna_improvement_confirmed": true,
+          "candidate_vienna_delta_kcal_mol": -11.400000000000034,
+          "selected_vienna_energy_kcal_mol": -427.1,
+          "selected_vienna_delta_kcal_mol": -11.400000000000034
+        }
+      ],
+      "selected_sha256": "c8e54fce3f05dfd1af17221080b5243897687c9bb1dd61ed7c0687ce7ba1aef9",
+      "selected_mutations_from_input": 22,
+      "selected_beam_size": 200,
+      "selected_search_seed": 2740,
+      "proposals_attempted": 32,
+      "candidate_worsenings": 0,
+      "source_evidence": [
+        {
+          "path": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_runs/20261005T042508.068755Z/long/results/sweep_runs/20261005T042508.084755Z/jobs/mixed_1000_seq1733_search2740_beam200/20261005T042528.983063Z/summary.json",
+          "sha256": "882d5973d7c2de0a623db82652fa30113631308a1f382aea7e37d209c3aae2bf"
+        }
+      ],
+      "selected_fasta": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_runs/20261005T042508.068755Z/long/results/portfolio_runs/20261005T042847.705058Z/mixed_1000_seed1733_selected.fasta"
+    },
+    {
+      "input_id": "mixed_1000_seed1734",
+      "kind": "mixed",
+      "length": 1000,
+      "sequence_seed": 1734,
+      "input_sha256": "53fd453812256c6109aac7609e9a853e750bc6058d6a6b2271177038c632fca1",
+      "selected_job_id": "mixed_1000_seq1734_search2740_beam200",
+      "selection_source": "finalist",
+      "selection_reason": "best_confirmed_improvement",
+      "input_vienna_energy_kcal_mol": -403.3,
+      "selected_vienna_energy_kcal_mol": -423.4,
+      "selected_vienna_delta_kcal_mol": -20.099999999999966,
+      "search_count": 1,
+      "eligible_candidates": 1,
+      "candidate_decisions": [
+        {
+          "job_id": "mixed_1000_seq1734_search2740_beam200",
+          "policy": "require_vienna_improvement_v1",
+          "source": "finalist",
+          "reason": "confirmed_improvement",
+          "vienna_improvement_confirmed": true,
+          "candidate_vienna_delta_kcal_mol": -20.099999999999966,
+          "selected_vienna_energy_kcal_mol": -423.4,
+          "selected_vienna_delta_kcal_mol": -20.099999999999966
+        }
+      ],
+      "selected_sha256": "16ae9c9e820c48355cd7da2d705e430e829c3b7805edea782609dc54414650da",
+      "selected_mutations_from_input": 26,
+      "selected_beam_size": 200,
+      "selected_search_seed": 2740,
+      "proposals_attempted": 32,
+      "candidate_worsenings": 0,
+      "source_evidence": [
+        {
+          "path": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_runs/20261005T042508.068755Z/long/results/sweep_runs/20261005T042508.084755Z/jobs/mixed_1000_seq1734_search2740_beam200/20261005T042549.868980Z/summary.json",
+          "sha256": "96f4e5bd5b0fe288d90100e0bd72463c7ff8abfc423b3dc296c8e0be74ccb6d6"
+        }
+      ],
+      "selected_fasta": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_runs/20261005T042508.068755Z/long/results/portfolio_runs/20261005T042847.705058Z/mixed_1000_seed1734_selected.fasta"
+    },
+    {
+      "input_id": "mixed_2000_seed1732",
+      "kind": "mixed",
+      "length": 2000,
+      "sequence_seed": 1732,
+      "input_sha256": "7830f76b7b590328d943b6e885c3b45db416a4d510862381fb6c8201f0e7fabd",
+      "selected_job_id": "mixed_2000_seq1732_search2740_beam200",
+      "selection_source": "finalist",
+      "selection_reason": "best_confirmed_improvement",
+      "input_vienna_energy_kcal_mol": -769.3,
+      "selected_vienna_energy_kcal_mol": -781.5,
+      "selected_vienna_delta_kcal_mol": -12.200000000000045,
+      "search_count": 1,
+      "eligible_candidates": 1,
+      "candidate_decisions": [
+        {
+          "job_id": "mixed_2000_seq1732_search2740_beam200",
+          "policy": "require_vienna_improvement_v1",
+          "source": "finalist",
+          "reason": "confirmed_improvement",
+          "vienna_improvement_confirmed": true,
+          "candidate_vienna_delta_kcal_mol": -12.200000000000045,
+          "selected_vienna_energy_kcal_mol": -781.5,
+          "selected_vienna_delta_kcal_mol": -12.200000000000045
+        }
+      ],
+      "selected_sha256": "8a297651e0da0ede07677a65a1cb48ec41b0bf5ec7aba9b2285afd97ce469227",
+      "selected_mutations_from_input": 16,
+      "selected_beam_size": 200,
+      "selected_search_seed": 2740,
+      "proposals_attempted": 32,
+      "candidate_worsenings": 0,
+      "source_evidence": [
+        {
+          "path": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_runs/20261005T042508.068755Z/long/results/sweep_runs/20261005T042508.084755Z/jobs/mixed_2000_seq1732_search2740_beam200/20261005T042612.605092Z/summary.json",
+          "sha256": "09b16f2972319941c2e23ddad04bae7a707cd8205ee14d8059f4cb81fa79b492"
+        }
+      ],
+      "selected_fasta": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_runs/20261005T042508.068755Z/long/results/portfolio_runs/20261005T042847.705058Z/mixed_2000_seed1732_selected.fasta"
+    },
+    {
+      "input_id": "mixed_2000_seed1733",
+      "kind": "mixed",
+      "length": 2000,
+      "sequence_seed": 1733,
+      "input_sha256": "e41c9d4fedab8b01245cdfc6ae5bcb1098c7453b3136efe987dca974d76f65d5",
+      "selected_job_id": "mixed_2000_seq1733_search2740_beam200",
+      "selection_source": "finalist",
+      "selection_reason": "best_confirmed_improvement",
+      "input_vienna_energy_kcal_mol": -729.6,
+      "selected_vienna_energy_kcal_mol": -761.9,
+      "selected_vienna_delta_kcal_mol": -32.299999999999955,
+      "search_count": 1,
+      "eligible_candidates": 1,
+      "candidate_decisions": [
+        {
+          "job_id": "mixed_2000_seq1733_search2740_beam200",
+          "policy": "require_vienna_improvement_v1",
+          "source": "finalist",
+          "reason": "confirmed_improvement",
+          "vienna_improvement_confirmed": true,
+          "candidate_vienna_delta_kcal_mol": -32.299999999999955,
+          "selected_vienna_energy_kcal_mol": -761.9,
+          "selected_vienna_delta_kcal_mol": -32.299999999999955
+        }
+      ],
+      "selected_sha256": "cf603c9f62245d9fbe7c5b5d4a258264c1fcd8bc562149d074c9355f2abf1e4c",
+      "selected_mutations_from_input": 20,
+      "selected_beam_size": 200,
+      "selected_search_seed": 2740,
+      "proposals_attempted": 32,
+      "candidate_worsenings": 0,
+      "source_evidence": [
+        {
+          "path": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_runs/20261005T042508.068755Z/long/results/sweep_runs/20261005T042508.084755Z/jobs/mixed_2000_seq1733_search2740_beam200/20261005T042704.507743Z/summary.json",
+          "sha256": "7e93a5120e9a8dd816e457a1c5f0550b91324b0ce68bd10cdffa07578b77b801"
+        }
+      ],
+      "selected_fasta": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_runs/20261005T042508.068755Z/long/results/portfolio_runs/20261005T042847.705058Z/mixed_2000_seed1733_selected.fasta"
+    },
+    {
+      "input_id": "mixed_2000_seed1734",
+      "kind": "mixed",
+      "length": 2000,
+      "sequence_seed": 1734,
+      "input_sha256": "23074b5bf0841aaccb06881c93086ca75f5d83ff165060ac653452d3b1a8cd95",
+      "selected_job_id": "mixed_2000_seq1734_search2740_beam200",
+      "selection_source": "finalist",
+      "selection_reason": "best_confirmed_improvement",
+      "input_vienna_energy_kcal_mol": -693.8,
+      "selected_vienna_energy_kcal_mol": -709.2,
+      "selected_vienna_delta_kcal_mol": -15.400000000000091,
+      "search_count": 1,
+      "eligible_candidates": 1,
+      "candidate_decisions": [
+        {
+          "job_id": "mixed_2000_seq1734_search2740_beam200",
+          "policy": "require_vienna_improvement_v1",
+          "source": "finalist",
+          "reason": "confirmed_improvement",
+          "vienna_improvement_confirmed": true,
+          "candidate_vienna_delta_kcal_mol": -15.400000000000091,
+          "selected_vienna_energy_kcal_mol": -709.2,
+          "selected_vienna_delta_kcal_mol": -15.400000000000091
+        }
+      ],
+      "selected_sha256": "a87607ec0b1011db21d8033af416853dbe36f06a67189c91d0278703f56812da",
+      "selected_mutations_from_input": 18,
+      "selected_beam_size": 200,
+      "selected_search_seed": 2740,
+      "proposals_attempted": 32,
+      "candidate_worsenings": 0,
+      "source_evidence": [
+        {
+          "path": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_runs/20261005T042508.068755Z/long/results/sweep_runs/20261005T042508.084755Z/jobs/mixed_2000_seq1734_search2740_beam200/20261005T042756.467274Z/summary.json",
+          "sha256": "5e08f6a69f0e9c1df6e15fa36741b53496b9123bed2eab817ac4278f05aa2866"
+        }
+      ],
+      "selected_fasta": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_runs/20261005T042508.068755Z/long/results/portfolio_runs/20261005T042847.705058Z/mixed_2000_seed1734_selected.fasta"
+    }
+  ],
+  "limitations": [
+    "Selection reuses saved CPU ViennaRNA validation; no new folds or training.",
+    "Best-of-several search selection uses the full recorded search budget.",
+    "Selected energy is descriptive on these inputs, not a held-out performance estimate.",
+    "Computed minimum energy does not establish biological stability.",
+    "Unknown reference energy remains null; input fallback does not invent a zero measurement."
+  ]
+}

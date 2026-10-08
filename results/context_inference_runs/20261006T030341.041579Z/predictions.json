@@ -1,0 +1,28 @@
+[
+  {
+    "id": "synthetic_inference_demo",
+    "sequence": "GGGAAACCCGGGAAACCC",
+    "structure": "(((....))((....)))",
+    "objective": 12.676973581314087,
+    "accepted_pairs": 5,
+    "greedy_objective": 11.649306774139404,
+    "objective_history": [
+      11.649306774139404,
+      11.806874752044678,
+      12.676973581314087
+    ],
+    "accepted_moves": 2,
+    "group_cap_discarded_candidates": 0,
+    "passes": 2,
+    "max_remove": 2,
+    "group_cap": 8,
+    "interpretation": "Approximate local exchanges combine candidates blocked by subsets of at most two removed pairs; fixed passes/group cap; not global optimization.",
+    "include_subsets": true,
+    "top_k": 16,
+    "block_size": 64,
+    "peak_score_tile_elements": 324,
+    "candidate_array_bytes": 480,
+    "candidate_count": 30,
+    "wall_seconds": 0.004758707000291906
+  }
+]

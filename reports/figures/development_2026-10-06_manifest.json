@@ -1,0 +1,12 @@
+{
+  "source_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/results/development_slices_summary.json": "06bd6fe343d00d8a069c88fb43269cf3c0b99607e0eb78b3c0a893a892fe8653",
+    "/home/zyliu/Documents/rna-stable-ai/results/population_resource_summary.json": "bf5390df75ee69f9227f64878937c380a197b7895e8f61fd25342a9077857247"
+  },
+  "figure_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/reports/figures/development_2026-10-06.png": "cc9689769fa7194dfe0202c45e06e66508d1b01a921ec619d7903537039d1dbc",
+    "/home/zyliu/Documents/rna-stable-ai/reports/figures/development_2026-10-06.svg": "f407ce5692f37d7baf56375d9d6700fc17e8bf26d75f51392e14164bcda7c938"
+  },
+  "plot_script_sha256": "39dc729f2db87fea022d8c63dacfd48947fe28a6a4938da7506a97e25f3b7c34",
+  "purpose": "Static descriptive development/source slices and synthetic primary label layouts; no independent test, biological stability or empirical total-memory saving claim."
+}

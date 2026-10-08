@@ -1,0 +1,79 @@
+{
+  "utc": "20261005T050101.620894Z",
+  "config": {
+    "lengths": [
+      10000
+    ],
+    "kinds": [
+      "mixed"
+    ],
+    "sequence_seeds": [
+      1735
+    ],
+    "beam_sizes": [
+      200
+    ],
+    "optimization_config": "/home/zyliu/Documents/rna-stable-ai/configs/optimization.json",
+    "search_seeds": [
+      2740
+    ],
+    "optimization_overrides": {
+      "timeout_seconds": 120,
+      "finalist_timeout_seconds": 600,
+      "steps": 32
+    },
+    "optimization": {
+      "seed": 2718,
+      "steps": 32,
+      "max_mutations": 40,
+      "protected_positions": [],
+      "preserve_protein": false,
+      "min_improvement_kcal_mol": 0.1,
+      "beam_size": 100,
+      "temperature_c": 37,
+      "timeout_seconds": 120,
+      "finalist_timeout_seconds": 600,
+      "memory_limit_gib": 8
+    }
+  },
+  "config_sha256": "f2b2fc3d8541ee5034a2be532acea40e42f9babe61d97bdbc89b3a1894fbe820",
+  "provenance": {
+    "versions": {
+      "python": "3.12.14",
+      "executable": "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+      "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+      "RNA-StableAI": "0.1.0",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "pandas": "3.0.6",
+      "biopython": "1.88",
+      "psutil": "7.2.2",
+      "tqdm": "4.70.1",
+      "pyyaml": "6.0.3",
+      "pytest": "9.1.1",
+      "matplotlib": "3.11.2",
+      "torch": "2.14.1+cu130",
+      "ViennaRNA": "2.7.2"
+    },
+    "file_sha256": {
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sweep.py": "fa88aad42edf6e33c8d89546c37298de4317018de58dfd33889c51d97f1c4fa4",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/optimization.py": "988543f0686bf4ea4e67f7f6c6b8a101a61c99809571468aa7953ae346a3e869",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/folding.py": "6b166164dc7e5ef915484409a643fec2059819c319650afd415b0e74afa9297b",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/scoring.py": "aefa252f8765861a15e7265fd69c716c598ff3e3d1925c71e0564e9ef9baf349",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sequences.py": "3e970de56b2b6d38ae6fbe276032a51fe570ac2bc4d84288e49cb1a32e335960",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/selection.py": "cf2eadcc5dcb3a829cb2460b6898edae68a2ade1c8ac8bffe64cc1511aba37fd",
+      "/home/zyliu/Documents/rna-stable-ai/external/LinearFold/bin/linearfold_v": "5a6f8924d15b27058d89ec85cde41c890c68b43cd9d319828d273c8da2e797eb"
+    }
+  },
+  "jobs": [
+    {
+      "job_id": "mixed_10000_seq1735_search2740_beam200",
+      "kind": "mixed",
+      "length": 10000,
+      "sequence_seed": 1735,
+      "search_seed": 2740,
+      "beam_size": 200
+    }
+  ],
+  "config_path": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_10000_seed1735/results/equal_budget_runs/20261005T050101.608940Z/long/config.json"
+}

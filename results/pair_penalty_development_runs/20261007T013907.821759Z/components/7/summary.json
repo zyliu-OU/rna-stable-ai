@@ -1,0 +1,177 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_penalty_development_runs/20261007T013907.821759Z/components/7",
+  "manifest_sha256": "d8babb755098f7cc3195e5837c4bd30a7f0d100a053b5a677baba49c3ac0f5b1",
+  "model_fitted": false,
+  "test_evaluated": false,
+  "development_only": true,
+  "predictions_sha256": "8ba09cbb9333f919af96d869cd05db31ef805db5560c0706ee877864fe2872c7",
+  "aggregates": [
+    {
+      "group": "all",
+      "penalty": 0,
+      "records": 47,
+      "mean_pair_f1": 0.4055479388678194,
+      "mean_predicted_pairs": 39.40425531914894,
+      "mean_reference_pairs": 50.02127659574468
+    },
+    {
+      "group": "CRW comparative",
+      "penalty": 0,
+      "records": 12,
+      "mean_pair_f1": 0.07969442521641648,
+      "mean_predicted_pairs": 80.16666666666667,
+      "mean_reference_pairs": 135.08333333333334
+    },
+    {
+      "group": "PDB-derived annotation",
+      "penalty": 0,
+      "records": 12,
+      "mean_pair_f1": 0.6480803716285569,
+      "mean_predicted_pairs": 10.166666666666666,
+      "mean_reference_pairs": 8.916666666666666
+    },
+    {
+      "group": "Rfam comparative",
+      "penalty": 0,
+      "records": 23,
+      "mean_pair_f1": 0.44901980715860146,
+      "mean_predicted_pairs": 33.391304347826086,
+      "mean_reference_pairs": 27.08695652173913
+    },
+    {
+      "group": "all",
+      "penalty": 0.5,
+      "records": 47,
+      "mean_pair_f1": 0.40328005201678274,
+      "mean_predicted_pairs": 34.638297872340424,
+      "mean_reference_pairs": 50.02127659574468
+    },
+    {
+      "group": "CRW comparative",
+      "penalty": 0.5,
+      "records": 12,
+      "mean_pair_f1": 0.07553788289150436,
+      "mean_predicted_pairs": 65.83333333333333,
+      "mean_reference_pairs": 135.08333333333334
+    },
+    {
+      "group": "PDB-derived annotation",
+      "penalty": 0.5,
+      "records": 12,
+      "mean_pair_f1": 0.6409881730469965,
+      "mean_predicted_pairs": 10.083333333333334,
+      "mean_reference_pairs": 8.916666666666666
+    },
+    {
+      "group": "Rfam comparative",
+      "penalty": 0.5,
+      "records": 23,
+      "mean_pair_f1": 0.4502543379794251,
+      "mean_predicted_pairs": 31.17391304347826,
+      "mean_reference_pairs": 27.08695652173913
+    },
+    {
+      "group": "all",
+      "penalty": 1,
+      "records": 47,
+      "mean_pair_f1": 0.39970448599517805,
+      "mean_predicted_pairs": 22.617021276595743,
+      "mean_reference_pairs": 50.02127659574468
+    },
+    {
+      "group": "CRW comparative",
+      "penalty": 1,
+      "records": 12,
+      "mean_pair_f1": 0.06839352309142917,
+      "mean_predicted_pairs": 28.083333333333332,
+      "mean_reference_pairs": 135.08333333333334
+    },
+    {
+      "group": "PDB-derived annotation",
+      "penalty": 1,
+      "records": 12,
+      "mean_pair_f1": 0.62182150638033,
+      "mean_predicted_pairs": 9.833333333333334,
+      "mean_reference_pairs": 8.916666666666666
+    },
+    {
+      "group": "Rfam comparative",
+      "penalty": 1,
+      "records": 23,
+      "mean_pair_f1": 0.4566752386135765,
+      "mean_predicted_pairs": 26.434782608695652,
+      "mean_reference_pairs": 27.08695652173913
+    },
+    {
+      "group": "all",
+      "penalty": 2,
+      "records": 47,
+      "mean_pair_f1": 0.23070572194741504,
+      "mean_predicted_pairs": 7.23404255319149,
+      "mean_reference_pairs": 50.02127659574468
+    },
+    {
+      "group": "CRW comparative",
+      "penalty": 2,
+      "records": 12,
+      "mean_pair_f1": 0.022092822636300895,
+      "mean_predicted_pairs": 7.0,
+      "mean_reference_pairs": 135.08333333333334
+    },
+    {
+      "group": "PDB-derived annotation",
+      "penalty": 2,
+      "records": 12,
+      "mean_pair_f1": 0.6277738873327109,
+      "mean_predicted_pairs": 8.5,
+      "mean_reference_pairs": 8.916666666666666
+    },
+    {
+      "group": "Rfam comparative",
+      "penalty": 2,
+      "records": 23,
+      "mean_pair_f1": 0.13238123530001583,
+      "mean_predicted_pairs": 6.695652173913044,
+      "mean_reference_pairs": 27.08695652173913
+    },
+    {
+      "group": "all",
+      "penalty": 4,
+      "records": 47,
+      "mean_pair_f1": 0.0,
+      "mean_predicted_pairs": 0.0,
+      "mean_reference_pairs": 50.02127659574468
+    },
+    {
+      "group": "CRW comparative",
+      "penalty": 4,
+      "records": 12,
+      "mean_pair_f1": 0.0,
+      "mean_predicted_pairs": 0.0,
+      "mean_reference_pairs": 135.08333333333334
+    },
+    {
+      "group": "PDB-derived annotation",
+      "penalty": 4,
+      "records": 12,
+      "mean_pair_f1": 0.0,
+      "mean_predicted_pairs": 0.0,
+      "mean_reference_pairs": 8.916666666666666
+    },
+    {
+      "group": "Rfam comparative",
+      "penalty": 4,
+      "records": 23,
+      "mean_pair_f1": 0.0,
+      "mean_predicted_pairs": 0.0,
+      "mean_reference_pairs": 27.08695652173913
+    }
+  ],
+  "selected_penalty": 0,
+  "selected_development_f1": 0.4055479388678194,
+  "zero_penalty_development_f1": 0.4055479388678194,
+  "source_epoch": 4,
+  "seed": 20261008,
+  "head": "stack"
+}

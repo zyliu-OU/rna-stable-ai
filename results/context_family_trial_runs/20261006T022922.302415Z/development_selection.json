@@ -1,0 +1,67 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/context_comparison_runs/20261006T022454.836497Z",
+  "test_evaluated": false,
+  "split_sha256": {
+    "train.json": "69e0594a6232e7868e6d6dc498b9f950b44dca3f7691a55f7b6e84872e91df2a",
+    "validation.json": "b0b4b554c8bc3248c37a725999758ad8c60fd61065c0e6daf19b69880108b451"
+  },
+  "rows": [
+    {
+      "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/context_development_runs/20261006T021944.061694Z",
+      "max_pair_span": 64,
+      "positive_weight_exponent": 0.5,
+      "selected_epoch": 10,
+      "validation_records": 35,
+      "validation_mean_pair_f1": 0.21773512713604878,
+      "pdb_validation_pair_f1": 0.6183557183557183,
+      "comparative_validation_pair_f1": 0.008715688238829894,
+      "comparative_validation_recall": 0.005374194173816102,
+      "excluded_train_contacts": 210,
+      "excluded_validation_contacts": 208,
+      "summary_sha256": "c51f0aabad36c6534b525cd6c27e1b5adbd9f8b71b59e353819171cfe0d4647a"
+    },
+    {
+      "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/context_development_runs/20261006T022125.164257Z",
+      "max_pair_span": 128,
+      "positive_weight_exponent": 0.5,
+      "selected_epoch": 7,
+      "validation_records": 35,
+      "validation_mean_pair_f1": 0.2596583332104007,
+      "pdb_validation_pair_f1": 0.5790404332509596,
+      "comparative_validation_pair_f1": 0.09302419405880484,
+      "comparative_validation_recall": 0.0571580656268747,
+      "excluded_train_contacts": 0,
+      "excluded_validation_contacts": 0,
+      "summary_sha256": "705905620608001ed407623aedac63478ead9a0bf975f773ee55ae997a7f9ce0"
+    },
+    {
+      "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/context_development_runs/20261006T022313.519739Z",
+      "max_pair_span": 128,
+      "positive_weight_exponent": 1.0,
+      "selected_epoch": 6,
+      "validation_records": 35,
+      "validation_mean_pair_f1": 0.3074254052121712,
+      "pdb_validation_pair_f1": 0.5999718179954908,
+      "comparative_validation_pair_f1": 0.154792494194787,
+      "comparative_validation_recall": 0.14181479564309887,
+      "excluded_train_contacts": 0,
+      "excluded_validation_contacts": 0,
+      "summary_sha256": "878c45d15f982adb5d21862fda57fcbe6548354f1797cb40bfa8f03b89ed61b4"
+    }
+  ],
+  "selected_run_dir": "/home/zyliu/Documents/rna-stable-ai/results/context_development_runs/20261006T022313.519739Z",
+  "selection_policy": "Highest record-weighted reused-validation pair F1; ties prefer earlier run. This is development selection, not independent evaluation.",
+  "sources": {
+    "/home/zyliu/Documents/rna-stable-ai/results/context_development_runs/20261006T021944.061694Z/summary.json": "c51f0aabad36c6534b525cd6c27e1b5adbd9f8b71b59e353819171cfe0d4647a",
+    "/home/zyliu/Documents/rna-stable-ai/results/context_development_runs/20261006T022125.164257Z/summary.json": "705905620608001ed407623aedac63478ead9a0bf975f773ee55ae997a7f9ce0",
+    "/home/zyliu/Documents/rna-stable-ai/results/context_development_runs/20261006T022313.519739Z/summary.json": "878c45d15f982adb5d21862fda57fcbe6548354f1797cb40bfa8f03b89ed61b4"
+  },
+  "limitations": [
+    "Three configurations, one fixed seed, reused validation: no significance or fresh-test accuracy claim.",
+    "64-span and 128-span candidate coverage differs and is reported.",
+    "PDB-derived and comparative annotations are mixed; family identities of PDB records remain unresolved."
+  ],
+  "figure": "/home/zyliu/Documents/rna-stable-ai/results/context_comparison_runs/20261006T022454.836497Z/development_comparison.png",
+  "figure_sha256": "b8ac3c433137004304c8e7a8a9c0a5cf960cd54869d3cb4dfb70e1ec409a408f"
+}

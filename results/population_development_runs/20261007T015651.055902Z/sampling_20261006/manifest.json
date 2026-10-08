@@ -1,0 +1,56 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/population_development_runs/20261007T015651.055902Z/sampling_20261006",
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse",
+    "pair_features": "local_helix_context_v1",
+    "population_sampling": {
+      "seed": 20261006,
+      "negatives_per_positive": 32,
+      "minimum_negatives": 128,
+      "max_length": 1024,
+      "policy": "full_population_importance_weighted_fixed_draw_v1"
+    }
+  },
+  "source_summary_sha256": "b9f2f7046a06ea07a4b068200f886ebda947185052dfc3df0f0f7e759052f0e8",
+  "snapshot_sha256": {
+    "train.json": "e865328d0ee3fe778c0d07d18d604319eb7ae728285679e85d40069ee56b5517",
+    "validation.json": "bea47dac135ef17e9bc213d563fbda8f8934769bc080d111bdf1a5906a892746",
+    "training_samples.npz": "05915c2f2f204286deaf577e0a84dfff49a396e5ef2c820591cc0b05f5fbdf0e",
+    "sampling_inventory.json": "e6bfca588d8ad961bde818e32ba97eaa8b859896a115ef2bad52a2b8e69f2e4a"
+  },
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/run_population_development.py": "e2e35a9c9370530b69e03e1343bae1e907beb4db8d15f01a6799411b64094b4e",
+    "/home/zyliu/Documents/rna-stable-ai/scripts/train_helix_comparative_development.py": "aa2337c5feb766a8d0b024f76032cf477fd69e225cc39995d0e5de2263b99171",
+    "/home/zyliu/Documents/rna-stable-ai/scripts/train_sampled_comparative_development.py": "090ac8263f576126a067080774f5f57e10c00acb1c4337d90a31456d47d92d22",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/population_development.py": "0ddd75c1a2da0392e7b4e3ec482839e59fa101f9a8ef841264c8b6c70b9ef300",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/population_sampling.py": "bfa94034557ac7018acdcbe2382865720c818316f8a01387668fe133f24b5b67",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_training.py": "ef0d28c382c1a4204e00a45f17a2f24d40a21508d715bd9467e8c3ab818315f8",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/helix_pairs.py": "d4451dc21fe06cfec647e2deebfcc2d8a7d7462ce5b72ab4533425d6ee17723a",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_pairs.py": "f103e56bb315e35ae2646ff33717b53d58f163464787893699129f28a2585756",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/global_sparse_pairs.py": "9cd50c88b5d497ee9a6d8d4e6a6f6289977d9fff96e94a823b92b5bcb72c2dc7",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/full_pair_supervision.py": "180ae74fffb21c114e561306bffe6de957d7435d104af8b985e2cddc2b1f7f61",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/exact_sparse_pairs.py": "19d25a49142f314801addf9b21911358c2d8e5bacb363f609fa401566ca143bc",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/exposures.py": "ad12875d0ee29f8cf5def848758cea76dc0356b16c88eb892c7df96aa8c98adc",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reference.py": "34bf934880947040d56aa8fa51f60967b209c7c7537dc181ac59b94623051d75",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/scoring.py": "aefa252f8765861a15e7265fd69c716c598ff3e3d1925c71e0564e9ef9baf349"
+  },
+  "policy": "Same frozen train/validation records and model seed. Uniform training negatives, all positives, importance weighted full-population BCE. Fixed draw reused across epochs. Full validation labels and training population positive weight. No test."
+}

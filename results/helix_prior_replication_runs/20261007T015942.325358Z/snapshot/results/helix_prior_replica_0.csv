@@ -1,0 +1,4 @@
+policy,planned_proposal_folds,attempted_proposal_folds,successful_proposal_folds,pool_candidates,proxy_evaluations,accepted_steps,search_status,linearfold_delta_kcal_mol,selection_source,selection_reason,candidate_vienna_delta_kcal_mol,selected_vienna_delta_kcal_mol,selected_mutations,proxy_wall_seconds
+random_pool,8,8,8,128,0,6,completed,-15.299999999999955,finalist,confirmed_improvement,-11.0,-11.0,12,0.011351495999406325
+compatibility_only,8,8,8,128,0,4,completed,-12.299999999999955,finalist,confirmed_improvement,-8.400000000000034,-8.400000000000034,8,0.00974779599937392
+checkpoint_prior,8,8,8,128,128,7,completed,-24.899999999999977,finalist,confirmed_improvement,-21.0,-21.0,14,2.120975883999563

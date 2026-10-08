@@ -1,0 +1,15 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/candidate_diagnostic_runs/20261006T031124.188304Z",
+  "source_sha256": {
+    "long_comparative_development": "a52dff397efe57a40c34e55493ff73c8a45eef5f005eee19a3f27109a07691bb",
+    "sampled_comparative_development": "9f3bd7e12db62fe1e0d148b9ad35d3b458765b959d7ebe6f39ecd4dd874f34e0"
+  },
+  "validation_sha256": "bea47dac135ef17e9bc213d563fbda8f8934769bc080d111bdf1a5906a892746",
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/diagnose_expanded_candidates.py": "3b157a51c647463afa5768f09c0f25585209e5379a917b5d9df4020c463bac48",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/candidate_diagnostics.py": "d3f7d7d6aadaaedfd52f7fde57e801153859a77a7630fc1a7f925a74d99eb5f9",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/global_sparse_pairs.py": "2ec5afad5ec15cc9cd1d559e093cdfb5db5c71a20947728fb6d8b1c02ef0fe4f",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/full_pair_supervision.py": "180ae74fffb21c114e561306bffe6de957d7435d104af8b985e2cddc2b1f7f61"
+  },
+  "policy": "Reference-informed diagnostic on already exposed development records. Oracle candidate upper bounds are not predictions. No fitting, fresh test or threshold selection."
+}

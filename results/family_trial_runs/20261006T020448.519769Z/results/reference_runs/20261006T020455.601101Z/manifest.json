@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "utc": "20261006T020455.601101Z",
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/family_trial_runs/20261006T020448.519769Z/results/reference_runs/20261006T020455.601101Z",
+  "dataset_id": "rfam_disjoint_trial_test",
+  "sources": {
+    "references": {
+      "original_path": "/home/zyliu/Documents/rna-stable-ai/results/family_trial_runs/20261006T020448.519769Z/test_references.json",
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/family_trial_runs/20261006T020448.519769Z/results/reference_runs/20261006T020455.601101Z/references.json",
+      "sha256": "3317da7c2bebf9912fc7fe23f2ea4e79f7573c0d3fbfd4c383a50dc965dbb44c"
+    },
+    "predictions": {
+      "original_path": "/home/zyliu/Documents/rna-stable-ai/results/family_trial_runs/20261006T020448.519769Z/test_predictions.json",
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/family_trial_runs/20261006T020448.519769Z/results/reference_runs/20261006T020455.601101Z/predictions.json",
+      "sha256": "08d386563add4176e43cee2e6d91fbc8fc5b34fcab01a51a477de69a6b9ba9d8"
+    }
+  },
+  "methods": [
+    "trained_pair",
+    "untrained_pair",
+    "all_unpaired",
+    "ViennaRNA",
+    "LinearFold"
+  ],
+  "reference_ids": [
+    "input_data_StructureData_holdout_RFA_00388",
+    "input_data_StructureData_holdout_RFA_00440",
+    "input_data_StructureData_holdout_RFA_00449",
+    "input_data_StructureData_test_RFA_00450",
+    "input_data_StructureData_train_RFA_00425",
+    "input_data_StructureData_train_RFA_00427",
+    "input_data_StructureData_train_RFA_00431",
+    "input_data_StructureData_train_RFA_00445",
+    "input_data_StructureData_train_RFA_00446"
+  ],
+  "provenance": {
+    "versions": {
+      "python": "3.12.14",
+      "executable": "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+      "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+      "RNA-StableAI": "0.1.0",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "pandas": "3.0.6",
+      "biopython": "1.88",
+      "psutil": "7.2.2",
+      "tqdm": "4.70.1",
+      "pyyaml": "6.0.3",
+      "pytest": "9.1.1",
+      "matplotlib": "3.11.2",
+      "torch": "2.14.1+cu130",
+      "ViennaRNA": "2.7.2"
+    },
+    "source_sha256": {
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reference.py": "34bf934880947040d56aa8fa51f60967b209c7c7537dc181ac59b94623051d75",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/scoring.py": "aefa252f8765861a15e7265fd69c716c598ff3e3d1925c71e0564e9ef9baf349",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sequences.py": "3e970de56b2b6d38ae6fbe276032a51fe570ac2bc4d84288e49cb1a32e335960"
+    }
+  },
+  "policy": "exact_pairs_complete_dot_bracket_macro_by_method_and_reference_kind_v1"
+}

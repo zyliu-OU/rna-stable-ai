@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "payload": {
+    "binding_sha256": "590a6cb1e9599be625e8de7ec19ef61b5dc6b31d9efeb2d7ae44e7741bd7b726",
+    "key": "checkpoint_prior_validation_finalist_0000",
+    "sequence_sha256": "dd40b012fffe6512071a2a47fc3af87b9ca82fed4e790a167120f63fd2e6e3f7",
+    "parameters": {
+      "command": [
+        "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+        "-m",
+        "rnastable.vienna_worker",
+        "37"
+      ],
+      "config": {
+        "beam_size": 100,
+        "finalist_timeout_seconds": 300,
+        "max_mutations": 16,
+        "memory_limit_gib": 4,
+        "min_improvement_kcal_mol": 0.1,
+        "pool_size": 16,
+        "preserve_protein": false,
+        "protected_positions": [
+          1,
+          2,
+          3
+        ],
+        "seed": 20261006,
+        "steps": 8,
+        "temperature_c": 37,
+        "timeout_seconds": 300
+      },
+      "cwd": null,
+      "device": "CPU",
+      "raw_output": "/home/zyliu/Documents/rna-stable-ai/results/helix_prior_replication_runs/20261007T023827.967339Z/snapshot/results/checkpoint_prior_pilot_runs/20261007T023828.139677Z/checkpoint_prior/validation_finalist_0000_ViennaRNA.txt",
+      "tool": "ViennaRNA"
+    },
+    "state": "complete",
+    "started_at": "2026-10-07T02:38:47.405357+00:00",
+    "driver_pid": 63,
+    "result": {
+      "status": "ok",
+      "wall_seconds": 0.7368781019995367,
+      "returncode": 0,
+      "error": "",
+      "supervisor": "linux_parent_death_guard_v1",
+      "peak_rss_mib": 29.69921875,
+      "memory_method": "GNU time maximum RSS of tool descendants (excludes supervisor; not process-tree sum)",
+      "tool": "ViennaRNA",
+      "device": "CPU",
+      "command": [
+        "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+        "-m",
+        "rnastable.vienna_worker",
+        "37"
+      ],
+      "raw_output": "/home/zyliu/Documents/rna-stable-ai/results/helix_prior_replication_runs/20261007T023827.967339Z/snapshot/results/checkpoint_prior_pilot_runs/20261007T023828.139677Z/checkpoint_prior/validation_finalist_0000_ViennaRNA.txt",
+      "structure": "((((((...((((....(((((((((.((((((...(((..(((.....)))..))).....(((((((((((((..((((.(.(((.((((((......))))...)).))).)))))))......))))))))))).......))))))..))))))..))).....)))).))))))...((.....((((((....))))))..((((((((((.((.(((......)))..)).))))).)))))..((((((((..(((((((((..........(((((((((((((..(((((...)))))..))).)))))).(((((.(((..((((.((.((.((((................)))).))....)).))))))).)))))....((((((((.....((..........)).....))))))))((((.(((..(((((((...(((((((((.((((((..((((((........(((((((.((.......(((((...((((((....).)))))....)))))....)).)))))))))))))..)))))).)).....(((((....))))).)))))))((((((((((....((((((....(((.((((((((..........((((........))))....(((..((((((...))))))..)))))))))).).))).))))))...)))))))))).....((((((..((((.......))))..)))))))))))))...))).))))..............))))))))))))).......((((((.(((((((....)))))))((((((......)).))))(((((.(((((.(((.........))).)))))...)))))))))))..........(((((((.((.((((((((....((((((((.............))))))))..))))))..)).)))))))))...))))))))...)).",
+      "mfe_kcal_mol": -284.8,
+      "paired_fraction": 0.626,
+      "raw_sha256": "c3caebfb212f5c0f1fe62cf3da22eb2d06486eafc233e174a9cf3cf829edc95f"
+    },
+    "completed_at": "2026-10-07T02:38:48.155301+00:00"
+  },
+  "payload_sha256": "999db0dc392b480afe8ddd902ce3d90ec5b2ec5cf4c7368da760c661445f3366"
+}

@@ -1,0 +1,53 @@
+{
+  "mode": "audited_equal_budget_cost_report",
+  "source_summary": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_summary.json",
+  "source_summary_sha256": "dc8d1458dab388b160f957128f84517a974472f7e67e196f71141a7bb920fee1",
+  "versions": {
+    "python": "3.12.14",
+    "executable": "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+    "RNA-StableAI": "0.1.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "biopython": "1.88",
+    "psutil": "7.2.2",
+    "tqdm": "4.70.1",
+    "pyyaml": "6.0.3",
+    "pytest": "9.1.1",
+    "matplotlib": "3.11.2",
+    "torch": "2.14.1+cu130",
+    "ViennaRNA": "2.7.2"
+  },
+  "totals": {
+    "long": {
+      "searches": 6,
+      "validated_candidates": 6,
+      "planned_proposals": 192,
+      "attempted_proposals": 192,
+      "search_wall_seconds": 197.69949783300035,
+      "reference_wall_seconds": 10.361236075998022,
+      "validation_wall_seconds": 10.410760717000812,
+      "baseline_fold_requests": 6,
+      "proposals_fold_requests": 192,
+      "reference_fold_requests": 6,
+      "validation_fold_requests": 6
+    },
+    "restarts": {
+      "searches": 24,
+      "validated_candidates": 24,
+      "planned_proposals": 192,
+      "attempted_proposals": 192,
+      "search_wall_seconds": 214.39584080000714,
+      "reference_wall_seconds": 10.435350861996994,
+      "validation_wall_seconds": 39.06727979299103,
+      "baseline_fold_requests": 24,
+      "proposals_fold_requests": 192,
+      "reference_fold_requests": 6,
+      "validation_fold_requests": 23
+    }
+  },
+  "figure": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_runs/20261005T042508.068755Z/figures/20261005T043355.270251Z/equal_budget.png",
+  "figure_sha256": "ba273e1e5afb1826cd034ea13a29331971b3caa8aafdda2b21bb22e3dd686499",
+  "timing_scope": "Sum of search (including baseline), nonreused input references and finalist validations; excludes plotting/reporting/driver overhead. One observation per request; no speedup claim."
+}

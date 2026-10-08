@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "dataset_id": "synthetic_reference_format_demo",
+  "records": [
+    {
+      "id": "designed_stem",
+      "sequence": "GCAAGC",
+      "structure": "((..))",
+      "reference_kind": "synthetic_control",
+      "source": "Handwritten software demonstration; not an experimental structure"
+    },
+    {
+      "id": "unpaired_control",
+      "sequence": "AAAAAA",
+      "structure": "......",
+      "reference_kind": "synthetic_control",
+      "source": "Handwritten software demonstration; not an experimental structure"
+    }
+  ]
+}

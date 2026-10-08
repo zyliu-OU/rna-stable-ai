@@ -1,0 +1,432 @@
+{
+  "schema_version": 1,
+  "methods": [
+    "trained_context",
+    "untrained_context",
+    "all_unpaired",
+    "ViennaRNA",
+    "LinearFold"
+  ],
+  "records": [
+    {
+      "id": "input_data_StructureData_holdout_RFA_00451",
+      "sequence": "GCCGGGCGCGGUGGCGCGCGCCUGUAGUCCCAGCUACUCGGGAGGCUGAGGCCGGAGGAUCGCUUGAGUCCAGGAGUUCUGGGCUGUCGUGCGCUAUGCCGAUCGGGUGUCCGCACUAAGUUCGGCAUCAAUAUGGUGACCUCCCGGGAGCGGGGGACCACCAGGUUGCCUAAGGAGGGGUGAACCGGCCCAGGUCGGAAACGGAGCAGGUCAAAACUCCCGUGCUGAUCAGUAGUGGGAUCGCGCCUGUGAAUAGCCACUGCACUCCAGCCUGGGCAACAUAGCGAGACCCUGUCUCC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "((.((.(...(.((......)(.((((.(...))(.((......).((...).)))(((.(......)((...).))))).)..)))))).)))(.(...))(.(.(((...((((...).)((.(.(.(.(...))(......)))(((((.((...).)).).)).)((......).))(...))).)).).)))(....(((((((((...).)(((.((((......).(.(...))))))(.(......))(.(......)(.(...))))..)).).....)..).).).))."
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00457",
+      "sequence": "GCCGAGCUCAGUAGCGAGAGCCUGUAACCCAAGCGGGGGCACUAAAGGUGGCUGCGGAUGUUUGGUGUGGAUUCUGAUCCUGGGCCCCAUGUUGUUGUAAUCUUGCUGGCUUGCCCGUUCCAAGUUGCGUAGUGGGCCGGAGGGGCUUUGGCGAAGGCCUUUGCUUUGCUUCUCCGGCCCUAAAGUGGCAGGCACAGCGUGAGGCUGGCUUCACAGAGCAGCGAUCACUGCCCGCUUCCAUCGGUGGAAGGAUAACAGGCUGCUGCACCUUGGGCCCGCUUCUGGCCCAGAGUCCCUCUACAACAGACCACCAUCUU",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "(.(((((.(..(.(.(((((..(.(......)((...).)))(.((.(...))(......).))((...).)).)..).)))))...).).).)).((.((......)(....(.((.(.(.(((.((.(.((((((((......)(.(...)).))).).))..(((.(.(...))(......))))).)))..).).)..))).))).).))..((..(.(.(...(((.((.((.(...)).(......)).).((...((((.(...))(......).))).)).).)(......)).)...)))..)....)"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00470",
+      "sequence": "GUCGAGCUUAGUAAUGUGGGCUUGUAACCCAAAUGGGGGCAUUAAUGUGGUGGAAUGUUGGGCUGUACCAGAUGGUUGGGCUUGGUGGGCUAAUUUCUGACUUGCCCUAUCCAAGCUUAGAGUUGGAUCAUGUGGCCCAAUUGAAGAAAUGGACUACUUGAUUCGUAAAGUGGGGCGGAAUGCGUGAGGCUGGUUUCACAGAGCAACGAUAAGUUUCCGCUCUAAGCGGUGGAAGGAUAACGAGUCGGUGUUCUCUGAGUCCAGUAAUGCCUGAUGGGCUGCUCUAAUUAAACCACCACUUU",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "((...).)(((.((.((((...).).)(.(..((.(...))(((.(...))(......).))(((.(.((.(...)).)..)))))).)))...)).).)(..((.(.((((.((.((.(...))((...).).))...((((......).(......))))(......)).)(......)).)(...).))).)(...))((....(.(..(.....(.((......)(.(.((((.(.((...).))..).))).(((.(.(...))(.(...)))))(.(...))).)))))))....)"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00456",
+      "sequence": "GUCGGGCAGUUAGGCCCUGCUCUUCACCCGCGAAAUAGGUCUUUAGCGGGGACCGAACACGGGCGCGUCCGGUCAGACCGGCGCGGGCCCCGGAAGCCAACGUAGAAACCUCGUCCUUCGGGGACAGCGGUUCCGCGUACCCCUUCCGCAGGGAAGGGUUCGCGCGGUUUAUCGGUGGUACCCCGCCAGGCGCGGAAGCGAGCAGCGGACCAUCGGACGUGCGUCGCUCGAGGGAUCGCGGGGUGGAGGAGGCAACCGGGAUUCCCCACGUCGGAACGCCGGGCAACCUCGC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "(((.(.(..(..(((..((.(.(......)((...).)))(.((...).))(((......).(.(...))).).)).)))))..).).).((((..(...(((((...).).)(..(..(((.((...).)((...).))))(((.(...))(.(...)).).).(......))))))).).).)(..(((.(((.((((.((.(((.(...)).)...))).((((.(...)).((...).))))..(......))..).)(......)).....).).)).)....).)."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00459",
+      "sequence": "GCUGGGAGGUUAGGCGUCUCCUGUAACUUGAAAUCGCCUUUGCGAGAGCCGAAAACUUGGGGGCGGCAUAAGUUCCCAAAUUUCAUUCUUAAUUAGUAUGUCGACGUUUCGUCCUUUGGGGUAAGAUGGUAAGAGACUCUCUUUCUUAAGAAAGAGUCAAACUCUUUUCGUAUUUCGAAACCCGCCAGGCCCGGAAGGGAGCAACGGUAGAAUUUACUUCGACGCUCAAGGGGUAGCGGGGCUGAGUACUAAUUAAGGCAAAAUGAGAUUUGGUGCUUUUGUCCACCCCAAGGA",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "(.((.(..(.((.(.(...)))(..(((((...).)((...).).).)...((...(((.(...((......).))))).)))))).)).)..).((.((.(...(((...(((...)(((((...).).(.(...))).)(.(.(...)))(((((...).).((...).)))))))))..))).)).).(....(((.(...(((.(..(.(((((...).)(.(...)).)))(.(...))..(.(((.((......).))).)))))((...).))).)).).)...).."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00462",
+      "sequence": "GCCGGGCGGUUUGGCUCCGCCCGACACCCGUGAGACAGUCAUCAGCGGGGGCCGAACACCGGGCGCGUCCGACCGCCGCGGUCGGCCCCGGAAGCCAACGUGGAAGCCUCGUCCGUCGGGGACGGCGGUCCGCGGCGUGCGCCCGCAGGGGCGUUCCGUCGUGGUUCGACGGUGGCAACCCGCCAGGCACGGAAGUGAGCAGCGGACCACCGAACGCCCGUCGCUCGACGGGUCGCGGGGUGGAGAAGGCGACCGGGACUACCCGGCCGGGAACGCCGGGCUACCCCGAC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": ".(......)((.((.(..((......(.((((......).)((.(...((......).))).)(.(((...).)((...).).)).)..))..).).)).)).)(.(.(((.(..(..((.((...).))(((.(......)((...).))))(.((.(...))(.(...)).)))).(......)))...).)))..((.(.(....((....(.(..(((((.(...)).((...).))))....(((......).(......)))((...).))))).)...))).)"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00464",
+      "sequence": "GCCGGGGGGUUCGGCGUCCCCUGUAACCCGAAACCGCCGAUACGCGGGGGCCGAAGCCGAGGGGAGGCCUGUCAAGCGGGCGGCAGCGGUUCCAGGCACCGCAGAGUCCUCGUCCCGGAGGGCCGGCGGUUAUGGCCGGGCUGCCCGGAGGGGCUGUCCGCCAUAUUAGCCGGGGGGAACGGCCCAGGCCCGGAAGGGAGCAGGCUAACCCCGGACGACCGGCGCUUCCGGGGGUGCGGGGAGGAGGUGCCUGGGGCUUCAAGCCGCCCGUAAGGCAGGUCGACCCGAGGCG",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "((...(.((((.(...(((..(.(..((((...).)(.(...)).).))(.(...))((.(......)((...).))))).))))(.(...)).).).)))(...).)(((.(.(.((..((.((((.(...))((...).).))(.(.(...)))((((.(.(...)))...).).)..).).)...).))..)).).)(.(.((...((.(......))(.((((((.(...))(......).))(.(...)))(((...(.(.(......))))))..)..)))).)))"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00465",
+      "sequence": "GCCGGUCUUAGCAACGUGGGCCUGUAACCCAAGUGGGGGCAUGUGGGAAAUGGGACUUUGGGUCAACCUAGUGGAUCGGGUCCAGUGUUAGCUGCUUACUGGUCUGCCCAUUCCAAGCCGGGAGUUGGGCUGAGUGACCUGGGCGAAGGGCUGGGUUGCGCACGUCCUAGAGUGGAGGGCAAUGCGUGAGGCUGGCUUCACAGAGCAGCGACUACCUCCCGCUCUCGGCAGUGGAAGGAUAACGGGCCGGUGCUACCUGGGUCCACCAUGCUUCACUAGGCUGACUCUUAAUAGGACCAUUUCUUU",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "(.(((.(...)).(.((.(((((.(......)((...).)).)(.(.(..(((...).).).)))((.(...)).).)..).)).).)).)).(((.(.(..(((((((((((......).).)).))((((.(...))(......).)))(.((...).)).)..)((...).)).))..))).))(((.((((((((...).).)(.(.(((.(((.((...).)).))))).(((.(...(.(.(...)))))))((...).)).)).)...).).)))((.(......)(.(...))).))."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00453",
+      "sequence": "GUCGAGCUAAGUAACAUGAGCUUGUAACCCAUGUGGGGACAUUUAGAUGGUGGAACACUGGUUCGGGUCCACGGGCCGGUUCUGUUGUUGGCAUGUUUCUGGGCUGCCCAGUCCAAGCUGUGAGUAAGACGUGUGUGUCAAGCGAAGGCUUGGCUCAAACGGCUUCUAAAGUUGGAGGGUAAUGCGUGAGGCUGGUUUCACAGAGCAGCGACUACUUCCCGCUUACAGCAGUGGACGGAUCACAGUUUAGCGUCGCUCAGAACCACUAUGGCCUGCUGGUCCGAUCUCAUAUGAACCACCAUUU",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "((((.((.((.(...))((.((..(((.(...))((...).).).))((.(...)).(.(...)))(((...).).)).).)))...)).).)).(.(.(.((.((.(...(((.((.(.(......)(......)))...((((((.(...))(......).)))....))).).)))).)..).))))(.((((((((..(.((...).))..((.(...(.(......)))).)(((...).).(.(...))))..).)(.(...)))......).).).))((...).)((......).)"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00454",
+      "sequence": "GUCGAACUCAGUAACGCGGGCUUGUGAUCCAAGUGGAGACAAUAAGGGGAUGGGACGUUGGGUCGAUCUCAUUGGGCCGGGUUCGGGUUGGGCUAUAUUCUGGCCCGCCCAUUCCAAGUUGGGAGUUGAGGCAUGGGCUUCGAGCGAAGGCUCGGGUCUCAUGUCUUCUAGAGUGGGGGAGACCGCGUGAGGCUGGUUUCACAGAGCAGCGUCCACCUCCCGCUCUUGACGGUGGAAGGAUUACGGGCCAUUGCCUUCCGAGCCCACUAUGACCCAAUAAGCCGCUCCGAUUGGACCAUCACUUU",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "(..((((.(.((..(..((((((.((...).)((...).)))((......)(.(...)).))(.(.(...))((...).))))))).)..)).).).).)(.((.(.(..(.(((...((((((.(.(...)))...).)))(.((.(...)).((...).)))(((...).).))))(......)))).)).))(...(.(.(.((.(((((((.((..((...).)..)))))..((.(...(((.(...))(.(...)).))))))((......).).).).)..).)))).).(......)"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00455",
+      "sequence": "GCCGAGCCAGGUAGCGUUGGCUUGUCACCCGAGCGGGGGCAAUAAGGUGGUGUUGGAUGCCUGGUCGUUUGCGCUUGGGGUCUGCGCCUGUGGUUUGCACUAUGCGGCCCGCCCGUUCCAAGUUGCGUAGCGUGUGUGGGGCGCCUGGGCGAAGGCUCGAGCGUCCCUGCACCUAGAGUGGCGGGUAUUGCGUGAGGCUGGUUUCACAGAGCAGCGAGUACCGCCCGCUUCCAACGGUGGAAGGAUAACGGGCCGCUGCAGCCCUGGCCCGCUUCCGGCCCAAGUGCCUUCCAUGGCAGACCACCACCUU",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "(..(((.((...(((.(.((.((.(......)((...).)))((...).)(((.((...).)((...).))))).).))(.(...)))).).)).).)..)(...(((((..(.(((.(.((...).)..(((......).(.(...)))).(((.(...))(.(...)).).).).).)(......))).).).).))..)(((.(.(.(.((.(.(..(((......).(.(...)))..)((...((((.(...)).((...).)))).)))(.(.(...))))).).).))).)....)..(...)"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00466",
+      "sequence": "GCCGAGCUCAGUAGCGUGGGCUUGUAACUCAAGUGAGGGCAUCAGUGUGGUGGAAUGUUGAACAUGCCCAGAAGGUAGGGCUUGUGUGACAAUUCUCUGGCCUGCCCUGUCCAAGCAAAGAGUUGGGUCUUGUGGGCCAAGCGAAGGCUUGGGCUGCUGGGCUCCUAAAGUGGGGUGGACUGCGUGAGGCUGGUUUCACAGAGCAACGAAUAGCUCCCGCUCUGUGCAGUGGAAGGAUAACGAGCCAGUGUCAUAUAAGUUCAACGAAUGUCUGAUGGGCUGUUCUAGUUAAACUACCACAUU",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "((...)((.((.(((...).)(.(.((.((......).(......)))((.(.(...))((...).)))..(.(.(...)))).)))((...).)).)))).(((.(.((.(.(.((.(((.(...)).)(.(.(.(...))(.(...)))).((((...).).(.(...))).))....))..)))...))).)(...).)(....(..(.(((...)...((.(.(.(......))((((......).(......))))(((......)((...).).))).).))(.(...)).))..))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00451",
+      "sequence": "GCCGGGCGCGGUGGCGCGCGCCUGUAGUCCCAGCUACUCGGGAGGCUGAGGCCGGAGGAUCGCUUGAGUCCAGGAGUUCUGGGCUGUCGUGCGCUAUGCCGAUCGGGUGUCCGCACUAAGUUCGGCAUCAAUAUGGUGACCUCCCGGGAGCGGGGGACCACCAGGUUGCCUAAGGAGGGGUGAACCGGCCCAGGUCGGAAACGGAGCAGGUCAAAACUCCCGUGCUGAUCAGUAGUGGGAUCGCGCCUGUGAAUAGCCACUGCACUCCAGCCUGGGCAACAUAGCGAGACCCUGUCUCC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((.((.(...(.((......)(.(((((...).)(.((......).((...).)))((((......).((...).))))).)..)))))).)).)((...).)((.(((...((((...).)(((.(......)((...).)).)(.(..((.((...).)).).))(.((...).)(......)))).)).).)))(....(((((((((...).)(((.((((......).(.(...))))))(.(......))(.(......)(.(...))))..)).).....)..).).).))."
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00457",
+      "sequence": "GCCGAGCUCAGUAGCGAGAGCCUGUAACCCAAGCGGGGGCACUAAAGGUGGCUGCGGAUGUUUGGUGUGGAUUCUGAUCCUGGGCCCCAUGUUGUUGUAAUCUUGCUGGCUUGCCCGUUCCAAGUUGCGUAGUGGGCCGGAGGGGCUUUGGCGAAGGCCUUUGCUUUGCUUCUCCGGCCCUAAAGUGGCAGGCACAGCGUGAGGCUGGCUUCACAGAGCAGCGAUCACUGCCCGCUUCCAUCGGUGGAAGGAUAACAGGCUGCUGCACCUUGGGCCCGCUUCUGGCCCAGAGUCCCUCUACAACAGACCACCAUCUU",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "(.(((((.((((.(.(...(..(.(......)((...).)))(.((.(...))(......).))((...).)).)).)..).))...).).).))((.(((...).).(....(.((((...((.(((.(.(((((((.(.(...))((...).)))).).))..(((.(.(...))(......))))).)))...)).)).).).)))).))..(.(..(.(.(...(((.((.((.(...)).(......)).).((...((((.(...))(......).))).)).).)(......)).)...)))..)...)."
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00470",
+      "sequence": "GUCGAGCUUAGUAAUGUGGGCUUGUAACCCAAAUGGGGGCAUUAAUGUGGUGGAAUGUUGGGCUGUACCAGAUGGUUGGGCUUGGUGGGCUAAUUUCUGACUUGCCCUAUCCAAGCUUAGAGUUGGAUCAUGUGGCCCAAUUGAAGAAAUGGACUACUUGAUUCGUAAAGUGGGGCGGAAUGCGUGAGGCUGGUUUCACAGAGCAACGAUAAGUUUCCGCUCUAAGCGGUGGAAGGAUAACGAGUCGGUGUUCUCUGAGUCCAGUAAUGCCUGAUGGGCUGCUCUAAUUAAACCACCACUUU",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((...).)(((.(.(...)(.(..(.((.(..((.(...))(((.(...))(.(...)).))(((.((.(.(...)))...)))))).).)))))).).)(..((.(.((((.((.((.(...))((...).).))...((((......).(......))))(......)).)(......)).).(...)))).)(...))((....(.(..(.....(.((......)(.(.((((.(.((...).))..).))).(((.(.(...))(.(...)))))(.(...))).)))))))....)"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00456",
+      "sequence": "GUCGGGCAGUUAGGCCCUGCUCUUCACCCGCGAAAUAGGUCUUUAGCGGGGACCGAACACGGGCGCGUCCGGUCAGACCGGCGCGGGCCCCGGAAGCCAACGUAGAAACCUCGUCCUUCGGGGACAGCGGUUCCGCGUACCCCUUCCGCAGGGAAGGGUUCGCGCGGUUUAUCGGUGGUACCCCGCCAGGCGCGGAAGCGAGCAGCGGACCAUCGGACGUGCGUCGCUCGAGGGAUCGCGGGGUGGAGGAGGCAACCGGGAUUCCCCACGUCGGAACGCCGGGCAACCUCGC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "(((.(.(..(..(((..((.(.(......)((...).)))(.((...).))(((......).(.(...))).).)).)))))..).).).((((..(.(.((.((.(.((((.((.(...)).)..).))(((((.(...)).(......)))).).(.(...))).)))..).)).)).).).)(..(((((.(.((((.((.(((.(...)).)...))).(((.((...).)((...).))))..(......))..).)(......)).....)).).).)....).)."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00459",
+      "sequence": "GCUGGGAGGUUAGGCGUCUCCUGUAACUUGAAAUCGCCUUUGCGAGAGCCGAAAACUUGGGGGCGGCAUAAGUUCCCAAAUUUCAUUCUUAAUUAGUAUGUCGACGUUUCGUCCUUUGGGGUAAGAUGGUAAGAGACUCUCUUUCUUAAGAAAGAGUCAAACUCUUUUCGUAUUUCGAAACCCGCCAGGCCCGGAAGGGAGCAACGGUAGAAUUUACUUCGACGCUCAAGGGGUAGCGGGGCUGAGUACUAAUUAAGGCAAAAUGAGAUUUGGUGCUUUUGUCCACCCCAAGGA",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "(.((((.(.((.((((.(...(.((...).))...)).((((......).(.(...)))))((...).)..)..).)).).))...).).)..).((.((.(...(((...(((...)(((((...).).(.(...))).)(.(.(...)))(((((...).).((...).)))))))))..))).)).).(....(((.(...(((.(..(.(((((...).).((...).))))(.(...))..(.(((.((......).))).)))))((...).))).)).).)...).."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00462",
+      "sequence": "GCCGGGCGGUUUGGCUCCGCCCGACACCCGUGAGACAGUCAUCAGCGGGGGCCGAACACCGGGCGCGUCCGACCGCCGCGGUCGGCCCCGGAAGCCAACGUGGAAGCCUCGUCCGUCGGGGACGGCGGUCCGCGGCGUGCGCCCGCAGGGGCGUUCCGUCGUGGUUCGACGGUGGCAACCCGCCAGGCACGGAAGUGAGCAGCGGACCACCGAACGCCCGUCGCUCGACGGGUCGCGGGGUGGAGAAGGCGACCGGGACUACCCGGCCGGGAACGCCGGGCUACCCCGAC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": ".(......)((.((.(..((......(.((((......).)((.(...((......).))).).((((...).)(.(...)).).))..))..).).)).)).)(.(.(((.(.((..((.((...).))(((.(......)((...).))))(.(((...).)(.(...)).)))).).......))...).)))..((.(.(....((....(.(..((((.((...).)((...).))))....(((......).(......)))((...).))))).)...))).)"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00464",
+      "sequence": "GCCGGGGGGUUCGGCGUCCCCUGUAACCCGAAACCGCCGAUACGCGGGGGCCGAAGCCGAGGGGAGGCCUGUCAAGCGGGCGGCAGCGGUUCCAGGCACCGCAGAGUCCUCGUCCCGGAGGGCCGGCGGUUAUGGCCGGGCUGCCCGGAGGGGCUGUCCGCCAUAUUAGCCGGGGGGAACGGCCCAGGCCCGGAAGGGAGCAGGCUAACCCCGGACGACCGGCGCUUCCGGGGGUGCGGGGAGGAGGUGCCUGGGGCUUCAAGCCGCCCGUAAGGCAGGUCGACCCGAGGCG",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((...(.((((.(...(((..(.(..((((...).)(.(...)).).))(.(...))((.(......)((...).))))).))))(.(...)).).).)))(...).)(((.(..(((..((.((((.(...))((...).).))(.(.(...)))((((.(.(...)))...).).)..).).)...).).).)).).)(.(.((...((.(......))(.((((((.(...))(......).))(.(...)))(((...(.(.(......))))))..)..)))).)))"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00465",
+      "sequence": "GCCGGUCUUAGCAACGUGGGCCUGUAACCCAAGUGGGGGCAUGUGGGAAAUGGGACUUUGGGUCAACCUAGUGGAUCGGGUCCAGUGUUAGCUGCUUACUGGUCUGCCCAUUCCAAGCCGGGAGUUGGGCUGAGUGACCUGGGCGAAGGGCUGGGUUGCGCACGUCCUAGAGUGGAGGGCAAUGCGUGAGGCUGGCUUCACAGAGCAGCGACUACCUCCCGCUCUCGGCAGUGGAAGGAUAACGGGCCGGUGCUACCUGGGUCCACCAUGCUUCACUAGGCUGACUCUUAAUAGGACCAUUUCUUU",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "(.(((.(...)).(.(((.(((.((......)((...).).))(.(.(..(((...).).).)))((.(...)).).)..)).).).)).))((.(.(.(..(((((((((((......).).)).))((((.(...))(......).)))(.(.(...))).)..)((...).)).))..))))).(((.((((((((...).).)(.(.(((.(((.((...).)).))))).(((.((.((...).))...))))((...).)).)).)...).).)))((.(......)(.(...))).))."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00453",
+      "sequence": "GUCGAGCUAAGUAACAUGAGCUUGUAACCCAUGUGGGGACAUUUAGAUGGUGGAACACUGGUUCGGGUCCACGGGCCGGUUCUGUUGUUGGCAUGUUUCUGGGCUGCCCAGUCCAAGCUGUGAGUAAGACGUGUGUGUCAAGCGAAGGCUUGGCUCAAACGGCUUCUAAAGUUGGAGGGUAAUGCGUGAGGCUGGUUUCACAGAGCAGCGACUACUUCCCGCUUACAGCAGUGGACGGAUCACAGUUUAGCGUCGCUCAGAACCACUAUGGCCUGCUGGUCCGAUCUCAUAUGAACCACCAUUU",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((((.((.((.(...))(.(((..(((.(...))((...).).).))((.(...)).(.(...)))((.(...)).))..))))...)).).)).((((.(...((.(...(((.(..(((......).(......)).).((((((.(...))(......).)))....))).).)))).))).).))((.(((((((((......)(..(((.((...).((...).)))))..)(((...).).(.(...))))..).)(.(...)))......).).).))....)(.(.(......)))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00454",
+      "sequence": "GUCGAACUCAGUAACGCGGGCUUGUGAUCCAAGUGGAGACAAUAAGGGGAUGGGACGUUGGGUCGAUCUCAUUGGGCCGGGUUCGGGUUGGGCUAUAUUCUGGCCCGCCCAUUCCAAGUUGGGAGUUGAGGCAUGGGCUUCGAGCGAAGGCUCGGGUCUCAUGUCUUCUAGAGUGGGGGAGACCGCGUGAGGCUGGUUUCACAGAGCAGCGUCCACCUCCCGCUCUUGACGGUGGAAGGAUUACGGGCCAUUGCCUUCCGAGCCCACUAUGACCCAAUAAGCCGCUCCGAUUGGACCAUCACUUU",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "(..(((((..((..(..((((((.((...).)((...).)))((......)(.(...)).))(.(.(...))((...).))))))).).).).).).).)(.((.(.(..(.(((...(((((((.(...)).)...).)))(.((.(...)).(.(...))))(((...).).))))(......)))).)).))(...(.(.(.((.(((((.(.((..((...).)..))))(.(...))(.(((.(...))((...).).)..)))((......).).).).)..).)))).).(......)"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00455",
+      "sequence": "GCCGAGCCAGGUAGCGUUGGCUUGUCACCCGAGCGGGGGCAAUAAGGUGGUGUUGGAUGCCUGGUCGUUUGCGCUUGGGGUCUGCGCCUGUGGUUUGCACUAUGCGGCCCGCCCGUUCCAAGUUGCGUAGCGUGUGUGGGGCGCCUGGGCGAAGGCUCGAGCGUCCCUGCACCUAGAGUGGCGGGUAUUGCGUGAGGCUGGUUUCACAGAGCAGCGAGUACCGCCCGCUUCCAACGGUGGAAGGAUAACGGGCCGCUGCAGCCCUGGCCCGCUUCCGGCCCAAGUGCCUUCCAUGGCAGACCACCACCUU",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "(.(.((.(.((...).)((......)(.(.((((.(......)(......))))(.(.((...).)(.(...))))(((...).).)).))))).))...)(...((((.(.(.(((.(.((...).)..(((.(...)).(.(...)))).(.(((...).)((...).).)).).).)(......)))..)).).))..)(((.(.(.(.((((.(..(.(((.(.((.(...)).(......)).)).))..(.((.(...))(......).))))).....).).).).))).)....)..(...)"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00466",
+      "sequence": "GCCGAGCUCAGUAGCGUGGGCUUGUAACUCAAGUGAGGGCAUCAGUGUGGUGGAAUGUUGAACAUGCCCAGAAGGUAGGGCUUGUGUGACAAUUCUCUGGCCUGCCCUGUCCAAGCAAAGAGUUGGGUCUUGUGGGCCAAGCGAAGGCUUGGGCUGCUGGGCUCCUAAAGUGGGGUGGACUGCGUGAGGCUGGUUUCACAGAGCAACGAAUAGCUCCCGCUCUGUGCAGUGGAAGGAUAACGAGCCAGUGUCAUAUAAGUUCAACGAAUGUCUGAUGGGCUGUUCUAGUUAAACUACCACAUU",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((...)((.((.(((...).)((..((.((......).(......)))((.(.(...))((...).)))..(.(.(...))))).))((...).)).)))).(((.(.(.((...(..(..((...).)(((((...).)((...).).))).((((...).).((...).)).)))(.(...))).)..))).)(...).)(....(..(.(((...)...((.(.(.(......))((((......).(......))))(((......)((...).).))).).))(.(...)).))..))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00451",
+      "sequence": "GCCGGGCGCGGUGGCGCGCGCCUGUAGUCCCAGCUACUCGGGAGGCUGAGGCCGGAGGAUCGCUUGAGUCCAGGAGUUCUGGGCUGUCGUGCGCUAUGCCGAUCGGGUGUCCGCACUAAGUUCGGCAUCAAUAUGGUGACCUCCCGGGAGCGGGGGACCACCAGGUUGCCUAAGGAGGGGUGAACCGGCCCAGGUCGGAAACGGAGCAGGUCAAAACUCCCGUGCUGAUCAGUAGUGGGAUCGCGCCUGUGAAUAGCCACUGCACUCCAGCCUGGGCAACAUAGCGAGACCCUGUCUCC",
+      "method": "all_unpaired",
+      "status": "ok",
+      "structure": "..........................................................................................................................................................................................................................................................................................................."
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00457",
+      "sequence": "GCCGAGCUCAGUAGCGAGAGCCUGUAACCCAAGCGGGGGCACUAAAGGUGGCUGCGGAUGUUUGGUGUGGAUUCUGAUCCUGGGCCCCAUGUUGUUGUAAUCUUGCUGGCUUGCCCGUUCCAAGUUGCGUAGUGGGCCGGAGGGGCUUUGGCGAAGGCCUUUGCUUUGCUUCUCCGGCCCUAAAGUGGCAGGCACAGCGUGAGGCUGGCUUCACAGAGCAGCGAUCACUGCCCGCUUCCAUCGGUGGAAGGAUAACAGGCUGCUGCACCUUGGGCCCGCUUCUGGCCCAGAGUCCCUCUACAACAGACCACCAUCUU",
+      "method": "all_unpaired",
+      "status": "ok",
+      "structure": "............................................................................................................................................................................................................................................................................................................................."
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00470",
+      "sequence": "GUCGAGCUUAGUAAUGUGGGCUUGUAACCCAAAUGGGGGCAUUAAUGUGGUGGAAUGUUGGGCUGUACCAGAUGGUUGGGCUUGGUGGGCUAAUUUCUGACUUGCCCUAUCCAAGCUUAGAGUUGGAUCAUGUGGCCCAAUUGAAGAAAUGGACUACUUGAUUCGUAAAGUGGGGCGGAAUGCGUGAGGCUGGUUUCACAGAGCAACGAUAAGUUUCCGCUCUAAGCGGUGGAAGGAUAACGAGUCGGUGUUCUCUGAGUCCAGUAAUGCCUGAUGGGCUGCUCUAAUUAAACCACCACUUU",
+      "method": "all_unpaired",
+      "status": "ok",
+      "structure": ".............................................................................................................................................................................................................................................................................................................."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00456",
+      "sequence": "GUCGGGCAGUUAGGCCCUGCUCUUCACCCGCGAAAUAGGUCUUUAGCGGGGACCGAACACGGGCGCGUCCGGUCAGACCGGCGCGGGCCCCGGAAGCCAACGUAGAAACCUCGUCCUUCGGGGACAGCGGUUCCGCGUACCCCUUCCGCAGGGAAGGGUUCGCGCGGUUUAUCGGUGGUACCCCGCCAGGCGCGGAAGCGAGCAGCGGACCAUCGGACGUGCGUCGCUCGAGGGAUCGCGGGGUGGAGGAGGCAACCGGGAUUCCCCACGUCGGAACGCCGGGCAACCUCGC",
+      "method": "all_unpaired",
+      "status": "ok",
+      "structure": "...................................................................................................................................................................................................................................................................................................."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00459",
+      "sequence": "GCUGGGAGGUUAGGCGUCUCCUGUAACUUGAAAUCGCCUUUGCGAGAGCCGAAAACUUGGGGGCGGCAUAAGUUCCCAAAUUUCAUUCUUAAUUAGUAUGUCGACGUUUCGUCCUUUGGGGUAAGAUGGUAAGAGACUCUCUUUCUUAAGAAAGAGUCAAACUCUUUUCGUAUUUCGAAACCCGCCAGGCCCGGAAGGGAGCAACGGUAGAAUUUACUUCGACGCUCAAGGGGUAGCGGGGCUGAGUACUAAUUAAGGCAAAAUGAGAUUUGGUGCUUUUGUCCACCCCAAGGA",
+      "method": "all_unpaired",
+      "status": "ok",
+      "structure": "......................................................................................................................................................................................................................................................................................................"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00462",
+      "sequence": "GCCGGGCGGUUUGGCUCCGCCCGACACCCGUGAGACAGUCAUCAGCGGGGGCCGAACACCGGGCGCGUCCGACCGCCGCGGUCGGCCCCGGAAGCCAACGUGGAAGCCUCGUCCGUCGGGGACGGCGGUCCGCGGCGUGCGCCCGCAGGGGCGUUCCGUCGUGGUUCGACGGUGGCAACCCGCCAGGCACGGAAGUGAGCAGCGGACCACCGAACGCCCGUCGCUCGACGGGUCGCGGGGUGGAGAAGGCGACCGGGACUACCCGGCCGGGAACGCCGGGCUACCCCGAC",
+      "method": "all_unpaired",
+      "status": "ok",
+      "structure": ".................................................................................................................................................................................................................................................................................................."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00464",
+      "sequence": "GCCGGGGGGUUCGGCGUCCCCUGUAACCCGAAACCGCCGAUACGCGGGGGCCGAAGCCGAGGGGAGGCCUGUCAAGCGGGCGGCAGCGGUUCCAGGCACCGCAGAGUCCUCGUCCCGGAGGGCCGGCGGUUAUGGCCGGGCUGCCCGGAGGGGCUGUCCGCCAUAUUAGCCGGGGGGAACGGCCCAGGCCCGGAAGGGAGCAGGCUAACCCCGGACGACCGGCGCUUCCGGGGGUGCGGGGAGGAGGUGCCUGGGGCUUCAAGCCGCCCGUAAGGCAGGUCGACCCGAGGCG",
+      "method": "all_unpaired",
+      "status": "ok",
+      "structure": "...................................................................................................................................................................................................................................................................................................."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00465",
+      "sequence": "GCCGGUCUUAGCAACGUGGGCCUGUAACCCAAGUGGGGGCAUGUGGGAAAUGGGACUUUGGGUCAACCUAGUGGAUCGGGUCCAGUGUUAGCUGCUUACUGGUCUGCCCAUUCCAAGCCGGGAGUUGGGCUGAGUGACCUGGGCGAAGGGCUGGGUUGCGCACGUCCUAGAGUGGAGGGCAAUGCGUGAGGCUGGCUUCACAGAGCAGCGACUACCUCCCGCUCUCGGCAGUGGAAGGAUAACGGGCCGGUGCUACCUGGGUCCACCAUGCUUCACUAGGCUGACUCUUAAUAGGACCAUUUCUUU",
+      "method": "all_unpaired",
+      "status": "ok",
+      "structure": ".................................................................................................................................................................................................................................................................................................................."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00453",
+      "sequence": "GUCGAGCUAAGUAACAUGAGCUUGUAACCCAUGUGGGGACAUUUAGAUGGUGGAACACUGGUUCGGGUCCACGGGCCGGUUCUGUUGUUGGCAUGUUUCUGGGCUGCCCAGUCCAAGCUGUGAGUAAGACGUGUGUGUCAAGCGAAGGCUUGGCUCAAACGGCUUCUAAAGUUGGAGGGUAAUGCGUGAGGCUGGUUUCACAGAGCAGCGACUACUUCCCGCUUACAGCAGUGGACGGAUCACAGUUUAGCGUCGCUCAGAACCACUAUGGCCUGCUGGUCCGAUCUCAUAUGAACCACCAUUU",
+      "method": "all_unpaired",
+      "status": "ok",
+      "structure": "................................................................................................................................................................................................................................................................................................................"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00454",
+      "sequence": "GUCGAACUCAGUAACGCGGGCUUGUGAUCCAAGUGGAGACAAUAAGGGGAUGGGACGUUGGGUCGAUCUCAUUGGGCCGGGUUCGGGUUGGGCUAUAUUCUGGCCCGCCCAUUCCAAGUUGGGAGUUGAGGCAUGGGCUUCGAGCGAAGGCUCGGGUCUCAUGUCUUCUAGAGUGGGGGAGACCGCGUGAGGCUGGUUUCACAGAGCAGCGUCCACCUCCCGCUCUUGACGGUGGAAGGAUUACGGGCCAUUGCCUUCCGAGCCCACUAUGACCCAAUAAGCCGCUCCGAUUGGACCAUCACUUU",
+      "method": "all_unpaired",
+      "status": "ok",
+      "structure": "................................................................................................................................................................................................................................................................................................................."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00455",
+      "sequence": "GCCGAGCCAGGUAGCGUUGGCUUGUCACCCGAGCGGGGGCAAUAAGGUGGUGUUGGAUGCCUGGUCGUUUGCGCUUGGGGUCUGCGCCUGUGGUUUGCACUAUGCGGCCCGCCCGUUCCAAGUUGCGUAGCGUGUGUGGGGCGCCUGGGCGAAGGCUCGAGCGUCCCUGCACCUAGAGUGGCGGGUAUUGCGUGAGGCUGGUUUCACAGAGCAGCGAGUACCGCCCGCUUCCAACGGUGGAAGGAUAACGGGCCGCUGCAGCCCUGGCCCGCUUCCGGCCCAAGUGCCUUCCAUGGCAGACCACCACCUU",
+      "method": "all_unpaired",
+      "status": "ok",
+      "structure": "......................................................................................................................................................................................................................................................................................................................"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00466",
+      "sequence": "GCCGAGCUCAGUAGCGUGGGCUUGUAACUCAAGUGAGGGCAUCAGUGUGGUGGAAUGUUGAACAUGCCCAGAAGGUAGGGCUUGUGUGACAAUUCUCUGGCCUGCCCUGUCCAAGCAAAGAGUUGGGUCUUGUGGGCCAAGCGAAGGCUUGGGCUGCUGGGCUCCUAAAGUGGGGUGGACUGCGUGAGGCUGGUUUCACAGAGCAACGAAUAGCUCCCGCUCUGUGCAGUGGAAGGAUAACGAGCCAGUGUCAUAUAAGUUCAACGAAUGUCUGAUGGGCUGUUCUAGUUAAACUACCACAUU",
+      "method": "all_unpaired",
+      "status": "ok",
+      "structure": "..............................................................................................................................................................................................................................................................................................................."
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00451",
+      "sequence": "GCCGGGCGCGGUGGCGCGCGCCUGUAGUCCCAGCUACUCGGGAGGCUGAGGCCGGAGGAUCGCUUGAGUCCAGGAGUUCUGGGCUGUCGUGCGCUAUGCCGAUCGGGUGUCCGCACUAAGUUCGGCAUCAAUAUGGUGACCUCCCGGGAGCGGGGGACCACCAGGUUGCCUAAGGAGGGGUGAACCGGCCCAGGUCGGAAACGGAGCAGGUCAAAACUCCCGUGCUGAUCAGUAGUGGGAUCGCGCCUGUGAAUAGCCACUGCACUCCAGCCUGGGCAACAUAGCGAGACCCUGUCUCC",
+      "method": "ViennaRNA",
+      "status": "ok",
+      "structure": "((((((((((......)))))))....((((........))))))).(((((.((.(..(((((((.(((((((....(((((.(((.(((.((((((((((.(.((((....))))..).)))))..((((.(((((..((((((....))))))..))))).))))((...))(((.((((.((.((...((((((..((((.(.((.......))))))).))))))....)).)).)))).)))....)))))))).))).))))))))))))..)).)))))..))).)))))."
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00451",
+      "sequence": "GCCGGGCGCGGUGGCGCGCGCCUGUAGUCCCAGCUACUCGGGAGGCUGAGGCCGGAGGAUCGCUUGAGUCCAGGAGUUCUGGGCUGUCGUGCGCUAUGCCGAUCGGGUGUCCGCACUAAGUUCGGCAUCAAUAUGGUGACCUCCCGGGAGCGGGGGACCACCAGGUUGCCUAAGGAGGGGUGAACCGGCCCAGGUCGGAAACGGAGCAGGUCAAAACUCCCGUGCUGAUCAGUAGUGGGAUCGCGCCUGUGAAUAGCCACUGCACUCCAGCCUGGGCAACAUAGCGAGACCCUGUCUCC",
+      "method": "LinearFold",
+      "status": "ok",
+      "structure": "((((((((((......)))))))....((((........))))))).(((((.((.(..(((((((.(((((((....(((((.(((.(((.((((((((((...((((....))))....)))))..((((.(((((..((((((....))))))..))))).))))((...))(((.((((.((.((...((((((..((((.(.((.......))))))).))))))....)).)).)))).)))....)))))))).))).))))))))))))..)).)))))..))).)))))."
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00457",
+      "sequence": "GCCGAGCUCAGUAGCGAGAGCCUGUAACCCAAGCGGGGGCACUAAAGGUGGCUGCGGAUGUUUGGUGUGGAUUCUGAUCCUGGGCCCCAUGUUGUUGUAAUCUUGCUGGCUUGCCCGUUCCAAGUUGCGUAGUGGGCCGGAGGGGCUUUGGCGAAGGCCUUUGCUUUGCUUCUCCGGCCCUAAAGUGGCAGGCACAGCGUGAGGCUGGCUUCACAGAGCAGCGAUCACUGCCCGCUUCCAUCGGUGGAAGGAUAACAGGCUGCUGCACCUUGGGCCCGCUUCUGGCCCAGAGUCCCUCUACAACAGACCACCAUCUU",
+      "method": "ViennaRNA",
+      "status": "ok",
+      "structure": "(((..((((........))))......(((....))))))....(((((((.((.(..(((((((.(.((((((((..(((((((((.................((((((((((((((........)))....(((((((((((((...((((((....))))))..)))))))))))))......))))))).))))((((((....))))))...((((((....(((....((((((....)))))).....)))..)))))).....))))))).....))..))))))))).))).))))..))))))))))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00457",
+      "sequence": "GCCGAGCUCAGUAGCGAGAGCCUGUAACCCAAGCGGGGGCACUAAAGGUGGCUGCGGAUGUUUGGUGUGGAUUCUGAUCCUGGGCCCCAUGUUGUUGUAAUCUUGCUGGCUUGCCCGUUCCAAGUUGCGUAGUGGGCCGGAGGGGCUUUGGCGAAGGCCUUUGCUUUGCUUCUCCGGCCCUAAAGUGGCAGGCACAGCGUGAGGCUGGCUUCACAGAGCAGCGAUCACUGCCCGCUUCCAUCGGUGGAAGGAUAACAGGCUGCUGCACCUUGGGCCCGCUUCUGGCCCAGAGUCCCUCUACAACAGACCACCAUCUU",
+      "method": "LinearFold",
+      "status": "ok",
+      "structure": "(((..((((........))))......(((....))))))....(((((((.((.(..(((((((.(.((((((((..(((((((((.................((((((((((((((........)))....(((((((((((((...((((((....))))))..)))))))))))))......))))))).))))((((((....))))))...((((((....(((....((((((....)))))).....)))..)))))).....))))))).....))..))))))))).))).))))..))))))))))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00470",
+      "sequence": "GUCGAGCUUAGUAAUGUGGGCUUGUAACCCAAAUGGGGGCAUUAAUGUGGUGGAAUGUUGGGCUGUACCAGAUGGUUGGGCUUGGUGGGCUAAUUUCUGACUUGCCCUAUCCAAGCUUAGAGUUGGAUCAUGUGGCCCAAUUGAAGAAAUGGACUACUUGAUUCGUAAAGUGGGGCGGAAUGCGUGAGGCUGGUUUCACAGAGCAACGAUAAGUUUCCGCUCUAAGCGGUGGAAGGAUAACGAGUCGGUGUUCUCUGAGUCCAGUAAUGCCUGAUGGGCUGCUCUAAUUAAACCACCACUUU",
+      "method": "ViennaRNA",
+      "status": "ok",
+      "structure": "..((((((((......))))))))...(((....))).........(((((((....((((......))))....((((((((((.((((.............))))...))))))))))....((((((.((((.(((.((....)).))).)))).))))))......((((((((....(((.(((((((.((((.((((((.((((..(((((((((......)))))).....)))..)))).)))))).)))).))).....)))).)))..))))))))......)))))))..."
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00470",
+      "sequence": "GUCGAGCUUAGUAAUGUGGGCUUGUAACCCAAAUGGGGGCAUUAAUGUGGUGGAAUGUUGGGCUGUACCAGAUGGUUGGGCUUGGUGGGCUAAUUUCUGACUUGCCCUAUCCAAGCUUAGAGUUGGAUCAUGUGGCCCAAUUGAAGAAAUGGACUACUUGAUUCGUAAAGUGGGGCGGAAUGCGUGAGGCUGGUUUCACAGAGCAACGAUAAGUUUCCGCUCUAAGCGGUGGAAGGAUAACGAGUCGGUGUUCUCUGAGUCCAGUAAUGCCUGAUGGGCUGCUCUAAUUAAACCACCACUUU",
+      "method": "LinearFold",
+      "status": "ok",
+      "structure": "..((((((((......))))))))...(((....))).........(((((((....((((......))))....((((((((((.((((.............))))...))))))))))....((((((.((((.(((.((....)).))).)))).))))))......((((((((....(((.(((((((.((((.((((((.((((..(((((((((......))))))).....))..)))).)))))).)))).))).....)))).)))..))))))))......)))))))..."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00456",
+      "sequence": "GUCGGGCAGUUAGGCCCUGCUCUUCACCCGCGAAAUAGGUCUUUAGCGGGGACCGAACACGGGCGCGUCCGGUCAGACCGGCGCGGGCCCCGGAAGCCAACGUAGAAACCUCGUCCUUCGGGGACAGCGGUUCCGCGUACCCCUUCCGCAGGGAAGGGUUCGCGCGGUUUAUCGGUGGUACCCCGCCAGGCGCGGAAGCGAGCAGCGGACCAUCGGACGUGCGUCGCUCGAGGGAUCGCGGGGUGGAGGAGGCAACCGGGAUUCCCCACGUCGGAACGCCGGGCAACCUCGC",
+      "method": "ViennaRNA",
+      "status": "ok",
+      "structure": "((.((((......)))).)).(((((((((((....((((.(((.(((.((.(((.....((((.((((((((...))))).))).)))))))...))..))).))))))).(((((((((((((.((((((((((((..(((((((....)))))))...)))))).....(((((((...((((....(((....)))....)))))))))))))).)))))).))))))))))))).))))))))((((...((((..((((.......))))..))))....)))).."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00456",
+      "sequence": "GUCGGGCAGUUAGGCCCUGCUCUUCACCCGCGAAAUAGGUCUUUAGCGGGGACCGAACACGGGCGCGUCCGGUCAGACCGGCGCGGGCCCCGGAAGCCAACGUAGAAACCUCGUCCUUCGGGGACAGCGGUUCCGCGUACCCCUUCCGCAGGGAAGGGUUCGCGCGGUUUAUCGGUGGUACCCCGCCAGGCGCGGAAGCGAGCAGCGGACCAUCGGACGUGCGUCGCUCGAGGGAUCGCGGGGUGGAGGAGGCAACCGGGAUUCCCCACGUCGGAACGCCGGGCAACCUCGC",
+      "method": "LinearFold",
+      "status": "ok",
+      "structure": "((.((((......)))).)).(((((((((((....((((.(((.(((.((.(((.....((((.((((((((...))))).))).)))))))...))..))).))))))).(((((((((((((.((((((((((((..(((((((....)))))))...)))))).....(((((((...((((....(((....)))....)))))))))))))).)))))).)))))))))))))))).)))))((((...((((..((((.......))))..))))....)))).."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00459",
+      "sequence": "GCUGGGAGGUUAGGCGUCUCCUGUAACUUGAAAUCGCCUUUGCGAGAGCCGAAAACUUGGGGGCGGCAUAAGUUCCCAAAUUUCAUUCUUAAUUAGUAUGUCGACGUUUCGUCCUUUGGGGUAAGAUGGUAAGAGACUCUCUUUCUUAAGAAAGAGUCAAACUCUUUUCGUAUUUCGAAACCCGCCAGGCCCGGAAGGGAGCAACGGUAGAAUUUACUUCGACGCUCAAGGGGUAGCGGGGCUGAGUACUAAUUAAGGCAAAAUGAGAUUUGGUGCUUUUGUCCACCCCAAGGA",
+      "method": "ViennaRNA",
+      "status": "ok",
+      "structure": "...((((((.......)))))).....(((...((((....))))....)))...(((((((..((((.((((..((((((((((((((((((((((((.((((((...)))).((((((((...((((.(((((...(((((((....))))))).....))))).)))))))))))).(((((...((((......((((..(((.((......)))))..))))...)))).)))))...)))))))))))))))....))))))))))).)))).))))..))))))).."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00459",
+      "sequence": "GCUGGGAGGUUAGGCGUCUCCUGUAACUUGAAAUCGCCUUUGCGAGAGCCGAAAACUUGGGGGCGGCAUAAGUUCCCAAAUUUCAUUCUUAAUUAGUAUGUCGACGUUUCGUCCUUUGGGGUAAGAUGGUAAGAGACUCUCUUUCUUAAGAAAGAGUCAAACUCUUUUCGUAUUUCGAAACCCGCCAGGCCCGGAAGGGAGCAACGGUAGAAUUUACUUCGACGCUCAAGGGGUAGCGGGGCUGAGUACUAAUUAAGGCAAAAUGAGAUUUGGUGCUUUUGUCCACCCCAAGGA",
+      "method": "LinearFold",
+      "status": "ok",
+      "structure": "...((((((.......)))))).....(((...((((....))))....)))...(((((((..((((.((((..((((((((((((((((((((((((.((((((...)))).((((((((...((((.(((((...(((((((....))))))).....))))).)))))))))))).(((((...((((......((((..(((.((......)))))..))))...)))).)))))...)))))))))))))))....))))))))))).)))).))))..))))))).."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00462",
+      "sequence": "GCCGGGCGGUUUGGCUCCGCCCGACACCCGUGAGACAGUCAUCAGCGGGGGCCGAACACCGGGCGCGUCCGACCGCCGCGGUCGGCCCCGGAAGCCAACGUGGAAGCCUCGUCCGUCGGGGACGGCGGUCCGCGGCGUGCGCCCGCAGGGGCGUUCCGUCGUGGUUCGACGGUGGCAACCCGCCAGGCACGGAAGUGAGCAGCGGACCACCGAACGCCCGUCGCUCGACGGGUCGCGGGGUGGAGAAGGCGACCGGGACUACCCGGCCGGGAACGCCGGGCUACCCCGAC",
+      "method": "ViennaRNA",
+      "status": "ok",
+      "structure": "(((((((((.......)))))).......((((.....))))...(.((((((((...(((((((.((...)))))).))))))))))).)..((((.(((.((((((((((((.....)))))).)))((((((((.((((((....))))))..))))))))))).))).))))...((((....(((....)))....)))).(((((...((((((((....)))))).))...)))))....)))...((((....((((((.(....)))))))....)))).."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00462",
+      "sequence": "GCCGGGCGGUUUGGCUCCGCCCGACACCCGUGAGACAGUCAUCAGCGGGGGCCGAACACCGGGCGCGUCCGACCGCCGCGGUCGGCCCCGGAAGCCAACGUGGAAGCCUCGUCCGUCGGGGACGGCGGUCCGCGGCGUGCGCCCGCAGGGGCGUUCCGUCGUGGUUCGACGGUGGCAACCCGCCAGGCACGGAAGUGAGCAGCGGACCACCGAACGCCCGUCGCUCGACGGGUCGCGGGGUGGAGAAGGCGACCGGGACUACCCGGCCGGGAACGCCGGGCUACCCCGAC",
+      "method": "LinearFold",
+      "status": "ok",
+      "structure": "(((((((((.......))))))......(((((........))).))((((((((...(((((((.((...)))))).)))))))))))....((((.(((.((((((((((((.....)))))).)))((((((((.((((((....))))))..))))))))))).))).))))...((((....(((....)))....)))).(((((...((((((((....)))))).))...)))))....)))...((((....(((((.((....)))))))....)))).."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00464",
+      "sequence": "GCCGGGGGGUUCGGCGUCCCCUGUAACCCGAAACCGCCGAUACGCGGGGGCCGAAGCCGAGGGGAGGCCUGUCAAGCGGGCGGCAGCGGUUCCAGGCACCGCAGAGUCCUCGUCCCGGAGGGCCGGCGGUUAUGGCCGGGCUGCCCGGAGGGGCUGUCCGCCAUAUUAGCCGGGGGGAACGGCCCAGGCCCGGAAGGGAGCAGGCUAACCCCGGACGACCGGCGCUUCCGGGGGUGCGGGGAGGAGGUGCCUGGGGCUUCAAGCCGCCCGUAAGGCAGGUCGACCCGAGGCG",
+      "method": "ViennaRNA",
+      "status": "ok",
+      "structure": "(((((.....)))))((((((((((...((.......)).)))).))))))....(((..(((..((((((((..(((((((((...(((((((((((((......((((((((((((((((((((((..((((((.((((.((((....)))).))))))))))....((((((.....((((....(((....)))....))))..)))))).)).))))).))))))))...)))))))...)))))))))))))....)))))))))..))))))))..)))..)))."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00464",
+      "sequence": "GCCGGGGGGUUCGGCGUCCCCUGUAACCCGAAACCGCCGAUACGCGGGGGCCGAAGCCGAGGGGAGGCCUGUCAAGCGGGCGGCAGCGGUUCCAGGCACCGCAGAGUCCUCGUCCCGGAGGGCCGGCGGUUAUGGCCGGGCUGCCCGGAGGGGCUGUCCGCCAUAUUAGCCGGGGGGAACGGCCCAGGCCCGGAAGGGAGCAGGCUAACCCCGGACGACCGGCGCUUCCGGGGGUGCGGGGAGGAGGUGCCUGGGGCUUCAAGCCGCCCGUAAGGCAGGUCGACCCGAGGCG",
+      "method": "LinearFold",
+      "status": "ok",
+      "structure": "(((((.....)))))((((((((((...((....))....)))).))))))....(((..(((..((((((((..(((((((((...(((((((((((((......((((((((((((((((((((((..(((((.(((((.((((....)))).))))))))))....((((((.....((((....(((....)))....))))..)))))).)).))))).))))))))...)))))))...)))))))))))))....)))))))))..))))))))..)))..)))."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00465",
+      "sequence": "GCCGGUCUUAGCAACGUGGGCCUGUAACCCAAGUGGGGGCAUGUGGGAAAUGGGACUUUGGGUCAACCUAGUGGAUCGGGUCCAGUGUUAGCUGCUUACUGGUCUGCCCAUUCCAAGCCGGGAGUUGGGCUGAGUGACCUGGGCGAAGGGCUGGGUUGCGCACGUCCUAGAGUGGAGGGCAAUGCGUGAGGCUGGCUUCACAGAGCAGCGACUACCUCCCGCUCUCGGCAGUGGAAGGAUAACGGGCCGGUGCUACCUGGGUCCACCAUGCUUCACUAGGCUGACUCUUAAUAGGACCAUUUCUUU",
+      "method": "ViennaRNA",
+      "status": "ok",
+      "structure": "((((((((.........))))).....(((....))))))....(((((((((..((..((((((.(((((((((.(((((((((.((.(((.....(((((((((.((.(((((.(((((((((.((((((.(((((((((.(....).))))))))).)).))))....(.(((((....(((((((((....))))))...))).......)))))))))))))))..)))))))....))))))))))))))))))....))).)).))))))))).)))))).....))..)))))))))."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00465",
+      "sequence": "GCCGGUCUUAGCAACGUGGGCCUGUAACCCAAGUGGGGGCAUGUGGGAAAUGGGACUUUGGGUCAACCUAGUGGAUCGGGUCCAGUGUUAGCUGCUUACUGGUCUGCCCAUUCCAAGCCGGGAGUUGGGCUGAGUGACCUGGGCGAAGGGCUGGGUUGCGCACGUCCUAGAGUGGAGGGCAAUGCGUGAGGCUGGCUUCACAGAGCAGCGACUACCUCCCGCUCUCGGCAGUGGAAGGAUAACGGGCCGGUGCUACCUGGGUCCACCAUGCUUCACUAGGCUGACUCUUAAUAGGACCAUUUCUUU",
+      "method": "LinearFold",
+      "status": "ok",
+      "structure": "((((((((.........))))).....(((....))))))....(((((((((..((..((((((.(((((((((.(((((((((.(.((((.....(((((((((.((.(((((.(((((((((.((((((.(((((((((.(....).))))))))).)).))))....(.(((((....(((((((((....))))))...))).......)))))))))))))))..)))))))....))))))))))))))))))....))).)).))))))))).)))))).....))..)))))))))."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00453",
+      "sequence": "GUCGAGCUAAGUAACAUGAGCUUGUAACCCAUGUGGGGACAUUUAGAUGGUGGAACACUGGUUCGGGUCCACGGGCCGGUUCUGUUGUUGGCAUGUUUCUGGGCUGCCCAGUCCAAGCUGUGAGUAAGACGUGUGUGUCAAGCGAAGGCUUGGCUCAAACGGCUUCUAAAGUUGGAGGGUAAUGCGUGAGGCUGGUUUCACAGAGCAGCGACUACUUCCCGCUUACAGCAGUGGACGGAUCACAGUUUAGCGUCGCUCAGAACCACUAUGGCCUGCUGGUCCGAUCUCAUAUGAACCACCAUUU",
+      "method": "ViennaRNA",
+      "status": "ok",
+      "structure": "..((((((..........))))))...(((....))).......(((((((((..((.(((.(((((.((((((((((((((((.....((((((...((((((((.((.(((((.((((((((((((.(((.((.(((((((....))))))).)).))).)))........(((((......(((....(((......)))....)))....))))).)))))))))..)))))))....))))))))))).)))))))))).....)))))).)))))))).).))..))..)))))))))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00453",
+      "sequence": "GUCGAGCUAAGUAACAUGAGCUUGUAACCCAUGUGGGGACAUUUAGAUGGUGGAACACUGGUUCGGGUCCACGGGCCGGUUCUGUUGUUGGCAUGUUUCUGGGCUGCCCAGUCCAAGCUGUGAGUAAGACGUGUGUGUCAAGCGAAGGCUUGGCUCAAACGGCUUCUAAAGUUGGAGGGUAAUGCGUGAGGCUGGUUUCACAGAGCAGCGACUACUUCCCGCUUACAGCAGUGGACGGAUCACAGUUUAGCGUCGCUCAGAACCACUAUGGCCUGCUGGUCCGAUCUCAUAUGAACCACCAUUU",
+      "method": "LinearFold",
+      "status": "ok",
+      "structure": "..((((((..........))))))...(((....))).......(((((((((..((.(((.(((((.((((((((((((((((.....((((((...((((((((.((.(((((.((((((((((((.(((.((.(((((((....))))))).)).))).)))........(((((......(((....(((......)))....)))....))))).)))))))))..)))))))....))))))))))).)))))))))).....)))))).)))))))).).))..))..)))))))))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00454",
+      "sequence": "GUCGAACUCAGUAACGCGGGCUUGUGAUCCAAGUGGAGACAAUAAGGGGAUGGGACGUUGGGUCGAUCUCAUUGGGCCGGGUUCGGGUUGGGCUAUAUUCUGGCCCGCCCAUUCCAAGUUGGGAGUUGAGGCAUGGGCUUCGAGCGAAGGCUCGGGUCUCAUGUCUUCUAGAGUGGGGGAGACCGCGUGAGGCUGGUUUCACAGAGCAGCGUCCACCUCCCGCUCUUGACGGUGGAAGGAUUACGGGCCAUUGCCUUCCGAGCCCACUAUGACCCAAUAAGCCGCUCCGAUUGGACCAUCACUUU",
+      "method": "ViennaRNA",
+      "status": "ok",
+      "structure": "(((..(((..(...((((....))))..)..)))...)))...((((.(((((..(((((((.((..((.((((((.((((((((((..((((.......(((((((.((.(((((.(((((((((.((((((((((.(((((((....))))))).)))))))))).........(((((...(.(.((.((((.(((...))).)))).))).)))))))))))))))..)))))))....)))))))..))))))))))))).....).)))))).)).)).))))).))..))))).))))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00454",
+      "sequence": "GUCGAACUCAGUAACGCGGGCUUGUGAUCCAAGUGGAGACAAUAAGGGGAUGGGACGUUGGGUCGAUCUCAUUGGGCCGGGUUCGGGUUGGGCUAUAUUCUGGCCCGCCCAUUCCAAGUUGGGAGUUGAGGCAUGGGCUUCGAGCGAAGGCUCGGGUCUCAUGUCUUCUAGAGUGGGGGAGACCGCGUGAGGCUGGUUUCACAGAGCAGCGUCCACCUCCCGCUCUUGACGGUGGAAGGAUUACGGGCCAUUGCCUUCCGAGCCCACUAUGACCCAAUAAGCCGCUCCGAUUGGACCAUCACUUU",
+      "method": "LinearFold",
+      "status": "ok",
+      "structure": "(((..(((..(...((((....))))..)..)))...)))...((((.(((((..(((((((.((..((.((((((.((((((((((..((((.......(((((((.((.(((((.(((((((((.((((((((((.(((((((....))))))).)))))))))).........(((((...(.(.((.((((.(((...))).)))).))).)))))))))))))))..)))))))....)))))))..))))))))))))).....).)))))).)).)).)))))).)..))))).))))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00455",
+      "sequence": "GCCGAGCCAGGUAGCGUUGGCUUGUCACCCGAGCGGGGGCAAUAAGGUGGUGUUGGAUGCCUGGUCGUUUGCGCUUGGGGUCUGCGCCUGUGGUUUGCACUAUGCGGCCCGCCCGUUCCAAGUUGCGUAGCGUGUGUGGGGCGCCUGGGCGAAGGCUCGAGCGUCCCUGCACCUAGAGUGGCGGGUAUUGCGUGAGGCUGGUUUCACAGAGCAGCGAGUACCGCCCGCUUCCAACGGUGGAAGGAUAACGGGCCGCUGCAGCCCUGGCCCGCUUCCGGCCCAAGUGCCUUCCAUGGCAGACCACCACCUU",
+      "method": "ViennaRNA",
+      "status": "ok",
+      "structure": "(((((((......)).)))))(((((.(((....)))))))).(((((((((..(..(((((((..(...(((((((((.(..(((((.(.((((.(((....((((((((..(.(((((.((((..(((.(((((.(((((((.(((((....))))).)))))))))))))))((((((..((((((.(((....(((......)))....)))))))))..)))))).))))..))))).)....)))))))))))))))).)))..))....).))))))))))..))).))))..))))))))))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00455",
+      "sequence": "GCCGAGCCAGGUAGCGUUGGCUUGUCACCCGAGCGGGGGCAAUAAGGUGGUGUUGGAUGCCUGGUCGUUUGCGCUUGGGGUCUGCGCCUGUGGUUUGCACUAUGCGGCCCGCCCGUUCCAAGUUGCGUAGCGUGUGUGGGGCGCCUGGGCGAAGGCUCGAGCGUCCCUGCACCUAGAGUGGCGGGUAUUGCGUGAGGCUGGUUUCACAGAGCAGCGAGUACCGCCCGCUUCCAACGGUGGAAGGAUAACGGGCCGCUGCAGCCCUGGCCCGCUUCCGGCCCAAGUGCCUUCCAUGGCAGACCACCACCUU",
+      "method": "LinearFold",
+      "status": "ok",
+      "structure": "(((((((......)).)))))(((((.(((....)))))))).(((((((((..(..(((((((......(((((((((.(..(((((.(.((.(((((....((((((((..(.(((((.((((..(((.(((((.(((((((.(((((....))))).)))))))))))))))((((((..((((((.(((....(((......)))....)))))))))..)))))).))))..))))).)....)))))))))))))))).)))..))....).)))))))))...))).))))..))))))))))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00466",
+      "sequence": "GCCGAGCUCAGUAGCGUGGGCUUGUAACUCAAGUGAGGGCAUCAGUGUGGUGGAAUGUUGAACAUGCCCAGAAGGUAGGGCUUGUGUGACAAUUCUCUGGCCUGCCCUGUCCAAGCAAAGAGUUGGGUCUUGUGGGCCAAGCGAAGGCUUGGGCUGCUGGGCUCCUAAAGUGGGGUGGACUGCGUGAGGCUGGUUUCACAGAGCAACGAAUAGCUCCCGCUCUGUGCAGUGGAAGGAUAACGAGCCAGUGUCAUAUAAGUUCAACGAAUGUCUGAUGGGCUGUUCUAGUUAAACUACCACAUU",
+      "method": "ViennaRNA",
+      "status": "ok",
+      "structure": "((((((((((......)))))))....(((....))))))...(((((((((((((...(((((.(((((..((((.((((((((((((((.....(((((.((.(((.((((.(((.(((((.((((((.((((.((((((....)))))).)))).)))).((((...))))(((((((((.....)).)).))))).((((........))))))))))).)))..)))))))....)).))))))))))))))))))).))......))..))))))))))..)))...))))))))))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00466",
+      "sequence": "GCCGAGCUCAGUAGCGUGGGCUUGUAACUCAAGUGAGGGCAUCAGUGUGGUGGAAUGUUGAACAUGCCCAGAAGGUAGGGCUUGUGUGACAAUUCUCUGGCCUGCCCUGUCCAAGCAAAGAGUUGGGUCUUGUGGGCCAAGCGAAGGCUUGGGCUGCUGGGCUCCUAAAGUGGGGUGGACUGCGUGAGGCUGGUUUCACAGAGCAACGAAUAGCUCCCGCUCUGUGCAGUGGAAGGAUAACGAGCCAGUGUCAUAUAAGUUCAACGAAUGUCUGAUGGGCUGUUCUAGUUAAACUACCACAUU",
+      "method": "LinearFold",
+      "status": "ok",
+      "structure": "((((((((((......)))))))....(((....))))))...(((((((((((((...(((((.(((((..((((.((((((((((((((.....(((((.((.(((.((((.(((.((((.(((((((.((((.((((((....)))))).)))).))))(((......)))(((((((((.....)).)))).))).((((........))))))))))).)))..)))))))....)).))))))))))))))))))).))......))..))))))))))..)))...))))))))))"
+    }
+  ]
+}

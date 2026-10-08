@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="19" time="1.978" timestamp="2026-10-05T18:33:22.340607-07:00" hostname="corsair680-ubuntu"><testcase classname="tests.test_pair_development" name="test_global_decoder_beats_a_largest_pair_greedy_choice" time="0.001" /><testcase classname="tests.test_pair_development" name="test_decoder_matches_exhaustive_non_crossing_optimum" time="0.012" /><testcase classname="tests.test_pair_development" name="test_empty_score_and_unsupported_contacts" time="0.005" /><testcase classname="tests.test_pair_development" name="test_pair_scores_are_symmetric_and_differentiable" time="1.000" /><testcase classname="tests.test_pair_development" name="test_supervision_counts_unrepresentable_reference_contacts" time="0.001" /><testcase classname="tests.test_pair_development" name="test_family_plan_requires_disjoint_bound_evidence" time="0.001" /><testcase classname="tests.test_pair_development" name="test_family_planner_rejects_leakage_and_missing_provenance[family_overlap]" time="0.001" /><testcase classname="tests.test_pair_development" name="test_family_planner_rejects_leakage_and_missing_provenance[missing_assignment]" time="0.001" /><testcase classname="tests.test_pair_development" name="test_family_planner_rejects_leakage_and_missing_provenance[wrong_hash]" time="0.000" /><testcase classname="tests.test_pair_development" name="test_family_planner_rejects_leakage_and_missing_provenance[missing_source]" time="0.000" /><testcase classname="tests.test_pair_development" name="test_family_planner_rejects_leakage_and_missing_provenance[duplicate]" time="0.000" /><testcase classname="tests.test_pair_development" name="test_family_planner_rejects_leakage_and_missing_provenance[unknown_family]" time="0.000" /><testcase classname="tests.test_pair_development" name="test_family_planner_rejects_leakage_and_missing_provenance[test_exposed]" time="0.001" /><testcase classname="tests.test_pair_development" name="test_family_planner_rejects_leakage_and_missing_provenance[similar_test_exposed]" time="0.001" /><testcase classname="tests.test_pair_development" name="test_family_planner_rejects_leakage_and_missing_provenance[accession_overlap]" time="0.000" /><testcase classname="tests.test_pair_development" name="test_family_planner_rejects_leakage_and_missing_provenance[sequence_overlap]" time="0.000" /><testcase classname="tests.test_pair_development" name="test_family_planner_rejects_leakage_and_missing_provenance[bool_schema]" time="0.000" /><testcase classname="tests.test_pair_development" name="test_failed_family_plan_writes_no_run" time="0.002" /><testcase classname="tests.test_pair_development" name="test_pair_training_changes_weights_without_test_data" time="0.861"><failure message="ValueError: Development training requires positive and negative legal pairs">tmp_path = PosixPath('/tmp/pytest-of-zyliu/pytest-8/test_pair_training_changes_wei0')
+
+    def test_pair_training_changes_weights_without_test_data(tmp_path):
+        import torch
+        spec = importlib.util.spec_from_file_location('pair_train', ROOT/'scripts/train_pair_development.py')
+        module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
+        config = json.loads((ROOT/'configs/pair_development.json').read_text()); config.update(epochs=2, channels=4, embedding_dim=4, pair_dim=4, cpu_threads=1)
+        records = [dict(id='toy', sequence='GCAAAAGC', structure='((....))')]
+&gt;       initial, trained, result = module.train_pair(records, copy.deepcopy(records), config, tmp_path)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_pair_development.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+train = [{'id': 'toy', 'sequence': 'GCAAAAGC', 'structure': '((....))'}]
+validation = [{'id': 'toy', 'sequence': 'GCAAAAGC', 'structure': '((....))'}]
+config = {'seed': 20261006, 'epochs': 2, 'learning_rate': 0.001, 'embedding_dim': 4, ...}
+run = PosixPath('/tmp/pytest-of-zyliu/pytest-8/test_pair_training_changes_wei0')
+
+    def train_pair(train, validation, config, run):
+        import torch
+        torch.set_num_threads(config['cpu_threads']); torch.manual_seed(config['seed'])
+        torch.use_deterministic_algorithms(True)
+        rng = random.Random(config['seed'])
+        model = make_pair_model(config)
+        initial = copy.deepcopy(model)
+        torch.save(initial.state_dict(), run/'initial_pair_model.pt')
+        labels = [supervision(r) for r in train]
+        positive = sum(int(y.sum()) for _, y, _ in labels)
+        negative = sum(len(y)-int(y.sum()) for _, y, _ in labels)
+        if not positive or not negative:
+&gt;           raise ValueError('Development training requires positive and negative legal pairs')
+E           ValueError: Development training requires positive and negative legal pairs
+
+scripts/train_pair_development.py:35: ValueError</failure></testcase></testsuite></testsuites>

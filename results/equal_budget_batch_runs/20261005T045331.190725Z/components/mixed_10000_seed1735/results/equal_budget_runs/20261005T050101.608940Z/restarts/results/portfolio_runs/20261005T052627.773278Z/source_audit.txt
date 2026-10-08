@@ -1,0 +1,1 @@
+Sweep audit passed: 4 validated runs, 0 recorded failures, 32 proposal folds; constraints, raw outputs, decisions and aggregate denominators verified.

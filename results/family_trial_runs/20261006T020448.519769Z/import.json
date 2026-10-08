@@ -1,0 +1,1673 @@
+{
+  "source_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/datasets_in_fasta_form/train_datasets/S-Processed-TRA.fasta": "4f80e64e779421fc1d22323e3655d272f4a69687fc44338315cd67fe34f656d7",
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/datasets_in_fasta_form/holdout_datasets/S-Processed-VAL.fasta": "22e208ac0867af92ec1ee404d242def048ac3dab125a282141b05b483ce8d02c",
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/datasets_in_fasta_form/test_datasets/S-Processed-TES.fasta": "0d7183166f63df65d23bfc453c8f042d4625296d4a24f57722b1dfff2759be29",
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/input_data.zip": "e9b1b8734e43b1211b9aca47b35dbaf82e9c91667fb1ff97ea8e0d41143ecbe6"
+  },
+  "exclusions": [
+    {
+      "id": "input_data_StructureData_holdout_RFA_00451",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00457",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00460",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00470",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00456",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00459",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00461",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00462",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00464",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00465",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00468",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00469",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00452",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00453",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00454",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00455",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00458",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00463",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00466",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00467",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00471",
+      "reason": "Outside fixed length range"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00472",
+      "reason": "Outside fixed length range"
+    }
+  ],
+  "interpretation": "Historical family IDs bound to upstream metadata; processed comparative references, not new experimental measurements.",
+  "selection_exclusions": [
+    {
+      "id": "input_data_StructureData_holdout_RFA_00398",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00399",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00411",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00419",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00435",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00439",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00442",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00447",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00389",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00396",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00397",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00403",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00413",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00443",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00391",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00392",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00393",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00400",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00401",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00402",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00405",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00407",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00408",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00410",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00412",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00414",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00415",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00416",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00417",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00418",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00421",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00426",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00430",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00432",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00433",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00437",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00438",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00448",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00517",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00475",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00497",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00501",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00502",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00478",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00484",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00485",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00489",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00491",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00494",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00498",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00500",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00503",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00504",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00505",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00506",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00509",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00513",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00514",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00516",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00029",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00053",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00099",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00101",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00164",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00177",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00181",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00183",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00189",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00194",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00200",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00219",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00253",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00263",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00272",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00275",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00297",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00325",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00342",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00349",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00355",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00360",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00361",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00366",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00387",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00005",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00015",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00026",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00031",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00034",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00037",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00043",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00047",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00054",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00057",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00068",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00072",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00079",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00081",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00082",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00084",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00086",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00089",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00106",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00116",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00117",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00118",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00129",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00133",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00135",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00138",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00173",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00176",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00184",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00193",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00198",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00202",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00207",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00210",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00211",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00224",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00225",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00228",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00229",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00230",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00231",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00250",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00252",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00254",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00255",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00258",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00268",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00276",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00279",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00281",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00284",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00290",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00291",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00293",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00295",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00310",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00313",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00315",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00317",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00320",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00324",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00331",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00359",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00364",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00369",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00375",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00380",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00386",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00001",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00003",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00006",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00007",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00008",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00010",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00013",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00014",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00016",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00018",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00019",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00022",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00023",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00024",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00025",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00027",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00030",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00032",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00033",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00035",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00038",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00039",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00040",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00045",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00046",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00049",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00050",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00052",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00055",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00056",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00058",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00059",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00060",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00061",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00062",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00064",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00065",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00066",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00067",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00069",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00070",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00071",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00072",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00074",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00076",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00077",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00080",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00083",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00085",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00087",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00088",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00090",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00091",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00092",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00093",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00094",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00095",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00096",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00097",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00098",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00100",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00102",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00103",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00104",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00105",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00107",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00108",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00111",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00112",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00113",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00114",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00115",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00119",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00120",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00121",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00122",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00124",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00125",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00128",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00130",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00131",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00132",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00134",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00136",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00137",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00140",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00141",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00142",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00143",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00145",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00146",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00147",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00148",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00149",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00150",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00151",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00152",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00153",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00155",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00156",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00157",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00158",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00159",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00160",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00161",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00162",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00163",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00165",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00168",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00169",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00174",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00175",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00178",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00179",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00180",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00182",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00185",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00186",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00187",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00190",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00191",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00192",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00196",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00197",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00199",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00201",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00203",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00205",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00206",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00208",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00209",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00212",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00213",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00214",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00215",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00216",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00217",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00218",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00220",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00221",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00222",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00223",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00226",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00227",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00233",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00234",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00235",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00236",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00237",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00238",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00239",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00240",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00243",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00245",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00246",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00247",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00248",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00249",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00251",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00257",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00261",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00262",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00264",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00266",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00267",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00269",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00270",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00277",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00278",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00280",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00282",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00283",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00285",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00286",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00287",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00288",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00289",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00292",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00294",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00296",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00298",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00299",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00300",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00301",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00302",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00303",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00305",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00306",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00307",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00308",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00309",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00311",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00312",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00314",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00316",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00318",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00319",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00322",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00323",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00326",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00327",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00328",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00330",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00332",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00333",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00334",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00335",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00336",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00340",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00341",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00344",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00345",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00346",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00347",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00348",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00350",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00351",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00352",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00353",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00354",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00356",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00357",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00358",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00362",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00363",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00365",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00367",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00368",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00370",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00371",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00372",
+      "reason": "fixed_family_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00373",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00374",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00376",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00377",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00378",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00379",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00382",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00383",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00384",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00385",
+      "reason": "sequence_redundancy"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/exact_comparative_development_runs/20261006T031734.025839Z/results/reference_runs/20261006T031751.048041Z"
+}
+Exact-decoder training audit passed: {'train': 89, 'validation': 47}; 4462 positives/1180545 full negatives; selected epoch 3; full validation labels, no test inference.

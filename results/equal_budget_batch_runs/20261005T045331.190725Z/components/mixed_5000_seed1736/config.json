@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "report_name": "equal_budget_long",
+  "lengths": [
+    5000
+  ],
+  "kinds": [
+    "mixed"
+  ],
+  "sequence_seeds": [
+    1736
+  ],
+  "restart_search_seeds": [
+    2740,
+    2741,
+    2742,
+    2743
+  ],
+  "beam_size": 200,
+  "steps_per_restart": 8,
+  "long_steps": 32,
+  "optimization_config": "/home/zyliu/Documents/rna-stable-ai/configs/optimization.json",
+  "optimization_overrides": {
+    "timeout_seconds": 120,
+    "finalist_timeout_seconds": 600
+  }
+}

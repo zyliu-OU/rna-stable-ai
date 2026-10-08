@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/context_inference_runs/20261006T031524.393721Z",
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "refinement": {
+      "passes": 2,
+      "max_remove": 2,
+      "group_cap": 8,
+      "include_subsets": true
+    }
+  },
+  "method": "trained_expanded_sparse_exact_sparse",
+  "source_summary_sha256": "a52dff397efe57a40c34e55493ff73c8a45eef5f005eee19a3f27109a07691bb",
+  "checkpoint": "/home/zyliu/Documents/rna-stable-ai/results/long_comparative_development_runs/20261006T025852.417408Z/best_context_model.pt",
+  "checkpoint_sha256": "fdb950de83eebb5998e84727da576c55d52aa6ff2e85920f1d45652559daee1a",
+  "input_sha256": "f3e6654bea2e4725b28af2e821df5c4b5bce5485c9903c0e1301cd8749fc6c57",
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_inference.py": "336d4f819c6c28175f77d92b4c09fe5d02e8b8591d49481c5a6df3a5acef2333",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_pairs.py": "f103e56bb315e35ae2646ff33717b53d58f163464787893699129f28a2585756",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/banded_pairs.py": "95580a3fa213bdab74dc103d190c9388dac14266de7831fb9af31137353d6197",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/exact_sparse_pairs.py": "19d25a49142f314801addf9b21911358c2d8e5bacb363f609fa401566ca143bc",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/global_sparse_pairs.py": "2ec5afad5ec15cc9cd1d559e093cdfb5db5c71a20947728fb6d8b1c02ef0fe4f",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sparse_refinement.py": "dd62f857b0cd7ccf75bb7e608e9332cbc24afcadc6e9db8ef039e7b5c9e9ae5c",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/exposures.py": "ad12875d0ee29f8cf5def848758cea76dc0356b16c88eb892c7df96aa8c98adc",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sequences.py": "3e970de56b2b6d38ae6fbe276032a51fe570ac2bc4d84288e49cb1a32e335960",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reference.py": "34bf934880947040d56aa8fa51f60967b209c7c7537dc181ac59b94623051d75"
+  },
+  "policy": "Inference only, no reference labels or accuracy evaluation. Sequences conservatively recorded as test-start exposure before inference.",
+  "decoder_override": "exact_sparse"
+}

@@ -1,0 +1,29 @@
+{
+  "plan": [
+    {
+      "input_index": 0,
+      "seed": 20261006
+    },
+    {
+      "input_index": 0,
+      "seed": 20261007
+    },
+    {
+      "input_index": 1,
+      "seed": 20261006
+    },
+    {
+      "input_index": 1,
+      "seed": 20261007
+    },
+    {
+      "input_index": 2,
+      "seed": 20261006
+    },
+    {
+      "input_index": 2,
+      "seed": 20261007
+    }
+  ],
+  "policy": "Exposed synthetic resource replication, no labels or fitting."
+}

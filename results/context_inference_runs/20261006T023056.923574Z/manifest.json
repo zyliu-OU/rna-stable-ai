@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/context_inference_runs/20261006T023056.923574Z",
+  "config": {
+    "mode": "development_validation_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "max_pair_span": 128,
+    "decoder_threshold": 0,
+    "positive_weight_exponent": 1.0
+  },
+  "source_summary_sha256": "878c45d15f982adb5d21862fda57fcbe6548354f1797cb40bfa8f03b89ed61b4",
+  "checkpoint": "/home/zyliu/Documents/rna-stable-ai/results/context_development_runs/20261006T022313.519739Z/best_context_model.pt",
+  "checkpoint_sha256": "5756cac78a220fdba10b2a860253ba44a76acb1b94a1a2656dc721e62b80ed39",
+  "input_sha256": "f3e6654bea2e4725b28af2e821df5c4b5bce5485c9903c0e1301cd8749fc6c57",
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_inference.py": "27ec31516b4aef5c59d7c38d3c580162a3a44db0454cb8fdb455c300382d088d"
+  },
+  "policy": "Inference only, no reference labels or accuracy evaluation. Sequences conservatively recorded as test-start exposure before inference."
+}

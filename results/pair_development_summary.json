@@ -1,0 +1,133 @@
+{
+  "complete": true,
+  "mode": "development_validation_only",
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_development_runs/20261006T013412.256466Z",
+  "manifest_sha256": "af9d4263158df002d03a4a783787d8de0b125577a82c33e93441f7ad0c8eaacf",
+  "training": {
+    "config": {
+      "seed": 20261006,
+      "epochs": 10,
+      "learning_rate": 0.001,
+      "embedding_dim": 16,
+      "channels": 32,
+      "pair_dim": 16,
+      "cpu_threads": 2,
+      "max_length": 256,
+      "decoder_threshold": 0,
+      "mode": "development_validation_only"
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "mean_train_loss": 0.8418532958844813,
+        "validation_mean_pair_f1": 0.07812766683734425,
+        "mean_validation_loss": 0.8462915743390719
+      },
+      {
+        "epoch": 2,
+        "mean_train_loss": 0.803054120482468,
+        "validation_mean_pair_f1": 0.1316745828842603,
+        "mean_validation_loss": 0.811710757513841
+      },
+      {
+        "epoch": 3,
+        "mean_train_loss": 0.7451336943521732,
+        "validation_mean_pair_f1": 0.2638485697309227,
+        "mean_validation_loss": 0.7549146587649981
+      },
+      {
+        "epoch": 4,
+        "mean_train_loss": 0.6547951116794493,
+        "validation_mean_pair_f1": 0.32289400414400415,
+        "mean_validation_loss": 0.6932648494839668
+      },
+      {
+        "epoch": 5,
+        "mean_train_loss": 0.5918897790152852,
+        "validation_mean_pair_f1": 0.3985939985939986,
+        "mean_validation_loss": 0.6721017683545748
+      },
+      {
+        "epoch": 6,
+        "mean_train_loss": 0.5310652234205385,
+        "validation_mean_pair_f1": 0.4315462315462315,
+        "mean_validation_loss": 0.6406021093328794
+      },
+      {
+        "epoch": 7,
+        "mean_train_loss": 0.4900912933233308,
+        "validation_mean_pair_f1": 0.3547693047693048,
+        "mean_validation_loss": 0.6330350339412689
+      },
+      {
+        "epoch": 8,
+        "mean_train_loss": 0.4460120557284937,
+        "validation_mean_pair_f1": 0.3884952193775723,
+        "mean_validation_loss": 0.6164276624719301
+      },
+      {
+        "epoch": 9,
+        "mean_train_loss": 0.4231929666385418,
+        "validation_mean_pair_f1": 0.49701987826987826,
+        "mean_validation_loss": 0.5863699565331141
+      },
+      {
+        "epoch": 10,
+        "mean_train_loss": 0.3572627062477717,
+        "validation_mean_pair_f1": 0.541143484893485,
+        "mean_validation_loss": 0.5500439628958702
+      }
+    ],
+    "selected_epoch": 10,
+    "selected_validation_pair_f1": 0.541143484893485,
+    "train_positive_pairs": 387,
+    "train_negative_pairs": 7163,
+    "train_only_positive_weight": 4.302213840297641,
+    "unrepresentable_train_reference_pairs": 0,
+    "unrepresentable_validation_reference_pairs": 0,
+    "records_without_train_loss": [],
+    "parameters": 11697,
+    "initial_checkpoint_sha256": "e54d7e79aaeec7478438a6bba8124e7de1c956b143ce80bab0901388e2d29cc5",
+    "best_checkpoint_sha256": "675373e7be55e6aeeb2050410b3c823f27817b0d19d6e6a39ca9305175c7c1cf",
+    "selection_policy": "highest_validation_pair_f1_then_lowest_validation_loss_then_earliest_epoch_v1"
+  },
+  "train_records": 41,
+  "validation_records": 12,
+  "test_evaluated": false,
+  "aggregates": [
+    {
+      "method": "trained_pair",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.687797619047619,
+      "mean_pair_recall": 0.456439393939394,
+      "mean_pair_f1": 0.541143484893485
+    },
+    {
+      "method": "untrained_pair",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.17365196078431375,
+      "mean_pair_recall": 0.13192941317941317,
+      "mean_pair_f1": 0.148767082590612
+    }
+  ],
+  "limitations": [
+    "Previously used development data; validation scores are not independent test accuracy.",
+    "O(n^2) pair scores and O(n^3) decoding are bounded to 256 nt; not a long-RNA system.",
+    "Local convolutional features score global pairs; decoder optimizes learned logits, not physical energy.",
+    "Only canonical nested pairs and at least three enclosed nucleotides are representable; excluded training contacts are counted."
+  ]
+}

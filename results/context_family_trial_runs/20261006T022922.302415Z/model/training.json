@@ -1,0 +1,77 @@
+{
+  "history": [
+    {
+      "epoch": 1,
+      "mean_train_loss": 1.7891490409771602,
+      "validation_mean_pair_f1": 0.08631590877225469,
+      "mean_validation_loss": 1.686748478723609
+    },
+    {
+      "epoch": 2,
+      "mean_train_loss": 1.7101262907187145,
+      "validation_mean_pair_f1": 0.0646953458949049,
+      "mean_validation_loss": 1.693057215732077
+    },
+    {
+      "epoch": 3,
+      "mean_train_loss": 1.498791034022967,
+      "validation_mean_pair_f1": 0.05671994498958943,
+      "mean_validation_loss": 2.0186206879823105
+    },
+    {
+      "epoch": 4,
+      "mean_train_loss": 1.3466467758019764,
+      "validation_mean_pair_f1": 0.03146181291560027,
+      "mean_validation_loss": 2.05682531128759
+    },
+    {
+      "epoch": 5,
+      "mean_train_loss": 1.2410487532615662,
+      "validation_mean_pair_f1": 0.03394482440690085,
+      "mean_validation_loss": 2.0931210362392925
+    },
+    {
+      "epoch": 6,
+      "mean_train_loss": 1.0894254446029663,
+      "validation_mean_pair_f1": 0.03333237978748867,
+      "mean_validation_loss": 2.609218395274618
+    },
+    {
+      "epoch": 7,
+      "mean_train_loss": 0.935375340282917,
+      "validation_mean_pair_f1": 0.0368243743852779,
+      "mean_validation_loss": 3.2587172985076904
+    },
+    {
+      "epoch": 8,
+      "mean_train_loss": 0.7798939819137255,
+      "validation_mean_pair_f1": 0.05939191766596844,
+      "mean_validation_loss": 3.388381056163622
+    },
+    {
+      "epoch": 9,
+      "mean_train_loss": 0.6297489255666733,
+      "validation_mean_pair_f1": 0.0649773458791584,
+      "mean_validation_loss": 4.275487941244374
+    },
+    {
+      "epoch": 10,
+      "mean_train_loss": 0.5630758677919706,
+      "validation_mean_pair_f1": 0.06466776545733306,
+      "mean_validation_loss": 4.934540727864141
+    }
+  ],
+  "selected_epoch": 1,
+  "selected_validation_pair_f1": 0.08631590877225469,
+  "train_positive_pairs": 736,
+  "train_negative_pairs": 56646,
+  "train_only_positive_weight": 76.96467391304348,
+  "excluded_train_contacts": 0,
+  "excluded_validation_contacts": 0,
+  "parameters": 26097,
+  "encoder_receptive_field_nt": 91,
+  "checkpoint_sha256": {
+    "initial_context_model.pt": "4f5a5f97197feaf2d147c996f4e4c963911474917ac6cfb3263980c9d71d405c",
+    "best_context_model.pt": "9c7b84fcf50e3c1a5d5fc1b038a2e403475299f9289691fe603f5360e174cbeb"
+  }
+}

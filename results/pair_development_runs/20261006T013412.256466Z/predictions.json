@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "methods": [
+    "untrained_pair",
+    "trained_pair"
+  ],
+  "records": [
+    {
+      "id": "validation_PDB_00002",
+      "sequence": "GGCGUAAGGAUUACCUAUGCC",
+      "method": "untrained_pair",
+      "status": "ok",
+      "structure": "(((....)...).(....).)"
+    },
+    {
+      "id": "validation_PDB_00019",
+      "sequence": "GGGAUACUGCUUCGGUAAGUCCC",
+      "method": "untrained_pair",
+      "status": "ok",
+      "structure": "(((....)...)..(....)).."
+    },
+    {
+      "id": "validation_PDB_00049",
+      "sequence": "GGCGAAGUCGAAAGAUGGCGCC",
+      "method": "untrained_pair",
+      "status": "ok",
+      "structure": ".((....((.(....))).).)"
+    },
+    {
+      "id": "validation_PDB_00108",
+      "sequence": "GGCGGUGCUGAGAUGCCCGUC",
+      "method": "untrained_pair",
+      "status": "ok",
+      "structure": "((((....)(.(....)))))"
+    },
+    {
+      "id": "validation_PDB_00130",
+      "sequence": "GGAAGGCCCUUUUCAGGGCCACCC",
+      "method": "untrained_pair",
+      "status": "ok",
+      "structure": "((....)...)(....)(....)."
+    },
+    {
+      "id": "validation_PDB_00149",
+      "sequence": "GCGCAGGACUCGGCUUCUUCGGAAGGGACGAGGGGCGC",
+      "method": "untrained_pair",
+      "status": "ok",
+      "structure": ".(((((....)...)(((....).))).)..)(....)"
+    },
+    {
+      "id": "validation_PDB_00160",
+      "sequence": "GGCGUAACGUUGAAAAGUUACGCC",
+      "method": "untrained_pair",
+      "status": "ok",
+      "structure": "(..((...(...(....))..)))"
+    },
+    {
+      "id": "validation_PDB_00169",
+      "sequence": "GGACCUCUCGAAAGAGUUGUCC",
+      "method": "untrained_pair",
+      "status": "ok",
+      "structure": "(((....)((.(....)))))."
+    },
+    {
+      "id": "validation_PDB_00178",
+      "sequence": "GGCGAUACCAGCCGAAAGGCCCUUGGCAGCGUC",
+      "method": "untrained_pair",
+      "status": "ok",
+      "structure": ".(((.(.((...(....))(....))..))))."
+    },
+    {
+      "id": "validation_PDB_00182",
+      "sequence": "GAGCGAAGACGAAAGUCGAGCUC",
+      "method": "untrained_pair",
+      "status": "ok",
+      "structure": "(....(...(....)))(....)"
+    },
+    {
+      "id": "validation_PDB_00187",
+      "sequence": "CUCCCGGAAGACCACCGGGUUAAGAGGCCAGGCGUGCACGCAUAGCAAUGUGUUCAGCGGACUGGUGCUCAUCAG",
+      "method": "untrained_pair",
+      "status": "ok",
+      "structure": "..(((((....)...).(.(....)..)..)..)..(((((.(....)(((....).)))..).))).(....))"
+    },
+    {
+      "id": "validation_PDB_00201",
+      "sequence": "GGACACGAAAUCCCGAAGUAGUGUCC",
+      "method": "untrained_pair",
+      "status": "ok",
+      "structure": "(....)(....)..(((....).))."
+    },
+    {
+      "id": "validation_PDB_00002",
+      "sequence": "GGCGUAAGGAUUACCUAUGCC",
+      "method": "trained_pair",
+      "status": "ok",
+      "structure": "((.....(......)....))"
+    },
+    {
+      "id": "validation_PDB_00019",
+      "sequence": "GGGAUACUGCUUCGGUAAGUCCC",
+      "method": "trained_pair",
+      "status": "ok",
+      "structure": ".((((((.......)))..)))."
+    },
+    {
+      "id": "validation_PDB_00049",
+      "sequence": "GGCGAAGUCGAAAGAUGGCGCC",
+      "method": "trained_pair",
+      "status": "ok",
+      "structure": "(((..(.((....)))...)))"
+    },
+    {
+      "id": "validation_PDB_00108",
+      "sequence": "GGCGGUGCUGAGAUGCCCGUC",
+      "method": "trained_pair",
+      "status": "ok",
+      "structure": "(.((.............)).)"
+    },
+    {
+      "id": "validation_PDB_00130",
+      "sequence": "GGAAGGCCCUUUUCAGGGCCACCC",
+      "method": "trained_pair",
+      "status": "ok",
+      "structure": "(...(((...(....).)))...)"
+    },
+    {
+      "id": "validation_PDB_00149",
+      "sequence": "GCGCAGGACUCGGCUUCUUCGGAAGGGACGAGGGGCGC",
+      "method": "trained_pair",
+      "status": "ok",
+      "structure": ".(.(((....)...)((((...))..)).)......)."
+    },
+    {
+      "id": "validation_PDB_00160",
+      "sequence": "GGCGUAACGUUGAAAAGUUACGCC",
+      "method": "trained_pair",
+      "status": "ok",
+      "structure": "((((.(...(....)...).))))"
+    },
+    {
+      "id": "validation_PDB_00169",
+      "sequence": "GGACCUCUCGAAAGAGUUGUCC",
+      "method": "trained_pair",
+      "status": "ok",
+      "structure": "(((...(....(....).))))"
+    },
+    {
+      "id": "validation_PDB_00178",
+      "sequence": "GGCGAUACCAGCCGAAAGGCCCUUGGCAGCGUC",
+      "method": "trained_pair",
+      "status": "ok",
+      "structure": ".(((......((.(..(.....)).))..)))."
+    },
+    {
+      "id": "validation_PDB_00182",
+      "sequence": "GAGCGAAGACGAAAGUCGAGCUC",
+      "method": "trained_pair",
+      "status": "ok",
+      "structure": ".((.....((....))....))."
+    },
+    {
+      "id": "validation_PDB_00187",
+      "sequence": "CUCCCGGAAGACCACCGGGUUAAGAGGCCAGGCGUGCACGCAUAGCAAUGUGUUCAGCGGACUGGUGCUCAUCAG",
+      "method": "trained_pair",
+      "status": "ok",
+      "structure": "..(.((.........))......(.(.(((...((.(..((.(....).(....).)).)))))..)).)....)"
+    },
+    {
+      "id": "validation_PDB_00201",
+      "sequence": "GGACACGAAAUCCCGAAGUAGUGUCC",
+      "method": "trained_pair",
+      "status": "ok",
+      "structure": "(((((................)))))"
+    }
+  ]
+}

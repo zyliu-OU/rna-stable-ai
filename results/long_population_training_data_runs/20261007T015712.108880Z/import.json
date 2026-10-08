@@ -1,0 +1,2031 @@
+{
+  "source_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/datasets_in_fasta_form/train_datasets/S-Processed-TRA.fasta": "4f80e64e779421fc1d22323e3655d272f4a69687fc44338315cd67fe34f656d7",
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/input_data.zip": "e9b1b8734e43b1211b9aca47b35dbaf82e9c91667fb1ff97ea8e0d41143ecbe6"
+  },
+  "minimum": 1025,
+  "maximum": 4096,
+  "cap": 8,
+  "candidate_count": 0,
+  "selected_count": 0,
+  "exclusions": [
+    {
+      "id": "input_data_StructureData_train_CRW_00001",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00002",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00003",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00005",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00006",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00007",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00009",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00011",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00013",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00014",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00015",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00016",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00017",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00018",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00019",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00044",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00045",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00046",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00047",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00048",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00049",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00050",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00051",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00052",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00053",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00054",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00055",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00056",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00057",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00058",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00059",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00060",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00061",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00062",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00064",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00065",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00066",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00067",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00068",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00069",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00070",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00071",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00072",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00073",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00075",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00076",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00077",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00078",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00079",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00080",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00081",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00082",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00083",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00084",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00085",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00086",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00087",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00088",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00089",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00091",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00092",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00093",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00094",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00095",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00096",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00097",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00098",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00099",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00100",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00101",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00102",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00103",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00104",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00105",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00106",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00107",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00108",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00109",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00111",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00112",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00113",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00114",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00115",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00116",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00117",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00118",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00119",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00120",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00121",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00122",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00123",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00124",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00125",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00126",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00127",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00128",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00129",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00130",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00131",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00132",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00133",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00134",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00135",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00136",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00137",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00138",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00139",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00140",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00141",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00142",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00143",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00144",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00145",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00146",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00147",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00148",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00149",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00150",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00151",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00152",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00154",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00155",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00156",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00157",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00158",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00159",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00160",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00161",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00162",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00163",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00164",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00165",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00166",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00168",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00169",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00170",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00171",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00172",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00173",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00174",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00175",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00176",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00177",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00178",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00179",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00180",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00181",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00182",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00183",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00184",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00185",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00186",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00187",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00188",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00189",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00190",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00191",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00192",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00193",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00194",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00195",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00196",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00197",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00198",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00199",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00200",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00202",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00204",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00205",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00206",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00210",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00212",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00213",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00214",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00216",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00217",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00218",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00219",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00220",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00221",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00222",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00223",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00225",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00226",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00227",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00228",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00229",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00230",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00231",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00232",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00233",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00234",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00235",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00236",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00237",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00238",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00239",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00240",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00242",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00243",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00244",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00245",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00246",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00247",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00248",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00249",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00250",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00251",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00252",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00253",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00254",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00255",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00256",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00257",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00258",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00260",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00261",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00262",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00263",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00264",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00265",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00266",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00267",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00268",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00269",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00270",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00271",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00272",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00273",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00274",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00275",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00276",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00277",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00278",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00279",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00280",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00281",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00282",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00283",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00284",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00285",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00286",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00287",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00288",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00289",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00290",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00291",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00292",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00293",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00294",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00295",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00296",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00297",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00298",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00299",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00300",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00301",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00302",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00303",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00304",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00305",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00306",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00307",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00308",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00309",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00310",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00311",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00312",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00313",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00314",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00315",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00316",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00317",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00318",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00319",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00320",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00321",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00322",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00323",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00324",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00325",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00326",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00327",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00328",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00329",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00330",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00331",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00332",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00333",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00334",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00335",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00336",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00337",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00338",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00339",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00340",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00341",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00342",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00343",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00344",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00345",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00346",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00347",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00348",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00349",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00350",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00351",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00352",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00353",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00354",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00355",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00356",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00357",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00358",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00359",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00360",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00361",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00362",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00363",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00364",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00365",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00366",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00367",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00368",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00369",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00370",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00371",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00372",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00373",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00374",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00375",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00376",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00377",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00378",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00379",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00380",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00381",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00382",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00383",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00384",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00385",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00386",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00387",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00388",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00389",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00390",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00391",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00392",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00393",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00394",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00395",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00396",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00397",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00398",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00399",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00400",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00401",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00402",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00403",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00404",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00405",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00406",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00407",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00408",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00409",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00410",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00411",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00412",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00413",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00414",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00415",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00416",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00418",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00419",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00420",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00421",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00422",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00424",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00425",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00426",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00427",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00428",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00429",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00430",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00431",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00432",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00433",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00435",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00437",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00438",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00440",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00443",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00444",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00445",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00446",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00447",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00448",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00449",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00450",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00452",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00453",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00454",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00455",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00457",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00458",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00459",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00460",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00461",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00462",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00463",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00464",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00465",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00466",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00471",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00472",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00473",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00474",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00475",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00476",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00477",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00478",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00479",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00480",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00481",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00482",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00483",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00485",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00486",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00487",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00488",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00489",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00491",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00492",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00493",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00495",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00496",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00497",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00498",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00499",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00500",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00501",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00502",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00503",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00504",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00505",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00506",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00507",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00508",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00509",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00510",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00511",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00512",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00513",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00514",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00515",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00516",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00517",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00518",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00519",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00520",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00521",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00522",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00524",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00525",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00526",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00527",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00528",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00529",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00530",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00531",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00532",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00533",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00534",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00535",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00536",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00537",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00538",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00539",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00540",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00541",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00542",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00543",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00544",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00545",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00546",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00547",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00549",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00550",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00552",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00553",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00554",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00555",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00556",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00557",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00558",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00560",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00561",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00562",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00563",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00564",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00566",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00568",
+      "reason": "outside_long_training_range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00577",
+      "reason": "outside_long_training_range"
+    }
+  ],
+  "training_member_count": 503,
+  "maximum_raw_training_length": 674,
+  "availability": "no_records_in_fixed_plan",
+  "holdout_sources_read": false,
+  "test_sources_read": false,
+  "policy": "Fixed sorted-ID training-only longer annotation extension. Existing development accession/sequence separation checked; no fresh validation or test curation."
+}

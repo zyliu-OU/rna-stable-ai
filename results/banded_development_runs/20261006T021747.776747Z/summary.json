@@ -1,0 +1,63 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/banded_development_runs/20261006T021747.776747Z",
+  "manifest_sha256": "b5a573a2d128c8d26b0957c33de2420bc00470d065f94b09151d9ec5805028cf",
+  "predictions_sha256": "a651c265276790411c4807d0c99da824d2063d9dfdc4f533a9aa75a24cb1c66b",
+  "config": {
+    "max_pair_span": 64,
+    "cpu_threads": 2,
+    "synthetic_seed": 20261006
+  },
+  "test_evaluated": false,
+  "validation_records": 12,
+  "validation_mean_pair_f1": 0.5417691105191106,
+  "reference_contacts_outside_band": 2,
+  "synthetic": [
+    {
+      "id": "synthetic_1000",
+      "purpose": "synthetic_scalability_only",
+      "length": 1000,
+      "objective": 413.06948958337307,
+      "max_pair_span": 64,
+      "effective_band_width": 64,
+      "dp_array_bytes": 792000,
+      "score_array_bytes": 520000,
+      "interpretation": "Exact within fixed maximum pair span; contacts outside band excluded. Scores are logits, not energy.",
+      "scoring_wall_seconds": 0.02924308900037431,
+      "decoding_wall_seconds": 0.8647335529994962
+    },
+    {
+      "id": "synthetic_5000",
+      "purpose": "synthetic_scalability_only",
+      "length": 5000,
+      "objective": 1867.7752768546343,
+      "max_pair_span": 64,
+      "effective_band_width": 64,
+      "dp_array_bytes": 3960000,
+      "score_array_bytes": 2600000,
+      "interpretation": "Exact within fixed maximum pair span; contacts outside band excluded. Scores are logits, not energy.",
+      "scoring_wall_seconds": 0.040947982000034244,
+      "decoding_wall_seconds": 4.35673111899996
+    },
+    {
+      "id": "synthetic_10000",
+      "purpose": "synthetic_scalability_only",
+      "length": 10000,
+      "objective": 3826.339828297496,
+      "max_pair_span": 64,
+      "effective_band_width": 64,
+      "dp_array_bytes": 7920000,
+      "score_array_bytes": 5200000,
+      "interpretation": "Exact within fixed maximum pair span; contacts outside band excluded. Scores are logits, not energy.",
+      "scoring_wall_seconds": 0.0790354609998758,
+      "decoding_wall_seconds": 9.018459277999682
+    }
+  ],
+  "process_peak_rss_kib": 534312,
+  "memory_scope": "DP and score arrays are exact byte counts; process peak includes Torch, input and transient scoring allocations and all prior cases in this process.",
+  "limitations": [
+    "Fixed span 64 excludes longer contacts; not unrestricted global pairing.",
+    "One timing per input, no speedup claim.",
+    "Synthetic long inputs have no accuracy labels; old short validation is reused development only."
+  ]
+}

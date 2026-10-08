@@ -1,0 +1,212 @@
+{
+  "complete": true,
+  "mode": "family_disjoint_comparative_trial",
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/family_trial_runs/20261006T020448.519769Z",
+  "manifest_sha256": "e9d90ce86b58df695c743cfc0d6511331fc6a2ca80b20ba85272ad86cb1c8902",
+  "training": {
+    "config": {
+      "seed": 20261006,
+      "epochs": 10,
+      "learning_rate": 0.001,
+      "embedding_dim": 16,
+      "channels": 32,
+      "pair_dim": 16,
+      "cpu_threads": 2,
+      "max_length": 256,
+      "decoder_threshold": 0,
+      "mode": "family_disjoint_comparative_trial"
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "mean_train_loss": 0.4920421702166398,
+        "validation_mean_pair_f1": 0.0,
+        "mean_validation_loss": 0.5038322573122771
+      },
+      {
+        "epoch": 2,
+        "mean_train_loss": 0.4459526004890601,
+        "validation_mean_pair_f1": 0.0,
+        "mean_validation_loss": 0.5022846460342407
+      },
+      {
+        "epoch": 3,
+        "mean_train_loss": 0.4375499648352464,
+        "validation_mean_pair_f1": 0.0,
+        "mean_validation_loss": 0.4966997491276782
+      },
+      {
+        "epoch": 4,
+        "mean_train_loss": 0.4281368963420391,
+        "validation_mean_pair_f1": 0.0,
+        "mean_validation_loss": 0.5194727519284124
+      },
+      {
+        "epoch": 5,
+        "mean_train_loss": 0.4228409193456173,
+        "validation_mean_pair_f1": 0.002717391304347826,
+        "mean_validation_loss": 0.49457311371098395
+      },
+      {
+        "epoch": 6,
+        "mean_train_loss": 0.40869099895159405,
+        "validation_mean_pair_f1": 0.00838649841207386,
+        "mean_validation_loss": 0.4919118181518886
+      },
+      {
+        "epoch": 7,
+        "mean_train_loss": 0.3956090683738391,
+        "validation_mean_pair_f1": 0.021712964264115158,
+        "mean_validation_loss": 0.4920411705970764
+      },
+      {
+        "epoch": 8,
+        "mean_train_loss": 0.3748825912674268,
+        "validation_mean_pair_f1": 0.02710688384567776,
+        "mean_validation_loss": 0.4957617935927018
+      },
+      {
+        "epoch": 9,
+        "mean_train_loss": 0.35197413961092633,
+        "validation_mean_pair_f1": 0.03432242044067323,
+        "mean_validation_loss": 0.5025024660255598
+      },
+      {
+        "epoch": 10,
+        "mean_train_loss": 0.32831889018416405,
+        "validation_mean_pair_f1": 0.019448231112399027,
+        "mean_validation_loss": 0.5107539866281592
+      }
+    ],
+    "selected_epoch": 9,
+    "selected_validation_pair_f1": 0.03432242044067323,
+    "train_positive_pairs": 736,
+    "train_negative_pairs": 56646,
+    "train_only_positive_weight": 8.772951265853669,
+    "unrepresentable_train_reference_pairs": 0,
+    "unrepresentable_validation_reference_pairs": 0,
+    "records_without_train_loss": [],
+    "parameters": 11697,
+    "initial_checkpoint_sha256": "e54d7e79aaeec7478438a6bba8124e7de1c956b143ce80bab0901388e2d29cc5",
+    "best_checkpoint_sha256": "e87143c8ef59077325d8be7a196567038da8a1edba8451c6c807c699a953927e",
+    "selection_policy": "highest_validation_pair_f1_then_lowest_validation_loss_then_earliest_epoch_v1"
+  },
+  "counts": {
+    "train": 24,
+    "validation": 23,
+    "test": 9
+  },
+  "families": {
+    "train": [
+      "RF00001"
+    ],
+    "validation": [
+      "RF00169"
+    ],
+    "test": [
+      "RF00008"
+    ]
+  },
+  "aggregates": [
+    {
+      "method": "LinearFold",
+      "reference_kind": "computational",
+      "planned_inputs": 9,
+      "measured_inputs": 9,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 9
+      },
+      "mean_pair_precision": 0.8303543134425487,
+      "mean_pair_recall": 0.9375661375661376,
+      "mean_pair_f1": 0.8793522785458269
+    },
+    {
+      "method": "ViennaRNA",
+      "reference_kind": "computational",
+      "planned_inputs": 9,
+      "measured_inputs": 9,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 9
+      },
+      "mean_pair_precision": 0.8303543134425487,
+      "mean_pair_recall": 0.9375661375661376,
+      "mean_pair_f1": 0.8793522785458269
+    },
+    {
+      "method": "all_unpaired",
+      "reference_kind": "computational",
+      "planned_inputs": 9,
+      "measured_inputs": 9,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 9
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "method": "trained_pair",
+      "reference_kind": "computational",
+      "planned_inputs": 9,
+      "measured_inputs": 9,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 9
+      },
+      "mean_pair_precision": 0.2111111111111111,
+      "mean_pair_recall": 0.05837742504409171,
+      "mean_pair_f1": 0.091157185894028
+    },
+    {
+      "method": "untrained_pair",
+      "reference_kind": "computational",
+      "planned_inputs": 9,
+      "measured_inputs": 9,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 9
+      },
+      "mean_pair_precision": 0.03941120607787274,
+      "mean_pair_recall": 0.035626102292768955,
+      "mean_pair_f1": 0.03735359290914846
+    }
+  ],
+  "exposure_events": [
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/family_trial_runs/20261006T020448.519769Z/exposures/20261006T020449.855403Z.json",
+      "sha256": "25a526faeed18ee6f4a20bca8ddebaf8b58b8ef0df82bce5ec450ba857c3804a",
+      "stage": "training_started"
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/family_trial_runs/20261006T020448.519769Z/exposures/20261006T020449.870364Z.json",
+      "sha256": "25483b9ec75536845e74a3e459d42edecc87a9945edb873131df928868eaa450",
+      "stage": "validation_started"
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/family_trial_runs/20261006T020448.519769Z/exposures/20261006T020454.549168Z.json",
+      "sha256": "e50d0973b974c58e7ae8fcd89accf8d9b60b85035b5362d88192144de90489c0",
+      "stage": "test_started"
+    }
+  ],
+  "artifact_sha256": {
+    "model/training.json": "c64f6f5fecf6e21d5f3c642bbc3ccae051abd7c9507ea543b5f780fac8bc6bc8",
+    "test_references.json": "3317da7c2bebf9912fc7fe23f2ea4e79f7573c0d3fbfd4c383a50dc965dbb44c",
+    "test_predictions.json": "08d386563add4176e43cee2e6d91fbc8fc5b34fcab01a51a477de69a6b9ba9d8",
+    "folds.json": "5c4b2264c7ec5636627c0b21388bb7bc769137ba4321ec2e16e4bddc41b2f0dd",
+    "results/reference_evaluation_summary.json": "18e37d453b4c0dd53648e3dbbebbed89adec0842503319b0807f49d49c20a41d"
+  },
+  "limitations": [
+    "Processed comparative annotations; not a new experimental measurement. Legacy tool-training overlap and clan independence are unestablished.",
+    "Only one family per split; no population-wide family generalization claim.",
+    "Prior PDB family assignments are unresolved; prior sequence exposure is filtered, but complete cross-study family independence is unestablished.",
+    "Quadratic scores and cubic decoding remain limited to 256 nt. No long-RNA accuracy or biological stability measurement."
+  ]
+}

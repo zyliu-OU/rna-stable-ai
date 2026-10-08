@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/context_inference_runs/20261006T023508.653323Z",
+  "config": {
+    "mode": "development_validation_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "max_pair_span": 128,
+    "decoder_threshold": 0,
+    "positive_weight_exponent": 1.0
+  },
+  "source_summary_sha256": "878c45d15f982adb5d21862fda57fcbe6548354f1797cb40bfa8f03b89ed61b4",
+  "checkpoint": "/home/zyliu/Documents/rna-stable-ai/results/context_development_runs/20261006T022313.519739Z/best_context_model.pt",
+  "checkpoint_sha256": "5756cac78a220fdba10b2a860253ba44a76acb1b94a1a2656dc721e62b80ed39",
+  "input_sha256": "f3e6654bea2e4725b28af2e821df5c4b5bce5485c9903c0e1301cd8749fc6c57",
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_inference.py": "8fff08a18a5e36fd12d1b1baa132ee55b6b68ad2bed9598d8798a4389dcab16e",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_pairs.py": "f103e56bb315e35ae2646ff33717b53d58f163464787893699129f28a2585756",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/banded_pairs.py": "95580a3fa213bdab74dc103d190c9388dac14266de7831fb9af31137353d6197",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/exposures.py": "ad12875d0ee29f8cf5def848758cea76dc0356b16c88eb892c7df96aa8c98adc",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sequences.py": "3e970de56b2b6d38ae6fbe276032a51fe570ac2bc4d84288e49cb1a32e335960",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reference.py": "34bf934880947040d56aa8fa51f60967b209c7c7537dc181ac59b94623051d75"
+  },
+  "policy": "Inference only, no reference labels or accuracy evaluation. Sequences conservatively recorded as test-start exposure before inference."
+}

@@ -1,0 +1,128 @@
+{
+  "utc": "20261005T050101.138814Z",
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_5000_seed1736/results/equal_budget_runs/20261005T045331.295022Z",
+  "mode": "prospective_cpu_equal_proposal_budget",
+  "complete": true,
+  "config": {
+    "schema_version": 1,
+    "report_name": "equal_budget_long",
+    "lengths": [
+      5000
+    ],
+    "kinds": [
+      "mixed"
+    ],
+    "sequence_seeds": [
+      1736
+    ],
+    "restart_search_seeds": [
+      2740,
+      2741,
+      2742,
+      2743
+    ],
+    "beam_size": 200,
+    "steps_per_restart": 8,
+    "long_steps": 32,
+    "optimization_config": "/home/zyliu/Documents/rna-stable-ai/configs/optimization.json",
+    "optimization_overrides": {
+      "timeout_seconds": 120,
+      "finalist_timeout_seconds": 600
+    }
+  },
+  "config_sha256": "75b49e4a3059e5680aa5aafef02d217426789121a7b15bcf7ea159113bdee2c6",
+  "manifest_sha256": "bcd22155f4d3188b6351c607bd6447fbec8c286a922a87ba3c253f52a2b6539e",
+  "sources": {
+    "long": {
+      "sweep": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_5000_seed1736/results/equal_budget_runs/20261005T045331.295022Z/long/results/evaluation_sweep_summary.json",
+        "sha256": "449b3c700857f2f1d524fc1b71ba275f53912457d0fe6e3b2cd857ae638d10c6"
+      },
+      "portfolio": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_5000_seed1736/results/equal_budget_runs/20261005T045331.295022Z/long/results/portfolio_summary.json",
+        "sha256": "29a0e82d557721960c2c1ca49229cafbba594c815d89266664aa3c8a94f66efd"
+      }
+    },
+    "restarts": {
+      "sweep": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_5000_seed1736/results/equal_budget_runs/20261005T045331.295022Z/restarts/results/evaluation_sweep_summary.json",
+        "sha256": "cfe3d59a2906eaa2907188f850e9074037af692a6b1b34d7c943f7322e6aaf55"
+      },
+      "portfolio": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_5000_seed1736/results/equal_budget_runs/20261005T045331.295022Z/restarts/results/portfolio_summary.json",
+        "sha256": "f945120f1d344cbf69b7172bd7f7dfa8f7f28d0902c7fc67dc6a7b630b2c72fb"
+      }
+    }
+  },
+  "latest_execution_attempts": {
+    "long": {
+      "wall_seconds": 180.70745741399878,
+      "resumed": false
+    },
+    "restarts": {
+      "wall_seconds": 269.13393914300104,
+      "resumed": false
+    }
+  },
+  "rows": [
+    {
+      "kind": "mixed",
+      "length": 5000,
+      "sequence_seed": 1736,
+      "input_sha256": "d06d05cf2847f6d4eb59d6891e709f03a2a5728a014c93ad780f9ee9e7dff71d",
+      "long_searches": 1,
+      "long_validated_candidates": 1,
+      "long_planned_proposals": 32,
+      "long_attempted_proposals": 32,
+      "long_selected_delta_kcal_mol": -9.699999999999818,
+      "long_selected_fasta": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_5000_seed1736/results/equal_budget_runs/20261005T045331.295022Z/long/results/portfolio_runs/20261005T045632.002400Z/mixed_5000_seed1736_selected.fasta",
+      "long_selected_job_id": "mixed_5000_seq1736_search2740_beam200",
+      "long_search_wall_seconds": 130.852742862,
+      "long_validation_wall_seconds": 24.559308564996172,
+      "long_reference_wall_seconds": 24.35844846499822,
+      "long_baseline_fold_requests": 1,
+      "long_proposals_fold_requests": 32,
+      "long_reference_fold_requests": 1,
+      "long_validation_fold_requests": 1,
+      "restarts_searches": 4,
+      "restarts_validated_candidates": 4,
+      "restarts_planned_proposals": 32,
+      "restarts_attempted_proposals": 32,
+      "restarts_selected_delta_kcal_mol": -2.2999999999999545,
+      "restarts_selected_fasta": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_5000_seed1736/results/equal_budget_runs/20261005T045331.295022Z/restarts/results/portfolio_runs/20261005T050101.136751Z/mixed_5000_seed1736_selected.fasta",
+      "restarts_selected_job_id": "mixed_5000_seq1736_search2742_beam200",
+      "restarts_search_wall_seconds": 145.48959007200756,
+      "restarts_validation_wall_seconds": 98.666721985006,
+      "restarts_reference_wall_seconds": 24.609059395996155,
+      "restarts_baseline_fold_requests": 4,
+      "restarts_proposals_fold_requests": 32,
+      "restarts_reference_fold_requests": 1,
+      "restarts_validation_fold_requests": 4,
+      "comparison_status": "measured",
+      "restart_minus_long_kcal_mol": 7.399999999999864,
+      "winner": "long"
+    }
+  ],
+  "aggregates": [
+    {
+      "length": 5000,
+      "planned_inputs": 1,
+      "measured_pairs": 1,
+      "unknown_pairs": 0,
+      "winners": {
+        "long": 1
+      },
+      "mean_restart_minus_long_kcal_mol": 7.399999999999864
+    }
+  ],
+  "limitations": [
+    "Equal proposal caps do not imply equal CPU time or total folding calls.",
+    "Search wall time includes LinearFold baseline; do not add it twice.",
+    "Restarts require additional baselines and candidate validations; both arms include one input reference per input.",
+    "Duplicate and no-legal-proposal events need not invoke a fold; actual fold counts are audited separately.",
+    "Serial fixed arm order and single timing observations preclude a speedup claim.",
+    "Unknown or failed candidate validations exclude a paired outcome, even when input fallback is available.",
+    "Synthetic 1,000/2,000-nt pilot only; no generalization to long RNA or biological stability.",
+    "No neural training or GPU folding."
+  ]
+}

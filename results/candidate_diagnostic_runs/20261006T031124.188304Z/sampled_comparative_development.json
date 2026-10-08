@@ -1,0 +1,195 @@
+{
+  "complete": true,
+  "mode": "long_comparative_development_only",
+  "test_evaluated": false,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z",
+  "manifest_sha256": "0988041f24a1d68d945ea59fb792cf0668219093e1cf4cd3dbffb60b6cebadae",
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "refinement": {
+      "passes": 2,
+      "max_remove": 2,
+      "group_cap": 8,
+      "include_subsets": true
+    },
+    "sampling": {
+      "seed": 20261006,
+      "negatives_per_positive": 16,
+      "minimum_negatives": 64,
+      "validation_loss": "full_pair_labels"
+    }
+  },
+  "counts": {
+    "train": 89,
+    "validation": 47
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "mean_train_loss": 1.3765009454127108,
+      "validation_mean_pair_f1": 0.13666127842976636,
+      "mean_validation_loss": 0.9115458511291666
+    },
+    {
+      "epoch": 2,
+      "mean_train_loss": 1.2974492083774525,
+      "validation_mean_pair_f1": 0.12198455533011268,
+      "mean_validation_loss": 0.9137272365549778
+    },
+    {
+      "epoch": 3,
+      "mean_train_loss": 1.2423656991358554,
+      "validation_mean_pair_f1": 0.14697838952915082,
+      "mean_validation_loss": 0.9127644452642887
+    },
+    {
+      "epoch": 4,
+      "mean_train_loss": 1.1518778010700526,
+      "validation_mean_pair_f1": 0.16127682486383862,
+      "mean_validation_loss": 0.9463620718489302
+    },
+    {
+      "epoch": 5,
+      "mean_train_loss": 1.1448197324624223,
+      "validation_mean_pair_f1": 0.1811901498197513,
+      "mean_validation_loss": 0.8212022172643784
+    },
+    {
+      "epoch": 6,
+      "mean_train_loss": 0.9954167303074611,
+      "validation_mean_pair_f1": 0.1682408463971276,
+      "mean_validation_loss": 0.8311553927178078
+    },
+    {
+      "epoch": 7,
+      "mean_train_loss": 0.9404933978332563,
+      "validation_mean_pair_f1": 0.18213404756934778,
+      "mean_validation_loss": 0.8376212284920064
+    },
+    {
+      "epoch": 8,
+      "mean_train_loss": 0.8775467425584793,
+      "validation_mean_pair_f1": 0.19083104565343534,
+      "mean_validation_loss": 0.7567337586524638
+    },
+    {
+      "epoch": 9,
+      "mean_train_loss": 0.8052384394608186,
+      "validation_mean_pair_f1": 0.20172616105030025,
+      "mean_validation_loss": 0.7218547609258206
+    },
+    {
+      "epoch": 10,
+      "mean_train_loss": 0.7764935434869166,
+      "validation_mean_pair_f1": 0.1967664914379638,
+      "mean_validation_loss": 0.7163927491675032
+    }
+  ],
+  "selected_epoch": 9,
+  "selected_validation_pair_f1": 0.20172616105030025,
+  "train_positive_pairs": 4462,
+  "train_negative_pairs": 70013,
+  "train_only_positive_weight": 15.690945764231287,
+  "excluded_train_contacts": 26,
+  "excluded_validation_contacts": 7,
+  "parameters": 25874,
+  "encoder_receptive_field_nt": 91,
+  "checkpoint_sha256": {
+    "initial_context_model.pt": "c66aef2bc8897e3ffac20af6d335f1b46a327e01a220f98030d7bf09440e1a75",
+    "best_context_model.pt": "04a285ea5ff2fdb613883e2be7c02abe270db609274bee5770d81ebb91cdb128"
+  },
+  "exposure_events": [
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/exposures/20261006T030802.250872Z.json",
+      "sha256": "3ab0f7dd6c33101bcb1f66e35f6d7a6b4266d31c1296b64343529e88b31aa68a",
+      "stage": "training_started"
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/exposures/20261006T030802.266180Z.json",
+      "sha256": "60cabc0b263b3441fd12c39116b0a367bf7603203bdca4dda70c1b74dbe65a19",
+      "stage": "validation_started"
+    }
+  ],
+  "predictions_sha256": "687b974093dc32f367f3f3485d7ca986a93455bf34da613523e842e09dba85f0",
+  "aggregates": [
+    {
+      "method": "trained_sampled_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.09064273429692814,
+      "mean_pair_recall": 0.05918718749047929,
+      "mean_pair_f1": 0.07150043014923664
+    },
+    {
+      "method": "trained_sampled_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6411706349206349,
+      "mean_pair_recall": 0.5403288840788841,
+      "mean_pair_f1": 0.5815512095117358
+    },
+    {
+      "method": "untrained_sampled_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.012793737847317589,
+      "mean_pair_recall": 0.010819934148199314,
+      "mean_pair_f1": 0.011718517518143689
+    },
+    {
+      "method": "untrained_sampled_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.07023809523809524,
+      "mean_pair_recall": 0.062003968253968256,
+      "mean_pair_f1": 0.0655982905982906
+    }
+  ],
+  "limitations": [
+    "Same exposed development records, one seed; validation results do not establish generalization.",
+    "Sampling reduces scored training negatives, but full label enumeration remains quadratic and bounded to1024 nt.",
+    "Full validation loss uses the sampled-training positive weight; it is not comparable with prior differently weighted loss.",
+    "Comparative annotations are not new experimental assays; approximate decoder and family independence remain limitations."
+  ]
+}

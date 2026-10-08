@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/context_inference_runs/20261006T023056.923574Z",
+  "purpose": "checkpoint_inference_only",
+  "accuracy_evaluated": false,
+  "records": 1,
+  "config": {
+    "mode": "development_validation_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "max_pair_span": 128,
+    "decoder_threshold": 0,
+    "positive_weight_exponent": 1.0
+  },
+  "manifest_sha256": "83de9cbe0f4eb276adc689b8807149d1ab02888eacdaf4e33053d6ec992e80f1",
+  "predictions_sha256": "04ac4286bcaf5edf46a811c1784e8c4b91d9dbc0cb75863f6fba0696c5dfa0aa",
+  "dbn_sha256": "17fbb3abad5139f34374eb45c25f6f22ea8ea3a6cbd4dbfdad83944fb82f3d52",
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/context_inference_runs/20261006T023056.923574Z/exposures/20261006T023056.924270Z.json",
+    "sha256": "26928967f3f5d1e218015c73053fcef445afc40046f5786d1a2b6fbcddb4b45f",
+    "stage": "test_started"
+  },
+  "limitations": [
+    "Fixed pair span excludes distant contacts.",
+    "Predicted scores are logits, not free energy or measured stability.",
+    "Input references and accuracy metrics are absent."
+  ]
+}

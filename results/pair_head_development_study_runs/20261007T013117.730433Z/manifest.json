@@ -1,0 +1,101 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z",
+  "config": {
+    "seeds": [
+      20261006,
+      20261007,
+      20261008
+    ],
+    "heads": [
+      "baseline",
+      "stack",
+      "helix"
+    ],
+    "component_timeout_seconds": 180,
+    "memory_limit_gib": 8,
+    "deadline_utc": "2026-10-07T04:00:00+00:00"
+  },
+  "base_config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse"
+  },
+  "plan": [
+    {
+      "seed": 20261006,
+      "head": "baseline"
+    },
+    {
+      "seed": 20261006,
+      "head": "stack"
+    },
+    {
+      "seed": 20261006,
+      "head": "helix"
+    },
+    {
+      "seed": 20261007,
+      "head": "baseline"
+    },
+    {
+      "seed": 20261007,
+      "head": "stack"
+    },
+    {
+      "seed": 20261007,
+      "head": "helix"
+    },
+    {
+      "seed": 20261008,
+      "head": "baseline"
+    },
+    {
+      "seed": 20261008,
+      "head": "stack"
+    },
+    {
+      "seed": 20261008,
+      "head": "helix"
+    }
+  ],
+  "snapshot_sha256": {
+    "source_summary.json": "b9f2f7046a06ea07a4b068200f886ebda947185052dfc3df0f0f7e759052f0e8",
+    "train.json": "e865328d0ee3fe778c0d07d18d604319eb7ae728285679e85d40069ee56b5517",
+    "validation.json": "bea47dac135ef17e9bc213d563fbda8f8934769bc080d111bdf1a5906a892746"
+  },
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/run_pair_head_development_study.py": "7bb269e1f0ce594e45c3fec81bdde7c2fa560ae2a2b99f501a184414dc71f51b",
+    "/home/zyliu/Documents/rna-stable-ai/scripts/train_sampled_comparative_development.py": "090ac8263f576126a067080774f5f57e10c00acb1c4337d90a31456d47d92d22",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/pair_head_study.py": "cb131b8c5ac3f9eb43cb715bf8b30901c3a66ba01297b6064884d273b1c3cffb",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_training.py": "b38f1b7da0e8adfaa08f67c68bdbab1f00ac001ebc513fc7054594110e5643fe",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/helix_pairs.py": "d4451dc21fe06cfec647e2deebfcc2d8a7d7462ce5b72ab4533425d6ee17723a",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/stack_pairs.py": "1e50893ea29c933104eb44e84569e6acfe6278ebb9ab3f445b65c9cf73683af0",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/global_sparse_pairs.py": "9cd50c88b5d497ee9a6d8d4e6a6f6289977d9fff96e94a823b92b5bcb72c2dc7",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_pairs.py": "f103e56bb315e35ae2646ff33717b53d58f163464787893699129f28a2585756",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/full_pair_supervision.py": "180ae74fffb21c114e561306bffe6de957d7435d104af8b985e2cddc2b1f7f61",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/exact_sparse_pairs.py": "19d25a49142f314801addf9b21911358c2d8e5bacb363f609fa401566ca143bc",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/structure_model.py": "01696835cfee1e7f9cd35f6f0634f27a9fec8add90ee8b4509bf83f4874ce8fe",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reference.py": "34bf934880947040d56aa8fa51f60967b209c7c7537dc181ac59b94623051d75",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reference_audit.py": "32ec3497b19fe3632a8d3080dd49a673f1d7940fa4ccd19c46eeb9976f370866",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/exposures.py": "ad12875d0ee29f8cf5def848758cea76dc0356b16c88eb892c7df96aa8c98adc",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/scoring.py": "aefa252f8765861a15e7265fd69c716c598ff3e3d1925c71e0564e9ef9baf349",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/artifacts.py": "d06ab133f8b31dfd7831ec05b94d7be8ed31b678db969a0120a12f0e6e3f7a09"
+  },
+  "policy": "Same exposed development snapshots and matched base initializations; compare zero-initialized sequence-only feature heads. No fresh test."
+}

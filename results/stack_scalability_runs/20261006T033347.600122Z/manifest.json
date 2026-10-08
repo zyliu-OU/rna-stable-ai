@@ -1,0 +1,43 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/stack_scalability_runs/20261006T033347.600122Z",
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse",
+    "pair_features": "adjacent_stackability"
+  },
+  "refinement": {
+    "passes": 2,
+    "max_remove": 2,
+    "group_cap": 8,
+    "include_subsets": true
+  },
+  "source_summary_sha256": "b1d638959b26aa82a8664c0b8f5b54c92a67ce13cb1136d3e660c0fefa62b128",
+  "checkpoint": "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/best_context_model.pt",
+  "checkpoint_sha256": "531a27e889496ce35f7e5e526edd6092e15107735dc19804d71c27b0654bbfa8",
+  "inputs_sha256": "add6a23d6329996bab7e8432313b1988e3f56cfaae717dafd9090eab5794b10b",
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/run_stack_scalability.py": "e6a49987f596702adc5231ff9d29c7db3cbfc108722cffc41a486ebe3d7bb7cc",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/stack_pairs.py": "1e50893ea29c933104eb44e84569e6acfe6278ebb9ab3f445b65c9cf73683af0",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/global_sparse_pairs.py": "330c81ee44f87549a7d020dee6d9382394ad0957cab5f32fc84c7347d08e2ead",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sparse_refinement.py": "dd62f857b0cd7ccf75bb7e608e9332cbc24afcadc6e9db8ef039e7b5c9e9ae5c",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_inference.py": "d165dfe78f3e9c1e8ab2afcb7e3d8da9d55aa22113c46cc92c8c62135478f487"
+  },
+  "policy": "Unlabelled synthetic resource benchmark, not checkpoint accuracy. Explicitly substitute approximate greedy/refinement decoding for the source exact decoder; never silently change FASTA behavior."
+}

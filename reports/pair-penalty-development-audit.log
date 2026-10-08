@@ -1,0 +1,10 @@
+Penalty component audit passed: 20261006, baseline, 47 reused records, 5 frozen-checkpoint penalties.
+Penalty component audit passed: 20261006, stack, 47 reused records, 5 frozen-checkpoint penalties.
+Penalty component audit passed: 20261006, helix, 47 reused records, 5 frozen-checkpoint penalties.
+Penalty component audit passed: 20261007, baseline, 47 reused records, 5 frozen-checkpoint penalties.
+Penalty component audit passed: 20261007, stack, 47 reused records, 5 frozen-checkpoint penalties.
+Penalty component audit passed: 20261007, helix, 47 reused records, 5 frozen-checkpoint penalties.
+Penalty component audit passed: 20261008, baseline, 47 reused records, 5 frozen-checkpoint penalties.
+Penalty component audit passed: 20261008, stack, 47 reused records, 5 frozen-checkpoint penalties.
+Penalty component audit passed: 20261008, helix, 47 reused records, 5 frozen-checkpoint penalties.
+Penalty development audit passed: nine frozen checkpoints, five penalties each; zero-penalty source scores and exposed-validation selection verified.

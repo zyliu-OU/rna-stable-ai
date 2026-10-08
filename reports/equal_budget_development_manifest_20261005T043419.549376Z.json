@@ -1,0 +1,46 @@
+{
+  "versions": {
+    "python": "3.12.14",
+    "executable": "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+    "RNA-StableAI": "0.1.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "biopython": "1.88",
+    "psutil": "7.2.2",
+    "tqdm": "4.70.1",
+    "pyyaml": "6.0.3",
+    "pytest": "9.1.1",
+    "matplotlib": "3.11.2",
+    "torch": "2.14.1+cu130",
+    "ViennaRNA": "2.7.2"
+  },
+  "files": {
+    "src/rnastable/budget_study.py": "adad3e91caa042eaf4a9b7de83948f7347884eb33d9ba5f77c304b1b46f3383f",
+    "src/rnastable/cli.py": "77b2147aab694b1b0357cf2549c8d72360c1a1a1e7e501dfab5a85e0dbc43b4c",
+    "scripts/verify_equal_budget.py": "e19e79ce57ed2d3eab0fcbb07f1a1014c66cc9154ad99d12e84421892091126e",
+    "scripts/summarize_equal_budget.py": "e89a2e57427cd35a840397e8057f64efd5f30995ac3296f88e055abde95f044c",
+    "tests/test_budget_study.py": "96f9de95d4b07800dd04c579377ea54b889f406ff62b825b9394490239b2148e",
+    "configs/evaluation_equal_budget.json": "cb0bf5673382161f8ae6a0b393b302b525ef726cbf6b1e51142c0280a19185e7",
+    "README.md": "c356143323a7b3412cf285415a53dd68ec21507d96ee87443a595500802917c3"
+  },
+  "tests_passed": 164,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_runs/20261005T042508.068755Z",
+  "source_summary_sha256": "dc8d1458dab388b160f957128f84517a974472f7e67e196f71141a7bb920fee1",
+  "searches": 30,
+  "proposal_folds": 384,
+  "validated_searches": 30,
+  "failed_searches": 0,
+  "winner_counts": {
+    "long": 5,
+    "restarts": 1
+  },
+  "component_cost_seconds": {
+    "long": 218.47149462599918,
+    "restarts": 263.89847145499516
+  },
+  "resume_check": "reports/equal_budget_resume_verification_20261005T042508.json",
+  "commands_log": "reports/commands.jsonl",
+  "github_status": "New portfolio and equal-budget development remain local."
+}

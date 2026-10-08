@@ -1,0 +1,4 @@
+GACGGGGGCCCGCACAAGCGGAGGAACAUGUGGUUUAAUUCGAUGAUACGCGAGGAACCUUACCCGGGCUUAAAUUGCAGUGGAAUGAUGUGGAAACAUGUCAGUGAGCAAUCACCGCUGUGAAGGUGCUGCAUGGUUGUCGUCAGCUCGUGCCGUGAGGUGUCGGCUUAAGUGCCAUAACGAGCGCAACCCUUAUCUUUAGUUACUAACAGGUUAUGCUGAGGACUCUAGAGAGACUGCCGUCGUAAGAUGUGAGGAAGGUGGGGAUGACGUCAAAUCAGCACGGCCCUUACGUCCGGGGCUACACACGUGUUACAAUGGGGGGUACAGAAGGCAGCUAGCGGGUGACCGUAUGCUAAUCCCAAAAUCCUCUCUCAGUUCGGAUCGAAGUCUGCAACCCGACUUCGUGAAGCUGGAUUCGCUAGUAAUCGCGCAUCAGCCACGGCGCGGUGAAUACGUUCCCGGGCCUUGUAC
+.((((((..((((....))))(((..(.((((..(((......)))..)))).)...)))..((((((......((((((((...(((((((....)))))))((((....))))))))))))..((((((.....(((.((((((((((((((....)))...(((......)))...)))))).....((((((((((.....((.(((..(((((.((.((.(((....))).))..)).)))))..))).)))))))))))).))))).)))..))))))((((((.......))))))....(((((((.....((((((.......((.(((..((((....))))..)))...))......))))))....((((...(((((((........)))))))))))(((((.....))))).(((((((..........))))))).))))))).)))))))))))).. (-155.30)
+
+STDERR:

@@ -1,0 +1,182 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z",
+  "manifest_sha256": "e368996f8716fb363504ee26361b12c138a70ec20cbdb36cd336be0d985ed625",
+  "test_evaluated": false,
+  "development_only": true,
+  "planned_fits": 9,
+  "completed_fits": 9,
+  "unknown_cost_components": 0,
+  "components": [
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261006_baseline/summary.json",
+      "sha256": "82f3afa57cadc29ebd3928aee363b589728f1ae07e5a5f391bce00eed3be1941"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261006_stack/summary.json",
+      "sha256": "3b15b427a4306cf66e785cf71d34386f2be57a068cd6d1aa4f6c081f3a14beab"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261006_helix/summary.json",
+      "sha256": "a0c7aea76d49e5309b1bf4ce7bcf7d471c4b64b29f477a5dbd235ea1cf899e27"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261007_baseline/summary.json",
+      "sha256": "0566d2d9f0172fd241768b24f395b763baee6bc323ecf0426f58ff34f51fca44"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261007_stack/summary.json",
+      "sha256": "cc5ca890ad73318394427d043487fc272c929bf73a6e9eb75b443c0fa5dcf1ba"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261007_helix/summary.json",
+      "sha256": "8c552dd26a6d47cb237f095bf45c837608cb5b1a37d2a30e2951f16efc3aca2a"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261008_baseline/summary.json",
+      "sha256": "cb9dab70748552f96bd818e30e38f9d88cd9d67cfeda537815213bd381972c49"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261008_stack/summary.json",
+      "sha256": "0bc424186c7ef089edaa9024d8cc44aac7207fdbb1f5c235e37f5bd005862e0f"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261008_helix/summary.json",
+      "sha256": "082f5c0e9626191070c803feaadf43873a7f83e63d05a32341d08d9d9b566200"
+    }
+  ],
+  "attempt_sha256": {
+    "components/20261006_baseline/attempt.json": "bb15edb6c508ae08709b3ebd02748203aa92e400fc45873e89a95423a6faa705",
+    "components/20261006_stack/attempt.json": "e07c03bf692af28300e4dd050697e93e3a5fcb23b1a30b913fa970a1cd95f40d",
+    "components/20261006_helix/attempt.json": "856d2cd8a1b4b8c9e4b1fc0e005b737e0cc385dcb1f7632cbe42781a592f004e",
+    "components/20261007_baseline/attempt.json": "65ec765a2f924afd527aa67ca9e45ce3bf5e39e6569bd545cd2815291952da32",
+    "components/20261007_stack/attempt.json": "73d8943d7578b9c64229b3f6fc23695cc7fbc3951a2323d1a5f40d2c8a0e2fe3",
+    "components/20261007_helix/attempt.json": "eb8c01e69db86ecbe99212ec1dba43b83dfcf08d6c69e79c02dbf726c3f088dd",
+    "components/20261008_baseline/attempt.json": "27229d0c76303fec37bb2a9685a48b1fed08d391e63be935a2d53a00091e961f",
+    "components/20261008_stack/attempt.json": "7a599f9ddabb7e275ff33a309cd1a26935c76776af07263604ed092cedf48afa",
+    "components/20261008_helix/attempt.json": "a03a91912b7f2de7a819070eaa88599443b40b2c0df4e0a07067ba8a97e07863"
+  },
+  "rows": [
+    {
+      "seed": 20261006,
+      "head": "baseline",
+      "status": "ok",
+      "selected_epoch": 3,
+      "validation_pair_f1": 0.38849854106861975,
+      "parameters": 25874,
+      "known_training_wall_seconds": 15.699953945000289
+    },
+    {
+      "seed": 20261006,
+      "head": "stack",
+      "status": "ok",
+      "selected_epoch": 5,
+      "validation_pair_f1": 0.423379568067344,
+      "parameters": 25876,
+      "known_training_wall_seconds": 17.264696133999678
+    },
+    {
+      "seed": 20261006,
+      "head": "helix",
+      "status": "ok",
+      "selected_epoch": 5,
+      "validation_pair_f1": 0.5244233333981245,
+      "parameters": 25882,
+      "known_training_wall_seconds": 20.566068536999865
+    },
+    {
+      "seed": 20261007,
+      "head": "baseline",
+      "status": "ok",
+      "selected_epoch": 3,
+      "validation_pair_f1": 0.37627740637695983,
+      "parameters": 25874,
+      "known_training_wall_seconds": 15.964769413999875
+    },
+    {
+      "seed": 20261007,
+      "head": "stack",
+      "status": "ok",
+      "selected_epoch": 3,
+      "validation_pair_f1": 0.40101251568271834,
+      "parameters": 25876,
+      "known_training_wall_seconds": 17.670313259000068
+    },
+    {
+      "seed": 20261007,
+      "head": "helix",
+      "status": "ok",
+      "selected_epoch": 4,
+      "validation_pair_f1": 0.4950770012765886,
+      "parameters": 25882,
+      "known_training_wall_seconds": 20.324934645000212
+    },
+    {
+      "seed": 20261008,
+      "head": "baseline",
+      "status": "ok",
+      "selected_epoch": 4,
+      "validation_pair_f1": 0.3932529810620267,
+      "parameters": 25874,
+      "known_training_wall_seconds": 15.317443917999753
+    },
+    {
+      "seed": 20261008,
+      "head": "stack",
+      "status": "ok",
+      "selected_epoch": 4,
+      "validation_pair_f1": 0.4055479388678194,
+      "parameters": 25876,
+      "known_training_wall_seconds": 16.26537275999999
+    },
+    {
+      "seed": 20261008,
+      "head": "helix",
+      "status": "ok",
+      "selected_epoch": 3,
+      "validation_pair_f1": 0.49106862354687564,
+      "parameters": 25882,
+      "known_training_wall_seconds": 19.276200065000012
+    }
+  ],
+  "paired_deltas": [
+    {
+      "seed": 20261006,
+      "head": "stack",
+      "paired_development_f1_delta_vs_baseline": 0.03488102699872425
+    },
+    {
+      "seed": 20261006,
+      "head": "helix",
+      "paired_development_f1_delta_vs_baseline": 0.13592479232950477
+    },
+    {
+      "seed": 20261007,
+      "head": "stack",
+      "paired_development_f1_delta_vs_baseline": 0.024735109305758507
+    },
+    {
+      "seed": 20261007,
+      "head": "helix",
+      "paired_development_f1_delta_vs_baseline": 0.11879959489962877
+    },
+    {
+      "seed": 20261008,
+      "head": "stack",
+      "paired_development_f1_delta_vs_baseline": 0.012294957805792706
+    },
+    {
+      "seed": 20261008,
+      "head": "helix",
+      "paired_development_f1_delta_vs_baseline": 0.09781564248484892
+    }
+  ],
+  "matched_initializations_verified": true,
+  "limitations": [
+    "Three matched initialization seeds share the same 89 training and 47 reused validation records; not independent biological replication.",
+    "Validation selects checkpoints and supports development comparison only. Consumed test sets are not read or evaluated.",
+    "All heads retain identical base initialization, full pair BCE, optimizer, ten epochs and exact top-16 sparse decoder. Feature parameter counts differ.",
+    "Interrupted fits are not retried; any recovered completed fit retains unknown parent-process cost.",
+    "Component wall times are bounded process measurements, not isolated throughput benchmarks."
+  ]
+}

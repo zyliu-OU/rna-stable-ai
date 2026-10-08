@@ -1,0 +1,5 @@
+reference_id,method,reference_kind,source,length,sequence_sha256,status,error,reference_pairs,predicted_pairs,shared_pairs,pair_precision,pair_recall,pair_f1,pair_jaccard,base_pair_distance
+designed_stem,handwritten_example,synthetic_control,Handwritten software demonstration; not an experimental structure,6,d417f7bbc5ebbec15806d8763ef6067379b67054033ea3f1228cf489e66142f7,ok,,2,1,1,1.0,0.5,0.6666666666666666,0.5,1
+designed_stem,missing_example,synthetic_control,Handwritten software demonstration; not an experimental structure,6,d417f7bbc5ebbec15806d8763ef6067379b67054033ea3f1228cf489e66142f7,missing,No prediction supplied,,,,,,,,
+unpaired_control,handwritten_example,synthetic_control,Handwritten software demonstration; not an experimental structure,6,69dc6c3210e25e62c5938ff4e841e81ce3c7d2cde583553478a77d7fcb389f30,ok,,0,0,0,1.0,1.0,1.0,1.0,0
+unpaired_control,missing_example,synthetic_control,Handwritten software demonstration; not an experimental structure,6,69dc6c3210e25e62c5938ff4e841e81ce3c7d2cde583553478a77d7fcb389f30,missing,No prediction supplied,,,,,,,,

@@ -1,0 +1,39 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/context_development_runs/20261006T022125.164257Z",
+  "config": {
+    "mode": "development_validation_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "max_pair_span": 128,
+    "decoder_threshold": 0
+  },
+  "sources": {
+    "/home/zyliu/Documents/rna-stable-ai/results/pair_development_runs/20261006T013412.256466Z/train.json": "8c1bae46d27c1149547633062c94bd645f253480175125192b46628852e88aba",
+    "/home/zyliu/Documents/rna-stable-ai/results/pair_development_runs/20261006T013412.256466Z/validation.json": "e02458c7e1e7beb68ef86dea7f1fa5fc6dcac120d180aeab43e6c0fa25047802",
+    "/home/zyliu/Documents/rna-stable-ai/results/family_trial_runs/20261006T020448.519769Z/family_plan/summary.json": "ee1a52817ed54d7bb4cc162809fe9074d83ec65ca5f9b614086803e5ab8acc64"
+  },
+  "input_sha256": {
+    "train.json": "69e0594a6232e7868e6d6dc498b9f950b44dca3f7691a55f7b6e84872e91df2a",
+    "validation.json": "b0b4b554c8bc3248c37a725999758ad8c60fd61065c0e6daf19b69880108b451"
+  },
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/train_context_development.py": "31146ade9b929802041c2cb5404a165c76a8e5ca0a5fdf63a178aef5e6e79139",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_pairs.py": "f103e56bb315e35ae2646ff33717b53d58f163464787893699129f28a2585756",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/banded_pairs.py": "95580a3fa213bdab74dc103d190c9388dac14266de7831fb9af31137353d6197",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/exposures.py": "6b8bcdd8b42c27e20728598b5eb29094b1804fcfbddd3623ef5f70933bea62df",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reference.py": "34bf934880947040d56aa8fa51f60967b209c7c7537dc181ac59b94623051d75",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/scoring.py": "aefa252f8765861a15e7265fd69c716c598ff3e3d1925c71e0564e9ef9baf349"
+  },
+  "policy": "Reused development only. No test predictions. Prior PDB family identities unresolved; no independent family claim."
+}

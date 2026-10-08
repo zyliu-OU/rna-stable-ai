@@ -1,0 +1,9 @@
+{
+  "status": "ok",
+  "wall_seconds": 2.6219320420004806,
+  "returncode": 0,
+  "error": "",
+  "supervisor": "linux_parent_death_guard_v1",
+  "peak_rss_mib": 801.98828125,
+  "memory_method": "GNU time maximum RSS of tool descendants (excludes supervisor; not process-tree sum)"
+}

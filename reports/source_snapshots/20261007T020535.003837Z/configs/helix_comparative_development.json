@@ -1,0 +1,22 @@
+{
+  "mode": "long_comparative_development_only",
+  "seed": 20261006,
+  "epochs": 10,
+  "learning_rate": 0.001,
+  "embedding_dim": 16,
+  "channels": 32,
+  "pair_dim": 16,
+  "dilations": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "cpu_threads": 2,
+  "training_max_length": 1024,
+  "top_k": 16,
+  "block_size": 64,
+  "positive_weight_exponent": 1.0,
+  "inference_decoder": "exact_sparse",
+  "pair_features": "local_helix_context_v1"
+}

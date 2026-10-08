@@ -1,0 +1,118 @@
+{
+  "utc": "20261005T045331.191981Z",
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z",
+  "config": {
+    "schema_version": 1,
+    "report_name": "equal_budget_long",
+    "lengths": [
+      5000,
+      10000
+    ],
+    "kinds": [
+      "mixed"
+    ],
+    "sequence_seeds": [
+      1735,
+      1736
+    ],
+    "restart_search_seeds": [
+      2740,
+      2741,
+      2742,
+      2743
+    ],
+    "beam_size": 200,
+    "steps_per_restart": 8,
+    "long_steps": 32,
+    "optimization_config": "optimization.json",
+    "optimization_overrides": {
+      "timeout_seconds": 120,
+      "finalist_timeout_seconds": 600
+    }
+  },
+  "config_path": "/home/zyliu/Documents/rna-stable-ai/configs/evaluation_equal_budget_long.json",
+  "config_sha256": "be536405eb558db14dc0a714aae672234423e35087e57640c9e030007710d19d",
+  "provenance": {
+    "versions": {
+      "python": "3.12.14",
+      "executable": "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+      "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+      "RNA-StableAI": "0.1.0",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "pandas": "3.0.6",
+      "biopython": "1.88",
+      "psutil": "7.2.2",
+      "tqdm": "4.70.1",
+      "pyyaml": "6.0.3",
+      "pytest": "9.1.1",
+      "matplotlib": "3.11.2",
+      "torch": "2.14.1+cu130",
+      "ViennaRNA": "2.7.2"
+    },
+    "file_sha256": {
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sweep.py": "fa88aad42edf6e33c8d89546c37298de4317018de58dfd33889c51d97f1c4fa4",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/optimization.py": "988543f0686bf4ea4e67f7f6c6b8a101a61c99809571468aa7953ae346a3e869",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/folding.py": "6b166164dc7e5ef915484409a643fec2059819c319650afd415b0e74afa9297b",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/scoring.py": "aefa252f8765861a15e7265fd69c716c598ff3e3d1925c71e0564e9ef9baf349",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sequences.py": "3e970de56b2b6d38ae6fbe276032a51fe570ac2bc4d84288e49cb1a32e335960",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/selection.py": "cf2eadcc5dcb3a829cb2460b6898edae68a2ade1c8ac8bffe64cc1511aba37fd",
+      "/home/zyliu/Documents/rna-stable-ai/external/LinearFold/bin/linearfold_v": "5a6f8924d15b27058d89ec85cde41c890c68b43cd9d319828d273c8da2e797eb"
+    },
+    "batch_code_sha256": {
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/budget_batches.py": "8e3fdb03b3e4c71608719896a6d29e185facaa43e44ebad888bac2ae0ecde0f1",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/batching.py": "cc0d055de7b2d4666a54266e497a92b7074766f6c881f70433b5fc1c9c2702dd",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/budget_study.py": "adad3e91caa042eaf4a9b7de83948f7347884eb33d9ba5f77c304b1b46f3383f",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/portfolio.py": "348f37767da06329635117b36c209bb0be8a78db6223fd0f04b512779831cf46",
+      "/home/zyliu/Documents/rna-stable-ai/scripts/log_command.py": "79f46b445b6ffc98063ceeb3b0cac6ac67e390ac1e43a3d8c53ed3d4506a226a"
+    }
+  },
+  "components": [
+    {
+      "id": "mixed_5000_seed1735",
+      "kind": "mixed",
+      "length": 5000,
+      "sequence_seed": 1735,
+      "root": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_5000_seed1735",
+      "config": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_5000_seed1735/config.json",
+      "config_sha256": "eebab8da925e2955aa4186d731fdac9268e181ea25c185fdc3a1781022ebb6f2",
+      "log": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_5000_seed1735/driver_output.txt"
+    },
+    {
+      "id": "mixed_5000_seed1736",
+      "kind": "mixed",
+      "length": 5000,
+      "sequence_seed": 1736,
+      "root": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_5000_seed1736",
+      "config": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_5000_seed1736/config.json",
+      "config_sha256": "f05103f0239f21676be2354c70025f8cc26e00db51f8e146b96d052dc782264c",
+      "log": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_5000_seed1736/driver_output.txt"
+    },
+    {
+      "id": "mixed_10000_seed1735",
+      "kind": "mixed",
+      "length": 10000,
+      "sequence_seed": 1735,
+      "root": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_10000_seed1735",
+      "config": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_10000_seed1735/config.json",
+      "config_sha256": "226c0de9f90688bb26bae78be563ffa984d11cea527b779ef8ed06eea84fa06e",
+      "log": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_10000_seed1735/driver_output.txt"
+    },
+    {
+      "id": "mixed_10000_seed1736",
+      "kind": "mixed",
+      "length": 10000,
+      "sequence_seed": 1736,
+      "root": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_10000_seed1736",
+      "config": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_10000_seed1736/config.json",
+      "config_sha256": "691c258b1450d83211fd69eeb6f6361858dee4d8f6105ee88f171a55b02a973f",
+      "log": "/home/zyliu/Documents/rna-stable-ai/results/equal_budget_batch_runs/20261005T045331.190725Z/components/mixed_10000_seed1736/driver_output.txt"
+    }
+  ],
+  "selection_policy": "lowest_confirmed_vienna_energy_then_job_id_v1",
+  "execution": {
+    "mode": "independent_input_budget_batches",
+    "max_cpu_jobs": 2,
+    "timing_scope": "Concurrent CPU wall times include contention; not isolated benchmark timing."
+  }
+}

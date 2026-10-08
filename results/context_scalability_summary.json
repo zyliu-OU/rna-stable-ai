@@ -1,0 +1,53 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/context_scalability_runs/20261006T022223.540087Z",
+  "purpose": "synthetic_scalability_only",
+  "test_evaluated": false,
+  "manifest_sha256": "cda772e143460919ee39360795fd5795168aa751bd2e66e83b899814d99fc13e",
+  "predictions_sha256": "ff12c998710b90c891b26ca56e908005932966687b13efeb7176a9c61bcf9cb9",
+  "rows": [
+    {
+      "id": "synthetic_1000",
+      "length": 1000,
+      "objective": 4.143888741731644,
+      "max_pair_span": 128,
+      "effective_band_width": 128,
+      "dp_array_bytes": 1560000,
+      "score_array_bytes": 1032000,
+      "interpretation": "Exact within fixed maximum pair span; contacts outside band excluded. Scores are logits, not energy.",
+      "scoring_wall_seconds": 0.039356385999781196,
+      "decoding_wall_seconds": 1.817773763000332
+    },
+    {
+      "id": "synthetic_5000",
+      "length": 5000,
+      "objective": 16.53274416923523,
+      "max_pair_span": 128,
+      "effective_band_width": 128,
+      "dp_array_bytes": 7800000,
+      "score_array_bytes": 5160000,
+      "interpretation": "Exact within fixed maximum pair span; contacts outside band excluded. Scores are logits, not energy.",
+      "scoring_wall_seconds": 0.08430204599972058,
+      "decoding_wall_seconds": 9.443271413999355
+    },
+    {
+      "id": "synthetic_10000",
+      "length": 10000,
+      "objective": 39.013166069984436,
+      "max_pair_span": 128,
+      "effective_band_width": 128,
+      "dp_array_bytes": 15600000,
+      "score_array_bytes": 10320000,
+      "interpretation": "Exact within fixed maximum pair span; contacts outside band excluded. Scores are logits, not energy.",
+      "scoring_wall_seconds": 0.15836125200075912,
+      "decoding_wall_seconds": 18.919355648999954
+    }
+  ],
+  "process_peak_rss_kib": 554808,
+  "limitations": [
+    "No accuracy labels; no biological stability or long-RNA generalization claim.",
+    "Fixed pair span excludes distant contacts.",
+    "Array bytes exclude Torch/process allocations; RSS peak is cumulative for this process.",
+    "One observation per length; no isolated speedup claim."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "lengths": [1000, 2000, 5000, 10000],
+  "seed": 1729,
+  "kinds": ["structured", "mixed"],
+  "timeout_seconds": 120,
+  "memory_limit_gib": 8,
+  "beam_size": 100,
+  "temperature_c": 37,
+  "batch_size": 1,
+  "warmup": 5,
+  "repeats": 20,
+  "cpu_threads": 4,
+  "embedding_dim": 32,
+  "channels": 64
+}

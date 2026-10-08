@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "input_data_StructureData_holdout_RFA_00002",
+      "sequence_sha256": "dc802b5390928b6f79aa579e70bb65a8bb00a03755dfd5eb2d1719e9a147f08f",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00021",
+      "sequence_sha256": "fa864772d4f5f97b11c9aa443b2b8fe07f01249227bec316567316f218ec4965",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00028",
+      "sequence_sha256": "5894c483b965c23abcdb73ea658f8eff73e880af52b05966bf2e2707dfa4f5f6",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00036",
+      "sequence_sha256": "1cf3c3186d602741591ec264da99f5dd2b0c9c041f5bcd0166ee1207d6620e58",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00041",
+      "sequence_sha256": "6b69e2d71b3ec73d4361d9f94bebfd9343614464f3e446462f3fd82372a79382",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00044",
+      "sequence_sha256": "477f2ba945abd6b5f5235095924a09b4c46b703e8e155b38dc6bdbcaa0ab5b4a",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00048",
+      "sequence_sha256": "e7f24b2084d5a5758da650bd18306b0d72fc9f529aea383bf69b96ec68fe5bad",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00051",
+      "sequence_sha256": "98ccc48058a119d055aff8615ac0e7e30d82e9bb870770a9774f286f9c254895",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00063",
+      "sequence_sha256": "e2a982e8157e2e6a0a79233db1311622efe109328b186806a09132ef973607a5",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00075",
+      "sequence_sha256": "27f20ca5a29b9e0d9357727f8c891087713c824cb05cce0db6fb49e235f24216",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00109",
+      "sequence_sha256": "1cf6c4d1f621573809dbfa508b388ac5874ee74f234e7b96d759b42d0a900f46",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00126",
+      "sequence_sha256": "a95a3182a49b180b7a282d6fdc44c4027ce96b0e3f1b8317975351fd9d78e9fa",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00127",
+      "sequence_sha256": "7a5172501972e1e0b760b2773d2174cc6dae090776153b953c4a900e785b34c0",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00130",
+      "sequence_sha256": "06a417ac6862a5b08e58d3ace691caa1355c36578f3e422299e5f650067c3959",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00139",
+      "sequence_sha256": "716b586da0df601368a1607464d5aabefb95efd036d8cca113780b7726493184",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00144",
+      "sequence_sha256": "02641a6f6e3818ffe70fe600af962ecc96bd46570ef764a3fd8cca81eebf25f3",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00154",
+      "sequence_sha256": "4ef704b1613f9094f3704e947338da22fc58b2f19e103f15ab69b1da8ade1bc4",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00188",
+      "sequence_sha256": "e2be93aa63feadb33c4448456e6e4dce68a31cb8715a80e21bd54368b1f5ff79",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00232",
+      "sequence_sha256": "21cb646d385430961ef02b7b8584f6c12edab7df12a17d690407c7232fb680b2",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00242",
+      "sequence_sha256": "334fd63253e8961aa52b2529a2fe0808d5ef958f79dcb3b2ba8ea925548fe3be",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00273",
+      "sequence_sha256": "7391a68c924f389c6fbfa019bc6c2a9e85b9b416ac1bca2b137c1d0579b3d93b",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00274",
+      "sequence_sha256": "0f0acb491f4c23adb268f3fa762ee847c6d1841d0a6c824ef783fc70c481cb26",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00304",
+      "sequence_sha256": "0688b6ebede639f0a3c7d01275dca558397044009a66284cba0d063254a761f1",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00337",
+      "sequence_sha256": "71a71d613d51ffbc9a47295eb7651f0c14ca0aa73a26aa9ce424d2d50838d3dd",
+      "family_id": "RF00001",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00001"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00476",
+      "sequence_sha256": "d647fa8ceb7515face58828af29a279f0e385859ffb3071c5a4018e683c360a0",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00508",
+      "sequence_sha256": "3bb6301ef465aa6c019b8d61e7c888bc2ed085fc02c0b19fcf39d55351a0c33c",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00510",
+      "sequence_sha256": "a2eff0a1cf02ed9c3e7ed489ab139b9f89df3e6b6934c20e814ada2e3044a817",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00511",
+      "sequence_sha256": "f05833f911d0ac8d1a516228c91ee6bdb8e331fe8d48a659a3b3a6910e6c471c",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00518",
+      "sequence_sha256": "3c1a45d26660623a8c2b80cd5ca1cdea6f64cc197e0009a95e51d2ec7cb361e0",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00473",
+      "sequence_sha256": "bbe6479d986aa583b02dccdb4a19e09002fbc1baaa13c790366e6bfd3bb066a4",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00480",
+      "sequence_sha256": "f5903131355177ce48b8b57fc236e3ce1d8bfd925d2d898f29008220ec385775",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00486",
+      "sequence_sha256": "6c3ba94931d240ca9848f043c3f9d64f257dede01d721d9202bb8f16c63f9ffe",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00488",
+      "sequence_sha256": "a44da3a726b5b116e05272442d618955d4bf8131f6b86bfbdb460229b47fc358",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00490",
+      "sequence_sha256": "72dfe79607e5e3ed453452ef4c87fbb4dd4cabe022718923975cd94e25950ae2",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00493",
+      "sequence_sha256": "d194ccdc643400f9ef134a92aac455cd1e1a4a3c8aaa900e6368fcebe2546189",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00495",
+      "sequence_sha256": "00a7abb0f4d46282a1d92947b2a3a9c2360d824cc87203731c7918a83889312c",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00496",
+      "sequence_sha256": "6a0399afdb6332c03a96f4760981050c2404d903eef23166f8a19217cf73b29e",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00512",
+      "sequence_sha256": "f9ffb4cd18cb81db910b02a1cd640c2e4f7faa8133dd21fcff58ac467aeb950f",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00515",
+      "sequence_sha256": "53976151dbc206f9d23ca586b2a3d8275ede9e5a6c0648391369e061aef8e011",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00474",
+      "sequence_sha256": "1532a334405c67cb4551cca7d71cd45c4198efad639153acc81b941c7f0ea3ae",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00477",
+      "sequence_sha256": "f1ee7b09aa72a8f940242d4d516ba9e7f14bada639052b89088c70e320f1caee",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00479",
+      "sequence_sha256": "5e91e9af1ff2edffd43bf428e16cfa560c3700c9c908502ab4067ee2863f7b51",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00481",
+      "sequence_sha256": "357f44ad75d0241523b06ea110c4e6410f7cd3478c260c8a4d918585b49ff558",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00482",
+      "sequence_sha256": "02c46b45eeb3d6240f98ff9ba208c32eb99011e286e6adc0d5165797c270a78d",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00483",
+      "sequence_sha256": "379458f6fe4b4539b30f05f7fffb4c4be95c7b44103fbefd2932bf3bfdb1485e",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00492",
+      "sequence_sha256": "b908627873199631a334725cda04c6aeda71b69a5b08dcc78f40e84b00d046fc",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00507",
+      "sequence_sha256": "2378096bf7e815970e42c66b013f9ee47be5087070a032b8ad02859c5553d23c",
+      "family_id": "RF00169",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00169"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00451",
+      "sequence_sha256": "7da7c1dfa1507a0a789b7049ce7ef00b1ad2dfb852e15f98b09de9bc24b76c51",
+      "family_id": "RF00017",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00017"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00457",
+      "sequence_sha256": "4b1b9c2105067c5d4020dc754d75cbc3a15200f954ec2fd536a69f0897384fd8",
+      "family_id": "RF00017",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00017"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00470",
+      "sequence_sha256": "7662bda0522bd05946493fc403209cde4a71b87368c62a60c6599ac600123d19",
+      "family_id": "RF00017",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00017"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00456",
+      "sequence_sha256": "787a09bcf0c7546b2a9a8a4d9f6021b27d2cfaed1650965be4cf28e9aece67b7",
+      "family_id": "RF00017",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00017"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00459",
+      "sequence_sha256": "9afbc45e9dd21ff6f67b3cfeb2a87fa4b0d538f29e4d8f2c565d825af99c89fc",
+      "family_id": "RF00017",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00017"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00462",
+      "sequence_sha256": "daec105c2f836521b60a0fd60f1e5db63dd646be125db8bd89f37f4b49a8454a",
+      "family_id": "RF00017",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00017"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00464",
+      "sequence_sha256": "7f72fe671dacb9697a1e1bf7ceb796b63ede5c480b796df1eb03b94cf6828ffa",
+      "family_id": "RF00017",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00017"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00465",
+      "sequence_sha256": "b46ea0cb6324bca41b9dd23dcdcf4c8959a4de2bcbb2b7fc33b9f77d190720f9",
+      "family_id": "RF00017",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00017"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00453",
+      "sequence_sha256": "bb58866041ccb6602bed95511e5f10c0972c138e3b81e4b73f12fd7dc3d55a7d",
+      "family_id": "RF00017",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00017"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00454",
+      "sequence_sha256": "9364b6db2fd5ec1a3024c3f9902618ea5652f81a90931db428711746453e16e2",
+      "family_id": "RF00017",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00017"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00455",
+      "sequence_sha256": "a3a4252dea2b8a9fc1cf27b5e34b1670479caa744052d1e97ff3df263215faf6",
+      "family_id": "RF00017",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00017"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00466",
+      "sequence_sha256": "3499db5a48b03f5a8215d8cc942ef9be2fdd83849d9950aef3873d0ab9c43a5b",
+      "family_id": "RF00017",
+      "source": "Exact legacy RNA STRAND/EternaFold FASTA EXT_ID; https://rfam.org/family/RF00017"
+    }
+  ]
+}

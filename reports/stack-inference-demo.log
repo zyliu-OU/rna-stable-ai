@@ -1,0 +1,44 @@
+Context inference: synthetic_inference_demo (18 nt)
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/context_inference_runs/20261006T033441.805241Z",
+  "purpose": "checkpoint_inference_only",
+  "accuracy_evaluated": false,
+  "records": 1,
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse",
+    "pair_features": "adjacent_stackability"
+  },
+  "manifest_sha256": "d0aa316aae1470c234cc5042117d42ffb575647d8b7b4f60ecefffd4aac91208",
+  "predictions_sha256": "02a21c8e32856ab12c05eacd1f0866b61ebeef40a2608ce4f1c4fb996f620ce2",
+  "dbn_sha256": "9cb1d2c380a622f0bd312e4f2095c9b62b5e162d265373301703bc72f02fc335",
+  "reference_predictions_sha256": "acf705706ae9d522ab350ec6d22de1b692d003b0fcc2aa6b0d988efa94cd3a54",
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/context_inference_runs/20261006T033441.805241Z/exposures/20261006T033441.806598Z.json",
+    "sha256": "0f42dc9fb662bb74c85dd5090e2126ebd842a185c711d0ff2298af34ce344f0f",
+    "stage": "test_started"
+  },
+  "limitations": [
+    "Exact maximum logit objective over retained sparse candidates only; inference capped at1024 nt and is not maximum reference agreement.",
+    "Predicted scores are logits, not free energy or measured stability.",
+    "Input references and accuracy metrics are absent."
+  ]
+}

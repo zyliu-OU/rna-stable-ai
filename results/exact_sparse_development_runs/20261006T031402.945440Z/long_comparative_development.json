@@ -1,0 +1,204 @@
+{
+  "complete": true,
+  "mode": "long_comparative_development_only",
+  "test_evaluated": false,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/long_comparative_development_runs/20261006T025852.417408Z",
+  "manifest_sha256": "2d7a1b7e2bcb0ffb5bb4b8f47ca5cdc0825f43bb9cb97ddfe6fe56e38ecc91cf",
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "refinement": {
+      "passes": 2,
+      "max_remove": 2,
+      "group_cap": 8,
+      "include_subsets": true
+    }
+  },
+  "counts": {
+    "train": 89,
+    "validation": 47
+  },
+  "new_crw_counts": {
+    "validation": 12,
+    "train": 24
+  },
+  "length_ranges": {
+    "validation": [
+      319,
+      543
+    ],
+    "train": [
+      317,
+      552
+    ]
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "mean_train_loss": 4.0700847633769,
+      "validation_mean_pair_f1": 0.12233893087468342,
+      "mean_validation_loss": 2.752035168891257
+    },
+    {
+      "epoch": 2,
+      "mean_train_loss": 2.7755937495928134,
+      "validation_mean_pair_f1": 0.14227506743081222,
+      "mean_validation_loss": 2.688602127927415
+    },
+    {
+      "epoch": 3,
+      "mean_train_loss": 2.676757458890422,
+      "validation_mean_pair_f1": 0.12778842867536283,
+      "mean_validation_loss": 2.51256432939083
+    },
+    {
+      "epoch": 4,
+      "mean_train_loss": 2.65309867296326,
+      "validation_mean_pair_f1": 0.15322087330222484,
+      "mean_validation_loss": 2.566037378412612
+    },
+    {
+      "epoch": 5,
+      "mean_train_loss": 2.564257817321949,
+      "validation_mean_pair_f1": 0.12313741292897823,
+      "mean_validation_loss": 2.5685095888503056
+    },
+    {
+      "epoch": 6,
+      "mean_train_loss": 2.4879428817984763,
+      "validation_mean_pair_f1": 0.11978350995811529,
+      "mean_validation_loss": 2.4737861993465016
+    },
+    {
+      "epoch": 7,
+      "mean_train_loss": 2.4083967275833817,
+      "validation_mean_pair_f1": 0.18475479306446738,
+      "mean_validation_loss": 2.35451821317064
+    },
+    {
+      "epoch": 8,
+      "mean_train_loss": 2.3039772698048795,
+      "validation_mean_pair_f1": 0.15025402103964142,
+      "mean_validation_loss": 2.4073270889038736
+    },
+    {
+      "epoch": 9,
+      "mean_train_loss": 2.275580962052506,
+      "validation_mean_pair_f1": 0.16741968911888372,
+      "mean_validation_loss": 2.2919700171085116
+    },
+    {
+      "epoch": 10,
+      "mean_train_loss": 2.2947200563516508,
+      "validation_mean_pair_f1": 0.20857850721519425,
+      "mean_validation_loss": 2.4482941703593477
+    }
+  ],
+  "selected_epoch": 10,
+  "selected_validation_pair_f1": 0.20857850721519425,
+  "train_positive_pairs": 4462,
+  "train_negative_pairs": 1180545,
+  "train_only_positive_weight": 264.57754370237564,
+  "excluded_train_contacts": 26,
+  "excluded_validation_contacts": 7,
+  "parameters": 25874,
+  "encoder_receptive_field_nt": 91,
+  "checkpoint_sha256": {
+    "initial_context_model.pt": "c66aef2bc8897e3ffac20af6d335f1b46a327e01a220f98030d7bf09440e1a75",
+    "best_context_model.pt": "fdb950de83eebb5998e84727da576c55d52aa6ff2e85920f1d45652559daee1a"
+  },
+  "exposure_events": [
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/long_comparative_development_runs/20261006T025852.417408Z/exposures/20261006T025852.421786Z.json",
+      "sha256": "22e651e6ceeac207e48c2535af7b61f4320100c185744692a256de424521125d",
+      "stage": "training_started"
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/long_comparative_development_runs/20261006T025852.417408Z/exposures/20261006T025852.437490Z.json",
+      "sha256": "46dc1bfda7370b1711b2a2b3a232f63c8c4bfd2bf3c603abb4189afb9e487f9c",
+      "stage": "validation_started"
+    }
+  ],
+  "predictions_sha256": "709911dc6e0310f7bc37d38f5d78446a2ef113f71f3d15e3d314c8840b8aadb8",
+  "aggregates": [
+    {
+      "method": "trained_expanded_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.10718499539030446,
+      "mean_pair_recall": 0.0770739473290805,
+      "mean_pair_f1": 0.0873119208195321
+    },
+    {
+      "method": "trained_expanded_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.5499999999999999,
+      "mean_pair_recall": 0.5849867724867724,
+      "mean_pair_f1": 0.5622727175358754
+    },
+    {
+      "method": "untrained_expanded_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.012793737847317589,
+      "mean_pair_recall": 0.010819934148199314,
+      "mean_pair_f1": 0.011718517518143689
+    },
+    {
+      "method": "untrained_expanded_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.07023809523809524,
+      "mean_pair_recall": 0.062003968253968256,
+      "mean_pair_f1": 0.0655982905982906
+    }
+  ],
+  "limitations": [
+    "Comparative longer records are not new experimental measurements.",
+    "Sequence/external-ID separation does not establish family/clan independence.",
+    "Expanded validation is development-only, and is exposed after this run.",
+    "Quadratic bounded full pair-label training; tiled/top-k inference with approximate refinement.",
+    "Synthetic long inference remains an extrapolation beyond observed labelled lengths; no biological stability claim."
+  ]
+}

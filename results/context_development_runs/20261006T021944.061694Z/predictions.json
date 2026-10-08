@@ -1,0 +1,499 @@
+{
+  "schema_version": 1,
+  "methods": [
+    "untrained_context",
+    "trained_context"
+  ],
+  "records": [
+    {
+      "id": "validation_PDB_00002",
+      "sequence": "GGCGUAAGGAUUACCUAUGCC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((.((...).)(......)))"
+    },
+    {
+      "id": "validation_PDB_00019",
+      "sequence": "GGGAUACUGCUUCGGUAAGUCCC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "(((((...).)(......).)))"
+    },
+    {
+      "id": "validation_PDB_00049",
+      "sequence": "GGCGAAGUCGAAAGAUGGCGCC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "(.(..(.(......)).))..."
+    },
+    {
+      "id": "validation_PDB_00108",
+      "sequence": "GGCGGUGCUGAGAUGCCCGUC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "(((...).((.(...)).)))"
+    },
+    {
+      "id": "validation_PDB_00130",
+      "sequence": "GGAAGGCCCUUUUCAGGGCCACCC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "(((.(...))((...).).).).."
+    },
+    {
+      "id": "validation_PDB_00149",
+      "sequence": "GCGCAGGACUCGGCUUCUUCGGAAGGGACGAGGGGCGC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": ".((......).)(((((((...).).)...).).)..)"
+    },
+    {
+      "id": "validation_PDB_00160",
+      "sequence": "GGCGUAACGUUGAAAAGUUACGCC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": ".(.(.(...))(.(...))...)."
+    },
+    {
+      "id": "validation_PDB_00169",
+      "sequence": "GGACCUCUCGAAAGAGUUGUCC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((.(.(((...).).)..)).)"
+    },
+    {
+      "id": "validation_PDB_00178",
+      "sequence": "GGCGAUACCAGCCGAAAGGCCCUUGGCAGCGUC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((...).)..(.((......)(.(...)).))."
+    },
+    {
+      "id": "validation_PDB_00182",
+      "sequence": "GAGCGAAGACGAAAGUCGAGCUC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((((...)(......)....)))"
+    },
+    {
+      "id": "validation_PDB_00187",
+      "sequence": "CUCCCGGAAGACCACCGGGUUAAGAGGCCAGGCGUGCACGCAUAGCAAUGUGUUCAGCGGACUGGUGCUCAUCAG",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "(.(..((..(.((...).)((...).)))..(......)(..((.(...)).(.(...)))))))..(......)"
+    },
+    {
+      "id": "validation_PDB_00201",
+      "sequence": "GGACACGAAAUCCCGAAGUAGUGUCC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((...)(.(...(((...).).))))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00476",
+      "sequence": "UUGCUGGUGCAGCGCAGCGCGGACGCCCGAACCUGGUCAGAGCCGGAAGGCAGCAGCCAUAAGGGAUGCUUUGCGGGUGCCGUUGCCUUCCGGCAAUGCU",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "...(((.(...)).(......)).)..((.((.(.(((.(...)).)...)))(.((......)((...).).)).(((...).).)).).)((...).)"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00508",
+      "sequence": "GGAGCGGGUCCUGUGCAACGCGAACCCAUGAACCUGGUCAGGUCCGGAAGGAAGCAGCCAUAAGUGGAUCAUCGCGUGUGCCGCAGGGUAGCCUGCUCUGAGC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": ".(.(.(...)))(((.(.((.(...)).((...).))).((.(......)(......)).)(......)..)...))(((((...).).(......)).)..)"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00510",
+      "sequence": "AGCCGUCACAUCAUUACGGUCGAAUCGUGUCAGGCCAGAAAUGGAGCAGCAUUAAGACUAUUUAAUGAGUGUGAUGGUU",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "..(.(.(((.(......)((...).))))((......).).(((((...).)(.(...)).))).))(.(.(...)))."
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00511",
+      "sequence": "AGGUUGGGUCUUGCGCAAUGGGAACCUUGUGAACCAUGUCAGGUCCGGAAGGAAGCAGCAUUAAGCAGUGUUCUCAUGUGCCGCGAGUCGCCUGGCCCGAGC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((.(...)).)((.(....(.(...))(.(.((...).)(.(...))))(((......).(......)).)).).)((((...).).(......))..)..."
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00518",
+      "sequence": "GCCGCGAUAAGAAUAACAUCUGAACGAGUUAGGACCGGAAGGUAGCAGCUAUAAGGAAAAGUGUUCUGUAUUGCGGU",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((...).)....(((...((.(......)(.(...))).)(((...).)(((......)((...).).))))..).)"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00473",
+      "sequence": "UAUUUAGACCUAUGCAAUAGGAUUUUAGGGUAACGCUUCAGGGUAGGAAUACAGCAGAGUCCCCUAAUUUCUUGUGUGCCUUAGCCAUCUGAAUAGGAG",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "(.(.(.(...))((...).)))(....((((...).).).((((.(...)).(.(...)))))(((......)(.(...)).))).).((......).)"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00480",
+      "sequence": "CCCUGGUCCUCCCGCAACACUAGUUCGUGAACCUGGUCAGAUCCGGAAGGAAGCAGCCACAGCGGAUGAUGUGUGUGCCGGGAUGUGGCUGGGGUCUC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": ".(.(((...).).(......)))(.(.((..(.((.(...))(......).)))((((...).)(.(...)).).)((...).)).))..((...).)"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00486",
+      "sequence": "UGUUAGUCCUAAACACUGUUAAAUUGAAUAAUUGGUCAGAUCUGGAAAGAAGCAGCCAAAUCAAUCGAUACAGGUGUUUUGAUAUAGCUAACAGAAU",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((......)(((.(...))((...).).)))((..(.((.(.(...))(......))((.(......)(......))))(.((...).))..)).)."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00488",
+      "sequence": "AGAUUUCGGUCCUAUGCAAUAUGAACCCAUGAACCAUGUCAGGUCCUGACGGAAGCAGCAUUAAGUGGAUCAUCAUAUGUGCCGUAGGGUAGCCGAGAUUUAGC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": ".(.(.(.((...).)..(.(.((......).)(...))).(.((......)(......).))).)).(.(.(...)))(((((...).)(......).)..).)"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00490",
+      "sequence": "GCUAGUAGUGGGCAUUGCUCUUGCUUAGUUGGUCAGGUCUGAAAAGAAGCAGCCAGGGUAAGAUUCUGUGGGUCAUUACUAGU",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "..(..(((......).(.(...))).)((((.(...))((...).).))).(.(...)))((.(.(...))(......))..)"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00493",
+      "sequence": "GGCGGGUCUCCCCGCAUGGCAAAUCGGAACACCGGGUCAGGGGCGGAAGCCAGCAGCCCACUCCGGUGCGCCAGUGCCGGGGGUUUGGCCCGCC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": ".(.(.(...))(......)).(((((......).)(((..(.(......)).).).)((((...).)(.(.(...))))))..).)(......)"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00495",
+      "sequence": "GACGGGCCUCCUCGCAUGGUGGCGCGGUCAACCUGGUCAGGUCGGGAACGAAGCAGCCACAGCCGUUUUCCGCCAGUGCCGAGGGUCAGGCUCGUCCCCC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((.(.(...))(......))..)(.(......))((((......)(((((...).).(......))))(.((...((.(...)).)).))...)..).)."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00496",
+      "sequence": "CCCUCACGCGGCGCUAUCUGACUGAACUCCCCCAGGGCCGGAAGGCAGCAAGGGUAGGUCGGCUCUGGCGGGUGCGUGGGGG",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((((...).)(.(...)).)(......)(.(...))((......)(......).)..)((.((...).)((...).)).).."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00512",
+      "sequence": "UUAUUGGUUUCUCGCAGCAGAAUUCAGCUUACUUAGUCAGGGCCGGAAGGAAGCAGCUUGGGUUGAAUUUCUGGGUGCCGGGAGUCGCUGGUAAUACC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "..(......)(.(((((.(...)).(......)).)((.(...)).)((((.(...))((...).).))))..))....(.(.(...))((...).))"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00515",
+      "sequence": "CCCCCGGUCCAGCGCGGCGGGCCAGGCGUGAACCGGGUCAGGUCCGGAAGGAAGCAGCCCUAAGCGCCUCGGUCCGGGCGCCGCUGGGAAGCCGGGGGCGCU",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "...(.(.(...)))((.((...).)(......)).)(.(..((......)(......)((.(.(...))((...).))(.((.(.(.(...))))))))))."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00474",
+      "sequence": "GCCCUGCGGCGGGACAGGGUGAACUCCCCCAGGCCCGAAAGGGAGCAAGGGUAAGCCCGCCGUCCCGUGCGCAGGGU",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "(((.(.(...))(.(...)))..(.(.(...))(......))).((...).).....)((.(...))(.(...)).)"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00477",
+      "sequence": "AAUAUAUAUGUCAUUACAAUAUUAAGUAGCGAACCUUGUCAGGCCAGAGAUGGAGCAGCAAUAGCAAUAUCUUUUUAUGUGUGAUGACAUAUAUUAA",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "(.((......).((...).)))((..(.(.(...))(.((......).(.(...))))...(.(.(......)((...).))))).)..((...).)"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00479",
+      "sequence": "CUGCCGGUCCCUCGCAACGCUAGAUCGAAAACCCCGCCAGGGCCGGAAGGCAGCAACGGUAUUGAUUGAUGCGGGUGCCGAGAUCAACCGGUGGGGCC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": ".(..((((...(.((...).))).)))..).(.(..((.(...))..((.(.(...))((...).))..).(.(.(.(...))(......)))))).."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00481",
+      "sequence": "UUCUCGGUUCCUCGCAAUGGUGUCUGGUUUACCCGGUCAGGUUCGGAAGAAAGCAGCCAAAGUCAGAAUUUCUGUGUGCCGAGAUCAAGCUGGGAAGGUU",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((.(.((...).))..).)((.(((((......)(.(...)).))).)..).((((...(.((...).))).))).)(..(.(.(...))(......)))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00482",
+      "sequence": "GAAUUGGGUCCCACGCAACGGAAAUUCAUGAACUCCGUCAGGUCCGGAAGGAAGCAGCGGUAAGUGAAAUCUUCCGUGUGCCGUGGAUAAAUCUGAUUUGAGU",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "(..(.(((...).).)).)(((.(((...).)(((......)(......).).)(.(.((.(.(.(...)))))))).)..).)((......)((...).).)"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00483",
+      "sequence": "GGAGGUUGGUGGUGGACGAGCCACUCGCCAACCGGGUCAGGUCCGGAAGGAAGCAGCCCUAACGAGCCAGGCACGGGUCGCCGUGCCAGCCUCCCACC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "..(......)(((((.((.(...)).))).)))(((..(.((......)(......).)).(((.(((.(...)).)...))))(......))...))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00492",
+      "sequence": "UUCUUAGACCUGUGCAAUGCUAUUUUUAAGCACCGCUUCAGGGUGGGAACACAGCAGAGCACUUGAUUUUAGUGUGUGCCGCAGUUAUCUGGGGAAGGG",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "((.(.((...).))..).).((((((...).).((...).))))..((((...(.(......))).))((...).)))(((......).(......)))"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00507",
+      "sequence": "CGUUGGGUUCUACGCAACGAAAACCCACGAACCCUGUCAGGUCCGGAAGGAAGCAGCAGUAAGUGGCCCCUUUCGUGUGCCGUAGAGUCGCUGGGCCGAGC",
+      "method": "untrained_context",
+      "status": "ok",
+      "structure": "(((((((...).).)......)))....).(.(.((.(...((......).))))(((.((.(.(...)))...))))(((...).).)).).(.(...))"
+    },
+    {
+      "id": "validation_PDB_00002",
+      "sequence": "GGCGUAAGGAUUACCUAUGCC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "(((.((.(......))).)))"
+    },
+    {
+      "id": "validation_PDB_00019",
+      "sequence": "GGGAUACUGCUUCGGUAAGUCCC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "((((...(((....)))..))))"
+    },
+    {
+      "id": "validation_PDB_00049",
+      "sequence": "GGCGAAGUCGAAAGAUGGCGCC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "((((.(.((....)))..))))"
+    },
+    {
+      "id": "validation_PDB_00108",
+      "sequence": "GGCGGUGCUGAGAUGCCCGUC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "(((((.((......)))))))"
+    },
+    {
+      "id": "validation_PDB_00130",
+      "sequence": "GGAAGGCCCUUUUCAGGGCCACCC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "((..(((((......)))))..))"
+    },
+    {
+      "id": "validation_PDB_00149",
+      "sequence": "GCGCAGGACUCGGCUUCUUCGGAAGGGACGAGGGGCGC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "..((........(......).(......).....)).."
+    },
+    {
+      "id": "validation_PDB_00160",
+      "sequence": "GGCGUAACGUUGAAAAGUUACGCC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "((((((...((....)).))))))"
+    },
+    {
+      "id": "validation_PDB_00169",
+      "sequence": "GGACCUCUCGAAAGAGUUGUCC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "((((..((......))..))))"
+    },
+    {
+      "id": "validation_PDB_00178",
+      "sequence": "GGCGAUACCAGCCGAAAGGCCCUUGGCAGCGUC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "(.....((...(......).........)..))"
+    },
+    {
+      "id": "validation_PDB_00182",
+      "sequence": "GAGCGAAGACGAAAGUCGAGCUC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "((((((.........)))..)))"
+    },
+    {
+      "id": "validation_PDB_00187",
+      "sequence": "CUCCCGGAAGACCACCGGGUUAAGAGGCCAGGCGUGCACGCAUAGCAAUGUGUUCAGCGGACUGGUGCUCAUCAG",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "...............(............(.(..(......).......))..............).........."
+    },
+    {
+      "id": "validation_PDB_00201",
+      "sequence": "GGACACGAAAUCCCGAAGUAGUGUCC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "((....(......)..........))"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00476",
+      "sequence": "UUGCUGGUGCAGCGCAGCGCGGACGCCCGAACCUGGUCAGAGCCGGAAGGCAGCAGCCAUAAGGGAUGCUUUGCGGGUGCCGUUGCCUUCCGGCAAUGCU",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "................((.........(......)).....................................)...........(......)......."
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00508",
+      "sequence": "GGAGCGGGUCCUGUGCAACGCGAACCCAUGAACCUGGUCAGGUCCGGAAGGAAGCAGCCAUAAGUGGAUCAUCGCGUGUGCCGCAGGGUAGCCUGCUCUGAGC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "...................(.......(......).....................(.................).).(.......(......).....)..."
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00510",
+      "sequence": "AGCCGUCACAUCAUUACGGUCGAAUCGUGUCAGGCCAGAAAUGGAGCAGCAUUAAGACUAUUUAAUGAGUGUGAUGGUU",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "............(.(...(......)..(.................)........).............)........."
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00511",
+      "sequence": "AGGUUGGGUCUUGCGCAAUGGGAACCUUGUGAACCAUGUCAGGUCCGGAAGGAAGCAGCAUUAAGCAGUGUUCUCAUGUGCCGCGAGUCGCCUGGCCCGAGC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "...(..(.................)(.............(......).................)..).........(....(.........)..)(...)."
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00518",
+      "sequence": "GCCGCGAUAAGAAUAACAUCUGAACGAGUUAGGACCGGAAGGUAGCAGCUAUAAGGAAAAGUGUUCUGUAUUGCGGU",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "...........(.............................(......).......(......)....)........"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00473",
+      "sequence": "UAUUUAGACCUAUGCAAUAGGAUUUUAGGGUAACGCUUCAGGGUAGGAAUACAGCAGAGUCCCCUAAUUUCUUGUGUGCCUUAGCCAUCUGAAUAGGAG",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "(....................)..(......).(...(.................)............(........(......).)...)........"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00480",
+      "sequence": "CCCUGGUCCUCCCGCAACACUAGUUCGUGAACCUGGUCAGAUCCGGAAGGAAGCAGCCACAGCGGAUGAUGUGUGUGCCGGGAUGUGGCUGGGGUCUC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": ".....(........(.(......)..(......)).(.................).......)(.(.........(......)...........)).."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00486",
+      "sequence": "UGUUAGUCCUAAACACUGUUAAAUUGAAUAAUUGGUCAGAUCUGGAAAGAAGCAGCCAAAUCAAUCGAUACAGGUGUUUUGAUAUAGCUAACAGAAU",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": ".............(...(.......(......)...............................(......)..))....(......)........."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00488",
+      "sequence": "AGAUUUCGGUCCUAUGCAAUAUGAACCCAUGAACCAUGUCAGGUCCUGACGGAAGCAGCAUUAAGUGGAUCAUCAUAUGUGCCGUAGGGUAGCCGAGAUUUAGC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": ".......(.................)........(....(.....................(......)...........)(......)..)............"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00490",
+      "sequence": "GCUAGUAGUGGGCAUUGCUCUUGCUUAGUUGGUCAGGUCUGAAAAGAAGCAGCCAGGGUAAGAUUCUGUGGGUCAUUACUAGU",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "............(......(...(......)..(.(.........(......)).)...(......)).)............."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00493",
+      "sequence": "GGCGGGUCUCCCCGCAUGGCAAAUCGGAACACCGGGUCAGGGGCGGAAGCCAGCAGCCCACUCCGGUGCGCCAGUGCCGGGGGUUUGGCCCGCC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "....((........(....(......)........).(......).................).....)......(............)....."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00495",
+      "sequence": "GACGGGCCUCCUCGCAUGGUGGCGCGGUCAACCUGGUCAGGUCGGGAACGAAGCAGCCACAGCCGUUUUCCGCCAGUGCCGAGGGUCAGGCUCGUCCCCC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": ".(...(........((.(...(......)...)))(.(......)........)........)..).....(...........(......).)......."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00496",
+      "sequence": "CCCUCACGCGGCGCUAUCUGACUGAACUCCCCCAGGGCCGGAAGGCAGCAAGGGUAGGUCGGCUCUGGCGGGUGCGUGGGGG",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "..........(......)(.........(......)(........(......).)......(......)......)......"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00512",
+      "sequence": "UUAUUGGUUUCUCGCAGCAGAAUUCAGCUUACUUAGUCAGGGCCGGAAGGAAGCAGCUUGGGUUGAAUUUCUGGGUGCCGGGAGUCGCUGGUAAUACC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": ".....(......).............(..((.....(.................)......(......)..)..............)).........."
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00515",
+      "sequence": "CCCCCGGUCCAGCGCGGCGGGCCAGGCGUGAACCGGGUCAGGUCCGGAAGGAAGCAGCCCUAAGCGCCUCGGUCCGGGCGCCGCUGGGAAGCCGGGGGCGCU",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "...............(......(......)...)((.....................(.................).......(......).).....)..."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00474",
+      "sequence": "GCCCUGCGGCGGGACAGGGUGAACUCCCCCAGGCCCGAAAGGGAGCAAGGGUAAGCCCGCCGUCCCGUGCGCAGGGU",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "........(.......(...(......)..(..(......)..........).....).......)..........."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00477",
+      "sequence": "AAUAUAUAUGUCAUUACAAUAUUAAGUAGCGAACCUUGUCAGGCCAGAGAUGGAGCAGCAAUAGCAAUAUCUUUUUAUGUGUGAUGACAUAUAUUAA",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "..(.........(......))...(........((......).........).........(......)............)..............."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00479",
+      "sequence": "CUGCCGGUCCCUCGCAACGCUAGAUCGAAAACCCCGCCAGGGCCGGAAGGCAGCAACGGUAUUGAUUGAUGCGGGUGCCGAGAUCAACCGGUGGGGCC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "(.................).(......).....(.....................................(.................))......."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00481",
+      "sequence": "UUCUCGGUUCCUCGCAAUGGUGUCUGGUUUACCCGGUCAGGUUCGGAAGAAAGCAGCCAAAGUCAGAAUUUCUGUGUGCCGAGAUCAAGCUGGGAAGGUU",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "(....(........(......).)......)(............(.........(.................)............)..)..........."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00482",
+      "sequence": "GAAUUGGGUCCCACGCAACGGAAAUUCAUGAACUCCGUCAGGUCCGGAAGGAAGCAGCGGUAAGUGAAAUCUUCCGUGUGCCGUGGAUAAAUCUGAUUUGAGU",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "(.................)((...(......)......)..................(.................))........(......).........."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00483",
+      "sequence": "GGAGGUUGGUGGUGGACGAGCCACUCGCCAACCGGGUCAGGUCCGGAAGGAAGCAGCCCUAACGAGCCAGGCACGGGUCGCCGUGCCAGCCUCCCACC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "...........(....................)((......................................)................)......."
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00492",
+      "sequence": "UUCUUAGACCUGUGCAAUGCUAUUUUUAAGCACCGCUUCAGGGUGGGAACACAGCAGAGCACUUGAUUUUAGUGUGUGCCGCAGUUAUCUGGGGAAGGG",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "(......)........(......).........(...(.................)...............(......)...........)........"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00507",
+      "sequence": "CGUUGGGUUCUACGCAACGAAAACCCACGAACCCUGUCAGGUCCGGAAGGAAGCAGCAGUAAGUGGCCCCUUUCGUGUGCCGUAGAGUCGCUGGGCCGAGC",
+      "method": "trained_context",
+      "status": "ok",
+      "structure": "......(..........(.................)...........................)..........(......(......).......)...."
+    }
+  ]
+}

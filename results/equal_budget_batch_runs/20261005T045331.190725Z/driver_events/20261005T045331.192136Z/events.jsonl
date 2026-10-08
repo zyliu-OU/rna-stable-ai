@@ -1,0 +1,74 @@
+{"utc": "20261005T045331.192799Z", "event": "started", "component": "mixed_5000_seed1735", "pid": 7}
+{"utc": "20261005T045331.199778Z", "event": "started", "component": "mixed_5000_seed1736", "pid": 8}
+{"utc": "20261005T045401.220674Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T045431.255545Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T045501.290398Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T045531.320482Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T045601.351114Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T045631.382646Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T045701.413962Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T045731.447338Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T045801.479512Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T045831.513875Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T045901.556954Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T045931.593406Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050001.620767Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050031.660087Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050101.299914Z", "event": "finished", "component": "mixed_5000_seed1736", "returncode": 0}
+{"utc": "20261005T050101.511456Z", "event": "started", "component": "mixed_10000_seed1735", "pid": 530}
+{"utc": "20261005T050101.730946Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050102.350987Z", "event": "finished", "component": "mixed_5000_seed1735", "returncode": 0}
+{"utc": "20261005T050102.562811Z", "event": "started", "component": "mixed_10000_seed1736", "pid": 538}
+{"utc": "20261005T050131.795875Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050201.830758Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050231.857155Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050301.893902Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050331.931347Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050401.964845Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050431.998141Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050502.033227Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050532.071592Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050602.105540Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050632.141310Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050702.175459Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050732.209757Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050802.243576Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050832.268956Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050902.304087Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T050932.338991Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051002.377101Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051032.415672Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051102.454898Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051132.493845Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051202.531550Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051232.568323Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051302.605784Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051332.640484Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051402.676044Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051432.713943Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051502.754972Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051532.791042Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051602.826793Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051632.862347Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051702.897332Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051732.933769Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051802.969420Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051833.005540Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051903.041502Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T051933.078689Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T052003.115073Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T052033.153582Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T052103.197316Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T052133.236458Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T052203.274253Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T052233.316200Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T052303.365871Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T052333.413476Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T052403.463676Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T052433.501529Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T052503.554246Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T052533.599415Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T052548.636240Z", "event": "finished", "component": "mixed_10000_seed1736", "returncode": 0}
+{"utc": "20261005T052603.658710Z", "event": "heartbeat", "component": "active batches", "pid": null}
+{"utc": "20261005T052627.893924Z", "event": "finished", "component": "mixed_10000_seed1735", "returncode": 0}
+{"utc": "20261005T052627.908047Z", "event": "complete"}

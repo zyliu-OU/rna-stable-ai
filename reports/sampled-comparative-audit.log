@@ -1,0 +1,7 @@
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/results/reference_runs/20261006T030843.301596Z"
+}
+Sampled comparative audit passed: {'train': 89, 'validation': 47}; 4462 positives/70013 sampled negatives; selected epoch 9; full validation labels, no test inference.

@@ -1,0 +1,3073 @@
+{
+  "source_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/datasets_in_fasta_form/train_datasets/S-Processed-TRA.fasta": "4f80e64e779421fc1d22323e3655d272f4a69687fc44338315cd67fe34f656d7",
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/datasets_in_fasta_form/holdout_datasets/S-Processed-VAL.fasta": "22e208ac0867af92ec1ee404d242def048ac3dab125a282141b05b483ce8d02c",
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/input_data.zip": "e9b1b8734e43b1211b9aca47b35dbaf82e9c91667fb1ff97ea8e0d41143ecbe6"
+  },
+  "candidate_counts": {
+    "train": 193,
+    "validation": 140
+  },
+  "import_exclusions": [
+    {
+      "id": "input_data_StructureData_holdout_CRW_00004",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00005",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00007",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00008",
+      "reason": "RNA must be a nonempty uppercase A/C/G/U string"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00009",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00010",
+      "reason": "RNA must be a nonempty uppercase A/C/G/U string"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00014",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00017",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00019",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00044",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00046",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00049",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00053",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00055",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00056",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00057",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00058",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00065",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00067",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00069",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00071",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00072",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00077",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00080",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00083",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00084",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00089",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00095",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00097",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00119",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00120",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00122",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00127",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00128",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00133",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00136",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00138",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00142",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00143",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00156",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00157",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00161",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00170",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00172",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00174",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00175",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00179",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00183",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00195",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00204",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00205",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00213",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00225",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00226",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00229",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00240",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00253",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00254",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00255",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00259",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00264",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00272",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00294",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00295",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00297",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00298",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00304",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00305",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00307",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00308",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00318",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00319",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00320",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00324",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00325",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00329",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00330",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00331",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00333",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00335",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00338",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00341",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00343",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00344",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00345",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00346",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00347",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00348",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00349",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00352",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00355",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00356",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00357",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00358",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00359",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00360",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00365",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00368",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00369",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00371",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00372",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00374",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00375",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00376",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00378",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00379",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00381",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00384",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00385",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00388",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00390",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00391",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00392",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00393",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00395",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00399",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00400",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00401",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00402",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00403",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00408",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00411",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00415",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00420",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00475",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00476",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00487",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00495",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00497",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00501",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00504",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00508",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00509",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00519",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00520",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00521",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00524",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00525",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00527",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00528",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00529",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00531",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00532",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00533",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00534",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00535",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00536",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00537",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00538",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00539",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00540",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00541",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00543",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00544",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00545",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00546",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00570",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00001",
+      "reason": "RNA must be a nonempty uppercase A/C/G/U string"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00002",
+      "reason": "RNA must be a nonempty uppercase A/C/G/U string"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00003",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00005",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00006",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00007",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00009",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00011",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00013",
+      "reason": "RNA must be a nonempty uppercase A/C/G/U string"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00014",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00015",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00016",
+      "reason": "RNA must be a nonempty uppercase A/C/G/U string"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00017",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00018",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00019",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00045",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00046",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00047",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00050",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00051",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00053",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00055",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00056",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00057",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00058",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00062",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00064",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00067",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00069",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00070",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00071",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00072",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00073",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00076",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00077",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00078",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00079",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00081",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00082",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00083",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00088",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00092",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00093",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00095",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00097",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00098",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00101",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00102",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00104",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00105",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00107",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00108",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00109",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00113",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00114",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00115",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00116",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00117",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00118",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00119",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00120",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00123",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00124",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00125",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00126",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00127",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00128",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00130",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00133",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00134",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00135",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00136",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00138",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00139",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00142",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00143",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00144",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00145",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00146",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00147",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00148",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00149",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00154",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00155",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00156",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00157",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00158",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00159",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00160",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00161",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00164",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00165",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00170",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00174",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00175",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00178",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00179",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00180",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00181",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00183",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00184",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00185",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00186",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00188",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00191",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00195",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00202",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00206",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00217",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00218",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00220",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00221",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00226",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00228",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00229",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00231",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00232",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00236",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00239",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00242",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00243",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00247",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00253",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00254",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00255",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00257",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00258",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00261",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00262",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00263",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00264",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00265",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00269",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00272",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00274",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00275",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00287",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00288",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00290",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00291",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00294",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00295",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00296",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00297",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00298",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00299",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00300",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00301",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00302",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00303",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00306",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00307",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00309",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00310",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00311",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00312",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00313",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00314",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00316",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00317",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00319",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00321",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00322",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00323",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00325",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00326",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00327",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00328",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00329",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00330",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00331",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00332",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00334",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00335",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00336",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00337",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00338",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00339",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00340",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00341",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00342",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00343",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00344",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00345",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00346",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00348",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00349",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00351",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00353",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00355",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00356",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00357",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00358",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00359",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00361",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00363",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00364",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00365",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00366",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00368",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00369",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00371",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00372",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00373",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00374",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00375",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00377",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00378",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00379",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00380",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00381",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00382",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00384",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00385",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00386",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00387",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00388",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00389",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00390",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00392",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00394",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00395",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00396",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00397",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00398",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00399",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00400",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00401",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00403",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00404",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00405",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00407",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00408",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00409",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00410",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00411",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00412",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00414",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00415",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00416",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00420",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00454",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00460",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00461",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00471",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00473",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00474",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00479",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00480",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00481",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00489",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00495",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00497",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00498",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00499",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00500",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00504",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00505",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00506",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00510",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00511",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00513",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00514",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00516",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00517",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00518",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00519",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00520",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00521",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00522",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00524",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00525",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00526",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00527",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00528",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00529",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00530",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00531",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00532",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00533",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00534",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00535",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00536",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00537",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00538",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00539",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00540",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00541",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00542",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00543",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00544",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00545",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00546",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00547",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00549",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00550",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00552",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00553",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00554",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00555",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00556",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00557",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00558",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00560",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00561",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00562",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00563",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00564",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00566",
+      "reason": "Outside fixed development length range"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00568",
+      "reason": "Outside fixed development length range"
+    }
+  ],
+  "test_sources_read": false,
+  "interpretation": "Comparative development annotations only; broad RNA types are retained, not assigned as verified families.",
+  "selection_exclusions": [
+    {
+      "id": "input_data_StructureData_holdout_CRW_00075",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00091",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00102",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00111",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00113",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00114",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00115",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00123",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00131",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00132",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00137",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00140",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00141",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00148",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00149",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00150",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00151",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00152",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00153",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00154",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00164",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00169",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00171",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00176",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00180",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00181",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00182",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00185",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00191",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00199",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00201",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00207",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00209",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00218",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00219",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00220",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00222",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00227",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00230",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00233",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00235",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00236",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00237",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00238",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00243",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00246",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00250",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00260",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00263",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00268",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00269",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00270",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00273",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00274",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00277",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00278",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00280",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00285",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00291",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00293",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00296",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00299",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00300",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00306",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00312",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00313",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00314",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00317",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00332",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00334",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00337",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00342",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00351",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00353",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00361",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00370",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00377",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00386",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00387",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00394",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00396",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00397",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00398",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00416",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00417",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00422",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00424",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00428",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00432",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00435",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00438",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00442",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00444",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00445",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00447",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00450",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00451",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00452",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00453",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00454",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00460",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00462",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00466",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00473",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00480",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00481",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00482",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00483",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00485",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00486",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00488",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00489",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00491",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00492",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00493",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00496",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00498",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00499",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00500",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00506",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00507",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00510",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00512",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00514",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00515",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00516",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00522",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_holdout_CRW_00526",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00059",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00061",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00065",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00066",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00068",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00075",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00080",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00085",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00086",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00087",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00094",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00096",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00099",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00100",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00103",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00111",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00112",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00121",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00122",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00129",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00131",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00132",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00137",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00140",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00141",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00151",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00162",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00163",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00166",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00168",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00171",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00172",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00177",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00182",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00187",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00189",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00190",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00192",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00193",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00194",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00196",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00197",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00198",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00199",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00200",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00204",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00205",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00210",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00212",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00213",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00214",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00216",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00219",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00222",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00223",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00225",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00227",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00230",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00233",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00234",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00235",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00237",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00238",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00244",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00245",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00246",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00248",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00250",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00266",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00267",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00268",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00270",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00273",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00276",
+      "reason": "accession_or_sequence_overlap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00279",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00280",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00281",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00282",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00283",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00284",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00285",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00286",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00289",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00292",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00293",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00304",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00305",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00308",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00315",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00318",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00320",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00324",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00333",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00347",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00350",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00352",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00354",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00360",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00362",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00367",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00370",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00376",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00383",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00391",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00393",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00402",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00406",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00413",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00418",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00419",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00421",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00422",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00424",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00425",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00426",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00427",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00428",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00429",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00430",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00431",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00432",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00433",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00435",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00437",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00438",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00440",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00443",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00444",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00445",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00446",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00447",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00448",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00449",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00450",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00452",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00453",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00455",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00457",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00458",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00459",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00462",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00463",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00464",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00465",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00466",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00472",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00475",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00476",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00477",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00478",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00482",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00483",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00485",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00486",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00487",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00488",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00491",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00492",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00493",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00496",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00501",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00502",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00503",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00507",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00508",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00509",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00512",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00515",
+      "reason": "fixed_split_cap"
+    },
+    {
+      "id": "input_data_StructureData_train_CRW_00577",
+      "reason": "fixed_split_cap"
+    }
+  ]
+}

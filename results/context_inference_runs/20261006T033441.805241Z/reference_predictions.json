@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "methods": [
+    "trained_stack_sparse"
+  ],
+  "records": [
+    {
+      "id": "synthetic_inference_demo",
+      "sequence": "GGGAAACCCGGGAAACCC",
+      "structure": "(((...)))(((...)))",
+      "method": "trained_stack_sparse",
+      "status": "ok"
+    }
+  ]
+}

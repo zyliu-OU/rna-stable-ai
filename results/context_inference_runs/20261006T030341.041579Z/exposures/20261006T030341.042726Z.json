@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/context_inference_runs/20261006T030341.041579Z",
+  "stage": "test_started",
+  "records": [
+    {
+      "sequence": "GGGAAACCCGGGAAACCC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/context_inference_runs/20261006T030341.041579Z test_started"
+    }
+  ],
+  "records_sha256": "28133ea6599aab57c5091747979f28fedfb5379f029e90055efdcde679d4bf98"
+}

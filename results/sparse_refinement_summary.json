@@ -1,0 +1,87 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/sparse_refinement_runs/20261006T025214.102122Z",
+  "test_evaluated": false,
+  "manifest_sha256": "beedc7b93a4f6d54e105c3ad7cbea97e551e7b2872fd09cb3f33d98efb8a98ef",
+  "validation_sha256": "fe97c561748f3f8adeab2d51ccdfc68dae2fe2fd5b5396c860453b62a111bd69",
+  "synthetic_sha256": "158fba863543d7ffcb6b7d4a3a5e23331a2b2221079cf7f4ecb6939c0e8ae7c7",
+  "validation_records": 35,
+  "validation_decoder_f1": {
+    "greedy_pair_f1": 0.1621174685121644,
+    "refined_pair_f1": 0.22430275786668105,
+    "sparse_exact_pair_f1": 0.308224571509346
+  },
+  "synthetic": [
+    {
+      "id": "synthetic_1000",
+      "length": 1000,
+      "objective": 49.553791642189026,
+      "accepted_pairs": 99,
+      "greedy_objective": 46.62677647173405,
+      "objective_history": [
+        46.62677647173405,
+        48.633825689554214,
+        49.553791642189026
+      ],
+      "accepted_moves": 15,
+      "group_cap_discarded_candidates": 258,
+      "passes": 2,
+      "max_remove": 2,
+      "group_cap": 8,
+      "interpretation": "Approximate local exchanges combine candidates blocked by subsets of at most two removed pairs; fixed passes/group cap; not global optimization.",
+      "include_subsets": true,
+      "refinement_wall_seconds": 0.28733956400083116,
+      "source_candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/global_sparse_scalability_runs/20261006T024346.509793Z/synthetic_1000_candidates.npz",
+      "source_candidate_sha256": "083499c4495bfc30ad2e170e0c312dca11e98a2760e3a9aa25f7872d41cfc496"
+    },
+    {
+      "id": "synthetic_5000",
+      "length": 5000,
+      "objective": 118.59909537434578,
+      "accepted_pairs": 272,
+      "greedy_objective": 108.87058062851429,
+      "objective_history": [
+        108.87058062851429,
+        116.04057863354683,
+        118.59909537434578
+      ],
+      "accepted_moves": 48,
+      "group_cap_discarded_candidates": 1416,
+      "passes": 2,
+      "max_remove": 2,
+      "group_cap": 8,
+      "interpretation": "Approximate local exchanges combine candidates blocked by subsets of at most two removed pairs; fixed passes/group cap; not global optimization.",
+      "include_subsets": true,
+      "refinement_wall_seconds": 1.4721809089996896,
+      "source_candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/global_sparse_scalability_runs/20261006T024346.509793Z/synthetic_5000_candidates.npz",
+      "source_candidate_sha256": "7dc59d600e5f217b51d7c1f6f89684f3b5736f46f37d1d9f9d2b6ea71ccb0cc5"
+    },
+    {
+      "id": "synthetic_10000",
+      "length": 10000,
+      "objective": 207.9223456531763,
+      "accepted_pairs": 465,
+      "greedy_objective": 182.7781585007906,
+      "objective_history": [
+        182.7781585007906,
+        199.1182313412428,
+        207.9223456531763
+      ],
+      "accepted_moves": 100,
+      "group_cap_discarded_candidates": 3608,
+      "passes": 2,
+      "max_remove": 2,
+      "group_cap": 8,
+      "interpretation": "Approximate local exchanges combine candidates blocked by subsets of at most two removed pairs; fixed passes/group cap; not global optimization.",
+      "include_subsets": true,
+      "refinement_wall_seconds": 3.1433131890007644,
+      "source_candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/global_sparse_scalability_runs/20261006T024346.509793Z/synthetic_10000_candidates.npz",
+      "source_candidate_sha256": "cb2b60a3f5008a3153fa31a5db5c585fcf0d51d62316b86f2949806df31f3bba"
+    }
+  ],
+  "limitations": [
+    "Objective improvement is guaranteed for accepted moves; F1 improvement is not guaranteed.",
+    "Fixed passes/group caps can miss improving exchanges and do not establish global optimality.",
+    "Synthetic candidate reuse measures decoder computation, not neural accuracy; all labelled metrics are reused development."
+  ]
+}

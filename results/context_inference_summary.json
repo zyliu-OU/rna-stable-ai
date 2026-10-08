@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/context_inference_runs/20261006T033827.304596Z",
+  "purpose": "checkpoint_inference_only",
+  "accuracy_evaluated": false,
+  "records": 1,
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse",
+    "pair_features": "adjacent_stackability"
+  },
+  "manifest_sha256": "19fa0264dacb5c520a2d4e1812a2bb4c50afff04a582e661454990a23091f97d",
+  "predictions_sha256": "bd427345b58661a4c77eaa866214f4f8a9b98595b8b4902883c50fe2ffc3ad8c",
+  "dbn_sha256": "6a7e146e17db758b66b6b32a73b87493fc8e19845080b161ce11e6e746bb26ce",
+  "reference_predictions_sha256": "9e299ed0bdfb5e83b7dfc9b8c76e55d5f6426328610d1bdfecd9b02b1f656e1f",
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/context_inference_runs/20261006T033827.304596Z/exposures/20261006T033827.306213Z.json",
+    "sha256": "9b96c9ac1522790fa43e70201a126ddcadce480397085e31bf645e4e4242f6b5",
+    "stage": "test_started"
+  },
+  "limitations": [
+    "Sparse global decoder is approximate; distant-contact accuracy is unvalidated.",
+    "Predicted scores are logits, not free energy or measured stability.",
+    "Input references and accuracy metrics are absent."
+  ],
+  "decoder_override": "refined",
+  "decoder_settings": {
+    "passes": 2,
+    "max_remove": 2,
+    "group_cap": 8,
+    "include_subsets": true
+  }
+}

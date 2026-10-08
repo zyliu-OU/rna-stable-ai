@@ -1,0 +1,29 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/banded_development_runs/20261006T021747.776747Z",
+  "config": {
+    "max_pair_span": 64,
+    "cpu_threads": 2,
+    "synthetic_seed": 20261006
+  },
+  "source_checkpoint": "/home/zyliu/Documents/rna-stable-ai/results/pair_development_runs/20261006T013412.256466Z/best_pair_model.pt",
+  "source_checkpoint_sha256": "675373e7be55e6aeeb2050410b3c823f27817b0d19d6e6a39ca9305175c7c1cf",
+  "model_config": {
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "cpu_threads": 2,
+    "max_length": 256,
+    "decoder_threshold": 0,
+    "mode": "development_validation_only"
+  },
+  "inputs_sha256": "a4b37e1912cd62192178c343589dc54c66c50e421874caa7f607a5eb2d7e23e7",
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/run_banded_development.py": "6da7a1dfd349449b6e2f3debc3827203805447c8c9c4567eeb5d56b73f0ad9bb",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/banded_pairs.py": "95580a3fa213bdab74dc103d190c9388dac14266de7831fb9af31137353d6197",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/pair_model.py": "9d2b406acf7f1147dcbfb735281e899d11c98af9f804238a577a26c0162b4b02"
+  },
+  "policy": "Reused validation and synthetic inputs only. No test evaluation; no accuracy claim for synthetic long inputs."
+}

@@ -1,0 +1,1849 @@
+{
+  "source_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/datasets_in_fasta_form/train_datasets/S-Processed-TRA.fasta": "4f80e64e779421fc1d22323e3655d272f4a69687fc44338315cd67fe34f656d7",
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/datasets_in_fasta_form/holdout_datasets/S-Processed-VAL.fasta": "22e208ac0867af92ec1ee404d242def048ac3dab125a282141b05b483ce8d02c",
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/datasets_in_fasta_form/test_datasets/S-Processed-TES.fasta": "0d7183166f63df65d23bfc453c8f042d4625296d4a24f57722b1dfff2759be29",
+    "/home/zyliu/Documents/rna-stable-ai/external/EternaFold/input_data.zip": "e9b1b8734e43b1211b9aca47b35dbaf82e9c91667fb1ff97ea8e0d41143ecbe6"
+  },
+  "exclusions": [
+    {
+      "id": "input_data_StructureData_holdout_RFA_00002",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00021",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00028",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00029",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00036",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00041",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00044",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00048",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00051",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00053",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00063",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00075",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00099",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00101",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00109",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00126",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00127",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00130",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00139",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00144",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00154",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00164",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00177",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00181",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00183",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00188",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00189",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00194",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00200",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00219",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00232",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00242",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00253",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00263",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00272",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00273",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00274",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00275",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00297",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00304",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00325",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00337",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00342",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00349",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00355",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00360",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00361",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00366",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00387",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00388",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00398",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00399",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00411",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00419",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00435",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00439",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00440",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00442",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00447",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00449",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00476",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00508",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00510",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00511",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00517",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_holdout_RFA_00518",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00005",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00015",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00026",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00031",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00034",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00037",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00043",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00047",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00054",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00057",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00068",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00072",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00079",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00081",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00082",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00084",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00086",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00089",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00106",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00116",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00117",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00118",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00129",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00133",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00135",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00138",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00173",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00176",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00184",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00193",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00198",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00202",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00207",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00210",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00211",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00224",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00225",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00228",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00229",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00230",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00231",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00250",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00252",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00254",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00255",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00258",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00268",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00276",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00279",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00281",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00284",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00290",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00291",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00293",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00295",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00310",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00313",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00315",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00317",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00320",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00324",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00331",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00359",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00364",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00369",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00375",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00380",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00386",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00389",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00396",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00397",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00403",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00413",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00443",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00450",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00473",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00475",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00480",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00486",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00488",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00490",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00493",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00495",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00496",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00497",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00501",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00502",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00512",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00515",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00001",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00003",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00006",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00007",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00008",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00010",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00013",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00014",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00016",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00018",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00019",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00022",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00023",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00024",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00025",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00027",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00030",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00032",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00033",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00035",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00038",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00039",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00040",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00045",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00046",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00049",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00050",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00052",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00055",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00056",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00058",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00059",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00060",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00061",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00062",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00064",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00065",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00066",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00067",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00069",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00070",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00071",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00072",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00074",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00076",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00077",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00080",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00083",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00085",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00087",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00088",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00090",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00091",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00092",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00093",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00094",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00095",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00096",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00097",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00098",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00100",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00102",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00103",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00104",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00105",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00107",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00108",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00111",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00112",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00113",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00114",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00115",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00119",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00120",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00121",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00122",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00124",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00125",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00128",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00130",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00131",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00132",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00134",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00136",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00137",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00140",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00141",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00142",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00143",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00145",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00146",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00147",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00148",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00149",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00150",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00151",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00152",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00153",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00155",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00156",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00157",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00158",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00159",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00160",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00161",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00162",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00163",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00165",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00168",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00169",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00174",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00175",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00178",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00179",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00180",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00182",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00185",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00186",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00187",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00190",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00191",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00192",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00196",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00197",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00199",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00201",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00203",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00205",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00206",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00208",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00209",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00212",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00213",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00214",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00215",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00216",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00217",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00218",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00220",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00221",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00222",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00223",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00226",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00227",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00233",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00234",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00235",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00236",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00237",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00238",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00239",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00240",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00243",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00245",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00246",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00247",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00248",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00249",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00251",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00257",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00261",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00262",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00264",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00266",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00267",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00269",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00270",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00277",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00278",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00280",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00282",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00283",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00285",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00286",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00287",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00288",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00289",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00292",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00294",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00296",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00298",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00299",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00300",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00301",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00302",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00303",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00305",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00306",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00307",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00308",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00309",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00311",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00312",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00314",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00316",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00318",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00319",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00322",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00323",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00326",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00327",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00328",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00330",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00332",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00333",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00334",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00335",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00336",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00340",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00341",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00344",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00345",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00346",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00347",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00348",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00350",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00351",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00352",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00353",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00354",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00356",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00357",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00358",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00362",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00363",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00365",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00367",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00368",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00370",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00371",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00372",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00373",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00374",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00376",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00377",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00378",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00379",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00382",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00383",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00384",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00385",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00391",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00392",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00393",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00400",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00401",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00402",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00405",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00407",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00408",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00410",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00412",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00414",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00415",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00416",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00417",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00418",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00421",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00425",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00426",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00427",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00430",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00431",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00432",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00433",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00437",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00438",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00445",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00446",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00448",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00474",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00477",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00478",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00479",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00481",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00482",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00483",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00484",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00485",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00489",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00491",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00492",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00494",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00498",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00500",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00503",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00504",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00505",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00506",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00507",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00509",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00513",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00514",
+      "reason": "Family not in fixed plan"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00516",
+      "reason": "Family not in fixed plan"
+    }
+  ],
+  "interpretation": "Historical family IDs bound to upstream metadata; processed comparative references, not new experimental measurements.",
+  "selection_exclusions": [
+    {
+      "id": "input_data_StructureData_holdout_RFA_00460",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00461",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00468",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_test_RFA_00469",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00452",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00458",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00463",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00467",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00471",
+      "reason": "sequence_redundancy"
+    },
+    {
+      "id": "input_data_StructureData_train_RFA_00472",
+      "reason": "sequence_redundancy"
+    }
+  ]
+}

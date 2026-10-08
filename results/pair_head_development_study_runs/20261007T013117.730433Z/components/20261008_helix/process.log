@@ -1,0 +1,74 @@
+Context epoch 1/10: loss 4.1158, reused validation F1 0.4039
+Context epoch 2/10: loss 2.7041, reused validation F1 0.4428
+Context epoch 3/10: loss 2.5513, reused validation F1 0.4911
+Context epoch 4/10: loss 2.4428, reused validation F1 0.4744
+Context epoch 5/10: loss 2.3880, reused validation F1 0.4754
+Context epoch 6/10: loss 2.2387, reused validation F1 0.4366
+Context epoch 7/10: loss 2.1530, reused validation F1 0.3836
+Context epoch 8/10: loss 2.1353, reused validation F1 0.4365
+Context epoch 9/10: loss 2.0275, reused validation F1 0.4537
+Context epoch 10/10: loss 1.9218, reused validation F1 0.4057
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261008_helix/results/reference_runs/20261007T013417.011112Z",
+  "dataset_id": "expanded_comparative_validation",
+  "aggregates": [
+    {
+      "method": "trained_helix_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.39263020643291696,
+      "mean_pair_recall": 0.43364379318970436,
+      "mean_pair_f1": 0.40820953701396406
+    },
+    {
+      "method": "trained_helix_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6881080493580494,
+      "mean_pair_recall": 0.7866161616161617,
+      "mean_pair_f1": 0.7327409592678679
+    },
+    {
+      "method": "untrained_helix_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "method": "untrained_helix_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    }
+  ]
+}
+
+STDERR:

@@ -1,0 +1,17 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/sparse_refinement_runs/20261006T024805.424842Z",
+  "settings": {
+    "passes": 2,
+    "max_remove": 2,
+    "group_cap": 8
+  },
+  "source_run_dir": "/home/zyliu/Documents/rna-stable-ai/results/global_sparse_scalability_runs/20261006T024346.509793Z",
+  "source_summary_sha256": "6b94cd906d775d26a0a3204651d278f72aa26e48a92e20cc6c761a7955ecaf44",
+  "source_manifest_sha256": "296ff79605c3f56a18be8438191267f88da42a1a066a8fe380156bc167aa2cd4",
+  "checkpoint_sha256": "2827a5788770d3a134177da5dc6db6e505a06be9b19bb6ab20e1df47780879df",
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/run_sparse_refinement_development.py": "6e6397777254a9d572b90cf929f8be9c8c2117737979e0a765f2176626e38f8b",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sparse_refinement.py": "07b9737fd0423173c6e3587251c96ce59ed49642fe3b343f3db05a7eb5d7aee2"
+  },
+  "policy": "No model fitting, new test predictions or hyperparameter selection. Fixed local-exchange diagnostic on reused validation and synthetic candidates."
+}

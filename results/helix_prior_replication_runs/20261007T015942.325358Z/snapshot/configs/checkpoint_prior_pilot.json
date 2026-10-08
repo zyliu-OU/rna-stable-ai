@@ -1,0 +1,14 @@
+{
+  "seed": 20261006,
+  "steps": 8,
+  "pool_size": 16,
+  "max_mutations": 16,
+  "beam_size": 100,
+  "timeout_seconds": 30,
+  "finalist_timeout_seconds": 30,
+  "memory_limit_gib": 4,
+  "min_improvement_kcal_mol": 0.1,
+  "temperature_c": 37,
+  "preserve_protein": false,
+  "protected_positions": [1, 2, 3]
+}

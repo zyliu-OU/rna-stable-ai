@@ -1,0 +1,155 @@
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+Replication audit passed: 6 components, 18 trajectories, 198 native requests.
+Extended reference run: /home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_reference_extension_runs/20261007T012318.389726Z
+Extended reference: 20261006_random_pool_input, timeout 300s
+Extended reference: 20261006_random_pool_finalist, timeout 300s
+Extended reference: 20261006_compatibility_only_input, timeout 300s
+Extended reference: 20261006_compatibility_only_finalist, timeout 300s
+Extended reference: 20261006_checkpoint_prior_input, timeout 300s
+Extended reference: 20261006_checkpoint_prior_finalist, timeout 300s
+Extended reference: 20261007_random_pool_input, timeout 300s
+Extended reference: 20261007_random_pool_finalist, timeout 300s
+Extended reference: 20261007_compatibility_only_input, timeout 300s
+Extended reference: 20261007_compatibility_only_finalist, timeout 300s
+Extended reference: 20261007_checkpoint_prior_input, timeout 300s
+Extended reference: 20261007_checkpoint_prior_finalist, timeout 300s
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_reference_extension_runs/20261007T012318.389726Z",
+  "manifest_sha256": "7236b7c7edfe3ef76bd01fff5aa33a16e939540a15e79118da52cb9688dfee34",
+  "test_accuracy_evaluated": false,
+  "model_fitted": false,
+  "new_search_performed": false,
+  "planned_native_requests": 12,
+  "unique_native_requests": 12,
+  "completed_native_requests": 12,
+  "unknown_native_requests": 0,
+  "known_native_wall_seconds": 1471.2759433039994,
+  "current_invocation_callbacks": 12,
+  "current_invocation_cache_hits": 0,
+  "rows": [
+    {
+      "input_id": "synthetic_10000",
+      "seed": 20261006,
+      "policy": "random_pool",
+      "planned_reference_requests": 2,
+      "input_status": "ok",
+      "finalist_status": "ok",
+      "candidate_vienna_delta_kcal_mol": 5.0,
+      "selected_vienna_delta_kcal_mol": 0.0,
+      "selection_source": "input",
+      "selection_reason": "no_reference_improvement",
+      "selected_mutations": 0,
+      "selected_sha256": "635bbaa217c4f81dc510e70acd4d8f995513c51f9e7dc354c5349e27e5efdfa4",
+      "prior_selected_vienna_delta_kcal_mol": null
+    },
+    {
+      "input_id": "synthetic_10000",
+      "seed": 20261006,
+      "policy": "compatibility_only",
+      "planned_reference_requests": 2,
+      "input_status": "ok",
+      "finalist_status": "ok",
+      "candidate_vienna_delta_kcal_mol": -6.099999999999909,
+      "selected_vienna_delta_kcal_mol": -6.099999999999909,
+      "selection_source": "finalist",
+      "selection_reason": "confirmed_improvement",
+      "selected_mutations": 12,
+      "selected_sha256": "e488b41078961e5d61a84880038014b8e9e58f34587af7f351c5f98d86fc668c",
+      "prior_selected_vienna_delta_kcal_mol": null
+    },
+    {
+      "input_id": "synthetic_10000",
+      "seed": 20261006,
+      "policy": "checkpoint_prior",
+      "planned_reference_requests": 2,
+      "input_status": "ok",
+      "finalist_status": "ok",
+      "candidate_vienna_delta_kcal_mol": -2.399999999999636,
+      "selected_vienna_delta_kcal_mol": -2.399999999999636,
+      "selection_source": "finalist",
+      "selection_reason": "confirmed_improvement",
+      "selected_mutations": 8,
+      "selected_sha256": "bb43170efc51cae604aa5a95b813355b8aab4297fea113df5bb3015797e7a75d",
+      "prior_selected_vienna_delta_kcal_mol": null
+    },
+    {
+      "input_id": "synthetic_10000",
+      "seed": 20261007,
+      "policy": "random_pool",
+      "planned_reference_requests": 2,
+      "input_status": "ok",
+      "finalist_status": "ok",
+      "candidate_vienna_delta_kcal_mol": 0.40000000000009095,
+      "selected_vienna_delta_kcal_mol": 0.0,
+      "selection_source": "input",
+      "selection_reason": "no_reference_improvement",
+      "selected_mutations": 0,
+      "selected_sha256": "635bbaa217c4f81dc510e70acd4d8f995513c51f9e7dc354c5349e27e5efdfa4",
+      "prior_selected_vienna_delta_kcal_mol": null
+    },
+    {
+      "input_id": "synthetic_10000",
+      "seed": 20261007,
+      "policy": "compatibility_only",
+      "planned_reference_requests": 2,
+      "input_status": "ok",
+      "finalist_status": "ok",
+      "candidate_vienna_delta_kcal_mol": -5.299999999999727,
+      "selected_vienna_delta_kcal_mol": -5.299999999999727,
+      "selection_source": "finalist",
+      "selection_reason": "confirmed_improvement",
+      "selected_mutations": 10,
+      "selected_sha256": "7467e68ba860613869e0a32dbd25d1383b11589dd9765331831d92776ace80c3",
+      "prior_selected_vienna_delta_kcal_mol": null
+    },
+    {
+      "input_id": "synthetic_10000",
+      "seed": 20261007,
+      "policy": "checkpoint_prior",
+      "planned_reference_requests": 2,
+      "input_status": "ok",
+      "finalist_status": "ok",
+      "candidate_vienna_delta_kcal_mol": -6.599999999999909,
+      "selected_vienna_delta_kcal_mol": -6.599999999999909,
+      "selection_source": "finalist",
+      "selection_reason": "confirmed_improvement",
+      "selected_mutations": 10,
+      "selected_sha256": "2c4675e9df263173d2738e3683d0f81a73bda9ee360334ababa29832b62b5a5b",
+      "prior_selected_vienna_delta_kcal_mol": null
+    }
+  ],
+  "artifact_sha256": {
+    "folds.json": "64ea57b84f19c04ea39564f1f7d1efd575c1d61d95aba1f023bf8396371b8c20",
+    "native_journal/.binding": "d8b8d32cbdcaa249f6a2569ef9bb50503c7792a632a9bda2ad7a9b8bbe73d3a5",
+    "native_journal/20261006_checkpoint_prior_finalist.json": "131d579c93f749776f2b03b2d69b27e9994dcf4ec634d921679f082ed0b250d1",
+    "native_journal/20261006_checkpoint_prior_input.json": "485b674d984dbbb2bff4dd0e25b5db747e9f534ec18a3cfc1095132ed0fe77fb",
+    "native_journal/20261006_compatibility_only_finalist.json": "b0496b22c7304e5e8e05bcd7b706a1a74cdf62f27fdf0236c96580ebcd46fa0a",
+    "native_journal/20261006_compatibility_only_input.json": "6f1d4f75de2f88cfc220f7fcc92ed6634d994819c9be91ee587d3a9c6ea031c8",
+    "native_journal/20261006_random_pool_finalist.json": "9e0246d90e95b80dc933f8d2e6ac472ef93739f94eb57d33dfa6b952f9669a95",
+    "native_journal/20261006_random_pool_input.json": "2e22003e69e3fd8495a9653cd5685d7b0bf894894ce201a72797cc5f1f2ec084",
+    "native_journal/20261007_checkpoint_prior_finalist.json": "fd5dfd6b1563d36834740ebf3ba74f6712b926def73eee5101d6409fef410302",
+    "native_journal/20261007_checkpoint_prior_input.json": "ef090a25b85ee9fcc515be15dede619547616501fee95547a3310d090731ef99",
+    "native_journal/20261007_compatibility_only_finalist.json": "645860976541c718fc93e3b329a7077c9a2976f178aee74e78bfacf2cbf3f059",
+    "native_journal/20261007_compatibility_only_input.json": "ece0dea20395a651a5b60b063483aecb47650e427b84eaac7fbad668872c6e39",
+    "native_journal/20261007_random_pool_finalist.json": "6a61f3c5f06706e3df1a8d38084f4af06a57df36a2fc607e400a184cb7bc9d6b",
+    "native_journal/20261007_random_pool_input.json": "588dd9fcb1af305cb35001bd0e494df2ca8845ca991b363593b9f6c32fd1eaeb",
+    "arms/20261006_checkpoint_prior/selected.fasta": "180b87107acbf34e87461987961d2b340cb3b2e1551176f5a202e0512c612d4e",
+    "arms/20261006_compatibility_only/selected.fasta": "b4bdbdae7d683961dea2c2f6ef6c610c3469a98ef0c8149dcf59119e092d09fd",
+    "arms/20261006_random_pool/selected.fasta": "94ddb7cc790624ee965d454d61304afd3d0a47b7caa57fcc6744d76ed66ed9e7",
+    "arms/20261007_checkpoint_prior/selected.fasta": "3ec5dbeea66104757f6a16297d6dfcd84132a3d3463eb8e1a8e75cf73914bfc3",
+    "arms/20261007_compatibility_only/selected.fasta": "16df5627096837f0a3869d490575f4af2531a830d0ae81e4aa8afab624c454f1",
+    "arms/20261007_random_pool/selected.fasta": "ddb07ea60d3179294c3aa6e3de5dc5971d864d5c3f04beaf182b46e5f62ab570"
+  },
+  "limitations": [
+    "Separate increased validation budget on frozen previously exposed synthetic finalists; original 30-second results remain unchanged.",
+    "Descriptive native-energy validation only, no new search, fitting, accuracy test or biological stability claim.",
+    "Six arms share one synthetic sequence and two search seeds; no independent biological replication.",
+    "Unknown interruption costs stay unknown; timeouts are completed failed outcomes with measured cost. Wall times are not isolated throughput comparisons."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "lengths": [1000, 2000],
+  "kinds": ["mixed"],
+  "sequence_seeds": [1732, 1733, 1734],
+  "restart_search_seeds": [2740, 2741, 2742, 2743],
+  "beam_size": 200,
+  "steps_per_restart": 8,
+  "long_steps": 32,
+  "optimization_config": "optimization.json",
+  "optimization_overrides": {
+    "timeout_seconds": 120,
+    "finalist_timeout_seconds": 300
+  }
+}

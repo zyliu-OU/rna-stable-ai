@@ -1,0 +1,74 @@
+Context epoch 1/10: loss 4.5927, reused validation F1 0.2658
+Context epoch 2/10: loss 2.7536, reused validation F1 0.3872
+Context epoch 3/10: loss 2.6005, reused validation F1 0.4010
+Context epoch 4/10: loss 2.6650, reused validation F1 0.3773
+Context epoch 5/10: loss 2.5075, reused validation F1 0.3246
+Context epoch 6/10: loss 2.3952, reused validation F1 0.3443
+Context epoch 7/10: loss 2.3268, reused validation F1 0.3203
+Context epoch 8/10: loss 2.1340, reused validation F1 0.3012
+Context epoch 9/10: loss 2.2770, reused validation F1 0.3632
+Context epoch 10/10: loss 2.3995, reused validation F1 0.3724
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261007_stack/results/reference_runs/20261007T013256.331184Z",
+  "dataset_id": "expanded_comparative_validation",
+  "aggregates": [
+    {
+      "method": "trained_stack_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.29112589166081354,
+      "mean_pair_recall": 0.3420259456913499,
+      "mean_pair_f1": 0.3117321079298595
+    },
+    {
+      "method": "trained_stack_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6197151922151922,
+      "mean_pair_recall": 0.7119408369408369,
+      "mean_pair_f1": 0.6614137049618901
+    },
+    {
+      "method": "untrained_stack_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "method": "untrained_stack_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    }
+  ]
+}
+
+STDERR:

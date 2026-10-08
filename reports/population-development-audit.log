@@ -1,0 +1,19 @@
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/population_development_runs/20261007T015651.055902Z/sampling_20261006/results/reference_runs/20261007T015707.705765Z"
+}
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/population_development_runs/20261007T015651.055902Z/sampling_20261007/results/reference_runs/20261007T015722.879189Z"
+}
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/population_development_runs/20261007T015651.055902Z/sampling_20261008/results/reference_runs/20261007T015738.182036Z"
+}
+Population study audit passed: three fixed draws, full training-population weights and full validation labels; no test.

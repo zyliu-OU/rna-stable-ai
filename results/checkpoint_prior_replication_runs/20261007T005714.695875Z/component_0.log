@@ -1,0 +1,404 @@
+Pool search random_pool: native step0/8
+Pool search random_pool: native step1/8
+Pool search random_pool: native step2/8
+Pool search random_pool: native step3/8
+Pool search random_pool: native step4/8
+Pool search random_pool: native step5/8
+Pool search random_pool: native step6/8
+Pool search random_pool: native step7/8
+Pool search random_pool: native step8/8
+Pool search compatibility_only: native step0/8
+Pool search compatibility_only: native step1/8
+Pool search compatibility_only: native step2/8
+Pool search compatibility_only: native step3/8
+Pool search compatibility_only: native step4/8
+Pool search compatibility_only: native step5/8
+Pool search compatibility_only: native step6/8
+Pool search compatibility_only: native step7/8
+Pool search compatibility_only: native step8/8
+Pool search checkpoint_prior: native step0/8
+Pool search checkpoint_prior: native step1/8
+Pool search checkpoint_prior: native step2/8
+Pool search checkpoint_prior: native step3/8
+Pool search checkpoint_prior: native step4/8
+Pool search checkpoint_prior: native step5/8
+Pool search checkpoint_prior: native step6/8
+Pool search checkpoint_prior: native step7/8
+Pool search checkpoint_prior: native step8/8
+{
+  "cost_accounting": {
+    "native": {
+      "unique_requests": 33,
+      "completed_requests": 33,
+      "unknown_requests": 0,
+      "known_native_wall_seconds": 14.435881246000179,
+      "current_invocation_callbacks": 33,
+      "current_invocation_cache_hits": 0,
+      "total_cost_known": true
+    },
+    "completed_proxy_calls_across_attempts": 128,
+    "known_proxy_wall_seconds_across_attempts": 0.25827523199956204,
+    "incomplete_attempts": 0,
+    "proxy_cost_policy": "Completed scorer calls across all attempts; incomplete attempts may have additional unknown work. Pool ranking wall includes scoring and journal writes; audit replay costs excluded."
+  },
+  "input_id": "synthetic_1000",
+  "seed": 20261006,
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z",
+  "test_accuracy_evaluated": false,
+  "model_fitted": false,
+  "manifest_sha256": "14516446fe63b734e1826505cac37dc82d9a654ef37d169a25b13c5f1f0ec50c",
+  "artifact_sha256": {
+    "folds.json": "d87f53bc7de597ee2fb6436ced313c2bd9110a1916aa8f76335c79fbc01de1d7",
+    "native_journal/checkpoint_prior_baseline_0000.json": "d65a278f92427d2688847f6d180074e573da9e657b02acdbe513c8477174fddf",
+    "native_journal/checkpoint_prior_proposal_0001.json": "9939a3c6782ac114020c07fe40cd34a5e993c45f96bd59820a56eaec55311f88",
+    "native_journal/checkpoint_prior_proposal_0002.json": "0bfb502b7204a290bf4fe057bf9ba5e180c3d791fec3ff6e22cc1b375026de40",
+    "native_journal/checkpoint_prior_proposal_0003.json": "29c696ef357a6de391af2caba2cac7d8dbe0d1dbfa92b54967ad50b8ab99b02a",
+    "native_journal/checkpoint_prior_proposal_0004.json": "83de904f573ca99a36a0d68f13b38a7b9cb6469b3d0fcbc7e71c2b450f5f5cf1",
+    "native_journal/checkpoint_prior_proposal_0005.json": "2e15aafbebdfe5773c8ead29acc6c5763446e8ec76c28de2e430e307cfca74fb",
+    "native_journal/checkpoint_prior_proposal_0006.json": "27f129299549381e0efce869d8c899584f784aa36d984c2380c6331f40c80384",
+    "native_journal/checkpoint_prior_proposal_0007.json": "cbc7fa1e8d3bd41b120cbc32f211f3db0e06cdbbc0a3e5b7fb8a2b3e7ef1c860",
+    "native_journal/checkpoint_prior_proposal_0008.json": "5096e4316dd0e04773436696528efa09927715a83cf8ed43e36f01262c363704",
+    "native_journal/checkpoint_prior_validation_finalist_0000.json": "1186d3d0eca9812b1b3d47a1204576876c89584a24de7a538911cbcd3591f81b",
+    "native_journal/checkpoint_prior_validation_input_0000.json": "19aef4b7967be44d294f7054810b07e975ae3c5cdf4a22b1cd8dda54ba3b9b09",
+    "native_journal/compatibility_only_baseline_0000.json": "13f393a8b0252dba143b639e21b4119ead24c82d5986b6e4f4cf1fac9c2207d3",
+    "native_journal/compatibility_only_proposal_0001.json": "5fe664442cd527f59ee898df2d05cdcd2bda7612e447d4e05e589d479fc470d1",
+    "native_journal/compatibility_only_proposal_0002.json": "af36acffa4359b203c95dca8384b45b46b225f3e2540efe5db04b64c226b6624",
+    "native_journal/compatibility_only_proposal_0003.json": "817e3696383ff34d2267e7b34c1a191aba0948824f328e55a585153c749c60f4",
+    "native_journal/compatibility_only_proposal_0004.json": "df5421d834c15a2dc6b35a088d76a3210e87614a3e26c101684e5a00e748cb64",
+    "native_journal/compatibility_only_proposal_0005.json": "5de5e4ed3255faa11678bb053f75b1bab63d2982f53c8b6e5e5cfd78c03f2882",
+    "native_journal/compatibility_only_proposal_0006.json": "ff287b55302066cd4855f2d71f09e60b45362be21cadc05b84bd2c2e1b1b9ce5",
+    "native_journal/compatibility_only_proposal_0007.json": "ec7c585279b153ae00557d16a343d198114afaf16590347c1b63ad50d56db30e",
+    "native_journal/compatibility_only_proposal_0008.json": "f2b6cb1e475fa9ed986179ef11407ec5002002d5d0fb44cbac8757d4bb486e78",
+    "native_journal/compatibility_only_validation_finalist_0000.json": "3996344d63a5855c6467605819be60f78efb0f1f73f307a91ae04b76087e845f",
+    "native_journal/compatibility_only_validation_input_0000.json": "bebfba7495b36b3dd3e55b9ed6390c2350fc09ec0ad26adea9878272526a50d5",
+    "native_journal/random_pool_baseline_0000.json": "06d06e5160e675eafffafe80d907832818fc0eda752789f8876a0b6fb975e5a1",
+    "native_journal/random_pool_proposal_0001.json": "c83cc82391cc134f5613b4d5c497c2de979ba711c1043c0ecbcb3f2d4e05e035",
+    "native_journal/random_pool_proposal_0002.json": "eb0dd41db5e75d5fe9982831993be6193656c492a7cd847cd1e8a62a9e41aee8",
+    "native_journal/random_pool_proposal_0003.json": "80c1d30647c3e6b553052051e0a6e9fd7dea0215a436623a5c0b9b8e6ddf25e6",
+    "native_journal/random_pool_proposal_0004.json": "7b226852e2a8ea10241fe2f62db832ce4420305388b1405fa3ff6d2f97f9d25c",
+    "native_journal/random_pool_proposal_0005.json": "9adf7178efb8713f2da28ff8ae4023650437da77808d4e9ea9826600472bf1a4",
+    "native_journal/random_pool_proposal_0006.json": "8a9c5c896c1b79a0affeda7aa32c6f38f9d61cb9ed9568a0a476ea1639903bf0",
+    "native_journal/random_pool_proposal_0007.json": "aa5aa6d6ef0d02fa4f9dcacad0953797dfdb12eeb1c163a7977bb63554e78311",
+    "native_journal/random_pool_proposal_0008.json": "25986624c6636e25b083c7070ad80a615ce74cc6a47a6c4fb9a43d6eb4f9201a",
+    "native_journal/random_pool_validation_finalist_0000.json": "c700251a832fb7c00ca0fb918541f01e478264e720e5a73a6e78fcc0e0fbe6c0",
+    "native_journal/random_pool_validation_input_0000.json": "8f9644b2ce21e677d83729580cb64b8c4590db2205110e1d74e2c4625b74528e",
+    "attempts/20261007T005715.921650Z.json": "4c2969dd9f1b8383c27a4e0ad7e5baa453c63495bc2f0b36be668059d64566ce",
+    "random_pool/result.json": "a466284fcceea53d5942617362473dddba8e157b4bf351e33da741e25486010f",
+    "compatibility_only/result.json": "d7d3d9212ad7bfc9a07ae2703706da029d0b615344514f6858a9e75964ff4e20",
+    "checkpoint_prior/result.json": "597ea68338f00d2ebb68a475636582367250f4264a32a9077f2fc5038436288e",
+    "random_pool/finalist.fasta": "538f4afc0be276099269a0458c57e81bf699faf6444eaa231879709b77a1688d",
+    "random_pool/selected.fasta": "9366105de5774eb1c4a02189235fde0766bbc15465c66467f88abc6ac8b4263a",
+    "compatibility_only/finalist.fasta": "79b888953be80e643fc1a415079f5c026aaf450f44fae493296ace34ff738125",
+    "compatibility_only/selected.fasta": "f52a2dd341f81195cdcd8e8b1d16654c2f99cd341f1f679f9175f9621abed463",
+    "checkpoint_prior/finalist.fasta": "6f8a317e8ddaa6bb848acad744c47981f185599ff88922a5ce3afeb39dbe8868",
+    "checkpoint_prior/selected.fasta": "c24ad558c3cd2d3da2df0ecbaebe2b1906ec9971c87753ebbc87b97d6276fe58"
+  },
+  "exposure_events": [
+    {
+      "policy": "all",
+      "step": 0,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005715.935095Z.json",
+        "sha256": "6886168f5633a02873ba2833d1801873c6adb327ba996da153a2d1ef6e850179",
+        "stage": "validation_started"
+      }
+    },
+    {
+      "policy": "random_pool",
+      "step": 1,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005716.367321Z.json",
+        "sha256": "a3136baec7bad67cbdd2389bf87e75454d7c26f33e4a898f0bdd5411b1401477",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "random_pool",
+      "step": 2,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005716.794571Z.json",
+        "sha256": "cf6037d45ef3dde41f171cddcfc869299c5be03bf401ad3b2b2155b5e1c6f902",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "random_pool",
+      "step": 3,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005717.223601Z.json",
+        "sha256": "d976c06b7dfd4c83701ccc739f8771548767b2d20a711e4a468bbb42174a1cc5",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "random_pool",
+      "step": 4,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005717.664510Z.json",
+        "sha256": "c0e8973dff21cc2ba1e7fc5f40debf5f670941a31a9e7100233f1ce6c01ce3ac",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "random_pool",
+      "step": 5,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005718.091488Z.json",
+        "sha256": "33a015c50e67a56d1cc733a8d72f7d517ffda08536486ff427b74ddaeaea9907",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "random_pool",
+      "step": 6,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005718.520557Z.json",
+        "sha256": "d4a124faabe3b48543e51a420b4e8f91472b52b8016755efc70a20f62ce2caf9",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "random_pool",
+      "step": 7,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005718.963245Z.json",
+        "sha256": "4a553d477593ce16b6e325ecfccfb61b97120e6807a2d7033db34467eb60b090",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "random_pool",
+      "step": 8,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005719.404704Z.json",
+        "sha256": "70f5db702d0428b1deb37aa4b02629a5bf32eb2b23d7b9362d048f1a333bc962",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "compatibility_only",
+      "step": 1,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005716.367321Z.json",
+        "sha256": "a3136baec7bad67cbdd2389bf87e75454d7c26f33e4a898f0bdd5411b1401477",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "compatibility_only",
+      "step": 2,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005722.119127Z.json",
+        "sha256": "4574cf26420e1e9fcf19a5264ec3fa1f9dd8ebc3b91ceed578561e6df73cc9d2",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "compatibility_only",
+      "step": 3,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005722.571706Z.json",
+        "sha256": "e3628dc7398dfd09918745bff5fd21e6589a2291454f5d243d7a50a353962f7a",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "compatibility_only",
+      "step": 4,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005722.995557Z.json",
+        "sha256": "5a02634daf63c223868635a4dda1782ac24f62097a4e0913684b6cd62e280c56",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "compatibility_only",
+      "step": 5,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005723.421245Z.json",
+        "sha256": "368e22d3b40d763ef9c5cf7f601c68462c89bcc4b6f91ce50857c21cca4eac23",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "compatibility_only",
+      "step": 6,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005723.861389Z.json",
+        "sha256": "6f83225e735876ce7a949cbc86040013b12991cb097d6c501b0872e5075fb217",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "compatibility_only",
+      "step": 7,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005724.293711Z.json",
+        "sha256": "ddc37dabc9f4ecdd29fbf87e734cbb729476678082540fe1f643346556a0a9e3",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "compatibility_only",
+      "step": 8,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005724.716834Z.json",
+        "sha256": "8c46af9398d2a7ec155c3147978f1ec66bf480499f72a1eda0692f1bf60aa5df",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "checkpoint_prior",
+      "step": 1,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005716.367321Z.json",
+        "sha256": "a3136baec7bad67cbdd2389bf87e75454d7c26f33e4a898f0bdd5411b1401477",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "checkpoint_prior",
+      "step": 2,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005722.119127Z.json",
+        "sha256": "4574cf26420e1e9fcf19a5264ec3fa1f9dd8ebc3b91ceed578561e6df73cc9d2",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "checkpoint_prior",
+      "step": 3,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005728.681134Z.json",
+        "sha256": "9f4b37f43aaacde930b6f51ff0e9541114bd651bb003ab398c66a3e035502a24",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "checkpoint_prior",
+      "step": 4,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005729.430332Z.json",
+        "sha256": "da7de14cb2bf8df882559d5bb51a719628a4716edb6eeb1ab7dd1dbd8c629ab9",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "checkpoint_prior",
+      "step": 5,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005730.083246Z.json",
+        "sha256": "87a415ca11262420e504899b0ed6d6897f6a9e6fdf3118c15e215d18d8faa207",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "checkpoint_prior",
+      "step": 6,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005730.770137Z.json",
+        "sha256": "9887b7e0f082db7f72bdf8f61800a5560f847ed69e04cda0adc790d4e8c61fce",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "checkpoint_prior",
+      "step": 7,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005731.453725Z.json",
+        "sha256": "245f6e93999ef7398a43ffbbae0bc173643d49a18d2f49abf6a2d49bfcd37c3d",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "checkpoint_prior",
+      "step": 8,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/exposures/20261007T005732.136591Z.json",
+        "sha256": "812ac711fd173f26463935240147c300cec41b166f979519a59fedbfd7b6b527",
+        "stage": "test_started"
+      }
+    }
+  ],
+  "rows": [
+    {
+      "policy": "random_pool",
+      "planned_proposal_folds": 8,
+      "attempted_proposal_folds": 8,
+      "successful_proposal_folds": 8,
+      "pool_candidates": 128,
+      "proxy_evaluations": 0,
+      "accepted_steps": 6,
+      "search_status": "completed",
+      "linearfold_delta_kcal_mol": -15.299999999999955,
+      "selection_source": "finalist",
+      "selection_reason": "confirmed_improvement",
+      "candidate_vienna_delta_kcal_mol": -11.0,
+      "selected_vienna_delta_kcal_mol": -11.0,
+      "selected_mutations": 12,
+      "proxy_wall_seconds": 0.009656370000016068
+    },
+    {
+      "policy": "compatibility_only",
+      "planned_proposal_folds": 8,
+      "attempted_proposal_folds": 8,
+      "successful_proposal_folds": 8,
+      "pool_candidates": 128,
+      "proxy_evaluations": 0,
+      "accepted_steps": 4,
+      "search_status": "completed",
+      "linearfold_delta_kcal_mol": -12.299999999999955,
+      "selection_source": "finalist",
+      "selection_reason": "confirmed_improvement",
+      "candidate_vienna_delta_kcal_mol": -8.400000000000034,
+      "selected_vienna_delta_kcal_mol": -8.400000000000034,
+      "selected_mutations": 8,
+      "proxy_wall_seconds": 0.009572682999930748
+    },
+    {
+      "policy": "checkpoint_prior",
+      "planned_proposal_folds": 8,
+      "attempted_proposal_folds": 8,
+      "successful_proposal_folds": 8,
+      "pool_candidates": 128,
+      "proxy_evaluations": 128,
+      "accepted_steps": 7,
+      "search_status": "completed",
+      "linearfold_delta_kcal_mol": -22.799999999999955,
+      "selection_source": "finalist",
+      "selection_reason": "confirmed_improvement",
+      "candidate_vienna_delta_kcal_mol": -18.5,
+      "selected_vienna_delta_kcal_mol": -18.5,
+      "selected_mutations": 14,
+      "proxy_wall_seconds": 2.278500201999975
+    }
+  ],
+  "native_request_counts": {
+    "random_pool": {
+      "baseline": 1,
+      "proposal": 8,
+      "validation_input": 1,
+      "validation_finalist": 1
+    },
+    "compatibility_only": {
+      "baseline": 1,
+      "proposal": 8,
+      "validation_input": 1,
+      "validation_finalist": 1
+    },
+    "checkpoint_prior": {
+      "baseline": 1,
+      "proposal": 8,
+      "validation_input": 1,
+      "validation_finalist": 1
+    }
+  },
+  "equal_native_proposal_budget_measured": true,
+  "limitations": [
+    "One exposed synthetic input/one search seed per component; no fresh test, generalization or biological stability claim.",
+    "Pair logits are proposal-ranking proxies, not folding energy; native tools decide acceptance/selection.",
+    "Neural arm adds128 potential proxy calls beyond matched native requests; wall/costs are not assumed equal.",
+    "Original-template compatibility is a control/prior, not proof of retained biological function."
+  ]
+}

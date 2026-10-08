@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/global_sparse_scalability_runs/20261006T024346.509793Z",
+  "test_evaluated": false,
+  "purpose": "global_sparse_scalability_and_reused_validation_diagnostics",
+  "manifest_sha256": "296ff79605c3f56a18be8438191267f88da42a1a066a8fe380156bc167aa2cd4",
+  "predictions_sha256": "7eebfbdbb373ff2a6d33dfdaaa4be8fcf94b716c2c3bde4a3fdadde2220cf160",
+  "diagnostics_sha256": "5c3de0a0d84922ab1c33d70e3395a639d80f6e59ec006c5d3a7aeeb5c6bafd99",
+  "rows": [
+    {
+      "id": "synthetic_1000",
+      "length": 1000,
+      "objective": 46.62677647173405,
+      "accepted_pairs": 88,
+      "interpretation": "Approximate greedy noncrossing selection from sparse candidates; distant pairs permitted; scores are logits, not energy.",
+      "top_k": 16,
+      "block_size": 64,
+      "peak_score_tile_elements": 64000,
+      "candidate_array_bytes": 139680,
+      "candidate_count": 8730,
+      "scoring_wall_seconds": 0.06277605499963101,
+      "decoding_wall_seconds": 0.02514493400030915,
+      "candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/global_sparse_scalability_runs/20261006T024346.509793Z/synthetic_1000_candidates.npz",
+      "candidate_sha256": "083499c4495bfc30ad2e170e0c312dca11e98a2760e3a9aa25f7872d41cfc496"
+    },
+    {
+      "id": "synthetic_5000",
+      "length": 5000,
+      "objective": 108.87058062851429,
+      "accepted_pairs": 240,
+      "interpretation": "Approximate greedy noncrossing selection from sparse candidates; distant pairs permitted; scores are logits, not energy.",
+      "top_k": 16,
+      "block_size": 64,
+      "peak_score_tile_elements": 320000,
+      "candidate_array_bytes": 721936,
+      "candidate_count": 45121,
+      "scoring_wall_seconds": 1.1402835779999805,
+      "decoding_wall_seconds": 0.09958150799957366,
+      "candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/global_sparse_scalability_runs/20261006T024346.509793Z/synthetic_5000_candidates.npz",
+      "candidate_sha256": "7dc59d600e5f217b51d7c1f6f89684f3b5736f46f37d1d9f9d2b6ea71ccb0cc5"
+    },
+    {
+      "id": "synthetic_10000",
+      "length": 10000,
+      "objective": 182.7781585007906,
+      "accepted_pairs": 399,
+      "interpretation": "Approximate greedy noncrossing selection from sparse candidates; distant pairs permitted; scores are logits, not energy.",
+      "top_k": 16,
+      "block_size": 64,
+      "peak_score_tile_elements": 640000,
+      "candidate_array_bytes": 1556336,
+      "candidate_count": 97271,
+      "scoring_wall_seconds": 4.376711023000098,
+      "decoding_wall_seconds": 0.20196446800036938,
+      "candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/global_sparse_scalability_runs/20261006T024346.509793Z/synthetic_10000_candidates.npz",
+      "candidate_sha256": "cb2b60a3f5008a3153fa31a5db5c585fcf0d51d62316b86f2949806df31f3bba"
+    }
+  ],
+  "validation_decoder_f1": {
+    "greedy_pair_f1": 0.1621174685121644,
+    "sparse_exact_pair_f1": 0.308224571509346,
+    "full_exact_pair_f1": 0.30788537940327143
+  },
+  "process_peak_rss_kib": 700088,
+  "limitations": [
+    "Quadratic all-distance scoring work; tile/top-k candidate storage is bounded.",
+    "Greedy decoding is approximate; exact decoder diagnostics are limited to reused short validation.",
+    "Candidate-array bytes exclude transient Torch tensors and process overhead.",
+    "One timing per synthetic length; no speedup, long-RNA accuracy or biological stability claim."
+  ]
+}

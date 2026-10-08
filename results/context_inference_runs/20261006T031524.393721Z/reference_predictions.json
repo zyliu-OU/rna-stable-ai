@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "methods": [
+    "trained_expanded_sparse_exact_sparse"
+  ],
+  "records": [
+    {
+      "id": "synthetic_inference_demo",
+      "sequence": "GGGAAACCCGGGAAACCC",
+      "structure": "(((...)))(((...)))",
+      "method": "trained_expanded_sparse_exact_sparse",
+      "status": "ok"
+    }
+  ]
+}

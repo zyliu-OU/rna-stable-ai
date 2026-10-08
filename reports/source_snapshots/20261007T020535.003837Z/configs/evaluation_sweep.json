@@ -1,0 +1,9 @@
+{
+  "lengths": [1000],
+  "kinds": ["structured", "mixed"],
+  "sequence_seeds": [1729, 1730, 1731],
+  "search_seeds": [2718, 2719],
+  "beam_sizes": [50, 100, 200],
+  "optimization_config": "optimization.json",
+  "optimization_overrides": {"steps": 24}
+}

@@ -1,0 +1,10 @@
+{
+  "input_indices": [2],
+  "seeds": [20261006, 20261007],
+  "temperature_c": 37,
+  "beam_size": 100,
+  "timeout_seconds": 300,
+  "memory_limit_gib": 4,
+  "planned_requests": 12,
+  "deadline_utc": "2026-10-07T04:00:00+00:00"
+}

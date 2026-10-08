@@ -1,0 +1,158 @@
+{
+  "mode": "supplied_reference_structure_evaluation",
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/reference_runs/20261006T005240.380877Z",
+  "utc": "20261006T005240.380877Z",
+  "dataset_id": "synthetic_reference_format_demo",
+  "manifest_sha256": "e9b904d8ab7f1bdd3d3ebe920bc14f7c3cb52a16cc33cb675983781b08450877",
+  "sources": {
+    "references": {
+      "original_path": "/home/zyliu/Documents/rna-stable-ai/configs/reference_demo.json",
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/reference_runs/20261006T005240.380877Z/references.json",
+      "sha256": "f5a59bb0f4cfdeab0d07404b6e33568c1ce42748db7341c7025e966922426079"
+    },
+    "predictions": {
+      "original_path": "/home/zyliu/Documents/rna-stable-ai/configs/reference_predictions_demo.json",
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/reference_runs/20261006T005240.380877Z/predictions.json",
+      "sha256": "22184fc6d35ca7168cb376468e682460bbf7a4229571143992dd066bd612f912"
+    }
+  },
+  "provenance": {
+    "versions": {
+      "python": "3.12.14",
+      "executable": "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+      "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+      "RNA-StableAI": "0.1.0",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "pandas": "3.0.6",
+      "biopython": "1.88",
+      "psutil": "7.2.2",
+      "tqdm": "4.70.1",
+      "pyyaml": "6.0.3",
+      "pytest": "9.1.1",
+      "matplotlib": "3.11.2",
+      "torch": "2.14.1+cu130",
+      "ViennaRNA": "2.7.2"
+    },
+    "source_sha256": {
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reference.py": "34bf934880947040d56aa8fa51f60967b209c7c7537dc181ac59b94623051d75",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/scoring.py": "aefa252f8765861a15e7265fd69c716c598ff3e3d1925c71e0564e9ef9baf349",
+      "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sequences.py": "3e970de56b2b6d38ae6fbe276032a51fe570ac2bc4d84288e49cb1a32e335960"
+    }
+  },
+  "policy": "exact_pairs_complete_dot_bracket_macro_by_method_and_reference_kind_v1",
+  "rows": [
+    {
+      "reference_pairs": 2,
+      "predicted_pairs": 1,
+      "shared_pairs": 1,
+      "pair_precision": 1.0,
+      "pair_recall": 0.5,
+      "pair_f1": 0.6666666666666666,
+      "pair_jaccard": 0.5,
+      "base_pair_distance": 1,
+      "reference_id": "designed_stem",
+      "method": "handwritten_example",
+      "reference_kind": "synthetic_control",
+      "source": "Handwritten software demonstration; not an experimental structure",
+      "length": 6,
+      "sequence_sha256": "d417f7bbc5ebbec15806d8763ef6067379b67054033ea3f1228cf489e66142f7",
+      "status": "ok",
+      "error": ""
+    },
+    {
+      "reference_pairs": null,
+      "predicted_pairs": null,
+      "shared_pairs": null,
+      "pair_precision": null,
+      "pair_recall": null,
+      "pair_f1": null,
+      "pair_jaccard": null,
+      "base_pair_distance": null,
+      "reference_id": "designed_stem",
+      "method": "missing_example",
+      "reference_kind": "synthetic_control",
+      "source": "Handwritten software demonstration; not an experimental structure",
+      "length": 6,
+      "sequence_sha256": "d417f7bbc5ebbec15806d8763ef6067379b67054033ea3f1228cf489e66142f7",
+      "status": "missing",
+      "error": "No prediction supplied"
+    },
+    {
+      "reference_pairs": 0,
+      "predicted_pairs": 0,
+      "shared_pairs": 0,
+      "pair_precision": 1.0,
+      "pair_recall": 1.0,
+      "pair_f1": 1.0,
+      "pair_jaccard": 1.0,
+      "base_pair_distance": 0,
+      "reference_id": "unpaired_control",
+      "method": "handwritten_example",
+      "reference_kind": "synthetic_control",
+      "source": "Handwritten software demonstration; not an experimental structure",
+      "length": 6,
+      "sequence_sha256": "69dc6c3210e25e62c5938ff4e841e81ce3c7d2cde583553478a77d7fcb389f30",
+      "status": "ok",
+      "error": ""
+    },
+    {
+      "reference_pairs": null,
+      "predicted_pairs": null,
+      "shared_pairs": null,
+      "pair_precision": null,
+      "pair_recall": null,
+      "pair_f1": null,
+      "pair_jaccard": null,
+      "base_pair_distance": null,
+      "reference_id": "unpaired_control",
+      "method": "missing_example",
+      "reference_kind": "synthetic_control",
+      "source": "Handwritten software demonstration; not an experimental structure",
+      "length": 6,
+      "sequence_sha256": "69dc6c3210e25e62c5938ff4e841e81ce3c7d2cde583553478a77d7fcb389f30",
+      "status": "missing",
+      "error": "No prediction supplied"
+    }
+  ],
+  "aggregates": [
+    {
+      "method": "handwritten_example",
+      "reference_kind": "synthetic_control",
+      "planned_inputs": 2,
+      "measured_inputs": 2,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 2
+      },
+      "mean_pair_precision": 1.0,
+      "mean_pair_recall": 0.75,
+      "mean_pair_f1": 0.8333333333333333
+    },
+    {
+      "method": "missing_example",
+      "reference_kind": "synthetic_control",
+      "planned_inputs": 2,
+      "measured_inputs": 0,
+      "missing_inputs": 2,
+      "failed_inputs": 0,
+      "status_counts": {
+        "missing": 2
+      },
+      "mean_pair_precision": null,
+      "mean_pair_recall": null,
+      "mean_pair_f1": null
+    }
+  ],
+  "limitations": [
+    "Reference kinds and source descriptions are supplied by the caller, not independently verified.",
+    "Only complete, pseudoknot-free dot-bracket structures using .() are supported; no projection or imputation.",
+    "Metrics use exact base-pair coordinates; no alignment, offset tolerance or sequence mutation is permitted.",
+    "Missing and failed predictions stay in planned denominators and have no metric values.",
+    "Means describe measured inputs only, with one vote per reference within each method and reference kind.",
+    "Agreement with supplied structures does not measure biological stability or experimental fitness.",
+    "No folding, optimization, neural training or dataset download is performed."
+  ]
+}

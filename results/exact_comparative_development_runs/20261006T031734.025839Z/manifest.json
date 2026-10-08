@@ -1,0 +1,42 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/exact_comparative_development_runs/20261006T031734.025839Z",
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse"
+  },
+  "source_summary_sha256": "a52dff397efe57a40c34e55493ff73c8a45eef5f005eee19a3f27109a07691bb",
+  "snapshot_sha256": {
+    "train.json": "e865328d0ee3fe778c0d07d18d604319eb7ae728285679e85d40069ee56b5517",
+    "validation.json": "bea47dac135ef17e9bc213d563fbda8f8934769bc080d111bdf1a5906a892746"
+  },
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/train_exact_comparative_development.py": "7d23529ba06a8624cc4c2e5bcf026613e50aba5fefc801c382cda5b5677f7720",
+    "/home/zyliu/Documents/rna-stable-ai/scripts/train_sampled_comparative_development.py": "090ac8263f576126a067080774f5f57e10c00acb1c4337d90a31456d47d92d22",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/exact_sparse_pairs.py": "19d25a49142f314801addf9b21911358c2d8e5bacb363f609fa401566ca143bc",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/full_pair_supervision.py": "180ae74fffb21c114e561306bffe6de957d7435d104af8b985e2cddc2b1f7f61",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/global_sparse_pairs.py": "2ec5afad5ec15cc9cd1d559e093cdfb5db5c71a20947728fb6d8b1c02ef0fe4f",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_training.py": "8abecb1a29d9fc13681b0e8ea3f952213783744c7b2f1dbf9b95dd5a9385408d",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_pairs.py": "f103e56bb315e35ae2646ff33717b53d58f163464787893699129f28a2585756",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/exposures.py": "ad12875d0ee29f8cf5def848758cea76dc0356b16c88eb892c7df96aa8c98adc",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reference.py": "34bf934880947040d56aa8fa51f60967b209c7c7537dc181ac59b94623051d75",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/scoring.py": "aefa252f8765861a15e7265fd69c716c598ff3e3d1925c71e0564e9ef9baf349"
+  },
+  "policy": "Same frozen89/47 development records, full labels and optimizer settings. Fresh random initialization. Exact sparse decoder for validation checkpoint selection. No fresh test."
+}

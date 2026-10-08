@@ -1,0 +1,26 @@
+{
+  "lengths": [
+    1000,
+    2000
+  ],
+  "kinds": [
+    "mixed"
+  ],
+  "sequence_seeds": [
+    1732,
+    1733,
+    1734
+  ],
+  "beam_sizes": [
+    200
+  ],
+  "optimization_config": "/home/zyliu/Documents/rna-stable-ai/configs/optimization.json",
+  "search_seeds": [
+    2740
+  ],
+  "optimization_overrides": {
+    "timeout_seconds": 120,
+    "finalist_timeout_seconds": 300,
+    "steps": 32
+  }
+}

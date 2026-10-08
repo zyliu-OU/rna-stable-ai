@@ -1,0 +1,73 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/population_resource_runs/20261007T020200.685903Z",
+  "manifest_sha256": "b404c1065cee88e8fa3d12d211eb4f947f948963ad0c1a4e9e3b16944b91925c",
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/population_resource_runs/20261007T020200.685903Z/exposures/20261007T020200.700608Z.json",
+    "sha256": "40911d0f041dff8f6a399abd34b7ac7adae6f89606b71d6f79ef25daeccf1785",
+    "stage": "training_started"
+  },
+  "planned_steps": 3,
+  "successful_steps": 3,
+  "accuracy_evaluated": false,
+  "test_evaluated": false,
+  "rows": [
+    {
+      "length": 1000,
+      "status": "ok",
+      "manifest_sha256": "fc0e8ae6eb074b6f89121cc6ed95b446c54917f7ff2baa2f49847d69ee92bf82",
+      "process_sha256": "200291149a30c183283edfb3c0dd25da0998bb67ea59483856d24f4cf6b37b02",
+      "wall_seconds": 2.3704371979993084,
+      "peak_rss_mib": 784.1875,
+      "result_sha256": "d5bf9e96ef53d4a8ae8bd3cadb61364125543bc3c22914251ae3f491d547bf10",
+      "population_positive": 498,
+      "population_negative": 186133,
+      "sampled_negative": 15936,
+      "retained_sample_tensor_bytes": 328680,
+      "full_label_tensor_bytes_if_materialized": 3732620,
+      "initial_loss": 1.3874846696853638,
+      "after_step_loss": 1.3844388723373413,
+      "gradient_l2_norm": 1.0253845443931127
+    },
+    {
+      "length": 5000,
+      "status": "ok",
+      "manifest_sha256": "11a7bce090b4fab3b923e58952621d1f94c6f4c8efeedda3c044a1466e5c05ca",
+      "process_sha256": "5f945cd6468d007f5b414b3c685c8c1c6c566d21db51bfcd14909983fc7340bb",
+      "wall_seconds": 2.6219320420004806,
+      "peak_rss_mib": 801.98828125,
+      "result_sha256": "554f0b36544624a6042a7dfbfacf9cd6c0478ad7d07ea09e1a576aa89c3e4395",
+      "population_positive": 2498,
+      "population_negative": 4677157,
+      "sampled_negative": 79936,
+      "retained_sample_tensor_bytes": 1648680,
+      "full_label_tensor_bytes_if_materialized": 93593100,
+      "initial_loss": 1.3906577825546265,
+      "after_step_loss": 1.3875261545181274,
+      "gradient_l2_norm": 1.0524284104057036
+    },
+    {
+      "length": 10000,
+      "status": "ok",
+      "manifest_sha256": "65c6765cbe2c72387d610afdd46d6e5f6ac69edc9b497a0273ae06fcc4d43f54",
+      "process_sha256": "3c8ff6c11a51e1f90a704dc652f47e6ffe66e3501122ba63072901a2bc1d7959",
+      "wall_seconds": 3.2710411399993973,
+      "peak_rss_mib": 813.92578125,
+      "result_sha256": "c8385fff000899810e3d57b814ddc20a21acf11c12ed1109451bd023669a68e5",
+      "population_positive": 4998,
+      "population_negative": 18730580,
+      "sampled_negative": 159936,
+      "retained_sample_tensor_bytes": 3298680,
+      "full_label_tensor_bytes_if_materialized": 374711560,
+      "initial_loss": 1.3912490606307983,
+      "after_step_loss": 1.3878188133239746,
+      "gradient_l2_norm": 1.0610663478678402
+    }
+  ],
+  "limitations": [
+    "Synthetic nested annotations only; one update demonstrates feasibility, not long biological accuracy.",
+    "Retained label tensor bytes exclude model/optimizer/Python allocations; theoretical full tensor bytes describe the avoided index/label layout, not measured savings.",
+    "Whole-process GNUtime peak RSS includes Python/Torch startup and excludes guard supervisor; per-process memory cap is not a tree-wide RSS cap.",
+    "Other development tasks may overlap; timings are observations, not isolated speed benchmarks."
+  ]
+}

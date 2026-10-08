@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "payload": {
+    "binding_sha256": "35d83a1c7727e61e4171b6a6f082a97f73d867cbf6b9d4b3fb0c69d4bea14f4d",
+    "key": "compatibility_only_validation_finalist_0000",
+    "sequence_sha256": "0503f8755accaa21f123f8c49c77a1d8745affaaedc3c6db02b378c936f653c3",
+    "parameters": {
+      "command": [
+        "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+        "-m",
+        "rnastable.vienna_worker",
+        "37"
+      ],
+      "config": {
+        "beam_size": 100,
+        "finalist_timeout_seconds": 30,
+        "max_mutations": 16,
+        "memory_limit_gib": 4,
+        "min_improvement_kcal_mol": 0.1,
+        "pool_size": 16,
+        "preserve_protein": false,
+        "protected_positions": [
+          1,
+          2,
+          3
+        ],
+        "seed": 20261006,
+        "steps": 8,
+        "temperature_c": 37,
+        "timeout_seconds": 30
+      },
+      "cwd": null,
+      "device": "CPU",
+      "raw_output": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/compatibility_only/validation_finalist_0000_ViennaRNA.txt",
+      "tool": "ViennaRNA"
+    },
+    "state": "complete",
+    "started_at": "2026-10-07T00:57:25.866953+00:00",
+    "driver_pid": 37,
+    "result": {
+      "status": "ok",
+      "wall_seconds": 0.6818090220000386,
+      "returncode": 0,
+      "error": "",
+      "peak_rss_mib": 29.484375,
+      "memory_method": "GNU time maximum RSS (largest process; not process-tree sum)",
+      "tool": "ViennaRNA",
+      "device": "CPU",
+      "command": [
+        "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+        "-m",
+        "rnastable.vienna_worker",
+        "37"
+      ],
+      "raw_output": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/compatibility_only/validation_finalist_0000_ViennaRNA.txt",
+      "structure": "(((((((((..((((..((((..(((((..((((.(((((.((((...))))..............(((((((.....................)))))))))))).))))..)))))...)))).....(((((......))))).(((((......))))).........(((.(((....))).)))((((((....)))))).(((((((...((((....)))))))))))..))))))))))))).((((((((..(((((((((..........(((((((((((((..(((((...)))))..))).)))))).(((((.(((..((((.((.((.((((................)))).))....)).))))))).)))))....(((((((((....((..........))....)))))))))((((.(((..(((((((...(((((((((.((((((..((.(((........(((((((.((.......(((((...((((((....).)))))....)))))....)).)))))))))).))..)))))).)).....(((((....))))).)))))))((((.(((((....((((((..(......(((((((..........((((........))))....(((..((((((...))))))..))))))))))....)..))))))...))))).)))).....(((((((.((((.......)))).))))))))))))))...))).))))..............))))))))))))).......((((((.((((..((...((((..........)))).....))..)))).))))))......((((((.(.........).))))))..((((...)))).(((((((.((.((((((..(((.((((((((.............)))))))).)))))))..)).)))))))))...))))))))......",
+      "mfe_kcal_mol": -271.3,
+      "paired_fraction": 0.6,
+      "raw_sha256": "1d65471f277f16fb70516a88f67488de43e366f230b6cbffc6c106c3cdee8af9"
+    },
+    "completed_at": "2026-10-07T00:57:26.568092+00:00"
+  },
+  "payload_sha256": "99f908c868b386ed8655e22c5b0adbd63b7ff8d128aa326d5c625943dd87b69b"
+}

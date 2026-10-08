@@ -1,0 +1,216 @@
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261006_baseline/results/reference_runs/20261007T013132.913432Z"
+}
+Pair-head component audit passed: seed 20261006, baseline, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261006_stack/results/reference_runs/20261007T013153.730335Z"
+}
+Pair-head component audit passed: seed 20261006, stack, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261006_helix/results/reference_runs/20261007T013217.104451Z"
+}
+Pair-head component audit passed: seed 20261006, helix, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261007_baseline/results/reference_runs/20261007T013236.445407Z"
+}
+Pair-head component audit passed: seed 20261007, baseline, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261007_stack/results/reference_runs/20261007T013256.331184Z"
+}
+Pair-head component audit passed: seed 20261007, stack, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261007_helix/results/reference_runs/20261007T013319.016405Z"
+}
+Pair-head component audit passed: seed 20261007, helix, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261008_baseline/results/reference_runs/20261007T013337.136969Z"
+}
+Pair-head component audit passed: seed 20261008, baseline, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261008_stack/results/reference_runs/20261007T013355.537511Z"
+}
+Pair-head component audit passed: seed 20261008, stack, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+{
+  "audit": "passed",
+  "planned_predictions": 94,
+  "measured_predictions": 94,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261008_helix/results/reference_runs/20261007T013417.011112Z"
+}
+Pair-head component audit passed: seed 20261008, helix, {'train': 89, 'validation': 47}, full BCE and exact development checkpoint replay.
+Pair-head study audit passed: 9/9 fits, full development replay and matched initializations.
+Penalty checkpoint 1/9: /home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261006_baseline/summary.json
+Penalty checkpoint 2/9: /home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261006_stack/summary.json
+Penalty checkpoint 3/9: /home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261006_helix/summary.json
+Penalty checkpoint 4/9: /home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261007_baseline/summary.json
+Penalty checkpoint 5/9: /home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261007_stack/summary.json
+Penalty checkpoint 6/9: /home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261007_helix/summary.json
+Penalty checkpoint 7/9: /home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261008_baseline/summary.json
+Penalty checkpoint 8/9: /home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261008_stack/summary.json
+Penalty checkpoint 9/9: /home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261008_helix/summary.json
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_penalty_development_runs/20261007T013907.821759Z",
+  "manifest_sha256": "94990bc79e22893270b09199f757e89c071f851f353a4ea0038e0a8b4caa8005",
+  "model_fitted": false,
+  "test_evaluated": false,
+  "development_only": true,
+  "penalties": [
+    0,
+    0.5,
+    1,
+    2,
+    4
+  ],
+  "components": [
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_penalty_development_runs/20261007T013907.821759Z/components/0/summary.json",
+      "sha256": "92e584a79deee071a92db8afe811b5248e891a15e4b6d9219b86a04df51cdb48"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_penalty_development_runs/20261007T013907.821759Z/components/1/summary.json",
+      "sha256": "d11a989cdbd2199af21ddbafc5d57d4b85f54034592be4edb6453ec970cf95b6"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_penalty_development_runs/20261007T013907.821759Z/components/2/summary.json",
+      "sha256": "f17533703232458e56db1c07b3c1525b043d9da73dd069cb9891e99f77e7d67c"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_penalty_development_runs/20261007T013907.821759Z/components/3/summary.json",
+      "sha256": "2ac6e9ebfad3cc7db19f10eff68ad4ca4b0b7941fe8c396b5478b227177740d8"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_penalty_development_runs/20261007T013907.821759Z/components/4/summary.json",
+      "sha256": "b47ad0988d64989b57bf602f7be0c9179078659949862840fa21a774f422915f"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_penalty_development_runs/20261007T013907.821759Z/components/5/summary.json",
+      "sha256": "6a898bbc10af0f5dc0d089d14e2de67444211a0aee0f32b687059e4b7232475b"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_penalty_development_runs/20261007T013907.821759Z/components/6/summary.json",
+      "sha256": "e103232aff1bf2ce0916f4bbc5949aa4d830aebee6ac58dc0e41c93e5c7ac0ff"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_penalty_development_runs/20261007T013907.821759Z/components/7/summary.json",
+      "sha256": "366f627933fb8ad6f189fe27c262eb95ba5608dbb375dab51e17e13234e69c81"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/pair_penalty_development_runs/20261007T013907.821759Z/components/8/summary.json",
+      "sha256": "63715dead6db726fb6bb973cda817fad13d0de74ec997f31af150d6b42820862"
+    }
+  ],
+  "rows": [
+    {
+      "seed": 20261006,
+      "head": "baseline",
+      "source_epoch": 3,
+      "zero_penalty_development_f1": 0.38849854106861975,
+      "selected_penalty": 0.5,
+      "selected_development_f1": 0.39792870118417956,
+      "development_f1_delta": 0.009430160115559805
+    },
+    {
+      "seed": 20261006,
+      "head": "stack",
+      "source_epoch": 5,
+      "zero_penalty_development_f1": 0.423379568067344,
+      "selected_penalty": 0,
+      "selected_development_f1": 0.423379568067344,
+      "development_f1_delta": 0.0
+    },
+    {
+      "seed": 20261006,
+      "head": "helix",
+      "source_epoch": 5,
+      "zero_penalty_development_f1": 0.5244233333981245,
+      "selected_penalty": 0,
+      "selected_development_f1": 0.5244233333981245,
+      "development_f1_delta": 0.0
+    },
+    {
+      "seed": 20261007,
+      "head": "baseline",
+      "source_epoch": 3,
+      "zero_penalty_development_f1": 0.37627740637695983,
+      "selected_penalty": 0,
+      "selected_development_f1": 0.37627740637695983,
+      "development_f1_delta": 0.0
+    },
+    {
+      "seed": 20261007,
+      "head": "stack",
+      "source_epoch": 3,
+      "zero_penalty_development_f1": 0.40101251568271834,
+      "selected_penalty": 0,
+      "selected_development_f1": 0.40101251568271834,
+      "development_f1_delta": 0.0
+    },
+    {
+      "seed": 20261007,
+      "head": "helix",
+      "source_epoch": 4,
+      "zero_penalty_development_f1": 0.4950770012765886,
+      "selected_penalty": 0,
+      "selected_development_f1": 0.4950770012765886,
+      "development_f1_delta": 0.0
+    },
+    {
+      "seed": 20261008,
+      "head": "baseline",
+      "source_epoch": 4,
+      "zero_penalty_development_f1": 0.3932529810620267,
+      "selected_penalty": 0,
+      "selected_development_f1": 0.3932529810620267,
+      "development_f1_delta": 0.0
+    },
+    {
+      "seed": 20261008,
+      "head": "stack",
+      "source_epoch": 4,
+      "zero_penalty_development_f1": 0.4055479388678194,
+      "selected_penalty": 0,
+      "selected_development_f1": 0.4055479388678194,
+      "development_f1_delta": 0.0
+    },
+    {
+      "seed": 20261008,
+      "head": "helix",
+      "source_epoch": 3,
+      "zero_penalty_development_f1": 0.49106862354687564,
+      "selected_penalty": 0,
+      "selected_development_f1": 0.49106862354687564,
+      "development_f1_delta": 0.0
+    }
+  ],
+  "limitations": [
+    "All checkpoints and penalties use the same exposed validation cohort; posthoc selection is development tuning, not independent accuracy.",
+    "Checkpoints were originally selected at zero penalty; this is not joint epoch-and-penalty selection and does not retrain models.",
+    "Uniform nonnegative penalties alter logit objectives over the original top-16 retained pools. Scores are not native folding energy.",
+    "Tie policy prefers the smallest penalty. Inference remains zero penalty unless explicitly requested.",
+    "Three seeds share the same biological annotations; no family/clan independence or generalization claim."
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "complete": true,
+  "mode": "processed_pdb_training_pilot",
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/experimental_pilot_runs/20261006T010347.964097Z",
+  "manifest_sha256": "9ac84115776eac41a21dd7ea4b045933c5386d9632e454ee39d8ff0f5683119d",
+  "config": {
+    "min_length": 20,
+    "max_length": 256,
+    "similarity_threshold": 0.8,
+    "seed": 20261005,
+    "epochs": 20,
+    "learning_rate": 0.003,
+    "embedding_dim": 16,
+    "channels": 32,
+    "cpu_threads": 2,
+    "temperature_c": 37,
+    "beam_size": 100,
+    "timeout_seconds": 30,
+    "memory_limit_gib": 4
+  },
+  "splits": {
+    "test": {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/experimental_pilot_runs/20261006T010347.964097Z/test_references.json",
+      "sha256": "074c97cf87764a3557f75c26f52e09e61df74081a9298cdd9947d5fc7cd8eb11",
+      "count": 16
+    },
+    "validation": {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/experimental_pilot_runs/20261006T010347.964097Z/validation_references.json",
+      "sha256": "e02458c7e1e7beb68ef86dea7f1fa5fc6dcac120d180aeab43e6c0fa25047802",
+      "count": 12
+    },
+    "train": {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/experimental_pilot_runs/20261006T010347.964097Z/train_references.json",
+      "sha256": "8c1bae46d27c1149547633062c94bd645f253480175125192b46628852e88aba",
+      "count": 41
+    }
+  },
+  "training": {
+    "complete": true,
+    "device": "cpu",
+    "seed": 20261005,
+    "config": {
+      "min_length": 20,
+      "max_length": 256,
+      "similarity_threshold": 0.8,
+      "seed": 20261005,
+      "epochs": 20,
+      "learning_rate": 0.003,
+      "embedding_dim": 16,
+      "channels": 32,
+      "cpu_threads": 2,
+      "temperature_c": 37,
+      "beam_size": 100,
+      "timeout_seconds": 30,
+      "memory_limit_gib": 4
+    },
+    "train_records": 41,
+    "validation_records": 12,
+    "class_counts_train_only": [
+      516,
+      387,
+      387
+    ],
+    "class_weights_train_only": [
+      0.9065085053443909,
+      1.046745777130127,
+      1.046745777130127
+    ],
+    "selection_policy": "highest_validation_pair_f1_then_lowest_validation_loss_then_earliest_epoch_v1",
+    "selected_epoch": 6,
+    "selected_validation_pair_f1": 0.32402991273959014,
+    "epochs_completed": 20,
+    "history": [
+      {
+        "epoch": 1,
+        "mean_train_loss": 0.9874650298095331,
+        "validation_mean_loss": 0.7748043338457743,
+        "validation_mean_pair_f1": 0.21313131313131314
+      },
+      {
+        "epoch": 2,
+        "mean_train_loss": 0.8013005729128675,
+        "validation_mean_loss": 0.7392531434694926,
+        "validation_mean_pair_f1": 0.19049145299145298
+      },
+      {
+        "epoch": 3,
+        "mean_train_loss": 0.7242249831920717,
+        "validation_mean_loss": 0.6754712040225664,
+        "validation_mean_pair_f1": 0.07569282569282569
+      },
+      {
+        "epoch": 4,
+        "mean_train_loss": 0.6537006439232245,
+        "validation_mean_loss": 0.7287493571639061,
+        "validation_mean_pair_f1": 0.25043012543012544
+      },
+      {
+        "epoch": 5,
+        "mean_train_loss": 0.5954653482611586,
+        "validation_mean_loss": 0.6899372090895971,
+        "validation_mean_pair_f1": 0.31416638916638917
+      },
+      {
+        "epoch": 6,
+        "mean_train_loss": 0.5331981245700906,
+        "validation_mean_loss": 0.6798933918277422,
+        "validation_mean_pair_f1": 0.32402991273959014
+      },
+      {
+        "epoch": 7,
+        "mean_train_loss": 0.4773873632274023,
+        "validation_mean_loss": 0.7577826455235481,
+        "validation_mean_pair_f1": 0.08051099227569815
+      },
+      {
+        "epoch": 8,
+        "mean_train_loss": 0.3934074589392034,
+        "validation_mean_loss": 0.888328343629837,
+        "validation_mean_pair_f1": 0.11693121693121693
+      },
+      {
+        "epoch": 9,
+        "mean_train_loss": 0.3288319505205968,
+        "validation_mean_loss": 0.9028691003719965,
+        "validation_mean_pair_f1": 0.09037299130178388
+      },
+      {
+        "epoch": 10,
+        "mean_train_loss": 0.31056597656229645,
+        "validation_mean_loss": 1.042949065566063,
+        "validation_mean_pair_f1": 0.07063492063492063
+      },
+      {
+        "epoch": 11,
+        "mean_train_loss": 0.2490675985449698,
+        "validation_mean_loss": 1.0933170119921367,
+        "validation_mean_pair_f1": 0.2421626984126984
+      },
+      {
+        "epoch": 12,
+        "mean_train_loss": 0.23904941935183072,
+        "validation_mean_loss": 1.0765886555115383,
+        "validation_mean_pair_f1": 0.10305509763714098
+      },
+      {
+        "epoch": 13,
+        "mean_train_loss": 0.1506912605155532,
+        "validation_mean_loss": 1.259680983920892,
+        "validation_mean_pair_f1": 0.2294413142036232
+      },
+      {
+        "epoch": 14,
+        "mean_train_loss": 0.12077491898543952,
+        "validation_mean_loss": 1.4052926326791446,
+        "validation_mean_pair_f1": 0.03837719298245614
+      },
+      {
+        "epoch": 15,
+        "mean_train_loss": 0.09112891691123567,
+        "validation_mean_loss": 1.4879408776760101,
+        "validation_mean_pair_f1": 0.08730396065922381
+      },
+      {
+        "epoch": 16,
+        "mean_train_loss": 0.07706451217257758,
+        "validation_mean_loss": 1.5716555416584015,
+        "validation_mean_pair_f1": 0.016666666666666666
+      },
+      {
+        "epoch": 17,
+        "mean_train_loss": 0.044513929692074294,
+        "validation_mean_loss": 1.8210014253854752,
+        "validation_mean_pair_f1": 0.05726495726495726
+      },
+      {
+        "epoch": 18,
+        "mean_train_loss": 0.03767361888298538,
+        "validation_mean_loss": 1.8436686197916667,
+        "validation_mean_pair_f1": 0.08493589743589743
+      },
+      {
+        "epoch": 19,
+        "mean_train_loss": 0.03552308366009284,
+        "validation_mean_loss": 1.824921503663063,
+        "validation_mean_pair_f1": 0.09027777777777779
+      },
+      {
+        "epoch": 20,
+        "mean_train_loss": 0.02703399888648674,
+        "validation_mean_loss": 2.058044657111168,
+        "validation_mean_pair_f1": 0.011111111111111112
+      }
+    ],
+    "wall_seconds": 0.7518720020000274,
+    "initial_checkpoint": "/home/zyliu/Documents/rna-stable-ai/results/experimental_pilot_runs/20261006T010347.964097Z/initial_model.pt",
+    "initial_sha256": "f95fd6d3c6644a68161480846f9e0f4d88b43fdc41dd682e1c0d6bc5e4228196",
+    "best_checkpoint": "/home/zyliu/Documents/rna-stable-ai/results/experimental_pilot_runs/20261006T010347.964097Z/best_model.pt",
+    "best_sha256": "af9fe8e0fab1634a912fa480da73320e9c0c02e1003c2ab3df3285614033e1cc",
+    "parameters": 10979,
+    "limitations": [
+      "Local three-state labels and a greedy decoder are a simple baseline, not a global pair model.",
+      "Decoder permits AU/GC/GU pairs and at least three enclosed nucleotides; processed references may contain other contacts.",
+      "Short processed PDB records do not establish long-RNA accuracy or biological stability.",
+      "One seed and one fixed hyperparameter configuration; validation-selecting checkpoints can overfit a small validation set."
+    ]
+  },
+  "aggregates": [
+    {
+      "method": "LinearFold",
+      "reference_kind": "experimental",
+      "planned_inputs": 16,
+      "measured_inputs": 16,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 16
+      },
+      "mean_pair_precision": 0.9394604925303455,
+      "mean_pair_recall": 0.9549445346320347,
+      "mean_pair_f1": 0.9437729912383568
+    },
+    {
+      "method": "ViennaRNA",
+      "reference_kind": "experimental",
+      "planned_inputs": 16,
+      "measured_inputs": 16,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 16
+      },
+      "mean_pair_precision": 0.9394604925303455,
+      "mean_pair_recall": 0.9549445346320347,
+      "mean_pair_f1": 0.9437729912383568
+    },
+    {
+      "method": "all_unpaired",
+      "reference_kind": "experimental",
+      "planned_inputs": 16,
+      "measured_inputs": 16,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 16
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "method": "trained_cnn",
+      "reference_kind": "experimental",
+      "planned_inputs": 16,
+      "measured_inputs": 16,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 16
+      },
+      "mean_pair_precision": 0.08333333333333333,
+      "mean_pair_recall": 0.057291666666666664,
+      "mean_pair_f1": 0.06746031746031746
+    },
+    {
+      "method": "untrained_cnn",
+      "reference_kind": "experimental",
+      "planned_inputs": 16,
+      "measured_inputs": 16,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 16
+      },
+      "mean_pair_precision": 0.025,
+      "mean_pair_recall": 0.008928571428571428,
+      "mean_pair_f1": 0.013157894736842105
+    }
+  ],
+  "evaluation_summary": "/home/zyliu/Documents/rna-stable-ai/results/experimental_pilot_runs/20261006T010347.964097Z/results/reference_evaluation_summary.json",
+  "evaluation_summary_sha256": "47d270fb61c21e69528e022c91febc3886915504a22906c20660be755bd9bafe",
+  "fold_results_sha256": "19339d6b20bda5ca3f3b3bbcb732516917a89f5855ce665941f0e037fc1e9d8d",
+  "prediction_sha256": "ba59f4e96a53f1bf7a571ff37a25e2c3880d8f5f9c8a089ea2368f8220433afd",
+  "limitations": [
+    "Processed PDB-derived annotations, not raw experimental pair measurements; sequence heuristic does not establish RNA-family independence.",
+    "Local three-state labels and a greedy decoder are a simple baseline, not a global pair model.",
+    "Decoder permits AU/GC/GU pairs and at least three enclosed nucleotides; processed references may contain other contacts.",
+    "Short processed PDB records do not establish long-RNA accuracy or biological stability.",
+    "One seed and one fixed hyperparameter configuration; validation-selecting checkpoints can overfit a small validation set.",
+    "Experimental-derived annotation comparison is not a biological stability measurement."
+  ]
+}

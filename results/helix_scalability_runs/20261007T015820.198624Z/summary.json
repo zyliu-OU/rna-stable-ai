@@ -1,0 +1,68 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/helix_scalability_runs/20261007T015820.198624Z",
+  "test_evaluated": false,
+  "accuracy_evaluated": false,
+  "purpose": "synthetic_helix_head_resource_benchmark_with_substituted_approximate_decoders",
+  "manifest_sha256": "da08957eb6dd7c898de0bd4a77b34005cc6386969204c7d374f54f5040d9e7b9",
+  "predictions_sha256": "73d8accf1e0b89deff39cc197a7521ceba785a8b0b98800d3c2a2ecce50eb2b0",
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/helix_scalability_runs/20261007T015820.198624Z/exposures/20261007T015820.199455Z.json",
+    "sha256": "5fe78f9b63c5eaf15320e9a2d432d81d54314395caf5f838c73d6c778f4ce614",
+    "stage": "validation_started"
+  },
+  "rows": [
+    {
+      "id": "synthetic_1000",
+      "length": 1000,
+      "top_k": 16,
+      "block_size": 64,
+      "peak_score_tile_elements": 64000,
+      "candidate_array_bytes": 248976,
+      "candidate_count": 15561,
+      "pair_context_feature_tile_elements": 512000,
+      "scoring_wall_seconds": 0.12758648699991681,
+      "greedy_wall_seconds": 0.044814970000061294,
+      "refinement_wall_seconds": 0.44210079799995583,
+      "candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/helix_scalability_runs/20261007T015820.198624Z/synthetic_1000_candidates.npz",
+      "candidate_sha256": "3860646861a440e5e351357e5d1eeb866492a8bfdd168445ced526a2a6d77b6f"
+    },
+    {
+      "id": "synthetic_5000",
+      "length": 5000,
+      "top_k": 16,
+      "block_size": 64,
+      "peak_score_tile_elements": 320000,
+      "candidate_array_bytes": 1271536,
+      "candidate_count": 79471,
+      "pair_context_feature_tile_elements": 2560000,
+      "scoring_wall_seconds": 2.2443645489997834,
+      "greedy_wall_seconds": 0.2650698970001031,
+      "refinement_wall_seconds": 2.770784426999853,
+      "candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/helix_scalability_runs/20261007T015820.198624Z/synthetic_5000_candidates.npz",
+      "candidate_sha256": "137cd86f25e67ed5f9a34a5f96a75c9be72cb3e29a5d6886a73f6b5ce672e587"
+    },
+    {
+      "id": "synthetic_10000",
+      "length": 10000,
+      "top_k": 16,
+      "block_size": 64,
+      "peak_score_tile_elements": 640000,
+      "candidate_array_bytes": 2553168,
+      "candidate_count": 159573,
+      "pair_context_feature_tile_elements": 5120000,
+      "scoring_wall_seconds": 9.075353715999881,
+      "greedy_wall_seconds": 0.5954620249999607,
+      "refinement_wall_seconds": 6.48326310199991,
+      "candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/helix_scalability_runs/20261007T015820.198624Z/synthetic_10000_candidates.npz",
+      "candidate_sha256": "a7f81bbe1cc488812600b0192b8eb5c472ab173585a359677910a8640093be16"
+    }
+  ],
+  "process_peak_rss_kib": 660240,
+  "limitations": [
+    "Quadratic all-distance scoring; sorting adds work, bounded tile/candidate storage.",
+    "Feature tile elements/retained arrays exclude other transient tensors; cumulative process RSS includesTorch.",
+    "One observation per length; decoder substitution for synthetic resource use only.",
+    "No speedup, long labelled accuracy, independent generalization or stability claim."
+  ]
+}

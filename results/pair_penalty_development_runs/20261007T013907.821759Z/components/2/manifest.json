@@ -1,0 +1,44 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_penalty_development_runs/20261007T013907.821759Z/components/2",
+  "source_summary_sha256": "a0c7aea76d49e5309b1bf4ce7bcf7d471c4b64b29f477a5dbd235ea1cf899e27",
+  "checkpoint": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261006_helix/best_context_model.pt",
+  "checkpoint_sha256": "1dba0f5983a796aad996c5d71b77b282c8eec7b7497dae610f226f39aff4050d",
+  "validation_sha256": "bea47dac135ef17e9bc213d563fbda8f8934769bc080d111bdf1a5906a892746",
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse",
+    "pair_features": "local_helix_context_v1"
+  },
+  "penalties": [
+    0,
+    0.5,
+    1,
+    2,
+    4
+  ],
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/pair_penalty_development_runs/20261007T013907.821759Z/components/2/exposures/20261007T013910.553237Z.json",
+    "sha256": "330dd43fe2fd59414112966370ff1233cd3e25c830dcd0b42771826a85d78359",
+    "stage": "validation_started"
+  },
+  "source_search_seed": 20261006,
+  "head": "helix",
+  "policy": "Frozen checkpoint selected at zero penalty; posthoc nonnegative decoder penalties on the same exposed development validation. No fitting or fresh test."
+}

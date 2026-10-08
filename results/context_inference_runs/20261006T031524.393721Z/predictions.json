@@ -1,0 +1,17 @@
+[
+  {
+    "id": "synthetic_inference_demo",
+    "sequence": "GGGAAACCCGGGAAACCC",
+    "structure": "(((...)))(((...)))",
+    "objective": 14.330078125,
+    "accepted_pairs": 6,
+    "dp_array_bytes": 3888,
+    "interpretation": "Exact maximum summed positive logits over retained candidates, not unrestricted pairs or maximum reference agreement. O(n*m) work and O(n\u00b2) storage; bounded to1024 nt/64 candidates per right endpoint.",
+    "top_k": 16,
+    "block_size": 64,
+    "peak_score_tile_elements": 324,
+    "candidate_array_bytes": 480,
+    "candidate_count": 30,
+    "wall_seconds": 0.0031820299991522916
+  }
+]

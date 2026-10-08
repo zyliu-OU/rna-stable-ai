@@ -1,0 +1,372 @@
+{
+  "schema_version": 1,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_reference_extension_runs/20261007T012318.389726Z",
+  "config": {
+    "beam_size": 100,
+    "deadline_utc": "2026-10-07T04:00:00+00:00",
+    "input_indices": [
+      2
+    ],
+    "memory_limit_gib": 4,
+    "planned_requests": 12,
+    "seeds": [
+      20261006,
+      20261007
+    ],
+    "temperature_c": 37,
+    "timeout_seconds": 300
+  },
+  "source_summary_sha256": "200131fd1c3a18758be67bc5b2bfbe302c35b272a785d075bc520b5fa9e1726f",
+  "arms": [
+    {
+      "key": "20261006_random_pool",
+      "seed": 20261006,
+      "policy": "random_pool",
+      "source_summary": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T010429.831742Z/summary.json",
+      "source_summary_sha256": "a5557fea2b994fce11ddaf4b118629ecb8c24f1a702ff509c96ee3ddd7f4f830",
+      "source_config": {
+        "seed": 20261006,
+        "steps": 8,
+        "pool_size": 16,
+        "max_mutations": 16,
+        "beam_size": 100,
+        "timeout_seconds": 30,
+        "finalist_timeout_seconds": 30,
+        "memory_limit_gib": 4,
+        "min_improvement_kcal_mol": 0.1,
+        "temperature_c": 37,
+        "preserve_protein": false,
+        "protected_positions": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_search_status": "completed",
+      "source_row": {
+        "policy": "random_pool",
+        "planned_proposal_folds": 8,
+        "attempted_proposal_folds": 8,
+        "successful_proposal_folds": 8,
+        "pool_candidates": 128,
+        "proxy_evaluations": 0,
+        "accepted_steps": 4,
+        "search_status": "completed",
+        "linearfold_delta_kcal_mol": -14.300000000000182,
+        "selection_source": "input",
+        "selection_reason": "validation_failed",
+        "candidate_vienna_delta_kcal_mol": null,
+        "selected_vienna_delta_kcal_mol": null,
+        "selected_mutations": 0,
+        "proxy_wall_seconds": 0.07618471699993279
+      },
+      "input_sha256": "635bbaa217c4f81dc510e70acd4d8f995513c51f9e7dc354c5349e27e5efdfa4",
+      "finalist_sha256": "ae1e7f549546007abbf05bd53a19b428c4627536dd9f295dc74f41a2ae47050f"
+    },
+    {
+      "key": "20261006_compatibility_only",
+      "seed": 20261006,
+      "policy": "compatibility_only",
+      "source_summary": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T010429.831742Z/summary.json",
+      "source_summary_sha256": "a5557fea2b994fce11ddaf4b118629ecb8c24f1a702ff509c96ee3ddd7f4f830",
+      "source_config": {
+        "seed": 20261006,
+        "steps": 8,
+        "pool_size": 16,
+        "max_mutations": 16,
+        "beam_size": 100,
+        "timeout_seconds": 30,
+        "finalist_timeout_seconds": 30,
+        "memory_limit_gib": 4,
+        "min_improvement_kcal_mol": 0.1,
+        "temperature_c": 37,
+        "preserve_protein": false,
+        "protected_positions": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_search_status": "completed",
+      "source_row": {
+        "policy": "compatibility_only",
+        "planned_proposal_folds": 8,
+        "attempted_proposal_folds": 8,
+        "successful_proposal_folds": 8,
+        "pool_candidates": 128,
+        "proxy_evaluations": 0,
+        "accepted_steps": 6,
+        "search_status": "completed",
+        "linearfold_delta_kcal_mol": -49.70000000000027,
+        "selection_source": "input",
+        "selection_reason": "validation_failed",
+        "candidate_vienna_delta_kcal_mol": null,
+        "selected_vienna_delta_kcal_mol": null,
+        "selected_mutations": 0,
+        "proxy_wall_seconds": 0.07950649799988696
+      },
+      "input_sha256": "635bbaa217c4f81dc510e70acd4d8f995513c51f9e7dc354c5349e27e5efdfa4",
+      "finalist_sha256": "e488b41078961e5d61a84880038014b8e9e58f34587af7f351c5f98d86fc668c"
+    },
+    {
+      "key": "20261006_checkpoint_prior",
+      "seed": 20261006,
+      "policy": "checkpoint_prior",
+      "source_summary": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T010429.831742Z/summary.json",
+      "source_summary_sha256": "a5557fea2b994fce11ddaf4b118629ecb8c24f1a702ff509c96ee3ddd7f4f830",
+      "source_config": {
+        "seed": 20261006,
+        "steps": 8,
+        "pool_size": 16,
+        "max_mutations": 16,
+        "beam_size": 100,
+        "timeout_seconds": 30,
+        "finalist_timeout_seconds": 30,
+        "memory_limit_gib": 4,
+        "min_improvement_kcal_mol": 0.1,
+        "temperature_c": 37,
+        "preserve_protein": false,
+        "protected_positions": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_search_status": "completed",
+      "source_row": {
+        "policy": "checkpoint_prior",
+        "planned_proposal_folds": 8,
+        "attempted_proposal_folds": 8,
+        "successful_proposal_folds": 8,
+        "pool_candidates": 128,
+        "proxy_evaluations": 128,
+        "accepted_steps": 4,
+        "search_status": "completed",
+        "linearfold_delta_kcal_mol": -36.0,
+        "selection_source": "input",
+        "selection_reason": "validation_failed",
+        "candidate_vienna_delta_kcal_mol": null,
+        "selected_vienna_delta_kcal_mol": null,
+        "selected_mutations": 0,
+        "proxy_wall_seconds": 2.91206109999996
+      },
+      "input_sha256": "635bbaa217c4f81dc510e70acd4d8f995513c51f9e7dc354c5349e27e5efdfa4",
+      "finalist_sha256": "bb43170efc51cae604aa5a95b813355b8aab4297fea113df5bb3015797e7a75d"
+    },
+    {
+      "key": "20261007_random_pool",
+      "seed": 20261007,
+      "policy": "random_pool",
+      "source_summary": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T010937.627482Z/summary.json",
+      "source_summary_sha256": "7325093c5c98aad960e7631a71fd80dcc6280405ca252debb07a823652607b59",
+      "source_config": {
+        "seed": 20261007,
+        "steps": 8,
+        "pool_size": 16,
+        "max_mutations": 16,
+        "beam_size": 100,
+        "timeout_seconds": 30,
+        "finalist_timeout_seconds": 30,
+        "memory_limit_gib": 4,
+        "min_improvement_kcal_mol": 0.1,
+        "temperature_c": 37,
+        "preserve_protein": false,
+        "protected_positions": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_search_status": "completed",
+      "source_row": {
+        "policy": "random_pool",
+        "planned_proposal_folds": 8,
+        "attempted_proposal_folds": 8,
+        "successful_proposal_folds": 8,
+        "pool_candidates": 128,
+        "proxy_evaluations": 0,
+        "accepted_steps": 4,
+        "search_status": "completed",
+        "linearfold_delta_kcal_mol": -20.300000000000182,
+        "selection_source": "input",
+        "selection_reason": "validation_failed",
+        "candidate_vienna_delta_kcal_mol": null,
+        "selected_vienna_delta_kcal_mol": null,
+        "selected_mutations": 0,
+        "proxy_wall_seconds": 0.0737057549997644
+      },
+      "input_sha256": "635bbaa217c4f81dc510e70acd4d8f995513c51f9e7dc354c5349e27e5efdfa4",
+      "finalist_sha256": "765fa96ad75bcd3fe42ae15bcc5a67dedb04e3c79e2f37f680b14404f925da26"
+    },
+    {
+      "key": "20261007_compatibility_only",
+      "seed": 20261007,
+      "policy": "compatibility_only",
+      "source_summary": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T010937.627482Z/summary.json",
+      "source_summary_sha256": "7325093c5c98aad960e7631a71fd80dcc6280405ca252debb07a823652607b59",
+      "source_config": {
+        "seed": 20261007,
+        "steps": 8,
+        "pool_size": 16,
+        "max_mutations": 16,
+        "beam_size": 100,
+        "timeout_seconds": 30,
+        "finalist_timeout_seconds": 30,
+        "memory_limit_gib": 4,
+        "min_improvement_kcal_mol": 0.1,
+        "temperature_c": 37,
+        "preserve_protein": false,
+        "protected_positions": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_search_status": "completed",
+      "source_row": {
+        "policy": "compatibility_only",
+        "planned_proposal_folds": 8,
+        "attempted_proposal_folds": 8,
+        "successful_proposal_folds": 8,
+        "pool_candidates": 128,
+        "proxy_evaluations": 0,
+        "accepted_steps": 5,
+        "search_status": "completed",
+        "linearfold_delta_kcal_mol": -32.100000000000364,
+        "selection_source": "input",
+        "selection_reason": "validation_failed",
+        "candidate_vienna_delta_kcal_mol": null,
+        "selected_vienna_delta_kcal_mol": null,
+        "selected_mutations": 0,
+        "proxy_wall_seconds": 0.07726222499991309
+      },
+      "input_sha256": "635bbaa217c4f81dc510e70acd4d8f995513c51f9e7dc354c5349e27e5efdfa4",
+      "finalist_sha256": "7467e68ba860613869e0a32dbd25d1383b11589dd9765331831d92776ace80c3"
+    },
+    {
+      "key": "20261007_checkpoint_prior",
+      "seed": 20261007,
+      "policy": "checkpoint_prior",
+      "source_summary": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T010937.627482Z/summary.json",
+      "source_summary_sha256": "7325093c5c98aad960e7631a71fd80dcc6280405ca252debb07a823652607b59",
+      "source_config": {
+        "seed": 20261007,
+        "steps": 8,
+        "pool_size": 16,
+        "max_mutations": 16,
+        "beam_size": 100,
+        "timeout_seconds": 30,
+        "finalist_timeout_seconds": 30,
+        "memory_limit_gib": 4,
+        "min_improvement_kcal_mol": 0.1,
+        "temperature_c": 37,
+        "preserve_protein": false,
+        "protected_positions": [
+          1,
+          2,
+          3
+        ]
+      },
+      "source_search_status": "completed",
+      "source_row": {
+        "policy": "checkpoint_prior",
+        "planned_proposal_folds": 8,
+        "attempted_proposal_folds": 8,
+        "successful_proposal_folds": 8,
+        "pool_candidates": 128,
+        "proxy_evaluations": 128,
+        "accepted_steps": 5,
+        "search_status": "completed",
+        "linearfold_delta_kcal_mol": -35.5,
+        "selection_source": "input",
+        "selection_reason": "validation_failed",
+        "candidate_vienna_delta_kcal_mol": null,
+        "selected_vienna_delta_kcal_mol": null,
+        "selected_mutations": 0,
+        "proxy_wall_seconds": 2.752757035999821
+      },
+      "input_sha256": "635bbaa217c4f81dc510e70acd4d8f995513c51f9e7dc354c5349e27e5efdfa4",
+      "finalist_sha256": "2c4675e9df263173d2738e3683d0f81a73bda9ee360334ababa29832b62b5a5b"
+    }
+  ],
+  "native_runtime": {
+    "commands": {
+      "ViennaRNA": {
+        "command": [
+          "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+          "-m",
+          "rnastable.vienna_worker",
+          "37"
+        ],
+        "cwd": null
+      },
+      "LinearFold": {
+        "command": [
+          "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+          "/home/zyliu/Documents/rna-stable-ai/external/LinearFold/linearfold",
+          "-V",
+          "-b",
+          "100"
+        ],
+        "cwd": "/home/zyliu/Documents/rna-stable-ai/external/LinearFold"
+      },
+      "LinearPartition": {
+        "command": [
+          "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+          "/home/zyliu/Documents/rna-stable-ai/external/LinearPartition/linearpartition",
+          "-V",
+          "-b",
+          "100",
+          "-p"
+        ],
+        "cwd": "/home/zyliu/Documents/rna-stable-ai/external/LinearPartition"
+      }
+    },
+    "file_sha256": {
+      "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python": "8f9781a98200d9ecda7e00464e4c64b1327abae788ae8e6979d5c859311410c7",
+      "/home/zyliu/Documents/rna-stable-ai/external/LinearFold/linearfold": "f66178adaf122708d64f556fdae5c45e0757b2d6faab07a894b83607c4962ed3",
+      "/home/zyliu/Documents/rna-stable-ai/external/LinearFold/bin/linearfold_c": "d225e86a3c1178f6463258ffc4a0b8213a6c3a8a28167b6d6f83ab2cf19bd28e",
+      "/home/zyliu/Documents/rna-stable-ai/external/LinearFold/bin/linearfold_v": "5a6f8924d15b27058d89ec85cde41c890c68b43cd9d319828d273c8da2e797eb",
+      "/home/zyliu/Documents/rna-stable-ai/external/LinearPartition/linearpartition": "850ef5f778fda1275dabc1f561be11563a2334ceff956fb538f2f24b22633e87",
+      "/home/zyliu/Documents/rna-stable-ai/external/LinearPartition/bin/linearpartition_c": "c1d5c9f1e90ca07d80aa7cd33357150d80394c96ef2fe3fb8911828fc83a5c36",
+      "/home/zyliu/Documents/rna-stable-ai/external/LinearPartition/bin/linearpartition_v": "bf3b8711137d59e610ada333233c711312425d511156bbeaa59a2629735ca6ac",
+      "/home/zyliu/Documents/rna-stable-ai/.venv/lib/python3.12/site-packages/RNA/_RNA.cpython-312-x86_64-linux-gnu.so": "47054f460ff56808589f4592d4e4781c33bbc8dc5414071d11111432f54e41cf"
+    }
+  },
+  "snapshot_sha256": {
+    "arms/20261006_checkpoint_prior/finalist.fasta": "1ee8c5a98feef26f76e9b4a2a66070613a435466320593a1c6c1400dd810c601",
+    "arms/20261006_checkpoint_prior/input.fasta": "ac8164b89af62cc32a5f42bd37e3546c6f96fa25528d78fca70a3365ea900035",
+    "arms/20261006_compatibility_only/finalist.fasta": "f4af0f41a582718594bd66176e474da87188de642bd2f33c0440d78ece9d4f42",
+    "arms/20261006_compatibility_only/input.fasta": "12c51127415a0cd392b0371a09094a9f90e6a27eb5d1fc11959f3cb268acd82d",
+    "arms/20261006_random_pool/finalist.fasta": "5f46347127c290751b0f5c408b88ba2713d2c8ea2389d0e8ce9ed842a7762a0b",
+    "arms/20261006_random_pool/input.fasta": "4cb2da7a3c5c0fc4256995910f9eb0dcfc6d6b1732f0d00dff48a0f333eec972",
+    "arms/20261007_checkpoint_prior/finalist.fasta": "e52905caa027d30d378af99ac37de5e7722d3edf40c99152c0160e40377a32dd",
+    "arms/20261007_checkpoint_prior/input.fasta": "6c2409634b04aade9273f3259a26bcba8c3c46b06115e28fd841f145a49ecd70",
+    "arms/20261007_compatibility_only/finalist.fasta": "b441588dfb98cd8dd3c77f025fea5351ae76703dc6d372d93734331fb7fb5335",
+    "arms/20261007_compatibility_only/input.fasta": "351ab2769dddcf64f130bc03dd20db8c7934e7b92fb31e368a76b62a509f11b0",
+    "arms/20261007_random_pool/finalist.fasta": "7336f50deda6dc313b5b7b9949f576af6a00345ed0485b22292497f79338469f",
+    "arms/20261007_random_pool/input.fasta": "b232f564fc47964d34910b0aaa0375c7b4d6b448c2eaf8f2158bfa7dd7ed2067"
+  },
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/run_checkpoint_prior_reference_extension.py": "7c193e40c4136fc765b6b4310d80f4a1a86c22481e5c7ddd8b9589fe8d41a1d7",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reference_extension.py": "44a6f42d3f8fcdfda9a46f5a42135e3bf2bc35f50a536f5dba08593797f0aa7c",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/native_journal.py": "65c9982c33f6693cf275d8b902b6baa1667a7f0caa35659a74bf11ce72da84bc",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/folding.py": "6b166164dc7e5ef915484409a643fec2059819c319650afd415b0e74afa9297b",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/vienna_worker.py": "7fc1dfd16b2bbc658de0f4af8afa794a32098a9e387a727733c59ab8457a8373",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/pooled_native.py": "cd48a1090ec8c60ee32957f2883d7728e452e8b49c8aefdc47efeb0214363622",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/selection.py": "cf2eadcc5dcb3a829cb2460b6898edae68a2ade1c8ac8bffe64cc1511aba37fd",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/optimization.py": "988543f0686bf4ea4e67f7f6c6b8a101a61c99809571468aa7953ae346a3e869",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reference.py": "34bf934880947040d56aa8fa51f60967b209c7c7537dc181ac59b94623051d75",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reference_audit.py": "32ec3497b19fe3632a8d3080dd49a673f1d7940fa4ccd19c46eeb9976f370866",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/exposures.py": "ad12875d0ee29f8cf5def848758cea76dc0356b16c88eb892c7df96aa8c98adc",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/scoring.py": "aefa252f8765861a15e7265fd69c716c598ff3e3d1925c71e0564e9ef9baf349",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sequences.py": "3e970de56b2b6d38ae6fbe276032a51fe570ac2bc4d84288e49cb1a32e335960",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/artifacts.py": "d06ab133f8b31dfd7831ec05b94d7be8ed31b678db969a0120a12f0e6e3f7a09"
+  },
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_reference_extension_runs/20261007T012318.389726Z/exposures/20261007T012318.409510Z.json",
+    "sha256": "e1758ff36980a98df0a42cfa2d55fc4d060aae96f216fdb2a6b6b2adb670767d",
+    "stage": "validation_started"
+  },
+  "policy": "Frozen exposed synthetic finalists, separate longer native validation budget. No new search, model fitting, accuracy labels, test-set or biological stability claim."
+}

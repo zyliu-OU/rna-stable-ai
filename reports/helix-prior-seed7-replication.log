@@ -1,0 +1,12 @@
+Queued model-seed20261007 replication after serial study /home/zyliu/Documents/rna-stable-ai/results/helix_prior_replication_runs/20261007T015942.325358Z
+Helix replica 1/6: {'input_index': 0, 'seed': 20261006}
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+Helix replica 2/6: {'input_index': 0, 'seed': 20261007}
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+Helix replica 3/6: {'input_index': 1, 'seed': 20261006}
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+Helix replica 4/6: {'input_index': 1, 'seed': 20261007}
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+Helix replica 5/6: {'input_index': 2, 'seed': 20261006}
+Checkpoint-prior audit passed:3 exact constrained trajectories, 33 native requests, pool/checkpoint logits, selections, exposures and budget denominators verified. No accuracy test or fitting.
+Helix replica 6/6: {'input_index': 2, 'seed': 20261007}

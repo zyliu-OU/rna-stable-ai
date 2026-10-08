@@ -1,0 +1,353 @@
+Pool search random_pool: native step0/8
+Pool search random_pool: native step1/8
+Pool search random_pool: native step2/8
+Pool search random_pool: native step3/8
+Pool search random_pool: native step4/8
+Pool search random_pool: native step5/8
+Pool search random_pool: native step6/8
+Pool search random_pool: native step7/8
+Pool search random_pool: native step8/8
+Pool search compatibility_only: native step0/8
+Pool search compatibility_only: native step1/8
+Pool search compatibility_only: native step2/8
+Pool search compatibility_only: native step3/8
+Pool search compatibility_only: native step4/8
+Pool search compatibility_only: native step5/8
+Pool search compatibility_only: native step6/8
+Pool search compatibility_only: native step7/8
+Pool search compatibility_only: native step8/8
+Pool search checkpoint_prior: native step0/8
+Pool search checkpoint_prior: native step1/8
+Pool search checkpoint_prior: native step2/8
+Pool search checkpoint_prior: native step3/8
+Pool search checkpoint_prior: native step4/8
+Pool search checkpoint_prior: native step5/8
+Pool search checkpoint_prior: native step6/8
+Pool search checkpoint_prior: native step7/8
+Pool search checkpoint_prior: native step8/8
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z",
+  "test_accuracy_evaluated": false,
+  "model_fitted": false,
+  "manifest_sha256": "0bcf1c8074d023c289ce7529f4bee27042036017a0d4e5743b8fa377cd914b4f",
+  "artifact_sha256": {
+    "folds.json": "0f66569e720a755687b53db63d2250c1d788d5bfaf5259240218b3a5dc5e8e5e",
+    "random_pool/result.json": "e55fc4487648eec5104adae183ab05ea31e34e676df394b22ca843a6da024946",
+    "compatibility_only/result.json": "236a3fb1cdd572647963366e9a3579c6c3467b6a4fa57d3b63665beae8cca0aa",
+    "checkpoint_prior/result.json": "06b56135bbb3c968d7ab00065201f36617a3bda42d2bb794fa186c6e8333d1a8",
+    "random_pool/finalist.fasta": "538f4afc0be276099269a0458c57e81bf699faf6444eaa231879709b77a1688d",
+    "random_pool/selected.fasta": "9366105de5774eb1c4a02189235fde0766bbc15465c66467f88abc6ac8b4263a",
+    "compatibility_only/finalist.fasta": "79b888953be80e643fc1a415079f5c026aaf450f44fae493296ace34ff738125",
+    "compatibility_only/selected.fasta": "f52a2dd341f81195cdcd8e8b1d16654c2f99cd341f1f679f9175f9621abed463",
+    "checkpoint_prior/finalist.fasta": "6f8a317e8ddaa6bb848acad744c47981f185599ff88922a5ce3afeb39dbe8868",
+    "checkpoint_prior/selected.fasta": "c24ad558c3cd2d3da2df0ecbaebe2b1906ec9971c87753ebbc87b97d6276fe58"
+  },
+  "exposure_events": [
+    {
+      "policy": "all",
+      "step": 0,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035130.459161Z.json",
+        "sha256": "b7cb652d024bd2f79f5692d5370486ee1b8bef447f78d0159ed21f3ee3664245",
+        "stage": "validation_started"
+      }
+    },
+    {
+      "policy": "random_pool",
+      "step": 1,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035130.857498Z.json",
+        "sha256": "ff57979b49adb9841e9b006e3609577ed6d71db0b36cb31ec085a46919de869e",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "random_pool",
+      "step": 2,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035131.262444Z.json",
+        "sha256": "b97b7505f21e2e785b605516806f78c43d7466e8e803df930f1b867c02499268",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "random_pool",
+      "step": 3,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035131.666256Z.json",
+        "sha256": "40df2e19c0695a6491faa5f22dcd0dcdcefc5eaedd1966337822d2a0f015a242",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "random_pool",
+      "step": 4,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035132.069491Z.json",
+        "sha256": "2fea08f859eab97c56d66fabc89f3cfb1d46967b3abdd1fb785b6006f91af24d",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "random_pool",
+      "step": 5,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035132.474652Z.json",
+        "sha256": "285171870d528c3c84590c2ae91fffa0f7c89fd9216f91af2ed8ce04accab564",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "random_pool",
+      "step": 6,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035132.887521Z.json",
+        "sha256": "585a8e13845c0856a0c6608dbd396877d0d0636a8b8b7621526718e639da7be0",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "random_pool",
+      "step": 7,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035133.295040Z.json",
+        "sha256": "df979b5cae32ccd24361c6d24db74bc779a26ce4f97dec8f3130636cb69a8bc6",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "random_pool",
+      "step": 8,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035133.699254Z.json",
+        "sha256": "5a579290b14dc1d9057c99f9458369beabfb30372afe727c99f03268a1246684",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "compatibility_only",
+      "step": 1,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035135.860604Z.json",
+        "sha256": "ff57979b49adb9841e9b006e3609577ed6d71db0b36cb31ec085a46919de869e",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "compatibility_only",
+      "step": 2,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035136.274599Z.json",
+        "sha256": "f32425ff5a24700d739a6687893282209127924e6c2c1844db56258d0bffd570",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "compatibility_only",
+      "step": 3,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035136.687834Z.json",
+        "sha256": "9f18804a5a8c792b1f6eae93d00d82aa7962d649eeb4f4b7367a616f2e61ff42",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "compatibility_only",
+      "step": 4,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035137.096486Z.json",
+        "sha256": "d25d951c6ea4aae5548ebec149fe6e5d65d3075c8401af77e27ecdc9cd68acb4",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "compatibility_only",
+      "step": 5,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035137.498894Z.json",
+        "sha256": "00130f3a19cc3cdd6be21c465f10d1a4d578045fc5ac1771cc8da59ef88c0c3c",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "compatibility_only",
+      "step": 6,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035137.903026Z.json",
+        "sha256": "6136816a1067d5db8812a77b1e340fc7edaf8f31c816a593321ed05b671580e0",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "compatibility_only",
+      "step": 7,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035138.305560Z.json",
+        "sha256": "cb035864b7a53f1a02b1da6b874fbea511f3b8512caca066b26bc45bcb8fed97",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "compatibility_only",
+      "step": 8,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035138.714249Z.json",
+        "sha256": "6a3454712d6eb68cd65b13a30297c161a1ff924df2117e2c5d147cd49f58ef24",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "checkpoint_prior",
+      "step": 1,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035140.925318Z.json",
+        "sha256": "ff57979b49adb9841e9b006e3609577ed6d71db0b36cb31ec085a46919de869e",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "checkpoint_prior",
+      "step": 2,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035141.369440Z.json",
+        "sha256": "f32425ff5a24700d739a6687893282209127924e6c2c1844db56258d0bffd570",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "checkpoint_prior",
+      "step": 3,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035141.796599Z.json",
+        "sha256": "2d7a00234bf9d0aed2db3a954917cccd755343e993625736d1646159af0b8e6e",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "checkpoint_prior",
+      "step": 4,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035142.221810Z.json",
+        "sha256": "5e13b999b105d0a05c6628b045ec96fc25a5ac1d25f441553e9768c044b32b0b",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "checkpoint_prior",
+      "step": 5,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035142.649325Z.json",
+        "sha256": "1cfa3c8b0487288b50f8468e0b6510d7829edccd7b77bf3cfbabc3dca3dc8338",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "checkpoint_prior",
+      "step": 6,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035143.076412Z.json",
+        "sha256": "9da30e150d291f92836dbc10a8922cff7b9885c814d2e1940a99d7427e32e9f5",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "checkpoint_prior",
+      "step": 7,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035143.512554Z.json",
+        "sha256": "2a1538f09d30c73b0ab24e783b5ebc6f096e69b8ce23614498264d712f75f18c",
+        "stage": "test_started"
+      }
+    },
+    {
+      "policy": "checkpoint_prior",
+      "step": 8,
+      "event": {
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/exposures/20261006T035143.939261Z.json",
+        "sha256": "de96697a72753d5b5ba4ac82b110dba4263520b3d477e84f9ee5c43249eebfc4",
+        "stage": "test_started"
+      }
+    }
+  ],
+  "rows": [
+    {
+      "policy": "random_pool",
+      "planned_proposal_folds": 8,
+      "attempted_proposal_folds": 8,
+      "successful_proposal_folds": 8,
+      "pool_candidates": 128,
+      "proxy_evaluations": 0,
+      "accepted_steps": 6,
+      "search_status": "completed",
+      "linearfold_delta_kcal_mol": -15.299999999999955,
+      "selection_source": "finalist",
+      "selection_reason": "confirmed_improvement",
+      "candidate_vienna_delta_kcal_mol": -11.0,
+      "selected_vienna_delta_kcal_mol": -11.0,
+      "selected_mutations": 12,
+      "proxy_wall_seconds": 0.008867106002071523
+    },
+    {
+      "policy": "compatibility_only",
+      "planned_proposal_folds": 8,
+      "attempted_proposal_folds": 8,
+      "successful_proposal_folds": 8,
+      "pool_candidates": 128,
+      "proxy_evaluations": 0,
+      "accepted_steps": 4,
+      "search_status": "completed",
+      "linearfold_delta_kcal_mol": -12.299999999999955,
+      "selection_source": "finalist",
+      "selection_reason": "confirmed_improvement",
+      "candidate_vienna_delta_kcal_mol": -8.400000000000034,
+      "selected_vienna_delta_kcal_mol": -8.400000000000034,
+      "selected_mutations": 8,
+      "proxy_wall_seconds": 0.009215023001161171
+    },
+    {
+      "policy": "checkpoint_prior",
+      "planned_proposal_folds": 8,
+      "attempted_proposal_folds": 8,
+      "successful_proposal_folds": 8,
+      "pool_candidates": 128,
+      "proxy_evaluations": 128,
+      "accepted_steps": 7,
+      "search_status": "completed",
+      "linearfold_delta_kcal_mol": -22.799999999999955,
+      "selection_source": "finalist",
+      "selection_reason": "confirmed_improvement",
+      "candidate_vienna_delta_kcal_mol": -18.5,
+      "selected_vienna_delta_kcal_mol": -18.5,
+      "selected_mutations": 14,
+      "proxy_wall_seconds": 0.19796696299817995
+    }
+  ],
+  "native_request_counts": {
+    "random_pool": {
+      "baseline": 1,
+      "proposal": 8,
+      "validation_input": 1,
+      "validation_finalist": 1
+    },
+    "compatibility_only": {
+      "baseline": 1,
+      "proposal": 8,
+      "validation_input": 1,
+      "validation_finalist": 1
+    },
+    "checkpoint_prior": {
+      "baseline": 1,
+      "proposal": 8,
+      "validation_input": 1,
+      "validation_finalist": 1
+    }
+  },
+  "equal_native_proposal_budget_measured": true,
+  "limitations": [
+    "One exposed synthetic input/one search seed; no fresh test, generalization or biological stability claim.",
+    "Pair logits are proposal-ranking proxies, not folding energy; native tools decide acceptance/selection.",
+    "Neural arm adds128 potential proxy calls beyond matched native requests; wall/costs are not assumed equal.",
+    "Original-template compatibility is a control/prior, not proof of retained biological function."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "families": {"train": ["RF00001"], "validation": ["RF00169"], "test": ["RF00008"]},
+  "min_length": 20,
+  "max_length": 256,
+  "max_records_per_family": 24,
+  "training": {
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "cpu_threads": 2,
+    "max_length": 256,
+    "decoder_threshold": 0,
+    "mode": "family_disjoint_comparative_trial"
+  },
+  "folding": {"temperature_c": 37, "beam_size": 100, "timeout_seconds": 30, "memory_limit_gib": 4}
+}

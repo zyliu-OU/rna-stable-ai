@@ -1,0 +1,74 @@
+Stack resource scoring: synthetic_1000
+{"id": "synthetic_1000", "length": 1000, "top_k": 16, "block_size": 64, "peak_score_tile_elements": 64000, "candidate_array_bytes": 247712, "candidate_count": 15482, "pair_context_feature_tile_elements": 128000, "scoring_wall_seconds": 0.07311404699976265, "greedy_wall_seconds": 0.04320398100026068, "refinement_wall_seconds": 0.44024118000015733, "candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/stack_scalability_runs/20261006T033347.600122Z/synthetic_1000_candidates.npz", "candidate_sha256": "edf51a433660176af853422d88fef1d5aded7fcb4d74fc2c9c9643d1362ae033"}
+Stack resource scoring: synthetic_5000
+{"id": "synthetic_5000", "length": 5000, "top_k": 16, "block_size": 64, "peak_score_tile_elements": 320000, "candidate_array_bytes": 1268928, "candidate_count": 79308, "pair_context_feature_tile_elements": 640000, "scoring_wall_seconds": 1.279941372000394, "greedy_wall_seconds": 0.20434544799900323, "refinement_wall_seconds": 2.727918951999527, "candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/stack_scalability_runs/20261006T033347.600122Z/synthetic_5000_candidates.npz", "candidate_sha256": "a9b50fb887124b0f175de33f3afcb7ec764466b1aaeaf772763909ab5093eda0"}
+Stack resource scoring: synthetic_10000
+{"id": "synthetic_10000", "length": 10000, "top_k": 16, "block_size": 64, "peak_score_tile_elements": 640000, "candidate_array_bytes": 2551376, "candidate_count": 159461, "pair_context_feature_tile_elements": 1280000, "scoring_wall_seconds": 4.39542672800053, "greedy_wall_seconds": 0.42507994700099516, "refinement_wall_seconds": 6.018859175999751, "candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/stack_scalability_runs/20261006T033347.600122Z/synthetic_10000_candidates.npz", "candidate_sha256": "9f11e6f7ab30dab28d9dbc033f8e1791f24fb7038d5f32d97a0a6e68ccc5291e"}
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/stack_scalability_runs/20261006T033347.600122Z",
+  "test_evaluated": false,
+  "accuracy_evaluated": false,
+  "purpose": "synthetic_stack_head_resource_benchmark_with_substituted_approximate_decoders",
+  "manifest_sha256": "48ecf5bcaf22d9d74ecc5a61ffb9897eb93e72d33d4f501c61e6c77da3d7bfd9",
+  "predictions_sha256": "2eaa4ce9e0db04a98fd876e19a5917590ac6fe8c9f7b240cd826a46cc98238b6",
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/stack_scalability_runs/20261006T033347.600122Z/exposures/20261006T033347.600983Z.json",
+    "sha256": "1525bdd0a101451a388ce8c569ef2563b26e99c8de263a330feb8e578b80c51d",
+    "stage": "validation_started"
+  },
+  "rows": [
+    {
+      "id": "synthetic_1000",
+      "length": 1000,
+      "top_k": 16,
+      "block_size": 64,
+      "peak_score_tile_elements": 64000,
+      "candidate_array_bytes": 247712,
+      "candidate_count": 15482,
+      "pair_context_feature_tile_elements": 128000,
+      "scoring_wall_seconds": 0.07311404699976265,
+      "greedy_wall_seconds": 0.04320398100026068,
+      "refinement_wall_seconds": 0.44024118000015733,
+      "candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/stack_scalability_runs/20261006T033347.600122Z/synthetic_1000_candidates.npz",
+      "candidate_sha256": "edf51a433660176af853422d88fef1d5aded7fcb4d74fc2c9c9643d1362ae033"
+    },
+    {
+      "id": "synthetic_5000",
+      "length": 5000,
+      "top_k": 16,
+      "block_size": 64,
+      "peak_score_tile_elements": 320000,
+      "candidate_array_bytes": 1268928,
+      "candidate_count": 79308,
+      "pair_context_feature_tile_elements": 640000,
+      "scoring_wall_seconds": 1.279941372000394,
+      "greedy_wall_seconds": 0.20434544799900323,
+      "refinement_wall_seconds": 2.727918951999527,
+      "candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/stack_scalability_runs/20261006T033347.600122Z/synthetic_5000_candidates.npz",
+      "candidate_sha256": "a9b50fb887124b0f175de33f3afcb7ec764466b1aaeaf772763909ab5093eda0"
+    },
+    {
+      "id": "synthetic_10000",
+      "length": 10000,
+      "top_k": 16,
+      "block_size": 64,
+      "peak_score_tile_elements": 640000,
+      "candidate_array_bytes": 2551376,
+      "candidate_count": 159461,
+      "pair_context_feature_tile_elements": 1280000,
+      "scoring_wall_seconds": 4.39542672800053,
+      "greedy_wall_seconds": 0.42507994700099516,
+      "refinement_wall_seconds": 6.018859175999751,
+      "candidate_path": "/home/zyliu/Documents/rna-stable-ai/results/stack_scalability_runs/20261006T033347.600122Z/synthetic_10000_candidates.npz",
+      "candidate_sha256": "9f11e6f7ab30dab28d9dbc033f8e1791f24fb7038d5f32d97a0a6e68ccc5291e"
+    }
+  ],
+  "process_peak_rss_kib": 828956,
+  "limitations": [
+    "Quadratic all-distance scoring; sorting adds work, bounded tile/candidate storage.",
+    "Feature tile elements/retained arrays exclude other transient tensors; cumulative process RSS includesTorch.",
+    "One observation per length; decoder substitution for synthetic resource use only.",
+    "No speedup, long labelled accuracy, independent generalization or stability claim."
+  ]
+}

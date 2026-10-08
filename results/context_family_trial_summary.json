@@ -1,0 +1,203 @@
+{
+  "complete": true,
+  "mode": "family_disjoint_comparative_context_trial",
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/context_family_trial_runs/20261006T022922.302415Z",
+  "manifest_sha256": "aedcfa8316a55c311b718a890dc973f370990d2d6e17b020e88889545468597a",
+  "counts": {
+    "train": 24,
+    "validation": 23,
+    "test": 12
+  },
+  "families": {
+    "train": [
+      "RF00001"
+    ],
+    "validation": [
+      "RF00169"
+    ],
+    "test": [
+      "RF00017"
+    ]
+  },
+  "training": {
+    "history": [
+      {
+        "epoch": 1,
+        "mean_train_loss": 1.7891490409771602,
+        "validation_mean_pair_f1": 0.08631590877225469,
+        "mean_validation_loss": 1.686748478723609
+      },
+      {
+        "epoch": 2,
+        "mean_train_loss": 1.7101262907187145,
+        "validation_mean_pair_f1": 0.0646953458949049,
+        "mean_validation_loss": 1.693057215732077
+      },
+      {
+        "epoch": 3,
+        "mean_train_loss": 1.498791034022967,
+        "validation_mean_pair_f1": 0.05671994498958943,
+        "mean_validation_loss": 2.0186206879823105
+      },
+      {
+        "epoch": 4,
+        "mean_train_loss": 1.3466467758019764,
+        "validation_mean_pair_f1": 0.03146181291560027,
+        "mean_validation_loss": 2.05682531128759
+      },
+      {
+        "epoch": 5,
+        "mean_train_loss": 1.2410487532615662,
+        "validation_mean_pair_f1": 0.03394482440690085,
+        "mean_validation_loss": 2.0931210362392925
+      },
+      {
+        "epoch": 6,
+        "mean_train_loss": 1.0894254446029663,
+        "validation_mean_pair_f1": 0.03333237978748867,
+        "mean_validation_loss": 2.609218395274618
+      },
+      {
+        "epoch": 7,
+        "mean_train_loss": 0.935375340282917,
+        "validation_mean_pair_f1": 0.0368243743852779,
+        "mean_validation_loss": 3.2587172985076904
+      },
+      {
+        "epoch": 8,
+        "mean_train_loss": 0.7798939819137255,
+        "validation_mean_pair_f1": 0.05939191766596844,
+        "mean_validation_loss": 3.388381056163622
+      },
+      {
+        "epoch": 9,
+        "mean_train_loss": 0.6297489255666733,
+        "validation_mean_pair_f1": 0.0649773458791584,
+        "mean_validation_loss": 4.275487941244374
+      },
+      {
+        "epoch": 10,
+        "mean_train_loss": 0.5630758677919706,
+        "validation_mean_pair_f1": 0.06466776545733306,
+        "mean_validation_loss": 4.934540727864141
+      }
+    ],
+    "selected_epoch": 1,
+    "selected_validation_pair_f1": 0.08631590877225469,
+    "train_positive_pairs": 736,
+    "train_negative_pairs": 56646,
+    "train_only_positive_weight": 76.96467391304348,
+    "excluded_train_contacts": 0,
+    "excluded_validation_contacts": 0,
+    "parameters": 26097,
+    "encoder_receptive_field_nt": 91,
+    "checkpoint_sha256": {
+      "initial_context_model.pt": "4f5a5f97197feaf2d147c996f4e4c963911474917ac6cfb3263980c9d71d405c",
+      "best_context_model.pt": "9c7b84fcf50e3c1a5d5fc1b038a2e403475299f9289691fe603f5360e174cbeb"
+    }
+  },
+  "test_excluded_reference_contacts": 314,
+  "exposure_events": [
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/context_family_trial_runs/20261006T022922.302415Z/exposures/20261006T022927.885021Z.json",
+      "sha256": "cc80a2d04577183e9ecbf413a651b3a7433baae683fa6ae182a134af4aa9a4c1",
+      "stage": "training_started"
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/context_family_trial_runs/20261006T022922.302415Z/exposures/20261006T022927.900090Z.json",
+      "sha256": "271f39b4acb8f3ed5452b5f4f3bbd8975fda397bdedd9eb5164418694203ff0d",
+      "stage": "validation_started"
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/context_family_trial_runs/20261006T022922.302415Z/exposures/20261006T022945.938277Z.json",
+      "sha256": "63e242bf953b6a2ec66cd9470fdcc6f3ac9700d4cc3ee8da8cc94a0afaf389af",
+      "stage": "test_started"
+    }
+  ],
+  "aggregates": [
+    {
+      "method": "LinearFold",
+      "reference_kind": "computational",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.41200771464519154,
+      "mean_pair_recall": 0.5804518339254415,
+      "mean_pair_f1": 0.47994718111707635
+    },
+    {
+      "method": "ViennaRNA",
+      "reference_kind": "computational",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.4100037126505623,
+      "mean_pair_recall": 0.5789457601154462,
+      "mean_pair_f1": 0.4780596903544601
+    },
+    {
+      "method": "all_unpaired",
+      "reference_kind": "computational",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "method": "trained_context",
+      "reference_kind": "computational",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.0033005189255189255,
+      "mean_pair_recall": 0.004070783405954975,
+      "mean_pair_f1": 0.003643045940328309
+    },
+    {
+      "method": "untrained_context",
+      "reference_kind": "computational",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.004395955661778447,
+      "mean_pair_recall": 0.0051124500726216415,
+      "mean_pair_f1": 0.0047127108236874595
+    }
+  ],
+  "artifact_sha256": {
+    "model/training.json": "a23cf6d6d1872c732b8ed99a9551e961b317ea67f3ecae8e72b33fcb6f1f9755",
+    "test_references.json": "d132d8454edc5c0b611356a2f65d59c962bdfce678a32e53683d318664a56f50",
+    "test_predictions.json": "f0b496ca0314e1c1c5559f73911f8bbe9e64a97691994ba98b107b3fdcfeba91",
+    "folds.json": "7d7f8bd562633e8441fcf6a04cf48a0a11b30a0894e94087b3b7e870c057b5e7",
+    "results/reference_evaluation_summary.json": "bc8e6cd61fa3c231c8a9ac8d3f81f942e8437d4162a4d6c0f5deb7e9495b0300"
+  },
+  "limitations": [
+    "Processed comparative references, not new experimental measurements.",
+    "One family per split; no population-wide family/clan or biological stability claim.",
+    "Legacy tool-training overlap and prior PDB family identities remain unresolved.",
+    "Max pair span128 excludes distant contacts; test lengths290\u2013317 do not establish long-RNA accuracy.",
+    "RF00017 is consumed after this test; no test-driven model/threshold selection."
+  ]
+}
