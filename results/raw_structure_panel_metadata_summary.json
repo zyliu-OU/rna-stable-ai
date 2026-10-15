@@ -1,0 +1,484 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_metadata_runs/20261015T024650.695305Z",
+  "manifest_sha256": "a5bd501593e9fef2f8625aa96de47b877736650cf6ff8251196e64e1b582f444",
+  "metadata_complete": true,
+  "planned_requests": 30,
+  "successful_requests": 30,
+  "screening": {
+    "metadata_candidates": [
+      {
+        "id": "RF00379:4qk8_A",
+        "family_id": "RF00379",
+        "pdb_accession": "4qk8",
+        "chain_id": "A",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4QK8&chain=A&only_nested=False"
+      },
+      {
+        "id": "RF00379:4qk9_A",
+        "family_id": "RF00379",
+        "pdb_accession": "4qk9",
+        "chain_id": "A",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4QK9&chain=A&only_nested=False"
+      },
+      {
+        "id": "RF00379:4qka_A",
+        "family_id": "RF00379",
+        "pdb_accession": "4qka",
+        "chain_id": "A",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4QKA&chain=A&only_nested=False"
+      },
+      {
+        "id": "RF00379:4qlm_A",
+        "family_id": "RF00379",
+        "pdb_accession": "4qlm",
+        "chain_id": "A",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4QLM&chain=A&only_nested=False"
+      },
+      {
+        "id": "RF00379:4qln_A",
+        "family_id": "RF00379",
+        "pdb_accession": "4qln",
+        "chain_id": "A",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4QLN&chain=A&only_nested=False"
+      },
+      {
+        "id": "RF00380:2qbz_X",
+        "family_id": "RF00380",
+        "pdb_accession": "2qbz",
+        "chain_id": "X",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=2QBZ&chain=X&only_nested=False"
+      },
+      {
+        "id": "RF00380:3pdr_A",
+        "family_id": "RF00380",
+        "pdb_accession": "3pdr",
+        "chain_id": "A",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3PDR&chain=A&only_nested=False"
+      },
+      {
+        "id": "RF00380:3pdr_X",
+        "family_id": "RF00380",
+        "pdb_accession": "3pdr",
+        "chain_id": "X",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3PDR&chain=X&only_nested=False"
+      },
+      {
+        "id": "RF00442:5t83_A",
+        "family_id": "RF00442",
+        "pdb_accession": "5t83",
+        "chain_id": "A",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5T83&chain=A&only_nested=False"
+      },
+      {
+        "id": "RF00442:5u3g_B",
+        "family_id": "RF00442",
+        "pdb_accession": "5u3g",
+        "chain_id": "B",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5U3G&chain=B&only_nested=False"
+      },
+      {
+        "id": "RF00442:6ck5_A",
+        "family_id": "RF00442",
+        "pdb_accession": "6ck5",
+        "chain_id": "A",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6CK5&chain=A&only_nested=False"
+      },
+      {
+        "id": "RF00442:6ck5_B",
+        "family_id": "RF00442",
+        "pdb_accession": "6ck5",
+        "chain_id": "B",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6CK5&chain=B&only_nested=False"
+      },
+      {
+        "id": "RF00442:6dlq_A",
+        "family_id": "RF00442",
+        "pdb_accession": "6dlq",
+        "chain_id": "A",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6DLQ&chain=A&only_nested=False"
+      },
+      {
+        "id": "RF01054:2miy_A",
+        "family_id": "RF01054",
+        "pdb_accession": "2miy",
+        "chain_id": "A",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=2MIY&chain=A&only_nested=False"
+      },
+      {
+        "id": "RF01750:4xw7_A",
+        "family_id": "RF01750",
+        "pdb_accession": "4xw7",
+        "chain_id": "A",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4XW7&chain=A&only_nested=False"
+      },
+      {
+        "id": "RF01750:4xwf_A",
+        "family_id": "RF01750",
+        "pdb_accession": "4xwf",
+        "chain_id": "A",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4XWF&chain=A&only_nested=False"
+      },
+      {
+        "id": "RF01750:4znp_A",
+        "family_id": "RF01750",
+        "pdb_accession": "4znp",
+        "chain_id": "A",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4ZNP&chain=A&only_nested=False"
+      },
+      {
+        "id": "RF01750:4znp_B",
+        "family_id": "RF01750",
+        "pdb_accession": "4znp",
+        "chain_id": "B",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4ZNP&chain=B&only_nested=False"
+      },
+      {
+        "id": "RF01750:5btp_A",
+        "family_id": "RF01750",
+        "pdb_accession": "5btp",
+        "chain_id": "A",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5BTP&chain=A&only_nested=False"
+      },
+      {
+        "id": "RF01786:3q3z_A",
+        "family_id": "RF01786",
+        "pdb_accession": "3q3z",
+        "chain_id": "A",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3Q3Z&chain=A&only_nested=False"
+      },
+      {
+        "id": "RF01786:3q3z_V",
+        "family_id": "RF01786",
+        "pdb_accession": "3q3z",
+        "chain_id": "V",
+        "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3Q3Z&chain=V&only_nested=False"
+      }
+    ],
+    "decisions": [
+      {
+        "family_id": "RF00379",
+        "pdb_accession": "4qk8",
+        "chain_id": "A",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF00379",
+        "pdb_accession": "4qk9",
+        "chain_id": "A",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF00379",
+        "pdb_accession": "4qka",
+        "chain_id": "A",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF00379",
+        "pdb_accession": "4qlm",
+        "chain_id": "A",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF00379",
+        "pdb_accession": "4qln",
+        "chain_id": "A",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF00379",
+        "pdb_accession": "4w90",
+        "chain_id": "C",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF00379",
+        "pdb_accession": "4w92",
+        "chain_id": "C",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF00379",
+        "pdb_accession": "6n5k",
+        "chain_id": "A",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF00379",
+        "pdb_accession": "6n5n",
+        "chain_id": "A",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF00379",
+        "pdb_accession": "6n5o",
+        "chain_id": "A",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF00379",
+        "pdb_accession": "6n5p",
+        "chain_id": "A",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF00379",
+        "pdb_accession": "6n5q",
+        "chain_id": "A",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF00379",
+        "pdb_accession": "6n5s",
+        "chain_id": "A",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF00379",
+        "pdb_accession": "6n5t",
+        "chain_id": "A",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF00379",
+        "pdb_accession": "6wtl",
+        "chain_id": "A",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF00379",
+        "pdb_accession": "6wtr",
+        "chain_id": "A",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF00380",
+        "pdb_accession": "2qbz",
+        "chain_id": "X",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF00380",
+        "pdb_accession": "3pdr",
+        "chain_id": "A",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF00380",
+        "pdb_accession": "3pdr",
+        "chain_id": "X",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF00442",
+        "pdb_accession": "5t83",
+        "chain_id": "A",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF00442",
+        "pdb_accession": "5u3g",
+        "chain_id": "B",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF00442",
+        "pdb_accession": "6ck5",
+        "chain_id": "A",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF00442",
+        "pdb_accession": "6ck5",
+        "chain_id": "B",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF00442",
+        "pdb_accession": "6dlq",
+        "chain_id": "A",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF00442",
+        "pdb_accession": "6dlr",
+        "chain_id": "A",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF00442",
+        "pdb_accession": "6dls",
+        "chain_id": "A",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF00442",
+        "pdb_accession": "6dlt",
+        "chain_id": "A",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF00442",
+        "pdb_accession": "6dnr",
+        "chain_id": "A",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF00442",
+        "pdb_accession": "7mlw",
+        "chain_id": "F",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF01054",
+        "pdb_accession": "2miy",
+        "chain_id": "A",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF01750",
+        "pdb_accession": "4xw7",
+        "chain_id": "A",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF01750",
+        "pdb_accession": "4xwf",
+        "chain_id": "A",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF01750",
+        "pdb_accession": "4znp",
+        "chain_id": "A",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF01750",
+        "pdb_accession": "4znp",
+        "chain_id": "B",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF01750",
+        "pdb_accession": "5btp",
+        "chain_id": "A",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF01750",
+        "pdb_accession": "5btp",
+        "chain_id": "B",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF01750",
+        "pdb_accession": "6od9",
+        "chain_id": "A",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF01750",
+        "pdb_accession": "6od9",
+        "chain_id": "B",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF01750",
+        "pdb_accession": "6wzr",
+        "chain_id": "A",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF01750",
+        "pdb_accession": "6wzr",
+        "chain_id": "B",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF01750",
+        "pdb_accession": "6wzs",
+        "chain_id": "A",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF01750",
+        "pdb_accession": "6wzs",
+        "chain_id": "B",
+        "reason": "fixed_metadata_family_cap"
+      },
+      {
+        "family_id": "RF01786",
+        "pdb_accession": "3q3z",
+        "chain_id": "A",
+        "reason": "metadata_candidate_only"
+      },
+      {
+        "family_id": "RF01786",
+        "pdb_accession": "3q3z",
+        "chain_id": "V",
+        "reason": "metadata_candidate_only"
+      }
+    ],
+    "clans": {
+      "RF00001": "CL00113",
+      "RF00005": "CL00001",
+      "RF00008": "CL00010",
+      "RF00010": "CL00002",
+      "RF00017": "CL00003",
+      "RF00023": "CL00001",
+      "RF00029": null,
+      "RF00050": null,
+      "RF00059": null,
+      "RF00162": "CL00012",
+      "RF00167": "CL00123",
+      "RF00168": null,
+      "RF00169": "CL00003",
+      "RF00174": "CL00101",
+      "RF00175": null,
+      "RF00234": null,
+      "RF00374": null,
+      "RF00379": null,
+      "RF00380": null,
+      "RF00442": null,
+      "RF00504": "CL00125",
+      "RF00522": null,
+      "RF01051": "CL00126",
+      "RF01054": null,
+      "RF01750": null,
+      "RF01786": "CL00127",
+      "RF02540": "CL00112",
+      "RF02541": "CL00112",
+      "RF02543": "CL00112",
+      "RF03167": "CL00126"
+    },
+    "known_exposed_clans": [
+      "CL00001",
+      "CL00002",
+      "CL00003",
+      "CL00010",
+      "CL00012",
+      "CL00101",
+      "CL00112",
+      "CL00113",
+      "CL00123",
+      "CL00125",
+      "CL00126"
+    ],
+    "candidate_counts": {
+      "RF00379": 5,
+      "RF00380": 3,
+      "RF00442": 5,
+      "RF01054": 1,
+      "RF01750": 5,
+      "RF01786": 2
+    },
+    "sequence_or_annotation_bytes_read": false,
+    "inference_allowed": false,
+    "unknown_training_tool_provenance_resolved": false,
+    "broad_validation_gate_satisfied": false
+  },
+  "new_structure_labels_read": false,
+  "model_inference_authorized": false
+}

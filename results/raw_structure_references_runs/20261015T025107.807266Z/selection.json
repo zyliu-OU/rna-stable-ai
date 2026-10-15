@@ -1,0 +1,128 @@
+[
+  {
+    "id": "RF00379:4qk8_A",
+    "family_id": "RF00379",
+    "reason": "unsupported_source_sequence: RNA must be a nonempty uppercase A/C/G/U string",
+    "sequence_sha256": null
+  },
+  {
+    "id": "RF00379:4qk9_A",
+    "family_id": "RF00379",
+    "reason": "unsupported_source_sequence: RNA must be a nonempty uppercase A/C/G/U string",
+    "sequence_sha256": null
+  },
+  {
+    "id": "RF00379:4qka_A",
+    "family_id": "RF00379",
+    "reason": "unsupported_source_sequence: RNA must be a nonempty uppercase A/C/G/U string",
+    "sequence_sha256": null
+  },
+  {
+    "id": "RF00379:4qlm_A",
+    "family_id": "RF00379",
+    "reason": "selected_before_contact_parsing",
+    "sequence_sha256": "c8bbbeab96986d6705f8e6b7020b3783634b324562f05498790b0f422176c7bb"
+  },
+  {
+    "id": "RF00379:4qln_A",
+    "family_id": "RF00379",
+    "reason": "panel_sequence_redundancy",
+    "sequence_sha256": "c8bbbeab96986d6705f8e6b7020b3783634b324562f05498790b0f422176c7bb"
+  },
+  {
+    "id": "RF00380:2qbz_X",
+    "family_id": "RF00380",
+    "reason": "selected_before_contact_parsing",
+    "sequence_sha256": "d87aaaeb7468b93dc1c31e378c6da59fe1665579564c2aa3c021905109cccecc"
+  },
+  {
+    "id": "RF00380:3pdr_A",
+    "family_id": "RF00380",
+    "reason": "panel_sequence_redundancy",
+    "sequence_sha256": "d87aaaeb7468b93dc1c31e378c6da59fe1665579564c2aa3c021905109cccecc"
+  },
+  {
+    "id": "RF00380:3pdr_X",
+    "family_id": "RF00380",
+    "reason": "panel_sequence_redundancy",
+    "sequence_sha256": "d87aaaeb7468b93dc1c31e378c6da59fe1665579564c2aa3c021905109cccecc"
+  },
+  {
+    "id": "RF00442:5t83_A",
+    "family_id": "RF00442",
+    "reason": "selected_before_contact_parsing",
+    "sequence_sha256": "b91d2150475c671466a7ae2ad0ff224bab0abc54367e126009dbf8ff6059ad8c"
+  },
+  {
+    "id": "RF00442:5u3g_B",
+    "family_id": "RF00442",
+    "reason": "selected_before_contact_parsing",
+    "sequence_sha256": "cc802d0903becf7211bbda67e7295514308ebffc174ab05a4057ad67ad2be46f"
+  },
+  {
+    "id": "RF00442:6ck5_A",
+    "family_id": "RF00442",
+    "reason": "selected_before_contact_parsing",
+    "sequence_sha256": "029ad27a08b0db72f0679452473eb9141e9b07df4d1e63a4987989b5a9a5fbe8"
+  },
+  {
+    "id": "RF00442:6ck5_B",
+    "family_id": "RF00442",
+    "reason": "panel_sequence_redundancy",
+    "sequence_sha256": "029ad27a08b0db72f0679452473eb9141e9b07df4d1e63a4987989b5a9a5fbe8"
+  },
+  {
+    "id": "RF00442:6dlq_A",
+    "family_id": "RF00442",
+    "reason": "fixed_final_family_cap",
+    "sequence_sha256": "2acb1345eb259905224200541d75c0ddb5e143207353120a0fea00d6901e8c85"
+  },
+  {
+    "id": "RF01054:2miy_A",
+    "family_id": "RF01054",
+    "reason": "selected_before_contact_parsing",
+    "sequence_sha256": "bf53386a785efa83c545b04e320d3f63ec7aee15bbc6c0e2a1e713dd7ffdc4c9"
+  },
+  {
+    "id": "RF01750:4xw7_A",
+    "family_id": "RF01750",
+    "reason": "selected_before_contact_parsing",
+    "sequence_sha256": "3ad45f7bed06509243666efc1d024abcdd667571c8febcd440940b404741f822"
+  },
+  {
+    "id": "RF01750:4xwf_A",
+    "family_id": "RF01750",
+    "reason": "panel_sequence_redundancy",
+    "sequence_sha256": "3ad45f7bed06509243666efc1d024abcdd667571c8febcd440940b404741f822"
+  },
+  {
+    "id": "RF01750:4znp_A",
+    "family_id": "RF01750",
+    "reason": "selected_before_contact_parsing",
+    "sequence_sha256": "3f01b0c61b4aaed43e79d8835749ce830e4797ab6a72eaeb7032aad4d7d75279"
+  },
+  {
+    "id": "RF01750:4znp_B",
+    "family_id": "RF01750",
+    "reason": "panel_sequence_redundancy",
+    "sequence_sha256": "3f01b0c61b4aaed43e79d8835749ce830e4797ab6a72eaeb7032aad4d7d75279"
+  },
+  {
+    "id": "RF01750:5btp_A",
+    "family_id": "RF01750",
+    "reason": "selected_before_contact_parsing",
+    "sequence_sha256": "9b33908d46ed3cc4bd5d210c8722af715b9fca9e8161ec6e08238dfbef3a47e7"
+  },
+  {
+    "id": "RF01786:3q3z_A",
+    "family_id": "RF01786",
+    "reason": "selected_before_contact_parsing",
+    "sequence_sha256": "92a8766ebb8afb3dfe47afaf4496afcfcb0527e45d108434ef158435153384f5"
+  },
+  {
+    "id": "RF01786:3q3z_V",
+    "family_id": "RF01786",
+    "reason": "panel_sequence_redundancy",
+    "sequence_sha256": "92a8766ebb8afb3dfe47afaf4496afcfcb0527e45d108434ef158435153384f5"
+  }
+]

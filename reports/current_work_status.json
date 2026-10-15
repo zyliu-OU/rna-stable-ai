@@ -2,14 +2,15 @@
   "checkpoint_date": "2026-10-14",
   "timezone": "America/Los_Angeles",
   "workspace": "/home/zyliu/Documents/rna-stable-ai",
-  "canonical_handoff": "RNA-StableAI_HANDOFF_2026-10-14_V5.md",
+  "canonical_handoff": "RNA-StableAI_HANDOFF_2026-10-14_V8.md",
   "roadmap": "reports/PROJECT_ROADMAP_2026-10-14.md",
-  "state": "Active development: reference readiness, per-sequence binding and raw-contact provenance audited; verified milestone publication being prepared",
-  "development_run": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z",
+  "state": "Active development: raw structure feasibility and checkpoint lineage complete; preparing publication and provenance-controlled training-data plan",
+  "development_run": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z",
   "verification": {
-    "full_suite_passed": 743,
-    "full_suite_seconds": 217.45,
-    "full_suite_log": "reports/structure-contact-provenance-full-suite-2026-10-14.log",
+    "full_suite_passed": 803,
+    "full_suite_seconds": 216.32,
+    "full_suite_log": "reports/checkpoint-lineage-full-suite-2026-10-14.log",
+    "additional_identity_checks_passed": 10,
     "focused_new_checks_passed": 71,
     "assay_pilot_replay_passed": true,
     "prospective_pair_replay_passed": true,
@@ -17,8 +18,16 @@
   },
   "assay_pilot_predictions": 384,
   "assay_proxy_comparisons": 2880,
-  "historical_python_versions_available": 264,
-  "historical_python_versions_recorded": 274,
+  "historical_python_versions_available": 270,
+  "historical_python_versions_recorded": 280,
+  "raw_feasibility": {
+    "supported_references": 10,
+    "families": 6,
+    "planned_predictions": 60,
+    "completed_native_requests": 20,
+    "unknown_native_requests": 0,
+    "broad_validation_gate_satisfied": false
+  },
   "active_components": {},
   "pending": [
     "Screened independent structure panel with adequate supported references and documented provenance",
@@ -27,7 +36,7 @@
     "Scientifically validated release"
   ],
   "publication_updated": false,
-  "development_publication_commit": "d0dd8fb72fadf80875fd5859caf15d7640a6930e",
+  "development_publication_commit": "ec77cc062481ca03900ef0651d3dd43574ab4eaf",
   "repository": "https://github.com/zyliu-OU/rna-stable-ai",
   "previous_status_archive": "/home/zyliu/Documents/rna-stable-ai/reports/archive/20261012T040654.222941Z"
 }

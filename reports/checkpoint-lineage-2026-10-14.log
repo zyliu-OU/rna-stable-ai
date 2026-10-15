@@ -1,0 +1,2 @@
+Structure-derived source audit passed: exact Git blobs, response ledger and frozen models; no annotation parsing.
+Checkpoint lineage replay passed: exact dataset/exposure/weight bindings; no fitting, inference or exposure.

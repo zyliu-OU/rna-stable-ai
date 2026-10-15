@@ -1,0 +1,79 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/models",
+  "models": {
+    "baseline": {
+      "config": {
+        "mode": "long_comparative_development_only",
+        "seed": 20261006,
+        "epochs": 10,
+        "learning_rate": 0.001,
+        "embedding_dim": 16,
+        "channels": 32,
+        "pair_dim": 16,
+        "dilations": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "cpu_threads": 2,
+        "training_max_length": 1024,
+        "top_k": 16,
+        "block_size": 64,
+        "positive_weight_exponent": 1.0,
+        "inference_decoder": "exact_sparse"
+      },
+      "checkpoint_sha256": "e00680c46fa4cf4527799156174eaa00ae5f68457c89cbbc36cbad8d44eb31cb"
+    },
+    "stack": {
+      "config": {
+        "mode": "long_comparative_development_only",
+        "seed": 20261006,
+        "epochs": 10,
+        "learning_rate": 0.001,
+        "embedding_dim": 16,
+        "channels": 32,
+        "pair_dim": 16,
+        "dilations": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "cpu_threads": 2,
+        "training_max_length": 1024,
+        "top_k": 16,
+        "block_size": 64,
+        "positive_weight_exponent": 1.0,
+        "inference_decoder": "exact_sparse",
+        "pair_features": "adjacent_stackability"
+      },
+      "checkpoint_sha256": "531a27e889496ce35f7e5e526edd6092e15107735dc19804d71c27b0654bbfa8"
+    },
+    "helix": {
+      "config": {
+        "mode": "long_comparative_development_only",
+        "seed": 20261006,
+        "epochs": 10,
+        "learning_rate": 0.001,
+        "embedding_dim": 16,
+        "channels": 32,
+        "pair_dim": 16,
+        "dilations": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "cpu_threads": 2,
+        "training_max_length": 1024,
+        "top_k": 16,
+        "block_size": 64,
+        "positive_weight_exponent": 1.0,
+        "inference_decoder": "exact_sparse",
+        "pair_features": "local_helix_context_v1"
+      },
+      "checkpoint_sha256": "1dba0f5983a796aad996c5d71b77b282c8eec7b7497dae610f226f39aff4050d"
+    }
+  }
+}

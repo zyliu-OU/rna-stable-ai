@@ -1,0 +1,38 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_lineage_runs/20261015T030800.142018Z",
+  "input_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/results/exact_comparative_development_runs/20261006T031734.025839Z/summary.json": "b9f2f7046a06ea07a4b068200f886ebda947185052dfc3df0f0f7e759052f0e8",
+    "/home/zyliu/Documents/rna-stable-ai/results/exact_comparative_development_runs/20261006T031734.025839Z/manifest.json": "5ce4ac02736350e213ef1a5857573a0a93c614b71ebe60330bc2da0e013ff95b",
+    "/home/zyliu/Documents/rna-stable-ai/results/exact_comparative_development_runs/20261006T031734.025839Z/best_context_model.pt": "e00680c46fa4cf4527799156174eaa00ae5f68457c89cbbc36cbad8d44eb31cb",
+    "/home/zyliu/Documents/rna-stable-ai/results/exact_comparative_development_runs/20261006T031734.025839Z/exposures/20261006T031734.026849Z.json": "aa9a4438a27025d46eefa4e87b99720a4e3f2fab8d9a5939dcbb170a53ba5b5f",
+    "/home/zyliu/Documents/rna-stable-ai/results/exact_comparative_development_runs/20261006T031734.025839Z/exposures/20261006T031734.042087Z.json": "84d1494776f6670555ed0d53aabfe4faafd18a77696c8f0ae178397b16f5a004",
+    "/home/zyliu/Documents/rna-stable-ai/results/exact_comparative_development_runs/20261006T031734.025839Z/train.json": "e865328d0ee3fe778c0d07d18d604319eb7ae728285679e85d40069ee56b5517",
+    "/home/zyliu/Documents/rna-stable-ai/results/exact_comparative_development_runs/20261006T031734.025839Z/validation.json": "bea47dac135ef17e9bc213d563fbda8f8934769bc080d111bdf1a5906a892746",
+    "/home/zyliu/Documents/rna-stable-ai/results/helix_comparative_development_runs/20261007T012503.364229Z/summary.json": "e259030c64020cb9127a014697a2167fe06e2669adebbdef58ff67d23ec11989",
+    "/home/zyliu/Documents/rna-stable-ai/results/helix_comparative_development_runs/20261007T012503.364229Z/manifest.json": "826e4ffe172b4f3bc344a3775f09171535935e45e137a361d6b2d399086b5555",
+    "/home/zyliu/Documents/rna-stable-ai/results/helix_comparative_development_runs/20261007T012503.364229Z/best_context_model.pt": "1dba0f5983a796aad996c5d71b77b282c8eec7b7497dae610f226f39aff4050d",
+    "/home/zyliu/Documents/rna-stable-ai/results/helix_comparative_development_runs/20261007T012503.364229Z/exposures/20261007T012503.373833Z.json": "c5388aef8bafcee56862fb26df806e4ff60fb2a2e30d0814501d2c9fcefefd56",
+    "/home/zyliu/Documents/rna-stable-ai/results/helix_comparative_development_runs/20261007T012503.364229Z/exposures/20261007T012503.380962Z.json": "986a09591d020a25e5539d303029da5b7af2223e2867374570de11ac1492bf8c",
+    "/home/zyliu/Documents/rna-stable-ai/results/helix_comparative_development_runs/20261007T012503.364229Z/train.json": "e865328d0ee3fe778c0d07d18d604319eb7ae728285679e85d40069ee56b5517",
+    "/home/zyliu/Documents/rna-stable-ai/results/helix_comparative_development_runs/20261007T012503.364229Z/validation.json": "bea47dac135ef17e9bc213d563fbda8f8934769bc080d111bdf1a5906a892746",
+    "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/summary.json": "b1d638959b26aa82a8664c0b8f5b54c92a67ce13cb1136d3e660c0fefa62b128",
+    "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/manifest.json": "048eb0b35475c25696378092fc9de07ab11bd34d10ca60a983133702ece02f5b",
+    "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/best_context_model.pt": "531a27e889496ce35f7e5e526edd6092e15107735dc19804d71c27b0654bbfa8",
+    "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/exposures/20261006T033137.607730Z.json": "4f52d25f79102de19add56b38ab061689186963f38777759021610f2fb04bdbb",
+    "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/exposures/20261006T033137.623154Z.json": "a9e931e87cd1408c846fffd7531d625ea8135bdb02fcbf9fb14036920c45e9b9",
+    "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/train.json": "e865328d0ee3fe778c0d07d18d604319eb7ae728285679e85d40069ee56b5517",
+    "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/validation.json": "bea47dac135ef17e9bc213d563fbda8f8934769bc080d111bdf1a5906a892746",
+    "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_runs/20261015T021501.529110Z/source/pdb_full_region.txt": "cd2a8b2a9dfe05f48c056c717df27c3a98802268c882053cb650f24ba1d3f211",
+    "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_runs/20261015T021501.529110Z/source/pdb_full_region_curated.txt": "bb6713468f7da7e35a6b1f688c0424f7d8003fa7a39bb37259d6d117d908b077"
+  },
+  "snapshot_sha256": {
+    "sources.json": "026ab3c9c330d6ae4e468571fa3da45d9b8be0b6c706b60b7e6d2238933e9640",
+    "driver.py": "5bb97d73e838ce9d8347c92692ca46456ab4119946acdbd491a3a472bb9770c0",
+    "mappings.json": "73577c84f16d829a84f09b0826b950848ba57b2e5382ab98d5994fe78480d6c3"
+  },
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/audit_checkpoint_lineage.py": "5bb97d73e838ce9d8347c92692ca46456ab4119946acdbd491a3a472bb9770c0",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_inference.py": "36480834a765916654f21bded6ab1113b4ac44a28316cd02935ded7ec3a566c5",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/exposures.py": "8c5be64e296234d48bd4f4d5297c83adc3a117e87c03d23c2abf7dd59580fb86"
+  }
+}

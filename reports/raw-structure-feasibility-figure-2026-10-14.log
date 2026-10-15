@@ -1,0 +1,4 @@
+mkdir -p failed for path /home/zyliu/.config/matplotlib: [Errno 30] Read-only file system: '/home/zyliu/.config/matplotlib'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-mry8hskp because there was an issue with the default path (/home/zyliu/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Raw structure feasibility replay passed; frozen models and retained native journals, no new folds or exposure.
+Saved raw structure feasibility figure: /home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_figures/20261015T030234.188591Z

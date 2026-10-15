@@ -1,0 +1,11 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025029.028438Z",
+  "protocol_run": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z",
+  "exposure_event": null,
+  "snapshot_sha256": {
+    "attempts.json": "efcf381524589ea1487a69308dd30911fa0dbf7d23a6c9894c2e5e042a4493fa",
+    "protocol.json": "47383a227cd487cdaf9825e718c13a4693aff12e3c396bf8191b01239e860e31",
+    "exposure_before.json": "ad0623b1ffe00cb1bf739854fce69305a889d244f573d5cdf8dec0f52dc40149",
+    "selection.json": "11d937a8f4ecfe2d8a97421f969c40fb1aa5a0f98e8296dc8e94750dd73db1e4"
+  }
+}

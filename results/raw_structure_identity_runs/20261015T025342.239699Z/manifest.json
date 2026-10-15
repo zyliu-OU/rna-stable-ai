@@ -1,0 +1,12 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_identity_runs/20261015T025342.239699Z",
+  "source_summary": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z/summary.json",
+  "source_sha256": "e06a11c9b4e81bfa5bef82af533e156d78a88cfd467c57f91d5f350011491453",
+  "snapshot_sha256": {
+    "driver.py": "77ec8e574741ee15e8e20561a012a8189f04aedaa8ccdbac167422c6801ec80d",
+    "source.json": "e06a11c9b4e81bfa5bef82af533e156d78a88cfd467c57f91d5f350011491453"
+  },
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/verify_raw_structure_identity.py": "77ec8e574741ee15e8e20561a012a8189f04aedaa8ccdbac167422c6801ec80d"
+  }
+}

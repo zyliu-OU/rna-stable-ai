@@ -1,0 +1,190 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025029.028438Z",
+  "manifest_sha256": "dfbb7394cca3f11d34b47037aa697b1cf46d2b9cff0f4c01aa7f879e77a4b9d6",
+  "planned_source_requests": 21,
+  "successful_source_requests": 0,
+  "selection_decisions": [
+    {
+      "id": "RF00379:4qk8_A",
+      "family_id": "RF00379",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF00379:4qk9_A",
+      "family_id": "RF00379",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF00379:4qka_A",
+      "family_id": "RF00379",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF00379:4qlm_A",
+      "family_id": "RF00379",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF00379:4qln_A",
+      "family_id": "RF00379",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF00380:2qbz_X",
+      "family_id": "RF00380",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF00380:3pdr_A",
+      "family_id": "RF00380",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF00380:3pdr_X",
+      "family_id": "RF00380",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF00442:5t83_A",
+      "family_id": "RF00442",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF00442:5u3g_B",
+      "family_id": "RF00442",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF00442:6ck5_A",
+      "family_id": "RF00442",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF00442:6ck5_B",
+      "family_id": "RF00442",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF00442:6dlq_A",
+      "family_id": "RF00442",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF01054:2miy_A",
+      "family_id": "RF01054",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF01750:4xw7_A",
+      "family_id": "RF01750",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF01750:4xwf_A",
+      "family_id": "RF01750",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF01750:4znp_A",
+      "family_id": "RF01750",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF01750:4znp_B",
+      "family_id": "RF01750",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF01750:5btp_A",
+      "family_id": "RF01750",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF01786:3q3z_A",
+      "family_id": "RF01786",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF01786:3q3z_V",
+      "family_id": "RF01786",
+      "reason": "source_unavailable",
+      "sequence_sha256": null
+    }
+  ],
+  "binding": {
+    "records": [],
+    "families": [
+      {
+        "family_id": "RF00379",
+        "planned_records": 0,
+        "supported_references": 0
+      },
+      {
+        "family_id": "RF00380",
+        "planned_records": 0,
+        "supported_references": 0
+      },
+      {
+        "family_id": "RF00442",
+        "planned_records": 0,
+        "supported_references": 0
+      },
+      {
+        "family_id": "RF01054",
+        "planned_records": 0,
+        "supported_references": 0
+      },
+      {
+        "family_id": "RF01750",
+        "planned_records": 0,
+        "supported_references": 0
+      },
+      {
+        "family_id": "RF01786",
+        "planned_records": 0,
+        "supported_references": 0
+      }
+    ],
+    "planned_records": 0,
+    "supported_references": 0,
+    "sequence_bindings_complete": true,
+    "known_provenance_overlap": false
+  },
+  "readiness": {
+    "scope": "six_family_structure_derived_feasibility_only",
+    "families_meeting_feasibility_minimum": 0,
+    "feasibility_coverage_met": false,
+    "broad_validation_gate_satisfied": false,
+    "model_inference_authorized_by_this_stage": false,
+    "independent_training_tool_provenance_certified": false
+  },
+  "limitations": [
+    "A six-family structure-derived feasibility cohort, not a completion of broad independent biological validation.",
+    "Raw FR3D cWW contacts are retained as returned, including noncanonical chemistry and crossing contacts. Multiple-partner graphs remain unsupported rather than projected.",
+    "Current source responses are frozen by bytes, request identity and acquisition time; complete tool-training independence and annotation correctness are not certified.",
+    "Known PDB/family/clan and heuristic sequence overlap are screened. Unknown training provenance remains unresolved.",
+    "All source failures, sequence-screening exclusions and selected unsupported references remain explicit. No replacement or model selection from source outcomes."
+  ],
+  "inference_performed": false
+}

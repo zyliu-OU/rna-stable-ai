@@ -1,0 +1,212 @@
+[
+  {
+    "id": "RF00379:4qk8_A",
+    "family_id": "RF00379",
+    "pdb_accession": "4qk8",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4QK8&chain=A&only_nested=False",
+    "filename": "record_000.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF00379:4qk9_A",
+    "family_id": "RF00379",
+    "pdb_accession": "4qk9",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4QK9&chain=A&only_nested=False",
+    "filename": "record_001.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF00379:4qka_A",
+    "family_id": "RF00379",
+    "pdb_accession": "4qka",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4QKA&chain=A&only_nested=False",
+    "filename": "record_002.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF00379:4qlm_A",
+    "family_id": "RF00379",
+    "pdb_accession": "4qlm",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4QLM&chain=A&only_nested=False",
+    "filename": "record_003.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF00379:4qln_A",
+    "family_id": "RF00379",
+    "pdb_accession": "4qln",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4QLN&chain=A&only_nested=False",
+    "filename": "record_004.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF00380:2qbz_X",
+    "family_id": "RF00380",
+    "pdb_accession": "2qbz",
+    "chain_id": "X",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=2QBZ&chain=X&only_nested=False",
+    "filename": "record_005.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF00380:3pdr_A",
+    "family_id": "RF00380",
+    "pdb_accession": "3pdr",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3PDR&chain=A&only_nested=False",
+    "filename": "record_006.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF00380:3pdr_X",
+    "family_id": "RF00380",
+    "pdb_accession": "3pdr",
+    "chain_id": "X",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3PDR&chain=X&only_nested=False",
+    "filename": "record_007.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF00442:5t83_A",
+    "family_id": "RF00442",
+    "pdb_accession": "5t83",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5T83&chain=A&only_nested=False",
+    "filename": "record_008.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF00442:5u3g_B",
+    "family_id": "RF00442",
+    "pdb_accession": "5u3g",
+    "chain_id": "B",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5U3G&chain=B&only_nested=False",
+    "filename": "record_009.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF00442:6ck5_A",
+    "family_id": "RF00442",
+    "pdb_accession": "6ck5",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6CK5&chain=A&only_nested=False",
+    "filename": "record_010.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF00442:6ck5_B",
+    "family_id": "RF00442",
+    "pdb_accession": "6ck5",
+    "chain_id": "B",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6CK5&chain=B&only_nested=False",
+    "filename": "record_011.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF00442:6dlq_A",
+    "family_id": "RF00442",
+    "pdb_accession": "6dlq",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6DLQ&chain=A&only_nested=False",
+    "filename": "record_012.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF01054:2miy_A",
+    "family_id": "RF01054",
+    "pdb_accession": "2miy",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=2MIY&chain=A&only_nested=False",
+    "filename": "record_013.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF01750:4xw7_A",
+    "family_id": "RF01750",
+    "pdb_accession": "4xw7",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4XW7&chain=A&only_nested=False",
+    "filename": "record_014.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF01750:4xwf_A",
+    "family_id": "RF01750",
+    "pdb_accession": "4xwf",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4XWF&chain=A&only_nested=False",
+    "filename": "record_015.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF01750:4znp_A",
+    "family_id": "RF01750",
+    "pdb_accession": "4znp",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4ZNP&chain=A&only_nested=False",
+    "filename": "record_016.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF01750:4znp_B",
+    "family_id": "RF01750",
+    "pdb_accession": "4znp",
+    "chain_id": "B",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4ZNP&chain=B&only_nested=False",
+    "filename": "record_017.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF01750:5btp_A",
+    "family_id": "RF01750",
+    "pdb_accession": "5btp",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5BTP&chain=A&only_nested=False",
+    "filename": "record_018.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF01786:3q3z_A",
+    "family_id": "RF01786",
+    "pdb_accession": "3q3z",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3Q3Z&chain=A&only_nested=False",
+    "filename": "record_019.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "id": "RF01786:3q3z_V",
+    "family_id": "RF01786",
+    "pdb_accession": "3q3z",
+    "chain_id": "V",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3Q3Z&chain=V&only_nested=False",
+    "filename": "record_020.json",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  }
+]

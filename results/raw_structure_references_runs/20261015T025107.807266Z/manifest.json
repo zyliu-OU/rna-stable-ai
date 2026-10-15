@@ -1,0 +1,37 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z",
+  "protocol_run": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z",
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z/exposures/20261015T025138.214062Z.json",
+    "sha256": "80ed292cd43870af874cd0d1aced82c84f52c3ec97f00876296089ab473961a5",
+    "stage": "validation_started"
+  },
+  "snapshot_sha256": {
+    "record_010.json": "9adb14fd003b8fc0bc3d3ba51d27e9fcd963d22ce347f17f25143b822bc6e785",
+    "record_018.json": "e03baf57ca1cd61c52d167b9cca8a08f0bc025092fb8f957f61a548dba9f480f",
+    "attempts.json": "5fb0fd41c09bfebf365ff4616adaed983d90109084fe5d52a37cf980a75092eb",
+    "record_019.json": "9614cee25dedae3815b427fa0f2eb511216d5e43485d47b7b97a3bd90cc73cdd",
+    "record_015.json": "e5eed53c414c604afa7600e9ce225013fe51dfacbe12f4f7968f3551450ddf50",
+    "record_012.json": "b5d0f8d9417e5a07a8e1d36c18d0a37f01434bd0516e464a737ff9627baa370d",
+    "protocol.json": "47383a227cd487cdaf9825e718c13a4693aff12e3c396bf8191b01239e860e31",
+    "record_002.json": "057d0d1bec2f43259d97113d4d63957563449723439740df9cedcb4af80d448a",
+    "record_017.json": "1c77e971d2e076f5c77ae533c94995d8d1f72cd03ef8451cdf7e787ab303e1a3",
+    "record_020.json": "e1e6a47e564072b22e0a1dd0d6767b524c4cf9e96a719086ab3a350f8fb971d7",
+    "record_009.json": "eca2bd44025735249c56a61034122563ace1b70a5787081fa78a3b6e8ec79e43",
+    "record_011.json": "92c258d0a6a79ed027cfa3314cc98a9289ef0b0cdd4b78161888b2ed8ef7d12c",
+    "record_007.json": "e6ab004028344f78e5b304e6a98af9220136b41785118f1fb8e152ca72289567",
+    "record_016.json": "d94fc932e5748127798a57d0e0b46166c8f9521973145164cbc619d036b6aee0",
+    "record_003.json": "b73582563151f5389ff3b37160205cebab47b5da84e29183cc89f69798ab59ea",
+    "record_000.json": "228070ad86d4d4c16859f79a14254b92b5f81ea3b7f65b81a5026d48a6e323f5",
+    "record_014.json": "5c686d64fc059612b23ac2f3aa42e5fd95a97ce2ee1069f89557ef1ca961c0d5",
+    "exposure_before.json": "ad0623b1ffe00cb1bf739854fce69305a889d244f573d5cdf8dec0f52dc40149",
+    "record_006.json": "f43ab97af547aecaecf2668726e124ad9de60034fa628da47dafba4f2d9b79f9",
+    "record_013.json": "885f8036325081b5c8c8a7bc4550cfe0eacd3c4269b2a7515863446c7968f11a",
+    "selection.json": "bdb536e9fc71188168360bb06140a5cd44182637f87c9113b8aa11e67e861279",
+    "record_004.json": "bb45145c4602d09ed3305ca91379377fed106dbd713027e4da3bb410e4327f9a",
+    "record_005.json": "ed9acdfdbc145abd9071c899ea970d426399c65150b5e3dfda5c1cf31f14568b",
+    "record_008.json": "cc6f73a0b54566539aee907359e77b1d65c66676fad22c64c65898438454a899",
+    "record_001.json": "468d94d0c99415b1faf3d956001e38cdaa7a4c3c866101812ee7ae4f50f2df45",
+    "exposures/20261015T025138.214062Z.json": "80ed292cd43870af874cd0d1aced82c84f52c3ec97f00876296089ab473961a5"
+  }
+}

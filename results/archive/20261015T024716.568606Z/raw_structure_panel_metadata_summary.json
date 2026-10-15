@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_metadata_runs/20261015T024608.691241Z",
+  "manifest_sha256": "b3e53bd7240f821b4e29fad433e616422c53ec25b8051fed1cf2d36e816555da",
+  "metadata_complete": false,
+  "planned_requests": 30,
+  "successful_requests": 0,
+  "screening": null,
+  "new_structure_labels_read": false,
+  "model_inference_authorized": false
+}

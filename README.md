@@ -15,7 +15,7 @@ Updated October 14, 2026. **Current step: 4 — independent biological validatio
 | 1 | Reproducible foundations | Implemented: bounded native tools, request journals, input hashes, exposure tracking, and replay audits. |
 | 2 | Structure models | Baseline, stack, and helix models trained and compared. Candidate-budget and loss studies complete; defaults unchanged. |
 | 3 | Sequence optimization | Synthetic studies and native energy checks complete. Biological benefits remain unverified. |
-| **4** | **Independent structure validation** | **Current gate.** Three prospective panels evaluated; supported references and training/tool provenance remain limited. |
+| **4** | **Independent structure validation** | **Current gate.** Three prospective panels and a six-family raw-contact feasibility study evaluated; broader coverage/provenance remain limited. |
 | 5 | Long biological RNA | Synthetic benchmarks reach 10,000 nt; exact sparse inference supports up to 1,024 nt. Longer biological validation is pending. |
 | 6 | Measured stability and function | Public-assay pilot complete. Controlled mutation effects and retained function remain pending. |
 | 7 | Validated release | Pending the scientific evidence above. |
@@ -23,33 +23,32 @@ Updated October 14, 2026. **Current step: 4 — independent biological validatio
 The assay pilot advances part of step 6 while steps 4 and 5 remain open.
 **Next research task:** design a screened, independently annotated structure panel
 with enough supported references, documented provenance, and no reuse of consumed
-families as fresh tests. Current work checks per-sequence PDB contact provenance;
+families as fresh tests. Current work targets explicit training-family provenance;
 see the [roadmap](reports/PROJECT_ROADMAP_2026-10-14.md).
 
 ## Latest results
 
-- **Structure evaluation:** the latest panel retained all 15 planned records;
-  four lysine references were supported and 11 annotations remained unsupported.
-  Mean pair F1: helix **0.5332**, ViennaRNA **0.7267**, LinearFold **0.7488**.
+- **Structure feasibility:** 10 raw PDB-derived references across six families;
+  all 60 outcomes complete. Mean pair F1: helix **0.3255**, ViennaRNA and
+  LinearFold **0.6261**. Broad biological validation remains open.
 - **Measured-assay pilot:** 64 short constructs, six methods, five assays;
   all 384 predictions and 2,880 proxy/assay comparisons completed. Native energy
   per nucleotide showed stronger descriptive associations than learned unpaired
   fractions on this selected cohort.
-- **Reference readiness:** the historical panels fall below the declared coverage
-  minimum. A new PDB-derived import retains six references; broader coverage and
-  raw-contact verification remain open.
-- **Verification:** 743 tests passed. Source archival recovered 264 of 274
+- **Provenance:** all three learned models use the same frozen development data;
+  83/136 records still lack confirmed family assignments.
+- **Verification:** 803 tests passed. Source archival recovered 270 of 280
   recorded Python versions; ten historical versions remain unavailable.
 
 These results do not establish causal mutation benefits, cellular half-life,
 long-RNA accuracy, or retained function. The assay cohort contains only
 `SN_filter=1` constructs; complete training/tool independence remains unresolved.
 
-[Structure review](reports/prospective_third_pair_evaluation_review_2026-10-13.md)
+[Structure review and figure](reports/raw_structure_feasibility_review_2026-10-14.md)
 · [Assay review and figure](reports/degradation_pilot_review_2026-10-13.md)
 · [Source archive](docs/REPLAY_SOURCE_ARCHIVE.md)
 · [Reference engineering](docs/STRUCTURE_DERIVED_REFERENCES.md)
-· [Test log](reports/structure-contact-provenance-full-suite-2026-10-14.log)
+· [Test log](reports/checkpoint-lineage-full-suite-2026-10-14.log)
 
 ## Quick start
 

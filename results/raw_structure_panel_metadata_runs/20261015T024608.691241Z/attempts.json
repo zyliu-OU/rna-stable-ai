@@ -1,0 +1,212 @@
+[
+  {
+    "family_id": "RF00001",
+    "filename": "RF00001.json",
+    "url": "https://rfam.org/family/RF00001?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00005",
+    "filename": "RF00005.json",
+    "url": "https://rfam.org/family/RF00005?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00008",
+    "filename": "RF00008.json",
+    "url": "https://rfam.org/family/RF00008?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00010",
+    "filename": "RF00010.json",
+    "url": "https://rfam.org/family/RF00010?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00017",
+    "filename": "RF00017.json",
+    "url": "https://rfam.org/family/RF00017?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00023",
+    "filename": "RF00023.json",
+    "url": "https://rfam.org/family/RF00023?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00029",
+    "filename": "RF00029.json",
+    "url": "https://rfam.org/family/RF00029?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00050",
+    "filename": "RF00050.json",
+    "url": "https://rfam.org/family/RF00050?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00059",
+    "filename": "RF00059.json",
+    "url": "https://rfam.org/family/RF00059?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00162",
+    "filename": "RF00162.json",
+    "url": "https://rfam.org/family/RF00162?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00167",
+    "filename": "RF00167.json",
+    "url": "https://rfam.org/family/RF00167?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00168",
+    "filename": "RF00168.json",
+    "url": "https://rfam.org/family/RF00168?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00169",
+    "filename": "RF00169.json",
+    "url": "https://rfam.org/family/RF00169?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00174",
+    "filename": "RF00174.json",
+    "url": "https://rfam.org/family/RF00174?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00175",
+    "filename": "RF00175.json",
+    "url": "https://rfam.org/family/RF00175?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00234",
+    "filename": "RF00234.json",
+    "url": "https://rfam.org/family/RF00234?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00374",
+    "filename": "RF00374.json",
+    "url": "https://rfam.org/family/RF00374?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00379",
+    "filename": "RF00379.json",
+    "url": "https://rfam.org/family/RF00379?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00380",
+    "filename": "RF00380.json",
+    "url": "https://rfam.org/family/RF00380?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00442",
+    "filename": "RF00442.json",
+    "url": "https://rfam.org/family/RF00442?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00504",
+    "filename": "RF00504.json",
+    "url": "https://rfam.org/family/RF00504?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF00522",
+    "filename": "RF00522.json",
+    "url": "https://rfam.org/family/RF00522?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF01051",
+    "filename": "RF01051.json",
+    "url": "https://rfam.org/family/RF01051?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF01054",
+    "filename": "RF01054.json",
+    "url": "https://rfam.org/family/RF01054?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF01750",
+    "filename": "RF01750.json",
+    "url": "https://rfam.org/family/RF01750?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF01786",
+    "filename": "RF01786.json",
+    "url": "https://rfam.org/family/RF01786?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF02540",
+    "filename": "RF02540.json",
+    "url": "https://rfam.org/family/RF02540?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF02541",
+    "filename": "RF02541.json",
+    "url": "https://rfam.org/family/RF02541?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF02543",
+    "filename": "RF02543.json",
+    "url": "https://rfam.org/family/RF02543?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  },
+  {
+    "family_id": "RF03167",
+    "filename": "RF03167.json",
+    "url": "https://rfam.org/family/RF03167?content-type=application%2Fjson",
+    "status": "error",
+    "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+  }
+]

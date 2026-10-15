@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "stage": "metadata_only_raw_structure_panel",
+  "families": ["RF00379", "RF00380", "RF00442", "RF01054", "RF01750", "RF01786"],
+  "expected_metadata_release": "15.1",
+  "mapping_source_summary": "results/structure_derived_source_runs/20261015T021501.529110Z/summary.json",
+  "model_protocol": "results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json",
+  "metadata_pdb_chain_cap_per_family": 5,
+  "future_binding": {
+    "minimum_length": 20,
+    "maximum_length": 512,
+    "max_records_per_family": 3,
+    "sequence_similarity_threshold": 0.8,
+    "source_target": "all_returned_cWW_contacts_without_projection",
+    "raw_graph_multiple_partners": "unsupported_do_not_delete_contacts",
+    "selection_order": "family_pdb_chain_then_sequence_redundancy",
+    "replace_unsupported_records": false,
+    "reference_kind": "computational",
+    "study_scope": "six_family_structure_derived_feasibility_only",
+    "feasibility_minimum_supported_families": 6,
+    "feasibility_minimum_per_family": 1,
+    "feasibility_minimum_total": 6,
+    "broad_validation_gate_satisfied": false
+  },
+  "maximum_metadata_bytes": 2097152,
+  "metadata_timeout_seconds": 30,
+  "model_inference_authorized": false
+}

@@ -19,19 +19,24 @@ Development resumed after the completed GitHub publication. The reference-readin
 audit now makes coverage and annotation lineage explicit. None of the three earlier
 panels meets the new broad-coverage minimum. A pinned per-sequence PDB-derived
 source import retains six references across three families, after 35 redundant
-annotations are excluded. This still falls below the coverage gate. Current work
-has audited raw FR3D contact provenance without predictions or reference replacement:
-all six sequences match, but three historical contact sets differ from current raw
-annotations. The full suite passed **743 tests**. Detailed commands remain in
+annotations are excluded. Raw FR3D provenance auditing found three historical
+contact-set differences. A separately frozen six-family raw-contact feasibility
+cohort now retains ten supported references from 21 source requests; all 60
+model/control outcomes and 20 native calls completed. Mean pair F1 is 0.325531
+for helix and 0.626116 for both native controls. This narrow feasibility result
+does not close the broad gate. The full suite passed **803 tests**. A checkpoint
+lineage audit identifies 83/136 development records without confirmed family
+assignments. Next work targets a source-labelled, family/clan-aware training and
+validation plan. Detailed commands remain in
 [DEVELOPMENT.md](../DEVELOPMENT.md).
 
 Next research work is to design a screened, independently annotated biological
 structure panel with adequate supported references and documented training/tool
 provenance. Previously consumed families and the measured-assay source cannot be
-reused as fresh independent tests. No new model evaluation has run during this
-continuation. Newly imported PDB-derived source families are now consumed for
-future fresh-test planning. The user's README picture is preserved locally;
-new development is not yet published.
+reused as fresh independent tests. The raw-contact comparison is explicitly a
+small feasibility study. Newly imported PDB-derived source families are consumed for
+future fresh-test planning. These source/evaluation artifacts accompany the
+development progress summary; the user's README picture is preserved.
 
 The assay pilot is descriptive and uses only `SN_filter=1` short constructs.
 Its associations do not establish causal mutation benefits, cellular half-life,

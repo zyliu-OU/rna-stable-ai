@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z",
+  "stage": "validation_started",
+  "records": [
+    {
+      "sequence": "GGAUCGCUGAACCCGAAAGGGGCGGGGGACCCAGAAAUGGGGCGAAUCUCUUCCGAAAGGAAGAGUAGGGUUACUCCUUCGACCCGAGCCCGUCAGCUAACCUCGCAAGCGUCCGAAGGAGAAUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF00379",
+      "pdb_accession": "4qlm"
+    },
+    {
+      "sequence": "GGAUCGCUGAACCCGAAAGGGGCGGGGGACCCAGAAAUGGGGCGAAUCUCUUCCGAAAGGAAGAGUAGGGUUACUCCUUCGACCCGAGCCCGUCAGCUAACCUCGCAAGCGUCCGAAGGAGAAUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF00379",
+      "pdb_accession": "4qln"
+    },
+    {
+      "sequence": "GGGCUUCGUUAGGUGAGGCUCCUGUAUGGAGAUACGCUGCUGCCCAAAAAUGUCCAAAGACGCCAAUGGGUCAACAGAAAUCAUCGACAUAAGGUGAUUUUUAAUGCAGCUGGAUGCUUGUCCUAUGCCAUACAGUGCUAAAGCUCUACGAUUGAAGCCCA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF00380",
+      "pdb_accession": "2qbz"
+    },
+    {
+      "sequence": "GGGCUUCGUUAGGUGAGGCUCCUGUAUGGAGAUACGCUGCUGCCCAAAAAUGUCCAAAGACGCCAAUGGGUCAACAGAAAUCAUCGACAUAAGGUGAUUUUUAAUGCAGCUGGAUGCUUGUCCUAUGCCAUACAGUGCUAAAGCUCUACGAUUGAAGCCCA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF00380",
+      "pdb_accession": "3pdr"
+    },
+    {
+      "sequence": "GGGCUUCGUUAGGUGAGGCUCCUGUAUGGAGAUACGCUGCUGCCCAAAAAUGUCCAAAGACGCCAAUGGGUCAACAGAAAUCAUCGACAUAAGGUGAUUUUUAAUGCAGCUGGAUGCUUGUCCUAUGCCAUACAGUGCUAAAGCUCUACGAUUGAAGCCCA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF00380",
+      "pdb_accession": "3pdr"
+    },
+    {
+      "sequence": "GUCUAAAGUUUGCUAGGGUUCCGCGUCAUAGGUGGUCUGGUCCAAGAGCAAACGGCUUUCACAAAGCCACACGGAAGGAUAAAAGCCUGGGAGAU",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF00442",
+      "pdb_accession": "5t83"
+    },
+    {
+      "sequence": "GGUGACUAGGGUUCCGGCGAAAGCCGGUCCGAGAGUUACCGACCGCCGAAAGGCGGUUACACGGCGGGAAAAAAGCCCGGGAGGA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF00442",
+      "pdb_accession": "5u3g"
+    },
+    {
+      "sequence": "GUGAAAGUGUACCUAGGGUUCCAGCCUAUUUGUAGGUGUUCGGACCGAGCGGUACAGGUAUAUUUUUAUAUACCACACCUUAGGGACAAAAGCCCGGGAGGAUAGGUUUCACUCGUA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF00442",
+      "pdb_accession": "6ck5"
+    },
+    {
+      "sequence": "GUGAAAGUGUACCUAGGGUUCCAGCCUAUUUGUAGGUGUUCGGACCGAGCGGUACAGGUAUAUUUUUAUAUACCACACCUUAGGGACAAAAGCCCGGGAGGAUAGGUUUCACUCGUA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF00442",
+      "pdb_accession": "6ck5"
+    },
+    {
+      "sequence": "GGAAAGUGUGUCUAGGGUUCCGCGUGCUUCGGCACGGACUGGUCCAAGUGACACAGACGCAUUCGUGCGUUACACCGGAGGGAUAGAAGCCCAGGCGGGUAGGUUUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF00442",
+      "pdb_accession": "6dlq"
+    },
+    {
+      "sequence": "GCUUGGUGCUUAGCUUCUUUCACCAAGCAUAUUACACGCGGAUAACCGCCAAAGGAGAA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF01054",
+      "pdb_accession": "2miy"
+    },
+    {
+      "sequence": "GGGUCGUGACUGGCGAACAGGUGGGAAACCACCGGGGAGCGACCCUUGCCGCCCGCCUGGGCAA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF01750",
+      "pdb_accession": "4xw7"
+    },
+    {
+      "sequence": "GGGUCGUGACUGGCGAACAGGUGGGAAACCACCGGGGAGCGACCCUUGCCGCCCGCCUGGGCAA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF01750",
+      "pdb_accession": "4xwf"
+    },
+    {
+      "sequence": "GGGAUACAGGACUGGCGGAUUAGUGGGAAACCACGUGGACUGUAUCCGAAAAAAAGCCGACCGCCUGGGCAUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF01750",
+      "pdb_accession": "4znp"
+    },
+    {
+      "sequence": "GGGAUACAGGACUGGCGGAUUAGUGGGAAACCACGUGGACUGUAUCCGAAAAAAAGCCGACCGCCUGGGCAUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF01750",
+      "pdb_accession": "4znp"
+    },
+    {
+      "sequence": "UAUCAGUUAUAUGACUGACGGAACGUGGAAUUAACCACAUGAAGUAUAACGAUGACAAUGCCGACCGUCUGGGCG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF01750",
+      "pdb_accession": "5btp"
+    },
+    {
+      "sequence": "GCGCGGAAACAAUGAUGAAUGGGUUUAAAUUGGGCACUUGACUCAUUUUGAGUUAGUAGUGCAACCGACCGUGCU",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF01786",
+      "pdb_accession": "3q3z"
+    },
+    {
+      "sequence": "GCGCGGAAACAAUGAUGAAUGGGUUUAAAUUGGGCACUUGACUCAUUUUGAGUUAGUAGUGCAACCGACCGUGCU",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_runs/20261015T025107.807266Z validation_started",
+      "family_id": "RF01786",
+      "pdb_accession": "3q3z"
+    }
+  ],
+  "records_sha256": "847babbb3f115ffa80ab5d14ddc6009260d9dba74466320aaefdc3880487ae88"
+}

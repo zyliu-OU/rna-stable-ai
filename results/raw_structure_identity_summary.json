@@ -1,0 +1,209 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_identity_runs/20261015T025342.239699Z",
+  "manifest_sha256": "1fe8f33fe679d677e68912113f82486ee83856dc988068653912420bc3e657c9",
+  "rows": [
+    {
+      "id": "RF00379:4qk8_A",
+      "status": "identity_or_coordinate_rejected",
+      "identity_verified": false,
+      "error": "RNA must be a nonempty uppercase A/C/G/U string"
+    },
+    {
+      "id": "RF00379:4qk9_A",
+      "status": "identity_or_coordinate_rejected",
+      "identity_verified": false,
+      "error": "RNA must be a nonempty uppercase A/C/G/U string"
+    },
+    {
+      "id": "RF00379:4qka_A",
+      "status": "identity_or_coordinate_rejected",
+      "identity_verified": false,
+      "error": "RNA must be a nonempty uppercase A/C/G/U string"
+    },
+    {
+      "id": "RF00379:4qlm_A",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "4qlm",
+      "chain_id": "A",
+      "sequence_sha256": "c8bbbeab96986d6705f8e6b7020b3783634b324562f05498790b0f422176c7bb",
+      "validated_annotation_rows": 47,
+      "validated_cww_rows": 36
+    },
+    {
+      "id": "RF00379:4qln_A",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "4qln",
+      "chain_id": "A",
+      "sequence_sha256": "c8bbbeab96986d6705f8e6b7020b3783634b324562f05498790b0f422176c7bb",
+      "validated_annotation_rows": 98,
+      "validated_cww_rows": 78
+    },
+    {
+      "id": "RF00380:2qbz_X",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "2qbz",
+      "chain_id": "X",
+      "sequence_sha256": "d87aaaeb7468b93dc1c31e378c6da59fe1665579564c2aa3c021905109cccecc",
+      "validated_annotation_rows": 69,
+      "validated_cww_rows": 49
+    },
+    {
+      "id": "RF00380:3pdr_A",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "3pdr",
+      "chain_id": "A",
+      "sequence_sha256": "d87aaaeb7468b93dc1c31e378c6da59fe1665579564c2aa3c021905109cccecc",
+      "validated_annotation_rows": 69,
+      "validated_cww_rows": 50
+    },
+    {
+      "id": "RF00380:3pdr_X",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "3pdr",
+      "chain_id": "X",
+      "sequence_sha256": "d87aaaeb7468b93dc1c31e378c6da59fe1665579564c2aa3c021905109cccecc",
+      "validated_annotation_rows": 67,
+      "validated_cww_rows": 50
+    },
+    {
+      "id": "RF00442:5t83_A",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "5t83",
+      "chain_id": "A",
+      "sequence_sha256": "b91d2150475c671466a7ae2ad0ff224bab0abc54367e126009dbf8ff6059ad8c",
+      "validated_annotation_rows": 34,
+      "validated_cww_rows": 23
+    },
+    {
+      "id": "RF00442:5u3g_B",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "5u3g",
+      "chain_id": "B",
+      "sequence_sha256": "cc802d0903becf7211bbda67e7295514308ebffc174ab05a4057ad67ad2be46f",
+      "validated_annotation_rows": 34,
+      "validated_cww_rows": 25
+    },
+    {
+      "id": "RF00442:6ck5_A",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "6ck5",
+      "chain_id": "A",
+      "sequence_sha256": "029ad27a08b0db72f0679452473eb9141e9b07df4d1e63a4987989b5a9a5fbe8",
+      "validated_annotation_rows": 45,
+      "validated_cww_rows": 34
+    },
+    {
+      "id": "RF00442:6ck5_B",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "6ck5",
+      "chain_id": "B",
+      "sequence_sha256": "029ad27a08b0db72f0679452473eb9141e9b07df4d1e63a4987989b5a9a5fbe8",
+      "validated_annotation_rows": 39,
+      "validated_cww_rows": 29
+    },
+    {
+      "id": "RF00442:6dlq_A",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "6dlq",
+      "chain_id": "A",
+      "sequence_sha256": "2acb1345eb259905224200541d75c0ddb5e143207353120a0fea00d6901e8c85",
+      "validated_annotation_rows": 46,
+      "validated_cww_rows": 33
+    },
+    {
+      "id": "RF01054:2miy_A",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "2miy",
+      "chain_id": "A",
+      "sequence_sha256": "bf53386a785efa83c545b04e320d3f63ec7aee15bbc6c0e2a1e713dd7ffdc4c9",
+      "validated_annotation_rows": 21,
+      "validated_cww_rows": 17
+    },
+    {
+      "id": "RF01750:4xw7_A",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "4xw7",
+      "chain_id": "A",
+      "sequence_sha256": "3ad45f7bed06509243666efc1d024abcdd667571c8febcd440940b404741f822",
+      "validated_annotation_rows": 21,
+      "validated_cww_rows": 19
+    },
+    {
+      "id": "RF01750:4xwf_A",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "4xwf",
+      "chain_id": "A",
+      "sequence_sha256": "3ad45f7bed06509243666efc1d024abcdd667571c8febcd440940b404741f822",
+      "validated_annotation_rows": 22,
+      "validated_cww_rows": 19
+    },
+    {
+      "id": "RF01750:4znp_A",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "4znp",
+      "chain_id": "A",
+      "sequence_sha256": "3f01b0c61b4aaed43e79d8835749ce830e4797ab6a72eaeb7032aad4d7d75279",
+      "validated_annotation_rows": 24,
+      "validated_cww_rows": 21
+    },
+    {
+      "id": "RF01750:4znp_B",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "4znp",
+      "chain_id": "B",
+      "sequence_sha256": "3f01b0c61b4aaed43e79d8835749ce830e4797ab6a72eaeb7032aad4d7d75279",
+      "validated_annotation_rows": 19,
+      "validated_cww_rows": 14
+    },
+    {
+      "id": "RF01750:5btp_A",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "5btp",
+      "chain_id": "A",
+      "sequence_sha256": "9b33908d46ed3cc4bd5d210c8722af715b9fca9e8161ec6e08238dfbef3a47e7",
+      "validated_annotation_rows": 25,
+      "validated_cww_rows": 21
+    },
+    {
+      "id": "RF01786:3q3z_A",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "3q3z",
+      "chain_id": "A",
+      "sequence_sha256": "92a8766ebb8afb3dfe47afaf4496afcfcb0527e45d108434ef158435153384f5",
+      "validated_annotation_rows": 32,
+      "validated_cww_rows": 26
+    },
+    {
+      "id": "RF01786:3q3z_V",
+      "status": "ok",
+      "identity_verified": true,
+      "pdb_accession": "3q3z",
+      "chain_id": "V",
+      "sequence_sha256": "92a8766ebb8afb3dfe47afaf4496afcfcb0527e45d108434ef158435153384f5",
+      "validated_annotation_rows": 33,
+      "validated_cww_rows": 27
+    }
+  ],
+  "selected_supported_identity_verified": true,
+  "selected_supported_references": 10,
+  "inference_authorized": false,
+  "broad_validation_gate_satisfied": false
+}

@@ -1,12 +1,13 @@
 {
   "complete": true,
-  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_runs/20261015T022843.461995Z",
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_runs/20261015T030917.687277Z",
   "workspace": "/home/zyliu/Documents/rna-stable-ai",
   "manifest_sha256": {
     "/home/zyliu/Documents/rna-stable-ai/results/banded_development_runs/20261006T021747.776747Z/manifest.json": "b5a573a2d128c8d26b0957c33de2420bc00470d065f94b09151d9ec5805028cf",
     "/home/zyliu/Documents/rna-stable-ai/results/candidate_budget_development_runs/20261014T001919.742401Z/manifest.json": "991c102da658681fc9269b7928914a798d511402aad1e134f9b3d9f27c197066",
     "/home/zyliu/Documents/rna-stable-ai/results/candidate_development_runs/20261012T040208.111315Z/manifest.json": "7bf5927e4f5f764e6955362722f5e4d2efd5233b87f5fe049bd23d4913267a2d",
     "/home/zyliu/Documents/rna-stable-ai/results/candidate_diagnostic_runs/20261006T031124.188304Z/manifest.json": "e8871a45200eaeb663f64947eb6e309111569ce11bf6d0dcc81a1f7e7cedf8d8",
+    "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_lineage_runs/20261015T030800.142018Z/manifest.json": "66ad58a8c7f868578417ef34ea47ad8c056972142da6d6a85f9613fe0fe16c8d",
     "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261006T035130.449329Z/manifest.json": "0bcf1c8074d023c289ce7529f4bee27042036017a0d4e5743b8fa377cd914b4f",
     "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005714.846113Z/manifest.json": "14516446fe63b734e1826505cac37dc82d9a654ef37d169a25b13c5f1f0ec50c",
     "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_prior_pilot_runs/20261007T005735.886952Z/manifest.json": "f9e8e5ed8075c7dcbc9de327adcfb0abf618944bce31318b6115bfacd9e3ea5f",
@@ -69,6 +70,11 @@
     "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json": "e1132564a9ef5bbf565c8fdb01bf7281cb1404b9dfff1021d8e0a3a404863b81",
     "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json": "e43a5984684d994ff96e5f533efc2a00acaf45e0363ce9ca12da80434f5396c8",
     "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json": "ab9de6d6ad2c48c1d242410352f315d5571016c8797f94687a7c768b61b08f6a",
+    "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_figures/20261015T030234.188591Z/manifest.json": "61b1ad6fe71d3f427fbf6655c8ae033ea6e94ac2af71a55831d1f2273ae676b3",
+    "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json": "744af08ed72c487ef4c30edfa364aedd6d179078a3efae76056ac70084cd4200",
+    "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_identity_runs/20261015T025342.239699Z/manifest.json": "1fe8f33fe679d677e68912113f82486ee83856dc988068653912420bc3e657c9",
+    "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json": "a4be7467b69b5c9f1c5dcee55bcf260ad617ea40fce03b817ae455ea8ac3ed7a",
+    "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json": "47383a227cd487cdaf9825e718c13a4693aff12e3c396bf8191b01239e860e31",
     "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020727.857457Z/manifest.json": "96321fb09fafa63edbd0439d29c482201fc992489197e113394f767663ebf4ef",
     "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json": "d42bc8865a7404c6188dd880efd673c2890e4d5aef7d856ec588c790539d7506",
     "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/manifest.json": "0988041f24a1d68d945ea59fb792cf0668219093e1cf4cd3dbffb60b6cebadae",
@@ -81,10 +87,10 @@
     "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json": "adf9d616b72c838c940de9cc26c790978804a225f0241c6bd60bf36f51afc3ca",
     "/home/zyliu/Documents/rna-stable-ai/results/structured_comparative_development_runs/20261006T032540.594773Z/manifest.json": "a6649a8066b67631cc077889cb5fbb74ac06f218882d268ed3f4f9c44aef3fe9"
   },
-  "required_python_bindings": 274,
-  "available_python_bindings": 264,
+  "required_python_bindings": 280,
+  "available_python_bindings": 270,
   "missing_python_bindings": 10,
-  "current_python_files": 167,
+  "current_python_files": 173,
   "current_bundle": {
     "scripts/analyze_candidate_development.py": {
       "sha256": "0e3e4ab764e0af46c288d9e6cdf802bb4fc666d30488ce60b46ee6e8e6a83947",
@@ -97,6 +103,10 @@
     "scripts/archive_replay_sources.py": {
       "sha256": "867ceb55d8da996f5d4f3659460de4a2ebab24468492a224090d99d6d8dfcdea",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/867ceb55d8da996f5d4f3659460de4a2ebab24468492a224090d99d6d8dfcdea.py"
+    },
+    "scripts/audit_checkpoint_lineage.py": {
+      "sha256": "5bb97d73e838ce9d8347c92692ca46456ab4119946acdbd491a3a472bb9770c0",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/5bb97d73e838ce9d8347c92692ca46456ab4119946acdbd491a3a472bb9770c0.py"
     },
     "scripts/audit_family_readiness.py": {
       "sha256": "d9aef05d8bb844fbeb80aa4ec6e4d376026156d1310b133f2222afb85501e2fb",
@@ -150,6 +160,10 @@
       "sha256": "335e290d95729ef93424948f3f88a79cfeeae9b1a9571ab83319ee85383dd8cd",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/335e290d95729ef93424948f3f88a79cfeeae9b1a9571ab83319ee85383dd8cd.py"
     },
+    "scripts/evaluate_raw_structure_feasibility.py": {
+      "sha256": "a1378f60ef4ea1dc2aae5917ed5757194f80954ff7ddfedf6f1e7c618de29df7",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/a1378f60ef4ea1dc2aae5917ed5757194f80954ff7ddfedf6f1e7c618de29df7.py"
+    },
     "scripts/log_command.py": {
       "sha256": "79f46b445b6ffc98063ceeb3b0cac6ac67e390ac1e43a3d8c53ed3d4506a226a",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/79f46b445b6ffc98063ceeb3b0cac6ac67e390ac1e43a3d8c53ed3d4506a226a.py"
@@ -157,6 +171,10 @@
     "scripts/plan_family_study.py": {
       "sha256": "e7ad2e9cd2c83c87f60c6642a7b4f7cca306598c2049f4410bcd3191021cca63",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/e7ad2e9cd2c83c87f60c6642a7b4f7cca306598c2049f4410bcd3191021cca63.py"
+    },
+    "scripts/plan_raw_structure_panel.py": {
+      "sha256": "61d73d6cf550a724398a1082ed78506f3f982800f82f68943b2ecb2276575a8c",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/61d73d6cf550a724398a1082ed78506f3f982800f82f68943b2ecb2276575a8c.py"
     },
     "scripts/plot_degradation_pilot.py": {
       "sha256": "11ec3572455b2ff6eb9075e9edc292162e81004891dfb127db19a88386a973e4",
@@ -169,6 +187,10 @@
     "scripts/plot_experimental_pilot.py": {
       "sha256": "2fe65dccc2d43084d9697a95a862de064069071b3d83413a59979b22471e40e2",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/2fe65dccc2d43084d9697a95a862de064069071b3d83413a59979b22471e40e2.py"
+    },
+    "scripts/plot_raw_structure_feasibility.py": {
+      "sha256": "2094094d3c10f66364b739f32f7e4ae37fcc42de42da80431401dd1305438a06",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/2094094d3c10f66364b739f32f7e4ae37fcc42de42da80431401dd1305438a06.py"
     },
     "scripts/predict_context.py": {
       "sha256": "1f6d873250a55fab543793409575df48f1e161b25cfc0b9f1444cdbb67e198ea",
@@ -193,6 +215,10 @@
     "scripts/prepare_prospective_family_panel.py": {
       "sha256": "2b679a4f6373cbf125f5a14bf305af979dc5e1fab21d064853c92690336343cb",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/2b679a4f6373cbf125f5a14bf305af979dc5e1fab21d064853c92690336343cb.py"
+    },
+    "scripts/prepare_raw_structure_references.py": {
+      "sha256": "663455b6a81c5f2f69b6b4c6e0178d8703783d98187317684a13d643640c1751",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/663455b6a81c5f2f69b6b4c6e0178d8703783d98187317684a13d643640c1751.py"
     },
     "scripts/prepare_structure_derived_binding.py": {
       "sha256": "d5461c4aaf31e434590ac10b71da7243cfce95ca09a895b0f32599a5d4f0998a",
@@ -449,6 +475,10 @@
     "scripts/verify_quality.py": {
       "sha256": "ab60822aa0c654f8ada5ab602b5281438c3120eadc3e386b8c93142be9be17a7",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/ab60822aa0c654f8ada5ab602b5281438c3120eadc3e386b8c93142be9be17a7.py"
+    },
+    "scripts/verify_raw_structure_identity.py": {
+      "sha256": "77ec8e574741ee15e8e20561a012a8189f04aedaa8ccdbac167422c6801ec80d",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/77ec8e574741ee15e8e20561a012a8189f04aedaa8ccdbac167422c6801ec80d.py"
     },
     "scripts/verify_reference.py": {
       "sha256": "07df18da0382e874a70ffe90220865f12e71679618cb0edc4066173644d9a49a",
@@ -2981,6 +3011,19 @@
       }
     },
     {
+      "path": "/home/zyliu/Documents/rna-stable-ai/scripts/audit_checkpoint_lineage.py",
+      "sha256": "5bb97d73e838ce9d8347c92692ca46456ab4119946acdbd491a3a472bb9770c0",
+      "manifests": [
+        "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_lineage_runs/20261015T030800.142018Z/manifest.json"
+      ],
+      "status": "available",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/5bb97d73e838ce9d8347c92692ca46456ab4119946acdbd491a3a472bb9770c0.py",
+      "origin": {
+        "kind": "saved_snapshot",
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_lineage_runs/20261015T030800.142018Z/driver.py"
+      }
+    },
+    {
       "path": "/home/zyliu/Documents/rna-stable-ai/scripts/audit_reference_readiness.py",
       "sha256": "07e392cf2473955347b44f74cbc74659e919b10fd03e62c41b63682ccac9eac8",
       "manifests": [
@@ -2990,7 +3033,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/07e392cf2473955347b44f74cbc74659e919b10fd03e62c41b63682ccac9eac8.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/07e392cf2473955347b44f74cbc74659e919b10fd03e62c41b63682ccac9eac8.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261015T023211.529798Z/rna-stable-ai/results/replay_source_archive_blobs/07e392cf2473955347b44f74cbc74659e919b10fd03e62c41b63682ccac9eac8.py"
       }
     },
     {
@@ -3005,20 +3048,21 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/e9392e2d98c4a455b93d3b2227b74a3542f5e99204f54ae7cf5d736959af9371.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/e9392e2d98c4a455b93d3b2227b74a3542f5e99204f54ae7cf5d736959af9371.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261015T023211.529798Z/rna-stable-ai/results/replay_source_archive_blobs/e9392e2d98c4a455b93d3b2227b74a3542f5e99204f54ae7cf5d736959af9371.py"
       }
     },
     {
       "path": "/home/zyliu/Documents/rna-stable-ai/scripts/audit_structure_contact_provenance.py",
       "sha256": "a795d6b323b7a257a8420ff53611cfcdbedc52150374956e44f3c611390370c9",
       "manifests": [
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_protocol_runs/20261015T022345.539073Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/a795d6b323b7a257a8420ff53611cfcdbedc52150374956e44f3c611390370c9.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/a795d6b323b7a257a8420ff53611cfcdbedc52150374956e44f3c611390370c9.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261015T023211.529798Z/rna-stable-ai/results/replay_source_archive_blobs/a795d6b323b7a257a8420ff53611cfcdbedc52150374956e44f3c611390370c9.py"
       }
     },
     {
@@ -3090,7 +3134,8 @@
       "path": "/home/zyliu/Documents/rna-stable-ai/scripts/evaluate_degradation_pilot.py",
       "sha256": "a7eac60bd00b09bddfdf585f20fe4ce2149e9d627e7aa7e46ef5399d1f87e9d1",
       "manifests": [
-        "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/a7eac60bd00b09bddfdf585f20fe4ce2149e9d627e7aa7e46ef5399d1f87e9d1.py",
@@ -3106,6 +3151,7 @@
         "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020727.857457Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json"
       ],
@@ -3123,6 +3169,45 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json"
       ],
       "status": "missing_historical_bytes"
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/scripts/evaluate_raw_structure_feasibility.py",
+      "sha256": "a1378f60ef4ea1dc2aae5917ed5757194f80954ff7ddfedf6f1e7c618de29df7",
+      "manifests": [
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json"
+      ],
+      "status": "available",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/a1378f60ef4ea1dc2aae5917ed5757194f80954ff7ddfedf6f1e7c618de29df7.py",
+      "origin": {
+        "kind": "saved_snapshot",
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/driver.py"
+      }
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/scripts/plan_raw_structure_panel.py",
+      "sha256": "61d73d6cf550a724398a1082ed78506f3f982800f82f68943b2ecb2276575a8c",
+      "manifests": [
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json"
+      ],
+      "status": "available",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/61d73d6cf550a724398a1082ed78506f3f982800f82f68943b2ecb2276575a8c.py",
+      "origin": {
+        "kind": "saved_snapshot",
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/driver.py"
+      }
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/scripts/plot_raw_structure_feasibility.py",
+      "sha256": "2094094d3c10f66364b739f32f7e4ae37fcc42de42da80431401dd1305438a06",
+      "manifests": [
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_figures/20261015T030234.188591Z/manifest.json"
+      ],
+      "status": "available",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/2094094d3c10f66364b739f32f7e4ae37fcc42de42da80431401dd1305438a06.py",
+      "origin": {
+        "kind": "saved_snapshot",
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_figures/20261015T030234.188591Z/driver.py"
+      }
     },
     {
       "path": "/home/zyliu/Documents/rna-stable-ai/scripts/prepare_degradation_binding.py",
@@ -3176,29 +3261,45 @@
       }
     },
     {
+      "path": "/home/zyliu/Documents/rna-stable-ai/scripts/prepare_raw_structure_references.py",
+      "sha256": "663455b6a81c5f2f69b6b4c6e0178d8703783d98187317684a13d643640c1751",
+      "manifests": [
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json"
+      ],
+      "status": "available",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/663455b6a81c5f2f69b6b4c6e0178d8703783d98187317684a13d643640c1751.py",
+      "origin": {
+        "kind": "saved_snapshot",
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/driver.py"
+      }
+    },
+    {
       "path": "/home/zyliu/Documents/rna-stable-ai/scripts/prepare_structure_derived_binding.py",
       "sha256": "d5461c4aaf31e434590ac10b71da7243cfce95ca09a895b0f32599a5d4f0998a",
       "manifests": [
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d5461c4aaf31e434590ac10b71da7243cfce95ca09a895b0f32599a5d4f0998a.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d5461c4aaf31e434590ac10b71da7243cfce95ca09a895b0f32599a5d4f0998a.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261015T023211.529798Z/rna-stable-ai/results/replay_source_archive_blobs/d5461c4aaf31e434590ac10b71da7243cfce95ca09a895b0f32599a5d4f0998a.py"
       }
     },
     {
       "path": "/home/zyliu/Documents/rna-stable-ai/scripts/prepare_structure_derived_source.py",
       "sha256": "d1dd5fc411ca28ee110dfe510fed8ba48440ba2efc52dd13b3d319c03bb87426",
       "manifests": [
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d1dd5fc411ca28ee110dfe510fed8ba48440ba2efc52dd13b3d319c03bb87426.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d1dd5fc411ca28ee110dfe510fed8ba48440ba2efc52dd13b3d319c03bb87426.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261015T023211.529798Z/rna-stable-ai/results/replay_source_archive_blobs/d1dd5fc411ca28ee110dfe510fed8ba48440ba2efc52dd13b3d319c03bb87426.py"
       }
     },
     {
@@ -3630,6 +3731,20 @@
       }
     },
     {
+      "path": "/home/zyliu/Documents/rna-stable-ai/scripts/verify_raw_structure_identity.py",
+      "sha256": "77ec8e574741ee15e8e20561a012a8189f04aedaa8ccdbac167422c6801ec80d",
+      "manifests": [
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_identity_runs/20261015T025342.239699Z/manifest.json"
+      ],
+      "status": "available",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/77ec8e574741ee15e8e20561a012a8189f04aedaa8ccdbac167422c6801ec80d.py",
+      "origin": {
+        "kind": "saved_snapshot",
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_identity_runs/20261015T025342.239699Z/driver.py"
+      }
+    },
+    {
       "path": "/home/zyliu/Documents/rna-stable-ai/src/rnastable/__init__.py",
       "sha256": "500f2bd9ff75ed6e6e0012458bd766c1d947f125f04dbdd019b2cc9913b357f5",
       "manifests": [
@@ -3643,6 +3758,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -3692,6 +3810,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -3723,6 +3844,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -3756,6 +3880,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -3799,6 +3926,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -3830,6 +3960,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -3861,6 +3994,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -3892,6 +4028,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -3923,6 +4062,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -3954,6 +4096,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -3977,6 +4122,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/degradation_source_protocol_runs/20261014T010051.844721Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -4030,6 +4178,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -4061,6 +4212,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -4124,6 +4278,7 @@
       "manifests": [
         "/home/zyliu/Documents/rna-stable-ai/results/candidate_budget_development_runs/20261014T001919.742401Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/candidate_development_runs/20261012T040208.111315Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_lineage_runs/20261015T030800.142018Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/degradation_binding_runs/20261014T012010.761117Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/degradation_binding_runs/20261014T012248.606470Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z/manifest.json",
@@ -4132,6 +4287,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -4255,6 +4413,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/manifest.json",
@@ -4283,6 +4444,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -4389,6 +4553,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -4414,6 +4581,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -4445,6 +4615,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -4489,6 +4662,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
@@ -4523,6 +4699,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -4556,6 +4735,7 @@
       "manifests": [
         "/home/zyliu/Documents/rna-stable-ai/results/candidate_budget_development_runs/20261014T001919.742401Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/candidate_development_runs/20261012T040208.111315Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/checkpoint_lineage_runs/20261015T030800.142018Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/degradation_binding_runs/20261014T012010.761117Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/degradation_binding_runs/20261014T012248.606470Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z/manifest.json",
@@ -4564,6 +4744,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020727.857457Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
@@ -4636,6 +4819,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -4661,6 +4847,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -4708,6 +4897,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -4759,6 +4951,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/manifest.json",
@@ -4845,6 +5040,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -4876,6 +5074,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -4901,6 +5102,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -4950,6 +5154,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -4975,6 +5182,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5031,6 +5241,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5062,6 +5275,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
@@ -5096,6 +5312,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5121,6 +5340,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5163,6 +5385,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5188,6 +5413,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5225,6 +5453,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5251,6 +5482,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5276,6 +5510,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5334,6 +5571,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5375,6 +5615,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5400,6 +5643,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5461,6 +5707,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5492,6 +5741,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5517,6 +5769,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5542,6 +5797,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5582,6 +5840,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020727.857457Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
@@ -5616,6 +5877,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5647,6 +5911,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5702,6 +5969,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/manifest.json",
@@ -5738,6 +6008,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5764,6 +6037,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5795,6 +6071,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5826,6 +6105,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5870,6 +6152,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5901,6 +6186,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -5950,6 +6238,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/manifest.json",
@@ -5986,6 +6277,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -6024,6 +6318,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -6076,6 +6373,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/sparse_refinement_runs/20261006T025214.102122Z/manifest.json",
@@ -6115,6 +6415,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/stack_scalability_runs/20261006T033347.600122Z/manifest.json",
@@ -6150,6 +6453,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -6181,6 +6487,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json",
@@ -6213,6 +6522,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
@@ -6245,6 +6557,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_feasibility_runs/20261015T025936.192087Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/raw_structure_references_protocol_runs/20261015T025018.239045Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
