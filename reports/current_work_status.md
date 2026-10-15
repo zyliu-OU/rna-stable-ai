@@ -10,7 +10,8 @@ Candidate budgets, matched helix objectives, the third prospective panel, the
 64-construct assay pilot, and source archival are complete. Defaults unchanged.
 Final pre-publication suite: **672 passed**. Historical source coverage: 257/267.
 
-Current working task: finish the interrupted GitHub publication and verify remote
-contents. Next research task: design a screened independent structure panel with
+GitHub development publication completed at
+[`d0dd8fb`](https://github.com/zyliu-OU/rna-stable-ai/commit/d0dd8fb72fadf80875fd5859caf15d7640a6930e).
+Live main and README content were verified. Next research task: design a screened independent structure panel with
 adequate supported references and documented training/tool provenance. Long
 biological accuracy, mutation benefits, and retained function remain unresolved.

@@ -1,5 +1,5 @@
 {
-  "created_utc": "20261015T015551.374700Z",
+  "created_utc": "20261015T015748.733016Z",
   "source_root": "/home/zyliu/Documents/rna-stable-ai",
   "status": "work_in_progress",
   "release_created": false,
@@ -1931,6 +1931,12 @@
       "exported_sha256": "e0291b09388781185d4669b06e745fed866758d49b8148a1ccff0aa6037665d9"
     },
     {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-14_V1.md",
+      "bytes": 4500,
+      "sha256": "78be00cf392c2907e18626c99ed74d188c8a5bea996b68064b27ecb7609cfea5",
+      "exported_sha256": "78be00cf392c2907e18626c99ed74d188c8a5bea996b68064b27ecb7609cfea5"
+    },
+    {
       "path": "reports/archive/20261004T203927.780298Z/installation_summary.md",
       "bytes": 2120,
       "sha256": "0ae9165f5680a56996be48daafec6073eef6653330088935d5659f724d1828b3",
@@ -2850,15 +2856,15 @@
     },
     {
       "path": "reports/current_work_status.json",
-      "bytes": 1345,
-      "sha256": "94a83e971594df25a2411f2122b0957b96e91b10975b8b264b6e6cc706d7c32d",
-      "exported_sha256": "94a83e971594df25a2411f2122b0957b96e91b10975b8b264b6e6cc706d7c32d"
+      "bytes": 1497,
+      "sha256": "ad88fb20208cfa0a23f5266944e67039c6fb45113bd859458de54476752dfd5b",
+      "exported_sha256": "ad88fb20208cfa0a23f5266944e67039c6fb45113bd859458de54476752dfd5b"
     },
     {
       "path": "reports/current_work_status.md",
-      "bytes": 904,
-      "sha256": "e0ac8d077e676f5c9f6b0f78d85e0743950189229b171ffb8f3ed443c62342d6",
-      "exported_sha256": "e0ac8d077e676f5c9f6b0f78d85e0743950189229b171ffb8f3ed443c62342d6"
+      "bytes": 1004,
+      "sha256": "f71483aa08a1946ef8f7438e4767eb857d691819465ba2c8724e5222092b6c6a",
+      "exported_sha256": "f71483aa08a1946ef8f7438e4767eb857d691819465ba2c8724e5222092b6c6a"
     },
     {
       "path": "reports/degradation-binding-2026-10-13.log",
@@ -71591,8 +71597,8 @@
       "exported_sha256": "8e83f76f176e1eecc564ffc7eca8feb0722d343d054ed791250bdcc63a485bee"
     }
   ],
-  "source_file_count": 11931,
-  "source_bytes": 508524400,
+  "source_file_count": 11932,
+  "source_bytes": 508529152,
   "notes": [
     "Copied files preserve original evidence. README adjusted for GitHub.",
     "Original workspace and dependencies are untouched.",

@@ -4,7 +4,7 @@
   "workspace": "/home/zyliu/Documents/rna-stable-ai",
   "canonical_handoff": "RNA-StableAI_HANDOFF_2026-10-14_V1.md",
   "roadmap": "reports/PROJECT_ROADMAP_2026-10-14.md",
-  "state": "Step 4: independent biological structure validation; completing interrupted GitHub publication",
+  "state": "Step 4: independent biological structure validation; GitHub development publication completed and verified",
   "development_run": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z",
   "verification": {
     "full_suite_passed": 672,
@@ -25,6 +25,8 @@
     "Controlled mutation effects and retained function",
     "Scientifically validated release"
   ],
-  "publication_updated": false,
+  "publication_updated": true,
+  "development_publication_commit": "d0dd8fb72fadf80875fd5859caf15d7640a6930e",
+  "repository": "https://github.com/zyliu-OU/rna-stable-ai",
   "previous_status_archive": "/home/zyliu/Documents/rna-stable-ai/reports/archive/20261012T040654.222941Z"
 }
