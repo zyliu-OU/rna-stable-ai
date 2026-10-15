@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "purpose": "source_annotation_integrity_only",
+  "mode": "only_nested_False",
+  "maximum_bytes": 2097152,
+  "timeout_seconds": 30,
+  "contact_class": "cWW",
+  "model_inference_authorized": false,
+  "replace_frozen_references": false,
+  "interpretation": "Current raw FR3D graph versus the pinned historical supplied annotation. Differences may reflect source updates or positional writer projection; do not attribute a cause without exact-version evidence. This is not a new independent test panel."
+}

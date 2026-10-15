@@ -1,0 +1,3 @@
+Structure-derived source audit passed: exact Git blobs, response ledger and frozen models; no annotation parsing.
+Structure-derived binding replay passed: exact per-sequence contacts and exposure; no predictions or native calls.
+Frozen raw-contact integrity protocol: /home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_protocol_runs/20261015T022345.539073Z/manifest.json

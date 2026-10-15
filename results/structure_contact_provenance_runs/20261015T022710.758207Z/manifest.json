@@ -1,0 +1,20 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_runs/20261015T022710.758207Z",
+  "protocol_run": "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_protocol_runs/20261015T022345.539073Z",
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_runs/20261015T022710.758207Z/exposures/20261015T022714.811080Z.json",
+    "sha256": "3bb3f6fa1fc8967120e047bd8a66fbe69d3616a746e0e0a3327fba4204cafd75",
+    "stage": "validation_started"
+  },
+  "snapshot_sha256": {
+    "attempts.json": "0ad95558b07fb98e5f542928bf7c833cfde23c7785bc61bfcf13340114c1f38c",
+    "protocol.json": "dcf1baa0a3b24c99bb3e06063702b375420e97e9eb879461fa8ade9bb9904ac6",
+    "record_002.json": "ae2ecb4a645c61f43b3fbd6a8b52806949c910ec67b30ce40179368a92d8fb6f",
+    "record_003.json": "08a5905025f1c5e41d9c66b4d7815e977444a0a6482a993188f39986ae831c35",
+    "record_000.json": "4d7ef0190c838dd408d45c06f46545f1a3d4f5c7b178101de0c294887a84cacb",
+    "record_004.json": "ce949d26e597c45577528413ec39e4da9ec049c2a6f033ca2afd06bdbb77d8b4",
+    "record_005.json": "7fd9808ede2f9ce7e426ea17da443fed0b083f220023758ee4b5677e7f95a953",
+    "record_001.json": "303d3d1f357b54500aa0708e1b0f10e0652017c124e82253db34dcf159b6c544",
+    "exposures/20261015T022714.811080Z.json": "3bb3f6fa1fc8967120e047bd8a66fbe69d3616a746e0e0a3327fba4204cafd75"
+  }
+}

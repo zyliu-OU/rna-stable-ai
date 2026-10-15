@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z",
+  "stage": "validation_started",
+  "records": [
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3owi"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3owi"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3oww"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3oww"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3owz"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3owz"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3ox0"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3ox0"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3oxe"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3oxe"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3oxj"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3oxj"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3oxm"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3oxm"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAACGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUGAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3oxd"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAACGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUGAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3oxd"
+    },
+    {
+      "sequence": "GGAUAUGAGGAGAGAUUUCAUCCAUUGCACUCCGGAUGAAACACCGAAGAAGUAAAUCUUUCAGGUAAAAAGGACUCAUAUUGGACGAACCUCUGGAGAGCUUAUCUAAGAGAUAACACCGAAGGAGCAAAGCUAAUUUUAGCCUAAACUCUCAGGUAAAAGGACGGAG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3p49"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCCCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3oxb"
+    },
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCCCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3oxb"
+    },
+    {
+      "sequence": "GGAAUCGGAUGAAGAUAUGAGGAGAGAUUUCAUUUUAAUGAAACACCGAAGAAGUAAAUCUUUCAGGUAAAAAGGACUCAUAUUGGACGAACCUCUGGAGAGCUUAUCUAAGAGAUAACACCGAAGGAGCAAAGCUAAUUUUAGCCUAAACUCUCAGGUAAAAGGACGGAG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "6wll"
+    },
+    {
+      "sequence": "GGAAUCGGAUGAAGAUAUGAGGAGAGAUUUCAUUUUAAUGAAACACCGAAGAAGUAAAUCUUUCAGGUAAAAAGGACUCAUAUUGGACGAACCUCUGGAGAGCUUAUCUAAGAGAUAACACCGAAGGAGCAAAGCUAAUUUUAGCCUAAACUCUCAGGUAAAAGGACGGAG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "6wlm"
+    },
+    {
+      "sequence": "GGUCCGUUGAAGACUGCAGGAGAGUGGUUGUUAACCAGAUUUUAACAUCUGAGCCAAAUAACCCGCCGAAGAAGUAAAUCUUUCAGGUGCAUUAUUCUUAGCCAUAUAUUGGCAACGAAUAAGCGAGGACUGUAGUUGGAGGAACCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGCAUAUGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGGA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "6wlt"
+    },
+    {
+      "sequence": "GGUCCGUUGAAGACUGCAGGAGAGUGGUUGUUAACCAGAUUUUAACAUCUGAGCCAAAUAACCCGCCGAAGAAGUAAAUCUUUCAGGUGCAUUAUUCUUAGCCAUAUAUUGGCAACGAAUAAGCGAGGACUGUAGUUGGAGGAACCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGCAUAUGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGGA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "6wlu"
+    },
+    {
+      "sequence": "GGAGAGGUUCUAGUUAUACCCUCUAUAAAAAACUAA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF00522",
+      "pdb_accession": "2l1v"
+    },
+    {
+      "sequence": "GGUCACGCACAGAGCAAACCAUUCGAAAGAGUGGGACGCAAAGCCUCCGGCCUAAACCAUUGCACUCCGGUAGGUAGCGGGGUUACCGAUGG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "3mum"
+    },
+    {
+      "sequence": "GGUCACGCACAGAGCAAACCAUUCGAAAGAGUGGGACGCAAAGCCUCCGGCCUAAACCAUUGCACUCCGGUAGGUAGCGGGGUUAUCGAUGG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "3mut"
+    },
+    {
+      "sequence": "GGUCACGCACAGAGCAAACCAUUCGAAAGAGUGGGACGCAAAGCCUCCGGCCUAAACCAUUGCACUCCGGUAGGUAGCGGGGUUAUCGAUGG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "3muv"
+    },
+    {
+      "sequence": "CACGCACAGGGCAAACCAUUCGAAAGAGUGGGACGCAAAGCCUCCGGCCUAAACGGCAUUGCACUCCGCCGUAGGUAGCGGGGUUACCGAUGG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "3iwn"
+    },
+    {
+      "sequence": "CACGCACAGGGCAAACCAUUCGAAAGAGUGGGACGCAAAGCCUCCGGCCUAAACGGCAUUGCACUCCGCCGUAGGUAGCGGGGUUACCGAUGG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "3iwn"
+    },
+    {
+      "sequence": "GGUCACGCACAGGGCAAACCAUUCGAAAGAGUGGGACGCAAAGCCUCCGGCCUAAACCAUUGCACUCCGGUAGGUAGCGGGGUUAUCGAUGG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "3mur"
+    },
+    {
+      "sequence": "GGUCACGCACAGGGCAAACCAUUCGAAAGAGUGGGACGCAAAGCCUCCGGCCUAAACCAUUGCACUCCGGUAGGUAGCGGGGUUAUCGAUGG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "3ud3"
+    },
+    {
+      "sequence": "GGUCACGCACAGGGCAAACCAUUCGAAAGAGUGGGACGCAAAGCCUCCGGCCUAAACCAUUGCACUCCGGUAGGUAGCGGGGUUAUCGAUGG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "3ud4"
+    },
+    {
+      "sequence": "GGUCACGCACAGGGCAAACCAUUCGAAAGAGUGGGACGCAAAGCCUCCGGCCUAAACCAUUGCACUCCGGUAGGUAGCGGGGUUACCGAUGG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "3irw"
+    },
+    {
+      "sequence": "GGUCACGCACAGGGCAAACCAUUCGAAAGAGUGGGACGCAAAGCCUCCGGCCUAAACCAUUGCACUCCGGUAGGUAGCGGGGUUACCGAUGG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "3mxh"
+    },
+    {
+      "sequence": "GGUCACGCACAGGGCAAACCAUUCGAAAGAGUGGGACGCAAAGCCUCCGGCCUAAACCAUUGCACUCCGGUAGGUAGCGGGGUUACCGAUGG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "3ucu"
+    },
+    {
+      "sequence": "GGUCACGCACAGGGCAAACCAUUCGAAAGAGUGGGACGCAAAGCCUCCGGCCUAAACCAUUGCACUCCGGUAGGUAGCGGGGUUACCGAUGG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "3ucz"
+    },
+    {
+      "sequence": "GUACACGACAAUACUAAACCAUCCGCGAGGAUGGGGCGGAAAGCCUAAGGGUCUCCCUGAGACAGCCGGGCUGCCGAAAUAUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "4yb0"
+    },
+    {
+      "sequence": "GUACACGACAAUACUAAACCAUCCGCGAGGAUGGGGCGGAAAGCCUAAGGGUCUCCCUGAGACAGCCGGGCUGCCGAAAUAUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "4yb0"
+    },
+    {
+      "sequence": "GGUACACGACAAUACUAAACCAUCCGCGAGGAUGGGGCGGAAAGCCUAAGGGUCUCCCUGAGACAGCCGGGCUGCCGAAAUAUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "4yaz"
+    },
+    {
+      "sequence": "GGUACACGACAAUACUAAACCAUCCGCGAGGAUGGGGCGGAAAGCCUAAGGGUCUCCCUGAGACAGCCGGGCUGCCGAAAUAUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "4yaz"
+    },
+    {
+      "sequence": "GGGCACGCACAGAGCAAACCAUUCGAAAGAGUGGGACGCAAAGCCUCCGGCCUAAACCAUUGCACCUCGGUAGGUAGCGGGGUUACCGAUG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "4yb1"
+    }
+  ],
+  "records_sha256": "194e3fc3fa92a6eb9b85ab99dd9f27de98931a8b5cdc809c961f1a87a32042fd"
+}

@@ -1,0 +1,10 @@
+LICENSE: error
+README.md: error
+add_3d.py: error
+data/output/RF00504.sto: error
+data/output/RF00522.sto: error
+data/output/RF01051.sto: error
+fr3d_2d.py: error
+pdb_full_region.txt: error
+pdb_full_region_curated.txt: error
+Structure-derived source audit passed: exact Git blobs, response ledger and frozen models; no annotation parsing.

@@ -1,0 +1,9 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_runs/20261015T022429.603452Z",
+  "protocol_run": "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_protocol_runs/20261015T022345.539073Z",
+  "exposure_event": null,
+  "snapshot_sha256": {
+    "attempts.json": "987908e297800eca029d6002e45197007fb83de6716cc0208e15c462d9c283b5",
+    "protocol.json": "dcf1baa0a3b24c99bb3e06063702b375420e97e9eb879461fa8ade9bb9904ac6"
+  }
+}

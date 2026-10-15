@@ -1,0 +1,18 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_runs/20261015T021501.529110Z",
+  "protocol_run": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z",
+  "policy": "Pinned source acquisition only. Retain all requested files and failures. No annotation pairs parsed, cohort selected, model inference, native folds, or new exposure. Per-sequence FR3D/PDB-derived annotations are distinct from seed consensus and direct chemical-probing measurements. Final sequence/provenance binding, declared coverage minima, exposure events, and evaluation protocol remain required.",
+  "snapshot_sha256": {
+    "protocol.json": "adf9d616b72c838c940de9cc26c790978804a225f0241c6bd60bf36f51afc3ca",
+    "attempts.json": "f07d24d9509d3535217043eea747cdacc5b5b888c119f16f2548f7cca7af85e9",
+    "source/LICENSE": "4722e9dbbce4c9087cae616ff5120d0bef1a2c2f3bb6faec8598bc4f77626eb2",
+    "source/README.md": "d35e3335daf323e60c0549df119eeb4e47774915de33eac9408e289cf1831fc3",
+    "source/add_3d.py": "f4d41ed7af13da21528dc9498c1d0dd01e9f5f01537db68a614e6b89a853f6d6",
+    "source/data/output/RF00504.sto": "09696acd51006b21aef9c9e1fd900610971ab9e49aa37564bb94743bb46af803",
+    "source/data/output/RF00522.sto": "bdc6bff3686f4e6b30727ded922fb08ce272f7053d02022ffa75e865690470bc",
+    "source/data/output/RF01051.sto": "f22998796f4290b26206c8304c9db267a7a0e42bc635e669753fb49a8a5b3d03",
+    "source/fr3d_2d.py": "99ae97a2ea78f992921f007724704364bf818cc5712c7b27d78ca74928e732a4",
+    "source/pdb_full_region.txt": "cd2a8b2a9dfe05f48c056c717df27c3a98802268c882053cb650f24ba1d3f211",
+    "source/pdb_full_region_curated.txt": "bb6713468f7da7e35a6b1f688c0424f7d8003fa7a39bb37259d6d117d908b077"
+  }
+}

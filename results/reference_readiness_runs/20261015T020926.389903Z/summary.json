@@ -1,0 +1,347 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z",
+  "manifest_sha256": "d42bc8865a7404c6188dd880efd673c2890e4d5aef7d856ec588c790539d7506",
+  "policy": {
+    "schema_version": 1,
+    "minimum_supported_families": 3,
+    "minimum_supported_per_family": 3,
+    "minimum_supported_total": 12,
+    "require_complete_sequence_bindings": true,
+    "require_no_known_provenance_overlap": true,
+    "annotation_source_policy": "retain_exact_source_text_never_infer_experimental_truth_from_citation",
+    "selection_policy": "fixed_panel_no_replacement_no_model_metrics",
+    "purpose": "Prospective design coverage gate; descriptive audit of historical panels does not make them fresh tests or establish statistical power."
+  },
+  "exposure_records_checked": 4806,
+  "exposures_without_family_id": 4693,
+  "panels": [
+    {
+      "binding_summary": "/home/zyliu/Documents/rna-stable-ai/results/prospective_binding_runs/20261012T030228.664684Z/summary.json",
+      "planned_records": 15,
+      "supported_references": 9,
+      "unsupported_references": 6,
+      "families_meeting_coverage": 2,
+      "coverage_thresholds_met": false,
+      "fresh_comparative_panel_ready": false,
+      "readiness_failures": [
+        "insufficient_supported_families",
+        "insufficient_supported_references",
+        "families_already_consumed"
+      ],
+      "independent_experimental_panel_ready": false,
+      "training_tool_independence_certified": false,
+      "families": [
+        {
+          "family_id": "RF00059",
+          "planned_records": 5,
+          "supported_references": 5,
+          "unsupported_references": 0,
+          "status_counts": {
+            "ok": 5
+          },
+          "minimum_family_coverage_met": true,
+          "prior_family_exposure": true,
+          "structure_source_lines": [
+            "Published; PMID:12376536;"
+          ],
+          "source_category": "published_source_unverified",
+          "declared_prediction_tools": [],
+          "structure_source_pmids": [
+            "12376536"
+          ],
+          "family_bibliography_pmids": [
+            "12376536",
+            "11470904",
+            "12410317",
+            "12756322",
+            "14675766",
+            "17307816",
+            "16675665",
+            "16728979",
+            "16962976",
+            "18533652",
+            "19948769",
+            "24768306"
+          ],
+          "per_sequence_experiment_verified": false,
+          "native_control_reference_independence_certified": false
+        },
+        {
+          "family_id": "RF00162",
+          "planned_records": 5,
+          "supported_references": 0,
+          "unsupported_references": 5,
+          "status_counts": {
+            "unsupported_reference": 5
+          },
+          "minimum_family_coverage_met": false,
+          "prior_family_exposure": true,
+          "structure_source_lines": [
+            "Published; PMID:10094622"
+          ],
+          "source_category": "published_source_unverified",
+          "declared_prediction_tools": [],
+          "structure_source_pmids": [
+            "10094622"
+          ],
+          "family_bibliography_pmids": [
+            "10094622",
+            "12910260",
+            "12702767",
+            "15215334",
+            "16810258",
+            "20006621",
+            "20637415",
+            "20951706",
+            "22355167",
+            "22539525",
+            "23325110",
+            "27016741",
+            "33978763"
+          ],
+          "per_sequence_experiment_verified": false,
+          "native_control_reference_independence_certified": false
+        },
+        {
+          "family_id": "RF00167",
+          "planned_records": 5,
+          "supported_references": 4,
+          "unsupported_references": 1,
+          "status_counts": {
+            "ok": 4,
+            "unsupported_reference": 1
+          },
+          "minimum_family_coverage_met": true,
+          "prior_family_exposure": true,
+          "structure_source_lines": [
+            "Published; PMID:12787499"
+          ],
+          "source_category": "published_source_unverified",
+          "declared_prediction_tools": [],
+          "structure_source_pmids": [
+            "12787499"
+          ],
+          "family_bibliography_pmids": [
+            "12787499",
+            "14718920",
+            "15549109",
+            "23842498"
+          ],
+          "per_sequence_experiment_verified": false,
+          "native_control_reference_independence_certified": false
+        }
+      ]
+    },
+    {
+      "binding_summary": "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_binding_runs/20261012T035646.856700Z/summary.json",
+      "planned_records": 15,
+      "supported_references": 8,
+      "unsupported_references": 7,
+      "families_meeting_coverage": 1,
+      "coverage_thresholds_met": false,
+      "fresh_comparative_panel_ready": false,
+      "readiness_failures": [
+        "insufficient_supported_families",
+        "insufficient_supported_references",
+        "families_already_consumed"
+      ],
+      "independent_experimental_panel_ready": false,
+      "training_tool_independence_certified": false,
+      "families": [
+        {
+          "family_id": "RF00050",
+          "planned_records": 5,
+          "supported_references": 4,
+          "unsupported_references": 1,
+          "status_counts": {
+            "ok": 4,
+            "unsupported_reference": 1
+          },
+          "minimum_family_coverage_met": true,
+          "prior_family_exposure": true,
+          "structure_source_lines": [
+            "Published; PMID:12456892"
+          ],
+          "source_category": "published_source_unverified",
+          "declared_prediction_tools": [],
+          "structure_source_pmids": [
+            "12456892"
+          ],
+          "family_bibliography_pmids": [
+            "12136096",
+            "10529804",
+            "12456892",
+            "19169240",
+            "33103111"
+          ],
+          "per_sequence_experiment_verified": false,
+          "native_control_reference_independence_certified": false
+        },
+        {
+          "family_id": "RF00174",
+          "planned_records": 5,
+          "supported_references": 2,
+          "unsupported_references": 3,
+          "status_counts": {
+            "ok": 2,
+            "unsupported_reference": 3
+          },
+          "minimum_family_coverage_met": false,
+          "prior_family_exposure": true,
+          "structure_source_lines": [
+            "Predicted; PFOLD"
+          ],
+          "source_category": "prediction_declared",
+          "declared_prediction_tools": [
+            "PFOLD"
+          ],
+          "structure_source_pmids": [],
+          "family_bibliography_pmids": [
+            "12787499",
+            "12923257",
+            "14704351",
+            "28483920",
+            "23064232",
+            "23064646",
+            "32544228",
+            "37534568"
+          ],
+          "per_sequence_experiment_verified": false,
+          "native_control_reference_independence_certified": false
+        },
+        {
+          "family_id": "RF00234",
+          "planned_records": 5,
+          "supported_references": 2,
+          "unsupported_references": 3,
+          "status_counts": {
+            "ok": 2,
+            "unsupported_reference": 3
+          },
+          "minimum_family_coverage_met": false,
+          "prior_family_exposure": true,
+          "structure_source_lines": [
+            "Published; PMID:15029187"
+          ],
+          "source_category": "published_source_unverified",
+          "declared_prediction_tools": [],
+          "structure_source_pmids": [
+            "15029187"
+          ],
+          "family_bibliography_pmids": [
+            "15029187",
+            "16699515",
+            "16784238"
+          ],
+          "per_sequence_experiment_verified": false,
+          "native_control_reference_independence_certified": false
+        }
+      ]
+    },
+    {
+      "binding_summary": "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_binding_runs/20261014T011058.285068Z/summary.json",
+      "planned_records": 15,
+      "supported_references": 4,
+      "unsupported_references": 11,
+      "families_meeting_coverage": 1,
+      "coverage_thresholds_met": false,
+      "fresh_comparative_panel_ready": false,
+      "readiness_failures": [
+        "insufficient_supported_families",
+        "insufficient_supported_references",
+        "families_already_consumed"
+      ],
+      "independent_experimental_panel_ready": false,
+      "training_tool_independence_certified": false,
+      "families": [
+        {
+          "family_id": "RF00010",
+          "planned_records": 5,
+          "supported_references": 0,
+          "unsupported_references": 5,
+          "status_counts": {
+            "unsupported_reference": 5
+          },
+          "minimum_family_coverage_met": false,
+          "prior_family_exposure": true,
+          "structure_source_lines": [
+            "Published; PMID:9847214"
+          ],
+          "source_category": "published_source_unverified",
+          "declared_prediction_tools": [],
+          "structure_source_pmids": [
+            "9847214"
+          ],
+          "family_bibliography_pmids": [
+            "9759486",
+            "9847214",
+            "23324607"
+          ],
+          "per_sequence_experiment_verified": false,
+          "native_control_reference_independence_certified": false
+        },
+        {
+          "family_id": "RF00023",
+          "planned_records": 5,
+          "supported_references": 0,
+          "unsupported_references": 5,
+          "status_counts": {
+            "unsupported_reference": 5
+          },
+          "minimum_family_coverage_met": false,
+          "prior_family_exposure": true,
+          "structure_source_lines": [
+            "Published; PMID:19617710"
+          ],
+          "source_category": "published_source_unverified",
+          "declared_prediction_tools": [],
+          "structure_source_pmids": [
+            "19617710"
+          ],
+          "family_bibliography_pmids": [
+            "8972778",
+            "8990402",
+            "11752287",
+            "12140330",
+            "12520048",
+            "19617710"
+          ],
+          "per_sequence_experiment_verified": false,
+          "native_control_reference_independence_certified": false
+        },
+        {
+          "family_id": "RF00168",
+          "planned_records": 5,
+          "supported_references": 4,
+          "unsupported_references": 1,
+          "status_counts": {
+            "ok": 4,
+            "unsupported_reference": 1
+          },
+          "minimum_family_coverage_met": true,
+          "prior_family_exposure": true,
+          "structure_source_lines": [
+            "Published; PMID:12787499"
+          ],
+          "source_category": "published_source_unverified",
+          "declared_prediction_tools": [],
+          "structure_source_pmids": [
+            "12787499"
+          ],
+          "family_bibliography_pmids": [
+            "12787499",
+            "14523230",
+            "14597663",
+            "14627808"
+          ],
+          "per_sequence_experiment_verified": false,
+          "native_control_reference_independence_certified": false
+        }
+      ]
+    }
+  ],
+  "inference_performed": false,
+  "new_exposure_recorded": false,
+  "experimental_independence_certified": false
+}

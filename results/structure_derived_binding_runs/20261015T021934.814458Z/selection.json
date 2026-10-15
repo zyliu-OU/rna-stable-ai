@@ -1,0 +1,330 @@
+[
+  {
+    "id": "RF00504:3owi_A:URS000080DF11_593588/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3owi",
+    "chain_id": "A",
+    "sequence_sha256": "6ef5c095b9a44f4001c8185373e08a8d98a7468240ffdb2b238f8133f8ed00de",
+    "reason": "selected_before_annotation_pair_parsing"
+  },
+  {
+    "id": "RF00504:3owi_B:URS000080DF11_593588/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3owi",
+    "chain_id": "B",
+    "sequence_sha256": "6ef5c095b9a44f4001c8185373e08a8d98a7468240ffdb2b238f8133f8ed00de",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3oww_A:URS000080DF11_666/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3oww",
+    "chain_id": "A",
+    "sequence_sha256": "6ef5c095b9a44f4001c8185373e08a8d98a7468240ffdb2b238f8133f8ed00de",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3oww_B:URS000080DF11_666/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3oww",
+    "chain_id": "B",
+    "sequence_sha256": "6ef5c095b9a44f4001c8185373e08a8d98a7468240ffdb2b238f8133f8ed00de",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3owz_A:URS000080DF11_666/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3owz",
+    "chain_id": "A",
+    "sequence_sha256": "6ef5c095b9a44f4001c8185373e08a8d98a7468240ffdb2b238f8133f8ed00de",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3owz_B:URS000080DF11_666/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3owz",
+    "chain_id": "B",
+    "sequence_sha256": "6ef5c095b9a44f4001c8185373e08a8d98a7468240ffdb2b238f8133f8ed00de",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3ox0_A:URS000080DF11_666/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3ox0",
+    "chain_id": "A",
+    "sequence_sha256": "6ef5c095b9a44f4001c8185373e08a8d98a7468240ffdb2b238f8133f8ed00de",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3ox0_B:URS000080DF11_666/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3ox0",
+    "chain_id": "B",
+    "sequence_sha256": "6ef5c095b9a44f4001c8185373e08a8d98a7468240ffdb2b238f8133f8ed00de",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3oxb_A:URS000080E10C_666/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3oxb",
+    "chain_id": "A",
+    "sequence_sha256": "467cdd6084466f318356ac71af77214a62a5ff7e85865605f8ae8485a32035b8",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3oxb_B:URS000080E10C_666/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3oxb",
+    "chain_id": "B",
+    "sequence_sha256": "467cdd6084466f318356ac71af77214a62a5ff7e85865605f8ae8485a32035b8",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3oxd_A:URS000080DF55_666/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3oxd",
+    "chain_id": "A",
+    "sequence_sha256": "e3f6011ee82682867fabb83bb40bbfaf9fb68def58661a436fc7885e45569e52",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3oxd_B:URS000080DF55_666/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3oxd",
+    "chain_id": "B",
+    "sequence_sha256": "e3f6011ee82682867fabb83bb40bbfaf9fb68def58661a436fc7885e45569e52",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3oxe_A:URS000080DF11_666/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3oxe",
+    "chain_id": "A",
+    "sequence_sha256": "6ef5c095b9a44f4001c8185373e08a8d98a7468240ffdb2b238f8133f8ed00de",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3oxe_B:URS000080DF11_666/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3oxe",
+    "chain_id": "B",
+    "sequence_sha256": "6ef5c095b9a44f4001c8185373e08a8d98a7468240ffdb2b238f8133f8ed00de",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3oxj_A:URS000080DF11_666/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3oxj",
+    "chain_id": "A",
+    "sequence_sha256": "6ef5c095b9a44f4001c8185373e08a8d98a7468240ffdb2b238f8133f8ed00de",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3oxj_B:URS000080DF11_666/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3oxj",
+    "chain_id": "B",
+    "sequence_sha256": "6ef5c095b9a44f4001c8185373e08a8d98a7468240ffdb2b238f8133f8ed00de",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3oxm_A:URS000080DF11_666/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3oxm",
+    "chain_id": "A",
+    "sequence_sha256": "6ef5c095b9a44f4001c8185373e08a8d98a7468240ffdb2b238f8133f8ed00de",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3oxm_B:URS000080DF11_666/1-88",
+    "family_id": "RF00504",
+    "pdb_accession": "3oxm",
+    "chain_id": "B",
+    "sequence_sha256": "6ef5c095b9a44f4001c8185373e08a8d98a7468240ffdb2b238f8133f8ed00de",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:3p49_A:URS000080DF90_76857/1-169",
+    "family_id": "RF00504",
+    "pdb_accession": "3p49",
+    "chain_id": "A",
+    "sequence_sha256": "1880599662b7e6894252e1cb7a83c3ba58a165e8f563d404cc05656ec9acd3be",
+    "reason": "selected_before_annotation_pair_parsing"
+  },
+  {
+    "id": "RF00504:6wll_A:URS0001A24B5C_851/1-171",
+    "family_id": "RF00504",
+    "pdb_accession": "6wll",
+    "chain_id": "A",
+    "sequence_sha256": "3016edeee67362d6be781a62d19a4982b3ad21085fdb616bfcd132a077441523",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:6wlm_A:URS0001A24B5C_851/1-171",
+    "family_id": "RF00504",
+    "pdb_accession": "6wlm",
+    "chain_id": "A",
+    "sequence_sha256": "3016edeee67362d6be781a62d19a4982b3ad21085fdb616bfcd132a077441523",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00504:6wlt_A:URS0001A24B5D_666/1-231",
+    "family_id": "RF00504",
+    "pdb_accession": "6wlt",
+    "chain_id": "A",
+    "sequence_sha256": "478fd0c77a17afcb52c8b1fc06fb77d384f8d67d585c41496d7121dca0c8519f",
+    "reason": "selected_before_annotation_pair_parsing"
+  },
+  {
+    "id": "RF00504:6wlu_A:URS0001A24B5D_666/1-231",
+    "family_id": "RF00504",
+    "pdb_accession": "6wlu",
+    "chain_id": "A",
+    "sequence_sha256": "478fd0c77a17afcb52c8b1fc06fb77d384f8d67d585c41496d7121dca0c8519f",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF00522:2l1v_A:URS000080E08D_32630/1-36",
+    "family_id": "RF00522",
+    "pdb_accession": "2l1v",
+    "chain_id": "A",
+    "sequence_sha256": "b82e8db54c613200ad916d663890a84ca10aba30403796411132c333537255e0",
+    "reason": "selected_before_annotation_pair_parsing"
+  },
+  {
+    "id": "RF01051:3irw_R:URS000080E2D1_666/1-92",
+    "family_id": "RF01051",
+    "pdb_accession": "3irw",
+    "chain_id": "R",
+    "sequence_sha256": "f645a90a8678b84bbd143fd296d64b8d51c7c080446556ddaeec9abcd9098436",
+    "reason": "selected_before_annotation_pair_parsing"
+  },
+  {
+    "id": "RF01051:3iwn_A:URS000080DFCB_666/1-93",
+    "family_id": "RF01051",
+    "pdb_accession": "3iwn",
+    "chain_id": "A",
+    "sequence_sha256": "eec7b7e2b797679d6edd0c92e654c5f87b48adeb142e633549d03684cc4af37b",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF01051:3iwn_B:URS000080DFCB_666/1-93",
+    "family_id": "RF01051",
+    "pdb_accession": "3iwn",
+    "chain_id": "B",
+    "sequence_sha256": "eec7b7e2b797679d6edd0c92e654c5f87b48adeb142e633549d03684cc4af37b",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF01051:3mum_R:URS000080DD5D_666/1-92",
+    "family_id": "RF01051",
+    "pdb_accession": "3mum",
+    "chain_id": "R",
+    "sequence_sha256": "5b8b56cd29aacedc126cc483266d98f22d09af7fbc4c080eb3c28beb9d458600",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF01051:3mur_R:URS000080E118_666/1-92",
+    "family_id": "RF01051",
+    "pdb_accession": "3mur",
+    "chain_id": "R",
+    "sequence_sha256": "8c3e8f2d1eabe6edbf3027e69129694f6e102e72663bfa84bb0571a4eba903df",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF01051:3mut_R:URS000080DF93_666/1-92",
+    "family_id": "RF01051",
+    "pdb_accession": "3mut",
+    "chain_id": "R",
+    "sequence_sha256": "17bdcb410af4d69784869fed52edc22c04332297d4ef1b1a1b52031e467fda15",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF01051:3muv_R:URS000080DF93_666/1-92",
+    "family_id": "RF01051",
+    "pdb_accession": "3muv",
+    "chain_id": "R",
+    "sequence_sha256": "17bdcb410af4d69784869fed52edc22c04332297d4ef1b1a1b52031e467fda15",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF01051:3mxh_R:URS000080E2D1_666/1-92",
+    "family_id": "RF01051",
+    "pdb_accession": "3mxh",
+    "chain_id": "R",
+    "sequence_sha256": "f645a90a8678b84bbd143fd296d64b8d51c7c080446556ddaeec9abcd9098436",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF01051:3ucu_R:URS000080E2D1_666/1-92",
+    "family_id": "RF01051",
+    "pdb_accession": "3ucu",
+    "chain_id": "R",
+    "sequence_sha256": "f645a90a8678b84bbd143fd296d64b8d51c7c080446556ddaeec9abcd9098436",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF01051:3ucz_R:URS000080E2D1_666/1-92",
+    "family_id": "RF01051",
+    "pdb_accession": "3ucz",
+    "chain_id": "R",
+    "sequence_sha256": "f645a90a8678b84bbd143fd296d64b8d51c7c080446556ddaeec9abcd9098436",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF01051:3ud3_R:URS000080E118_666/1-92",
+    "family_id": "RF01051",
+    "pdb_accession": "3ud3",
+    "chain_id": "R",
+    "sequence_sha256": "8c3e8f2d1eabe6edbf3027e69129694f6e102e72663bfa84bb0571a4eba903df",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF01051:3ud4_R:URS000080E118_666/1-92",
+    "family_id": "RF01051",
+    "pdb_accession": "3ud4",
+    "chain_id": "R",
+    "sequence_sha256": "8c3e8f2d1eabe6edbf3027e69129694f6e102e72663bfa84bb0571a4eba903df",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF01051:4yaz_A:URS00008116B1_28231/1-84",
+    "family_id": "RF01051",
+    "pdb_accession": "4yaz",
+    "chain_id": "A",
+    "sequence_sha256": "de78c5931713c1e9476c724573c02e5bc5a9db729f54ed5c7beb8001ef38474a",
+    "reason": "selected_before_annotation_pair_parsing"
+  },
+  {
+    "id": "RF01051:4yaz_R:URS00008116B1_28231/1-84",
+    "family_id": "RF01051",
+    "pdb_accession": "4yaz",
+    "chain_id": "R",
+    "sequence_sha256": "de78c5931713c1e9476c724573c02e5bc5a9db729f54ed5c7beb8001ef38474a",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF01051:4yb0_A:URS00008116A8_28231/1-83",
+    "family_id": "RF01051",
+    "pdb_accession": "4yb0",
+    "chain_id": "A",
+    "sequence_sha256": "8ed36a956a53c0a5775a483484e01572878f96c28e92de7f23d42d95d6166840",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF01051:4yb0_R:URS00008116A8_28231/1-83",
+    "family_id": "RF01051",
+    "pdb_accession": "4yb0",
+    "chain_id": "R",
+    "sequence_sha256": "8ed36a956a53c0a5775a483484e01572878f96c28e92de7f23d42d95d6166840",
+    "reason": "panel_sequence_redundancy"
+  },
+  {
+    "id": "RF01051:4yb1_R:URS00008116BA_666/1-91",
+    "family_id": "RF01051",
+    "pdb_accession": "4yb1",
+    "chain_id": "R",
+    "sequence_sha256": "863063323fc7540e2b3d1378322e9a2b7c0400fedc2ff1431d4524e374f3821a",
+    "reason": "panel_sequence_redundancy"
+  }
+]

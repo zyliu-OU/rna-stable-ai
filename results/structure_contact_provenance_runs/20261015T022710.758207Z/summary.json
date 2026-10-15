@@ -1,0 +1,946 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_runs/20261015T022710.758207Z",
+  "manifest_sha256": "962869532ac1b44556b146b5e3615d77e72a1f8368aa3d68159a69d9fff7a1b6",
+  "planned_requests": 6,
+  "successful_requests": 6,
+  "outcomes": [
+    {
+      "id": "RF00504:3owi_A:URS000080DF11_593588/1-88",
+      "sequence_bound": true,
+      "source_sequence_sha256": "6ef5c095b9a44f4001c8185373e08a8d98a7468240ffdb2b238f8133f8ed00de",
+      "status": "ok",
+      "reference_replaced": false,
+      "raw_cww_rows": 27,
+      "raw_unique_cww_contacts": 27,
+      "other_annotation_rows": 6,
+      "repeated_or_reverse_cww_rows": 0,
+      "raw_nucleotides_with_multiple_cww_partners": [],
+      "supplied_contacts": 26,
+      "supplied_contacts_absent_from_current_raw": [],
+      "current_raw_contacts_absent_from_supplied": [
+        [
+          0,
+          87
+        ]
+      ],
+      "exact_contact_set_match": false,
+      "raw_cww_pairs": [
+        [
+          0,
+          87
+        ],
+        [
+          1,
+          86
+        ],
+        [
+          2,
+          85
+        ],
+        [
+          3,
+          84
+        ],
+        [
+          4,
+          83
+        ],
+        [
+          5,
+          82
+        ],
+        [
+          6,
+          81
+        ],
+        [
+          11,
+          27
+        ],
+        [
+          13,
+          26
+        ],
+        [
+          14,
+          25
+        ],
+        [
+          15,
+          24
+        ],
+        [
+          16,
+          23
+        ],
+        [
+          28,
+          73
+        ],
+        [
+          29,
+          72
+        ],
+        [
+          30,
+          71
+        ],
+        [
+          34,
+          69
+        ],
+        [
+          35,
+          67
+        ],
+        [
+          36,
+          66
+        ],
+        [
+          37,
+          65
+        ],
+        [
+          41,
+          60
+        ],
+        [
+          42,
+          59
+        ],
+        [
+          43,
+          58
+        ],
+        [
+          44,
+          57
+        ],
+        [
+          45,
+          56
+        ],
+        [
+          46,
+          55
+        ],
+        [
+          47,
+          54
+        ],
+        [
+          48,
+          53
+        ]
+      ]
+    },
+    {
+      "id": "RF00504:3p49_A:URS000080DF90_76857/1-169",
+      "sequence_bound": true,
+      "source_sequence_sha256": "1880599662b7e6894252e1cb7a83c3ba58a165e8f563d404cc05656ec9acd3be",
+      "status": "ok",
+      "reference_replaced": false,
+      "raw_cww_rows": 29,
+      "raw_unique_cww_contacts": 29,
+      "other_annotation_rows": 8,
+      "repeated_or_reverse_cww_rows": 0,
+      "raw_nucleotides_with_multiple_cww_partners": [],
+      "supplied_contacts": 34,
+      "supplied_contacts_absent_from_current_raw": [
+        [
+          2,
+          80
+        ],
+        [
+          3,
+          79
+        ],
+        [
+          19,
+          36
+        ],
+        [
+          44,
+          63
+        ],
+        [
+          48,
+          61
+        ],
+        [
+          103,
+          113
+        ],
+        [
+          104,
+          112
+        ],
+        [
+          119,
+          154
+        ]
+      ],
+      "current_raw_contacts_absent_from_supplied": [
+        [
+          5,
+          77
+        ],
+        [
+          50,
+          58
+        ],
+        [
+          125,
+          149
+        ]
+      ],
+      "exact_contact_set_match": false,
+      "raw_cww_pairs": [
+        [
+          1,
+          81
+        ],
+        [
+          4,
+          78
+        ],
+        [
+          5,
+          77
+        ],
+        [
+          6,
+          76
+        ],
+        [
+          8,
+          74
+        ],
+        [
+          13,
+          41
+        ],
+        [
+          15,
+          40
+        ],
+        [
+          16,
+          39
+        ],
+        [
+          21,
+          34
+        ],
+        [
+          22,
+          33
+        ],
+        [
+          42,
+          65
+        ],
+        [
+          43,
+          64
+        ],
+        [
+          49,
+          59
+        ],
+        [
+          50,
+          58
+        ],
+        [
+          51,
+          57
+        ],
+        [
+          90,
+          168
+        ],
+        [
+          91,
+          167
+        ],
+        [
+          92,
+          166
+        ],
+        [
+          93,
+          165
+        ],
+        [
+          94,
+          164
+        ],
+        [
+          101,
+          115
+        ],
+        [
+          102,
+          114
+        ],
+        [
+          118,
+          155
+        ],
+        [
+          123,
+          152
+        ],
+        [
+          124,
+          150
+        ],
+        [
+          125,
+          149
+        ],
+        [
+          126,
+          148
+        ],
+        [
+          131,
+          142
+        ],
+        [
+          132,
+          141
+        ]
+      ]
+    },
+    {
+      "id": "RF00504:6wlt_A:URS0001A24B5D_666/1-231",
+      "sequence_bound": true,
+      "source_sequence_sha256": "478fd0c77a17afcb52c8b1fc06fb77d384f8d67d585c41496d7121dca0c8519f",
+      "status": "ok",
+      "reference_replaced": false,
+      "raw_cww_rows": 75,
+      "raw_unique_cww_contacts": 75,
+      "other_annotation_rows": 13,
+      "repeated_or_reverse_cww_rows": 0,
+      "raw_nucleotides_with_multiple_cww_partners": [],
+      "supplied_contacts": 75,
+      "supplied_contacts_absent_from_current_raw": [],
+      "current_raw_contacts_absent_from_supplied": [],
+      "exact_contact_set_match": true,
+      "raw_cww_pairs": [
+        [
+          2,
+          142
+        ],
+        [
+          3,
+          141
+        ],
+        [
+          4,
+          140
+        ],
+        [
+          11,
+          136
+        ],
+        [
+          12,
+          135
+        ],
+        [
+          13,
+          134
+        ],
+        [
+          14,
+          133
+        ],
+        [
+          15,
+          132
+        ],
+        [
+          16,
+          131
+        ],
+        [
+          17,
+          130
+        ],
+        [
+          18,
+          129
+        ],
+        [
+          22,
+          125
+        ],
+        [
+          24,
+          63
+        ],
+        [
+          25,
+          62
+        ],
+        [
+          26,
+          61
+        ],
+        [
+          27,
+          60
+        ],
+        [
+          28,
+          59
+        ],
+        [
+          29,
+          58
+        ],
+        [
+          30,
+          57
+        ],
+        [
+          31,
+          56
+        ],
+        [
+          35,
+          50
+        ],
+        [
+          36,
+          49
+        ],
+        [
+          37,
+          48
+        ],
+        [
+          38,
+          47
+        ],
+        [
+          39,
+          46
+        ],
+        [
+          40,
+          45
+        ],
+        [
+          64,
+          87
+        ],
+        [
+          65,
+          86
+        ],
+        [
+          66,
+          85
+        ],
+        [
+          69,
+          83
+        ],
+        [
+          70,
+          82
+        ],
+        [
+          71,
+          81
+        ],
+        [
+          72,
+          80
+        ],
+        [
+          73,
+          79
+        ],
+        [
+          88,
+          123
+        ],
+        [
+          89,
+          122
+        ],
+        [
+          91,
+          121
+        ],
+        [
+          92,
+          120
+        ],
+        [
+          93,
+          119
+        ],
+        [
+          94,
+          118
+        ],
+        [
+          95,
+          117
+        ],
+        [
+          96,
+          116
+        ],
+        [
+          98,
+          113
+        ],
+        [
+          100,
+          112
+        ],
+        [
+          101,
+          111
+        ],
+        [
+          102,
+          110
+        ],
+        [
+          103,
+          109
+        ],
+        [
+          104,
+          108
+        ],
+        [
+          144,
+          229
+        ],
+        [
+          145,
+          228
+        ],
+        [
+          146,
+          227
+        ],
+        [
+          147,
+          226
+        ],
+        [
+          148,
+          225
+        ],
+        [
+          149,
+          224
+        ],
+        [
+          154,
+          170
+        ],
+        [
+          156,
+          169
+        ],
+        [
+          157,
+          168
+        ],
+        [
+          158,
+          167
+        ],
+        [
+          159,
+          166
+        ],
+        [
+          160,
+          165
+        ],
+        [
+          171,
+          216
+        ],
+        [
+          172,
+          215
+        ],
+        [
+          173,
+          214
+        ],
+        [
+          177,
+          212
+        ],
+        [
+          178,
+          210
+        ],
+        [
+          179,
+          209
+        ],
+        [
+          180,
+          208
+        ],
+        [
+          184,
+          203
+        ],
+        [
+          185,
+          202
+        ],
+        [
+          186,
+          201
+        ],
+        [
+          187,
+          200
+        ],
+        [
+          188,
+          199
+        ],
+        [
+          189,
+          198
+        ],
+        [
+          190,
+          197
+        ],
+        [
+          191,
+          196
+        ]
+      ]
+    },
+    {
+      "id": "RF00522:2l1v_A:URS000080E08D_32630/1-36",
+      "sequence_bound": true,
+      "source_sequence_sha256": "b82e8db54c613200ad916d663890a84ca10aba30403796411132c333537255e0",
+      "status": "ok",
+      "reference_replaced": false,
+      "raw_cww_rows": 8,
+      "raw_unique_cww_contacts": 8,
+      "other_annotation_rows": 5,
+      "repeated_or_reverse_cww_rows": 0,
+      "raw_nucleotides_with_multiple_cww_partners": [],
+      "supplied_contacts": 8,
+      "supplied_contacts_absent_from_current_raw": [],
+      "current_raw_contacts_absent_from_supplied": [],
+      "exact_contact_set_match": true,
+      "raw_cww_pairs": [
+        [
+          2,
+          23
+        ],
+        [
+          3,
+          22
+        ],
+        [
+          4,
+          21
+        ],
+        [
+          5,
+          20
+        ],
+        [
+          6,
+          19
+        ],
+        [
+          10,
+          34
+        ],
+        [
+          11,
+          33
+        ],
+        [
+          12,
+          32
+        ]
+      ]
+    },
+    {
+      "id": "RF01051:3irw_R:URS000080E2D1_666/1-92",
+      "sequence_bound": true,
+      "source_sequence_sha256": "f645a90a8678b84bbd143fd296d64b8d51c7c080446556ddaeec9abcd9098436",
+      "status": "ok",
+      "reference_replaced": false,
+      "raw_cww_rows": 25,
+      "raw_unique_cww_contacts": 25,
+      "other_annotation_rows": 7,
+      "repeated_or_reverse_cww_rows": 0,
+      "raw_nucleotides_with_multiple_cww_partners": [],
+      "supplied_contacts": 25,
+      "supplied_contacts_absent_from_current_raw": [],
+      "current_raw_contacts_absent_from_supplied": [],
+      "exact_contact_set_match": true,
+      "raw_cww_pairs": [
+        [
+          3,
+          90
+        ],
+        [
+          4,
+          89
+        ],
+        [
+          5,
+          87
+        ],
+        [
+          6,
+          86
+        ],
+        [
+          13,
+          38
+        ],
+        [
+          14,
+          37
+        ],
+        [
+          18,
+          33
+        ],
+        [
+          19,
+          32
+        ],
+        [
+          20,
+          31
+        ],
+        [
+          21,
+          30
+        ],
+        [
+          22,
+          29
+        ],
+        [
+          23,
+          28
+        ],
+        [
+          36,
+          76
+        ],
+        [
+          42,
+          82
+        ],
+        [
+          43,
+          81
+        ],
+        [
+          44,
+          80
+        ],
+        [
+          46,
+          79
+        ],
+        [
+          47,
+          78
+        ],
+        [
+          48,
+          77
+        ],
+        [
+          49,
+          74
+        ],
+        [
+          50,
+          73
+        ],
+        [
+          51,
+          72
+        ],
+        [
+          52,
+          71
+        ],
+        [
+          56,
+          69
+        ],
+        [
+          57,
+          68
+        ]
+      ]
+    },
+    {
+      "id": "RF01051:4yaz_A:URS00008116B1_28231/1-84",
+      "sequence_bound": true,
+      "source_sequence_sha256": "de78c5931713c1e9476c724573c02e5bc5a9db729f54ed5c7beb8001ef38474a",
+      "status": "ok",
+      "reference_replaced": false,
+      "raw_cww_rows": 26,
+      "raw_unique_cww_contacts": 26,
+      "other_annotation_rows": 9,
+      "repeated_or_reverse_cww_rows": 0,
+      "raw_nucleotides_with_multiple_cww_partners": [],
+      "supplied_contacts": 25,
+      "supplied_contacts_absent_from_current_raw": [],
+      "current_raw_contacts_absent_from_supplied": [
+        [
+          0,
+          83
+        ]
+      ],
+      "exact_contact_set_match": false,
+      "raw_cww_pairs": [
+        [
+          0,
+          83
+        ],
+        [
+          1,
+          82
+        ],
+        [
+          2,
+          81
+        ],
+        [
+          3,
+          80
+        ],
+        [
+          6,
+          76
+        ],
+        [
+          7,
+          75
+        ],
+        [
+          14,
+          39
+        ],
+        [
+          15,
+          38
+        ],
+        [
+          19,
+          34
+        ],
+        [
+          20,
+          33
+        ],
+        [
+          21,
+          32
+        ],
+        [
+          22,
+          31
+        ],
+        [
+          23,
+          30
+        ],
+        [
+          24,
+          29
+        ],
+        [
+          37,
+          65
+        ],
+        [
+          43,
+          71
+        ],
+        [
+          44,
+          70
+        ],
+        [
+          45,
+          69
+        ],
+        [
+          46,
+          68
+        ],
+        [
+          49,
+          67
+        ],
+        [
+          50,
+          66
+        ],
+        [
+          51,
+          63
+        ],
+        [
+          52,
+          62
+        ],
+        [
+          53,
+          61
+        ],
+        [
+          54,
+          60
+        ],
+        [
+          55,
+          59
+        ]
+      ]
+    }
+  ],
+  "inference_performed": false,
+  "references_replaced": false,
+  "policy": {
+    "schema_version": 1,
+    "purpose": "source_annotation_integrity_only",
+    "mode": "only_nested_False",
+    "maximum_bytes": 2097152,
+    "timeout_seconds": 30,
+    "contact_class": "cWW",
+    "model_inference_authorized": false,
+    "replace_frozen_references": false,
+    "interpretation": "Current raw FR3D graph versus the pinned historical supplied annotation. Differences may reflect source updates or positional writer projection; do not attribute a cause without exact-version evidence. This is not a new independent test panel."
+  }
+}

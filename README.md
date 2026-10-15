@@ -23,7 +23,8 @@ Updated October 14, 2026. **Current step: 4 — independent biological validatio
 The assay pilot advances part of step 6 while steps 4 and 5 remain open.
 **Next research task:** design a screened, independently annotated structure panel
 with enough supported references, documented provenance, and no reuse of consumed
-families as fresh tests. See the [roadmap](reports/PROJECT_ROADMAP_2026-10-14.md).
+families as fresh tests. Current work checks per-sequence PDB contact provenance;
+see the [roadmap](reports/PROJECT_ROADMAP_2026-10-14.md).
 
 ## Latest results
 
@@ -34,7 +35,10 @@ families as fresh tests. See the [roadmap](reports/PROJECT_ROADMAP_2026-10-14.md
   all 384 predictions and 2,880 proxy/assay comparisons completed. Native energy
   per nucleotide showed stronger descriptive associations than learned unpaired
   fractions on this selected cohort.
-- **Verification:** 672 tests passed. Source archival recovered 257 of 267
+- **Reference readiness:** the historical panels fall below the declared coverage
+  minimum. A new PDB-derived import retains six references; broader coverage and
+  raw-contact verification remain open.
+- **Verification:** 743 tests passed. Source archival recovered 264 of 274
   recorded Python versions; ten historical versions remain unavailable.
 
 These results do not establish causal mutation benefits, cellular half-life,
@@ -44,7 +48,8 @@ long-RNA accuracy, or retained function. The assay cohort contains only
 [Structure review](reports/prospective_third_pair_evaluation_review_2026-10-13.md)
 · [Assay review and figure](reports/degradation_pilot_review_2026-10-13.md)
 · [Source archive](docs/REPLAY_SOURCE_ARCHIVE.md)
-· [Test log](reports/github-update-full-suite-2026-10-13.log)
+· [Reference engineering](docs/STRUCTURE_DERIVED_REFERENCES.md)
+· [Test log](reports/structure-contact-provenance-full-suite-2026-10-14.log)
 
 ## Quick start
 

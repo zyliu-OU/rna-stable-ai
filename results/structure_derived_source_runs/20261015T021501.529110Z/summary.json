@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_runs/20261015T021501.529110Z",
+  "manifest_sha256": "773b44336da46c107282ee90519139b0bd97b41e0ad3e498cf8423c6f4180bff",
+  "sources_complete": true,
+  "planned_requests": 9,
+  "successful_requests": 9,
+  "annotation_pairs_parsed": false,
+  "test_inference_allowed": false
+}

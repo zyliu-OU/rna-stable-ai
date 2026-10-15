@@ -1,0 +1,10 @@
+panel,family_id,planned_records,supported_references,unsupported_references,source_category,prior_family_exposure
+/home/zyliu/Documents/rna-stable-ai/results/prospective_binding_runs/20261012T030228.664684Z/summary.json,RF00059,5,5,0,published_source_unverified,True
+/home/zyliu/Documents/rna-stable-ai/results/prospective_binding_runs/20261012T030228.664684Z/summary.json,RF00162,5,0,5,published_source_unverified,True
+/home/zyliu/Documents/rna-stable-ai/results/prospective_binding_runs/20261012T030228.664684Z/summary.json,RF00167,5,4,1,published_source_unverified,True
+/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_binding_runs/20261012T035646.856700Z/summary.json,RF00050,5,4,1,published_source_unverified,True
+/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_binding_runs/20261012T035646.856700Z/summary.json,RF00174,5,2,3,prediction_declared,True
+/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_binding_runs/20261012T035646.856700Z/summary.json,RF00234,5,2,3,published_source_unverified,True
+/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_binding_runs/20261014T011058.285068Z/summary.json,RF00010,5,0,5,published_source_unverified,True
+/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_binding_runs/20261014T011058.285068Z/summary.json,RF00023,5,0,5,published_source_unverified,True
+/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_binding_runs/20261014T011058.285068Z/summary.json,RF00168,5,4,1,published_source_unverified,True

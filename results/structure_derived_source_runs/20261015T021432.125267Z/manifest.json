@@ -1,0 +1,9 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_runs/20261015T021432.125267Z",
+  "protocol_run": "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z",
+  "policy": "Pinned source acquisition only. Retain all requested files and failures. No annotation pairs parsed, cohort selected, model inference, native folds, or new exposure. Per-sequence FR3D/PDB-derived annotations are distinct from seed consensus and direct chemical-probing measurements. Final sequence/provenance binding, declared coverage minima, exposure events, and evaluation protocol remain required.",
+  "snapshot_sha256": {
+    "protocol.json": "adf9d616b72c838c940de9cc26c790978804a225f0241c6bd60bf36f51afc3ca",
+    "attempts.json": "2aacf7c97d099fa9ce7e5f3b3da12b12a5a2b5acc7a10af31efaca30521a9f9b"
+  }
+}

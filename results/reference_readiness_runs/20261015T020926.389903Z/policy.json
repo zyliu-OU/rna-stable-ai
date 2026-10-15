@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "minimum_supported_families": 3,
+  "minimum_supported_per_family": 3,
+  "minimum_supported_total": 12,
+  "require_complete_sequence_bindings": true,
+  "require_no_known_provenance_overlap": true,
+  "annotation_source_policy": "retain_exact_source_text_never_infer_experimental_truth_from_citation",
+  "selection_policy": "fixed_panel_no_replacement_no_model_metrics",
+  "purpose": "Prospective design coverage gate; descriptive audit of historical panels does not make them fresh tests or establish statistical power."
+}

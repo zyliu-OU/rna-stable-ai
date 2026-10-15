@@ -1,0 +1,58 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_runs/20261015T022429.603452Z",
+  "manifest_sha256": "32d70c0852112f8a32d65f1690da7c46103d98d82f981dbb965c732320d287fa",
+  "planned_requests": 6,
+  "successful_requests": 0,
+  "outcomes": [
+    {
+      "id": "RF00504:3owi_A:URS000080DF11_593588/1-88",
+      "status": "source_unavailable",
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "reference_replaced": false
+    },
+    {
+      "id": "RF00504:3p49_A:URS000080DF90_76857/1-169",
+      "status": "source_unavailable",
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "reference_replaced": false
+    },
+    {
+      "id": "RF00504:6wlt_A:URS0001A24B5D_666/1-231",
+      "status": "source_unavailable",
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "reference_replaced": false
+    },
+    {
+      "id": "RF00522:2l1v_A:URS000080E08D_32630/1-36",
+      "status": "source_unavailable",
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "reference_replaced": false
+    },
+    {
+      "id": "RF01051:3irw_R:URS000080E2D1_666/1-92",
+      "status": "source_unavailable",
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "reference_replaced": false
+    },
+    {
+      "id": "RF01051:4yaz_A:URS00008116B1_28231/1-84",
+      "status": "source_unavailable",
+      "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "reference_replaced": false
+    }
+  ],
+  "inference_performed": false,
+  "references_replaced": false,
+  "policy": {
+    "schema_version": 1,
+    "purpose": "source_annotation_integrity_only",
+    "mode": "only_nested_False",
+    "maximum_bytes": 2097152,
+    "timeout_seconds": 30,
+    "contact_class": "cWW",
+    "model_inference_authorized": false,
+    "replace_frozen_references": false,
+    "interpretation": "Current raw FR3D graph versus the pinned historical supplied annotation. Differences may reflect source updates or positional writer projection; do not attribute a cause without exact-version evidence. This is not a new independent test panel."
+  }
+}

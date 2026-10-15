@@ -1,0 +1,10 @@
+LICENSE: ok
+README.md: ok
+add_3d.py: ok
+data/output/RF00504.sto: ok
+data/output/RF00522.sto: ok
+data/output/RF01051.sto: ok
+fr3d_2d.py: ok
+pdb_full_region.txt: ok
+pdb_full_region_curated.txt: ok
+Structure-derived source audit passed: exact Git blobs, response ledger and frozen models; no annotation parsing.

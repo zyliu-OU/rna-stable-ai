@@ -15,15 +15,23 @@ Status: research prototype; no validated release.
 
 ## Current work and next step
 
-The interrupted GitHub update packages the completed development, input data,
-experimental checkpoints, evidence, and source archive. The front page now shows
-the plan and current gate; detailed commands remain in [DEVELOPMENT.md](../DEVELOPMENT.md).
-The final pre-publication suite passed **672 tests**.
+Development resumed after the completed GitHub publication. The reference-readiness
+audit now makes coverage and annotation lineage explicit. None of the three earlier
+panels meets the new broad-coverage minimum. A pinned per-sequence PDB-derived
+source import retains six references across three families, after 35 redundant
+annotations are excluded. This still falls below the coverage gate. Current work
+has audited raw FR3D contact provenance without predictions or reference replacement:
+all six sequences match, but three historical contact sets differ from current raw
+annotations. The full suite passed **743 tests**. Detailed commands remain in
+[DEVELOPMENT.md](../DEVELOPMENT.md).
 
 Next research work is to design a screened, independently annotated biological
 structure panel with adequate supported references and documented training/tool
 provenance. Previously consumed families and the measured-assay source cannot be
-reused as fresh independent tests. No new experiment is run by this publication.
+reused as fresh independent tests. No new model evaluation has run during this
+continuation. Newly imported PDB-derived source families are now consumed for
+future fresh-test planning. The user's README picture is preserved locally;
+new development is not yet published.
 
 The assay pilot is descriptive and uses only `SN_filter=1` short constructs.
 Its associations do not establish causal mutation benefits, cellular half-life,
@@ -39,3 +47,6 @@ training environment.
 - [Measured-assay review](degradation_pilot_review_2026-10-13.md)
 - [Source archive limitations](../docs/REPLAY_SOURCE_ARCHIVE.md)
 - [Final test log](github-update-full-suite-2026-10-13.log)
+- [Reference readiness](../docs/REFERENCE_READINESS.md)
+- [PDB-derived reference engineering](../docs/STRUCTURE_DERIVED_REFERENCES.md)
+- [Source/binding test log](structure-derived-full-suite-2026-10-14.log)

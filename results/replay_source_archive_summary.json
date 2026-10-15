@@ -1,6 +1,6 @@
 {
   "complete": true,
-  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_runs/20261014T025628.328360Z",
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_runs/20261015T022843.461995Z",
   "workspace": "/home/zyliu/Documents/rna-stable-ai",
   "manifest_sha256": {
     "/home/zyliu/Documents/rna-stable-ai/results/banded_development_runs/20261006T021747.776747Z/manifest.json": "b5a573a2d128c8d26b0957c33de2420bc00470d065f94b09151d9ec5805028cf",
@@ -69,17 +69,22 @@
     "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json": "e1132564a9ef5bbf565c8fdb01bf7281cb1404b9dfff1021d8e0a3a404863b81",
     "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json": "e43a5984684d994ff96e5f533efc2a00acaf45e0363ce9ca12da80434f5396c8",
     "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json": "ab9de6d6ad2c48c1d242410352f315d5571016c8797f94687a7c768b61b08f6a",
+    "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020727.857457Z/manifest.json": "96321fb09fafa63edbd0439d29c482201fc992489197e113394f767663ebf4ef",
+    "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json": "d42bc8865a7404c6188dd880efd673c2890e4d5aef7d856ec588c790539d7506",
     "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/manifest.json": "0988041f24a1d68d945ea59fb792cf0668219093e1cf4cd3dbffb60b6cebadae",
     "/home/zyliu/Documents/rna-stable-ai/results/sparse_refinement_runs/20261006T024805.424842Z/manifest.json": "9cd13b2ae1365a9fd69dd480fb52787c4ce13afdb1c7d019d97ce0888a2be934",
     "/home/zyliu/Documents/rna-stable-ai/results/sparse_refinement_runs/20261006T025214.102122Z/manifest.json": "beedc7b93a4f6d54e105c3ad7cbea97e551e7b2872fd09cb3f33d98efb8a98ef",
     "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/manifest.json": "048eb0b35475c25696378092fc9de07ab11bd34d10ca60a983133702ece02f5b",
     "/home/zyliu/Documents/rna-stable-ai/results/stack_scalability_runs/20261006T033347.600122Z/manifest.json": "48ecf5bcaf22d9d74ecc5a61ffb9897eb93e72d33d4f501c61e6c77da3d7bfd9",
+    "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_protocol_runs/20261015T022345.539073Z/manifest.json": "dcf1baa0a3b24c99bb3e06063702b375420e97e9eb879461fa8ade9bb9904ac6",
+    "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json": "f2785bac1826479908b0580b6bb255500cd6485a0ffe31e9bf36e4cd1fbe1ef1",
+    "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json": "adf9d616b72c838c940de9cc26c790978804a225f0241c6bd60bf36f51afc3ca",
     "/home/zyliu/Documents/rna-stable-ai/results/structured_comparative_development_runs/20261006T032540.594773Z/manifest.json": "a6649a8066b67631cc077889cb5fbb74ac06f218882d268ed3f4f9c44aef3fe9"
   },
-  "required_python_bindings": 267,
-  "available_python_bindings": 257,
+  "required_python_bindings": 274,
+  "available_python_bindings": 264,
   "missing_python_bindings": 10,
-  "current_python_files": 163,
+  "current_python_files": 167,
   "current_bundle": {
     "scripts/analyze_candidate_development.py": {
       "sha256": "0e3e4ab764e0af46c288d9e6cdf802bb4fc666d30488ce60b46ee6e8e6a83947",
@@ -100,6 +105,14 @@
     "scripts/audit_native_study_accounting.py": {
       "sha256": "7615fb724d09f2e0c5b64ce9fa0133ea3a44aedf78ae4d7ca3df22d680b1b29c",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/7615fb724d09f2e0c5b64ce9fa0133ea3a44aedf78ae4d7ca3df22d680b1b29c.py"
+    },
+    "scripts/audit_reference_readiness.py": {
+      "sha256": "e9392e2d98c4a455b93d3b2227b74a3542f5e99204f54ae7cf5d736959af9371",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/e9392e2d98c4a455b93d3b2227b74a3542f5e99204f54ae7cf5d736959af9371.py"
+    },
+    "scripts/audit_structure_contact_provenance.py": {
+      "sha256": "a795d6b323b7a257a8420ff53611cfcdbedc52150374956e44f3c611390370c9",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/a795d6b323b7a257a8420ff53611cfcdbedc52150374956e44f3c611390370c9.py"
     },
     "scripts/compare_candidate_budgets.py": {
       "sha256": "17e1cc249da7649c143f7bb11a4ef7f3185b2ec2ed150b9b13b6127c8903f549",
@@ -170,8 +183,8 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/ead79123caff7363b0edd31c28ecd2a6c98667de8e17944a29defbfa1e5a72ff.py"
     },
     "scripts/prepare_github_snapshot.py": {
-      "sha256": "478262446b07e115772c23e3730b2702f3a006f579a06578f8c24e7f803062a6",
-      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/478262446b07e115772c23e3730b2702f3a006f579a06578f8c24e7f803062a6.py"
+      "sha256": "c3ee3e56720a44f8e8e377c9d2e1f0dd53c404c97cfd89a6b0300c213b0c8e0a",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/c3ee3e56720a44f8e8e377c9d2e1f0dd53c404c97cfd89a6b0300c213b0c8e0a.py"
     },
     "scripts/prepare_long_population_training.py": {
       "sha256": "be7a597d5e9db371331bf1a6e9cca49c136125fea7f5fa191c0bacff1c0bf76d",
@@ -180,6 +193,14 @@
     "scripts/prepare_prospective_family_panel.py": {
       "sha256": "2b679a4f6373cbf125f5a14bf305af979dc5e1fab21d064853c92690336343cb",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/2b679a4f6373cbf125f5a14bf305af979dc5e1fab21d064853c92690336343cb.py"
+    },
+    "scripts/prepare_structure_derived_binding.py": {
+      "sha256": "d5461c4aaf31e434590ac10b71da7243cfce95ca09a895b0f32599a5d4f0998a",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d5461c4aaf31e434590ac10b71da7243cfce95ca09a895b0f32599a5d4f0998a.py"
+    },
+    "scripts/prepare_structure_derived_source.py": {
+      "sha256": "d1dd5fc411ca28ee110dfe510fed8ba48440ba2efc52dd13b3d319c03bb87426",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d1dd5fc411ca28ee110dfe510fed8ba48440ba2efc52dd13b3d319c03bb87426.py"
     },
     "scripts/refresh_reports.py": {
       "sha256": "d611f554a6c6585bf736b957b0f7b3e46cb4579f56ca3497033d6c841292266e",
@@ -2941,7 +2962,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/0e3e4ab764e0af46c288d9e6cdf802bb4fc666d30488ce60b46ee6e8e6a83947.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/0e3e4ab764e0af46c288d9e6cdf802bb4fc666d30488ce60b46ee6e8e6a83947.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/0e3e4ab764e0af46c288d9e6cdf802bb4fc666d30488ce60b46ee6e8e6a83947.py"
       }
     },
     {
@@ -2960,6 +2981,47 @@
       }
     },
     {
+      "path": "/home/zyliu/Documents/rna-stable-ai/scripts/audit_reference_readiness.py",
+      "sha256": "07e392cf2473955347b44f74cbc74659e919b10fd03e62c41b63682ccac9eac8",
+      "manifests": [
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020727.857457Z/manifest.json"
+      ],
+      "status": "available",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/07e392cf2473955347b44f74cbc74659e919b10fd03e62c41b63682ccac9eac8.py",
+      "origin": {
+        "kind": "saved_snapshot",
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/07e392cf2473955347b44f74cbc74659e919b10fd03e62c41b63682ccac9eac8.py"
+      }
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/scripts/audit_reference_readiness.py",
+      "sha256": "e9392e2d98c4a455b93d3b2227b74a3542f5e99204f54ae7cf5d736959af9371",
+      "manifests": [
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
+      ],
+      "status": "available",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/e9392e2d98c4a455b93d3b2227b74a3542f5e99204f54ae7cf5d736959af9371.py",
+      "origin": {
+        "kind": "saved_snapshot",
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/e9392e2d98c4a455b93d3b2227b74a3542f5e99204f54ae7cf5d736959af9371.py"
+      }
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/scripts/audit_structure_contact_provenance.py",
+      "sha256": "a795d6b323b7a257a8420ff53611cfcdbedc52150374956e44f3c611390370c9",
+      "manifests": [
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_protocol_runs/20261015T022345.539073Z/manifest.json"
+      ],
+      "status": "available",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/a795d6b323b7a257a8420ff53611cfcdbedc52150374956e44f3c611390370c9.py",
+      "origin": {
+        "kind": "saved_snapshot",
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/a795d6b323b7a257a8420ff53611cfcdbedc52150374956e44f3c611390370c9.py"
+      }
+    },
+    {
       "path": "/home/zyliu/Documents/rna-stable-ai/scripts/compare_candidate_budgets.py",
       "sha256": "17e1cc249da7649c143f7bb11a4ef7f3185b2ec2ed150b9b13b6127c8903f549",
       "manifests": [
@@ -2969,7 +3031,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/17e1cc249da7649c143f7bb11a4ef7f3185b2ec2ed150b9b13b6127c8903f549.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/17e1cc249da7649c143f7bb11a4ef7f3185b2ec2ed150b9b13b6127c8903f549.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/17e1cc249da7649c143f7bb11a4ef7f3185b2ec2ed150b9b13b6127c8903f549.py"
       }
     },
     {
@@ -3012,6 +3074,19 @@
       }
     },
     {
+      "path": "/home/zyliu/Documents/rna-stable-ai/scripts/download_prospective_evidence.py",
+      "sha256": "527fae8ec0ec3b710973801f291c1e4838b9e8ed97fae8597e469a5c53d55c6d",
+      "manifests": [
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json"
+      ],
+      "status": "available",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/527fae8ec0ec3b710973801f291c1e4838b9e8ed97fae8597e469a5c53d55c6d.py",
+      "origin": {
+        "kind": "saved_snapshot",
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/527fae8ec0ec3b710973801f291c1e4838b9e8ed97fae8597e469a5c53d55c6d.py"
+      }
+    },
+    {
       "path": "/home/zyliu/Documents/rna-stable-ai/scripts/evaluate_degradation_pilot.py",
       "sha256": "a7eac60bd00b09bddfdf585f20fe4ce2149e9d627e7aa7e46ef5399d1f87e9d1",
       "manifests": [
@@ -3021,7 +3096,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/a7eac60bd00b09bddfdf585f20fe4ce2149e9d627e7aa7e46ef5399d1f87e9d1.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/a7eac60bd00b09bddfdf585f20fe4ce2149e9d627e7aa7e46ef5399d1f87e9d1.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/a7eac60bd00b09bddfdf585f20fe4ce2149e9d627e7aa7e46ef5399d1f87e9d1.py"
       }
     },
     {
@@ -3030,13 +3105,15 @@
       "manifests": [
         "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020727.857457Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/335e290d95729ef93424948f3f88a79cfeeae9b1a9571ab83319ee85383dd8cd.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/335e290d95729ef93424948f3f88a79cfeeae9b1a9571ab83319ee85383dd8cd.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/335e290d95729ef93424948f3f88a79cfeeae9b1a9571ab83319ee85383dd8cd.py"
       }
     },
     {
@@ -3066,7 +3143,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/634b8ce5d9cd845d5e082c68ade902e0ff082a703f8473e9f51e58bc53b8575d.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/634b8ce5d9cd845d5e082c68ade902e0ff082a703f8473e9f51e58bc53b8575d.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/634b8ce5d9cd845d5e082c68ade902e0ff082a703f8473e9f51e58bc53b8575d.py"
       }
     },
     {
@@ -3082,7 +3159,46 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/ead79123caff7363b0edd31c28ecd2a6c98667de8e17944a29defbfa1e5a72ff.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/ead79123caff7363b0edd31c28ecd2a6c98667de8e17944a29defbfa1e5a72ff.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/ead79123caff7363b0edd31c28ecd2a6c98667de8e17944a29defbfa1e5a72ff.py"
+      }
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/scripts/prepare_prospective_family_panel.py",
+      "sha256": "2b679a4f6373cbf125f5a14bf305af979dc5e1fab21d064853c92690336343cb",
+      "manifests": [
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json"
+      ],
+      "status": "available",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/2b679a4f6373cbf125f5a14bf305af979dc5e1fab21d064853c92690336343cb.py",
+      "origin": {
+        "kind": "saved_snapshot",
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/2b679a4f6373cbf125f5a14bf305af979dc5e1fab21d064853c92690336343cb.py"
+      }
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/scripts/prepare_structure_derived_binding.py",
+      "sha256": "d5461c4aaf31e434590ac10b71da7243cfce95ca09a895b0f32599a5d4f0998a",
+      "manifests": [
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json"
+      ],
+      "status": "available",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d5461c4aaf31e434590ac10b71da7243cfce95ca09a895b0f32599a5d4f0998a.py",
+      "origin": {
+        "kind": "saved_snapshot",
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d5461c4aaf31e434590ac10b71da7243cfce95ca09a895b0f32599a5d4f0998a.py"
+      }
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/scripts/prepare_structure_derived_source.py",
+      "sha256": "d1dd5fc411ca28ee110dfe510fed8ba48440ba2efc52dd13b3d319c03bb87426",
+      "manifests": [
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
+      ],
+      "status": "available",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d1dd5fc411ca28ee110dfe510fed8ba48440ba2efc52dd13b3d319c03bb87426.py",
+      "origin": {
+        "kind": "saved_snapshot",
+        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d1dd5fc411ca28ee110dfe510fed8ba48440ba2efc52dd13b3d319c03bb87426.py"
       }
     },
     {
@@ -3108,7 +3224,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/b32cd54a861a29d6b8f95145730cf9f5b44fc14ae2285611a55b507971358b1c.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/reports/source_backups/20261006T033414.062281Z/scripts/report_expanded_checkpoint_selection.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/reports/source_backups/20261006T033414.062281Z/scripts/report_expanded_checkpoint_selection.py"
       }
     },
     {
@@ -3121,7 +3237,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/fd9b8bf4501d232a9dc8c2bbb67576f4d0f6ab29ee2e0093b1305eb12383c621.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/reports/source_backups/20261006T032737.351221Z/scripts/report_expanded_checkpoint_selection.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/reports/source_backups/20261006T032737.351221Z/scripts/report_expanded_checkpoint_selection.py"
       }
     },
     {
@@ -3165,7 +3281,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/fb4d63704dc5005706f01fd452280e07d192096de04d1fe46ae6ce238b6ab907.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/reports/source_backups/journal-integration-20261006/run_checkpoint_prior_pilot.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/reports/source_backups/journal-integration-20261006/run_checkpoint_prior_pilot.py"
       }
     },
     {
@@ -3225,7 +3341,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/c3dd0c06d0c6585fc4075b5489ea48ef6e40b6bb383eff7c55a9a07216bf0e9b.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/c3dd0c06d0c6585fc4075b5489ea48ef6e40b6bb383eff7c55a9a07216bf0e9b.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/c3dd0c06d0c6585fc4075b5489ea48ef6e40b6bb383eff7c55a9a07216bf0e9b.py"
       }
     },
     {
@@ -3311,7 +3427,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/6e6397777254a9d572b90cf929f8be9c8c2117737979e0a765f2176626e38f8b.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/6e6397777254a9d572b90cf929f8be9c8c2117737979e0a765f2176626e38f8b.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/6e6397777254a9d572b90cf929f8be9c8c2117737979e0a765f2176626e38f8b.py"
       }
     },
     {
@@ -3350,7 +3466,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/31146ade9b929802041c2cb5404a165c76a8e5ca0a5fdf63a178aef5e6e79139.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/reports/source_backups/20261006T022311.717783Z/scripts/train_context_development.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/reports/source_backups/20261006T022311.717783Z/scripts/train_context_development.py"
       }
     },
     {
@@ -3363,7 +3479,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/6ac47d728b4e9b468e1010fd52121b9824968019f1baf29237486f5777d2bc0d.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/reports/source_backups/20261006T022115.459702Z/scripts/train_context_development.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/reports/source_backups/20261006T022115.459702Z/scripts/train_context_development.py"
       }
     },
     {
@@ -3376,7 +3492,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/765ecf1bf5d4ef55e9826c3976a107fbe83a85d27e627f741125ab0725bc2853.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/reports/source_backups/20261006T022638.127412Z/scripts/train_context_development.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/reports/source_backups/20261006T022638.127412Z/scripts/train_context_development.py"
       }
     },
     {
@@ -3526,7 +3642,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/500f2bd9ff75ed6e6e0012458bd766c1d947f125f04dbdd019b2cc9913b357f5.py",
@@ -3572,7 +3691,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3.py",
@@ -3600,7 +3722,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/c1855064faed6a7ab30dc45f70bbd7aeac4bb783da20eb2f826c36c236e20271.py",
@@ -3630,7 +3755,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d06ab133f8b31dfd7831ec05b94d7be8ed31b678db969a0120a12f0e6e3f7a09.py",
@@ -3670,7 +3798,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/95580a3fa213bdab74dc103d190c9388dac14266de7831fb9af31137353d6197.py",
@@ -3698,7 +3829,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/64be355152bbfb7e61a3f1992db5451617d2d19bda310bbb12a46ec1d422f2e4.py",
@@ -3726,7 +3860,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/cc0d055de7b2d4666a54266e497a92b7074766f6c881f70433b5fc1c9c2702dd.py",
@@ -3754,7 +3891,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/90256584a6e75c74ef1350af9a60a3490fbf3f491ffe0b5862ca6a8ba7cdb453.py",
@@ -3782,7 +3922,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/42ec4d5304d81c7bf0f64781af00b6af5112034241a950b62c0271f74b1985a5.py",
@@ -3810,7 +3953,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/adad3e91caa042eaf4a9b7de83948f7347884eb33d9ba5f77c304b1b46f3383f.py",
@@ -3830,13 +3976,16 @@
         "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/degradation_source_protocol_runs/20261014T010051.844721Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/6576f7dd51b9111bc68cabeb505e6e9190840a80c8b416c94ead399f3fde3bc8.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/6576f7dd51b9111bc68cabeb505e6e9190840a80c8b416c94ead399f3fde3bc8.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/6576f7dd51b9111bc68cabeb505e6e9190840a80c8b416c94ead399f3fde3bc8.py"
       }
     },
     {
@@ -3880,7 +4029,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/c4c26db0852cbc7e26cc78c2ff55e02e4aa412bd34f5b455f55fee3820fc374b.py",
@@ -3908,7 +4060,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/9c87f21990b94b3153462e1c3d68c6516832487e8d310244bec100294390fa77.py",
@@ -3947,7 +4102,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/27ec31516b4aef5c59d7c38d3c580162a3a44db0454cb8fdb455c300382d088d.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/27ec31516b4aef5c59d7c38d3c580162a3a44db0454cb8fdb455c300382d088d.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/27ec31516b4aef5c59d7c38d3c580162a3a44db0454cb8fdb455c300382d088d.py"
       }
     },
     {
@@ -3960,7 +4115,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/336d4f819c6c28175f77d92b4c09fe5d02e8b8591d49481c5a6df3a5acef2333.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/reports/source_backups/20261006T031859.027902Z/src/rnastable/context_inference.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/reports/source_backups/20261006T031859.027902Z/src/rnastable/context_inference.py"
       }
     },
     {
@@ -3976,7 +4131,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/36480834a765916654f21bded6ab1113b4ac44a28316cd02935ded7ec3a566c5.py",
@@ -3995,7 +4153,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/431a94e52c6e02f371d2d83346e9c4c222ddef16a6f2a8a5ceb603bc7f99296e.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/reports/source_backups/20261006T030833.014002Z/src/rnastable/context_inference.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/reports/source_backups/20261006T030833.014002Z/src/rnastable/context_inference.py"
       }
     },
     {
@@ -4008,7 +4166,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/8fff08a18a5e36fd12d1b1baa132ee55b6b68ad2bed9598d8798a4389dcab16e.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/reports/source_backups/20261006T025956.346703Z/src/rnastable/context_inference.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/reports/source_backups/20261006T025956.346703Z/src/rnastable/context_inference.py"
       }
     },
     {
@@ -4036,7 +4194,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d165dfe78f3e9c1e8ab2afcb7e3d8da9d55aa22113c46cc92c8c62135478f487.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/reports/source_backups/20261006T033748.591015Z/src/rnastable/context_inference.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/reports/source_backups/20261006T033748.591015Z/src/rnastable/context_inference.py"
       }
     },
     {
@@ -4049,7 +4207,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d71b9bd33e1538ba1c7874f41bbdfcba7b31646c574c9b5b813b3a4a5b793dc7.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/reports/source_backups/20261006T032710.013841Z/src/rnastable/context_inference.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/reports/source_backups/20261006T032710.013841Z/src/rnastable/context_inference.py"
       }
     },
     {
@@ -4097,8 +4255,11 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structured_comparative_development_runs/20261006T032540.594773Z/manifest.json"
       ],
       "status": "available",
@@ -4121,7 +4282,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/5e67f8d93f2b69b19dc94c5573301de9581621ef24e859309a7c9c02072c1fc1.py",
@@ -4143,7 +4307,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/8abecb1a29d9fc13681b0e8ea3f952213783744c7b2f1dbf9b95dd5a9385408d.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/reports/source_backups/20261006T032539.080192Z/src/rnastable/context_training.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/reports/source_backups/20261006T032539.080192Z/src/rnastable/context_training.py"
       }
     },
     {
@@ -4185,7 +4349,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/e6e1e4ec51bd4c72ebad3152c8ad1c85ca79c52cb5663165b263e4ffdbced8d1.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/reports/source_backups/20261006T024151.756762Z/src/rnastable/context_training.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/reports/source_backups/20261006T024151.756762Z/src/rnastable/context_training.py"
       }
     },
     {
@@ -4224,7 +4388,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/long_comparative_development_runs/20261006T025852.417408Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/5cab5ab8cb795a8c8aaac74a4aafad886a998547f852f3cda57b85ce21b13fa0.py",
@@ -4246,7 +4413,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/b04b73781cbe5c5637bcf0734f34f615dc4b9d91872709245647bb0c84e9e59e.py",
@@ -4274,7 +4444,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/b5cebd99067db7d75c78586b2cdbebed6f841024ee753b11240a1da6ef16797e.py",
@@ -4316,7 +4489,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structured_comparative_development_runs/20261006T032540.594773Z/manifest.json"
       ],
       "status": "available",
@@ -4346,7 +4522,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/pair_development_runs/20261006T013412.256466Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/410f72420c8a8b5ca659dee75e46689e5349c2daab8b21d2f0b8c115a6b5e64e.py",
@@ -4368,7 +4547,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/6b8bcdd8b42c27e20728598b5eb29094b1804fcfbddd3623ef5f70933bea62df.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/reports/source_backups/20261006T023431.640545Z/src/rnastable/exposures.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/reports/source_backups/20261006T023431.640545Z/src/rnastable/exposures.py"
       }
     },
     {
@@ -4384,7 +4563,11 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020727.857457Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/8c5be64e296234d48bd4f4d5297c83adc3a117e87c03d23c2abf7dd59580fb86.py",
@@ -4452,7 +4635,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/b80cb13ce6359b7612a4b0718300d7bc608c483758a8ce276ada9328bd993add.py",
@@ -4474,13 +4660,16 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d6218313c640e3b5ce04438f49ff99f064e58f1e24901bd8e51db38eec2db2ce.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d6218313c640e3b5ce04438f49ff99f064e58f1e24901bd8e51db38eec2db2ce.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/d6218313c640e3b5ce04438f49ff99f064e58f1e24901bd8e51db38eec2db2ce.py"
       }
     },
     {
@@ -4518,7 +4707,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/6d29b525293b7028464a0107ed494a9705dcace61a243d90657ef338e60f5e99.py",
@@ -4567,8 +4759,11 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structured_comparative_development_runs/20261006T032540.594773Z/manifest.json"
       ],
       "status": "available",
@@ -4598,7 +4793,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/2ec5afad5ec15cc9cd1d559e093cdfb5db5c71a20947728fb6d8b1c02ef0fe4f.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/reports/source_backups/20261006T033118.643301Z/src/rnastable/global_sparse_pairs.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/reports/source_backups/20261006T033118.643301Z/src/rnastable/global_sparse_pairs.py"
       }
     },
     {
@@ -4649,7 +4844,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/population_resource_runs/20261007T020200.685903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/9cd50c88b5d497ee9a6d8d4e6a6f6289977d9fff96e94a823b92b5bcb72c2dc7.py",
@@ -4677,7 +4875,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/65a7025b3760ee327fe95232769988d907ea1416bfd941140e4e74be3bac93b9.py",
@@ -4699,7 +4900,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/980bd05466a85d7644a4cb3fb446e2dcb2d60dd01b94020ecb3194665032a610.py",
@@ -4745,7 +4949,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d1fcf8d86ae6bdd311ead531348c579eb2410ac2a6551d55de62ed710217f139.py",
@@ -4767,7 +4974,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/57c97d47d251eafca98a669bab933a217a410fa680a84b04c363ade51a743be1.py",
@@ -4820,7 +5030,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/83ba11f03c6d2b18e8ffdd9a206894ba00c77f9e17d9bca2dfa36d04771fb525.py",
@@ -4849,7 +5062,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/8d998a8520169c6ea5c99f93ce316b58c4b66119f0be2ce2ac3f5c7563d4ccb9.py",
@@ -4879,7 +5095,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/988543f0686bf4ea4e67f7f6c6b8a101a61c99809571468aa7953ae346a3e869.py",
@@ -4901,7 +5120,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/bf0daa3788e0344098e36ee93c02379b8f805459b888bea3ad4da8ea8f942fde.py",
@@ -4940,7 +5162,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/pair_development_runs/20261006T013412.256466Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/9d2b406acf7f1147dcbfb735281e899d11c98af9f804238a577a26c0162b4b02.py",
@@ -4962,7 +5187,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/4b9171e96121c03e8ac39b24790a5eac4ff9aea46221fe2ab9eb2ece4c6df94a.py",
@@ -4996,13 +5224,16 @@
         "/home/zyliu/Documents/rna-stable-ai/results/degradation_source_protocol_runs/20261014T010051.844721Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/6e69c2aa170ee93b880df0e2aaca48c15d83bce5948101de7c785bb1659c20d5.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/6e69c2aa170ee93b880df0e2aaca48c15d83bce5948101de7c785bb1659c20d5.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/6e69c2aa170ee93b880df0e2aaca48c15d83bce5948101de7c785bb1659c20d5.py"
       }
     },
     {
@@ -5019,7 +5250,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/pair_penalty_development_runs/20261007T013907.821759Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/4c6a2988fa554e76db8ad14e7038aa397ac4885fe3251985b5006fafd70960c8.py",
@@ -5041,7 +5275,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/2db6ce2b9d3c2f2742a678a7626346cc9bd4d3173e2d75d681b3d98eb8f483f4.py",
@@ -5096,7 +5333,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/1403ded49adb7e1c7e8bb69594a561c4e2779e1af5450df2cd687df415cb8145.py",
@@ -5134,7 +5374,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/15299c8b322888cd22fa02929f17dc37609a8a4ee3bbe6e1d9cb9bc2957efe70.py",
@@ -5156,7 +5399,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/90d0ada661f78b27a76588f246e785c31d48be0c0e3e46d1f4f8998a002155e6.py",
@@ -5214,7 +5460,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/c97f01bfae5702a0106d84742d12476c387bd839f247594520641cebb2aab208.py",
@@ -5242,7 +5491,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/348f37767da06329635117b36c209bb0be8a78db6223fd0f04b512779831cf46.py",
@@ -5264,7 +5516,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/d1ff02bc28712b6d2dffe10c291dba62cef1003152973b036487f73201506e3f.py",
@@ -5286,7 +5541,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/6b538411e7f3b9137964c265ba9fbd439419cf5d99fc2d9016b9858297e55c76.py",
@@ -5323,13 +5581,17 @@
         "/home/zyliu/Documents/rna-stable-ai/results/degradation_source_protocol_runs/20261014T010051.844721Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020727.857457Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/50532efa583f6c21dbfcd4d9adf0ef9a75e17b49ea5c10557fffdb763b48c5f7.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/50532efa583f6c21dbfcd4d9adf0ef9a75e17b49ea5c10557fffdb763b48c5f7.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/50532efa583f6c21dbfcd4d9adf0ef9a75e17b49ea5c10557fffdb763b48c5f7.py"
       }
     },
     {
@@ -5353,13 +5615,16 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/3815f8298860a6e87996e5ae98f4de3642311861d801dee241804277249ccdfb.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/3815f8298860a6e87996e5ae98f4de3642311861d801dee241804277249ccdfb.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/3815f8298860a6e87996e5ae98f4de3642311861d801dee241804277249ccdfb.py"
       }
     },
     {
@@ -5381,7 +5646,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/8a4de7aeafd39c5322ad096397e720ac6db58f8625889a31fccebea6622dd38e.py",
@@ -5434,8 +5702,11 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structured_comparative_development_runs/20261006T032540.594773Z/manifest.json"
       ],
       "status": "available",
@@ -5466,7 +5737,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/32ec3497b19fe3632a8d3080dd49a673f1d7940fa4ccd19c46eeb9976f370866.py",
@@ -5489,7 +5763,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/44a6f42d3f8fcdfda9a46f5a42135e3bf2bc35f50a536f5dba08593797f0aa7c.py",
@@ -5517,7 +5794,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/8fe7b18fa7597c8dabf4908a88f31911dabf0fe4eaef0f4a91c01f41aad3a45d.py",
@@ -5545,7 +5825,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/df82e9b1cb0caa83d68f2096d3853c00451de894788b0231c6ca08d2983fcc21.py",
@@ -5586,13 +5869,16 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/c1f856b87e2858e4a43b4f2a0bad604ea7be5e150bdbed64d87146177327aca7.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/c1f856b87e2858e4a43b4f2a0bad604ea7be5e150bdbed64d87146177327aca7.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/results/replay_source_archive_blobs/c1f856b87e2858e4a43b4f2a0bad604ea7be5e150bdbed64d87146177327aca7.py"
       }
     },
     {
@@ -5614,7 +5900,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/3b2d6092323ce3123517a5631d18e61df7cc0e1294dab2d716bdb6f6c421ee32.py",
@@ -5661,8 +5950,11 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structured_comparative_development_runs/20261006T032540.594773Z/manifest.json"
       ],
       "status": "available",
@@ -5693,7 +5985,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/cf2eadcc5dcb3a829cb2460b6898edae68a2ade1c8ac8bffe64cc1511aba37fd.py",
@@ -5728,7 +6023,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/3e970de56b2b6d38ae6fbe276032a51fe570ac2bc4d84288e49cb1a32e335960.py",
@@ -5747,7 +6045,7 @@
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/07b9737fd0423173c6e3587251c96ce59ed49642fe3b343f3db05a7eb5d7aee2.py",
       "origin": {
         "kind": "saved_snapshot",
-        "path": "/home/zyliu/Documents/rna-stable-ai/reports/source_backups/20261006T025030.932443Z/src/rnastable/sparse_refinement.py"
+        "path": "/home/zyliu/Documents/rna-stable-ai/exports/20261014T025741.236892Z/rna-stable-ai/reports/source_backups/20261006T025030.932443Z/src/rnastable/sparse_refinement.py"
       }
     },
     {
@@ -5778,9 +6076,12 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/sampled_comparative_development_runs/20261006T030802.214027Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/sparse_refinement_runs/20261006T025214.102122Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/stack_scalability_runs/20261006T033347.600122Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/stack_scalability_runs/20261006T033347.600122Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/dd62f857b0cd7ccf75bb7e608e9332cbc24afcadc6e9db8ef039e7b5c9e9ae5c.py",
@@ -5814,8 +6115,11 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/stack_comparative_development_runs/20261006T033137.606696Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/stack_scalability_runs/20261006T033347.600122Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/stack_scalability_runs/20261006T033347.600122Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/1e50893ea29c933104eb44e84569e6acfe6278ebb9ab3f445b65c9cf73683af0.py",
@@ -5845,7 +6149,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/01696835cfee1e7f9cd35f6f0634f27a9fec8add90ee8b4509bf83f4874ce8fe.py",
@@ -5874,6 +6181,9 @@
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/structured_comparative_development_runs/20261006T032540.594773Z/manifest.json"
       ],
       "status": "available",
@@ -5902,7 +6212,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/fa88aad42edf6e33c8d89546c37298de4317018de58dfd33889c51d97f1c4fa4.py",
@@ -5931,7 +6244,10 @@
         "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z/manifest.json",
         "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261012T035701.921281Z/manifest.json",
-        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json"
+        "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_evaluation_runs/20261014T011253.580452Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/reference_readiness_runs/20261015T020926.389903Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_binding_runs/20261015T021934.814458Z/manifest.json",
+        "/home/zyliu/Documents/rna-stable-ai/results/structure_derived_source_protocol_runs/20261015T021405.263740Z/manifest.json"
       ],
       "status": "available",
       "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/7fc1dfd16b2bbc658de0f4af8afa794a32098a9e387a727733c59ab8457a8373.py",

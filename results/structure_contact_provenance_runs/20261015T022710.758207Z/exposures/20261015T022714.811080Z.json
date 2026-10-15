@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_runs/20261015T022710.758207Z",
+  "stage": "validation_started",
+  "records": [
+    {
+      "sequence": "GGCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGGAAACGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_runs/20261015T022710.758207Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3owi"
+    },
+    {
+      "sequence": "GGAUAUGAGGAGAGAUUUCAUCCAUUGCACUCCGGAUGAAACACCGAAGAAGUAAAUCUUUCAGGUAAAAAGGACUCAUAUUGGACGAACCUCUGGAGAGCUUAUCUAAGAGAUAACACCGAAGGAGCAAAGCUAAUUUUAGCCUAAACUCUCAGGUAAAAGGACGGAG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_runs/20261015T022710.758207Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "3p49"
+    },
+    {
+      "sequence": "GGUCCGUUGAAGACUGCAGGAGAGUGGUUGUUAACCAGAUUUUAACAUCUGAGCCAAAUAACCCGCCGAAGAAGUAAAUCUUUCAGGUGCAUUAUUCUUAGCCAUAUAUUGGCAACGAAUAAGCGAGGACUGUAGUUGGAGGAACCUCUGGAGAGAACCGUUUAAUCGGUCGCCGAAGGAGCAAGCUCUGCGCAUAUGCAGAGUGAAACUCUCAGGCAAAAGGACAGAGGA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_runs/20261015T022710.758207Z validation_started",
+      "family_id": "RF00504",
+      "pdb_accession": "6wlt"
+    },
+    {
+      "sequence": "GGAGAGGUUCUAGUUAUACCCUCUAUAAAAAACUAA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_runs/20261015T022710.758207Z validation_started",
+      "family_id": "RF00522",
+      "pdb_accession": "2l1v"
+    },
+    {
+      "sequence": "GGUCACGCACAGGGCAAACCAUUCGAAAGAGUGGGACGCAAAGCCUCCGGCCUAAACCAUUGCACUCCGGUAGGUAGCGGGGUUACCGAUGG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_runs/20261015T022710.758207Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "3irw"
+    },
+    {
+      "sequence": "GGUACACGACAAUACUAAACCAUCCGCGAGGAUGGGGCGGAAAGCCUAAGGGUCUCCCUGAGACAGCCGGGCUGCCGAAAUAUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/structure_contact_provenance_runs/20261015T022710.758207Z validation_started",
+      "family_id": "RF01051",
+      "pdb_accession": "4yaz"
+    }
+  ],
+  "records_sha256": "8812e59decc74156c435c6c426c47e5bdb2eab837ff67d57079c2e0fb6a29cc5"
+}

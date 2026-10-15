@@ -1,0 +1,56 @@
+[
+  {
+    "id": "RF00504:3owi_A:URS000080DF11_593588/1-88",
+    "pdb_accession": "3owi",
+    "family_id": "RF00504",
+    "chain_id": "A",
+    "sequence_sha256": "6ef5c095b9a44f4001c8185373e08a8d98a7468240ffdb2b238f8133f8ed00de",
+    "filename": "record_000.json",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3OWI&chain=A&only_nested=False"
+  },
+  {
+    "id": "RF00504:3p49_A:URS000080DF90_76857/1-169",
+    "pdb_accession": "3p49",
+    "family_id": "RF00504",
+    "chain_id": "A",
+    "sequence_sha256": "1880599662b7e6894252e1cb7a83c3ba58a165e8f563d404cc05656ec9acd3be",
+    "filename": "record_001.json",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3P49&chain=A&only_nested=False"
+  },
+  {
+    "id": "RF00504:6wlt_A:URS0001A24B5D_666/1-231",
+    "pdb_accession": "6wlt",
+    "family_id": "RF00504",
+    "chain_id": "A",
+    "sequence_sha256": "478fd0c77a17afcb52c8b1fc06fb77d384f8d67d585c41496d7121dca0c8519f",
+    "filename": "record_002.json",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6WLT&chain=A&only_nested=False"
+  },
+  {
+    "id": "RF00522:2l1v_A:URS000080E08D_32630/1-36",
+    "pdb_accession": "2l1v",
+    "family_id": "RF00522",
+    "chain_id": "A",
+    "sequence_sha256": "b82e8db54c613200ad916d663890a84ca10aba30403796411132c333537255e0",
+    "filename": "record_003.json",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=2L1V&chain=A&only_nested=False"
+  },
+  {
+    "id": "RF01051:3irw_R:URS000080E2D1_666/1-92",
+    "pdb_accession": "3irw",
+    "family_id": "RF01051",
+    "chain_id": "R",
+    "sequence_sha256": "f645a90a8678b84bbd143fd296d64b8d51c7c080446556ddaeec9abcd9098436",
+    "filename": "record_004.json",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3IRW&chain=R&only_nested=False"
+  },
+  {
+    "id": "RF01051:4yaz_A:URS00008116B1_28231/1-84",
+    "pdb_accession": "4yaz",
+    "family_id": "RF01051",
+    "chain_id": "A",
+    "sequence_sha256": "de78c5931713c1e9476c724573c02e5bc5a9db729f54ed5c7beb8001ef38474a",
+    "filename": "record_005.json",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4YAZ&chain=A&only_nested=False"
+  }
+]
