@@ -1,5 +1,7 @@
 # RNA-StableAI
 
+<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/4da2605a-3a6d-4130-9014-950dc75bd34d" />
+
 Research prototype for RNA structure prediction, constrained sequence optimization,
 and reproducible folding benchmarks. Code, experimental checkpoints, input data,
 and results are available for inspection. No validated release yet.
