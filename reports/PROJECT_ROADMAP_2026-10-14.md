@@ -1,11 +1,11 @@
 # RNA-StableAI development roadmap — 2026-10-14
 
 Workspace: `/home/zyliu/Documents/rna-stable-ai`.
-Status: research prototype; no validated release.
+Status: development paused at the user's request; research prototype, no validated release.
 
 | Step | Stage | Status |
 |---:|---|---|
-| 1 | Reproducible foundations | Implemented and tested: resource bounds, native journals, hashes, exposure tracking, and replay caching. Source archive retains 257/267 recorded Python versions. |
+| 1 | Reproducible foundations | Implemented and tested: resource bounds, native journals, hashes, exposure tracking, and replay caching. Source archive retains 271/281 recorded Python versions. |
 | 2 | Structure-model development | Nine matched baseline/stack/helix BCE fits, candidate diagnostics, budgets 16/32/64, and three matched helix objective comparisons complete. Defaults unchanged. |
 | 3 | Model-guided optimization | Synthetic studies and native energy verification complete; biological benefits unverified. |
 | **4** | **Independent biological structure validation** | **Current scientific gate.** Three prospective panels evaluated; latest panel has four supported lysine references and eleven unsupported annotations among fifteen records. Broad accuracy and complete training/tool independence remain unresolved. |
@@ -15,7 +15,8 @@ Status: research prototype; no validated release.
 
 ## Current work and next step
 
-Development resumed after the completed GitHub publication. The reference-readiness
+Development stopped at the user's request after the final metadata plan and
+verification completed. The reference-readiness
 audit now makes coverage and annotation lineage explicit. None of the three earlier
 panels meets the new broad-coverage minimum. A pinned per-sequence PDB-derived
 source import retains six references across three families, after 35 redundant
@@ -24,10 +25,13 @@ contact-set differences. A separately frozen six-family raw-contact feasibility
 cohort now retains ten supported references from 21 source requests; all 60
 model/control outcomes and 20 native calls completed. Mean pair F1 is 0.325531
 for helix and 0.626116 for both native controls. This narrow feasibility result
-does not close the broad gate. The full suite passed **803 tests**. A checkpoint
+does not close the broad gate. The full suite passed **821 tests**. A checkpoint
 lineage audit identifies 83/136 development records without confirmed family
-assignments. Next work targets a source-labelled, family/clan-aware training and
-validation plan. Detailed commands remain in
+assignments. A metadata-only plan now fixes 12 training and four validation groups
+from 29 eligible family/clan groups. All 72 metadata records verified, including
+30 reused records. No new sequence/structure labels, training, or inference were
+performed. New data preparation is deferred until the user resumes development.
+Detailed commands remain in
 [DEVELOPMENT.md](../DEVELOPMENT.md).
 
 Next research work is to design a screened, independently annotated biological
@@ -51,7 +55,8 @@ training environment.
 - [Latest prospective structure review](prospective_third_pair_evaluation_review_2026-10-13.md)
 - [Measured-assay review](degradation_pilot_review_2026-10-13.md)
 - [Source archive limitations](../docs/REPLAY_SOURCE_ARCHIVE.md)
-- [Final test log](github-update-full-suite-2026-10-13.log)
+- [Final test log](family-provenance-dataset-full-suite-2026-10-14.log)
+- [Paused checkpoint handoff](RNA-StableAI_HANDOFF_2026-10-14_V10.md)
 - [Reference readiness](../docs/REFERENCE_READINESS.md)
 - [PDB-derived reference engineering](../docs/STRUCTURE_DERIVED_REFERENCES.md)
 - [Source/binding test log](structure-derived-full-suite-2026-10-14.log)

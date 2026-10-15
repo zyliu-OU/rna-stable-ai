@@ -1,0 +1,325 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z",
+  "manifest_sha256": "3dfc21ea06193e30ba60e1dc5a70ee1509801c80c174e7ac8b44def909623f80",
+  "planned_metadata_requests": 72,
+  "successful_metadata_records": 30,
+  "reused_metadata_records": 30,
+  "selection": {
+    "metadata_ready": false,
+    "eligible_groups": 0,
+    "ranked_groups": [],
+    "selected_families": [],
+    "decisions": [
+      {
+        "family_id": "RF00002",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00003",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00004",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00005",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "prior_family_exposure"
+      },
+      {
+        "family_id": "RF00006",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00007",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00008",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "prior_family_exposure"
+      },
+      {
+        "family_id": "RF00009",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00010",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "prior_family_exposure"
+      },
+      {
+        "family_id": "RF00011",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00012",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00013",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00014",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00015",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00016",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00017",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "prior_family_exposure"
+      },
+      {
+        "family_id": "RF00018",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00019",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00020",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00021",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00022",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00023",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "prior_family_exposure"
+      },
+      {
+        "family_id": "RF00024",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00025",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00026",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00027",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00028",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00029",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "prior_family_exposure"
+      },
+      {
+        "family_id": "RF00030",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00031",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00032",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00033",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00034",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00035",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00036",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00037",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00038",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00039",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00040",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00041",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00042",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00043",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00044",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00045",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00046",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00047",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00048",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      },
+      {
+        "family_id": "RF00049",
+        "group": null,
+        "seed_sequences": null,
+        "reason": "metadata_unavailable"
+      }
+    ],
+    "known_exposed_clans": [
+      "CL00001",
+      "CL00002",
+      "CL00003",
+      "CL00010",
+      "CL00012",
+      "CL00101",
+      "CL00112",
+      "CL00113",
+      "CL00123",
+      "CL00125",
+      "CL00126",
+      "CL00127"
+    ],
+    "new_structure_labels_read": false,
+    "training_authorized": false,
+    "inference_authorized": false,
+    "independent_test_or_broad_validation_claim": false,
+    "annotation_interpretation": "Future complete comparative Rfam labels remain computational; family/clan metadata does not prove complete evolutionary independence."
+  },
+  "new_sequence_or_structure_bytes_read": false,
+  "model_training_authorized": false
+}

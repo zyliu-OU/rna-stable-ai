@@ -21,10 +21,10 @@ Updated October 14, 2026. **Current step: 4 — independent biological validatio
 | 7 | Validated release | Pending the scientific evidence above. |
 
 The assay pilot advances part of step 6 while steps 4 and 5 remain open.
-**Next research task:** design a screened, independently annotated structure panel
-with enough supported references, documented provenance, and no reuse of consumed
-families as fresh tests. Current work targets explicit training-family provenance;
-see the [roadmap](reports/PROJECT_ROADMAP_2026-10-14.md).
+**Development paused at the user's request.** A metadata-only plan now fixes
+12 training and four validation family/clan groups; no new labels or models were
+created. Next, build provenance-controlled development data before further
+independent validation. See the [roadmap](reports/PROJECT_ROADMAP_2026-10-14.md).
 
 ## Latest results
 
@@ -37,7 +37,7 @@ see the [roadmap](reports/PROJECT_ROADMAP_2026-10-14.md).
   fractions on this selected cohort.
 - **Provenance:** all three learned models use the same frozen development data;
   83/136 records still lack confirmed family assignments.
-- **Verification:** 803 tests passed. Source archival recovered 270 of 280
+- **Verification:** 821 tests passed. Source archival recovered 271 of 281
   recorded Python versions; ten historical versions remain unavailable.
 
 These results do not establish causal mutation benefits, cellular half-life,
@@ -48,7 +48,7 @@ long-RNA accuracy, or retained function. The assay cohort contains only
 · [Assay review and figure](reports/degradation_pilot_review_2026-10-13.md)
 · [Source archive](docs/REPLAY_SOURCE_ARCHIVE.md)
 · [Reference engineering](docs/STRUCTURE_DERIVED_REFERENCES.md)
-· [Test log](reports/checkpoint-lineage-full-suite-2026-10-14.log)
+· [Test log](reports/family-provenance-dataset-full-suite-2026-10-14.log)
 
 ## Quick start
 

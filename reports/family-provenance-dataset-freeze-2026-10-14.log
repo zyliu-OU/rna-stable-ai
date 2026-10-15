@@ -1,0 +1,3 @@
+Structure-derived source audit passed: exact Git blobs, response ledger and frozen models; no annotation parsing.
+Raw-structure metadata replay passed; no sequence/structure labels, predictions or exposure.
+Frozen family-provenance metadata protocol: /home/zyliu/Documents/rna-stable-ai/results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/manifest.json
