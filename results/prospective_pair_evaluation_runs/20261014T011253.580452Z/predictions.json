@@ -1,0 +1,632 @@
+[
+  {
+    "id": "RF00010:AACK01000018.1/26603-26989",
+    "method": "baseline",
+    "sequence_sha256": "376780a7439d034f5d1c87538bc01775370bfe021c973752688d984d163528e0",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AACK01000018.1/26603-26989",
+    "method": "stack",
+    "sequence_sha256": "376780a7439d034f5d1c87538bc01775370bfe021c973752688d984d163528e0",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AACK01000018.1/26603-26989",
+    "method": "helix",
+    "sequence_sha256": "376780a7439d034f5d1c87538bc01775370bfe021c973752688d984d163528e0",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AACK01000018.1/26603-26989",
+    "method": "all_unpaired",
+    "sequence_sha256": "376780a7439d034f5d1c87538bc01775370bfe021c973752688d984d163528e0",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AACK01000018.1/26603-26989",
+    "method": "ViennaRNA",
+    "sequence_sha256": "376780a7439d034f5d1c87538bc01775370bfe021c973752688d984d163528e0",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AACK01000018.1/26603-26989",
+    "method": "LinearFold",
+    "sequence_sha256": "376780a7439d034f5d1c87538bc01775370bfe021c973752688d984d163528e0",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAEW02000009.1/28314-28685",
+    "method": "baseline",
+    "sequence_sha256": "1103234e756a703f6d86b606b365fb857144d69a2f152564e4b67a49a9732490",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAEW02000009.1/28314-28685",
+    "method": "stack",
+    "sequence_sha256": "1103234e756a703f6d86b606b365fb857144d69a2f152564e4b67a49a9732490",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAEW02000009.1/28314-28685",
+    "method": "helix",
+    "sequence_sha256": "1103234e756a703f6d86b606b365fb857144d69a2f152564e4b67a49a9732490",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAEW02000009.1/28314-28685",
+    "method": "all_unpaired",
+    "sequence_sha256": "1103234e756a703f6d86b606b365fb857144d69a2f152564e4b67a49a9732490",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAEW02000009.1/28314-28685",
+    "method": "ViennaRNA",
+    "sequence_sha256": "1103234e756a703f6d86b606b365fb857144d69a2f152564e4b67a49a9732490",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAEW02000009.1/28314-28685",
+    "method": "LinearFold",
+    "sequence_sha256": "1103234e756a703f6d86b606b365fb857144d69a2f152564e4b67a49a9732490",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAGP01000051.1/20859-21226",
+    "method": "baseline",
+    "sequence_sha256": "d345e55601f648854209abf0a8051de3a00126807225c46880eb0e605bca372d",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAGP01000051.1/20859-21226",
+    "method": "stack",
+    "sequence_sha256": "d345e55601f648854209abf0a8051de3a00126807225c46880eb0e605bca372d",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAGP01000051.1/20859-21226",
+    "method": "helix",
+    "sequence_sha256": "d345e55601f648854209abf0a8051de3a00126807225c46880eb0e605bca372d",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAGP01000051.1/20859-21226",
+    "method": "all_unpaired",
+    "sequence_sha256": "d345e55601f648854209abf0a8051de3a00126807225c46880eb0e605bca372d",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAGP01000051.1/20859-21226",
+    "method": "ViennaRNA",
+    "sequence_sha256": "d345e55601f648854209abf0a8051de3a00126807225c46880eb0e605bca372d",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAGP01000051.1/20859-21226",
+    "method": "LinearFold",
+    "sequence_sha256": "d345e55601f648854209abf0a8051de3a00126807225c46880eb0e605bca372d",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAKL01000009.1/106867-107210",
+    "method": "baseline",
+    "sequence_sha256": "5ada6eb38c91c6b2ea9ee75a36f840d8ec6ca0d4e53c3de3b4d045769d18822d",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAKL01000009.1/106867-107210",
+    "method": "stack",
+    "sequence_sha256": "5ada6eb38c91c6b2ea9ee75a36f840d8ec6ca0d4e53c3de3b4d045769d18822d",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAKL01000009.1/106867-107210",
+    "method": "helix",
+    "sequence_sha256": "5ada6eb38c91c6b2ea9ee75a36f840d8ec6ca0d4e53c3de3b4d045769d18822d",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAKL01000009.1/106867-107210",
+    "method": "all_unpaired",
+    "sequence_sha256": "5ada6eb38c91c6b2ea9ee75a36f840d8ec6ca0d4e53c3de3b4d045769d18822d",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAKL01000009.1/106867-107210",
+    "method": "ViennaRNA",
+    "sequence_sha256": "5ada6eb38c91c6b2ea9ee75a36f840d8ec6ca0d4e53c3de3b4d045769d18822d",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAKL01000009.1/106867-107210",
+    "method": "LinearFold",
+    "sequence_sha256": "5ada6eb38c91c6b2ea9ee75a36f840d8ec6ca0d4e53c3de3b4d045769d18822d",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAKW01000074.1/145450-145799",
+    "method": "baseline",
+    "sequence_sha256": "aacd21fccf9d4089b96225214f3b1e2190dfbe8908db9a268edba1965292b186",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAKW01000074.1/145450-145799",
+    "method": "stack",
+    "sequence_sha256": "aacd21fccf9d4089b96225214f3b1e2190dfbe8908db9a268edba1965292b186",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAKW01000074.1/145450-145799",
+    "method": "helix",
+    "sequence_sha256": "aacd21fccf9d4089b96225214f3b1e2190dfbe8908db9a268edba1965292b186",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAKW01000074.1/145450-145799",
+    "method": "all_unpaired",
+    "sequence_sha256": "aacd21fccf9d4089b96225214f3b1e2190dfbe8908db9a268edba1965292b186",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAKW01000074.1/145450-145799",
+    "method": "ViennaRNA",
+    "sequence_sha256": "aacd21fccf9d4089b96225214f3b1e2190dfbe8908db9a268edba1965292b186",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00010:AAKW01000074.1/145450-145799",
+    "method": "LinearFold",
+    "sequence_sha256": "aacd21fccf9d4089b96225214f3b1e2190dfbe8908db9a268edba1965292b186",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAA02039738.1/1593-1956",
+    "method": "baseline",
+    "sequence_sha256": "48097e9d0efc190c5e7e6a4118cc49fda1db121fe5ddd3d3ef0dce7b3557a8d7",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAA02039738.1/1593-1956",
+    "method": "stack",
+    "sequence_sha256": "48097e9d0efc190c5e7e6a4118cc49fda1db121fe5ddd3d3ef0dce7b3557a8d7",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAA02039738.1/1593-1956",
+    "method": "helix",
+    "sequence_sha256": "48097e9d0efc190c5e7e6a4118cc49fda1db121fe5ddd3d3ef0dce7b3557a8d7",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAA02039738.1/1593-1956",
+    "method": "all_unpaired",
+    "sequence_sha256": "48097e9d0efc190c5e7e6a4118cc49fda1db121fe5ddd3d3ef0dce7b3557a8d7",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAA02039738.1/1593-1956",
+    "method": "ViennaRNA",
+    "sequence_sha256": "48097e9d0efc190c5e7e6a4118cc49fda1db121fe5ddd3d3ef0dce7b3557a8d7",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAA02039738.1/1593-1956",
+    "method": "LinearFold",
+    "sequence_sha256": "48097e9d0efc190c5e7e6a4118cc49fda1db121fe5ddd3d3ef0dce7b3557a8d7",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAA02043629.1/984-1362",
+    "method": "baseline",
+    "sequence_sha256": "7ad9a1544ec5d0fda8a90b7015b546253bedbd3314558f4e0000279a261fff83",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAA02043629.1/984-1362",
+    "method": "stack",
+    "sequence_sha256": "7ad9a1544ec5d0fda8a90b7015b546253bedbd3314558f4e0000279a261fff83",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAA02043629.1/984-1362",
+    "method": "helix",
+    "sequence_sha256": "7ad9a1544ec5d0fda8a90b7015b546253bedbd3314558f4e0000279a261fff83",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAA02043629.1/984-1362",
+    "method": "all_unpaired",
+    "sequence_sha256": "7ad9a1544ec5d0fda8a90b7015b546253bedbd3314558f4e0000279a261fff83",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAA02043629.1/984-1362",
+    "method": "ViennaRNA",
+    "sequence_sha256": "7ad9a1544ec5d0fda8a90b7015b546253bedbd3314558f4e0000279a261fff83",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAA02043629.1/984-1362",
+    "method": "LinearFold",
+    "sequence_sha256": "7ad9a1544ec5d0fda8a90b7015b546253bedbd3314558f4e0000279a261fff83",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAL02000007.1/78420-78066",
+    "method": "baseline",
+    "sequence_sha256": "efec6413a15a8441331dbcd8b21401aaccc84e34ce7e952f7e470fe8d499b6ec",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAL02000007.1/78420-78066",
+    "method": "stack",
+    "sequence_sha256": "efec6413a15a8441331dbcd8b21401aaccc84e34ce7e952f7e470fe8d499b6ec",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAL02000007.1/78420-78066",
+    "method": "helix",
+    "sequence_sha256": "efec6413a15a8441331dbcd8b21401aaccc84e34ce7e952f7e470fe8d499b6ec",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAL02000007.1/78420-78066",
+    "method": "all_unpaired",
+    "sequence_sha256": "efec6413a15a8441331dbcd8b21401aaccc84e34ce7e952f7e470fe8d499b6ec",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAL02000007.1/78420-78066",
+    "method": "ViennaRNA",
+    "sequence_sha256": "efec6413a15a8441331dbcd8b21401aaccc84e34ce7e952f7e470fe8d499b6ec",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AAAL02000007.1/78420-78066",
+    "method": "LinearFold",
+    "sequence_sha256": "efec6413a15a8441331dbcd8b21401aaccc84e34ce7e952f7e470fe8d499b6ec",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AACT01039607.1/1457-1864",
+    "method": "baseline",
+    "sequence_sha256": "f7266a1b7bffeb1cbd04c8fb3aeae44bdf69cdd00ed39e5162b8db4fa7c2e674",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AACT01039607.1/1457-1864",
+    "method": "stack",
+    "sequence_sha256": "f7266a1b7bffeb1cbd04c8fb3aeae44bdf69cdd00ed39e5162b8db4fa7c2e674",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AACT01039607.1/1457-1864",
+    "method": "helix",
+    "sequence_sha256": "f7266a1b7bffeb1cbd04c8fb3aeae44bdf69cdd00ed39e5162b8db4fa7c2e674",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AACT01039607.1/1457-1864",
+    "method": "all_unpaired",
+    "sequence_sha256": "f7266a1b7bffeb1cbd04c8fb3aeae44bdf69cdd00ed39e5162b8db4fa7c2e674",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AACT01039607.1/1457-1864",
+    "method": "ViennaRNA",
+    "sequence_sha256": "f7266a1b7bffeb1cbd04c8fb3aeae44bdf69cdd00ed39e5162b8db4fa7c2e674",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AACT01039607.1/1457-1864",
+    "method": "LinearFold",
+    "sequence_sha256": "f7266a1b7bffeb1cbd04c8fb3aeae44bdf69cdd00ed39e5162b8db4fa7c2e674",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AACV01028831.1/1594-1241",
+    "method": "baseline",
+    "sequence_sha256": "36826a986f1eb4cf33a29a4f6d12b2c30528ef6b26f46979edf7d5ea699a1389",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AACV01028831.1/1594-1241",
+    "method": "stack",
+    "sequence_sha256": "36826a986f1eb4cf33a29a4f6d12b2c30528ef6b26f46979edf7d5ea699a1389",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AACV01028831.1/1594-1241",
+    "method": "helix",
+    "sequence_sha256": "36826a986f1eb4cf33a29a4f6d12b2c30528ef6b26f46979edf7d5ea699a1389",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AACV01028831.1/1594-1241",
+    "method": "all_unpaired",
+    "sequence_sha256": "36826a986f1eb4cf33a29a4f6d12b2c30528ef6b26f46979edf7d5ea699a1389",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AACV01028831.1/1594-1241",
+    "method": "ViennaRNA",
+    "sequence_sha256": "36826a986f1eb4cf33a29a4f6d12b2c30528ef6b26f46979edf7d5ea699a1389",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00023:AACV01028831.1/1594-1241",
+    "method": "LinearFold",
+    "sequence_sha256": "36826a986f1eb4cf33a29a4f6d12b2c30528ef6b26f46979edf7d5ea699a1389",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00168:AAKK02000085.1/12844-12662",
+    "method": "baseline",
+    "sequence_sha256": "2b01a5caf526f4f49b4a532e94d3729b5fd5a96f3cef911d39b6d6d89e3e41ed",
+    "status": "ok",
+    "structure": "(.(((((((((((((((((((((((((((...)).)).)((.(......)).))...(..(.((...)..).))))((.(....).))).).).).(...).......))...)..)(...))....(...)..(...)(....)).(.(.((...)..))))))).).)))(((...)))))"
+  },
+  {
+    "id": "RF00168:AAKK02000085.1/12844-12662",
+    "method": "stack",
+    "sequence_sha256": "2b01a5caf526f4f49b4a532e94d3729b5fd5a96f3cef911d39b6d6d89e3e41ed",
+    "status": "ok",
+    "structure": "(.((((.((((((((((((((((((((((((((((((.(((..(.....)))....).)))))((.....)....)))))....((.....)))).......))...))...)).((((.(((....))))))).)))))....)).....((......)).)).((...))))).))))).)"
+  },
+  {
+    "id": "RF00168:AAKK02000085.1/12844-12662",
+    "method": "helix",
+    "sequence_sha256": "2b01a5caf526f4f49b4a532e94d3729b5fd5a96f3cef911d39b6d6d89e3e41ed",
+    "status": "ok",
+    "structure": "(.((((.(((...((((((((((...)((((.((((((((((.......)))))....)))))(....(((.(...).)))..).)((((((((......))))))))))).))(((((.(((...)).))))))))).(((((((......(.......)))))))).))))))).)))).)"
+  },
+  {
+    "id": "RF00168:AAKK02000085.1/12844-12662",
+    "method": "all_unpaired",
+    "sequence_sha256": "2b01a5caf526f4f49b4a532e94d3729b5fd5a96f3cef911d39b6d6d89e3e41ed",
+    "status": "ok",
+    "structure": "......................................................................................................................................................................................."
+  },
+  {
+    "id": "RF00168:AAKK02000085.1/12844-12662",
+    "method": "ViennaRNA",
+    "sequence_sha256": "2b01a5caf526f4f49b4a532e94d3729b5fd5a96f3cef911d39b6d6d89e3e41ed",
+    "status": "ok",
+    "structure": "..((((.((((..(((((((((((.......(((((((((..(((...)))....)))))))))......)).)))))))...(((((((((((......))))))))))).(((((((.(((....)))))))).)).(((((((.((.........)).))))))).)).)))).)))).."
+  },
+  {
+    "id": "RF00168:AAKK02000085.1/12844-12662",
+    "method": "LinearFold",
+    "sequence_sha256": "2b01a5caf526f4f49b4a532e94d3729b5fd5a96f3cef911d39b6d6d89e3e41ed",
+    "status": "ok",
+    "structure": "..((((.((((..(((((((((((.......(((((((((..(((...)))....)))))))))......))).))))))...(((((((((((......)))))))))))((.(((((.(((....)))))))).)).(((((((.((.........)).))))))).)).)))).)))).."
+  },
+  {
+    "id": "RF00168:AALE02000022.1/49827-50019",
+    "method": "baseline",
+    "sequence_sha256": "417ceb57c91bd0b1216c2e60d9da3cbfd57d090bfb9e61164cd7bc1250d28761",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00168:AALE02000022.1/49827-50019",
+    "method": "stack",
+    "sequence_sha256": "417ceb57c91bd0b1216c2e60d9da3cbfd57d090bfb9e61164cd7bc1250d28761",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00168:AALE02000022.1/49827-50019",
+    "method": "helix",
+    "sequence_sha256": "417ceb57c91bd0b1216c2e60d9da3cbfd57d090bfb9e61164cd7bc1250d28761",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00168:AALE02000022.1/49827-50019",
+    "method": "all_unpaired",
+    "sequence_sha256": "417ceb57c91bd0b1216c2e60d9da3cbfd57d090bfb9e61164cd7bc1250d28761",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00168:AALE02000022.1/49827-50019",
+    "method": "ViennaRNA",
+    "sequence_sha256": "417ceb57c91bd0b1216c2e60d9da3cbfd57d090bfb9e61164cd7bc1250d28761",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00168:AALE02000022.1/49827-50019",
+    "method": "LinearFold",
+    "sequence_sha256": "417ceb57c91bd0b1216c2e60d9da3cbfd57d090bfb9e61164cd7bc1250d28761",
+    "status": "unsupported_reference",
+    "error": "missing_annotated_paired_column"
+  },
+  {
+    "id": "RF00168:AAMR01000029.1/5147-5324",
+    "method": "baseline",
+    "sequence_sha256": "dffb167da5ac243de0bf0996ef5ccbe8e9d95a74be8125cccbb492bcd5c60434",
+    "status": "ok",
+    "structure": ".(((((.(((((((((((((((((((((((.((((((((((.(......)).)..).).))))(...).).).)....)(...))...)).).)))..).)...).)))..)...(.(.....).)(((...)).))((....).)((..(...))))).((...))))))))).).)"
+  },
+  {
+    "id": "RF00168:AAMR01000029.1/5147-5324",
+    "method": "stack",
+    "sequence_sha256": "dffb167da5ac243de0bf0996ef5ccbe8e9d95a74be8125cccbb492bcd5c60434",
+    "status": "ok",
+    "structure": ".(((((.(((...((((((((((((((((...))))..))(.(.(...))).))))((((((.(.....)))......))..........)..........)..).)..(((.(.....))))((((((.....))(.....)...))).)((((.....)))))))))))))).).)"
+  },
+  {
+    "id": "RF00168:AAMR01000029.1/5147-5324",
+    "method": "helix",
+    "sequence_sha256": "dffb167da5ac243de0bf0996ef5ccbe8e9d95a74be8125cccbb492bcd5c60434",
+    "status": "ok",
+    "structure": ".(((((.(((...(((((((((((.(((....))))((((((..(...)))))....))...))((....)).))))).(.....((((((.....(...))))))))((.(.(((((((.(....)))))))).)..(((((((.(((....))))))))))))))))))))).).)"
+  },
+  {
+    "id": "RF00168:AAMR01000029.1/5147-5324",
+    "method": "all_unpaired",
+    "sequence_sha256": "dffb167da5ac243de0bf0996ef5ccbe8e9d95a74be8125cccbb492bcd5c60434",
+    "status": "ok",
+    "structure": ".................................................................................................................................................................................."
+  },
+  {
+    "id": "RF00168:AAMR01000029.1/5147-5324",
+    "method": "ViennaRNA",
+    "sequence_sha256": "dffb167da5ac243de0bf0996ef5ccbe8e9d95a74be8125cccbb492bcd5c60434",
+    "status": "ok",
+    "structure": "......(.((.((((((((((((.....))))))((((((((.......))))))))(((.(((..........))).))).((((((((((........)))))))))).((((((((((.....)))))))).)).(((((((.(((....)))))))))).))))..)).)).)."
+  },
+  {
+    "id": "RF00168:AAMR01000029.1/5147-5324",
+    "method": "LinearFold",
+    "sequence_sha256": "dffb167da5ac243de0bf0996ef5ccbe8e9d95a74be8125cccbb492bcd5c60434",
+    "status": "ok",
+    "structure": "......(.((.((((((((((((.....))))))((((((((.......))))))))(((.(((..........))).))).((((((((((........))))))))))((.((((((((.....)))))))).)).(((((((.(((....)))))))))).))))..)).)).)."
+  },
+  {
+    "id": "RF00168:AAOX01000015.1/22460-22639",
+    "method": "baseline",
+    "sequence_sha256": "987b1dfb5d91c010a645d6ed2bc7acbe1fc86286491c2f673781999ccc530ca0",
+    "status": "ok",
+    "structure": "((((.(((((((((((((((((((((((((....)))(....)..)))..(((((...).))).)(((...)...))(.(((..(...))))).))))(...)))(.(.(.......(...)...)((....))).).).).((((....)))))))).)(((...)))))))))))))."
+  },
+  {
+    "id": "RF00168:AAOX01000015.1/22460-22639",
+    "method": "stack",
+    "sequence_sha256": "987b1dfb5d91c010a645d6ed2bc7acbe1fc86286491c2f673781999ccc530ca0",
+    "status": "ok",
+    "structure": "((((.(((((((((((((((((((((((((....))).).......))))(((((...)).).))(((...))).)..)))))((...(.....(...(...)...)...)......)(.......(.......)..)(.....((....)))))))).)(((...)))))))))))))."
+  },
+  {
+    "id": "RF00168:AAOX01000015.1/22460-22639",
+    "method": "helix",
+    "sequence_sha256": "987b1dfb5d91c010a645d6ed2bc7acbe1fc86286491c2f673781999ccc530ca0",
+    "status": "ok",
+    "structure": "((((.(((((((((..((((((((((((((...).))(.....).)))))(((((...)..))))(((...))..)).)))))))...(((.(.(((.(...).))))))))(.((...(((.(((((.....))))).)))....((((((.(...))))))))).).))))))))))."
+  },
+  {
+    "id": "RF00168:AAOX01000015.1/22460-22639",
+    "method": "all_unpaired",
+    "sequence_sha256": "987b1dfb5d91c010a645d6ed2bc7acbe1fc86286491c2f673781999ccc530ca0",
+    "status": "ok",
+    "structure": "...................................................................................................................................................................................."
+  },
+  {
+    "id": "RF00168:AAOX01000015.1/22460-22639",
+    "method": "ViennaRNA",
+    "sequence_sha256": "987b1dfb5d91c010a645d6ed2bc7acbe1fc86286491c2f673781999ccc530ca0",
+    "status": "ok",
+    "structure": "(((((.(((((..(.(((((((((.((....((((((((((((........))))).....)))))))....))))).)))))))..(((((((((((........)))))))))))(((((.(((((.....))))).))))).(((((((......)))))))....))))))))))."
+  },
+  {
+    "id": "RF00168:AAOX01000015.1/22460-22639",
+    "method": "LinearFold",
+    "sequence_sha256": "987b1dfb5d91c010a645d6ed2bc7acbe1fc86286491c2f673781999ccc530ca0",
+    "status": "ok",
+    "structure": "((((.((((((..(.(((((((((.((....((((((((((((........)))))).....))))))....))))).)))))))..(((((((((((........)))))))))))(((((.(((((.....))))).))))).(((((((......)))))))....))))))))))."
+  },
+  {
+    "id": "RF00168:AASA01000017.1/10332-10501",
+    "method": "baseline",
+    "sequence_sha256": "dd7c8a3e83f43c6cf972741e50fcaf8ba2596499ac4ebb0c3827e9472b69e264",
+    "status": "ok",
+    "structure": ".(((.((((.((((((((((((((((((((.((((((.((..(....).)..(.......))..).))).))))((...(....)))))).(...).).....)..).....)..))..)))...(...)(...))))).).((....))))).)(((...))))))..)"
+  },
+  {
+    "id": "RF00168:AASA01000017.1/10332-10501",
+    "method": "stack",
+    "sequence_sha256": "dd7c8a3e83f43c6cf972741e50fcaf8ba2596499ac4ebb0c3827e9472b69e264",
+    "status": "ok",
+    "structure": ".(...((((((((.(((((((((((((((((((((((.(...(.....)(...)...)..)).))..)))..)))))((........((............))..))))).))...))((((.......))))..).(((((((....)))))).)))))).))).))))"
+  },
+  {
+    "id": "RF00168:AASA01000017.1/10332-10501",
+    "method": "helix",
+    "sequence_sha256": "dd7c8a3e83f43c6cf972741e50fcaf8ba2596499ac4ebb0c3827e9472b69e264",
+    "status": "ok",
+    "structure": ".((((..(((...(((((((((((((....))(((((((...((.....).)...)...)))).))...))))))))((....(((((((((......)))))))))..)).((((((.((....)))))))).((..((((((....)))))).))))))))).))..)"
+  },
+  {
+    "id": "RF00168:AASA01000017.1/10332-10501",
+    "method": "all_unpaired",
+    "sequence_sha256": "dd7c8a3e83f43c6cf972741e50fcaf8ba2596499ac4ebb0c3827e9472b69e264",
+    "status": "ok",
+    "structure": ".........................................................................................................................................................................."
+  },
+  {
+    "id": "RF00168:AASA01000017.1/10332-10501",
+    "method": "ViennaRNA",
+    "sequence_sha256": "dd7c8a3e83f43c6cf972741e50fcaf8ba2596499ac4ebb0c3827e9472b69e264",
+    "status": "ok",
+    "structure": "...(((.((((..(.(((((((((.......((((((((..((.(....).))..))))))))......))))))))))..(((((((((((......)))))))))))...((((((.((....))))))))(((.(((((((....)))))))))).)))).)))..."
+  },
+  {
+    "id": "RF00168:AASA01000017.1/10332-10501",
+    "method": "LinearFold",
+    "sequence_sha256": "dd7c8a3e83f43c6cf972741e50fcaf8ba2596499ac4ebb0c3827e9472b69e264",
+    "status": "ok",
+    "structure": "...(((.((((..(.(((((((((.......((((((((..((.(....).))..))))))))......))))))))))..(((((((((((......)))))))))))...((((((.((....))))))))(((.(((((((....)))))))))).)))).)))..."
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/helix_objective_development_runs/20261014T002930.596309Z/components/20261006",
+  "seed": 20261006,
+  "state": "complete",
+  "result": {
+    "status": "ok",
+    "wall_seconds": 50.367525458000046,
+    "returncode": 0,
+    "error": "",
+    "supervisor": "linux_parent_death_guard_v1",
+    "peak_rss_mib": 863.921875,
+    "memory_method": "GNU time maximum RSS of tool descendants (excludes supervisor; not process-tree sum)"
+  }
+}

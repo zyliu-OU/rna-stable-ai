@@ -1,0 +1,8 @@
+{
+  "workspace": "/home/zyliu/Documents/rna-stable-ai",
+  "source_sha256": {
+    "src/rnastable/cli.py": "6fb9eb3ca0f57bb674ec492f5fa04f5cf5ae699d61f41c37e24f90a80d0072ba",
+    "README.md": "07a3af421436877d5bd4b6480b81a627a7e290d1d3179424a88a6b5ffce3b6f5",
+    "reports/current_work_status.json": "865067d70a990ab3fd1622db696eb4cfedbe5b413a18390222486144df7d9f29"
+  }
+}

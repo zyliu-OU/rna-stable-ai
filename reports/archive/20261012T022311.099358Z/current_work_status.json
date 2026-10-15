@@ -1,0 +1,19 @@
+{
+  "checkpoint_utc": "2026-10-12T02:12:38.369572+00:00",
+  "workspace": "/home/zyliu/Documents/rna-stable-ai",
+  "canonical_handoff": "RNA-StableAI_HANDOFF_2026-10-11_V1.md",
+  "state": "Both frozen helix studies complete and audited; independent biological evaluation pending",
+  "verification": {
+    "full_suite_passed": 488,
+    "native_completed_requests_seed20261007": 197,
+    "native_unknown_requests_seed20261007": 1,
+    "comparison_trajectories": 54
+  },
+  "active_components": {},
+  "pending": [
+    "Independent family evaluation with audited exposure exclusions",
+    "Longer biological annotations"
+  ],
+  "publication_updated": false,
+  "previous_status_archive": "/home/zyliu/Documents/rna-stable-ai/reports/archive/20261012T021238.369572Z"
+}

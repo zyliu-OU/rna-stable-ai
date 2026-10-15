@@ -1,0 +1,15 @@
+Prospective acquisition audit passed: protocol, source/failure ledger and metadata screening; no network or inference.
+Traceback (most recent call last):
+  File "/home/zyliu/Documents/rna-stable-ai/scripts/download_prospective_evidence.py", line 274, in <module>
+    main()
+  File "/home/zyliu/Documents/rna-stable-ai/scripts/download_prospective_evidence.py", line 270, in main
+    return download(args.acquisition)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyliu/Documents/rna-stable-ai/scripts/download_prospective_evidence.py", line 102, in download
+    plan, release = source_plan(acquisition)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyliu/Documents/rna-stable-ai/scripts/download_prospective_evidence.py", line 25, in source_plan
+    require(
+  File "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reference_audit.py", line 12, in require
+    raise ValueError(f'Reference audit rejected: {message}')
+ValueError: Reference audit rejected: Successful nonempty metadata acquisition required

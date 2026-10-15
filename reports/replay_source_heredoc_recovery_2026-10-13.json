@@ -1,0 +1,29 @@
+{
+  "workspace": "/home/zyliu/Documents/rna-stable-ai",
+  "policy": "Only Python writer bodies from tool actions in matching RNA-workspace sessions; no user-message bodies, other workspaces or command execution. Only exact recorded-SHA matches are retained. Formatting parses text without executing Python. Source availability does not prove execution.",
+  "candidate_writes_checked": 4,
+  "recovered": [
+    {
+      "sha256": "27ec31516b4aef5c59d7c38d3c580162a3a44db0454cb8fdb455c300382d088d",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/27ec31516b4aef5c59d7c38d3c580162a3a44db0454cb8fdb455c300382d088d.py",
+      "origin": {
+        "kind": "rna_workspace_tool_heredoc",
+        "session": "/home/zyliu/.codex/sessions/2026/10/05/rollout-2026-10-05T17-43-12-01a10eaa-1d02-7420-bec9-b0e7b72dda43.jsonl",
+        "tool_call_id": "call_seYVXIp3Xs2pkJInriSCEP2B",
+        "recorded_target": "src/rnastable/context_inference.py",
+        "representation": "exact_heredoc"
+      }
+    },
+    {
+      "sha256": "6e6397777254a9d572b90cf929f8be9c8c2117737979e0a765f2176626e38f8b",
+      "blob": "/home/zyliu/Documents/rna-stable-ai/results/replay_source_archive_blobs/6e6397777254a9d572b90cf929f8be9c8c2117737979e0a765f2176626e38f8b.py",
+      "origin": {
+        "kind": "rna_workspace_tool_heredoc",
+        "session": "/home/zyliu/.codex/sessions/2026/10/05/rollout-2026-10-05T17-43-12-01a10eaa-1d02-7420-bec9-b0e7b72dda43.jsonl",
+        "tool_call_id": "call_0XpryBSjcIEuZNHYGz70lvSw",
+        "recorded_target": "scripts/run_sparse_refinement_development.py",
+        "representation": "exact_heredoc"
+      }
+    }
+  ]
+}

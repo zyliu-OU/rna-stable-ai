@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "payload": {
+    "binding_sha256": "5e50089c815994592271050d68005d1c88586c6cdcaa960c680705468355103b",
+    "key": "record_014_ViennaRNA",
+    "sequence_sha256": "6d8a10197cbc7a7285d857bb5443877505bf3d79e477c1f2e0a52a0dce620da0",
+    "parameters": {
+      "folding": {
+        "beam_size": 100,
+        "memory_limit_gib": 4,
+        "temperature_c": 37,
+        "timeout_seconds": 30
+      },
+      "raw_output": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z/raw/record_014_ViennaRNA.txt",
+      "tool": "ViennaRNA"
+    },
+    "state": "complete",
+    "started_at": "2026-10-14T01:50:04.130628+00:00",
+    "driver_pid": 7,
+    "result": {
+      "status": "ok",
+      "wall_seconds": 0.08762321899939707,
+      "returncode": 0,
+      "error": "",
+      "supervisor": "linux_parent_death_guard_v1",
+      "peak_rss_mib": 23.76171875,
+      "memory_method": "GNU time maximum RSS of tool descendants (excludes supervisor; not process-tree sum)",
+      "tool": "ViennaRNA",
+      "device": "CPU",
+      "command": [
+        "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+        "-m",
+        "rnastable.vienna_worker",
+        "37"
+      ],
+      "raw_output": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z/raw/record_014_ViennaRNA.txt",
+      "structure": "..........(((.((.((..((.((.((.((.((.(((....)))))))))))))..)))))))...(((((((....))))))).....................",
+      "mfe_kcal_mol": -19.1,
+      "paired_fraction": 0.5046728971962616,
+      "raw_sha256": "5569ebfc51ef1fde612ec8e547a742e9cf859335448b7e869d54f92bb3777008"
+    },
+    "completed_at": "2026-10-14T01:50:04.231203+00:00"
+  },
+  "payload_sha256": "2656ab6b18ca7b7ae553e1950e042f45b9697e472bb967712b9ca7043806c966"
+}

@@ -4,8 +4,6 @@
 .cache/
 external/*
 !external/.gitkeep
-checkpoints/*
-!checkpoints/.gitkeep
 exports/
 .agents/
 .codex/

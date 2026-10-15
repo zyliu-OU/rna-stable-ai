@@ -1,0 +1,16 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/prospective_family_acquisition_runs/20261012T035150.817444Z",
+  "protocol_sha256": "6ef2ef165832a46a3517e555322f8b2103ce2447e1efbdde8271af203fc62dcd",
+  "snapshot_sha256": {
+    "config.json": "7a86dd1366d9973895ba807e00495ac17667b21227e52c2d167dfcd267750556",
+    "attempts.json": "a4b8751f989e775df1f5615c93b7e34aac8d1b58857b77328a91c3fe0ecc1b8f",
+    "protocol.json": "6ef2ef165832a46a3517e555322f8b2103ce2447e1efbdde8271af203fc62dcd",
+    "RF00050_description.json": "50c6c055534e6d88b563641bada1a127fdc33fd1a21d976aeffe32983971cb48",
+    "RF00174_description.json": "b261980dc729f9a0ee3b9fb50d4e7e6344b34434d409c3ed05d67ac5386e2500",
+    "RF00234_sequences.fasta": "bb865ac681a6bf7abc48fddb7f9108b64a06d8f8b80693d0fe0b59c816392f55",
+    "exposure.json": "2747bf78c8519cc8e9019d21fc0329749482095b553957d501405606617f5a22",
+    "RF00174_sequences.fasta": "cd617f87729a9f717806ddb8967a6237f1d5f028f1ededaefadb32014979305f",
+    "RF00234_description.json": "c5fd17ac9fedf0b063c6b40d00a2858a9f9df70402bbbc6f5c9caa7f2c740e1b",
+    "RF00050_sequences.fasta": "cb17b0bd7b7ef84bbedab966b31a546aa18347c8063b79d90cf8d8b896ceea5f"
+  }
+}

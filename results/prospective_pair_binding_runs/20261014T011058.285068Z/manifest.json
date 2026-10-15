@@ -1,0 +1,34 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_binding_runs/20261014T011058.285068Z",
+  "evidence_run": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z",
+  "source_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/RF00001_description.json": "cdc4900f16558786daed748435ee464eeacef52129ca08a677db447a4c394cc1",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/RF00008_description.json": "31516839f0e4b77332115a1276abdbb6ed1731146c4ffcd840fae8d239efcd10",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/RF00010.sto": "56235308ef218684b42df411e69fa6b43ed60155ede7869a0880b5818ab255f9",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/RF00010_pdb_mapping.json": "e419470e4a82532640e31a60fd15044520a22ee79c84976183a23f5b162d70ab",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/RF00017_description.json": "a31a9fbaced1def94b66f8f74d433481a4528ef2dced177da80ca1daccc01dc5",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/RF00023.sto": "9ce4faa469b2e1eb63ed7bf069069c32b77a45f15f03ec9c87c3a7d9625e13a1",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/RF00023_pdb_mapping.json": "7537171f376885f165dde56b975054ca969b047a168591d2b49730758cf8de22",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/RF00050_description.json": "50c6c055534e6d88b563641bada1a127fdc33fd1a21d976aeffe32983971cb48",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/RF00059_description.json": "3da4195dcf8e3646a2e2f6e8073655d76beb330164442c6372232e26d5c8ec30",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/RF00162_description.json": "614ccc8997ebcef32dcb680493650320e4a6b5b37b9b5ea6cedc6b790bf5b3c3",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/RF00167_description.json": "b071514279a674a614fee31bea67876a14b53fc0332089247e3e4b23036908c2",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/RF00168.sto": "426a6e0cd0783ee872a918d2c01b96f3a4226b276eb5e11c16794404e75bdc42",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/RF00168_pdb_mapping.json": "2812f6f53852056314e4c2ce114d36276ca1abecfe00f279580b5cf5598b39fb",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/RF00169_description.json": "2c2a9aff95ae1d6c66d985b4a4d16a01b2f4f4d809893b245b9c8f4fbd2e5ba0",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/RF00174_description.json": "b261980dc729f9a0ee3b9fb50d4e7e6344b34434d409c3ed05d67ac5386e2500",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/RF00234_description.json": "c5fd17ac9fedf0b063c6b40d00a2858a9f9df70402bbbc6f5c9caa7f2c740e1b",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/acquisition.json": "00b1f85be543e76c2a1427e6316aa1dd64b41984c13a3f392fe62e9152f7de9c",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/attempts.json": "5eb8d3f8f0ef05ad1acb58f865d333a0c29395d40712a5eaf60937069f3b85d4",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z/plan.json": "dcb7262df87e76596c4f3146787d152292ee3975ffb9c681c49bac6c7a0801d8",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_family_acquisition_runs/20261014T003052.784986Z/RF00010_description.json": "d6a10998d92effe1d8e3cfc813560489493543ac29d492a10f912ca64d57eeae",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_family_acquisition_runs/20261014T003052.784986Z/RF00023_description.json": "ddff7058047d5eabd96556bd81d25204c3c5fa5dd2f051c263a23c1faf70e426",
+    "/home/zyliu/Documents/rna-stable-ai/results/prospective_family_acquisition_runs/20261014T003052.784986Z/RF00168_description.json": "141cc982055aec3dda2a53122e80d5ddc18574f4c9ab6b7e409742ddbb7415d9"
+  },
+  "snapshot_sha256": {
+    "exposure.json": "3208b8e390e55d09e992f1264f121520c8ea78d0142c290459cc167f150d65af",
+    "acquisition.json": "00b1f85be543e76c2a1427e6316aa1dd64b41984c13a3f392fe62e9152f7de9c"
+  },
+  "policy": "Fixed metadata panel; exact consensus contact mapping. Unsupported reference outcomes retain all planned method denominators. Known source overlap screening does not certify complete biological independence.",
+  "reference_format": "pair_set_zero_based_v1"
+}

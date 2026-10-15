@@ -1,0 +1,20 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261012T025400.354107Z",
+  "acquisition_run": "/home/zyliu/Documents/rna-stable-ai/results/prospective_family_acquisition_runs/20261012T024003.811773Z",
+  "snapshot_sha256": {
+    "RF00001_description.json": "cdc4900f16558786daed748435ee464eeacef52129ca08a677db447a4c394cc1",
+    "RF00008_description.json": "31516839f0e4b77332115a1276abdbb6ed1731146c4ffcd840fae8d239efcd10",
+    "RF00017_description.json": "a31a9fbaced1def94b66f8f74d433481a4528ef2dced177da80ca1daccc01dc5",
+    "RF00059.sto": "365b9965b9613078889257c8e8d3454cba7195693469cad919c018e5b5a3c6b8",
+    "RF00059_pdb_mapping.json": "a3eb1ccd89276268b76ea6cb7880678737e7617605bf5f7e90dcc228167e03bb",
+    "RF00162.sto": "5e11139e9d0befb1b4529a9d113fc9fedff8fc85eb93145c5059c73799f21535",
+    "RF00162_pdb_mapping.json": "482406c688b1f7b648007935a69c9e076856c12d5581b5773df90fddfeca9482",
+    "RF00167.sto": "11c6a93c69027d9dfd086e560163ac56065c28df409f2fcd27c6fc4f1f7641c3",
+    "RF00167_pdb_mapping.json": "41241e44966e62bdf66a491d02f8178e2cc68e84ab020e2d3fe9356cab28ed5f",
+    "RF00169_description.json": "2c2a9aff95ae1d6c66d985b4a4d16a01b2f4f4d809893b245b9c8f4fbd2e5ba0",
+    "acquisition.json": "b4f3d4759461fd116b04f2dfb85a32f8de4d85b74a4ca16f031c2997a8baeeb5",
+    "attempts.json": "61a5c15ada4c3be62ddda8dd19056733c850b0a8f4a1ef477ddebc176141dd82",
+    "plan.json": "e11424d2cbd24e8833ebd53a259f2854f5798ca6cc3860ff8e1c32d5df7046b6"
+  },
+  "policy": "Fixed previously selected metadata panel. File envelope verification only; no reference pairs parsed, no re-selection, fitting or inference. PDB/clan overlap and exact annotation binding still require offline validation."
+}

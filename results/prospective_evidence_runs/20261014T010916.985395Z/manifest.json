@@ -1,0 +1,26 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261014T010916.985395Z",
+  "acquisition_run": "/home/zyliu/Documents/rna-stable-ai/results/prospective_family_acquisition_runs/20261014T003052.784986Z",
+  "snapshot_sha256": {
+    "RF00001_description.json": "cdc4900f16558786daed748435ee464eeacef52129ca08a677db447a4c394cc1",
+    "RF00008_description.json": "31516839f0e4b77332115a1276abdbb6ed1731146c4ffcd840fae8d239efcd10",
+    "RF00010.sto": "56235308ef218684b42df411e69fa6b43ed60155ede7869a0880b5818ab255f9",
+    "RF00010_pdb_mapping.json": "e419470e4a82532640e31a60fd15044520a22ee79c84976183a23f5b162d70ab",
+    "RF00017_description.json": "a31a9fbaced1def94b66f8f74d433481a4528ef2dced177da80ca1daccc01dc5",
+    "RF00023.sto": "9ce4faa469b2e1eb63ed7bf069069c32b77a45f15f03ec9c87c3a7d9625e13a1",
+    "RF00023_pdb_mapping.json": "7537171f376885f165dde56b975054ca969b047a168591d2b49730758cf8de22",
+    "RF00050_description.json": "50c6c055534e6d88b563641bada1a127fdc33fd1a21d976aeffe32983971cb48",
+    "RF00059_description.json": "3da4195dcf8e3646a2e2f6e8073655d76beb330164442c6372232e26d5c8ec30",
+    "RF00162_description.json": "614ccc8997ebcef32dcb680493650320e4a6b5b37b9b5ea6cedc6b790bf5b3c3",
+    "RF00167_description.json": "b071514279a674a614fee31bea67876a14b53fc0332089247e3e4b23036908c2",
+    "RF00168.sto": "426a6e0cd0783ee872a918d2c01b96f3a4226b276eb5e11c16794404e75bdc42",
+    "RF00168_pdb_mapping.json": "2812f6f53852056314e4c2ce114d36276ca1abecfe00f279580b5cf5598b39fb",
+    "RF00169_description.json": "2c2a9aff95ae1d6c66d985b4a4d16a01b2f4f4d809893b245b9c8f4fbd2e5ba0",
+    "RF00174_description.json": "b261980dc729f9a0ee3b9fb50d4e7e6344b34434d409c3ed05d67ac5386e2500",
+    "RF00234_description.json": "c5fd17ac9fedf0b063c6b40d00a2858a9f9df70402bbbc6f5c9caa7f2c740e1b",
+    "acquisition.json": "00b1f85be543e76c2a1427e6316aa1dd64b41984c13a3f392fe62e9152f7de9c",
+    "attempts.json": "5eb8d3f8f0ef05ad1acb58f865d333a0c29395d40712a5eaf60937069f3b85d4",
+    "plan.json": "dcb7262df87e76596c4f3146787d152292ee3975ffb9c681c49bac6c7a0801d8"
+  },
+  "policy": "Fixed previously selected metadata panel. File envelope verification only; no reference pairs parsed, no re-selection, fitting or inference. PDB/clan overlap and exact annotation binding still require offline validation."
+}

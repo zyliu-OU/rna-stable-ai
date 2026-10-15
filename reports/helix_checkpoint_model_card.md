@@ -46,3 +46,12 @@ Three draw seeds with fixed model initialization gave reused F1=0.5251,0.5196,0.
 The prior scorer uses compatible contacts from the native input template. Compatibility count is the first ranking key; mean compatible learned logits break ties. Native LinearFold decides search acceptance under the frozen mutation/energy rules. ViennaRNA final validation decides whether to retain a mutated sequence or the original. Protected positions and mutation limits are enforced and replayed. These constraints do not establish preserved biological function.
 
 The native studies use previously exposed synthetic sequences and matched planned fold budgets. Their code and checkpoints are frozen, interrupted request costs stay unknown, and failed requests stay in denominators. The helix studies explicitly allow300-second Vienna final validation; the older stack study's30-second10,000nt timeouts remain preserved alongside a separately budgeted300-second extension. Results are descriptive native-energy measurements. Repeated controls and checkpoint seeds add cost and share inputs.
+
+Both six-component helix studies are complete and audited as of2026-10-11.
+The seed20261007 study retains197 completed native requests and one interrupted
+request with unknown outcome/cost; that request was not retried. The combined
+stack/helix comparison retains54 trajectories,12 paired prior comparisons and24
+reproduced controls. Helix selected lower native energies than stack in nine
+comparisons and higher energies in three. This descriptive shared-input result
+does not select a checkpoint or establish accuracy or biological stability.
+See `development_2026-10-11_review.md` and `checkpoint_prior_comparison_report.md`.

@@ -1,0 +1,11 @@
+family_id,resource,status,error,reason,url
+RF00059,pdb_mapping,ok,,,https://rfam.org/family/RF00059/structures?content-type=application%2Fjson
+RF00162,pdb_mapping,ok,,,https://rfam.org/family/RF00162/structures?content-type=application%2Fjson
+RF00167,pdb_mapping,ok,,,https://rfam.org/family/RF00167/structures?content-type=application%2Fjson
+RF00001,exposed_family_description,ok,,,https://rfam.org/family/RF00001?content-type=application%2Fjson
+RF00008,exposed_family_description,ok,,,https://rfam.org/family/RF00008?content-type=application%2Fjson
+RF00017,exposed_family_description,ok,,,https://rfam.org/family/RF00017?content-type=application%2Fjson
+RF00169,exposed_family_description,ok,,,https://rfam.org/family/RF00169?content-type=application%2Fjson
+RF00059,stockholm,ok,,,https://rfam.org/family/RF00059/alignment/stockholm
+RF00162,stockholm,ok,,,https://rfam.org/family/RF00162/alignment/stockholm
+RF00167,stockholm,ok,,,https://rfam.org/family/RF00167/alignment/stockholm

@@ -34,9 +34,23 @@
       "raw_output": "/home/zyliu/Documents/rna-stable-ai/results/helix_prior_replication_runs/20261007T023827.967339Z/snapshot/results/checkpoint_prior_pilot_runs/20261007T030004.032459Z/compatibility_only/validation_input_0000_ViennaRNA.txt",
       "tool": "ViennaRNA"
     },
-    "state": "started",
+    "state": "interrupted",
     "started_at": "2026-10-07T03:05:29.747978+00:00",
-    "driver_pid": 1168
+    "driver_pid": 1168,
+    "result": {
+      "status": "error",
+      "error": "Interrupted native request; outcome and cost unknown. Not retried.",
+      "interrupted": true,
+      "tool": "ViennaRNA",
+      "command": [
+        "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+        "-m",
+        "rnastable.vienna_worker",
+        "37"
+      ],
+      "device": "CPU"
+    },
+    "recovered_at": "2026-10-12T02:01:37.412860+00:00"
   },
-  "payload_sha256": "1b436bbf4eceb9ad7b113847bf3b263d3887deffbfbc3a594b63b45e4fe64414"
+  "payload_sha256": "48cd6a7b7b75dc837e44b7660a422d02feb1deffb9a96c128011d53b7dd6a7f3"
 }

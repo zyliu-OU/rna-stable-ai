@@ -1,0 +1,187 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261007_helix",
+  "mode": "long_comparative_development_only",
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261007,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse",
+    "pair_features": "local_helix_context_v1"
+  },
+  "head": "helix",
+  "seed": 20261007,
+  "test_evaluated": false,
+  "manifest_sha256": "035193de5b3190d4268e8a035d645580939318c04ded1865f804a6c06aa56572",
+  "counts": {
+    "train": 89,
+    "validation": 47
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "mean_train_loss": 4.515955844621979,
+      "validation_mean_pair_f1": 0.333814943399597,
+      "mean_validation_loss": 2.6265554301282195
+    },
+    {
+      "epoch": 2,
+      "mean_train_loss": 2.687069736169965,
+      "validation_mean_pair_f1": 0.43185753388333625,
+      "mean_validation_loss": 2.5380995679408946
+    },
+    {
+      "epoch": 3,
+      "mean_train_loss": 2.5165236478441217,
+      "validation_mean_pair_f1": 0.4776666838280278,
+      "mean_validation_loss": 2.3390515383253705
+    },
+    {
+      "epoch": 4,
+      "mean_train_loss": 2.5463303635629377,
+      "validation_mean_pair_f1": 0.4950770012765886,
+      "mean_validation_loss": 2.3678357195346913
+    },
+    {
+      "epoch": 5,
+      "mean_train_loss": 2.3693191375625267,
+      "validation_mean_pair_f1": 0.4177316192830757,
+      "mean_validation_loss": 2.3269593005484723
+    },
+    {
+      "epoch": 6,
+      "mean_train_loss": 2.225160574645139,
+      "validation_mean_pair_f1": 0.4204221817804507,
+      "mean_validation_loss": 2.0336146938039903
+    },
+    {
+      "epoch": 7,
+      "mean_train_loss": 2.1601521178577725,
+      "validation_mean_pair_f1": 0.42442932190640803,
+      "mean_validation_loss": 2.114323197527135
+    },
+    {
+      "epoch": 8,
+      "mean_train_loss": 1.9552136659622192,
+      "validation_mean_pair_f1": 0.3826913374783571,
+      "mean_validation_loss": 1.9639180898666382
+    },
+    {
+      "epoch": 9,
+      "mean_train_loss": 2.0805593066001205,
+      "validation_mean_pair_f1": 0.4543923989769511,
+      "mean_validation_loss": 1.9552493044670591
+    },
+    {
+      "epoch": 10,
+      "mean_train_loss": 2.1965362168429943,
+      "validation_mean_pair_f1": 0.4716579331881692,
+      "mean_validation_loss": 2.079693337704273
+    }
+  ],
+  "selected_epoch": 4,
+  "selected_validation_pair_f1": 0.4950770012765886,
+  "train_positive_pairs": 4462,
+  "train_negative_pairs": 1180545,
+  "train_only_positive_weight": 264.57754370237564,
+  "excluded_train_contacts": 26,
+  "excluded_validation_contacts": 7,
+  "parameters": 25882,
+  "encoder_receptive_field_nt": 91,
+  "checkpoint_sha256": {
+    "initial_context_model.pt": "b4d5e3dd1010ec7498b91529d1a9875d55c2212095011fcfbd25b2c6e9013c79",
+    "best_context_model.pt": "3b664e57203994f5117b3dbac24b90ea9c5ec8fc841e22cf27e5c7f753a6ba5f"
+  },
+  "predictions_sha256": "d13bc450075dea328d61c7bb47b48d169e03a8225751f8660a5945a43c20b5e2",
+  "exposure_events": [
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261007_helix/exposures/20261007T013259.491033Z.json",
+      "sha256": "c7cb246e764ff74d0ae6e96387e396b99aaf36da17094ff95ede830740101d00",
+      "stage": "training_started"
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261007_helix/exposures/20261007T013259.506449Z.json",
+      "sha256": "89568514b7a2e8939c50ac6975df025585ff0517c0c77c3f00684e1b5deebe0b",
+      "stage": "validation_started"
+    }
+  ],
+  "aggregates": [
+    {
+      "method": "trained_helix_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.39868738306323015,
+      "mean_pair_recall": 0.4526786394170435,
+      "mean_pair_f1": 0.42037756811842647
+    },
+    {
+      "method": "trained_helix_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6680485255485255,
+      "mean_pair_recall": 0.7671356421356421,
+      "mean_pair_f1": 0.7129503479878948
+    },
+    {
+      "method": "untrained_helix_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    },
+    {
+      "method": "untrained_helix_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.0,
+      "mean_pair_recall": 0.0,
+      "mean_pair_f1": 0.0
+    }
+  ],
+  "limitations": [
+    "Same reused development cohort; matched seeds compare heads, not independent biological samples.",
+    "Validation checkpoint selection is development tuning; no fresh test or generalization claim.",
+    "All heads use full pair BCE, identical base initialization, optimizer and exact top-16 sparse decoding.",
+    "Local helix features use only nucleotide identities and offsets, not reference labels."
+  ]
+}

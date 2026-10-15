@@ -1,0 +1,15 @@
+Measured-source audit passed: bound bytes and failure ledger; no assay parsing or inference.
+Traceback (most recent call last):
+  File "/home/zyliu/Documents/rna-stable-ai/scripts/prepare_degradation_binding.py", line 298, in <module>
+    main()
+  File "/home/zyliu/Documents/rna-stable-ai/scripts/prepare_degradation_binding.py", line 293, in main
+    audit(ROOT / "results" / (NAME + "_summary.json")) if args.verify else prepare()
+                                                                           ^^^^^^^^^
+  File "/home/zyliu/Documents/rna-stable-ai/scripts/prepare_degradation_binding.py", line 202, in prepare
+    rows = read_records(source_path.read_bytes())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyliu/Documents/rna-stable-ai/scripts/prepare_degradation_binding.py", line 81, in read_records
+    require(
+  File "/home/zyliu/Documents/rna-stable-ai/src/rnastable/reference_audit.py", line 12, in require
+    raise ValueError(f'Reference audit rejected: {message}')
+ValueError: Reference audit rejected: Missing or duplicate assay identity

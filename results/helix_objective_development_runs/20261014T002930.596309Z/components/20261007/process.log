@@ -1,0 +1,12 @@
+Context epoch 1/10: loss 2.6875, reused validation F1 0.4133
+Context epoch 2/10: loss 2.4412, reused validation F1 0.4053
+Context epoch 3/10: loss 2.2592, reused validation F1 0.3212
+Context epoch 4/10: loss 2.1649, reused validation F1 0.3321
+Context epoch 5/10: loss 1.9965, reused validation F1 0.3512
+Context epoch 6/10: loss 1.8546, reused validation F1 0.3586
+Context epoch 7/10: loss 1.7283, reused validation F1 0.4174
+Context epoch 8/10: loss 1.6082, reused validation F1 0.4042
+Context epoch 9/10: loss 1.5038, reused validation F1 0.3667
+Context epoch 10/10: loss 1.3638, reused validation F1 0.3573
+
+STDERR:

@@ -1,0 +1,14 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_reference_runs/20261012T032118.213704Z",
+  "format": "pair_set_zero_based_v1",
+  "snapshot_sha256": {
+    "references.json": "34f122449ec8d6b99a12640c0ba03e3236a3bdcbfcef5bc02aba277e862feb2c",
+    "predictions.json": "1793b9cb5365115383763e90f5ad1ed926f167c36c4e68be986a3a09bdc950c8"
+  },
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/pair_reference_runs/20261012T032118.213704Z/exposures/20261012T032118.214334Z.json",
+    "sha256": "6b707e341e207a67d555b969bd4ec5cad6d680f02c61ca718e7a0bd13d12a652",
+    "stage": "validation_started"
+  },
+  "policy": "complete_exact_pair_sets_no_projection_v1"
+}

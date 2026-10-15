@@ -1,0 +1,2 @@
+Pair-set evaluation audit passed: 423 planned outcomes; exact crossing contacts, frozen inputs, coverage and exposure replayed; no inference.
+Development pair-score equivalence passed: all seven metrics for 423 stored predictions; no fitting, inference or test evaluation.

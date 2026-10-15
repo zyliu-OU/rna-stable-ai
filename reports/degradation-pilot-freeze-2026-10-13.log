@@ -1,0 +1,5 @@
+Measured-source audit passed: bound bytes and failure ledger; no assay parsing or inference.
+Measured assay binding replay passed: exact coordinates, values/errors, selection, prior overlaps and exposure; no model or native calls.
+Measured-source audit passed: bound bytes and failure ledger; no assay parsing or inference.
+Measured assay binding replay passed: exact coordinates, values/errors, selection, prior overlaps and exposure; no model or native calls.
+Frozen empirical pilot: /home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z/manifest.json

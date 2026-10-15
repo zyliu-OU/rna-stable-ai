@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/zyliu/Documents/rna-stable-ai/scripts/audit_family_readiness.py", line 79, in <module>
+    main()
+  File "/home/zyliu/Documents/rna-stable-ai/scripts/audit_family_readiness.py", line 50, in main
+    screening = screen_families(metadata_records(contents), exposed)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyliu/Documents/rna-stable-ai/src/rnastable/family_readiness.py", line 60, in metadata_records
+    store()
+  File "/home/zyliu/Documents/rna-stable-ai/src/rnastable/family_readiness.py", line 40, in store
+    raise ValueError("Duplicate metadata identity")
+ValueError: Duplicate metadata identity

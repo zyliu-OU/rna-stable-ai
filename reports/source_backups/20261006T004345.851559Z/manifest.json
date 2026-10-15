@@ -1,0 +1,11 @@
+{
+  "workspace": "/home/zyliu/Documents/rna-stable-ai",
+  "source_sha256": {
+    "src/rnastable/budget_batches.py": "8e3fdb03b3e4c71608719896a6d29e185facaa43e44ebad888bac2ae0ecde0f1",
+    "src/rnastable/budget_progress.py": "42ec4d5304d81c7bf0f64781af00b6af5112034241a950b62c0271f74b1985a5",
+    "tests/test_budget_batches.py": "a3af603cbba146fc0f5f9bbcaa7c1a38c4d081b36f0e3085ef7aed7bf26ece27",
+    "tests/test_budget_progress.py": "f2ae7a0c9817492ca97fbc66fa29a1d78782c27bad75f9a4a7e75c3658321e4c",
+    "README.md": "7411d471288f89e9f4732a912104661b31f86ed09123a6d6015024b3d7aecda2",
+    "reports/current_work_status.json": "144df4677bf0b6947d4077df669c4db30fd52e86197832ca47fa3d29f779217c"
+  }
+}

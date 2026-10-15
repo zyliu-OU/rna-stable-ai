@@ -1,0 +1,106 @@
+[
+  {
+    "family_id": "RF00050",
+    "resource": "pdb_mapping",
+    "filename": "RF00050_pdb_mapping.json",
+    "url": "https://rfam.org/family/RF00050/structures?content-type=application%2Fjson",
+    "status": "ok",
+    "sha256": "918edf3b497593afdaa6275fb9f3cee4059e3fc57bced8b7ff4ae9b9247298e0"
+  },
+  {
+    "family_id": "RF00174",
+    "resource": "pdb_mapping",
+    "filename": "RF00174_pdb_mapping.json",
+    "url": "https://rfam.org/family/RF00174/structures?content-type=application%2Fjson",
+    "status": "ok",
+    "sha256": "3f2fbc224dafff3737050ad27b51992e8eba3d455ae92367dec91147fd7baf3d"
+  },
+  {
+    "family_id": "RF00234",
+    "resource": "pdb_mapping",
+    "filename": "RF00234_pdb_mapping.json",
+    "url": "https://rfam.org/family/RF00234/structures?content-type=application%2Fjson",
+    "status": "ok",
+    "sha256": "8a968457e7064d53b6c6388004c315d503db0bd109f6b0a8d74eb3b10988593b"
+  },
+  {
+    "family_id": "RF00001",
+    "resource": "exposed_family_description",
+    "filename": "RF00001_description.json",
+    "url": "https://rfam.org/family/RF00001?content-type=application%2Fjson",
+    "status": "ok",
+    "sha256": "cdc4900f16558786daed748435ee464eeacef52129ca08a677db447a4c394cc1"
+  },
+  {
+    "family_id": "RF00008",
+    "resource": "exposed_family_description",
+    "filename": "RF00008_description.json",
+    "url": "https://rfam.org/family/RF00008?content-type=application%2Fjson",
+    "status": "ok",
+    "sha256": "31516839f0e4b77332115a1276abdbb6ed1731146c4ffcd840fae8d239efcd10"
+  },
+  {
+    "family_id": "RF00017",
+    "resource": "exposed_family_description",
+    "filename": "RF00017_description.json",
+    "url": "https://rfam.org/family/RF00017?content-type=application%2Fjson",
+    "status": "ok",
+    "sha256": "a31a9fbaced1def94b66f8f74d433481a4528ef2dced177da80ca1daccc01dc5"
+  },
+  {
+    "family_id": "RF00059",
+    "resource": "exposed_family_description",
+    "filename": "RF00059_description.json",
+    "url": "https://rfam.org/family/RF00059?content-type=application%2Fjson",
+    "status": "ok",
+    "sha256": "3da4195dcf8e3646a2e2f6e8073655d76beb330164442c6372232e26d5c8ec30"
+  },
+  {
+    "family_id": "RF00162",
+    "resource": "exposed_family_description",
+    "filename": "RF00162_description.json",
+    "url": "https://rfam.org/family/RF00162?content-type=application%2Fjson",
+    "status": "ok",
+    "sha256": "614ccc8997ebcef32dcb680493650320e4a6b5b37b9b5ea6cedc6b790bf5b3c3"
+  },
+  {
+    "family_id": "RF00167",
+    "resource": "exposed_family_description",
+    "filename": "RF00167_description.json",
+    "url": "https://rfam.org/family/RF00167?content-type=application%2Fjson",
+    "status": "ok",
+    "sha256": "b071514279a674a614fee31bea67876a14b53fc0332089247e3e4b23036908c2"
+  },
+  {
+    "family_id": "RF00169",
+    "resource": "exposed_family_description",
+    "filename": "RF00169_description.json",
+    "url": "https://rfam.org/family/RF00169?content-type=application%2Fjson",
+    "status": "ok",
+    "sha256": "2c2a9aff95ae1d6c66d985b4a4d16a01b2f4f4d809893b245b9c8f4fbd2e5ba0"
+  },
+  {
+    "family_id": "RF00050",
+    "resource": "stockholm",
+    "filename": "RF00050.sto",
+    "url": "https://rfam.org/family/RF00050/alignment/stockholm",
+    "status": "ok",
+    "sha256": "4a72e11fb2c19fb367b05d32252aa0c76eb6751584460afb5afd4a35ffa5575a"
+  },
+  {
+    "family_id": "RF00174",
+    "resource": "stockholm",
+    "filename": "RF00174.sto",
+    "url": "https://rfam.org/family/RF00174/alignment/stockholm",
+    "status": "ok",
+    "sha256": "28a7366b3d509361911d3ffbec513ec886bfd16ca0adf30a5b4238b5aeff352f"
+  },
+  {
+    "family_id": "RF00234",
+    "resource": "stockholm",
+    "filename": "RF00234.sto",
+    "url": "https://rfam.org/family/RF00234/alignment/stockholm",
+    "status": "ok",
+    "sha256": "fef1947ad7dfc0869fb4f1441f343261d59624a45c4fafb0e19cea6257445032"
+  }
+]

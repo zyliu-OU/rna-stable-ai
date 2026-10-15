@@ -1,0 +1,60 @@
+................F................                                        [100%]
+=================================== FAILURES ===================================
+_____ test_native_accounting_preserves_unknown_and_rejects_unplanned_work ______
+
+tmp_path = PosixPath('/tmp/pytest-of-zyliu/pytest-12/test_native_accounting_preserv0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x71d2e7f0f2c0>
+
+    def test_native_accounting_preserves_unknown_and_rejects_unplanned_work(
+        tmp_path, monkeypatch
+    ):
+        from rnastable.native_journal import NativeJournal, canonical
+    
+        module = evaluation_module(monkeypatch)
+        manifest = {"run_dir": str(tmp_path)}
+        journal = NativeJournal(tmp_path / "native_journal", digest(canonical(manifest)))
+        good = {**record(), "reference_status": "ok"}
+>       journal.run(
+            "record_00_ViennaRNA",
+            good["sequence"],
+            {},
+            lambda: {"status": "ok", "structure": "((....))", "wall_seconds": 0.25},
+        )
+
+tests/test_prospective_binding.py:184: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/rnastable/native_journal.py:224: in run
+    self.validate_result(result, len(sequence))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+result = {'status': 'ok', 'structure': '((....))', 'wall_seconds': 0.25}
+length = 8
+
+    @staticmethod
+    def validate_result(result, length=None):
+        if not isinstance(result, dict) or result.get("status") not in (
+            "ok",
+            "timeout",
+            "error",
+            "parse_error",
+            "unavailable",
+        ):
+            raise ValueError("Invalid native result status")
+        canonical(result)
+        for name in ("wall_seconds", "peak_rss_mib"):
+            if name in result and (
+                type(result[name]) not in (int, float)
+                or not math.isfinite(result[name])
+                or result[name] < 0
+            ):
+                raise ValueError("Native cost must be finite and nonnegative")
+        if result["status"] == "ok":
+            energy = result.get("mfe_kcal_mol")
+            if type(energy) not in (int, float) or not math.isfinite(energy):
+>               raise ValueError("Native energy must be finite")
+E               ValueError: Native energy must be finite
+
+src/rnastable/native_journal.py:150: ValueError
+=========================== short test summary info ============================
+FAILED tests/test_prospective_binding.py::test_native_accounting_preserves_unknown_and_rejects_unplanned_work
+1 failed, 32 passed in 2.40s

@@ -15,8 +15,9 @@ def main():
     destination = ROOT / 'exports' / stamp / 'rna-stable-ai'
     destination.mkdir(parents=True, exist_ok=False)
     files = []
-    roots = ['src', 'scripts', 'tests', 'configs', 'data', 'reports', 'results',
-             'pyproject.toml', 'README.md', 'RESEARCH_USE_NOTICE.md']
+    roots = ['src', 'scripts', 'tests', 'configs', 'data', 'docs', 'reports',
+             'results', 'checkpoints', 'archive', 'AGENTS.md',
+             'pyproject.toml', 'README.md', 'DEVELOPMENT.md', 'RESEARCH_USE_NOTICE.md']
     secret = re.compile(rb'(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{40,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----)')
     for item in roots:
         source = ROOT / item
@@ -25,12 +26,16 @@ def main():
             relative = path.relative_to(ROOT)
             if not path.is_file() or path.is_symlink():
                 continue
-            if any(part in {'__pycache__', '.pytest_cache', '.git', 'source_backups'}
+            if any(part in {'__pycache__', '.pytest_cache', '.git'}
                    or part.endswith('.egg-info') for part in relative.parts):
                 continue
             if path.suffix in {'.pyc', '.pyo'}:
                 continue
+            if relative.name.startswith('uConsole-'):
+                continue  # Unrelated project handoffs in the shared workspace.
             content = path.read_bytes()
+            if len(content) >= 100 * 1024 * 1024:
+                raise RuntimeError(f'GitHub file-size limit: {relative}; export stopped')
             if secret.search(content):
                 raise RuntimeError(f'Possible credential: {relative}; export stopped')
             target = destination / relative
@@ -40,24 +45,19 @@ def main():
                           'sha256': hashlib.sha256(content).hexdigest()})
     readme = destination / 'README.md'
     text = readme.read_text()
-    text = text.replace('# RNA-StableAI\n', '# RNA-StableAI\n\n**Status: work in progress — research prototype.** This repository records ongoing\n'
-                        'development and measured experiments; no release or trained model is published.\n\n'
-                        'The saved evidence retains its original host paths and timestamps. On another\n'
-                        'machine, rerun the pipeline to produce local artifacts; historical audit scripts\n'
-                        'may require those original paths. External tools and environments are installed\n'
-                        'locally by setup and are not vendored in this repository.\n')
     text = text.replace('cd /home/zyliu/Documents/rna-stable-ai', 'cd rna-stable-ai')
     text = text.replace('successful installation produces a lock; this offline session did not produce a lock.',
                         'successful installation produces a lock. The recorded host freeze is included in reports/.')
     readme.write_text(text)
+    guide = destination / 'DEVELOPMENT.md'
+    guide.write_text(guide.read_text().replace(
+        'cd /home/zyliu/Documents/rna-stable-ai', 'cd rna-stable-ai'))
     (destination / '.gitignore').write_text('''# Local dependencies and machine state
 .venv/
 .tools/
 .cache/
 external/*
 !external/.gitkeep
-checkpoints/*
-!checkpoints/.gitkeep
 exports/
 .agents/
 .codex/
@@ -69,9 +69,12 @@ __pycache__/
 .env
 .env.*
 ''')
-    for folder in ['external', 'checkpoints']:
+    for folder in ['external']:
         (destination / folder).mkdir(exist_ok=True)
         (destination / folder / '.gitkeep').touch()
+    for item in files:
+        item['exported_sha256'] = hashlib.sha256(
+            (destination / item['path']).read_bytes()).hexdigest()
     manifest = {'created_utc': stamp, 'source_root': str(ROOT),
                 'status': 'work_in_progress', 'release_created': False,
                 'files': files, 'source_file_count': len(files),
@@ -79,7 +82,9 @@ __pycache__/
                 'notes': ['Copied files preserve original evidence. README adjusted for GitHub.',
                           'Original workspace and dependencies are untouched.',
                           'Historical absolute paths are retained; rerun artifacts on a new host.',
-                          'No credential patterns found in exported content.']}
+                          'No credential patterns found in exported content.',
+                          'Includes documentation, experimental checkpoints and retained data/results.',
+                          'Excludes dependencies, environments, credentials, session history and unrelated project handoffs.']}
     (destination / 'EXPORT_MANIFEST.json').write_text(json.dumps(manifest, indent=2) + '\n')
     print(json.dumps({'snapshot': str(destination), 'files': len(files),
                       'bytes': manifest['source_bytes']}, indent=2))

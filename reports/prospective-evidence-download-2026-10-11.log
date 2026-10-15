@@ -1,0 +1,8 @@
+Prospective acquisition audit passed: protocol, source/failure ledger and metadata screening; no network or inference.
+RF00059 pdb_mapping: error
+RF00162 pdb_mapping: error
+RF00167 pdb_mapping: error
+RF00001 exposed_family_description: error
+RF00008 exposed_family_description: error
+RF00017 exposed_family_description: error
+RF00169 exposed_family_description: error

@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z",
+  "stage": "test_started",
+  "records": [
+    {
+      "sequence": "UAUAAGUCCAAGGGGUGCCAAUUGGCUGAGAUGGUUUUAACCAAUCCCUUUGAACCUGAUCCGGUUAAUACCGGCGUAGGAAUGGAUUUUCUCUACAGC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z test_started",
+      "family_id": "RF00059"
+    },
+    {
+      "sequence": "UUUAUCCACUAGGGGGGCCUAUUAUAGGCUGAGAUCAAAUGGGAAUUUGAGACUCUUAGUACCUGAUCUGGUUAAUGCCAGCGUAGGGAAGUGGAAAAGACAUUGC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z test_started",
+      "family_id": "RF00059"
+    },
+    {
+      "sequence": "UAAGAUACCUCGGGGGGCCUGACAGGCUGAGAUGUGCGCGCACGGACCCGUUGAACCUGAACCGGUUAACACCGGCGGAGGGAAGGUCUGGAUACACCUC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z test_started",
+      "family_id": "RF00059"
+    },
+    {
+      "sequence": "AUCUAUCCGUCGGGGUGCCCUAGGGGGCUGAGAGGUGCGUGCACCGACCCGUCGAACCUGAUCCGGGCAAUACCGGCGUAGGGAACGGGUAUCUUUGUGCA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z test_started",
+      "family_id": "RF00059"
+    },
+    {
+      "sequence": "CGUUGUCGCUAGGGGUGCCCCCGUCAGGGGCUGAGAUGGCCGUGGACCGGCCAGACCCUUUGAACCUGAACCGGGUCAUACCGGCGGAGGGAAGCGGCGGGCGCUCCAA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z test_started",
+      "family_id": "RF00059"
+    },
+    {
+      "sequence": "UACUUAUCAAGAAAGGUGGAGGGAAAAGGCCCUUUGAAACCUUAGCAACCCCAAAUUAGGAAGGUGCUAAAUCCAGAUGUAAAAAUCAAGAUAAGAG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z test_started",
+      "family_id": "RF00162"
+    },
+    {
+      "sequence": "GUGUUAUCACGAGUGGUGGAGGGAAUGGCCCUUUGAAACCACAGCAACCGGUCCUGACGUUCAGGAUGACAGGUGCUAAUUCCACCCCCGCAAGGGGACAGAUGAGAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z test_started",
+      "family_id": "RF00162"
+    },
+    {
+      "sequence": "UGCUCAUCCAGAGAGGUGGAGGGACCGGCCCUGAGAAACCUCGGCAACCGCGAAGCGCAGUCGCUGGUGCCAAAUCCGGCAGAAGUUCUCCGGCAGGGUGGCCGGGAGACAUUUCUGGAAGAUGAGGA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z test_started",
+      "family_id": "RF00162"
+    },
+    {
+      "sequence": "UUCUUAUCCAGAGAGGUGGAGGGACUGGCCUUAUGAAACCUCAGCAACAGGUCUGCUUAAGUAGACACUGUGCUAAUUCCAGCGGGUGAUAAUCCUGAUAGAUGAGAG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z test_started",
+      "family_id": "RF00162"
+    },
+    {
+      "sequence": "AUCUUAUCAAGAGUGGCAGAGGGACUGGCCCUGUGAAGCCCGGCAACCAGUAUAUUUAAUUAUACAUUGGUGCUAAAUCCUGCAGCAUUUAUGCUGAAAGAUGAGUA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z test_started",
+      "family_id": "RF00162"
+    },
+    {
+      "sequence": "AUUAAAACAUCUUCAAUAAAUCGUAUAAUAGAUCGAAUGUGGCGGUCAAGUUUCUACCAUAUCACCGUAAAUGAUAUGACUACGAUUGAAUCUUUUCCUGUU",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z test_started",
+      "family_id": "RF00167"
+    },
+    {
+      "sequence": "AGAUAAUAUAAAACGAUCCUUCAUAUAUCCUCAAAGAUAAGGUUUGAGAGUCUCUACCGGGUUACCGUAAACAACCUGACUAUGAAGGCAGUGUGUCUUAUA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z test_started",
+      "family_id": "RF00167"
+    },
+    {
+      "sequence": "AUUAAUUACAUAUGAGAAUCAUGUAUAACUCCAAGAAUAUGGCUUGGGGGUCUCUACCAGGAACCAAUAACUCCUGACUACAAAAUGCGUAUUAUAGCGU",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z test_started",
+      "family_id": "RF00167"
+    },
+    {
+      "sequence": "GAAAAGUGAAUAUUAUGCCGUCGUAUAAUAUCGGGGAUAUGGCCCGAAAGUUUCUACCUAGCUACCGUAAAUGGCUUGACUACGAGGCGUUUUUAUAAAGGU",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z test_started",
+      "family_id": "RF00167"
+    },
+    {
+      "sequence": "CUUCGAAAAGAAUCACUGCCUCAUAUAAUCUUGGAGAUAAGGUCCAUAAGUUUCUACCUGGCAACCAUGAAUUGCUAGACUAUGAGGGGAAAAGUGUGUAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evaluation_runs/20261012T030338.012553Z test_started",
+      "family_id": "RF00167"
+    }
+  ],
+  "records_sha256": "e4d4102db4f84c17739fe4cc9331b1b0016fbcf97c2c6e6fb8b89d9d85a4b284"
+}

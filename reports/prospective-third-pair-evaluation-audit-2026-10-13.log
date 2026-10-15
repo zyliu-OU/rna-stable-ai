@@ -1,0 +1,2 @@
+Prospective evaluation audit passed: all planned outcomes, exact reference scores, model/input hashes, exposure and native journals; no new test or native callbacks.
+Native accounting: {"completed_requests": 8, "known_wall_seconds": 0.810477914000785, "planned_requests": 8, "unknown_requests": 0}

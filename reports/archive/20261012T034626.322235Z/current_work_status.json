@@ -1,0 +1,23 @@
+{
+  "checkpoint_utc": "2026-10-12T03:30:07.260233+00:00",
+  "workspace": "/home/zyliu/Documents/rna-stable-ai",
+  "canonical_handoff": "RNA-StableAI_HANDOFF_2026-10-11_V6.md",
+  "state": "Roadmap step 4: complete crossing-pair reference scoring implemented; development equivalence audited",
+  "verification": {
+    "full_suite_passed": 562,
+    "focused_tests_passed": 46,
+    "development_predictions_exactly_matched": 423
+  },
+  "pair_reference_development_run": "/home/zyliu/Documents/rna-stable-ai/results/pair_reference_development_runs/20261012T032118.139461Z",
+  "pair_evaluation_run": "/home/zyliu/Documents/rna-stable-ai/results/pair_reference_runs/20261012T032118.213704Z",
+  "active_components": {},
+  "pending": [
+    "Integrate pair-set format into future frozen protocols",
+    "Reserve new unexposed families",
+    "Broader training/tool provenance",
+    "Long biological annotations",
+    "Experimental stability/function validation"
+  ],
+  "publication_updated": false,
+  "previous_status_archive": "/home/zyliu/Documents/rna-stable-ai/reports/archive/20261012T033007.260233Z"
+}

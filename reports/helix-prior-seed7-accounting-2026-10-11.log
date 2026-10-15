@@ -1,0 +1,13 @@
+{
+  "planned_native_requests": 198,
+  "started_native_requests": 198,
+  "journal_recorded_native_requests": 198,
+  "orphan_raw_native_requests": 0,
+  "completed_native_requests": 197,
+  "unknown_native_requests": 1,
+  "not_started_native_requests": 0,
+  "known_native_wall_seconds": 2008.9399087069967,
+  "completed_proxy_calls": 768,
+  "known_proxy_wall_seconds": 4.308983139987504,
+  "incomplete_proxy_attempts": 1
+}

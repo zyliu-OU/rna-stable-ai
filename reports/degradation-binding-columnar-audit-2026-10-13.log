@@ -1,0 +1,2 @@
+Measured-source audit passed: bound bytes and failure ledger; no assay parsing or inference.
+Measured assay binding replay passed: exact coordinates, values/errors, selection, prior overlaps and exposure; no model or native calls.

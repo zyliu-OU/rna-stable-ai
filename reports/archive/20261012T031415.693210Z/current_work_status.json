@@ -1,0 +1,23 @@
+{
+  "checkpoint_utc": "2026-10-12T02:52:59.144841+00:00",
+  "workspace": "/home/zyliu/Documents/rna-stable-ai",
+  "canonical_handoff": "RNA-StableAI_HANDOFF_2026-10-11_V4.md",
+  "state": "Roadmap step 4: metadata acquired; provenance/Stockholm batch needs user terminal network access",
+  "verification": {
+    "full_suite_passed": 516,
+    "metadata_sources_complete": true,
+    "metadata_selected_records": 15,
+    "evidence_sources_complete": false
+  },
+  "metadata_acquisition_run": "/home/zyliu/Documents/rna-stable-ai/results/prospective_family_acquisition_runs/20261012T024003.811773Z",
+  "evidence_run": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261012T024646.468402Z",
+  "active_components": {},
+  "pending": [
+    "Download ten provenance/annotation files",
+    "PDB/clan and training-overlap checks",
+    "Exact sequence-to-annotation binding",
+    "Freeze final evaluation plan before inference"
+  ],
+  "publication_updated": false,
+  "previous_status_archive": "/home/zyliu/Documents/rna-stable-ai/reports/archive/20261012T025259.144841Z"
+}

@@ -26,11 +26,32 @@ PLAN = [
 DEADLINE = "2026-10-07T04:00:00+00:00"
 
 
-def remaining():
+def parse_deadline(value):
+    try:
+        deadline = datetime.datetime.fromisoformat(value)
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError(
+            "Deadline must be an ISO-8601 timestamp"
+        ) from exc
+    if deadline.tzinfo is None or deadline.utcoffset() is None:
+        raise argparse.ArgumentTypeError("Deadline must include a timezone")
+    return deadline.astimezone(datetime.timezone.utc).isoformat()
+
+
+def remaining(deadline):
     return (
-        datetime.datetime.fromisoformat(DEADLINE)
+        datetime.datetime.fromisoformat(deadline)
         - datetime.datetime.now(datetime.timezone.utc)
     ).total_seconds()
+
+
+def verify_frozen_sources(run, manifest):
+    snapshot = run / "snapshot"
+    for name, sha in manifest["frozen_sha256"].items():
+        require(
+            digest((snapshot / name).read_bytes()) == sha,
+            "Frozen source changed: " + name,
+        )
 
 
 def audit_child(snapshot, path):
@@ -130,11 +151,7 @@ def audit(path):
         "Study plan differs",
     )
     snapshot = run / "snapshot"
-    for name, sha in manifest["frozen_sha256"].items():
-        require(
-            digest((snapshot / name).read_bytes()) == sha,
-            "Frozen source changed: " + name,
-        )
+    verify_frozen_sources(run, manifest)
     require(len(summary["components"]) <= len(PLAN), "Too many components")
     components = []
     bindings = []
@@ -183,7 +200,14 @@ def main():
     parser.add_argument("--resume", type=Path)
     parser.add_argument("--source-summary", type=Path)
     parser.add_argument("--publish-name")
+    parser.add_argument(
+        "--deadline-utc",
+        type=parse_deadline,
+        help="Execution deadline with timezone; resume extensions are recorded separately from the frozen manifest",
+    )
     args = parser.parse_args()
+    if args.verify and args.deadline_utc is not None:
+        parser.error("--deadline-utc cannot be used with --verify")
     if args.verify:
         return audit(
             ROOT
@@ -224,7 +248,11 @@ def main():
         manifest = {
             "run_dir": str(run),
             "plan": PLAN,
-            "deadline_utc": DEADLINE,
+            "deadline_utc": args.deadline_utc
+            or (
+                datetime.datetime.now(datetime.timezone.utc)
+                + datetime.timedelta(hours=2)
+            ).isoformat(),
             "publish_name": args.publish_name or "helix_prior_replication",
             "source_model_seed": json.loads(
                 (
@@ -248,6 +276,7 @@ def main():
         atomic_json(run / "manifest.json", manifest)
     snapshot = run / "snapshot"
     manifest = json.loads((run / "manifest.json").read_text())
+    deadline = args.deadline_utc or manifest.get("deadline_utc", DEADLINE)
     components = []
     if args.publish_name is not None:
         require(
@@ -262,6 +291,21 @@ def main():
             "Resume source differs",
         )
     with exclusive_driver(run / ".driver.lock"):
+        require(manifest["plan"] == PLAN, "Study plan differs")
+        require(manifest["run_dir"] == str(run), "Study directory differs")
+        verify_frozen_sources(run, manifest)
+        atomic_json(
+            run / "execution_attempts" / (timestamp() + ".json"),
+            {
+                "started_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+                "resume": args.resume is not None,
+                "manifest_sha256": digest((run / "manifest.json").read_bytes()),
+                "original_deadline_utc": manifest.get("deadline_utc", DEADLINE),
+                "execution_deadline_utc": deadline,
+                "driver_sha256": digest(Path(__file__).read_bytes()),
+                "policy": "Execution deadline only; frozen child code, model, config and native retry policy remain bound to the original study.",
+            },
+        )
         for index, item in enumerate(PLAN):
             pointer = run / ("component_" + str(index) + ".json")
             name = "helix_prior_replica_" + str(index)
@@ -273,7 +317,7 @@ def main():
                 )
                 components.append(audit_child(snapshot, state["summary"]))
                 continue
-            if remaining() < 600:
+            if remaining(deadline) < 600:
                 print("Deadline reserve reached; retain partial study.", flush=True)
                 break
             existing = [
@@ -312,7 +356,7 @@ def main():
                 result = run_bounded(
                     command,
                     "",
-                    timeout=min(3600, max(1, remaining() - 300)),
+                    timeout=min(3600, max(1, remaining(deadline) - 300)),
                     memory_limit_gib=8,
                     cwd=ROOT,
                 )

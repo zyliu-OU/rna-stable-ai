@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "format": "pair_set_zero_based_v1",
+  "methods": ["supplied_nested_fixture", "supplied_crossing_fixture", "missing_fixture"],
+  "records": [
+    {
+      "id": "crossing_fixture",
+      "sequence": "GGAAACAC",
+      "method": "supplied_nested_fixture",
+      "status": "ok",
+      "structure": "(....).."
+    },
+    {
+      "id": "crossing_fixture",
+      "sequence": "GGAAACAC",
+      "method": "supplied_crossing_fixture",
+      "status": "ok",
+      "pairs": [[0, 5], [2, 7]]
+    }
+  ]
+}

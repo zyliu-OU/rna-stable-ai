@@ -1,0 +1,10 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261012T024646.468402Z",
+  "acquisition_run": "/home/zyliu/Documents/rna-stable-ai/results/prospective_family_acquisition_runs/20261012T024003.811773Z",
+  "snapshot_sha256": {
+    "acquisition.json": "b4f3d4759461fd116b04f2dfb85a32f8de4d85b74a4ca16f031c2997a8baeeb5",
+    "attempts.json": "9f1b75374f94d99615ee8272a62ea79477860b38b10b72e95be66feb7fd7437a",
+    "plan.json": "e11424d2cbd24e8833ebd53a259f2854f5798ca6cc3860ff8e1c32d5df7046b6"
+  },
+  "policy": "Fixed previously selected metadata panel. File envelope verification only; no reference pairs parsed, no re-selection, fitting or inference. PDB/clan overlap and exact annotation binding still require offline validation."
+}

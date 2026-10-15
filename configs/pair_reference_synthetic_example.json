@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "format": "pair_set_zero_based_v1",
+  "dataset_id": "synthetic_crossing_contact_fixture",
+  "records": [
+    {
+      "id": "crossing_fixture",
+      "sequence": "GGAAACAC",
+      "pairs": [[0, 5], [2, 7]],
+      "reference_kind": "synthetic_control",
+      "source": "Constructed crossing-contact fixture; not a biological annotation"
+    }
+  ]
+}

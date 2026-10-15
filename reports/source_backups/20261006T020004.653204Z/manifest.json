@@ -1,0 +1,8 @@
+{
+  "source_sha256": {
+    "README.md": "6ebe117b919e68b8b46047ee8e77d6e85dca4649f6302e64d206bd2d93cfdeab",
+    "reports/current_work_status.json": "5182a48e27e01d8c1b0a6f9e72804666bdd2ac6dcd8f8c10baff02c6d1e2a6c8",
+    "reports/current_work_status.md": "da41a664a0a908bc7ad1d86aef47cfd46f6582b90111b53fceda1289c86da852",
+    "scripts/plan_family_study.py": "83db6dc286083c6759c85da15654f7e42fcb3de78ac733f3c86a167d2c8fd4ac"
+  }
+}

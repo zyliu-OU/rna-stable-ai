@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/zyliu/Documents/rna-stable-ai/scripts/prepare_degradation_binding.py", line 298, in <module>
+    main()
+  File "/home/zyliu/Documents/rna-stable-ai/scripts/prepare_degradation_binding.py", line 293, in main
+    audit(ROOT / "results" / (NAME + "_summary.json")) if args.verify else prepare()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyliu/Documents/rna-stable-ai/scripts/prepare_degradation_binding.py", line 227, in audit
+    summary = json.loads(Path(path).read_text())
+                         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyliu/Documents/rna-stable-ai/external/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyliu/Documents/rna-stable-ai/external/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/zyliu/Documents/rna-stable-ai/results/degradation_binding_summary.json'

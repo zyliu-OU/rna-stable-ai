@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "payload": {
+    "binding_sha256": "5e50089c815994592271050d68005d1c88586c6cdcaa960c680705468355103b",
+    "key": "record_049_LinearFold",
+    "sequence_sha256": "63f2ec6f528c067804408af03284ecc2ed497dc9f96153f3997f90be9f2366fc",
+    "parameters": {
+      "folding": {
+        "beam_size": 100,
+        "memory_limit_gib": 4,
+        "temperature_c": 37,
+        "timeout_seconds": 30
+      },
+      "raw_output": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z/raw/record_049_LinearFold.txt",
+      "tool": "LinearFold"
+    },
+    "state": "complete",
+    "started_at": "2026-10-14T01:50:15.940039+00:00",
+    "driver_pid": 7,
+    "result": {
+      "status": "ok",
+      "wall_seconds": 0.08717198800059123,
+      "returncode": 0,
+      "error": "",
+      "supervisor": "linux_parent_death_guard_v1",
+      "peak_rss_mib": 13.40234375,
+      "memory_method": "GNU time maximum RSS of tool descendants (excludes supervisor; not process-tree sum)",
+      "tool": "LinearFold",
+      "device": "CPU",
+      "command": [
+        "/home/zyliu/Documents/rna-stable-ai/.venv/bin/python",
+        "/home/zyliu/Documents/rna-stable-ai/external/LinearFold/linearfold",
+        "-V",
+        "-b",
+        "100"
+      ],
+      "raw_output": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z/raw/record_049_LinearFold.txt",
+      "structure": "............((((((((.....))))))))..((((.((((....)))).))))...........(((((((....))))))).....................",
+      "mfe_kcal_mol": -26.4,
+      "paired_fraction": 0.42990654205607476,
+      "raw_sha256": "db0ff85659d488122106ee4b04561cc727b20768ecaabff5b8da344ed7bfe24b"
+    },
+    "completed_at": "2026-10-14T01:50:16.040560+00:00"
+  },
+  "payload_sha256": "6b1604529a0f019106246db1e20f8e0b56770b742b91e02e2c1bb28ad5a57cbc"
+}

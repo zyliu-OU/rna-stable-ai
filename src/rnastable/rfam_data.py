@@ -57,6 +57,10 @@ def load_rfam_candidates(eterna_root, config):
 
 def select_cohort(records, config, exposed):
     retained, excluded = [], []
+    # Reject reused test families even when individual sequences are dissimilar.
+    exposed_families = {r['family_id'] for r in exposed if r.get('family_id')}
+    if exposed_families.intersection(config['families']['test']):
+        raise ValueError('Proposed test family was previously exposed')
     family_order = [f for split in ('test', 'validation', 'train') for f in config['families'][split]]
     for family in family_order:
         group = []

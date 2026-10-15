@@ -180,7 +180,7 @@
         "status": "ok",
         "accepted": true,
         "best_energy_kcal_mol": -3065.3,
-        "proxy_wall_seconds": 0.009129439000389539
+        "proxy_wall_seconds": 0.00871685799998545
       },
       {
         "step": 2,
@@ -312,7 +312,7 @@
         "status": "ok",
         "accepted": false,
         "best_energy_kcal_mol": -3065.3,
-        "proxy_wall_seconds": 0.010351427999921725
+        "proxy_wall_seconds": 0.008292315999995026
       },
       {
         "step": 3,
@@ -444,7 +444,7 @@
         "status": "ok",
         "accepted": false,
         "best_energy_kcal_mol": -3065.3,
-        "proxy_wall_seconds": 0.009672294000665715
+        "proxy_wall_seconds": 0.008189966000003324
       },
       {
         "step": 4,
@@ -576,7 +576,7 @@
         "status": "ok",
         "accepted": true,
         "best_energy_kcal_mol": -3067.7,
-        "proxy_wall_seconds": 0.010514626000258431
+        "proxy_wall_seconds": 0.008226312999994434
       },
       {
         "step": 5,
@@ -708,7 +708,7 @@
         "status": "ok",
         "accepted": true,
         "best_energy_kcal_mol": -3073.2,
-        "proxy_wall_seconds": 0.009023849000186601
+        "proxy_wall_seconds": 0.008961444000021856
       },
       {
         "step": 6,
@@ -840,7 +840,7 @@
         "status": "ok",
         "accepted": false,
         "best_energy_kcal_mol": -3073.2,
-        "proxy_wall_seconds": 0.009471004000261019
+        "proxy_wall_seconds": 0.00925363899997933
       },
       {
         "step": 7,
@@ -972,7 +972,7 @@
         "status": "ok",
         "accepted": true,
         "best_energy_kcal_mol": -3074.0,
-        "proxy_wall_seconds": 0.009785256999748526
+        "proxy_wall_seconds": 0.009226759000000584
       },
       {
         "step": 8,
@@ -1104,7 +1104,7 @@
         "status": "ok",
         "accepted": false,
         "best_energy_kcal_mol": -3074.0,
-        "proxy_wall_seconds": 0.010579658999631647
+        "proxy_wall_seconds": 0.00851425999999833
       }
     ],
     "accepted_steps": 4,
@@ -1183,6 +1183,6 @@
     "candidate_vienna_delta_kcal_mol": 0.40000000000009095,
     "selected_vienna_delta_kcal_mol": 0.0,
     "selected_mutations": 0,
-    "proxy_wall_seconds": 0.0785275560010632
+    "proxy_wall_seconds": 0.06938155499997833
   }
 }

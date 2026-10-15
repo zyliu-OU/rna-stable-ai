@@ -1,0 +1,37 @@
+{
+  "study_manifest_sha256": "e62253e3584ae6e5edbcbb3cc9d29b9f5c82a75a69a63d2acd7729cde2972ec1",
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261008,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse",
+    "pair_features": "local_helix_context_v1",
+    "structured_loss": {
+      "top_k": 16,
+      "margin": 1.0,
+      "bce_coefficient": 0.1,
+      "validation_loss": "full_weighted_bce",
+      "normalizer": "supported_gold_count"
+    }
+  },
+  "snapshot_sha256": {
+    "train.json": "e865328d0ee3fe778c0d07d18d604319eb7ae728285679e85d40069ee56b5517",
+    "validation.json": "bea47dac135ef17e9bc213d563fbda8f8934769bc080d111bdf1a5906a892746",
+    "source_summary.json": "082f5c0e9626191070c803feaadf43873a7f83e63d05a32341d08d9d9b566200"
+  }
+}

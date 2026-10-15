@@ -1,0 +1,10 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/prospective_family_acquisition_runs/20261012T035028.548636Z",
+  "protocol_sha256": "6ef2ef165832a46a3517e555322f8b2103ce2447e1efbdde8271af203fc62dcd",
+  "snapshot_sha256": {
+    "config.json": "7a86dd1366d9973895ba807e00495ac17667b21227e52c2d167dfcd267750556",
+    "attempts.json": "0ef8267c75e68a5d78163f3f013bace20755ba108d5bbd7813c63af632f37bb4",
+    "protocol.json": "6ef2ef165832a46a3517e555322f8b2103ce2447e1efbdde8271af203fc62dcd",
+    "exposure.json": "2747bf78c8519cc8e9019d21fc0329749482095b553957d501405606617f5a22"
+  }
+}

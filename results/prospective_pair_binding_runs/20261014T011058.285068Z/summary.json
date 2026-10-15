@@ -1,0 +1,1234 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/prospective_pair_binding_runs/20261014T011058.285068Z",
+  "manifest_sha256": "16db3c42e7d5130b454c0a775602eee147c8ae2b70d48189eb76c50cd03b8466",
+  "binding": {
+    "records": [
+      {
+        "id": "RF00010:AACK01000018.1/26603-26989",
+        "upstream_split": "rfam_seed",
+        "family_id": "RF00010",
+        "sequence": "UGAGUUGGUUAGACAAUCGCUGGUUUAUUGAAGCCCUUAAUUGUUCGCAAGAACGACCUAGCGGGACAAGUAAACGAGAGGAAAGUCCGAGCUACACAGGGCAGAGUGCCAGAUAACGUCUGGGCGGUGUGAACCGACGACCAGUGCAACAGAGAGCAAACCGCCGAUGUGCAUUAGCGCAGGUAAGGGUGAAAGGGUGCGGUAAGAGCGCACCGCGUGGGUGGCAACAUUCCACGGCACGGUAAACUCCACUCGUAGCAAGACCAAAUAGGAACUCAAUGGAUGGCCCGUCCAGAGUUCGGGUAGGUUGCUUGAGCUUGUGUGUGAAUGCAAGCCUAGAGGAAUGAUUGUCCGCGACAGAACUCGGCUUAUCGACCAACUCACUUU",
+        "sequence_sha256": "376780a7439d034f5d1c87538bc01775370bfe021c973752688d984d163528e0",
+        "original_sequence_sha256": "376780a7439d034f5d1c87538bc01775370bfe021c973752688d984d163528e0",
+        "valid_sequence": true,
+        "normalization": "uppercase_and_T_to_U",
+        "sequence_bound": true,
+        "consensus_pairs": 114,
+        "missing_paired_columns": 1,
+        "pseudoknot_present": true,
+        "alignment_sequence_sha256": "9c432720b0a69523632e1308d34c5721133ab3ff5ec35c1301d2bea18fbb0700",
+        "consensus_sha256": "9e691efd6f5d4b4143ef7a3a8ef18046ddace1d0141c65704eeb01e154cfe44e",
+        "structure_source": "Published; PMID:9847214",
+        "reference_kind": "computational",
+        "source": "Rfam seed consensus mapped without deleting any annotated contact; RF00010",
+        "reference_status": "unsupported_reference",
+        "error": "missing_annotated_paired_column"
+      },
+      {
+        "id": "RF00010:AAEW02000009.1/28314-28685",
+        "upstream_split": "rfam_seed",
+        "family_id": "RF00010",
+        "sequence": "CGAAGAAGGACAGACGGUCGCCGGUUUCGCAAGAAACGGGAGGAAAGUCCGGGCUCCGCAGAGCAGGAUGGUUCCUAACGGGAACCGGGGGUGACCCCAGGGACAGUGCCACAGAGAGAAGACCGCCUGCUUUGGCAGGUAAGGGUGAAAGGGUGAGGUAAGAGCUCACCAGCUCUGGUGGUGACAUCAGAGGCUCGGUAAACCCCAUCUGGAGCAAGGCCAAAUAGGGAAGCGUUUGAGAGCGGCUCGCUCGAAGCUUUCGGGUUGGCUGCUUGAGGCCGUCGGCAACGGCGGUCCUAGAGGAAUGAUCGUUGCCCGUCUCCGGGUAACCGGAUUCGGGUACAGAACCCGGCUUACGGCCUUCUUCGACCA",
+        "sequence_sha256": "1103234e756a703f6d86b606b365fb857144d69a2f152564e4b67a49a9732490",
+        "original_sequence_sha256": "1103234e756a703f6d86b606b365fb857144d69a2f152564e4b67a49a9732490",
+        "valid_sequence": true,
+        "normalization": "uppercase_and_T_to_U",
+        "sequence_bound": true,
+        "consensus_pairs": 114,
+        "missing_paired_columns": 4,
+        "pseudoknot_present": true,
+        "alignment_sequence_sha256": "d1cb1999f646a314d1621bf3276aac80484d6e429b9bdf86409a35c9dd64a4ae",
+        "consensus_sha256": "9e691efd6f5d4b4143ef7a3a8ef18046ddace1d0141c65704eeb01e154cfe44e",
+        "structure_source": "Published; PMID:9847214",
+        "reference_kind": "computational",
+        "source": "Rfam seed consensus mapped without deleting any annotated contact; RF00010",
+        "reference_status": "unsupported_reference",
+        "error": "missing_annotated_paired_column"
+      },
+      {
+        "id": "RF00010:AAGP01000051.1/20859-21226",
+        "upstream_split": "rfam_seed",
+        "family_id": "RF00010",
+        "sequence": "ACAGGUCACCAGACGGUCGCGGCUCUCUCACGAGGGCUGAGGAACGUCCGGGCUCCGCAGAGCAGGGAUGGUGGGUAACACCCACCCGGGGCAACCCGCGGGCCAGUGCAACAGAAAGCAGACCGCCCAGUUUCGACUGGGUAAGGGUGAAACGGUGGUGUAAGAGACCACCAGGGUGUCGGGUGACCGGCGCCGCUGGGUAAACCCCAUCCGGAGCAAGAUCAGACAGACGACGUUCGAGGCUGCUCGCCGAGUCGUCGGGUGGAUUGCUUGAGGCCGGUGGCAACAUCGGUCCCAGAUAGAUGACCGUCCGUCGAGAAGGGUAACCGACUCGAUGACAGAACCCGGCGUAUCGGUGGCCUGUCCUC",
+        "sequence_sha256": "d345e55601f648854209abf0a8051de3a00126807225c46880eb0e605bca372d",
+        "original_sequence_sha256": "d345e55601f648854209abf0a8051de3a00126807225c46880eb0e605bca372d",
+        "valid_sequence": true,
+        "normalization": "uppercase_and_T_to_U",
+        "sequence_bound": true,
+        "consensus_pairs": 114,
+        "missing_paired_columns": 3,
+        "pseudoknot_present": true,
+        "alignment_sequence_sha256": "2ce04c3581a73a23bc3b7bd8cc69d379da68f788aad9228ba29650fd3b3829ef",
+        "consensus_sha256": "9e691efd6f5d4b4143ef7a3a8ef18046ddace1d0141c65704eeb01e154cfe44e",
+        "structure_source": "Published; PMID:9847214",
+        "reference_kind": "computational",
+        "source": "Rfam seed consensus mapped without deleting any annotated contact; RF00010",
+        "reference_status": "unsupported_reference",
+        "error": "missing_annotated_paired_column"
+      },
+      {
+        "id": "RF00010:AAKL01000009.1/106867-107210",
+        "upstream_split": "rfam_seed",
+        "family_id": "RF00010",
+        "sequence": "GAAGCGGACCAGGCAACCGCUGCUUCCACGUGUUCGCACGACGGAAGGGGAGGAAAGUCCGGACUCCACAGGGCAGGGUGAUGGCUAACGACCAUCCACGGUGACGUGCGGAAUAGGGCCACAGAGACGAGUCUUCGCCCGCGGCUUCGGCCGGGGCGAAGGGUGAAACGCGGUAACCUCCACCCGGAGCAAUCCCAAGUAAGCAGGCGAUGAAGCGGCCCGCCGAGCCUGCGGGUAGGGAGCUUGAGCUGGUCGGCAACGGCCGGUCUAGAGGAAUGGUUGUCACGCCGCGCGGUGUCAUGCCGCGCGGCGCACAGAAUCCGGCUUAUCGGUUCGCUUCGCGU",
+        "sequence_sha256": "5ada6eb38c91c6b2ea9ee75a36f840d8ec6ca0d4e53c3de3b4d045769d18822d",
+        "original_sequence_sha256": "5ada6eb38c91c6b2ea9ee75a36f840d8ec6ca0d4e53c3de3b4d045769d18822d",
+        "valid_sequence": true,
+        "normalization": "uppercase_and_T_to_U",
+        "sequence_bound": true,
+        "consensus_pairs": 114,
+        "missing_paired_columns": 17,
+        "pseudoknot_present": true,
+        "alignment_sequence_sha256": "3bbbd324119d0e8c6963fb7e01856648bef9c921048be035461085b23fd29cb3",
+        "consensus_sha256": "9e691efd6f5d4b4143ef7a3a8ef18046ddace1d0141c65704eeb01e154cfe44e",
+        "structure_source": "Published; PMID:9847214",
+        "reference_kind": "computational",
+        "source": "Rfam seed consensus mapped without deleting any annotated contact; RF00010",
+        "reference_status": "unsupported_reference",
+        "error": "missing_annotated_paired_column"
+      },
+      {
+        "id": "RF00010:AAKW01000074.1/145450-145799",
+        "upstream_split": "rfam_seed",
+        "family_id": "RF00010",
+        "sequence": "AGAGUGGAUUGGACAGUCGCUGUCGCGCAAUAGCGCGGUGGAGGAAAGUCCGGGCUCCAUAGGGCAGAGUGCCAGGUAACGCCUGGGAGGCGCGAGCCUACGGAAAGUGCCACAGAAAAUAACCGCCUAAGCGCAACAGCGCCGGUAAGGGUGAAAAGGUGCGGUAAGAGCGCACCGCACGGCUGGCAACAGUGCGUGGCUAGGUAAACCCCACUCGGAGCAAGACCAAAUAGGAAUCCAUUGGCGCGGCCCGCGUUGGAUUCGGGUAGGUCGCUUGAGGCGUACAGUGAUGUGCGUCCCAGAGGAAUGGCUGUCCUCGACAGAACCCGGCUUAUAGAUCGACUCUCCCA",
+        "sequence_sha256": "aacd21fccf9d4089b96225214f3b1e2190dfbe8908db9a268edba1965292b186",
+        "original_sequence_sha256": "aacd21fccf9d4089b96225214f3b1e2190dfbe8908db9a268edba1965292b186",
+        "valid_sequence": true,
+        "normalization": "uppercase_and_T_to_U",
+        "sequence_bound": true,
+        "consensus_pairs": 114,
+        "missing_paired_columns": 1,
+        "pseudoknot_present": true,
+        "alignment_sequence_sha256": "fec91ac1af3b864cf72bc6dcf52d4f0b4cffd57fd116b445b4d538222e90b901",
+        "consensus_sha256": "9e691efd6f5d4b4143ef7a3a8ef18046ddace1d0141c65704eeb01e154cfe44e",
+        "structure_source": "Published; PMID:9847214",
+        "reference_kind": "computational",
+        "source": "Rfam seed consensus mapped without deleting any annotated contact; RF00010",
+        "reference_status": "unsupported_reference",
+        "error": "missing_annotated_paired_column"
+      },
+      {
+        "id": "RF00023:AAAA02039738.1/1593-1956",
+        "upstream_split": "rfam_seed",
+        "family_id": "RF00023",
+        "sequence": "GGGGCUGAUUCUGGAUUCGACGGGAUUUGCGAAGCCCUAGGAGCAUGCCGAGGGGCGGUUGGCCUCGUAAAAAGCCGCAAAAAAAUAGUCGCAAACGACGAAAACUACGCUUUAGCAGCUUAAUACCCUGCUUAGAGCCCUCUCUCCCUAGCCUCCGCUCUUAGGACGGGGAUCAAGAGAGGUCAAACCCAAAAGAGAUCGCGUGGAUGUCCUGCCUGGGGCUGAAGCGUUAAACUCAAUCAGGCUAGUCUGUCAGUAGCGUGUCCAUCCGCAGCUGGCCGGCGAAUGUAAAGAUUGGACUAAGCAUGUAGUGCCGACGGUGUAGUAAUUUCGGACGGGGGUUCAAAUCCCCCCAGCUCCACCA",
+        "sequence_sha256": "48097e9d0efc190c5e7e6a4118cc49fda1db121fe5ddd3d3ef0dce7b3557a8d7",
+        "original_sequence_sha256": "48097e9d0efc190c5e7e6a4118cc49fda1db121fe5ddd3d3ef0dce7b3557a8d7",
+        "valid_sequence": true,
+        "normalization": "uppercase_and_T_to_U",
+        "sequence_bound": true,
+        "consensus_pairs": 119,
+        "missing_paired_columns": 10,
+        "pseudoknot_present": true,
+        "alignment_sequence_sha256": "368acad2d84854be1a76a48433bd35f12ce8e9c4aeb40c786114bb7a1f63174a",
+        "consensus_sha256": "7cf451bf2b3c0452b366bfa07a3c019a370db103b9f735e06539001fa2ace52f",
+        "structure_source": "Published; PMID:19617710",
+        "reference_kind": "computational",
+        "source": "Rfam seed consensus mapped without deleting any annotated contact; RF00023",
+        "reference_status": "unsupported_reference",
+        "error": "missing_annotated_paired_column"
+      },
+      {
+        "id": "RF00023:AAAA02043629.1/984-1362",
+        "upstream_split": "rfam_seed",
+        "family_id": "RF00023",
+        "sequence": "GGGGCUGCCCUGGUUUCGACGUGGGUUCGGAAUCGGUGUGGUGCAUGUCGAGCUUGAGUGGCGCUCGUAAAUCUGCAUUCAACAAACCAACUGCAAACGACGAACGUUUCGCACUCGCCGCUUAAACACCGGUGAGCCUUGCAACAGCACGCUGACGGGCUGGGCAAGGGGGCCGCAAGGCCUCCCGGCUGCAAGGUUAUUCACGUCAGCUGGCCUCCUGCCGGGUACCUUGGCAUGGGGCGAGAUCCAAGGGUGCUGGCCUUCCUUGCAGCGUGCGACUGCGCGGCGUGGAAGGUGAGAUCCAAAACAGACCGCUAAACAUGUAGAUCUGCCCGAAGAAGGCUUGCGGACGCGGGUUCAAUUCCCGCCAGCUCCACCA",
+        "sequence_sha256": "7ad9a1544ec5d0fda8a90b7015b546253bedbd3314558f4e0000279a261fff83",
+        "original_sequence_sha256": "7ad9a1544ec5d0fda8a90b7015b546253bedbd3314558f4e0000279a261fff83",
+        "valid_sequence": true,
+        "normalization": "uppercase_and_T_to_U",
+        "sequence_bound": true,
+        "consensus_pairs": 119,
+        "missing_paired_columns": 9,
+        "pseudoknot_present": true,
+        "alignment_sequence_sha256": "bbbae54d866c7f95ffdf16546aff49e6eda814da634f08d1db1ffd0a2495e49e",
+        "consensus_sha256": "7cf451bf2b3c0452b366bfa07a3c019a370db103b9f735e06539001fa2ace52f",
+        "structure_source": "Published; PMID:19617710",
+        "reference_kind": "computational",
+        "source": "Rfam seed consensus mapped without deleting any annotated contact; RF00023",
+        "reference_status": "unsupported_reference",
+        "error": "missing_annotated_paired_column"
+      },
+      {
+        "id": "RF00023:AAAL02000007.1/78420-78066",
+        "upstream_split": "rfam_seed",
+        "family_id": "RF00023",
+        "sequence": "GGGGGUGCACUGGCUUCGACGGGGGUCACAAAAUCACUUGGUGCAUGCCGAGGGGGCCGCUUUCCUCGUAAAUCCAGCAGCACACUUAUAGUUGCCAACGAAGACAACUUCGCUCUAGCCGCUUAAGGCUUAAGCCUCGAAACUGCUUGUGUCCGUGCUCGCAGCGUAGAGUCAUCAUCACGGAACCGCUGAGACGUGGCUGUCUGCCCACACUUGGUUAAAUCUAGCAGACUGGUUUCCGGGUGCGCUUUGCCUGUCGUGCUGCCCGGCGACGAGACCUAACGGCCAGGAUAAGCAUGUAGGGCCGGGGAUGGAGUACUUUCGGACGGCGGUUCGAUUCCGCCCACCUCCACCA",
+        "sequence_sha256": "efec6413a15a8441331dbcd8b21401aaccc84e34ce7e952f7e470fe8d499b6ec",
+        "original_sequence_sha256": "efec6413a15a8441331dbcd8b21401aaccc84e34ce7e952f7e470fe8d499b6ec",
+        "valid_sequence": true,
+        "normalization": "uppercase_and_T_to_U",
+        "sequence_bound": true,
+        "consensus_pairs": 119,
+        "missing_paired_columns": 9,
+        "pseudoknot_present": true,
+        "alignment_sequence_sha256": "1f9d2a8382ad884ab6d4479c7353d617710bf30f9609aaa367d31a63c6e40223",
+        "consensus_sha256": "7cf451bf2b3c0452b366bfa07a3c019a370db103b9f735e06539001fa2ace52f",
+        "structure_source": "Published; PMID:19617710",
+        "reference_kind": "computational",
+        "source": "Rfam seed consensus mapped without deleting any annotated contact; RF00023",
+        "reference_status": "unsupported_reference",
+        "error": "missing_annotated_paired_column"
+      },
+      {
+        "id": "RF00023:AACT01039607.1/1457-1864",
+        "upstream_split": "rfam_seed",
+        "family_id": "RF00023",
+        "sequence": "GGGGGUGAUUCGGAUUCGACGACGGUAUCGAACCCUUAGGUGCAUGCCGAGGGCGUAGUGGUUCUCGUUAAUCAAAACACUACAAACCUAUUAGUUGCCACAUUGACAACUACUGGAAGUGCAAACGACGAGUUCUUUGACGCUCGUCUUCGUGCUUAAUCGUAGCUAAACCCUACGAGCUUCCCAGUCCGUCCGGCUCGUCUGCUGGCUGGUUUUUCGGACUGUCAUCGUAAGCGGACUCGCCACGUUCAGCAGGUCUCUGGCUGACGGGUUAAAACUUGUGGGAAUCGCGCUGCAGAACCCCGACCACUGGGUCGCUGUGGUGUUAAAUUUAAACGUGGAUCUAAGCAUGUAAAGCCGAAGGCUGAGAGCUGGCGGACGCGGGUUCGACUCCCGCCGCCUCCACCA",
+        "sequence_sha256": "f7266a1b7bffeb1cbd04c8fb3aeae44bdf69cdd00ed39e5162b8db4fa7c2e674",
+        "original_sequence_sha256": "f7266a1b7bffeb1cbd04c8fb3aeae44bdf69cdd00ed39e5162b8db4fa7c2e674",
+        "valid_sequence": true,
+        "normalization": "uppercase_and_T_to_U",
+        "sequence_bound": true,
+        "consensus_pairs": 119,
+        "missing_paired_columns": 18,
+        "pseudoknot_present": true,
+        "alignment_sequence_sha256": "7e33af93dff4b9d10d6dab3aa5c0f7b05a957e27c609203b7d647d6fd63d100b",
+        "consensus_sha256": "7cf451bf2b3c0452b366bfa07a3c019a370db103b9f735e06539001fa2ace52f",
+        "structure_source": "Published; PMID:19617710",
+        "reference_kind": "computational",
+        "source": "Rfam seed consensus mapped without deleting any annotated contact; RF00023",
+        "reference_status": "unsupported_reference",
+        "error": "missing_annotated_paired_column"
+      },
+      {
+        "id": "RF00023:AACV01028831.1/1594-1241",
+        "upstream_split": "rfam_seed",
+        "family_id": "RF00023",
+        "sequence": "GGGGGUGCAUUGGUUUCGACGGGGGUUGUGAAGUCGCCUGGCGCAUGCCGAGGGGGUAGCUUUCCUCGUAAAUCCAGCUGCAAAACUCUAGUUGCCAACGACGACAACUACGCUCUGGCCGCUUAAGGCCUAAGCCUCGAAACCGCUUGUGUCCAUGCUCGCGGUGUAGAGUCACUAUCAUGGAAUCGCGCUGGACGGCUGCCUGUCAGUCCGGCACUAGAACACAACAGGCUGGUUCCCGGAUGCGCUUCGCGCACCGUGCUGUUCGGGGACGAGAUCCAACGGUGAGCUAAGCAUGUAGUGCUGGGGAUGGAGUGCCUUCGGACGGCGGUUCAAUUCCGCCCACCUCCACCA",
+        "sequence_sha256": "36826a986f1eb4cf33a29a4f6d12b2c30528ef6b26f46979edf7d5ea699a1389",
+        "original_sequence_sha256": "36826a986f1eb4cf33a29a4f6d12b2c30528ef6b26f46979edf7d5ea699a1389",
+        "valid_sequence": true,
+        "normalization": "uppercase_and_T_to_U",
+        "sequence_bound": true,
+        "consensus_pairs": 119,
+        "missing_paired_columns": 10,
+        "pseudoknot_present": true,
+        "alignment_sequence_sha256": "f004448ec2a10c0346571f81e53cba4ef8031d48ada48d0d526ad25aa3ff67fe",
+        "consensus_sha256": "7cf451bf2b3c0452b366bfa07a3c019a370db103b9f735e06539001fa2ace52f",
+        "structure_source": "Published; PMID:19617710",
+        "reference_kind": "computational",
+        "source": "Rfam seed consensus mapped without deleting any annotated contact; RF00023",
+        "reference_status": "unsupported_reference",
+        "error": "missing_annotated_paired_column"
+      },
+      {
+        "id": "RF00168:AAKK02000085.1/12844-12662",
+        "upstream_split": "rfam_seed",
+        "family_id": "RF00168",
+        "sequence": "UGUUGCCGUAGAGGCGCGGUCUCGAAGAGUAGCUAUUAUUGGGGUGAUGCCAAUGAAUAAUAGUGGAAGGCGAAGAUUGCCGAAGUAAGUAACUCAUCAAAGUUACUUGCUGGGGUUGUAUCUGAAAGGAACAACACUGCCAUAGUAUAUAUUCACAUUAAACUAUGGAGCGCUACUGUAGGG",
+        "sequence_sha256": "2b01a5caf526f4f49b4a532e94d3729b5fd5a96f3cef911d39b6d6d89e3e41ed",
+        "original_sequence_sha256": "2b01a5caf526f4f49b4a532e94d3729b5fd5a96f3cef911d39b6d6d89e3e41ed",
+        "valid_sequence": true,
+        "normalization": "uppercase_and_T_to_U",
+        "sequence_bound": true,
+        "consensus_pairs": 53,
+        "missing_paired_columns": 0,
+        "pseudoknot_present": false,
+        "alignment_sequence_sha256": "726ffd9098885d6cf5f161c96bdb10e8220ab9d1e0f345c395f69343c9fb4da8",
+        "consensus_sha256": "94614c5ca583fa7265495eb73fde6944e481d042d72f9fe77e5d57cd8ffaa304",
+        "structure_source": "Published; PMID:12787499",
+        "reference_kind": "computational",
+        "source": "Complete Rfam WUSS consensus contacts, including letter pairs; RF00168",
+        "reference_status": "ok",
+        "pairs": [
+          [
+            5,
+            177
+          ],
+          [
+            6,
+            176
+          ],
+          [
+            7,
+            175
+          ],
+          [
+            8,
+            174
+          ],
+          [
+            9,
+            173
+          ],
+          [
+            10,
+            172
+          ],
+          [
+            15,
+            79
+          ],
+          [
+            16,
+            78
+          ],
+          [
+            17,
+            77
+          ],
+          [
+            18,
+            76
+          ],
+          [
+            19,
+            75
+          ],
+          [
+            20,
+            74
+          ],
+          [
+            21,
+            72
+          ],
+          [
+            22,
+            71
+          ],
+          [
+            23,
+            70
+          ],
+          [
+            31,
+            63
+          ],
+          [
+            32,
+            62
+          ],
+          [
+            33,
+            61
+          ],
+          [
+            34,
+            60
+          ],
+          [
+            35,
+            59
+          ],
+          [
+            36,
+            58
+          ],
+          [
+            37,
+            57
+          ],
+          [
+            38,
+            56
+          ],
+          [
+            83,
+            110
+          ],
+          [
+            84,
+            109
+          ],
+          [
+            85,
+            108
+          ],
+          [
+            86,
+            107
+          ],
+          [
+            87,
+            106
+          ],
+          [
+            88,
+            105
+          ],
+          [
+            89,
+            104
+          ],
+          [
+            90,
+            103
+          ],
+          [
+            91,
+            102
+          ],
+          [
+            92,
+            101
+          ],
+          [
+            93,
+            100
+          ],
+          [
+            94,
+            99
+          ],
+          [
+            111,
+            137
+          ],
+          [
+            112,
+            136
+          ],
+          [
+            113,
+            135
+          ],
+          [
+            114,
+            134
+          ],
+          [
+            115,
+            133
+          ],
+          [
+            116,
+            132
+          ],
+          [
+            117,
+            131
+          ],
+          [
+            118,
+            130
+          ],
+          [
+            119,
+            129
+          ],
+          [
+            120,
+            128
+          ],
+          [
+            121,
+            127
+          ],
+          [
+            139,
+            167
+          ],
+          [
+            140,
+            166
+          ],
+          [
+            141,
+            165
+          ],
+          [
+            142,
+            164
+          ],
+          [
+            143,
+            163
+          ],
+          [
+            144,
+            162
+          ],
+          [
+            145,
+            161
+          ]
+        ],
+        "pseudoknot_annotation_present": false
+      },
+      {
+        "id": "RF00168:AALE02000022.1/49827-50019",
+        "upstream_split": "rfam_seed",
+        "family_id": "RF00168",
+        "sequence": "UAAGCCAGAAGAGGUGCGUCGCCCAGGUAAAGUGUCAGAGGAGCCGUGAUCCGCUGAAGACAUUCGAGGGGGAGCGACGCCGAGACACGGUGAUUUCGGCCAUCAGCGUGUCGACUGCAGGGGCUGAAUCCCCUGGGUUGUCACCAGUGCCGUUCCUUUAGGGCGGUCAACAAGGUGGAGCGCUUCUGGGUGU",
+        "sequence_sha256": "417ceb57c91bd0b1216c2e60d9da3cbfd57d090bfb9e61164cd7bc1250d28761",
+        "original_sequence_sha256": "417ceb57c91bd0b1216c2e60d9da3cbfd57d090bfb9e61164cd7bc1250d28761",
+        "valid_sequence": true,
+        "normalization": "uppercase_and_T_to_U",
+        "sequence_bound": true,
+        "consensus_pairs": 53,
+        "missing_paired_columns": 2,
+        "pseudoknot_present": false,
+        "alignment_sequence_sha256": "a9b2006b5abdeb5981fb26bddca48bd2907ca8c67e367abf70ce30ba55bcdd48",
+        "consensus_sha256": "94614c5ca583fa7265495eb73fde6944e481d042d72f9fe77e5d57cd8ffaa304",
+        "structure_source": "Published; PMID:12787499",
+        "reference_kind": "computational",
+        "source": "Rfam seed consensus mapped without deleting any annotated contact; RF00168",
+        "reference_status": "unsupported_reference",
+        "error": "missing_annotated_paired_column"
+      },
+      {
+        "id": "RF00168:AAMR01000029.1/5147-5324",
+        "upstream_split": "rfam_seed",
+        "family_id": "RF00168",
+        "sequence": "AUCGCACGUAGAGGCGCAAUUAUAAAAAGUAGUUUUCGUUGGGGUGAUGCCAAUGAGCGGGAAUGAAAGGUCUAAUUGCCGAAGUAAAUUGUAUAUCUAAGCAAUUUGCUGGGGUUGUGCUCAAUAGGUACAACACUGCCAUAGUCUUAAUUUUAAACUAUGGAGCGCUACUGUAGGG",
+        "sequence_sha256": "dffb167da5ac243de0bf0996ef5ccbe8e9d95a74be8125cccbb492bcd5c60434",
+        "original_sequence_sha256": "dffb167da5ac243de0bf0996ef5ccbe8e9d95a74be8125cccbb492bcd5c60434",
+        "valid_sequence": true,
+        "normalization": "uppercase_and_T_to_U",
+        "sequence_bound": true,
+        "consensus_pairs": 53,
+        "missing_paired_columns": 0,
+        "pseudoknot_present": false,
+        "alignment_sequence_sha256": "0ce0ff362d3a75e520bd8b3125021a2514c6f06651a79c9ac9a707ac30bcd4c4",
+        "consensus_sha256": "94614c5ca583fa7265495eb73fde6944e481d042d72f9fe77e5d57cd8ffaa304",
+        "structure_source": "Published; PMID:12787499",
+        "reference_kind": "computational",
+        "source": "Complete Rfam WUSS consensus contacts, including letter pairs; RF00168",
+        "reference_status": "ok",
+        "pairs": [
+          [
+            5,
+            172
+          ],
+          [
+            6,
+            171
+          ],
+          [
+            7,
+            170
+          ],
+          [
+            8,
+            169
+          ],
+          [
+            9,
+            168
+          ],
+          [
+            10,
+            167
+          ],
+          [
+            15,
+            78
+          ],
+          [
+            16,
+            77
+          ],
+          [
+            17,
+            76
+          ],
+          [
+            18,
+            75
+          ],
+          [
+            19,
+            74
+          ],
+          [
+            20,
+            73
+          ],
+          [
+            21,
+            72
+          ],
+          [
+            22,
+            71
+          ],
+          [
+            23,
+            70
+          ],
+          [
+            31,
+            63
+          ],
+          [
+            32,
+            62
+          ],
+          [
+            33,
+            61
+          ],
+          [
+            34,
+            60
+          ],
+          [
+            35,
+            59
+          ],
+          [
+            36,
+            58
+          ],
+          [
+            37,
+            57
+          ],
+          [
+            38,
+            56
+          ],
+          [
+            82,
+            109
+          ],
+          [
+            83,
+            108
+          ],
+          [
+            84,
+            107
+          ],
+          [
+            85,
+            106
+          ],
+          [
+            86,
+            105
+          ],
+          [
+            87,
+            104
+          ],
+          [
+            88,
+            103
+          ],
+          [
+            89,
+            102
+          ],
+          [
+            90,
+            101
+          ],
+          [
+            91,
+            100
+          ],
+          [
+            92,
+            99
+          ],
+          [
+            93,
+            98
+          ],
+          [
+            110,
+            136
+          ],
+          [
+            111,
+            135
+          ],
+          [
+            112,
+            134
+          ],
+          [
+            113,
+            133
+          ],
+          [
+            114,
+            132
+          ],
+          [
+            115,
+            131
+          ],
+          [
+            116,
+            130
+          ],
+          [
+            117,
+            129
+          ],
+          [
+            118,
+            128
+          ],
+          [
+            119,
+            127
+          ],
+          [
+            120,
+            126
+          ],
+          [
+            138,
+            162
+          ],
+          [
+            139,
+            161
+          ],
+          [
+            140,
+            160
+          ],
+          [
+            141,
+            159
+          ],
+          [
+            142,
+            158
+          ],
+          [
+            143,
+            157
+          ],
+          [
+            144,
+            156
+          ]
+        ],
+        "pseudoknot_annotation_present": false
+      },
+      {
+        "id": "RF00168:AAOX01000015.1/22460-22639",
+        "upstream_split": "rfam_seed",
+        "family_id": "RF00168",
+        "sequence": "AGUGAAGGUAGAGGUGCAAACUUCAUCAGUAAAAGCUUGGAGAAAGAUGAGUUUCCGUGAAAAGCUUUGAAAGGGAAUGUUUGCCGAAGAAAAGGAAGUCUCAUUUCUUUCUUUUCUGGUCCUGUAUUGAAUAAAUACUGGAUUGUCAAGACAGCGCCGUCUUGGAGAGCUAUCUCACUG",
+        "sequence_sha256": "987b1dfb5d91c010a645d6ed2bc7acbe1fc86286491c2f673781999ccc530ca0",
+        "original_sequence_sha256": "987b1dfb5d91c010a645d6ed2bc7acbe1fc86286491c2f673781999ccc530ca0",
+        "valid_sequence": true,
+        "normalization": "uppercase_and_T_to_U",
+        "sequence_bound": true,
+        "consensus_pairs": 53,
+        "missing_paired_columns": 0,
+        "pseudoknot_present": false,
+        "alignment_sequence_sha256": "6bda1b1d4125cce51615a989b773872c05702d4369e1cc21bbfe8332c1627515",
+        "consensus_sha256": "94614c5ca583fa7265495eb73fde6944e481d042d72f9fe77e5d57cd8ffaa304",
+        "structure_source": "Published; PMID:12787499",
+        "reference_kind": "computational",
+        "source": "Complete Rfam WUSS consensus contacts, including letter pairs; RF00168",
+        "reference_status": "ok",
+        "pairs": [
+          [
+            5,
+            174
+          ],
+          [
+            6,
+            173
+          ],
+          [
+            7,
+            172
+          ],
+          [
+            8,
+            171
+          ],
+          [
+            9,
+            170
+          ],
+          [
+            10,
+            169
+          ],
+          [
+            15,
+            83
+          ],
+          [
+            16,
+            82
+          ],
+          [
+            17,
+            81
+          ],
+          [
+            18,
+            80
+          ],
+          [
+            19,
+            79
+          ],
+          [
+            20,
+            78
+          ],
+          [
+            21,
+            76
+          ],
+          [
+            22,
+            75
+          ],
+          [
+            23,
+            74
+          ],
+          [
+            31,
+            67
+          ],
+          [
+            32,
+            66
+          ],
+          [
+            33,
+            65
+          ],
+          [
+            34,
+            64
+          ],
+          [
+            35,
+            63
+          ],
+          [
+            36,
+            62
+          ],
+          [
+            37,
+            61
+          ],
+          [
+            38,
+            60
+          ],
+          [
+            87,
+            116
+          ],
+          [
+            88,
+            115
+          ],
+          [
+            89,
+            114
+          ],
+          [
+            90,
+            113
+          ],
+          [
+            91,
+            112
+          ],
+          [
+            92,
+            111
+          ],
+          [
+            93,
+            110
+          ],
+          [
+            94,
+            109
+          ],
+          [
+            95,
+            108
+          ],
+          [
+            96,
+            107
+          ],
+          [
+            97,
+            106
+          ],
+          [
+            98,
+            105
+          ],
+          [
+            117,
+            143
+          ],
+          [
+            118,
+            142
+          ],
+          [
+            119,
+            141
+          ],
+          [
+            120,
+            140
+          ],
+          [
+            121,
+            139
+          ],
+          [
+            122,
+            138
+          ],
+          [
+            123,
+            137
+          ],
+          [
+            124,
+            136
+          ],
+          [
+            125,
+            135
+          ],
+          [
+            126,
+            134
+          ],
+          [
+            127,
+            133
+          ],
+          [
+            145,
+            164
+          ],
+          [
+            146,
+            163
+          ],
+          [
+            147,
+            162
+          ],
+          [
+            148,
+            161
+          ],
+          [
+            149,
+            160
+          ],
+          [
+            150,
+            159
+          ],
+          [
+            151,
+            158
+          ]
+        ],
+        "pseudoknot_annotation_present": false
+      },
+      {
+        "id": "RF00168:AASA01000017.1/10332-10501",
+        "upstream_split": "rfam_seed",
+        "family_id": "RF00168",
+        "sequence": "ACAAAUUGUAGAGGUGCGAAUUCAAUAAGUAUUUCUUCUGAGUGGAAAACGAUGAAGGGGAAGGAAAGGUGAAUUUGCCGAAAUCAAUUAAGCGUCAUCUUAAUUGGUUGGGGUCGUUGUCGAAAGAAACGACACUGUCGUAGUAAAUGCUACGGAGUGCUACUGUUAGG",
+        "sequence_sha256": "dd7c8a3e83f43c6cf972741e50fcaf8ba2596499ac4ebb0c3827e9472b69e264",
+        "original_sequence_sha256": "dd7c8a3e83f43c6cf972741e50fcaf8ba2596499ac4ebb0c3827e9472b69e264",
+        "valid_sequence": true,
+        "normalization": "uppercase_and_T_to_U",
+        "sequence_bound": true,
+        "consensus_pairs": 53,
+        "missing_paired_columns": 0,
+        "pseudoknot_present": false,
+        "alignment_sequence_sha256": "04d35fa75afabf92eb8185186c63da46a678ed2de3c65f4f1f1546b842b44978",
+        "consensus_sha256": "94614c5ca583fa7265495eb73fde6944e481d042d72f9fe77e5d57cd8ffaa304",
+        "structure_source": "Published; PMID:12787499",
+        "reference_kind": "computational",
+        "source": "Complete Rfam WUSS consensus contacts, including letter pairs; RF00168",
+        "reference_status": "ok",
+        "pairs": [
+          [
+            5,
+            164
+          ],
+          [
+            6,
+            163
+          ],
+          [
+            7,
+            162
+          ],
+          [
+            8,
+            161
+          ],
+          [
+            9,
+            160
+          ],
+          [
+            10,
+            159
+          ],
+          [
+            15,
+            77
+          ],
+          [
+            16,
+            76
+          ],
+          [
+            17,
+            75
+          ],
+          [
+            18,
+            74
+          ],
+          [
+            19,
+            73
+          ],
+          [
+            20,
+            72
+          ],
+          [
+            21,
+            71
+          ],
+          [
+            22,
+            70
+          ],
+          [
+            23,
+            69
+          ],
+          [
+            31,
+            62
+          ],
+          [
+            32,
+            61
+          ],
+          [
+            33,
+            60
+          ],
+          [
+            34,
+            59
+          ],
+          [
+            35,
+            58
+          ],
+          [
+            36,
+            57
+          ],
+          [
+            37,
+            56
+          ],
+          [
+            38,
+            55
+          ],
+          [
+            81,
+            108
+          ],
+          [
+            82,
+            107
+          ],
+          [
+            83,
+            106
+          ],
+          [
+            84,
+            105
+          ],
+          [
+            85,
+            104
+          ],
+          [
+            86,
+            103
+          ],
+          [
+            87,
+            102
+          ],
+          [
+            88,
+            101
+          ],
+          [
+            89,
+            100
+          ],
+          [
+            90,
+            99
+          ],
+          [
+            91,
+            98
+          ],
+          [
+            92,
+            97
+          ],
+          [
+            109,
+            135
+          ],
+          [
+            110,
+            134
+          ],
+          [
+            111,
+            133
+          ],
+          [
+            112,
+            132
+          ],
+          [
+            113,
+            131
+          ],
+          [
+            114,
+            130
+          ],
+          [
+            115,
+            129
+          ],
+          [
+            116,
+            128
+          ],
+          [
+            117,
+            127
+          ],
+          [
+            118,
+            126
+          ],
+          [
+            119,
+            125
+          ],
+          [
+            137,
+            154
+          ],
+          [
+            138,
+            153
+          ],
+          [
+            139,
+            152
+          ],
+          [
+            140,
+            151
+          ],
+          [
+            141,
+            150
+          ],
+          [
+            142,
+            149
+          ],
+          [
+            143,
+            148
+          ]
+        ],
+        "pseudoknot_annotation_present": false
+      }
+    ],
+    "families": [
+      {
+        "family_id": "RF00010",
+        "clan": "CL00002",
+        "mapped_pdb_accessions": 8,
+        "pdb_overlap": [],
+        "clan_overlap": [],
+        "planned_records": 5,
+        "supported_references": 0
+      },
+      {
+        "family_id": "RF00023",
+        "clan": "CL00001",
+        "mapped_pdb_accessions": 20,
+        "pdb_overlap": [],
+        "clan_overlap": [],
+        "planned_records": 5,
+        "supported_references": 0
+      },
+      {
+        "family_id": "RF00168",
+        "clan": null,
+        "mapped_pdb_accessions": 16,
+        "pdb_overlap": [],
+        "clan_overlap": [],
+        "planned_records": 5,
+        "supported_references": 4
+      }
+    ],
+    "exposed_family_clans": {
+      "RF00001": "CL00113",
+      "RF00008": "CL00010",
+      "RF00017": "CL00003",
+      "RF00050": null,
+      "RF00059": null,
+      "RF00162": "CL00012",
+      "RF00167": "CL00123",
+      "RF00169": "CL00003",
+      "RF00174": "CL00101",
+      "RF00234": null
+    },
+    "planned_records": 15,
+    "supported_references": 4,
+    "sequence_bindings_complete": true,
+    "known_provenance_overlap": false,
+    "exposure_records_checked": 3202,
+    "exposures_without_family_id": 3104,
+    "independence_certified": false,
+    "limitations": [
+      "Source-bound checks exclude known family/clan/PDB and heuristic sequence overlap; unknown training-family and legacy tool-training provenance remain unresolved.",
+      "References are conserved comparative consensus annotations, not direct per-sequence experimental measurements.",
+      "Unsupported records remain in planned denominators with unknown metrics; no pseudoknot/contact deletion or replacement."
+    ],
+    "reference_format": "pair_set_zero_based_v1"
+  }
+}

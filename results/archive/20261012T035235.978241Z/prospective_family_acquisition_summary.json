@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/prospective_family_acquisition_runs/20261012T035028.548636Z",
+  "manifest_sha256": "f9b292a4da48c74d2766cb1ff44c5654d1eb5c35aead05b888284064a9fde684",
+  "families_downloaded": [],
+  "screening": {
+    "complete": true,
+    "minimum_length": 20,
+    "maximum_length": 512,
+    "exposure_records_checked": 3187,
+    "exposure_records_without_family_id": 3104,
+    "exposed_families": [
+      "RF00001",
+      "RF00008",
+      "RF00017",
+      "RF00059",
+      "RF00162",
+      "RF00167",
+      "RF00169"
+    ],
+    "metadata_records": 0,
+    "metadata_candidates": 0,
+    "families": [],
+    "rows": [],
+    "new_structure_labels_read": false,
+    "inference_performed": false,
+    "test_evaluated": false,
+    "family_independence_established": false,
+    "interpretation": "Metadata candidates require exact annotation binding and a frozen exposure-aware plan before evaluation. Unknown training-family/clan provenance and legacy tool training remain unresolved. Sequence screening uses the symmetric SequenceMatcher 0.8 heuristic, not alignment identity."
+  },
+  "metadata_panel": {
+    "records": [],
+    "decisions": [],
+    "counts": {},
+    "annotation_binding_complete": false,
+    "test_inference_allowed": false
+  },
+  "sources_complete": false,
+  "test_inference_allowed": false
+}

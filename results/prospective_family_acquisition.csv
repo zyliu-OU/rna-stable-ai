@@ -1,0 +1,7 @@
+family_id,resource,status,error,reason,url
+RF00010,description,ok,,,https://rfam.org/family/RF00010?content-type=application%2Fjson
+RF00010,sequences,ok,,,https://rfam.org/family/RF00010/alignment/fastau
+RF00023,description,ok,,,https://rfam.org/family/RF00023?content-type=application%2Fjson
+RF00023,sequences,ok,,,https://rfam.org/family/RF00023/alignment/fastau
+RF00168,description,ok,,,https://rfam.org/family/RF00168?content-type=application%2Fjson
+RF00168,sequences,ok,,,https://rfam.org/family/RF00168/alignment/fastau

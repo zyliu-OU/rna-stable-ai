@@ -1,0 +1,4 @@
+GGAAAUAGCACCACAUAAGCCGGCAGUAGGAGGAUAUAGCUUAUCCGACUGGGUAUAUUUUUGGAGACGGGACACUUCGGUGUCUCAAAAGAAACAACAACAACAAC
+..........(((.(((.(((.....(((..(((((.....)))))..)))))).)))...)))....(((((((....)))))))..................... (-23.30)
+
+STDERR:

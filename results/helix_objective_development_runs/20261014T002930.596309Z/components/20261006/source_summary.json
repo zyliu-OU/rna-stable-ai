@@ -1,0 +1,187 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261006_helix",
+  "mode": "long_comparative_development_only",
+  "config": {
+    "mode": "long_comparative_development_only",
+    "seed": 20261006,
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse",
+    "pair_features": "local_helix_context_v1"
+  },
+  "head": "helix",
+  "seed": 20261006,
+  "test_evaluated": false,
+  "manifest_sha256": "5bcf5a41fcefe0fef954bc8e74665d57d63915f8548162fff28735c965255430",
+  "counts": {
+    "train": 89,
+    "validation": 47
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "mean_train_loss": 3.99555327517263,
+      "validation_mean_pair_f1": 0.3956819329168427,
+      "mean_validation_loss": 2.700899616200873
+    },
+    {
+      "epoch": 2,
+      "mean_train_loss": 2.6940477952528536,
+      "validation_mean_pair_f1": 0.45211564364861845,
+      "mean_validation_loss": 2.606239595311753
+    },
+    {
+      "epoch": 3,
+      "mean_train_loss": 2.565447163046076,
+      "validation_mean_pair_f1": 0.4661726188512411,
+      "mean_validation_loss": 2.391493652729278
+    },
+    {
+      "epoch": 4,
+      "mean_train_loss": 2.5221385647741594,
+      "validation_mean_pair_f1": 0.4947121546191875,
+      "mean_validation_loss": 2.4370401514337416
+    },
+    {
+      "epoch": 5,
+      "mean_train_loss": 2.3894227796726013,
+      "validation_mean_pair_f1": 0.5244233333981245,
+      "mean_validation_loss": 2.3500151583488953
+    },
+    {
+      "epoch": 6,
+      "mean_train_loss": 2.2861240820938282,
+      "validation_mean_pair_f1": 0.5014772403443588,
+      "mean_validation_loss": 2.3009530686317605
+    },
+    {
+      "epoch": 7,
+      "mean_train_loss": 2.1524292819955377,
+      "validation_mean_pair_f1": 0.5235331978774809,
+      "mean_validation_loss": 2.0906151127307973
+    },
+    {
+      "epoch": 8,
+      "mean_train_loss": 2.0574514624777804,
+      "validation_mean_pair_f1": 0.4847710766301511,
+      "mean_validation_loss": 2.213059843854701
+    },
+    {
+      "epoch": 9,
+      "mean_train_loss": 2.0045560424247486,
+      "validation_mean_pair_f1": 0.44097169931063035,
+      "mean_validation_loss": 1.9963314901006983
+    },
+    {
+      "epoch": 10,
+      "mean_train_loss": 1.9566165295879492,
+      "validation_mean_pair_f1": 0.4706072292075504,
+      "mean_validation_loss": 2.008164753305151
+    }
+  ],
+  "selected_epoch": 5,
+  "selected_validation_pair_f1": 0.5244233333981245,
+  "train_positive_pairs": 4462,
+  "train_negative_pairs": 1180545,
+  "train_only_positive_weight": 264.57754370237564,
+  "excluded_train_contacts": 26,
+  "excluded_validation_contacts": 7,
+  "parameters": 25882,
+  "encoder_receptive_field_nt": 91,
+  "checkpoint_sha256": {
+    "initial_context_model.pt": "f25db4ed56298209f6a4a079368ee3fc769796878b371a3a3ac6eed81a7d5603",
+    "best_context_model.pt": "1dba0f5983a796aad996c5d71b77b282c8eec7b7497dae610f226f39aff4050d"
+  },
+  "predictions_sha256": "90008df03efa540ce0dd15c6b280cd354c7e0782af86f774676184dbf26f3c02",
+  "exposure_events": [
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261006_helix/exposures/20261007T013157.363460Z.json",
+      "sha256": "0f2c1d93b4c3c3ed1cda61d67a6c0c939106764144b49efe7d5f3a0609541ad3",
+      "stage": "training_started"
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/pair_head_development_study_runs/20261007T013117.730433Z/components/20261006_helix/exposures/20261007T013157.381569Z.json",
+      "sha256": "0c6e728cb91c3db45867d3241c0548eb76040b4ff4cc1e6402d3b075a04fac68",
+      "stage": "validation_started"
+    }
+  ],
+  "aggregates": [
+    {
+      "method": "trained_helix_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.42704696310264134,
+      "mean_pair_recall": 0.5061862778784154,
+      "mean_pair_f1": 0.46199566048449764
+    },
+    {
+      "method": "trained_helix_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.6626135438635439,
+      "mean_pair_recall": 0.7595598845598847,
+      "mean_pair_f1": 0.7065040460628697
+    },
+    {
+      "method": "untrained_helix_sparse",
+      "reference_kind": "computational",
+      "planned_inputs": 35,
+      "measured_inputs": 35,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 35
+      },
+      "mean_pair_precision": 0.060399103400330945,
+      "mean_pair_recall": 0.06777999250591034,
+      "mean_pair_f1": 0.06382743292847529
+    },
+    {
+      "method": "untrained_helix_sparse",
+      "reference_kind": "experimental",
+      "planned_inputs": 12,
+      "measured_inputs": 12,
+      "missing_inputs": 0,
+      "failed_inputs": 0,
+      "status_counts": {
+        "ok": 12
+      },
+      "mean_pair_precision": 0.3075727513227513,
+      "mean_pair_recall": 0.3611111111111111,
+      "mean_pair_f1": 0.33154372860255216
+    }
+  ],
+  "limitations": [
+    "Same reused development cohort; matched seeds compare heads, not independent biological samples.",
+    "Validation checkpoint selection is development tuning; no fresh test or generalization claim.",
+    "All heads use full pair BCE, identical base initialization, optimizer and exact top-16 sparse decoding.",
+    "Local helix features use only nucleotide identities and offsets, not reference labels."
+  ]
+}

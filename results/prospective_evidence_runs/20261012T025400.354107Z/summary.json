@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/prospective_evidence_runs/20261012T025400.354107Z",
+  "manifest_sha256": "8d9be2dbaac119848d5c07503def8c12bc2cc35284e8750709d1cbf7ca0d42d5",
+  "sources_complete": true,
+  "planned_requests": 10,
+  "successful_requests": 10,
+  "selected_metadata_records": 15,
+  "rfam_release": "15.1",
+  "reference_pairs_parsed": false,
+  "test_inference_allowed": false
+}

@@ -1,0 +1,17 @@
+family_id,resource,status,error,reason,url
+RF00010,pdb_mapping,ok,,,https://rfam.org/family/RF00010/structures?content-type=application%2Fjson
+RF00023,pdb_mapping,ok,,,https://rfam.org/family/RF00023/structures?content-type=application%2Fjson
+RF00168,pdb_mapping,ok,,,https://rfam.org/family/RF00168/structures?content-type=application%2Fjson
+RF00001,exposed_family_description,ok,,,https://rfam.org/family/RF00001?content-type=application%2Fjson
+RF00008,exposed_family_description,ok,,,https://rfam.org/family/RF00008?content-type=application%2Fjson
+RF00017,exposed_family_description,ok,,,https://rfam.org/family/RF00017?content-type=application%2Fjson
+RF00050,exposed_family_description,ok,,,https://rfam.org/family/RF00050?content-type=application%2Fjson
+RF00059,exposed_family_description,ok,,,https://rfam.org/family/RF00059?content-type=application%2Fjson
+RF00162,exposed_family_description,ok,,,https://rfam.org/family/RF00162?content-type=application%2Fjson
+RF00167,exposed_family_description,ok,,,https://rfam.org/family/RF00167?content-type=application%2Fjson
+RF00169,exposed_family_description,ok,,,https://rfam.org/family/RF00169?content-type=application%2Fjson
+RF00174,exposed_family_description,ok,,,https://rfam.org/family/RF00174?content-type=application%2Fjson
+RF00234,exposed_family_description,ok,,,https://rfam.org/family/RF00234?content-type=application%2Fjson
+RF00010,stockholm,ok,,,https://rfam.org/family/RF00010/alignment/stockholm
+RF00023,stockholm,ok,,,https://rfam.org/family/RF00023/alignment/stockholm
+RF00168,stockholm,ok,,,https://rfam.org/family/RF00168/alignment/stockholm

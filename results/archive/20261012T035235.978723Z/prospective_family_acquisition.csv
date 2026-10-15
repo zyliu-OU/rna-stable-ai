@@ -1,0 +1,7 @@
+family_id,resource,status,error,reason,url
+RF00050,description,error,URLError: <urlopen error [Errno -3] Temporary failure in name resolution>,,https://rfam.org/family/RF00050?content-type=application%2Fjson
+RF00050,sequences,not_started,,description_binding_unavailable,https://rfam.org/family/RF00050/alignment/fastau
+RF00174,description,error,URLError: <urlopen error [Errno -3] Temporary failure in name resolution>,,https://rfam.org/family/RF00174?content-type=application%2Fjson
+RF00174,sequences,not_started,,description_binding_unavailable,https://rfam.org/family/RF00174/alignment/fastau
+RF00234,description,error,URLError: <urlopen error [Errno -3] Temporary failure in name resolution>,,https://rfam.org/family/RF00234?content-type=application%2Fjson
+RF00234,sequences,not_started,,description_binding_unavailable,https://rfam.org/family/RF00234/alignment/fastau

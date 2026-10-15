@@ -1,0 +1,18 @@
+
+==================================== ERRORS ====================================
+______________ ERROR collecting tests/test_degradation_binding.py ______________
+ImportError while importing test module '/home/zyliu/Documents/rna-stable-ai/tests/test_degradation_binding.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+external/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_degradation_binding.py:16: in <module>
+    spec.loader.exec_module(module)
+scripts/prepare_degradation_binding.py:13: in <module>
+    from prepare_degradation_source import audit as audit_source
+E   ModuleNotFoundError: No module named 'prepare_degradation_source'
+=========================== short test summary info ============================
+ERROR tests/test_degradation_binding.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.15s

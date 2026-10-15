@@ -1,0 +1,25 @@
+{
+  "checkpoint_utc": "2026-10-12T03:51:29.732525+00:00",
+  "workspace": "/home/zyliu/Documents/rna-stable-ai",
+  "canonical_handoff": "RNA-StableAI_HANDOFF_2026-10-11_V8.md",
+  "state": "Roadmap step 4: new pair-set source protocol frozen; Rfam acquisition blocked by workspace DNS",
+  "verification": {
+    "previous_full_suite_passed": 569,
+    "focused_tests_passed": 18,
+    "protocol_audit_passed": true,
+    "failed_acquisition_ledger_audit_passed": true
+  },
+  "protocol": "/home/zyliu/Documents/rna-stable-ai/results/prospective_family_protocol_runs/20261012T035016.976142Z/manifest.json",
+  "source_acquisition_complete": false,
+  "active_components": {},
+  "pending": [
+    "User terminal metadata and evidence downloads",
+    "Offline annotation binding and provenance checks",
+    "New prospective pair-set evaluation",
+    "Broader training/tool provenance",
+    "Long biological annotations",
+    "Experimental stability/function validation"
+  ],
+  "publication_updated": false,
+  "previous_status_archive": "/home/zyliu/Documents/rna-stable-ai/reports/archive/20261012T035129.732525Z"
+}

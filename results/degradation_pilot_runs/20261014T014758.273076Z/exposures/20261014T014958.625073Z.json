@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z",
+  "stage": "test_started",
+  "records": [
+    {
+      "sequence": "GGAAAAGCUCUAAUAACAGGAGACUAGGACUACGUAUUUCUAGGUAACUGGAAUAACCCAUACCAGCAGUUAGAGUUCGCUCUAACAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGUGCUCAGAUAAGCUAAGCUCGAAUAGCAAUCGAAUAGAAUCGAAAUAGCAUCGAUGUGUAUAUGGGUGGUUCGCCGCUCAAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGCGCCGCGGCGGUAGCGGCAGCGAGGAGCGCUACCAAGGCACAGCGCCGCAGCGGCACACACACCGUAAGUUCGCUUGCGGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAACAAUUGCAUCGUUAGUACGACUCCACAGCGUAAGCUGUGGAGUCGGAAGUCGAUGCAACAAAGCAAAGCUUCGGCUUUGCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAUCAUCGAGGACGGGUCCGUUCAGCACGCGAAAGCGUCGUGAACGGACACAAGUCCUCGAUGAACGAAUGCUUCGGCGUUCGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGCAUGGGACCACGAUUCACAUCGGUCUGCACGUAGGACAUUCUUGUAGUUAGGUUCUACGUCAAUGGGAGUUCGCUUCUAUAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAAUGCGAUCUAGGUAUAUAAGGAUGUUGUAGAAGAUCUUAUAACAUCCAUGUAUUUAGACGCUACUGUUCAUUCGUGGAUAGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGCGAUCACGAAAACCGAAACGAGAAACAUGAAACAAGUAACUCGAACGGAAAAUCGAGCUCGCGAGGUGCUUCGGUGUCUCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGCGGAAACGCCAUGUCAUGAAAAACGCAAAAAGAUAGACGAAAGUCUAUCGCGACAUGACAUGCACUGUGUUCGCGCGGUGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAAGCGAACGACGAAACGCGGGCGCGAUGGACAGGAGGCUGACACCCAGCGGACUGGACGUCAAAGGCCGGCUUCGGCUGGCCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAACAAAAACAAACAACAAAAACAAACAACAAAAACAAACAACAAAAACAAACAACAAAAACAAAGCUAUAGUUCGCUAUGGUAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAACCGAAUCGGAGACUACUAUAGUUGAGUAAUCGUCGACUUUAUGCGAUCGUAUUACUGCUACGACUUGCGAUUCGUCGCAAGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAUCUAGCGACCCAGGGACGGAAGUCAACUAGACGAAGUAGAUGCGAUCAGAGUUUGCGUUACAAGCGCCUCUUCGGAGGUGCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGGCAUGUCGGCUCGCGGUGACGUGCGCCUUUGCUAAGGAUCGCUACUGCGUGCUAGUAACGCGGAUGACCUUCGGGUCAUCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAUUAUAAUGAUCAUGAGGUACUAUCAUCAUGACUGGAGACAGCAGAGAAGACAGCAGACAUAAAGGUUACGUUCGCGUAACCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAAGCUCUAAUAACAGGAGACUAGGACUAGGUAUUUCUAGGUAACUGGAAUAACGGAUACCACCACAUAGAGUUCGCUCUAUGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAUGCAGGUGCCAAGAGCGAGCCAGACUGCGCGAGCAGUGCACUGGGCUCUAGCUGGUUGCUAUACGGUCAGUUCGCUGACUGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAACAGGGCAGGUCGAGUGAGGGAUCGAGGCGGGCGCGGUUCGGUGGCACGGCGGGACGUGCGGCAGGGUCACUUCGGUGACCCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAACGUCUAGCCAUUGCUAGACGAGGUAGAGCAUCUGCUCUACCAGCAGAUGCUUACGCAUCUGCAGCUCGAGUUCGCUCGAGCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGUCGACGACUGGCAAUACAUCCAACGUGGAAUCGCACCAGAAGAAGAAAAGCUAGACAACGACCGGGACCUUCGGGUCUCGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAUACUAUAUAGCCAAAUGUGUGGACGCACAAUUAAGUCGAAAACUAGACAGCGGUAGAAAGGUACGUCACUUUCGAGUGACGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAACUGGUGGCGCCAACGCCGCCAGCCGACGCUUGGUGUCGGCGACUAACUGAUGGGUUGAGUGGGCGUAGCUUUCGAGUUACGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAACGAGUAAACGUAAACGUAAACGUAAACGUAAACGUGCGUGCGUGCGCGCUGCGCGUGCGCGUGGCUCUACUUCGGUAGAGCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAACGGAUUGAGAGGUGAUGAGGAGACGUGACAUGAGCGCAUACAUCUUUAUCGCAGAAUAUACGAGAAGGCUUCGGCUUUCUAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAUUGAAAAACUUAAUGAUUACUCUGUGCGAAUCGCAACCCAAUAGGGACAGAGUAAUCAUUAAGGCCGCUCUUCGGAGCGGCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGCGAAACUACGUGACGACGUAGUACGAAGAAAGUCGUACCAGGCUGGUUCGUCGCCAAACGUAACCAACGUUCGCGUUGGUAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAACAUACAAUACAUAUCAUGACAUACCACUACAGUACACUAGAAUACAGUACAUACAAUACCUAGCCCGCGAUUCGUCGCGGGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAACGGCUAGGCGAGGCAUAGGCGGCAGUGGGAGGUGCGUGCAUCGCACUCACAACUCGCUGCAUACUGGUAUUUCGAUACCAGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAAACCAGGAGUCAGCGACGAACGGGAAGCUCAAUUAGAGCACCCACGGCGCGCAAGACGACUGGCCCAGAGUUCGCUCUGGGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAACACGGACGCGUGCGAAAGCACGCGCACGACCUGCUCGCGCAAAGCGAAGCGGGUCGUGGAAAACUAAGUCUUCGGACUUAGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAUUGCAAGCGAACGAACGUGACAGGAAUGCAGCGCGUGAGGAACACUCGAGCGGUAUAGCAAGCGCGCGGCUUCGGCUGUGCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAACGCGUUAGUACCCAUUUAGAAUAGGUGCUAGCGGCCAAUUUAAGGCCGCAAUACGCGGCGGCGGAAAGCCUUCGGGCUUUCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAAGGCACCAGAAUACCACGCUGUGGAAGGAAAGGAUUCGCACAAGGGAUGGUCGUCUGGAUAAGAUCUGAGUUCGCUCAGAUAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAACCGUGCAGCAUUCGUACUGCACUGAGGGAAUACUUCUUUGUGCUUUGUUUGGUAGAAGUAUGGGCCUUUUUUCGAAGAGGCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAUAGCACCACAUAAGCCGGCAGUAGGAGGAUAUAGCUUAUCCGACUGGGUAUAUUUUUGGAGACGGGACACUUCGGUGUCUCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGCGUACGAGAGUCAAGACGUACAAACGAGAUAUAAUCGAUGUACGUAGACGAUCGUACGCAAACUUUGUAUUCGUACAAAGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAACGUAGCUCAAGUCAACGCGUCAACUCGAGCAAAGCUCGAGAAGACGCGAGACAAGAGCUACGCUGGAGGUUCGCCUCCAGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGGGCCUGGGUCCGGGCGCGGGCCCGGGCCGGGUGGGCGGGCCAGGGCGGGCCCGCCCGGGCCACGUGGACUUCGGUCCACGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAACGCUAGUGAAACGCUAGUGAAAGAUGCGUGCACAACGAUAUGAAACGUAUUGGUGUAGGUAUCGUCUAUCUUCGGAUAGGCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGACUACGAGUGUCGUGUUUACCUAACGAGAUAGAAUCGAAGGAUGGCGACGUUCGUAGUCGGACUUAGUUUUCGAACUAAGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAUCCGUCCCUUCGUUCGGUUGCUGGUAAACCAGCCGUAUGCGCACGGACGUAGAGAGAGGCGGAGGUACAUUUCGAUGUACCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGGAUCUCUCUCGGCGGAGAGAGAUCGCUCGCGUCUCUACGUAGGUAGAGAUGUGAGCGCCUUCGAGCGAGUUCGCUCGCUCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGCUCAGCACUCACGUGCACCACUCACGUGGACUAGUCACCUAGACUCGUCACCGAGAAAGAGCCGAGUCCUUCGGGACUCGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAAGGGACCCAGGGCCCAGGAGACGACGGCCCAGGGAAACCGGGCCGCGCCCGGGCCCGGGCCCGCAAGCUGUUCGCAGCUUGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGCUCAGCACACCAGUGCACCACACCAGUGGACUAGACCACUAGACUCGACCACGAGAAAGAGCCCUCUGUUUCGACAGAGGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAACGUCUAGCCGCGGCUAGACGAGGUAGAGCGCUAGCUCUACCAGCAGAUGCAUCCGCAUCUGCACAAUGGGUUCGCCCAUUGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAAGGUGUGAGCGAGUGAAACACUCGGUCGCACCAAAAGGCACCACCGAAACGGUGGUGCCAAAACAAUGUCUUCGGACAUUGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAUCGUACCAUGCUGCGAAGCAAGAAAUCUACGCGAGUAGAUAGGGUCUCAGACUUAAGGUGCGAAGAUCGGUUCGCCGAUCUAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAAUGGCAUGUGAACAAAAUCCGUUCACUUCCCUACCUGGGACUGACCGUUAAAUGCCUCGGUAAUGCACUGUUCGCAGUGUAAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAUAGUGUAGACUUAUGAAAACUAUAGGUCCAGACAUGUUCCUCGGAACUUGUCGGCGUUAAAAAGUGACGUUUCGACGUCACAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAUAGGACGGGACGCGGACCCGGGACCACGUCGUUGCAGGCGCUUCGUCUUCUCGUGGCUGAGACGUCGGUCUUCGGACCGACAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGGCAGCCAUCGGUGAAACCGAGGGCGCCCGCGAAUCGCGCGGACGGCUUAAUGGCCGACCGAGGCGGGCGUUCGCGCCCGCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGACGGAGUAAUUGCAUUAUCGCAGUUACCAGACGACCGAAAGGUGGUCAUCGUCAAUUAAAAACGCAGUCUUCGGACUGCGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAACUGCUAAUACUGGCAAAGGACCGAGGACGAAAGUCCAAUAACCGUGAGAGCGGCGGUCCAACGCUCUGGUUCGCCAGAGCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAUAAGCUCACAAUGUGUGUGAUAACACACUAAUAUAUAAGAGCGAAAAGCUCAUUGUGAGCAAAUAUAUAAUUCGUUAUAUAAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAUAUACAAUACAUAUUCUGACAUACCACUACAGUACACUAGAAUACAGUACUGUAUAGACAUAGCCGCGCAUUCGUGCGCGGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAACGGCUAGGCGAGGCAUAGGCGGCAGUGGGAGGUGCGUGCAUCGCACUCACAACUCGCUGCAUACACCGAUUUCGAUCGGUGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAACGCGAAGGUGUGAAUAAUACGUUCUCAGGGAUAUAUCCUGUAUACCUAUAAUAGGCGAGGUAAUUCUCUGUUCGCAGAGGAAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAAGGUGCGAGGUGGUGAAACACGGCCUGGCACCAAAAGGCACCACCGAAACGGUGGUGCCAAAACACAAACUUCGGUUUGUGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAAUAGAGCAAAAAUAAUCGAUGGCGCGGCCGCGCAGCAAAGAGACUCAGGAGCGCGAGCCGCGACGACUGGUUCGCCAGUCGAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAGGAAGGUACGCACGGAACUACUGCGAAACUGGUAUCAGGCAGUAGAAGGCACGUGACGUACCAGGUCGACUUCGGUCGACCAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAACGGCUAGGCGAGGCAUAGGCGGCAGUGGGAGGUGCGUGCAUCGCACUCACAACUCGCUGCAUAAUCCUCGUUCGCGAGGAUAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAAUGGAAUGUGUACAAAAUACGUUCACCCACAUAUUGGGAUCAGACCUUUAAUUACCUGGGUUAAGCAGACUUCGGUCUGUUAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    },
+    {
+      "sequence": "GGAAAACGGUUCAGUGUCAUUGUGGCCUGGUCGCAUGAGGUGCGAUCAGGCGACGAUGACACUGUUGGGAUAGAGUUCGCUCUGUUAAAAGAAACAACAACAACAAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/degradation_pilot_runs/20261014T014758.273076Z test_started"
+    }
+  ],
+  "records_sha256": "e228ba6b93d3786123a4a2509f34dc1acf443e2afac3c02dd5f66edae881f53b"
+}

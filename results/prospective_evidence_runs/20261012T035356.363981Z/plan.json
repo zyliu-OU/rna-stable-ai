@@ -1,0 +1,83 @@
+{
+  "requests": [
+    {
+      "family_id": "RF00050",
+      "resource": "pdb_mapping",
+      "filename": "RF00050_pdb_mapping.json",
+      "url": "https://rfam.org/family/RF00050/structures?content-type=application%2Fjson"
+    },
+    {
+      "family_id": "RF00174",
+      "resource": "pdb_mapping",
+      "filename": "RF00174_pdb_mapping.json",
+      "url": "https://rfam.org/family/RF00174/structures?content-type=application%2Fjson"
+    },
+    {
+      "family_id": "RF00234",
+      "resource": "pdb_mapping",
+      "filename": "RF00234_pdb_mapping.json",
+      "url": "https://rfam.org/family/RF00234/structures?content-type=application%2Fjson"
+    },
+    {
+      "family_id": "RF00001",
+      "resource": "exposed_family_description",
+      "filename": "RF00001_description.json",
+      "url": "https://rfam.org/family/RF00001?content-type=application%2Fjson"
+    },
+    {
+      "family_id": "RF00008",
+      "resource": "exposed_family_description",
+      "filename": "RF00008_description.json",
+      "url": "https://rfam.org/family/RF00008?content-type=application%2Fjson"
+    },
+    {
+      "family_id": "RF00017",
+      "resource": "exposed_family_description",
+      "filename": "RF00017_description.json",
+      "url": "https://rfam.org/family/RF00017?content-type=application%2Fjson"
+    },
+    {
+      "family_id": "RF00059",
+      "resource": "exposed_family_description",
+      "filename": "RF00059_description.json",
+      "url": "https://rfam.org/family/RF00059?content-type=application%2Fjson"
+    },
+    {
+      "family_id": "RF00162",
+      "resource": "exposed_family_description",
+      "filename": "RF00162_description.json",
+      "url": "https://rfam.org/family/RF00162?content-type=application%2Fjson"
+    },
+    {
+      "family_id": "RF00167",
+      "resource": "exposed_family_description",
+      "filename": "RF00167_description.json",
+      "url": "https://rfam.org/family/RF00167?content-type=application%2Fjson"
+    },
+    {
+      "family_id": "RF00169",
+      "resource": "exposed_family_description",
+      "filename": "RF00169_description.json",
+      "url": "https://rfam.org/family/RF00169?content-type=application%2Fjson"
+    },
+    {
+      "family_id": "RF00050",
+      "resource": "stockholm",
+      "filename": "RF00050.sto",
+      "url": "https://rfam.org/family/RF00050/alignment/stockholm"
+    },
+    {
+      "family_id": "RF00174",
+      "resource": "stockholm",
+      "filename": "RF00174.sto",
+      "url": "https://rfam.org/family/RF00174/alignment/stockholm"
+    },
+    {
+      "family_id": "RF00234",
+      "resource": "stockholm",
+      "filename": "RF00234.sto",
+      "url": "https://rfam.org/family/RF00234/alignment/stockholm"
+    }
+  ],
+  "rfam_release": "15.1"
+}

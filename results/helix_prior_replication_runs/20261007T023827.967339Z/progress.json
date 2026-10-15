@@ -1,5 +1,5 @@
 {
-  "complete": false,
+  "complete": true,
   "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/helix_prior_replication_runs/20261007T023827.967339Z",
   "manifest_sha256": "ac958c9c3156257401b9796d40ebda812ad117f660bbac9cf4d7dbfee28bc3d2",
   "plan": [
@@ -50,6 +50,10 @@
     {
       "summary": "/home/zyliu/Documents/rna-stable-ai/results/helix_prior_replication_runs/20261007T023827.967339Z/snapshot/results/checkpoint_prior_pilot_runs/20261007T024547.177953Z/summary.json",
       "sha256": "288f0f42c1a30f6f40e77028e1a1ffef67d3450f4c5e479e41d9ce6227c9115c"
+    },
+    {
+      "summary": "/home/zyliu/Documents/rna-stable-ai/results/helix_prior_replication_runs/20261007T023827.967339Z/snapshot/results/checkpoint_prior_pilot_runs/20261007T030004.032459Z/summary.json",
+      "sha256": "ddf0041a5f26d677edffeef82325a0ddd30c3577402b4ef2653ac45a64c396bf"
     }
   ],
   "rows": [
@@ -337,13 +341,70 @@
       "selected_vienna_delta_kcal_mol": -5.899999999999636,
       "selected_mutations": 10,
       "proxy_wall_seconds": 3.0721576070000083
+    },
+    {
+      "input_id": "synthetic_10000",
+      "seed": 20261007,
+      "policy": "random_pool",
+      "planned_proposal_folds": 8,
+      "attempted_proposal_folds": 8,
+      "successful_proposal_folds": 8,
+      "pool_candidates": 128,
+      "proxy_evaluations": 0,
+      "accepted_steps": 4,
+      "search_status": "completed",
+      "linearfold_delta_kcal_mol": -20.300000000000182,
+      "selection_source": "input",
+      "selection_reason": "no_reference_improvement",
+      "candidate_vienna_delta_kcal_mol": 0.40000000000009095,
+      "selected_vienna_delta_kcal_mol": 0.0,
+      "selected_mutations": 0,
+      "proxy_wall_seconds": 0.06938155499997833
+    },
+    {
+      "input_id": "synthetic_10000",
+      "seed": 20261007,
+      "policy": "compatibility_only",
+      "planned_proposal_folds": 8,
+      "attempted_proposal_folds": 8,
+      "successful_proposal_folds": 8,
+      "pool_candidates": 128,
+      "proxy_evaluations": 0,
+      "accepted_steps": 5,
+      "search_status": "completed",
+      "linearfold_delta_kcal_mol": -32.100000000000364,
+      "selection_source": "input",
+      "selection_reason": "validation_failed",
+      "candidate_vienna_delta_kcal_mol": null,
+      "selected_vienna_delta_kcal_mol": null,
+      "selected_mutations": 0,
+      "proxy_wall_seconds": 0.07142112099992914
+    },
+    {
+      "input_id": "synthetic_10000",
+      "seed": 20261007,
+      "policy": "checkpoint_prior",
+      "planned_proposal_folds": 8,
+      "attempted_proposal_folds": 8,
+      "successful_proposal_folds": 8,
+      "pool_candidates": 128,
+      "proxy_evaluations": 128,
+      "accepted_steps": 6,
+      "search_status": "completed",
+      "linearfold_delta_kcal_mol": -30.90000000000009,
+      "selection_source": "finalist",
+      "selection_reason": "confirmed_improvement",
+      "candidate_vienna_delta_kcal_mol": -17.899999999999636,
+      "selected_vienna_delta_kcal_mol": -17.899999999999636,
+      "selected_mutations": 12,
+      "proxy_wall_seconds": 2.9928630960000078
     }
   ],
-  "unique_native_requests": 165,
-  "unknown_native_requests": 0,
-  "known_native_wall_seconds": 1255.004977695994,
-  "completed_proxy_calls_across_attempts": 640,
-  "known_proxy_wall_seconds_across_attempts": 3.101882269987982,
+  "unique_native_requests": 198,
+  "unknown_native_requests": 1,
+  "known_native_wall_seconds": 2008.9399087069967,
+  "completed_proxy_calls_across_attempts": 768,
+  "known_proxy_wall_seconds_across_attempts": 4.308983139987504,
   "equal_native_proposal_budget_measured": true,
   "source_model_seed": 20261007,
   "limitations": [

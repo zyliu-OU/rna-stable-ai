@@ -1,0 +1,23 @@
+{
+  "checkpoint_utc": "2026-10-12T02:37:35.102545+00:00",
+  "workspace": "/home/zyliu/Documents/rna-stable-ai",
+  "canonical_handoff": "RNA-StableAI_HANDOFF_2026-10-11_V3.md",
+  "state": "Roadmap step 4: prospective checkpoint/source protocol frozen; acquisition unavailable due workspace DNS failures",
+  "verification": {
+    "full_suite_passed": 508,
+    "prospective_sources_complete": false,
+    "new_data_downloaded": false
+  },
+  "frozen_protocol": "/home/zyliu/Documents/rna-stable-ai/results/prospective_family_protocol_runs/20261012T023120.466587Z/manifest.json",
+  "acquisition_run": "/home/zyliu/Documents/rna-stable-ai/results/prospective_family_acquisition_runs/20261012T023237.122453Z",
+  "active_components": {},
+  "pending": [
+    "Source download access",
+    "Family/clan and PDB training-overlap provenance",
+    "Exact annotation binding and frozen final evaluation plan",
+    "Long biological RNA annotations",
+    "Experimental stability/function validation"
+  ],
+  "publication_updated": false,
+  "previous_status_archive": "/home/zyliu/Documents/rna-stable-ai/reports/archive/20261012T023735.102545Z"
+}

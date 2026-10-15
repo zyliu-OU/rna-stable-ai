@@ -1,0 +1,67 @@
+...............F...............                                          [100%]
+=================================== FAILURES ===================================
+__ test_binding_exposure_precedes_assay_inspection_and_audit_creates_no_event __
+
+tmp_path = PosixPath('/tmp/pytest-of-zyliu/pytest-8/test_binding_exposure_precedes0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7ee76af24b30>
+
+    def test_binding_exposure_precedes_assay_inspection_and_audit_creates_no_event(
+        tmp_path, monkeypatch
+    ):
+        monkeypatch.setattr(module, "ROOT", tmp_path)
+        raw = (json.dumps(record()) + "\n").encode()
+        source = tmp_path / "source"
+        source.mkdir()
+        (source / "author.json").write_bytes(raw)
+        summary = {
+            "complete": True,
+            "run_dir": str(source),
+            "sources_complete": True,
+            "source": {"filename": "author.json", "sha256": digest(raw)},
+        }
+        monkeypatch.setattr(module, "audit_source", lambda path: summary)
+        monkeypatch.setattr(module, "collect_known_exposures", lambda root: [])
+        original = module.compute
+        observed = []
+    
+        def compute(*args):
+            events = list(
+                (tmp_path / "results").glob("degradation_binding_runs/*/exposures/*.json")
+            )
+            assert len(events) == 1
+            observed.append(events[0])
+            return original(*args)
+    
+        monkeypatch.setattr(module, "compute", compute)
+>       result = module.prepare()
+                 ^^^^^^^^^^^^^^^^
+
+tests/test_degradation_binding.py:139: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/prepare_degradation_binding.py:196: in prepare
+    "code_sha256": {str(p): digest(p.read_bytes()) for p in paths},
+                                   ^^^^^^^^^^^^^^
+external/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tmp/pytest-of-zyliu/pytest-8/test_binding_exposure_precedes0/scripts/prepare_degradation_source.py')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-zyliu/pytest-8/test_binding_exposure_precedes0/scripts/prepare_degradation_source.py'
+
+external/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/pathlib.py:1013: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_degradation_binding.py::test_binding_exposure_precedes_assay_inspection_and_audit_creates_no_event
+1 failed, 30 passed in 0.16s
