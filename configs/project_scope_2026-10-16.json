@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "effective_date": "2026-10-16",
+  "active_sequence_length_nt": {
+    "minimum_inclusive": 1,
+    "maximum_exclusive": 5000
+  },
+  "deferred_sequence_length_nt": {
+    "minimum_inclusive": 5000
+  },
+  "historical_long_sequence_policy": "preserve_code_data_results_reports_and_provenance_in_place",
+  "future_long_sequence_policy": "do_not_schedule_by_default_but_do_not_delete_or_hide",
+  "historical_protocols_remain_immutable": true,
+  "automatic_truncation_allowed": false,
+  "active_claims_may_use_deferred_evidence": false
+}

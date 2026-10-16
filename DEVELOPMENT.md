@@ -6,8 +6,13 @@ There is no validated release. Biological stability, mutation benefits and
 retained function remain unestablished.
 
 For the current development plan and next step, see the [project overview](README.md)
-and [current roadmap](reports/PROJECT_ROADMAP_2026-10-15.md). The detailed studies
+and [current roadmap](reports/PROJECT_ROADMAP_2026-10-16.md). The detailed studies
 below retain their original scope and commands.
+
+Active development now targets sequences shorter than 5,000 nt. Exactly 5,000
+nt and longer is preserved, deferred scope. Historical long-sequence sections,
+commands and artifacts below remain unchanged for reproducibility; they are not
+the default schedule for new work. See [the length-scope policy](docs/LENGTH_SCOPE.md).
 
 ## Development checkpoint — 2026-10-13
 
@@ -80,7 +85,7 @@ skips. A CPU encoder measurement is not an RNA folding measurement.
 ## Install locally
 
 ```bash
-cd rna-stable-ai
+cd /home/zyliu/Documents/rna-stable-ai
 python3 scripts/setup.py
 .venv/bin/python -m rnastable doctor
 .venv/bin/python -m pytest -q

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "stage": "metadata_only_sequence_diverse_structure_panel",
+  "families": [
+    "RF00061",
+    "RF00177",
+    "RF00375",
+    "RF00458",
+    "RF01344",
+    "RF01998",
+    "RF02340",
+    "RF02796"
+  ],
+  "minimum_pdb_chains_per_family": 5,
+  "maximum_pdb_chains_per_family": 16,
+  "candidate_order": "family_then_evenly_spaced_sorted_distinct_pdb_then_first_chain",
+  "family_selection_basis": "unexposed_metadata_candidates_with_distinct_known_clans_and_diverse_rna_roles",
+  "future_binding": {
+    "minimum_length": 20,
+    "maximum_length": 512,
+    "sequence_similarity_threshold": 0.8,
+    "maximum_supported_records_per_family": 4,
+    "contact_target": "all_returned_cWW_contacts_without_projection",
+    "multiple_partners": "unsupported_do_not_delete_contacts",
+    "replace_unsupported_records": false,
+    "minimum_supported_total": 12,
+    "minimum_supported_families": 3,
+    "minimum_supported_per_family": 3,
+    "reference_kind": "computational_PDB_derived",
+    "require_per_sequence_annotation_audit": true,
+    "require_tool_training_provenance_audit": true
+  },
+  "structure_labels_allowed_at_freeze": false,
+  "candidate_sequences_allowed_at_freeze": false,
+  "model_inference_authorized": false
+}

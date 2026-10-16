@@ -6,9 +6,15 @@ Research prototype for RNA structure prediction, constrained sequence optimizati
 and reproducible folding benchmarks. Code, experimental checkpoints, input data,
 and results are available for inspection. No validated release yet.
 
+**Current length focus:** active development targets RNA sequences shorter than
+5,000 nt (1–4,999 nt). Existing 5,000/10,000-nt code, data, results and
+provenance are preserved as deferred work; they are not deleted or counted as
+active-scope validation. Method-specific lower limits still apply. See the
+[sequence-length policy](docs/LENGTH_SCOPE.md).
+
 ## Development plan
 
-Updated October 15, 2026. **Current step: 4 — independent biological validation.**
+Updated October 16, 2026. **Current step: 4 — independent biological validation below 5,000 nt.**
 
 | Step | Work | Progress |
 |---:|---|---|
@@ -16,7 +22,7 @@ Updated October 15, 2026. **Current step: 4 — independent biological validatio
 | 2 | Structure models | Baseline, stack, and helix models trained and compared. Candidate-budget and loss studies complete; defaults unchanged. |
 | 3 | Sequence optimization | Synthetic studies and native energy checks complete. Biological benefits remain unverified. |
 | **4** | **Independent structure validation** | **Current gate.** Three prospective panels and a six-family raw-contact feasibility study evaluated; broader coverage/provenance remain limited. |
-| 5 | Long biological RNA | Synthetic benchmarks reach 10,000 nt; exact sparse inference supports up to 1,024 nt. Longer biological validation is pending. |
+| 5 | Longer RNA evidence | New work at 5,000 nt or above is deferred. Existing synthetic benchmarks through 10,000 nt remain preserved; exact sparse inference supports up to 1,024 nt. |
 | 6 | Measured stability and function | Public-assay pilot complete. Controlled mutation effects and retained function remain pending. |
 | 7 | Validated release | Pending the scientific evidence above. |
 
@@ -26,7 +32,7 @@ Its original selection failed the per-family gate. A separately versioned,
 label-informed development dataset now passes that gate with 61 training and
 22 validation pair references. A matched nine-run pair-set training study is
 complete; independent biological validation remains open. See the
-[roadmap](reports/PROJECT_ROADMAP_2026-10-15.md).
+[roadmap](reports/PROJECT_ROADMAP_2026-10-16.md).
 The next-panel metadata acquisition resolved 91 of 92 missing family
 descriptions; RF04222 returned 404. An eight-family, 56-candidate structure
 panel was frozen and acquired. All 56 contact requests succeeded, but sequence
