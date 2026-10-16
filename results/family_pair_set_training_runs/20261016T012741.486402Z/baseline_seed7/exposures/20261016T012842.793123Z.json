@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7",
+  "stage": "validation_started",
+  "records": [
+    {
+      "sequence": "AUACCUUUCUCGGCCUUUUGGCUAAGAUCAAGUGUAGUAUCUGUUCUUAUCAGUUUAAUAUCUGAUAUGUGGGCUAUGUGCCCACUUCGAUAUUAAAUUUAUUUUUUGUGGGGGAGGGUCCACCACAGUGGCUUGCCGCUGGGGCCCUCACGCGUCGCCCAGGCGUUGCACUGCUGCCCGGGCCUGGCGCACUCCAA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00004"
+    },
+    {
+      "sequence": "AUCGCUUCUCGGCCUAAAGGCUAAGAUCAAAGUGUAGUAUCUGUUCUUAUCAGCUUAACAUCUGAUAGCUCUCCCAUUGGGAGACGACAAAUGUUAAACUGAUUUUUGGAAAGAGGCGGAUCGUACGGGGCUUGCUCCACAUCCGCCACGGGUUGGCCCGGUAUUGCAGUACCGCCGGGAUCGGCCCAACUAAU",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00004"
+    },
+    {
+      "sequence": "ACCCCUUCUCGGCCUCUUGGCUAAGAUCAAUUUGUAGUACCUGUUCUUAUCAGCGUGAUAGCUGAUAUGGUCUCAAUUGAGACCUUAUCAAUUUUCACAUAAAUUUUUAAUAGGGGAAAGGAUCAUUUGAAGCUUGCUUCUUAUAGCCUUUCGCGCGUUGCCUUACCCUAGCACUAAUAGGUUUGUACAGUGCACCCUUA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00004"
+    },
+    {
+      "sequence": "AUCGCUUCAAGGCUAUUUUAGCUGUGAUCAAGUGUAGUACCUGUUCUUCUCAGGUUGAAAUCUGAGACGGAAACGAUUCGUUUCCUCUAUAUUUCAUUCGGAUUUUUGAACACACGGAAGGUAAUGAAGCUUGCUUCUACUUGCUCCGGGUUGUCCUGGUUUUGCAUUAUCGCCAGGUUCGGCCCACGUUCC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00004"
+    },
+    {
+      "sequence": "UUAGCUCUCUUUGCCUUUUGGCUUAGAUCAAGUGUAGUAUCUGUUCUUUUCAGUUUAAUCUCUGAAACUGCUCUACGGAGUAGAAUCGUGAUUAUUCUAAUUUUUGCAACUCGGUCGGCAUCCCUCUGGGCUUGCCUAUGGUUGCCGACCACUGUGUCCCUGGUAUUACACUGCCUCCAGGCGACGCGAACUCAA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00004"
+    },
+    {
+      "sequence": "AUCGCUUCUCGGCCUUUUGGCUAAGAUCAAGUGUAGUAUCUGUUCUUAUCAGUUUAAUAUCUGAUACGUCCUCUAUCCGAGGACAAUAUAUUAAAUGGAUUUUUGGAGCAGGGAGAUGGAAUAGGGAGCUUGCUCCGUCCACUCCGCGCAUCGACCUGGUAUUGCAGUACCUCCAGGAACGGUGCACCCCCU",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00004"
+    },
+    {
+      "sequence": "CAAACGGCCCUUUUCAGGGCCACCAAUUGUGUUGAAAAGAACUUAU",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00032"
+    },
+    {
+      "sequence": "CAAACGGUCCUUUUCAGGACCACAAUACAUUACUCAAGAGCUGUGU",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00032"
+    },
+    {
+      "sequence": "UUUGAGGCUUCACUAGAAGCCAUUACUAGAUACUUACAAACAAUGU",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00032"
+    },
+    {
+      "sequence": "AAAACGGCUCUUUUCAGAGCCACCUAUUUAUACAAAGAGAUGAAGU",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00032"
+    },
+    {
+      "sequence": "UGACAGGCGUUACUAGACGCCACAAAUAGUAUAUGUUGCUCUUUGG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00032"
+    },
+    {
+      "sequence": "GAACAGGUGGCACUAGCCACCAUAAAUUUUGAGAUUAAAGUUUUAG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00032"
+    },
+    {
+      "sequence": "ACACUGGAUUUUAUAAAAUCCACUCAUCAAUCAAAGAACUUCUUAU",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00032"
+    },
+    {
+      "sequence": "AAACUGGAUUUUCUAAAAUCCACCCACUUUCCAAAGAACUAAGAUU",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00032"
+    },
+    {
+      "sequence": "AUAACAUGAGGUAGUAGGUUAUGCAGUUUGGCGACAAUAUUUCGUUGCAAAGGAGAUAACUGUGUAACUUGCUGGCUCUUUUAU",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00027"
+    },
+    {
+      "sequence": "GCGGGGUGAGGUAGUAGGUUGUGUGGUUUCAGGGUAGUGAUUUUGCCCCAAUCAGAAGAUAACUAUACAACCUACUGCCUUCCCUGA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00027"
+    },
+    {
+      "sequence": "UCUGGUGAGGUAGUAGGUUGUAUAGUUUAGAAUCUUACCUUGGUGAACUAUGCAAGUUUCUACCUCACCAGA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00027"
+    },
+    {
+      "sequence": "GUAGGAUGAGGUAGUAGAUUGUAUAGUUGUAGGUCAUAACCCAUCUUGGAGAUAACUAUACAGUCUACUGUCUUUCCCAC",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00027"
+    },
+    {
+      "sequence": "UCUGUUUGAGGUAGUAGGUUGUAUAGUAAGUAUUACACCUAUUGGGAGUGCUGUACAGCCUGCUAACUUUCCCAGA",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00027"
+    },
+    {
+      "sequence": "CUGGGGUGAGGUAGUAAGUUGUAUUGUUGUGGGGUAAGGAUUUAAGGCCCCAUUAAGAAGAUAACUAUACGACUUACUACUUUCCCUGG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00027"
+    },
+    {
+      "sequence": "UAACAAGGUUUUUUAUUGGUUCUUCUGCAGUGCGCCAAAGGAAGCCUUAGCAGCCUGAAAGGGUGUAUCUCCGCGACUAUAAAUAAAAAGGGGAUUUUAAAUGCUAGUCUGAUAAAAAAAGGCGACAUUGCCAAAUUGCGGGAAGUCCCUAAAGAUUCAACUACUAAGCAGCUUGUGGAAACACAGUUGUGGCCGAGUUAAUAGCCCUGGGUAUAGUAACAAUGUUGAAUAUGACUCUUAAUUGAGGAAAUGGGUGAUCCGCAGCCAAAUCCUAAGGACAUUUUAUUGUCUAUGGAUGCAGUUCACAGGCCAGAUGGCAAUGGGUAUCCUAGUGGGAUAUAUAUAUAUGGAUGCUUAAGAUAUGGUCGAGCUUCUCUCGAAAGAGAG",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00028"
+    },
+    {
+      "sequence": "AUGACUCUCUAAAUAGCAAUAUUUACCUUUGGAGGGAAAAGUUAUCAGGCAUGCACCUGGUAGCUAGUCUUUAAACCAAUAGAUUGCAUCGGUUUAAAAGGCAAGACCGUCAAAUUGCGGGAAAGGGGUCAACAGCCGUUCAGUACCAAGUCUCAGGGGAAACUUUGAGAUGGCCUUGCAAAGGGUAUGGUAAUAAGCUGACGGACAUGGUCCUAACCACGCAGCCAAGUCCUAAGUCAACAGAUCUUCUGUUGAUAUGGAUGCAGUUCACAGACUAAAUGUCGGUCGGGGAAGAUGUAUUCUUCUCAUAAGAUAUAGUCGGACCUCUCCUUAAUGGGAGCU",
+      "source": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed7 validation_started",
+      "family_id": "RF00028"
+    }
+  ],
+  "records_sha256": "0bb8f85df2c6e06dc7a34aa38177b3962f7d6a2c901b8a9c216c3b9f72c04414"
+}

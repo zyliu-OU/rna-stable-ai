@@ -1,0 +1,10 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/family_provenance_extension_runs/20261016T011329.080000Z",
+  "protocol_run": "/home/zyliu/Documents/rna-stable-ai/results/family_provenance_extension_protocol_runs/20261016T011240.557576Z",
+  "snapshot_sha256": {
+    "protocol.json": "97399e69e65fe0e2a51781527588067bf7f8617ba513d31024b9ee9e8b8c324f",
+    "RF00022.sto": "13b1064dd1186b4879a3fa7b03309bc23357fc264967898c1c4914e59235a371",
+    "attempt.json": "7007e5b71f3ec29b81aa530a78f03365ba493564db86254ab3ef81fb4556953e",
+    "binding.json": "340e58054a87a71760d7c1ad8090fb4df332c2a07692aadddd5f7fb31e6b87d5"
+  }
+}

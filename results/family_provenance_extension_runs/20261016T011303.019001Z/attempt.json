@@ -1,0 +1,9 @@
+{
+  "group": "family:RF00022",
+  "family_id": "RF00022",
+  "role": "train",
+  "filename": "RF00022.sto",
+  "url": "https://rfam.org/family/RF00022/alignment/stockholm",
+  "status": "error",
+  "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>"
+}

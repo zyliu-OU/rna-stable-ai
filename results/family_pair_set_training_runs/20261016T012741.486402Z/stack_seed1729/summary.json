@@ -1,0 +1,370 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/stack_seed1729",
+  "head": "stack",
+  "seed": 1729,
+  "config": {
+    "mode": "family_coverage_development_only",
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse",
+    "seed": 1729,
+    "pair_features": "adjacent_stackability"
+  },
+  "manifest_sha256": "821eaa3c1d6596c4f4790bbe4ca2e06c2d646eb89f6768997cc4ba52f4676f57",
+  "train_records": 61,
+  "validation_records": 22,
+  "training": {
+    "history": [
+      {
+        "epoch": 1,
+        "mean_train_loss": 1.888886284632761,
+        "validation_mean_full_pair_f1": 0.3661211485078599,
+        "mean_validation_loss": 2.177713307467374
+      },
+      {
+        "epoch": 2,
+        "mean_train_loss": 1.7343423601056709,
+        "validation_mean_full_pair_f1": 0.39175311508480876,
+        "mean_validation_loss": 2.032398470423438
+      },
+      {
+        "epoch": 3,
+        "mean_train_loss": 1.627398428369741,
+        "validation_mean_full_pair_f1": 0.34109027721724366,
+        "mean_validation_loss": 1.8822965025901794
+      },
+      {
+        "epoch": 4,
+        "mean_train_loss": 1.4843150777894942,
+        "validation_mean_full_pair_f1": 0.31279537946672337,
+        "mean_validation_loss": 1.8469439094716853
+      },
+      {
+        "epoch": 5,
+        "mean_train_loss": 1.4122935308784734,
+        "validation_mean_full_pair_f1": 0.37450580547904483,
+        "mean_validation_loss": 1.7856696193868464
+      },
+      {
+        "epoch": 6,
+        "mean_train_loss": 1.31068980302967,
+        "validation_mean_full_pair_f1": 0.27208882241986776,
+        "mean_validation_loss": 1.8603782220320269
+      },
+      {
+        "epoch": 7,
+        "mean_train_loss": 1.2294895492616247,
+        "validation_mean_full_pair_f1": 0.3183260197499452,
+        "mean_validation_loss": 1.7644235085357318
+      },
+      {
+        "epoch": 8,
+        "mean_train_loss": 1.1464792353207949,
+        "validation_mean_full_pair_f1": 0.24910127274139346,
+        "mean_validation_loss": 1.8520043275573037
+      },
+      {
+        "epoch": 9,
+        "mean_train_loss": 1.0707664787769318,
+        "validation_mean_full_pair_f1": 0.24686017709056945,
+        "mean_validation_loss": 1.9464985078031367
+      },
+      {
+        "epoch": 10,
+        "mean_train_loss": 0.9749679531230301,
+        "validation_mean_full_pair_f1": 0.29577749099720124,
+        "mean_validation_loss": 1.9835831983522936
+      }
+    ],
+    "selected_epoch": 2,
+    "initial_validation_full_pair_f1": 0.0,
+    "selected_validation_full_pair_f1": 0.39175311508480876,
+    "train_positive_pairs": 1235,
+    "train_negative_pairs": 216942,
+    "train_only_positive_weight": 175.66153846153847,
+    "unlearnable_train_gold_pairs": 116,
+    "unlearnable_validation_gold_pairs": 53,
+    "full_train_gold_pairs": 1351,
+    "full_validation_gold_pairs": 632,
+    "parameters": 25876,
+    "checkpoint_sha256": {
+      "initial_model.pt": "0bc8c9bdb05dc7503a9c8a68071c6def41d089dc9bacf2d63e47592374a9504a",
+      "best_model.pt": "7db541c148cd59608fbd232a9254b2473f4d46bcb886cead9c050baa1c2c0adb"
+    },
+    "selection_policy": "highest_full_gold_validation_pair_f1_then_lowest_validation_bce_then_earliest_epoch",
+    "validation_record_scores": [
+      {
+        "id": "RF00004:AAAA02007579.1/14294-14490",
+        "reference_pairs": 45,
+        "predicted_pairs": 29,
+        "shared_pairs": 0,
+        "pair_precision": 0.0,
+        "pair_recall": 0.0,
+        "pair_f1": 0.0,
+        "pair_jaccard": 0.0,
+        "base_pair_distance": 74
+      },
+      {
+        "id": "RF00004:AAAB01008933.1/737524-737331",
+        "reference_pairs": 45,
+        "predicted_pairs": 32,
+        "shared_pairs": 0,
+        "pair_precision": 0.0,
+        "pair_recall": 0.0,
+        "pair_f1": 0.0,
+        "pair_jaccard": 0.0,
+        "base_pair_distance": 77
+      },
+      {
+        "id": "RF00004:AABL01000318.1/11806-12005",
+        "reference_pairs": 45,
+        "predicted_pairs": 28,
+        "shared_pairs": 0,
+        "pair_precision": 0.0,
+        "pair_recall": 0.0,
+        "pair_f1": 0.0,
+        "pair_jaccard": 0.0,
+        "base_pair_distance": 73
+      },
+      {
+        "id": "RF00004:AABS01001062.1/345-536",
+        "reference_pairs": 45,
+        "predicted_pairs": 33,
+        "shared_pairs": 0,
+        "pair_precision": 0.0,
+        "pair_recall": 0.0,
+        "pair_f1": 0.0,
+        "pair_jaccard": 0.0,
+        "base_pair_distance": 78
+      },
+      {
+        "id": "RF00004:AABX02000002.1/241678-241484",
+        "reference_pairs": 45,
+        "predicted_pairs": 34,
+        "shared_pairs": 0,
+        "pair_precision": 0.0,
+        "pair_recall": 0.0,
+        "pair_f1": 0.0,
+        "pair_jaccard": 0.0,
+        "base_pair_distance": 79
+      },
+      {
+        "id": "RF00004:AACN010750078.1/657-848",
+        "reference_pairs": 45,
+        "predicted_pairs": 29,
+        "shared_pairs": 1,
+        "pair_precision": 0.034482758620689655,
+        "pair_recall": 0.022222222222222223,
+        "pair_f1": 0.02702702702702703,
+        "pair_jaccard": 0.0136986301369863,
+        "base_pair_distance": 72
+      },
+      {
+        "id": "RF00032:AAAB01008948.1/3301455-3301500",
+        "reference_pairs": 6,
+        "predicted_pairs": 12,
+        "shared_pairs": 5,
+        "pair_precision": 0.4166666666666667,
+        "pair_recall": 0.8333333333333334,
+        "pair_f1": 0.5555555555555556,
+        "pair_jaccard": 0.38461538461538464,
+        "base_pair_distance": 8
+      },
+      {
+        "id": "RF00032:AAAB01044800.1/486-531",
+        "reference_pairs": 6,
+        "predicted_pairs": 14,
+        "shared_pairs": 5,
+        "pair_precision": 0.35714285714285715,
+        "pair_recall": 0.8333333333333334,
+        "pair_f1": 0.5,
+        "pair_jaccard": 0.3333333333333333,
+        "base_pair_distance": 10
+      },
+      {
+        "id": "RF00032:AABL01000137.1/776-821",
+        "reference_pairs": 6,
+        "predicted_pairs": 14,
+        "shared_pairs": 6,
+        "pair_precision": 0.42857142857142855,
+        "pair_recall": 1.0,
+        "pair_f1": 0.6,
+        "pair_jaccard": 0.42857142857142855,
+        "base_pair_distance": 8
+      },
+      {
+        "id": "RF00032:AABS01000176.1/158056-158011",
+        "reference_pairs": 6,
+        "predicted_pairs": 14,
+        "shared_pairs": 5,
+        "pair_precision": 0.35714285714285715,
+        "pair_recall": 0.8333333333333334,
+        "pair_f1": 0.5,
+        "pair_jaccard": 0.3333333333333333,
+        "base_pair_distance": 10
+      },
+      {
+        "id": "RF00032:AAEE01000003.1/1110682-1110637",
+        "reference_pairs": 6,
+        "predicted_pairs": 16,
+        "shared_pairs": 6,
+        "pair_precision": 0.375,
+        "pair_recall": 1.0,
+        "pair_f1": 0.5454545454545454,
+        "pair_jaccard": 0.375,
+        "base_pair_distance": 10
+      },
+      {
+        "id": "RF00032:AAEE01000004.1/565730-565685",
+        "reference_pairs": 6,
+        "predicted_pairs": 15,
+        "shared_pairs": 6,
+        "pair_precision": 0.4,
+        "pair_recall": 1.0,
+        "pair_f1": 0.5714285714285714,
+        "pair_jaccard": 0.4,
+        "base_pair_distance": 9
+      },
+      {
+        "id": "RF00032:AAFD02000019.1/418583-418538",
+        "reference_pairs": 6,
+        "predicted_pairs": 14,
+        "shared_pairs": 5,
+        "pair_precision": 0.35714285714285715,
+        "pair_recall": 0.8333333333333334,
+        "pair_f1": 0.5,
+        "pair_jaccard": 0.3333333333333333,
+        "base_pair_distance": 10
+      },
+      {
+        "id": "RF00032:AAFD02000019.1/419847-419892",
+        "reference_pairs": 6,
+        "predicted_pairs": 14,
+        "shared_pairs": 5,
+        "pair_precision": 0.35714285714285715,
+        "pair_recall": 0.8333333333333334,
+        "pair_f1": 0.5,
+        "pair_jaccard": 0.3333333333333333,
+        "base_pair_distance": 10
+      },
+      {
+        "id": "RF00027:AACT01004141.1/13602-13519",
+        "reference_pairs": 32,
+        "predicted_pairs": 26,
+        "shared_pairs": 17,
+        "pair_precision": 0.6538461538461539,
+        "pair_recall": 0.53125,
+        "pair_f1": 0.5862068965517241,
+        "pair_jaccard": 0.4146341463414634,
+        "base_pair_distance": 24
+      },
+      {
+        "id": "RF00027:AAFR03057393.1/4201-4115",
+        "reference_pairs": 32,
+        "predicted_pairs": 28,
+        "shared_pairs": 24,
+        "pair_precision": 0.8571428571428571,
+        "pair_recall": 0.75,
+        "pair_f1": 0.8,
+        "pair_jaccard": 0.6666666666666666,
+        "base_pair_distance": 12
+      },
+      {
+        "id": "RF00027:AAGD02006482.1/22892-22821",
+        "reference_pairs": 32,
+        "predicted_pairs": 28,
+        "shared_pairs": 22,
+        "pair_precision": 0.7857142857142857,
+        "pair_recall": 0.6875,
+        "pair_f1": 0.7333333333333333,
+        "pair_jaccard": 0.5789473684210527,
+        "base_pair_distance": 16
+      },
+      {
+        "id": "RF00027:AAIY01003579.1/1841-1762",
+        "reference_pairs": 32,
+        "predicted_pairs": 27,
+        "shared_pairs": 24,
+        "pair_precision": 0.8888888888888888,
+        "pair_recall": 0.75,
+        "pair_f1": 0.8135593220338984,
+        "pair_jaccard": 0.6857142857142857,
+        "base_pair_distance": 11
+      },
+      {
+        "id": "RF00027:AAJJ01000960.1/12168-12093",
+        "reference_pairs": 32,
+        "predicted_pairs": 27,
+        "shared_pairs": 19,
+        "pair_precision": 0.7037037037037037,
+        "pair_recall": 0.59375,
+        "pair_f1": 0.6440677966101694,
+        "pair_jaccard": 0.475,
+        "base_pair_distance": 21
+      },
+      {
+        "id": "RF00027:AAKN02054092.1/95811-95899",
+        "reference_pairs": 32,
+        "predicted_pairs": 30,
+        "shared_pairs": 23,
+        "pair_precision": 0.7666666666666667,
+        "pair_recall": 0.71875,
+        "pair_f1": 0.7419354838709677,
+        "pair_jaccard": 0.5897435897435898,
+        "base_pair_distance": 16
+      },
+      {
+        "id": "RF00028:M86534.1/28-414",
+        "reference_pairs": 61,
+        "predicted_pairs": 47,
+        "shared_pairs": 0,
+        "pair_precision": 0.0,
+        "pair_recall": 0.0,
+        "pair_f1": 0.0,
+        "pair_jaccard": 0.0,
+        "base_pair_distance": 108
+      },
+      {
+        "id": "RF00028:V01416.1/43-384",
+        "reference_pairs": 61,
+        "predicted_pairs": 48,
+        "shared_pairs": 0,
+        "pair_precision": 0.0,
+        "pair_recall": 0.0,
+        "pair_f1": 0.0,
+        "pair_jaccard": 0.0,
+        "base_pair_distance": 109
+      }
+    ]
+  },
+  "exposure_events": [
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/stack_seed1729/exposures/20261016T012956.175665Z.json",
+      "sha256": "be071e3ce4aa56a8325d0a3af1e4c3ca3a3001513b8eba7d2ae377c233b2d0fe",
+      "stage": "training_started"
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/stack_seed1729/exposures/20261016T012956.182259Z.json",
+      "sha256": "36dd78eae6d1b5ae1464356390a4cb20a2096b6a87c5be2d70f890c16d1d31ac",
+      "stage": "validation_started"
+    }
+  ],
+  "predictions_sha256": "dcdd0a68a104726fe49292afc20fc94ae2fb0da8addf7d1844422b1cc564b3df",
+  "test_evaluated": false,
+  "independent_test_claim": false
+}

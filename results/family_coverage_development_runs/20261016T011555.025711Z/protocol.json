@@ -1,0 +1,15 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/family_coverage_development_protocol_runs/20261016T011532.513995Z",
+  "source_sha256": "13b1064dd1186b4879a3fa7b03309bc23357fc264967898c1c4914e59235a371",
+  "extension_manifest_sha256": "e8637c4ab6bfbf06932462a344afca0d0fb9d60f92faa97b996db69268d093c3",
+  "snapshot_sha256": {
+    "config.json": "878903d0218c1ea3de380290a1fce4bb0bf4fa66c2cea41c49c1b33d1de2e178",
+    "policy.json": "6fa9d0b9b9b0b9bae9c97e6747996758b2eccc20637e1e1ec8d2d94525664a84",
+    "extension.json": "4d81a0903d8d87d1c08b58e53f06e7d33912a468ab7151b6cbe21c424d4b2208",
+    "exposure.json": "769c179101e450b22d567f1d0dd62db3af2ce29a75e298b55a798cb0a1a2897c",
+    "driver.py": "bc33b04c0db1b361e809816d0cb20433460fe3e569a603afd4df92e604aff46c"
+  },
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/derive_coverage_development_dataset.py": "bc33b04c0db1b361e809816d0cb20433460fe3e569a603afd4df92e604aff46c"
+  }
+}

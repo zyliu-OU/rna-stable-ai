@@ -1,0 +1,8 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/fresh_structure_metadata_runs/20261016T014534.347979Z",
+  "protocol_run": "/home/zyliu/Documents/rna-stable-ai/results/fresh_structure_metadata_protocol_runs/20261016T014530.555909Z",
+  "snapshot_sha256": {
+    "attempts.json": "52e5a66374b3b9982d36304766130b4d0d739f3815050fbd1ce821faab7aaf14",
+    "protocol.json": "81692964abb9f689a70d0a11a40e2a43654075ca703c761dc6aa4596a1bd4505"
+  }
+}

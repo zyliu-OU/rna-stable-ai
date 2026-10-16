@@ -1,0 +1,314 @@
+{
+  "untrained": [
+    {
+      "id": "RF00004:AAAA02007579.1/14294-14490",
+      "sequence": "AUACCUUUCUCGGCCUUUUGGCUAAGAUCAAGUGUAGUAUCUGUUCUUAUCAGUUUAAUAUCUGAUAUGUGGGCUAUGUGCCCACUUCGAUAUUAAAUUUAUUUUUUGUGGGGGAGGGUCCACCACAGUGGCUUGCCGCUGGGGCCCUCACGCGUCGCCCAGGCGUUGCACUGCUGCCCGGGCCUGGCGCACUCCAA",
+      "method": "untrained",
+      "status": "ok",
+      "structure": "....................................................................................................................................................................................................."
+    },
+    {
+      "id": "RF00004:AAAB01008933.1/737524-737331",
+      "sequence": "AUCGCUUCUCGGCCUAAAGGCUAAGAUCAAAGUGUAGUAUCUGUUCUUAUCAGCUUAACAUCUGAUAGCUCUCCCAUUGGGAGACGACAAAUGUUAAACUGAUUUUUGGAAAGAGGCGGAUCGUACGGGGCUUGCUCCACAUCCGCCACGGGUUGGCCCGGUAUUGCAGUACCGCCGGGAUCGGCCCAACUAAU",
+      "method": "untrained",
+      "status": "ok",
+      "structure": ".................................................................................................................................................................................................."
+    },
+    {
+      "id": "RF00004:AABL01000318.1/11806-12005",
+      "sequence": "ACCCCUUCUCGGCCUCUUGGCUAAGAUCAAUUUGUAGUACCUGUUCUUAUCAGCGUGAUAGCUGAUAUGGUCUCAAUUGAGACCUUAUCAAUUUUCACAUAAAUUUUUAAUAGGGGAAAGGAUCAUUUGAAGCUUGCUUCUUAUAGCCUUUCGCGCGUUGCCUUACCCUAGCACUAAUAGGUUUGUACAGUGCACCCUUA",
+      "method": "untrained",
+      "status": "ok",
+      "structure": "........................................................................................................................................................................................................"
+    },
+    {
+      "id": "RF00004:AABS01001062.1/345-536",
+      "sequence": "AUCGCUUCAAGGCUAUUUUAGCUGUGAUCAAGUGUAGUACCUGUUCUUCUCAGGUUGAAAUCUGAGACGGAAACGAUUCGUUUCCUCUAUAUUUCAUUCGGAUUUUUGAACACACGGAAGGUAAUGAAGCUUGCUUCUACUUGCUCCGGGUUGUCCUGGUUUUGCAUUAUCGCCAGGUUCGGCCCACGUUCC",
+      "method": "untrained",
+      "status": "ok",
+      "structure": "................................................................................................................................................................................................"
+    },
+    {
+      "id": "RF00004:AABX02000002.1/241678-241484",
+      "sequence": "UUAGCUCUCUUUGCCUUUUGGCUUAGAUCAAGUGUAGUAUCUGUUCUUUUCAGUUUAAUCUCUGAAACUGCUCUACGGAGUAGAAUCGUGAUUAUUCUAAUUUUUGCAACUCGGUCGGCAUCCCUCUGGGCUUGCCUAUGGUUGCCGACCACUGUGUCCCUGGUAUUACACUGCCUCCAGGCGACGCGAACUCAA",
+      "method": "untrained",
+      "status": "ok",
+      "structure": "..................................................................................................................................................................................................."
+    },
+    {
+      "id": "RF00004:AACN010750078.1/657-848",
+      "sequence": "AUCGCUUCUCGGCCUUUUGGCUAAGAUCAAGUGUAGUAUCUGUUCUUAUCAGUUUAAUAUCUGAUACGUCCUCUAUCCGAGGACAAUAUAUUAAAUGGAUUUUUGGAGCAGGGAGAUGGAAUAGGGAGCUUGCUCCGUCCACUCCGCGCAUCGACCUGGUAUUGCAGUACCUCCAGGAACGGUGCACCCCCU",
+      "method": "untrained",
+      "status": "ok",
+      "structure": "................................................................................................................................................................................................"
+    },
+    {
+      "id": "RF00032:AAAB01008948.1/3301455-3301500",
+      "sequence": "CAAACGGCCCUUUUCAGGGCCACCAAUUGUGUUGAAAAGAACUUAU",
+      "method": "untrained",
+      "status": "ok",
+      "structure": ".............................................."
+    },
+    {
+      "id": "RF00032:AAAB01044800.1/486-531",
+      "sequence": "CAAACGGUCCUUUUCAGGACCACAAUACAUUACUCAAGAGCUGUGU",
+      "method": "untrained",
+      "status": "ok",
+      "structure": ".............................................."
+    },
+    {
+      "id": "RF00032:AABL01000137.1/776-821",
+      "sequence": "UUUGAGGCUUCACUAGAAGCCAUUACUAGAUACUUACAAACAAUGU",
+      "method": "untrained",
+      "status": "ok",
+      "structure": ".............................................."
+    },
+    {
+      "id": "RF00032:AABS01000176.1/158056-158011",
+      "sequence": "AAAACGGCUCUUUUCAGAGCCACCUAUUUAUACAAAGAGAUGAAGU",
+      "method": "untrained",
+      "status": "ok",
+      "structure": ".............................................."
+    },
+    {
+      "id": "RF00032:AAEE01000003.1/1110682-1110637",
+      "sequence": "UGACAGGCGUUACUAGACGCCACAAAUAGUAUAUGUUGCUCUUUGG",
+      "method": "untrained",
+      "status": "ok",
+      "structure": ".............................................."
+    },
+    {
+      "id": "RF00032:AAEE01000004.1/565730-565685",
+      "sequence": "GAACAGGUGGCACUAGCCACCAUAAAUUUUGAGAUUAAAGUUUUAG",
+      "method": "untrained",
+      "status": "ok",
+      "structure": ".............................................."
+    },
+    {
+      "id": "RF00032:AAFD02000019.1/418583-418538",
+      "sequence": "ACACUGGAUUUUAUAAAAUCCACUCAUCAAUCAAAGAACUUCUUAU",
+      "method": "untrained",
+      "status": "ok",
+      "structure": ".............................................."
+    },
+    {
+      "id": "RF00032:AAFD02000019.1/419847-419892",
+      "sequence": "AAACUGGAUUUUCUAAAAUCCACCCACUUUCCAAAGAACUAAGAUU",
+      "method": "untrained",
+      "status": "ok",
+      "structure": ".............................................."
+    },
+    {
+      "id": "RF00027:AACT01004141.1/13602-13519",
+      "sequence": "AUAACAUGAGGUAGUAGGUUAUGCAGUUUGGCGACAAUAUUUCGUUGCAAAGGAGAUAACUGUGUAACUUGCUGGCUCUUUUAU",
+      "method": "untrained",
+      "status": "ok",
+      "structure": "...................................................................................."
+    },
+    {
+      "id": "RF00027:AAFR03057393.1/4201-4115",
+      "sequence": "GCGGGGUGAGGUAGUAGGUUGUGUGGUUUCAGGGUAGUGAUUUUGCCCCAAUCAGAAGAUAACUAUACAACCUACUGCCUUCCCUGA",
+      "method": "untrained",
+      "status": "ok",
+      "structure": "......................................................................................."
+    },
+    {
+      "id": "RF00027:AAGD02006482.1/22892-22821",
+      "sequence": "UCUGGUGAGGUAGUAGGUUGUAUAGUUUAGAAUCUUACCUUGGUGAACUAUGCAAGUUUCUACCUCACCAGA",
+      "method": "untrained",
+      "status": "ok",
+      "structure": "........................................................................"
+    },
+    {
+      "id": "RF00027:AAIY01003579.1/1841-1762",
+      "sequence": "GUAGGAUGAGGUAGUAGAUUGUAUAGUUGUAGGUCAUAACCCAUCUUGGAGAUAACUAUACAGUCUACUGUCUUUCCCAC",
+      "method": "untrained",
+      "status": "ok",
+      "structure": "................................................................................"
+    },
+    {
+      "id": "RF00027:AAJJ01000960.1/12168-12093",
+      "sequence": "UCUGUUUGAGGUAGUAGGUUGUAUAGUAAGUAUUACACCUAUUGGGAGUGCUGUACAGCCUGCUAACUUUCCCAGA",
+      "method": "untrained",
+      "status": "ok",
+      "structure": "............................................................................"
+    },
+    {
+      "id": "RF00027:AAKN02054092.1/95811-95899",
+      "sequence": "CUGGGGUGAGGUAGUAAGUUGUAUUGUUGUGGGGUAAGGAUUUAAGGCCCCAUUAAGAAGAUAACUAUACGACUUACUACUUUCCCUGG",
+      "method": "untrained",
+      "status": "ok",
+      "structure": "........................................................................................."
+    },
+    {
+      "id": "RF00028:M86534.1/28-414",
+      "sequence": "UAACAAGGUUUUUUAUUGGUUCUUCUGCAGUGCGCCAAAGGAAGCCUUAGCAGCCUGAAAGGGUGUAUCUCCGCGACUAUAAAUAAAAAGGGGAUUUUAAAUGCUAGUCUGAUAAAAAAAGGCGACAUUGCCAAAUUGCGGGAAGUCCCUAAAGAUUCAACUACUAAGCAGCUUGUGGAAACACAGUUGUGGCCGAGUUAAUAGCCCUGGGUAUAGUAACAAUGUUGAAUAUGACUCUUAAUUGAGGAAAUGGGUGAUCCGCAGCCAAAUCCUAAGGACAUUUUAUUGUCUAUGGAUGCAGUUCACAGGCCAGAUGGCAAUGGGUAUCCUAGUGGGAUAUAUAUAUAUGGAUGCUUAAGAUAUGGUCGAGCUUCUCUCGAAAGAGAG",
+      "method": "untrained",
+      "status": "ok",
+      "structure": "..................................................................................................................................................................................................................................................................................................................................................................................................."
+    },
+    {
+      "id": "RF00028:V01416.1/43-384",
+      "sequence": "AUGACUCUCUAAAUAGCAAUAUUUACCUUUGGAGGGAAAAGUUAUCAGGCAUGCACCUGGUAGCUAGUCUUUAAACCAAUAGAUUGCAUCGGUUUAAAAGGCAAGACCGUCAAAUUGCGGGAAAGGGGUCAACAGCCGUUCAGUACCAAGUCUCAGGGGAAACUUUGAGAUGGCCUUGCAAAGGGUAUGGUAAUAAGCUGACGGACAUGGUCCUAACCACGCAGCCAAGUCCUAAGUCAACAGAUCUUCUGUUGAUAUGGAUGCAGUUCACAGACUAAAUGUCGGUCGGGGAAGAUGUAUUCUUCUCAUAAGAUAUAGUCGGACCUCUCCUUAAUGGGAGCU",
+      "method": "untrained",
+      "status": "ok",
+      "structure": "......................................................................................................................................................................................................................................................................................................................................................"
+    }
+  ],
+  "trained": [
+    {
+      "id": "RF00004:AAAA02007579.1/14294-14490",
+      "sequence": "AUACCUUUCUCGGCCUUUUGGCUAAGAUCAAGUGUAGUAUCUGUUCUUAUCAGUUUAAUAUCUGAUAUGUGGGCUAUGUGCCCACUUCGAUAUUAAAUUUAUUUUUUGUGGGGGAGGGUCCACCACAGUGGCUUGCCGCUGGGGCCCUCACGCGUCGCCCAGGCGUUGCACUGCUGCCCGGGCCUGGCGCACUCCAA",
+      "method": "trained",
+      "status": "ok",
+      "structure": ".((...)(((((((((...))(((..(((.((.((..(...................).))))))).))(((((.(.((....).....(.((...))).(....)(((.(.(......)))).)((..((((((((((((((...)))).)))..)..)))))(...).))))))))))))).))).).).....)"
+    },
+    {
+      "id": "RF00004:AAAB01008933.1/737524-737331",
+      "sequence": "AUCGCUUCUCGGCCUAAAGGCUAAGAUCAAAGUGUAGUAUCUGUUCUUAUCAGCUUAACAUCUGAUAGCUCUCCCAUUGGGAGACGACAAAUGUUAAACUGAUUUUUGGAAAGAGGCGGAUCGUACGGGGCUUGCUCCACAUCCGCCACGGGUUGGCCCGGUAUUGCAGUACCGCCGGGAUCGGCCCAACUAAU",
+      "method": "trained",
+      "status": "ok",
+      "structure": "(((((((((.((((....)))).)))((((.(((.........(.............))).))..).((((.((....))))).)))(((((.....).)..))........)).)))((..((..((.(....).))))((.(..(..(((....))))).))).))(...)(((.(...))).)....)..."
+    },
+    {
+      "id": "RF00004:AABL01000318.1/11806-12005",
+      "sequence": "ACCCCUUCUCGGCCUCUUGGCUAAGAUCAAUUUGUAGUACCUGUUCUUAUCAGCGUGAUAGCUGAUAUGGUCUCAAUUGAGACCUUAUCAAUUUUCACAUAAAUUUUUAAUAGGGGAAAGGAUCAUUUGAAGCUUGCUUCUUAUAGCCUUUCGCGCGUUGCCUUACCCUAGCACUAAUAGGUUUGUACAGUGCACCCUUA",
+      "method": "trained",
+      "status": "ok",
+      "structure": "(.((((((((((...).)))....(((.((((....).)....)..).)))(((.(...)))))).((((((((....))))....................(....)((.(.(((.......).((..(.....(...)).).).))))))((........(.(...)))).)..)))))((...).)))(...)...."
+    },
+    {
+      "id": "RF00004:AABS01001062.1/345-536",
+      "sequence": "AUCGCUUCAAGGCUAUUUUAGCUGUGAUCAAGUGUAGUACCUGUUCUUCUCAGGUUGAAAUCUGAGACGGAAACGAUUCGUUUCCUCUAUAUUUCAUUCGGAUUUUUGAACACACGGAAGGUAAUGAAGCUUGCUUCUACUUGCUCCGGGUUGUCCUGGUUUUGCAUUAUCGCCAGGUUCGGCCCACGUUCC",
+      "method": "trained",
+      "status": "ok",
+      "structure": "((((((.(((.((((...)))))((((.(.((.(.....)))).)).(.(((...))))).))))).))(...)(..(.............(...)..(........)).)(.((....).).((((((.......).((..((.(...)..)..)..))))..))))))((((.(...))))....)...."
+    },
+    {
+      "id": "RF00004:AABX02000002.1/241678-241484",
+      "sequence": "UUAGCUCUCUUUGCCUUUUGGCUUAGAUCAAGUGUAGUAUCUGUUCUUUUCAGUUUAAUCUCUGAAACUGCUCUACGGAGUAGAAUCGUGAUUAUUCUAAUUUUUGCAACUCGGUCGGCAUCCCUCUGGGCUUGCCUAUGGUUGCCGACCACUGUGUCCCUGGUAUUACACUGCCUCCAGGCGACGCGAACUCAA",
+      "method": "trained",
+      "status": "ok",
+      "structure": ".(.(.(.(.((((((....)))..)))((.((...(......(.(...........)..)))))))))((((((.(((((..(.(..((((((.....))).....).)))(((..(......)(..(((....))((((((.....)))((.(...)...).))).))))))))))).)).)).)).)....)."
+    },
+    {
+      "id": "RF00004:AACN010750078.1/657-848",
+      "sequence": "AUCGCUUCUCGGCCUUUUGGCUAAGAUCAAGUGUAGUAUCUGUUCUUAUCAGUUUAAUAUCUGAUACGUCCUCUAUCCGAGGACAAUAUAUUAAAUGGAUUUUUGGAGCAGGGAGAUGGAAUAGGGAGCUUGCUCCGUCCACUCCGCGCAUCGACCUGGUAUUGCAGUACCUCCAGGAACGGUGCACCCCCU",
+      "method": "trained",
+      "status": "ok",
+      "structure": "(((((((((.((((....))))).))..).)))((......(.(..............).)))))(((((((((.....(.....((.(...)).)..(...))(...)))...(..(((((((((.(.(.(...)).))..(.((.....)))))...)))).)((...)))))))).).))(...)...."
+    },
+    {
+      "id": "RF00032:AAAB01008948.1/3301455-3301500",
+      "sequence": "CAAACGGCCCUUUUCAGGGCCACCAAUUGUGUUGAAAAGAACUUAU",
+      "method": "trained",
+      "status": "ok",
+      "structure": "(((.(((((((....)))))((.....)))))))............"
+    },
+    {
+      "id": "RF00032:AAAB01044800.1/486-531",
+      "sequence": "CAAACGGUCCUUUUCAGGACCACAAUACAUUACUCAAGAGCUGUGU",
+      "method": "trained",
+      "status": "ok",
+      "structure": "((..(((((((....))))))((..(.(.((....))))).))))."
+    },
+    {
+      "id": "RF00032:AABL01000137.1/776-821",
+      "sequence": "UUUGAGGCUUCACUAGAAGCCAUUACUAGAUACUUACAAACAAUGU",
+      "method": "trained",
+      "status": "ok",
+      "structure": "(((((((((((....)))))).)..)(((...)).).).).)...."
+    },
+    {
+      "id": "RF00032:AABS01000176.1/158056-158011",
+      "sequence": "AAAACGGCUCUUUUCAGAGCCACCUAUUUAUACAAAGAGAUGAAGU",
+      "method": "trained",
+      "status": "ok",
+      "structure": "((((.((((((....))))))...).)))((.(...)).......)"
+    },
+    {
+      "id": "RF00032:AAEE01000003.1/1110682-1110637",
+      "sequence": "UGACAGGCGUUACUAGACGCCACAAAUAGUAUAUGUUGCUCUUUGG",
+      "method": "trained",
+      "status": "ok",
+      "structure": "(((((((((((...).)))))((..(((...))))))).))....)"
+    },
+    {
+      "id": "RF00032:AAEE01000004.1/565730-565685",
+      "sequence": "GAACAGGUGGCACUAGCCACCAUAAAUUUUGAGAUUAAAGUUUUAG",
+      "method": "trained",
+      "status": "ok",
+      "structure": "(((((((((((....))))))(.(...))))...)).....)...."
+    },
+    {
+      "id": "RF00032:AAFD02000019.1/418583-418538",
+      "sequence": "ACACUGGAUUUUAUAAAAUCCACUCAUCAAUCAAAGAACUUCUUAU",
+      "method": "trained",
+      "status": "ok",
+      "structure": "..(............(((...(.(..((..(...)))).)).)).)"
+    },
+    {
+      "id": "RF00032:AAFD02000019.1/419847-419892",
+      "sequence": "AAACUGGAUUUUCUAAAAUCCACCCACUUUCCAAAGAACUAAGAUU",
+      "method": "trained",
+      "status": "ok",
+      "structure": ".....(((((.(...))))))((..((((...).))...)..)..)"
+    },
+    {
+      "id": "RF00027:AACT01004141.1/13602-13519",
+      "sequence": "AUAACAUGAGGUAGUAGGUUAUGCAGUUUGGCGACAAUAUUUCGUUGCAAAGGAGAUAACUGUGUAACUUGCUGGCUCUUUUAU",
+      "method": "trained",
+      "status": "ok",
+      "structure": "(((...))((((((((((((((.((((((((...)(...)).(.(..(....)))).))))).))))))))))).)).)..).."
+    },
+    {
+      "id": "RF00027:AAFR03057393.1/4201-4115",
+      "sequence": "GCGGGGUGAGGUAGUAGGUUGUGUGGUUUCAGGGUAGUGAUUUUGCCCCAAUCAGAAGAUAACUAUACAACCUACUGCCUUCCCUGA",
+      "method": "trained",
+      "status": "ok",
+      "structure": "(((...))((((((((((((((.(((((((...).)...)....)))..(.........)....).)))))))))))))))(...)."
+    },
+    {
+      "id": "RF00027:AAGD02006482.1/22892-22821",
+      "sequence": "UCUGGUGAGGUAGUAGGUUGUAUAGUUUAGAAUCUUACCUUGGUGAACUAUGCAAGUUUCUACCUCACCAGA",
+      "method": "trained",
+      "status": "ok",
+      "structure": "((((((((((((((((((...(..(((...)).)).))))(....)))))).)(...))).)))..)...))"
+    },
+    {
+      "id": "RF00027:AAIY01003579.1/1841-1762",
+      "sequence": "GUAGGAUGAGGUAGUAGAUUGUAUAGUUGUAGGUCAUAACCCAUCUUGGAGAUAACUAUACAGUCUACUGUCUUUCCCAC",
+      "method": "trained",
+      "status": "ok",
+      "structure": "(((((((.((.((((.((.(....((((((...(...)))(((...))..)..)))))).))..))))))))))....))"
+    },
+    {
+      "id": "RF00027:AAJJ01000960.1/12168-12093",
+      "sequence": "UCUGUUUGAGGUAGUAGGUUGUAUAGUAAGUAUUACACCUAUUGGGAGUGCUGUACAGCCUGCUAACUUUCCCAGA",
+      "method": "trained",
+      "status": "ok",
+      "structure": "(((((((.(((((.(((((......((((...))))))))))(.(...((...)))))))))..)))......)))"
+    },
+    {
+      "id": "RF00027:AAKN02054092.1/95811-95899",
+      "sequence": "CUGGGGUGAGGUAGUAAGUUGUAUUGUUGUGGGGUAAGGAUUUAAGGCCCCAUUAAGAAGAUAACUAUACGACUUACUACUUUCCCUGG",
+      "method": "trained",
+      "status": "ok",
+      "structure": "(((((((.((.(((((...)(((.((((((((.((((....)))...))).......)...)))).)))).))).)))))).))...))"
+    },
+    {
+      "id": "RF00028:M86534.1/28-414",
+      "sequence": "UAACAAGGUUUUUUAUUGGUUCUUCUGCAGUGCGCCAAAGGAAGCCUUAGCAGCCUGAAAGGGUGUAUCUCCGCGACUAUAAAUAAAAAGGGGAUUUUAAAUGCUAGUCUGAUAAAAAAAGGCGACAUUGCCAAAUUGCGGGAAGUCCCUAAAGAUUCAACUACUAAGCAGCUUGUGGAAACACAGUUGUGGCCGAGUUAAUAGCCCUGGGUAUAGUAACAAUGUUGAAUAUGACUCUUAAUUGAGGAAAUGGGUGAUCCGCAGCCAAAUCCUAAGGACAUUUUAUUGUCUAUGGAUGCAGUUCACAGGCCAGAUGGCAAUGGGUAUCCUAGUGGGAUAUAUAUAUAUGGAUGCUUAAGAUAUGGUCGAGCUUCUCUCGAAAGAGAG",
+      "method": "trained",
+      "status": "ok",
+      "structure": ".(.................).((((((((((((.(..((((...))))(.((((.((......(((((.((...)..........))(.(...........(..(.........))(.(.(((.(...))(((...))..)(....))))...........).))...(.....))....)))))))))))).).)(.(...).).)).).....((................)).).......).)))(....))(.(((...)..........(.(..........)).....(.....).(((......).)))(.((..((.(..(..............).)......(....))))))))((((...)))((....))).."
+    },
+    {
+      "id": "RF00028:V01416.1/43-384",
+      "sequence": "AUGACUCUCUAAAUAGCAAUAUUUACCUUUGGAGGGAAAAGUUAUCAGGCAUGCACCUGGUAGCUAGUCUUUAAACCAAUAGAUUGCAUCGGUUUAAAAGGCAAGACCGUCAAAUUGCGGGAAAGGGGUCAACAGCCGUUCAGUACCAAGUCUCAGGGGAAACUUUGAGAUGGCCUUGCAAAGGGUAUGGUAAUAAGCUGACGGACAUGGUCCUAACCACGCAGCCAAGUCCUAAGUCAACAGAUCUUCUGUUGAUAUGGAUGCAGUUCACAGACUAAAUGUCGGUCGGGGAAGAUGUAUUCUUCUCAUAAGAUAUAGUCGGACCUCUCCUUAAUGGGAGCU",
+      "method": "trained",
+      "status": "ok",
+      "structure": "...(.(..(......).....(((.((((((.(...(....))((((....)).).(.(((.(......(..(......)..)...).((..(.....).).))..))))))))..)..)..))(((((((((....)))..).)))((((((......)...((.((...(((((..((.....)...)(...)))..)(.........))))...)(.((......)..))).......))).))(...........(...))..)).)).).)(..(.(((((............(...).............).)))))(((((....)..))).).)"
+    }
+  ]
+}

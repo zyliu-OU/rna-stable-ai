@@ -1,0 +1,462 @@
+[
+  {
+    "family_id": "RF00061",
+    "filename": "RF00061.json",
+    "url": "https://rfam.org/family/RF00061?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00066",
+    "filename": "RF00066.json",
+    "url": "https://rfam.org/family/RF00066?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00075",
+    "filename": "RF00075.json",
+    "url": "https://rfam.org/family/RF00075?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00080",
+    "filename": "RF00080.json",
+    "url": "https://rfam.org/family/RF00080?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00083",
+    "filename": "RF00083.json",
+    "url": "https://rfam.org/family/RF00083?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00100",
+    "filename": "RF00100.json",
+    "url": "https://rfam.org/family/RF00100?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00102",
+    "filename": "RF00102.json",
+    "url": "https://rfam.org/family/RF00102?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00114",
+    "filename": "RF00114.json",
+    "url": "https://rfam.org/family/RF00114?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00128",
+    "filename": "RF00128.json",
+    "url": "https://rfam.org/family/RF00128?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00164",
+    "filename": "RF00164.json",
+    "url": "https://rfam.org/family/RF00164?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00166",
+    "filename": "RF00166.json",
+    "url": "https://rfam.org/family/RF00166?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00177",
+    "filename": "RF00177.json",
+    "url": "https://rfam.org/family/RF00177?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00185",
+    "filename": "RF00185.json",
+    "url": "https://rfam.org/family/RF00185?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00207",
+    "filename": "RF00207.json",
+    "url": "https://rfam.org/family/RF00207?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00209",
+    "filename": "RF00209.json",
+    "url": "https://rfam.org/family/RF00209?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00210",
+    "filename": "RF00210.json",
+    "url": "https://rfam.org/family/RF00210?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00228",
+    "filename": "RF00228.json",
+    "url": "https://rfam.org/family/RF00228?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00233",
+    "filename": "RF00233.json",
+    "url": "https://rfam.org/family/RF00233?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00240",
+    "filename": "RF00240.json",
+    "url": "https://rfam.org/family/RF00240?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00250",
+    "filename": "RF00250.json",
+    "url": "https://rfam.org/family/RF00250?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00254",
+    "filename": "RF00254.json",
+    "url": "https://rfam.org/family/RF00254?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00373",
+    "filename": "RF00373.json",
+    "url": "https://rfam.org/family/RF00373?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00375",
+    "filename": "RF00375.json",
+    "url": "https://rfam.org/family/RF00375?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00382",
+    "filename": "RF00382.json",
+    "url": "https://rfam.org/family/RF00382?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00386",
+    "filename": "RF00386.json",
+    "url": "https://rfam.org/family/RF00386?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00390",
+    "filename": "RF00390.json",
+    "url": "https://rfam.org/family/RF00390?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00455",
+    "filename": "RF00455.json",
+    "url": "https://rfam.org/family/RF00455?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00458",
+    "filename": "RF00458.json",
+    "url": "https://rfam.org/family/RF00458?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00480",
+    "filename": "RF00480.json",
+    "url": "https://rfam.org/family/RF00480?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00488",
+    "filename": "RF00488.json",
+    "url": "https://rfam.org/family/RF00488?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00500",
+    "filename": "RF00500.json",
+    "url": "https://rfam.org/family/RF00500?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00505",
+    "filename": "RF00505.json",
+    "url": "https://rfam.org/family/RF00505?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00507",
+    "filename": "RF00507.json",
+    "url": "https://rfam.org/family/RF00507?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00525",
+    "filename": "RF00525.json",
+    "url": "https://rfam.org/family/RF00525?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00619",
+    "filename": "RF00619.json",
+    "url": "https://rfam.org/family/RF00619?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00620",
+    "filename": "RF00620.json",
+    "url": "https://rfam.org/family/RF00620?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00622",
+    "filename": "RF00622.json",
+    "url": "https://rfam.org/family/RF00622?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00634",
+    "filename": "RF00634.json",
+    "url": "https://rfam.org/family/RF00634?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00661",
+    "filename": "RF00661.json",
+    "url": "https://rfam.org/family/RF00661?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF00957",
+    "filename": "RF00957.json",
+    "url": "https://rfam.org/family/RF00957?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01047",
+    "filename": "RF01047.json",
+    "url": "https://rfam.org/family/RF01047?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01073",
+    "filename": "RF01073.json",
+    "url": "https://rfam.org/family/RF01073?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01084",
+    "filename": "RF01084.json",
+    "url": "https://rfam.org/family/RF01084?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01317",
+    "filename": "RF01317.json",
+    "url": "https://rfam.org/family/RF01317?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01330",
+    "filename": "RF01330.json",
+    "url": "https://rfam.org/family/RF01330?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01344",
+    "filename": "RF01344.json",
+    "url": "https://rfam.org/family/RF01344?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01380",
+    "filename": "RF01380.json",
+    "url": "https://rfam.org/family/RF01380?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01381",
+    "filename": "RF01381.json",
+    "url": "https://rfam.org/family/RF01381?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01415",
+    "filename": "RF01415.json",
+    "url": "https://rfam.org/family/RF01415?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01510",
+    "filename": "RF01510.json",
+    "url": "https://rfam.org/family/RF01510?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01689",
+    "filename": "RF01689.json",
+    "url": "https://rfam.org/family/RF01689?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01704",
+    "filename": "RF01704.json",
+    "url": "https://rfam.org/family/RF01704?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01725",
+    "filename": "RF01725.json",
+    "url": "https://rfam.org/family/RF01725?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01727",
+    "filename": "RF01727.json",
+    "url": "https://rfam.org/family/RF01727?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01734",
+    "filename": "RF01734.json",
+    "url": "https://rfam.org/family/RF01734?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01763",
+    "filename": "RF01763.json",
+    "url": "https://rfam.org/family/RF01763?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01807",
+    "filename": "RF01807.json",
+    "url": "https://rfam.org/family/RF01807?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01826",
+    "filename": "RF01826.json",
+    "url": "https://rfam.org/family/RF01826?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01831",
+    "filename": "RF01831.json",
+    "url": "https://rfam.org/family/RF01831?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01846",
+    "filename": "RF01846.json",
+    "url": "https://rfam.org/family/RF01846?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01848",
+    "filename": "RF01848.json",
+    "url": "https://rfam.org/family/RF01848?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01852",
+    "filename": "RF01852.json",
+    "url": "https://rfam.org/family/RF01852?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01854",
+    "filename": "RF01854.json",
+    "url": "https://rfam.org/family/RF01854?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01856",
+    "filename": "RF01856.json",
+    "url": "https://rfam.org/family/RF01856?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01857",
+    "filename": "RF01857.json",
+    "url": "https://rfam.org/family/RF01857?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01959",
+    "filename": "RF01959.json",
+    "url": "https://rfam.org/family/RF01959?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01960",
+    "filename": "RF01960.json",
+    "url": "https://rfam.org/family/RF01960?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF01998",
+    "filename": "RF01998.json",
+    "url": "https://rfam.org/family/RF01998?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02001",
+    "filename": "RF02001.json",
+    "url": "https://rfam.org/family/RF02001?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02012",
+    "filename": "RF02012.json",
+    "url": "https://rfam.org/family/RF02012?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02095",
+    "filename": "RF02095.json",
+    "url": "https://rfam.org/family/RF02095?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02253",
+    "filename": "RF02253.json",
+    "url": "https://rfam.org/family/RF02253?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02340",
+    "filename": "RF02340.json",
+    "url": "https://rfam.org/family/RF02340?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02348",
+    "filename": "RF02348.json",
+    "url": "https://rfam.org/family/RF02348?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02359",
+    "filename": "RF02359.json",
+    "url": "https://rfam.org/family/RF02359?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02519",
+    "filename": "RF02519.json",
+    "url": "https://rfam.org/family/RF02519?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02521",
+    "filename": "RF02521.json",
+    "url": "https://rfam.org/family/RF02521?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02542",
+    "filename": "RF02542.json",
+    "url": "https://rfam.org/family/RF02542?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02545",
+    "filename": "RF02545.json",
+    "url": "https://rfam.org/family/RF02545?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02546",
+    "filename": "RF02546.json",
+    "url": "https://rfam.org/family/RF02546?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02553",
+    "filename": "RF02553.json",
+    "url": "https://rfam.org/family/RF02553?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02678",
+    "filename": "RF02678.json",
+    "url": "https://rfam.org/family/RF02678?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02679",
+    "filename": "RF02679.json",
+    "url": "https://rfam.org/family/RF02679?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02680",
+    "filename": "RF02680.json",
+    "url": "https://rfam.org/family/RF02680?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02681",
+    "filename": "RF02681.json",
+    "url": "https://rfam.org/family/RF02681?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02683",
+    "filename": "RF02683.json",
+    "url": "https://rfam.org/family/RF02683?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02796",
+    "filename": "RF02796.json",
+    "url": "https://rfam.org/family/RF02796?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF02977",
+    "filename": "RF02977.json",
+    "url": "https://rfam.org/family/RF02977?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF03013",
+    "filename": "RF03013.json",
+    "url": "https://rfam.org/family/RF03013?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF03054",
+    "filename": "RF03054.json",
+    "url": "https://rfam.org/family/RF03054?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF04190",
+    "filename": "RF04190.json",
+    "url": "https://rfam.org/family/RF04190?content-type=application%2Fjson"
+  },
+  {
+    "family_id": "RF04222",
+    "filename": "RF04222.json",
+    "url": "https://rfam.org/family/RF04222?content-type=application%2Fjson"
+  }
+]

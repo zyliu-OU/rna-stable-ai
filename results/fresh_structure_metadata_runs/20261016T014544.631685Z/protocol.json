@@ -1,0 +1,13 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/fresh_structure_metadata_protocol_runs/20261016T014530.555909Z",
+  "source_inventory_sha256": "d1287fce6955ca088d4fc66807ba3c51c062323f507d30e4ad8a6b6a009b15fc",
+  "snapshot_sha256": {
+    "inventory.json": "d1287fce6955ca088d4fc66807ba3c51c062323f507d30e4ad8a6b6a009b15fc",
+    "requests.json": "1727f1103aee022180b7eee6ac1add7fca0311c525d15536981491b5f113f0ad"
+  },
+  "maximum_metadata_bytes": 2097152,
+  "metadata_timeout_seconds": 30,
+  "metadata_release": "15.1",
+  "structure_labels_allowed": false,
+  "model_inference_allowed": false
+}

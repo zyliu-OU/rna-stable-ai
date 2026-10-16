@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "stage": "development_label_informed_coverage_selection",
+  "source_family": "RF00022",
+  "observed_failure": "seven_fixed_sequence_first_candidates_lacked_complete_consensus_pairs",
+  "candidate_order": "complete_coverage_then_lexicographic_sequence_id",
+  "sequence_screen": "frozen_prior_exposure_and_selected_sequences_at_0.8",
+  "candidate_cap": 12,
+  "retain_prior_failed_runs": true,
+  "source_retrieval": "already_hash_bound_in_extension_run",
+  "new_downloads": false,
+  "development_only": true,
+  "independent_test_claim": false,
+  "model_training_performed": false
+}

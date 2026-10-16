@@ -1,0 +1,369 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed20261015",
+  "head": "baseline",
+  "seed": 20261015,
+  "config": {
+    "mode": "family_coverage_development_only",
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse",
+    "seed": 20261015
+  },
+  "manifest_sha256": "87afa4b2154a78d384fc2bbe29d2827d85022bb9903c5945891d5f5fbc39ac4e",
+  "train_records": 61,
+  "validation_records": 22,
+  "training": {
+    "history": [
+      {
+        "epoch": 1,
+        "mean_train_loss": 1.8526116844083442,
+        "validation_mean_full_pair_f1": 0.22186166308803285,
+        "mean_validation_loss": 2.0549550273201684
+      },
+      {
+        "epoch": 2,
+        "mean_train_loss": 1.641732554943835,
+        "validation_mean_full_pair_f1": 0.28426850011185184,
+        "mean_validation_loss": 1.9489518810402264
+      },
+      {
+        "epoch": 3,
+        "mean_train_loss": 1.5014172821748453,
+        "validation_mean_full_pair_f1": 0.24139325813700524,
+        "mean_validation_loss": 1.981817370111292
+      },
+      {
+        "epoch": 4,
+        "mean_train_loss": 1.4068446706552975,
+        "validation_mean_full_pair_f1": 0.2845424192893316,
+        "mean_validation_loss": 1.982112461870367
+      },
+      {
+        "epoch": 5,
+        "mean_train_loss": 1.3334068128320038,
+        "validation_mean_full_pair_f1": 0.24303685893743407,
+        "mean_validation_loss": 2.238103460181843
+      },
+      {
+        "epoch": 6,
+        "mean_train_loss": 1.2187599686325574,
+        "validation_mean_full_pair_f1": 0.2162169740133513,
+        "mean_validation_loss": 2.396056494929574
+      },
+      {
+        "epoch": 7,
+        "mean_train_loss": 1.093209237348838,
+        "validation_mean_full_pair_f1": 0.1135105720029883,
+        "mean_validation_loss": 2.30759534239769
+      },
+      {
+        "epoch": 8,
+        "mean_train_loss": 1.0003180694384652,
+        "validation_mean_full_pair_f1": 0.18723249334345102,
+        "mean_validation_loss": 2.4212010475722225
+      },
+      {
+        "epoch": 9,
+        "mean_train_loss": 0.8855881265929488,
+        "validation_mean_full_pair_f1": 0.17450542598033938,
+        "mean_validation_loss": 2.277610857378353
+      },
+      {
+        "epoch": 10,
+        "mean_train_loss": 0.8269474633404466,
+        "validation_mean_full_pair_f1": 0.074742654690077,
+        "mean_validation_loss": 2.969554361971942
+      }
+    ],
+    "selected_epoch": 4,
+    "initial_validation_full_pair_f1": 0.0,
+    "selected_validation_full_pair_f1": 0.2845424192893316,
+    "train_positive_pairs": 1235,
+    "train_negative_pairs": 216942,
+    "train_only_positive_weight": 175.66153846153847,
+    "unlearnable_train_gold_pairs": 116,
+    "unlearnable_validation_gold_pairs": 53,
+    "full_train_gold_pairs": 1351,
+    "full_validation_gold_pairs": 632,
+    "parameters": 25874,
+    "checkpoint_sha256": {
+      "initial_model.pt": "9fbf4af4c650318bf9af1866e1cf1b67e646c43e62ecf4ff07c0fafa48135306",
+      "best_model.pt": "d6a70c0cd2858a8d65be6d2434b6a8b2e505e68e580c2c75ef1bf6d1718e37aa"
+    },
+    "selection_policy": "highest_full_gold_validation_pair_f1_then_lowest_validation_bce_then_earliest_epoch",
+    "validation_record_scores": [
+      {
+        "id": "RF00004:AAAA02007579.1/14294-14490",
+        "reference_pairs": 45,
+        "predicted_pairs": 56,
+        "shared_pairs": 0,
+        "pair_precision": 0.0,
+        "pair_recall": 0.0,
+        "pair_f1": 0.0,
+        "pair_jaccard": 0.0,
+        "base_pair_distance": 101
+      },
+      {
+        "id": "RF00004:AAAB01008933.1/737524-737331",
+        "reference_pairs": 45,
+        "predicted_pairs": 51,
+        "shared_pairs": 10,
+        "pair_precision": 0.19607843137254902,
+        "pair_recall": 0.2222222222222222,
+        "pair_f1": 0.20833333333333334,
+        "pair_jaccard": 0.11627906976744186,
+        "base_pair_distance": 76
+      },
+      {
+        "id": "RF00004:AABL01000318.1/11806-12005",
+        "reference_pairs": 45,
+        "predicted_pairs": 48,
+        "shared_pairs": 6,
+        "pair_precision": 0.125,
+        "pair_recall": 0.13333333333333333,
+        "pair_f1": 0.12903225806451613,
+        "pair_jaccard": 0.06896551724137931,
+        "base_pair_distance": 81
+      },
+      {
+        "id": "RF00004:AABS01001062.1/345-536",
+        "reference_pairs": 45,
+        "predicted_pairs": 49,
+        "shared_pairs": 3,
+        "pair_precision": 0.061224489795918366,
+        "pair_recall": 0.06666666666666667,
+        "pair_f1": 0.06382978723404255,
+        "pair_jaccard": 0.03296703296703297,
+        "base_pair_distance": 88
+      },
+      {
+        "id": "RF00004:AABX02000002.1/241678-241484",
+        "reference_pairs": 45,
+        "predicted_pairs": 53,
+        "shared_pairs": 5,
+        "pair_precision": 0.09433962264150944,
+        "pair_recall": 0.1111111111111111,
+        "pair_f1": 0.10204081632653061,
+        "pair_jaccard": 0.053763440860215055,
+        "base_pair_distance": 88
+      },
+      {
+        "id": "RF00004:AACN010750078.1/657-848",
+        "reference_pairs": 45,
+        "predicted_pairs": 51,
+        "shared_pairs": 6,
+        "pair_precision": 0.11764705882352941,
+        "pair_recall": 0.13333333333333333,
+        "pair_f1": 0.125,
+        "pair_jaccard": 0.06666666666666667,
+        "base_pair_distance": 84
+      },
+      {
+        "id": "RF00032:AAAB01008948.1/3301455-3301500",
+        "reference_pairs": 6,
+        "predicted_pairs": 12,
+        "shared_pairs": 5,
+        "pair_precision": 0.4166666666666667,
+        "pair_recall": 0.8333333333333334,
+        "pair_f1": 0.5555555555555556,
+        "pair_jaccard": 0.38461538461538464,
+        "base_pair_distance": 8
+      },
+      {
+        "id": "RF00032:AAAB01044800.1/486-531",
+        "reference_pairs": 6,
+        "predicted_pairs": 15,
+        "shared_pairs": 6,
+        "pair_precision": 0.4,
+        "pair_recall": 1.0,
+        "pair_f1": 0.5714285714285714,
+        "pair_jaccard": 0.4,
+        "base_pair_distance": 9
+      },
+      {
+        "id": "RF00032:AABL01000137.1/776-821",
+        "reference_pairs": 6,
+        "predicted_pairs": 14,
+        "shared_pairs": 6,
+        "pair_precision": 0.42857142857142855,
+        "pair_recall": 1.0,
+        "pair_f1": 0.6,
+        "pair_jaccard": 0.42857142857142855,
+        "base_pair_distance": 8
+      },
+      {
+        "id": "RF00032:AABS01000176.1/158056-158011",
+        "reference_pairs": 6,
+        "predicted_pairs": 13,
+        "shared_pairs": 6,
+        "pair_precision": 0.46153846153846156,
+        "pair_recall": 1.0,
+        "pair_f1": 0.631578947368421,
+        "pair_jaccard": 0.46153846153846156,
+        "base_pair_distance": 7
+      },
+      {
+        "id": "RF00032:AAEE01000003.1/1110682-1110637",
+        "reference_pairs": 6,
+        "predicted_pairs": 16,
+        "shared_pairs": 5,
+        "pair_precision": 0.3125,
+        "pair_recall": 0.8333333333333334,
+        "pair_f1": 0.45454545454545453,
+        "pair_jaccard": 0.29411764705882354,
+        "base_pair_distance": 12
+      },
+      {
+        "id": "RF00032:AAEE01000004.1/565730-565685",
+        "reference_pairs": 6,
+        "predicted_pairs": 13,
+        "shared_pairs": 6,
+        "pair_precision": 0.46153846153846156,
+        "pair_recall": 1.0,
+        "pair_f1": 0.631578947368421,
+        "pair_jaccard": 0.46153846153846156,
+        "base_pair_distance": 7
+      },
+      {
+        "id": "RF00032:AAFD02000019.1/418583-418538",
+        "reference_pairs": 6,
+        "predicted_pairs": 9,
+        "shared_pairs": 0,
+        "pair_precision": 0.0,
+        "pair_recall": 0.0,
+        "pair_f1": 0.0,
+        "pair_jaccard": 0.0,
+        "base_pair_distance": 15
+      },
+      {
+        "id": "RF00032:AAFD02000019.1/419847-419892",
+        "reference_pairs": 6,
+        "predicted_pairs": 12,
+        "shared_pairs": 5,
+        "pair_precision": 0.4166666666666667,
+        "pair_recall": 0.8333333333333334,
+        "pair_f1": 0.5555555555555556,
+        "pair_jaccard": 0.38461538461538464,
+        "base_pair_distance": 8
+      },
+      {
+        "id": "RF00027:AACT01004141.1/13602-13519",
+        "reference_pairs": 32,
+        "predicted_pairs": 29,
+        "shared_pairs": 15,
+        "pair_precision": 0.5172413793103449,
+        "pair_recall": 0.46875,
+        "pair_f1": 0.4918032786885246,
+        "pair_jaccard": 0.32608695652173914,
+        "base_pair_distance": 31
+      },
+      {
+        "id": "RF00027:AAFR03057393.1/4201-4115",
+        "reference_pairs": 32,
+        "predicted_pairs": 26,
+        "shared_pairs": 15,
+        "pair_precision": 0.5769230769230769,
+        "pair_recall": 0.46875,
+        "pair_f1": 0.5172413793103449,
+        "pair_jaccard": 0.3488372093023256,
+        "base_pair_distance": 28
+      },
+      {
+        "id": "RF00027:AAGD02006482.1/22892-22821",
+        "reference_pairs": 32,
+        "predicted_pairs": 24,
+        "shared_pairs": 2,
+        "pair_precision": 0.08333333333333333,
+        "pair_recall": 0.0625,
+        "pair_f1": 0.07142857142857142,
+        "pair_jaccard": 0.037037037037037035,
+        "base_pair_distance": 52
+      },
+      {
+        "id": "RF00027:AAIY01003579.1/1841-1762",
+        "reference_pairs": 32,
+        "predicted_pairs": 26,
+        "shared_pairs": 5,
+        "pair_precision": 0.19230769230769232,
+        "pair_recall": 0.15625,
+        "pair_f1": 0.1724137931034483,
+        "pair_jaccard": 0.09433962264150944,
+        "base_pair_distance": 48
+      },
+      {
+        "id": "RF00027:AAJJ01000960.1/12168-12093",
+        "reference_pairs": 32,
+        "predicted_pairs": 25,
+        "shared_pairs": 3,
+        "pair_precision": 0.12,
+        "pair_recall": 0.09375,
+        "pair_f1": 0.10526315789473684,
+        "pair_jaccard": 0.05555555555555555,
+        "base_pair_distance": 51
+      },
+      {
+        "id": "RF00027:AAKN02054092.1/95811-95899",
+        "reference_pairs": 32,
+        "predicted_pairs": 29,
+        "shared_pairs": 7,
+        "pair_precision": 0.2413793103448276,
+        "pair_recall": 0.21875,
+        "pair_f1": 0.22950819672131148,
+        "pair_jaccard": 0.12962962962962962,
+        "base_pair_distance": 47
+      },
+      {
+        "id": "RF00028:M86534.1/28-414",
+        "reference_pairs": 61,
+        "predicted_pairs": 76,
+        "shared_pairs": 3,
+        "pair_precision": 0.039473684210526314,
+        "pair_recall": 0.04918032786885246,
+        "pair_f1": 0.043795620437956206,
+        "pair_jaccard": 0.022388059701492536,
+        "base_pair_distance": 131
+      },
+      {
+        "id": "RF00028:V01416.1/43-384",
+        "reference_pairs": 61,
+        "predicted_pairs": 74,
+        "shared_pairs": 0,
+        "pair_precision": 0.0,
+        "pair_recall": 0.0,
+        "pair_f1": 0.0,
+        "pair_jaccard": 0.0,
+        "base_pair_distance": 135
+      }
+    ]
+  },
+  "exposure_events": [
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed20261015/exposures/20261016T012807.242260Z.json",
+      "sha256": "372f4939d1207dd61321ab77702df264171733cadad6fc25a0cf344206936018",
+      "stage": "training_started"
+    },
+    {
+      "path": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed20261015/exposures/20261016T012807.248855Z.json",
+      "sha256": "e345e859f83c43ddd7e94b3b3c28e12c67f6f48ef54729fae983fd58722116f7",
+      "stage": "validation_started"
+    }
+  ],
+  "predictions_sha256": "e00fe9437057f50b4201a8330854d41bca38f3eb39842ee641e846e21c98359c",
+  "test_evaluated": false,
+  "independent_test_claim": false
+}

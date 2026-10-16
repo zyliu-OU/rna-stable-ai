@@ -1,0 +1,2041 @@
+{
+  "schema_version": 1,
+  "stage": "metadata_only_inventory",
+  "mapped_family_count": 142,
+  "mapped_chain_count": 19193,
+  "known_exposed_sequence_count": 4932,
+  "known_exposed_family_count": 46,
+  "development_source_screened_families": [
+    "RF00003",
+    "RF00004",
+    "RF00006",
+    "RF00012",
+    "RF00016",
+    "RF00018",
+    "RF00020",
+    "RF00022",
+    "RF00024",
+    "RF00026",
+    "RF00027",
+    "RF00028",
+    "RF00032",
+    "RF00041",
+    "RF00043",
+    "RF00047",
+    "RF00048"
+  ],
+  "known_exposed_pdb_count": 112,
+  "known_exposed_clans": [
+    "CL00001",
+    "CL00002",
+    "CL00003",
+    "CL00004",
+    "CL00005",
+    "CL00006",
+    "CL00009",
+    "CL00010",
+    "CL00012",
+    "CL00100",
+    "CL00101",
+    "CL00106",
+    "CL00112",
+    "CL00113",
+    "CL00123",
+    "CL00125",
+    "CL00126",
+    "CL00127",
+    "CL00148"
+  ],
+  "status_counts": {
+    "clan_unresolved": 1,
+    "development_source_screened": 1,
+    "exposed_clan": 21,
+    "exposed_family": 38,
+    "metadata_candidate_only": 81
+  },
+  "families": [
+    {
+      "family_id": "RF00001",
+      "clan_id": "CL00113",
+      "status": "exposed_family",
+      "mapped_chain_count": 1668,
+      "unexposed_chain_count": 1668,
+      "unexposed_pdb_count": 1344
+    },
+    {
+      "family_id": "RF00002",
+      "clan_id": "CL00112",
+      "status": "exposed_clan",
+      "mapped_chain_count": 1117,
+      "unexposed_chain_count": 1117,
+      "unexposed_pdb_count": 843
+    },
+    {
+      "family_id": "RF00003",
+      "clan_id": "CL00005",
+      "status": "exposed_family",
+      "mapped_chain_count": 9,
+      "unexposed_chain_count": 9,
+      "unexposed_pdb_count": 5
+    },
+    {
+      "family_id": "RF00004",
+      "clan_id": "CL00006",
+      "status": "exposed_family",
+      "mapped_chain_count": 64,
+      "unexposed_chain_count": 64,
+      "unexposed_pdb_count": 64
+    },
+    {
+      "family_id": "RF00005",
+      "clan_id": "CL00001",
+      "status": "exposed_family",
+      "mapped_chain_count": 2342,
+      "unexposed_chain_count": 2339,
+      "unexposed_pdb_count": 1165
+    },
+    {
+      "family_id": "RF00007",
+      "clan_id": "CL00006",
+      "status": "exposed_clan",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00008",
+      "clan_id": "CL00010",
+      "status": "exposed_family",
+      "mapped_chain_count": 2,
+      "unexposed_chain_count": 2,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00009",
+      "clan_id": "CL00002",
+      "status": "exposed_clan",
+      "mapped_chain_count": 4,
+      "unexposed_chain_count": 4,
+      "unexposed_pdb_count": 4
+    },
+    {
+      "family_id": "RF00010",
+      "clan_id": "CL00002",
+      "status": "exposed_family",
+      "mapped_chain_count": 8,
+      "unexposed_chain_count": 8,
+      "unexposed_pdb_count": 8
+    },
+    {
+      "family_id": "RF00011",
+      "clan_id": "CL00002",
+      "status": "exposed_clan",
+      "mapped_chain_count": 4,
+      "unexposed_chain_count": 4,
+      "unexposed_pdb_count": 3
+    },
+    {
+      "family_id": "RF00012",
+      "clan_id": "CL00100",
+      "status": "exposed_family",
+      "mapped_chain_count": 13,
+      "unexposed_chain_count": 13,
+      "unexposed_pdb_count": 13
+    },
+    {
+      "family_id": "RF00013",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00015",
+      "clan_id": "CL00007",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 13,
+      "unexposed_chain_count": 13,
+      "unexposed_pdb_count": 13
+    },
+    {
+      "family_id": "RF00017",
+      "clan_id": "CL00003",
+      "status": "exposed_family",
+      "mapped_chain_count": 19,
+      "unexposed_chain_count": 19,
+      "unexposed_pdb_count": 17
+    },
+    {
+      "family_id": "RF00020",
+      "clan_id": null,
+      "status": "exposed_family",
+      "mapped_chain_count": 57,
+      "unexposed_chain_count": 57,
+      "unexposed_pdb_count": 57
+    },
+    {
+      "family_id": "RF00023",
+      "clan_id": "CL00001",
+      "status": "exposed_family",
+      "mapped_chain_count": 22,
+      "unexposed_chain_count": 22,
+      "unexposed_pdb_count": 18
+    },
+    {
+      "family_id": "RF00024",
+      "clan_id": "CL00004",
+      "status": "development_source_screened",
+      "mapped_chain_count": 11,
+      "unexposed_chain_count": 11,
+      "unexposed_pdb_count": 11
+    },
+    {
+      "family_id": "RF00025",
+      "clan_id": "CL00004",
+      "status": "exposed_clan",
+      "mapped_chain_count": 6,
+      "unexposed_chain_count": 6,
+      "unexposed_pdb_count": 6
+    },
+    {
+      "family_id": "RF00026",
+      "clan_id": "CL00009",
+      "status": "exposed_family",
+      "mapped_chain_count": 64,
+      "unexposed_chain_count": 64,
+      "unexposed_pdb_count": 63
+    },
+    {
+      "family_id": "RF00027",
+      "clan_id": "CL00148",
+      "status": "exposed_family",
+      "mapped_chain_count": 2,
+      "unexposed_chain_count": 2,
+      "unexposed_pdb_count": 2
+    },
+    {
+      "family_id": "RF00028",
+      "clan_id": null,
+      "status": "exposed_family",
+      "mapped_chain_count": 40,
+      "unexposed_chain_count": 40,
+      "unexposed_pdb_count": 33
+    },
+    {
+      "family_id": "RF00029",
+      "clan_id": null,
+      "status": "exposed_family",
+      "mapped_chain_count": 15,
+      "unexposed_chain_count": 13,
+      "unexposed_pdb_count": 13
+    },
+    {
+      "family_id": "RF00030",
+      "clan_id": "CL00002",
+      "status": "exposed_clan",
+      "mapped_chain_count": 5,
+      "unexposed_chain_count": 5,
+      "unexposed_pdb_count": 5
+    },
+    {
+      "family_id": "RF00031",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 2,
+      "unexposed_chain_count": 2,
+      "unexposed_pdb_count": 2
+    },
+    {
+      "family_id": "RF00032",
+      "clan_id": null,
+      "status": "exposed_family",
+      "mapped_chain_count": 12,
+      "unexposed_chain_count": 12,
+      "unexposed_pdb_count": 8
+    },
+    {
+      "family_id": "RF00037",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 2,
+      "unexposed_chain_count": 2,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00044",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 15,
+      "unexposed_chain_count": 15,
+      "unexposed_pdb_count": 3
+    },
+    {
+      "family_id": "RF00050",
+      "clan_id": null,
+      "status": "exposed_family",
+      "mapped_chain_count": 8,
+      "unexposed_chain_count": 8,
+      "unexposed_pdb_count": 8
+    },
+    {
+      "family_id": "RF00059",
+      "clan_id": null,
+      "status": "exposed_family",
+      "mapped_chain_count": 36,
+      "unexposed_chain_count": 36,
+      "unexposed_pdb_count": 26
+    },
+    {
+      "family_id": "RF00061",
+      "clan_id": "CL00017",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 25,
+      "unexposed_chain_count": 25,
+      "unexposed_pdb_count": 25
+    },
+    {
+      "family_id": "RF00066",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00075",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00080",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 12,
+      "unexposed_chain_count": 12,
+      "unexposed_pdb_count": 6
+    },
+    {
+      "family_id": "RF00083",
+      "clan_id": "CL00011",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 2,
+      "unexposed_chain_count": 2,
+      "unexposed_pdb_count": 2
+    },
+    {
+      "family_id": "RF00100",
+      "clan_id": "CL00013",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 13,
+      "unexposed_chain_count": 13,
+      "unexposed_pdb_count": 10
+    },
+    {
+      "family_id": "RF00102",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00114",
+      "clan_id": "CL00121",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00128",
+      "clan_id": "CL00011",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 2,
+      "unexposed_chain_count": 2,
+      "unexposed_pdb_count": 2
+    },
+    {
+      "family_id": "RF00162",
+      "clan_id": "CL00012",
+      "status": "exposed_family",
+      "mapped_chain_count": 29,
+      "unexposed_chain_count": 29,
+      "unexposed_pdb_count": 28
+    },
+    {
+      "family_id": "RF00164",
+      "clan_id": "CL00117",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00166",
+      "clan_id": "CL00106",
+      "status": "exposed_clan",
+      "mapped_chain_count": 4,
+      "unexposed_chain_count": 4,
+      "unexposed_pdb_count": 4
+    },
+    {
+      "family_id": "RF00167",
+      "clan_id": "CL00123",
+      "status": "exposed_family",
+      "mapped_chain_count": 58,
+      "unexposed_chain_count": 58,
+      "unexposed_pdb_count": 49
+    },
+    {
+      "family_id": "RF00168",
+      "clan_id": null,
+      "status": "exposed_family",
+      "mapped_chain_count": 16,
+      "unexposed_chain_count": 16,
+      "unexposed_pdb_count": 16
+    },
+    {
+      "family_id": "RF00169",
+      "clan_id": "CL00003",
+      "status": "exposed_family",
+      "mapped_chain_count": 21,
+      "unexposed_chain_count": 21,
+      "unexposed_pdb_count": 18
+    },
+    {
+      "family_id": "RF00174",
+      "clan_id": "CL00101",
+      "status": "exposed_family",
+      "mapped_chain_count": 14,
+      "unexposed_chain_count": 14,
+      "unexposed_pdb_count": 9
+    },
+    {
+      "family_id": "RF00175",
+      "clan_id": null,
+      "status": "exposed_family",
+      "mapped_chain_count": 10,
+      "unexposed_chain_count": 9,
+      "unexposed_pdb_count": 5
+    },
+    {
+      "family_id": "RF00177",
+      "clan_id": "CL00111",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1814,
+      "unexposed_chain_count": 1814,
+      "unexposed_pdb_count": 1471
+    },
+    {
+      "family_id": "RF00185",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 2,
+      "unexposed_chain_count": 2,
+      "unexposed_pdb_count": 2
+    },
+    {
+      "family_id": "RF00207",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 5,
+      "unexposed_chain_count": 5,
+      "unexposed_pdb_count": 5
+    },
+    {
+      "family_id": "RF00209",
+      "clan_id": "CL00017",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00210",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 3,
+      "unexposed_chain_count": 3,
+      "unexposed_pdb_count": 3
+    },
+    {
+      "family_id": "RF00228",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 2,
+      "unexposed_chain_count": 2,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00233",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 3,
+      "unexposed_chain_count": 3,
+      "unexposed_pdb_count": 2
+    },
+    {
+      "family_id": "RF00234",
+      "clan_id": null,
+      "status": "exposed_family",
+      "mapped_chain_count": 39,
+      "unexposed_chain_count": 39,
+      "unexposed_pdb_count": 21
+    },
+    {
+      "family_id": "RF00240",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00250",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 5,
+      "unexposed_chain_count": 5,
+      "unexposed_pdb_count": 5
+    },
+    {
+      "family_id": "RF00254",
+      "clan_id": "CL00085",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 3,
+      "unexposed_chain_count": 3,
+      "unexposed_pdb_count": 3
+    },
+    {
+      "family_id": "RF00373",
+      "clan_id": "CL00002",
+      "status": "exposed_clan",
+      "mapped_chain_count": 4,
+      "unexposed_chain_count": 4,
+      "unexposed_pdb_count": 2
+    },
+    {
+      "family_id": "RF00374",
+      "clan_id": null,
+      "status": "exposed_family",
+      "mapped_chain_count": 4,
+      "unexposed_chain_count": 3,
+      "unexposed_pdb_count": 2
+    },
+    {
+      "family_id": "RF00375",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 6,
+      "unexposed_chain_count": 6,
+      "unexposed_pdb_count": 6
+    },
+    {
+      "family_id": "RF00379",
+      "clan_id": null,
+      "status": "exposed_family",
+      "mapped_chain_count": 16,
+      "unexposed_chain_count": 14,
+      "unexposed_pdb_count": 14
+    },
+    {
+      "family_id": "RF00380",
+      "clan_id": null,
+      "status": "exposed_family",
+      "mapped_chain_count": 3,
+      "unexposed_chain_count": 0,
+      "unexposed_pdb_count": 0
+    },
+    {
+      "family_id": "RF00382",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 2,
+      "unexposed_chain_count": 2,
+      "unexposed_pdb_count": 2
+    },
+    {
+      "family_id": "RF00386",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 3,
+      "unexposed_chain_count": 3,
+      "unexposed_pdb_count": 3
+    },
+    {
+      "family_id": "RF00390",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 2,
+      "unexposed_chain_count": 2,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00442",
+      "clan_id": null,
+      "status": "exposed_family",
+      "mapped_chain_count": 10,
+      "unexposed_chain_count": 5,
+      "unexposed_pdb_count": 5
+    },
+    {
+      "family_id": "RF00455",
+      "clan_id": "CL00085",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 3,
+      "unexposed_chain_count": 3,
+      "unexposed_pdb_count": 3
+    },
+    {
+      "family_id": "RF00458",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 15,
+      "unexposed_chain_count": 15,
+      "unexposed_pdb_count": 13
+    },
+    {
+      "family_id": "RF00480",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 5,
+      "unexposed_chain_count": 5,
+      "unexposed_pdb_count": 5
+    },
+    {
+      "family_id": "RF00488",
+      "clan_id": "CL00005",
+      "status": "exposed_clan",
+      "mapped_chain_count": 7,
+      "unexposed_chain_count": 7,
+      "unexposed_pdb_count": 7
+    },
+    {
+      "family_id": "RF00500",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00504",
+      "clan_id": "CL00125",
+      "status": "exposed_family",
+      "mapped_chain_count": 23,
+      "unexposed_chain_count": 0,
+      "unexposed_pdb_count": 0
+    },
+    {
+      "family_id": "RF00505",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00507",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 5,
+      "unexposed_chain_count": 5,
+      "unexposed_pdb_count": 5
+    },
+    {
+      "family_id": "RF00522",
+      "clan_id": null,
+      "status": "exposed_family",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 0,
+      "unexposed_pdb_count": 0
+    },
+    {
+      "family_id": "RF00525",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 2,
+      "unexposed_chain_count": 2,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00619",
+      "clan_id": "CL00009",
+      "status": "exposed_clan",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00620",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 3,
+      "unexposed_chain_count": 3,
+      "unexposed_pdb_count": 3
+    },
+    {
+      "family_id": "RF00622",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 3,
+      "unexposed_chain_count": 3,
+      "unexposed_pdb_count": 2
+    },
+    {
+      "family_id": "RF00634",
+      "clan_id": "CL00012",
+      "status": "exposed_clan",
+      "mapped_chain_count": 4,
+      "unexposed_chain_count": 4,
+      "unexposed_pdb_count": 4
+    },
+    {
+      "family_id": "RF00661",
+      "clan_id": "CL00133",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF00957",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 3,
+      "unexposed_chain_count": 3,
+      "unexposed_pdb_count": 3
+    },
+    {
+      "family_id": "RF01047",
+      "clan_id": "CL00104",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF01051",
+      "clan_id": "CL00126",
+      "status": "exposed_family",
+      "mapped_chain_count": 17,
+      "unexposed_chain_count": 0,
+      "unexposed_pdb_count": 0
+    },
+    {
+      "family_id": "RF01054",
+      "clan_id": null,
+      "status": "exposed_family",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 0,
+      "unexposed_pdb_count": 0
+    },
+    {
+      "family_id": "RF01073",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF01084",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 3,
+      "unexposed_chain_count": 3,
+      "unexposed_pdb_count": 3
+    },
+    {
+      "family_id": "RF01317",
+      "clan_id": "CL00014",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF01330",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 2,
+      "unexposed_chain_count": 2,
+      "unexposed_pdb_count": 2
+    },
+    {
+      "family_id": "RF01344",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 14,
+      "unexposed_chain_count": 14,
+      "unexposed_pdb_count": 10
+    },
+    {
+      "family_id": "RF01380",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 3,
+      "unexposed_chain_count": 3,
+      "unexposed_pdb_count": 3
+    },
+    {
+      "family_id": "RF01381",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF01415",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF01510",
+      "clan_id": "CL00123",
+      "status": "exposed_clan",
+      "mapped_chain_count": 8,
+      "unexposed_chain_count": 8,
+      "unexposed_pdb_count": 4
+    },
+    {
+      "family_id": "RF01689",
+      "clan_id": "CL00101",
+      "status": "exposed_clan",
+      "mapped_chain_count": 4,
+      "unexposed_chain_count": 4,
+      "unexposed_pdb_count": 2
+    },
+    {
+      "family_id": "RF01704",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 2,
+      "unexposed_chain_count": 2,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF01725",
+      "clan_id": "CL00012",
+      "status": "exposed_clan",
+      "mapped_chain_count": 2,
+      "unexposed_chain_count": 2,
+      "unexposed_pdb_count": 2
+    },
+    {
+      "family_id": "RF01727",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF01734",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 6,
+      "unexposed_chain_count": 6,
+      "unexposed_pdb_count": 6
+    },
+    {
+      "family_id": "RF01750",
+      "clan_id": null,
+      "status": "exposed_family",
+      "mapped_chain_count": 12,
+      "unexposed_chain_count": 6,
+      "unexposed_pdb_count": 3
+    },
+    {
+      "family_id": "RF01763",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 13,
+      "unexposed_chain_count": 13,
+      "unexposed_pdb_count": 7
+    },
+    {
+      "family_id": "RF01786",
+      "clan_id": "CL00127",
+      "status": "exposed_family",
+      "mapped_chain_count": 2,
+      "unexposed_chain_count": 0,
+      "unexposed_pdb_count": 0
+    },
+    {
+      "family_id": "RF01807",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF01826",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF01831",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 12,
+      "unexposed_chain_count": 12,
+      "unexposed_pdb_count": 12
+    },
+    {
+      "family_id": "RF01846",
+      "clan_id": "CL00100",
+      "status": "exposed_clan",
+      "mapped_chain_count": 32,
+      "unexposed_chain_count": 32,
+      "unexposed_pdb_count": 32
+    },
+    {
+      "family_id": "RF01848",
+      "clan_id": "CL00100",
+      "status": "exposed_clan",
+      "mapped_chain_count": 11,
+      "unexposed_chain_count": 11,
+      "unexposed_pdb_count": 11
+    },
+    {
+      "family_id": "RF01852",
+      "clan_id": "CL00001",
+      "status": "exposed_clan",
+      "mapped_chain_count": 35,
+      "unexposed_chain_count": 35,
+      "unexposed_pdb_count": 24
+    },
+    {
+      "family_id": "RF01854",
+      "clan_id": "CL00003",
+      "status": "exposed_clan",
+      "mapped_chain_count": 5,
+      "unexposed_chain_count": 5,
+      "unexposed_pdb_count": 4
+    },
+    {
+      "family_id": "RF01856",
+      "clan_id": "CL00003",
+      "status": "exposed_clan",
+      "mapped_chain_count": 17,
+      "unexposed_chain_count": 17,
+      "unexposed_pdb_count": 16
+    },
+    {
+      "family_id": "RF01857",
+      "clan_id": "CL00003",
+      "status": "exposed_clan",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF01959",
+      "clan_id": "CL00111",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1807,
+      "unexposed_chain_count": 1807,
+      "unexposed_pdb_count": 1467
+    },
+    {
+      "family_id": "RF01960",
+      "clan_id": "CL00111",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1752,
+      "unexposed_chain_count": 1752,
+      "unexposed_pdb_count": 1416
+    },
+    {
+      "family_id": "RF01998",
+      "clan_id": "CL00102",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 28,
+      "unexposed_chain_count": 28,
+      "unexposed_pdb_count": 28
+    },
+    {
+      "family_id": "RF02001",
+      "clan_id": "CL00102",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 32,
+      "unexposed_chain_count": 32,
+      "unexposed_pdb_count": 30
+    },
+    {
+      "family_id": "RF02012",
+      "clan_id": "CL00102",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 5,
+      "unexposed_chain_count": 5,
+      "unexposed_pdb_count": 5
+    },
+    {
+      "family_id": "RF02095",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF02253",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF02340",
+      "clan_id": "CL00129",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 5,
+      "unexposed_chain_count": 5,
+      "unexposed_pdb_count": 5
+    },
+    {
+      "family_id": "RF02348",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 4,
+      "unexposed_chain_count": 4,
+      "unexposed_pdb_count": 3
+    },
+    {
+      "family_id": "RF02359",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF02519",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF02521",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF02540",
+      "clan_id": "CL00112",
+      "status": "exposed_family",
+      "mapped_chain_count": 1920,
+      "unexposed_chain_count": 1918,
+      "unexposed_pdb_count": 1562
+    },
+    {
+      "family_id": "RF02541",
+      "clan_id": "CL00112",
+      "status": "exposed_family",
+      "mapped_chain_count": 1937,
+      "unexposed_chain_count": 1935,
+      "unexposed_pdb_count": 1573
+    },
+    {
+      "family_id": "RF02542",
+      "clan_id": "CL00111",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1769,
+      "unexposed_chain_count": 1769,
+      "unexposed_pdb_count": 1428
+    },
+    {
+      "family_id": "RF02543",
+      "clan_id": "CL00112",
+      "status": "exposed_family",
+      "mapped_chain_count": 1844,
+      "unexposed_chain_count": 1842,
+      "unexposed_pdb_count": 1488
+    },
+    {
+      "family_id": "RF02545",
+      "clan_id": "CL00111",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 16,
+      "unexposed_chain_count": 16,
+      "unexposed_pdb_count": 14
+    },
+    {
+      "family_id": "RF02546",
+      "clan_id": "CL00112",
+      "status": "exposed_clan",
+      "mapped_chain_count": 12,
+      "unexposed_chain_count": 12,
+      "unexposed_pdb_count": 10
+    },
+    {
+      "family_id": "RF02553",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF02678",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 3,
+      "unexposed_chain_count": 3,
+      "unexposed_pdb_count": 2
+    },
+    {
+      "family_id": "RF02679",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 8,
+      "unexposed_chain_count": 8,
+      "unexposed_pdb_count": 4
+    },
+    {
+      "family_id": "RF02680",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 3,
+      "unexposed_chain_count": 3,
+      "unexposed_pdb_count": 3
+    },
+    {
+      "family_id": "RF02681",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF02683",
+      "clan_id": "CL00122",
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 1,
+      "unexposed_chain_count": 1,
+      "unexposed_pdb_count": 1
+    },
+    {
+      "family_id": "RF02796",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 6,
+      "unexposed_chain_count": 6,
+      "unexposed_pdb_count": 6
+    },
+    {
+      "family_id": "RF02977",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 5,
+      "unexposed_chain_count": 5,
+      "unexposed_pdb_count": 5
+    },
+    {
+      "family_id": "RF03013",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 16,
+      "unexposed_chain_count": 16,
+      "unexposed_pdb_count": 16
+    },
+    {
+      "family_id": "RF03054",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 8,
+      "unexposed_chain_count": 8,
+      "unexposed_pdb_count": 4
+    },
+    {
+      "family_id": "RF03167",
+      "clan_id": "CL00126",
+      "status": "exposed_family",
+      "mapped_chain_count": 6,
+      "unexposed_chain_count": 0,
+      "unexposed_pdb_count": 0
+    },
+    {
+      "family_id": "RF04190",
+      "clan_id": null,
+      "status": "metadata_candidate_only",
+      "mapped_chain_count": 8,
+      "unexposed_chain_count": 8,
+      "unexposed_pdb_count": 4
+    },
+    {
+      "family_id": "RF04222",
+      "clan_id": "unresolved",
+      "status": "clan_unresolved",
+      "mapped_chain_count": 2,
+      "unexposed_chain_count": 2,
+      "unexposed_pdb_count": 1
+    }
+  ],
+  "annotation_labels_read": false,
+  "candidate_sequences_bound": false,
+  "supported_references_count": 0,
+  "independent_experimental_panel_ready": false,
+  "model_inference_authorized": false,
+  "exposure_snapshot_sha256": "ea6da0d24357acc64718c2d2e01cf22364b5d0aa969147de4804604fb793d9fe",
+  "source_sha256": {
+    "results/structure_derived_source_runs/20261015T021501.529110Z/source/pdb_full_region.txt": "cd2a8b2a9dfe05f48c056c717df27c3a98802268c882053cb650f24ba1d3f211",
+    "results/structure_derived_source_runs/20261015T021501.529110Z/source/pdb_full_region_curated.txt": "bb6713468f7da7e35a6b1f688c0424f7d8003fa7a39bb37259d6d117d908b077"
+  },
+  "development_selection_sha256": "1301ac74002abdce42743d8e13ab794e9f1f4e6fa74661d3bae6e1c6119a236b",
+  "metadata_sources": {
+    "RF00001": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00001.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00001.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00001.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00001.json"
+    ],
+    "RF00005": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00005.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00005.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00005.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00005.json"
+    ],
+    "RF00008": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00008.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00008.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00008.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00008.json"
+    ],
+    "RF00010": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00010.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00010.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00010.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00010.json"
+    ],
+    "RF00017": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00017.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00017.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00017.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00017.json"
+    ],
+    "RF00023": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00023.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00023.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00023.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00023.json"
+    ],
+    "RF00029": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00029.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00029.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00029.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00029.json"
+    ],
+    "RF00050": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00050.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00050.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00050.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00050.json"
+    ],
+    "RF00059": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00059.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00059.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00059.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00059.json"
+    ],
+    "RF00162": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00162.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00162.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00162.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00162.json"
+    ],
+    "RF00167": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00167.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00167.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00167.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00167.json"
+    ],
+    "RF00168": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00168.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00168.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00168.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00168.json"
+    ],
+    "RF00169": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00169.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00169.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00169.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00169.json"
+    ],
+    "RF00174": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00174.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00174.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00174.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00174.json"
+    ],
+    "RF00175": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00175.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00175.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00175.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00175.json"
+    ],
+    "RF00234": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00234.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00234.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00234.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00234.json"
+    ],
+    "RF00374": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00374.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00374.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00374.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00374.json"
+    ],
+    "RF00379": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00379.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00379.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00379.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00379.json"
+    ],
+    "RF00380": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00380.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00380.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00380.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00380.json"
+    ],
+    "RF00442": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00442.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00442.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00442.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00442.json"
+    ],
+    "RF00504": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00504.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00504.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00504.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00504.json"
+    ],
+    "RF00522": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00522.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00522.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00522.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00522.json"
+    ],
+    "RF01051": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF01051.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF01051.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF01051.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF01051.json"
+    ],
+    "RF01054": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF01054.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF01054.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF01054.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF01054.json"
+    ],
+    "RF01750": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF01750.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF01750.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF01750.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF01750.json"
+    ],
+    "RF01786": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF01786.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF01786.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF01786.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF01786.json"
+    ],
+    "RF02540": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF02540.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF02540.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF02540.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF02540.json"
+    ],
+    "RF02541": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF02541.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF02541.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF02541.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF02541.json"
+    ],
+    "RF02543": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF02543.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF02543.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF02543.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF02543.json"
+    ],
+    "RF03167": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF03167.json",
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF03167.json",
+      "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF03167.json",
+      "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF03167.json"
+    ],
+    "RF00002": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00002.json"
+    ],
+    "RF00003": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00003.json"
+    ],
+    "RF00004": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00004.json"
+    ],
+    "RF00006": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00006.json"
+    ],
+    "RF00007": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00007.json"
+    ],
+    "RF00009": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00009.json"
+    ],
+    "RF00011": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00011.json"
+    ],
+    "RF00012": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00012.json"
+    ],
+    "RF00013": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00013.json"
+    ],
+    "RF00014": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00014.json"
+    ],
+    "RF00015": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00015.json"
+    ],
+    "RF00016": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00016.json"
+    ],
+    "RF00018": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00018.json"
+    ],
+    "RF00019": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00019.json"
+    ],
+    "RF00020": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00020.json"
+    ],
+    "RF00021": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00021.json"
+    ],
+    "RF00022": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00022.json"
+    ],
+    "RF00024": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00024.json"
+    ],
+    "RF00025": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00025.json"
+    ],
+    "RF00026": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00026.json"
+    ],
+    "RF00027": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00027.json"
+    ],
+    "RF00028": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00028.json"
+    ],
+    "RF00030": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00030.json"
+    ],
+    "RF00031": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00031.json"
+    ],
+    "RF00032": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00032.json"
+    ],
+    "RF00033": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00033.json"
+    ],
+    "RF00034": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00034.json"
+    ],
+    "RF00035": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00035.json"
+    ],
+    "RF00036": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00036.json"
+    ],
+    "RF00037": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00037.json"
+    ],
+    "RF00038": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00038.json"
+    ],
+    "RF00039": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00039.json"
+    ],
+    "RF00040": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00040.json"
+    ],
+    "RF00041": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00041.json"
+    ],
+    "RF00042": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00042.json"
+    ],
+    "RF00043": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00043.json"
+    ],
+    "RF00044": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00044.json"
+    ],
+    "RF00045": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00045.json"
+    ],
+    "RF00046": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00046.json"
+    ],
+    "RF00047": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00047.json"
+    ],
+    "RF00048": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00048.json"
+    ],
+    "RF00049": [
+      "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00049.json"
+    ],
+    "RF00061": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00061.json"
+    ],
+    "RF00066": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00066.json"
+    ],
+    "RF00075": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00075.json"
+    ],
+    "RF00080": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00080.json"
+    ],
+    "RF00083": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00083.json"
+    ],
+    "RF00100": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00100.json"
+    ],
+    "RF00102": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00102.json"
+    ],
+    "RF00114": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00114.json"
+    ],
+    "RF00128": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00128.json"
+    ],
+    "RF00164": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00164.json"
+    ],
+    "RF00166": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00166.json"
+    ],
+    "RF00177": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00177.json"
+    ],
+    "RF00185": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00185.json"
+    ],
+    "RF00207": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00207.json"
+    ],
+    "RF00209": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00209.json"
+    ],
+    "RF00210": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00210.json"
+    ],
+    "RF00228": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00228.json"
+    ],
+    "RF00233": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00233.json"
+    ],
+    "RF00240": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00240.json"
+    ],
+    "RF00250": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00250.json"
+    ],
+    "RF00254": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00254.json"
+    ],
+    "RF00373": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00373.json"
+    ],
+    "RF00375": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00375.json"
+    ],
+    "RF00382": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00382.json"
+    ],
+    "RF00386": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00386.json"
+    ],
+    "RF00390": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00390.json"
+    ],
+    "RF00455": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00455.json"
+    ],
+    "RF00458": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00458.json"
+    ],
+    "RF00480": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00480.json"
+    ],
+    "RF00488": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00488.json"
+    ],
+    "RF00500": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00500.json"
+    ],
+    "RF00505": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00505.json"
+    ],
+    "RF00507": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00507.json"
+    ],
+    "RF00525": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00525.json"
+    ],
+    "RF00619": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00619.json"
+    ],
+    "RF00620": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00620.json"
+    ],
+    "RF00622": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00622.json"
+    ],
+    "RF00634": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00634.json"
+    ],
+    "RF00661": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00661.json"
+    ],
+    "RF00957": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00957.json"
+    ],
+    "RF01047": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01047.json"
+    ],
+    "RF01073": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01073.json"
+    ],
+    "RF01084": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01084.json"
+    ],
+    "RF01317": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01317.json"
+    ],
+    "RF01330": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01330.json"
+    ],
+    "RF01344": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01344.json"
+    ],
+    "RF01380": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01380.json"
+    ],
+    "RF01381": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01381.json"
+    ],
+    "RF01415": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01415.json"
+    ],
+    "RF01510": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01510.json"
+    ],
+    "RF01689": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01689.json"
+    ],
+    "RF01704": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01704.json"
+    ],
+    "RF01725": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01725.json"
+    ],
+    "RF01727": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01727.json"
+    ],
+    "RF01734": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01734.json"
+    ],
+    "RF01763": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01763.json"
+    ],
+    "RF01807": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01807.json"
+    ],
+    "RF01826": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01826.json"
+    ],
+    "RF01831": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01831.json"
+    ],
+    "RF01846": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01846.json"
+    ],
+    "RF01848": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01848.json"
+    ],
+    "RF01852": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01852.json"
+    ],
+    "RF01854": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01854.json"
+    ],
+    "RF01856": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01856.json"
+    ],
+    "RF01857": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01857.json"
+    ],
+    "RF01959": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01959.json"
+    ],
+    "RF01960": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01960.json"
+    ],
+    "RF01998": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01998.json"
+    ],
+    "RF02001": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02001.json"
+    ],
+    "RF02012": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02012.json"
+    ],
+    "RF02095": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02095.json"
+    ],
+    "RF02253": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02253.json"
+    ],
+    "RF02340": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02340.json"
+    ],
+    "RF02348": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02348.json"
+    ],
+    "RF02359": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02359.json"
+    ],
+    "RF02519": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02519.json"
+    ],
+    "RF02521": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02521.json"
+    ],
+    "RF02542": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02542.json"
+    ],
+    "RF02545": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02545.json"
+    ],
+    "RF02546": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02546.json"
+    ],
+    "RF02553": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02553.json"
+    ],
+    "RF02678": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02678.json"
+    ],
+    "RF02679": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02679.json"
+    ],
+    "RF02680": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02680.json"
+    ],
+    "RF02681": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02681.json"
+    ],
+    "RF02683": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02683.json"
+    ],
+    "RF02796": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02796.json"
+    ],
+    "RF02977": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02977.json"
+    ],
+    "RF03013": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF03013.json"
+    ],
+    "RF03054": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF03054.json"
+    ],
+    "RF04190": [
+      "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF04190.json"
+    ]
+  },
+  "metadata_sha256": {
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00001.json": "cdc4900f16558786daed748435ee464eeacef52129ca08a677db447a4c394cc1",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00001.json": "cdc4900f16558786daed748435ee464eeacef52129ca08a677db447a4c394cc1",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00001.json": "cdc4900f16558786daed748435ee464eeacef52129ca08a677db447a4c394cc1",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00001.json": "cdc4900f16558786daed748435ee464eeacef52129ca08a677db447a4c394cc1",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00005.json": "32608392c2d7a3d598cd01e48384cb153d1428da4fd49eff18a1eec0100ed279",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00005.json": "32608392c2d7a3d598cd01e48384cb153d1428da4fd49eff18a1eec0100ed279",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00005.json": "32608392c2d7a3d598cd01e48384cb153d1428da4fd49eff18a1eec0100ed279",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00005.json": "32608392c2d7a3d598cd01e48384cb153d1428da4fd49eff18a1eec0100ed279",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00008.json": "31516839f0e4b77332115a1276abdbb6ed1731146c4ffcd840fae8d239efcd10",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00008.json": "31516839f0e4b77332115a1276abdbb6ed1731146c4ffcd840fae8d239efcd10",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00008.json": "31516839f0e4b77332115a1276abdbb6ed1731146c4ffcd840fae8d239efcd10",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00008.json": "31516839f0e4b77332115a1276abdbb6ed1731146c4ffcd840fae8d239efcd10",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00010.json": "d6a10998d92effe1d8e3cfc813560489493543ac29d492a10f912ca64d57eeae",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00010.json": "d6a10998d92effe1d8e3cfc813560489493543ac29d492a10f912ca64d57eeae",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00010.json": "d6a10998d92effe1d8e3cfc813560489493543ac29d492a10f912ca64d57eeae",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00010.json": "d6a10998d92effe1d8e3cfc813560489493543ac29d492a10f912ca64d57eeae",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00017.json": "a31a9fbaced1def94b66f8f74d433481a4528ef2dced177da80ca1daccc01dc5",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00017.json": "a31a9fbaced1def94b66f8f74d433481a4528ef2dced177da80ca1daccc01dc5",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00017.json": "a31a9fbaced1def94b66f8f74d433481a4528ef2dced177da80ca1daccc01dc5",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00017.json": "a31a9fbaced1def94b66f8f74d433481a4528ef2dced177da80ca1daccc01dc5",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00023.json": "ddff7058047d5eabd96556bd81d25204c3c5fa5dd2f051c263a23c1faf70e426",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00023.json": "ddff7058047d5eabd96556bd81d25204c3c5fa5dd2f051c263a23c1faf70e426",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00023.json": "ddff7058047d5eabd96556bd81d25204c3c5fa5dd2f051c263a23c1faf70e426",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00023.json": "ddff7058047d5eabd96556bd81d25204c3c5fa5dd2f051c263a23c1faf70e426",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00029.json": "0f61ccd8b6acce77af956235709fb6dcedb50da5c606993a1460a09c4ac19634",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00029.json": "0f61ccd8b6acce77af956235709fb6dcedb50da5c606993a1460a09c4ac19634",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00029.json": "0f61ccd8b6acce77af956235709fb6dcedb50da5c606993a1460a09c4ac19634",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00029.json": "0f61ccd8b6acce77af956235709fb6dcedb50da5c606993a1460a09c4ac19634",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00050.json": "50c6c055534e6d88b563641bada1a127fdc33fd1a21d976aeffe32983971cb48",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00050.json": "50c6c055534e6d88b563641bada1a127fdc33fd1a21d976aeffe32983971cb48",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00050.json": "50c6c055534e6d88b563641bada1a127fdc33fd1a21d976aeffe32983971cb48",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00050.json": "50c6c055534e6d88b563641bada1a127fdc33fd1a21d976aeffe32983971cb48",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00059.json": "3da4195dcf8e3646a2e2f6e8073655d76beb330164442c6372232e26d5c8ec30",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00059.json": "3da4195dcf8e3646a2e2f6e8073655d76beb330164442c6372232e26d5c8ec30",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00059.json": "3da4195dcf8e3646a2e2f6e8073655d76beb330164442c6372232e26d5c8ec30",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00059.json": "3da4195dcf8e3646a2e2f6e8073655d76beb330164442c6372232e26d5c8ec30",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00162.json": "614ccc8997ebcef32dcb680493650320e4a6b5b37b9b5ea6cedc6b790bf5b3c3",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00162.json": "614ccc8997ebcef32dcb680493650320e4a6b5b37b9b5ea6cedc6b790bf5b3c3",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00162.json": "614ccc8997ebcef32dcb680493650320e4a6b5b37b9b5ea6cedc6b790bf5b3c3",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00162.json": "614ccc8997ebcef32dcb680493650320e4a6b5b37b9b5ea6cedc6b790bf5b3c3",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00167.json": "b071514279a674a614fee31bea67876a14b53fc0332089247e3e4b23036908c2",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00167.json": "b071514279a674a614fee31bea67876a14b53fc0332089247e3e4b23036908c2",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00167.json": "b071514279a674a614fee31bea67876a14b53fc0332089247e3e4b23036908c2",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00167.json": "b071514279a674a614fee31bea67876a14b53fc0332089247e3e4b23036908c2",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00168.json": "141cc982055aec3dda2a53122e80d5ddc18574f4c9ab6b7e409742ddbb7415d9",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00168.json": "141cc982055aec3dda2a53122e80d5ddc18574f4c9ab6b7e409742ddbb7415d9",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00168.json": "141cc982055aec3dda2a53122e80d5ddc18574f4c9ab6b7e409742ddbb7415d9",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00168.json": "141cc982055aec3dda2a53122e80d5ddc18574f4c9ab6b7e409742ddbb7415d9",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00169.json": "2c2a9aff95ae1d6c66d985b4a4d16a01b2f4f4d809893b245b9c8f4fbd2e5ba0",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00169.json": "2c2a9aff95ae1d6c66d985b4a4d16a01b2f4f4d809893b245b9c8f4fbd2e5ba0",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00169.json": "2c2a9aff95ae1d6c66d985b4a4d16a01b2f4f4d809893b245b9c8f4fbd2e5ba0",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00169.json": "2c2a9aff95ae1d6c66d985b4a4d16a01b2f4f4d809893b245b9c8f4fbd2e5ba0",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00174.json": "b261980dc729f9a0ee3b9fb50d4e7e6344b34434d409c3ed05d67ac5386e2500",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00174.json": "b261980dc729f9a0ee3b9fb50d4e7e6344b34434d409c3ed05d67ac5386e2500",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00174.json": "b261980dc729f9a0ee3b9fb50d4e7e6344b34434d409c3ed05d67ac5386e2500",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00174.json": "b261980dc729f9a0ee3b9fb50d4e7e6344b34434d409c3ed05d67ac5386e2500",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00175.json": "e790efac80bc71fb70c12867facf6174df8c0871bc6c86bd2feda95dd9135d0f",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00175.json": "e790efac80bc71fb70c12867facf6174df8c0871bc6c86bd2feda95dd9135d0f",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00175.json": "e790efac80bc71fb70c12867facf6174df8c0871bc6c86bd2feda95dd9135d0f",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00175.json": "e790efac80bc71fb70c12867facf6174df8c0871bc6c86bd2feda95dd9135d0f",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00234.json": "c5fd17ac9fedf0b063c6b40d00a2858a9f9df70402bbbc6f5c9caa7f2c740e1b",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00234.json": "c5fd17ac9fedf0b063c6b40d00a2858a9f9df70402bbbc6f5c9caa7f2c740e1b",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00234.json": "c5fd17ac9fedf0b063c6b40d00a2858a9f9df70402bbbc6f5c9caa7f2c740e1b",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00234.json": "c5fd17ac9fedf0b063c6b40d00a2858a9f9df70402bbbc6f5c9caa7f2c740e1b",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00374.json": "fbae7f1b95145135130ffa8b2cc86baec3c4cf485431852312d89ab221db2862",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00374.json": "fbae7f1b95145135130ffa8b2cc86baec3c4cf485431852312d89ab221db2862",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00374.json": "fbae7f1b95145135130ffa8b2cc86baec3c4cf485431852312d89ab221db2862",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00374.json": "fbae7f1b95145135130ffa8b2cc86baec3c4cf485431852312d89ab221db2862",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00379.json": "c600e9958c084f8115eddda2327fea47679070fa84b0d3c95fb7d1c399201afd",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00379.json": "c600e9958c084f8115eddda2327fea47679070fa84b0d3c95fb7d1c399201afd",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00379.json": "c600e9958c084f8115eddda2327fea47679070fa84b0d3c95fb7d1c399201afd",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00379.json": "c600e9958c084f8115eddda2327fea47679070fa84b0d3c95fb7d1c399201afd",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00380.json": "28d3da874314a222ad8a4ae90970cb44b8ead08a776b1ac18f52fd6c1b5acd47",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00380.json": "28d3da874314a222ad8a4ae90970cb44b8ead08a776b1ac18f52fd6c1b5acd47",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00380.json": "28d3da874314a222ad8a4ae90970cb44b8ead08a776b1ac18f52fd6c1b5acd47",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00380.json": "28d3da874314a222ad8a4ae90970cb44b8ead08a776b1ac18f52fd6c1b5acd47",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00442.json": "6f65085c346f932c1fd2965ec31df22fc77670013e1953d78be2b59f3bf45991",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00442.json": "6f65085c346f932c1fd2965ec31df22fc77670013e1953d78be2b59f3bf45991",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00442.json": "6f65085c346f932c1fd2965ec31df22fc77670013e1953d78be2b59f3bf45991",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00442.json": "6f65085c346f932c1fd2965ec31df22fc77670013e1953d78be2b59f3bf45991",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00504.json": "2589e3a11a2b839da32a2eaccbaba2a5cae1f850a04095ce5d0975bdad37a86c",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00504.json": "2589e3a11a2b839da32a2eaccbaba2a5cae1f850a04095ce5d0975bdad37a86c",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00504.json": "2589e3a11a2b839da32a2eaccbaba2a5cae1f850a04095ce5d0975bdad37a86c",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00504.json": "2589e3a11a2b839da32a2eaccbaba2a5cae1f850a04095ce5d0975bdad37a86c",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF00522.json": "94cfa9f8615184a1b437e64f8f55933e196cc325af8a535e2bff5f6f7125ac3e",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00522.json": "94cfa9f8615184a1b437e64f8f55933e196cc325af8a535e2bff5f6f7125ac3e",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF00522.json": "94cfa9f8615184a1b437e64f8f55933e196cc325af8a535e2bff5f6f7125ac3e",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF00522.json": "94cfa9f8615184a1b437e64f8f55933e196cc325af8a535e2bff5f6f7125ac3e",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF01051.json": "9880dd800d660703ffb38c4d55bd79658f047f701da4ec963eab93f863deb949",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF01051.json": "9880dd800d660703ffb38c4d55bd79658f047f701da4ec963eab93f863deb949",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF01051.json": "9880dd800d660703ffb38c4d55bd79658f047f701da4ec963eab93f863deb949",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF01051.json": "9880dd800d660703ffb38c4d55bd79658f047f701da4ec963eab93f863deb949",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF01054.json": "1a0f63b7accd75b43c6fa60fe50f0a61db748e94dbfe2b48b71bebc0d0c1cc94",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF01054.json": "1a0f63b7accd75b43c6fa60fe50f0a61db748e94dbfe2b48b71bebc0d0c1cc94",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF01054.json": "1a0f63b7accd75b43c6fa60fe50f0a61db748e94dbfe2b48b71bebc0d0c1cc94",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF01054.json": "1a0f63b7accd75b43c6fa60fe50f0a61db748e94dbfe2b48b71bebc0d0c1cc94",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF01750.json": "e26bf84196ac18fc10367f0f8790308afb0609965f2cf47eaa2d74eb13937aa1",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF01750.json": "e26bf84196ac18fc10367f0f8790308afb0609965f2cf47eaa2d74eb13937aa1",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF01750.json": "e26bf84196ac18fc10367f0f8790308afb0609965f2cf47eaa2d74eb13937aa1",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF01750.json": "e26bf84196ac18fc10367f0f8790308afb0609965f2cf47eaa2d74eb13937aa1",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF01786.json": "c9c5f25f104cf57ef1cc8c7e77bdcaa9dc832d4838f511abc82f8cccfb5e7f37",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF01786.json": "c9c5f25f104cf57ef1cc8c7e77bdcaa9dc832d4838f511abc82f8cccfb5e7f37",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF01786.json": "c9c5f25f104cf57ef1cc8c7e77bdcaa9dc832d4838f511abc82f8cccfb5e7f37",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF01786.json": "c9c5f25f104cf57ef1cc8c7e77bdcaa9dc832d4838f511abc82f8cccfb5e7f37",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF02540.json": "1aa00f341b6324fa8ca585b17070aab7f107c94f1c7cb89ae6782ec05a8ccc15",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF02540.json": "1aa00f341b6324fa8ca585b17070aab7f107c94f1c7cb89ae6782ec05a8ccc15",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF02540.json": "1aa00f341b6324fa8ca585b17070aab7f107c94f1c7cb89ae6782ec05a8ccc15",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF02540.json": "1aa00f341b6324fa8ca585b17070aab7f107c94f1c7cb89ae6782ec05a8ccc15",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF02541.json": "5c11d441cc5c8361af21abea735213840121448336d0700291c8c464ae8b836e",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF02541.json": "5c11d441cc5c8361af21abea735213840121448336d0700291c8c464ae8b836e",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF02541.json": "5c11d441cc5c8361af21abea735213840121448336d0700291c8c464ae8b836e",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF02541.json": "5c11d441cc5c8361af21abea735213840121448336d0700291c8c464ae8b836e",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF02543.json": "c3e71f788761219287c5656d2b4382662c47be63ea13f70612cc937035ccf14b",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF02543.json": "c3e71f788761219287c5656d2b4382662c47be63ea13f70612cc937035ccf14b",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF02543.json": "c3e71f788761219287c5656d2b4382662c47be63ea13f70612cc937035ccf14b",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF02543.json": "c3e71f788761219287c5656d2b4382662c47be63ea13f70612cc937035ccf14b",
+    "results/family_provenance_dataset_metadata_runs/20261015T033108.973847Z/RF03167.json": "f394e24a3b9201490aafc729b82f7fef62a1a6cdc70f8dd5afdd9933c9ab709d",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF03167.json": "f394e24a3b9201490aafc729b82f7fef62a1a6cdc70f8dd5afdd9933c9ab709d",
+    "results/family_provenance_dataset_protocol_runs/20261015T033100.546708Z/cache/RF03167.json": "f394e24a3b9201490aafc729b82f7fef62a1a6cdc70f8dd5afdd9933c9ab709d",
+    "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/RF03167.json": "f394e24a3b9201490aafc729b82f7fef62a1a6cdc70f8dd5afdd9933c9ab709d",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00002.json": "495871ccd14898f1b1b3f1d08317306bf2829cc9440fc0455f3e72c557f638cd",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00003.json": "74a67cb6ef420647482678c22d0b6e99011084e67223cf9a1541ce127d4075c3",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00004.json": "34f0235c478ff2fe80bda5af7d802633f4f9947ed2d6cead70fe6bba766dbb09",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00006.json": "6a8cc4ab1643ad48c2afb37f401f3a35ffeb420184803c0aabcb14e3d3ebef81",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00007.json": "ca1a28db4830a7c5c5a3388282b9933264b0c46dbe1f037ef01304b65037159c",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00009.json": "ee76e5f4ab46c4a31269cd58ac8bef660eb7593d064bda8f6d132ee3ef0cdf5d",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00011.json": "4665d034637a92a3b8aca0c40244e80fc02ffb639f50e766aecab689bd1a105e",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00012.json": "9e8c35eeca9fecbdb5781fb299d3f31783abd63c93753d4297739a2d9a89a3a2",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00013.json": "8e87b738c5810cfc3ba084d65f7fb8d146b047ca05eb25c274e8b09dd23b9c3a",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00014.json": "b9025b4e4b8d1aca378da391e0741a220360fa461bb7c1cfda4a71d89130b7b1",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00015.json": "5d4a08781a23e45367b12390c4ca67a5b576fe48487b3ce87d622bf862747833",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00016.json": "11a2c97cbebb245ae68e82030f06876a75463e9b68c7efb87d026737a0ef7133",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00018.json": "d32f9729881b6bda1fdb6c5dec126fa4287e4cd9278bf954244157501306d20b",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00019.json": "ee377d0997e10d30bed950e59d107a4d4d7a2b6746ec911411203d503c2f8e68",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00020.json": "cbb7acce924b78a096730c4917c42fbff23e73c3a453c35d02dc609207380f6c",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00021.json": "c728e2bf22c120332c2506e4ceb3a3fe3e017c474f07e1173eb1daf9ed84b54a",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00022.json": "52b73376bf95eabdf3e680c05ada121c3d1652c86334ef15a6f00d2884cd7dc8",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00024.json": "a5f6604899f315b59f147c08a0d11657b77e2f7e6ed8f9d3b675d32118524018",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00025.json": "8f9c8026c9537c1b58166d20a3764ec74e5cb355833de981b6dc2b461b48a52e",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00026.json": "c2a3f8e8386ee237b7b44a041b3b67f34803135936c26eef3aa24adc39f8ac9c",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00027.json": "8276446ab37fde65ef5786ae27ca7f4e4c3de5a0d37bb56058ef6673574929d9",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00028.json": "dce5c323c9e06b1413939227bc9ce3bfc7602fdc2c6af3dfdf691dc1a73f0471",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00030.json": "55cb396dbf3c5353a998ae3e6fa62485550d5525804b0f2b2730a6d1b83d148c",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00031.json": "078913f6a31d675752dae4759d047a160cfc3806f734f4e1a16072e0115e4af9",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00032.json": "5997b3b9e6d6b46aeb10ae1a51cba88b02d306620e821abc1271be3fa6f5b955",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00033.json": "4aae646ede27dab02a4ac312c225e59dc937af4fae9a14acb821b78fc555aec2",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00034.json": "552615f0c98207b28cdfafdc238367142234beb133854b29ce4407c7b9c37b65",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00035.json": "7260d1215e9eda7fd6204f3dc7e5e67883fca42dbb41aaa969ccc7368f582b9e",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00036.json": "d7a218060f87c1c961e8a237e03ffb4fb9b4cf52d5ffbee73547414534259532",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00037.json": "5e027f8f808265f278e221361fe5a1065e232d32a23f9194df2839def6b54844",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00038.json": "ae9843eb26a617b0693791f3c6be405065484fae9c5477b5f1a9c1168d8dc84b",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00039.json": "87f75031e49e49a25e3a1848ea072db84995f90fdbc2702d198813a7cb74968c",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00040.json": "de6b1b0e3769d3fcb9929b004da048b6399f9237554a76f0ccec34b666e7da92",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00041.json": "ff642cee23f36a7362aca7713af612faa5ee747a43031a8d21616a529cebfc89",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00042.json": "9bbbe0e2e6917fd1bc63e6857e05908c7a6858cc1724fbcff7f59703af03b36c",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00043.json": "8e5228ed27744521d4b48a9eedc3f2bf00a64a6bb5f5fb4ae9c36d1dd77e06ae",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00044.json": "4e07b1e5d5d5fad85c18b7a766dca5128f59081c5e9a5b0a871d78fdce385cb0",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00045.json": "e7c80c374fae868547e85714c2bd074f631c31a39292dae8edbdecdbdf5a0bb9",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00046.json": "8fa1ee636d214aad42a54e7c7acb3c024f9d3fda5c89a651408dd7545b9f115b",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00047.json": "e955a4fe0683c2cb5fde186bee4f55c02096cfb57659ed1315cee7ee9cae517b",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00048.json": "30dc818d88dec2e9816708c8b3ca2c575720aa3c99d272b5a1bd4838c4a99e36",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00049.json": "ba1781f747a86c425c7b87ec4d13cae2319aa51de50b8e7d2df491018eebe10c",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00061.json": "1053785697523d247380f06b8becb61ca218f07d7d93b42b32feadb1f4676fcc",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00066.json": "28d00e52f8f5e7147c03df99cb151b6792d4fcc7051baf28968176919b6d930f",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00075.json": "a7b501ccf8e6943796e12a97d7413d872f1b31b7860029f51066a90376ffe54a",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00080.json": "7a4c5c5a50e616a225327fe2daf24ca36f4c5cf3c2fe8dd91a6f3d0188aa2b84",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00083.json": "f2c2997d175fb933e86b4567c22c7fd1562a157ee9ac1e7ea0e96b0d0db6e5dc",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00100.json": "d3b38c687f5b7544e7be674e294d442a9467eac28f2f29a82ebb47d0be2570ad",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00102.json": "544bf44c0469cd6039aff65323472d8f03ef7442ba7283fba19d49c450104f86",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00114.json": "1a02d8c9d1064db71197522fe0644c6ad38aaeaa962aebda418a941d8b4a8dad",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00128.json": "6da62dae5f32ed0ab704ea19eed1c62f5ed00e5f5f433cb0bef915979cd1a036",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00164.json": "71c9f22a45f9876287fc8de469cf8fb387625d5ee5cf1e3531c712667845d108",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00166.json": "88946912ba4d6df4910916bbb06b1495102b3b36d43fd09ab977a7496436fea4",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00177.json": "19978154c0db79c539ae8038384988271e520621057c8019e6c7bc60fcde1384",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00185.json": "42dd05655abf8ca23593e8836ac58618004462b997063cf8d6cc40fad57e353d",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00207.json": "1a85db2bf184860143d3f86d301a6e8dcd92a86c541e313924eeb9f037691e7f",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00209.json": "a09807fc5e1f6fb18c8f7357317239c095fc38f84f95c1243210eff943738a48",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00210.json": "57fcd1e8ae1264e721d1f44e486f5ba950180c8efdca9b82f860f8868c46b9da",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00228.json": "7b4f0e63cd06e501e725d97cdb99daa2e5e2bcde7790d0ca2e95ccd279b25a64",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00233.json": "26f93c621068f8be2608c15f45f44f29b06d8aa63a3d9bab4c614188bc2fc60b",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00240.json": "3849d5e82a030b3cfd3175a18b83e4c4ed1f4cac32bba75204af0b8a336e1fbc",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00250.json": "9b24c263cfe67c68fc2cdab87b72fb6ae37ad70bbf3e3965204f3113a560ab13",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00254.json": "5f0193bed7169adebb012a86224b653d8c2c8775a8d79380965de46359feca98",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00373.json": "d773a973465ab3f7613416f310136dbee976704b2ffb02c21ec54f56b0161421",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00375.json": "fcb3f96690bd61b2432d2d4f11c3b7a51378d61817d0d9860684681f640d6343",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00382.json": "9d718fbbc69249511ce382a23f70b6413576ebca1207da17d4fb8eb82535a711",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00386.json": "3fcfcd962f018b3f94a668508820c7aadd9729aeff241f927422a4d3052f9ffd",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00390.json": "112c33923790c7a580b4af17a6f9446f8252f20c13bb89cf76098944ad30b82a",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00455.json": "e557c36aba3af75895e4334e4ec2d9de4d48a07f819b35c1ffe93ac346cd4ec0",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00458.json": "699126da40f6e8fdfc0f34824886c458bac8082e78f62e1be421e7157eacedf7",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00480.json": "e1d53009419c623fb348dee77d4f625346ad9ee7ef97c126328660e7302fea57",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00488.json": "807be4806fe8ae22467c590697c6e8b5759a39736f32f77afd069a6321bd0396",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00500.json": "ac15dd67b116adbe82f65e5a38a3940facfc6d8feb391b246212e95252172ab8",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00505.json": "bb057d3a8d63b971a5272f7894e23ba40e7dc2cebad5a7b15e4022fc1dd70e71",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00507.json": "6acf4c85d45849475864908c0e1bc4ded7d5c756559e74db9e1a2f141c4ebea7",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00525.json": "a94ea3e523fb928066b1e6b2e0235ee870e913a86776fb3b0e77a697e10e7375",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00619.json": "213d185e73ef63425216c3c4bf7788e40c59367bd78038d5bbb38f5bfe2171aa",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00620.json": "18c37aa9729dde8dabb0ad564b4ca852283bad2d8d31b703aa632136d141f2a2",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00622.json": "097cf709eef014d025d8e6982cb04368ae14a75ac059eb53f3b6c4ce97bef2f6",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00634.json": "6ba096188abe0fb15249ed48d065446b487bde66b5e6127a9df3c58654e9cc22",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00661.json": "7f62374c0f3d8d7c958c157634e662547cc667aa8580fbf4e3010fa6c63e126b",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00957.json": "b6d166a82f5aea4026636779f0fa13f4b64cba42afd5fb82cf2e83f64e9b6dc3",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01047.json": "2f1298df9a017479de3ff8776c53bb2f11979543e29f8112845cb2fc03cd50a4",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01073.json": "e618c6cef0882c92925a842341fe66e8cba3217f44bea34080dc2919c4bf93d4",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01084.json": "5e72e26f0c5f357e3cfbeeed7df686eda270b465c5bfe3cc33a6db38d740cda2",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01317.json": "32a5f406454ebeda1a7eda28f721b7b1d831cb9595a02aa4d4ecd976908834e4",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01330.json": "8778fdf4c3424a04d3e50a9643f78a8d673b022931f1a867927df54596c8704b",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01344.json": "2658071d434520313252fddf905079812f34f195ed1ce2bb739fba617230068c",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01380.json": "087ea8506233b6977d1658c1bfb0ff874a3fe67cfc6518c560dda89b32e7ac6c",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01381.json": "8ce744b329688e1731d771990395362f8cd83a55b9334669f1336769b83918f6",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01415.json": "c50bbac4f8d415ba1c175a8979e7802bed3c89f415ec4efd2f10cbc9662200db",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01510.json": "ede6dcec17ea8e9982f047e1aa946692a4353dcfb410e5c1ef58f244ee0848d5",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01689.json": "495b0698c7d03d444a4927aa14d22f706f3aa44876974367b634145d53bc4cfd",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01704.json": "f2a2c78f71cedc68f4e1411abb18b8c2ea92f48014e29019779d199a2b4de3b3",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01725.json": "afdbbee00159e324ffa69b6c1330c6c3ee4eb298b3b090874b1e432f3f899b38",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01727.json": "8425ab71a1045174c45980023c8eb7cbe4abe0ffc8c918ce17546a7c13fecf4b",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01734.json": "5a584e2d03d611fd047fd244f8f858fc25a09365a655d552d048eeac85b225cf",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01763.json": "ff6217ba47abab24d52f70e0b90b3e1716a4c08ad1e07582a65f1fb7d53a35f8",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01807.json": "a002b36c448dd6e89fb9702a9f518f55b4d9d7b4eb0ffa1a21518ab6d5367ed6",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01826.json": "71d92c96c9ca729cd7803d339555eb36d78ce650c37fe4947fe3b45ce084c74e",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01831.json": "adee66c95d0d030c69babad4b3509fb115acabe634a0c5ada57425667e802d4a",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01846.json": "8c5cbec37fb99431cfd52a1b43677b8a5382710134aa1cf34405fb65ff6ce1fd",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01848.json": "059269f6506e33c307754dd77adfd5d536384229089c7556cd9780c5ed007625",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01852.json": "324f1854e1558706e7415c19186051186190e61fd41ee6b0c16e1f40ea9a74da",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01854.json": "dd0374b1296f72c12932b743a89819c7fa83648a96d027be5e3cb5315c8a9de0",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01856.json": "7b01f4818fd2a85e013ef54da3e6f2e4627be58f483420ce9b3216db9b923e5c",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01857.json": "6d4a78ba45ecd572f78ce92e139bd8bf00bea86383aca4faf9198ecc26246b53",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01959.json": "17b5993a08ee5d3a6fdd0abcd7b20f26433d395db8ae0193463ef53c968b7ded",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01960.json": "3aa9a7cd93a2fe83fcff595e25a73408813c93b478176d5976f769eae07d76b0",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01998.json": "1c164c1802fcb7c2145feb6b93e6baf622a95bad941f9abf735207d837b39fb6",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02001.json": "ba35f79086aff240fbfec0b0c5c7fd4a5d5a95d0729a80398be0477d76dd97ce",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02012.json": "85fcd45940a06606593044ad7f99de33bf546248137df446c9e313cd5f6349de",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02095.json": "7c51c04ce026857c8ec862e10749d888f871e6b4ec9e55166aad97f942655393",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02253.json": "ff4b7b6229187e8f287e1f7ab547ba2a29dbc3d06b6d3fc9a9d94e1e67f42fbe",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02340.json": "7171eb694c1ae0dedd38697e59a737f810062cbaa31c0a24caef993ddcb0d8e5",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02348.json": "9d1415a3ebdc04f2027a538a13f82a6e6ff1c6275f075f090239e20a2ffe4328",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02359.json": "8b8e7c172a67cded10077b0146874fa5271d9de805ef23eba6cac809d4c21688",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02519.json": "e351df470a0c9497d5296792867776c897bfcf666e54154a7682708e1bbea3f7",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02521.json": "34775f7eb68559e6b51babeffbee39f8e11139a9ffacfdcf12b3a49950f4b151",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02542.json": "b6e15446eed0ba012fc9093c29726dc6a964fe623824fedd99f2af0443eebbb1",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02545.json": "08fa06b4801836a4366ab194ece0f7fbb37175a8c8b2db704d5068944228dc3c",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02546.json": "934827ee5af1a6aedb9d1f42c4a9acbd19ad98383fd70cdceda7709cee31953d",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02553.json": "abbffae3d1f09ec13653941c579409e11dac9f66877ce06b7f6a9a9b947847c5",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02678.json": "b0e8a73b10f431d11ec091759ce1b2adadc7cab055100a5b0d5141b46a2402f4",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02679.json": "cca66e6d9612f8c9a5272f437599c20cd138cc883acfd3afc55929b2dbb4c08e",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02680.json": "ce51b549dfec6e2ad447ae658da3dfacd3bcdf2d0ff3c5a31b35869a4027285b",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02681.json": "ede0c147d5f877d46e45c21ba54536832297f176ee7f17a46e461476fff0acaf",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02683.json": "0a2f2d0997d2dcf375a91c8da8be830022e6ed199ab8855e23d5479bdb61808e",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02796.json": "54687efa6a7b32e705e35db55a92fd0c6a37bb2cac5bac9c039e0cc4e49713a3",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02977.json": "7a21e36becca1cc3c0b3833fde4ca7e2e1963b2c03f03d02ab7d88271832b62e",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF03013.json": "0ac4d819a69d56e6bc7603032564cb53aa7aaa7723520cb7022119a2f5e088d6",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF03054.json": "8fcea668c3b230f5a6d2dfb4c5c774e87c128eb3f8f1cf8c55d1cc91a733430d",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF04190.json": "ce8c66148fc453f53f0c54804b71f45397412e17a9eee027fc87d95769e809f1"
+  }
+}

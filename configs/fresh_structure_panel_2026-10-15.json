@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "stage": "metadata_only_fresh_structure_panel",
+  "inventory": "results/fresh_structure_inventory_after_metadata_2026-10-15.json",
+  "families": ["RF00015", "RF00080", "RF00100", "RF01734", "RF01763", "RF01831", "RF02977", "RF03013"],
+  "maximum_pdb_chains_per_family": 8,
+  "minimum_pdb_chains_per_family": 4,
+  "candidate_order": "family_then_pdb_then_chain_distinct_pdb_globally",
+  "future_binding": {
+    "minimum_length": 20,
+    "maximum_length": 512,
+    "sequence_similarity_threshold": 0.8,
+    "maximum_supported_records_per_family": 4,
+    "contact_target": "all_returned_cWW_contacts_without_projection",
+    "multiple_partners": "unsupported_do_not_delete_contacts",
+    "replace_unsupported_records": false,
+    "minimum_supported_total": 12,
+    "minimum_supported_families": 3,
+    "minimum_supported_per_family": 3,
+    "reference_kind": "computational_PDB_derived"
+  },
+  "structure_labels_allowed_at_freeze": false,
+  "model_inference_authorized": false
+}

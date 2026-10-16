@@ -1,0 +1,31 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/baseline_seed20261015",
+  "study_manifest_sha256": "49468980abd09b467ea8fc387b229e0fb7440ffa824a36898e1c266854a403ba",
+  "head": "baseline",
+  "seed": 20261015,
+  "config": {
+    "mode": "family_coverage_development_only",
+    "epochs": 10,
+    "learning_rate": 0.001,
+    "embedding_dim": 16,
+    "channels": 32,
+    "pair_dim": 16,
+    "dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cpu_threads": 2,
+    "training_max_length": 1024,
+    "top_k": 16,
+    "block_size": 64,
+    "positive_weight_exponent": 1.0,
+    "inference_decoder": "exact_sparse",
+    "seed": 20261015
+  },
+  "snapshot_sha256": {
+    "train.json": "d0efea86d89f0a194a04444d8e2364a7531c6317d2dce415e00696dcfd86f290",
+    "validation.json": "474e4c04a44b6a480d15f26d942e6cf30b5fb6562512bc65d77fb0cc346887b3"
+  }
+}

@@ -1,0 +1,32 @@
+Family-provenance metadata replay passed; no new labels, inference, fitting or exposure.
+Screened RF00026: 12 fixed candidates
+Screened RF00012: 12 fixed candidates
+Screened RF00003: 12 fixed candidates
+Screened RF00024: 12 fixed candidates
+Screened RF00041: 1 fixed candidates
+Screened RF00018: 10 fixed candidates
+Screened RF00020: 12 fixed candidates
+Screened RF00043: 3 fixed candidates
+Screened RF00047: 12 fixed candidates
+Screened RF00016: 6 fixed candidates
+Screened RF00048: 4 fixed candidates
+Screened RF00006: 12 fixed candidates
+Screened RF00004: 8 fixed candidates
+Screened RF00032: 8 fixed candidates
+Screened RF00027: 8 fixed candidates
+Screened RF00028: 8 fixed candidates
+Family source replay passed; no model fitting or inference.
+Screened RF00022: 7 fixed candidates
+Development-only extension replay passed; no model fitting.
+Coverage development dataset replay passed; no model fitting.
+stack seed 20261015 epoch 1/10: validation full-pair F1 0.3300
+stack seed 20261015 epoch 2/10: validation full-pair F1 0.3024
+stack seed 20261015 epoch 3/10: validation full-pair F1 0.2907
+stack seed 20261015 epoch 4/10: validation full-pair F1 0.3708
+stack seed 20261015 epoch 5/10: validation full-pair F1 0.3094
+stack seed 20261015 epoch 6/10: validation full-pair F1 0.2265
+stack seed 20261015 epoch 7/10: validation full-pair F1 0.2411
+stack seed 20261015 epoch 8/10: validation full-pair F1 0.2386
+stack seed 20261015 epoch 9/10: validation full-pair F1 0.2176
+stack seed 20261015 epoch 10/10: validation full-pair F1 0.0928
+Training component audit passed: stack seed 20261015.

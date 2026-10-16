@@ -8,7 +8,7 @@ and results are available for inspection. No validated release yet.
 
 ## Development plan
 
-Updated October 14, 2026. **Current step: 4 — independent biological validation.**
+Updated October 15, 2026. **Current step: 4 — independent biological validation.**
 
 | Step | Work | Progress |
 |---:|---|---|
@@ -21,10 +21,17 @@ Updated October 14, 2026. **Current step: 4 — independent biological validatio
 | 7 | Validated release | Pending the scientific evidence above. |
 
 The assay pilot advances part of step 6 while steps 4 and 5 remain open.
-**Development paused at the user's request.** A metadata-only plan now fixes
-12 training and four validation family/clan groups; no new labels or models were
-created. Next, build provenance-controlled development data before further
-independent validation. See the [roadmap](reports/PROJECT_ROADMAP_2026-10-14.md).
+Development resumed with a frozen 12-training/four-validation family source plan.
+Its original selection failed the per-family gate. A separately versioned,
+label-informed development dataset now passes that gate with 61 training and
+22 validation pair references. A matched nine-run pair-set training study is
+complete; independent biological validation remains open. See the
+[roadmap](reports/PROJECT_ROADMAP_2026-10-15.md).
+The next-panel metadata acquisition resolved 91 of 92 missing family
+descriptions; RF04222 returned 404. An eight-family, 56-candidate structure
+panel was frozen and acquired. All 56 contact requests succeeded, but sequence
+redundancy left 12 informative references and no family with three. The
+reference-readiness gate failed; no new model inference ran.
 
 ## Latest results
 
@@ -37,7 +44,13 @@ independent validation. See the [roadmap](reports/PROJECT_ROADMAP_2026-10-14.md)
   fractions on this selected cohort.
 - **Provenance:** all three learned models use the same frozen development data;
   83/136 records still lack confirmed family assignments.
-- **Verification:** 821 tests passed. Source archival recovered 271 of 281
+- **New development data:** the failed sequence-first source run is retained.
+  A disclosed coverage selection yields 61 training and 22 validation complete
+  pair references across 12 and four groups.
+- **New model study:** three heads × three seeds trained from random initialization
+  on the new pair sets. Mean selected development validation pair F1 is 0.322
+  baseline, 0.391 stack and 0.482 helix; independent accuracy is unmeasured.
+- **Verification:** 831 tests passed. Source archival recovered 271 of 281
   recorded Python versions; ten historical versions remain unavailable.
 
 These results do not establish causal mutation benefits, cellular half-life,
@@ -48,7 +61,14 @@ long-RNA accuracy, or retained function. The assay cohort contains only
 · [Assay review and figure](reports/degradation_pilot_review_2026-10-13.md)
 · [Source archive](docs/REPLAY_SOURCE_ARCHIVE.md)
 · [Reference engineering](docs/STRUCTURE_DERIVED_REFERENCES.md)
-· [Test log](reports/family-provenance-dataset-full-suite-2026-10-14.log)
+· [Family source review](reports/family_provenance_source_review_2026-10-15.md)
+· [Coverage dataset review](reports/family_coverage_development_review_2026-10-15.md)
+· [Pair-set training review](reports/family_pair_set_training_review_2026-10-15.md)
+· [Fresh structure inventory](reports/fresh_structure_inventory_review_2026-10-15.md)
+· [Fresh structure candidate plan](reports/fresh_structure_metadata_and_panel_review_2026-10-15.md)
+· [Fresh structure contact review](reports/fresh_structure_reference_review_2026-10-15.md)
+· [Latest test handoff](reports/RNA-StableAI_HANDOFF_2026-10-15_V6.md)
+· [Model-study test log](reports/family-pair-set-training-full-suite-2026-10-15.log)
 
 ## Quick start
 

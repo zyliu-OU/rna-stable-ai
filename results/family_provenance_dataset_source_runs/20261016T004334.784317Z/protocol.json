@@ -1,0 +1,14 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/family_provenance_dataset_source_protocol_runs/20261016T004331.438093Z",
+  "metadata_summary_sha256": "1301ac74002abdce42743d8e13ab794e9f1f4e6fa74661d3bae6e1c6119a236b",
+  "snapshot_sha256": {
+    "config.json": "878903d0218c1ea3de380290a1fce4bb0bf4fa66c2cea41c49c1b33d1de2e178",
+    "metadata.json": "1301ac74002abdce42743d8e13ab794e9f1f4e6fa74661d3bae6e1c6119a236b",
+    "exposure.json": "fe9b9b418d2887a46716c7f13d242e1749bbc9ee7d91f1478fcd14cc1fe4950d",
+    "driver.py": "8929dc57ebdfbd104cd3d586d9668ecdfa32e8e609a9f287b8ae0e2df2cb46c1",
+    "requests.json": "e8152f1bb59354361ea52676c451d9bd5a72dc97c1bb023758633845da6cdb5c"
+  },
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/prepare_family_provenance_dataset.py": "8929dc57ebdfbd104cd3d586d9668ecdfa32e8e609a9f287b8ae0e2df2cb46c1"
+  }
+}

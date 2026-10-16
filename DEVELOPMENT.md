@@ -6,7 +6,7 @@ There is no validated release. Biological stability, mutation benefits and
 retained function remain unestablished.
 
 For the current development plan and next step, see the [project overview](README.md)
-and [current roadmap](reports/PROJECT_ROADMAP_2026-10-14.md). The detailed studies
+and [current roadmap](reports/PROJECT_ROADMAP_2026-10-15.md). The detailed studies
 below retain their original scope and commands.
 
 ## Development checkpoint — 2026-10-13

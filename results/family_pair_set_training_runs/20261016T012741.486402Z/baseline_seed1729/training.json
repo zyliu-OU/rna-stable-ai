@@ -1,0 +1,324 @@
+{
+  "history": [
+    {
+      "epoch": 1,
+      "mean_train_loss": 1.902894338623422,
+      "validation_mean_full_pair_f1": 0.3254778839574229,
+      "mean_validation_loss": 2.208534078164534
+    },
+    {
+      "epoch": 2,
+      "mean_train_loss": 1.7618730840135792,
+      "validation_mean_full_pair_f1": 0.36579723562251476,
+      "mean_validation_loss": 2.0740571347149936
+    },
+    {
+      "epoch": 3,
+      "mean_train_loss": 1.6637817494204787,
+      "validation_mean_full_pair_f1": 0.29096714617018155,
+      "mean_validation_loss": 1.9473486705259844
+    },
+    {
+      "epoch": 4,
+      "mean_train_loss": 1.5423949009082356,
+      "validation_mean_full_pair_f1": 0.2118785004024726,
+      "mean_validation_loss": 1.9699163409796627
+    },
+    {
+      "epoch": 5,
+      "mean_train_loss": 1.4821936429524032,
+      "validation_mean_full_pair_f1": 0.2771388525348007,
+      "mean_validation_loss": 1.850570337338881
+    },
+    {
+      "epoch": 6,
+      "mean_train_loss": 1.3628647200396804,
+      "validation_mean_full_pair_f1": 0.24867187935017937,
+      "mean_validation_loss": 1.9755521660501307
+    },
+    {
+      "epoch": 7,
+      "mean_train_loss": 1.2947365905417771,
+      "validation_mean_full_pair_f1": 0.2793648936797796,
+      "mean_validation_loss": 1.845139974897558
+    },
+    {
+      "epoch": 8,
+      "mean_train_loss": 1.2012301957020994,
+      "validation_mean_full_pair_f1": 0.1898588139931604,
+      "mean_validation_loss": 2.030904927036979
+    },
+    {
+      "epoch": 9,
+      "mean_train_loss": 1.128090410936074,
+      "validation_mean_full_pair_f1": 0.1542329908112634,
+      "mean_validation_loss": 2.196638987822966
+    },
+    {
+      "epoch": 10,
+      "mean_train_loss": 1.0366380849822623,
+      "validation_mean_full_pair_f1": 0.20439680193041035,
+      "mean_validation_loss": 2.171708117831837
+    }
+  ],
+  "selected_epoch": 2,
+  "initial_validation_full_pair_f1": 0.0,
+  "selected_validation_full_pair_f1": 0.36579723562251476,
+  "train_positive_pairs": 1235,
+  "train_negative_pairs": 216942,
+  "train_only_positive_weight": 175.66153846153847,
+  "unlearnable_train_gold_pairs": 116,
+  "unlearnable_validation_gold_pairs": 53,
+  "full_train_gold_pairs": 1351,
+  "full_validation_gold_pairs": 632,
+  "parameters": 25874,
+  "checkpoint_sha256": {
+    "initial_model.pt": "c53e4a6dcd33f18d4e66c9f3954fb35ed2a57350af541765ac3cf9e8d2d7edcd",
+    "best_model.pt": "cc3872be38adaf091464dd71107c17a0d8d02cfe6d989a491a603e70f5526553"
+  },
+  "selection_policy": "highest_full_gold_validation_pair_f1_then_lowest_validation_bce_then_earliest_epoch",
+  "validation_record_scores": [
+    {
+      "id": "RF00004:AAAA02007579.1/14294-14490",
+      "reference_pairs": 45,
+      "predicted_pairs": 28,
+      "shared_pairs": 0,
+      "pair_precision": 0.0,
+      "pair_recall": 0.0,
+      "pair_f1": 0.0,
+      "pair_jaccard": 0.0,
+      "base_pair_distance": 73
+    },
+    {
+      "id": "RF00004:AAAB01008933.1/737524-737331",
+      "reference_pairs": 45,
+      "predicted_pairs": 30,
+      "shared_pairs": 0,
+      "pair_precision": 0.0,
+      "pair_recall": 0.0,
+      "pair_f1": 0.0,
+      "pair_jaccard": 0.0,
+      "base_pair_distance": 75
+    },
+    {
+      "id": "RF00004:AABL01000318.1/11806-12005",
+      "reference_pairs": 45,
+      "predicted_pairs": 27,
+      "shared_pairs": 0,
+      "pair_precision": 0.0,
+      "pair_recall": 0.0,
+      "pair_f1": 0.0,
+      "pair_jaccard": 0.0,
+      "base_pair_distance": 72
+    },
+    {
+      "id": "RF00004:AABS01001062.1/345-536",
+      "reference_pairs": 45,
+      "predicted_pairs": 32,
+      "shared_pairs": 0,
+      "pair_precision": 0.0,
+      "pair_recall": 0.0,
+      "pair_f1": 0.0,
+      "pair_jaccard": 0.0,
+      "base_pair_distance": 77
+    },
+    {
+      "id": "RF00004:AABX02000002.1/241678-241484",
+      "reference_pairs": 45,
+      "predicted_pairs": 29,
+      "shared_pairs": 0,
+      "pair_precision": 0.0,
+      "pair_recall": 0.0,
+      "pair_f1": 0.0,
+      "pair_jaccard": 0.0,
+      "base_pair_distance": 74
+    },
+    {
+      "id": "RF00004:AACN010750078.1/657-848",
+      "reference_pairs": 45,
+      "predicted_pairs": 27,
+      "shared_pairs": 0,
+      "pair_precision": 0.0,
+      "pair_recall": 0.0,
+      "pair_f1": 0.0,
+      "pair_jaccard": 0.0,
+      "base_pair_distance": 72
+    },
+    {
+      "id": "RF00032:AAAB01008948.1/3301455-3301500",
+      "reference_pairs": 6,
+      "predicted_pairs": 12,
+      "shared_pairs": 2,
+      "pair_precision": 0.16666666666666666,
+      "pair_recall": 0.3333333333333333,
+      "pair_f1": 0.2222222222222222,
+      "pair_jaccard": 0.125,
+      "base_pair_distance": 14
+    },
+    {
+      "id": "RF00032:AAAB01044800.1/486-531",
+      "reference_pairs": 6,
+      "predicted_pairs": 14,
+      "shared_pairs": 5,
+      "pair_precision": 0.35714285714285715,
+      "pair_recall": 0.8333333333333334,
+      "pair_f1": 0.5,
+      "pair_jaccard": 0.3333333333333333,
+      "base_pair_distance": 10
+    },
+    {
+      "id": "RF00032:AABL01000137.1/776-821",
+      "reference_pairs": 6,
+      "predicted_pairs": 14,
+      "shared_pairs": 6,
+      "pair_precision": 0.42857142857142855,
+      "pair_recall": 1.0,
+      "pair_f1": 0.6,
+      "pair_jaccard": 0.42857142857142855,
+      "base_pair_distance": 8
+    },
+    {
+      "id": "RF00032:AABS01000176.1/158056-158011",
+      "reference_pairs": 6,
+      "predicted_pairs": 14,
+      "shared_pairs": 5,
+      "pair_precision": 0.35714285714285715,
+      "pair_recall": 0.8333333333333334,
+      "pair_f1": 0.5,
+      "pair_jaccard": 0.3333333333333333,
+      "base_pair_distance": 10
+    },
+    {
+      "id": "RF00032:AAEE01000003.1/1110682-1110637",
+      "reference_pairs": 6,
+      "predicted_pairs": 15,
+      "shared_pairs": 6,
+      "pair_precision": 0.4,
+      "pair_recall": 1.0,
+      "pair_f1": 0.5714285714285714,
+      "pair_jaccard": 0.4,
+      "base_pair_distance": 9
+    },
+    {
+      "id": "RF00032:AAEE01000004.1/565730-565685",
+      "reference_pairs": 6,
+      "predicted_pairs": 15,
+      "shared_pairs": 6,
+      "pair_precision": 0.4,
+      "pair_recall": 1.0,
+      "pair_f1": 0.5714285714285714,
+      "pair_jaccard": 0.4,
+      "base_pair_distance": 9
+    },
+    {
+      "id": "RF00032:AAFD02000019.1/418583-418538",
+      "reference_pairs": 6,
+      "predicted_pairs": 13,
+      "shared_pairs": 5,
+      "pair_precision": 0.38461538461538464,
+      "pair_recall": 0.8333333333333334,
+      "pair_f1": 0.5263157894736842,
+      "pair_jaccard": 0.35714285714285715,
+      "base_pair_distance": 9
+    },
+    {
+      "id": "RF00032:AAFD02000019.1/419847-419892",
+      "reference_pairs": 6,
+      "predicted_pairs": 14,
+      "shared_pairs": 5,
+      "pair_precision": 0.35714285714285715,
+      "pair_recall": 0.8333333333333334,
+      "pair_f1": 0.5,
+      "pair_jaccard": 0.3333333333333333,
+      "base_pair_distance": 10
+    },
+    {
+      "id": "RF00027:AACT01004141.1/13602-13519",
+      "reference_pairs": 32,
+      "predicted_pairs": 22,
+      "shared_pairs": 13,
+      "pair_precision": 0.5909090909090909,
+      "pair_recall": 0.40625,
+      "pair_f1": 0.48148148148148145,
+      "pair_jaccard": 0.3170731707317073,
+      "base_pair_distance": 28
+    },
+    {
+      "id": "RF00027:AAFR03057393.1/4201-4115",
+      "reference_pairs": 32,
+      "predicted_pairs": 28,
+      "shared_pairs": 23,
+      "pair_precision": 0.8214285714285714,
+      "pair_recall": 0.71875,
+      "pair_f1": 0.7666666666666667,
+      "pair_jaccard": 0.6216216216216216,
+      "base_pair_distance": 14
+    },
+    {
+      "id": "RF00027:AAGD02006482.1/22892-22821",
+      "reference_pairs": 32,
+      "predicted_pairs": 26,
+      "shared_pairs": 21,
+      "pair_precision": 0.8076923076923077,
+      "pair_recall": 0.65625,
+      "pair_f1": 0.7241379310344828,
+      "pair_jaccard": 0.5675675675675675,
+      "base_pair_distance": 16
+    },
+    {
+      "id": "RF00027:AAIY01003579.1/1841-1762",
+      "reference_pairs": 32,
+      "predicted_pairs": 27,
+      "shared_pairs": 22,
+      "pair_precision": 0.8148148148148148,
+      "pair_recall": 0.6875,
+      "pair_f1": 0.7457627118644068,
+      "pair_jaccard": 0.5945945945945946,
+      "base_pair_distance": 15
+    },
+    {
+      "id": "RF00027:AAJJ01000960.1/12168-12093",
+      "reference_pairs": 32,
+      "predicted_pairs": 24,
+      "shared_pairs": 16,
+      "pair_precision": 0.6666666666666666,
+      "pair_recall": 0.5,
+      "pair_f1": 0.5714285714285714,
+      "pair_jaccard": 0.4,
+      "base_pair_distance": 24
+    },
+    {
+      "id": "RF00027:AAKN02054092.1/95811-95899",
+      "reference_pairs": 32,
+      "predicted_pairs": 28,
+      "shared_pairs": 23,
+      "pair_precision": 0.8214285714285714,
+      "pair_recall": 0.71875,
+      "pair_f1": 0.7666666666666667,
+      "pair_jaccard": 0.6216216216216216,
+      "base_pair_distance": 14
+    },
+    {
+      "id": "RF00028:M86534.1/28-414",
+      "reference_pairs": 61,
+      "predicted_pairs": 43,
+      "shared_pairs": 0,
+      "pair_precision": 0.0,
+      "pair_recall": 0.0,
+      "pair_f1": 0.0,
+      "pair_jaccard": 0.0,
+      "base_pair_distance": 104
+    },
+    {
+      "id": "RF00028:V01416.1/43-384",
+      "reference_pairs": 61,
+      "predicted_pairs": 45,
+      "shared_pairs": 0,
+      "pair_precision": 0.0,
+      "pair_recall": 0.0,
+      "pair_f1": 0.0,
+      "pair_jaccard": 0.0,
+      "base_pair_distance": 106
+    }
+  ]
+}

@@ -1,0 +1,450 @@
+[
+  {
+    "family_id": "RF00015",
+    "pdb_accession": "2n7m",
+    "chain_id": "X",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=2N7M&chain=X&only_nested=False",
+    "id": "RF00015:2n7m_X",
+    "filename": "record_000.json"
+  },
+  {
+    "family_id": "RF00015",
+    "pdb_accession": "3jcm",
+    "chain_id": "E",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3JCM&chain=E&only_nested=False",
+    "id": "RF00015:3jcm_E",
+    "filename": "record_001.json"
+  },
+  {
+    "family_id": "RF00015",
+    "pdb_accession": "3jcr",
+    "chain_id": "M",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3JCR&chain=M&only_nested=False",
+    "id": "RF00015:3jcr_M",
+    "filename": "record_002.json"
+  },
+  {
+    "family_id": "RF00015",
+    "pdb_accession": "5gan",
+    "chain_id": "V",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5GAN&chain=V&only_nested=False",
+    "id": "RF00015:5gan_V",
+    "filename": "record_003.json"
+  },
+  {
+    "family_id": "RF00015",
+    "pdb_accession": "5gap",
+    "chain_id": "V",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5GAP&chain=V&only_nested=False",
+    "id": "RF00015:5gap_V",
+    "filename": "record_004.json"
+  },
+  {
+    "family_id": "RF00015",
+    "pdb_accession": "5nrl",
+    "chain_id": "4",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5NRL&chain=4&only_nested=False",
+    "id": "RF00015:5nrl_4",
+    "filename": "record_005.json"
+  },
+  {
+    "family_id": "RF00015",
+    "pdb_accession": "5o9z",
+    "chain_id": "4",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5O9Z&chain=4&only_nested=False",
+    "id": "RF00015:5o9z_4",
+    "filename": "record_006.json"
+  },
+  {
+    "family_id": "RF00015",
+    "pdb_accession": "5zwm",
+    "chain_id": "I",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5ZWM&chain=I&only_nested=False",
+    "id": "RF00015:5zwm_I",
+    "filename": "record_007.json"
+  },
+  {
+    "family_id": "RF00080",
+    "pdb_accession": "4y1i",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4Y1I&chain=A&only_nested=False",
+    "id": "RF00080:4y1i_A",
+    "filename": "record_008.json"
+  },
+  {
+    "family_id": "RF00080",
+    "pdb_accession": "4y1j",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4Y1J&chain=A&only_nested=False",
+    "id": "RF00080:4y1j_A",
+    "filename": "record_009.json"
+  },
+  {
+    "family_id": "RF00080",
+    "pdb_accession": "4y1m",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4Y1M&chain=A&only_nested=False",
+    "id": "RF00080:4y1m_A",
+    "filename": "record_010.json"
+  },
+  {
+    "family_id": "RF00080",
+    "pdb_accession": "6cb3",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6CB3&chain=A&only_nested=False",
+    "id": "RF00080:6cb3_A",
+    "filename": "record_011.json"
+  },
+  {
+    "family_id": "RF00080",
+    "pdb_accession": "6cc1",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6CC1&chain=A&only_nested=False",
+    "id": "RF00080:6cc1_A",
+    "filename": "record_012.json"
+  },
+  {
+    "family_id": "RF00080",
+    "pdb_accession": "6cc3",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6CC3&chain=A&only_nested=False",
+    "id": "RF00080:6cc3_A",
+    "filename": "record_013.json"
+  },
+  {
+    "family_id": "RF00100",
+    "pdb_accession": "5iem",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5IEM&chain=A&only_nested=False",
+    "id": "RF00100:5iem_A",
+    "filename": "record_014.json"
+  },
+  {
+    "family_id": "RF00100",
+    "pdb_accession": "5lys",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5LYS&chain=A&only_nested=False",
+    "id": "RF00100:5lys_A",
+    "filename": "record_015.json"
+  },
+  {
+    "family_id": "RF00100",
+    "pdb_accession": "5lyu",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5LYU&chain=A&only_nested=False",
+    "id": "RF00100:5lyu_A",
+    "filename": "record_016.json"
+  },
+  {
+    "family_id": "RF00100",
+    "pdb_accession": "5lyv",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5LYV&chain=A&only_nested=False",
+    "id": "RF00100:5lyv_A",
+    "filename": "record_017.json"
+  },
+  {
+    "family_id": "RF00100",
+    "pdb_accession": "6mcf",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6MCF&chain=A&only_nested=False",
+    "id": "RF00100:6mcf_A",
+    "filename": "record_018.json"
+  },
+  {
+    "family_id": "RF00100",
+    "pdb_accession": "6mci",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6MCI&chain=A&only_nested=False",
+    "id": "RF00100:6mci_A",
+    "filename": "record_019.json"
+  },
+  {
+    "family_id": "RF00100",
+    "pdb_accession": "7slq",
+    "chain_id": "R",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=7SLQ&chain=R&only_nested=False",
+    "id": "RF00100:7slq_R",
+    "filename": "record_020.json"
+  },
+  {
+    "family_id": "RF00100",
+    "pdb_accession": "7t1n",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=7T1N&chain=A&only_nested=False",
+    "id": "RF00100:7t1n_A",
+    "filename": "record_021.json"
+  },
+  {
+    "family_id": "RF01734",
+    "pdb_accession": "3vrs",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3VRS&chain=A&only_nested=False",
+    "id": "RF01734:3vrs_A",
+    "filename": "record_022.json"
+  },
+  {
+    "family_id": "RF01734",
+    "pdb_accession": "4en5",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4EN5&chain=A&only_nested=False",
+    "id": "RF01734:4en5_A",
+    "filename": "record_023.json"
+  },
+  {
+    "family_id": "RF01734",
+    "pdb_accession": "4ena",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4ENA&chain=A&only_nested=False",
+    "id": "RF01734:4ena_A",
+    "filename": "record_024.json"
+  },
+  {
+    "family_id": "RF01734",
+    "pdb_accession": "4enb",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4ENB&chain=A&only_nested=False",
+    "id": "RF01734:4enb_A",
+    "filename": "record_025.json"
+  },
+  {
+    "family_id": "RF01734",
+    "pdb_accession": "4enc",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4ENC&chain=A&only_nested=False",
+    "id": "RF01734:4enc_A",
+    "filename": "record_026.json"
+  },
+  {
+    "family_id": "RF01734",
+    "pdb_accession": "5kh8",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5KH8&chain=A&only_nested=False",
+    "id": "RF01734:5kh8_A",
+    "filename": "record_027.json"
+  },
+  {
+    "family_id": "RF01763",
+    "pdb_accession": "5nwq",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5NWQ&chain=A&only_nested=False",
+    "id": "RF01763:5nwq_A",
+    "filename": "record_028.json"
+  },
+  {
+    "family_id": "RF01763",
+    "pdb_accession": "5ny8",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5NY8&chain=A&only_nested=False",
+    "id": "RF01763:5ny8_A",
+    "filename": "record_029.json"
+  },
+  {
+    "family_id": "RF01763",
+    "pdb_accession": "5nz3",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5NZ3&chain=A&only_nested=False",
+    "id": "RF01763:5nz3_A",
+    "filename": "record_030.json"
+  },
+  {
+    "family_id": "RF01763",
+    "pdb_accession": "5nz6",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5NZ6&chain=A&only_nested=False",
+    "id": "RF01763:5nz6_A",
+    "filename": "record_031.json"
+  },
+  {
+    "family_id": "RF01763",
+    "pdb_accession": "5nzd",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5NZD&chain=A&only_nested=False",
+    "id": "RF01763:5nzd_A",
+    "filename": "record_032.json"
+  },
+  {
+    "family_id": "RF01763",
+    "pdb_accession": "5o62",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5O62&chain=A&only_nested=False",
+    "id": "RF01763:5o62_A",
+    "filename": "record_033.json"
+  },
+  {
+    "family_id": "RF01763",
+    "pdb_accession": "5o69",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=5O69&chain=A&only_nested=False",
+    "id": "RF01763:5o69_A",
+    "filename": "record_034.json"
+  },
+  {
+    "family_id": "RF01831",
+    "pdb_accession": "3sd3",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3SD3&chain=A&only_nested=False",
+    "id": "RF01831:3sd3_A",
+    "filename": "record_035.json"
+  },
+  {
+    "family_id": "RF01831",
+    "pdb_accession": "3suh",
+    "chain_id": "X",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3SUH&chain=X&only_nested=False",
+    "id": "RF01831:3suh_X",
+    "filename": "record_036.json"
+  },
+  {
+    "family_id": "RF01831",
+    "pdb_accession": "3sux",
+    "chain_id": "X",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3SUX&chain=X&only_nested=False",
+    "id": "RF01831:3sux_X",
+    "filename": "record_037.json"
+  },
+  {
+    "family_id": "RF01831",
+    "pdb_accession": "3suy",
+    "chain_id": "X",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=3SUY&chain=X&only_nested=False",
+    "id": "RF01831:3suy_X",
+    "filename": "record_038.json"
+  },
+  {
+    "family_id": "RF01831",
+    "pdb_accession": "4lvv",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4LVV&chain=A&only_nested=False",
+    "id": "RF01831:4lvv_A",
+    "filename": "record_039.json"
+  },
+  {
+    "family_id": "RF01831",
+    "pdb_accession": "4lvw",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4LVW&chain=A&only_nested=False",
+    "id": "RF01831:4lvw_A",
+    "filename": "record_040.json"
+  },
+  {
+    "family_id": "RF01831",
+    "pdb_accession": "4lvx",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4LVX&chain=A&only_nested=False",
+    "id": "RF01831:4lvx_A",
+    "filename": "record_041.json"
+  },
+  {
+    "family_id": "RF01831",
+    "pdb_accession": "4lvy",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=4LVY&chain=A&only_nested=False",
+    "id": "RF01831:4lvy_A",
+    "filename": "record_042.json"
+  },
+  {
+    "family_id": "RF02977",
+    "pdb_accession": "7wi9",
+    "chain_id": "V",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=7WI9&chain=V&only_nested=False",
+    "id": "RF02977:7wi9_V",
+    "filename": "record_043.json"
+  },
+  {
+    "family_id": "RF02977",
+    "pdb_accession": "7wib",
+    "chain_id": "V",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=7WIB&chain=V&only_nested=False",
+    "id": "RF02977:7wib_V",
+    "filename": "record_044.json"
+  },
+  {
+    "family_id": "RF02977",
+    "pdb_accession": "7wie",
+    "chain_id": "V",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=7WIE&chain=V&only_nested=False",
+    "id": "RF02977:7wie_V",
+    "filename": "record_045.json"
+  },
+  {
+    "family_id": "RF02977",
+    "pdb_accession": "7wif",
+    "chain_id": "V",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=7WIF&chain=V&only_nested=False",
+    "id": "RF02977:7wif_V",
+    "filename": "record_046.json"
+  },
+  {
+    "family_id": "RF02977",
+    "pdb_accession": "7wii",
+    "chain_id": "V",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=7WII&chain=V&only_nested=False",
+    "id": "RF02977:7wii_V",
+    "filename": "record_047.json"
+  },
+  {
+    "family_id": "RF03013",
+    "pdb_accession": "6tb7",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6TB7&chain=A&only_nested=False",
+    "id": "RF03013:6tb7_A",
+    "filename": "record_048.json"
+  },
+  {
+    "family_id": "RF03013",
+    "pdb_accession": "6tf0",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6TF0&chain=A&only_nested=False",
+    "id": "RF03013:6tf0_A",
+    "filename": "record_049.json"
+  },
+  {
+    "family_id": "RF03013",
+    "pdb_accession": "6tf1",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6TF1&chain=A&only_nested=False",
+    "id": "RF03013:6tf1_A",
+    "filename": "record_050.json"
+  },
+  {
+    "family_id": "RF03013",
+    "pdb_accession": "6tf2",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6TF2&chain=A&only_nested=False",
+    "id": "RF03013:6tf2_A",
+    "filename": "record_051.json"
+  },
+  {
+    "family_id": "RF03013",
+    "pdb_accession": "6tf3",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6TF3&chain=A&only_nested=False",
+    "id": "RF03013:6tf3_A",
+    "filename": "record_052.json"
+  },
+  {
+    "family_id": "RF03013",
+    "pdb_accession": "6tfe",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6TFE&chain=A&only_nested=False",
+    "id": "RF03013:6tfe_A",
+    "filename": "record_053.json"
+  },
+  {
+    "family_id": "RF03013",
+    "pdb_accession": "6tff",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6TFF&chain=A&only_nested=False",
+    "id": "RF03013:6tff_A",
+    "filename": "record_054.json"
+  },
+  {
+    "family_id": "RF03013",
+    "pdb_accession": "6tfg",
+    "chain_id": "A",
+    "url": "https://rna.bgsu.edu/rna3dhub/rest/getSequenceBasePairs?pdb_id=6TFG&chain=A&only_nested=False",
+    "id": "RF03013:6tfg_A",
+    "filename": "record_055.json"
+  }
+]

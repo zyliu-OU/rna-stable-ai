@@ -1,0 +1,12 @@
+{
+  "complete": false,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/family_provenance_dataset_source_runs/20261016T004334.784317Z",
+  "manifest_sha256": "a89dbc4c45e2447c515e581dcab23e425038c751ac307ca69e17130d7344b3bb",
+  "planned_sources": 16,
+  "successful_sources": 0,
+  "selected_records": 0,
+  "supported_by_role": null,
+  "dataset_ready": false,
+  "model_training_performed": false,
+  "model_inference_performed": false
+}

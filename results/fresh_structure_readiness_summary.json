@@ -1,0 +1,198 @@
+{
+  "stage": "post_binding_reference_readiness_no_inference",
+  "raw_graphs_accepted": 13,
+  "informative_contact_references": 12,
+  "families_with_three_informative_references": 0,
+  "coverage_thresholds_met": false,
+  "independent_experimental_panel_ready": false,
+  "tool_training_independence_certified": false,
+  "model_inference_authorized": false,
+  "families": [
+    {
+      "family_id": "RF00015",
+      "selected_references": 3,
+      "raw_graphs_accepted": 3,
+      "informative_contact_references": 2,
+      "zero_contact_graphs": 1,
+      "family_structure_source_text": "Published; PMID:2339054; Griffiths-Jones SR",
+      "family_source_lineage": {
+        "structure_source_lines": [
+          "Published; PMID:2339054; Griffiths-Jones SR"
+        ],
+        "source_category": "published_source_unverified",
+        "declared_prediction_tools": [],
+        "structure_source_pmids": [
+          "2339054"
+        ],
+        "family_bibliography_pmids": [],
+        "per_sequence_experiment_verified": false,
+        "native_control_reference_independence_certified": false
+      },
+      "per_sequence_experimental_annotation_verified": false
+    },
+    {
+      "family_id": "RF00080",
+      "selected_references": 2,
+      "raw_graphs_accepted": 2,
+      "informative_contact_references": 2,
+      "zero_contact_graphs": 0,
+      "family_structure_source_text": "Predicted; Barrick JE, Breaker RR",
+      "family_source_lineage": {
+        "structure_source_lines": [
+          "Predicted; Barrick JE, Breaker RR"
+        ],
+        "source_category": "prediction_declared",
+        "declared_prediction_tools": [],
+        "structure_source_pmids": [],
+        "family_bibliography_pmids": [],
+        "per_sequence_experiment_verified": false,
+        "native_control_reference_independence_certified": false
+      },
+      "per_sequence_experimental_annotation_verified": false
+    },
+    {
+      "family_id": "RF00100",
+      "selected_references": 1,
+      "raw_graphs_accepted": 1,
+      "informative_contact_references": 1,
+      "zero_contact_graphs": 0,
+      "family_structure_source_text": "Published; PMID:1646389",
+      "family_source_lineage": {
+        "structure_source_lines": [
+          "Published; PMID:1646389"
+        ],
+        "source_category": "published_source_unverified",
+        "declared_prediction_tools": [],
+        "structure_source_pmids": [
+          "1646389"
+        ],
+        "family_bibliography_pmids": [],
+        "per_sequence_experiment_verified": false,
+        "native_control_reference_independence_certified": false
+      },
+      "per_sequence_experimental_annotation_verified": false
+    },
+    {
+      "family_id": "RF01734",
+      "selected_references": 2,
+      "raw_graphs_accepted": 2,
+      "informative_contact_references": 2,
+      "zero_contact_graphs": 0,
+      "family_structure_source_text": "Published; PMID:20230605;",
+      "family_source_lineage": {
+        "structure_source_lines": [
+          "Published; PMID:20230605;"
+        ],
+        "source_category": "published_source_unverified",
+        "declared_prediction_tools": [],
+        "structure_source_pmids": [
+          "20230605"
+        ],
+        "family_bibliography_pmids": [],
+        "per_sequence_experiment_verified": false,
+        "native_control_reference_independence_certified": false
+      },
+      "per_sequence_experimental_annotation_verified": false
+    },
+    {
+      "family_id": "RF01763",
+      "selected_references": 1,
+      "raw_graphs_accepted": 1,
+      "informative_contact_references": 1,
+      "zero_contact_graphs": 0,
+      "family_structure_source_text": "Published; PMID:20230605;",
+      "family_source_lineage": {
+        "structure_source_lines": [
+          "Published; PMID:20230605;"
+        ],
+        "source_category": "published_source_unverified",
+        "declared_prediction_tools": [],
+        "structure_source_pmids": [
+          "20230605"
+        ],
+        "family_bibliography_pmids": [],
+        "per_sequence_experiment_verified": false,
+        "native_control_reference_independence_certified": false
+      },
+      "per_sequence_experimental_annotation_verified": false
+    },
+    {
+      "family_id": "RF01831",
+      "selected_references": 2,
+      "raw_graphs_accepted": 2,
+      "informative_contact_references": 2,
+      "zero_contact_graphs": 0,
+      "family_structure_source_text": "Published; PMID:20659680",
+      "family_source_lineage": {
+        "structure_source_lines": [
+          "Published; PMID:20659680"
+        ],
+        "source_category": "published_source_unverified",
+        "declared_prediction_tools": [],
+        "structure_source_pmids": [
+          "20659680"
+        ],
+        "family_bibliography_pmids": [],
+        "per_sequence_experiment_verified": false,
+        "native_control_reference_independence_certified": false
+      },
+      "per_sequence_experimental_annotation_verified": false
+    },
+    {
+      "family_id": "RF02977",
+      "selected_references": 1,
+      "raw_graphs_accepted": 1,
+      "informative_contact_references": 1,
+      "zero_contact_graphs": 0,
+      "family_structure_source_text": "Published; PMID:28977401;",
+      "family_source_lineage": {
+        "structure_source_lines": [
+          "Published; PMID:28977401;"
+        ],
+        "source_category": "published_source_unverified",
+        "declared_prediction_tools": [],
+        "structure_source_pmids": [
+          "28977401"
+        ],
+        "family_bibliography_pmids": [],
+        "per_sequence_experiment_verified": false,
+        "native_control_reference_independence_certified": false
+      },
+      "per_sequence_experimental_annotation_verified": false
+    },
+    {
+      "family_id": "RF03013",
+      "selected_references": 1,
+      "raw_graphs_accepted": 1,
+      "informative_contact_references": 1,
+      "zero_contact_graphs": 0,
+      "family_structure_source_text": "Published; PMID:28977401;",
+      "family_source_lineage": {
+        "structure_source_lines": [
+          "Published; PMID:28977401;"
+        ],
+        "source_category": "published_source_unverified",
+        "declared_prediction_tools": [],
+        "structure_source_pmids": [
+          "28977401"
+        ],
+        "family_bibliography_pmids": [],
+        "per_sequence_experiment_verified": false,
+        "native_control_reference_independence_certified": false
+      },
+      "per_sequence_experimental_annotation_verified": false
+    }
+  ],
+  "input_sha256": {
+    "results/fresh_structure_references_summary.json": "30a62ea05e722bd3de55df795c01f0ec6855fd39017ffa4f5f5140e3f6749262",
+    "results/fresh_structure_panel_protocol_runs/20261016T014824.927247Z/inventory.json": "4fcb62065f340e7415ee88dc0a248ef8514c0db0cb9b7a1805beb3d118d0e582",
+    "results/family_provenance_dataset_metadata_runs/20261015T033435.517946Z/RF00015.json": "5d4a08781a23e45367b12390c4ca67a5b576fe48487b3ce87d622bf862747833",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00080.json": "7a4c5c5a50e616a225327fe2daf24ca36f4c5cf3c2fe8dd91a6f3d0188aa2b84",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF00100.json": "d3b38c687f5b7544e7be674e294d442a9467eac28f2f29a82ebb47d0be2570ad",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01734.json": "5a584e2d03d611fd047fd244f8f858fc25a09365a655d552d048eeac85b225cf",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01763.json": "ff6217ba47abab24d52f70e0b90b3e1716a4c08ad1e07582a65f1fb7d53a35f8",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF01831.json": "adee66c95d0d030c69babad4b3509fb115acabe634a0c5ada57425667e802d4a",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF02977.json": "7a21e36becca1cc3c0b3833fde4ca7e2e1963b2c03f03d02ab7d88271832b62e",
+    "results/fresh_structure_metadata_runs/20261016T014544.631685Z/RF03013.json": "0ac4d819a69d56e6bc7603032564cb53aa7aaa7723520cb7022119a2f5e088d6"
+  }
+}

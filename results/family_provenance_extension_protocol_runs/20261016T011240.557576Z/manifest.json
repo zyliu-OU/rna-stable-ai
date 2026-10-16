@@ -1,0 +1,16 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/family_provenance_extension_protocol_runs/20261016T011240.557576Z",
+  "prior_manifest_sha256": "4c9f41c1aa76aef42d9915e13a528524a8d68430f1bfa3da98a9a8b99a4d318c",
+  "snapshot_sha256": {
+    "config.json": "878903d0218c1ea3de380290a1fce4bb0bf4fa66c2cea41c49c1b33d1de2e178",
+    "request.json": "be7c1a2ef803f89c3f92cc9b24802681f6953d489277aa33f409e3a6c83c7cc5",
+    "metadata.json": "1301ac74002abdce42743d8e13ab794e9f1f4e6fa74661d3bae6e1c6119a236b",
+    "policy.json": "a1c2044f8c2a1f201c4f8837f4b6ac8b86f51563283d00119f1bb91d073bd070",
+    "exposure.json": "769c179101e450b22d567f1d0dd62db3af2ce29a75e298b55a798cb0a1a2897c",
+    "previous.json": "3d3a05516cec8c2fbf4019c9b9541d4c8dcd2f7594483d929461a9b34121ce40",
+    "driver.py": "f3df28d9718fb5a9a948e6ccc76653f9bb0e6f5874820f36d3765e8063d7b753"
+  },
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/extend_family_provenance_dataset.py": "f3df28d9718fb5a9a948e6ccc76653f9bb0e6f5874820f36d3765e8063d7b753"
+  }
+}

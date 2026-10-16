@@ -1,0 +1,2755 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/fresh_structure_references_runs/20261016T015035.981551Z",
+  "manifest_sha256": "88bacef0d250e7d94b0ed7919d657fb6136c543c7c7247d815db5a51a341ac70",
+  "planned_source_requests": 56,
+  "successful_source_requests": 56,
+  "selection_decisions": [
+    {
+      "id": "RF00015:2n7m_X",
+      "family_id": "RF00015",
+      "reason": "selected_before_contact_parsing",
+      "sequence_sha256": "e8c2eb7d4f0c1bd4313bc5a298f63f87f10590fae5ef2c40d0fcc6adf1a26628"
+    },
+    {
+      "id": "RF00015:3jcm_E",
+      "family_id": "RF00015",
+      "reason": "selected_before_contact_parsing",
+      "sequence_sha256": "a3d0e32858fa64db54a8e476c23ea7181acde82a65910a13b4af98d96ac2145c"
+    },
+    {
+      "id": "RF00015:3jcr_M",
+      "family_id": "RF00015",
+      "reason": "selected_before_contact_parsing",
+      "sequence_sha256": "7a1b02bb8819ec0a9e71747dcbd695c2e18c5d51426a8ea86669bf6127e0bf23"
+    },
+    {
+      "id": "RF00015:5gan_V",
+      "family_id": "RF00015",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "a3d0e32858fa64db54a8e476c23ea7181acde82a65910a13b4af98d96ac2145c"
+    },
+    {
+      "id": "RF00015:5gap_V",
+      "family_id": "RF00015",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "1b69ff7ce673472dad1b88626fc827babad79c0a00bde32d1d2588a19efa259a"
+    },
+    {
+      "id": "RF00015:5nrl_4",
+      "family_id": "RF00015",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "a3d0e32858fa64db54a8e476c23ea7181acde82a65910a13b4af98d96ac2145c"
+    },
+    {
+      "id": "RF00015:5o9z_4",
+      "family_id": "RF00015",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "f1a5bf8c780a86d51a156affa450f0ea209eb6c3263729aa24c0bdf3aa48a3d0"
+    },
+    {
+      "id": "RF00015:5zwm_I",
+      "family_id": "RF00015",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "a3d0e32858fa64db54a8e476c23ea7181acde82a65910a13b4af98d96ac2145c"
+    },
+    {
+      "id": "RF00080:4y1i_A",
+      "family_id": "RF00080",
+      "reason": "selected_before_contact_parsing",
+      "sequence_sha256": "f1a9f5208207596146191d42bb45c183461b93982ab2fcda48006b778645380b"
+    },
+    {
+      "id": "RF00080:4y1j_A",
+      "family_id": "RF00080",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "06ff354c0870f6929ca47639ec63b168ccf0262faaa1205317e641e3b1a1a21c"
+    },
+    {
+      "id": "RF00080:4y1m_A",
+      "family_id": "RF00080",
+      "reason": "selected_before_contact_parsing",
+      "sequence_sha256": "0f3b1de6b9a1a7195b08da9af55e6290304f954e6852197616160b359d0ee704"
+    },
+    {
+      "id": "RF00080:6cb3_A",
+      "family_id": "RF00080",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "663273fe60fef543bf089fe2e80ac86bce177098e1c3fa72f96037670a8a81e1"
+    },
+    {
+      "id": "RF00080:6cc1_A",
+      "family_id": "RF00080",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "dc3019dd15d926e77ef4386334b35fe6f214db60cb4c62e34fcba954126f4767"
+    },
+    {
+      "id": "RF00080:6cc3_A",
+      "family_id": "RF00080",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "2c33b933692fb48fa9df0d8cad49df9912679b51b7109d0f6eaead3dc8f708f7"
+    },
+    {
+      "id": "RF00100:5iem_A",
+      "family_id": "RF00100",
+      "reason": "selected_before_contact_parsing",
+      "sequence_sha256": "5600b1992dd4e3d5ec7910eaf627166c40d6d29b4a8fcc9265a5fce73e03f678"
+    },
+    {
+      "id": "RF00100:5lys_A",
+      "family_id": "RF00100",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "5600b1992dd4e3d5ec7910eaf627166c40d6d29b4a8fcc9265a5fce73e03f678"
+    },
+    {
+      "id": "RF00100:5lyu_A",
+      "family_id": "RF00100",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "4637b9d1751ac0a7128246ce81d04f793a7232809c098d5d2e13afef46330e6e"
+    },
+    {
+      "id": "RF00100:5lyv_A",
+      "family_id": "RF00100",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "5600b1992dd4e3d5ec7910eaf627166c40d6d29b4a8fcc9265a5fce73e03f678"
+    },
+    {
+      "id": "RF00100:6mcf_A",
+      "family_id": "RF00100",
+      "reason": "unsupported_source_sequence: RNA must be a nonempty uppercase A/C/G/U string",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF00100:6mci_A",
+      "family_id": "RF00100",
+      "reason": "unsupported_source_sequence: RNA must be a nonempty uppercase A/C/G/U string",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF00100:7slq_R",
+      "family_id": "RF00100",
+      "reason": "unsupported_source_sequence: RNA must be a nonempty uppercase A/C/G/U string",
+      "sequence_sha256": null
+    },
+    {
+      "id": "RF00100:7t1n_A",
+      "family_id": "RF00100",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "407d364ea91899c9d685217ce648fd0c97b6d823ae2d592e6d7c04af15363b50"
+    },
+    {
+      "id": "RF01734:3vrs_A",
+      "family_id": "RF01734",
+      "reason": "selected_before_contact_parsing",
+      "sequence_sha256": "6dc4922a7a56188b5d33a0cde6b3cea2c61c5957df5501e445c7f41b1efa1e96"
+    },
+    {
+      "id": "RF01734:4en5_A",
+      "family_id": "RF01734",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "6dc4922a7a56188b5d33a0cde6b3cea2c61c5957df5501e445c7f41b1efa1e96"
+    },
+    {
+      "id": "RF01734:4ena_A",
+      "family_id": "RF01734",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "6dc4922a7a56188b5d33a0cde6b3cea2c61c5957df5501e445c7f41b1efa1e96"
+    },
+    {
+      "id": "RF01734:4enb_A",
+      "family_id": "RF01734",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "6dc4922a7a56188b5d33a0cde6b3cea2c61c5957df5501e445c7f41b1efa1e96"
+    },
+    {
+      "id": "RF01734:4enc_A",
+      "family_id": "RF01734",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "6dc4922a7a56188b5d33a0cde6b3cea2c61c5957df5501e445c7f41b1efa1e96"
+    },
+    {
+      "id": "RF01734:5kh8_A",
+      "family_id": "RF01734",
+      "reason": "selected_before_contact_parsing",
+      "sequence_sha256": "693f144da1664a5568e366b252339dac4dae713aabe67e246166fe4566171814"
+    },
+    {
+      "id": "RF01763:5nwq_A",
+      "family_id": "RF01763",
+      "reason": "selected_before_contact_parsing",
+      "sequence_sha256": "8e55c5bb77543ee9978bdfc786e6c3a69d95e911e93966ea78daabb99d2e5bd2"
+    },
+    {
+      "id": "RF01763:5ny8_A",
+      "family_id": "RF01763",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "8e55c5bb77543ee9978bdfc786e6c3a69d95e911e93966ea78daabb99d2e5bd2"
+    },
+    {
+      "id": "RF01763:5nz3_A",
+      "family_id": "RF01763",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "8e55c5bb77543ee9978bdfc786e6c3a69d95e911e93966ea78daabb99d2e5bd2"
+    },
+    {
+      "id": "RF01763:5nz6_A",
+      "family_id": "RF01763",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "9dc281f861e70db4ed6a6ad3030eb6708212a439f350f5fc12914ab9a4466ba3"
+    },
+    {
+      "id": "RF01763:5nzd_A",
+      "family_id": "RF01763",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "8e55c5bb77543ee9978bdfc786e6c3a69d95e911e93966ea78daabb99d2e5bd2"
+    },
+    {
+      "id": "RF01763:5o62_A",
+      "family_id": "RF01763",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "8e55c5bb77543ee9978bdfc786e6c3a69d95e911e93966ea78daabb99d2e5bd2"
+    },
+    {
+      "id": "RF01763:5o69_A",
+      "family_id": "RF01763",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "8e55c5bb77543ee9978bdfc786e6c3a69d95e911e93966ea78daabb99d2e5bd2"
+    },
+    {
+      "id": "RF01831:3sd3_A",
+      "family_id": "RF01831",
+      "reason": "selected_before_contact_parsing",
+      "sequence_sha256": "831bf0accb57ada5d69b5d13cecec48343d95e89ab8c6ae302a063904cd760e7"
+    },
+    {
+      "id": "RF01831:3suh_X",
+      "family_id": "RF01831",
+      "reason": "selected_before_contact_parsing",
+      "sequence_sha256": "02c8c948a6c9bb5f6ce7762fdefdec4016519193508974188646cacea8f66bac"
+    },
+    {
+      "id": "RF01831:3sux_X",
+      "family_id": "RF01831",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "02c8c948a6c9bb5f6ce7762fdefdec4016519193508974188646cacea8f66bac"
+    },
+    {
+      "id": "RF01831:3suy_X",
+      "family_id": "RF01831",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "02c8c948a6c9bb5f6ce7762fdefdec4016519193508974188646cacea8f66bac"
+    },
+    {
+      "id": "RF01831:4lvv_A",
+      "family_id": "RF01831",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "974f51da94729865209d77ea0328a5f6d9dcd2d165363cd1e56bbc9c795d2214"
+    },
+    {
+      "id": "RF01831:4lvw_A",
+      "family_id": "RF01831",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "974f51da94729865209d77ea0328a5f6d9dcd2d165363cd1e56bbc9c795d2214"
+    },
+    {
+      "id": "RF01831:4lvx_A",
+      "family_id": "RF01831",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "974f51da94729865209d77ea0328a5f6d9dcd2d165363cd1e56bbc9c795d2214"
+    },
+    {
+      "id": "RF01831:4lvy_A",
+      "family_id": "RF01831",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "974f51da94729865209d77ea0328a5f6d9dcd2d165363cd1e56bbc9c795d2214"
+    },
+    {
+      "id": "RF02977:7wi9_V",
+      "family_id": "RF02977",
+      "reason": "selected_before_contact_parsing",
+      "sequence_sha256": "ca847a6a8e2aa4765dd48ce06162df88694a7f46c77d07685985d57f7b3906ff"
+    },
+    {
+      "id": "RF02977:7wib_V",
+      "family_id": "RF02977",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "ca847a6a8e2aa4765dd48ce06162df88694a7f46c77d07685985d57f7b3906ff"
+    },
+    {
+      "id": "RF02977:7wie_V",
+      "family_id": "RF02977",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "ca847a6a8e2aa4765dd48ce06162df88694a7f46c77d07685985d57f7b3906ff"
+    },
+    {
+      "id": "RF02977:7wif_V",
+      "family_id": "RF02977",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "ca847a6a8e2aa4765dd48ce06162df88694a7f46c77d07685985d57f7b3906ff"
+    },
+    {
+      "id": "RF02977:7wii_V",
+      "family_id": "RF02977",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "ca847a6a8e2aa4765dd48ce06162df88694a7f46c77d07685985d57f7b3906ff"
+    },
+    {
+      "id": "RF03013:6tb7_A",
+      "family_id": "RF03013",
+      "reason": "selected_before_contact_parsing",
+      "sequence_sha256": "0c42b5e033599d470b1bf580d2c74f13541033ce31d43f5c35377d42229aba30"
+    },
+    {
+      "id": "RF03013:6tf0_A",
+      "family_id": "RF03013",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "0c42b5e033599d470b1bf580d2c74f13541033ce31d43f5c35377d42229aba30"
+    },
+    {
+      "id": "RF03013:6tf1_A",
+      "family_id": "RF03013",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "0c42b5e033599d470b1bf580d2c74f13541033ce31d43f5c35377d42229aba30"
+    },
+    {
+      "id": "RF03013:6tf2_A",
+      "family_id": "RF03013",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "0c42b5e033599d470b1bf580d2c74f13541033ce31d43f5c35377d42229aba30"
+    },
+    {
+      "id": "RF03013:6tf3_A",
+      "family_id": "RF03013",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "0c42b5e033599d470b1bf580d2c74f13541033ce31d43f5c35377d42229aba30"
+    },
+    {
+      "id": "RF03013:6tfe_A",
+      "family_id": "RF03013",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "0c42b5e033599d470b1bf580d2c74f13541033ce31d43f5c35377d42229aba30"
+    },
+    {
+      "id": "RF03013:6tff_A",
+      "family_id": "RF03013",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "0c42b5e033599d470b1bf580d2c74f13541033ce31d43f5c35377d42229aba30"
+    },
+    {
+      "id": "RF03013:6tfg_A",
+      "family_id": "RF03013",
+      "reason": "panel_sequence_redundancy",
+      "sequence_sha256": "0c42b5e033599d470b1bf580d2c74f13541033ce31d43f5c35377d42229aba30"
+    }
+  ],
+  "binding": {
+    "records": [
+      {
+        "id": "RF00015:2n7m_X",
+        "family_id": "RF00015",
+        "pdb_accession": "2n7m",
+        "chain_id": "X",
+        "sequence": "GGCCUUAUGCACGGGAAAUACGCAUAUCAGUGAGGAUUCGUCCGAGAUUGUGUUUUUGCUGGUGUAAAUCAGCAGUUCCCCUGCAUAAGGCU",
+        "sequence_sha256": "e8c2eb7d4f0c1bd4313bc5a298f63f87f10590fae5ef2c40d0fcc6adf1a26628",
+        "reference_kind": "computational",
+        "reference_basis": "raw_FR3D_PDB_cWW_graph",
+        "source": "BGSU RNA 3D Hub; exact frozen PDB-chain cWW contacts",
+        "sequence_bound": true,
+        "raw_cww_pairs": [
+          [
+            0,
+            91
+          ],
+          [
+            1,
+            90
+          ],
+          [
+            2,
+            89
+          ],
+          [
+            3,
+            88
+          ],
+          [
+            4,
+            87
+          ],
+          [
+            6,
+            85
+          ],
+          [
+            7,
+            84
+          ],
+          [
+            8,
+            83
+          ],
+          [
+            9,
+            82
+          ],
+          [
+            10,
+            81
+          ],
+          [
+            12,
+            79
+          ],
+          [
+            13,
+            78
+          ],
+          [
+            14,
+            77
+          ],
+          [
+            15,
+            76
+          ],
+          [
+            16,
+            75
+          ],
+          [
+            19,
+            52
+          ],
+          [
+            20,
+            51
+          ],
+          [
+            21,
+            50
+          ],
+          [
+            22,
+            49
+          ],
+          [
+            23,
+            48
+          ],
+          [
+            26,
+            46
+          ],
+          [
+            27,
+            45
+          ],
+          [
+            33,
+            42
+          ],
+          [
+            34,
+            41
+          ],
+          [
+            56,
+            73
+          ],
+          [
+            57,
+            72
+          ],
+          [
+            58,
+            71
+          ],
+          [
+            59,
+            70
+          ],
+          [
+            60,
+            69
+          ],
+          [
+            61,
+            68
+          ],
+          [
+            62,
+            67
+          ]
+        ],
+        "raw_cww_rows": 31,
+        "other_annotation_rows": 1,
+        "raw_nucleotides_with_multiple_cww_partners": [],
+        "reference_status": "ok",
+        "pairs": [
+          [
+            0,
+            91
+          ],
+          [
+            1,
+            90
+          ],
+          [
+            2,
+            89
+          ],
+          [
+            3,
+            88
+          ],
+          [
+            4,
+            87
+          ],
+          [
+            6,
+            85
+          ],
+          [
+            7,
+            84
+          ],
+          [
+            8,
+            83
+          ],
+          [
+            9,
+            82
+          ],
+          [
+            10,
+            81
+          ],
+          [
+            12,
+            79
+          ],
+          [
+            13,
+            78
+          ],
+          [
+            14,
+            77
+          ],
+          [
+            15,
+            76
+          ],
+          [
+            16,
+            75
+          ],
+          [
+            19,
+            52
+          ],
+          [
+            20,
+            51
+          ],
+          [
+            21,
+            50
+          ],
+          [
+            22,
+            49
+          ],
+          [
+            23,
+            48
+          ],
+          [
+            26,
+            46
+          ],
+          [
+            27,
+            45
+          ],
+          [
+            33,
+            42
+          ],
+          [
+            34,
+            41
+          ],
+          [
+            56,
+            73
+          ],
+          [
+            57,
+            72
+          ],
+          [
+            58,
+            71
+          ],
+          [
+            59,
+            70
+          ],
+          [
+            60,
+            69
+          ],
+          [
+            61,
+            68
+          ],
+          [
+            62,
+            67
+          ]
+        ],
+        "reference_has_crossing_pairs": false
+      },
+      {
+        "id": "RF00015:3jcm_E",
+        "family_id": "RF00015",
+        "pdb_accession": "3jcm",
+        "chain_id": "E",
+        "sequence": "AUCCUUAUGCACGGGAAAUACGCAUAUCAGUGAGGAUUCGUCCGAGAUUGUGUUUUUGCUGGUUGAAAUUUAAUUAUAAACCAGACCGUCUCCUCAUGGUCAAUUCGGUGUUCGCUUUUGAAUACUUCAAGACUAUGUAGGGAAUUUUUGGAAUACCUUU",
+        "sequence_sha256": "a3d0e32858fa64db54a8e476c23ea7181acde82a65910a13b4af98d96ac2145c",
+        "reference_kind": "computational",
+        "reference_basis": "raw_FR3D_PDB_cWW_graph",
+        "source": "BGSU RNA 3D Hub; exact frozen PDB-chain cWW contacts",
+        "sequence_bound": true,
+        "raw_cww_pairs": [
+          [
+            19,
+            52
+          ],
+          [
+            20,
+            51
+          ],
+          [
+            22,
+            49
+          ],
+          [
+            23,
+            48
+          ],
+          [
+            26,
+            46
+          ],
+          [
+            27,
+            45
+          ],
+          [
+            33,
+            42
+          ],
+          [
+            34,
+            41
+          ]
+        ],
+        "raw_cww_rows": 8,
+        "other_annotation_rows": 1,
+        "raw_nucleotides_with_multiple_cww_partners": [],
+        "reference_status": "ok",
+        "pairs": [
+          [
+            19,
+            52
+          ],
+          [
+            20,
+            51
+          ],
+          [
+            22,
+            49
+          ],
+          [
+            23,
+            48
+          ],
+          [
+            26,
+            46
+          ],
+          [
+            27,
+            45
+          ],
+          [
+            33,
+            42
+          ],
+          [
+            34,
+            41
+          ]
+        ],
+        "reference_has_crossing_pairs": false
+      },
+      {
+        "id": "RF00015:3jcr_M",
+        "family_id": "RF00015",
+        "pdb_accession": "3jcr",
+        "chain_id": "M",
+        "sequence": "AGCUUUGCGCAGUGGCAGUAUCGUAGCCAAUGAGGUUUAUCCGAGGCGCGAUUAUUGCUAAUUGAAAACUUUUCCCAAUACCCCGCCAUGACGACUUGAAAUAUAGUCGGCAUUGGCAAUUUUUGACAGUCUCUACGGAGACUGG",
+        "sequence_sha256": "7a1b02bb8819ec0a9e71747dcbd695c2e18c5d51426a8ea86669bf6127e0bf23",
+        "reference_kind": "computational",
+        "reference_basis": "raw_FR3D_PDB_cWW_graph",
+        "source": "BGSU RNA 3D Hub; exact frozen PDB-chain cWW contacts",
+        "sequence_bound": true,
+        "raw_cww_pairs": [],
+        "raw_cww_rows": 0,
+        "other_annotation_rows": 0,
+        "raw_nucleotides_with_multiple_cww_partners": [],
+        "reference_status": "ok",
+        "pairs": [],
+        "reference_has_crossing_pairs": false
+      },
+      {
+        "id": "RF00080:4y1i_A",
+        "family_id": "RF00080",
+        "pdb_accession": "4y1i",
+        "chain_id": "A",
+        "sequence": "AAAGGGGAGUAGCGUCGGGAAACCGAAACAAAGUCGUCAAUUCGUGAGGAAACUCACCGGCUUUGUUGACAUACGAAAGUAUGUUUAGCAAGACCUUUCC",
+        "sequence_sha256": "f1a9f5208207596146191d42bb45c183461b93982ab2fcda48006b778645380b",
+        "reference_kind": "computational",
+        "reference_basis": "raw_FR3D_PDB_cWW_graph",
+        "source": "BGSU RNA 3D Hub; exact frozen PDB-chain cWW contacts",
+        "sequence_bound": true,
+        "raw_cww_pairs": [
+          [
+            0,
+            97
+          ],
+          [
+            1,
+            96
+          ],
+          [
+            2,
+            95
+          ],
+          [
+            3,
+            94
+          ],
+          [
+            4,
+            93
+          ],
+          [
+            11,
+            88
+          ],
+          [
+            12,
+            87
+          ],
+          [
+            14,
+            25
+          ],
+          [
+            15,
+            24
+          ],
+          [
+            16,
+            23
+          ],
+          [
+            17,
+            22
+          ],
+          [
+            26,
+            66
+          ],
+          [
+            27,
+            65
+          ],
+          [
+            28,
+            64
+          ],
+          [
+            29,
+            63
+          ],
+          [
+            30,
+            62
+          ],
+          [
+            31,
+            61
+          ],
+          [
+            32,
+            60
+          ],
+          [
+            33,
+            59
+          ],
+          [
+            34,
+            58
+          ],
+          [
+            35,
+            57
+          ],
+          [
+            43,
+            56
+          ],
+          [
+            44,
+            55
+          ],
+          [
+            45,
+            54
+          ],
+          [
+            46,
+            53
+          ],
+          [
+            47,
+            52
+          ],
+          [
+            67,
+            84
+          ],
+          [
+            68,
+            83
+          ],
+          [
+            69,
+            82
+          ],
+          [
+            70,
+            81
+          ],
+          [
+            71,
+            80
+          ],
+          [
+            72,
+            79
+          ],
+          [
+            73,
+            78
+          ]
+        ],
+        "raw_cww_rows": 66,
+        "other_annotation_rows": 12,
+        "raw_nucleotides_with_multiple_cww_partners": [],
+        "reference_status": "ok",
+        "pairs": [
+          [
+            0,
+            97
+          ],
+          [
+            1,
+            96
+          ],
+          [
+            2,
+            95
+          ],
+          [
+            3,
+            94
+          ],
+          [
+            4,
+            93
+          ],
+          [
+            11,
+            88
+          ],
+          [
+            12,
+            87
+          ],
+          [
+            14,
+            25
+          ],
+          [
+            15,
+            24
+          ],
+          [
+            16,
+            23
+          ],
+          [
+            17,
+            22
+          ],
+          [
+            26,
+            66
+          ],
+          [
+            27,
+            65
+          ],
+          [
+            28,
+            64
+          ],
+          [
+            29,
+            63
+          ],
+          [
+            30,
+            62
+          ],
+          [
+            31,
+            61
+          ],
+          [
+            32,
+            60
+          ],
+          [
+            33,
+            59
+          ],
+          [
+            34,
+            58
+          ],
+          [
+            35,
+            57
+          ],
+          [
+            43,
+            56
+          ],
+          [
+            44,
+            55
+          ],
+          [
+            45,
+            54
+          ],
+          [
+            46,
+            53
+          ],
+          [
+            47,
+            52
+          ],
+          [
+            67,
+            84
+          ],
+          [
+            68,
+            83
+          ],
+          [
+            69,
+            82
+          ],
+          [
+            70,
+            81
+          ],
+          [
+            71,
+            80
+          ],
+          [
+            72,
+            79
+          ],
+          [
+            73,
+            78
+          ]
+        ],
+        "reference_has_crossing_pairs": false
+      },
+      {
+        "id": "RF00080:4y1m_A",
+        "family_id": "RF00080",
+        "pdb_accession": "4y1m",
+        "chain_id": "A",
+        "sequence": "GAUUUGGGGAGUAGCCGAUUUCCGAAAGGAAAUGUACGUGUCAACAUUUUCGUUGAAAAACGUGGCACGUACGGACUGAAGAAAUUCAGUCAGGCGAGACCAUAUCC",
+        "sequence_sha256": "0f3b1de6b9a1a7195b08da9af55e6290304f954e6852197616160b359d0ee704",
+        "reference_kind": "computational",
+        "reference_basis": "raw_FR3D_PDB_cWW_graph",
+        "source": "BGSU RNA 3D Hub; exact frozen PDB-chain cWW contacts",
+        "sequence_bound": true,
+        "raw_cww_pairs": [
+          [
+            0,
+            105
+          ],
+          [
+            1,
+            104
+          ],
+          [
+            3,
+            102
+          ],
+          [
+            4,
+            101
+          ],
+          [
+            5,
+            100
+          ],
+          [
+            6,
+            99
+          ],
+          [
+            13,
+            94
+          ],
+          [
+            15,
+            92
+          ],
+          [
+            36,
+            68
+          ],
+          [
+            37,
+            67
+          ],
+          [
+            38,
+            66
+          ],
+          [
+            39,
+            65
+          ],
+          [
+            40,
+            64
+          ],
+          [
+            42,
+            62
+          ],
+          [
+            50,
+            61
+          ],
+          [
+            51,
+            60
+          ],
+          [
+            52,
+            59
+          ]
+        ],
+        "raw_cww_rows": 17,
+        "other_annotation_rows": 6,
+        "raw_nucleotides_with_multiple_cww_partners": [],
+        "reference_status": "ok",
+        "pairs": [
+          [
+            0,
+            105
+          ],
+          [
+            1,
+            104
+          ],
+          [
+            3,
+            102
+          ],
+          [
+            4,
+            101
+          ],
+          [
+            5,
+            100
+          ],
+          [
+            6,
+            99
+          ],
+          [
+            13,
+            94
+          ],
+          [
+            15,
+            92
+          ],
+          [
+            36,
+            68
+          ],
+          [
+            37,
+            67
+          ],
+          [
+            38,
+            66
+          ],
+          [
+            39,
+            65
+          ],
+          [
+            40,
+            64
+          ],
+          [
+            42,
+            62
+          ],
+          [
+            50,
+            61
+          ],
+          [
+            51,
+            60
+          ],
+          [
+            52,
+            59
+          ]
+        ],
+        "reference_has_crossing_pairs": false
+      },
+      {
+        "id": "RF00100:5iem_A",
+        "family_id": "RF00100",
+        "pdb_accession": "5iem",
+        "chain_id": "A",
+        "sequence": "GGGAUCUGUCACCCCAUUGAUCGCCUUCGGGCUGAUCUGGCUGGCUAGGCGGGUCCC",
+        "sequence_sha256": "5600b1992dd4e3d5ec7910eaf627166c40d6d29b4a8fcc9265a5fce73e03f678",
+        "reference_kind": "computational",
+        "reference_basis": "raw_FR3D_PDB_cWW_graph",
+        "source": "BGSU RNA 3D Hub; exact frozen PDB-chain cWW contacts",
+        "sequence_bound": true,
+        "raw_cww_pairs": [
+          [
+            0,
+            56
+          ],
+          [
+            1,
+            55
+          ],
+          [
+            2,
+            54
+          ],
+          [
+            3,
+            53
+          ],
+          [
+            4,
+            52
+          ],
+          [
+            5,
+            51
+          ],
+          [
+            6,
+            50
+          ],
+          [
+            7,
+            49
+          ],
+          [
+            8,
+            48
+          ],
+          [
+            9,
+            47
+          ],
+          [
+            10,
+            46
+          ],
+          [
+            11,
+            43
+          ],
+          [
+            12,
+            42
+          ],
+          [
+            13,
+            39
+          ],
+          [
+            14,
+            38
+          ],
+          [
+            18,
+            36
+          ],
+          [
+            19,
+            35
+          ],
+          [
+            20,
+            34
+          ],
+          [
+            21,
+            33
+          ],
+          [
+            22,
+            31
+          ],
+          [
+            23,
+            30
+          ],
+          [
+            24,
+            29
+          ]
+        ],
+        "raw_cww_rows": 22,
+        "other_annotation_rows": 1,
+        "raw_nucleotides_with_multiple_cww_partners": [],
+        "reference_status": "ok",
+        "pairs": [
+          [
+            0,
+            56
+          ],
+          [
+            1,
+            55
+          ],
+          [
+            2,
+            54
+          ],
+          [
+            3,
+            53
+          ],
+          [
+            4,
+            52
+          ],
+          [
+            5,
+            51
+          ],
+          [
+            6,
+            50
+          ],
+          [
+            7,
+            49
+          ],
+          [
+            8,
+            48
+          ],
+          [
+            9,
+            47
+          ],
+          [
+            10,
+            46
+          ],
+          [
+            11,
+            43
+          ],
+          [
+            12,
+            42
+          ],
+          [
+            13,
+            39
+          ],
+          [
+            14,
+            38
+          ],
+          [
+            18,
+            36
+          ],
+          [
+            19,
+            35
+          ],
+          [
+            20,
+            34
+          ],
+          [
+            21,
+            33
+          ],
+          [
+            22,
+            31
+          ],
+          [
+            23,
+            30
+          ],
+          [
+            24,
+            29
+          ]
+        ],
+        "reference_has_crossing_pairs": false
+      },
+      {
+        "id": "RF01734:3vrs_A",
+        "family_id": "RF01734",
+        "pdb_accession": "3vrs",
+        "chain_id": "A",
+        "sequence": "GGGCGAUGAGGCCCGCCCAAACUGCCCUGAAAAGGGCUGAUGGCCUCUACUG",
+        "sequence_sha256": "6dc4922a7a56188b5d33a0cde6b3cea2c61c5957df5501e445c7f41b1efa1e96",
+        "reference_kind": "computational",
+        "reference_basis": "raw_FR3D_PDB_cWW_graph",
+        "source": "BGSU RNA 3D Hub; exact frozen PDB-chain cWW contacts",
+        "sequence_bound": true,
+        "raw_cww_pairs": [
+          [
+            1,
+            16
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            4,
+            13
+          ],
+          [
+            7,
+            46
+          ],
+          [
+            8,
+            45
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            10,
+            43
+          ],
+          [
+            11,
+            42
+          ],
+          [
+            12,
+            41
+          ],
+          [
+            23,
+            36
+          ],
+          [
+            24,
+            35
+          ],
+          [
+            25,
+            34
+          ],
+          [
+            26,
+            33
+          ],
+          [
+            27,
+            32
+          ]
+        ],
+        "raw_cww_rows": 15,
+        "other_annotation_rows": 3,
+        "raw_nucleotides_with_multiple_cww_partners": [],
+        "reference_status": "ok",
+        "pairs": [
+          [
+            1,
+            16
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            4,
+            13
+          ],
+          [
+            7,
+            46
+          ],
+          [
+            8,
+            45
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            10,
+            43
+          ],
+          [
+            11,
+            42
+          ],
+          [
+            12,
+            41
+          ],
+          [
+            23,
+            36
+          ],
+          [
+            24,
+            35
+          ],
+          [
+            25,
+            34
+          ],
+          [
+            26,
+            33
+          ],
+          [
+            27,
+            32
+          ]
+        ],
+        "reference_has_crossing_pairs": true
+      },
+      {
+        "id": "RF01734:5kh8_A",
+        "family_id": "RF01734",
+        "pdb_accession": "5kh8",
+        "chain_id": "A",
+        "sequence": "GGCGAUGGUGUUCGCCAUAAACGCUCUUCGGAGCUAAUGACACCUAC",
+        "sequence_sha256": "693f144da1664a5568e366b252339dac4dae713aabe67e246166fe4566171814",
+        "reference_kind": "computational",
+        "reference_basis": "raw_FR3D_PDB_cWW_graph",
+        "source": "BGSU RNA 3D Hub; exact frozen PDB-chain cWW contacts",
+        "sequence_bound": true,
+        "raw_cww_pairs": [
+          [
+            0,
+            15
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            6,
+            43
+          ],
+          [
+            7,
+            42
+          ],
+          [
+            8,
+            41
+          ],
+          [
+            9,
+            40
+          ],
+          [
+            10,
+            39
+          ],
+          [
+            11,
+            38
+          ],
+          [
+            22,
+            33
+          ],
+          [
+            23,
+            32
+          ],
+          [
+            24,
+            31
+          ],
+          [
+            25,
+            30
+          ]
+        ],
+        "raw_cww_rows": 14,
+        "other_annotation_rows": 4,
+        "raw_nucleotides_with_multiple_cww_partners": [],
+        "reference_status": "ok",
+        "pairs": [
+          [
+            0,
+            15
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            3,
+            12
+          ],
+          [
+            6,
+            43
+          ],
+          [
+            7,
+            42
+          ],
+          [
+            8,
+            41
+          ],
+          [
+            9,
+            40
+          ],
+          [
+            10,
+            39
+          ],
+          [
+            11,
+            38
+          ],
+          [
+            22,
+            33
+          ],
+          [
+            23,
+            32
+          ],
+          [
+            24,
+            31
+          ],
+          [
+            25,
+            30
+          ]
+        ],
+        "reference_has_crossing_pairs": true
+      },
+      {
+        "id": "RF01763:5nwq_A",
+        "family_id": "RF01763",
+        "pdb_accession": "5nwq",
+        "chain_id": "A",
+        "sequence": "CCGGACGAGGUGCGCCGUACCCGGUCAGGACAAGACGGCGC",
+        "sequence_sha256": "8e55c5bb77543ee9978bdfc786e6c3a69d95e911e93966ea78daabb99d2e5bd2",
+        "reference_kind": "computational",
+        "reference_basis": "raw_FR3D_PDB_cWW_graph",
+        "source": "BGSU RNA 3D Hub; exact frozen PDB-chain cWW contacts",
+        "sequence_bound": true,
+        "raw_cww_pairs": [
+          [
+            0,
+            23
+          ],
+          [
+            1,
+            22
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            20
+          ],
+          [
+            11,
+            40
+          ],
+          [
+            12,
+            39
+          ],
+          [
+            13,
+            38
+          ],
+          [
+            14,
+            37
+          ],
+          [
+            15,
+            36
+          ],
+          [
+            16,
+            35
+          ],
+          [
+            17,
+            34
+          ],
+          [
+            19,
+            28
+          ]
+        ],
+        "raw_cww_rows": 12,
+        "other_annotation_rows": 8,
+        "raw_nucleotides_with_multiple_cww_partners": [],
+        "reference_status": "ok",
+        "pairs": [
+          [
+            0,
+            23
+          ],
+          [
+            1,
+            22
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            20
+          ],
+          [
+            11,
+            40
+          ],
+          [
+            12,
+            39
+          ],
+          [
+            13,
+            38
+          ],
+          [
+            14,
+            37
+          ],
+          [
+            15,
+            36
+          ],
+          [
+            16,
+            35
+          ],
+          [
+            17,
+            34
+          ],
+          [
+            19,
+            28
+          ]
+        ],
+        "reference_has_crossing_pairs": true
+      },
+      {
+        "id": "RF01831:3sd3_A",
+        "family_id": "RF01831",
+        "pdb_accession": "3sd3",
+        "chain_id": "A",
+        "sequence": "GGAGAGUAGAUGAUUCGCGUUAAGCGUGUGUGAAUGGGAUGUCGUCACACAACGAAGCGAGAGCGCGGUGAAUCAUUGCAUCCGCUCCA",
+        "sequence_sha256": "831bf0accb57ada5d69b5d13cecec48343d95e89ab8c6ae302a063904cd760e7",
+        "reference_kind": "computational",
+        "reference_basis": "raw_FR3D_PDB_cWW_graph",
+        "source": "BGSU RNA 3D Hub; exact frozen PDB-chain cWW contacts",
+        "sequence_bound": true,
+        "raw_cww_pairs": [
+          [
+            0,
+            87
+          ],
+          [
+            1,
+            86
+          ],
+          [
+            2,
+            85
+          ],
+          [
+            3,
+            84
+          ],
+          [
+            4,
+            83
+          ],
+          [
+            8,
+            76
+          ],
+          [
+            9,
+            75
+          ],
+          [
+            10,
+            74
+          ],
+          [
+            11,
+            73
+          ],
+          [
+            12,
+            72
+          ],
+          [
+            13,
+            71
+          ],
+          [
+            14,
+            70
+          ],
+          [
+            15,
+            69
+          ],
+          [
+            16,
+            68
+          ],
+          [
+            17,
+            66
+          ],
+          [
+            18,
+            65
+          ],
+          [
+            19,
+            64
+          ],
+          [
+            25,
+            51
+          ],
+          [
+            26,
+            50
+          ],
+          [
+            27,
+            49
+          ],
+          [
+            28,
+            48
+          ],
+          [
+            29,
+            47
+          ],
+          [
+            30,
+            46
+          ],
+          [
+            31,
+            45
+          ],
+          [
+            32,
+            44
+          ],
+          [
+            33,
+            43
+          ],
+          [
+            36,
+            82
+          ],
+          [
+            37,
+            81
+          ],
+          [
+            38,
+            80
+          ],
+          [
+            39,
+            79
+          ],
+          [
+            40,
+            78
+          ],
+          [
+            56,
+            63
+          ],
+          [
+            57,
+            62
+          ]
+        ],
+        "raw_cww_rows": 33,
+        "other_annotation_rows": 7,
+        "raw_nucleotides_with_multiple_cww_partners": [],
+        "reference_status": "ok",
+        "pairs": [
+          [
+            0,
+            87
+          ],
+          [
+            1,
+            86
+          ],
+          [
+            2,
+            85
+          ],
+          [
+            3,
+            84
+          ],
+          [
+            4,
+            83
+          ],
+          [
+            8,
+            76
+          ],
+          [
+            9,
+            75
+          ],
+          [
+            10,
+            74
+          ],
+          [
+            11,
+            73
+          ],
+          [
+            12,
+            72
+          ],
+          [
+            13,
+            71
+          ],
+          [
+            14,
+            70
+          ],
+          [
+            15,
+            69
+          ],
+          [
+            16,
+            68
+          ],
+          [
+            17,
+            66
+          ],
+          [
+            18,
+            65
+          ],
+          [
+            19,
+            64
+          ],
+          [
+            25,
+            51
+          ],
+          [
+            26,
+            50
+          ],
+          [
+            27,
+            49
+          ],
+          [
+            28,
+            48
+          ],
+          [
+            29,
+            47
+          ],
+          [
+            30,
+            46
+          ],
+          [
+            31,
+            45
+          ],
+          [
+            32,
+            44
+          ],
+          [
+            33,
+            43
+          ],
+          [
+            36,
+            82
+          ],
+          [
+            37,
+            81
+          ],
+          [
+            38,
+            80
+          ],
+          [
+            39,
+            79
+          ],
+          [
+            40,
+            78
+          ],
+          [
+            56,
+            63
+          ],
+          [
+            57,
+            62
+          ]
+        ],
+        "reference_has_crossing_pairs": true
+      },
+      {
+        "id": "RF01831:3suh_X",
+        "family_id": "RF01831",
+        "pdb_accession": "3suh",
+        "chain_id": "X",
+        "sequence": "GGACAGAGUAGGUAAACGUGCGUAAAGUGCCUGAGGGACGGGGAGUUGUCCUCAGGACGAACACCGAAAGGUGGCGGUACGUUUACCGCAUCUCGCUGUUC",
+        "sequence_sha256": "02c8c948a6c9bb5f6ce7762fdefdec4016519193508974188646cacea8f66bac",
+        "reference_kind": "computational",
+        "reference_basis": "raw_FR3D_PDB_cWW_graph",
+        "source": "BGSU RNA 3D Hub; exact frozen PDB-chain cWW contacts",
+        "sequence_bound": true,
+        "raw_cww_pairs": [
+          [
+            2,
+            98
+          ],
+          [
+            3,
+            97
+          ],
+          [
+            4,
+            96
+          ],
+          [
+            5,
+            95
+          ],
+          [
+            6,
+            94
+          ],
+          [
+            7,
+            88
+          ],
+          [
+            9,
+            87
+          ],
+          [
+            10,
+            86
+          ],
+          [
+            11,
+            85
+          ],
+          [
+            12,
+            84
+          ],
+          [
+            13,
+            83
+          ],
+          [
+            14,
+            82
+          ],
+          [
+            15,
+            81
+          ],
+          [
+            16,
+            80
+          ],
+          [
+            17,
+            79
+          ],
+          [
+            18,
+            78
+          ],
+          [
+            19,
+            77
+          ],
+          [
+            20,
+            75
+          ],
+          [
+            21,
+            74
+          ],
+          [
+            22,
+            73
+          ],
+          [
+            28,
+            56
+          ],
+          [
+            29,
+            55
+          ],
+          [
+            30,
+            54
+          ],
+          [
+            31,
+            53
+          ],
+          [
+            32,
+            52
+          ],
+          [
+            33,
+            51
+          ],
+          [
+            34,
+            50
+          ],
+          [
+            35,
+            49
+          ],
+          [
+            36,
+            48
+          ],
+          [
+            40,
+            93
+          ],
+          [
+            41,
+            92
+          ],
+          [
+            42,
+            91
+          ],
+          [
+            61,
+            72
+          ],
+          [
+            62,
+            71
+          ],
+          [
+            63,
+            70
+          ],
+          [
+            64,
+            69
+          ]
+        ],
+        "raw_cww_rows": 72,
+        "other_annotation_rows": 6,
+        "raw_nucleotides_with_multiple_cww_partners": [],
+        "reference_status": "ok",
+        "pairs": [
+          [
+            2,
+            98
+          ],
+          [
+            3,
+            97
+          ],
+          [
+            4,
+            96
+          ],
+          [
+            5,
+            95
+          ],
+          [
+            6,
+            94
+          ],
+          [
+            7,
+            88
+          ],
+          [
+            9,
+            87
+          ],
+          [
+            10,
+            86
+          ],
+          [
+            11,
+            85
+          ],
+          [
+            12,
+            84
+          ],
+          [
+            13,
+            83
+          ],
+          [
+            14,
+            82
+          ],
+          [
+            15,
+            81
+          ],
+          [
+            16,
+            80
+          ],
+          [
+            17,
+            79
+          ],
+          [
+            18,
+            78
+          ],
+          [
+            19,
+            77
+          ],
+          [
+            20,
+            75
+          ],
+          [
+            21,
+            74
+          ],
+          [
+            22,
+            73
+          ],
+          [
+            28,
+            56
+          ],
+          [
+            29,
+            55
+          ],
+          [
+            30,
+            54
+          ],
+          [
+            31,
+            53
+          ],
+          [
+            32,
+            52
+          ],
+          [
+            33,
+            51
+          ],
+          [
+            34,
+            50
+          ],
+          [
+            35,
+            49
+          ],
+          [
+            36,
+            48
+          ],
+          [
+            40,
+            93
+          ],
+          [
+            41,
+            92
+          ],
+          [
+            42,
+            91
+          ],
+          [
+            61,
+            72
+          ],
+          [
+            62,
+            71
+          ],
+          [
+            63,
+            70
+          ],
+          [
+            64,
+            69
+          ]
+        ],
+        "reference_has_crossing_pairs": true
+      },
+      {
+        "id": "RF02977:7wi9_V",
+        "family_id": "RF02977",
+        "pdb_accession": "7wi9",
+        "chain_id": "V",
+        "sequence": "GGCGUGGUCCGUUCAACUCGUUCCUCGAAAGAGGAACUACGGGAGACGCC",
+        "sequence_sha256": "ca847a6a8e2aa4765dd48ce06162df88694a7f46c77d07685985d57f7b3906ff",
+        "reference_kind": "computational",
+        "reference_basis": "raw_FR3D_PDB_cWW_graph",
+        "source": "BGSU RNA 3D Hub; exact frozen PDB-chain cWW contacts",
+        "sequence_bound": true,
+        "raw_cww_pairs": [
+          [
+            0,
+            49
+          ],
+          [
+            1,
+            48
+          ],
+          [
+            2,
+            47
+          ],
+          [
+            3,
+            46
+          ],
+          [
+            4,
+            45
+          ],
+          [
+            6,
+            43
+          ],
+          [
+            7,
+            42
+          ],
+          [
+            8,
+            41
+          ],
+          [
+            9,
+            40
+          ],
+          [
+            10,
+            39
+          ],
+          [
+            11,
+            38
+          ],
+          [
+            19,
+            36
+          ],
+          [
+            20,
+            35
+          ],
+          [
+            21,
+            34
+          ],
+          [
+            22,
+            33
+          ],
+          [
+            23,
+            32
+          ],
+          [
+            24,
+            31
+          ],
+          [
+            25,
+            30
+          ]
+        ],
+        "raw_cww_rows": 18,
+        "other_annotation_rows": 3,
+        "raw_nucleotides_with_multiple_cww_partners": [],
+        "reference_status": "ok",
+        "pairs": [
+          [
+            0,
+            49
+          ],
+          [
+            1,
+            48
+          ],
+          [
+            2,
+            47
+          ],
+          [
+            3,
+            46
+          ],
+          [
+            4,
+            45
+          ],
+          [
+            6,
+            43
+          ],
+          [
+            7,
+            42
+          ],
+          [
+            8,
+            41
+          ],
+          [
+            9,
+            40
+          ],
+          [
+            10,
+            39
+          ],
+          [
+            11,
+            38
+          ],
+          [
+            19,
+            36
+          ],
+          [
+            20,
+            35
+          ],
+          [
+            21,
+            34
+          ],
+          [
+            22,
+            33
+          ],
+          [
+            23,
+            32
+          ],
+          [
+            24,
+            31
+          ],
+          [
+            25,
+            30
+          ]
+        ],
+        "reference_has_crossing_pairs": false
+      },
+      {
+        "id": "RF03013:6tb7_A",
+        "family_id": "RF03013",
+        "pdb_accession": "6tb7",
+        "chain_id": "A",
+        "sequence": "GGCUUCAACAACCCCGUAGGUUGGGCCGAAAGGCAGCGAAUCUACUGGAGCC",
+        "sequence_sha256": "0c42b5e033599d470b1bf580d2c74f13541033ce31d43f5c35377d42229aba30",
+        "reference_kind": "computational",
+        "reference_basis": "raw_FR3D_PDB_cWW_graph",
+        "source": "BGSU RNA 3D Hub; exact frozen PDB-chain cWW contacts",
+        "sequence_bound": true,
+        "raw_cww_pairs": [
+          [
+            0,
+            51
+          ],
+          [
+            1,
+            50
+          ],
+          [
+            2,
+            49
+          ],
+          [
+            3,
+            48
+          ],
+          [
+            4,
+            47
+          ],
+          [
+            5,
+            46
+          ],
+          [
+            6,
+            45
+          ],
+          [
+            12,
+            37
+          ],
+          [
+            13,
+            35
+          ],
+          [
+            15,
+            44
+          ],
+          [
+            16,
+            43
+          ],
+          [
+            17,
+            42
+          ],
+          [
+            18,
+            41
+          ],
+          [
+            19,
+            40
+          ],
+          [
+            20,
+            39
+          ],
+          [
+            21,
+            38
+          ],
+          [
+            22,
+            36
+          ],
+          [
+            23,
+            34
+          ],
+          [
+            24,
+            33
+          ],
+          [
+            25,
+            32
+          ],
+          [
+            26,
+            31
+          ]
+        ],
+        "raw_cww_rows": 21,
+        "other_annotation_rows": 1,
+        "raw_nucleotides_with_multiple_cww_partners": [],
+        "reference_status": "ok",
+        "pairs": [
+          [
+            0,
+            51
+          ],
+          [
+            1,
+            50
+          ],
+          [
+            2,
+            49
+          ],
+          [
+            3,
+            48
+          ],
+          [
+            4,
+            47
+          ],
+          [
+            5,
+            46
+          ],
+          [
+            6,
+            45
+          ],
+          [
+            12,
+            37
+          ],
+          [
+            13,
+            35
+          ],
+          [
+            15,
+            44
+          ],
+          [
+            16,
+            43
+          ],
+          [
+            17,
+            42
+          ],
+          [
+            18,
+            41
+          ],
+          [
+            19,
+            40
+          ],
+          [
+            20,
+            39
+          ],
+          [
+            21,
+            38
+          ],
+          [
+            22,
+            36
+          ],
+          [
+            23,
+            34
+          ],
+          [
+            24,
+            33
+          ],
+          [
+            25,
+            32
+          ],
+          [
+            26,
+            31
+          ]
+        ],
+        "reference_has_crossing_pairs": true
+      }
+    ],
+    "families": [
+      {
+        "family_id": "RF00015",
+        "planned_records": 3,
+        "supported_references": 3
+      },
+      {
+        "family_id": "RF00080",
+        "planned_records": 2,
+        "supported_references": 2
+      },
+      {
+        "family_id": "RF00100",
+        "planned_records": 1,
+        "supported_references": 1
+      },
+      {
+        "family_id": "RF01734",
+        "planned_records": 2,
+        "supported_references": 2
+      },
+      {
+        "family_id": "RF01763",
+        "planned_records": 1,
+        "supported_references": 1
+      },
+      {
+        "family_id": "RF01831",
+        "planned_records": 2,
+        "supported_references": 2
+      },
+      {
+        "family_id": "RF02977",
+        "planned_records": 1,
+        "supported_references": 1
+      },
+      {
+        "family_id": "RF03013",
+        "planned_records": 1,
+        "supported_references": 1
+      }
+    ],
+    "planned_records": 13,
+    "supported_references": 13,
+    "sequence_bindings_complete": true,
+    "known_provenance_overlap": false
+  },
+  "readiness": {
+    "supported_references": 13,
+    "families_meeting_three_references": 1,
+    "coverage_thresholds_met": false,
+    "independent_experimental_panel_ready": false,
+    "training_tool_independence_certified": false,
+    "model_inference_authorized_by_this_stage": false
+  },
+  "inference_performed": false
+}

@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/family_coverage_development_runs/20261016T011555.025711Z",
+  "manifest_sha256": "512dc8b697802cf43de7038db84d1e43c58c9724350959819cc708393721d14a",
+  "selected_records": 130,
+  "supported_by_role": {
+    "train": 61,
+    "validation": 22
+  },
+  "supported_replacement_family": 2,
+  "dataset_ready": true,
+  "development_only": true,
+  "label_informed_selection": true,
+  "model_training_performed": false
+}

@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/fresh_structure_metadata_runs/20261016T014544.631685Z",
+  "manifest_sha256": "ea40d678307ee6bb2e180ee2807dc575ebdf2610e6a9d33479ac6993167a22cb",
+  "requested": 92,
+  "successful": 91,
+  "failed": 1,
+  "structure_labels_read": false,
+  "model_inference_performed": false
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "group": "clan:CL00009",
+    "family_id": "RF00026",
+    "role": "train",
+    "filename": "RF00026.sto",
+    "url": "https://rfam.org/family/RF00026/alignment/stockholm",
+    "status": "ok",
+    "sha256": "01e4acf899812c7aefba879804fe9dd2e56e10e7d897b0eca19bc9e9c80f36ec"
+  },
+  {
+    "group": "clan:CL00100",
+    "family_id": "RF00012",
+    "role": "train",
+    "filename": "RF00012.sto",
+    "url": "https://rfam.org/family/RF00012/alignment/stockholm",
+    "status": "ok",
+    "sha256": "4b2cf055dad800c094214a69224874ca5417f8bef9dfef2a49abe19781f84da9"
+  },
+  {
+    "group": "clan:CL00005",
+    "family_id": "RF00003",
+    "role": "train",
+    "filename": "RF00003.sto",
+    "url": "https://rfam.org/family/RF00003/alignment/stockholm",
+    "status": "ok",
+    "sha256": "1a1384ef980a9703e0bfc4533b95e26c035a99bb2f11fafcb46298994de291cb"
+  },
+  {
+    "group": "clan:CL00004",
+    "family_id": "RF00024",
+    "role": "train",
+    "filename": "RF00024.sto",
+    "url": "https://rfam.org/family/RF00024/alignment/stockholm",
+    "status": "ok",
+    "sha256": "88446bf428d6aaf0d66d93836859281aea838a546ef0b42f14acb68bc441702e"
+  },
+  {
+    "group": "family:RF00041",
+    "family_id": "RF00041",
+    "role": "train",
+    "filename": "RF00041.sto",
+    "url": "https://rfam.org/family/RF00041/alignment/stockholm",
+    "status": "ok",
+    "sha256": "68c4ca6c7dfe90502436b19c3dc3df3e7a01bb8802fe21ce19ed794126b27e25"
+  },
+  {
+    "group": "clan:CL00106",
+    "family_id": "RF00018",
+    "role": "train",
+    "filename": "RF00018.sto",
+    "url": "https://rfam.org/family/RF00018/alignment/stockholm",
+    "status": "ok",
+    "sha256": "ce6667d9c8f789e096db4284c3de4bb43bddb7ad11cb9d967f992496465090ca"
+  },
+  {
+    "group": "family:RF00020",
+    "family_id": "RF00020",
+    "role": "train",
+    "filename": "RF00020.sto",
+    "url": "https://rfam.org/family/RF00020/alignment/stockholm",
+    "status": "ok",
+    "sha256": "bbe24ca1001964e159562777514431895af7db64af3656f6a4e64a5fb92850f3"
+  },
+  {
+    "group": "family:RF00043",
+    "family_id": "RF00043",
+    "role": "train",
+    "filename": "RF00043.sto",
+    "url": "https://rfam.org/family/RF00043/alignment/stockholm",
+    "status": "ok",
+    "sha256": "4a5fc78391aaa455ae06de52c778bd678602c4acbfe5903594817db576ebc4fc"
+  },
+  {
+    "group": "family:RF00047",
+    "family_id": "RF00047",
+    "role": "train",
+    "filename": "RF00047.sto",
+    "url": "https://rfam.org/family/RF00047/alignment/stockholm",
+    "status": "ok",
+    "sha256": "1bd4ef4352bcc9b4836427feb26d604154533a3a840186791d401591dd8e7f5e"
+  },
+  {
+    "group": "family:RF00016",
+    "family_id": "RF00016",
+    "role": "train",
+    "filename": "RF00016.sto",
+    "url": "https://rfam.org/family/RF00016/alignment/stockholm",
+    "status": "ok",
+    "sha256": "f729c1b233c476f21bc9d37af085616693b301a9c7f62e79089863c4e019539d"
+  },
+  {
+    "group": "family:RF00048",
+    "family_id": "RF00048",
+    "role": "train",
+    "filename": "RF00048.sto",
+    "url": "https://rfam.org/family/RF00048/alignment/stockholm",
+    "status": "ok",
+    "sha256": "4ae41a91f8b624310a94cd90548b9adaa0133f4b77ba927a386909c8955e2ab8"
+  },
+  {
+    "group": "family:RF00006",
+    "family_id": "RF00006",
+    "role": "train",
+    "filename": "RF00006.sto",
+    "url": "https://rfam.org/family/RF00006/alignment/stockholm",
+    "status": "ok",
+    "sha256": "bc975d9955a855db6140694b407fc2cc308f3e2f7ed57702b4319e4338835531"
+  },
+  {
+    "group": "clan:CL00006",
+    "family_id": "RF00004",
+    "role": "validation",
+    "filename": "RF00004.sto",
+    "url": "https://rfam.org/family/RF00004/alignment/stockholm",
+    "status": "ok",
+    "sha256": "f6fa7e16374bd99eb1e45e3f7bfd8e2acdb348d15b8138de094679f8693fb195"
+  },
+  {
+    "group": "family:RF00032",
+    "family_id": "RF00032",
+    "role": "validation",
+    "filename": "RF00032.sto",
+    "url": "https://rfam.org/family/RF00032/alignment/stockholm",
+    "status": "ok",
+    "sha256": "a32e6fe2ca92198624d03eb8b1fc10238795c0701584b0aa331e6ec289e2cc22"
+  },
+  {
+    "group": "clan:CL00148",
+    "family_id": "RF00027",
+    "role": "validation",
+    "filename": "RF00027.sto",
+    "url": "https://rfam.org/family/RF00027/alignment/stockholm",
+    "status": "ok",
+    "sha256": "6339bd5df25416b6acbca76e4c0f79aa6c848c0f5a38c6a9426294d32211683f"
+  },
+  {
+    "group": "family:RF00028",
+    "family_id": "RF00028",
+    "role": "validation",
+    "filename": "RF00028.sto",
+    "url": "https://rfam.org/family/RF00028/alignment/stockholm",
+    "status": "ok",
+    "sha256": "8efab74ec88685423eceefbd82dcf18a0782d6a61d4238e7c9abbe53eba0c570"
+  }
+]

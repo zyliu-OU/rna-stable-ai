@@ -1,0 +1,135 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z",
+  "study_manifest_sha256": "49468980abd09b467ea8fc387b229e0fb7440ffa824a36898e1c266854a403ba",
+  "summary_code_sha256": "2add034de1d93f7f1e3b04e17e09b33bef0cdea5e1234b51a601f7bb6b434d65",
+  "component_summary_sha256": {
+    "baseline_seed20261015/summary.json": "6d10ee31cadba98078d11ff30d35fce4f03c4f91cc502887429fa9a8e2d02218",
+    "baseline_seed7/summary.json": "54165eaad762714eded00acab98d6ea67bac331174f57b3b266f1f3774a8f254",
+    "baseline_seed1729/summary.json": "db752f3178741790bf2c51623e4c15dccb1db1d67771500a5fd390a033eda4bc",
+    "stack_seed20261015/summary.json": "ecbc593f60da8e5861ea9c7d5aa19def65fb3c356040e2c5381bc6c09c960db4",
+    "stack_seed7/summary.json": "5633cc1c9aa1e86b223e9cd67022ded705ef9e33d9afb34e100a99388c39f6ed",
+    "stack_seed1729/summary.json": "57dcf4624365a7a29fadde2b6878c313dc45d460a86cc0f7f7277876a7920aa5",
+    "helix_seed20261015/summary.json": "9c9661eacfddae37b7905724bb4cc47d283caf02c30af16ba41a5e0db8d9d279",
+    "helix_seed7/summary.json": "4a90a3c483e338aead1253815f2637071c82abc64f1921e170f307bd6dcafe06",
+    "helix_seed1729/summary.json": "8588bb29b16d13805a3a947b00cb19fcd12bee5bcb92f8fc8b4f9502bc6d8946"
+  },
+  "rows": [
+    {
+      "head": "baseline",
+      "seed": 20261015,
+      "initial_validation_full_pair_f1": 0.0,
+      "selected_validation_full_pair_f1": 0.2845424192893316,
+      "selected_epoch": 4,
+      "unlearnable_train_gold_pairs": 116,
+      "unlearnable_validation_gold_pairs": 53,
+      "full_train_gold_pairs": 1351,
+      "full_validation_gold_pairs": 632
+    },
+    {
+      "head": "baseline",
+      "seed": 7,
+      "initial_validation_full_pair_f1": 0.0,
+      "selected_validation_full_pair_f1": 0.31537263883441885,
+      "selected_epoch": 3,
+      "unlearnable_train_gold_pairs": 116,
+      "unlearnable_validation_gold_pairs": 53,
+      "full_train_gold_pairs": 1351,
+      "full_validation_gold_pairs": 632
+    },
+    {
+      "head": "baseline",
+      "seed": 1729,
+      "initial_validation_full_pair_f1": 0.0,
+      "selected_validation_full_pair_f1": 0.36579723562251476,
+      "selected_epoch": 2,
+      "unlearnable_train_gold_pairs": 116,
+      "unlearnable_validation_gold_pairs": 53,
+      "full_train_gold_pairs": 1351,
+      "full_validation_gold_pairs": 632
+    },
+    {
+      "head": "stack",
+      "seed": 20261015,
+      "initial_validation_full_pair_f1": 0.0,
+      "selected_validation_full_pair_f1": 0.370751473287334,
+      "selected_epoch": 4,
+      "unlearnable_train_gold_pairs": 116,
+      "unlearnable_validation_gold_pairs": 53,
+      "full_train_gold_pairs": 1351,
+      "full_validation_gold_pairs": 632
+    },
+    {
+      "head": "stack",
+      "seed": 7,
+      "initial_validation_full_pair_f1": 0.0,
+      "selected_validation_full_pair_f1": 0.40957246642450246,
+      "selected_epoch": 1,
+      "unlearnable_train_gold_pairs": 116,
+      "unlearnable_validation_gold_pairs": 53,
+      "full_train_gold_pairs": 1351,
+      "full_validation_gold_pairs": 632
+    },
+    {
+      "head": "stack",
+      "seed": 1729,
+      "initial_validation_full_pair_f1": 0.0,
+      "selected_validation_full_pair_f1": 0.39175311508480876,
+      "selected_epoch": 2,
+      "unlearnable_train_gold_pairs": 116,
+      "unlearnable_validation_gold_pairs": 53,
+      "full_train_gold_pairs": 1351,
+      "full_validation_gold_pairs": 632
+    },
+    {
+      "head": "helix",
+      "seed": 20261015,
+      "initial_validation_full_pair_f1": 0.0,
+      "selected_validation_full_pair_f1": 0.4687910462122863,
+      "selected_epoch": 1,
+      "unlearnable_train_gold_pairs": 116,
+      "unlearnable_validation_gold_pairs": 53,
+      "full_train_gold_pairs": 1351,
+      "full_validation_gold_pairs": 632
+    },
+    {
+      "head": "helix",
+      "seed": 7,
+      "initial_validation_full_pair_f1": 0.0,
+      "selected_validation_full_pair_f1": 0.4871240701277511,
+      "selected_epoch": 4,
+      "unlearnable_train_gold_pairs": 116,
+      "unlearnable_validation_gold_pairs": 53,
+      "full_train_gold_pairs": 1351,
+      "full_validation_gold_pairs": 632
+    },
+    {
+      "head": "helix",
+      "seed": 1729,
+      "initial_validation_full_pair_f1": 0.0,
+      "selected_validation_full_pair_f1": 0.48914941775661513,
+      "selected_epoch": 1,
+      "unlearnable_train_gold_pairs": 116,
+      "unlearnable_validation_gold_pairs": 53,
+      "full_train_gold_pairs": 1351,
+      "full_validation_gold_pairs": 632
+    }
+  ],
+  "mean_selected_validation_full_pair_f1_by_head": {
+    "baseline": 0.32190409791542174,
+    "stack": 0.3906923515988817,
+    "helix": 0.48168817803221753
+  },
+  "matched_initialization": true,
+  "train_records": 61,
+  "validation_records": 22,
+  "development_only": true,
+  "test_evaluated": false,
+  "independent_test_claim": false,
+  "limitations": [
+    "Validation records select checkpoints; selected F1 is development performance, not independent test accuracy.",
+    "The training dataset used label-informed coverage selection after two failed frozen source runs.",
+    "Unlearnable noncanonical or short-loop gold contacts remain in full-reference validation scoring.",
+    "No biological stability, mutation benefit, retained function or broad structure accuracy claim."
+  ]
+}
