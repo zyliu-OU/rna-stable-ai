@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/bprna_training_subset_v2_runs/20261016T174219.360435Z",
+  "manifest_sha256": "61a0f2e3f94131ed91074056ae38e7b68ea2abfdd213e17f245d161337b508d1",
+  "candidate_count": 60,
+  "valid_sequence_count": 54,
+  "selected_training_only_count": 27,
+  "reason_counts": {
+    "prior_exposure_overlap": 5,
+    "training_only_candidate": 27,
+    "unsupported_source_record": 6,
+    "within_subset_redundancy": 22
+  },
+  "interrupted_predecessor_run": "/home/zyliu/Documents/rna-stable-ai/results/bprna_training_subset_runs/20261016T173814.060855Z",
+  "training_only": true,
+  "model_training_performed": false,
+  "model_inference_performed": false,
+  "independent_test_use_authorized": false
+}

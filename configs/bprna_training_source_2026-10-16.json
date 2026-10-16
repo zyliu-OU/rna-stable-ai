@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "stage": "training_only_length_expansion_source",
+  "source_name": "bpRNA_1m_version_1_dot_bracket_files",
+  "url": "https://bprna.cgrb.oregonstate.edu/bpRNA_1m/dbnFiles.zip",
+  "maximum_response_bytes": 62914560,
+  "timeout_seconds": 120,
+  "active_maximum_length_exclusive": 5000,
+  "training_only": true,
+  "independent_test_use_authorized": false,
+  "model_training_authorized_at_acquisition": false,
+  "model_inference_authorized_at_acquisition": false
+}

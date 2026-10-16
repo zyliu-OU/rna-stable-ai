@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "stage": "training_only_bprna_length_expansion_screen",
+  "source_groups": ["CRW", "RFAM"],
+  "length_bins": [[400, 599], [600, 799], [800, 1024]],
+  "per_bin_counts": {"CRW": 16, "RFAM": 4},
+  "candidate_order": "source_group_then_length_bin_then_evenly_spaced_length_id",
+  "maximum_selected": 60,
+  "sequence_similarity_threshold": 0.8,
+  "replace_excluded_candidates": false,
+  "training_only": true,
+  "independent_test_use_authorized": false,
+  "model_training_authorized_at_screen": false,
+  "model_inference_authorized_at_screen": false
+}

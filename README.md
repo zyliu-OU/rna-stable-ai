@@ -6,27 +6,29 @@ Research prototype for RNA structure prediction, constrained sequence optimizati
 and reproducible folding benchmarks. Code, experimental checkpoints, input data,
 and results are available for inspection. No validated release yet.
 
-**Current length focus:** active development targets RNA sequences shorter than
-5,000 nt (1–4,999 nt). Existing 5,000/10,000-nt code, data, results and
-provenance are preserved as deferred work; they are not deleted or counted as
+**Current development focus: RNA sequences shorter than 5,000 nt (1–4,999 nt).**
+We are extending and evaluating the core structure model within that range.
+Existing 5,000/10,000-nt code, data, results, and provenance are preserved as
+deferred work; they are not deleted or counted as
 active-scope validation. Method-specific lower limits still apply. See the
 [sequence-length policy](docs/LENGTH_SCOPE.md).
 
 ## Development plan
 
-Updated October 16, 2026. **Current step: 4 — independent biological validation below 5,000 nt.**
+Updated October 16, 2026. **Active work: core-model development below 5,000 nt.**
+Independent biological validation remains a separate, unresolved release gate.
 
 | Step | Work | Progress |
 |---:|---|---|
 | 1 | Reproducible foundations | Implemented: bounded native tools, request journals, input hashes, exposure tracking, and replay audits. |
-| 2 | Structure models | Baseline, stack, and helix models trained and compared. Candidate-budget and loss studies complete; defaults unchanged. |
+| **2** | **Structure models** | **Active length-focused development.** Baseline, stack, and helix models have been compared; a training-only 400–1,014-nt extension has completed a matched single-seed pilot. Defaults remain unchanged. |
 | 3 | Sequence optimization | Synthetic studies and native energy checks complete. Biological benefits remain unverified. |
-| **4** | **Independent structure validation** | **Current gate.** Three prospective panels and a six-family raw-contact feasibility study evaluated; broader coverage/provenance remain limited. |
-| 5 | Longer RNA evidence | New work at 5,000 nt or above is deferred. Existing synthetic benchmarks through 10,000 nt remain preserved; exact sparse inference supports up to 1,024 nt. |
+| 4 | Independent structure validation | Open release gate. Three prospective panels and a six-family raw-contact feasibility study evaluated; broader coverage/provenance remain limited. |
+| 5 | Length evidence and deferred 5,000+ nt work | Longer held-out validation below 5,000 nt is needed. New work at 5,000 nt or above is deferred; existing synthetic benchmarks through 10,000 nt remain preserved. Current full-pair training is capped at 1,024 nt. |
 | 6 | Measured stability and function | Public-assay pilot complete. Controlled mutation effects and retained function remain pending. |
 | 7 | Validated release | Pending the scientific evidence above. |
 
-The assay pilot advances part of step 6 while steps 4 and 5 remain open.
+The assay pilot advances part of step 6 while independent validation remains open.
 Development resumed with a frozen 12-training/four-validation family source plan.
 Its original selection failed the per-family gate. A separately versioned,
 label-informed development dataset now passes that gate with 61 training and
@@ -38,6 +40,13 @@ descriptions; RF04222 returned 404. An eight-family, 56-candidate structure
 panel was frozen and acquired. All 56 contact requests succeeded, but sequence
 redundancy left 12 informative references and no family with three. The
 reference-readiness gate failed; no new model inference ran.
+Separately, the length-focused model track screened 60 metadata-selected
+[bpRNA-1m](https://bprna.cgrb.oregonstate.edu/download.php) records and retained
+27 training-only RNAs of 400–1,014 nt. A matched single-seed pilot added these
+to the 61-record training set. Its reused 22-record validation set ends at
+387 nt, so the pilot does not establish longer-RNA accuracy. The public snapshot
+includes code, metadata, and concise results; the upstream bpRNA archive and
+full frozen run artifacts remain local and are not redistributed here.
 
 ## Latest results
 
@@ -56,8 +65,14 @@ reference-readiness gate failed; no new model inference ran.
 - **New model study:** three heads × three seeds trained from random initialization
   on the new pair sets. Mean selected development validation pair F1 is 0.322
   baseline, 0.391 stack and 0.482 helix; independent accuracy is unmeasured.
-- **Verification:** 831 tests passed. Source archival recovered 271 of 281
-  recorded Python versions; ten historical versions remain unavailable.
+- **Length-extension pilot:** 27 training-only RNAs of 400–1,014 nt added to a
+  matched helix fit. Reused short-sequence validation pair F1 was **0.49106**
+  versus **0.48915** for the control (one seed). This small development change
+  is not an independent or longer-length accuracy result.
+- **Verification:** 864 tests passed in the working environment. A clean
+  publication checkout passed 841 tests; nine historical replay tests require
+  ignored external/native assets absent from that checkout. Source archival
+  recovered 271 of 281 recorded Python versions; ten remain unavailable.
 
 These results do not establish causal mutation benefits, cellular half-life,
 long-RNA accuracy, or retained function. The assay cohort contains only
@@ -73,7 +88,7 @@ long-RNA accuracy, or retained function. The assay cohort contains only
 · [Fresh structure inventory](reports/fresh_structure_inventory_review_2026-10-15.md)
 · [Fresh structure candidate plan](reports/fresh_structure_metadata_and_panel_review_2026-10-15.md)
 · [Fresh structure contact review](reports/fresh_structure_reference_review_2026-10-15.md)
-· [Latest test handoff](reports/RNA-StableAI_HANDOFF_2026-10-15_V6.md)
+· [Latest development handoff](reports/RNA-StableAI_HANDOFF_2026-10-16_V15.md)
 · [Model-study test log](reports/family-pair-set-training-full-suite-2026-10-15.log)
 
 ## Quick start

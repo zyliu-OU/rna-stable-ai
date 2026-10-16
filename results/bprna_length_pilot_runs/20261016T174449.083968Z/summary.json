@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/bprna_length_pilot_runs/20261016T174449.083968Z",
+  "manifest_sha256": "416ef7e507028ba83e36b7311b42f14d1808fead218cd26ce44e25f87654032e",
+  "train_records": 88,
+  "validation_records": 22,
+  "new_longer_train_records": 27,
+  "train_max_length_nt": 1014,
+  "validation_max_length_nt": 387,
+  "selected_epoch": 10,
+  "extended_validation_full_pair_f1": 0.4910621070106984,
+  "control_validation_full_pair_f1": 0.48914941775661513,
+  "development_f1_difference": 0.0019126892540832774,
+  "matched_initial_weights": true,
+  "test_evaluated": false,
+  "independent_accuracy_claim": false,
+  "model_defaults_changed": false
+}
