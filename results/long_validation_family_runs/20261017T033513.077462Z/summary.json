@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/long_validation_family_runs/20261017T033513.077462Z",
+  "ready_for_development_validation": false,
+  "family_complete_counts": {
+    "RF02462": 1,
+    "RF02540": 1
+  },
+  "selected_sequence_count": 9,
+  "complete_reference_count": 2,
+  "decision_counts": {
+    "fixed_family_cap": 186,
+    "outside_length_scope": 406,
+    "selected_before_pair_parsing": 9,
+    "within_panel_overlap": 2
+  },
+  "attempt_statuses": {
+    "RF02001": "ok",
+    "RF02462": "ok",
+    "RF02540": "ok",
+    "RF02541": "ok"
+  },
+  "development_validation_only": true,
+  "model_inference_performed": false,
+  "independent_test_claim": false,
+  "known_bpRNA_family_lineage_complete": false,
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/long_validation_family_runs/20261017T033513.077462Z/exposures/20261017T033526.015110Z.json",
+    "sha256": "2f645f5dba770ea5d522615a7c4e6639d3cc512e7230ea3c352a82814b4958de",
+    "stage": "validation_started"
+  }
+}

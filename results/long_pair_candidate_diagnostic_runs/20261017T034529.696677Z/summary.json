@@ -1,0 +1,36 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/long_pair_candidate_diagnostic_runs/20261017T034529.696677Z",
+  "aggregates": {
+    "control": {
+      "records": 11,
+      "total_gold_pairs": 7014,
+      "total_legal_gold_pairs": 6665,
+      "total_gold_pairs_in_candidates": 1726,
+      "total_gold_pairs_with_positive_logit": 6648,
+      "total_candidate_count": 405908,
+      "weighted_full_gold_candidate_recall": 0.24607927003136584,
+      "weighted_legal_gold_candidate_recall": 0.25896474118529633
+    },
+    "extended": {
+      "records": 11,
+      "total_gold_pairs": 7014,
+      "total_legal_gold_pairs": 6665,
+      "total_gold_pairs_in_candidates": 2697,
+      "total_gold_pairs_with_positive_logit": 5245,
+      "total_candidate_count": 378927,
+      "weighted_full_gold_candidate_recall": 0.38451668092386654,
+      "weighted_legal_gold_candidate_recall": 0.4046511627906977
+    }
+  },
+  "row_count": 22,
+  "cohort_label_informed": true,
+  "development_diagnostic_only": true,
+  "no_model_selection": true,
+  "independent_test_claim": false,
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/long_pair_candidate_diagnostic_runs/20261017T034529.696677Z/exposures/20261017T034529.717690Z.json",
+    "sha256": "72cda759ab8d038a1e8acd38f19d8c8f12e7c73b9f0611acf2dcb9b4993b3163",
+    "stage": "validation_started"
+  }
+}

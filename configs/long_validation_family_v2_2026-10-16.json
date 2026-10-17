@@ -1,0 +1,15 @@
+{
+  "schema_version": 2,
+  "stage": "longer_family_development_validation_screen_v2",
+  "families": ["RF00177", "RF01849", "RF02542", "RF04321"],
+  "minimum_length_nt": 400,
+  "maximum_length_nt": 4999,
+  "sequence_similarity_threshold": 0.8,
+  "candidate_cap_per_family": 3,
+  "minimum_complete_per_family": 2,
+  "minimum_complete_total": 6,
+  "replace_failed_families": false,
+  "development_validation_only": true,
+  "model_inference_authorized_at_screen": false,
+  "independent_test_claim": false
+}

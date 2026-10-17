@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "stage": "training_only_bprna_long_resource_screen",
+  "source_groups": ["CRW", "RFAM"],
+  "length_bins": [[1025, 1499], [1500, 2499], [2500, 3999]],
+  "candidates_per_group_bin": 4,
+  "sequence_similarity_threshold": 0.8,
+  "replace_failed_candidates": false,
+  "training_only": true,
+  "model_training_authorized_at_screen": false,
+  "model_inference_authorized_at_screen": false,
+  "independent_test_claim": false
+}

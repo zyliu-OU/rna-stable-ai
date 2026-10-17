@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/long_native_controls_runs/20261017T034318.804594Z",
+  "record_count": 11,
+  "method_count": 2,
+  "status_counts": {
+    "LinearFold": {
+      "ok": 11
+    },
+    "ViennaRNA": {
+      "ok": 11
+    }
+  },
+  "successful_mean_pair_f1": {
+    "LinearFold": 0.4742239133478043,
+    "ViennaRNA": 0.44993553808636566
+  },
+  "cohort_label_informed": true,
+  "development_validation_only": true,
+  "failed_folds_remain_unknown": true,
+  "independent_test_claim": false,
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/long_native_controls_runs/20261017T034318.804594Z/exposures/20261017T034318.816988Z.json",
+    "sha256": "a1d3b35e1f02ccdd256cd212fbfd1afef779fc3a46a1cd774bfb382bb5e8a561",
+    "stage": "validation_started"
+  }
+}

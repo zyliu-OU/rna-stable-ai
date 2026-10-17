@@ -21,7 +21,7 @@ Independent biological validation remains a separate, unresolved release gate.
 | Step | Work | Progress |
 |---:|---|---|
 | 1 | Reproducible foundations | Implemented: bounded native tools, request journals, input hashes, exposure tracking, and replay audits. |
-| **2** | **Structure models** | **Active length-focused development.** Baseline, stack, and helix models have been compared; a training-only 400–1,014-nt extension has completed a matched single-seed pilot. Defaults remain unchanged. |
+| **2** | **Structure models** | **Active length-focused development.** A sampled-pair training path has been exercised below 5,000 nt. A three-seed comparison with 17 added longer training RNAs improved pair F1 on an 11-record development panel; independent validation remains open. Defaults remain unchanged. |
 | 3 | Sequence optimization | Synthetic studies and native energy checks complete. Biological benefits remain unverified. |
 | 4 | Independent structure validation | Open release gate. Three prospective panels and a six-family raw-contact feasibility study evaluated; broader coverage/provenance remain limited. |
 | 5 | Length evidence and deferred 5,000+ nt work | Longer held-out validation below 5,000 nt is needed. New work at 5,000 nt or above is deferred; existing synthetic benchmarks through 10,000 nt remain preserved. Current full-pair training is capped at 1,024 nt. |
@@ -47,6 +47,13 @@ to the 61-record training set. Its reused 22-record validation set ends at
 387 nt, so the pilot does not establish longer-RNA accuracy. The public snapshot
 includes code, metadata, and concise results; the upstream bpRNA archive and
 full frozen run artifacts remain local and are not redistributed here.
+A newer sampled-pair training study added 17 training-only RNAs of 1,158–3,995 nt
+to the same 88-record base set. Across three matched seeds, mean pair F1 on
+11 longer development references increased from 0.2605 to 0.2960. The panel
+was selected using label completeness, the bpRNA family lineage remains
+incomplete, and native controls still score higher. This is development
+evidence; independent longer-RNA validation remains open. See the
+[longer-length Step 2 review](reports/long_length_step2_review_2026-10-16.md).
 
 ## Latest results
 
@@ -69,6 +76,11 @@ full frozen run artifacts remain local and are not redistributed here.
   matched helix fit. Reused short-sequence validation pair F1 was **0.49106**
   versus **0.48915** for the control (one seed). This small development change
   is not an independent or longer-length accuracy result.
+- **Longer-length development:** 17 training-only RNAs of 1,158–3,995 nt added
+  to a matched sampled-pair study. Across three seeds, 11-record development
+  pair F1 was **0.2960** versus **0.2605** for the control. LinearFold and
+  ViennaRNA scored **0.4742** and **0.4499** on that panel. Selection used label
+  completeness, so this is not an independent test.
 - **Verification:** 864 tests passed in the working environment. A clean
   publication checkout passed 841 tests; nine historical replay tests require
   ignored external/native assets absent from that checkout. Source archival
@@ -88,7 +100,7 @@ long-RNA accuracy, or retained function. The assay cohort contains only
 · [Fresh structure inventory](reports/fresh_structure_inventory_review_2026-10-15.md)
 · [Fresh structure candidate plan](reports/fresh_structure_metadata_and_panel_review_2026-10-15.md)
 · [Fresh structure contact review](reports/fresh_structure_reference_review_2026-10-15.md)
-· [Latest development handoff](reports/RNA-StableAI_HANDOFF_2026-10-16_V15.md)
+· [Latest development handoff](reports/RNA-StableAI_HANDOFF_2026-10-16_V22.md)
 · [Model-study test log](reports/family-pair-set-training-full-suite-2026-10-15.log)
 
 ## Quick start

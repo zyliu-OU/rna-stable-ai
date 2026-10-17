@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "stage": "label_informed_longer_development_coverage",
+  "families": ["RF00177", "RF01849", "RF02462", "RF02540", "RF02541", "RF02542", "RF04321"],
+  "minimum_length_nt": 400,
+  "maximum_length_nt": 4999,
+  "sequence_similarity_threshold": 0.8,
+  "maximum_selected_per_family": 3,
+  "minimum_families_with_two_complete": 3,
+  "minimum_complete_total": 6,
+  "selection_uses_reference_completeness": true,
+  "development_validation_only": true,
+  "independent_test_claim": false,
+  "model_inference_authorized_at_screen": false
+}
