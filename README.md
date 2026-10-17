@@ -22,11 +22,35 @@ Independent biological validation remains a separate, unresolved release gate.
 |---:|---|---|
 | 1 | Reproducible foundations | Implemented: bounded native tools, request journals, input hashes, exposure tracking, and replay audits. |
 | **2** | **Structure models** | **Active length-focused development.** A sampled-pair training path has been exercised below 5,000 nt. A three-seed comparison with 17 added longer training RNAs improved pair F1 on an 11-record development panel; independent validation remains open. Defaults remain unchanged. |
-| 3 | Sequence optimization | Synthetic studies and native energy checks complete. Biological benefits remain unverified. |
+| 3 | RNA sequence optimization for stability and protein expression | Planned: design constrained RNA variants to improve measured protein expression efficiency while preserving the encoded protein and required sequence features. Synthetic studies and native energy checks exist; expression benefits remain unverified. |
 | 4 | Independent structure validation | Open release gate. Three prospective panels and a six-family raw-contact feasibility study evaluated; broader coverage/provenance remain limited. |
 | 5 | Length evidence and deferred 5,000+ nt work | Longer held-out validation below 5,000 nt is needed. New work at 5,000 nt or above is deferred; existing synthetic benchmarks through 10,000 nt remain preserved. Current full-pair training is capped at 1,024 nt. |
 | 6 | Measured stability and function | Public-assay pilot complete. Controlled mutation effects and retained function remain pending. |
 | 7 | Validated release | Pending the scientific evidence above. |
+
+### Step 3 goal and plan: protein expression efficiency
+
+The Step 3 goal includes improving **measured protein expression efficiency** from
+RNA sequences while retaining the intended protein sequence and required RNA
+features. Development will remain within the active 1–4,999-nt range. This is a
+future optimization goal; current structure and stability proxies do not establish
+an expression benefit.
+
+1. Define the target expression system, editable regions, protein and RNA
+   constraints, baseline sequences, and measurements before designing variants.
+2. Generate valid sequence variants, including synonymous coding changes and UTR
+   changes only when the design permits them. Compare simple baselines with
+   multi-objective candidates that account for sequence constraints, predicted
+   structure, RNA stability, and expression-specific evidence.
+3. Evaluate candidates on held-out genes and sequence families with fixed
+   baselines and recorded selection rules. Keep structure, stability, and
+   expression outcomes separate so a proxy improvement is not reported as
+   improved protein production.
+4. Test prioritized variants with biological replicates in the target system.
+   Measure protein output and time-matched RNA abundance, report protein
+   output relative to RNA abundance, and track total protein output, RNA
+   persistence, and retained protein function as distinct outcomes. Revise the
+   optimization objective only after the measurements support it.
 
 The assay pilot advances part of step 6 while independent validation remains open.
 Development resumed with a frozen 12-training/four-validation family source plan.
@@ -100,7 +124,7 @@ long-RNA accuracy, or retained function. The assay cohort contains only
 · [Fresh structure inventory](reports/fresh_structure_inventory_review_2026-10-15.md)
 · [Fresh structure candidate plan](reports/fresh_structure_metadata_and_panel_review_2026-10-15.md)
 · [Fresh structure contact review](reports/fresh_structure_reference_review_2026-10-15.md)
-· [Latest development handoff](reports/RNA-StableAI_HANDOFF_2026-10-16_V23.md)
+· [Latest development handoff](reports/RNA-StableAI_HANDOFF_2026-10-16_V24.md)
 · [Model-study test log](reports/family-pair-set-training-full-suite-2026-10-15.log)
 
 ## Quick start
