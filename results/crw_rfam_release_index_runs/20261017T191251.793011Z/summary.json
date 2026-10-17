@@ -1,0 +1,72 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/crw_rfam_release_index_runs/20261017T191251.793011Z",
+  "policy": {
+    "rfam_release": "15.1",
+    "match": "exact_unversioned_origin_accession",
+    "seed_match_does_not_assign_whole_rna_family": true,
+    "missing_region_does_not_prove_absence_of_homology": true,
+    "independent_test_claim": false,
+    "model_inference_performed": false
+  },
+  "seed_family_count": 4227,
+  "full_region_row_count": 10070931,
+  "records": [
+    {
+      "id": "bpRNA_CRW_13049",
+      "origin_accession": "DQ288677",
+      "seed_regions": [],
+      "full_regions": [],
+      "whole_rna_family_assignment": null
+    },
+    {
+      "id": "bpRNA_CRW_3489",
+      "origin_accession": "DQ486130",
+      "seed_regions": [],
+      "full_regions": [],
+      "whole_rna_family_assignment": null
+    },
+    {
+      "id": "bpRNA_CRW_54679",
+      "origin_accession": "Z48620",
+      "seed_regions": [],
+      "full_regions": [],
+      "whole_rna_family_assignment": null
+    },
+    {
+      "id": "bpRNA_CRW_54684",
+      "origin_accession": "V00694",
+      "seed_regions": [
+        {
+          "family_id": "RF00029",
+          "region": "V00694.1/5204-5294"
+        }
+      ],
+      "full_regions": [],
+      "whole_rna_family_assignment": null
+    },
+    {
+      "id": "bpRNA_CRW_55280",
+      "origin_accession": "X65602",
+      "seed_regions": [],
+      "full_regions": [],
+      "whole_rna_family_assignment": null
+    },
+    {
+      "id": "bpRNA_CRW_55339",
+      "origin_accession": "X13738",
+      "seed_regions": [],
+      "full_regions": [],
+      "whole_rna_family_assignment": null
+    },
+    {
+      "id": "bpRNA_CRW_55396",
+      "origin_accession": "NA",
+      "seed_regions": [],
+      "full_regions": [],
+      "whole_rna_family_assignment": null
+    }
+  ],
+  "accessions_with_seed_region": 1,
+  "accessions_with_full_region": 0
+}

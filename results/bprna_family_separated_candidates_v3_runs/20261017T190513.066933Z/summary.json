@@ -1,0 +1,2534 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/bprna_family_separated_candidates_v3_runs/20261017T190513.066933Z",
+  "policy": {
+    "length_nt": [
+      400,
+      4999
+    ],
+    "source_group": "RFAM",
+    "known_family_exclusion": "88_control_17_extended_338_development_candidates",
+    "exact_segment_screen_nt": 30,
+    "one_row_per_unique_sequence_family": true,
+    "structure_labels_used_for_selection": false,
+    "clan_membership_verified": false,
+    "seven_crw_family_lineages_resolved": false,
+    "independent_test_claim": false,
+    "model_inference_performed": false
+  },
+  "parsed_rfam_sql_rows": 43273,
+  "known_family_ids": [
+    "RF00003",
+    "RF00006",
+    "RF00012",
+    "RF00016",
+    "RF00018",
+    "RF00020",
+    "RF00022",
+    "RF00026",
+    "RF00041",
+    "RF00043",
+    "RF00047",
+    "RF00048",
+    "RF00177",
+    "RF01050",
+    "RF01849",
+    "RF01959",
+    "RF01960",
+    "RF02462",
+    "RF02540",
+    "RF02541",
+    "RF02542",
+    "RF02543",
+    "RF04321"
+  ],
+  "counts": {
+    "duplicate_sequence_within_family": 14,
+    "eligible_unique_sequence_family": 1166,
+    "exact_exposed_sequence": 11,
+    "known_training_or_development_family": 589,
+    "provisional_candidate": 433,
+    "shared_30nt_training_segment": 133
+  },
+  "provisional_family_count": 39,
+  "families": [
+    {
+      "family_id": "RF00009",
+      "candidate_count": 4,
+      "min_length_nt": 402,
+      "max_length_nt": 440,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_4535",
+          "sequence_sha256": "2bc71dff04285c35be238083b3bdd62a5c0130d73bc2baa5352af58b22dd2a59",
+          "length_nt": 428
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4615",
+          "sequence_sha256": "c38bf66c91a664970ec90f176db94a9be51c4d819270b9880e16687d51c6a898",
+          "length_nt": 403
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4619",
+          "sequence_sha256": "6c26f1aae1655cf46de49610eaea29822f84991c1a2c18fb676b7b660a82bf26",
+          "length_nt": 402
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4655",
+          "sequence_sha256": "d74f1d454c2a05c5352450216c1c5cfad888b3c4e07e9b81437b6736a508a2bb",
+          "length_nt": 440
+        }
+      ]
+    },
+    {
+      "family_id": "RF00010",
+      "candidate_count": 122,
+      "min_length_nt": 400,
+      "max_length_nt": 520,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_4747",
+          "sequence_sha256": "bbf820ba1667e0eb7dc535df764139e3ef7a96f808d5ecee993e69b72a4d2ca9",
+          "length_nt": 407
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4757",
+          "sequence_sha256": "335014f53682b40d59d0c549c92d6aba5b28f99d81491390e325ccd873954cd5",
+          "length_nt": 403
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4767",
+          "sequence_sha256": "694e1bdaf5eda9e09c515f02a99e557f7e1c07c70225ff28d05e2a03047ae4e7",
+          "length_nt": 419
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4769",
+          "sequence_sha256": "1617d79e9c59b4981b97526f84c9c5a60af8a3677a93a1b7260b486b79b1cfba",
+          "length_nt": 424
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4773",
+          "sequence_sha256": "3e2c4129d33eaac43ae50891c7da3c6aca671ced013d36ffca91160a306456c4",
+          "length_nt": 411
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4775",
+          "sequence_sha256": "6d50ef5de1aecdaf2d353327a5056dcb1b62613a530e940933e8f64202654875",
+          "length_nt": 419
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4795",
+          "sequence_sha256": "c1155f2d2206cd23da58d731614ff0bf247878be06196a6882e69e0970f970ae",
+          "length_nt": 439
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4807",
+          "sequence_sha256": "e5a910d6a8d82e3ba363be4db650b2db2e9b719c3b10b8ece401dbea30bf88a2",
+          "length_nt": 401
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4811",
+          "sequence_sha256": "e30a25bc6480e25df87f4504d089e0459d0d40f0871012d273d6062da5d21902",
+          "length_nt": 450
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4813",
+          "sequence_sha256": "334e0824232836f83526d2a90a23d358104db28578fce963f2ecbea4a035a398",
+          "length_nt": 404
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4823",
+          "sequence_sha256": "3bc89a378abd33861a1cd619a124f4880842ab8160985208a019f048620a5b45",
+          "length_nt": 423
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4839",
+          "sequence_sha256": "07032b850d7f967ba759331faf395f53744d2d59425fbcb81497756ac29d8a4c",
+          "length_nt": 440
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4843",
+          "sequence_sha256": "6a22b728814b4d0131d448f1bec0228355874f8ec58be883f1d51ba4ca08ab0e",
+          "length_nt": 440
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4845",
+          "sequence_sha256": "ca0c6b530996b4e3df19ea89afce1cbd6e71244998c2c3023e60a54e13040856",
+          "length_nt": 402
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4859",
+          "sequence_sha256": "44476c57b46590e672e61eb53c438c5080846726407732895c0672b0ee06d666",
+          "length_nt": 407
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4869",
+          "sequence_sha256": "def5ea94e2209caa173061de8b8965ad657c447540d6f16613dce596f95be57d",
+          "length_nt": 454
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4871",
+          "sequence_sha256": "764626a67d0c30416ce1f809deef4818dcbbf7ead590b1fa9f6d2463fd0ac71c",
+          "length_nt": 440
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4885",
+          "sequence_sha256": "da230e6c464f5f0a081f27c93197aa1035d46be51fe6b92f1ce13fe54ed74a46",
+          "length_nt": 407
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4891",
+          "sequence_sha256": "bb06267d10c08635db41814ab4c6a4cc4307d9950e70a82c773163a821b60cfa",
+          "length_nt": 406
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4905",
+          "sequence_sha256": "01fdb6de0118a614e8e862d25689665b1c19200d2e68623d597ae8f2be9fc952",
+          "length_nt": 403
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4913",
+          "sequence_sha256": "0538e2c9613711b3a43135fae2ff2614a6b60eb97ce2571af43a32c7461bf2c2",
+          "length_nt": 515
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4919",
+          "sequence_sha256": "1c8e8039942942cec5f5ecf075967df86a8963080eae9bcd0c22904aaa477fd4",
+          "length_nt": 427
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4959",
+          "sequence_sha256": "0f23eef29b02634365e7e8a0531cef959b82f560a5d3179bb2710dffc740de89",
+          "length_nt": 407
+        },
+        {
+          "sql_name": "bpRNA_RFAM_4991",
+          "sequence_sha256": "8311b3f3f3a7a31753a9e2fed24e8517f76696e6a5e07f1b31a84556185ba51b",
+          "length_nt": 405
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5005",
+          "sequence_sha256": "43b21f7f88776b481ce08942bde335c77751f667e2c5585f0fb068d92ae7dc76",
+          "length_nt": 443
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5009",
+          "sequence_sha256": "0b995c3d8ba0e221f3d8371917daf9ee32faf202acf6de990e4c31b641736464",
+          "length_nt": 407
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5017",
+          "sequence_sha256": "eadfb9ab4fd8f5645777acb97e970a8192d035aef0aa8dc904abadc076172da0",
+          "length_nt": 415
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5019",
+          "sequence_sha256": "241c03dbc86957a2b5c9ad987ab68c43c257f1b66f522b84c95d478556740b19",
+          "length_nt": 459
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5021",
+          "sequence_sha256": "869154c42fdc0a16e4d689c59276940c22147fb238dc1ea252b0fea57d74e1f0",
+          "length_nt": 418
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5025",
+          "sequence_sha256": "99677dd492687d9c49a7838dbd3e63e932bd5fcc9b5667b422ad33f6dec458f0",
+          "length_nt": 401
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5035",
+          "sequence_sha256": "485977292ebfcfb0ef16208dc6b998a8b0e5436d7112d5bb7f72d860067d38f9",
+          "length_nt": 408
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5039",
+          "sequence_sha256": "12df34552868079e1ff2b97388926cb66f826f8fb49c780377535175f5739660",
+          "length_nt": 418
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5051",
+          "sequence_sha256": "b75dfe5017454f4074b3a09807ccd3d7de28dff2a31ec135c993066c7034a38d",
+          "length_nt": 441
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5053",
+          "sequence_sha256": "0e68355b1c37ea23e3e162639e59c47eedca85414b6f0005871559a58390c6a3",
+          "length_nt": 409
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5055",
+          "sequence_sha256": "a7353f6eb0af233b2697701bf6bc96b3786d334d6c368e1f89830a49f7d289a5",
+          "length_nt": 429
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5063",
+          "sequence_sha256": "61b7620f9fbb6b66d9c14254acb527ca11e00e3d7b586ca85a2e9fc87f38e5d3",
+          "length_nt": 400
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5065",
+          "sequence_sha256": "fcdd6b0318d68dc806a0f6d75c51b181f249380c163783e289769591d3e9d704",
+          "length_nt": 400
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5069",
+          "sequence_sha256": "1ebc6768964ea49c41d42c5b01b9f5be3401e095465376ff922cf7cd2e82ab39",
+          "length_nt": 449
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5073",
+          "sequence_sha256": "f09527b207bc43bc86d9ba194076b0453977f6b1c2dcda273c7787df05acc671",
+          "length_nt": 406
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5075",
+          "sequence_sha256": "a24fbe77691340e1bc630134152efcf37ba60fc3311135eaf6f1d9b06b5f3a38",
+          "length_nt": 428
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5081",
+          "sequence_sha256": "6bf43f63ef8a5ccdc967859630f9fce82e9f1589c3942f5d149c74b3323f2ae9",
+          "length_nt": 427
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5085",
+          "sequence_sha256": "ce59b5e9d499d560c8f325b566ae0d97ea4b2aae827b760a44d44eace9a9e866",
+          "length_nt": 425
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5087",
+          "sequence_sha256": "1f5675525b4e3206f28baf9b16d070fbd030225eef5924072ac60e255d220aba",
+          "length_nt": 416
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5089",
+          "sequence_sha256": "93f54c6f4b133d0eee8738f64248ffae54017c1818c9501f6b0ded7f337231f8",
+          "length_nt": 405
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5099",
+          "sequence_sha256": "8ce317f619f19620d81c33e0216a4a4130403b9a3942b5d765df463c802a734f",
+          "length_nt": 480
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5101",
+          "sequence_sha256": "7042ea7b660bca662f86f8e5ab873cd79fc275e3825a50fa9c28673332ea5f8c",
+          "length_nt": 414
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5109",
+          "sequence_sha256": "412b702e9264d5302c60d16a696977c568a16c1ee322ffc8ebc0dbb4918a42e6",
+          "length_nt": 419
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5111",
+          "sequence_sha256": "ce3b041b6f45b245d558ce6b54f8355658f63230eb6d5d0da66af3feea0e729b",
+          "length_nt": 403
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5113",
+          "sequence_sha256": "065679db0a7844886a0237eca86075d6c6130fb20089a8edadc4b2a595fb0db0",
+          "length_nt": 409
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5125",
+          "sequence_sha256": "fca6b9365204d2b9e87e808a9220442d1c782686c4d97019d802034bd22469a9",
+          "length_nt": 436
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5135",
+          "sequence_sha256": "c2224e7eb30d204d8ed6e7fa807f9ff724f4ae66a9e83923e9afbc135378715d",
+          "length_nt": 404
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5137",
+          "sequence_sha256": "e64689c172c27a96c192768e5fe79b3a2824dc4848a945adfa6225680914f68a",
+          "length_nt": 405
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5153",
+          "sequence_sha256": "037887f0162695cb2c31bb78a2b92c6973aa50df7b09d9983f16206e04c7d6ed",
+          "length_nt": 450
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5157",
+          "sequence_sha256": "8aee70c546547da9bb21750372531b836ecfe5b3476366e93a20e302abce4993",
+          "length_nt": 442
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5171",
+          "sequence_sha256": "df282549ff51ea8f7063ba9980d49cb6864f0a03d4bcf35d0bb50118f92ecb17",
+          "length_nt": 404
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5175",
+          "sequence_sha256": "f4346fe379956b580dd31c9dd4594c689de087d3ab361e7b9b5cd1e7e65ce6cf",
+          "length_nt": 417
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5185",
+          "sequence_sha256": "a3698aec801f692f9c2cb8487cb12d157a67a452193931a6197662e5491bf149",
+          "length_nt": 411
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5187",
+          "sequence_sha256": "33ebc9ec68a1e6ac4728056d472d47553e578b3bbc20ec2e6511818ac52aca50",
+          "length_nt": 413
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5189",
+          "sequence_sha256": "352861328c3b6ebe8cab0f0e8adedb9ad02a6039ab8657ce05c8eea5eccfaa6c",
+          "length_nt": 432
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5197",
+          "sequence_sha256": "abd2512660cf65280e7c7a445f6d9c2e3044cc352d720527ffead20de5e40ff8",
+          "length_nt": 412
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5203",
+          "sequence_sha256": "9c22e5549abb488ba36e5f980d4eaf0c5ddc9fdc0486023de53dfdbf4300c2ae",
+          "length_nt": 430
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5209",
+          "sequence_sha256": "560d7579595549337c5326e5ea27f8ce284901d7642762f50b4aa3096c1d5553",
+          "length_nt": 429
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5217",
+          "sequence_sha256": "5925e48fdf263979dc6e7c2d94a70754765a22e35e5db7d522eabaff93477a9b",
+          "length_nt": 418
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5221",
+          "sequence_sha256": "834907e01744fd15b0eda7d30c78c9e3ee53076d89be5a97793af34df3efd1c2",
+          "length_nt": 426
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5227",
+          "sequence_sha256": "04b276c759b3e149dc89ed1d99f28b4364cb0cefec688be3a32ed33fc2f181a8",
+          "length_nt": 426
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5233",
+          "sequence_sha256": "3d81eca84bd7f6b575c85194a0879f3e23cf8e215bce619045156124c0a3071f",
+          "length_nt": 427
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5235",
+          "sequence_sha256": "d2459fd1c1da09a2bd9555fe756a06f4d0dd8888febdb73f887546aa6ce5392a",
+          "length_nt": 404
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5239",
+          "sequence_sha256": "51a0fe7c94e5bf3c40b0a527e717579d96f057fe7ac6732c1af2594090d43204",
+          "length_nt": 441
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5241",
+          "sequence_sha256": "89a4d4a63d498fb5f0dc12adcafd8c45aa39b469beec9a606744e8779b98a361",
+          "length_nt": 420
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5243",
+          "sequence_sha256": "67fa509dff59353af609b4ab484bb90b2ab42277ae4f790e9681c2044dcb0b4f",
+          "length_nt": 452
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5257",
+          "sequence_sha256": "ac6e5193b808cf2708069326b131c2dc8fbf533a22bfced372d23f2d86f13a45",
+          "length_nt": 424
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5267",
+          "sequence_sha256": "13c34d08227098a6e1f87951b7d58d6e80c59be5dba7cfec5f4627f22066a2c6",
+          "length_nt": 431
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5281",
+          "sequence_sha256": "e33358d7c967091e1dd089720b11bca0381018f9dd1eec879884d5186febdad9",
+          "length_nt": 419
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5289",
+          "sequence_sha256": "57cb0811370c9b7eb55d718b1296cca290d364488fc39075bda876e926de2f08",
+          "length_nt": 405
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5291",
+          "sequence_sha256": "d1e3a5033d544bc32e6160cd014e03a789f23f7485b047a5fb07f2c99f662a82",
+          "length_nt": 428
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5299",
+          "sequence_sha256": "451a9a61ab4aec4d8205c4f37d96464ac7880a2738f12d6f8c4efdb46b6aa342",
+          "length_nt": 421
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5323",
+          "sequence_sha256": "d93f28a82a90e6a53811dbe606275ee8278a863c51b4c4521564a264efa45b2c",
+          "length_nt": 402
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5333",
+          "sequence_sha256": "178decb9a3d6a0de32fbe4c0a3e7625336e71a72955413bede297ec371022186",
+          "length_nt": 406
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5337",
+          "sequence_sha256": "7c847d206009dd74c80c319199d5dd090b5b64ce9c00a4d151c017672efaca8a",
+          "length_nt": 430
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5339",
+          "sequence_sha256": "74760d1585009b65334a0ee920dea9f3c571428457d9e0002660927d57714771",
+          "length_nt": 400
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5341",
+          "sequence_sha256": "af5bb8e5575b69e2240c1ddd344d8c54636112c9cc210e26199c8e9a40067860",
+          "length_nt": 400
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5345",
+          "sequence_sha256": "8c04f22f9de0e054ff02e960fd12aee82106d69e616b43c59412c5db801abd73",
+          "length_nt": 412
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5349",
+          "sequence_sha256": "427f701e6225aafe123a7d4be43e4f69cd7ebcf3adc6464c12e7484580793cff",
+          "length_nt": 416
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5361",
+          "sequence_sha256": "dcb5e33ae2741bb473977ce261bb3b2c19778d1da72776cfa57dfeafedc0e831",
+          "length_nt": 520
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5371",
+          "sequence_sha256": "d4b9078653bc6989d57a6c6e9856a0791fb1eabfdbd4cd354e1a678450b1b062",
+          "length_nt": 404
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5383",
+          "sequence_sha256": "62391fc86ff80cd8c060e4f83f055fdcde80a5dc58d6e84861e0695fd1e62885",
+          "length_nt": 416
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5389",
+          "sequence_sha256": "2b187c672bee10b82e1973a4121487d52d5a39bdfac16e38487913416c9466d9",
+          "length_nt": 428
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5413",
+          "sequence_sha256": "ed4cb04d539a55c45655f675c36e2f31b89a990d5305afac722efdbca381e3e4",
+          "length_nt": 416
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5417",
+          "sequence_sha256": "b8cc83f1777996af6c1f17a9ba4b688b3c2f4dbcd138eb2bc683b6f621b353b3",
+          "length_nt": 414
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5421",
+          "sequence_sha256": "a6ac5373cbe7ba43afea7ed5b4b75fada92e8d1386694a287f35642538f12af1",
+          "length_nt": 400
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5423",
+          "sequence_sha256": "2ac579a45af503cbe2b1676dc73ab4822b2455d63012e636cc2a78dd671cc1bc",
+          "length_nt": 517
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5427",
+          "sequence_sha256": "ee68f2229584bccc278bbfd5f6ca5dc8dda64c3b414a9b0e0665108fedf55708",
+          "length_nt": 412
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5435",
+          "sequence_sha256": "4aeb9df817e1dbb3ed2f36b67fe803b809adbd8b09a5ccac2f7d6b175d482bf9",
+          "length_nt": 412
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5441",
+          "sequence_sha256": "583097ee4ad221b5d3d71c25de6ef1eb61b171511a649ecbd9971ed605f8e7a3",
+          "length_nt": 433
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5447",
+          "sequence_sha256": "fe310cdacfaaf114324fd11b5bfc61654d4068b7aa67c68673f161c593ddaa2b",
+          "length_nt": 404
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5453",
+          "sequence_sha256": "5a8699023183612dbe90ab5f805abc6e0acfc20947b3054ea5ec1e8417258caa",
+          "length_nt": 400
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5461",
+          "sequence_sha256": "2984662b65ca83773f67f8e991b92fe14059d59030c50b304a8eb7aaf05ddaf5",
+          "length_nt": 410
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5473",
+          "sequence_sha256": "d9e542753b96c93d46e6941666c996db6cc6fdf9cb9a66f9fad73288063b76a8",
+          "length_nt": 409
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5475",
+          "sequence_sha256": "29bc67191eecd994604352f683f50d785c60392fc66363b41fb7c98538cefe61",
+          "length_nt": 404
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5479",
+          "sequence_sha256": "9fbf932a1830e7a2be2a5d1d7f2e0cffdb5c42470fc7313d4e61d6f714a09697",
+          "length_nt": 417
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5493",
+          "sequence_sha256": "1c17614086f1fbbec6a0f9e905e09c4dc875540359e428604b287dfd33c7bc1e",
+          "length_nt": 457
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5495",
+          "sequence_sha256": "50230aa4dd12c6b08f85f88ebf11521589982d817607712364d72728b64f5c36",
+          "length_nt": 408
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5505",
+          "sequence_sha256": "9ee3b5e19b77f0ff9f213c45552b75747d327b2684162b4350a6617088331bbc",
+          "length_nt": 403
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5507",
+          "sequence_sha256": "52cba632bb322cc3e3cb85418f33ff2b7d8ce41b8602831b37b3e834949f9cc9",
+          "length_nt": 403
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5509",
+          "sequence_sha256": "5a025441af783b66d6ad4417094619c4c021195e1143df84b13c4450c0abe530",
+          "length_nt": 425
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5515",
+          "sequence_sha256": "3f3a948d1ba95e85816643cf7142b2dbfbda1cbdc410f024f4a59abc3d4e84b1",
+          "length_nt": 405
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5523",
+          "sequence_sha256": "e153bd738a6d83b5e49599fad0a44dbbfee30ebc883315c6b4ab349e8b692ceb",
+          "length_nt": 425
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5547",
+          "sequence_sha256": "ec6b8241862730fecb1a4b19dd00f29e912d75a560c57d469254206ea61593bc",
+          "length_nt": 411
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5559",
+          "sequence_sha256": "14e6230f67edee19498c6bc2c695a660df55248fd4bc274ed952e028a0ae3c6d",
+          "length_nt": 456
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5569",
+          "sequence_sha256": "2a5523465804fb25b52c3eb014dcc280ce3b6a488d8a81637ee6057a057ceffe",
+          "length_nt": 428
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5575",
+          "sequence_sha256": "4ecf2cd1f2a6c669fca47f877a684aec1fbfb43acc8e2c43b41b6d29f6a8de11",
+          "length_nt": 468
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5581",
+          "sequence_sha256": "b37b73516edbc3e2e5dc90f12bd8ecb030818f0e5c2cbdd1a36c2d1c49680c17",
+          "length_nt": 415
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5591",
+          "sequence_sha256": "d4cfd4fc97394fa4edd40cdebf77ac992abb6bc9a668f5a72cd3aea15621230a",
+          "length_nt": 405
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5611",
+          "sequence_sha256": "2a3a03e449608dc944a517947a579afa02f07113d0a0f6147a23466c42f00282",
+          "length_nt": 418
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5619",
+          "sequence_sha256": "d58c02c71a9f5305b8ef7941d021e8eb3c5cd43f41ff6def009c4e7c45b55105",
+          "length_nt": 402
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5621",
+          "sequence_sha256": "2c37bf5364776a164d1ba7e04f83675ca9cb3a48bd2e643a680312b20120782a",
+          "length_nt": 429
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5629",
+          "sequence_sha256": "d2bd37f3bf8c6ed188d000cb501b91631a910dc3fa9d0c12318a0b9bc0c49f64",
+          "length_nt": 404
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5639",
+          "sequence_sha256": "a814344c0611c7a17a273435d651407564cf83ea2c7a50506289eac0f0582617",
+          "length_nt": 448
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5641",
+          "sequence_sha256": "b602f6f69300109582e3978fabbec9621ca35888ac38861ae81d8217ddde2d4a",
+          "length_nt": 457
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5643",
+          "sequence_sha256": "a897655fdb564cbe58c348fafdaf11c135d12227d1e370ace54fa8543fe64a8a",
+          "length_nt": 435
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5645",
+          "sequence_sha256": "b5ecf8085d41f8e1c130d02c996b19e40c0cb54d94ba3b2056a51910b34dbb4d",
+          "length_nt": 448
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5649",
+          "sequence_sha256": "f4caa8bfbc1159fe467bab9a0ef0911c49ab1c902455f5e445c7de3a7d287a6b",
+          "length_nt": 473
+        }
+      ]
+    },
+    {
+      "family_id": "RF00011",
+      "candidate_count": 7,
+      "min_length_nt": 401,
+      "max_length_nt": 417,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_5793",
+          "sequence_sha256": "4613394a7abda37300c3f41a1c04007aca1018daaf58c7a2581d96e8b23e0198",
+          "length_nt": 412
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5851",
+          "sequence_sha256": "a5b5b8e895722cbd9bd2e313d3111c9b9788924f6cf6a000ba76b7a41e050c34",
+          "length_nt": 401
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5853",
+          "sequence_sha256": "3f0eed9c13ef1d2003f0fa46ccbf0a9e2814929244538fd1c4c67adecd920f18",
+          "length_nt": 417
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5855",
+          "sequence_sha256": "b5598388b95bd1eb079046d4a8222388d88d245e6e6c1a904d7f4750bbfa0587",
+          "length_nt": 408
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5857",
+          "sequence_sha256": "96f117c21b3ae313c833ce344b57e5d1091a41d7c69dff2d1447b26feb33890a",
+          "length_nt": 411
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5877",
+          "sequence_sha256": "54fcdc9d6b4253b0ae5efbdd67f08e21918e6216f7e93862b5eaa7fbaf6081dc",
+          "length_nt": 405
+        },
+        {
+          "sql_name": "bpRNA_RFAM_5879",
+          "sequence_sha256": "4147375b25d03dd35a971450afe2d7fd354b5f05d020bcb71cab26294ccc8dbe",
+          "length_nt": 401
+        }
+      ]
+    },
+    {
+      "family_id": "RF00023",
+      "candidate_count": 14,
+      "min_length_nt": 401,
+      "max_length_nt": 437,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_7665",
+          "sequence_sha256": "f7266a1b7bffeb1cbd04c8fb3aeae44bdf69cdd00ed39e5162b8db4fa7c2e674",
+          "length_nt": 408
+        },
+        {
+          "sql_name": "bpRNA_RFAM_7713",
+          "sequence_sha256": "e6565701a6d54a0b6ed6ce1abddbe90f0e580745eff5cfd8e746d75ff4b6cbb6",
+          "length_nt": 415
+        },
+        {
+          "sql_name": "bpRNA_RFAM_7751",
+          "sequence_sha256": "61a5f78b3e519958d17b49b9bf5b49d29000f9ec093c6523cd28a7434152b3d3",
+          "length_nt": 412
+        },
+        {
+          "sql_name": "bpRNA_RFAM_7817",
+          "sequence_sha256": "9cc315a0e6c201fc3284b8558212fb83f63c58658d7e244b9a41e6f9789a800c",
+          "length_nt": 404
+        },
+        {
+          "sql_name": "bpRNA_RFAM_7849",
+          "sequence_sha256": "fd4ee8e26ba4c40c0b84b5d83428ddc161ce65745080a28b8bf7c53fed53c111",
+          "length_nt": 407
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8021",
+          "sequence_sha256": "2b01129aa0000396dc70e72ce3dbdc56e0080c2fe22dfb6262bf2898e9028eca",
+          "length_nt": 421
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8047",
+          "sequence_sha256": "ec8852d3d20f0e42d4ee45281973d0afff30692bb4b8d73b13ea792cc9c7e1dc",
+          "length_nt": 406
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8103",
+          "sequence_sha256": "c50958fcda9c862462f4aae553414242814bf0b2184d98f5136d5fa73c0808fe",
+          "length_nt": 437
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8205",
+          "sequence_sha256": "e3b4b89eb9db8cebaf42c811d73f61f96628057e061d71e48c0cc3b62eb5bc29",
+          "length_nt": 405
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8261",
+          "sequence_sha256": "e5cb53eb327bf874a16deb88c2a7baf65313869f0b872932e1f3230815ec0f95",
+          "length_nt": 401
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8327",
+          "sequence_sha256": "af80027b6fa29a10c952e30949e174946bd1065cde7544472f231476f8522593",
+          "length_nt": 404
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8353",
+          "sequence_sha256": "aa214ba3edbf029ab1415f9254ccb7004069d201bc93115e95c6ab50b62abb02",
+          "length_nt": 421
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8537",
+          "sequence_sha256": "e2d39fd98f0f2b7bb1630904c3d970a4a32d9ef0e9f507c1a95d83e787ca3704",
+          "length_nt": 406
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8591",
+          "sequence_sha256": "d27af1b75a8ec3e3230feb84d42a6e833c89bb8cf88473a2be3b668a7986d197",
+          "length_nt": 411
+        }
+      ]
+    },
+    {
+      "family_id": "RF00024",
+      "candidate_count": 31,
+      "min_length_nt": 405,
+      "max_length_nt": 559,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_8613",
+          "sequence_sha256": "bba300be2a19631d586b0eab63a304af5f80c1563c86349fb3f7f397df1b3ff7",
+          "length_nt": 446
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8615",
+          "sequence_sha256": "72c09bd218b8dac79fbc6da133d05fd034fdbc8daae9e2617fce4968420a6ca6",
+          "length_nt": 450
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8617",
+          "sequence_sha256": "61ba08b63c1651f5e77afb0032fc465341aa8138a4fbc9fa1975ab5c85d936ca",
+          "length_nt": 449
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8621",
+          "sequence_sha256": "f56e04d4a5eb1c780f8f210b939f2e2656fb234e36d7bf3b4af5f1d94b98624c",
+          "length_nt": 443
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8623",
+          "sequence_sha256": "3c79ca78e16e8b68a72c75a007c2ea1263c357ee9b4ae37ba0bc8ba9bb474e92",
+          "length_nt": 410
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8625",
+          "sequence_sha256": "a2305947406ac9723d3ed0293c2f88c2fdae7400983bc74fc59356196334aaa1",
+          "length_nt": 467
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8627",
+          "sequence_sha256": "bbbc542fe8e3754024c0913d266886d1e082e32c25b288cec17c3cf28baf3394",
+          "length_nt": 412
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8629",
+          "sequence_sha256": "edf5d52814aa9664c49ee91effe24e7487394dad9b5c8ff6a69c21638aee8dbb",
+          "length_nt": 478
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8631",
+          "sequence_sha256": "0aaddfae52176121535b0bdf18a3cef57dc1fe66cd03bcad2e2416733b37e9e7",
+          "length_nt": 548
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8635",
+          "sequence_sha256": "dc54074d5a04f988fd0c9fe25bf0f0c0894b56ffd8f904533e5b01a497ad90cd",
+          "length_nt": 444
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8637",
+          "sequence_sha256": "e5a715fb255d7c886f897941bb4ee52b90cedb6a45f64f8acb5f96d34b0089b9",
+          "length_nt": 451
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8639",
+          "sequence_sha256": "3f4c9344c6d5cac11c572b3853e93f632cec6b19d532c60b846410f61a9542b5",
+          "length_nt": 508
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8641",
+          "sequence_sha256": "2aac13f89a4443c7ba4b7e16a2c5d44da00abe9a02cc952808aefc43c2cdfd7e",
+          "length_nt": 443
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8643",
+          "sequence_sha256": "63a09455e4089f1b71bf4a7337a0524d759d1f6fb09bf513ba617c179f37eff4",
+          "length_nt": 451
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8645",
+          "sequence_sha256": "8229fce94ed0a4fcf4327d32596a3ec3d7756d13dde0ce6f8b1a1cb221b19023",
+          "length_nt": 449
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8647",
+          "sequence_sha256": "576ddd4db2efa0388ae27aa08dc2bfd37c9914c73d0c7e6f37ba280ccbf7db7d",
+          "length_nt": 434
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8649",
+          "sequence_sha256": "55dc927a30df3adbfa96704baacc8f1a96455423ef114700d81366c94e512939",
+          "length_nt": 443
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8651",
+          "sequence_sha256": "3568558b63df33e597e81b413987ec418fabd604280c808f78bac2decb7a9d8f",
+          "length_nt": 405
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8653",
+          "sequence_sha256": "6ca34621ca7b6b9dc66b01697deb52babd4e84d53dfa904cd8e184b9b4c75431",
+          "length_nt": 444
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8657",
+          "sequence_sha256": "98620b792cbeef7e7fb7af8495493594ef91d5a1838cb23221ba5d83260e663f",
+          "length_nt": 426
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8659",
+          "sequence_sha256": "51ff58b1155a7eb894d1049c3ad5b85c14f2a2f93ee858adacc5e863bee6940e",
+          "length_nt": 453
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8661",
+          "sequence_sha256": "cf376937a12351a71013a704c121ce455a7fb6486d6ae025c133c7f9a6c09dde",
+          "length_nt": 443
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8663",
+          "sequence_sha256": "823351a734da34ee710b7a9784b700538a976e3ec6090bac5760bf9362b3dc56",
+          "length_nt": 448
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8665",
+          "sequence_sha256": "0ee41522fa278d31752348d5863abe6bab1d076addc3d752b93f9b0bd670221c",
+          "length_nt": 559
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8667",
+          "sequence_sha256": "edd4259feb9750613e8f9394b0fc8dea31bf65a3ea6402c47d7e4dc09aa334d1",
+          "length_nt": 445
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8669",
+          "sequence_sha256": "0df5e0009a4921349a48bea52735b02d114c5a7a3cb4ba0c42b0580ef4003200",
+          "length_nt": 491
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8671",
+          "sequence_sha256": "060793cb2bfd8e75d51ff0b9854b497df9ca739e83dfadfa69ea663f95c97994",
+          "length_nt": 443
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8673",
+          "sequence_sha256": "82005eac9fcb0b6754afc9f3d901b255a47c26f13ba75ce994224d0e96a6d580",
+          "length_nt": 447
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8675",
+          "sequence_sha256": "1ca30cd6498faf088b0bf019471651497cb9532a7c363cd2377b91a1a8ff12c1",
+          "length_nt": 446
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8681",
+          "sequence_sha256": "128f3baf01f4e9c52430d749edb7005e048a38926a74b029e60f87d928cd8bf4",
+          "length_nt": 465
+        },
+        {
+          "sql_name": "bpRNA_RFAM_8683",
+          "sequence_sha256": "2770b3297e79495cf67c907159d8c08c80187d230c3e21b56ac579a5e5ea4c0b",
+          "length_nt": 451
+        }
+      ]
+    },
+    {
+      "family_id": "RF00028",
+      "candidate_count": 4,
+      "min_length_nt": 419,
+      "max_length_nt": 488,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_9231",
+          "sequence_sha256": "7dfcd998dc837d63d9b74a08fadd42bb5c0f8b4558fdbd40e842760f83910c11",
+          "length_nt": 488
+        },
+        {
+          "sql_name": "bpRNA_RFAM_9233",
+          "sequence_sha256": "b1cce2476f7a41e16e1704ccdeb1b666b0a2363c424a0adfb75e1cf514933734",
+          "length_nt": 436
+        },
+        {
+          "sql_name": "bpRNA_RFAM_9237",
+          "sequence_sha256": "c048cc407e83fb162a2cbca3eb2cfa148dc400954d8874da37d1c1c47a6d0e5c",
+          "length_nt": 443
+        },
+        {
+          "sql_name": "bpRNA_RFAM_9245",
+          "sequence_sha256": "b599326d5d6c3b49aad53cab07d0e37c88bbd3d56ce75114a0b222d5f67ec431",
+          "length_nt": 419
+        }
+      ]
+    },
+    {
+      "family_id": "RF00030",
+      "candidate_count": 10,
+      "min_length_nt": 407,
+      "max_length_nt": 562,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_9441",
+          "sequence_sha256": "a1fb89373fbebe80cc7d09cb75f4b54251ca58377e36c83ac3056c8c75105577",
+          "length_nt": 454
+        },
+        {
+          "sql_name": "bpRNA_RFAM_9443",
+          "sequence_sha256": "79a907301013c112e5a2003d0a6b880428c53e355445ec53488f34963e8b1651",
+          "length_nt": 407
+        },
+        {
+          "sql_name": "bpRNA_RFAM_9447",
+          "sequence_sha256": "1022b41e26700982bfa5e3f624a4f76bf74248153dcd19504fdb32ae8b93b66d",
+          "length_nt": 562
+        },
+        {
+          "sql_name": "bpRNA_RFAM_9467",
+          "sequence_sha256": "c41747c0be2d89e1c94c4b8d51601ba9b2eaa746791601903735dcd727c1bae5",
+          "length_nt": 502
+        },
+        {
+          "sql_name": "bpRNA_RFAM_9471",
+          "sequence_sha256": "60a74951a96b0abd218f08d10c7946f6c9ffc402bb2ca1d3dee66aff83243ea9",
+          "length_nt": 491
+        },
+        {
+          "sql_name": "bpRNA_RFAM_9521",
+          "sequence_sha256": "970635aa3375a8fda15237c22ac4e9281712128cc18fd77f6cde31b23e6115df",
+          "length_nt": 444
+        },
+        {
+          "sql_name": "bpRNA_RFAM_9523",
+          "sequence_sha256": "b17288942c89a4b8716fc748ac81b58bf3c44d38d2319aefcf363444526be301",
+          "length_nt": 444
+        },
+        {
+          "sql_name": "bpRNA_RFAM_9527",
+          "sequence_sha256": "320c25b622cf637e89fa2a100bff54be42548752623246cc92c1b6c573dee103",
+          "length_nt": 496
+        },
+        {
+          "sql_name": "bpRNA_RFAM_9529",
+          "sequence_sha256": "e1024a2118ab9c743a7e24ecab2f3639d8e70b3344878d8455ba64dbe5942a68",
+          "length_nt": 440
+        },
+        {
+          "sql_name": "bpRNA_RFAM_9539",
+          "sequence_sha256": "9c6f5d0d63501f2239e281e1ff1ce5680ec1a3a9d380b77529e50be4b2caac4b",
+          "length_nt": 453
+        }
+      ]
+    },
+    {
+      "family_id": "RF00210",
+      "candidate_count": 5,
+      "min_length_nt": 451,
+      "max_length_nt": 493,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_20311",
+          "sequence_sha256": "3058607c086f9f464710ab70f00bf87aa5e219ac661c5b945a89253e09ed2deb",
+          "length_nt": 451
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20315",
+          "sequence_sha256": "5528bf9b4dc21897ad4c1b6d19e8c985b72ccf2c2ece17fa276e30299a8eeda4",
+          "length_nt": 493
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20471",
+          "sequence_sha256": "3753a91cff61380a515f34f5eedfe3275d71db008136382022dfc4c9270a7afa",
+          "length_nt": 460
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20485",
+          "sequence_sha256": "99ce4d2c4c907c9cb9d0950afc89e478f944bc0f0c716da4e9b8808d264671f0",
+          "length_nt": 469
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20489",
+          "sequence_sha256": "74a52a8c134d75394efd186afb822c550736d2f43ce8b993752b2fa1b7b83c20",
+          "length_nt": 492
+        }
+      ]
+    },
+    {
+      "family_id": "RF00224",
+      "candidate_count": 6,
+      "min_length_nt": 484,
+      "max_length_nt": 498,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_20831",
+          "sequence_sha256": "5ed2f67d2d48d08a0d148c66fe3b7f97bc38946b8b41f7039bd7da480e06f634",
+          "length_nt": 486
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20833",
+          "sequence_sha256": "87b80c39653c6805fe9f724ecb99e0d0c93308e8f62dbc297bb4a16615af7bae",
+          "length_nt": 484
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20835",
+          "sequence_sha256": "224bd2c4ff2d33af29f3333b0a03776eb5d5b4bd3ba4ca409c5af4b99931266c",
+          "length_nt": 498
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20837",
+          "sequence_sha256": "52ccbc32b75d0df349961234405d11177691454a23736031f433e9f4a1d0239e",
+          "length_nt": 498
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20839",
+          "sequence_sha256": "edb99af9489cd7a8425b7db94ee013730f4520bfac70072c283cc54d2d52230c",
+          "length_nt": 496
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20841",
+          "sequence_sha256": "428e4e3a3be72b1f6b812e87dbfc4a9b26eb2d3e047965aaeb12264f35cb0dbd",
+          "length_nt": 497
+        }
+      ]
+    },
+    {
+      "family_id": "RF00228",
+      "candidate_count": 20,
+      "min_length_nt": 567,
+      "max_length_nt": 575,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_20879",
+          "sequence_sha256": "11da8ff6ff3dba0968f6611cd32069956c95468d4fbfd852cf2ae581b878d453",
+          "length_nt": 572
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20881",
+          "sequence_sha256": "2c9e47a9190c92e3a5d613d5b02fc2e6eddbeb78202e5859f17557c0fd5f0a89",
+          "length_nt": 572
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20883",
+          "sequence_sha256": "52691ca75b5854faa5079fa74918141a452d7c63b94dde3d2171e3f44623c84f",
+          "length_nt": 573
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20885",
+          "sequence_sha256": "5c3ad5da194aa197ddeac850657e4c558a6558142425cbee788283047de5ee05",
+          "length_nt": 572
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20887",
+          "sequence_sha256": "232a40889554ce7ad8c6b7484e9da107b26c5c75cfd1b2697126ddac8fe34c3f",
+          "length_nt": 573
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20889",
+          "sequence_sha256": "c604592cff3a6a149db37cc3b6fbda6f9e7de18581affcc88d61cd221e2db849",
+          "length_nt": 572
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20891",
+          "sequence_sha256": "c54fa14993329edf92aa73ccdd7679e48c8280f435aa3af8d1be88072fbdf9ae",
+          "length_nt": 572
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20893",
+          "sequence_sha256": "956724431705e215eb6ccd983e122231f805239b76e053e54b561eb63d5c2e44",
+          "length_nt": 572
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20895",
+          "sequence_sha256": "1b8ef5e63a326f797ffe34a5432721cce17fb6add47e6cfe72415ca7fe7eaac9",
+          "length_nt": 572
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20897",
+          "sequence_sha256": "bcd667e352816ca4ae3032fd5c7ca0259dc896d892ef873b4a0cf4dd8b5f11b0",
+          "length_nt": 572
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20901",
+          "sequence_sha256": "c04c95840864098aac2a6aaff2a6aa565f77906e5a47aa57b5634d349686d63c",
+          "length_nt": 571
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20903",
+          "sequence_sha256": "38f59b89deea11b4fc9b602bbaa368b40c6d0847df3913c462a57652ab51417f",
+          "length_nt": 570
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20909",
+          "sequence_sha256": "55142a16ba4762611da12fe20b8eff3c18cc8c8ecc728a4f698a5e67cd0a8f1c",
+          "length_nt": 571
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20911",
+          "sequence_sha256": "889494d9b6ca195618c43aff996ed30a348871ca1f040808e8f442fd4dd8e224",
+          "length_nt": 569
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20913",
+          "sequence_sha256": "839b79d40fc135b599b5ceb833bc16975ae65afe4c912925104c7b70fd0d21ab",
+          "length_nt": 575
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20915",
+          "sequence_sha256": "14e9d1126025993994cf66bd46ce0cd9f6ecd7f107a004e8f23296712ade017a",
+          "length_nt": 567
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20917",
+          "sequence_sha256": "4115c5119ca9c4c667d52455286c389ed4a45f2c2ad26fbb6da2fa0533f190a6",
+          "length_nt": 572
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20919",
+          "sequence_sha256": "e7ba9df8bf34660484aca85b1eb19dda2338dd524d4ae83d064ed3694d954840",
+          "length_nt": 572
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20921",
+          "sequence_sha256": "d32c4dd328d06a33ff172e8cfbc5ec4025135913226165ffd9d93a94e4caf1fa",
+          "length_nt": 572
+        },
+        {
+          "sql_name": "bpRNA_RFAM_20923",
+          "sequence_sha256": "a5c507ac1b5abbafe19e0ed9dedee182e434c01e08d4be8bc731c2a17c304ba5",
+          "length_nt": 569
+        }
+      ]
+    },
+    {
+      "family_id": "RF00373",
+      "candidate_count": 3,
+      "min_length_nt": 434,
+      "max_length_nt": 475,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_24969",
+          "sequence_sha256": "26179af3718f6f88bede8532578e9a0d1eed4d897e96cecaa007a0add2391746",
+          "length_nt": 434
+        },
+        {
+          "sql_name": "bpRNA_RFAM_24971",
+          "sequence_sha256": "0cc7959352517ca0eaeb97c062eeaaf704ebda11fddcf13e4ec4bd8d003f5510",
+          "length_nt": 474
+        },
+        {
+          "sql_name": "bpRNA_RFAM_24973",
+          "sequence_sha256": "f9d2d74c88dca72f4ac04add005378a5da21207e98c94a7a19541138e605e02d",
+          "length_nt": 475
+        }
+      ]
+    },
+    {
+      "family_id": "RF00488",
+      "candidate_count": 5,
+      "min_length_nt": 528,
+      "max_length_nt": 595,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_30795",
+          "sequence_sha256": "16a29706ac2a8317f889d1821b0d619a15cb0c9458be8160377f88c22cd899d4",
+          "length_nt": 595
+        },
+        {
+          "sql_name": "bpRNA_RFAM_30797",
+          "sequence_sha256": "4303a571d1011d09b38428251b23c2872b75979751ced429117389526a45e97b",
+          "length_nt": 568
+        },
+        {
+          "sql_name": "bpRNA_RFAM_30799",
+          "sequence_sha256": "dbfde3f863795c860836ea3a6ca15f8f7e1e73bbc665b68aa15c80408491ef30",
+          "length_nt": 568
+        },
+        {
+          "sql_name": "bpRNA_RFAM_30801",
+          "sequence_sha256": "541537097bb2f094d33657d88a35dad909dd005b8bf0fcd103a348ee6e5e584b",
+          "length_nt": 528
+        },
+        {
+          "sql_name": "bpRNA_RFAM_30803",
+          "sequence_sha256": "5deb95b713a175be16957adb76882fe56bac2721ee708f8a9d23cdfec2cd5d99",
+          "length_nt": 572
+        }
+      ]
+    },
+    {
+      "family_id": "RF00503",
+      "candidate_count": 9,
+      "min_length_nt": 489,
+      "max_length_nt": 564,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_31105",
+          "sequence_sha256": "347f686be566b45f5b1d3d5d1847f59c27bbc878924db8d1065545d01ec05fd1",
+          "length_nt": 564
+        },
+        {
+          "sql_name": "bpRNA_RFAM_31107",
+          "sequence_sha256": "8e451b2d3cb0168111ac5ba0bd9463eda62937d0672013f0db3f0065d154699a",
+          "length_nt": 489
+        },
+        {
+          "sql_name": "bpRNA_RFAM_31109",
+          "sequence_sha256": "3ea472dc46d32a74e788fc7b87aadab0cc16bdf30945785b9bcf0c5f04090bad",
+          "length_nt": 517
+        },
+        {
+          "sql_name": "bpRNA_RFAM_31111",
+          "sequence_sha256": "9dc86d9ea86cf28ebb6b9fa9047f861e3cc2246f9e034a0b778404adee85c8b2",
+          "length_nt": 562
+        },
+        {
+          "sql_name": "bpRNA_RFAM_31113",
+          "sequence_sha256": "fb04fae0c2ccce4d84dab6d194fb80d2e252b500cf0327b7d2b05f3e9f69237a",
+          "length_nt": 528
+        },
+        {
+          "sql_name": "bpRNA_RFAM_31115",
+          "sequence_sha256": "77ce35562ac82202434de5a363afc8b432dfc49882655f6813a0a0d6bc6885fe",
+          "length_nt": 564
+        },
+        {
+          "sql_name": "bpRNA_RFAM_31117",
+          "sequence_sha256": "a90317e85c047b867fa69d48bbf38558b68b86c65d79c483867ecb173bbbcdf0",
+          "length_nt": 517
+        },
+        {
+          "sql_name": "bpRNA_RFAM_31119",
+          "sequence_sha256": "24104afc6fa1e9adad4ec919d512e2747e881dd191773a694800cd9c6d702708",
+          "length_nt": 516
+        },
+        {
+          "sql_name": "bpRNA_RFAM_31121",
+          "sequence_sha256": "ceac99cfc63df704eaa89d8842d6a3c91e7dc3475d543479bd16f616a25de5b1",
+          "length_nt": 557
+        }
+      ]
+    },
+    {
+      "family_id": "RF00549",
+      "candidate_count": 10,
+      "min_length_nt": 523,
+      "max_length_nt": 630,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_33437",
+          "sequence_sha256": "c68ae20c6fd13f67916a61e42de194554cd3ed931dc90987987f62862c3ee83d",
+          "length_nt": 607
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33439",
+          "sequence_sha256": "7ccbb02050494b151acb431b9adc768b4c577dccee48aa7138f190da036b0141",
+          "length_nt": 628
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33441",
+          "sequence_sha256": "5b3f17b657703d6d8b9e120589a13f892d0db584a666b49548bb0ce8887dafc0",
+          "length_nt": 523
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33443",
+          "sequence_sha256": "ede949a268aa557f3c918076e4d2d88f2dbab684cd69acb5c777362425c03fde",
+          "length_nt": 630
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33445",
+          "sequence_sha256": "3903f5544a2aca553f4a5c63c1531a8e077a8deab0783f1b11365fdf56f81d1e",
+          "length_nt": 630
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33447",
+          "sequence_sha256": "d94a1cb6fde9400439020b0ebba61e5df134535f2b493f53f943680dad1195b8",
+          "length_nt": 606
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33449",
+          "sequence_sha256": "10699c0a223f233ace344b5364a31bd1dd2ec0b08e08c0cfd870e53b57596652",
+          "length_nt": 622
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33451",
+          "sequence_sha256": "1071b45af520f8af8ef26fb612373fec9ce9e25b02588a78c003b0d6cf67c84a",
+          "length_nt": 597
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33453",
+          "sequence_sha256": "a24b50bdae43b3dfa2c2863fec286c35116ade129e02a40529d26fd46281d81f",
+          "length_nt": 549
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33455",
+          "sequence_sha256": "6d2cab7ae5c142e7764aca3bef75cfa95f90b44c2fd33a023021e4a23031fdb1",
+          "length_nt": 628
+        }
+      ]
+    },
+    {
+      "family_id": "RF00551",
+      "candidate_count": 15,
+      "min_length_nt": 537,
+      "max_length_nt": 556,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_33549",
+          "sequence_sha256": "fffbc65bf90859d4c4710a85a3617c5c83cd7a783db488b56534aa0c3b582fbb",
+          "length_nt": 551
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33551",
+          "sequence_sha256": "4ac003b7b675064c7506b8cfd5db2c03bdb48bbdb64b8ed930affccf1a49f421",
+          "length_nt": 550
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33553",
+          "sequence_sha256": "3fb1440c23866d460d38288b3be0cb9d03b63f62a26d0d34dacb733080a046f0",
+          "length_nt": 551
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33555",
+          "sequence_sha256": "72a8f12bc4e2f3bbe1ced20e3a3a3f0e8ff5dd13a744d365c8dfa3d7fa970f60",
+          "length_nt": 551
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33557",
+          "sequence_sha256": "69a1b7d69fb0f9b0d630f3c96706d85a97c3ff88ab1da54e14f09d700c92ecdc",
+          "length_nt": 551
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33559",
+          "sequence_sha256": "9650ee156cee787967a807e9e32a1a27aa3969ee9b3cb3da13d9b251cc68f3b5",
+          "length_nt": 551
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33561",
+          "sequence_sha256": "bbc62dc870a58df531bbb08d04a25da5ddb63519017dc82a4ee801eeb930aa5b",
+          "length_nt": 551
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33563",
+          "sequence_sha256": "a634fff787d40c6cb466a522c80c8ac8c095cc6cefd826953d45aef07bb9ccc5",
+          "length_nt": 543
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33565",
+          "sequence_sha256": "0dc2185e6500d8af51b1674086e1dd139041ddf160c0419cd75193fabf53c34b",
+          "length_nt": 537
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33567",
+          "sequence_sha256": "ea8658d5ba417fdcff83c59c3d3b1eee19dcf356e02ee7b6e91d03905168ad41",
+          "length_nt": 551
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33569",
+          "sequence_sha256": "75a50f523160e9e4b8e663233cc7f90d0e86179e7174975ad09c3f05b1d617f8",
+          "length_nt": 551
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33571",
+          "sequence_sha256": "bb401313d39be39bd1bfab2ebbc78664d9940f961d1b2b31dfac94895a44f709",
+          "length_nt": 553
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33573",
+          "sequence_sha256": "28830c0465abe1b74413e6224a96f24c0a0774c1f2dbb213462a46666049857d",
+          "length_nt": 551
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33575",
+          "sequence_sha256": "72b5ec72d8e5016cbdecf03c31bcc0bbf66f7b292223d266481b27598d215d11",
+          "length_nt": 556
+        },
+        {
+          "sql_name": "bpRNA_RFAM_33577",
+          "sequence_sha256": "7ef7723a704f90faed93670e4c2ea73bb0b44e37306462cfc8f9158cfb054945",
+          "length_nt": 546
+        }
+      ]
+    },
+    {
+      "family_id": "RF01052",
+      "candidate_count": 11,
+      "min_length_nt": 445,
+      "max_length_nt": 493,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_45541",
+          "sequence_sha256": "054ebc773f1cb5d4d601a3b8e4b6fbc0f93919ecc0fc9feea6e1290731892c8e",
+          "length_nt": 445
+        },
+        {
+          "sql_name": "bpRNA_RFAM_45543",
+          "sequence_sha256": "124586cb0d0ac8ef7f1c4ee67dbc0a0e116e63d382450a1af421aea828123f6d",
+          "length_nt": 449
+        },
+        {
+          "sql_name": "bpRNA_RFAM_45551",
+          "sequence_sha256": "dd4d7e029228019730f9f0dc60956deb6d634cbd5deb562e97a7985f6235e7cc",
+          "length_nt": 445
+        },
+        {
+          "sql_name": "bpRNA_RFAM_45553",
+          "sequence_sha256": "ff338191ffbc5681cce13d57f37ae54f235a087ec0b2e9c51307cf0f57d57f1b",
+          "length_nt": 456
+        },
+        {
+          "sql_name": "bpRNA_RFAM_45555",
+          "sequence_sha256": "553ae8640a6fa068a0f9fec98e0c4287f2e5b96fb0c513334dd5e75bf48eb9b0",
+          "length_nt": 457
+        },
+        {
+          "sql_name": "bpRNA_RFAM_45557",
+          "sequence_sha256": "d063466f536613d03539929dc2c40098c106ac4f592dc6666e413d28fd6c5535",
+          "length_nt": 445
+        },
+        {
+          "sql_name": "bpRNA_RFAM_45559",
+          "sequence_sha256": "8b16fc2457e5f7664c24a820873fc4a2f317c9ddbbac956d3a82faffc14137c6",
+          "length_nt": 462
+        },
+        {
+          "sql_name": "bpRNA_RFAM_45561",
+          "sequence_sha256": "c04b1ca4451bc30dad5acb72c738eed2fe700f3b0ac9272bca9f3825bb9c7f60",
+          "length_nt": 461
+        },
+        {
+          "sql_name": "bpRNA_RFAM_45563",
+          "sequence_sha256": "2925b032eadfc6ba5b3bb434f7ffd7b9eb0b01c2bc99e9907a811e0ccc5b0fa8",
+          "length_nt": 493
+        },
+        {
+          "sql_name": "bpRNA_RFAM_45565",
+          "sequence_sha256": "1bed99df149d377729ea71fd6c460e0241b43625168f2ebdae847ccfe9eba8ac",
+          "length_nt": 445
+        },
+        {
+          "sql_name": "bpRNA_RFAM_45573",
+          "sequence_sha256": "2d8eb28cc18d16d78302fa647291d588738674c86e8799a11250df27c2223ccc",
+          "length_nt": 445
+        }
+      ]
+    },
+    {
+      "family_id": "RF01071",
+      "candidate_count": 10,
+      "min_length_nt": 579,
+      "max_length_nt": 676,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_46629",
+          "sequence_sha256": "3349d567cb57047947d0e8df55e0cc91d89667a072886a866f2ac3c629a89926",
+          "length_nt": 612
+        },
+        {
+          "sql_name": "bpRNA_RFAM_46635",
+          "sequence_sha256": "0ad42a2b65017bb75be70a902883490c05b890770141567cdf8c0c9baf883d51",
+          "length_nt": 611
+        },
+        {
+          "sql_name": "bpRNA_RFAM_46637",
+          "sequence_sha256": "051846bb83c43412f99713843ddb0d136bc95a58964af930874c5d8c6835b3ca",
+          "length_nt": 676
+        },
+        {
+          "sql_name": "bpRNA_RFAM_46639",
+          "sequence_sha256": "2a8382bb2ea30fcbd0d520a57cf8cd811c990a21953f73c6403563004e2e0cce",
+          "length_nt": 579
+        },
+        {
+          "sql_name": "bpRNA_RFAM_46643",
+          "sequence_sha256": "6943aed021530e1a9670a274c93f4646a6fe7295088380b56472d7b24e950662",
+          "length_nt": 628
+        },
+        {
+          "sql_name": "bpRNA_RFAM_46647",
+          "sequence_sha256": "ddd27df9bf44a7b9b778890d7356963e3bc57dc14e5c3f16dd2a8b5174071841",
+          "length_nt": 621
+        },
+        {
+          "sql_name": "bpRNA_RFAM_46649",
+          "sequence_sha256": "181e5222a8f2931db34c7b75bfd3f55c55e1ba7666afafe5e97215d18c57b272",
+          "length_nt": 588
+        },
+        {
+          "sql_name": "bpRNA_RFAM_46651",
+          "sequence_sha256": "c036352ca9db7af34df846dad514d8a1c3bd0699a01f431a3a90e5bab50fda87",
+          "length_nt": 648
+        },
+        {
+          "sql_name": "bpRNA_RFAM_46655",
+          "sequence_sha256": "13943ad6afe1dbd67d34b1d142235d223dd35b3e7ebf39b3ca524332bb6bdd68",
+          "length_nt": 632
+        },
+        {
+          "sql_name": "bpRNA_RFAM_46665",
+          "sequence_sha256": "849a64288415fe173d6dc1ac9ec0a9e1728795f3f1aedd2e6e9056c308df196c",
+          "length_nt": 633
+        }
+      ]
+    },
+    {
+      "family_id": "RF01267",
+      "candidate_count": 1,
+      "min_length_nt": 416,
+      "max_length_nt": 416,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_49603",
+          "sequence_sha256": "5eee1643d1b0f3c5e436827a60f31c33738a19d5ee27255257a9a326b635551d",
+          "length_nt": 416
+        }
+      ]
+    },
+    {
+      "family_id": "RF01268",
+      "candidate_count": 16,
+      "min_length_nt": 402,
+      "max_length_nt": 445,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_49615",
+          "sequence_sha256": "d5e698600ee909acc58b0aa1d488353c0e7952b72925223e187d23f17c89e3e7",
+          "length_nt": 416
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49617",
+          "sequence_sha256": "e3765c35b4211ad755aa7da2c032bfcb9ede0b5289ea562b0b4c2188b985f4d3",
+          "length_nt": 428
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49619",
+          "sequence_sha256": "634fc3b695001ef5eead16ba8ed6f39995a3a91f20fc9a535ac426afa92bcbf6",
+          "length_nt": 412
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49621",
+          "sequence_sha256": "7f8449c104aaab1cfb8c1025d1599d670d59c9901491de803c6df43bff877e66",
+          "length_nt": 445
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49623",
+          "sequence_sha256": "25b817df4149a943982af3941bc0df97e90dc37fe6e575100250bf28a8786fe7",
+          "length_nt": 417
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49627",
+          "sequence_sha256": "406c1a722f3d0613f3e29c55f07e14514b4505a7cea6c05657c64f6cfc4064cc",
+          "length_nt": 405
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49629",
+          "sequence_sha256": "22d4a9c3ad0ef2dafa8f3060794d59d83cce311c60e2946fcf3bc4f7bff320ca",
+          "length_nt": 424
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49633",
+          "sequence_sha256": "f848bd201d1923666956482cc75698a66b11b7681105790ca8bde61f5eb638ab",
+          "length_nt": 421
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49635",
+          "sequence_sha256": "5ddf54d37b424557e72e3de4b9f7266d9208fefe251fdb89e01680573480621f",
+          "length_nt": 402
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49637",
+          "sequence_sha256": "5b872d12ab558788ece8745b6ee3a6c209450de2b3c5081e6ba4eddeb80bc53e",
+          "length_nt": 425
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49639",
+          "sequence_sha256": "dc1294c38e35dd9d31bbd31b636d10afce5ab35b21bc3e07d41ece84bf299911",
+          "length_nt": 421
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49641",
+          "sequence_sha256": "fb3207b3305569127a2f397776db82d4b1b8e988c4425fb6b41fb7fca3185f32",
+          "length_nt": 404
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49643",
+          "sequence_sha256": "b9795a163b885b9991851efd8f9230df02cccaaf9ad1d2c30c4add03c86930e6",
+          "length_nt": 434
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49645",
+          "sequence_sha256": "b53340fcdc600c59c5ddd06cfaf64326a4444d3ad0b69858d6357299979e41f8",
+          "length_nt": 414
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49649",
+          "sequence_sha256": "fad709c4ccdeb2fb9a07828df1080acd932fdfcae22a36cdad5819b507c69b56",
+          "length_nt": 420
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49653",
+          "sequence_sha256": "bb4844c9f3eab12a7d7ccd32db191bab886c9a83908a6108e89cc830d2f16188",
+          "length_nt": 414
+        }
+      ]
+    },
+    {
+      "family_id": "RF01270",
+      "candidate_count": 6,
+      "min_length_nt": 533,
+      "max_length_nt": 572,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_49667",
+          "sequence_sha256": "46816c2b0c3ebcda4d54dd272c555225ca233388f4ab1eaf46c8c3f52d3be638",
+          "length_nt": 563
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49669",
+          "sequence_sha256": "d325afe28b8921c519b4818341e01e0934b02b57ba9542b915c11b84dede93c4",
+          "length_nt": 561
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49671",
+          "sequence_sha256": "2fadc4a119d252e48a8d1ce3f106f5e3158784a5ba227904396b15625dbba3e6",
+          "length_nt": 568
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49673",
+          "sequence_sha256": "aeeddff6cd3415637080e9e51a72c905a1889397daf0a8f623069f1b573e09fe",
+          "length_nt": 572
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49675",
+          "sequence_sha256": "f84882eef8b3e641b3b02ef7a39e5df864e2fcd7274759c172169429f4fbb9fb",
+          "length_nt": 533
+        },
+        {
+          "sql_name": "bpRNA_RFAM_49677",
+          "sequence_sha256": "1c470049929e417b499f38aea88de4293835bdeb5949eed561e62c2fbcb0a75f",
+          "length_nt": 550
+        }
+      ]
+    },
+    {
+      "family_id": "RF01460",
+      "candidate_count": 3,
+      "min_length_nt": 429,
+      "max_length_nt": 429,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_52987",
+          "sequence_sha256": "fb33bd268ff9d931e35e98f695a370ed1d76c6f8e114788ee0916915fd575cf7",
+          "length_nt": 429
+        },
+        {
+          "sql_name": "bpRNA_RFAM_52989",
+          "sequence_sha256": "1aef37bddd411f340caac271c563ccc25d6a139d91d06b5368a309897efe600e",
+          "length_nt": 429
+        },
+        {
+          "sql_name": "bpRNA_RFAM_52991",
+          "sequence_sha256": "8f399b4131e37c09cb4384049ab3e9319ce8c720233991691bcbed4d76370c68",
+          "length_nt": 429
+        }
+      ]
+    },
+    {
+      "family_id": "RF01469",
+      "candidate_count": 3,
+      "min_length_nt": 532,
+      "max_length_nt": 535,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_53067",
+          "sequence_sha256": "c7f414d01cee073f7522778a31cadced8e4c7b538812a6b130fea937052cf626",
+          "length_nt": 532
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53069",
+          "sequence_sha256": "d5c0c7e1b852819fd0364d43bcec0df52c130122636aa55e2ac753a01c1267f8",
+          "length_nt": 533
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53071",
+          "sequence_sha256": "d6460a084b6f54c4dbc1718270426f3f1321bacaff7281a60f7fc4a8b910c981",
+          "length_nt": 535
+        }
+      ]
+    },
+    {
+      "family_id": "RF01473",
+      "candidate_count": 5,
+      "min_length_nt": 493,
+      "max_length_nt": 495,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_53129",
+          "sequence_sha256": "5f1440360a1e7676baf8d73cb1a02e920d9a055b410743a686ed1ae40e259489",
+          "length_nt": 495
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53131",
+          "sequence_sha256": "0b553e3e950c353548fec780a540db83e17fb4b52420e9f971ecc9730e36529e",
+          "length_nt": 494
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53133",
+          "sequence_sha256": "5db92db530f5ae61e96e8917433349f7bd9fe3404d5015ffa34f38f07d6d8373",
+          "length_nt": 494
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53137",
+          "sequence_sha256": "a37fc431515a76fd49435f57964ed162264af9605cdc386d98490ce1d542d8a4",
+          "length_nt": 493
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53139",
+          "sequence_sha256": "c2a6b66da3aa3e69254c7b05af61a978bc73c24686bacf6d96509582a721a60d",
+          "length_nt": 493
+        }
+      ]
+    },
+    {
+      "family_id": "RF01478",
+      "candidate_count": 7,
+      "min_length_nt": 505,
+      "max_length_nt": 510,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_53179",
+          "sequence_sha256": "49d6abdd710156b44d614de48e12ad97d41843ee077a76f6b41798324da86fbf",
+          "length_nt": 510
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53181",
+          "sequence_sha256": "8ea2de9224541e831269c27b09c97a43bd4c0f105944be8e5068137b1a0efc95",
+          "length_nt": 509
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53183",
+          "sequence_sha256": "fff9be4905786acb1afddf32dd8b4b705c2d2cac662fa6c4c76a957b3de03337",
+          "length_nt": 505
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53187",
+          "sequence_sha256": "5f4d4f67c09bab0641ccb82c03595ead7fbb25fd47ff3ce8a7db6ae2ba027583",
+          "length_nt": 510
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53191",
+          "sequence_sha256": "2792cbd9c8453131bef4b5cdbb1879db1a5afccb5b1d33bfccaaa11a29cdc68d",
+          "length_nt": 510
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53193",
+          "sequence_sha256": "cced43ee3998ec8a85104a7359702e1eb293e8eb010ef0b173f8f7d987338512",
+          "length_nt": 509
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53195",
+          "sequence_sha256": "4fd80d3a00013224ae204863f9e318fa0426a1146f459aa32d98479f70526730",
+          "length_nt": 508
+        }
+      ]
+    },
+    {
+      "family_id": "RF01491",
+      "candidate_count": 5,
+      "min_length_nt": 527,
+      "max_length_nt": 529,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_53323",
+          "sequence_sha256": "0cd2bff4c02efac1b804bec833a315df5bf86a53cbd2afc520b3073d5ebf37b3",
+          "length_nt": 528
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53325",
+          "sequence_sha256": "968d0b0a4eca5b5ddd95d1ea594da64da63004f15000c42448d64284c40b3e76",
+          "length_nt": 528
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53327",
+          "sequence_sha256": "6078fb32444c4c794ae3880faace75da03b6e013ea23d42100e5039f4735d903",
+          "length_nt": 528
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53329",
+          "sequence_sha256": "bbc96a9decb1fd2681d3949f0ed1c93e14cb1a4960083387041a9366b7decc2c",
+          "length_nt": 529
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53331",
+          "sequence_sha256": "ac0b5041c52768f499eeee6bca6e25b85fde355777c79a88d8bdc5fd61477bed",
+          "length_nt": 527
+        }
+      ]
+    },
+    {
+      "family_id": "RF01502",
+      "candidate_count": 16,
+      "min_length_nt": 402,
+      "max_length_nt": 533,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_53507",
+          "sequence_sha256": "b1f700459cba48bda76836b18893ba818b6af5595d3482022f6f3d2db5ef2cf8",
+          "length_nt": 402
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53547",
+          "sequence_sha256": "1e0150615d468855e0c51edb4ed281e7efe99bbd7586adf44a28206c069bf133",
+          "length_nt": 493
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53551",
+          "sequence_sha256": "aa4cbb4465fcd63c557dc3f7403f00957f6ec7dfb799de001aac7e9ee5d69325",
+          "length_nt": 524
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53553",
+          "sequence_sha256": "1f844fb11e51d6e0429f06020c8b81869dedf36aec03124788e2f8b518782fa2",
+          "length_nt": 525
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53555",
+          "sequence_sha256": "b81ca4f57e9e5813cb228d452c23fda5f458ea3e2d3ea9f95c675a2069ecbc22",
+          "length_nt": 523
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53557",
+          "sequence_sha256": "893dd38b1ed3f45a7be90082f2194c97952f01e62d03c0d79c348db8b7b28103",
+          "length_nt": 533
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53559",
+          "sequence_sha256": "84cfe4ff0579cf336a6508a84f6b60bccfa6f29a96fd84daabcd09fc3bece8a1",
+          "length_nt": 435
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53561",
+          "sequence_sha256": "9c8156dec79ba76c22017c939649ddc847cfbbb54cdaa8c072c4f8607e67a903",
+          "length_nt": 533
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53569",
+          "sequence_sha256": "5dbba29b1072ef5a70294e45bffca084dc78d915a334b40b75ebe10fca086884",
+          "length_nt": 521
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53571",
+          "sequence_sha256": "072974da7da9533f46b79b54fc8648f34283e41b0e0acaba27168fe30461cd76",
+          "length_nt": 523
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53573",
+          "sequence_sha256": "b29ea6593d1978ed3da6d26ac1219b978d81d3417ce6d9822c5ec6f275a25d10",
+          "length_nt": 524
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53577",
+          "sequence_sha256": "c96dae9489556213f626c4cf6f27b7d1c7844554d49471417d1ae7da3f90ddc9",
+          "length_nt": 520
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53583",
+          "sequence_sha256": "e673e3c81284568298d3424e5f905cc2851a349d6eb16feabae547751f3ee837",
+          "length_nt": 499
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53585",
+          "sequence_sha256": "51e54477ecb906ba413de1252a218f0d9787bf68db1495544909b159f39a45ff",
+          "length_nt": 495
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53601",
+          "sequence_sha256": "4fc5a6cc2a402ac245133b958c9f9801026de57968e83f09937545d910282f27",
+          "length_nt": 519
+        },
+        {
+          "sql_name": "bpRNA_RFAM_53603",
+          "sequence_sha256": "c1acc4950279ff550042926eedd249925e8ed31169446b31a93646e01afcf220",
+          "length_nt": 429
+        }
+      ]
+    },
+    {
+      "family_id": "RF01577",
+      "candidate_count": 2,
+      "min_length_nt": 615,
+      "max_length_nt": 626,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_54055",
+          "sequence_sha256": "469b47a76a23817c9a6afc96deeefda71a936f6fafae1ae51b8ad43aff153d35",
+          "length_nt": 615
+        },
+        {
+          "sql_name": "bpRNA_RFAM_54057",
+          "sequence_sha256": "f8a89e2013083d1dbb11814af55ca3f3c48524fc2d837b818ee7dd227508ca2d",
+          "length_nt": 626
+        }
+      ]
+    },
+    {
+      "family_id": "RF01675",
+      "candidate_count": 7,
+      "min_length_nt": 400,
+      "max_length_nt": 421,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_54799",
+          "sequence_sha256": "180d8fd6a826fffeebbcb2374dc2b6cd954d5bf3093abfe829a9ad3ed127eb96",
+          "length_nt": 418
+        },
+        {
+          "sql_name": "bpRNA_RFAM_54801",
+          "sequence_sha256": "ee6ba87d59e792cf7050b4a3fe7ee42018d6b3d4d7b3e1b59a1a655a2813f891",
+          "length_nt": 403
+        },
+        {
+          "sql_name": "bpRNA_RFAM_54805",
+          "sequence_sha256": "587dc8599e82305f85ff0e3fe3b9be961b2d50fc37b33ec8174b3dda4b24fe94",
+          "length_nt": 421
+        },
+        {
+          "sql_name": "bpRNA_RFAM_54807",
+          "sequence_sha256": "6da0d322c728419db1c33597382aba70074d69fd8f32b25c4715a644e1a081dc",
+          "length_nt": 400
+        },
+        {
+          "sql_name": "bpRNA_RFAM_54815",
+          "sequence_sha256": "79c111df596f5f81e1bc1c8dd65df0de06fb2758b92b51bd3b276ae8e4dec0db",
+          "length_nt": 406
+        },
+        {
+          "sql_name": "bpRNA_RFAM_54821",
+          "sequence_sha256": "d9093fc5dea4a5d0f2d2ab92bbb7c8dff1ae1da0bd184b31136aa347d4f9b545",
+          "length_nt": 404
+        },
+        {
+          "sql_name": "bpRNA_RFAM_54831",
+          "sequence_sha256": "e8327e7840a431c08450ef57bbdce007e8744395f7ee09983dcff6934069050f",
+          "length_nt": 400
+        }
+      ]
+    },
+    {
+      "family_id": "RF01683",
+      "candidate_count": 3,
+      "min_length_nt": 510,
+      "max_length_nt": 510,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_54867",
+          "sequence_sha256": "abffecce4a1dea8a20196281fd33f43d6496a05246c530696e93618ab8b92f5d",
+          "length_nt": 510
+        },
+        {
+          "sql_name": "bpRNA_RFAM_54869",
+          "sequence_sha256": "5a1cdd05ab5ccb335f8c338fa43b0764efa05a87a9578d081612a4f3e5c3bf28",
+          "length_nt": 510
+        },
+        {
+          "sql_name": "bpRNA_RFAM_54871",
+          "sequence_sha256": "b3a1faefffee16d0f2f6876163c8f9b2a531ce9e4afc826aaef9f089533d7042",
+          "length_nt": 510
+        }
+      ]
+    },
+    {
+      "family_id": "RF01765",
+      "candidate_count": 2,
+      "min_length_nt": 551,
+      "max_length_nt": 556,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_69039",
+          "sequence_sha256": "4d40f3b20ee9e62743d376ffa92651446b452e76ab063e4763abd71c2b28b414",
+          "length_nt": 556
+        },
+        {
+          "sql_name": "bpRNA_RFAM_69041",
+          "sequence_sha256": "4d9ab8f19404a1deae6c6af2c77d7a24a5164572213d94ff1a1974eb2d31fccb",
+          "length_nt": 551
+        }
+      ]
+    },
+    {
+      "family_id": "RF01766",
+      "candidate_count": 12,
+      "min_length_nt": 417,
+      "max_length_nt": 447,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_69043",
+          "sequence_sha256": "3a6b3402459f755652e10b49615ffef41fc9bfa772b0fbc5ce60cdbda6b30a9c",
+          "length_nt": 447
+        },
+        {
+          "sql_name": "bpRNA_RFAM_69045",
+          "sequence_sha256": "e2f9a6d33e69923ad068f5f34896b9149d883104e176dc9973c58bb7ec3f8ed0",
+          "length_nt": 443
+        },
+        {
+          "sql_name": "bpRNA_RFAM_69047",
+          "sequence_sha256": "d5b55a024bb7c55bf80e274278817ecaab36bf9dcde3ef7ef2fffa9cc6187fa9",
+          "length_nt": 428
+        },
+        {
+          "sql_name": "bpRNA_RFAM_69049",
+          "sequence_sha256": "f335e667577dc40b66e917cb6ea64f616028196103380f70f70800504423de68",
+          "length_nt": 417
+        },
+        {
+          "sql_name": "bpRNA_RFAM_69051",
+          "sequence_sha256": "149b9c1ccdad6fe7b52d71b0e6b4f167e13635003e7eba8f3be7e486ce4b67e0",
+          "length_nt": 426
+        },
+        {
+          "sql_name": "bpRNA_RFAM_69053",
+          "sequence_sha256": "d36ef0b01f35b04e0d184ef3dbd8cf0999bb75aea41c4ae0c8dbbb5e0e265053",
+          "length_nt": 424
+        },
+        {
+          "sql_name": "bpRNA_RFAM_69055",
+          "sequence_sha256": "cbd0688d6c0aa554cb34423192867de8ebdb4fa29462a0217d541e062803817a",
+          "length_nt": 447
+        },
+        {
+          "sql_name": "bpRNA_RFAM_69057",
+          "sequence_sha256": "bae55088b2b184cdbecc38d2c0a3480e05025ae6078f42f1bc8f02899e932ab0",
+          "length_nt": 439
+        },
+        {
+          "sql_name": "bpRNA_RFAM_69061",
+          "sequence_sha256": "6e1380c0c017e751241ae27346ba992e6bbb4e497e29eaa8957ee5b262a2de82",
+          "length_nt": 422
+        },
+        {
+          "sql_name": "bpRNA_RFAM_69063",
+          "sequence_sha256": "87072c1831bedde51ec7c44add28bb0eb978235e4289365872e55c319a8196d8",
+          "length_nt": 424
+        },
+        {
+          "sql_name": "bpRNA_RFAM_69065",
+          "sequence_sha256": "9e5e2f4cad01fc1a37634881fe4f2063c129a56aff14f771746db161142efbe3",
+          "length_nt": 432
+        },
+        {
+          "sql_name": "bpRNA_RFAM_69067",
+          "sequence_sha256": "a23ee21d1216c8dd605eaf08803669731ba064583d551a82730eda29af0a33f8",
+          "length_nt": 428
+        }
+      ]
+    },
+    {
+      "family_id": "RF01818",
+      "candidate_count": 3,
+      "min_length_nt": 440,
+      "max_length_nt": 441,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_70725",
+          "sequence_sha256": "48922ba13f1b7f670380fa1ea1a30f8109753d056bc13c7210b84ba5009f2a06",
+          "length_nt": 441
+        },
+        {
+          "sql_name": "bpRNA_RFAM_70727",
+          "sequence_sha256": "b98312d77b928a1b5d6e73c0ea17e9dc5066293b9e56cec793c6a704d54f5f57",
+          "length_nt": 440
+        },
+        {
+          "sql_name": "bpRNA_RFAM_70729",
+          "sequence_sha256": "6deb7605edbcc418b9e91a2b23266a825be4f870d0d4cac9554187c20101d5a6",
+          "length_nt": 440
+        }
+      ]
+    },
+    {
+      "family_id": "RF01824",
+      "candidate_count": 5,
+      "min_length_nt": 422,
+      "max_length_nt": 444,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_70805",
+          "sequence_sha256": "97b40ea7e8c71f276be78617dba9b7f6b9df14e85a4690f7acd0ca6e4e4758ea",
+          "length_nt": 425
+        },
+        {
+          "sql_name": "bpRNA_RFAM_70809",
+          "sequence_sha256": "d31e1bffcef8a6a89698a3e9011fe50b0f89783a8c88d4d94d1a561f497e7f42",
+          "length_nt": 422
+        },
+        {
+          "sql_name": "bpRNA_RFAM_70811",
+          "sequence_sha256": "ee2ae8062ed64da55bf153f4857f65067f3f72c900bc2748d43b3fdeab97b27a",
+          "length_nt": 444
+        },
+        {
+          "sql_name": "bpRNA_RFAM_70813",
+          "sequence_sha256": "0516b645f180b17c545602bb8b4469ef4005b6a7545f5eb0ee3a9c00cbea92ac",
+          "length_nt": 443
+        },
+        {
+          "sql_name": "bpRNA_RFAM_70815",
+          "sequence_sha256": "2d5e32547ca8628e8b82b083f46e2a4943f8f20cb13e99abef0770f87450cc12",
+          "length_nt": 443
+        }
+      ]
+    },
+    {
+      "family_id": "RF01825",
+      "candidate_count": 5,
+      "min_length_nt": 684,
+      "max_length_nt": 702,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_70817",
+          "sequence_sha256": "2932134147e44acbf4af3425d380a32ab0cfddd60f6f4d1c5509cba5191b4a10",
+          "length_nt": 684
+        },
+        {
+          "sql_name": "bpRNA_RFAM_70819",
+          "sequence_sha256": "0ba3b69ee32aaa768715661b2dc98156034ff0933282c6a4d967be1d91f4f392",
+          "length_nt": 690
+        },
+        {
+          "sql_name": "bpRNA_RFAM_70821",
+          "sequence_sha256": "791b68661d079a39e1f961c9bc2b8946d37369521d71a22557c6cfd36c99b9bf",
+          "length_nt": 689
+        },
+        {
+          "sql_name": "bpRNA_RFAM_70823",
+          "sequence_sha256": "2502324d2889ace5d358b26f9d2664ffaa84de6f4f7c9a0de6cebc16adb81080",
+          "length_nt": 694
+        },
+        {
+          "sql_name": "bpRNA_RFAM_70825",
+          "sequence_sha256": "87f167db202fb1fa3a46e422a4c0f2c9794636feb1287dbc588a252fd7a537b1",
+          "length_nt": 702
+        }
+      ]
+    },
+    {
+      "family_id": "RF01846",
+      "candidate_count": 3,
+      "min_length_nt": 404,
+      "max_length_nt": 442,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_71599",
+          "sequence_sha256": "bb223dea70586744be157ae570c47bb56a00cadb770f48b9d8d97650b1f2a53a",
+          "length_nt": 442
+        },
+        {
+          "sql_name": "bpRNA_RFAM_71641",
+          "sequence_sha256": "2376979a53e212cdd356a5d17007ebfb34796ec2b6745dcac8062a885c644628",
+          "length_nt": 414
+        },
+        {
+          "sql_name": "bpRNA_RFAM_71643",
+          "sequence_sha256": "8e63530ba5e40affe977e217f51f3d1f9cd62cfe62d4cbbe648121febe4a0e54",
+          "length_nt": 404
+        }
+      ]
+    },
+    {
+      "family_id": "RF02032",
+      "candidate_count": 30,
+      "min_length_nt": 405,
+      "max_length_nt": 502,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_77913",
+          "sequence_sha256": "98b7b65bc8b1013f39738f70d02a8e6dd28f8ae2f5ced0dc3833a657eecc46b2",
+          "length_nt": 411
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77915",
+          "sequence_sha256": "7c453f83034ca065f2d36cf783d450eb77e74cce9327c1b549cd98303734db5d",
+          "length_nt": 407
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77917",
+          "sequence_sha256": "1bb0d7cdc13367a4fcb404c48b5ffff69cfa2ca130577d62a430169d9e8c874e",
+          "length_nt": 412
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77919",
+          "sequence_sha256": "52ef12bfd302e67b9bc202d31b63f4c53fd471c3f7b89b4d892fc92a71bc2a86",
+          "length_nt": 413
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77921",
+          "sequence_sha256": "ae801cc1c0f8cb3b40837db82ecc3e5b293084dd5c30a3704b001cb03de9448e",
+          "length_nt": 412
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77923",
+          "sequence_sha256": "dc985078fe881940d2e8edeaa22e81034a527b787c593ca7acdbdbabc33ec4ca",
+          "length_nt": 410
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77927",
+          "sequence_sha256": "0d3103dc393c6c4123b81682f3dd8fa914fe9821efdcba97934a2760ba11de5d",
+          "length_nt": 407
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77929",
+          "sequence_sha256": "f073efe566cf2fff47997e2be19d895d4cfc6085543c63f1c5a3bf916b570e49",
+          "length_nt": 412
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77931",
+          "sequence_sha256": "e8a7a0b88f8a2436ecbd157f990436f3f3aabe4efbc755dcca7dfc9731790bcf",
+          "length_nt": 421
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77933",
+          "sequence_sha256": "bfc79eaa358ec074078c62f2b3714acb39b54fc26ce968c15bff9791324d5056",
+          "length_nt": 427
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77935",
+          "sequence_sha256": "9f78d47beef9ff44670a6ba0285a8d8f85caf25e4f53c2bf7eb6650a7afc0330",
+          "length_nt": 405
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77937",
+          "sequence_sha256": "0f5d4217e496a5c5c7b2c8e9e77f6293f6964531586ae610c3440a458dc52ac5",
+          "length_nt": 496
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77939",
+          "sequence_sha256": "4fab20ccaf5f9e12108adfb888ed494207e08869b8b974373c16b74306bc15a5",
+          "length_nt": 421
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77941",
+          "sequence_sha256": "e3c2990d6da9e53a0334870fbc32c47c11241968803b7c6a8df71e20e064ea3e",
+          "length_nt": 422
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77943",
+          "sequence_sha256": "5d630c7ebf6b187768a8b9eebeefb3f1597e77833596bf0169440f31265b878c",
+          "length_nt": 406
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77945",
+          "sequence_sha256": "bd040d20e38acf109339601f26b2f98a181b48104e9ab893a32b78b10d8353cd",
+          "length_nt": 419
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77947",
+          "sequence_sha256": "c320c9c48f41316657cd4285c510ca1dd7ab7526be39340a8271f7ea43b6632e",
+          "length_nt": 426
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77949",
+          "sequence_sha256": "323cff852db66ffc2d64bc866f0837e3a9605f7aa85d1158df0eb9ebe8309424",
+          "length_nt": 465
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77951",
+          "sequence_sha256": "501cc0f07662819543ff33adb9f35db1d4ed0b6f2ddd92bb4ec0c9b34e8ea34e",
+          "length_nt": 411
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77953",
+          "sequence_sha256": "05aad3e3c33f97975a26a50a8b9e5532b839d9c67602db4d5e83716014a03c68",
+          "length_nt": 424
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77955",
+          "sequence_sha256": "0f3db8808c69fd42412a43e6ad636ce5e0b969d953802c14d36ea968db2d69d5",
+          "length_nt": 421
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77957",
+          "sequence_sha256": "18a888ba4aee15fb51dd0c36b1229034112c738b24bfbe9c9592f8c8342b3c20",
+          "length_nt": 411
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77959",
+          "sequence_sha256": "20f15e7a7a98a1fe9e4166ba7c3f6e2ddd5d49ddb6ee3c206e6807b26343888a",
+          "length_nt": 413
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77961",
+          "sequence_sha256": "6282cf6bd442568d4b939bf614271fa3ad64788efe12fda710a548adba41e465",
+          "length_nt": 408
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77963",
+          "sequence_sha256": "d791d63e32a0032f04fe2b9fa6ac7a6849af2730b749c72d42fe3fbbfbb468ed",
+          "length_nt": 413
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77965",
+          "sequence_sha256": "3c1a466b5eeff20732ab9f412c6a08723548c574c8bc9e156000741266a1c42f",
+          "length_nt": 459
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77967",
+          "sequence_sha256": "4eba122fb41f8cb9affb2143d71d2c96c819cc5b19df1e2c32d5eb7bfe35fb34",
+          "length_nt": 413
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77977",
+          "sequence_sha256": "5137884a9f9bdc2df7ffa2f87651220acc3a135f1755946b0a3478ac0718c04f",
+          "length_nt": 502
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77979",
+          "sequence_sha256": "f8705fba59cc932fbbd9d9570b03057ddb8eadebeaa8acf503f9f6506f063997",
+          "length_nt": 439
+        },
+        {
+          "sql_name": "bpRNA_RFAM_77981",
+          "sequence_sha256": "4c26d3345b675a7755dab3da6672c02cba0b34b078ab9b895ea13e2fdcb7c4a2",
+          "length_nt": 413
+        }
+      ]
+    },
+    {
+      "family_id": "RF02400",
+      "candidate_count": 5,
+      "min_length_nt": 430,
+      "max_length_nt": 505,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_83397",
+          "sequence_sha256": "f0d5e2f7e9a32c445be58b1df40e149e78a80d6ab7ba1fc2cc8fe05483ce080d",
+          "length_nt": 505
+        },
+        {
+          "sql_name": "bpRNA_RFAM_83399",
+          "sequence_sha256": "3fc6a46d2d620075bf01849a9b7bc493c32da77e0334b153bb5f3f21a9750eee",
+          "length_nt": 472
+        },
+        {
+          "sql_name": "bpRNA_RFAM_83401",
+          "sequence_sha256": "2c77a5e8597065cff4f26e09a8286829c1fc721790cfc527c20503a34cf38920",
+          "length_nt": 430
+        },
+        {
+          "sql_name": "bpRNA_RFAM_83403",
+          "sequence_sha256": "a24d05bab83b6dcaa4f1552f384d562e368a98e0a4809494869295107adde466",
+          "length_nt": 468
+        },
+        {
+          "sql_name": "bpRNA_RFAM_83405",
+          "sequence_sha256": "12ebcba8b9bf0b2ed5e8ea693339a0611ebf042afc8d1d4bc830bee57e6c68c7",
+          "length_nt": 472
+        }
+      ]
+    },
+    {
+      "family_id": "RF02545",
+      "candidate_count": 4,
+      "min_length_nt": 614,
+      "max_length_nt": 627,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_86361",
+          "sequence_sha256": "30d686abc1dbd58fa2b7d68e80429ce3621d74761f0aedbf13d15ce8dbc6dea7",
+          "length_nt": 627
+        },
+        {
+          "sql_name": "bpRNA_RFAM_86363",
+          "sequence_sha256": "74f8e93905a42fe5b50861b49db292108bfab6f19d9784a9e7cb28a6a5af732a",
+          "length_nt": 627
+        },
+        {
+          "sql_name": "bpRNA_RFAM_86365",
+          "sequence_sha256": "5b695a8c8164bc4baa0c862e8b85500ff9678bfc90b87495b323cb7d24874bf7",
+          "length_nt": 627
+        },
+        {
+          "sql_name": "bpRNA_RFAM_86367",
+          "sequence_sha256": "51bc0933f72e8533c9f9f5074f431f8162a44435d14fc99bd8570cebc8faf8ac",
+          "length_nt": 614
+        }
+      ]
+    },
+    {
+      "family_id": "RF02546",
+      "candidate_count": 4,
+      "min_length_nt": 558,
+      "max_length_nt": 569,
+      "records": [
+        {
+          "sql_name": "bpRNA_RFAM_86371",
+          "sequence_sha256": "17e96394e4938e69c118f6622f9bd7b482446fdc8e7062c9561713d72dffcfe9",
+          "length_nt": 569
+        },
+        {
+          "sql_name": "bpRNA_RFAM_86373",
+          "sequence_sha256": "59e23e16cf5c344f5c2f2e53c430909a8df1fa5edbba3e11237b9566275563e4",
+          "length_nt": 558
+        },
+        {
+          "sql_name": "bpRNA_RFAM_86375",
+          "sequence_sha256": "c7ad23824bd560f56ccd07582583d9c6bc2d94524948b105b6bd75683a027237",
+          "length_nt": 565
+        },
+        {
+          "sql_name": "bpRNA_RFAM_86379",
+          "sequence_sha256": "8c5f859bd76aba0d7117e9973d18c5952437846b426d0f98956d6600145ee5c2",
+          "length_nt": 560
+        }
+      ]
+    }
+  ],
+  "readiness": "metadata_candidates_only_crw_and_clan_unresolved"
+}

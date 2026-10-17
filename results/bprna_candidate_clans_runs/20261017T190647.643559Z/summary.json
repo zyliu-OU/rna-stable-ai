@@ -1,0 +1,447 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/bprna_candidate_clans_runs/20261017T190647.643559Z",
+  "policy": {
+    "rfam_release": "15.1",
+    "source_format": "Rfam.seed.gz_stockholm_GF_AC_ID_CL",
+    "candidate_group": "provisional_400_4999nt_bprna_rfam",
+    "no_clan_means_independent": false,
+    "unknown_crw_lineage_resolved": false,
+    "independent_test_claim": false,
+    "model_inference_performed": false
+  },
+  "source_family_count": 4227,
+  "known_exposed_family_count": 23,
+  "known_exposed_clans": [
+    "CL00001",
+    "CL00004",
+    "CL00005",
+    "CL00009",
+    "CL00100",
+    "CL00106",
+    "CL00111",
+    "CL00112"
+  ],
+  "family_status_counts": {
+    "distinct_known_clan": 10,
+    "known_exposed_clan": 6,
+    "no_clan_assigned": 23
+  },
+  "candidate_status_counts": {
+    "distinct_known_clan": 179,
+    "known_exposed_clan": 61,
+    "no_clan_assigned": 193
+  },
+  "families": [
+    {
+      "family_id": "RF00009",
+      "rfam_name": "RNaseP_nuc",
+      "clan_id": "CL00002",
+      "known_exposed_clan_families": [],
+      "candidate_count": 4,
+      "min_length_nt": 402,
+      "max_length_nt": 440,
+      "status": "distinct_known_clan"
+    },
+    {
+      "family_id": "RF00010",
+      "rfam_name": "RNaseP_bact_a",
+      "clan_id": "CL00002",
+      "known_exposed_clan_families": [],
+      "candidate_count": 122,
+      "min_length_nt": 400,
+      "max_length_nt": 520,
+      "status": "distinct_known_clan"
+    },
+    {
+      "family_id": "RF00011",
+      "rfam_name": "RNaseP_bact_b",
+      "clan_id": "CL00002",
+      "known_exposed_clan_families": [],
+      "candidate_count": 7,
+      "min_length_nt": 401,
+      "max_length_nt": 417,
+      "status": "distinct_known_clan"
+    },
+    {
+      "family_id": "RF00023",
+      "rfam_name": "tmRNA",
+      "clan_id": "CL00001",
+      "known_exposed_clan_families": [
+        "RF01849",
+        "RF04321"
+      ],
+      "candidate_count": 14,
+      "min_length_nt": 401,
+      "max_length_nt": 437,
+      "status": "known_exposed_clan"
+    },
+    {
+      "family_id": "RF00024",
+      "rfam_name": "Telomerase-vert",
+      "clan_id": "CL00004",
+      "known_exposed_clan_families": [
+        "RF01050",
+        "RF02462"
+      ],
+      "candidate_count": 31,
+      "min_length_nt": 405,
+      "max_length_nt": 559,
+      "status": "known_exposed_clan"
+    },
+    {
+      "family_id": "RF00028",
+      "rfam_name": "Intron_gpI",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 4,
+      "min_length_nt": 419,
+      "max_length_nt": 488,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF00030",
+      "rfam_name": "RNase_MRP",
+      "clan_id": "CL00002",
+      "known_exposed_clan_families": [],
+      "candidate_count": 10,
+      "min_length_nt": 407,
+      "max_length_nt": 562,
+      "status": "distinct_known_clan"
+    },
+    {
+      "family_id": "RF00210",
+      "rfam_name": "IRES_Picorna_2",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 5,
+      "min_length_nt": 451,
+      "max_length_nt": 493,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF00224",
+      "rfam_name": "IRES_FGF2",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 6,
+      "min_length_nt": 484,
+      "max_length_nt": 498,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF00228",
+      "rfam_name": "IRES_HepA",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 20,
+      "min_length_nt": 567,
+      "max_length_nt": 575,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF00373",
+      "rfam_name": "RNaseP_arch",
+      "clan_id": "CL00002",
+      "known_exposed_clan_families": [],
+      "candidate_count": 3,
+      "min_length_nt": 434,
+      "max_length_nt": 475,
+      "status": "distinct_known_clan"
+    },
+    {
+      "family_id": "RF00488",
+      "rfam_name": "U1_yeast",
+      "clan_id": "CL00005",
+      "known_exposed_clan_families": [
+        "RF00003"
+      ],
+      "candidate_count": 5,
+      "min_length_nt": 528,
+      "max_length_nt": 595,
+      "status": "known_exposed_clan"
+    },
+    {
+      "family_id": "RF00503",
+      "rfam_name": "RNAIII",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 9,
+      "min_length_nt": 489,
+      "max_length_nt": 564,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF00549",
+      "rfam_name": "IRES_c-sis",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 10,
+      "min_length_nt": 523,
+      "max_length_nt": 630,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF00551",
+      "rfam_name": "bicoid_3",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 15,
+      "min_length_nt": 537,
+      "max_length_nt": 556,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF01052",
+      "rfam_name": "Arthropod_7SK",
+      "clan_id": "CL00013",
+      "known_exposed_clan_families": [],
+      "candidate_count": 11,
+      "min_length_nt": 445,
+      "max_length_nt": 493,
+      "status": "distinct_known_clan"
+    },
+    {
+      "family_id": "RF01071",
+      "rfam_name": "OLE",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 10,
+      "min_length_nt": 579,
+      "max_length_nt": 676,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF01267",
+      "rfam_name": "snR37",
+      "clan_id": "CL00041",
+      "known_exposed_clan_families": [],
+      "candidate_count": 1,
+      "min_length_nt": 416,
+      "max_length_nt": 416,
+      "status": "distinct_known_clan"
+    },
+    {
+      "family_id": "RF01268",
+      "rfam_name": "SCARNA2",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 16,
+      "min_length_nt": 402,
+      "max_length_nt": 445,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF01270",
+      "rfam_name": "snR84",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 6,
+      "min_length_nt": 533,
+      "max_length_nt": 572,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF01460",
+      "rfam_name": "rliH",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 3,
+      "min_length_nt": 429,
+      "max_length_nt": 429,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF01469",
+      "rfam_name": "rli33",
+      "clan_id": "CL00114",
+      "known_exposed_clan_families": [],
+      "candidate_count": 3,
+      "min_length_nt": 532,
+      "max_length_nt": 535,
+      "status": "distinct_known_clan"
+    },
+    {
+      "family_id": "RF01473",
+      "rfam_name": "rli41",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 5,
+      "min_length_nt": 493,
+      "max_length_nt": 495,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF01478",
+      "rfam_name": "rli47",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 7,
+      "min_length_nt": 505,
+      "max_length_nt": 510,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF01491",
+      "rfam_name": "rli54",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 5,
+      "min_length_nt": 527,
+      "max_length_nt": 529,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF01502",
+      "rfam_name": "Fungi_SRP",
+      "clan_id": "CL00003",
+      "known_exposed_clan_families": [],
+      "candidate_count": 16,
+      "min_length_nt": 402,
+      "max_length_nt": 533,
+      "status": "distinct_known_clan"
+    },
+    {
+      "family_id": "RF01577",
+      "rfam_name": "RNase_P",
+      "clan_id": "CL00002",
+      "known_exposed_clan_families": [],
+      "candidate_count": 2,
+      "min_length_nt": 615,
+      "max_length_nt": 626,
+      "status": "distinct_known_clan"
+    },
+    {
+      "family_id": "RF01675",
+      "rfam_name": "CrcZ",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 7,
+      "min_length_nt": 400,
+      "max_length_nt": 421,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF01683",
+      "rfam_name": "P6",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 3,
+      "min_length_nt": 510,
+      "max_length_nt": 510,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF01765",
+      "rfam_name": "srg1",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 2,
+      "min_length_nt": 551,
+      "max_length_nt": 556,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF01766",
+      "rfam_name": "cspA",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 12,
+      "min_length_nt": 417,
+      "max_length_nt": 447,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF01818",
+      "rfam_name": "RsaC",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 3,
+      "min_length_nt": 440,
+      "max_length_nt": 441,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF01824",
+      "rfam_name": "RUF20",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 5,
+      "min_length_nt": 422,
+      "max_length_nt": 444,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF01825",
+      "rfam_name": "RUF21",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 5,
+      "min_length_nt": 684,
+      "max_length_nt": 702,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF01846",
+      "rfam_name": "Fungi_U3",
+      "clan_id": "CL00100",
+      "known_exposed_clan_families": [
+        "RF00012"
+      ],
+      "candidate_count": 3,
+      "min_length_nt": 404,
+      "max_length_nt": 442,
+      "status": "known_exposed_clan"
+    },
+    {
+      "family_id": "RF02032",
+      "rfam_name": "GOLLD",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 30,
+      "min_length_nt": 405,
+      "max_length_nt": 502,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF02400",
+      "rfam_name": "Hsp83_3_UTR",
+      "clan_id": null,
+      "known_exposed_clan_families": [],
+      "candidate_count": 5,
+      "min_length_nt": 430,
+      "max_length_nt": 505,
+      "status": "no_clan_assigned"
+    },
+    {
+      "family_id": "RF02545",
+      "rfam_name": "SSU_trypano_mito",
+      "clan_id": "CL00111",
+      "known_exposed_clan_families": [
+        "RF00177",
+        "RF01959",
+        "RF01960",
+        "RF02542"
+      ],
+      "candidate_count": 4,
+      "min_length_nt": 614,
+      "max_length_nt": 627,
+      "status": "known_exposed_clan"
+    },
+    {
+      "family_id": "RF02546",
+      "rfam_name": "LSU_trypano_mito",
+      "clan_id": "CL00112",
+      "known_exposed_clan_families": [
+        "RF02540",
+        "RF02541",
+        "RF02543"
+      ],
+      "candidate_count": 4,
+      "min_length_nt": 558,
+      "max_length_nt": 569,
+      "status": "known_exposed_clan"
+    }
+  ],
+  "readiness": "clan_screen_only_crw_unresolved"
+}

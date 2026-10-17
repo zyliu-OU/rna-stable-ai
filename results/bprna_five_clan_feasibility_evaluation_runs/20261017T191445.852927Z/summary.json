@@ -1,0 +1,149 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/bprna_five_clan_feasibility_evaluation_runs/20261017T191445.852927Z",
+  "policy": {
+    "stage": "conditional_five_clan_comparative_feasibility",
+    "length_scope_nt": [
+      1,
+      4999
+    ],
+    "arms": [
+      "control_88",
+      "extended_105"
+    ],
+    "seeds": [
+      7,
+      1729,
+      20261015
+    ],
+    "checkpoint": "fixed_final_epoch",
+    "decoder": "bounded_exact_sparse_top16",
+    "native_methods": [
+      "LinearFold",
+      "ViennaRNA"
+    ],
+    "native_config": {
+      "temperature_c": 37,
+      "beam_size": 100,
+      "timeout_seconds": 30,
+      "memory_limit_gib": 4
+    },
+    "failed_native_folds_remain_unknown": true,
+    "no_checkpoint_or_decoder_selection_from_cohort": true,
+    "crw_lineage_gate_satisfied": false,
+    "independent_test_claim": false,
+    "model_defaults_changed": false
+  },
+  "record_count": 13,
+  "model_summaries": {
+    "control_88_seed7": {
+      "mean_record_pair_f1": 0.16359344827094255,
+      "mean_clan_pair_f1": 0.19720582510279075,
+      "by_clan": {
+        "CL00002": 0.1336137472335199,
+        "CL00003": 0.1659212671791288,
+        "CL00013": 0.030476190476190476,
+        "CL00041": 0.41568627450980394,
+        "CL00114": 0.24033164611531058
+      }
+    },
+    "extended_105_seed7": {
+      "mean_record_pair_f1": 0.15719626381161528,
+      "mean_clan_pair_f1": 0.16301052368358732,
+      "by_clan": {
+        "CL00002": 0.14787728841104378,
+        "CL00003": 0.13211631224750844,
+        "CL00013": 0.06175889328063241,
+        "CL00041": 0.20080321285140562,
+        "CL00114": 0.2724969116273464
+      }
+    },
+    "control_88_seed1729": {
+      "mean_record_pair_f1": 0.12957349423006648,
+      "mean_clan_pair_f1": 0.1341361087924944,
+      "by_clan": {
+        "CL00002": 0.07149025803054239,
+        "CL00003": 0.15384911026557516,
+        "CL00013": 0.06066566392841991,
+        "CL00041": 0.16379310344827586,
+        "CL00114": 0.22088240828965866
+      }
+    },
+    "extended_105_seed1729": {
+      "mean_record_pair_f1": 0.1592602674440423,
+      "mean_clan_pair_f1": 0.16078979276044641,
+      "by_clan": {
+        "CL00002": 0.1579367796416752,
+        "CL00003": 0.16153971193124797,
+        "CL00013": 0.06830516559023346,
+        "CL00041": 0.17073170731707318,
+        "CL00114": 0.2454355993220022
+      }
+    },
+    "control_88_seed20261015": {
+      "mean_record_pair_f1": 0.130759114558505,
+      "mean_clan_pair_f1": 0.14795660058273893,
+      "by_clan": {
+        "CL00002": 0.09624423085065842,
+        "CL00003": 0.11764110360942814,
+        "CL00013": 0.0440883229972742,
+        "CL00041": 0.2597402597402597,
+        "CL00114": 0.22206908571607423
+      }
+    },
+    "extended_105_seed20261015": {
+      "mean_record_pair_f1": 0.1842206408565965,
+      "mean_clan_pair_f1": 0.18390031298480788,
+      "by_clan": {
+        "CL00002": 0.1554096800218233,
+        "CL00003": 0.19420623768350784,
+        "CL00013": 0.1246023053251969,
+        "CL00041": 0.18181818181818182,
+        "CL00114": 0.26346516007532955
+      }
+    }
+  },
+  "native_summaries": {
+    "LinearFold": {
+      "successful_count": 13,
+      "failed_count": 0,
+      "mean_record_pair_f1": 0.33010743167430895,
+      "mean_clan_pair_f1": 0.3726339879542124,
+      "by_clan": {
+        "CL00002": 0.28469765808821607,
+        "CL00003": 0.29442924542808196,
+        "CL00013": 0.33311202898917974,
+        "CL00041": 0.6490566037735849,
+        "CL00114": 0.3018744034919994
+      }
+    },
+    "ViennaRNA": {
+      "successful_count": 13,
+      "failed_count": 0,
+      "mean_record_pair_f1": 0.3346291105849216,
+      "mean_clan_pair_f1": 0.38158422288429056,
+      "by_clan": {
+        "CL00002": 0.28469765808821607,
+        "CL00003": 0.2991834021372903,
+        "CL00013": 0.33537319787375836,
+        "CL00041": 0.6867924528301886,
+        "CL00114": 0.3018744034919994
+      }
+    }
+  },
+  "paired_extended_minus_control": {
+    "7": {
+      "mean_record_pair_f1": -0.006397184459327271,
+      "mean_clan_pair_f1": -0.03419530141920343
+    },
+    "1729": {
+      "mean_record_pair_f1": 0.029686773213975837,
+      "mean_clan_pair_f1": 0.026653683967952008
+    },
+    "20261015": {
+      "mean_record_pair_f1": 0.053461526298091505,
+      "mean_clan_pair_f1": 0.03594371240206895
+    }
+  },
+  "independent_test_claim": false
+}

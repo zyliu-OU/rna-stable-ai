@@ -1,0 +1,128 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/crw_rfam_batch_result_audit_runs/20261017T191101.601086Z",
+  "response_dir": "/home/zyliu/Documents/rna-stable-ai/results/crw_rfam_batch_protocol_runs/20261017T190950.011534Z/attempt1",
+  "policy": {
+    "sequence_match": "uppercase_exact_full_sequence",
+    "completion": "nonempty_searchSequence_and_closed_and_matching_jobId",
+    "all_hits_retained": true,
+    "evalue_filter_for_clan_summary": 1e-05,
+    "empty_response_means_zero_hits": false,
+    "single_family_claim_from_multiple_hits": false,
+    "model_inference_performed": false
+  },
+  "response_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/results/crw_rfam_13049_completed_response.json": "58a9fb0c4375825bf73c969020da679c12945ada68ee3731b8b47238adf66461",
+    "/home/zyliu/Documents/rna-stable-ai/results/crw_rfam_batch_protocol_runs/20261017T190950.011534Z/attempt1/bpRNA_CRW_3489.json": "d3c2c28ad4471b2d4d368b1d835e41eedea67d68ae73d1d51546237039da98f5",
+    "/home/zyliu/Documents/rna-stable-ai/results/crw_rfam_batch_protocol_runs/20261017T190950.011534Z/attempt1/bpRNA_CRW_54679.json": "89f7b3b00e2dc6196f543506bbe3d67f4f7c420b5122a83c7bcacdec4d132bff",
+    "/home/zyliu/Documents/rna-stable-ai/results/crw_rfam_batch_protocol_runs/20261017T190950.011534Z/attempt1/bpRNA_CRW_54684.json": "e5b046444951b2278710753371d5e4e431f1827c24c6a27ea992934573d5a59b",
+    "/home/zyliu/Documents/rna-stable-ai/results/crw_rfam_batch_protocol_runs/20261017T190950.011534Z/attempt1/bpRNA_CRW_55280.json": "7f5ac9931e91bd3c4b294e028a08295919cc16e272090d67c242a143d2a3e145",
+    "/home/zyliu/Documents/rna-stable-ai/results/crw_rfam_batch_protocol_runs/20261017T190950.011534Z/attempt1/bpRNA_CRW_55339.json": "3c713aa2e71e26c339a2e5ea3d74fae27ada7336072f090aed33b451be434a7c",
+    "/home/zyliu/Documents/rna-stable-ai/results/crw_rfam_batch_protocol_runs/20261017T190950.011534Z/attempt1/bpRNA_CRW_55396.json": "e671e41d0c7bb467b6e7cae663e8abd9b98aaf3aa8b9495d6e1b6812236fe426"
+  },
+  "records": [
+    {
+      "id": "bpRNA_CRW_13049",
+      "job_id": "infernal_cmscan-R20261017-195709-0511-4231837-p1m",
+      "status": "completed",
+      "sequence_verified": true,
+      "length_nt": 1411,
+      "returned_hit_count": 4,
+      "hits": [
+        {
+          "family_id": "RF00177",
+          "family_name": "SSU_rRNA_bacteria",
+          "clan_id": "CL00111",
+          "start": 1,
+          "end": 1411,
+          "score": 1417.4,
+          "evalue": 0.0
+        },
+        {
+          "family_id": "RF01959",
+          "family_name": "SSU_rRNA_archaea",
+          "clan_id": "CL00111",
+          "start": 1,
+          "end": 1411,
+          "score": 953.3,
+          "evalue": 4.8e-282
+        },
+        {
+          "family_id": "RF02542",
+          "family_name": "SSU_rRNA_microsporidia",
+          "clan_id": "CL00111",
+          "start": 1,
+          "end": 1411,
+          "score": 627.3,
+          "evalue": 5.5e-192
+        },
+        {
+          "family_id": "RF01960",
+          "family_name": "SSU_rRNA_eukarya",
+          "clan_id": "CL00111",
+          "start": 1,
+          "end": 1411,
+          "score": 611.2,
+          "evalue": 1.2e-183
+        }
+      ],
+      "strong_hit_clans": [
+        "CL00111"
+      ],
+      "single_strong_clan": "CL00111",
+      "unique_strong_family_hit": false,
+      "family_assignment_claim": false
+    },
+    {
+      "id": "bpRNA_CRW_3489",
+      "job_id": "infernal_cmscan-R20261017-200953-0824-56794459-p1m",
+      "status": "pending_or_unavailable",
+      "sequence_verified": false,
+      "family_assignment_claim": false,
+      "observed_empty_result": true
+    },
+    {
+      "id": "bpRNA_CRW_54679",
+      "job_id": "infernal_cmscan-R20261017-201000-0497-89634219-p1m",
+      "status": "pending_or_unavailable",
+      "sequence_verified": false,
+      "family_assignment_claim": false,
+      "observed_empty_result": true
+    },
+    {
+      "id": "bpRNA_CRW_54684",
+      "job_id": "infernal_cmscan-R20261017-201003-0982-58609298-p1m",
+      "status": "pending_or_unavailable",
+      "sequence_verified": false,
+      "family_assignment_claim": false,
+      "observed_empty_result": true
+    },
+    {
+      "id": "bpRNA_CRW_55280",
+      "job_id": "infernal_cmscan-R20261017-201008-0050-26483393-p1m",
+      "status": "pending_or_unavailable",
+      "sequence_verified": false,
+      "family_assignment_claim": false,
+      "observed_empty_result": true
+    },
+    {
+      "id": "bpRNA_CRW_55339",
+      "job_id": "infernal_cmscan-R20261017-201011-0228-40911142-p2m",
+      "status": "pending_or_unavailable",
+      "sequence_verified": false,
+      "family_assignment_claim": false,
+      "observed_empty_result": true
+    },
+    {
+      "id": "bpRNA_CRW_55396",
+      "job_id": "infernal_cmscan-R20261017-201014-0427-77809930-p1m",
+      "status": "pending_or_unavailable",
+      "sequence_verified": false,
+      "family_assignment_claim": false,
+      "observed_empty_result": true
+    }
+  ],
+  "completed_count": 1,
+  "single_strong_clan_count": 1,
+  "all_completed": false
+}

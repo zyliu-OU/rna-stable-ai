@@ -1,0 +1,542 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/bprna_long_origin_binding_v2_runs/20261017T185531.913009Z",
+  "records": [
+    {
+      "id": "bpRNA_CRW_13049",
+      "source_group": "CRW",
+      "sequence_sha256": "b2de625f69d295b3d5cdc1323cfff5924fc93aef91fa475db6006038acbb3a6f",
+      "length_nt": 1411,
+      "same_numeric_id_sql_rows": [
+        {
+          "sql_rna_id": 13049,
+          "sequence_sha256": "b2de625f69d295b3d5cdc1323cfff5924fc93aef91fa475db6006038acbb3a6f",
+          "length_nt": 1411,
+          "sequence_matches_selected": true
+        }
+      ],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 13049,
+          "sql_name": "bpRNA_CRW_13049",
+          "original_name": "Bacilli/DQ288677",
+          "original_accession_id": "DQ288677",
+          "rfam_family_id": null,
+          "rfam_member_id": null
+        }
+      ],
+      "same_name_and_sequence_origin": {
+        "sql_rna_id": 13049,
+        "sql_name": "bpRNA_CRW_13049",
+        "original_name": "Bacilli/DQ288677",
+        "original_accession_id": "DQ288677",
+        "rfam_family_id": null,
+        "rfam_member_id": null
+      },
+      "rfam_family_ids": [],
+      "family_assignment_ambiguous": false
+    },
+    {
+      "id": "bpRNA_CRW_3489",
+      "source_group": "CRW",
+      "sequence_sha256": "0b3352b4272d351415c192810fa5a2ce4398558076e0828c8ad9599a6c1477a9",
+      "length_nt": 1514,
+      "same_numeric_id_sql_rows": [
+        {
+          "sql_rna_id": 3489,
+          "sequence_sha256": "0b3352b4272d351415c192810fa5a2ce4398558076e0828c8ad9599a6c1477a9",
+          "length_nt": 1514,
+          "sequence_matches_selected": true
+        }
+      ],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 3489,
+          "sql_name": "bpRNA_CRW_3489",
+          "original_name": "Actinobacteria/DQ486130",
+          "original_accession_id": "DQ486130",
+          "rfam_family_id": null,
+          "rfam_member_id": null
+        }
+      ],
+      "same_name_and_sequence_origin": {
+        "sql_rna_id": 3489,
+        "sql_name": "bpRNA_CRW_3489",
+        "original_name": "Actinobacteria/DQ486130",
+        "original_accession_id": "DQ486130",
+        "rfam_family_id": null,
+        "rfam_member_id": null
+      },
+      "rfam_family_ids": [],
+      "family_assignment_ambiguous": false
+    },
+    {
+      "id": "bpRNA_CRW_54679",
+      "source_group": "CRW",
+      "sequence_sha256": "31c362de4a94aa828350e4450995f6e25628f3ec546868b04558cd5fd6e2695c",
+      "length_nt": 2474,
+      "same_numeric_id_sql_rows": [
+        {
+          "sql_rna_id": 54679,
+          "sequence_sha256": "31c362de4a94aa828350e4450995f6e25628f3ec546868b04558cd5fd6e2695c",
+          "length_nt": 2474,
+          "sequence_matches_selected": true
+        }
+      ],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 54679,
+          "sql_name": "bpRNA_CRW_54679",
+          "original_name": "a.I2.m.P.littoralis.B.LSU.1787",
+          "original_accession_id": "Z48620",
+          "rfam_family_id": null,
+          "rfam_member_id": null
+        }
+      ],
+      "same_name_and_sequence_origin": {
+        "sql_rna_id": 54679,
+        "sql_name": "bpRNA_CRW_54679",
+        "original_name": "a.I2.m.P.littoralis.B.LSU.1787",
+        "original_accession_id": "Z48620",
+        "rfam_family_id": null,
+        "rfam_member_id": null
+      },
+      "rfam_family_ids": [],
+      "family_assignment_ambiguous": false
+    },
+    {
+      "id": "bpRNA_CRW_54684",
+      "source_group": "CRW",
+      "sequence_sha256": "0cdff7565858a2ea8c856e394b21d21bae922d778489f999202bab1eab3533e5",
+      "length_nt": 2520,
+      "same_numeric_id_sql_rows": [
+        {
+          "sql_rna_id": 54684,
+          "sequence_sha256": "0cdff7565858a2ea8c856e394b21d21bae922d778489f999202bab1eab3533e5",
+          "length_nt": 2520,
+          "sequence_matches_selected": true
+        }
+      ],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 54684,
+          "sql_name": "bpRNA_CRW_54684",
+          "original_name": "a.I2.m.S.cerevisiae.A.OX1.i1",
+          "original_accession_id": "V00694",
+          "rfam_family_id": null,
+          "rfam_member_id": null
+        },
+        {
+          "sql_rna_id": 55587,
+          "sql_name": "bpRNA_CRW_55587",
+          "original_name": "h.I2.m.S.cerevisiae.A.OX1.i1.hlxnum",
+          "original_accession_id": "V00694",
+          "rfam_family_id": null,
+          "rfam_member_id": null
+        },
+        {
+          "sql_rna_id": 55599,
+          "sql_name": "bpRNA_CRW_55599",
+          "original_name": "s.I2.m.S.cerevisiae.A.OX1.i1.schem",
+          "original_accession_id": "V00694",
+          "rfam_family_id": null,
+          "rfam_member_id": null
+        }
+      ],
+      "same_name_and_sequence_origin": {
+        "sql_rna_id": 54684,
+        "sql_name": "bpRNA_CRW_54684",
+        "original_name": "a.I2.m.S.cerevisiae.A.OX1.i1",
+        "original_accession_id": "V00694",
+        "rfam_family_id": null,
+        "rfam_member_id": null
+      },
+      "rfam_family_ids": [],
+      "family_assignment_ambiguous": false
+    },
+    {
+      "id": "bpRNA_CRW_55280",
+      "source_group": "CRW",
+      "sequence_sha256": "5e87299fd48528342ddc27507cd67b35bd555e5933fd71516eac286c91f9ca11",
+      "length_nt": 2896,
+      "same_numeric_id_sql_rows": [
+        {
+          "sql_rna_id": 55280,
+          "sequence_sha256": "5e87299fd48528342ddc27507cd67b35bd555e5933fd71516eac286c91f9ca11",
+          "length_nt": 2896,
+          "sequence_matches_selected": true
+        }
+      ],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 55280,
+          "sql_name": "bpRNA_CRW_55280",
+          "original_name": "d.233.b.C.botulinum.a",
+          "original_accession_id": "X65602",
+          "rfam_family_id": null,
+          "rfam_member_id": null
+        },
+        {
+          "sql_rna_id": 55355,
+          "sql_name": "bpRNA_CRW_55355",
+          "original_name": "d.235.b.C.botulinum.a",
+          "original_accession_id": "X65602",
+          "rfam_family_id": null,
+          "rfam_member_id": null
+        }
+      ],
+      "same_name_and_sequence_origin": {
+        "sql_rna_id": 55280,
+        "sql_name": "bpRNA_CRW_55280",
+        "original_name": "d.233.b.C.botulinum.a",
+        "original_accession_id": "X65602",
+        "rfam_family_id": null,
+        "rfam_member_id": null
+      },
+      "rfam_family_ids": [],
+      "family_assignment_ambiguous": false
+    },
+    {
+      "id": "bpRNA_CRW_55339",
+      "source_group": "CRW",
+      "sequence_sha256": "23429f55014dacc91e7ff128aaea6cc9b8adf8a3909f74dd77453fe2fd5b9e30",
+      "length_nt": 2925,
+      "same_numeric_id_sql_rows": [
+        {
+          "sql_rna_id": 55339,
+          "sequence_sha256": "23429f55014dacc91e7ff128aaea6cc9b8adf8a3909f74dd77453fe2fd5b9e30",
+          "length_nt": 2925,
+          "sequence_matches_selected": true
+        }
+      ],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 55264,
+          "sql_name": "bpRNA_CRW_55264",
+          "original_name": "d.233.a.H.marismortui.1",
+          "original_accession_id": "X13738",
+          "rfam_family_id": null,
+          "rfam_member_id": null
+        },
+        {
+          "sql_rna_id": 55339,
+          "sql_name": "bpRNA_CRW_55339",
+          "original_name": "d.235.a.H.marismortui.1",
+          "original_accession_id": "X13738",
+          "rfam_family_id": null,
+          "rfam_member_id": null
+        }
+      ],
+      "same_name_and_sequence_origin": {
+        "sql_rna_id": 55339,
+        "sql_name": "bpRNA_CRW_55339",
+        "original_name": "d.235.a.H.marismortui.1",
+        "original_accession_id": "X13738",
+        "rfam_family_id": null,
+        "rfam_member_id": null
+      },
+      "rfam_family_ids": [],
+      "family_assignment_ambiguous": false
+    },
+    {
+      "id": "bpRNA_CRW_55396",
+      "source_group": "CRW",
+      "sequence_sha256": "45a28d631464aa371255619307d4d9397ad4298b5806abaa8a55d535bc42c007",
+      "length_nt": 3946,
+      "same_numeric_id_sql_rows": [
+        {
+          "sql_rna_id": 55396,
+          "sequence_sha256": "45a28d631464aa371255619307d4d9397ad4298b5806abaa8a55d535bc42c007",
+          "length_nt": 3946,
+          "sequence_matches_selected": true
+        }
+      ],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 55321,
+          "sql_name": "bpRNA_CRW_55321",
+          "original_name": "d.233.e.P.falciparum.A",
+          "original_accession_id": "NA",
+          "rfam_family_id": null,
+          "rfam_member_id": null
+        },
+        {
+          "sql_rna_id": 55396,
+          "sql_name": "bpRNA_CRW_55396",
+          "original_name": "d.235.e.P.falciparum.A",
+          "original_accession_id": "NA",
+          "rfam_family_id": null,
+          "rfam_member_id": null
+        }
+      ],
+      "same_name_and_sequence_origin": {
+        "sql_rna_id": 55396,
+        "sql_name": "bpRNA_CRW_55396",
+        "original_name": "d.235.e.P.falciparum.A",
+        "original_accession_id": "NA",
+        "rfam_family_id": null,
+        "rfam_member_id": null
+      },
+      "rfam_family_ids": [],
+      "family_assignment_ambiguous": false
+    },
+    {
+      "id": "bpRNA_RFAM_22603",
+      "source_group": "RFAM",
+      "sequence_sha256": "69aa157da8cebcc79a8928ff8f5a4cdd00ed43e213f088b19f7942762f09b5fd",
+      "length_nt": 1158,
+      "same_numeric_id_sql_rows": [
+        {
+          "sql_rna_id": 69678,
+          "sequence_sha256": "0365df8f36f08282cfdba5bf5a280d36e7f8418cad171a23ce6d839d424dc991",
+          "length_nt": 133,
+          "sequence_matches_selected": false
+        }
+      ],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 80979,
+          "sql_name": "bpRNA_RFAM_45205",
+          "original_name": "RF01050_AAEG01000107.1_89228-88071",
+          "original_accession_id": null,
+          "rfam_family_id": "RF01050",
+          "rfam_member_id": "AAEG01000107.1_89228-88071"
+        }
+      ],
+      "same_name_and_sequence_origin": null,
+      "rfam_family_ids": [
+        "RF01050"
+      ],
+      "family_assignment_ambiguous": false
+    },
+    {
+      "id": "bpRNA_RFAM_43068",
+      "source_group": "RFAM",
+      "sequence_sha256": "00a2c708d0cace6aeacecfdcef9089e97867b1a896d21971536fc2608fb435d7",
+      "length_nt": 1391,
+      "same_numeric_id_sql_rows": [],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 101444,
+          "sql_name": "bpRNA_RFAM_86135",
+          "original_name": "RF02542_AY230191.1_1-1391",
+          "original_accession_id": null,
+          "rfam_family_id": "RF02542",
+          "rfam_member_id": "AY230191.1_1-1391"
+        }
+      ],
+      "same_name_and_sequence_origin": null,
+      "rfam_family_ids": [
+        "RF02542"
+      ],
+      "family_assignment_ambiguous": false
+    },
+    {
+      "id": "bpRNA_RFAM_37081",
+      "source_group": "RFAM",
+      "sequence_sha256": "b4898d7b9a7cec1fcf8386c10d402a4ca47afde4091f0be6aa2b4ef7985c49b3",
+      "length_nt": 1472,
+      "same_numeric_id_sql_rows": [
+        {
+          "sql_rna_id": 76917,
+          "sequence_sha256": "d7a2e02682fde6bc9cc0f7043612638741c6ac3deb821542bbfcb5b3ca2c7d38",
+          "length_nt": 190,
+          "sequence_matches_selected": false
+        }
+      ],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 95457,
+          "sql_name": "bpRNA_RFAM_74161",
+          "original_name": "RF01960_AF484694.1_1-1472",
+          "original_accession_id": null,
+          "rfam_family_id": "RF01960",
+          "rfam_member_id": "AF484694.1_1-1472"
+        },
+        {
+          "sql_rna_id": 101429,
+          "sql_name": "bpRNA_RFAM_86105",
+          "original_name": "RF02542_AF484694.1_1-1472",
+          "original_accession_id": null,
+          "rfam_family_id": "RF02542",
+          "rfam_member_id": "AF484694.1_1-1472"
+        }
+      ],
+      "same_name_and_sequence_origin": null,
+      "rfam_family_ids": [
+        "RF01960",
+        "RF02542"
+      ],
+      "family_assignment_ambiguous": true
+    },
+    {
+      "id": "bpRNA_RFAM_9534",
+      "source_group": "RFAM",
+      "sequence_sha256": "3bfc30a7d834805292bcd2f2a1835e6232844a5ac255ebf6b49f2cfde9c2149e",
+      "length_nt": 1499,
+      "same_numeric_id_sql_rows": [],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 67910,
+          "sql_name": "bpRNA_RFAM_19067",
+          "original_name": "RF00177_CP001792.1_2381215-2382713",
+          "original_accession_id": null,
+          "rfam_family_id": "RF00177",
+          "rfam_member_id": "CP001792.1_2381215-2382713"
+        }
+      ],
+      "same_name_and_sequence_origin": null,
+      "rfam_family_ids": [
+        "RF00177"
+      ],
+      "family_assignment_ambiguous": false
+    },
+    {
+      "id": "bpRNA_RFAM_36983",
+      "source_group": "RFAM",
+      "sequence_sha256": "36d57055d0245b3f4c6c8d41420d25c958f8334761f2b021fa805d23215dc5d2",
+      "length_nt": 1500,
+      "same_numeric_id_sql_rows": [
+        {
+          "sql_rna_id": 76868,
+          "sequence_sha256": "d9ad7540941ea0d0be48ed3f5bd77be43ffe2faad224f59ccae8d6fa42dfcd40",
+          "length_nt": 96,
+          "sequence_matches_selected": false
+        }
+      ],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 95359,
+          "sql_name": "bpRNA_RFAM_73965",
+          "original_name": "RF01959_AJ318041.1_1-1500",
+          "original_accession_id": null,
+          "rfam_family_id": "RF01959",
+          "rfam_member_id": "AJ318041.1_1-1500"
+        }
+      ],
+      "same_name_and_sequence_origin": null,
+      "rfam_family_ids": [
+        "RF01959"
+      ],
+      "family_assignment_ambiguous": false
+    },
+    {
+      "id": "bpRNA_RFAM_9548",
+      "source_group": "RFAM",
+      "sequence_sha256": "32f6dd96d68ca7c6fccad10562ed054f4c961800f8a85d06ced4f647cb611885",
+      "length_nt": 1543,
+      "same_numeric_id_sql_rows": [],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 67924,
+          "sql_name": "bpRNA_RFAM_19095",
+          "original_name": "RF00177_CP002901.1_268218-269760",
+          "original_accession_id": null,
+          "rfam_family_id": "RF00177",
+          "rfam_member_id": "CP002901.1_268218-269760"
+        }
+      ],
+      "same_name_and_sequence_origin": null,
+      "rfam_family_ids": [
+        "RF00177"
+      ],
+      "family_assignment_ambiguous": false
+    },
+    {
+      "id": "bpRNA_RFAM_37088",
+      "source_group": "RFAM",
+      "sequence_sha256": "def1d146936fed6cea9d7213abab76119743a2496cb66389d06393ac2336f8ad",
+      "length_nt": 1810,
+      "same_numeric_id_sql_rows": [],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 95464,
+          "sql_name": "bpRNA_RFAM_74175",
+          "original_name": "RF01960_AJ564772.1_7-1816",
+          "original_accession_id": null,
+          "rfam_family_id": "RF01960",
+          "rfam_member_id": "AJ564772.1_7-1816"
+        }
+      ],
+      "same_name_and_sequence_origin": null,
+      "rfam_family_ids": [
+        "RF01960"
+      ],
+      "family_assignment_ambiguous": false
+    },
+    {
+      "id": "bpRNA_RFAM_43010",
+      "source_group": "RFAM",
+      "sequence_sha256": "cdbb92c23edb24a8c723a196a3bdc918121a89e094e599a1a4069d3941b70240",
+      "length_nt": 2704,
+      "same_numeric_id_sql_rows": [],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 101386,
+          "sql_name": "bpRNA_RFAM_86019",
+          "original_name": "RF02541_EU795181.1_8234-5531",
+          "original_accession_id": null,
+          "rfam_family_id": "RF02541",
+          "rfam_member_id": "EU795181.1_8234-5531"
+        }
+      ],
+      "same_name_and_sequence_origin": null,
+      "rfam_family_ids": [
+        "RF02541"
+      ],
+      "family_assignment_ambiguous": false
+    },
+    {
+      "id": "bpRNA_RFAM_42980",
+      "source_group": "RFAM",
+      "sequence_sha256": "d75f54476db62df137dacea94c72d9f3ec23460df44ef5c9427910f0598b07f9",
+      "length_nt": 2941,
+      "same_numeric_id_sql_rows": [],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 101356,
+          "sql_name": "bpRNA_RFAM_85959",
+          "original_name": "RF02541_CP001364.1_4913263-4910323",
+          "original_accession_id": null,
+          "rfam_family_id": "RF02541",
+          "rfam_member_id": "CP001364.1_4913263-4910323"
+        }
+      ],
+      "same_name_and_sequence_origin": null,
+      "rfam_family_ids": [
+        "RF02541"
+      ],
+      "family_assignment_ambiguous": false
+    },
+    {
+      "id": "bpRNA_RFAM_43122",
+      "source_group": "RFAM",
+      "sequence_sha256": "0eaa19e596fd12e48fc70995a3d770317b8d3936bd7a0d71e9310582dcadf7d3",
+      "length_nt": 3995,
+      "same_numeric_id_sql_rows": [],
+      "sequence_bound_origins": [
+        {
+          "sql_rna_id": 101498,
+          "sql_name": "bpRNA_RFAM_86243",
+          "original_name": "RF02543_AF083031.2_4931-937",
+          "original_accession_id": null,
+          "rfam_family_id": "RF02543",
+          "rfam_member_id": "AF083031.2_4931-937"
+        }
+      ],
+      "same_name_and_sequence_origin": null,
+      "rfam_family_ids": [
+        "RF02543"
+      ],
+      "family_assignment_ambiguous": false
+    }
+  ],
+  "selected_count": 17,
+  "parsed_sql_rows": 98873,
+  "crw_origin_bound_count": 7,
+  "rfam_unique_family_count": 9,
+  "rfam_ambiguous_family_count": 1,
+  "same_numeric_id_mismatch_count": 3,
+  "development_only": true,
+  "independent_test_claim": false
+}

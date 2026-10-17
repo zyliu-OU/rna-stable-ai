@@ -1,0 +1,1107 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/long_training_reference_segment_audit_runs/20261017T185041.371852Z",
+  "records": [
+    {
+      "id": "bpRNA_CRW_13049",
+      "source_group": "CRW",
+      "length_nt": 1411,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 156,
+          "best_reference_id": "RF00177:CP000159.1/3330048-3328509",
+          "best_reference_family_id": "RF00177",
+          "families_with_any_shared_segment": [
+            "RF00177",
+            "RF02542"
+          ]
+        },
+        "30": {
+          "max_shared_distinct_segments": 77,
+          "best_reference_id": "RF00177:CP000159.1/3330048-3328509",
+          "best_reference_family_id": "RF00177",
+          "families_with_any_shared_segment": [
+            "RF00177"
+          ]
+        },
+        "40": {
+          "max_shared_distinct_segments": 41,
+          "best_reference_id": "RF00177:CP000159.1/3330048-3328509",
+          "best_reference_family_id": "RF00177",
+          "families_with_any_shared_segment": [
+            "RF00177"
+          ]
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bpRNA_CRW_3489",
+      "source_group": "CRW",
+      "length_nt": 1514,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 127,
+          "best_reference_id": "RF00177:CP000159.1/3330048-3328509",
+          "best_reference_family_id": "RF00177",
+          "families_with_any_shared_segment": [
+            "RF00177",
+            "RF02542"
+          ]
+        },
+        "30": {
+          "max_shared_distinct_segments": 58,
+          "best_reference_id": "RF00177:CP000159.1/3330048-3328509",
+          "best_reference_family_id": "RF00177",
+          "families_with_any_shared_segment": [
+            "RF00177"
+          ]
+        },
+        "40": {
+          "max_shared_distinct_segments": 27,
+          "best_reference_id": "RF00177:CP000159.1/3330048-3328509",
+          "best_reference_family_id": "RF00177",
+          "families_with_any_shared_segment": [
+            "RF00177"
+          ]
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bpRNA_CRW_54679",
+      "source_group": "CRW",
+      "length_nt": 2474,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 0,
+          "best_reference_id": null,
+          "best_reference_family_id": null,
+          "families_with_any_shared_segment": []
+        },
+        "30": {
+          "max_shared_distinct_segments": 0,
+          "best_reference_id": null,
+          "best_reference_family_id": null,
+          "families_with_any_shared_segment": []
+        },
+        "40": {
+          "max_shared_distinct_segments": 0,
+          "best_reference_id": null,
+          "best_reference_family_id": null,
+          "families_with_any_shared_segment": []
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bpRNA_CRW_54684",
+      "source_group": "CRW",
+      "length_nt": 2520,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 0,
+          "best_reference_id": null,
+          "best_reference_family_id": null,
+          "families_with_any_shared_segment": []
+        },
+        "30": {
+          "max_shared_distinct_segments": 0,
+          "best_reference_id": null,
+          "best_reference_family_id": null,
+          "families_with_any_shared_segment": []
+        },
+        "40": {
+          "max_shared_distinct_segments": 0,
+          "best_reference_id": null,
+          "best_reference_family_id": null,
+          "families_with_any_shared_segment": []
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bpRNA_CRW_55280",
+      "source_group": "CRW",
+      "length_nt": 2896,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 167,
+          "best_reference_id": "RF02541:CP001146.1/625787-628802",
+          "best_reference_family_id": "RF02541",
+          "families_with_any_shared_segment": [
+            "RF02540",
+            "RF02541"
+          ]
+        },
+        "30": {
+          "max_shared_distinct_segments": 68,
+          "best_reference_id": "RF02541:CP001146.1/625787-628802",
+          "best_reference_family_id": "RF02541",
+          "families_with_any_shared_segment": [
+            "RF02541"
+          ]
+        },
+        "40": {
+          "max_shared_distinct_segments": 35,
+          "best_reference_id": "RF02541:ADVG01000004.1/1322171-1319199",
+          "best_reference_family_id": "RF02541",
+          "families_with_any_shared_segment": [
+            "RF02541"
+          ]
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bpRNA_CRW_55339",
+      "source_group": "CRW",
+      "length_nt": 2925,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 26,
+          "best_reference_id": "RF02540:AE009439.1/585271-588370",
+          "best_reference_family_id": "RF02540",
+          "families_with_any_shared_segment": [
+            "RF02540",
+            "RF02541"
+          ]
+        },
+        "30": {
+          "max_shared_distinct_segments": 7,
+          "best_reference_id": "RF02540:AE009439.1/585271-588370",
+          "best_reference_family_id": "RF02540",
+          "families_with_any_shared_segment": [
+            "RF02540"
+          ]
+        },
+        "40": {
+          "max_shared_distinct_segments": 0,
+          "best_reference_id": null,
+          "best_reference_family_id": null,
+          "families_with_any_shared_segment": []
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bpRNA_CRW_55396",
+      "source_group": "CRW",
+      "length_nt": 3946,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 21,
+          "best_reference_id": "RF02540:AE009439.1/585271-588370",
+          "best_reference_family_id": "RF02540",
+          "families_with_any_shared_segment": [
+            "RF02540",
+            "RF02541"
+          ]
+        },
+        "30": {
+          "max_shared_distinct_segments": 10,
+          "best_reference_id": "RF02540:AE000666.1/1604009-1607048",
+          "best_reference_family_id": "RF02540",
+          "families_with_any_shared_segment": [
+            "RF02540"
+          ]
+        },
+        "40": {
+          "max_shared_distinct_segments": 0,
+          "best_reference_id": null,
+          "best_reference_family_id": null,
+          "families_with_any_shared_segment": []
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bpRNA_RFAM_22603",
+      "source_group": "RFAM",
+      "length_nt": 1158,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 0,
+          "best_reference_id": null,
+          "best_reference_family_id": null,
+          "families_with_any_shared_segment": []
+        },
+        "30": {
+          "max_shared_distinct_segments": 0,
+          "best_reference_id": null,
+          "best_reference_family_id": null,
+          "families_with_any_shared_segment": []
+        },
+        "40": {
+          "max_shared_distinct_segments": 0,
+          "best_reference_id": null,
+          "best_reference_family_id": null,
+          "families_with_any_shared_segment": []
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bpRNA_RFAM_43068",
+      "source_group": "RFAM",
+      "length_nt": 1391,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 210,
+          "best_reference_id": "RF02542:AF024658.1/1-1399",
+          "best_reference_family_id": "RF02542",
+          "families_with_any_shared_segment": [
+            "RF00177",
+            "RF02542"
+          ]
+        },
+        "30": {
+          "max_shared_distinct_segments": 132,
+          "best_reference_id": "RF02542:AF024658.1/1-1399",
+          "best_reference_family_id": "RF02542",
+          "families_with_any_shared_segment": [
+            "RF02542"
+          ]
+        },
+        "40": {
+          "max_shared_distinct_segments": 88,
+          "best_reference_id": "RF02542:AF024658.1/1-1399",
+          "best_reference_family_id": "RF02542",
+          "families_with_any_shared_segment": [
+            "RF02542"
+          ]
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bpRNA_RFAM_37081",
+      "source_group": "RFAM",
+      "length_nt": 1472,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 98,
+          "best_reference_id": "RF02542:AF024658.1/1-1399",
+          "best_reference_family_id": "RF02542",
+          "families_with_any_shared_segment": [
+            "RF00177",
+            "RF02542"
+          ]
+        },
+        "30": {
+          "max_shared_distinct_segments": 37,
+          "best_reference_id": "RF02542:AF024658.1/1-1399",
+          "best_reference_family_id": "RF02542",
+          "families_with_any_shared_segment": [
+            "RF02542"
+          ]
+        },
+        "40": {
+          "max_shared_distinct_segments": 13,
+          "best_reference_id": "RF02542:AF024658.1/1-1399",
+          "best_reference_family_id": "RF02542",
+          "families_with_any_shared_segment": [
+            "RF02542"
+          ]
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bpRNA_RFAM_9534",
+      "source_group": "RFAM",
+      "length_nt": 1499,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 132,
+          "best_reference_id": "RF00177:CP000159.1/3330048-3328509",
+          "best_reference_family_id": "RF00177",
+          "families_with_any_shared_segment": [
+            "RF00177",
+            "RF02542"
+          ]
+        },
+        "30": {
+          "max_shared_distinct_segments": 69,
+          "best_reference_id": "RF00177:CP002683.1/865959-864386",
+          "best_reference_family_id": "RF00177",
+          "families_with_any_shared_segment": [
+            "RF00177"
+          ]
+        },
+        "40": {
+          "max_shared_distinct_segments": 40,
+          "best_reference_id": "RF00177:CP002683.1/865959-864386",
+          "best_reference_family_id": "RF00177",
+          "families_with_any_shared_segment": [
+            "RF00177"
+          ]
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bpRNA_RFAM_36983",
+      "source_group": "RFAM",
+      "length_nt": 1500,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 22,
+          "best_reference_id": "RF00177:CP000159.1/3330048-3328509",
+          "best_reference_family_id": "RF00177",
+          "families_with_any_shared_segment": [
+            "RF00177"
+          ]
+        },
+        "30": {
+          "max_shared_distinct_segments": 12,
+          "best_reference_id": "RF00177:CP000159.1/3330048-3328509",
+          "best_reference_family_id": "RF00177",
+          "families_with_any_shared_segment": [
+            "RF00177"
+          ]
+        },
+        "40": {
+          "max_shared_distinct_segments": 2,
+          "best_reference_id": "RF00177:CP000159.1/3330048-3328509",
+          "best_reference_family_id": "RF00177",
+          "families_with_any_shared_segment": [
+            "RF00177"
+          ]
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bpRNA_RFAM_9548",
+      "source_group": "RFAM",
+      "length_nt": 1543,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 129,
+          "best_reference_id": "RF00177:CP000159.1/3330048-3328509",
+          "best_reference_family_id": "RF00177",
+          "families_with_any_shared_segment": [
+            "RF00177"
+          ]
+        },
+        "30": {
+          "max_shared_distinct_segments": 72,
+          "best_reference_id": "RF00177:CP000159.1/3330048-3328509",
+          "best_reference_family_id": "RF00177",
+          "families_with_any_shared_segment": [
+            "RF00177"
+          ]
+        },
+        "40": {
+          "max_shared_distinct_segments": 32,
+          "best_reference_id": "RF00177:CP000159.1/3330048-3328509",
+          "best_reference_family_id": "RF00177",
+          "families_with_any_shared_segment": [
+            "RF00177"
+          ]
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bpRNA_RFAM_37088",
+      "source_group": "RFAM",
+      "length_nt": 1810,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 26,
+          "best_reference_id": "RF02542:AF024658.1/1-1399",
+          "best_reference_family_id": "RF02542",
+          "families_with_any_shared_segment": [
+            "RF00177",
+            "RF02542"
+          ]
+        },
+        "30": {
+          "max_shared_distinct_segments": 16,
+          "best_reference_id": "RF02542:AF024658.1/1-1399",
+          "best_reference_family_id": "RF02542",
+          "families_with_any_shared_segment": [
+            "RF02542"
+          ]
+        },
+        "40": {
+          "max_shared_distinct_segments": 6,
+          "best_reference_id": "RF02542:AF024658.1/1-1399",
+          "best_reference_family_id": "RF02542",
+          "families_with_any_shared_segment": [
+            "RF02542"
+          ]
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bpRNA_RFAM_43010",
+      "source_group": "RFAM",
+      "length_nt": 2704,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 21,
+          "best_reference_id": "RF02541:ADVG01000004.1/1322171-1319199",
+          "best_reference_family_id": "RF02541",
+          "families_with_any_shared_segment": [
+            "RF02540",
+            "RF02541"
+          ]
+        },
+        "30": {
+          "max_shared_distinct_segments": 1,
+          "best_reference_id": "RF02541:ADVG01000004.1/1322171-1319199",
+          "best_reference_family_id": "RF02541",
+          "families_with_any_shared_segment": [
+            "RF02541"
+          ]
+        },
+        "40": {
+          "max_shared_distinct_segments": 0,
+          "best_reference_id": null,
+          "best_reference_family_id": null,
+          "families_with_any_shared_segment": []
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bpRNA_RFAM_42980",
+      "source_group": "RFAM",
+      "length_nt": 2941,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 208,
+          "best_reference_id": "RF02541:ADVG01000004.1/1322171-1319199",
+          "best_reference_family_id": "RF02541",
+          "families_with_any_shared_segment": [
+            "RF02540",
+            "RF02541"
+          ]
+        },
+        "30": {
+          "max_shared_distinct_segments": 126,
+          "best_reference_id": "RF02541:ADVG01000004.1/1322171-1319199",
+          "best_reference_family_id": "RF02541",
+          "families_with_any_shared_segment": [
+            "RF02541"
+          ]
+        },
+        "40": {
+          "max_shared_distinct_segments": 89,
+          "best_reference_id": "RF02541:ADVG01000004.1/1322171-1319199",
+          "best_reference_family_id": "RF02541",
+          "families_with_any_shared_segment": [
+            "RF02541"
+          ]
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "bpRNA_RFAM_43122",
+      "source_group": "RFAM",
+      "length_nt": 3995,
+      "by_length": {
+        "20": {
+          "max_shared_distinct_segments": 32,
+          "best_reference_id": "RF02540:AE009439.1/585271-588370",
+          "best_reference_family_id": "RF02540",
+          "families_with_any_shared_segment": [
+            "RF02540",
+            "RF02541"
+          ]
+        },
+        "30": {
+          "max_shared_distinct_segments": 11,
+          "best_reference_id": "RF02540:AE009439.1/585271-588370",
+          "best_reference_family_id": "RF02540",
+          "families_with_any_shared_segment": [
+            "RF02540"
+          ]
+        },
+        "40": {
+          "max_shared_distinct_segments": 0,
+          "best_reference_id": null,
+          "best_reference_family_id": null,
+          "families_with_any_shared_segment": []
+        }
+      },
+      "shuffle30_maxima": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "records_with_any_shared_segment": {
+    "20": 14,
+    "30": 14,
+    "40": 10
+  },
+  "highest_shuffle_30_segment_overlap": 0,
+  "train_count": 17,
+  "development_count": 11,
+  "family_assignment_claim": false,
+  "independent_test_claim": false
+}

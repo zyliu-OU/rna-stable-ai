@@ -1,0 +1,209 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/long_score_offset_runs/20261017T184134.981159Z",
+  "component_summaries": {
+    "control_88_seed7": {
+      "-0.5": {
+        "mean_record_pair_f1": 0.29683393219541154,
+        "total_predicted_pairs": 7136,
+        "total_shared_pairs": 2163,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 7.213713201999781
+      },
+      "0.0": {
+        "mean_record_pair_f1": 0.3057653204008934,
+        "total_predicted_pairs": 7983,
+        "total_shared_pairs": 2375,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 9.324318927000036
+      },
+      "0.5": {
+        "mean_record_pair_f1": 0.325478562185815,
+        "total_predicted_pairs": 8182,
+        "total_shared_pairs": 2541,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 9.337983989999657
+      },
+      "1.0": {
+        "mean_record_pair_f1": 0.2962524702589131,
+        "total_predicted_pairs": 8316,
+        "total_shared_pairs": 2349,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 9.503693240999837
+      }
+    },
+    "extended_105_seed7": {
+      "-0.5": {
+        "mean_record_pair_f1": 0.30711168370639785,
+        "total_predicted_pairs": 6844,
+        "total_shared_pairs": 2169,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 4.75483152199979
+      },
+      "0.0": {
+        "mean_record_pair_f1": 0.3227726856181959,
+        "total_predicted_pairs": 7690,
+        "total_shared_pairs": 2392,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 6.774413568999762
+      },
+      "0.5": {
+        "mean_record_pair_f1": 0.31336936843371505,
+        "total_predicted_pairs": 7946,
+        "total_shared_pairs": 2386,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 6.984537247999697
+      },
+      "1.0": {
+        "mean_record_pair_f1": 0.3164678408838025,
+        "total_predicted_pairs": 8086,
+        "total_shared_pairs": 2431,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 7.1337714960000085
+      }
+    },
+    "control_88_seed1729": {
+      "-0.5": {
+        "mean_record_pair_f1": 0.23671783789185552,
+        "total_predicted_pairs": 5348,
+        "total_shared_pairs": 1515,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 5.803313260000095
+      },
+      "0.0": {
+        "mean_record_pair_f1": 0.267849393724248,
+        "total_predicted_pairs": 6377,
+        "total_shared_pairs": 1864,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 7.732609710999668
+      },
+      "0.5": {
+        "mean_record_pair_f1": 0.2679619210610729,
+        "total_predicted_pairs": 6654,
+        "total_shared_pairs": 1894,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 7.776694304000102
+      },
+      "1.0": {
+        "mean_record_pair_f1": 0.26667697296275406,
+        "total_predicted_pairs": 6778,
+        "total_shared_pairs": 1912,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 7.773376960999826
+      }
+    },
+    "extended_105_seed1729": {
+      "-0.5": {
+        "mean_record_pair_f1": 0.294871085892749,
+        "total_predicted_pairs": 6952,
+        "total_shared_pairs": 2125,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 6.595125579000069
+      },
+      "0.0": {
+        "mean_record_pair_f1": 0.30142173999317645,
+        "total_predicted_pairs": 7736,
+        "total_shared_pairs": 2302,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 8.696478036000372
+      },
+      "0.5": {
+        "mean_record_pair_f1": 0.30633782946266136,
+        "total_predicted_pairs": 7944,
+        "total_shared_pairs": 2377,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 8.533846750000066
+      },
+      "1.0": {
+        "mean_record_pair_f1": 0.3132597443812502,
+        "total_predicted_pairs": 8094,
+        "total_shared_pairs": 2433,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 8.721110243999988
+      }
+    },
+    "control_88_seed20261015": {
+      "-0.5": {
+        "mean_record_pair_f1": 0.25332462571356057,
+        "total_predicted_pairs": 5387,
+        "total_shared_pairs": 1616,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 5.661642979999897
+      },
+      "0.0": {
+        "mean_record_pair_f1": 0.2930884609882846,
+        "total_predicted_pairs": 6685,
+        "total_shared_pairs": 2043,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 7.852177165000057
+      },
+      "0.5": {
+        "mean_record_pair_f1": 0.29657488845970303,
+        "total_predicted_pairs": 6954,
+        "total_shared_pairs": 2096,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 7.864203101000157
+      },
+      "1.0": {
+        "mean_record_pair_f1": 0.2897833919673995,
+        "total_predicted_pairs": 7102,
+        "total_shared_pairs": 2077,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 7.96235502900015
+      }
+    },
+    "extended_105_seed20261015": {
+      "-0.5": {
+        "mean_record_pair_f1": 0.31842852875234495,
+        "total_predicted_pairs": 6716,
+        "total_shared_pairs": 2235,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 5.590478492999864
+      },
+      "0.0": {
+        "mean_record_pair_f1": 0.3126436512936653,
+        "total_predicted_pairs": 7702,
+        "total_shared_pairs": 2356,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 7.811900719000391
+      },
+      "0.5": {
+        "mean_record_pair_f1": 0.32573171629062136,
+        "total_predicted_pairs": 7963,
+        "total_shared_pairs": 2467,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 7.960389014000157
+      },
+      "1.0": {
+        "mean_record_pair_f1": 0.326843728208894,
+        "total_predicted_pairs": 8097,
+        "total_shared_pairs": 2488,
+        "total_reference_pairs": 7014,
+        "total_decode_seconds": 8.100214059000109
+      }
+    }
+  },
+  "peak_process_rss_kib": 721024,
+  "arms": [
+    "control_88",
+    "extended_105"
+  ],
+  "seeds": [
+    7,
+    1729,
+    20261015
+  ],
+  "candidate_limit": 64,
+  "score_offsets": [
+    -0.5,
+    0.0,
+    0.5,
+    1.0
+  ],
+  "decoder": "bounded_exact_sparse",
+  "checkpoint": "fixed_final_epoch",
+  "cohort_label_informed": true,
+  "development_only": true,
+  "independent_test_claim": false,
+  "model_defaults_changed": false
+}

@@ -1,0 +1,209 @@
+{
+  "complete": true,
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/bprna_five_clan_reference_screen_runs/20261017T191404.643416Z",
+  "policy": {
+    "stage": "conditional_five_clan_reference_feasibility",
+    "all_frozen_records_audited": true,
+    "failed_references_replaced": false,
+    "duplicate_sequence_structure_discordance": "unsupported",
+    "minimum_legal_canonical_pairs": 1,
+    "independent_test_claim": false,
+    "model_inference_performed": false
+  },
+  "selected_count": 13,
+  "supported_reference_count": 13,
+  "status_counts": {
+    "ok": 13
+  },
+  "rows": [
+    {
+      "id": "bpRNA_RFAM_5453",
+      "family_id": "RF00010",
+      "clan_id": "CL00002",
+      "length_nt": 400,
+      "status": "ok",
+      "source_match_count": 1,
+      "variant_structure_sha256": [
+        "cb5635761f915ecda82c0adc31898d4aef29bb8e16b4e715b712752e1ad1208f"
+      ],
+      "reference_pair_count": 108,
+      "legal_canonical_pairs": 96,
+      "errors": []
+    },
+    {
+      "id": "bpRNA_RFAM_5479",
+      "family_id": "RF00010",
+      "clan_id": "CL00002",
+      "length_nt": 417,
+      "status": "ok",
+      "source_match_count": 1,
+      "variant_structure_sha256": [
+        "8eb319a5494da35e8c494523908f64c1492195edcb1aeea38a5b98966b4cbfa9"
+      ],
+      "reference_pair_count": 108,
+      "legal_canonical_pairs": 33,
+      "errors": []
+    },
+    {
+      "id": "bpRNA_RFAM_5361",
+      "family_id": "RF00010",
+      "clan_id": "CL00002",
+      "length_nt": 520,
+      "status": "ok",
+      "source_match_count": 1,
+      "variant_structure_sha256": [
+        "885b8ac3e7283d780a292cdbbb49e975fa8721762c46d39a88c25edffffaf67a"
+      ],
+      "reference_pair_count": 109,
+      "legal_canonical_pairs": 97,
+      "errors": []
+    },
+    {
+      "id": "bpRNA_RFAM_53507",
+      "family_id": "RF01502",
+      "clan_id": "CL00003",
+      "length_nt": 402,
+      "status": "ok",
+      "source_match_count": 1,
+      "variant_structure_sha256": [
+        "0720b4d0da541f32b0e322c73b131cd394cefa6238561743ed2749b2ed8288a6"
+      ],
+      "reference_pair_count": 91,
+      "legal_canonical_pairs": 61,
+      "errors": []
+    },
+    {
+      "id": "bpRNA_RFAM_53569",
+      "family_id": "RF01502",
+      "clan_id": "CL00003",
+      "length_nt": 521,
+      "status": "ok",
+      "source_match_count": 1,
+      "variant_structure_sha256": [
+        "612fff934c847955196d4a796aed3a7ce5160c457b32bffbccff42b41d28faca"
+      ],
+      "reference_pair_count": 104,
+      "legal_canonical_pairs": 85,
+      "errors": []
+    },
+    {
+      "id": "bpRNA_RFAM_53561",
+      "family_id": "RF01502",
+      "clan_id": "CL00003",
+      "length_nt": 533,
+      "status": "ok",
+      "source_match_count": 1,
+      "variant_structure_sha256": [
+        "bb92b9e52691d375d72efab6cb52bb13209028c71baded6a513a2c51d34302ec"
+      ],
+      "reference_pair_count": 99,
+      "legal_canonical_pairs": 72,
+      "errors": []
+    },
+    {
+      "id": "bpRNA_RFAM_45541",
+      "family_id": "RF01052",
+      "clan_id": "CL00013",
+      "length_nt": 445,
+      "status": "ok",
+      "source_match_count": 1,
+      "variant_structure_sha256": [
+        "c7f2a273f9903f6cda79fdd91cb95248db8601902d822bf61adb3ce699ee3f4d"
+      ],
+      "reference_pair_count": 38,
+      "legal_canonical_pairs": 38,
+      "errors": []
+    },
+    {
+      "id": "bpRNA_RFAM_45543",
+      "family_id": "RF01052",
+      "clan_id": "CL00013",
+      "length_nt": 449,
+      "status": "ok",
+      "source_match_count": 2,
+      "variant_structure_sha256": [
+        "70ad214c70955c9697007a539d5e8211ee0e883a68a56875c786e890a0b2a23d"
+      ],
+      "reference_pair_count": 38,
+      "legal_canonical_pairs": 38,
+      "errors": []
+    },
+    {
+      "id": "bpRNA_RFAM_45563",
+      "family_id": "RF01052",
+      "clan_id": "CL00013",
+      "length_nt": 493,
+      "status": "ok",
+      "source_match_count": 1,
+      "variant_structure_sha256": [
+        "0dc6cfc7eeda9561f57409444c3ec98c21f19f573afa7ce55be7d67d04ae3554"
+      ],
+      "reference_pair_count": 38,
+      "legal_canonical_pairs": 38,
+      "errors": []
+    },
+    {
+      "id": "bpRNA_RFAM_49603",
+      "family_id": "RF01267",
+      "clan_id": "CL00041",
+      "length_nt": 416,
+      "status": "ok",
+      "source_match_count": 1,
+      "variant_structure_sha256": [
+        "e29432dfeda321597a4986ec62a49016acc44f8ca556d539e3218c9bb0b10b5e"
+      ],
+      "reference_pair_count": 126,
+      "legal_canonical_pairs": 116,
+      "errors": []
+    },
+    {
+      "id": "bpRNA_RFAM_53067",
+      "family_id": "RF01469",
+      "clan_id": "CL00114",
+      "length_nt": 532,
+      "status": "ok",
+      "source_match_count": 1,
+      "variant_structure_sha256": [
+        "395b5b6f397eceb829eb49526437c3829ddf3994934621642ff715802700047e"
+      ],
+      "reference_pair_count": 143,
+      "legal_canonical_pairs": 142,
+      "errors": []
+    },
+    {
+      "id": "bpRNA_RFAM_53069",
+      "family_id": "RF01469",
+      "clan_id": "CL00114",
+      "length_nt": 533,
+      "status": "ok",
+      "source_match_count": 1,
+      "variant_structure_sha256": [
+        "a848626b3d893c59904b2e29df42f2c9cab3e7627fa187596de106baa11ffe6a"
+      ],
+      "reference_pair_count": 143,
+      "legal_canonical_pairs": 143,
+      "errors": []
+    },
+    {
+      "id": "bpRNA_RFAM_53071",
+      "family_id": "RF01469",
+      "clan_id": "CL00114",
+      "length_nt": 535,
+      "status": "ok",
+      "source_match_count": 1,
+      "variant_structure_sha256": [
+        "0afc76f42e379bc9e9c5f6b951df0c6355f304d8c6a12b0c75615c25b3e2dab3"
+      ],
+      "reference_pair_count": 143,
+      "legal_canonical_pairs": 141,
+      "errors": []
+    }
+  ],
+  "reference_sha256": "c7c9c06dff33b7e9084b5861da4852c87d1785715c4e2437107ce9bd3d679abe",
+  "exposure_event": {
+    "path": "/home/zyliu/Documents/rna-stable-ai/results/bprna_five_clan_reference_screen_runs/20261017T191404.643416Z/exposures/20261017T191405.011689Z.json",
+    "sha256": "dd7bd3d03fce6b2f692029ac220e82756237a1308367711db94ba00cd15baa3a",
+    "stage": "validation_started"
+  },
+  "independent_test_claim": false
+}

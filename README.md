@@ -15,7 +15,7 @@ active-scope validation. Method-specific lower limits still apply. See the
 
 ## Development plan
 
-Updated October 16, 2026. **Active work: core-model development below 5,000 nt.**
+Updated October 17, 2026. **Active work: core-model development below 5,000 nt.**
 Independent biological validation remains a separate, unresolved release gate.
 
 | Step | Work | Progress |
@@ -78,6 +78,12 @@ was selected using label completeness, the bpRNA family lineage remains
 incomplete, and native controls still score higher. This is development
 evidence; independent longer-RNA validation remains open. See the
 [longer-length Step 2 review](reports/long_length_step2_review_2026-10-16.md).
+An October 17 clan-separated feasibility panel added 13 references of 400–535 nt
+from five held-out Rfam clans. Across three seeds, mean pair F1 was 0.1669 with
+the additional training sequences versus 0.1413 for the matched control;
+LinearFold and ViennaRNA scored 0.3301 and 0.3346. This small, selected panel
+does not close the independent validation gap, especially at 1,000–4,999 nt.
+See the [Stage 2 progress review](reports/stage2_family_validation_progress_2026-10-17.md).
 
 ## Latest results
 
@@ -105,6 +111,10 @@ evidence; independent longer-RNA validation remains open. See the
   pair F1 was **0.2960** versus **0.2605** for the control. LinearFold and
   ViennaRNA scored **0.4742** and **0.4499** on that panel. Selection used label
   completeness, so this is not an independent test.
+- **Clan-separated feasibility:** 13 references of 400–535 nt across five
+  held-out clans gave mean pair F1 **0.1669** for the extended model versus
+  **0.1413** for its matched control across three seeds. The panel is small and
+  selected; no checkpoint or default was promoted.
 - **Verification:** 864 tests passed in the working environment. A clean
   publication checkout passed 841 tests; nine historical replay tests require
   ignored external/native assets absent from that checkout. Source archival
@@ -124,7 +134,8 @@ long-RNA accuracy, or retained function. The assay cohort contains only
 · [Fresh structure inventory](reports/fresh_structure_inventory_review_2026-10-15.md)
 · [Fresh structure candidate plan](reports/fresh_structure_metadata_and_panel_review_2026-10-15.md)
 · [Fresh structure contact review](reports/fresh_structure_reference_review_2026-10-15.md)
-· [Latest development handoff](reports/RNA-StableAI_HANDOFF_2026-10-16_V24.md)
+· [Stage 2 progress review](reports/stage2_family_validation_progress_2026-10-17.md)
+· [Latest development handoff](reports/RNA-StableAI_HANDOFF_2026-10-17_V8.md)
 · [Model-study test log](reports/family-pair-set-training-full-suite-2026-10-15.log)
 
 ## Quick start
