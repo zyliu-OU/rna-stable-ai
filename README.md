@@ -100,7 +100,7 @@ long-RNA accuracy, or retained function. The assay cohort contains only
 · [Fresh structure inventory](reports/fresh_structure_inventory_review_2026-10-15.md)
 · [Fresh structure candidate plan](reports/fresh_structure_metadata_and_panel_review_2026-10-15.md)
 · [Fresh structure contact review](reports/fresh_structure_reference_review_2026-10-15.md)
-· [Latest development handoff](reports/RNA-StableAI_HANDOFF_2026-10-16_V22.md)
+· [Latest development handoff](reports/RNA-StableAI_HANDOFF_2026-10-16_V23.md)
 · [Model-study test log](reports/family-pair-set-training-full-suite-2026-10-15.log)
 
 ## Quick start
