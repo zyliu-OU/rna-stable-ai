@@ -6,25 +6,25 @@ Research prototype for RNA structure prediction, constrained sequence optimizati
 and reproducible folding benchmarks. Code, experimental checkpoints, input data,
 and results are available for inspection. No validated release yet.
 
-**Current development focus: RNA sequences shorter than 5,000 nt (1–4,999 nt).**
+**Current development focus: RNA sequences shorter than 3,000 nt (1–2,999 nt).**
 We are extending and evaluating the core structure model within that range.
-Existing 5,000/10,000-nt code, data, results, and provenance are preserved as
+Existing work at 3,000 nt and above, including 5,000/10,000-nt studies, is preserved as
 deferred work; they are not deleted or counted as
 active-scope validation. Method-specific lower limits still apply. See the
 [sequence-length policy](docs/LENGTH_SCOPE.md).
 
 ## Development plan
 
-Updated October 17, 2026. **Active work: core-model development below 5,000 nt.**
+Updated October 18, 2026. **Active work: validate and improve Stage 2 below 3,000 nt before Stage 3.**
 Independent biological validation remains a separate, unresolved release gate.
 
 | Step | Work | Progress |
 |---:|---|---|
 | 1 | Reproducible foundations | Implemented: bounded native tools, request journals, input hashes, exposure tracking, and replay audits. |
-| **2** | **Structure models** | **Active length-focused development.** A sampled-pair training path has been exercised below 5,000 nt. A three-seed comparison with 17 added longer training RNAs improved pair F1 on an 11-record development panel; independent validation remains open. Defaults remain unchanged. |
-| 3 | RNA sequence optimization for stability and protein expression | Planned: design constrained RNA variants to improve measured protein expression efficiency while preserving the encoded protein and required sequence features. Synthetic studies and native energy checks exist; expression benefits remain unverified. |
+| **2** | **Structure models** | **Current priority: accuracy and validation below 3,000 nt.** A matched three-seed study using only in-scope training RNAs averages pair F1 0.3174 on six longer development references. A partner/null auxiliary-loss variant reaches 0.3262; LinearFold and ViennaRNA score 0.4381 and 0.4215. Independent validation remains open; Stage 2 is not ready for the Stage 3 transition. Defaults remain unchanged. |
+| 3 | RNA sequence optimization for stability and protein expression | Queued after Stage 2: protein-preserving design for **cell-free expression**, with measured protein output and RNA abundance. Expression benefits remain unverified. |
 | 4 | Independent structure validation | Open release gate. Three prospective panels and a six-family raw-contact feasibility study evaluated; broader coverage/provenance remain limited. |
-| 5 | Length evidence and deferred 5,000+ nt work | Longer held-out validation below 5,000 nt is needed. New work at 5,000 nt or above is deferred; existing synthetic benchmarks through 10,000 nt remain preserved. Current full-pair training is capped at 1,024 nt. |
+| 5 | Length evidence and deferred 3,000+ nt work | Independent validation below 3,000 nt is needed, especially at 2,000–2,999 nt. New work at 3,000 nt or above is deferred; historical benchmarks remain preserved. Current full-pair training is capped at 1,024 nt. |
 | 6 | Measured stability and function | Public-assay pilot complete. Controlled mutation effects and retained function remain pending. |
 | 7 | Validated release | Pending the scientific evidence above. |
 
@@ -32,7 +32,8 @@ Independent biological validation remains a separate, unresolved release gate.
 
 The Step 3 goal includes improving **measured protein expression efficiency** from
 RNA sequences while retaining the intended protein sequence and required RNA
-features. Development will remain within the active 1–4,999-nt range. This is a
+features. The first target is **cell-free expression**, after Stage 2 review.
+Development will remain within the active 1–2,999-nt range. This is a
 future optimization goal; current structure and stability proxies do not establish
 an expression benefit.
 
@@ -58,7 +59,7 @@ Its original selection failed the per-family gate. A separately versioned,
 label-informed development dataset now passes that gate with 61 training and
 22 validation pair references. A matched nine-run pair-set training study is
 complete; independent biological validation remains open. See the
-[roadmap](reports/PROJECT_ROADMAP_2026-10-16.md).
+[roadmap](reports/PROJECT_ROADMAP_2026-10-18.md).
 The next-panel metadata acquisition resolved 91 of 92 missing family
 descriptions; RF04222 returned 404. An eight-family, 56-candidate structure
 panel was frozen and acquired. All 56 contact requests succeeded, but sequence
@@ -82,10 +83,23 @@ An October 17 clan-separated feasibility panel added 13 references of 400–535 
 from five held-out Rfam clans. Across three seeds, mean pair F1 was 0.1669 with
 the additional training sequences versus 0.1413 for the matched control;
 LinearFold and ViennaRNA scored 0.3301 and 0.3346. This small, selected panel
-does not close the independent validation gap, especially at 1,000–4,999 nt.
+does not close the independent validation gap, especially at 1,000–2,999 nt.
 See the [Stage 2 progress review](reports/stage2_family_validation_progress_2026-10-17.md).
 
 ## Latest results
+
+- **Below-3,000-nt Stage 2:** training on 103 in-scope RNAs gives mean pair F1
+  **0.3174** on six longer development references and **0.1561** on thirteen
+  shorter references. Partner/null auxiliary supervision raises these to
+  **0.3262 / 0.1606**, with a short-cohort regression in one of three seeds.
+  Native controls remain higher; no checkpoint or default is promoted.
+- **Recovery diagnosis:** the longer cohort's gold-label oracle F1 is
+  **0.9606** using all legal gold pairs and **0.8257** within retained baseline
+  candidates. These are optimistic label-informed bounds, not model accuracy.
+  Candidate recovery and pair scoring remain priorities. Endpoint ranking was
+  mixed, and a hard-negative mixture regressed against its matched control.
+  See the [recovery and assignment review](reports/stage2_recovery_ceiling_and_assignment_review_2026-10-18.md)
+  and [concise study summaries](reports/stage2_publication_2026-10-18/README.md).
 
 - **Structure feasibility:** 10 raw PDB-derived references across six families;
   all 60 outcomes complete. Mean pair F1: helix **0.3255**, ViennaRNA and
@@ -115,7 +129,10 @@ See the [Stage 2 progress review](reports/stage2_family_validation_progress_2026
   held-out clans gave mean pair F1 **0.1669** for the extended model versus
   **0.1413** for its matched control across three seeds. The panel is small and
   selected; no checkpoint or default was promoted.
-- **Verification:** 864 tests passed in the working environment. A clean
+- **October 18 publication checks:** 51 focused tests passed in the publication
+  checkout; the saved RCSB schema fixture makes the new source-field check
+  available from a fresh clone. See the [test log](reports/stage2-publication-focused-tests-2026-10-18.log).
+- **Historical verification (October 16):** 864 tests passed in the working environment. A clean
   publication checkout passed 841 tests; nine historical replay tests require
   ignored external/native assets absent from that checkout. Source archival
   recovered 271 of 281 recorded Python versions; ten remain unavailable.
@@ -135,7 +152,7 @@ long-RNA accuracy, or retained function. The assay cohort contains only
 · [Fresh structure candidate plan](reports/fresh_structure_metadata_and_panel_review_2026-10-15.md)
 · [Fresh structure contact review](reports/fresh_structure_reference_review_2026-10-15.md)
 · [Stage 2 progress review](reports/stage2_family_validation_progress_2026-10-17.md)
-· [Latest development handoff](reports/RNA-StableAI_HANDOFF_2026-10-17_V8.md)
+· [Latest development handoff](reports/RNA-StableAI_HANDOFF_2026-10-18_V7.md)
 · [Model-study test log](reports/family-pair-set-training-full-suite-2026-10-15.log)
 
 ## Quick start

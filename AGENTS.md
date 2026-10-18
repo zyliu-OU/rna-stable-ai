@@ -13,6 +13,32 @@ For other projects, use their actual project name in the same naming pattern.
 An undated convenience copy may also be kept, but the versioned file is the
 canonical handoff to reference when resuming.
 
+## Detailed handoffs
+
+The user requests as much useful detail and information as possible in every
+future handoff. Make the versioned Markdown file a self-contained resume record,
+while keeping the chat response concise. Include:
+
+- Current user priorities, scope boundaries, constraints, stage-transition gates,
+  and decisions that supersede earlier handoffs.
+- Completed work with exact code/config/report paths, the purpose of each change,
+  preserved historical artifacts, and publication/workspace status.
+- Experiment protocols, input inventories, cohorts and exposure/lineage limits,
+  seeds, model/optimizer/loss/decoder settings, checkpoint selection rules,
+  runtime versions and measured resources when available.
+- Exact protocol/run/checkpoint/prediction paths, relevant hashes or manifests,
+  per-seed and aggregate results, baseline comparisons, regressions and failures.
+- Commands actually run and their outcomes, distinguishing unit tests, artifact
+  checks, inference replay and deterministic retraining; state unverified items.
+- Scientific interpretation, limitations, rejected approaches, why defaults or
+  stage gates changed or stayed fixed, and what must not be claimed.
+- Outstanding processes or partial runs with identifiers if any, unresolved
+  issues, prioritized next steps, and exact safe continuation commands.
+
+Do not invent missing measurements or claim checks that were not run. Preserve
+earlier handoffs and frozen protocols; link concrete artifacts rather than
+requiring a later reader to infer which version was used.
+
 ## Preserve the README picture
 
 The user added a picture directly to the GitHub README. Keep that picture in all

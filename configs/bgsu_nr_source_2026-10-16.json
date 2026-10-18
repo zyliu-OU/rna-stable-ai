@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "stage": "metadata_only_representative_structure_source",
+  "source_name": "BGSU_RNA_3D_Hub_representative_sets",
+  "source_release": "4.61",
+  "resolution_cutoff": "3.5A",
+  "format": "json_full",
+  "url": "https://rna.bgsu.edu/rna3dhub/nrlist/download/NR/4.61/3.5A/json/full",
+  "maximum_response_bytes": 104857600,
+  "timeout_seconds": 90,
+  "purpose": "Discover unexposed family, species and structure metadata before candidate sequence or contact acquisition",
+  "candidate_sequences_allowed_at_this_stage": false,
+  "contact_labels_allowed_at_this_stage": false,
+  "model_inference_authorized": false
+}

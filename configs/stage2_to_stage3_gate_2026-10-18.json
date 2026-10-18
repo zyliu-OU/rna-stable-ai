@@ -1,0 +1,18 @@
+{
+  "stage": "stage2_structure_validation_before_stage3",
+  "active_length_nt": {"minimum_inclusive": 1, "maximum_exclusive": 3000},
+  "stage3_target": "cell_free_expression",
+  "stage3_development_started": false,
+  "immediate_priority": "improve_and_validate_stage2_within_active_length_scope",
+  "requirements_before_stage3": [
+    "Frozen independent sequence_and_family_clan_separated_validation_within_scope",
+    "Reported_accuracy_and_failures_by_length_band_and_family_against_native_controls",
+    "Resolve_sparse_2000_2999_nt_coverage_before_claiming_the_full_length_range",
+    "Demonstrate_credible_structure_accuracy_with_explicit_review_of_native_baseline_gaps",
+    "Pass_constraint_decoder_resource_and_replay_checks",
+    "Document_remaining_limitations_before_expression_candidate_design"
+  ],
+  "historical_runs_remain_development_evidence": true,
+  "model_defaults_changed": false,
+  "expression_benefit_established": false
+}

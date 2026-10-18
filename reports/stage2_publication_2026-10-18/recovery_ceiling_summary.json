@@ -1,0 +1,216 @@
+{
+  "complete": true,
+  "policy": {
+    "length_nt": [
+      1,
+      2999
+    ],
+    "seeds": [
+      7,
+      1729,
+      20261015
+    ],
+    "checkpoint": "frozen_103_record_BCE_fixed_final",
+    "candidate_top_k": 32,
+    "block_size": 64,
+    "candidate_score_threshold": "strictly_positive",
+    "full_oracle": "maximum_cardinality_legal_noncrossing_gold_subset",
+    "candidate_oracle": "maximum_cardinality_legal_noncrossing_gold_subset_in_retained_pool",
+    "score_denominator": "all_original_reference_pairs_including_unsupported_and_crossing",
+    "oracle_is_model_prediction": false,
+    "gold_labels_used": true,
+    "actual_baseline_structures_must_reproduce": true,
+    "training_performed": false,
+    "development_only": true,
+    "independent_test_claim": false,
+    "model_defaults_changed": false,
+    "stage3_ready": false
+  },
+  "by_cohort": {
+    "long": {
+      "record_seed_rows": 18,
+      "unique_reference_count": 6,
+      "mean_actual_f1": 0.3173511819303442,
+      "mean_full_gold_oracle_f1": 0.9606455786982111,
+      "mean_candidate_gold_oracle_f1": 0.8256698666892137,
+      "candidate_legal_gold_recall_micro": 0.7617835938446625,
+      "actual_to_candidate_oracle_TP_micro": 0.4595196437092413,
+      "missing_gold_pair_counts": {
+        "unsupported_gold": 639,
+        "legal_noncrossing_limit": 0,
+        "retained_candidate_limit": 1966,
+        "score_selection_gap": 3398
+      },
+      "missing_gold_pair_fractions": {
+        "unsupported_gold": 0.10644677661169415,
+        "legal_noncrossing_limit": 0.0,
+        "retained_candidate_limit": 0.32750291520906216,
+        "score_selection_gap": 0.5660503081792437
+      },
+      "actual_false_positive_pairs": 6374
+    },
+    "short": {
+      "record_seed_rows": 39,
+      "unique_reference_count": 13,
+      "mean_actual_f1": 0.15606408697343166,
+      "mean_full_gold_oracle_f1": 0.9027071479483837,
+      "mean_candidate_gold_oracle_f1": 0.7059245554013232,
+      "candidate_legal_gold_recall_micro": 0.6612121212121213,
+      "actual_to_candidate_oracle_TP_micro": 0.3668666359021689,
+      "missing_gold_pair_counts": {
+        "unsupported_gold": 564,
+        "legal_noncrossing_limit": 51,
+        "retained_candidate_limit": 1082,
+        "score_selection_gap": 1372
+      },
+      "missing_gold_pair_fractions": {
+        "unsupported_gold": 0.18377321603128055,
+        "legal_noncrossing_limit": 0.016617790811339198,
+        "retained_candidate_limit": 0.35255783642880417,
+        "score_selection_gap": 0.4470511567285761
+      },
+      "actual_false_positive_pairs": 4753
+    }
+  },
+  "per_seed": {
+    "7": {
+      "long": {
+        "record_seed_rows": 6,
+        "unique_reference_count": 6,
+        "mean_actual_f1": 0.2994837244840817,
+        "mean_full_gold_oracle_f1": 0.960645578698211,
+        "mean_candidate_gold_oracle_f1": 0.8381697979263435,
+        "candidate_legal_gold_recall_micro": 0.7840785169029444,
+        "actual_to_candidate_oracle_TP_micro": 0.4297635605006954,
+        "missing_gold_pair_counts": {
+          "unsupported_gold": 213,
+          "legal_noncrossing_limit": 0,
+          "retained_candidate_limit": 594,
+          "score_selection_gap": 1230
+        },
+        "missing_gold_pair_fractions": {
+          "unsupported_gold": 0.10456553755522828,
+          "legal_noncrossing_limit": 0.0,
+          "retained_candidate_limit": 0.2916053019145803,
+          "score_selection_gap": 0.6038291605301914
+        },
+        "actual_false_positive_pairs": 2257
+      },
+      "short": {
+        "record_seed_rows": 13,
+        "unique_reference_count": 13,
+        "mean_actual_f1": 0.1552876958201623,
+        "mean_full_gold_oracle_f1": 0.9027071479483838,
+        "mean_candidate_gold_oracle_f1": 0.7281908411997843,
+        "candidate_legal_gold_recall_micro": 0.7036363636363636,
+        "actual_to_candidate_oracle_TP_micro": 0.3528645833333333,
+        "missing_gold_pair_counts": {
+          "unsupported_gold": 188,
+          "legal_noncrossing_limit": 17,
+          "retained_candidate_limit": 315,
+          "score_selection_gap": 497
+        },
+        "missing_gold_pair_fractions": {
+          "unsupported_gold": 0.1848574237954769,
+          "legal_noncrossing_limit": 0.01671583087512291,
+          "retained_candidate_limit": 0.30973451327433627,
+          "score_selection_gap": 0.4886922320550639
+        },
+        "actual_false_positive_pairs": 1646
+      }
+    },
+    "1729": {
+      "long": {
+        "record_seed_rows": 6,
+        "unique_reference_count": 6,
+        "mean_actual_f1": 0.3149238665376765,
+        "mean_full_gold_oracle_f1": 0.960645578698211,
+        "mean_candidate_gold_oracle_f1": 0.8174066173633326,
+        "candidate_legal_gold_recall_micro": 0.7455470737913485,
+        "actual_to_candidate_oracle_TP_micro": 0.46075085324232085,
+        "missing_gold_pair_counts": {
+          "unsupported_gold": 213,
+          "legal_noncrossing_limit": 0,
+          "retained_candidate_limit": 700,
+          "score_selection_gap": 1106
+        },
+        "missing_gold_pair_fractions": {
+          "unsupported_gold": 0.10549777117384844,
+          "legal_noncrossing_limit": 0.0,
+          "retained_candidate_limit": 0.3467062902426944,
+          "score_selection_gap": 0.5477959385834572
+        },
+        "actual_false_positive_pairs": 2092
+      },
+      "short": {
+        "record_seed_rows": 13,
+        "unique_reference_count": 13,
+        "mean_actual_f1": 0.14790186608467462,
+        "mean_full_gold_oracle_f1": 0.9027071479483838,
+        "mean_candidate_gold_oracle_f1": 0.6934806565859458,
+        "candidate_legal_gold_recall_micro": 0.6418181818181818,
+        "actual_to_candidate_oracle_TP_micro": 0.3466476462196862,
+        "missing_gold_pair_counts": {
+          "unsupported_gold": 188,
+          "legal_noncrossing_limit": 17,
+          "retained_candidate_limit": 382,
+          "score_selection_gap": 458
+        },
+        "missing_gold_pair_fractions": {
+          "unsupported_gold": 0.1799043062200957,
+          "legal_noncrossing_limit": 0.016267942583732056,
+          "retained_candidate_limit": 0.36555023923444974,
+          "score_selection_gap": 0.4382775119617225
+        },
+        "actual_false_positive_pairs": 1593
+      }
+    },
+    "20261015": {
+      "long": {
+        "record_seed_rows": 6,
+        "unique_reference_count": 6,
+        "mean_actual_f1": 0.3376459547692743,
+        "mean_full_gold_oracle_f1": 0.960645578698211,
+        "mean_candidate_gold_oracle_f1": 0.8214331847779649,
+        "candidate_legal_gold_recall_micro": 0.7557251908396947,
+        "actual_to_candidate_oracle_TP_micro": 0.48917748917748916,
+        "missing_gold_pair_counts": {
+          "unsupported_gold": 213,
+          "legal_noncrossing_limit": 0,
+          "retained_candidate_limit": 672,
+          "score_selection_gap": 1062
+        },
+        "missing_gold_pair_fractions": {
+          "unsupported_gold": 0.10939907550077041,
+          "legal_noncrossing_limit": 0.0,
+          "retained_candidate_limit": 0.34514637904468415,
+          "score_selection_gap": 0.5454545454545454
+        },
+        "actual_false_positive_pairs": 2025
+      },
+      "short": {
+        "record_seed_rows": 13,
+        "unique_reference_count": 13,
+        "mean_actual_f1": 0.16500269901545803,
+        "mean_full_gold_oracle_f1": 0.9027071479483838,
+        "mean_candidate_gold_oracle_f1": 0.6961021684182394,
+        "candidate_legal_gold_recall_micro": 0.6381818181818182,
+        "actual_to_candidate_oracle_TP_micro": 0.40257879656160456,
+        "missing_gold_pair_counts": {
+          "unsupported_gold": 188,
+          "legal_noncrossing_limit": 17,
+          "retained_candidate_limit": 385,
+          "score_selection_gap": 417
+        },
+        "missing_gold_pair_fractions": {
+          "unsupported_gold": 0.18669314796425024,
+          "legal_noncrossing_limit": 0.016881827209533268,
+          "retained_candidate_limit": 0.38232373386295926,
+          "score_selection_gap": 0.4141012909632572
+        },
+        "actual_false_positive_pairs": 1514
+      }
+    }
+  },
+  "peak_process_rss_kib": 834344
+}

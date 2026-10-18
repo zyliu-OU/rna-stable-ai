@@ -1,10 +1,10 @@
 # RNA-StableAI sequence-length scope
 
-Effective 2026-10-16, active development focuses on RNA sequences **shorter
-than 5,000 nucleotides**. The boundary is exclusive:
+Effective 2026-10-18, active development focuses on RNA sequences **shorter
+than 3,000 nucleotides**:
 
-- 1–4,999 nt: active development scope.
-- 5,000 nt and longer: preserved, deferred scope.
+- 1–2,999 nt: active development scope.
+- 3,000 nt and longer: preserved, deferred scope.
 
 This is a prioritization boundary, not a claim that every sequence below it is
 already supported or validated. Individual methods retain their stricter
@@ -19,11 +19,12 @@ the active scope, and deferred evidence is not counted as evidence for active
 claims.
 
 New work should default to the active range and declare a stricter bound when
-the method requires one. Work at 5,000 nt or above is not scheduled by default,
+the method requires one. Work at 3,000 nt or above is not scheduled by default,
 but can be resumed later through a new, explicitly versioned protocol without
 discarding the evidence already developed.
 
 The machine-readable policy is
-[`configs/project_scope_2026-10-16.json`](../configs/project_scope_2026-10-16.json).
+[`configs/project_scope_2026-10-18.json`](../configs/project_scope_2026-10-18.json).
+The October 16 policy remains available for explicit historical replay.
 The helper in [`src/rnastable/project_scope.py`](../src/rnastable/project_scope.py)
 classifies records without deleting or truncating deferred data.

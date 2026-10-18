@@ -1,0 +1,38 @@
+{
+  "baseline_summary.json": {
+    "local_source": "results/under3000_development_runs/20261018T223810.974436Z/summary.json",
+    "sha256": "70cea5a14b5e5b1ecb64cf410a2f90b21a93f354afed8eac8c7530cb8d2286ff"
+  },
+  "baseline_protocol.json": {
+    "local_source": "results/under3000_development_protocol_runs/20261018T223802.654756Z/manifest.json",
+    "sha256": "c21db7b095f6102bb507d588eb89d9f300c7bc6d9328a5a123d6e83e1a81fa7d"
+  },
+  "ranking_summary.json": {
+    "local_source": "results/under3000_endpoint_ranking_runs/20261018T230346.828091Z/summary.json",
+    "sha256": "7a85fee54a158ae456e2b64d159d3a4ad22e5e1be31e460bb9f06781a1f550ac"
+  },
+  "hard_negative_summary.json": {
+    "local_source": "results/under3000_hard_negative_runs/20261018T231058.189040Z/summary.json",
+    "sha256": "96c45e0bdb04d111e896b8f2eb7ba5e7a759df0471f3652aad4e8f087948e502"
+  },
+  "hard_negative_diagnostics.json": {
+    "local_source": "results/under3000_hard_negative_runs/20261018T231058.189040Z/descriptive_diagnostics.json",
+    "sha256": "cc334804d33afdad0834bc32a3153c8369d19d1192e731a073b3747c93a8be99"
+  },
+  "recovery_ceiling_summary.json": {
+    "local_source": "results/under3000_recovery_ceiling_runs/20261018T234344.201186Z/summary.json",
+    "sha256": "5844c2010de771da24b973218c6dd2871840c06c0c09692f9f94f4930bb3c6b1"
+  },
+  "recovery_ceiling_protocol.json": {
+    "local_source": "results/under3000_recovery_ceiling_protocol_runs/20261018T234336.469918Z/manifest.json",
+    "sha256": "ba4d88370d6ff2671100dfd0e25f298e2ca058f63da20fb1e490e2e679d9c271"
+  },
+  "assignment_summary.json": {
+    "local_source": "results/under3000_endpoint_assignment_runs/20261018T234628.064395Z/summary.json",
+    "sha256": "d7ddf63c2adf0bfd02943c1f433868a104d97b6a3a21c00fbf9c65ce73a01609"
+  },
+  "assignment_protocol.json": {
+    "local_source": "results/under3000_endpoint_assignment_protocol_runs/20261018T234607.509040Z/manifest.json",
+    "sha256": "524118977515c6d3e8e0f67ebb78e6cdd04b12aea6082aeee8ac17f8f33cb26b"
+  }
+}

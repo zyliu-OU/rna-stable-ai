@@ -1,0 +1,44 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/under3000_development_protocol_runs/20261018T223802.654756Z",
+  "seeds": [
+    7,
+    1729,
+    20261015
+  ],
+  "epochs": 10,
+  "checkpoint": "fixed_final_epoch",
+  "decoder": "exact_sparse_top32",
+  "top32_choice_basis": "previous_exposed_development_diagnostic",
+  "validation_used_during_fit": false,
+  "independent_test_claim": false,
+  "model_defaults_changed": false,
+  "stage3_target": "cell_free_expression",
+  "source_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/results/bprna_length_pilot_protocol_runs/20261016T174446.305367Z/train.json": "05484ee237881d8190f5525ef3b720a14ffe9265c59861f2ba4015f5802d4fc1",
+    "/home/zyliu/Documents/rna-stable-ai/results/bprna_long_training_smoke_runs/20261017T033749.792816Z/selection.json": "b5bcb06b8d56f16a6741c12570fb933f5103c388f5a7d0fbdea06c968389eb75",
+    "/home/zyliu/Documents/rna-stable-ai/results/long_validation_coverage_runs/20261017T033935.363253Z/selection.json": "8a08170227188f04c4a37fbdcecfbd8deadcce35b35b1ad88e593b647654d4ad",
+    "/home/zyliu/Documents/rna-stable-ai/results/family_pair_set_training_runs/20261016T012741.486402Z/helix_seed1729/summary.json": "8588bb29b16d13805a3a947b00cb19fcd12bee5bcb92f8fc8b4f9502bc6d8946",
+    "/home/zyliu/Documents/rna-stable-ai/results/bprna_five_clan_reference_screen_runs/20261017T191404.643416Z/references.json": "c7c9c06dff33b7e9084b5861da4852c87d1785715c4e2437107ce9bd3d679abe",
+    "/home/zyliu/Documents/rna-stable-ai/configs/stage2_to_stage3_gate_2026-10-18.json": "956fef4d171a2d33d16a16e36b80d3def4696d321f930c74ea3396acbbd030dd",
+    "/home/zyliu/Documents/rna-stable-ai/configs/project_scope_2026-10-18.json": "0463ed94ba040c24b4fa97c836f38c1a4a481bb310dd23594fa4d92ecef6767c"
+  },
+  "code_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/scripts/train_sampled_long_development.py": "e51a68c4bc5378e0f2d2ad0342998cc312d3a9bd4de71a0deaf420ffb4033d12",
+    "/home/zyliu/Documents/rna-stable-ai/scripts/evaluate_long_length_checkpoints_v3.py": "285c62e7ef3953c4bc217ba5fbe33dbbdcb4579912c356975b055c66837ac3a2",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/sampled_pair_supervision.py": "4806c5bdb3f29486c79085e727518ec842accf63d0a0fb1fcf2f0442ddc57837",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/helix_pairs.py": "980bd05466a85d7644a4cb3fb446e2dcb2d60dd01b94020ecb3194665032a610",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/global_sparse_pairs.py": "9cd50c88b5d497ee9a6d8d4e6a6f6289977d9fff96e94a823b92b5bcb72c2dc7",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/context_pairs.py": "f103e56bb315e35ae2646ff33717b53d58f163464787893699129f28a2585756",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/long_exact_sparse_pairs.py": "5ab25f5e2ac4633b240840f8f518d2a0bc498473b14a59e931bcd3c463816af0",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/structure_model.py": "01696835cfee1e7f9cd35f6f0634f27a9fec8add90ee8b4509bf83f4874ce8fe",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/pair_set_training.py": "ca57635ab6b14e3767ce085e8e4799dd4185dcd751d8535c1ba9b928ec9cb25a",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/pair_reference.py": "6e69c2aa170ee93b880df0e2aaca48c15d83bce5948101de7c785bb1659c20d5",
+    "/home/zyliu/Documents/rna-stable-ai/src/rnastable/scoring.py": "aefa252f8765861a15e7265fd69c716c598ff3e3d1925c71e0564e9ef9baf349",
+    "/home/zyliu/Documents/rna-stable-ai/scripts/run_under3000_development.py": "7abb6e364893cbc2701a0187a827cd43012b3bb8315a38a37e6499558e25f5de"
+  },
+  "snapshot_sha256": {
+    "config.json": "7405ade9b38eb64b642961ccf67d9a5d7031d82db76e150cbb814d584f46c3e3",
+    "train.json": "a6d99a9ce65bef70f652091acc69437dc6b01bbdf7f6f5021b9ddec09765df30",
+    "validation.json": "6da80cbe45051a24f6d779345daaacb8c287f325f2331ed6134152d865754dee"
+  }
+}

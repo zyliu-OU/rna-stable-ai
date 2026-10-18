@@ -1,0 +1,66 @@
+{
+  "complete": true,
+  "policy": {
+    "length_nt": [
+      1,
+      2999
+    ],
+    "train_records": 103,
+    "seeds": [
+      7,
+      1729,
+      20261015
+    ],
+    "arms": [
+      "pool_random",
+      "hard_mixture"
+    ],
+    "teacher": "matching_seed_frozen_103_record_BCE_fixed_final_checkpoint",
+    "teacher_pool": "union_original_uniform_negatives_and_positive_logit_top8_per_right_endpoint_minus_gold",
+    "mining_schedule": "once_before_student_training",
+    "reserved_uniform_fraction": 0.5,
+    "remaining_negative_selection": {
+      "pool_random": "uniform_without_replacement",
+      "hard_mixture": "teacher_logit_descending_then_coordinates"
+    },
+    "negative_budget": "exactly_original_uniform_sample_count_per_record",
+    "loss": "BCE_only",
+    "epochs": 10,
+    "checkpoint": "fixed_final_epoch",
+    "decoder": "exact_sparse_top32",
+    "teacher_compute_shared_between_new_arms": true,
+    "total_compute_equal_to_historical_BCE": false,
+    "validation_used_for_mining_or_training": false,
+    "development_only": true,
+    "independent_test_claim": false,
+    "model_defaults_changed": false,
+    "stage3_ready": false
+  },
+  "comparisons": {
+    "long": {
+      "historical_BCE_mean_f1": 0.3173511819303442,
+      "arm_mean_f1": {
+        "pool_random": 0.3142691996052991,
+        "hard_mixture": 0.2502521035024554
+      },
+      "hard_minus_random_per_seed": {
+        "7": -0.03211253954983373,
+        "1729": -0.059081004351125954,
+        "20261015": -0.10085774440757134
+      }
+    },
+    "short": {
+      "historical_BCE_mean_f1": 0.15606408697343166,
+      "arm_mean_f1": {
+        "pool_random": 0.16817083330631152,
+        "hard_mixture": 0.12880942857209904
+      },
+      "hard_minus_random_per_seed": {
+        "7": -0.03828982280567804,
+        "1729": -0.030532084319087105,
+        "20261015": -0.04926230707787224
+      }
+    }
+  },
+  "peak_process_rss_kib": 877820
+}

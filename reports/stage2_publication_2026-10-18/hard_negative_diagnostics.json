@@ -1,0 +1,66 @@
+{
+  "run_dir": "/home/zyliu/Documents/rna-stable-ai/results/under3000_hard_negative_runs/20261018T231058.189040Z",
+  "development_only": true,
+  "new_inference_performed": false,
+  "metrics": {
+    "long": {
+      "historical_BCE": {
+        "record_seed_rows": 18,
+        "pair_f1": 0.3173511819303442,
+        "pair_precision": 0.31072778781777183,
+        "pair_recall": 0.3248961816860898,
+        "predicted_pairs": 514.6111111111111
+      },
+      "pool_random": {
+        "record_seed_rows": 18,
+        "pair_f1": 0.3142691996052991,
+        "pair_precision": 0.3269922879134816,
+        "pair_recall": 0.3031337899957828,
+        "predicted_pairs": 456.3888888888889
+      },
+      "hard_mixture": {
+        "record_seed_rows": 18,
+        "pair_f1": 0.2502521035024554,
+        "pair_precision": 0.27109757268039375,
+        "pair_recall": 0.23291136879673097,
+        "predicted_pairs": 419.22222222222223
+      }
+    },
+    "short": {
+      "historical_BCE": {
+        "record_seed_rows": 39,
+        "pair_f1": 0.15606408697343166,
+        "pair_precision": 0.13790646543020285,
+        "pair_recall": 0.19325442163257414,
+        "predicted_pairs": 142.25641025641025
+      },
+      "pool_random": {
+        "record_seed_rows": 39,
+        "pair_f1": 0.1681708333063115,
+        "pair_precision": 0.15506714586436884,
+        "pair_recall": 0.20518770923783988,
+        "predicted_pairs": 122.92307692307692
+      },
+      "hard_mixture": {
+        "record_seed_rows": 39,
+        "pair_f1": 0.12880942857209904,
+        "pair_precision": 0.12410640869182885,
+        "pair_recall": 0.14682011897527752,
+        "predicted_pairs": 114.41025641025641
+      }
+    }
+  },
+  "driver_sha256": "0a50ea556d14677504cdc770284d4b8484f7223c3678689ed3501795f4490d1b",
+  "inputs_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/results/under3000_hard_negative_runs/20261018T231058.189040Z/summary.json": "96c45e0bdb04d111e896b8f2eb7ba5e7a759df0471f3652aad4e8f087948e502",
+    "/home/zyliu/Documents/rna-stable-ai/results/under3000_development_runs/20261018T223810.974436Z/extended_103_seed7/predictions.json": "b438bdee388e2f1927f0e5576b8e66c7418bc4d467b16a16c25865012ce0d925",
+    "/home/zyliu/Documents/rna-stable-ai/results/under3000_development_runs/20261018T223810.974436Z/extended_103_seed1729/predictions.json": "d739f38d73a581e15ed5cf7d7c8c0f9c2e94983ca5533be8316d2b151b675701",
+    "/home/zyliu/Documents/rna-stable-ai/results/under3000_development_runs/20261018T223810.974436Z/extended_103_seed20261015/predictions.json": "faf1e2e5dfa210f065823cd38d86e41a442f7bcc5059f117ffaa46b825c537d9",
+    "/home/zyliu/Documents/rna-stable-ai/results/under3000_hard_negative_runs/20261018T231058.189040Z/pool_random_seed7/predictions.json": "8a5e12882c6db8ea952103e22362a5ab9c1306d68189643fc8227d926f212e69",
+    "/home/zyliu/Documents/rna-stable-ai/results/under3000_hard_negative_runs/20261018T231058.189040Z/pool_random_seed1729/predictions.json": "f16356eb0160d60f1d622d4fa10964709d2c7d5ebbc423695b0411db62efdc52",
+    "/home/zyliu/Documents/rna-stable-ai/results/under3000_hard_negative_runs/20261018T231058.189040Z/pool_random_seed20261015/predictions.json": "4871867f9fc243cef15203c65b04f2d6b7df9ce2805c2a6a29764a2f94f3f610",
+    "/home/zyliu/Documents/rna-stable-ai/results/under3000_hard_negative_runs/20261018T231058.189040Z/hard_mixture_seed7/predictions.json": "271e96faa469ee211f8092cb1a90e400881797bd2e5b4d56d6213c861131c481",
+    "/home/zyliu/Documents/rna-stable-ai/results/under3000_hard_negative_runs/20261018T231058.189040Z/hard_mixture_seed1729/predictions.json": "10a3b090fcba9266bcb49e8e4b5083d1959019fa1130b330645a4c51391f0388",
+    "/home/zyliu/Documents/rna-stable-ai/results/under3000_hard_negative_runs/20261018T231058.189040Z/hard_mixture_seed20261015/predictions.json": "2eabdc81cf33039f959d49bd403c3989fad3639cabb04b4742bd257f2071a41f"
+  }
+}

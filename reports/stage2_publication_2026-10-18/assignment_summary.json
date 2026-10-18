@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "policy": {
+    "active_length_nt": [
+      1,
+      2999
+    ],
+    "training_arm": "extended_103",
+    "seeds": [
+      7,
+      1729,
+      20261015
+    ],
+    "epochs": 10,
+    "auxiliary_weight": 0.25,
+    "negative_sampling": "same_frozen_uniform_sample_as_baseline",
+    "endpoint_classes": "sampled_partners_plus_zero_score_unpaired_class",
+    "unsupported_gold_endpoints": "excluded_from_auxiliary_node_loss_not_relabeled_as_unpaired",
+    "checkpoint_selection": "fixed_final_epoch",
+    "decoder": "exact_sparse_top32",
+    "validation_used_during_training": false,
+    "development_only": true,
+    "independent_test_claim": false,
+    "model_defaults_changed": false,
+    "stage3_ready": false
+  },
+  "comparisons": {
+    "long": {
+      "baseline_mean_f1": 0.3173511819303442,
+      "assignment_mean_f1": 0.3261881306649683,
+      "paired_differences": {
+        "7": 0.01497528895361061,
+        "1729": 0.00569839686774648,
+        "20261015": 0.005837160382515305
+      },
+      "mean_difference": 0.00883694873462415
+    },
+    "short": {
+      "baseline_mean_f1": 0.15606408697343166,
+      "assignment_mean_f1": 0.1606458704627264,
+      "paired_differences": {
+        "7": 0.024291693157513533,
+        "1729": 0.007408737677161381,
+        "20261015": -0.01795508036679061
+      },
+      "mean_difference": 0.004581783489294759
+    }
+  },
+  "peak_process_rss_kib": 857312
+}

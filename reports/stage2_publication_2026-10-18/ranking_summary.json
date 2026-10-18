@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "policy": {
+    "active_length_nt": [
+      1,
+      2999
+    ],
+    "training_arm": "extended_103",
+    "seeds": [
+      7,
+      1729,
+      20261015
+    ],
+    "epochs": 10,
+    "auxiliary_weight": 0.25,
+    "ranking_margin": 1.0,
+    "negative_sampling": "same_frozen_uniform_sample_as_baseline",
+    "hard_competitor": "maximum_sampled_negative_logit_at_either_positive_endpoint",
+    "checkpoint_selection": "fixed_final_epoch",
+    "decoder": "exact_sparse_top32",
+    "validation_used_during_training": false,
+    "development_only": true,
+    "independent_test_claim": false,
+    "model_defaults_changed": false,
+    "stage3_ready": false
+  },
+  "comparisons": {
+    "long": {
+      "baseline_mean_f1": 0.3173511819303442,
+      "ranking_mean_f1": 0.31678030942675783,
+      "paired_differences": {
+        "7": 0.012612902642122226,
+        "1729": 0.009831213546872775,
+        "20261015": -0.024156733699753963
+      },
+      "mean_difference": -0.0005708725035863393
+    },
+    "short": {
+      "baseline_mean_f1": 0.15606408697343166,
+      "ranking_mean_f1": 0.16960981668623698,
+      "paired_differences": {
+        "7": 0.02208397200621745,
+        "1729": 0.024697556600877052,
+        "20261015": -0.006144339468678511
+      },
+      "mean_difference": 0.013545729712805321
+    }
+  },
+  "peak_process_rss_kib": 857552
+}

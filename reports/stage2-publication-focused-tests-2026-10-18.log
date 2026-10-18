@@ -1,0 +1,9 @@
+Publication checkout: /tmp/rna-stable-ai-publish-20261018-stage2
+Command: PYTHONPATH=src:scripts /home/zyliu/Documents/rna-stable-ai/.venv/bin/python -m pytest -q tests/test_crw_panel_exposure.py tests/test_crw_original_provenance.py tests/test_rcsb_long_source_survey.py tests/test_project_scope.py tests/test_stage2_scope_audit.py tests/test_endpoint_ranking.py tests/test_hard_negative_supervision.py tests/test_recovery_ceiling.py tests/test_endpoint_assignment.py tests/test_sampled_pair_supervision.py tests/test_long_exact_sparse_pairs.py
+
+Initial execution: 50 passed, 1 failed in 4.54 s.
+Failure: test_corrected_instance_fields_exist_in_official_schema required the ignored results/rcsb_instance_schema_2026-10-18.json file.
+Correction: copied the exact retained official schema bytes into tests/fixtures/ and updated only the test fixture path. Added fixture provenance and SHA-256.
+Final execution: 51 passed in 4.38 s.
+
+No full repository suite, model retraining, native folding or frozen-run inference replay was run for this publication. Previously recorded study replays remain documented in V7.
