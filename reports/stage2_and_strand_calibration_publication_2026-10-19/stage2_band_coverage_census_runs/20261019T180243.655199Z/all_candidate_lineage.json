@@ -1,0 +1,3382 @@
+[
+  {
+    "id": "RF00177:AAFJ01000008.1/10852-9340",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1513,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AAXS01000094.1/4839-6350",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1512,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AAYP01000003.1/232298-233810",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1513,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:ABDE02000010.1/183602-185109",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1508,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:ABGO01000325.1/3044-1546",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1499,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:ABKZ01000640.1/5030-3495",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1536,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AC149043.3/15235-16757",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1523,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AC160099.1/10055-11546",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1492,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:ACET01000043.1/67-1574",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1508,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:ACIN02000006.1/16266-14733",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1534,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:ADVG01000004.1/1323946-1322469",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1478,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AENO01000048.1/5207-3679",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1529,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AEZG01000028.1/4341-5872",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1532,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AF211138.2/108-1652",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1545,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AF407680.1/1-1504",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1504,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AF407718.1/1-1486",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1486,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AF407728.1/1-1553",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1553,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AF407729.1/1-1483",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1483,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AF481102.1/22645-24192",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1548,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AFJQ01000029.1/34358-35866",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1509,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AFNU01000079.1/131-1656",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1526,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AFPX01000069.1/35-1566",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1532,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AGAG01000005.1/9780-8261",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1520,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AJ965256.1/805037-803541",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1497,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AP009153.1/1882858-1884381",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1524,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AY581819.1/1630-6",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1625,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AY713479.1/12029-13578",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1550,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:AY858509.2/1-1537",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1537,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:BX842648.2/123558-125071",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1514,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CAEM01000062.1/13-1523",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1511,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP000159.1/3330048-3328509",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1540,
+    "band": "1000_1999",
+    "decision": "selected_complete_reference",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP000359.1/157581-159089",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1509,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP000679.1/2380146-2378602",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1545,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP001055.1/1536698-1535187",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1512,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP001100.1/908786-907295",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1492,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP001145.1/1133389-1131854",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1536,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP001205.1/442210-440675",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1536,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP001226.1/93349-94879",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1531,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP001251.1/1245769-1244222",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1548,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP001275.1/984658-983137",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1522,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP001364.1/780549-779064",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1486,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP001634.1/1770527-1772065",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1539,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP001708.1/643490-645015",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1526,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP001792.1/2381215-2382713",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1499,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP001818.1/1625616-1624093",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1524,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP001959.1/1912467-1913981",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1515,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP001998.1/1562911-1561358",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1554,
+    "band": "1000_1999",
+    "decision": "selected_complete_reference",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP002054.1/854126-855678",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1553,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP002161.1/5312-6843",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1532,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP002175.1/779494-781044",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1551,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP002221.1/248307-246756",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1552,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP002353.1/4713330-4714852",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1523,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP002432.1/2337382-2335863",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1520,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP002458.1/700517-699005",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1513,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP002525.1/485926-484416",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1511,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP002683.1/865959-864386",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1574,
+    "band": "1000_1999",
+    "decision": "selected_complete_reference",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP002858.1/2251537-2249985",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1553,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP002901.1/268218-269760",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1543,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CP002903.1/662524-664069",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1546,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CU367875.1/566-1989",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1424,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:CU466930.1/1801247-1799646",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1602,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:DQ234104.2/5-1490",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1486,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:DQ234124.2/5-1530",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1526,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:DQ455886.1/67-1589",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1523,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:DQ767883.1/10-1557",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1548,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:DQ905772.2/52-1610",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1559,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:EF173356.1/9-1570",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1562,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:EU123923.1/77-1583",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1507,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:EU262999.1/1-1529",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1529,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:EU686601.1/12359-13921",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1563,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:EU795191.1/26193-27754",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1562,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:EU795216.1/25258-26772",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1515,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:EU795287.1/4958-6529",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1572,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:EU939395.1/5-1542",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1538,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:FP245538.1/18229-19773",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1545,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:FP245539.1/21728-23295",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1568,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:FP245540.1/1483-3055",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1573,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:FP245541.1/18860-20401",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1542,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:FP565575.1/1587658-1586098",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1561,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:FQ859183.1/1179117-1180628",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1512,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:GQ503823.1/16-1549",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1534,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:GU180079.1/11489-13117",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1629,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:GU260705.1/11747-13300",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1554,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:GU474850.1/19180-17619",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1562,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:GU474881.1/32681-31122",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1560,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:GU474904.1/4693-3219",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1475,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:GU565236.1/2-1524",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1523,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:GU567974.1/14656-16198",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1543,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:HM454283.1/33305-34834",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1530,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:JF428976.1/24-1588",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1565,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF00177:M30790.1/1-1535",
+    "family_id": "RF00177",
+    "clan_id": "CL00111",
+    "length_nt": 1535,
+    "band": "1000_1999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF01849:AABW01000001.1/899123-899631",
+    "family_id": "RF01849",
+    "clan_id": null,
+    "length_nt": 509,
+    "band": "1_999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF01849:AE006914.1/1031328-1030820",
+    "family_id": "RF01849",
+    "clan_id": null,
+    "length_nt": 509,
+    "band": "1_999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF01849:AE017197.1/910842-910294",
+    "family_id": "RF01849",
+    "clan_id": null,
+    "length_nt": 549,
+    "band": "1_999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF01849:AJ235273.1/40992-40464",
+    "family_id": "RF01849",
+    "clan_id": null,
+    "length_nt": 529,
+    "band": "1_999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF01849:CP000053.1/198997-199588",
+    "family_id": "RF01849",
+    "clan_id": null,
+    "length_nt": 592,
+    "band": "1_999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF01849:CP000087.1/411033-411553",
+    "family_id": "RF01849",
+    "clan_id": null,
+    "length_nt": 521,
+    "band": "1_999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF01849:CP000683.1/1122306-1121801",
+    "family_id": "RF01849",
+    "clan_id": null,
+    "length_nt": 506,
+    "band": "1_999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF01849:CP000766.2/1038340-1037832",
+    "family_id": "RF01849",
+    "clan_id": null,
+    "length_nt": 509,
+    "band": "1_999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF01849:CP000847.1/1045451-1046020",
+    "family_id": "RF01849",
+    "clan_id": null,
+    "length_nt": 570,
+    "band": "1_999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF01849:CP000849.1/1136359-1135839",
+    "family_id": "RF01849",
+    "clan_id": null,
+    "length_nt": 521,
+    "band": "1_999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF01849:CP001612.1/1041556-1041048",
+    "family_id": "RF01849",
+    "clan_id": null,
+    "length_nt": 509,
+    "band": "1_999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02462:AL355930.2/32605-30557",
+    "family_id": "RF02462",
+    "clan_id": "CL00004",
+    "length_nt": 2049,
+    "band": "2000_2999",
+    "decision": "prior_exposure_overlap",
+    "reference_supported": null,
+    "exposed": true
+  },
+  {
+    "id": "RF02462:CABT02000003.1/521099-523170",
+    "family_id": "RF02462",
+    "clan_id": "CL00004",
+    "length_nt": 2072,
+    "band": "2000_2999",
+    "decision": "prior_exposure_overlap",
+    "reference_supported": null,
+    "exposed": true
+  },
+  {
+    "id": "RF02462:CP003008.1/2390583-2392406",
+    "family_id": "RF02462",
+    "clan_id": "CL00004",
+    "length_nt": 1824,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02462:CP003014.1/2215735-2213952",
+    "family_id": "RF02462",
+    "clan_id": "CL00004",
+    "length_nt": 1784,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AADL01001107.1/5681-2770",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2912,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AADL01001701.1/6590-3677",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2914,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AB078022.1/2298-5600",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3303,
+    "band": null,
+    "decision": "prior_exposure_overlap",
+    "reference_supported": null,
+    "exposed": true
+  },
+  {
+    "id": "RF02540:ACVJ01000008.1/268894-271753",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2860,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:ACXK01000051.1/29011-26091",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2921,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:ACXM01000005.1/159941-162863",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2923,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:ADCE01000040.1/36234-33353",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2882,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AE000666.1/1604009-1607048",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3040,
+    "band": null,
+    "decision": "selected_complete_reference",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AE000782.1/1788756-1785815",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2942,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AE004437.1/1877501-1880414",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2914,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AE008384.1/2402374-2405280",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2907,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AE009439.1/585271-588370",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3100,
+    "band": null,
+    "decision": "selected_complete_reference",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AE017199.1/393978-396967",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2990,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AE017261.1/497008-494100",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2909,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AEMC01000045.1/292-3289",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2998,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AEMG01000026.1/3068-151",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2918,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AF034619.1/2514-5444",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2931,
+    "band": "2000_2999",
+    "decision": "prior_exposure_overlap",
+    "reference_supported": null,
+    "exposed": true
+  },
+  {
+    "id": "RF02540:AF083072.1/21633-18644",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2990,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AF268611.1/8672-5813",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2860,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AGBE01001967.1/9793-12790",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2998,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AGIW01000001.1/28865-31961",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3097,
+    "band": null,
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AGIY01000001.1/118719-121638",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2920,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AGNT01000024.1/6580-3638",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2943,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AJ496176.1/5856-8818",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2963,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AJ586107.1/1926-4849",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2924,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AJ627422.1/40358-43323",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2966,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AL445067.1/235738-232821",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2918,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:AP011532.1/108778-111686",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2909,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:BA000001.2/192729-195778",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3050,
+    "band": null,
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:BA000023.2/1186306-1183269",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3038,
+    "band": null,
+    "decision": "prior_exposure_overlap",
+    "reference_supported": null,
+    "exposed": true
+  },
+  {
+    "id": "RF02540:CP000077.1/1106933-1103895",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3039,
+    "band": null,
+    "decision": "selected_complete_reference",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP000102.1/1166996-1163952",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3045,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP000254.1/41571-44494",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2924,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP000300.1/1021798-1018871",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2928,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP000493.1/1663729-1660620",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3110,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP000505.1/366086-363009",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3078,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP000559.1/405667-408584",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2918,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP000562.1/1822389-1819461",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2929,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP000660.1/623274-620236",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3039,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP000743.1/1194401-1191429",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2973,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP000780.1/2250280-2247357",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2924,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP000816.1/731312-734356",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3045,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP000867.1/860828-863795",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2968,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP000968.1/1328189-1331736",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3548,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP001338.1/1213046-1215969",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2924,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP001365.1/22567-25488",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2922,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP001404.1/1450307-1453357",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3051,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP001463.1/115333-118364",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3032,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP001688.1/618088-615166",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2923,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP001690.1/304605-307521",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2917,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP001719.1/762872-765862",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2991,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP001787.1/623859-626864",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3006,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP001857.1/1049709-1046732",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2978,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP001939.1/54518-57596",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3079,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP001941.1/14359-17300",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2942,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP001994.1/562792-565716",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2925,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002051.1/1270009-1266807",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3203,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002057.1/1534504-1531541",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2964,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002062.1/13292-10373",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2920,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002069.1/50503-53426",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2924,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002098.1/1280841-1283923",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3083,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002101.1/1236515-1233583",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2933,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002117.1/741920-744839",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2920,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002278.1/26764-23775",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2990,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002529.1/1486991-1483925",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3067,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002535.1/1297745-1300783",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3039,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002551.1/492357-495330",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2974,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002656.1/417449-414399",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3051,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002737.1/1091964-1094965",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3002,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002772.1/814663-817674",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3012,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002839.1/2729290-2732206",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2917,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002920.1/1625732-1628761",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3030,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CP002988.1/932890-929977",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2914,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CR626858.1/30124-27196",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2929,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CR936257.1/214089-211176",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2914,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:CR937012.1/19041-21972",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2932,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:DQ078753.1/36869-33844",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3026,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:DQ314493.1/27813-30743",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2931,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:EU686620.1/9628-12672",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3045,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:EU686631.2/30236-33286",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3051,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:EU686635.1/2573-5623",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3051,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:EU686642.2/23399-26401",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3003,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:FP565147.1/55544-52598",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2947,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:HE574568.1/8761-11841",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3081,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:HE574571.1/18954-22030",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3077,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:U40238.2/31510-28506",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 3005,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:U82482.1/5-2912",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2908,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02540:X72588.1/3918-6854",
+    "family_id": "RF02540",
+    "clan_id": "CL00112",
+    "length_nt": 2937,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AADL01002504.1/73037-70056",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2982,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AAYA01000003.1/323768-327215",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3448,
+    "band": null,
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AAZS01000004.1/3033-123",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2911,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ABCK01000018.1/57317-60230",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2914,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ABCR01000001.1/9019-5561",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3459,
+    "band": null,
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ABEQ01000080.1/9755-6861",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2895,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ABHJ01000047.1/3867-904",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2964,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ABKZ01000640.1/3023-133",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2891,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ABOX02000035.1/70819-67954",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2866,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ABRS01000102.1/3081-195",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2887,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ACBJ01000075.1/3424-514",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2911,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ACDN01000023.1/3199-6081",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2883,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ACDS01000303.1/2942-34",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2909,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ACIJ02000018.1/406733-403849",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2885,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ACZL01000054.1/2944-49",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2896,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ADCX01000014.1/2280-5359",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3080,
+    "band": null,
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ADFR01000011.1/3119-222",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2898,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ADLS01000036.1/498-3472",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2975,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ADNW02000012.1/35902-32772",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3131,
+    "band": null,
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:ADVG01000004.1/1322171-1319199",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2973,
+    "band": "2000_2999",
+    "decision": "selected_complete_reference",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AE000520.1/231944-234896",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2953,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AEES01000073.1/3166-37",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3130,
+    "band": null,
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AF211133.2/2116-4925",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2810,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AF245369.1/1-2750",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2750,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AF245376.1/1-2824",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2824,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AF481102.1/24258-27125",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2868,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AFKA01000026.1/3079-122",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2958,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AFNU01000062.1/241-3124",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2884,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AFUI01000030.1/1848-4856",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3009,
+    "band": null,
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AJ965256.1/47731-50682",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2952,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AM180895.1/7-2955",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2949,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AM905424.1/1-2835",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2835,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AM946600.1/3200-189",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3012,
+    "band": null,
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AP009153.1/1884701-1887648",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2948,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:AP009510.1/130487-133369",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2883,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:BX842648.2/125404-128344",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2941,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP000679.1/488147-491109",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2963,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP000875.1/1976598-1979574",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2977,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001055.1/1534536-1531500",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3037,
+    "band": null,
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001100.1/906798-903930",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2869,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001145.1/939593-936570",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3024,
+    "band": null,
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001146.1/625787-628802",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3016,
+    "band": null,
+    "decision": "selected_complete_reference",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001197.1/1107715-1104788",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2928,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001205.1/437603-434675",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2929,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001226.1/95183-97938",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2756,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001275.1/982648-979661",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2988,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001364.1/4913263-4910323",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2941,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001634.1/1772311-1775264",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2954,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001743.1/891092-888198",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2895,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001769.1/3193572-3190739",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2834,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001792.1/2383130-2386033",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2904,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001807.1/189199-192161",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2963,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001818.1/1104632-1101659",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2974,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001825.1/813726-810791",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2936,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001854.1/3764308-3761310",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2999,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001959.1/1248722-1245733",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2990,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001968.1/1929653-1926732",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2922,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP001998.1/1560794-1557900",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2895,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP002049.1/88381-91332",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2952,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP002161.1/6931-9818",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2888,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP002171.1/1536103-1532731",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3373,
+    "band": null,
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP002210.1/1134641-1137938",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3298,
+    "band": null,
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP002353.1/4715612-4718390",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2779,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP002432.1/2335602-2332713",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2890,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP002458.1/789779-786897",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2883,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP002514.1/104879-107765",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2887,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP002525.1/649038-651979",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2942,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP002637.1/928969-931886",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2918,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP002659.1/246809-249774",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2966,
+    "band": "2000_2999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP002683.1/863851-860827",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3025,
+    "band": null,
+    "decision": "selected_complete_reference",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CP002901.1/785382-788298",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2917,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CU367853.1/32572-35581",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3010,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:CU466930.1/1799422-1796381",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3042,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:EF203797.1/2365-5248",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2884,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:EU686590.1/5824-2852",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2973,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:EU686597.1/24060-21090",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2971,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:EU795181.1/8234-5531",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2704,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:EU795196.1/14920-11891",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3030,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:EU795206.1/15762-18674",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2913,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:EU795287.1/6990-10020",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3031,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:FJ560485.1/8951-6012",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2940,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:FJ872372.1/9644-12466",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2823,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:FJ872374.1/2099-4950",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2852,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:FP245538.1/20573-23523",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2951,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:FP245539.1/24257-27271",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3015,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:FP245540.1/3889-6846",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2958,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:FP245541.1/20832-23795",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2964,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:FP565575.1/1585575-1582548",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3028,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:FP929046.1/589785-586950",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2836,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:FQ032815.1/2931-73",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2859,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:FQ311870.1/13183-16381",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3199,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:FQ312005.1/1891702-1888775",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2928,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:GU180080.1/36649-33202",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 3448,
+    "band": null,
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:GU260705.1/14113-17090",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2978,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:GU260711.1/11996-9110",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2887,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:GU474850.1/17220-14249",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2972,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:GU474878.1/11307-8366",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2942,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:HM454281.1/5282-8258",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2977,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:HM537013.1/32674-29750",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2925,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:HQ613875.1/1789-4648",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2860,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:U68457.4/448-3389",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2942,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02541:X68433.1/1-2932",
+    "family_id": "RF02541",
+    "clan_id": "CL00112",
+    "length_nt": 2932,
+    "band": "2000_2999",
+    "decision": "fixed_family_cap",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AB623035.1/201-1558",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1358,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:ABGB01000454.1/88-1385",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1298,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AEFF01000078.1/4488-3073",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1416,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AEUG01000221.1/50-1414",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1365,
+    "band": "1000_1999",
+    "decision": "prior_exposure_overlap",
+    "reference_supported": null,
+    "exposed": true
+  },
+  {
+    "id": "RF02542:AEYK01000034.1/11-1270",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1260,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AF024658.1/1-1399",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1399,
+    "band": "1000_1999",
+    "decision": "selected_complete_reference",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AF027682.1/1-1286",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1286,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AF027683.1/1-1342",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1342,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AF177920.1/1-1314",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1314,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AF394526.1/1-1319",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1319,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AF394527.1/1-1317",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1317,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AF394529.1/1-1352",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1352,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AF484690.1/1-1388",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1388,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AF484692.1/1-1366",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1366,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AF484694.1/1-1472",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1472,
+    "band": "1000_1999",
+    "decision": "prior_exposure_overlap",
+    "reference_supported": null,
+    "exposed": true
+  },
+  {
+    "id": "RF02542:AFBI01001141.1/69-1549",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1481,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AJ252949.1/1-1332",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1332,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AJ252950.1/1-1417",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1417,
+    "band": "1000_1999",
+    "decision": "prior_exposure_overlap",
+    "reference_supported": null,
+    "exposed": true
+  },
+  {
+    "id": "RF02542:AJ252951.1/1-1352",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1352,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AJ252954.1/1-1389",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1389,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AJ252956.1/1-1373",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1373,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AJ252958.1/1-1355",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1355,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AJ302317.1/1-1280",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1280,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AJ302320.1/1-1258",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1258,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AY017211.1/1-1231",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1231,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:AY230191.1/1-1391",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1391,
+    "band": "1000_1999",
+    "decision": "prior_exposure_overlap",
+    "reference_supported": null,
+    "exposed": true
+  },
+  {
+    "id": "RF02542:AY376351.1/2569-3968",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1400,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:D85502.1/1-1247",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1247,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:EU260046.1/1-1256",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1256,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:EU534408.1/1-1367",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1367,
+    "band": "1000_1999",
+    "decision": "prior_exposure_overlap",
+    "reference_supported": null,
+    "exposed": true
+  },
+  {
+    "id": "RF02542:FJ594990.1/1-1296",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1296,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:FJ843105.1/1-1437",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1437,
+    "band": "1000_1999",
+    "decision": "selected_complete_reference",
+    "reference_supported": true,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:GQ843833.1/1-1301",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1301,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:HM594264.1/1-1395",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1395,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:HQ399665.1/1-1245",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1245,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:L07255.1/1-1299",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1299,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:L16867.1/1-1295",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1295,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:L39110.1/1-1352",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1352,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF02542:U68473.1/1-1331",
+    "family_id": "RF02542",
+    "clan_id": "CL00111",
+    "length_nt": 1331,
+    "band": "1000_1999",
+    "decision": "unsupported_reference",
+    "reference_supported": false,
+    "exposed": false
+  },
+  {
+    "id": "RF04321:CP001612.1/1041502-1041094",
+    "family_id": "RF04321",
+    "clan_id": null,
+    "length_nt": 409,
+    "band": "1_999",
+    "decision": "prior_exposure_overlap",
+    "reference_supported": null,
+    "exposed": true
+  },
+  {
+    "id": "RF04321:LS992663.1/911221-910782",
+    "family_id": "RF04321",
+    "clan_id": null,
+    "length_nt": 440,
+    "band": "1_999",
+    "decision": "prior_exposure_overlap",
+    "reference_supported": null,
+    "exposed": true
+  },
+  {
+    "id": "RF04321:PBDU01000009.1/1426-1867",
+    "family_id": "RF04321",
+    "clan_id": null,
+    "length_nt": 442,
+    "band": "1_999",
+    "decision": "prior_exposure_overlap",
+    "reference_supported": null,
+    "exposed": true
+  }
+]

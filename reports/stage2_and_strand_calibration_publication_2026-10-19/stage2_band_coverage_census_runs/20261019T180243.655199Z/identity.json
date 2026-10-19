@@ -1,0 +1,26 @@
+{
+  "implementation": {
+    "scripts/audit_stage2_band_coverage.py": "33146820c8ad9c88c2200ec463db6ad7851727b6c4838b256aa1ca50ac2574e2",
+    "src/rnastable/stage2_census.py": "d1ad3b817b256e730d787e3c1d9718205882f39768685d763312651ea0289bbb"
+  },
+  "config_sha256": "81c6c89190da3c2d3f8c09c50526e24110902e20bc101339fdf09172691dd209",
+  "gate_sha256": "956fef4d171a2d33d16a16e36b80d3def4696d321f930c74ea3396acbbd030dd",
+  "sources": {
+    "candidate_pool": {
+      "path": "results/long_validation_coverage_runs/20261017T033935.363253Z/candidates.json",
+      "sha256": "65ec8bbd1bdb6c1125d8943d7df6ad9c4c9dc5761e69130209574e3ef73e0b79"
+    },
+    "frozen_selection_decisions": {
+      "path": "results/long_validation_coverage_runs/20261017T033935.363253Z/selection.json",
+      "sha256": "8a08170227188f04c4a37fbdcecfbd8deadcce35b35b1ad88e593b647654d4ad"
+    },
+    "family_clan_map": {
+      "path": "results/crw_panel_exposure_runs/20261018T221708.139284Z/summary.json",
+      "sha256": "c20f4cc4fca4b38fd7c2ce75febc0f6f5082b420af742364335db70aaffc55ad"
+    },
+    "secondary_band_survey": {
+      "path": "results/rfam_seed_long_candidate_audit_runs/20261017T191603.870444Z/summary.json",
+      "sha256": "73f0e30f08d5eddedb5a72e6bb64573b868dfa126756ba84a08708772b986d20"
+    }
+  }
+}

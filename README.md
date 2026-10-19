@@ -1,8 +1,11 @@
 # RNA-StableAI
 
-![RNA-StableAI proposed RNAfold, STRAND, RiboNN and BoTorch workflow](diagram_10182026.png)
+![RNA-StableAI four-component workflow: RNAfold feeds ensemble features to a separately named STRAND refit, substituting them into the published STRAND model is rejected, RiboNN scores released translational-efficiency tasks, both sides feed versioned score records, and a composite score plus BoTorch and the cell-free assay sit behind the open Stage 2 gate](diagram_10192026.svg)
 
-*Proposed workflow; component replay checks are complete, while biological validation and expression candidate design remain pending.*
+*Implementation state on 2026-10-19: blue paths are implemented and replayed, red paths are
+rejected or blocked, grey paths sit behind the open Stage 2 gate. No stability, translation or
+expression benefit is established by any path shown. The earlier proposed-workflow diagram is
+retained at [diagram_10182026.png](diagram_10182026.png).*
 
 Research prototype for RNA structure prediction, constrained sequence optimization,
 and reproducible folding benchmarks. Code, experimental checkpoints, input data,
@@ -36,8 +39,9 @@ Independent biological validation remains a separate, unresolved release gate.
 | Component | Role | Current status |
 |---|---|---|
 | RNAfold / ViennaRNA | Structural and ensemble features | Fixed-input MFE and partition-function checks through 2,999 nt passed. |
-| STRAND | In-solution stability proxy | Released-reference PLS fit and coefficient replay passed. Its original features use **LinearPartition**; unrestricted RNAfold substitution remains unvalidated. |
-| RiboNN | Translation proxy for annotated mRNA | Human pretrained inference replay passed using 50 checkpoints across ten folds. Scores remain on the released task scale, without cell-free calibration. |
+| STRAND | In-solution stability proxy | Released-reference PLS fit and coefficient replay passed. Its original features use **LinearPartition**; substituting RNAfold features into the unchanged published model was **rejected** under a prespecified criterion, because the ALO feature is not reproducible across engines. |
+| strand_rnafold_calibration_v1 | Separately named RNAfold-feature refit | PLS refit on RNAfold ensemble features. Clears a prespecified minimum-competence bar on 13 project-exposed held-out records. **Not published STRAND, and not independently validated.** |
+| RiboNN | Translation proxy for annotated mRNA | Human pretrained inference replay passed using 50 checkpoints across ten folds. Scores remain on the released task scale, without cell-free calibration. None of the 78 released tasks is cell-free, and no task has been selected for an assay. |
 | BoTorch | Feasible candidate selection | Discrete toy-objective budget, caching and resume checks passed; biological candidate optimization remains queued. |
 
 The proposed workflow above includes future experimental feedback. The first
@@ -48,6 +52,44 @@ The public snapshot contains code, portable tests and concise summaries; full
 local run artifacts, datasets, model weights and installed environments are not
 bundled. Original third-party [source](docs/third_party/RiboNN_LICENSE.txt) and
 [weight-license terms](docs/third_party/RiboNN_MODEL_WEIGHTS_LICENSE.txt) are retained.
+
+### 2026-10-19: engine agreement, a named calibration, score records and a Stage 2 census
+
+Four protocols were frozen before the work they govern, then run once. Each writes a
+timestamped run with a manifest, and each ships a `--verify-run` audit that re-checks
+artifact hashes and replays the recorded decision without recomputing it.
+
+| Frozen protocol | Question | Outcome |
+|---|---|---|
+| [agreement criterion v1](configs/strand_rnafold_agreement_criterion_v1_2026-10-19.json) | May RNAfold features substitute for the released LinearPartition features of published STRAND? | **Rejected** on 85 held-out records. Ensemble ΔG/nt and GC transfer exactly; AUP transfers for about 95% of records; ALO does not transfer at all. |
+| [calibration criterion v2](configs/strand_rnafold_calibration_criterion_v2_2026-10-19.json) | Then what does an honest RNAfold-feature model look like? | `strand_rnafold_calibration_v1`, a separately named PLS refit. Primary arm without-ALO, 1 component, held-out RMSE 0.2194 h against a 0.2780 h training-mean null. |
+| [score record schema v1](configs/score_record_schema_v1_2026-10-19.json) | Can every score be bound to its provenance, and can the two sides be combined? | 99 fully bound records. **No composite score is permitted**: the units are incommensurable, no floor is selected, and **0 records carry both a stability and a translation score**. |
+| [Stage 2 band census v1](configs/stage2_band_coverage_census_v1_2026-10-19.json) | Can the sparse 2,000–2,999 nt requirement be resolved from local data? | **Blocked on acquisition.** 56 eligible band records exist locally, but they span one clan that is already represented, so they add records rather than independent evidence. |
+
+Why ALO does not transfer: the released arrays carry 1,642 exactly-zero positions and
+1,522 positions at or above one across the 85 held-out records, which saturate the
+feature's log-odds at ∓23.03. An exact partition function produces neither, so the
+published ALO depends on numerical artifacts of the original engine's approximate
+normalization. A probability-flooring fix was tested, came out worse than the plain
+null on held-out data, and was discarded.
+
+Two consequences worth stating plainly. The published with-ALO arm loses its held-out
+advantage on RNAfold features (+0.046 h RMSE) while the without-ALO arm transfers
+almost intact (+0.002 h), which is consistent with part of that advantage being
+engine-specific rather than transferable. And the four-component design has never
+scored a single sequence on both its stability and its translation side, because the
+released STRAND references carry UTR/CDS descriptions without numeric boundaries while
+the RiboNN inputs are synthetic sequences with no measured half-life.
+
+Zero of the six Stage 2 gate requirements are satisfied, and no gate review has taken
+place, so nothing behind the gate — parents, allowed edits, the biological objective,
+budgets, or the cell-free assay protocol — is frozen. Detail, limits and exact
+continuation commands are in handoffs
+[V1](reports/RNA-StableAI_HANDOFF_2026-10-19_V1.md),
+[V2](reports/RNA-StableAI_HANDOFF_2026-10-19_V2.md),
+[V3](reports/RNA-StableAI_HANDOFF_2026-10-19_V3.md) and
+[V4](reports/RNA-StableAI_HANDOFF_2026-10-19_V4.md), with concise run evidence and a
+[manifest](reports/stage2_and_strand_calibration_publication_2026-10-19/MANIFEST.json).
 
 ### Step 3 goal and plan: protein expression efficiency
 

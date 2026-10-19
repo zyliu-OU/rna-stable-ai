@@ -1,0 +1,50 @@
+{
+  "RF00002": {
+    "clan_id": "CL00112",
+    "source_role": "family_clan_map"
+  },
+  "RF00177": {
+    "clan_id": "CL00111",
+    "source_role": "family_clan_map"
+  },
+  "RF01050": {
+    "clan_id": "CL00004",
+    "source_role": "secondary_band_survey"
+  },
+  "RF01272": {
+    "clan_id": "CL00037",
+    "source_role": "secondary_band_survey"
+  },
+  "RF01959": {
+    "clan_id": "CL00111",
+    "source_role": "family_clan_map"
+  },
+  "RF01960": {
+    "clan_id": "CL00111",
+    "source_role": "family_clan_map"
+  },
+  "RF02012": {
+    "clan_id": "CL00102",
+    "source_role": "family_clan_map"
+  },
+  "RF02462": {
+    "clan_id": "CL00004",
+    "source_role": "secondary_band_survey"
+  },
+  "RF02540": {
+    "clan_id": "CL00112",
+    "source_role": "family_clan_map"
+  },
+  "RF02541": {
+    "clan_id": "CL00112",
+    "source_role": "family_clan_map"
+  },
+  "RF02542": {
+    "clan_id": "CL00111",
+    "source_role": "family_clan_map"
+  },
+  "RF02543": {
+    "clan_id": "CL00112",
+    "source_role": "family_clan_map"
+  }
+}

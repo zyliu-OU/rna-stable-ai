@@ -1,0 +1,12 @@
+{
+  "implementation": {
+    "scripts/audit_strand_rnafold_agreement.py": "210e0956a00feeb33cc76f877cafc156cd1845a299e50a40936f895801429eee",
+    "src/rnastable/strand_agreement.py": "d59bffd11904e0121fa477cfac25afa316a61c09faaedac5f58b68384e46b719",
+    "src/rnastable/strand_reference.py": "472488c26804acf0806373d5edb420c7129947a65328c0221d562d09647bab68",
+    "src/rnastable/component_integration.py": "1a592ac3355c1b3270810ab8b6d38be0e90d71b0297ea96ae7cd02c5a191dfaa",
+    "src/rnastable/ensemble_worker.py": "e880851ac1592cab07a435e7b1f3e45ab521fad02becdb2a430ea4f1a8416a4b"
+  },
+  "criterion_sha256": "a003eaa22b3e4391e1de1911cdb50c3a9228d62216b402ccfa4ff31ffab2d058",
+  "reference_model_sha256": "660d07587f0c906fa3eb3663ee9ca8ccb4affaac541d67b85bd434da5018d354",
+  "source_manifest_sha256": "5cb505276eeb7dd738cb804eddeae873e7bee9b537e00d6e343ca336f84e3cc3"
+}

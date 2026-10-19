@@ -1,0 +1,22 @@
+{
+  "implementation": {
+    "scripts/build_score_records.py": "d07239a0083ebd614df51fd79cef3b3b3c4ff827febec916494b0cca3b3474c4",
+    "src/rnastable/score_records.py": "09261852710322c7e392d1e409946dd10b6d2d9712d22416008b7296bd8f1e87",
+    "src/rnastable/strand_reference.py": "472488c26804acf0806373d5edb420c7129947a65328c0221d562d09647bab68"
+  },
+  "schema_sha256": "3fbdec9d9120998f9557affbf4a5aecdc35910650097f15193c89a28d00d4d56",
+  "ingested_runs": {
+    "strand_reference_replay": {
+      "run": "results/strand_reference_reproduction_runs/20261019T042427.196161Z",
+      "manifest_sha256": "14a4e118f441b043effe6fd138df866f9d4e19e0a74e026ac70f078f289cdf38"
+    },
+    "strand_rnafold_calibration_v1": {
+      "run": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z",
+      "manifest_sha256": "9d8456b067b48c0b9e52d13dc076d03d79c4e58d6930b810dcd040c112a61581"
+    },
+    "ribonn_released_task": {
+      "run": "results/ribonn_fixed_inference_runs/20261019T045101.117038Z",
+      "manifest_sha256": "bc0e179b12395f344fda74ff975c2be426966646daf6f94df075f463399e35dd"
+    }
+  }
+}

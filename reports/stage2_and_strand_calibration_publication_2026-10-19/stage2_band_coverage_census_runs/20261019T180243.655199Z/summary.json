@@ -1,0 +1,216 @@
+{
+  "band": {
+    "name": "2000_2999",
+    "minimum_inclusive": 2000,
+    "maximum_exclusive": 3000
+  },
+  "scope": {
+    "minimum_inclusive": 1,
+    "maximum_exclusive": 3000
+  },
+  "stage3_target": "cell_free_expression",
+  "ready_for_stage3": false,
+  "in_scope_selected_records": 6,
+  "baseline_lineage": {
+    "families": [
+      "RF00177",
+      "RF02541",
+      "RF02542"
+    ],
+    "clans": [
+      "CL00111",
+      "CL00112"
+    ],
+    "clan_unresolved_families": []
+  },
+  "coverage_by_band": {
+    "2000_2999": {
+      "candidates": 138,
+      "selected_in_scope": 1,
+      "selected_families": [
+        "RF02541"
+      ],
+      "selected_clans": [
+        "CL00112"
+      ],
+      "eligible_records": 56
+    },
+    "1_999": {
+      "candidates": 14,
+      "selected_in_scope": 0,
+      "selected_families": [],
+      "selected_clans": [],
+      "eligible_records": 0
+    },
+    "1000_1999": {
+      "candidates": 132,
+      "selected_in_scope": 5,
+      "selected_families": [
+        "RF00177",
+        "RF02542"
+      ],
+      "selected_clans": [
+        "CL00111"
+      ],
+      "eligible_records": 40
+    }
+  },
+  "band_census": {
+    "records": 138,
+    "by_decision": {
+      "fixed_family_cap": 55,
+      "prior_exposure_overlap": 3,
+      "selected_complete_reference": 1,
+      "unsupported_reference": 79
+    },
+    "band_families": [
+      "RF02462",
+      "RF02540",
+      "RF02541"
+    ],
+    "band_clans": [
+      "CL00004",
+      "CL00112"
+    ],
+    "band_clan_unresolved_families": [],
+    "eligible_records": 56,
+    "eligible_families": [
+      "RF02540",
+      "RF02541"
+    ],
+    "eligible_clans": [
+      "CL00112"
+    ],
+    "eligible_clan_unresolved_families": [],
+    "new_families_available": [
+      "RF02540"
+    ],
+    "new_clans_available": [],
+    "eligible_records_by_family": {
+      "RF02540": 31,
+      "RF02541": 25
+    },
+    "new_clan_opportunities_blocked": {
+      "CL00004": {
+        "family": "RF02462",
+        "records": 2,
+        "reasons": {
+          "prior_exposure_overlap": 2
+        }
+      }
+    },
+    "family_expansion_possible": true,
+    "clan_expansion_possible": false
+  },
+  "band_resolution": {
+    "state": "resolvable_at_family_level_only_clan_coverage_unchanged",
+    "family_expansion_possible": true,
+    "clan_expansion_possible": false,
+    "eligible_records": 56,
+    "note": "Availability only. Expanding the selection requires an explicit gate review and new inference; neither is performed or implied here."
+  },
+  "secondary_survey_band_families": {
+    "RF01960": 16,
+    "RF02462": 2,
+    "RF02540": 55,
+    "RF02541": 81,
+    "RF02543": 2
+  },
+  "secondary_survey_note": "Family counts seen in the band by a second local survey. Their reference support was never screened by the frozen selection, so they are leads, not eligible records.",
+  "gate_requirement_status": [
+    {
+      "requirement": "Frozen independent sequence_and_family_clan_separated_validation_within_scope",
+      "status": "not_satisfied",
+      "evidence": [
+        "results/long_validation_coverage_runs/20261017T033935.363253Z/selection.json",
+        "results/crw_panel_exposure_runs/20261018T221708.139284Z/summary.json",
+        "results/stage2_under3000_audit_runs/20261018T223708.786045Z/summary.json"
+      ],
+      "blockers": [
+        "The in-scope frozen selection holds 6 records across 3 families and 2 clans (CL00111, CL00112).",
+        "Every available reference is a computational Rfam-consensus reference, not an experimental structure.",
+        "The prior audit records independent complete-reference validation as unestablished and existing checkpoints as trained with now-deferred sequences."
+      ]
+    },
+    {
+      "requirement": "Reported_accuracy_and_failures_by_length_band_and_family_against_native_controls",
+      "status": "partially_satisfied",
+      "evidence": [
+        "results/stage2_under3000_audit_runs/20261018T223708.786045Z/summary.json"
+      ],
+      "blockers": [
+        "Accuracy is reported by band, family and seed against LinearFold and ViennaRNA, but the 2000-2999 nt band rests on a single record, so its per-band figure carries no dispersion and no family contrast.",
+        "The learned model remains below both native controls on development references."
+      ]
+    },
+    {
+      "requirement": "Resolve_sparse_2000_2999_nt_coverage_before_claiming_the_full_length_range",
+      "status": "blocked_on_acquisition",
+      "evidence": [
+        "this run",
+        "results/long_validation_coverage_runs/20261017T033935.363253Z/selection.json",
+        "results/crw_panel_exposure_runs/20261018T221708.139284Z/summary.json"
+      ],
+      "blockers": [
+        "Band verdict: resolvable_at_family_level_only_clan_coverage_unchanged.",
+        "Eligible band records available locally: 56 across families ['RF02540', 'RF02541'].",
+        "New families available locally: ['RF02540']; new clans available locally: none.",
+        "Band families seen: ['RF02462', 'RF02540', 'RF02541']; band clans: ['CL00004', 'CL00112']; clan-unresolved band families: none.",
+        "New-clan opportunities present but ineligible: {'CL00004': {'family': 'RF02462', 'records': 2, 'reasons': {'prior_exposure_overlap': 2}}}.",
+        "Clan-separated band coverage therefore needs acquisition of band-length references from a clan outside the selected baseline."
+      ]
+    },
+    {
+      "requirement": "Demonstrate_credible_structure_accuracy_with_explicit_review_of_native_baseline_gaps",
+      "status": "not_satisfied",
+      "evidence": [
+        "results/stage2_under3000_audit_runs/20261018T223708.786045Z/summary.json"
+      ],
+      "blockers": [
+        "The prior audit's first blocking reason is that the learned model remains below both native controls on development references.",
+        "No native experimental-structure control exists for the 2000-2999 nt band."
+      ]
+    },
+    {
+      "requirement": "Pass_constraint_decoder_resource_and_replay_checks",
+      "status": "partially_satisfied",
+      "evidence": [
+        "results/stage2_under3000_audit_runs/20261018T223708.786045Z/summary.json",
+        "results/long_candidate_budget_matched_runs/20261017T183356.669629Z",
+        "results/long_native_controls_runs/20261017T034318.804594Z",
+        "results/bprna_five_clan_feasibility_evaluation_runs/20261017T191445.852927Z"
+      ],
+      "blockers": [
+        "The budget-matched, native-control and five-clan feasibility replays were re-verified on 2026-10-19 and passed, so replay evidence exists for these runs.",
+        "Those replays cover the existing development runs only; no constraint, decoder or resource check exists for any expanded 2000-2999 nt cohort, which does not yet exist."
+      ]
+    },
+    {
+      "requirement": "Document_remaining_limitations_before_expression_candidate_design",
+      "status": "partially_satisfied",
+      "evidence": [
+        "this run",
+        "results/stage2_under3000_audit_runs/20261018T223708.786045Z/summary.json",
+        "reports/RNA-StableAI_HANDOFF_2026-10-18_V13.md"
+      ],
+      "blockers": [
+        "Limitations are documented across handoffs and this census, but the documentation is not frozen as a gate-review artifact and no gate review has occurred.",
+        "Expression candidate design remains disabled and must stay so."
+      ]
+    }
+  ],
+  "requirements_satisfied": 0,
+  "selection_changed": false,
+  "new_inference_performed": false,
+  "model_defaults_changed": false,
+  "no_claim_permitted": [
+    "No accuracy, structure-quality or expression claim follows from a census of availability.",
+    "Counting eligible records does not make them validated, and does not establish that expanding the selection would improve or preserve measured accuracy.",
+    "The reference records available in this band are computational Rfam-consensus references, not experimental structures, so they cannot by themselves satisfy a native-control comparison.",
+    "No per-family cap, selection, model default or gate requirement is changed by this census.",
+    "No Stage 2 requirement is satisfied by this census."
+  ],
+  "new_sequence_scoring_enabled": false,
+  "stage3_ready": false,
+  "interpretation": "Availability census over existing artifacts. No accuracy was measured and no gate requirement is satisfied."
+}

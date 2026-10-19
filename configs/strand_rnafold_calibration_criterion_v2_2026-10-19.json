@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "name": "strand_rnafold_calibration_criterion_v2",
+  "model_name": "strand_rnafold_calibration_v1",
+  "frozen_date": "2026-10-19",
+  "supersedes_nothing": "This criterion adds a separately named model. It does not amend the published STRAND model, configs/strand_reference_reproduction_v1_2026-10-18.json, or the v1 agreement criterion.",
+
+  "purpose": "Refit the STRAND feature-to-half-life relationship on RNAfold ensemble features as a separately named, separately versioned model, because criterion v1 rejected substituting RNAfold features into the unchanged published model.",
+  "naming_rule": "This model must always be reported as strand_rnafold_calibration_v1. It must never be presented as published STRAND, as a reproduction of STRAND, or as STRAND with a different folding engine. Its coefficients are not the published coefficients.",
+
+  "why_a_refit_and_not_a_substitution": {
+    "v1_criterion_sha256": "a003eaa22b3e4391e1de1911cdb50c3a9228d62216b402ccfa4ff31ffab2d058",
+    "v1_run": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z",
+    "v1_outcome": "rejected",
+    "established_label_free_on_85_held_out_records": [
+      "The original energy feature is the ViennaRNA ensemble free energy, not the MFE: median rounding-excess 0, max 5.85e-4 against a 5.55e-3 tolerance.",
+      "GC transfers exactly: max rounding-excess 0.",
+      "aup transfers within tolerance for about 95 percent of records but not in the tail: median 3.3e-4, p95 1.2e-3, max 7.5e-3 against a 2.8e-3 tolerance.",
+      "alo does not transfer: median 0.163, max 1.158 against a 0.051 tolerance. Released LinearPartition arrays carry 1642 exact zeros and 1522 values at or above one across the 85 records while RNAfold produces zero of each, so the released alo depends on numerical artifacts of the original engine's approximate normalization."
+    ]
+  },
+
+  "feature_source": {
+    "engine": "ViennaRNA 2.7.2, RNA_Turner2004, 37.0 C, dangles 2, noLP 0, max_bp_span -1, min_loop_size 3",
+    "parameter_file_sha256": "9521527a251d5e68e6149595f8aa72aa72c63e00dc5af41d7164e6ecaa664777",
+    "reuse_run": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z",
+    "reuse_rule": "Read the stored per-record folds from the v1 run and re-verify each against that run's manifest.json before use. Folding is deterministic, so no record is refolded.",
+    "energy_feature": "ensemble_energy_per_nt",
+    "energy_feature_justification": "Established label-free on 85 held-out records in the v1 run. Not chosen on any half-life outcome.",
+    "alo_transform": "identity",
+    "alo_transform_justification": "Criterion v1 found the floor and two-sided transform family held-out-unstable and mechanistically ruled out. No transform is applied here.",
+    "gc_units": "percent, converted from the RNAfold GC fraction"
+  },
+
+  "arms": {
+    "both_prespecified": true,
+    "with_alo": ["energy_per_length", "GC", "aup", "alo"],
+    "without_alo": ["energy_per_length", "GC", "aup"],
+    "rationale": "Both arms are fitted and both are reported. The feature sets mirror the published arms exactly so that the only changed variable is the folding engine.",
+    "leakage_disclosure": "Published half-life accuracy for both arms on released LinearPartition features is already known from V11-V13 (eGFP RMSE 0.1893218848801146 with ALO and 0.2174279666658343 without; nLuc LOO RMSE 0.29750 with and 0.29292 without). To keep that knowledge from selecting the reported model, the primary arm is not chosen by the author and is not chosen on the held-out cohort. It is chosen by the rule below, which reads only the nLuc training cohort."
+  },
+
+  "fitting_procedure": {
+    "mirror": "scripts/reproduce_strand_reference.R, unchanged method",
+    "implementation": "R pls::plsr, scale = TRUE, plsralg kernelpls, validation LOO",
+    "runtime": {"R": "4.5.3", "pls": "2.8.5", "jsonlite": "2.0.0"},
+    "fit_cohort": "the 69 released nLuc records, supplied row order, no exclusions",
+    "component_selection": "which.min of the mean LOO PRESS over components, computed on the nLuc training cohort only, first minimum on ties; identical to the published rule",
+    "fit_repetitions": 2,
+    "determinism_requirement": "Both repetitions must produce identical exported model structures.",
+    "upstream_block_checks": "Not applicable and deliberately omitted. The published Figure_Scripts_1.R blocks reproduce the released-feature fit; they are not a check on a refit whose inputs differ."
+  },
+
+  "primary_arm_rule": "The primary reported arm is the one with the lower nLuc training-only LOO RMSE. This reads no held-out record. If the two differ by less than 1e-12, with_alo is primary, matching the published default.",
+
+  "evaluation": {
+    "held_out_cohort": "the 13 released CDS (eGFP) variants",
+    "held_out_readout": "single, reported once for both arms",
+    "exploratory_cohort": "the 9 released CDS (MEV) variants, reported and never used for fitting, component selection or the primary-arm rule",
+    "exposure_disclosure": "The eGFP cohort is held out from every fit here and from the published fit, but it is project-exposed: it was used in the V11-V13 reproduction, 3 of its 13 records were in the burned v1 panel, and its RNAfold features were computed in the v1 run. It is therefore a held-out readout, not independent validation evidence.",
+    "reported_metrics": ["n", "rmse", "mae", "r2", "pearson", "spearman"]
+  },
+
+  "acceptance_criterion": {
+    "primary_bar": "The primary arm's RMSE on the 13 eGFP records must be less than or equal to the RMSE of the training-mean null on those same 13 records, where the null predicts the mean in_solution_half_life of the 69 nLuc training records for every input.",
+    "bar_justification": "Minimum competence only. A model that cannot beat its own training mean on the held-out cohort is not worth carrying forward.",
+    "reference_points_not_bars": {
+      "published_with_alo_egfp_rmse_hours": 0.1893218848801146,
+      "published_without_alo_egfp_rmse_hours": 0.2174279666658343,
+      "note": "These come from a different feature source and are reported for context. Beating or missing them decides nothing here."
+    },
+    "outcomes": {
+      "not_rejected": "The bar passes. strand_rnafold_calibration_v1 is recorded as a named candidate calibration and nothing further is unlocked.",
+      "rejected": "The bar fails. The calibration is recorded as rejected, RNAfold-based scoring stays disabled, and that is a legitimate and final outcome for this version."
+    }
+  },
+
+  "no_claim_permitted": [
+    "Passing the bar is not validation. Thirteen records from one construct family cannot validate a stability model.",
+    "This model predicts in-solution half-life on the released target scale only. No physical yield, calibrated confidence, translation floor or cell-free objective follows from it.",
+    "No Stage 2 requirement is satisfied by this fit. Independent sequence/family/clan-separated evidence, native controls, per-family and per-length accuracy, and 2000-2999 nt coverage all remain outstanding.",
+    "The 91 released records are highly redundant, with 68 of 91 at 928 nt, so no scope coverage over 1-2999 nt is implied.",
+    "Nothing here licenses scoring new sequences or designing expression candidates."
+  ],
+
+  "new_sequence_scoring_enabled": false,
+  "expression_candidate_design_enabled": false,
+  "stage3_ready": false
+}

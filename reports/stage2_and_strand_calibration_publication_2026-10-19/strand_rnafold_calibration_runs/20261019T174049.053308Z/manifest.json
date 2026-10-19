@@ -1,0 +1,29 @@
+{
+  "run": "20261019T174049.053308Z",
+  "artifacts": {
+    "calibration_model.json": "9daa59f2e75537d961eaf215b207a7e96c9c4bf9af65e45c26bc6ca4a636d52c",
+    "features/egfp_features.csv": "0f9c363f344594a62b121933f2a5808631bc85b645e7ff84c0ed0bb4fb7a3cd5",
+    "features/mev_features.csv": "75802dbe58bb0aa11a7ada97f98dfa880cdd2f666966a67aa8986ca84fcecd09",
+    "features/train_features.csv": "6c83453a54880d0863a2d14401c3f37b1d70ad285fb9187f268d5a089f7e6652",
+    "fit/R_sessionInfo.txt": "791916b40722e4a7ebc395b0d239906876940be3219f184337b5eae14d1afcfb",
+    "fit/command.log": "f340173c0ff6d119e849ccaa8fa2c3de54849bb3a51f3ecfad5fdad80fba05f2",
+    "fit/r_models.json": "ab550bc8fc0bef17fc8653f438b40b73dc6bcbe6ef9a1c9efa386b6cf3862427",
+    "fit/r_predictions.csv": "4b96340408f17a14067f31a3503fd16d10d1b7ceb31166f7b17cd056b7c7902b",
+    "fit/with_alo_model.rds": "4afba15526a6580e104a146af359a53833a051064861102c200ff2a1af1db53b",
+    "fit/without_alo_model.rds": "abcf2d408245fcb3ad59887beb4f978d8275dd9269f03f889c7e8b042412b736",
+    "fit_repeat1/R_sessionInfo.txt": "791916b40722e4a7ebc395b0d239906876940be3219f184337b5eae14d1afcfb",
+    "fit_repeat1/command.log": "d3c33089000be50d36c9a4acf8873ab67c5e8fff3979ad120786b8853229b8d7",
+    "fit_repeat1/r_models.json": "ab550bc8fc0bef17fc8653f438b40b73dc6bcbe6ef9a1c9efa386b6cf3862427",
+    "fit_repeat1/r_predictions.csv": "4b96340408f17a14067f31a3503fd16d10d1b7ceb31166f7b17cd056b7c7902b",
+    "fit_repeat1/with_alo_model.rds": "9b04090328358bcdab96ef1f621819256bf8c6b48a651b4cd856f6dc2b90c15c",
+    "fit_repeat1/without_alo_model.rds": "abcf2d408245fcb3ad59887beb4f978d8275dd9269f03f889c7e8b042412b736",
+    "identity.json": "077d4da58e4a4aedbadf352614e53f7699e3a35734c57c1ea38b7e9743dba017",
+    "protocol.json": "da02447979a2be9ed038fc8c09341ae39759f9cb8338ae1b7417dfaf3224561f",
+    "source/scripts/fit_strand_rnafold_calibration.R": "5bac2ac3e6f517a66576ac053ad4f4cbcd2865e689ebd5d751560b4a1e5b5078",
+    "source/scripts/fit_strand_rnafold_calibration.py": "95f445384111a3015afe8bd472c4dc97a1b4453d0f992e2fdae06641f46acda9",
+    "source/src/rnastable/component_integration.py": "1a592ac3355c1b3270810ab8b6d38be0e90d71b0297ea96ae7cd02c5a191dfaa",
+    "source/src/rnastable/strand_agreement.py": "d59bffd11904e0121fa477cfac25afa316a61c09faaedac5f58b68384e46b719",
+    "source/src/rnastable/strand_reference.py": "472488c26804acf0806373d5edb420c7129947a65328c0221d562d09647bab68",
+    "summary.json": "bd3a1d60c837d9088e0ae8c19a9d1fecfb38cb8a1512170874833eaa9c28f1aa"
+  }
+}

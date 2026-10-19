@@ -1,0 +1,35 @@
+{
+  "records_folded": 91,
+  "selection_set_size": 6,
+  "evaluation_set_size": 85,
+  "selected_energy_hypothesis": "ensemble_energy_per_nt",
+  "selected_alo_transform": "two_sided_1e-05",
+  "selection_unstable": true,
+  "feature_passes": {
+    "energy_per_length": true,
+    "GC": true,
+    "aup": false,
+    "alo": false
+  },
+  "evaluation_max_output_difference_hours": 0.01922181764201425,
+  "output_tolerance_hours": 0.018932188488011464,
+  "decision": {
+    "feature_level_compatible": false,
+    "output_level_equivalent": false,
+    "outcome": "rejected",
+    "unchanged_published_strand_applicable": false,
+    "new_sequence_scoring_enabled": false,
+    "stage3_ready": false,
+    "note": "Label-free engine agreement. No stability, translation or expression claim, and no Stage 2 gate progress, follows from this."
+  },
+  "engine": {
+    "tool": "ViennaRNA",
+    "version": "2.7.2",
+    "parameter_file_sha256": "9521527a251d5e68e6149595f8aa72aa72c63e00dc5af41d7164e6ecaa664777",
+    "temperature_c": 37.0,
+    "dangles": 2
+  },
+  "new_sequence_scoring_enabled": false,
+  "stage3_ready": false,
+  "interpretation": "Label-free engine agreement on released reference sequences. Not a stability, translation or expression result."
+}

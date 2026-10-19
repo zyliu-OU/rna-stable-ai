@@ -1,0 +1,13 @@
+{
+  "run": "20261019T180243.655199Z",
+  "artifacts": {
+    "all_candidate_lineage.json": "e0e4ebd434f900048fef9deff7bfa1d3b6b4f35e1d74ead5d939ec86c4b8cebb",
+    "band_records.json": "d764ca029f01287e951ce8484c3a6e90106a98e603fb4d10c58c132096a62563",
+    "family_clan_map.json": "a2ee814ddf12063dddd1c0f9a33f39edda9ad09daf819e004c6c77c74734b241",
+    "identity.json": "f1c5bdbd52a54f839d5f7592df2362cf27b3b3026d23363e1e1ee27c38328a76",
+    "protocol.json": "1cc0390a68a754853a5a69ad8322dc8cc6b41906b0c02addbfd26301bb1b78a6",
+    "source/scripts/audit_stage2_band_coverage.py": "33146820c8ad9c88c2200ec463db6ad7851727b6c4838b256aa1ca50ac2574e2",
+    "source/src/rnastable/stage2_census.py": "d1ad3b817b256e730d787e3c1d9718205882f39768685d763312651ea0289bbb",
+    "summary.json": "1003804749e1789fa5f86a2cd3f6c061a9f9e16e1e7f76e5eb5f0ece9f197424"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "name": "stage2_band_coverage_census_v1",
+  "frozen_date": "2026-10-19",
+  "purpose": "Census the locally available 2000-2999 nt validation material and decide whether the Stage 2 gate's sparse-band requirement can be resolved from local data at family level and at clan level. Addresses V13 prioritized item 3.",
+  "what_this_is_not": "A census of existing artifacts. It runs no inference, produces no accuracy measurement, changes no selection, and by itself satisfies none of the gate requirements.",
+  "gate": "configs/stage2_to_stage3_gate_2026-10-18.json",
+  "scope": "configs/project_scope_2026-10-18.json",
+  "band": {
+    "name": "2000_2999",
+    "minimum_inclusive": 2000,
+    "maximum_exclusive": 3000
+  },
+  "other_bands": [
+    {
+      "name": "1_999",
+      "minimum_inclusive": 1,
+      "maximum_exclusive": 1000
+    },
+    {
+      "name": "1000_1999",
+      "minimum_inclusive": 1000,
+      "maximum_exclusive": 2000
+    }
+  ],
+  "sources": [
+    {
+      "role": "candidate_pool",
+      "path": "results/long_validation_coverage_runs/20261017T033935.363253Z/candidates.json",
+      "sha256": "65ec8bbd1bdb6c1125d8943d7df6ad9c4c9dc5761e69130209574e3ef73e0b79"
+    },
+    {
+      "role": "frozen_selection_decisions",
+      "path": "results/long_validation_coverage_runs/20261017T033935.363253Z/selection.json",
+      "sha256": "8a08170227188f04c4a37fbdcecfbd8deadcce35b35b1ad88e593b647654d4ad"
+    },
+    {
+      "role": "family_clan_map",
+      "path": "results/crw_panel_exposure_runs/20261018T221708.139284Z/summary.json",
+      "sha256": "c20f4cc4fca4b38fd7c2ce75febc0f6f5082b420af742364335db70aaffc55ad"
+    },
+    {
+      "role": "secondary_band_survey",
+      "path": "results/rfam_seed_long_candidate_audit_runs/20261017T191603.870444Z/summary.json",
+      "sha256": "73f0e30f08d5eddedb5a72e6bb64573b868dfa126756ba84a08708772b986d20",
+      "also_supplies": "family_clan_assignments",
+      "also_supplies_note": "The primary family_clan_map does not cover every family in the candidate pool. Clan assignments are merged from both pinned sources, with provenance recorded per family and any disagreement raised as an error."
+    }
+  ],
+  "decision_taxonomy": {
+    "selected_complete_reference": {
+      "reference_supported": true,
+      "exposed": false,
+      "note": "Already in the frozen validation selection."
+    },
+    "fixed_family_cap": {
+      "reference_supported": true,
+      "exposed": false,
+      "note": "A usable structure reference exists; rejected only by the per-family cap."
+    },
+    "prior_exposure_overlap": {
+      "reference_supported": null,
+      "exposed": true,
+      "note": "Overlaps prior training exposure; ineligible as independent validation regardless of reference support."
+    },
+    "unsupported_reference": {
+      "reference_supported": false,
+      "exposed": false,
+      "note": "No usable structure reference could be derived."
+    }
+  },
+  "eligibility_rule": "A candidate is eligible for band expansion when it lies in the band, its decision marks it reference_supported, and it is not exposed. Eligibility is about availability, not about accuracy.",
+  "independence_rule": {
+    "baseline": "The in-scope records of the frozen selection, that is the selected_complete_reference records under 3000 nt.",
+    "new_family": "An eligible band record whose family is absent from the in-scope selected baseline.",
+    "new_clan": "An eligible band record whose clan is absent from the in-scope selected baseline. Clan must come from the pinned clan sources; a family with no local clan assignment is reported as clan_unresolved and must never be counted as a new clan.",
+    "unresolved_visibility_rule": "Every family appearing in the band must be reported as resolved or clan_unresolved, whether or not it is eligible. A family that is ineligible must not become invisible, because an unresolved or blocked clan is itself a finding.",
+    "cap_warning": "Raising the per-family cap adds records, not independent evidence. Records from a family or clan already represented are pseudo-replicates for the purposes of the gate's family-and-clan-separated requirement, and the census must report family and clan counts, not only record counts."
+  },
+  "gate_requirements_assessed": [
+    "Frozen independent sequence_and_family_clan_separated_validation_within_scope",
+    "Reported_accuracy_and_failures_by_length_band_and_family_against_native_controls",
+    "Resolve_sparse_2000_2999_nt_coverage_before_claiming_the_full_length_range",
+    "Demonstrate_credible_structure_accuracy_with_explicit_review_of_native_baseline_gaps",
+    "Pass_constraint_decoder_resource_and_replay_checks",
+    "Document_remaining_limitations_before_expression_candidate_design"
+  ],
+  "requirement_status_vocabulary": [
+    "satisfied",
+    "partially_satisfied",
+    "not_satisfied",
+    "blocked_on_acquisition"
+  ],
+  "requirement_rule": "Status is assigned from existing verified artifacts only. The census may report a status but may not mark any requirement satisfied on the strength of the census itself.",
+  "no_claim_permitted": [
+    "No accuracy, structure-quality or expression claim follows from a census of availability.",
+    "Counting eligible records does not make them validated, and does not establish that expanding the selection would improve or preserve measured accuracy.",
+    "The reference records available in this band are computational Rfam-consensus references, not experimental structures, so they cannot by themselves satisfy a native-control comparison.",
+    "No per-family cap, selection, model default or gate requirement is changed by this census.",
+    "No Stage 2 requirement is satisfied by this census."
+  ],
+  "selection_changed": false,
+  "new_inference_performed": false,
+  "model_defaults_changed": false,
+  "new_sequence_scoring_enabled": false,
+  "expression_candidate_design_enabled": false,
+  "stage3_ready": false
+}

@@ -1,0 +1,18 @@
+{
+  "implementation": {
+    "scripts/fit_strand_rnafold_calibration.py": "95f445384111a3015afe8bd472c4dc97a1b4453d0f992e2fdae06641f46acda9",
+    "scripts/fit_strand_rnafold_calibration.R": "5bac2ac3e6f517a66576ac053ad4f4cbcd2865e689ebd5d751560b4a1e5b5078",
+    "src/rnastable/strand_agreement.py": "d59bffd11904e0121fa477cfac25afa316a61c09faaedac5f58b68384e46b719",
+    "src/rnastable/strand_reference.py": "472488c26804acf0806373d5edb420c7129947a65328c0221d562d09647bab68",
+    "src/rnastable/component_integration.py": "1a592ac3355c1b3270810ab8b6d38be0e90d71b0297ea96ae7cd02c5a191dfaa"
+  },
+  "criterion_sha256": "4b63898b2080c39a6d723b832688f7c955d57902b0e3f42f41aad8976c635316",
+  "feature_source_run": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z",
+  "feature_source_manifest_sha256": "d8343c39c2ecb791825e3df1a5aa1ec0653769bcb914e18a451d43fa19fa4fc6",
+  "feature_source_agreement_sha256": "70e037d54804a967f5c8267fcdbb176abdc7bdc7387be4fc2b5bd9953efca2ef",
+  "feature_csv_sha256": {
+    "train_features.csv": "6c83453a54880d0863a2d14401c3f37b1d70ad285fb9187f268d5a089f7e6652",
+    "egfp_features.csv": "0f9c363f344594a62b121933f2a5808631bc85b645e7ff84c0ed0bb4fb7a3cd5",
+    "mev_features.csv": "75802dbe58bb0aa11a7ada97f98dfa880cdd2f666966a67aa8986ca84fcecd09"
+  }
+}

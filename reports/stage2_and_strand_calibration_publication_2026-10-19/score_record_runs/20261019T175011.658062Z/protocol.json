@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "name": "score_record_schema_v1",
+  "frozen_date": "2026-10-19",
+  "purpose": "Bind every component score to the sequence, annotation, tool, settings, model or weight identities that produced it, with explicit units or target scale, an explicit reason for every exclusion, and raw artifact paths. Addresses V13 prioritized item 2.",
+  "record_binding_requirements": {
+    "sequence": [
+      "sha256",
+      "length",
+      "alphabet"
+    ],
+    "annotation": "Either numeric coding boundaries (cds_start, cds_end, validated against length) or explicit null with annotation_absent_reason. Descriptive annotation alone does not satisfy a numeric-boundary requirement.",
+    "score_entry": [
+      "component",
+      "score_name",
+      "value",
+      "units",
+      "target_scale",
+      "model_identity",
+      "tool_identity",
+      "settings",
+      "raw_artifact_paths",
+      "run",
+      "interpretation",
+      "independent_validation"
+    ],
+    "identity_rule": "model_identity and tool_identity must be non-empty and must carry at least one content hash, commit or version string. A score whose producing identity cannot be named is not a score record.",
+    "raw_artifact_rule": "raw_artifact_paths must be non-empty, workspace-relative, and every path must exist at build time.",
+    "units_rule": "units must be an explicit physical unit or a named released target scale. The string 'unknown' is not permitted, and a bare number is not a score.",
+    "exclusion_entry": [
+      "component",
+      "reason",
+      "run"
+    ],
+    "exclusion_rule": "Every component that did not produce a score for a record must appear as either a score entry or an exclusion entry with an explicit reason. Silence is not permitted."
+  },
+  "composite_prohibition": {
+    "composite_score_permitted": false,
+    "reason": "The stability side is in hours on the released STRAND in-solution half-life scale and the translation side is on a released RiboNN task scale with no inverse transform or physical unit. They are incommensurable, no weighting is justified, and no translation or stability floor has been selected. Any aggregate would invent a trade-off the project has not established.",
+    "enforcement": "The builder must emit composite_score null and must refuse to write any field that ranks, weights or sums entries across components."
+  },
+  "ribonn_task_selection": {
+    "status": "blocked",
+    "required_for_selection": [
+      "A defined intended assay. Stage 3 cell-free expression is queued and the Stage 2 gate is open, so no assay platform, replicates or readout is fixed.",
+      "A released task whose cell or system context matches that assay.",
+      "Per-task released accuracy evidence for the chosen task.",
+      "Known training overlap between the chosen task's training data and any candidate sequence set."
+    ],
+    "blockers_recorded_2026-10-19": [
+      "The intended assay is not defined; the Stage 2 to Stage 3 gate remains open.",
+      "All 78 released human output tasks are cell-type or tissue translational-efficiency tasks. None corresponds to a cell-free system, so no released task matches the queued Stage 3 target.",
+      "Local artifacts retain per-checkpoint released validation R2 only, 0.4847 to 0.5372 across the 50 selected human checkpoints. No per-task released accuracy is present locally, so no task can be compared to another on evidence.",
+      "Training overlap, accuracy and calibration for any individual task remain unknown, as recorded in V12 and V13."
+    ],
+    "interim_rule": "predicted_TE_HEK293T remains a demonstration column for software replay only, exactly as configs and the V13 RiboNN protocol already state. It must be labelled task_selection demonstration_only_not_assay_selected in every record and must not be read as a chosen objective."
+  },
+  "floor_selection": {
+    "stability_floor": {
+      "status": "not_selected",
+      "value": null
+    },
+    "translation_floor": {
+      "status": "not_selected",
+      "value": null
+    },
+    "required_for_selection": [
+      "The intended assay and its readout, units and dynamic range.",
+      "Measured performance of the scoring component on that assay, on sequences not used to fit or select it.",
+      "A stated decision cost: what a false accept and a false reject cost in the planned experiment.",
+      "Replicate structure and measurement error for the assay, so a floor is separable from noise."
+    ],
+    "rule": "No floor is frozen by this schema. A floor must be frozen in its own versioned config with the evidence above, never inside a score record or a builder default."
+  },
+  "ingested_sources": [
+    {
+      "component": "strand_reference_replay",
+      "run": "results/strand_reference_reproduction_runs/20261019T042427.196161Z",
+      "units": "hours",
+      "target_scale": "released STRAND in-solution half-life",
+      "feature_source": "released_LinearPartition_features",
+      "note": "Reference-only replay of the published model on released features."
+    },
+    {
+      "component": "strand_rnafold_calibration_v1",
+      "run": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z",
+      "units": "hours",
+      "target_scale": "released STRAND in-solution half-life",
+      "feature_source": "rnafold_ensemble_features",
+      "note": "Separately named refit; not published STRAND; no independent validation."
+    },
+    {
+      "component": "ribonn_released_task",
+      "run": "results/ribonn_fixed_inference_runs/20261019T045101.117038Z",
+      "units": "released RiboNN task scale",
+      "target_scale": "released model task scale; no inverse transform or physical unit assumption",
+      "note": "Fixed synthetic software-mechanics inputs only."
+    }
+  ],
+  "no_claim_permitted": [
+    "A score record is a provenance binding, not evidence that any score is accurate.",
+    "No record implies stability, translation or expression capability, and none is calibrated to a physical yield.",
+    "Coverage counts describe what has been computed, not what has been validated.",
+    "No Stage 2 requirement is satisfied by building these records."
+  ],
+  "new_sequence_scoring_enabled": false,
+  "expression_candidate_design_enabled": false,
+  "stage3_ready": false
+}

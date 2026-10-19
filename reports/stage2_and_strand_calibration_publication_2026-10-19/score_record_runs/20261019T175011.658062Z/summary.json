@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "schema_sha256": "3fbdec9d9120998f9557affbf4a5aecdc35910650097f15193c89a28d00d4d56",
+  "records": 99,
+  "coverage": {
+    "records": 99,
+    "scored_per_component": {
+      "strand_reference_replay": 91,
+      "strand_rnafold_calibration_v1": 91,
+      "ribonn_released_task": 7
+    },
+    "excluded_per_component": {
+      "strand_reference_replay": 8,
+      "strand_rnafold_calibration_v1": 8,
+      "ribonn_released_task": 92
+    },
+    "records_with_stability_score": 91,
+    "records_with_translation_score": 7,
+    "records_with_both_sides": 0,
+    "joint_scoring_available": false
+  },
+  "cohorts": {
+    "egfp": 13,
+    "mev_exploratory": 9,
+    "ribonn_fixed_synthetic": 8,
+    "train": 69
+  },
+  "records_with_numeric_annotation": 8,
+  "composite_score_emitted": false,
+  "composite_blocked_reason": "The stability side is in hours on the released STRAND in-solution half-life scale and the translation side is on a released RiboNN task scale with no inverse transform or physical unit. They are incommensurable, no weighting is justified, and no translation or stability floor has been selected. Any aggregate would invent a trade-off the project has not established.",
+  "ribonn_task_selection_status": "blocked",
+  "ribonn_task_blockers": [
+    "The intended assay is not defined; the Stage 2 to Stage 3 gate remains open.",
+    "All 78 released human output tasks are cell-type or tissue translational-efficiency tasks. None corresponds to a cell-free system, so no released task matches the queued Stage 3 target.",
+    "Local artifacts retain per-checkpoint released validation R2 only, 0.4847 to 0.5372 across the 50 selected human checkpoints. No per-task released accuracy is present locally, so no task can be compared to another on evidence.",
+    "Training overlap, accuracy and calibration for any individual task remain unknown, as recorded in V12 and V13."
+  ],
+  "released_task_count": 78,
+  "cell_free_task_present": false,
+  "floor_status": {
+    "stability_floor": "not_selected",
+    "translation_floor": "not_selected"
+  },
+  "floor_required_evidence": [
+    "The intended assay and its readout, units and dynamic range.",
+    "Measured performance of the scoring component on that assay, on sequences not used to fit or select it.",
+    "A stated decision cost: what a false accept and a false reject cost in the planned experiment.",
+    "Replicate structure and measurement error for the assay, so a floor is separable from noise."
+  ],
+  "no_claim_permitted": [
+    "A score record is a provenance binding, not evidence that any score is accurate.",
+    "No record implies stability, translation or expression capability, and none is calibrated to a physical yield.",
+    "Coverage counts describe what has been computed, not what has been validated.",
+    "No Stage 2 requirement is satisfied by building these records."
+  ],
+  "new_sequence_scoring_enabled": false,
+  "stage3_ready": false,
+  "interpretation": "Provenance binding inventory. No score here is validated and no component pair is jointly available."
+}

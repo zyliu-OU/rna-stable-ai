@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "name": "strand_rnafold_feature_agreement_criterion_v1",
+  "frozen_date": "2026-10-19",
+  "purpose": "Prespecified criterion deciding whether RNAfold-derived features may substitute for the released LinearPartition features of the STRAND reference model, or whether only a separately named RNAfold calibration is admissible.",
+  "question": "Engine-agreement only. This criterion is label-free: it compares feature values and model arithmetic between folding engines on identical sequences. It does not test biological generalization and cannot by itself close the Stage 2 gate.",
+  "reference_run": "results/strand_reference_reproduction_runs/20261019T042427.196161Z",
+  "reference_model_sha256": "660d07587f0c906fa3eb3663ee9ca8ccb4affaac541d67b85bd434da5018d354",
+  "source_commit": "ea9e7de635e7cf4053c676c495b8e65717369206",
+  "original_engine": {
+    "engine": "LinearPartition",
+    "version": null,
+    "beam": null,
+    "parameterization": null
+  },
+  "substitute_engine": {
+    "tool": "ViennaRNA",
+    "parameter_set": "RNA_Turner2004",
+    "temperature_c": 37.0,
+    "dangles": 2,
+    "max_bp_span": -1,
+    "min_loop_size": 3,
+    "noLP": 0
+  },
+  "cohort_split": {
+    "selection_set": [
+      "X320004D1",
+      "X310336T3",
+      "X310003T1",
+      "X130010D1",
+      "X130002D1",
+      "X130006D1"
+    ],
+    "selection_set_provenance": "The six names prespecified in configs/strand_reference_reproduction_v1_2026-10-18.json (first/middle/last of the supplied nLuc and eGFP cohorts) and already folded and inspected in the canonical run. Their RNAfold feature differences were visible to the author when this criterion was written; they are therefore treated as burned and carry no confirmatory weight.",
+    "evaluation_set": "All released reference records not in selection_set (expected 85: 66 train, 10 egfp, 9 mev_exploratory). Never folded with RNAfold before this study. The decision rests on this set.",
+    "blinding_limitation": "Only the evaluation set is unseen. Tolerances below are anchored to published quantities and to formulas computed by the script, not to any observed RNAfold difference."
+  },
+  "tolerances": {
+    "feature_relative_iqr_fraction": 0.05,
+    "feature_tolerance_rule": "For each feature, tolerance = 0.05 * interquartile range of that feature across all 91 released reference records. Computed by the script from the frozen reference inventory; not inspected before freezing.",
+    "released_rounding_half_width_rule": "Per record and per released column, half_width = 0.5 * 10^(-decimals) counted from the released string. GC, aup and energy are rounded to about two decimals in the released validation table and to 7-9 decimals in the released nLuc training table, so the validation cohort cannot evidence agreement finer than its own rounding. ALO is recomputed by us from the full released bpp_per_pos array and carries half_width 0. energy_per_length half_width = (0.5 * 10^(-decimals of energy)) / length.",
+    "feature_pass_rule": "A feature passes when max over the evaluation set of max(0, |delta| - released_rounding_half_width) <= feature tolerance. Median, 95th percentile and max are all reported.",
+    "output_absolute_hours": 0.018932188488011464,
+    "output_tolerance_rationale": "0.10 * 0.1893218848801146 h, the published held-out eGFP RMSE of the selected with-ALO reference model. Substitution-induced prediction error must be at most one tenth of the model's own held-out error to be immaterial.",
+    "output_pass_rule": "max over the evaluation set of |predicted half-life from substituted features - predicted half-life from released reference features| <= output_absolute_hours, evaluated for the selected with-ALO model and reported for the without-ALO model."
+  },
+  "hypothesis_grid": {
+    "closed": true,
+    "note": "This grid is complete and may not be extended after any evaluation-set number is computed.",
+    "energy_hypotheses": [
+      "mfe_energy_per_nt",
+      "ensemble_energy_per_nt"
+    ],
+    "alo_transforms": [
+      "identity",
+      "floor_1e-06",
+      "floor_1e-05",
+      "floor_0.0001",
+      "floor_0.001",
+      "floor_0.01",
+      "two_sided_1e-06",
+      "two_sided_1e-05",
+      "two_sided_0.0001",
+      "two_sided_0.001",
+      "two_sided_0.01"
+    ],
+    "alo_transform_definition": "identity leaves the RNAfold positional paired probability unchanged. floor_t sets values below t to 0.0. two_sided_t additionally sets values above 1-t to 1.0. strand_alo then applies the released R bounding rule (<=0 -> 1e-10, >=1 -> 1-1e-10) and returns the mean natural log odds.",
+    "alo_transform_motivation": "Released LinearPartition arrays contain exact zeros (0-70 per record) and values at or above one (0-110 per record), which saturate the log-odds at -23.03 and +23.03. Beam pruning and per-position probability summation are the suspected causes. A floor or two-sided saturation of RNAfold probabilities tests whether that saturation, rather than the ALO formula, explains the gap."
+  },
+  "selection_procedure": {
+    "uses_only": "selection_set",
+    "energy": "Choose the energy hypothesis minimizing max |delta energy_per_length| over the selection set.",
+    "alo": "Choose the ALO transform minimizing max |delta alo| over the selection set. Ties break toward identity, then the smallest t, then floor over two_sided.",
+    "single_evaluation": "Exactly one selected combination is scored against the tolerances on the evaluation set. The identity transform is additionally scored on the evaluation set as the prespecified null, so that selection instability is visible; no other grid cell is scored there.",
+    "instability_rule": "If the selected transform's evaluation-set max |delta alo| exceeds that of identity, the study reports selection_unstable = true and the selected transform confers no support."
+  },
+  "decision_rules": {
+    "feature_level_compatible": "All four features pass feature_pass_rule. Only then may RNAfold-derived features be treated as reproducing the original extraction, and only then may the unchanged published STRAND model be applied to RNAfold features.",
+    "output_level_equivalent": "output_pass_rule passes. If this holds while feature_level_compatible is false, no claim about unchanged published STRAND is permitted; a separately named and versioned RNAfold-calibrated variant may be defined, and it requires its own independent lineage-safe biological evaluation before any use.",
+    "rejected": "Both false. RNAfold substitution stays disabled.",
+    "no_claim_permitted": [
+      "Agreement here is not evidence of stability, half-life accuracy, translation or expression benefit.",
+      "Passing does not re-validate STRAND on new sequences, does not establish RNAfold-based generalization, and does not open the Stage 2 to Stage 3 gate.",
+      "The 91 records are highly redundant (68 of 91 share length 928), so agreement must be reported by length group and must not be read as coverage of the 1-2999 nt scope."
+    ]
+  },
+  "new_sequence_scoring_enabled": false,
+  "expression_candidate_design_enabled": false,
+  "stage3_ready": false
+}

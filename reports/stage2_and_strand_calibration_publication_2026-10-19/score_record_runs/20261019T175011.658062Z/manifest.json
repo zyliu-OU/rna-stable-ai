@@ -1,0 +1,13 @@
+{
+  "run": "20261019T175011.658062Z",
+  "artifacts": {
+    "identity.json": "c3b7ad74cb314cec5bd9530a8b85ca1b221dd48f927afa00c6c75ea80405c4d9",
+    "protocol.json": "9ae5a82a4eadcdd83ff36d32b788d146cccd228b65e824aaf1fef20cbaecc456",
+    "ribonn_task_inventory.json": "93033968bfa81994e7a968bbac1045492146a339e4657fe33b6d0024478ae5f9",
+    "score_records.json": "bb479c0049830ae269d5ec22a72f2e541251df39024e0f628a15ff96ee328912",
+    "source/scripts/build_score_records.py": "d07239a0083ebd614df51fd79cef3b3b3c4ff827febec916494b0cca3b3474c4",
+    "source/src/rnastable/score_records.py": "09261852710322c7e392d1e409946dd10b6d2d9712d22416008b7296bd8f1e87",
+    "source/src/rnastable/strand_reference.py": "472488c26804acf0806373d5edb420c7129947a65328c0221d562d09647bab68",
+    "summary.json": "5da5f5a39583f5f007c00eefc7ddf94d606de27f3326770eae37f713b725f806"
+  }
+}

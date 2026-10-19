@@ -1,0 +1,795 @@
+{
+  "publication_date": "2026-10-19",
+  "project": "RNA-StableAI",
+  "note": "Concise evidence copies. Bulk arrays, probability folds, full score records and R .rds fit objects remain local and are listed under excluded_local_artifacts.",
+  "code": [
+    {
+      "path": "configs/strand_rnafold_agreement_criterion_v1_2026-10-19.json",
+      "sha256": "a003eaa22b3e4391e1de1911cdb50c3a9228d62216b402ccfa4ff31ffab2d058",
+      "bytes": 6987
+    },
+    {
+      "path": "configs/strand_rnafold_calibration_criterion_v2_2026-10-19.json",
+      "sha256": "4b63898b2080c39a6d723b832688f7c955d57902b0e3f42f41aad8976c635316",
+      "bytes": 7439
+    },
+    {
+      "path": "configs/score_record_schema_v1_2026-10-19.json",
+      "sha256": "3fbdec9d9120998f9557affbf4a5aecdc35910650097f15193c89a28d00d4d56",
+      "bytes": 6107
+    },
+    {
+      "path": "configs/stage2_band_coverage_census_v1_2026-10-19.json",
+      "sha256": "81c6c89190da3c2d3f8c09c50526e24110902e20bc101339fdf09172691dd209",
+      "bytes": 5842
+    },
+    {
+      "path": "src/rnastable/strand_agreement.py",
+      "sha256": "d59bffd11904e0121fa477cfac25afa316a61c09faaedac5f58b68384e46b719",
+      "bytes": 7824
+    },
+    {
+      "path": "src/rnastable/score_records.py",
+      "sha256": "09261852710322c7e392d1e409946dd10b6d2d9712d22416008b7296bd8f1e87",
+      "bytes": 7793
+    },
+    {
+      "path": "src/rnastable/stage2_census.py",
+      "sha256": "d1ad3b817b256e730d787e3c1d9718205882f39768685d763312651ea0289bbb",
+      "bytes": 6323
+    },
+    {
+      "path": "scripts/audit_strand_rnafold_agreement.py",
+      "sha256": "210e0956a00feeb33cc76f877cafc156cd1845a299e50a40936f895801429eee",
+      "bytes": 16155
+    },
+    {
+      "path": "scripts/fit_strand_rnafold_calibration.py",
+      "sha256": "4d593efd0e18dfbe4987516b5c2ca9ee5ff55209285fe07b2ff2a96053ffa067",
+      "bytes": 16078
+    },
+    {
+      "path": "scripts/fit_strand_rnafold_calibration.R",
+      "sha256": "5bac2ac3e6f517a66576ac053ad4f4cbcd2865e689ebd5d751560b4a1e5b5078",
+      "bytes": 4834
+    },
+    {
+      "path": "scripts/build_score_records.py",
+      "sha256": "d07239a0083ebd614df51fd79cef3b3b3c4ff827febec916494b0cca3b3474c4",
+      "bytes": 20626
+    },
+    {
+      "path": "scripts/audit_stage2_band_coverage.py",
+      "sha256": "33146820c8ad9c88c2200ec463db6ad7851727b6c4838b256aa1ca50ac2574e2",
+      "bytes": 16151
+    },
+    {
+      "path": "tests/test_strand_agreement.py",
+      "sha256": "c89503afcdb37fd6266592c3fbce7386a075df6e2ebaffc48060b2c4e5fb3184",
+      "bytes": 9016
+    },
+    {
+      "path": "tests/test_strand_rnafold_calibration.py",
+      "sha256": "5884a8519e1a38be49d0f7c31f9afd930bcfc334264ba466a299fcf26c2d354b",
+      "bytes": 6409
+    },
+    {
+      "path": "tests/test_score_records.py",
+      "sha256": "dcbd97f07fb6a70f95c3fc1414f28fc41eeb109042ba1ac4a72b6c8d60f52e44",
+      "bytes": 10225
+    },
+    {
+      "path": "tests/test_stage2_census.py",
+      "sha256": "49b9d8444e11b430273f57a948eb551120be4b924229fe80dcbbc6e78638f0eb",
+      "bytes": 8964
+    },
+    {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-19_V1.md",
+      "sha256": "8a4bed220be3802ac17f4c99377e93566ccec5d137f97588b46124e5d209303e",
+      "bytes": 23697
+    },
+    {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-19_V2.md",
+      "sha256": "16c19ef445839216c9fbf8d1942faf2935d5f75e997a78917cd83bcee51585fa",
+      "bytes": 23588
+    },
+    {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-19_V3.md",
+      "sha256": "baee9fdcb6712cc885a7e09efd312ad5e403c48143dd8bdc67f00c29e1eecbc6",
+      "bytes": 20514
+    },
+    {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-19_V4.md",
+      "sha256": "d993a9c35c0187dd89a43380ddd2d1fecbafa36bceab38a4147189c391a62ba9",
+      "bytes": 22517
+    }
+  ],
+  "evidence": [
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/summary.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_agreement_runs/20261019T172402.804593Z/summary.json",
+      "sha256": "d7a8ab3eb97b00edf6e6655505697c3acf7fa52e53f6be2b3526efba4abb8755",
+      "bytes": 1238
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/agreement.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_agreement_runs/20261019T172402.804593Z/agreement.json",
+      "sha256": "70e037d54804a967f5c8267fcdbb176abdc7bdc7387be4fc2b5bd9953efca2ef",
+      "bytes": 106501
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/feature_tolerances.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_agreement_runs/20261019T172402.804593Z/feature_tolerances.json",
+      "sha256": "ae8182c5fa6f77386f9cb6a4d93bd446b37f6f8fc4401f6ef09efa8c36868da6",
+      "bytes": 421
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/identity.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_agreement_runs/20261019T172402.804593Z/identity.json",
+      "sha256": "f9bcc782e581e7c395a7480238697a501d5af5c731b9a0f7b9d2ab0a70203be2",
+      "bytes": 868
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/protocol.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_agreement_runs/20261019T172402.804593Z/protocol.json",
+      "sha256": "a1b1a90d33370e786ed71d8853b818cbd197626f5ac3c9191454677fbc567f54",
+      "bytes": 7140
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/manifest.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_agreement_runs/20261019T172402.804593Z/manifest.json",
+      "sha256": "d8343c39c2ecb791825e3df1a5aa1ec0653769bcb914e18a451d43fa19fa4fc6",
+      "bytes": 9944
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/summary.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_calibration_runs/20261019T174049.053308Z/summary.json",
+      "sha256": "bd3a1d60c837d9088e0ae8c19a9d1fecfb38cb8a1512170874833eaa9c28f1aa",
+      "bytes": 5778
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/calibration_model.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_calibration_runs/20261019T174049.053308Z/calibration_model.json",
+      "sha256": "9daa59f2e75537d961eaf215b207a7e96c9c4bf9af65e45c26bc6ca4a636d52c",
+      "bytes": 4033
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/identity.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_calibration_runs/20261019T174049.053308Z/identity.json",
+      "sha256": "077d4da58e4a4aedbadf352614e53f7699e3a35734c57c1ea38b7e9743dba017",
+      "bytes": 1291
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/protocol.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_calibration_runs/20261019T174049.053308Z/protocol.json",
+      "sha256": "da02447979a2be9ed038fc8c09341ae39759f9cb8338ae1b7417dfaf3224561f",
+      "bytes": 7549
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/manifest.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_calibration_runs/20261019T174049.053308Z/manifest.json",
+      "sha256": "9d8456b067b48c0b9e52d13dc076d03d79c4e58d6930b810dcd040c112a61581",
+      "bytes": 2532
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/fit/r_models.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_calibration_runs/20261019T174049.053308Z/fit/r_models.json",
+      "sha256": "ab550bc8fc0bef17fc8653f438b40b73dc6bcbe6ef9a1c9efa386b6cf3862427",
+      "bytes": 16950
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/fit/r_predictions.csv",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_calibration_runs/20261019T174049.053308Z/fit/r_predictions.csv",
+      "sha256": "4b96340408f17a14067f31a3503fd16d10d1b7ceb31166f7b17cd056b7c7902b",
+      "bytes": 71481
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/fit/R_sessionInfo.txt",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_calibration_runs/20261019T174049.053308Z/fit/R_sessionInfo.txt",
+      "sha256": "791916b40722e4a7ebc395b0d239906876940be3219f184337b5eae14d1afcfb",
+      "bytes": 872
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/features/train_features.csv",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_calibration_runs/20261019T174049.053308Z/features/train_features.csv",
+      "sha256": "6c83453a54880d0863a2d14401c3f37b1d70ad285fb9187f268d5a089f7e6652",
+      "bytes": 6777
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/features/egfp_features.csv",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_calibration_runs/20261019T174049.053308Z/features/egfp_features.csv",
+      "sha256": "0f9c363f344594a62b121933f2a5808631bc85b645e7ff84c0ed0bb4fb7a3cd5",
+      "bytes": 1240
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/features/mev_features.csv",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/strand_rnafold_calibration_runs/20261019T174049.053308Z/features/mev_features.csv",
+      "sha256": "75802dbe58bb0aa11a7ada97f98dfa880cdd2f666966a67aa8986ca84fcecd09",
+      "bytes": 893
+    },
+    {
+      "original_local_path": "results/score_record_runs/20261019T175011.658062Z/summary.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/score_record_runs/20261019T175011.658062Z/summary.json",
+      "sha256": "5da5f5a39583f5f007c00eefc7ddf94d606de27f3326770eae37f713b725f806",
+      "bytes": 3080
+    },
+    {
+      "original_local_path": "results/score_record_runs/20261019T175011.658062Z/ribonn_task_inventory.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/score_record_runs/20261019T175011.658062Z/ribonn_task_inventory.json",
+      "sha256": "93033968bfa81994e7a968bbac1045492146a339e4657fe33b6d0024478ae5f9",
+      "bytes": 4184
+    },
+    {
+      "original_local_path": "results/score_record_runs/20261019T175011.658062Z/identity.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/score_record_runs/20261019T175011.658062Z/identity.json",
+      "sha256": "c3b7ad74cb314cec5bd9530a8b85ca1b221dd48f927afa00c6c75ea80405c4d9",
+      "bytes": 1100
+    },
+    {
+      "original_local_path": "results/score_record_runs/20261019T175011.658062Z/protocol.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/score_record_runs/20261019T175011.658062Z/protocol.json",
+      "sha256": "9ae5a82a4eadcdd83ff36d32b788d146cccd228b65e824aaf1fef20cbaecc456",
+      "bytes": 6272
+    },
+    {
+      "original_local_path": "results/score_record_runs/20261019T175011.658062Z/manifest.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/score_record_runs/20261019T175011.658062Z/manifest.json",
+      "sha256": "2aea6d933cf43ba3c8b679e7eda49c32d63b0fbf772f31f6bb50d922f277ffb6",
+      "bytes": 864
+    },
+    {
+      "original_local_path": "results/stage2_band_coverage_census_runs/20261019T180243.655199Z/summary.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/stage2_band_coverage_census_runs/20261019T180243.655199Z/summary.json",
+      "sha256": "1003804749e1789fa5f86a2cd3f6c061a9f9e16e1e7f76e5eb5f0ece9f197424",
+      "bytes": 8318
+    },
+    {
+      "original_local_path": "results/stage2_band_coverage_census_runs/20261019T180243.655199Z/band_records.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/stage2_band_coverage_census_runs/20261019T180243.655199Z/band_records.json",
+      "sha256": "d764ca029f01287e951ce8484c3a6e90106a98e603fb4d10c58c132096a62563",
+      "bytes": 34487
+    },
+    {
+      "original_local_path": "results/stage2_band_coverage_census_runs/20261019T180243.655199Z/all_candidate_lineage.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/stage2_band_coverage_census_runs/20261019T180243.655199Z/all_candidate_lineage.json",
+      "sha256": "e0e4ebd434f900048fef9deff7bfa1d3b6b4f35e1d74ead5d939ec86c4b8cebb",
+      "bytes": 83817
+    },
+    {
+      "original_local_path": "results/stage2_band_coverage_census_runs/20261019T180243.655199Z/family_clan_map.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/stage2_band_coverage_census_runs/20261019T180243.655199Z/family_clan_map.json",
+      "sha256": "a2ee814ddf12063dddd1c0f9a33f39edda9ad09daf819e004c6c77c74734b241",
+      "bytes": 1017
+    },
+    {
+      "original_local_path": "results/stage2_band_coverage_census_runs/20261019T180243.655199Z/identity.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/stage2_band_coverage_census_runs/20261019T180243.655199Z/identity.json",
+      "sha256": "f1c5bdbd52a54f839d5f7592df2362cf27b3b3026d23363e1e1ee27c38328a76",
+      "bytes": 1288
+    },
+    {
+      "original_local_path": "results/stage2_band_coverage_census_runs/20261019T180243.655199Z/protocol.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/stage2_band_coverage_census_runs/20261019T180243.655199Z/protocol.json",
+      "sha256": "1cc0390a68a754853a5a69ad8322dc8cc6b41906b0c02addbfd26301bb1b78a6",
+      "bytes": 5944
+    },
+    {
+      "original_local_path": "results/stage2_band_coverage_census_runs/20261019T180243.655199Z/manifest.json",
+      "published_path": "reports/stage2_and_strand_calibration_publication_2026-10-19/stage2_band_coverage_census_runs/20261019T180243.655199Z/manifest.json",
+      "sha256": "4232372806a9b36b06cd00a3ec38260efa4f6746219df72ed3e8b90fc4c8692d",
+      "bytes": 850
+    }
+  ],
+  "excluded_local_artifacts": [
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X1100011T1.json",
+      "bytes": 27776,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X110001T1.json",
+      "bytes": 27807,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X110002T1.json",
+      "bytes": 27806,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X110003T1.json",
+      "bytes": 27827,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X110004T1.json",
+      "bytes": 27766,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X110005T1.json",
+      "bytes": 27786,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X110006T1.json",
+      "bytes": 61195,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X110007T1.json",
+      "bytes": 61848,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X110008T1.json",
+      "bytes": 61669,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X110009T1.json",
+      "bytes": 61560,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X110010T1.json",
+      "bytes": 61551,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X130001D1.json",
+      "bytes": 64406,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X130002D1.json",
+      "bytes": 64276,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X130003D1.json",
+      "bytes": 63759,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X130004D1.json",
+      "bytes": 63828,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X130005D1.json",
+      "bytes": 63593,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X130006D1.json",
+      "bytes": 63617,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X130008D1.json",
+      "bytes": 27971,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X130009D1.json",
+      "bytes": 27924,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X130010D1.json",
+      "bytes": 64685,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X130012D1.json",
+      "bytes": 64596,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X130013D1.json",
+      "bytes": 27873,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310001T1.json",
+      "bytes": 49805,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310002T1.json",
+      "bytes": 49118,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310003T1.json",
+      "bytes": 50181,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310004T1.json",
+      "bytes": 49255,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310005T1.json",
+      "bytes": 50106,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310006T1.json",
+      "bytes": 49809,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310007T1.json",
+      "bytes": 49778,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310008T1.json",
+      "bytes": 49091,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310009T1.json",
+      "bytes": 49103,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310010T1.json",
+      "bytes": 49343,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310011T1.json",
+      "bytes": 49874,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310012T1.json",
+      "bytes": 49709,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310013T1.json",
+      "bytes": 49331,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310014T1.json",
+      "bytes": 49014,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310015T1.json",
+      "bytes": 49384,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310016T1.json",
+      "bytes": 49634,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310030T3.json",
+      "bytes": 48975,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310031T3.json",
+      "bytes": 49554,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310040T3.json",
+      "bytes": 49822,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310054T3.json",
+      "bytes": 50075,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310055T3.json",
+      "bytes": 50047,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310076T3.json",
+      "bytes": 49090,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310144T3.json",
+      "bytes": 49203,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310146T3.json",
+      "bytes": 49267,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310168T3.json",
+      "bytes": 50064,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310169T3.json",
+      "bytes": 50079,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310170T3.json",
+      "bytes": 50049,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310172T3.json",
+      "bytes": 50054,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310173T3.json",
+      "bytes": 49990,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310174T3.json",
+      "bytes": 50004,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310192T3.json",
+      "bytes": 49162,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310194T3.json",
+      "bytes": 49174,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310257T3.json",
+      "bytes": 49533,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310282T3.json",
+      "bytes": 49964,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310304T3.json",
+      "bytes": 49571,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310313T3.json",
+      "bytes": 49638,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310323T3.json",
+      "bytes": 49099,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X310336T3.json",
+      "bytes": 49062,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X320001D1.json",
+      "bytes": 49693,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X320002D1.json",
+      "bytes": 49690,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X320003D1.json",
+      "bytes": 49668,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X320004D1.json",
+      "bytes": 49703,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X320005D1.json",
+      "bytes": 49318,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X320006D1.json",
+      "bytes": 49553,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X320007D1.json",
+      "bytes": 49202,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X320008D1.json",
+      "bytes": 49073,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X320038B1.json",
+      "bytes": 52017,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930003D1.json",
+      "bytes": 49447,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930004D1.json",
+      "bytes": 49312,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930006D1.json",
+      "bytes": 49402,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930007D1.json",
+      "bytes": 49260,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930008D1.json",
+      "bytes": 49049,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930009D1.json",
+      "bytes": 48921,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930010D1.json",
+      "bytes": 49076,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930011D1.json",
+      "bytes": 48742,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930012D1.json",
+      "bytes": 48868,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930013D1.json",
+      "bytes": 48676,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930014D1.json",
+      "bytes": 49766,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930015D1.json",
+      "bytes": 49745,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930016D1.json",
+      "bytes": 49755,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930017D1.json",
+      "bytes": 49115,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930018D1.json",
+      "bytes": 48970,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930019D1.json",
+      "bytes": 49042,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930020D1.json",
+      "bytes": 49980,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930022D1.json",
+      "bytes": 49726,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930023D1.json",
+      "bytes": 48922,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930024D1.json",
+      "bytes": 48940,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930026D1.json",
+      "bytes": 49206,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/folds/X930027D1.json",
+      "bytes": 49104,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z/per_record_features.json",
+      "bytes": 2084600,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/fit/command.log",
+      "bytes": 693,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/fit/with_alo_model.rds",
+      "bytes": 15198,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/fit/without_alo_model.rds",
+      "bytes": 11723,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/fit_repeat1/R_sessionInfo.txt",
+      "bytes": 872,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/fit_repeat1/command.log",
+      "bytes": 701,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/fit_repeat1/r_models.json",
+      "bytes": 16950,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/fit_repeat1/r_predictions.csv",
+      "bytes": 71481,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/fit_repeat1/with_alo_model.rds",
+      "bytes": 15194,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/fit_repeat1/without_alo_model.rds",
+      "bytes": 11723,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    },
+    {
+      "original_local_path": "results/score_record_runs/20261019T175011.658062Z/score_records.json",
+      "bytes": 471583,
+      "reason": "bulk array or binary fit object; not required for the recorded decision"
+    }
+  ]
+}

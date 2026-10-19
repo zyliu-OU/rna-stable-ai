@@ -1,0 +1,10 @@
+{
+  "rule": "For each feature, tolerance = 0.05 * interquartile range of that feature across all 91 released reference records. Computed by the script from the frozen reference inventory; not inspected before freezing.",
+  "interquartile_fraction": 0.05,
+  "tolerances": {
+    "energy_per_length": 0.005548940468588457,
+    "GC": 0.25862068975000024,
+    "aup": 0.002807531325000001,
+    "alo": 0.05132036110543378
+  }
+}

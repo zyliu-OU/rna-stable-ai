@@ -1,0 +1,169 @@
+{
+  "model_name": "strand_rnafold_calibration_v1",
+  "is_published_strand": false,
+  "feature_source_run": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z",
+  "records": {
+    "train": 69,
+    "egfp": 13,
+    "mev_exploratory": 9
+  },
+  "runtime": {
+    "R": "4.5.3",
+    "pls": "2.8.5",
+    "jsonlite": "2.0.0"
+  },
+  "fits": [
+    {
+      "repeat": 0,
+      "runtime_seconds": 0.24112282700662035,
+      "comparisons": 637,
+      "max_abs_difference": 5.10702591327572e-15,
+      "tolerance": 1e-10
+    },
+    {
+      "repeat": 1,
+      "runtime_seconds": 0.22864042600849643,
+      "comparisons": 637,
+      "max_abs_difference": 5.10702591327572e-15,
+      "tolerance": 1e-10
+    }
+  ],
+  "deterministic_repeated_fit": true,
+  "training_loo_rmse_hours": {
+    "with_alo": 0.2969350653178015,
+    "without_alo": 0.29273883845871723
+  },
+  "primary_arm": "without_alo",
+  "primary_arm_rule": "The primary reported arm is the one with the lower nLuc training-only LOO RMSE. This reads no held-out record. If the two differ by less than 1e-12, with_alo is primary, matching the published default.",
+  "selected_ncomp": 1,
+  "primary_egfp_rmse_hours": 0.2194228670733408,
+  "training_mean_null_egfp_rmse_hours": 0.27798382968950514,
+  "training_mean_half_life_hours": 1.1336412079710145,
+  "arm_metrics": {
+    "with_alo": {
+      "selected_ncomp": 1,
+      "loo_press": [
+        6.083759878054807,
+        6.095212938206776,
+        6.289719829396321,
+        6.578052992942798
+      ],
+      "train": {
+        "arm": "with_alo",
+        "ncomp": 1,
+        "cohort": "train",
+        "n": 69,
+        "rmse": 0.2867522391787897,
+        "mae": 0.2388198439664631,
+        "r2": 0.2904610295706871,
+        "pearson": 0.5389443659327807,
+        "spearman": 0.5310193642674462
+      },
+      "train_loo": {
+        "arm": "with_alo",
+        "ncomp": 1,
+        "cohort": "train_loo",
+        "n": 69,
+        "rmse": 0.2969350653178015,
+        "mae": 0.24697263724523066,
+        "r2": 0.23917356928492006,
+        "pearson": 0.4918396586706045,
+        "spearman": 0.4930946291560103
+      },
+      "egfp": {
+        "arm": "with_alo",
+        "ncomp": 1,
+        "cohort": "egfp",
+        "n": 13,
+        "rmse": 0.2354635160299918,
+        "mae": 0.1831124314074708,
+        "r2": 0.2375506858451727,
+        "pearson": 0.554485000419895,
+        "spearman": 0.576923076923077
+      },
+      "mev_exploratory": {
+        "arm": "with_alo",
+        "ncomp": 1,
+        "cohort": "mev_exploratory",
+        "n": 9,
+        "rmse": 2.2155945420367273,
+        "mae": 2.1838863741461974,
+        "r2": -30.93044683550329,
+        "pearson": 0.4281712301668981,
+        "spearman": 0.5166666666666667
+      }
+    },
+    "without_alo": {
+      "selected_ncomp": 1,
+      "loo_press": [
+        5.913025900408966,
+        6.079056566643197,
+        6.330953025632554
+      ],
+      "train": {
+        "arm": "without_alo",
+        "ncomp": 1,
+        "cohort": "train",
+        "n": 69,
+        "rmse": 0.28219646908864715,
+        "mae": 0.2361520221058214,
+        "r2": 0.3128275039840198,
+        "pearson": 0.5593098461354132,
+        "spearman": 0.5290464011691633
+      },
+      "train_loo": {
+        "arm": "without_alo",
+        "ncomp": 1,
+        "cohort": "train_loo",
+        "n": 69,
+        "rmse": 0.29273883845871723,
+        "mae": 0.24447537551804321,
+        "r2": 0.2605253197513777,
+        "pearson": 0.5131803100533138,
+        "spearman": 0.5002922908293753
+      },
+      "egfp": {
+        "arm": "without_alo",
+        "ncomp": 1,
+        "cohort": "egfp",
+        "n": 13,
+        "rmse": 0.2194228670733408,
+        "mae": 0.17847755747747734,
+        "r2": 0.3378940366818749,
+        "pearson": 0.6235329449772057,
+        "spearman": 0.7252747252747253
+      },
+      "mev_exploratory": {
+        "arm": "without_alo",
+        "ncomp": 1,
+        "cohort": "mev_exploratory",
+        "n": 9,
+        "rmse": 2.2070688322858945,
+        "mae": 2.175457562904451,
+        "r2": -30.685179986781367,
+        "pearson": 0.43487720697880966,
+        "spearman": 0.25
+      }
+    }
+  },
+  "published_reference_points_not_bars": {
+    "published_with_alo_egfp_rmse_hours": 0.1893218848801146,
+    "published_without_alo_egfp_rmse_hours": 0.2174279666658343,
+    "note": "These come from a different feature source and are reported for context. Beating or missing them decides nothing here."
+  },
+  "acceptance": {
+    "bar": "The primary arm's RMSE on the 13 eGFP records must be less than or equal to the RMSE of the training-mean null on those same 13 records, where the null predicts the mean in_solution_half_life of the 69 nLuc training records for every input.",
+    "bar_passed": true,
+    "outcome": "not_rejected"
+  },
+  "no_claim_permitted": [
+    "Passing the bar is not validation. Thirteen records from one construct family cannot validate a stability model.",
+    "This model predicts in-solution half-life on the released target scale only. No physical yield, calibrated confidence, translation floor or cell-free objective follows from it.",
+    "No Stage 2 requirement is satisfied by this fit. Independent sequence/family/clan-separated evidence, native controls, per-family and per-length accuracy, and 2000-2999 nt coverage all remain outstanding.",
+    "The 91 released records are highly redundant, with 68 of 91 at 928 nt, so no scope coverage over 1-2999 nt is implied.",
+    "Nothing here licenses scoring new sequences or designing expression candidates."
+  ],
+  "new_sequence_scoring_enabled": false,
+  "stage3_ready": false,
+  "interpretation": "Separately named refit on RNAfold ensemble features. Held-out readout on 13 project-exposed eGFP records. Not published STRAND and not independent validation."
+}
