@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 830" width="1420" height="830" font-family="Helvetica, Arial, sans-serif">
   <title>RNA-StableAI four-component workflow and its implementation state on 2026-10-19</title>
-  <desc>RNAfold supplies ensemble folding features. Published STRAND can only be replayed on released LinearPartition features; substituting RNAfold features into it was rejected because the ALO feature is not reproducible across engines. A separately named refit, strand_rnafold_calibration_v1, consumes RNAfold ensemble features instead. RiboNN scores released translational-efficiency tasks from sequence plus numeric UTR and CDS sizes, but no task has been selected and no released task is cell-free. Both sides feed versioned score records that bind identities, units, exclusions and raw artifact paths; a composite score is blocked because the units are incommensurable, no floor is selected, and no sequence carries both a stability and a translation score. BoTorch discrete Bayesian optimization and the cell-free expression assay sit behind the open Stage 2 to Stage 3 gate.</desc>
+  <desc>RNAfold supplies ensemble folding features. Published STRAND can only be replayed on released LinearPartition features; substituting RNAfold features into it was rejected because the ALO feature is not reproducible across engines. A separately named refit, strand_rnafold_calibration_v1, consumes RNAfold ensemble features instead. RiboNN scores released translational-efficiency tasks from sequence plus numeric UTR and CDS sizes; the A549 task is selected for ranking and correlation only, and the activated CD3+ T-cell arm is declared model-blind because no released task matches it. Both sides feed versioned score records that bind identities, units, exclusions and raw artifact paths; a composite score is blocked because the units are incommensurable, no floor is selected, and no sequence carries both a stability and a translation score. BoTorch discrete Bayesian optimization and the transfected-cell expression assay sit behind the open Stage 2 to Stage 3 gate.</desc>
   <rect x="0" y="0" width="1420" height="830" fill="#ffffff"/>
 
   <defs>
@@ -80,9 +80,9 @@
   <text x="1280" y="336" font-size="11" fill="#8c959f" text-anchor="middle">31-point toy pool</text>
 
   <rect x="1180" y="430" width="200" height="96" rx="6" fill="#f0f1f3" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="5 4"/>
-  <text x="1280" y="468" font-size="13" font-weight="bold" fill="#57606a" text-anchor="middle">Cell-free expression</text>
-  <text x="1280" y="488" font-size="11" fill="#8c959f" text-anchor="middle">Stage 3 target</text>
-  <text x="1280" y="506" font-size="11" fill="#8c959f" text-anchor="middle">queued · assay not defined</text>
+  <text x="1280" y="468" font-size="13" font-weight="bold" fill="#57606a" text-anchor="middle">Transfected cells</text>
+  <text x="1280" y="488" font-size="11" fill="#8c959f" text-anchor="middle">Stage 3 target — expression</text>
+  <text x="1280" y="506" font-size="11" fill="#8c959f" text-anchor="middle">A549 + activated CD3+ T cells</text>
 
   <!-- edges -->
   <line x1="210" y1="408" x2="252" y2="408" stroke="#0969da" stroke-width="1.8" marker-end="url(#arrowBlue)"/>
@@ -117,7 +117,7 @@
   <line x1="1158" y1="410" x2="1172" y2="466" stroke="#8c959f" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrowGrey)"/>
 
   <!-- blockers -->
-  <text x="560" y="690" font-size="11" fill="#cf222e">task not selected — none of the 78 released tasks is cell-free</text>
+  <text x="560" y="690" font-size="11" fill="#cf222e">A549 task selected for ranking only · T-cell arm model-blind</text>
   <text x="560" y="706" font-size="11" fill="#cf222e">released STRAND references carry UTR/CDS descriptions only, no numeric boundaries</text>
 
   <text x="880" y="524" font-size="11.5" font-weight="bold" fill="#cf222e">composite score: blocked</text>
@@ -132,7 +132,7 @@
   <line x1="40" y1="792" x2="76" y2="792" stroke="#8c959f" stroke-width="1.6" stroke-dasharray="5 4"/>
   <text x="84" y="796" font-size="11" fill="#57606a">behind the open gate</text>
 
-  <text x="1380" y="752" font-size="11" fill="#57606a" text-anchor="end">2,000–2,999 nt band: blocked on acquisition — 56 eligible records, 1 clan, 0 new clans</text>
+  <text x="1380" y="752" font-size="11" fill="#57606a" text-anchor="end">2,000–2,999 nt band: not reachable from Rfam seed or the PDB · 0 new clans</text>
   <text x="1380" y="772" font-size="11" fill="#57606a" text-anchor="end">no stability or expression benefit is established by any path shown here</text>
-  <text x="1380" y="796" font-size="11" fill="#8c959f" text-anchor="end">state as of 2026-10-19 · handoffs V1–V4</text>
+  <text x="1380" y="796" font-size="11" fill="#8c959f" text-anchor="end">state as of 2026-10-19 · handoffs V1–V11</text>
 </svg>

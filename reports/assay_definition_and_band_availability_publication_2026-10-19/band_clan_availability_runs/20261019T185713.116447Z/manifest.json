@@ -1,0 +1,14 @@
+{
+  "run": "20261019T185713.116447Z",
+  "artifacts": {
+    "identity.json": "91574e3b409bf97b31cdb6f8badcb1b2107d314dc9e02a21fa9ec2634cdffecc",
+    "protocol.json": "8f079fafb8d3bd81f359e1a066680934fcfef20473dafc28480ed635d73dc394",
+    "rcsb_band_classification.json": "1adc1616b5004d52c598e81504ef3ea320dfcc7c8f15adf0101088ae1a16143f",
+    "rfam_consensus_length_validation.json": "4e513cac415df809ee824ef4343b1f51b6d31f35b4b9afde3829e4d1184dc150",
+    "rfam_families_over_1000nt.json": "796235237ca7661d06c424e69f680c417b83068c2b7876691698db2df68cbc8c",
+    "rfam_seed_band_sequences.json": "6dc96272d282cdd9f8aeff0e39122811cdc7168f5d99c6a910b9e010b234e7f7",
+    "source/scripts/audit_band_clan_availability.py": "5e6d996f82622f9164fb37676e3832451dc8d2c45362c202511833c2436b864a",
+    "source/src/rnastable/band_availability.py": "dacadb954c6e6aa03ee708ce7816ab83dce01f863d1fe7a574e972f8efdb4701",
+    "summary.json": "7eeb45296e02551fbf334ed714b13ecc220d23408447e6e2ffa6eaa96ee79b0a"
+  }
+}

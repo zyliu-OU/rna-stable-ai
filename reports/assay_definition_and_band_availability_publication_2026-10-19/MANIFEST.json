@@ -1,0 +1,241 @@
+{
+  "publication_date": "2026-10-19",
+  "project": "RNA-StableAI",
+  "note": "Concise evidence copies. Pinned upstream archives and third-party supplementary files are NOT included; they are identified by URL and SHA-256 in the manifests and configs.",
+  "code": [
+    {
+      "path": "README.md",
+      "sha256": "b207a2ca90f2d3255def3a0e62b9daf099a8393098cb405193019f0fdc2b229c",
+      "bytes": 20135
+    },
+    {
+      "path": "diagram_10192026.svg",
+      "sha256": "f2384a66b2034784e0c935334e936f3798abee1177c2507b2c004bda811d74c1",
+      "bytes": 11670
+    },
+    {
+      "path": "reports/PROJECT_ROADMAP_2026-10-18.md",
+      "sha256": "a6e6492d485ce9749c9ac0abd65705d992bdc84e2dd66c97ad5c6e59fab2beb0",
+      "bytes": 6063
+    },
+    {
+      "path": "configs/stage2_to_stage3_gate_v2_2026-10-19.json",
+      "sha256": "8ca6b32e8aa9389037c299a6d1cbcb47f41dc3b0cd35f806931c17fba40bceef",
+      "bytes": 3754
+    },
+    {
+      "path": "configs/stage2_band_clan_availability_census_v2_2026-10-19.json",
+      "sha256": "8e8f69b6830c96649dd3645a96fbf1ae0be6618b6537fcf18bfbd42aa1046aec",
+      "bytes": 6726
+    },
+    {
+      "path": "configs/assay_definition_v1_2026-10-19.json",
+      "sha256": "37d47273645c32c8939c246fa2edcc2ec35fb54e409aa1638cff7d416791a45a",
+      "bytes": 8808
+    },
+    {
+      "path": "configs/assay_definition_v2_2026-10-19.json",
+      "sha256": "4e32c4d153b34f3f2cd955ae9716c93d40f61ffb4ce3bc694b5906dd45f5b98b",
+      "bytes": 10186
+    },
+    {
+      "path": "configs/assay_definition_v3_2026-10-19.json",
+      "sha256": "97be8d631c563e1ba36c4ebaa41d8648d9c7e8319b9e7bbaf7ede34df2e0272b",
+      "bytes": 9056
+    },
+    {
+      "path": "configs/ribonn_task_evidence_v1_2026-10-19.json",
+      "sha256": "775d55dd80d9d5cad72cfe7a4936fe5a13c0c4eca83b77220586f5426be609bb",
+      "bytes": 6259
+    },
+    {
+      "path": "configs/ribonn_task_selection_v1_2026-10-19.json",
+      "sha256": "12e03e87b595936fd4fd8e8bb1013edce06ec5e74ed234cd740bfc6745516056",
+      "bytes": 5836
+    },
+    {
+      "path": "src/rnastable/band_availability.py",
+      "sha256": "dacadb954c6e6aa03ee708ce7816ab83dce01f863d1fe7a574e972f8efdb4701",
+      "bytes": 8643
+    },
+    {
+      "path": "src/rnastable/ribonn_task_evidence.py",
+      "sha256": "798a0a97a856cd68d883b4bd363ee894ea9f05d51eb7a8f863f3b5364b44841b",
+      "bytes": 6779
+    },
+    {
+      "path": "scripts/audit_band_clan_availability.py",
+      "sha256": "5e6d996f82622f9164fb37676e3832451dc8d2c45362c202511833c2436b864a",
+      "bytes": 9787
+    },
+    {
+      "path": "scripts/audit_ribonn_task_evidence.py",
+      "sha256": "9d826a001503720f11ae7b650b0580fd72fa7acbadeb5a7bd16f7530a103d743",
+      "bytes": 9025
+    },
+    {
+      "path": "tests/test_band_availability.py",
+      "sha256": "71d6494f56ad460e167302eb8fbc5b244cce02fcc518cd3a32dedb303ac6e5da",
+      "bytes": 8962
+    },
+    {
+      "path": "tests/test_ribonn_task_evidence.py",
+      "sha256": "d8fe1fd1e0efa7fa61679e25e2db06ca7589567237e8a3cdfc39c2b4b3ceb5be",
+      "bytes": 7498
+    },
+    {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-19_V5.md",
+      "sha256": "3ab85c23c269a7b9ca3deabef6c49681c1a4b3be8197de892c50315576b85846",
+      "bytes": 13318
+    },
+    {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-19_V6.md",
+      "sha256": "8432507c6a3b2612161ff862f933f4d66974b626ea4e5bf3832684b98317e8dc",
+      "bytes": 20976
+    },
+    {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-19_V7.md",
+      "sha256": "5cf09ffa2080f5fbe977ce75a5eb288d548588b3d3c7075f898be32c5763ca5d",
+      "bytes": 19394
+    },
+    {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-19_V8.md",
+      "sha256": "9f24e6058b42a661fc47479795ad13a5962b65fcba6a1f0547db8c44ae8bc8cd",
+      "bytes": 15705
+    },
+    {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-19_V9.md",
+      "sha256": "f4c3bf77dc50c78f71bab1095d92af4fb7bb44805055808385133406c65ad7fd",
+      "bytes": 12779
+    },
+    {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-19_V10.md",
+      "sha256": "565d1c691689c8dfb50c356faea66c2cb1a1ce34f4967fb93cb8a6ba34ef3ec3",
+      "bytes": 17396
+    },
+    {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-19_V11.md",
+      "sha256": "17c6e60b70cca7257a2688c5a531bf287844e1a1945ab93f33a154cf30726a61",
+      "bytes": 13473
+    }
+  ],
+  "evidence": [
+    {
+      "original_local_path": "results/band_clan_availability_runs/20261019T185713.116447Z/summary.json",
+      "published_path": "reports/assay_definition_and_band_availability_publication_2026-10-19/band_clan_availability_runs/20261019T185713.116447Z/summary.json",
+      "sha256": "7eeb45296e02551fbf334ed714b13ecc220d23408447e6e2ffa6eaa96ee79b0a",
+      "bytes": 13241
+    },
+    {
+      "original_local_path": "results/band_clan_availability_runs/20261019T185713.116447Z/rcsb_band_classification.json",
+      "published_path": "reports/assay_definition_and_band_availability_publication_2026-10-19/band_clan_availability_runs/20261019T185713.116447Z/rcsb_band_classification.json",
+      "sha256": "1adc1616b5004d52c598e81504ef3ea320dfcc7c8f15adf0101088ae1a16143f",
+      "bytes": 8379
+    },
+    {
+      "original_local_path": "results/band_clan_availability_runs/20261019T185713.116447Z/rfam_seed_band_sequences.json",
+      "published_path": "reports/assay_definition_and_band_availability_publication_2026-10-19/band_clan_availability_runs/20261019T185713.116447Z/rfam_seed_band_sequences.json",
+      "sha256": "6dc96272d282cdd9f8aeff0e39122811cdc7168f5d99c6a910b9e010b234e7f7",
+      "bytes": 12952
+    },
+    {
+      "original_local_path": "results/band_clan_availability_runs/20261019T185713.116447Z/rfam_consensus_length_validation.json",
+      "published_path": "reports/assay_definition_and_band_availability_publication_2026-10-19/band_clan_availability_runs/20261019T185713.116447Z/rfam_consensus_length_validation.json",
+      "sha256": "4e513cac415df809ee824ef4343b1f51b6d31f35b4b9afde3829e4d1184dc150",
+      "bytes": 1285
+    },
+    {
+      "original_local_path": "results/band_clan_availability_runs/20261019T185713.116447Z/rfam_families_over_1000nt.json",
+      "published_path": "reports/assay_definition_and_band_availability_publication_2026-10-19/band_clan_availability_runs/20261019T185713.116447Z/rfam_families_over_1000nt.json",
+      "sha256": "796235237ca7661d06c424e69f680c417b83068c2b7876691698db2df68cbc8c",
+      "bytes": 928
+    },
+    {
+      "original_local_path": "results/band_clan_availability_runs/20261019T185713.116447Z/identity.json",
+      "published_path": "reports/assay_definition_and_band_availability_publication_2026-10-19/band_clan_availability_runs/20261019T185713.116447Z/identity.json",
+      "sha256": "91574e3b409bf97b31cdb6f8badcb1b2107d314dc9e02a21fa9ec2634cdffecc",
+      "bytes": 1472
+    },
+    {
+      "original_local_path": "results/band_clan_availability_runs/20261019T185713.116447Z/protocol.json",
+      "published_path": "reports/assay_definition_and_band_availability_publication_2026-10-19/band_clan_availability_runs/20261019T185713.116447Z/protocol.json",
+      "sha256": "8f079fafb8d3bd81f359e1a066680934fcfef20473dafc28480ed635d73dc394",
+      "bytes": 7008
+    },
+    {
+      "original_local_path": "results/band_clan_availability_runs/20261019T185713.116447Z/manifest.json",
+      "published_path": "reports/assay_definition_and_band_availability_publication_2026-10-19/band_clan_availability_runs/20261019T185713.116447Z/manifest.json",
+      "sha256": "992b39ead2d03e2046bf4e7c0a72f9332657ad9ef80ae8f65e8c0d26944accce",
+      "bytes": 994
+    },
+    {
+      "original_local_path": "results/ribonn_task_evidence_runs/20261019T202103.166652Z/summary.json",
+      "published_path": "reports/assay_definition_and_band_availability_publication_2026-10-19/ribonn_task_evidence_runs/20261019T202103.166652Z/summary.json",
+      "sha256": "2811b36cd1d4d36c46cced31bb2b0cc052f0f5b0c97192f3cc08324c93dc8488",
+      "bytes": 5155
+    },
+    {
+      "original_local_path": "results/ribonn_task_evidence_runs/20261019T202103.166652Z/per_task_metrics.json",
+      "published_path": "reports/assay_definition_and_band_availability_publication_2026-10-19/ribonn_task_evidence_runs/20261019T202103.166652Z/per_task_metrics.json",
+      "sha256": "788fcd6bac4351ee1b9b8b15035d2b0e433d69e0560c4bb2747780c00b7843ce",
+      "bytes": 12166
+    },
+    {
+      "original_local_path": "results/ribonn_task_evidence_runs/20261019T202103.166652Z/training_overlap.json",
+      "published_path": "reports/assay_definition_and_band_availability_publication_2026-10-19/ribonn_task_evidence_runs/20261019T202103.166652Z/training_overlap.json",
+      "sha256": "f7066006b144a5f2b5461d51fc82a29230a27f4f2724b5545484c4eab3f30b21",
+      "bytes": 455
+    },
+    {
+      "original_local_path": "results/ribonn_task_evidence_runs/20261019T202103.166652Z/identity.json",
+      "published_path": "reports/assay_definition_and_band_availability_publication_2026-10-19/ribonn_task_evidence_runs/20261019T202103.166652Z/identity.json",
+      "sha256": "d20521176ffbefd1a2a4d57468d4f00cc2d1f03d8b329706f8bfa75e7dd5305f",
+      "bytes": 1243
+    },
+    {
+      "original_local_path": "results/ribonn_task_evidence_runs/20261019T202103.166652Z/protocol.json",
+      "published_path": "reports/assay_definition_and_band_availability_publication_2026-10-19/ribonn_task_evidence_runs/20261019T202103.166652Z/protocol.json",
+      "sha256": "9841bf67eedc89eecd4d817d8b62c7617873d68b0e2b7978e0119c071920d15d",
+      "bytes": 6321
+    },
+    {
+      "original_local_path": "results/ribonn_task_evidence_runs/20261019T202103.166652Z/manifest.json",
+      "published_path": "reports/assay_definition_and_band_availability_publication_2026-10-19/ribonn_task_evidence_runs/20261019T202103.166652Z/manifest.json",
+      "sha256": "dbef5ec7e72ba724cb52b5bd801d4da3b5186ee7648da1a20c04a18fcd14a64f",
+      "bytes": 760
+    },
+    {
+      "original_local_path": "results/band_availability_source_runs/20261019T185511.665510Z/manifest.json",
+      "published_path": "reports/assay_definition_and_band_availability_publication_2026-10-19/band_availability_source_runs/20261019T185511.665510Z/manifest.json",
+      "sha256": "804bc22308f6bfe8673d5ca391aa6f609488affbba7a775102538d27260c3e15",
+      "bytes": 1810
+    }
+  ],
+  "excluded_local_artifacts": [
+    {
+      "original_local_path": "results/band_availability_source_runs/20261019T185511.665510Z/Rfam.seed.gz",
+      "bytes": 5928432,
+      "reason": "pinned upstream archive or bulk artifact; identified by hash, not redistributed"
+    },
+    {
+      "original_local_path": "results/band_availability_source_runs/20261019T185511.665510Z/clan_membership.txt.gz",
+      "bytes": 1685,
+      "reason": "pinned upstream archive or bulk artifact; identified by hash, not redistributed"
+    },
+    {
+      "original_local_path": "results/band_availability_source_runs/20261019T185511.665510Z/family.txt.gz",
+      "bytes": 378804,
+      "reason": "pinned upstream archive or bulk artifact; identified by hash, not redistributed"
+    },
+    {
+      "original_local_path": "results/band_availability_source_runs/20261019T185511.665510Z/rcsb_query.json",
+      "bytes": 672,
+      "reason": "pinned upstream archive or bulk artifact; identified by hash, not redistributed"
+    },
+    {
+      "original_local_path": "results/band_availability_source_runs/20261019T185511.665510Z/rcsb_response.json",
+      "bytes": 6490,
+      "reason": "pinned upstream archive or bulk artifact; identified by hash, not redistributed"
+    }
+  ]
+}

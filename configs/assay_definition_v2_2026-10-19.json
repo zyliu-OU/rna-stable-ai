@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "name": "assay_definition_v2",
+  "frozen_date": "2026-10-19",
+  "supersedes": "configs/assay_definition_v1_2026-10-19.json, SHA-256 37d47273645c32c8939c246fa2edcc2ec35fb54e409aa1638cff7d416791a45a, which remains frozen and unedited. V2 adds the clarified design space, the stated CV range and the resulting power analysis.",
+  "source": "User answers to the six assay questions in reports/RNA-StableAI_HANDOFF_2026-10-19_V6.md, plus the follow-up clarifying the design space and CV range.",
+  "status": "incomplete_pending_inputs",
+
+  "assay": {
+    "system": "transfected_cells_or_in_vivo",
+    "not_cell_free": true,
+    "readouts": [
+      {"name": "luciferase_luminescence", "measures": "protein output / expression",
+       "reporter": "firefly luciferase (Fluc)", "units": "relative light units, instrument-dependent",
+       "design": "time_course"},
+      {"name": "rt_qpcr_mrna", "measures": "in-cell mRNA abundance over time, used for RNA stability",
+       "units": "relative abundance; decay rate or half-life derived",
+       "design": "time_course", "comparison": "before and after sequence optimization"}
+    ],
+    "cell_types": {"stated": ["A549", "T cell"], "t_cell_identity": "unspecified_user_is_checking"},
+    "replicates": 3,
+    "target_effect": {"fold_change": 1.5, "direction": "enhancement"},
+    "measurement_error": {
+      "status": "range_supplied_exact_value_outstanding",
+      "stated_cv_range": {"minimum": 0.0, "maximum": 0.20,
+                          "quote": "the CV for cell assay is usually 0-20%"},
+      "interpretation": "A range, not a measured value for this assay and reporter. A floor still requires a measured CV, per configs/score_record_schema_v1_2026-10-19.json."
+    }
+  },
+
+  "design_space": {
+    "regions_subject_to_change": ["5_utr", "orf", "3_utr"],
+    "all_three_confirmed": true,
+    "orf_note": "The user states codon usage is one of the tunable factors for the ORF, implying others exist. Which other ORF factors are in scope is not yet stated.",
+    "protein_invariance": {
+      "status": "unconfirmed_and_consequential",
+      "question": "Must ORF edits preserve the firefly luciferase amino acid sequence exactly, that is synonymous-only changes?",
+      "why_it_matters": "A luciferase reporter must stay catalytically active for luminescence to mean anything, so synonymous-only is the natural assumption. If non-synonymous changes are permitted, then luminescence confounds mRNA-level effects with changes in enzyme specific activity, and the assay would no longer isolate the quantity the pipeline is trying to optimize. This must be answered before any ORF edit is proposed.",
+      "assumed_default": null
+    },
+    "codon_usage_observation": "The supplied reference CDS sits at GC3 0.996, essentially maximal human codon optimization, so codon-usage variation from this parent can realistically only reduce GC3.",
+    "coupling_warning": "Edits in all three regions move GC content and folding free energy, which are STRAND features, and the ORF and UTR sizes are RiboNN inputs. The three regions are therefore not independent in their effect on model scores, and a per-region attribution of any predicted change requires an explicit decomposition.",
+    "freezing_note": "Recorded as the stated experimental design. Freezing an optimization space, that is parents and allowed edits, remains behind the Stage 2 gate review."
+  },
+
+  "power_analysis": {
+    "model": "two-sample t-test on log2-transformed readout, alpha 0.05 two-sided; CV converted to log2 standard deviation as log2(1+CV); non-central t distribution",
+    "computed_2026_10_19": true,
+    "power_for_1_5_fold_at_n3": {"cv_05": 1.0, "cv_10": 0.967, "cv_15": 0.757, "cv_20": 0.542},
+    "required_n_per_group_for_80pct_power_at_1_5_fold": {"cv_05": 2, "cv_10": 3, "cv_15": 4, "cv_20": 5},
+    "minimum_detectable_fold_at_n3_80pct_power": {"cv_05": 1.16, "cv_10": 1.34, "cv_15": 1.54, "cv_20": 1.75},
+    "paired_across_cell_types_1_5_fold_80pct": {
+      "note": "Same construct pair measured in each cell type and replicate, analysed as paired units.",
+      "cv_10": {"3_units": 0.933, "6_units": 1.0},
+      "cv_15": {"3_units": 0.723, "6_units": 1.0},
+      "cv_20": {"3_units": 0.539, "6_units": 0.989}
+    },
+    "finding": "The stated design of 3 replicates detecting a 1.5-fold enhancement is adequately powered only at the low end of the stated CV range. At CV 10 percent power is 96.7 percent; at 15 percent it falls to 75.7 percent; at 20 percent it is 54.2 percent, so a real 1.5-fold effect would be missed roughly half the time. At n=3 and CV 20 percent the minimum detectable effect is 1.75-fold, larger than the target.",
+    "options_if_cv_is_high": [
+      "Raise replicates to 5 per group, which restores 80 percent power at CV 20 percent.",
+      "Reduce CV by dual-reporter normalization, which typically moves a transfection luciferase assay toward the low end of the range.",
+      "Analyse the two cell types as paired units rather than pooled groups: at CV 20 percent, 6 paired units reach 98.9 percent power.",
+      "Restate 1.5-fold as the target effect and report the minimum detectable effect achieved, rather than assuming 1.5-fold is detectable."
+    ],
+    "not_a_model_threshold": "These figures concern the experiment's ability to detect an effect. They are not an acceptance threshold on any model score and do not constitute a floor."
+  },
+
+  "reference_construct": {
+    "status": "example_only_authoritative_sequence_pending",
+    "pending_from": "colleague referred to as Ping",
+    "cds": {"supplied": true, "length_nt": 1653, "codons": 551, "protein_length_aa": 550,
+            "sha256_dna_uppercase": "86322fc15d89f604e34e3a3fb275f059adb834f7dc904f97f20c44498ba9168d",
+            "gc_fraction": 0.6534, "gc3_fraction": 0.996,
+            "identity_assessment": "N-terminus and 550 aa length consistent with firefly luciferase; not aligned to a reference database, exact variant not asserted."},
+    "utrs": {"supplied": false,
+             "blocking": "A scorable transcript requires 5' UTR + CDS + 3' UTR, and RiboNN requires integer utr5_size and cds_size. No component can score this construct until the UTR scaffold is supplied."}
+  },
+
+  "ribonn_task_selection": {
+    "status": "candidates_identified_selection_still_blocked",
+    "candidate_tasks": {"A549": ["predicted_TE_A549"],
+                        "t_cell": ["predicted_TE_Primary_CD4._T.cells", "predicted_TE_HSB2", "predicted_TE_Molt.3"]},
+    "still_blocking": [
+      "No per-task released accuracy evidence held locally; only per-checkpoint validation R2 0.4847 to 0.5372 across 50 human checkpoints.",
+      "Per-task training overlap with any candidate sequence set remains unknown.",
+      "The T-cell type is not yet pinned; the user is checking.",
+      "A designed Fluc reporter is out-of-distribution for tasks trained on endogenous human transcripts."
+    ],
+    "rule": "A task may be selected only in its own versioned config, citing per-task accuracy evidence and an explicit applicability argument. Cell-line name matching is not evidence."
+  },
+
+  "floor_selection": {
+    "stability_floor": {"status": "not_selected", "value": null},
+    "translation_floor": {"status": "not_selected", "value": null},
+    "blocking": [
+      "A measured CV for this assay and reporter, not a usual-range statement.",
+      "A stated decision cost for a false accept and a false reject.",
+      "The 1.5-fold figure is a target experimental effect, not an acceptance threshold on a model score."
+    ]
+  },
+
+  "gate_conflict": {
+    "detected": true,
+    "gate_file": "configs/stage2_to_stage3_gate_2026-10-18.json",
+    "gate_states": "stage3_target = cell_free_expression",
+    "assay_states": "transfected cells or in vivo",
+    "also_inconsistent": ["published README cell-free first-target statement at commit 1ca32bb3",
+                          "reports/RNA-StableAI_HANDOFF_2026-10-18_V13.md cell-free first target",
+                          "diagram_10192026.svg cell-free expression box"],
+    "resolution_required": "Gate review decision by the user: amend the Stage 3 target, or keep cell-free and treat this assay as a separate proxy track.",
+    "prohibition": "This config does not amend the gate, the scope, the diagram or any published claim."
+  },
+
+  "quantity_mismatches_recorded": [
+    {"component": "strand_rnafold_calibration_v1 and published STRAND",
+     "predicts": "in-solution RNA half-life of purified RNA in buffer, hours",
+     "assay_measures": "in-cell mRNA decay by RT-qPCR",
+     "permitted_claim": "correlation with in-cell stability, explicitly labelled; not validation against the model's own target"},
+    {"component": "RiboNN released tasks",
+     "predicts": "translational efficiency of endogenous human transcripts, released task scale",
+     "assay_measures": "luminescence from a designed reporter construct",
+     "permitted_claim": "ranking or correlation, not calibrated prediction"},
+    {"component": "none",
+     "predicts": "nothing in the stack predicts relative light units",
+     "assay_measures": "expression in the assay's own units",
+     "permitted_claim": "none until a model is fitted to the lab's own measurements and independently evaluated"}
+  ],
+
+  "outstanding_inputs": [
+    "5' and 3' UTR scaffold sequences",
+    "authoritative construct sequence from Ping",
+    "measured assay CV for this reporter and cell types",
+    "exact T-cell type",
+    "whether ORF edits must preserve the amino acid sequence",
+    "which ORF factors beyond codon usage are in scope"
+  ],
+
+  "no_claim_permitted": [
+    "Defining an assay establishes no stability, translation or expression benefit.",
+    "No Stage 2 gate requirement is satisfied by this config.",
+    "No sequence may be scored until the UTR scaffold and authoritative sequence are supplied.",
+    "The power analysis describes the experiment, not any model's accuracy, and sets no floor."
+  ],
+
+  "gate_amended": false,
+  "task_selected": false,
+  "floors_frozen": false,
+  "new_sequence_scoring_enabled": false,
+  "expression_candidate_design_enabled": false,
+  "stage3_ready": false
+}

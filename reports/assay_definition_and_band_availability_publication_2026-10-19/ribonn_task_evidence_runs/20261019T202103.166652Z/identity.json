@@ -1,0 +1,25 @@
+{
+  "implementation": {
+    "scripts/audit_ribonn_task_evidence.py": "9d826a001503720f11ae7b650b0580fd72fa7acbadeb5a7bd16f7530a103d743",
+    "src/rnastable/ribonn_task_evidence.py": "798a0a97a856cd68d883b4bd363ee894ea9f05d51eb7a8f863f3b5364b44841b"
+  },
+  "config_sha256": "775d55dd80d9d5cad72cfe7a4936fe5a13c0c4eca83b77220586f5426be609bb",
+  "sources": {
+    "measured_te_human": {
+      "file": "MOESM3.xlsx",
+      "sha256": "5a9dd751cb8ac96dbe364e249561cb54d4912c4170e7d659b9d465bd008e4c47",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41587-025-02712-x/MediaObjects/41587_2025_2712_MOESM3_ESM.xlsx"
+    },
+    "predicted_te_human": {
+      "file": "MOESM5.xlsx",
+      "sha256": "4f94777b0f7a4a9502d1fe97fac012a08fe7510f39d58f8f350ca852f133f459",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41587-025-02712-x/MediaObjects/41587_2025_2712_MOESM5_ESM.xlsx"
+    },
+    "reporting_summary": {
+      "file": "MOESM2.pdf",
+      "sha256": "ea1ba32c1e17a00d630067baf433b6f5d57847422d70a73cfbb8fd174bc6b671",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41587-025-02712-x/MediaObjects/41587_2025_2712_MOESM2_ESM.pdf"
+    }
+  },
+  "sources_retained_in_repo": false
+}

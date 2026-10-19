@@ -1,0 +1,131 @@
+{
+  "measured_transcripts": 10348,
+  "predicted_transcripts": 10037,
+  "transcripts_without_predictions": 311,
+  "tasks_evaluated": 78,
+  "pearson": {
+    "min": 0.3623021014849233,
+    "median": 0.6877538271495498,
+    "max": 0.8207017456221259,
+    "mean": 0.6661155206212336
+  },
+  "r2": {
+    "min": 0.1203290923187732,
+    "median": 0.4642272362374207,
+    "max": 0.6502323612390026,
+    "mean": 0.445369871889868
+  },
+  "assay_relevant_tasks": {
+    "A549": {
+      "present": true,
+      "task": "A549",
+      "n": 9776,
+      "pearson": 0.7091853910481158,
+      "pearson_squared": 0.502943918876069,
+      "r2": 0.5013483781636798,
+      "rank_by_pearson": 23,
+      "of_tasks": 78,
+      "above_median": true
+    },
+    "Primary_CD4+_T-cells": {
+      "present": true,
+      "task": "Primary_CD4+_T-cells",
+      "n": 8149,
+      "pearson": 0.6687535456567092,
+      "pearson_squared": 0.4472313048284202,
+      "r2": 0.4454991251396202,
+      "rank_by_pearson": 47,
+      "of_tasks": 78,
+      "above_median": false
+    },
+    "HSB2": {
+      "present": true,
+      "task": "HSB2",
+      "n": 8076,
+      "pearson": 0.5865518936138835,
+      "pearson_squared": 0.3440431239020325,
+      "r2": 0.3403332561444625,
+      "rank_by_pearson": 66,
+      "of_tasks": 78,
+      "above_median": false
+    },
+    "Molt-3": {
+      "present": true,
+      "task": "Molt-3",
+      "n": 8514,
+      "pearson": 0.7020880825944057,
+      "pearson_squared": 0.49292767572108903,
+      "r2": 0.4893689190204229,
+      "rank_by_pearson": 29,
+      "of_tasks": 78,
+      "above_median": true
+    },
+    "HEK293T": {
+      "present": true,
+      "task": "HEK293T",
+      "n": 9937,
+      "pearson": 0.7178580018619892,
+      "pearson_squared": 0.5153201108372877,
+      "r2": 0.513580754493265,
+      "rank_by_pearson": 22,
+      "of_tasks": 78,
+      "above_median": true
+    }
+  },
+  "authors_pooled_metrics": {
+    "runs": 90,
+    "test_pearson_mean": 0.7112986538145277,
+    "test_r2_mean": 0.5012867285145653,
+    "note": "Pooled over tasks per training run, not per task."
+  },
+  "held_out_consistency_check": {
+    "authors_pooled_test_pearson_mean": 0.7112986538145277,
+    "derived_per_task_pearson_mean": 0.6661155206212336,
+    "derived_at_or_below_authors": true,
+    "verdict": "consistent with out-of-fold predictions"
+  },
+  "held_out_assumption": {
+    "assumed": "The released prediction table holds out-of-fold cross-validated predictions.",
+    "basis": "The table carries a fold column, and the Reporting Summary states models were blinded to unseen data in each held-out CV fold.",
+    "not_confirmed": "The paper text is paywalled and was not read, so this is not confirmed from the methods.",
+    "consistency_check": "If the predictions were in-sample the derived accuracy would exceed the authors' reported test metrics. The derived per-task mean must therefore be compared against the authors' pooled test metrics from the weight archive runs.csv, and a derived mean at or below those values is consistent with out-of-fold predictions.",
+    "if_violated": "Should the predictions prove to be in-sample, every accuracy figure derived here is optimistic and must be discarded rather than adjusted."
+  },
+  "training_overlap": {
+    "distinct_symbols": 10345,
+    "matches": {
+      "luc": [
+        "DGLUCY",
+        "LUC7L",
+        "LUC7L2",
+        "LUC7L3"
+      ],
+      "luciferase": [],
+      "GFP": [
+        "GFPT1",
+        "GFPT2"
+      ],
+      "nanoluc": [],
+      "renilla": []
+    },
+    "note": "Symbol matching is a screen over the released training table, not a sequence-level search. A designed reporter absent from this table is out of distribution, which is a separate concern from overlap."
+  },
+  "interpretation_rules": [
+    "Per-task accuracy describes the released model on endogenous human transcripts drawn from APPRIS annotation.",
+    "A designed, codon-optimized firefly luciferase reporter is not an endogenous human transcript. Absence from the training table removes the overlap concern and simultaneously confirms the construct is out of distribution. Those are different findings and must not be conflated.",
+    "A task's measurement count is data support, not accuracy. Both are reported and neither substitutes for the other.",
+    "Selecting a task still requires an explicit applicability argument for the construct type, which this evidence does not supply."
+  ],
+  "no_claim_permitted": [
+    "No task is selected by this config or by any run of it.",
+    "No accuracy figure here applies to a reporter construct, to the lab's assay, or to luminescence.",
+    "No floor is implied, and no Stage 2 gate requirement is satisfied.",
+    "The derived figures are recomputations of released data, not an independent evaluation of RiboNN."
+  ],
+  "task_selected": false,
+  "floors_frozen": false,
+  "gate_amended": false,
+  "new_sequence_scoring_enabled": false,
+  "stage3_ready": false,
+  "interpretation": "Per-task accuracy of the released model on endogenous human transcripts, recomputed from released tables. Not an independent evaluation, and not applicable to a designed reporter construct."
+}

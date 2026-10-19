@@ -1,0 +1,12 @@
+{
+  "run": "20261019T202103.166652Z",
+  "artifacts": {
+    "identity.json": "d20521176ffbefd1a2a4d57468d4f00cc2d1f03d8b329706f8bfa75e7dd5305f",
+    "per_task_metrics.json": "788fcd6bac4351ee1b9b8b15035d2b0e433d69e0560c4bb2747780c00b7843ce",
+    "protocol.json": "9841bf67eedc89eecd4d817d8b62c7617873d68b0e2b7978e0119c071920d15d",
+    "source/scripts/audit_ribonn_task_evidence.py": "9d826a001503720f11ae7b650b0580fd72fa7acbadeb5a7bd16f7530a103d743",
+    "source/src/rnastable/ribonn_task_evidence.py": "798a0a97a856cd68d883b4bd363ee894ea9f05d51eb7a8f863f3b5364b44841b",
+    "summary.json": "2811b36cd1d4d36c46cced31bb2b0cc052f0f5b0c97192f3cc08324c93dc8488",
+    "training_overlap.json": "f7066006b144a5f2b5461d51fc82a29230a27f4f2724b5545484c4eab3f30b21"
+  }
+}

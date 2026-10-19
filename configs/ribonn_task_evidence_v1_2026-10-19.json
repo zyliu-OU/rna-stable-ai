@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "name": "ribonn_task_evidence_v1",
+  "frozen_date": "2026-10-19",
+  "purpose": "Derive per-task accuracy and training-overlap evidence for the 78 released RiboNN human tasks, clearing two of the four blockers that configs/assay_definition_v2_2026-10-19.json records against RiboNN task selection.",
+  "what_this_is_not": "Evidence about a designed reporter construct. Accuracy derived here is the released model's performance on endogenous human transcripts. It does not select a task and does not transfer to an out-of-distribution construct.",
+
+  "upstream": {
+    "paper": "https://www.nature.com/articles/s41587-025-02712-x",
+    "paper_title": "Predicting the translation efficiency of messenger RNA in mammalian cells",
+    "journal": "Nature Biotechnology, 2025",
+    "code_repo": "https://github.com/Sanofi-Public/RiboNN",
+    "code_commit": "dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8",
+    "weights_record": "https://zenodo.org/records/17258709",
+    "readme_statement": "The upstream README states the published human and mouse models were trained on data in the Supplementary Tables published in the RiboNN paper."
+  },
+
+  "sources": [
+    {"role": "measured_te_human", "file": "MOESM3.xlsx", "sheet": "Human",
+     "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41587-025-02712-x/MediaObjects/41587_2025_2712_MOESM3_ESM.xlsx",
+     "sha256": "5a9dd751cb8ac96dbe364e249561cb54d4912c4170e7d659b9d465bd008e4c47",
+     "bytes": 23027441,
+     "contents": "SYMBOL, gene_id, tx_id, tx_size, utr5_size, utr3_size, cds_size, tx_sequence, fold, mean_te and 78 TE_<cell type> measurement columns"},
+    {"role": "predicted_te_human", "file": "MOESM5.xlsx", "sheet": "Multi-task (Human)",
+     "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41587-025-02712-x/MediaObjects/41587_2025_2712_MOESM5_ESM.xlsx",
+     "sha256": "4f94777b0f7a4a9502d1fe97fac012a08fe7510f39d58f8f350ca852f133f459",
+     "bytes": 26192312,
+     "contents": "tx_id, tx_size, utr5_size, utr3_size, cds_size, SYMBOL, tx_sequence, fold, mean_te and 78 predicted_TE_<cell type> columns"},
+    {"role": "reporting_summary", "file": "MOESM2.pdf",
+     "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41587-025-02712-x/MediaObjects/41587_2025_2712_MOESM2_ESM.pdf",
+     "sha256": "ea1ba32c1e17a00d630067baf433b6f5d57847422d70a73cfbb8fd174bc6b671",
+     "bytes": 1636988,
+     "contents": "Nature Portfolio Reporting Summary; records APPRIS v2 gene models, 3,819 ribosome profiling datasets filtered to 1,282 human samples, 10-fold cross validation with genes randomly allocated to folds."}
+  ],
+  "sources_not_retained": {
+    "policy": "The supplementary files are copyrighted third-party material totalling about 96 MB. They are pinned here by URL, byte count and SHA-256 and are deliberately NOT copied into this repository, so nothing redistributes them and the repository does not carry their bulk. Re-deriving requires re-fetching them and passing the directory to the driver.",
+    "also_available_not_used": ["MOESM4.xlsx mouse measurements, sha256 0c92358bfabfe748d1e081fdcb6da69f43fa0ff1c841fa431d8576335c1de921",
+                                "MOESM6.xlsx mouse predictions, sha256 b3e8dbe5b13d8804ceceb1249ffcd7304e98d3ba11efb0aed9f81d8918f7d663",
+                                "MOESM1_ESM.pdf supplementary figures, not retrieved"]
+  },
+
+  "method": {
+    "pairing": "Measured TE_<task> and predicted_TE_<task> are paired on tx_id. A transcript contributes to a task only when both values are present and finite.",
+    "metrics": ["n", "pearson", "pearson_squared", "r2"],
+    "r2_definition": "coefficient of determination against the observed series, 1 - sum((observed-predicted)^2)/sum((observed-mean(observed))^2); reported alongside pearson_squared because the two differ when predictions carry bias or scale error",
+    "minimum_n": 30,
+    "held_out_assumption": {
+      "assumed": "The released prediction table holds out-of-fold cross-validated predictions.",
+      "basis": "The table carries a fold column, and the Reporting Summary states models were blinded to unseen data in each held-out CV fold.",
+      "not_confirmed": "The paper text is paywalled and was not read, so this is not confirmed from the methods.",
+      "consistency_check": "If the predictions were in-sample the derived accuracy would exceed the authors' reported test metrics. The derived per-task mean must therefore be compared against the authors' pooled test metrics from the weight archive runs.csv, and a derived mean at or below those values is consistent with out-of-fold predictions.",
+      "if_violated": "Should the predictions prove to be in-sample, every accuracy figure derived here is optimistic and must be discarded rather than adjusted."
+    },
+    "overlap_screen": "Gene symbols in the measured table are screened for reporter-like names. This is a symbol screen over the released training table, not a sequence-level search."
+  },
+
+  "interpretation_rules": [
+    "Per-task accuracy describes the released model on endogenous human transcripts drawn from APPRIS annotation.",
+    "A designed, codon-optimized firefly luciferase reporter is not an endogenous human transcript. Absence from the training table removes the overlap concern and simultaneously confirms the construct is out of distribution. Those are different findings and must not be conflated.",
+    "A task's measurement count is data support, not accuracy. Both are reported and neither substitutes for the other.",
+    "Selecting a task still requires an explicit applicability argument for the construct type, which this evidence does not supply."
+  ],
+
+  "no_claim_permitted": [
+    "No task is selected by this config or by any run of it.",
+    "No accuracy figure here applies to a reporter construct, to the lab's assay, or to luminescence.",
+    "No floor is implied, and no Stage 2 gate requirement is satisfied.",
+    "The derived figures are recomputations of released data, not an independent evaluation of RiboNN."
+  ],
+
+  "task_selected": false,
+  "floors_frozen": false,
+  "gate_amended": false,
+  "new_sequence_scoring_enabled": false,
+  "expression_candidate_design_enabled": false,
+  "stage3_ready": false
+}

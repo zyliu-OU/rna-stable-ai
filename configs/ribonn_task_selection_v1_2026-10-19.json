@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "name": "ribonn_task_selection_v1",
+  "frozen_date": "2026-10-19",
+  "purpose": "Select the RiboNN named task for the A549 arm of the transfected-cell assay, citing per-task accuracy evidence and an explicit applicability argument, as configs/assay_definition_v2_2026-10-19.json required.",
+  "scope": "The A549 arm only. The T-cell arm is declared model-blind and receives no task.",
+
+  "selection": {
+    "arm": "A549",
+    "task": "predicted_TE_A549",
+    "measurement_column_in_released_table": "TE_A549",
+    "species_model": "human",
+    "checkpoints": "the 50 released human checkpoints already retained and hash-verified in results/ribonn_weight_acquisition_runs/20261019T044334.430330Z",
+    "aggregation": "mean over released per-fold checkpoint predictions, as in results/ribonn_fixed_inference_runs/20261019T045101.117038Z"
+  },
+
+  "evidence": {
+    "source_run": "results/ribonn_task_evidence_runs/20261019T202103.166652Z",
+    "derivation": "Released measured TE paired against released model predictions on transcript identity, recomputed from the paper's supplementary tables.",
+    "per_task_accuracy": {
+      "task": "A549", "n": 9776, "pearson": 0.7091853910481158,
+      "pearson_squared": 0.502943918876069, "r2": 0.5013483781636798,
+      "rank_by_pearson": 23, "of_tasks": 78, "above_median": true
+    },
+    "distribution_context": {"pearson_min": 0.3623, "pearson_median": 0.6878, "pearson_max": 0.8207},
+    "data_support": "10,078 of 10,348 released transcripts carry an A549 measurement, 97.4 percent, among the best-covered tasks.",
+    "training_overlap": "None. The training table holds 10,348 endogenous human APPRIS transcripts with 10,345 distinct standard gene symbols; a screen for reporter names returned only human genes (LUC7L, LUC7L2, LUC7L3, DGLUCY, GFPT1, GFPT2) and no luciferase, GFP, NanoLuc or Renilla.",
+    "held_out_caveat": "The derived accuracy assumes the released prediction table holds out-of-fold predictions. That is consistent with the authors' own pooled test metrics but was not confirmed from the paywalled methods text. If it proves false, this selection's evidential basis must be discarded and the selection revisited."
+  },
+
+  "applicability_argument": {
+    "cell_type_match": "Exact. The assay arm is A549 and the task is the A549 task.",
+    "construct_type_mismatch": {
+      "status": "documented_and_material",
+      "statement": "RiboNN was trained exclusively on endogenous human transcripts under APPRIS annotation. The assay construct is a designed, codon-optimized firefly luciferase reporter, which is out of distribution. Zero training overlap removes any leakage concern and simultaneously establishes this gap; the two are different findings.",
+      "specific_risks": [
+        "GC3 of the reference CDS is 0.996, far above the endogenous human distribution the model was trained on.",
+        "A reporter CDS has no endogenous regulatory context, no native UTR pairing and no evolutionary constraint of the kind present in the training set.",
+        "The model's learned codon and UTR features may not extrapolate to a construct at the extreme of codon optimization."
+      ]
+    },
+    "permitted_use": "Ranking and correlation within the A549 arm only. The task score may be used to order candidate constructs and to test whether it correlates with measured luminescence.",
+    "prohibited_use": [
+      "Calibrated prediction of translational efficiency for any construct.",
+      "Any prediction of luminescence or relative light units, which the model does not output.",
+      "Transfer of an A549 task score to the T-cell arm.",
+      "Treating a task score as evidence of expression benefit."
+    ],
+    "falsification": "Once measured luminescence exists for the panel, the correlation between predicted_TE_A549 and the measured A549 readout is itself testable. A null or negative correlation would mean the out-of-distribution gap defeats the task, and the selection must then be withdrawn rather than reinterpreted."
+  },
+
+  "t_cell_arm": {
+    "status": "model_blind",
+    "task": null,
+    "basis": "The lab's T cells are activated CD3+ containing CD4+ and CD8+ populations. A scan of all 78 released tasks found no CD3 task, no CD8 task and no activated-state task. The only primary T-cell task, Primary_CD4+_T-cells, differs in subset composition and in unknown activation state (Pearson 0.6688, rank 47 of 78). The higher-scoring lymphoid tasks are transformed lines: MM1.S 0.7834 myeloma, LCL 0.7559 EBV-transformed B-lymphoblastoid, Molt-3 0.7021 T-ALL.",
+    "rule": "Selecting a transformed line's task because its accuracy figure is higher would trade a biological mismatch for a numerical one. The arm carries no translation-side model score, and none may be inferred from the A549 arm.",
+    "user_decision": "Declare the t-cell arm model-blind"
+  },
+
+  "review_triggers": [
+    "The held-out assumption is shown false.",
+    "Measured luminescence shows no correlation with predicted_TE_A549 in the A549 arm.",
+    "The construct panel moves away from a luciferase reporter toward endogenous-like transcripts, which would reduce the distribution gap.",
+    "A released task matching activated CD3+ T cells becomes available."
+  ],
+
+  "no_claim_permitted": [
+    "Selecting a task establishes no accuracy for the assay construct.",
+    "No Stage 2 gate requirement is satisfied by this selection; 0 of 6 remain satisfied.",
+    "No floor is implied or frozen.",
+    "No sequence may be scored until the transcript inputs recorded in configs/assay_definition_v3_2026-10-19.json are supplied."
+  ],
+
+  "task_selected": true,
+  "floors_frozen": false,
+  "gate_amended_by_this_config": false,
+  "new_sequence_scoring_enabled": false,
+  "expression_candidate_design_enabled": false,
+  "stage3_ready": false
+}

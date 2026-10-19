@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "name": "assay_definition_v3",
+  "frozen_date": "2026-10-19",
+  "supersedes": {
+    "v2": {"file": "configs/assay_definition_v2_2026-10-19.json",
+           "sha256": "4e32c4d153b34f3f2cd955ae9716c93d40f61ffb4ce3bc694b5906dd45f5b98b"},
+    "v1": {"file": "configs/assay_definition_v1_2026-10-19.json",
+           "sha256": "37d47273645c32c8939c246fa2edcc2ec35fb54e409aa1638cff7d416791a45a"},
+    "status": "both frozen and unedited"
+  },
+  "status": "incomplete_pending_transcript",
+  "gate": "configs/stage2_to_stage3_gate_v2_2026-10-19.json",
+
+  "decisions_recorded_2026_10_19": {
+    "stage3_target_amended": {
+      "decision": "Amend the gate to transfected cells.",
+      "effect": "configs/stage2_to_stage3_gate_v2_2026-10-19.json supersedes the 2026-10-18 gate. The gate conflict raised in V8 is resolved.",
+      "quote": "for stage 3, amend the gate to transfected cells"
+    },
+    "orf_edits_synonymous_only": {
+      "decision": "ORF edits must preserve the amino acid sequence.",
+      "quote": "yes, ORF edits must be synonymous",
+      "effect": "The encoded firefly luciferase protein is invariant across the panel, so enzyme specific activity is constant and luminescence differences cannot be caused by a changed protein. This is what allows luminescence to be read as an mRNA-level effect.",
+      "constraint": "Any proposed ORF edit must translate to exactly the parent protein. A proposal that changes one residue is invalid, not merely risky."
+    },
+    "t_cell_arm_model_blind": {
+      "decision": "Declare the T-cell arm model-blind.",
+      "quote": "Declare the t-cell arm model-blind",
+      "effect": "No RiboNN task is applied to the T-cell arm. Translation-side model scores exist only for the A549 arm.",
+      "basis": "The lab's cells are activated CD3+ T cells containing CD4+ and CD8+ populations. A scan of all 78 released tasks found no CD3, no CD8 and no activated-state task. The only primary T-cell task is Primary_CD4+_T-cells, which differs in subset composition and in unknown activation state; the better-scoring lymphoid tasks are all transformed lines and are worse biological matches."
+    },
+    "cv_bound": {
+      "decision": "Use below 20 percent for both CVs.",
+      "quote": "lets just use below 20% for two CVs",
+      "status": "planning_bound_not_a_measurement",
+      "applies_to": ["luciferase normalized expression", "RT-qPCR half-life estimate"]
+    }
+  },
+
+  "assay": {
+    "system": "transfected_cells_or_in_vivo",
+    "not_cell_free": true,
+    "readouts": [
+      {"name": "luciferase_luminescence", "measures": "protein output / expression",
+       "reporter": "firefly luciferase (Fluc)", "units": "relative light units, instrument-dependent",
+       "design": "time_course"},
+      {"name": "rt_qpcr_mrna", "measures": "in-cell mRNA abundance over time, used for RNA stability",
+       "units": "relative abundance; decay rate or half-life derived", "design": "time_course"}
+    ],
+    "cell_types": {
+      "a549": {"name": "A549", "model_supported": true, "ribonn_task": "predicted_TE_A549"},
+      "t_cell": {"name": "activated CD3+ T cells containing CD4+ and CD8+ populations",
+                 "model_supported": false, "ribonn_task": null,
+                 "reason": "declared model-blind; no released task matches"}
+    },
+    "replicates": 3,
+    "target_effect": {"fold_change": 1.5, "direction": "enhancement"},
+    "measurement_error": {
+      "status": "bound_supplied_not_measured",
+      "assumed_cv_upper_bound": 0.20,
+      "applies_to_both_readouts": true,
+      "power_consequence": {
+        "warning": "At the stated bound of CV 20 percent, 3 replicates give only 54.2 percent power to detect a 1.5-fold change, and the minimum detectable effect at n=3 becomes 1.75-fold, which exceeds the 1.5-fold target.",
+        "power_at_n3": {"cv_10": 0.967, "cv_15": 0.757, "cv_20": 0.542},
+        "required_n_at_cv_20_for_80pct": 5,
+        "paired_alternative": "Analysed as paired units across cell types, 6 paired units reach 98.9 percent power at CV 20 percent.",
+        "rule": "Planning at the upper bound means the design is underpowered for its own target. Either the measured CV must come in nearer 10 percent, or replicates must rise to 5, or the analysis must be paired, or the reported outcome must be the minimum detectable effect rather than the 1.5-fold target."
+      }
+    }
+  },
+
+  "design_space": {
+    "regions_subject_to_change": ["5_utr", "orf", "3_utr"],
+    "orf_constraint": "synonymous_only",
+    "protein_invariance": {"status": "confirmed_by_user", "assumed_default": null,
+                           "validation_rule": "A proposed ORF variant must translate, under the standard genetic code, to exactly the parent protein. The parent protein is the 550 aa sequence whose reference CDS is recorded below."},
+    "codon_usage_observation": "The supplied reference CDS sits at GC3 0.996, essentially maximal human codon optimization, so synonymous variation from this parent can realistically only reduce GC3.",
+    "coupling_warning": "Edits in all three regions move GC content and folding free energy, which are STRAND features, and UTR and CDS sizes are RiboNN inputs. The regions are not independent in their effect on model scores."
+  },
+
+  "reference_construct": {
+    "status": "cds_example_only_transcript_pending",
+    "cds": {"supplied": true, "length_nt": 1653, "codons": 551, "protein_length_aa": 550,
+            "sha256_dna_uppercase": "86322fc15d89f604e34e3a3fb275f059adb834f7dc904f97f20c44498ba9168d",
+            "gc_fraction": 0.6534, "gc3_fraction": 0.996,
+            "identity_assessment": "consistent with firefly luciferase; not aligned to a reference database"},
+    "blocking_inputs": [
+      "5' UTR sequence",
+      "3' UTR sequence",
+      "which construct is the parent/baseline",
+      "plasmid DNA versus IVT mRNA transfection, since that decides whether the transcript is the designed insert or the vector-defined TSS-to-polyA product",
+      "poly(A) presence and length",
+      "cap chemistry and nucleoside modifications",
+      "authoritative CDS from the colleague referred to as Ping"
+    ],
+    "modification_limitation": "Neither RNAfold, STRAND, strand_rnafold_calibration_v1 nor RiboNN represents cap chemistry or nucleoside modifications. Constructs differing only in modification are identical model inputs, and any measured difference between them must not be attributed to sequence."
+  },
+
+  "ribonn_task_selection": {
+    "a549_arm": "selected in configs/ribonn_task_selection_v1_2026-10-19.json",
+    "t_cell_arm": "model_blind; no task",
+    "note": "Selection for the A549 arm rests on the per-task evidence derived in results/ribonn_task_evidence_runs/20261019T202103.166652Z and carries a documented out-of-distribution caveat."
+  },
+
+  "floor_selection": {
+    "stability_floor": {"status": "not_selected", "value": null},
+    "translation_floor": {"status": "not_selected", "value": null},
+    "blocking": [
+      "The CV is a planning bound, not a measurement; configs/score_record_schema_v1_2026-10-19.json requires measurement error.",
+      "No decision cost is stated: what a false accept and a false reject cost in the planned experiment.",
+      "The 1.5-fold figure is a target experimental effect, not an acceptance threshold on a model score."
+    ],
+    "rule": "A floor frozen on an assumed bound rather than a measured error would be provisional and must be labelled as such. None is frozen here."
+  },
+
+  "quantity_mismatches_recorded": [
+    {"component": "strand_rnafold_calibration_v1 and published STRAND",
+     "predicts": "in-solution RNA half-life of purified RNA in buffer, hours",
+     "assay_measures": "in-cell mRNA decay by RT-qPCR",
+     "permitted_claim": "correlation with in-cell stability, explicitly labelled; not validation against the model's own target"},
+    {"component": "RiboNN predicted_TE_A549",
+     "predicts": "translational efficiency of endogenous human transcripts, released task scale",
+     "assay_measures": "luminescence from a designed reporter construct",
+     "permitted_claim": "ranking or correlation for the A549 arm only, not calibrated prediction"},
+    {"component": "none",
+     "predicts": "nothing in the stack predicts relative light units",
+     "assay_measures": "expression in the assay's own units",
+     "permitted_claim": "none until a model is fitted to the lab's own measurements and independently evaluated"}
+  ],
+
+  "no_claim_permitted": [
+    "Amending the Stage 3 target satisfies no Stage 2 requirement; 0 of 6 remain satisfied.",
+    "Defining an assay establishes no stability, translation or expression benefit.",
+    "No sequence may be scored until the transcript inputs above are supplied.",
+    "The T-cell arm carries no translation-side model score and none may be inferred from the A549 arm."
+  ],
+
+  "task_selected_for_a549": true,
+  "floors_frozen": false,
+  "new_sequence_scoring_enabled": false,
+  "expression_candidate_design_enabled": false,
+  "stage3_ready": false
+}

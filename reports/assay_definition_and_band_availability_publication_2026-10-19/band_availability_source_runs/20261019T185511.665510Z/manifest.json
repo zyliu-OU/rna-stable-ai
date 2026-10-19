@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "run": "20261019T185511.665510Z",
+  "retrieved_utc_date": "2026-10-19",
+  "purpose": "Pinned upstream sources for the Stage 2 band clan-availability census v2",
+  "rfam_release": "CURRENT as served on 2026-10-19; Rfam does not stamp a version into these files",
+  "rcsb_endpoint": "https://search.rcsb.org/rcsbsearch/v2/query",
+  "rcsb_query_summary": "experimental RNA polymer entities, rcsb_sample_sequence_length 2000-2999 inclusive, faceted on pdbx_description",
+  "files": {
+    "Rfam.seed.gz": {
+      "sha256": "41f014f4ab5628620935f089b1bb77987ebc162fda7c72bff368a32c9cccabac",
+      "bytes": 5928432,
+      "origin": "https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/Rfam.seed.gz"
+    },
+    "clan_membership.txt.gz": {
+      "sha256": "2f199aaaa0a1e340145acb8fa20639427d1c0a38f4dedce29901888f222afbec",
+      "bytes": 1685,
+      "origin": "https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/database_files/clan_membership.txt.gz"
+    },
+    "family.txt.gz": {
+      "sha256": "5662343d24b6f8dab566977fabebeb9df4bbec47fb8991400749fc642f03df69",
+      "bytes": 378804,
+      "origin": "https://ftp.ebi.ac.uk/pub/databases/Rfam/CURRENT/database_files/family.txt.gz"
+    },
+    "rcsb_query.json": {
+      "sha256": "f1778d5e8a470a9c5a54c9a54b3b2fb5d4294e0d84092b0e71ed2e21508bcfbc",
+      "bytes": 672,
+      "origin": "local request body POSTed to https://search.rcsb.org/rcsbsearch/v2/query"
+    },
+    "rcsb_response.json": {
+      "sha256": "3df303184d5362aca042029b4ea3a38e3e9967bbea391d4f1cb7b8638c115d9c",
+      "bytes": 6490,
+      "origin": "response from https://search.rcsb.org/rcsbsearch/v2/query"
+    }
+  },
+  "network_used": true,
+  "no_sequences_selected": true,
+  "note": "Raw upstream bytes only. No selection, scoring or inference performed at acquisition."
+}

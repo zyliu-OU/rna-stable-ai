@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "name": "stage2_band_clan_availability_census_v2",
+  "frozen_date": "2026-10-19",
+  "supersedes": "Extends configs/stage2_band_coverage_census_v1_2026-10-19.json. The v1 config and its run remain frozen and unmodified; v1 measured local availability only and this version adds the upstream question v1 left untested.",
+  "purpose": "Decide whether clan-separated validation coverage in the 2000-2999 nt band is achievable from any available source, local or upstream. V1 established that local material cannot supply it and recorded the remedy as acquisition. This census tests whether that acquisition can succeed.",
+  "what_this_is_not": "A census of availability. It runs no inference, measures no accuracy, selects no sequence, changes no selection or cap, and cannot satisfy or amend a gate requirement.",
+  "gate": "configs/stage2_to_stage3_gate_2026-10-18.json",
+  "gate_requirement_under_test": "Resolve_sparse_2000_2999_nt_coverage_before_claiming_the_full_length_range",
+  "band": {
+    "name": "2000_2999",
+    "minimum_inclusive": 2000,
+    "maximum_exclusive": 3000
+  },
+  "baseline_clans": {
+    "clans": [
+      "CL00111",
+      "CL00112"
+    ],
+    "provenance": "Clans of the in-scope records of the frozen validation selection, as measured by the v1 census run results/stage2_band_coverage_census_runs/20261019T180243.655199Z. CL00111 is the ribosomal small-subunit clan and CL00112 the large-subunit clan.",
+    "rule": "A source resolves the requirement only by supplying band-length references from a clan outside this set. Additional records from CL00111 or CL00112 are pseudo-replicates for the family-and-clan-separated requirement, however many there are."
+  },
+  "source_run": "results/band_availability_source_runs/20261019T185511.665510Z",
+  "sources": [
+    {
+      "role": "rfam_clan_membership",
+      "file": "clan_membership.txt.gz",
+      "sha256": "2f199aaaa0a1e340145acb8fa20639427d1c0a38f4dedce29901888f222afbec"
+    },
+    {
+      "role": "rfam_family_metadata",
+      "file": "family.txt.gz",
+      "sha256": "5662343d24b6f8dab566977fabebeb9df4bbec47fb8991400749fc642f03df69"
+    },
+    {
+      "role": "rfam_seed_alignments",
+      "file": "Rfam.seed.gz",
+      "sha256": "41f014f4ab5628620935f089b1bb77987ebc162fda7c72bff368a32c9cccabac"
+    },
+    {
+      "role": "rcsb_band_query",
+      "file": "rcsb_query.json",
+      "sha256": "f1778d5e8a470a9c5a54c9a54b3b2fb5d4294e0d84092b0e71ed2e21508bcfbc"
+    },
+    {
+      "role": "rcsb_band_response",
+      "file": "rcsb_response.json",
+      "sha256": "3df303184d5362aca042029b4ea3a38e3e9967bbea391d4f1cb7b8638c115d9c"
+    }
+  ],
+  "local_comparison": {
+    "v1_census_run": "results/stage2_band_coverage_census_runs/20261019T180243.655199Z",
+    "local_new_clan_opportunity": "RF02462 / CL00004, two band records, both prior_exposure_overlap",
+    "rule": "Any upstream band record outside the baseline clans must be cross-checked against the v1 census's locally held records. A record already held locally and already exposed is not newly available."
+  },
+  "rfam_method": {
+    "family_length_field": "clen, the covariance-model consensus length, located by position from the end of each row of the MySQL dump",
+    "validation_requirement": "The clen column must be validated against independently known family sizes before any conclusion is drawn. The census fails if any validation family is missing or disagrees beyond tolerance.",
+    "validation_families": {
+      "RF00005": 71,
+      "RF00001": 120,
+      "RF00002": 154,
+      "RF02542": 1311,
+      "RF01959": 1478,
+      "RF00177": 1533,
+      "RF01960": 1831,
+      "RF02541": 2925,
+      "RF02540": 2987,
+      "RF02543": 3401
+    },
+    "validation_tolerance_nt": 0,
+    "seed_method": "Every seed alignment is scanned and each sequence's ungapped length computed by removing gap characters -._~, concatenating interleaved Stockholm blocks per sequence name. Band membership uses that ungapped length, not the family consensus length, because individual sequences can exceed it.",
+    "parse_integrity_requirement": "The family metadata parse must report zero skipped rows; a nonzero count invalidates the family-level conclusion."
+  },
+  "rcsb_method": {
+    "query": "experimental RNA polymer entities with rcsb_sample_sequence_length in 2000-2999 inclusive, faceted on rcsb_polymer_entity.pdbx_description",
+    "classification": "Each description is classified as ribosomal, generically named, or other, by the keyword lists below. Classification is textual and is therefore evidence about the composition of the band, not a family or clan assignment.",
+    "ribosomal_keywords": [
+      "ribosom",
+      "rrna",
+      "23s",
+      "25s",
+      "28s",
+      "16s",
+      "18s",
+      "lsu",
+      "ssu",
+      "50s",
+      "30s",
+      "60s",
+      "40s",
+      "70s",
+      "80s"
+    ],
+    "generic_patterns": [
+      "-mer)",
+      "chains:",
+      "complete genome"
+    ],
+    "generic_note": "A generically named RNA of 2000-2999 nt, for example 'RNA (2912-MER)', is overwhelmingly likely to be a ribosomal subunit deposited without a descriptive name. The census must not count generically named entities as new-clan leads, and must not claim them as confirmed ribosomal either. They are reported separately as unresolved.",
+    "limits": "RCSB descriptions carry no Rfam clan. A non-ribosomal, non-generic description would be a lead requiring individual family assignment, not a resolved new clan."
+  },
+  "verdicts": {
+    "resolvable": "At least one source supplies band-length references from a clan outside the baseline that are not already locally held and exposed.",
+    "not_resolvable_from_surveyed_sources": "No such reference exists in the surveyed sources.",
+    "unresolved_leads_present": "Reported alongside either verdict when generically named or unassigned band material remains unclassified."
+  },
+  "permitted_conclusions": [
+    "A verdict about availability in the surveyed sources, with counts.",
+    "A statement that a named gate requirement is or is not achievable from those sources."
+  ],
+  "no_claim_permitted": [
+    "No accuracy, structure-quality, stability or expression claim follows from a census of availability.",
+    "The census may not amend, narrow or reinterpret a gate requirement. Recording that a requirement is unachievable from surveyed sources is a finding; changing the requirement is a gate review decision reserved to the user.",
+    "Surveying two sources does not prove a reference exists nowhere; the verdict is scoped to Rfam seed and RCSB experimental entities as queried here.",
+    "Rfam full alignments were not surveyed and the census must say so.",
+    "No Stage 2 requirement is satisfied by this census."
+  ],
+  "selection_changed": false,
+  "new_inference_performed": false,
+  "model_defaults_changed": false,
+  "gate_amended": false,
+  "new_sequence_scoring_enabled": false,
+  "expression_candidate_design_enabled": false,
+  "stage3_ready": false
+}

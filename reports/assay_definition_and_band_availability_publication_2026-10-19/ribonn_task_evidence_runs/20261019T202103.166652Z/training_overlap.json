@@ -1,0 +1,19 @@
+{
+  "distinct_symbols": 10345,
+  "matches": {
+    "luc": [
+      "DGLUCY",
+      "LUC7L",
+      "LUC7L2",
+      "LUC7L3"
+    ],
+    "luciferase": [],
+    "GFP": [
+      "GFPT1",
+      "GFPT2"
+    ],
+    "nanoluc": [],
+    "renilla": []
+  },
+  "note": "Symbol matching is a screen over the released training table, not a sequence-level search. A designed reporter absent from this table is out of distribution, which is a separate concern from overlap."
+}

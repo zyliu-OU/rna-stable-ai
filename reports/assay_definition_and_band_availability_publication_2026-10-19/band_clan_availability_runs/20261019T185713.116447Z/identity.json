@@ -1,0 +1,33 @@
+{
+  "implementation": {
+    "scripts/audit_band_clan_availability.py": "5e6d996f82622f9164fb37676e3832451dc8d2c45362c202511833c2436b864a",
+    "src/rnastable/band_availability.py": "dacadb954c6e6aa03ee708ce7816ab83dce01f863d1fe7a574e972f8efdb4701"
+  },
+  "config_sha256": "8e8f69b6830c96649dd3645a96fbf1ae0be6618b6537fcf18bfbd42aa1046aec",
+  "gate_sha256": "956fef4d171a2d33d16a16e36b80d3def4696d321f930c74ea3396acbbd030dd",
+  "source_run": "results/band_availability_source_runs/20261019T185511.665510Z",
+  "source_manifest_sha256": "804bc22308f6bfe8673d5ca391aa6f609488affbba7a775102538d27260c3e15",
+  "sources": {
+    "rfam_clan_membership": {
+      "file": "clan_membership.txt.gz",
+      "sha256": "2f199aaaa0a1e340145acb8fa20639427d1c0a38f4dedce29901888f222afbec"
+    },
+    "rfam_family_metadata": {
+      "file": "family.txt.gz",
+      "sha256": "5662343d24b6f8dab566977fabebeb9df4bbec47fb8991400749fc642f03df69"
+    },
+    "rfam_seed_alignments": {
+      "file": "Rfam.seed.gz",
+      "sha256": "41f014f4ab5628620935f089b1bb77987ebc162fda7c72bff368a32c9cccabac"
+    },
+    "rcsb_band_query": {
+      "file": "rcsb_query.json",
+      "sha256": "f1778d5e8a470a9c5a54c9a54b3b2fb5d4294e0d84092b0e71ed2e21508bcfbc"
+    },
+    "rcsb_band_response": {
+      "file": "rcsb_response.json",
+      "sha256": "3df303184d5362aca042029b4ea3a38e3e9967bbea391d4f1cb7b8638c115d9c"
+    }
+  },
+  "v1_census_run": "results/stage2_band_coverage_census_runs/20261019T180243.655199Z"
+}

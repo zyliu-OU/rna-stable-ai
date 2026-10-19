@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "name": "assay_definition_v1",
+  "frozen_date": "2026-10-19",
+  "source": "User-supplied answers to the six assay questions recorded in reports/RNA-StableAI_HANDOFF_2026-10-19_V6.md",
+  "purpose": "Record the intended experimental assay so that RiboNN named-task selection and the stability/translation floors have a defined target. This config defines the assay only; it selects no task, freezes no floor, and amends no gate.",
+
+  "assay": {
+    "system": "transfected_cells_or_in_vivo",
+    "not_cell_free": true,
+    "readouts": [
+      {"name": "luciferase_luminescence", "measures": "protein output / expression",
+       "reporter": "firefly luciferase (Fluc)", "units": "relative light units, instrument-dependent",
+       "design": "time_course"},
+      {"name": "rt_qpcr_mrna", "measures": "in-cell mRNA abundance over time, used for RNA stability",
+       "units": "relative abundance; decay rate or half-life derived",
+       "design": "time_course",
+       "comparison": "before and after sequence optimization"}
+    ],
+    "cell_types": {
+      "stated": ["A549", "T cell"],
+      "t_cell_identity": "unspecified_pending",
+      "note": "The user wrote 'crossing different cell type as well, e.q. A549 and T-cell'. A549 is unambiguous; the T-cell type is not yet pinned to a primary cell or a line."
+    },
+    "replicates": 3,
+    "target_effect": {"fold_change": 1.5, "direction": "enhancement"},
+    "measurement_error": {
+      "status": "not_supplied",
+      "required_for": "any stability or translation floor",
+      "power_note": "Computed for a two-sample t-test, alpha 0.05 two-sided, 80% power, detecting a 1.5-fold change: n=3 per group requires CV at or below about 14.1 percent; n=4 about 18.6; n=5 about 22.2; n=6 about 25.3. The declared design of 3 replicates is therefore adequate only if the assay CV is at or below roughly 14 percent."
+    }
+  },
+
+  "design_space": {
+    "varies": ["utr_sequences", "codon_usage"],
+    "both_confirmed": true,
+    "note": "This is the same thing the Stage 2 to Stage 3 gate requires frozen as parents and allowed edits. It is recorded here as the stated experimental design, not frozen as an optimization space; freezing that remains behind the gate review.",
+    "codon_usage_observation": "The supplied reference CDS already sits at GC3 0.996, essentially maximal human codon optimization, so codon-usage variation from this starting point can realistically only reduce GC3. Codon changes also move GC content and folding free energy, which are STRAND features, so stability-side predictions respond to codon edits as well as UTR edits."
+  },
+
+  "reference_construct": {
+    "status": "example_only_authoritative_sequence_pending",
+    "pending_from": "colleague referred to as Ping; the user wrote 'use Ping's sequence as a model when you receive the sequence from him'",
+    "cds": {
+      "supplied": true,
+      "molecule": "DNA as supplied",
+      "length_nt": 1653,
+      "codons": 551,
+      "protein_length_aa": 550,
+      "sha256_dna_uppercase": "86322fc15d89f604e34e3a3fb275f059adb834f7dc904f97f20c44498ba9168d",
+      "gc_fraction": 0.6534,
+      "gc3_fraction": 0.996,
+      "validation": {
+        "divisible_by_three": true, "starts_atg": true, "terminal_stop": "TGA",
+        "internal_stops": 0,
+        "n_terminus": "MEDAKNIKKGPAPFYPLEDGTAGEQLHKAMKRYALVPGTIAFTDA",
+        "identity_assessment": "N-terminal sequence and 550 aa length are consistent with firefly luciferase. Not aligned against a reference database, so the exact variant is not asserted."
+      }
+    },
+    "utrs": {
+      "supplied": false,
+      "blocking": "A scorable transcript requires 5' UTR + CDS + 3' UTR. RiboNN additionally requires integer utr5_size and cds_size. Neither component can score this construct until the UTR scaffold is supplied.",
+      "strand_comparison_note": "STRAND's released constructs used hHBB 5' and 3' UTRs; whether this assay uses the same scaffold is unknown."
+    }
+  },
+
+  "quantity_mismatches_recorded": [
+    {"component": "strand_rnafold_calibration_v1 and published STRAND",
+     "predicts": "in-solution RNA half-life, purified RNA in buffer, hours",
+     "assay_measures": "in-cell mRNA decay by RT-qPCR",
+     "relationship": "different quantities. In-cell decay involves deadenylation, decapping, exonucleolytic and miRNA-directed pathways absent from a buffer degradation measurement. The assay therefore does not validate either stability model against its own target; it can only test correlation.",
+     "permitted_claim": "correlation with in-cell stability, explicitly labelled as such"},
+    {"component": "RiboNN released tasks",
+     "predicts": "translational efficiency of endogenous human transcripts, released task scale",
+     "assay_measures": "luminescence from a designed reporter construct",
+     "relationship": "related but not identical. The tasks are trained on endogenous transcripts; a designed Fluc reporter is out-of-distribution, and luminescence is not the task's target scale.",
+     "permitted_claim": "ranking or correlation, not calibrated prediction"},
+    {"component": "none",
+     "predicts": "nothing in the stack predicts relative light units",
+     "assay_measures": "expression in the assay's own units",
+     "relationship": "a model of the assay readout would have to be fitted against the lab's own measurements.",
+     "permitted_claim": "none until such a model exists and is independently evaluated"}
+  ],
+
+  "ribonn_task_selection": {
+    "status": "candidates_identified_selection_still_blocked",
+    "resolved_by_this_config": [
+      "The intended assay is now defined, which was V3 blocker 1.",
+      "V3 blocker 2, that no released task is cell-free, is moot: the assay is in transfected cells, and matching released tasks exist."
+    ],
+    "candidate_tasks": {
+      "A549": ["predicted_TE_A549"],
+      "t_cell": ["predicted_TE_Primary_CD4._T.cells", "predicted_TE_HSB2", "predicted_TE_Molt.3"]
+    },
+    "still_blocking": [
+      "No per-task released accuracy evidence is held locally; only per-checkpoint validation R2, 0.4847 to 0.5372 across 50 human checkpoints. Upstream per-task metrics have not been retrieved.",
+      "Per-task training overlap with any candidate sequence set remains unknown, as V12 and V13 record.",
+      "The T-cell type is not yet pinned, so the T-cell task cannot be chosen.",
+      "A designed Fluc reporter is out-of-distribution for tasks trained on endogenous transcripts; applicability needs its own argument."
+    ],
+    "rule": "A task may be selected only in its own versioned config, citing per-task accuracy evidence and an explicit applicability argument. Name matching between a cell line and a task label is not evidence."
+  },
+
+  "floor_selection": {
+    "stability_floor": {"status": "not_selected", "value": null},
+    "translation_floor": {"status": "not_selected", "value": null},
+    "blocking": [
+      "Assay CV was not supplied, and configs/score_record_schema_v1_2026-10-19.json requires measurement error before any floor may be frozen.",
+      "No decision cost is stated: what a false accept and a false reject cost in the planned experiment.",
+      "The 1.5-fold figure is a target effect size, not an acceptance threshold on a model score."
+    ],
+    "rule": "Floors must be frozen in their own versioned config. This config does not freeze one."
+  },
+
+  "gate_conflict": {
+    "detected": true,
+    "gate_file": "configs/stage2_to_stage3_gate_2026-10-18.json",
+    "gate_states": "stage3_target = cell_free_expression",
+    "assay_states": "transfected cells or in vivo",
+    "consequence": "The recorded Stage 3 target and the lab's actual assay disagree. Published material repeats the cell-free framing, including the README's cell-free first-target statement and handoffs V13 and earlier.",
+    "resolution_required": "A gate review decision by the user: amend the Stage 3 target to the transfected-cell assay, or keep cell-free as the target and treat this assay as a separate proxy track.",
+    "prohibition": "This config does not amend the gate, the scope or any published claim. gate_amended is false."
+  },
+
+  "no_claim_permitted": [
+    "Defining an assay establishes no stability, translation or expression benefit.",
+    "No Stage 2 gate requirement is satisfied by this config; the structure-validation requirements are independent of the assay.",
+    "No sequence may be scored for this assay until the UTR scaffold and the authoritative construct sequence are supplied.",
+    "Cell-line name matching does not justify a RiboNN task selection."
+  ],
+
+  "gate_amended": false,
+  "task_selected": false,
+  "floors_frozen": false,
+  "new_sequence_scoring_enabled": false,
+  "expression_candidate_design_enabled": false,
+  "stage3_ready": false
+}

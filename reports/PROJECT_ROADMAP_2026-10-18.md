@@ -4,7 +4,7 @@ Workspace: `/home/zyliu/Documents/rna-stable-ai`
 
 ## Current direction
 
-The user selected **cell-free expression** for Stage 3 and explicitly requested that Stage 2 be good for RNAs **smaller than 3,000 nt** first. Active work is therefore 1–2,999 nt. Stage 2 accuracy and validation are the immediate milestone; Stage 3 expression design remains queued.
+The user selected **transfected-cell expression** for Stage 3, amended on 2026-10-19 from the earlier cell-free target, and explicitly requested that Stage 2 be good for RNAs **smaller than 3,000 nt** first. Active work is therefore 1–2,999 nt. Stage 2 accuracy and validation are the immediate milestone; Stage 3 expression design remains queued.
 
 The current length policy is `configs/project_scope_2026-10-18.json`; the transition requirements are `configs/stage2_to_stage3_gate_2026-10-18.json`. Historical protocols and data stay intact. Work at 3,000 nt and above is deferred, including the recent Qβ/AP205 source leads. No sequences are truncated to fit the cap.
 
@@ -15,7 +15,7 @@ structure studies below. Fixed-input folding/ensemble extraction, reference-only
 STRAND fitting, RiboNN human checkpoint replay and toy optimizer mechanics are
 implemented. The original STRAND features use LinearPartition, so RNAfold feature
 substitution still needs an explicit compatibility/calibration review. RiboNN is
-not calibrated to the intended cell-free system. Current priorities are that
+not calibrated to the intended transfected-cell system. Current priorities are that
 interface review, versioned score records and genuinely independent Stage 2
 evidence; further custom pair-loss fitting is historical follow-up rather than
 the default architecture task. No stage gate or inference default is promoted.
@@ -38,6 +38,6 @@ Before the Stage 3 transition, freeze quantitative accuracy acceptance criteria 
 
 ## Stage 3 after the gate
 
-The first expression system will be cell-free. Define the specific cell-free platform, baseline CDS and UTRs, genetic code, protected features, allowed synonymous edits, and assay conditions before designing biological candidates. Measure protein output and time-matched RNA abundance; retain original sequences and simple matched controls. Keep measured expression, RNA persistence, structural predictions and thermodynamic scores as separate outcomes. Stage 2 proxy improvements alone do not establish an expression benefit.
+The first expression system is transfected cells, amended on 2026-10-19 from cell-free. The assay is a firefly luciferase reporter read as a time course, with RT-qPCR time-course mRNA measurement, in A549 and activated CD3+ T cells containing CD4+ and CD8+ populations. Define the baseline CDS and UTRs, genetic code, protected features and assay conditions before designing biological candidates; ORF edits are constrained to synonymous changes, so the encoded protein is invariant. Measure protein output and time-matched RNA abundance; retain original sequences and simple matched controls. Keep measured expression, RNA persistence, structural predictions and thermodynamic scores as separate outcomes. Stage 2 proxy improvements alone do not establish an expression benefit.
 
-This preserves the seven-stage project plan while narrowing the immediate work to the user's requested transition: credible Stage 2 evidence first, then a small, controlled cell-free expression pilot.
+This preserves the seven-stage project plan while narrowing the immediate work to the user's requested transition: credible Stage 2 evidence first, then a small, controlled transfected-cell expression pilot.

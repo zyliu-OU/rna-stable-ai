@@ -1,0 +1,72 @@
+[
+  {
+    "family": "RF00001",
+    "id": "5S_rRNA",
+    "parsed_clen": 120,
+    "expected": 120,
+    "difference": 0
+  },
+  {
+    "family": "RF00002",
+    "id": "5_8S_rRNA",
+    "parsed_clen": 154,
+    "expected": 154,
+    "difference": 0
+  },
+  {
+    "family": "RF00005",
+    "id": "tRNA",
+    "parsed_clen": 71,
+    "expected": 71,
+    "difference": 0
+  },
+  {
+    "family": "RF00177",
+    "id": "SSU_rRNA_bacteria",
+    "parsed_clen": 1533,
+    "expected": 1533,
+    "difference": 0
+  },
+  {
+    "family": "RF01959",
+    "id": "SSU_rRNA_archaea",
+    "parsed_clen": 1478,
+    "expected": 1478,
+    "difference": 0
+  },
+  {
+    "family": "RF01960",
+    "id": "SSU_rRNA_eukarya",
+    "parsed_clen": 1831,
+    "expected": 1831,
+    "difference": 0
+  },
+  {
+    "family": "RF02540",
+    "id": "LSU_rRNA_archaea",
+    "parsed_clen": 2987,
+    "expected": 2987,
+    "difference": 0
+  },
+  {
+    "family": "RF02541",
+    "id": "LSU_rRNA_bacteria",
+    "parsed_clen": 2925,
+    "expected": 2925,
+    "difference": 0
+  },
+  {
+    "family": "RF02542",
+    "id": "SSU_rRNA_microsporidia",
+    "parsed_clen": 1311,
+    "expected": 1311,
+    "difference": 0
+  },
+  {
+    "family": "RF02543",
+    "id": "LSU_rRNA_eukarya",
+    "parsed_clen": 3401,
+    "expected": 3401,
+    "difference": 0
+  }
+]

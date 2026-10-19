@@ -1,6 +1,6 @@
 # RNA-StableAI
 
-![RNA-StableAI four-component workflow: RNAfold feeds ensemble features to a separately named STRAND refit, substituting them into the published STRAND model is rejected, RiboNN scores released translational-efficiency tasks, both sides feed versioned score records, and a composite score plus BoTorch and the cell-free assay sit behind the open Stage 2 gate](diagram_10192026.svg)
+![RNA-StableAI four-component workflow: RNAfold feeds ensemble features to a separately named STRAND refit, substituting them into the published STRAND model is rejected, RiboNN scores released translational-efficiency tasks, both sides feed versioned score records, and a composite score plus BoTorch and the expression assay sit behind the open Stage 2 gate](diagram_10192026.svg)
 
 *Implementation state on 2026-10-19: blue paths are implemented and replayed, red paths are
 rejected or blocked, grey paths sit behind the open Stage 2 gate. No stability, translation or
@@ -28,7 +28,7 @@ Independent biological validation remains a separate, unresolved release gate.
 |---:|---|---|
 | 1 | Reproducible foundations | Implemented: bounded native tools, request journals, input hashes, exposure tracking, and replay audits. |
 | **2** | **Structure validation and component integration** | **Current priority: independent validation below 3,000 nt and the RNAfold + STRAND + RiboNN + BoTorch architecture.** Fixed-input folding, STRAND reference fitting, RiboNN pretrained inference and toy optimizer replay are implemented. RNAfold-to-STRAND compatibility and independent biological validation remain open; Stage 3 is queued. Historical custom-model studies remain controls; defaults are unchanged. |
-| 3 | RNA sequence optimization for stability and protein expression | Queued after Stage 2: protein-preserving design for **cell-free expression**, with measured protein output and RNA abundance. Expression benefits remain unverified. |
+| 3 | RNA sequence optimization for stability and protein expression | Queued after Stage 2: protein-preserving design for **transfected-cell expression**, with synonymous-only ORF edits, measured protein output and time-matched RNA abundance. Expression benefits remain unverified. |
 | 4 | Independent structure validation | Open release gate. Three prospective panels and a six-family raw-contact feasibility study evaluated; broader coverage/provenance remain limited. |
 | 5 | Length evidence and deferred 3,000+ nt work | Independent validation below 3,000 nt is needed, especially at 2,000–2,999 nt. New work at 3,000 nt or above is deferred; historical benchmarks remain preserved. Current full-pair training is capped at 1,024 nt. |
 | 6 | Measured stability and function | Public-assay pilot complete. Controlled mutation effects and retained function remain pending. |
@@ -41,11 +41,12 @@ Independent biological validation remains a separate, unresolved release gate.
 | RNAfold / ViennaRNA | Structural and ensemble features | Fixed-input MFE and partition-function checks through 2,999 nt passed. |
 | STRAND | In-solution stability proxy | Released-reference PLS fit and coefficient replay passed. Its original features use **LinearPartition**; substituting RNAfold features into the unchanged published model was **rejected** under a prespecified criterion, because the ALO feature is not reproducible across engines. |
 | strand_rnafold_calibration_v1 | Separately named RNAfold-feature refit | PLS refit on RNAfold ensemble features. Clears a prespecified minimum-competence bar on 13 project-exposed held-out records. **Not published STRAND, and not independently validated.** |
-| RiboNN | Translation proxy for annotated mRNA | Human pretrained inference replay passed using 50 checkpoints across ten folds. Scores remain on the released task scale, without cell-free calibration. None of the 78 released tasks is cell-free, and no task has been selected for an assay. |
+| RiboNN | Translation proxy for annotated mRNA | Human pretrained inference replay passed using 50 checkpoints across ten folds. Scores remain on the released task scale, uncalibrated to the assay. `predicted_TE_A549` is selected for the A549 arm for ranking and correlation only; the activated CD3+ T-cell arm is declared **model-blind**, because no released task matches it. |
 | BoTorch | Feasible candidate selection | Discrete toy-objective budget, caching and resume checks passed; biological candidate optimization remains queued. |
 
-The proposed workflow above includes future experimental feedback. The first
-planned expression system remains **cell-free**. No candidate benefit or complete
+The diagram above shows implementation state, including rejected and gated paths.
+The Stage 3 target was amended on 2026-10-19 to **transfected-cell expression**,
+replacing the earlier cell-free target. No candidate benefit or complete
 biological pipeline is established. See the [integration guide](docs/four_component_integration_2026-10-18.md)
 and [publication evidence](reports/component_integration_publication_2026-10-18/README.md).
 The public snapshot contains code, portable tests and concise summaries; full
@@ -83,7 +84,7 @@ the RiboNN inputs are synthetic sequences with no measured half-life.
 
 Zero of the six Stage 2 gate requirements are satisfied, and no gate review has taken
 place, so nothing behind the gate — parents, allowed edits, the biological objective,
-budgets, or the cell-free assay protocol — is frozen. Detail, limits and exact
+budgets, or the assay protocol — is frozen. Detail, limits and exact
 continuation commands are in handoffs
 [V1](reports/RNA-StableAI_HANDOFF_2026-10-19_V1.md),
 [V2](reports/RNA-StableAI_HANDOFF_2026-10-19_V2.md),
@@ -95,7 +96,7 @@ continuation commands are in handoffs
 
 The Step 3 goal includes improving **measured protein expression efficiency** from
 RNA sequences while retaining the intended protein sequence and required RNA
-features. The first target is **cell-free expression**, after Stage 2 review.
+features. The first target is **transfected-cell expression**, after Stage 2 review.
 Development will remain within the active 1–2,999-nt range. This is a
 future optimization goal; current structure and stability proxies do not establish
 an expression benefit.

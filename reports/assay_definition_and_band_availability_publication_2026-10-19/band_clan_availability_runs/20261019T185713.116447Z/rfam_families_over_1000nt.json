@@ -1,0 +1,52 @@
+{
+  "RF00177": {
+    "id": "SSU_rRNA_bacteria",
+    "clen": 1533,
+    "clan_id": "CL00111"
+  },
+  "RF01050": {
+    "id": "Sacc_telomerase",
+    "clen": 1208,
+    "clan_id": "CL00004"
+  },
+  "RF01272": {
+    "id": "snR86",
+    "clen": 1008,
+    "clan_id": "CL00037"
+  },
+  "RF01959": {
+    "id": "SSU_rRNA_archaea",
+    "clen": 1478,
+    "clan_id": "CL00111"
+  },
+  "RF01960": {
+    "id": "SSU_rRNA_eukarya",
+    "clen": 1831,
+    "clan_id": "CL00111"
+  },
+  "RF02462": {
+    "id": "Telomerase_Asco",
+    "clen": 1858,
+    "clan_id": "CL00004"
+  },
+  "RF02540": {
+    "id": "LSU_rRNA_archaea",
+    "clen": 2987,
+    "clan_id": "CL00112"
+  },
+  "RF02541": {
+    "id": "LSU_rRNA_bacteria",
+    "clen": 2925,
+    "clan_id": "CL00112"
+  },
+  "RF02542": {
+    "id": "SSU_rRNA_microsporidia",
+    "clen": 1311,
+    "clan_id": "CL00111"
+  },
+  "RF02543": {
+    "id": "LSU_rRNA_eukarya",
+    "clen": 3401,
+    "clan_id": "CL00112"
+  }
+}
