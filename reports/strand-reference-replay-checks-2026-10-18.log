@@ -1,0 +1,16 @@
+.venv/bin/python scripts/reproduce_strand_reference.py --verify-run /home/zyliu/Documents/rna-stable-ai/results/strand_reference_reproduction_runs/20261019T042427.196161Z
+{
+  "artifacts_verified": 42,
+  "reference_records": 91,
+  "feature_max_abs_difference": 4.6629367034256575e-15,
+  "prediction_max_abs_difference": 5.329070518200751e-15,
+  "RDS_replay": {
+    "check": "saved_RDS_prediction_replay_and_cached_LOO_array",
+    "refit": false,
+    "max_abs_difference": 5.551115123125783e-15
+  },
+  "refit": false
+}
+
+Corruption detection: copied reference model modification correctly rejected; canonical run untouched.
+Two fresh R fits: all prediction and feature CSVs byte-identical.

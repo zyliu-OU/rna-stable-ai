@@ -1,0 +1,5 @@
+Executed command (terminal output recorded from session 52550):
+PYTHONPATH=external/four_component_deps:src .venv/bin/python -m pytest -q tests/test_strand_reference.py tests/test_component_integration.py tests/test_discrete_bo.py tests/test_project_scope.py tests/test_stage2_scope_audit.py
+.................................... [100%]
+36 passed in 1.69s
+Exit code: 0

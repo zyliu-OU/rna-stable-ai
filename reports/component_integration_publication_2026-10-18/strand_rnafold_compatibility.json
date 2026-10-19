@@ -1,0 +1,301 @@
+{
+  "original_engine": "LinearPartition",
+  "panel": [
+    {
+      "name": "X320004D1",
+      "cohort": "train",
+      "input_sha256": "154733ac66f0b9357719497c25afceeaa01bcbd4dfd226c4e3fda9c23e8ef3b4",
+      "status": "ok",
+      "reference_features": {
+        "energy_per_length": -0.41779094827586205,
+        "GC": 52.04741379,
+        "aup": 0.34331351,
+        "alo": 1.6640801378126473
+      },
+      "reference_replay_hours": 1.1667291306433736,
+      "hypotheses": {
+        "mfe_energy_per_nt": {
+          "features": {
+            "energy_per_length": -0.4029094761815564,
+            "GC": 52.047413793103445,
+            "aup": 0.34293744864376685,
+            "alo": 1.7401275396737415
+          },
+          "feature_differences": {
+            "energy_per_length": 0.014881472094305626,
+            "GC": 3.103444612406747e-09,
+            "aup": -0.0003760613562331372,
+            "alo": 0.07604740186109415
+          },
+          "uncalibrated_substitution_output": 1.1539796665412232,
+          "output_difference_from_reference": -0.012749464102150387,
+          "status": "incompatible_input_diagnostic_only_not_validated_stability_prediction"
+        },
+        "ensemble_energy_per_nt": {
+          "features": {
+            "energy_per_length": -0.4177959705221242,
+            "GC": 52.047413793103445,
+            "aup": 0.34293744864376685,
+            "alo": 1.7401275396737415
+          },
+          "feature_differences": {
+            "energy_per_length": -5.022246262142982e-06,
+            "GC": 3.103444612406747e-09,
+            "aup": -0.0003760613562331372,
+            "alo": 0.07604740186109415
+          },
+          "uncalibrated_substitution_output": 1.1658586432369975,
+          "output_difference_from_reference": -0.0008704874063760748,
+          "status": "incompatible_input_diagnostic_only_not_validated_stability_prediction"
+        }
+      }
+    },
+    {
+      "name": "X310336T3",
+      "cohort": "train",
+      "input_sha256": "9bddf6885c6b08e978449cf42a52e9a41f49d3fa038036dd3c83a91f77a96ab3",
+      "status": "ok",
+      "reference_features": {
+        "energy_per_length": -0.32378232758620695,
+        "GC": 48.16810345,
+        "aup": 0.374901612,
+        "alo": 0.9861946013026341
+      },
+      "reference_replay_hours": 0.967647479952835,
+      "hypotheses": {
+        "mfe_energy_per_nt": {
+          "features": {
+            "energy_per_length": -0.30323275204362543,
+            "GC": 48.168103448275865,
+            "aup": 0.37428621206855195,
+            "alo": 1.027033684518631
+          },
+          "feature_differences": {
+            "energy_per_length": 0.020549575542581522,
+            "GC": -1.724131948321883e-09,
+            "aup": -0.0006153999314480463,
+            "alo": 0.04083908321599683
+          },
+          "uncalibrated_substitution_output": 0.9512032564436896,
+          "output_difference_from_reference": -0.016444223509145317,
+          "status": "incompatible_input_diagnostic_only_not_validated_stability_prediction"
+        },
+        "ensemble_energy_per_nt": {
+          "features": {
+            "energy_per_length": -0.323788412686052,
+            "GC": 48.168103448275865,
+            "aup": 0.37428621206855195,
+            "alo": 1.027033684518631
+          },
+          "feature_differences": {
+            "energy_per_length": -6.085099845065667e-06,
+            "GC": -1.724131948321883e-09,
+            "aup": -0.0006153999314480463,
+            "alo": 0.04083908321599683
+          },
+          "uncalibrated_substitution_output": 0.967606058080621,
+          "output_difference_from_reference": -4.142187221400917e-05,
+          "status": "incompatible_input_diagnostic_only_not_validated_stability_prediction"
+        }
+      }
+    },
+    {
+      "name": "X310003T1",
+      "cohort": "train",
+      "input_sha256": "1146a9f4c69c489b038b9e258de06d72c61981b10616d17b26ec86faca7d9b72",
+      "status": "ok",
+      "reference_features": {
+        "energy_per_length": -0.582823275862069,
+        "GC": 53.55603448,
+        "aup": 0.241911684,
+        "alo": 3.6708705561652395
+      },
+      "reference_replay_hours": 1.4090470083784639,
+      "hypotheses": {
+        "mfe_energy_per_nt": {
+          "features": {
+            "energy_per_length": -0.5727370689655172,
+            "GC": 53.55603448275862,
+            "aup": 0.24164721411946694,
+            "alo": 3.4776984972743135
+          },
+          "feature_differences": {
+            "energy_per_length": 0.010086206896551708,
+            "GC": 2.7586182227423706e-09,
+            "aup": -0.00026446988053305254,
+            "alo": -0.19317205889092603
+          },
+          "uncalibrated_substitution_output": 1.4044687930809785,
+          "output_difference_from_reference": -0.004578215297485366,
+          "status": "incompatible_input_diagnostic_only_not_validated_stability_prediction"
+        },
+        "ensemble_energy_per_nt": {
+          "features": {
+            "energy_per_length": -0.5828204319394868,
+            "GC": 53.55603448275862,
+            "aup": 0.24164721411946694,
+            "alo": 3.4776984972743135
+          },
+          "feature_differences": {
+            "energy_per_length": 2.8439225820964253e-06,
+            "GC": 2.7586182227423706e-09,
+            "aup": -0.00026446988053305254,
+            "alo": -0.19317205889092603
+          },
+          "uncalibrated_substitution_output": 1.4125150147798242,
+          "output_difference_from_reference": 0.0034680064013603573,
+          "status": "incompatible_input_diagnostic_only_not_validated_stability_prediction"
+        }
+      }
+    },
+    {
+      "name": "X130010D1",
+      "cohort": "egfp",
+      "input_sha256": "e5e8a909652a640ba460661336544d4984aedbf2d4e4ffb1370ecf7ee3554533",
+      "status": "ok",
+      "reference_features": {
+        "energy_per_length": -0.46721810699588473,
+        "GC": 57.04,
+        "aup": 0.34,
+        "alo": 1.6376274827150794
+      },
+      "reference_replay_hours": 1.3424944994840025,
+      "hypotheses": {
+        "mfe_energy_per_nt": {
+          "features": {
+            "energy_per_length": -0.45333332328639403,
+            "GC": 57.03703703703704,
+            "aup": 0.34309085749272,
+            "alo": 1.7392533476897385
+          },
+          "feature_differences": {
+            "energy_per_length": 0.0138847837094907,
+            "GC": -0.0029629629629610577,
+            "aup": 0.0030908574927199783,
+            "alo": 0.10162586497465909
+          },
+          "uncalibrated_substitution_output": 1.3264881618623234,
+          "output_difference_from_reference": -0.016006337621679023,
+          "status": "incompatible_input_diagnostic_only_not_validated_stability_prediction"
+        },
+        "ensemble_energy_per_nt": {
+          "features": {
+            "energy_per_length": -0.46722095630787036,
+            "GC": 57.03703703703704,
+            "aup": 0.34309085749272,
+            "alo": 1.7392533476897385
+          },
+          "feature_differences": {
+            "energy_per_length": -2.8493119856309868e-06,
+            "GC": -0.0029629629629610577,
+            "aup": 0.0030908574927199783,
+            "alo": 0.10162586497465909
+          },
+          "uncalibrated_substitution_output": 1.337570077137165,
+          "output_difference_from_reference": -0.0049244223468374315,
+          "status": "incompatible_input_diagnostic_only_not_validated_stability_prediction"
+        }
+      }
+    },
+    {
+      "name": "X130002D1",
+      "cohort": "egfp",
+      "input_sha256": "f3edd1dd8be62da034b5c3faa909d6ca5fc8985338824d8c511afaa0614760a9",
+      "status": "ok",
+      "reference_features": {
+        "energy_per_length": -0.4074074074074074,
+        "GC": 60.0,
+        "aup": 0.39,
+        "alo": 0.9201219446098884
+      },
+      "reference_replay_hours": 1.3340065811461204,
+      "hypotheses": {
+        "mfe_energy_per_nt": {
+          "features": {
+            "energy_per_length": -0.39226337950906637,
+            "GC": 60.0,
+            "aup": 0.3920721711708996,
+            "alo": 1.197174406234035
+          },
+          "feature_differences": {
+            "energy_per_length": 0.015144027898341017,
+            "GC": 0.0,
+            "aup": 0.002072171170899584,
+            "alo": 0.27705246162414665
+          },
+          "uncalibrated_substitution_output": 1.3152115501011334,
+          "output_difference_from_reference": -0.01879503104498692,
+          "status": "incompatible_input_diagnostic_only_not_validated_stability_prediction"
+        },
+        "ensemble_energy_per_nt": {
+          "features": {
+            "energy_per_length": -0.40745907379275975,
+            "GC": 60.0,
+            "aup": 0.3920721711708996,
+            "alo": 1.197174406234035
+          },
+          "feature_differences": {
+            "energy_per_length": -5.1666385352366895e-05,
+            "GC": 0.0,
+            "aup": 0.002072171170899584,
+            "alo": 0.27705246162414665
+          },
+          "uncalibrated_substitution_output": 1.327337259092282,
+          "output_difference_from_reference": -0.0066693220538383,
+          "status": "incompatible_input_diagnostic_only_not_validated_stability_prediction"
+        }
+      }
+    },
+    {
+      "name": "X130006D1",
+      "cohort": "egfp",
+      "input_sha256": "855d27fe5a3b3df52dc77207b15aacb606e1ef41a267224967f62fc7995c71db",
+      "status": "ok",
+      "reference_features": {
+        "energy_per_length": -0.30047736625514404,
+        "GC": 44.77,
+        "aup": 0.41,
+        "alo": 0.6114853073774111
+      },
+      "reference_replay_hours": 0.829139699337396,
+      "hypotheses": {
+        "mfe_energy_per_nt": {
+          "features": {
+            "energy_per_length": -0.2820576232156636,
+            "GC": 44.77366255144033,
+            "aup": 0.4110605880473718,
+            "alo": 0.7242331665746047
+          },
+          "feature_differences": {
+            "energy_per_length": 0.018419743039480463,
+            "GC": 0.0036625514403283432,
+            "aup": 0.0010605880473718021,
+            "alo": 0.11274785919719355
+          },
+          "uncalibrated_substitution_output": 0.8115850909555987,
+          "output_difference_from_reference": -0.017554608381797232,
+          "status": "incompatible_input_diagnostic_only_not_validated_stability_prediction"
+        },
+        "ensemble_energy_per_nt": {
+          "features": {
+            "energy_per_length": -0.3004910190409594,
+            "GC": 44.77366255144033,
+            "aup": 0.4110605880473718,
+            "alo": 0.7242331665746047
+          },
+          "feature_differences": {
+            "energy_per_length": -1.3652785815332358e-05,
+            "GC": 0.0036625514403283432,
+            "aup": 0.0010605880473718021,
+            "alo": 0.11274785919719355
+          },
+          "uncalibrated_substitution_output": 0.8262943888213796,
+          "output_difference_from_reference": -0.0028453105160163306,
+          "status": "incompatible_input_diagnostic_only_not_validated_stability_prediction"
+        }
+      }
+    }
+  ],
+  "compatible_for_unchanged_model": false,
+  "reason": "Engine and probability/energy provenance differ; calibration review required"
+}

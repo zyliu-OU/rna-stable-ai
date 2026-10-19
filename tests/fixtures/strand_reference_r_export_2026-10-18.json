@@ -1,0 +1,115 @@
+{
+  "source_commit": "ea9e7de635e7cf4053c676c495b8e65717369206",
+  "reproduction_run": "results/strand_reference_reproduction_runs/20261019T042427.196161Z",
+  "runtime": {
+    "R": "4.5.3",
+    "pls": "2.8.5"
+  },
+  "model": {
+    "schema_version": 1,
+    "name": "STRAND_nluc_training_LOO_selected_reference_reproduction",
+    "source_commit": "ea9e7de635e7cf4053c676c495b8e65717369206",
+    "source_manifest_sha256": "5cb505276eeb7dd738cb804eddeae873e7bee9b537e00d6e343ca336f84e3cc3",
+    "component": {
+      "ncomp": 2,
+      "feature_order": [
+        "energy_per_length",
+        "GC",
+        "aup",
+        "alo"
+      ],
+      "intercept": -0.16879280662927765,
+      "coefficients": {
+        "energy_per_length": -0.7979700541988914,
+        "GC": 0.02653795111985797,
+        "aup": -1.0239404489087613,
+        "alo": -0.016562821266091512
+      },
+      "x_means": {
+        "energy_per_length": -0.4002220244044644,
+        "GC": 51.37280191275362,
+        "aup": 0.34611791884057974,
+        "alo": 1.5610833654333205
+      },
+      "scaled_x_means": {
+        "energy_per_length": -5.020265457531505,
+        "GC": 11.459042876074772,
+        "aup": 7.5149906862082805,
+        "alo": 1.958732615070813
+      },
+      "x_scale": {
+        "energy_per_length": 0.07972128720883537,
+        "GC": 4.4831669161492025,
+        "aup": 0.046056999042698075,
+        "alo": 0.796986456151333
+      },
+      "y_mean": 1.1336412079710145,
+      "coefficient_input_scale": "raw_feature_units_scaling_already_absorbed"
+    },
+    "allowed_reference_feature_identities": [
+      "ed765fc2fd92946a99242c833d16e7ca39b7cfbf81edf3f381f0224ff01ee83a",
+      "0fcaf6629130737142376b0fa6112781476b1d684b077af6e0fc72f9b66619a8",
+      "0f2c524f97c024ede9befd67291e5f9d9aad34994199d51be9c1ac8b91d85cc3"
+    ],
+    "selection": "nLuc training-only LOO PRESS minimum; first minimum on ties",
+    "units": {
+      "GC": "percent",
+      "energy_per_length": "kcal/mol per nucleotide",
+      "aup": "fraction",
+      "alo": "natural log odds",
+      "target": "hours"
+    },
+    "new_sequence_scoring_enabled": false,
+    "stage3_ready": false
+  },
+  "examples": [
+    {
+      "record": {
+        "name": "X320004D1",
+        "cohort": "train",
+        "input_sha256": "154733ac66f0b9357719497c25afceeaa01bcbd4dfd226c4e3fda9c23e8ef3b4",
+        "feature_source": "released_LinearPartition_features",
+        "features": {
+          "energy_per_length": -0.41779094827586205,
+          "GC": 52.04741379,
+          "aup": 0.34331351,
+          "alo": 1.6640801378126473
+        },
+        "observed_half_life": 0.76444127
+      },
+      "R_prediction": 1.16672913064337
+    },
+    {
+      "record": {
+        "name": "X130010D1",
+        "cohort": "egfp",
+        "input_sha256": "e5e8a909652a640ba460661336544d4984aedbf2d4e4ffb1370ecf7ee3554533",
+        "feature_source": "released_LinearPartition_features",
+        "features": {
+          "energy_per_length": -0.46721810699588473,
+          "GC": 57.04,
+          "aup": 0.34,
+          "alo": 1.6376274827150794
+        },
+        "observed_half_life": 1.47
+      },
+      "R_prediction": 1.342494499484
+    },
+    {
+      "record": {
+        "name": "X130013D1",
+        "cohort": "mev_exploratory",
+        "input_sha256": "90ad7d819345bd6a04f46d50b7993b990ebbc80589aabee189a791854cba58b1",
+        "feature_source": "released_LinearPartition_features",
+        "features": {
+          "energy_per_length": -0.4552465483234714,
+          "GC": 55.62,
+          "aup": 0.34,
+          "alo": 1.2073515500621848
+        },
+        "observed_half_life": 3.271
+      },
+      "R_prediction": 1.30238424693876
+    }
+  ]
+}

@@ -1,13 +1,16 @@
 # RNA-StableAI
 
-<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/4da2605a-3a6d-4130-9014-950dc75bd34d" />
+![RNA-StableAI proposed RNAfold, STRAND, RiboNN and BoTorch workflow](diagram_10182026.png)
+
+*Proposed workflow; component replay checks are complete, while biological validation and expression candidate design remain pending.*
 
 Research prototype for RNA structure prediction, constrained sequence optimization,
 and reproducible folding benchmarks. Code, experimental checkpoints, input data,
 and results are available for inspection. No validated release yet.
 
 **Current development focus: RNA sequences shorter than 3,000 nt (1–2,999 nt).**
-We are extending and evaluating the core structure model within that range.
+The selected architecture is **RNAfold + STRAND + RiboNN + BoTorch**; component
+integration and independent structure validation remain active within that range.
 Existing work at 3,000 nt and above, including 5,000/10,000-nt studies, is preserved as
 deferred work; they are not deleted or counted as
 active-scope validation. Method-specific lower limits still apply. See the
@@ -21,12 +24,30 @@ Independent biological validation remains a separate, unresolved release gate.
 | Step | Work | Progress |
 |---:|---|---|
 | 1 | Reproducible foundations | Implemented: bounded native tools, request journals, input hashes, exposure tracking, and replay audits. |
-| **2** | **Structure models** | **Current priority: accuracy and validation below 3,000 nt.** A matched three-seed study using only in-scope training RNAs averages pair F1 0.3174 on six longer development references. A partner/null auxiliary-loss variant reaches 0.3262; LinearFold and ViennaRNA score 0.4381 and 0.4215. Independent validation remains open; Stage 2 is not ready for the Stage 3 transition. Defaults remain unchanged. |
+| **2** | **Structure validation and component integration** | **Current priority: independent validation below 3,000 nt and the RNAfold + STRAND + RiboNN + BoTorch architecture.** Fixed-input folding, STRAND reference fitting, RiboNN pretrained inference and toy optimizer replay are implemented. RNAfold-to-STRAND compatibility and independent biological validation remain open; Stage 3 is queued. Historical custom-model studies remain controls; defaults are unchanged. |
 | 3 | RNA sequence optimization for stability and protein expression | Queued after Stage 2: protein-preserving design for **cell-free expression**, with measured protein output and RNA abundance. Expression benefits remain unverified. |
 | 4 | Independent structure validation | Open release gate. Three prospective panels and a six-family raw-contact feasibility study evaluated; broader coverage/provenance remain limited. |
 | 5 | Length evidence and deferred 3,000+ nt work | Independent validation below 3,000 nt is needed, especially at 2,000–2,999 nt. New work at 3,000 nt or above is deferred; historical benchmarks remain preserved. Current full-pair training is capped at 1,024 nt. |
 | 6 | Measured stability and function | Public-assay pilot complete. Controlled mutation effects and retained function remain pending. |
 | 7 | Validated release | Pending the scientific evidence above. |
+
+### Selected architecture and implementation status
+
+| Component | Role | Current status |
+|---|---|---|
+| RNAfold / ViennaRNA | Structural and ensemble features | Fixed-input MFE and partition-function checks through 2,999 nt passed. |
+| STRAND | In-solution stability proxy | Released-reference PLS fit and coefficient replay passed. Its original features use **LinearPartition**; unrestricted RNAfold substitution remains unvalidated. |
+| RiboNN | Translation proxy for annotated mRNA | Human pretrained inference replay passed using 50 checkpoints across ten folds. Scores remain on the released task scale, without cell-free calibration. |
+| BoTorch | Feasible candidate selection | Discrete toy-objective budget, caching and resume checks passed; biological candidate optimization remains queued. |
+
+The proposed workflow above includes future experimental feedback. The first
+planned expression system remains **cell-free**. No candidate benefit or complete
+biological pipeline is established. See the [integration guide](docs/four_component_integration_2026-10-18.md)
+and [publication evidence](reports/component_integration_publication_2026-10-18/README.md).
+The public snapshot contains code, portable tests and concise summaries; full
+local run artifacts, datasets, model weights and installed environments are not
+bundled. Original third-party [source](docs/third_party/RiboNN_LICENSE.txt) and
+[weight-license terms](docs/third_party/RiboNN_MODEL_WEIGHTS_LICENSE.txt) are retained.
 
 ### Step 3 goal and plan: protein expression efficiency
 
@@ -88,6 +109,15 @@ See the [Stage 2 progress review](reports/stage2_family_validation_progress_2026
 
 ## Latest results
 
+- **Component replay milestones (October 18):** STRAND's nLuc training-only LOO
+  selection gives a two-component reference fit; saved coefficients reproduce R
+  predictions within 6e-15. RiboNN's two fresh CPU processes produced byte-identical
+  outputs for 70 transcript/fold rows and all 78 human tasks. UTR boundaries and
+  explicit exclusions passed. These are software/reference checks, not new
+  independent biological validation. See the [STRAND review](reports/strand_reference_reproduction_review_2026-10-18.md)
+  and [RiboNN review](reports/ribonn_fixed_inference_review_2026-10-18.md).
+  Publication verification: **91 focused tests passed** in the isolated checkout;
+  see the [test log](reports/component-integration-publication-focused-tests-2026-10-18.log).
 - **Below-3,000-nt Stage 2:** training on 103 in-scope RNAs gives mean pair F1
   **0.3174** on six longer development references and **0.1561** on thirteen
   shorter references. Partner/null auxiliary supervision raises these to
@@ -129,7 +159,7 @@ See the [Stage 2 progress review](reports/stage2_family_validation_progress_2026
   held-out clans gave mean pair F1 **0.1669** for the extended model versus
   **0.1413** for its matched control across three seeds. The panel is small and
   selected; no checkpoint or default was promoted.
-- **October 18 publication checks:** 51 focused tests passed in the publication
+- **Earlier October 18 Stage 2 publication checks:** 51 focused tests passed in the publication
   checkout; the saved RCSB schema fixture makes the new source-field check
   available from a fresh clone. See the [test log](reports/stage2-publication-focused-tests-2026-10-18.log).
 - **Historical verification (October 16):** 864 tests passed in the working environment. A clean
@@ -152,7 +182,7 @@ long-RNA accuracy, or retained function. The assay cohort contains only
 · [Fresh structure candidate plan](reports/fresh_structure_metadata_and_panel_review_2026-10-15.md)
 · [Fresh structure contact review](reports/fresh_structure_reference_review_2026-10-15.md)
 · [Stage 2 progress review](reports/stage2_family_validation_progress_2026-10-17.md)
-· [Latest development handoff](reports/RNA-StableAI_HANDOFF_2026-10-18_V7.md)
+· [Latest development handoff](reports/RNA-StableAI_HANDOFF_2026-10-18_V12.md)
 · [Model-study test log](reports/family-pair-set-training-full-suite-2026-10-15.log)
 
 ## Quick start

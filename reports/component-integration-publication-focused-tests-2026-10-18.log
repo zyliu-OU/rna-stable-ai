@@ -1,0 +1,8 @@
+Executed in /tmp/rna-stable-ai-publish-20261018-stage2 (terminal result recorded from session 21880):
+PYTHONPATH=/home/zyliu/Documents/rna-stable-ai/external/four_component_deps:src:scripts /home/zyliu/Documents/rna-stable-ai/.venv/bin/python -m pytest -q tests/test_component_integration.py tests/test_discrete_bo.py tests/test_strand_reference.py tests/test_ribonn_integration.py tests/test_crw_panel_exposure.py tests/test_crw_original_provenance.py tests/test_rcsb_long_source_survey.py tests/test_project_scope.py tests/test_stage2_scope_audit.py tests/test_endpoint_ranking.py tests/test_hard_negative_supervision.py tests/test_recovery_ceiling.py tests/test_endpoint_assignment.py tests/test_sampled_pair_supervision.py tests/test_long_exact_sparse_pairs.py
+........................................................................ [ 79%]
+................... [100%]
+91 passed in 3.43s
+Exit code: 0
+Environment emitted 'Failed to create stream fd: Operation not permitted' notices; tests completed successfully.
+Uses the retained project interpreter and isolated BoTorch dependencies; code/tests are from the publication checkout. No full repository suite, model fitting or original study inference was rerun for publication.

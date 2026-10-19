@@ -1,0 +1,82 @@
+{
+  "integration_mechanics_complete": true,
+  "folding": [
+    {
+      "tx_id": "fixed_synthetic_64",
+      "status": "ok",
+      "path": "results/four_component_build_runs/20261019T041458.024816Z/rnafold_fixed_synthetic_64.json",
+      "sha256": "92ef7fe39cf64c248f876a4605ddbb2e5c10e8a24a9e201f55069ad4862dc4c8",
+      "runtime_seconds": 0.010966105997795239,
+      "peak_worker_rss_kib": 35020
+    },
+    {
+      "tx_id": "fixed_synthetic_400",
+      "status": "ok",
+      "path": "results/four_component_build_runs/20261019T041458.024816Z/rnafold_fixed_synthetic_400.json",
+      "sha256": "3c921efa0015744d33dee26710fd27509ab8112e0fb7f97f9db9530e3e89853b",
+      "runtime_seconds": 0.34554718200161005,
+      "peak_worker_rss_kib": 46776
+    },
+    {
+      "tx_id": "fixed_synthetic_1000",
+      "status": "ok",
+      "path": "results/four_component_build_runs/20261019T041458.024816Z/rnafold_fixed_synthetic_1000.json",
+      "sha256": "292172c198c41e26a8626ca02ce719debe544279283adac198267fe9a6680fc9",
+      "runtime_seconds": 3.1707106079993537,
+      "peak_worker_rss_kib": 111176
+    },
+    {
+      "tx_id": "fixed_synthetic_2000",
+      "status": "ok",
+      "path": "results/four_component_build_runs/20261019T041458.024816Z/rnafold_fixed_synthetic_2000.json",
+      "sha256": "c16089047f7b0f78213cfc4dcbc5d6c31122bea82e8ee8b51c1661a2b1c93419",
+      "runtime_seconds": 18.886571123002796,
+      "peak_worker_rss_kib": 340416
+    },
+    {
+      "tx_id": "fixed_synthetic_2999",
+      "status": "ok",
+      "path": "results/four_component_build_runs/20261019T041458.024816Z/rnafold_fixed_synthetic_2999.json",
+      "sha256": "9d883809256c40f4d604c37a4536fdd21c4474b9f0bb9fb0249b33284a9d3003",
+      "runtime_seconds": 64.64415346600072,
+      "peak_worker_rss_kib": 721996
+    }
+  ],
+  "optimizer": [
+    {
+      "seed": 7,
+      "path": "results/four_component_build_runs/20261019T041458.024816Z/toy_seed7.json",
+      "sha256": "ad6239b222f70f5794869944b6bd8d320d677c9ae12eb68f29d9a3e019fba872",
+      "best_value": 1.0391607991935734,
+      "random_best_value": 1.025882790487864,
+      "unique_evaluations": 8,
+      "invocation_runtime_seconds": 0.6098712330021954
+    },
+    {
+      "seed": 1729,
+      "path": "results/four_component_build_runs/20261019T041458.024816Z/toy_seed1729.json",
+      "sha256": "d077bc9911b93610b7984349c3e1e3fe556e225e23c48a168938d79313fe3b6d",
+      "best_value": 1.0391607991935734,
+      "random_best_value": 1.0391607991935734,
+      "unique_evaluations": 8,
+      "invocation_runtime_seconds": 0.09708159400179284
+    },
+    {
+      "seed": 20261015,
+      "path": "results/four_component_build_runs/20261019T041458.024816Z/toy_seed20261015.json",
+      "sha256": "2e817b40f86922facef2ab08e70bb673c3cc43eaa3bcdd715cfce217c2cdcb9e",
+      "best_value": 1.0391607991935734,
+      "random_best_value": 1.0350225229854628,
+      "unique_evaluations": 8,
+      "invocation_runtime_seconds": 0.09904222499972093
+    }
+  ],
+  "source_files_verified": 18,
+  "combined_pipeline_complete": false,
+  "stage3_ready": false,
+  "pending": [
+    "STRAND original feature-generation and R-fit reproduction",
+    "RiboNN isolated environment, weight inventory, fixed-input checkpoint inference",
+    "independent Stage 2 validation and gate review"
+  ]
+}

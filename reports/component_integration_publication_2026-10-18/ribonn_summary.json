@@ -1,0 +1,995 @@
+{
+  "fixed_inference_complete": true,
+  "weights_files_verified": 182,
+  "archive_sha256": "2ce3bc1adb38ec6752c79147241a4fb2664e9804e806b3eab1287489a15d8b64",
+  "selected_models": 50,
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "score_column": "predicted_TE_HEK293T",
+  "inputs": 8,
+  "raw_rows_per_process": 70,
+  "explicit_exclusions": {
+    "ribonn_utr5_1382": "utr5_exceeds_1381_nt"
+  },
+  "replay": {
+    "rows": 70,
+    "max_abs_difference": 0.0,
+    "bitwise_float_equal": true
+  },
+  "all_task_replays_equal": true,
+  "workers": [
+    {
+      "python": "3.10.13 | packaged by conda-forge | (main, Dec 23 2023, 15:36:39) [GCC 12.3.0]",
+      "versions": {
+        "torch": "1.13.1",
+        "numpy": "1.22.4",
+        "pandas": "2.2.3",
+        "pytorch-lightning": "1.8.5",
+        "torchmetrics": "1.3.1",
+        "lightning-utilities": "0.10.1",
+        "scikit-learn": "1.0.2",
+        "scipy": "1.13.1",
+        "setuptools": "81.0.0"
+      },
+      "device": "cpu",
+      "cpu_threads": 2,
+      "dataloader_workers": 0,
+      "batch_size": 2,
+      "architecture": {
+        "activation": "relu",
+        "num_conv_layers": 10,
+        "kernel_size": 5,
+        "conv_stride": 1,
+        "conv_padding": 0,
+        "conv_dilation": 1,
+        "dropout": 0.3,
+        "ln_epsilon": 0.007,
+        "num_targets": 78,
+        "filters": 64,
+        "len_after_conv": 9,
+        "residual": false,
+        "split_utr5_cds_utr3_channels": false,
+        "label_codons": true,
+        "label_utr5": false,
+        "label_utr3": false,
+        "label_splice_sites": false,
+        "label_up_probs": false,
+        "with_NAs": true,
+        "max_shift": 0,
+        "pad_5_prime": true,
+        "label_3rd_nt_of_codons": false
+      },
+      "selected_checkpoints": [
+        {
+          "run_id": "5aa149a922834dd89c15adb9f04255df",
+          "fold": 0,
+          "sha256": "564052b8ded5cdccc5e980aaab9ec24199edd532cd5d5a675f782fc803fe3917",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "dee295337146482684ebc2dd17fd1a8b",
+          "fold": 0,
+          "sha256": "19ff71a26547b53eb5f0539bdeba7136b50a1d6e887cfb76ae7d6bf12db57da0",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "6c1a41c776fe43feb13db0b539ac7d02",
+          "fold": 0,
+          "sha256": "b6c3e6af4f3d4f9c7c33c544a1bfeb53c85654c0f370168ddb99924381aed62e",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "fb622b4ef10440dcb08fb170fe37402e",
+          "fold": 0,
+          "sha256": "650c93227abec7b8861aa76dce6729653e94bcfb16153d1b4f4096f3ed5d365c",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "3e495ec75a0348cb9db67f6382da6879",
+          "fold": 0,
+          "sha256": "3367417f9c7c43815aaea1547955d6fdef3afb535f361090076f9a23399447bd",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "86d88305945243a6921480206159deae",
+          "fold": 1,
+          "sha256": "c2059eb755d92f78a95c138b5ee87394e841a0cad5e082e78f235a2cb16b105f",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "ef1510de8ebb4cf08bdd08b2e12f176e",
+          "fold": 1,
+          "sha256": "1d7ec0ee27fc19423cc4b8e3fdfbf0bf8a080e39ebdae4fa0aa1bd39b22fedf2",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "d894a1482ede474c820d9468715e4037",
+          "fold": 1,
+          "sha256": "acbfcf44466a088999582237ca5fbbd96e95db82b71e525212fc7a63ce8fc1cb",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "6ba9d52314a74086aaeaccc9c31a2c52",
+          "fold": 1,
+          "sha256": "949163f2edb401c7c4ec81f21345352b613caf3dacb6ccebcc27572f744ef002",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "864e367a040c4defab3d466e0b99109e",
+          "fold": 1,
+          "sha256": "853611075effa93c16a56ce4b993ec31dfc5db9976926f8a8f328a896ca1b90b",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "0ad046d67ba7481881d5c7f918acedb4",
+          "fold": 2,
+          "sha256": "4d3f2cee058a3d81d84c7f4d7b66db6839e25a4f8df6c236bb10840e9c37bac4",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "0818d970b3634b698e32b5a87a2b47ca",
+          "fold": 2,
+          "sha256": "82c5673cd75b123ca20c921ffe08b752e6bc1f283668af7f14b2a34ecf6e530c",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "8e6a39d4b261425ca7503ab871147bda",
+          "fold": 2,
+          "sha256": "0212699abf3ab9af92409602fe23c86b31da91deb7ada63b957bc2acd84b356d",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "0d98bed4eccb4e5ca34254d4e76661aa",
+          "fold": 2,
+          "sha256": "6a57480306b28f10c13fdfff9ff6323f8c349e26f6f357924bded133754d3e0a",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "94ffdd2c3c3f42388e0ca10a0b1a5a65",
+          "fold": 2,
+          "sha256": "c1ee36bc1c285caac715ed8f51bb66c3c4c3614275a5d03fe3d65cf56837a5c7",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "0fe366a471c44cea8c6f3b87f12ea8aa",
+          "fold": 3,
+          "sha256": "78c958ce57548098675677b50a45a7e091da00bbea06027fbef73f8cb52e9262",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "f98a5603003b4388afd9dc85eea9ae60",
+          "fold": 3,
+          "sha256": "31e36af918cbf2e3fa7d90487831827c12430752d9c0598cbe887d767631ee28",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "a27d87d8a4574258bd41792e95ee8092",
+          "fold": 3,
+          "sha256": "8d568a6008553d06ef9b6bced2389c28405bf26a8ff4472c8ed2e7152e887b4f",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "28c8f56aff0a48d78be3928e1db310d5",
+          "fold": 3,
+          "sha256": "191317d6095cb4d0dd911a0a37defd58ad8f6925d06e5c901537d58b0dee09b0",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "62cbcc6328004fde98ff2b3a160417db",
+          "fold": 3,
+          "sha256": "bc6cbf8bfa29fdf4b3c480e0ef28126806d7287de96497c2cc4257aa1752259d",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "3d4ff8e9396f46fbb1ff72810a217f0f",
+          "fold": 4,
+          "sha256": "dc6011f6fad6baf81f95315941c9c87d0687bed23355aac02e89f2b33c292145",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "38d518784f2240e5afe203dee5d02b45",
+          "fold": 4,
+          "sha256": "89e77981530dd60b031f6adbdaee187f39ad8d73ec1b4248090f4de7dc5c8994",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "a6913ed6496549ea9f598a8c6f5f735f",
+          "fold": 4,
+          "sha256": "98effd4b11c79d8f9130dd9ad985d04a1e40b0ab554943fd281ffbe369ae0d2d",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "6772cf48f10043779bbe6669988071aa",
+          "fold": 4,
+          "sha256": "8b6610f1a8b70087c8a26d81887afd307c30a8e9385840fd28bedb052e8a03e0",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "59d3a35a891a4c5b836c866bbcc843e7",
+          "fold": 4,
+          "sha256": "7afb055e36860b2db1c5f3063b84c1f2c2e512b68033fade7a12344c3f51d874",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "7f9c831e6fbb4d7b82fed019ad9ef32b",
+          "fold": 5,
+          "sha256": "7337e9c898b31b8523887be78684e9f2ab954cfa612bb18028bef5e30cb483e4",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "00025c74093f4910b6c324fa7fd6baf3",
+          "fold": 5,
+          "sha256": "8393043c144e922e02cc7c4fb566454b8bda5e286ce3e2aa30b38c67b3602212",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "77f9d6157b794a97bc4b2edce5a9b894",
+          "fold": 5,
+          "sha256": "e134b081b13802518cb1f48abcc34b590eddf1504db326ad432fe3706fed4990",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "19df49828b41477292e818d63cd9b736",
+          "fold": 5,
+          "sha256": "c545788fd3b7a5d8345e2658a8c088e62ac8a24f9b9d29b50456663d0f3e4f24",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "34ca29bf68dd4aa0aaec3627b39298fe",
+          "fold": 5,
+          "sha256": "6c02498929a1003732732f7b58ff4be385d6eed85bfc103814eb3109779a9929",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "131ca12aaf074edbbe9ed3eb13e816fa",
+          "fold": 6,
+          "sha256": "fb1d78637f1cde9c50f607f224f5ea6028076ac8582bc628adfd9d258cbd6684",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "65e0099460d94d6aa004a67fc11d97b0",
+          "fold": 6,
+          "sha256": "0cec3d56bb95bf95013229838b086d96e735bb2a204d27f17fd05cf9941018aa",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "54a0a6d011fb434398580cf1a392382a",
+          "fold": 6,
+          "sha256": "59359837591bd4757e737affa8f345b88e221c432d0c837a341aa48364b6db51",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "69de6cd06769484697ab47bb2f223fb8",
+          "fold": 6,
+          "sha256": "12b57782aead7c40c3a10e97b878c9edec45e0eb5497bd9ccd6911464debf236",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "fe4885418b04417eb4aeb85877a83afa",
+          "fold": 6,
+          "sha256": "bd6726d294632f1099fd7895e7ab345d0205ac5380b2ea546c91e642d9a8ae79",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "af6aafdb74c14dd4840c7e85d754d598",
+          "fold": 7,
+          "sha256": "4ca7adaf324a34724fa5c77cbba7297a7e93cff3f77b8ae8e9387e36163ad727",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "3f7af710a5be403baae1d317cc730d3c",
+          "fold": 7,
+          "sha256": "a8fc0506acf44881b3856153993a0f8e037a19bdc732a6083beaf38661ac0370",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "0c30bb8f490b4d1f97621c0f4840d356",
+          "fold": 7,
+          "sha256": "c29dd95acc3734895731316b683093dfe3de27fdaea0e9dba0b88e4247ec8239",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "43548e3209fb4b1b84827bc93ebe1747",
+          "fold": 7,
+          "sha256": "96a537bb9a4e3b40268ffcacb8f47e12d29f9e94b9b88b2043d141c24f15b1b8",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "eb1fecfde34f4063a1d99d6618f39024",
+          "fold": 7,
+          "sha256": "93413e15b90551549959cc2ece1fc643017d1deddc3e0239dfe83f2b4b5658e7",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "fd7f50da3fe74c448c2f43b603abe865",
+          "fold": 8,
+          "sha256": "1ad2d46c535dfb915e59ce97233b217b36e468899e4b6108a1e6e8c691faf92d",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "d3f0da56cdf5486b88f4942eb62681d6",
+          "fold": 8,
+          "sha256": "ec68285c8cfa6656115445ffd08bb44fd4cff1f49cefb6138e6f1d4b16974372",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "c8d73e1e062c4b32a25d2294a0ae0345",
+          "fold": 8,
+          "sha256": "368340a86e9002bf637faf51ec4f2434a31c2029b99909548059c77f0a7b0e54",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "add6dd3d3641469ba847b54a6727ad3c",
+          "fold": 8,
+          "sha256": "5414ab6a4d2a2c8fb4278cbee6eefd2def7a6347e8aadfc865e076df388a3e94",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "3c8401c18f764efe8cae7aadebaf35cd",
+          "fold": 8,
+          "sha256": "4663d7ef9274ba5bcb688fafeb55a3efeecd13417b863bf49ccea3ff049870f8",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "4383701fa6ba4c37a82659f26b7ef018",
+          "fold": 9,
+          "sha256": "2a858ee25ef3f271e8e12daec8cbe01abb3288f0bdd4abf42f59fca8a6f4ccbc",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "057db008d02743f4b319c5961b00ed41",
+          "fold": 9,
+          "sha256": "e73a027edd3e14bf77ab2dcb4f8d5ba9869a0ef068747c92c72f3f9719e60b7f",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "7b60785f84d84eaeb9b2a62b84a276cd",
+          "fold": 9,
+          "sha256": "41f17c540c14c1908496030d34337ace48e6da0e948be98868536f1beca192d0",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "b75460c9c00a4357bcb66640801d6900",
+          "fold": 9,
+          "sha256": "a3fd87e52d31cb50b7e2372ae58a64d1ad69c578378a2c6984ef69f86f60b7f9",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "c3b120c515fd4d45881e67d1e8028d21",
+          "fold": 9,
+          "sha256": "5296e1eab68ab97cc32611fd740ec5858290d844defa6ea4631473d727c72fa0",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        }
+      ],
+      "rows": 70,
+      "task_columns": [
+        "predicted_TE_108T",
+        "predicted_TE_12T",
+        "predicted_TE_A2780",
+        "predicted_TE_A549",
+        "predicted_TE_BJ",
+        "predicted_TE_BRx.142",
+        "predicted_TE_C643",
+        "predicted_TE_CRL.1634",
+        "predicted_TE_Calu.3",
+        "predicted_TE_Cybrid_Cells",
+        "predicted_TE_H1.hESC",
+        "predicted_TE_H1933",
+        "predicted_TE_H9.hESC",
+        "predicted_TE_HAP.1",
+        "predicted_TE_HCC_tumor",
+        "predicted_TE_HCC_adjancent_normal",
+        "predicted_TE_HCT116",
+        "predicted_TE_HEK293",
+        "predicted_TE_HEK293T",
+        "predicted_TE_HMECs",
+        "predicted_TE_HSB2",
+        "predicted_TE_HSPCs",
+        "predicted_TE_HeLa",
+        "predicted_TE_HeLa_S3",
+        "predicted_TE_HepG2",
+        "predicted_TE_Huh.7.5",
+        "predicted_TE_Huh7",
+        "predicted_TE_K562",
+        "predicted_TE_Kidney_normal_tissue",
+        "predicted_TE_LCL",
+        "predicted_TE_LuCaP.PDX",
+        "predicted_TE_MCF10A",
+        "predicted_TE_MCF10A.ER.Src",
+        "predicted_TE_MCF7",
+        "predicted_TE_MD55A3",
+        "predicted_TE_MDA.MB.231",
+        "predicted_TE_MM1.S",
+        "predicted_TE_MOLM.13",
+        "predicted_TE_Molt.3",
+        "predicted_TE_Mutu",
+        "predicted_TE_OSCC",
+        "predicted_TE_PANC1",
+        "predicted_TE_PATU.8902",
+        "predicted_TE_PC3",
+        "predicted_TE_PC9",
+        "predicted_TE_Primary_CD4._T.cells",
+        "predicted_TE_Primary_human_bronchial_epithelial_cells",
+        "predicted_TE_RD.CCL.136",
+        "predicted_TE_RPE.1",
+        "predicted_TE_SH.SY5Y",
+        "predicted_TE_SUM159PT",
+        "predicted_TE_SW480TetOnAPC",
+        "predicted_TE_T47D",
+        "predicted_TE_THP.1",
+        "predicted_TE_U.251",
+        "predicted_TE_U.343",
+        "predicted_TE_U2392",
+        "predicted_TE_U2OS",
+        "predicted_TE_Vero_6",
+        "predicted_TE_WI38",
+        "predicted_TE_WM902B",
+        "predicted_TE_WTC.11",
+        "predicted_TE_ZR75.1",
+        "predicted_TE_cardiac_fibroblasts",
+        "predicted_TE_ccRCC",
+        "predicted_TE_early_neurons",
+        "predicted_TE_fibroblast",
+        "predicted_TE_hESC",
+        "predicted_TE_human_brain_tumor",
+        "predicted_TE_iPSC.differentiated_dopamine_neurons",
+        "predicted_TE_megakaryocytes",
+        "predicted_TE_muscle_tissue",
+        "predicted_TE_neuronal_precursor_cells",
+        "predicted_TE_neurons",
+        "predicted_TE_normal_brain_tissue",
+        "predicted_TE_normal_prostate",
+        "predicted_TE_primary_macrophages",
+        "predicted_TE_skeletal_muscle"
+      ],
+      "runtime_seconds": 12.99244818799707,
+      "peak_worker_rss_kib": 382704,
+      "checkpoint_load_adjustment": "torch.load(map_location=cpu, weights_only=True); original inference unchanged",
+      "biological_interpretation": "released target scale only; no cell-free calibration or measurements",
+      "subprocess_wall_seconds": 16.263913286999014
+    },
+    {
+      "python": "3.10.13 | packaged by conda-forge | (main, Dec 23 2023, 15:36:39) [GCC 12.3.0]",
+      "versions": {
+        "torch": "1.13.1",
+        "numpy": "1.22.4",
+        "pandas": "2.2.3",
+        "pytorch-lightning": "1.8.5",
+        "torchmetrics": "1.3.1",
+        "lightning-utilities": "0.10.1",
+        "scikit-learn": "1.0.2",
+        "scipy": "1.13.1",
+        "setuptools": "81.0.0"
+      },
+      "device": "cpu",
+      "cpu_threads": 2,
+      "dataloader_workers": 0,
+      "batch_size": 2,
+      "architecture": {
+        "activation": "relu",
+        "num_conv_layers": 10,
+        "kernel_size": 5,
+        "conv_stride": 1,
+        "conv_padding": 0,
+        "conv_dilation": 1,
+        "dropout": 0.3,
+        "ln_epsilon": 0.007,
+        "num_targets": 78,
+        "filters": 64,
+        "len_after_conv": 9,
+        "residual": false,
+        "split_utr5_cds_utr3_channels": false,
+        "label_codons": true,
+        "label_utr5": false,
+        "label_utr3": false,
+        "label_splice_sites": false,
+        "label_up_probs": false,
+        "with_NAs": true,
+        "max_shift": 0,
+        "pad_5_prime": true,
+        "label_3rd_nt_of_codons": false
+      },
+      "selected_checkpoints": [
+        {
+          "run_id": "5aa149a922834dd89c15adb9f04255df",
+          "fold": 0,
+          "sha256": "564052b8ded5cdccc5e980aaab9ec24199edd532cd5d5a675f782fc803fe3917",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "dee295337146482684ebc2dd17fd1a8b",
+          "fold": 0,
+          "sha256": "19ff71a26547b53eb5f0539bdeba7136b50a1d6e887cfb76ae7d6bf12db57da0",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "6c1a41c776fe43feb13db0b539ac7d02",
+          "fold": 0,
+          "sha256": "b6c3e6af4f3d4f9c7c33c544a1bfeb53c85654c0f370168ddb99924381aed62e",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "fb622b4ef10440dcb08fb170fe37402e",
+          "fold": 0,
+          "sha256": "650c93227abec7b8861aa76dce6729653e94bcfb16153d1b4f4096f3ed5d365c",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "3e495ec75a0348cb9db67f6382da6879",
+          "fold": 0,
+          "sha256": "3367417f9c7c43815aaea1547955d6fdef3afb535f361090076f9a23399447bd",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "86d88305945243a6921480206159deae",
+          "fold": 1,
+          "sha256": "c2059eb755d92f78a95c138b5ee87394e841a0cad5e082e78f235a2cb16b105f",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "ef1510de8ebb4cf08bdd08b2e12f176e",
+          "fold": 1,
+          "sha256": "1d7ec0ee27fc19423cc4b8e3fdfbf0bf8a080e39ebdae4fa0aa1bd39b22fedf2",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "d894a1482ede474c820d9468715e4037",
+          "fold": 1,
+          "sha256": "acbfcf44466a088999582237ca5fbbd96e95db82b71e525212fc7a63ce8fc1cb",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "6ba9d52314a74086aaeaccc9c31a2c52",
+          "fold": 1,
+          "sha256": "949163f2edb401c7c4ec81f21345352b613caf3dacb6ccebcc27572f744ef002",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "864e367a040c4defab3d466e0b99109e",
+          "fold": 1,
+          "sha256": "853611075effa93c16a56ce4b993ec31dfc5db9976926f8a8f328a896ca1b90b",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "0ad046d67ba7481881d5c7f918acedb4",
+          "fold": 2,
+          "sha256": "4d3f2cee058a3d81d84c7f4d7b66db6839e25a4f8df6c236bb10840e9c37bac4",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "0818d970b3634b698e32b5a87a2b47ca",
+          "fold": 2,
+          "sha256": "82c5673cd75b123ca20c921ffe08b752e6bc1f283668af7f14b2a34ecf6e530c",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "8e6a39d4b261425ca7503ab871147bda",
+          "fold": 2,
+          "sha256": "0212699abf3ab9af92409602fe23c86b31da91deb7ada63b957bc2acd84b356d",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "0d98bed4eccb4e5ca34254d4e76661aa",
+          "fold": 2,
+          "sha256": "6a57480306b28f10c13fdfff9ff6323f8c349e26f6f357924bded133754d3e0a",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "94ffdd2c3c3f42388e0ca10a0b1a5a65",
+          "fold": 2,
+          "sha256": "c1ee36bc1c285caac715ed8f51bb66c3c4c3614275a5d03fe3d65cf56837a5c7",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "0fe366a471c44cea8c6f3b87f12ea8aa",
+          "fold": 3,
+          "sha256": "78c958ce57548098675677b50a45a7e091da00bbea06027fbef73f8cb52e9262",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "f98a5603003b4388afd9dc85eea9ae60",
+          "fold": 3,
+          "sha256": "31e36af918cbf2e3fa7d90487831827c12430752d9c0598cbe887d767631ee28",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "a27d87d8a4574258bd41792e95ee8092",
+          "fold": 3,
+          "sha256": "8d568a6008553d06ef9b6bced2389c28405bf26a8ff4472c8ed2e7152e887b4f",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "28c8f56aff0a48d78be3928e1db310d5",
+          "fold": 3,
+          "sha256": "191317d6095cb4d0dd911a0a37defd58ad8f6925d06e5c901537d58b0dee09b0",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "62cbcc6328004fde98ff2b3a160417db",
+          "fold": 3,
+          "sha256": "bc6cbf8bfa29fdf4b3c480e0ef28126806d7287de96497c2cc4257aa1752259d",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "3d4ff8e9396f46fbb1ff72810a217f0f",
+          "fold": 4,
+          "sha256": "dc6011f6fad6baf81f95315941c9c87d0687bed23355aac02e89f2b33c292145",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "38d518784f2240e5afe203dee5d02b45",
+          "fold": 4,
+          "sha256": "89e77981530dd60b031f6adbdaee187f39ad8d73ec1b4248090f4de7dc5c8994",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "a6913ed6496549ea9f598a8c6f5f735f",
+          "fold": 4,
+          "sha256": "98effd4b11c79d8f9130dd9ad985d04a1e40b0ab554943fd281ffbe369ae0d2d",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "6772cf48f10043779bbe6669988071aa",
+          "fold": 4,
+          "sha256": "8b6610f1a8b70087c8a26d81887afd307c30a8e9385840fd28bedb052e8a03e0",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "59d3a35a891a4c5b836c866bbcc843e7",
+          "fold": 4,
+          "sha256": "7afb055e36860b2db1c5f3063b84c1f2c2e512b68033fade7a12344c3f51d874",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "7f9c831e6fbb4d7b82fed019ad9ef32b",
+          "fold": 5,
+          "sha256": "7337e9c898b31b8523887be78684e9f2ab954cfa612bb18028bef5e30cb483e4",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "00025c74093f4910b6c324fa7fd6baf3",
+          "fold": 5,
+          "sha256": "8393043c144e922e02cc7c4fb566454b8bda5e286ce3e2aa30b38c67b3602212",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "77f9d6157b794a97bc4b2edce5a9b894",
+          "fold": 5,
+          "sha256": "e134b081b13802518cb1f48abcc34b590eddf1504db326ad432fe3706fed4990",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "19df49828b41477292e818d63cd9b736",
+          "fold": 5,
+          "sha256": "c545788fd3b7a5d8345e2658a8c088e62ac8a24f9b9d29b50456663d0f3e4f24",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "34ca29bf68dd4aa0aaec3627b39298fe",
+          "fold": 5,
+          "sha256": "6c02498929a1003732732f7b58ff4be385d6eed85bfc103814eb3109779a9929",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "131ca12aaf074edbbe9ed3eb13e816fa",
+          "fold": 6,
+          "sha256": "fb1d78637f1cde9c50f607f224f5ea6028076ac8582bc628adfd9d258cbd6684",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "65e0099460d94d6aa004a67fc11d97b0",
+          "fold": 6,
+          "sha256": "0cec3d56bb95bf95013229838b086d96e735bb2a204d27f17fd05cf9941018aa",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "54a0a6d011fb434398580cf1a392382a",
+          "fold": 6,
+          "sha256": "59359837591bd4757e737affa8f345b88e221c432d0c837a341aa48364b6db51",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "69de6cd06769484697ab47bb2f223fb8",
+          "fold": 6,
+          "sha256": "12b57782aead7c40c3a10e97b878c9edec45e0eb5497bd9ccd6911464debf236",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "fe4885418b04417eb4aeb85877a83afa",
+          "fold": 6,
+          "sha256": "bd6726d294632f1099fd7895e7ab345d0205ac5380b2ea546c91e642d9a8ae79",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "af6aafdb74c14dd4840c7e85d754d598",
+          "fold": 7,
+          "sha256": "4ca7adaf324a34724fa5c77cbba7297a7e93cff3f77b8ae8e9387e36163ad727",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "3f7af710a5be403baae1d317cc730d3c",
+          "fold": 7,
+          "sha256": "a8fc0506acf44881b3856153993a0f8e037a19bdc732a6083beaf38661ac0370",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "0c30bb8f490b4d1f97621c0f4840d356",
+          "fold": 7,
+          "sha256": "c29dd95acc3734895731316b683093dfe3de27fdaea0e9dba0b88e4247ec8239",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "43548e3209fb4b1b84827bc93ebe1747",
+          "fold": 7,
+          "sha256": "96a537bb9a4e3b40268ffcacb8f47e12d29f9e94b9b88b2043d141c24f15b1b8",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "eb1fecfde34f4063a1d99d6618f39024",
+          "fold": 7,
+          "sha256": "93413e15b90551549959cc2ece1fc643017d1deddc3e0239dfe83f2b4b5658e7",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "fd7f50da3fe74c448c2f43b603abe865",
+          "fold": 8,
+          "sha256": "1ad2d46c535dfb915e59ce97233b217b36e468899e4b6108a1e6e8c691faf92d",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "d3f0da56cdf5486b88f4942eb62681d6",
+          "fold": 8,
+          "sha256": "ec68285c8cfa6656115445ffd08bb44fd4cff1f49cefb6138e6f1d4b16974372",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "c8d73e1e062c4b32a25d2294a0ae0345",
+          "fold": 8,
+          "sha256": "368340a86e9002bf637faf51ec4f2434a31c2029b99909548059c77f0a7b0e54",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "add6dd3d3641469ba847b54a6727ad3c",
+          "fold": 8,
+          "sha256": "5414ab6a4d2a2c8fb4278cbee6eefd2def7a6347e8aadfc865e076df388a3e94",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "3c8401c18f764efe8cae7aadebaf35cd",
+          "fold": 8,
+          "sha256": "4663d7ef9274ba5bcb688fafeb55a3efeecd13417b863bf49ccea3ff049870f8",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "4383701fa6ba4c37a82659f26b7ef018",
+          "fold": 9,
+          "sha256": "2a858ee25ef3f271e8e12daec8cbe01abb3288f0bdd4abf42f59fca8a6f4ccbc",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "057db008d02743f4b319c5961b00ed41",
+          "fold": 9,
+          "sha256": "e73a027edd3e14bf77ab2dcb4f8d5ba9869a0ef068747c92c72f3f9719e60b7f",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "7b60785f84d84eaeb9b2a62b84a276cd",
+          "fold": 9,
+          "sha256": "41f17c540c14c1908496030d34337ace48e6da0e948be98868536f1beca192d0",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "b75460c9c00a4357bcb66640801d6900",
+          "fold": 9,
+          "sha256": "a3fd87e52d31cb50b7e2372ae58a64d1ad69c578378a2c6984ef69f86f60b7f9",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        },
+        {
+          "run_id": "c3b120c515fd4d45881e67d1e8028d21",
+          "fold": 9,
+          "sha256": "5296e1eab68ab97cc32611fd740ec5858290d844defa6ea4631473d727c72fa0",
+          "tensors": 49,
+          "parameters_and_buffers": 250511
+        }
+      ],
+      "rows": 70,
+      "task_columns": [
+        "predicted_TE_108T",
+        "predicted_TE_12T",
+        "predicted_TE_A2780",
+        "predicted_TE_A549",
+        "predicted_TE_BJ",
+        "predicted_TE_BRx.142",
+        "predicted_TE_C643",
+        "predicted_TE_CRL.1634",
+        "predicted_TE_Calu.3",
+        "predicted_TE_Cybrid_Cells",
+        "predicted_TE_H1.hESC",
+        "predicted_TE_H1933",
+        "predicted_TE_H9.hESC",
+        "predicted_TE_HAP.1",
+        "predicted_TE_HCC_tumor",
+        "predicted_TE_HCC_adjancent_normal",
+        "predicted_TE_HCT116",
+        "predicted_TE_HEK293",
+        "predicted_TE_HEK293T",
+        "predicted_TE_HMECs",
+        "predicted_TE_HSB2",
+        "predicted_TE_HSPCs",
+        "predicted_TE_HeLa",
+        "predicted_TE_HeLa_S3",
+        "predicted_TE_HepG2",
+        "predicted_TE_Huh.7.5",
+        "predicted_TE_Huh7",
+        "predicted_TE_K562",
+        "predicted_TE_Kidney_normal_tissue",
+        "predicted_TE_LCL",
+        "predicted_TE_LuCaP.PDX",
+        "predicted_TE_MCF10A",
+        "predicted_TE_MCF10A.ER.Src",
+        "predicted_TE_MCF7",
+        "predicted_TE_MD55A3",
+        "predicted_TE_MDA.MB.231",
+        "predicted_TE_MM1.S",
+        "predicted_TE_MOLM.13",
+        "predicted_TE_Molt.3",
+        "predicted_TE_Mutu",
+        "predicted_TE_OSCC",
+        "predicted_TE_PANC1",
+        "predicted_TE_PATU.8902",
+        "predicted_TE_PC3",
+        "predicted_TE_PC9",
+        "predicted_TE_Primary_CD4._T.cells",
+        "predicted_TE_Primary_human_bronchial_epithelial_cells",
+        "predicted_TE_RD.CCL.136",
+        "predicted_TE_RPE.1",
+        "predicted_TE_SH.SY5Y",
+        "predicted_TE_SUM159PT",
+        "predicted_TE_SW480TetOnAPC",
+        "predicted_TE_T47D",
+        "predicted_TE_THP.1",
+        "predicted_TE_U.251",
+        "predicted_TE_U.343",
+        "predicted_TE_U2392",
+        "predicted_TE_U2OS",
+        "predicted_TE_Vero_6",
+        "predicted_TE_WI38",
+        "predicted_TE_WM902B",
+        "predicted_TE_WTC.11",
+        "predicted_TE_ZR75.1",
+        "predicted_TE_cardiac_fibroblasts",
+        "predicted_TE_ccRCC",
+        "predicted_TE_early_neurons",
+        "predicted_TE_fibroblast",
+        "predicted_TE_hESC",
+        "predicted_TE_human_brain_tumor",
+        "predicted_TE_iPSC.differentiated_dopamine_neurons",
+        "predicted_TE_megakaryocytes",
+        "predicted_TE_muscle_tissue",
+        "predicted_TE_neuronal_precursor_cells",
+        "predicted_TE_neurons",
+        "predicted_TE_normal_brain_tissue",
+        "predicted_TE_normal_prostate",
+        "predicted_TE_primary_macrophages",
+        "predicted_TE_skeletal_muscle"
+      ],
+      "runtime_seconds": 12.641502728001797,
+      "peak_worker_rss_kib": 377160,
+      "checkpoint_load_adjustment": "torch.load(map_location=cpu, weights_only=True); original inference unchanged",
+      "biological_interpretation": "released target scale only; no cell-free calibration or measurements",
+      "subprocess_wall_seconds": 14.945670928002073
+    }
+  ],
+  "cell_free_calibrated": false,
+  "candidate_design_enabled": false,
+  "stage3_ready": false
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "purpose": "Stage 2 integration mechanics; no expression candidate design",
+  "source_manifest": "results/four_component_source_runs/20261019T040820.389955Z/manifest.json",
+  "active_length_nt": [
+    1,
+    2999
+  ],
+  "fixed_synthetic_lengths_nt": [
+    64,
+    400,
+    1000,
+    2000,
+    2999
+  ],
+  "fixed_input_seed": 1729,
+  "rnafold": {
+    "temperature_c": 37.0,
+    "timeout_seconds": 120,
+    "parameter_set": "RNA_Turner2004",
+    "dangles": 2
+  },
+  "toy_optimizer": {
+    "seeds": [
+      7,
+      1729,
+      20261015
+    ],
+    "unique_evaluation_budget": 8
+  },
+  "required_optimizer_versions": {
+    "botorch": "0.18.1",
+    "gpytorch": "1.15.2",
+    "linear_operator": "0.6.1"
+  },
+  "stability_score_enabled": false,
+  "ribonn_weights_acquired": false,
+  "expression_candidate_design_enabled": false,
+  "stage3_ready": false
+}

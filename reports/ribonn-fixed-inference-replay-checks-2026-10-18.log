@@ -1,0 +1,15 @@
+.venv/bin/python scripts/run_ribonn_fixed_inference.py --verify-run /home/zyliu/Documents/rna-stable-ai/results/ribonn_fixed_inference_runs/20261019T045101.117038Z
+{
+  "artifacts_verified": 49,
+  "inputs": 8,
+  "joined_ok": 7,
+  "explicit_exclusions": 1,
+  "cached_task_replay": {
+    "rows": 70,
+    "max_abs_difference": 0.0,
+    "bitwise_float_equal": true
+  },
+  "mode": "artifact and cached output audit; no new checkpoint inference"
+}
+
+Corruption check: modified joined output in a temporary copied run was rejected; canonical artifacts and weight archive unchanged.

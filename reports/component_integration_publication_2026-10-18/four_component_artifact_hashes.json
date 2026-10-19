@@ -1,0 +1,21 @@
+{
+  "fixed_inputs.json": "ad283e93a7dfd7a27470cf11e2888fb21f45c960c7e3f327aab6cf1530d8411f",
+  "identity.json": "a1aabb16562068ac6164fc7f0c790793dd000e14d2b65789facf910f421cee15",
+  "protocol.json": "d4a7a87c71e3d616dac44f39a58545b5139edfca4d29ee259f193649c3264b29",
+  "ribonn_prediction_input.tsv": "2f36771cf3d872832d90c8939551f4e5408db605356909931eac4af816c05d3b",
+  "ribonn_preflight.json": "77d9831ae2d72c0f5220f80ac524d12613237ba599f429406151aeaaa57e5558",
+  "rnafold_fixed_synthetic_1000.json": "292172c198c41e26a8626ca02ce719debe544279283adac198267fe9a6680fc9",
+  "rnafold_fixed_synthetic_2000.json": "c16089047f7b0f78213cfc4dcbc5d6c31122bea82e8ee8b51c1661a2b1c93419",
+  "rnafold_fixed_synthetic_2999.json": "9d883809256c40f4d604c37a4536fdd21c4474b9f0bb9fb0249b33284a9d3003",
+  "rnafold_fixed_synthetic_400.json": "3c921efa0015744d33dee26710fd27509ab8112e0fb7f97f9db9530e3e89853b",
+  "rnafold_fixed_synthetic_64.json": "92ef7fe39cf64c248f876a4605ddbb2e5c10e8a24a9e201f55069ad4862dc4c8",
+  "runtime.json": "d4287fa56006e257456760fa70025c35c0bd41eaab32861aa3537b4ec150dbc0",
+  "source/scripts/build_four_component_integration.py": "96d62930c4a204e4a261e06e971b1ac9f45f5a21ceb83ef2d10421c6ff50df8a",
+  "source/src/rnastable/component_integration.py": "1a592ac3355c1b3270810ab8b6d38be0e90d71b0297ea96ae7cd02c5a191dfaa",
+  "source/src/rnastable/discrete_bo.py": "469c7e4a83187dc571755bb400b105c3b96e789221f313335a34d1f8a9899489",
+  "source/src/rnastable/ensemble_worker.py": "e880851ac1592cab07a435e7b1f3e45ab521fad02becdb2a430ea4f1a8416a4b",
+  "source_audit.json": "82602d92fd545512d657fe3fdca0c5f1734b8c0e6fd34510307d3ab6b09d70ed",
+  "toy_seed1729.json": "d077bc9911b93610b7984349c3e1e3fe556e225e23c48a168938d79313fe3b6d",
+  "toy_seed20261015.json": "2e817b40f86922facef2ab08e70bb673c3cc43eaa3bcdd715cfce217c2cdcb9e",
+  "toy_seed7.json": "ad6239b222f70f5794869944b6bd8d320d677c9ae12eb68f29d9a3e019fba872"
+}

@@ -1,0 +1,235 @@
+{
+  "source_manifest": "results/four_component_source_runs/20261019T040820.389955Z/manifest.json",
+  "source_manifest_sha256": "5cb505276eeb7dd738cb804eddeae873e7bee9b537e00d6e343ca336f84e3cc3",
+  "sources": {
+    "schema_version": 1,
+    "created_utc": "20261019T040820.389955Z",
+    "files": [
+      {
+        "component": "strand",
+        "repository": "S00NYI/BITS_STRAND",
+        "commit": "ea9e7de635e7cf4053c676c495b8e65717369206",
+        "upstream_path": "README.md",
+        "git_blob_sha": "5de946ac7dba8413706a4e0e2b7457bcb6536bc1",
+        "source_url": "https://github.com/S00NYI/BITS_STRAND/blob/ea9e7de635e7cf4053c676c495b8e65717369206/README.md",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/strand/README.md",
+        "bytes": 2399,
+        "sha256": "fead47edb0b664a0bdfa7e31521e628d9c9a605db6a58c0a05a12025010965cd"
+      },
+      {
+        "component": "strand",
+        "repository": "S00NYI/BITS_STRAND",
+        "commit": "ea9e7de635e7cf4053c676c495b8e65717369206",
+        "upstream_path": "LICENSE",
+        "git_blob_sha": "f16f68f6283f7ea4af78a8a1db3a18b8ba8b6112",
+        "source_url": "https://github.com/S00NYI/BITS_STRAND/blob/ea9e7de635e7cf4053c676c495b8e65717369206/LICENSE",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/strand/LICENSE",
+        "bytes": 1063,
+        "sha256": "0243e3cdb666e3400cead0b67a64e59e2b4bbc2e339e565338fb7f7db9d15e9d"
+      },
+      {
+        "component": "strand",
+        "repository": "S00NYI/BITS_STRAND",
+        "commit": "ea9e7de635e7cf4053c676c495b8e65717369206",
+        "upstream_path": "Figure_Scripts_1.R",
+        "git_blob_sha": "2e09b7f1b88e936c8bd3d41170dd0ee2a089bda4",
+        "source_url": "https://github.com/S00NYI/BITS_STRAND/blob/ea9e7de635e7cf4053c676c495b8e65717369206/Figure_Scripts_1.R",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/strand/Figure_Scripts_1.R",
+        "bytes": 73309,
+        "sha256": "efb2b17cb96e587f33fd5948dce86e2bc452a7d4c9f448ec839cac8276379fe2"
+      },
+      {
+        "component": "strand",
+        "repository": "S00NYI/BITS_STRAND",
+        "commit": "ea9e7de635e7cf4053c676c495b8e65717369206",
+        "upstream_path": "Figure_Scripts_2.R",
+        "git_blob_sha": "8cd976640bd9ebf341b20479596bcc015039eb5f",
+        "source_url": "https://github.com/S00NYI/BITS_STRAND/blob/ea9e7de635e7cf4053c676c495b8e65717369206/Figure_Scripts_2.R",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/strand/Figure_Scripts_2.R",
+        "bytes": 29898,
+        "sha256": "26ee1f902912faf3cd35e772bf0a208a37ab00e0c8da481e836cd0b2fb88e775"
+      },
+      {
+        "component": "strand",
+        "repository": "S00NYI/BITS_STRAND",
+        "commit": "ea9e7de635e7cf4053c676c495b8e65717369206",
+        "upstream_path": "Data/all_data_in_solution_halflife.csv",
+        "git_blob_sha": "cbb95f1d134fb4e2ecf285cd31151c37303ba190",
+        "source_url": "https://github.com/S00NYI/BITS_STRAND/blob/ea9e7de635e7cf4053c676c495b8e65717369206/Data/all_data_in_solution_halflife.csv",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/strand/Data/all_data_in_solution_halflife.csv",
+        "bytes": 5283,
+        "sha256": "a00fd3007e0dbe650c0dbde29d1e878d470829b89444d3cfd0710a6d0a419e88"
+      },
+      {
+        "component": "strand",
+        "repository": "S00NYI/BITS_STRAND",
+        "commit": "ea9e7de635e7cf4053c676c495b8e65717369206",
+        "upstream_path": "Data/nluc_cleaned_new_final.csv",
+        "git_blob_sha": "8802637b15191ee8c3ee8a0f06d93e0fff4b42e4",
+        "source_url": "https://github.com/S00NYI/BITS_STRAND/blob/ea9e7de635e7cf4053c676c495b8e65717369206/Data/nluc_cleaned_new_final.csv",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/strand/Data/nluc_cleaned_new_final.csv",
+        "bytes": 4714102,
+        "sha256": "c91df4c5e0547f88d1c8d3fc4851865f1074453189767ea34bc0a0d75a93126d"
+      },
+      {
+        "component": "strand",
+        "repository": "S00NYI/BITS_STRAND",
+        "commit": "ea9e7de635e7cf4053c676c495b8e65717369206",
+        "upstream_path": "Data/validate_cleaned_new_final.csv",
+        "git_blob_sha": "d7b971a4bb1f99629f0828e9ae5cc00828355aee",
+        "source_url": "https://github.com/S00NYI/BITS_STRAND/blob/ea9e7de635e7cf4053c676c495b8e65717369206/Data/validate_cleaned_new_final.csv",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/strand/Data/validate_cleaned_new_final.csv",
+        "bytes": 1122722,
+        "sha256": "a2d7fe999276f8f3e89279a2f57432996ad838d69c6b8d09fe2685cc3145b9a3"
+      },
+      {
+        "component": "ribonn",
+        "repository": "Sanofi-Public/RiboNN",
+        "commit": "dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8",
+        "upstream_path": "README.md",
+        "git_blob_sha": "6c79a7e6b8600c275be8e929ff4062a396af69bf",
+        "source_url": "https://github.com/Sanofi-Public/RiboNN/blob/dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8/README.md",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/ribonn/README.md",
+        "bytes": 4323,
+        "sha256": "c21953f8d26dd2fe7b5ba36b2597615cd995691734c1047370dac397a363d7a2"
+      },
+      {
+        "component": "ribonn",
+        "repository": "Sanofi-Public/RiboNN",
+        "commit": "dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8",
+        "upstream_path": "LICENSE",
+        "git_blob_sha": "0baf4f244eb9ef01d8cd6eefe327fcf59c79e48a",
+        "source_url": "https://github.com/Sanofi-Public/RiboNN/blob/dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8/LICENSE",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/ribonn/LICENSE",
+        "bytes": 1100,
+        "sha256": "5a7572b7e61d99239428c326047e240a1693537e6cf12518309f4e1304007d60"
+      },
+      {
+        "component": "ribonn",
+        "repository": "Sanofi-Public/RiboNN",
+        "commit": "dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8",
+        "upstream_path": "MODEL WEIGHTS LICENSE.txt",
+        "git_blob_sha": "2913d52980de5ff107b228092901a7c6df532408",
+        "source_url": "https://github.com/Sanofi-Public/RiboNN/blob/dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8/MODEL%20WEIGHTS%20LICENSE.txt",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/ribonn/MODEL WEIGHTS LICENSE.txt",
+        "bytes": 864,
+        "sha256": "ce6b253151d10e66606a52a1c99ac08854051d912f01ad1d01331941310cc49b"
+      },
+      {
+        "component": "ribonn",
+        "repository": "Sanofi-Public/RiboNN",
+        "commit": "dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8",
+        "upstream_path": "environment.yml",
+        "git_blob_sha": "d6d3d15e0cd415545214e0f0145abcbd04ebfc94",
+        "source_url": "https://github.com/Sanofi-Public/RiboNN/blob/dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8/environment.yml",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/ribonn/environment.yml",
+        "bytes": 334,
+        "sha256": "c318fdc1e3e6e6d925783117723de2a2f987ff01ad7d120850b829247b7ed160"
+      },
+      {
+        "component": "ribonn",
+        "repository": "Sanofi-Public/RiboNN",
+        "commit": "dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8",
+        "upstream_path": "config/conf.yml",
+        "git_blob_sha": "3e0448abb6a82a7db2046ea001b842b7d72d42a4",
+        "source_url": "https://github.com/Sanofi-Public/RiboNN/blob/dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8/config/conf.yml",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/ribonn/config/conf.yml",
+        "bytes": 905,
+        "sha256": "c073430622eb6ebcdc7ec1a5a6cd4526505cb3199c025017f36b4f8ab0aa4f9f"
+      },
+      {
+        "component": "ribonn",
+        "repository": "Sanofi-Public/RiboNN",
+        "commit": "dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8",
+        "upstream_path": "src/data.py",
+        "git_blob_sha": "2b2de7ee58b799761b1b355e7969493fed41f434",
+        "source_url": "https://github.com/Sanofi-Public/RiboNN/blob/dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8/src/data.py",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/ribonn/src/data.py",
+        "bytes": 16623,
+        "sha256": "7c042ccf89570f357a8e8b02f23fef00dcf748ebac36a2d27933747e5a65c69d"
+      },
+      {
+        "component": "ribonn",
+        "repository": "Sanofi-Public/RiboNN",
+        "commit": "dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8",
+        "upstream_path": "src/model.py",
+        "git_blob_sha": "5a38ba95b0da45ae37aea461acbd9d4b3eb68f48",
+        "source_url": "https://github.com/Sanofi-Public/RiboNN/blob/dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8/src/model.py",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/ribonn/src/model.py",
+        "bytes": 26025,
+        "sha256": "5d7663ea6634529fd7ada8960a101a5f6c3d0f245fa489f85bdb0f65d425cf80"
+      },
+      {
+        "component": "ribonn",
+        "repository": "Sanofi-Public/RiboNN",
+        "commit": "dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8",
+        "upstream_path": "src/predict.py",
+        "git_blob_sha": "d19f127f1eefbb21dfd8a7aae4d5e74f4b1a6d62",
+        "source_url": "https://github.com/Sanofi-Public/RiboNN/blob/dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8/src/predict.py",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/ribonn/src/predict.py",
+        "bytes": 5655,
+        "sha256": "618cff3d53d1a48b6845da8cc711fce46bfe8f00d461fea53a423de8495c18d8"
+      },
+      {
+        "component": "ribonn",
+        "repository": "Sanofi-Public/RiboNN",
+        "commit": "dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8",
+        "upstream_path": "src/main.py",
+        "git_blob_sha": "e2a6ec5a76b9c70c69555bd1f9479c248453d7fa",
+        "source_url": "https://github.com/Sanofi-Public/RiboNN/blob/dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8/src/main.py",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/ribonn/src/main.py",
+        "bytes": 8309,
+        "sha256": "fa2b3e17a696ff12069fb2d5167f0b3b5fc59d061a8e89ef0e7658106853a611"
+      },
+      {
+        "component": "ribonn",
+        "repository": "Sanofi-Public/RiboNN",
+        "commit": "dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8",
+        "upstream_path": "src/utils/helpers.py",
+        "git_blob_sha": "a72d373041094b546d48a36644c28745cef72e6c",
+        "source_url": "https://github.com/Sanofi-Public/RiboNN/blob/dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8/src/utils/helpers.py",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/ribonn/src/utils/helpers.py",
+        "bytes": 1865,
+        "sha256": "f7529076df30fa3a37dd26165a3c93273613cb71dc09b91d07ef7c4ce4ccf0ca"
+      },
+      {
+        "component": "ribonn",
+        "repository": "Sanofi-Public/RiboNN",
+        "commit": "dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8",
+        "upstream_path": "data/prediction_input1.txt",
+        "git_blob_sha": "2fe9ad704b572189f919de541ae85b8e549d6068",
+        "source_url": "https://github.com/Sanofi-Public/RiboNN/blob/dc896e1d1f78bf6b4e9bb7525c7852fcf25532e8/data/prediction_input1.txt",
+        "local_path": "results/four_component_source_runs/20261019T040820.389955Z/ribonn/data/prediction_input1.txt",
+        "bytes": 119263,
+        "sha256": "ea65c0513c45ac6ace2da3d51611b185ed30c74563927c8f991e9a7b2443a9b5"
+      }
+    ],
+    "scope": "Source audit only; weights not acquired; no upstream code executed"
+  },
+  "weight_inventory": {
+    "record_id": 17258709,
+    "source_url": "https://zenodo.org/api/records/17258709",
+    "metadata_sha256": "5bbe572687e13d49add3805383683cfbe0e2a349a876b6e217a9dca9659f5e44",
+    "files": [
+      {
+        "key": "RiboNN-1.0.0.zip",
+        "size": 1799121,
+        "checksum": "md5:6f8c12f7ba678db202fa1019668c0a29",
+        "links": {
+          "self": "https://zenodo.org/api/records/17258709/files/RiboNN-1.0.0.zip/content"
+        }
+      },
+      {
+        "key": "weights.zip",
+        "size": 207395960,
+        "checksum": "md5:dd088ee2feffcda6ce26124a471a140f",
+        "links": {
+          "self": "https://zenodo.org/api/records/17258709/files/weights.zip/content"
+        }
+      }
+    ],
+    "weights_downloaded": false,
+    "weight_license_source": "Pinned RiboNN MODEL WEIGHTS LICENSE.txt; academic/noncommercial restrictions"
+  },
+  "weights_summary_path": "results/ribonn_weight_inventory_runs/20261019T041243.650769Z/summary.json"
+}

@@ -1,0 +1,148 @@
+[
+  {
+    "tx_id": "fixed_synthetic_64",
+    "input_sha256": "363909533df315dbe234cde598fe9a5d06b7127772bdf4368172707144232854",
+    "status": "ok",
+    "score_column": "predicted_TE_HEK293T",
+    "fold_scores": {
+      "0": 1.7614113092422485,
+      "1": 1.6202586889266968,
+      "2": 1.689807653427124,
+      "3": 1.6375505924224854,
+      "4": 1.6933406591415405,
+      "5": 1.6511160135269165,
+      "6": 1.7311820983886719,
+      "7": 1.7623059749603271,
+      "8": 1.6738853454589844,
+      "9": 1.6979780197143555
+    },
+    "mean_score": 1.691883635520935,
+    "interpretation": "released task score; cell-free calibration pending"
+  },
+  {
+    "tx_id": "fixed_synthetic_400",
+    "input_sha256": "7d532be0db6d2229efd1bc85f56d0f5c04a596bf59e1a7790e21d1d7f369e8ea",
+    "status": "ok",
+    "score_column": "predicted_TE_HEK293T",
+    "fold_scores": {
+      "0": 1.0820742845535278,
+      "1": 1.050482988357544,
+      "2": 1.0710644721984863,
+      "3": 1.1108672618865967,
+      "4": 1.0059038400650024,
+      "5": 0.9937402009963989,
+      "6": 1.0420520305633545,
+      "7": 1.071217656135559,
+      "8": 1.0960297584533691,
+      "9": 1.0096180438995361
+    },
+    "mean_score": 1.0533050537109374,
+    "interpretation": "released task score; cell-free calibration pending"
+  },
+  {
+    "tx_id": "fixed_synthetic_1000",
+    "input_sha256": "19ec07d48ab31c8d371fff1d3b9d18fbc0719b0df1292808ac7964db1ab46d98",
+    "status": "ok",
+    "score_column": "predicted_TE_HEK293T",
+    "fold_scores": {
+      "0": 0.3685544729232788,
+      "1": 0.3831440806388855,
+      "2": 0.3882685601711273,
+      "3": 0.37550392746925354,
+      "4": 0.24239258468151093,
+      "5": 0.3098999559879303,
+      "6": 0.3974500894546509,
+      "7": 0.3326505124568939,
+      "8": 0.32467177510261536,
+      "9": 0.341214120388031
+    },
+    "mean_score": 0.34637500792741777,
+    "interpretation": "released task score; cell-free calibration pending"
+  },
+  {
+    "tx_id": "fixed_synthetic_2000",
+    "input_sha256": "2804d7ed6ee697edcba233ca9bc62997cece81da33f685b3e90596ffa229c6cc",
+    "status": "ok",
+    "score_column": "predicted_TE_HEK293T",
+    "fold_scores": {
+      "0": 0.037492118775844574,
+      "1": 0.0821949690580368,
+      "2": 0.055793941020965576,
+      "3": 0.05647077411413193,
+      "4": -0.011163242161273956,
+      "5": -0.02563953772187233,
+      "6": -0.004392953123897314,
+      "7": 0.016507606953382492,
+      "8": 0.0007392168045043945,
+      "9": 0.004477413836866617
+    },
+    "mean_score": 0.02124803075566888,
+    "interpretation": "released task score; cell-free calibration pending"
+  },
+  {
+    "tx_id": "fixed_synthetic_2999",
+    "input_sha256": "0e6617ff4523f8a045a42e28bfa3e181c60e4c686bf7f8736e074c84d5aa9ec4",
+    "status": "ok",
+    "score_column": "predicted_TE_HEK293T",
+    "fold_scores": {
+      "0": -0.14099730551242828,
+      "1": -0.11275441944599152,
+      "2": -0.1604297012090683,
+      "3": -0.14847710728645325,
+      "4": -0.14379848539829254,
+      "5": -0.13129857182502747,
+      "6": -0.10410644859075546,
+      "7": -0.16086667776107788,
+      "8": -0.13189508020877838,
+      "9": -0.17845186591148376
+    },
+    "mean_score": -0.14130756631493568,
+    "interpretation": "released task score; cell-free calibration pending"
+  },
+  {
+    "tx_id": "ribonn_empty_UTRs",
+    "input_sha256": "73e709368b878f9289fee2a0365dcbb90c4c9669254bd9d4294f8c13d76cea83",
+    "status": "ok",
+    "score_column": "predicted_TE_HEK293T",
+    "fold_scores": {
+      "0": 1.7774709463119507,
+      "1": 1.622198462486267,
+      "2": 1.6800203323364258,
+      "3": 1.633871078491211,
+      "4": 1.6957452297210693,
+      "5": 1.6605348587036133,
+      "6": 1.72799551486969,
+      "7": 1.7585980892181396,
+      "8": 1.674802541732788,
+      "9": 1.696656584739685
+    },
+    "mean_score": 1.692789363861084,
+    "interpretation": "released task score; cell-free calibration pending"
+  },
+  {
+    "tx_id": "ribonn_utr5_1381",
+    "input_sha256": "55a67a624b217868e1ce8a94bf5445d65da9baf3eee55167c10e751ba3b0fd6b",
+    "status": "ok",
+    "score_column": "predicted_TE_HEK293T",
+    "fold_scores": {
+      "0": 1.299553632736206,
+      "1": 1.4598758220672607,
+      "2": 1.5847752094268799,
+      "3": 1.5404917001724243,
+      "4": 1.382844090461731,
+      "5": 1.010215163230896,
+      "6": 1.7086082696914673,
+      "7": 1.5170845985412598,
+      "8": 1.5252654552459717,
+      "9": 1.3790358304977417
+    },
+    "mean_score": 1.4407749772071838,
+    "interpretation": "released task score; cell-free calibration pending"
+  },
+  {
+    "tx_id": "ribonn_utr5_1382",
+    "input_sha256": "7cfaae0abd9bb7955263a891236961d9a38853aec41e9fe5dab01015e5aa169c",
+    "status": "excluded",
+    "reason": "utr5_exceeds_1381_nt"
+  }
+]

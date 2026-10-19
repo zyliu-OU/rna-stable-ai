@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "publication_date_local": "2026-10-18",
+  "base_remote_commit": "e1758333075e1c7eaaeea3d22c55d79d1d462c59",
+  "upstream_readme_sha256": "06cfa0cfee6a31937ba0b417c922863beaf343f9ba95c7566152e8f2b9b686c7",
+  "summary_copies": [
+    {
+      "published_path": "reports/component_integration_publication_2026-10-18/four_component_protocol.json",
+      "original_local_path": "/home/zyliu/Documents/rna-stable-ai/results/four_component_build_runs/20261019T041458.024816Z/protocol.json",
+      "sha256": "d4a7a87c71e3d616dac44f39a58545b5139edfca4d29ee259f193649c3264b29",
+      "bytes": 875
+    },
+    {
+      "published_path": "reports/component_integration_publication_2026-10-18/four_component_summary.json",
+      "original_local_path": "/home/zyliu/Documents/rna-stable-ai/results/four_component_build_runs/20261019T041458.024816Z/summary.json",
+      "sha256": "d898cfbc288bab7bd386e7dfe79f681280fb171941ff7ac763941e64ab2a01e2",
+      "bytes": 3291
+    },
+    {
+      "published_path": "reports/component_integration_publication_2026-10-18/four_component_runtime.json",
+      "original_local_path": "/home/zyliu/Documents/rna-stable-ai/results/four_component_build_runs/20261019T041458.024816Z/runtime.json",
+      "sha256": "d4287fa56006e257456760fa70025c35c0bd41eaab32861aa3537b4ec150dbc0",
+      "bytes": 407
+    },
+    {
+      "published_path": "reports/component_integration_publication_2026-10-18/four_component_artifact_hashes.json",
+      "original_local_path": "/home/zyliu/Documents/rna-stable-ai/results/four_component_build_runs/20261019T041458.024816Z/artifacts.json",
+      "sha256": "be44308cbc6a914355e66e6e9b018e7c400f985e2dff8876563de8df1476d3af",
+      "bytes": 1912
+    },
+    {
+      "published_path": "reports/component_integration_publication_2026-10-18/strand_protocol.json",
+      "original_local_path": "/home/zyliu/Documents/rna-stable-ai/results/strand_reference_reproduction_runs/20261019T042427.196161Z/protocol.json",
+      "sha256": "cbf1a69a81c8f79e3767b9cc46498b87012bb25d98f5833e45373507a548365e",
+      "bytes": 1882
+    },
+    {
+      "published_path": "reports/component_integration_publication_2026-10-18/strand_summary.json",
+      "original_local_path": "/home/zyliu/Documents/rna-stable-ai/results/strand_reference_reproduction_runs/20261019T042427.196161Z/summary.json",
+      "sha256": "45c676301131bd5c66d88b0a81e8df879068ecc14214115e4e6bdf3ab9935669",
+      "bytes": 8525
+    },
+    {
+      "published_path": "reports/component_integration_publication_2026-10-18/strand_component_models.json",
+      "original_local_path": "/home/zyliu/Documents/rna-stable-ai/results/strand_reference_reproduction_runs/20261019T042427.196161Z/fit/r_models.json",
+      "sha256": "3101cf7c90cb83b37ca26407f69d8650e6a37992642d82ead3145b0d8b4623d1",
+      "bytes": 17109
+    },
+    {
+      "published_path": "reports/component_integration_publication_2026-10-18/strand_reference_model.json",
+      "original_local_path": "/home/zyliu/Documents/rna-stable-ai/results/strand_reference_reproduction_runs/20261019T042427.196161Z/reference_model.json",
+      "sha256": "660d07587f0c906fa3eb3663ee9ca8ccb4affaac541d67b85bd434da5018d354",
+      "bytes": 8139
+    },
+    {
+      "published_path": "reports/component_integration_publication_2026-10-18/strand_rnafold_compatibility.json",
+      "original_local_path": "/home/zyliu/Documents/rna-stable-ai/results/strand_reference_reproduction_runs/20261019T042427.196161Z/rnafold_compatibility.json",
+      "sha256": "b704330360fe1f34e984c3795d1f49233a0a6fc84ed08c6cd018ba5b8b3a3fcb",
+      "bytes": 11155
+    },
+    {
+      "published_path": "reports/component_integration_publication_2026-10-18/strand_artifact_hashes.json",
+      "original_local_path": "/home/zyliu/Documents/rna-stable-ai/results/strand_reference_reproduction_runs/20261019T042427.196161Z/manifest.json",
+      "sha256": "14a4e118f441b043effe6fd138df866f9d4e19e0a74e026ac70f078f289cdf38",
+      "bytes": 4289
+    },
+    {
+      "published_path": "reports/component_integration_publication_2026-10-18/strand_conda_explicit.txt",
+      "original_local_path": "/home/zyliu/Documents/rna-stable-ai/results/strand_reference_reproduction_runs/20261019T042427.196161Z/conda_explicit.txt",
+      "sha256": "0ce6beac39ad5fe9a3ddcbccaa25c4f6fde8d48c196303a4d77bf27432ff79da",
+      "bytes": 7747
+    },
+    {
+      "published_path": "reports/component_integration_publication_2026-10-18/ribonn_protocol.json",
+      "original_local_path": "/home/zyliu/Documents/rna-stable-ai/results/ribonn_fixed_inference_runs/20261019T045101.117038Z/protocol.json",
+      "sha256": "d2f6fed4484a74b12f9948de75ad31144f3a5d1167ae8c07fcae777206fb8151",
+      "bytes": 1571
+    },
+    {
+      "published_path": "reports/component_integration_publication_2026-10-18/ribonn_summary.json",
+      "original_local_path": "/home/zyliu/Documents/rna-stable-ai/results/ribonn_fixed_inference_runs/20261019T045101.117038Z/summary.json",
+      "sha256": "deca964a5d5ba53d85a989067ef484d2775cb55502c2d62b540b22699ca6306c",
+      "bytes": 34653
+    },
+    {
+      "published_path": "reports/component_integration_publication_2026-10-18/ribonn_joined_task_predictions.json",
+      "original_local_path": "/home/zyliu/Documents/rna-stable-ai/results/ribonn_fixed_inference_runs/20261019T045101.117038Z/joined_predictions.json",
+      "sha256": "248a8b703d2a0adc88bc54576facecfa31ab2472af7cc42eabb651246535a6fb",
+      "bytes": 4753
+    },
+    {
+      "published_path": "reports/component_integration_publication_2026-10-18/ribonn_artifact_hashes.json",
+      "original_local_path": "/home/zyliu/Documents/rna-stable-ai/results/ribonn_fixed_inference_runs/20261019T045101.117038Z/manifest.json",
+      "sha256": "bc0e179b12395f344fda74ff975c2be426966646daf6f94df075f463399e35dd",
+      "bytes": 5309
+    },
+    {
+      "published_path": "reports/component_integration_publication_2026-10-18/ribonn_conda_explicit.txt",
+      "original_local_path": "/home/zyliu/Documents/rna-stable-ai/results/ribonn_fixed_inference_runs/20261019T045101.117038Z/conda_explicit.txt",
+      "sha256": "86be63d907239da5c4de12d641040ba333b4dc8708560ba87ee5f89252f0ce99",
+      "bytes": 6340
+    }
+  ],
+  "curated_workspace_files": [
+    {
+      "path": "src/rnastable/component_integration.py",
+      "sha256": "1a592ac3355c1b3270810ab8b6d38be0e90d71b0297ea96ae7cd02c5a191dfaa"
+    },
+    {
+      "path": "src/rnastable/ensemble_worker.py",
+      "sha256": "e880851ac1592cab07a435e7b1f3e45ab521fad02becdb2a430ea4f1a8416a4b"
+    },
+    {
+      "path": "src/rnastable/discrete_bo.py",
+      "sha256": "469c7e4a83187dc571755bb400b105c3b96e789221f313335a34d1f8a9899489"
+    },
+    {
+      "path": "src/rnastable/strand_reference.py",
+      "sha256": "472488c26804acf0806373d5edb420c7129947a65328c0221d562d09647bab68"
+    },
+    {
+      "path": "src/rnastable/ribonn_integration.py",
+      "sha256": "2d032804331bcaaedda3daf600dc0a4057bb74eac11108cb97680e84737f95c8"
+    },
+    {
+      "path": "scripts/inventory_four_component_sources.py",
+      "sha256": "e7882dacfdd95d0393cd6ca0b626113f6b39e93f95f52c02a143b033aa1987e8"
+    },
+    {
+      "path": "scripts/build_four_component_integration.py",
+      "sha256": "96d62930c4a204e4a261e06e971b1ac9f45f5a21ceb83ef2d10421c6ff50df8a"
+    },
+    {
+      "path": "scripts/verify_four_component_build.py",
+      "sha256": "2b05b44148a189da21b812cc80c4d50e26047e47d5c768fd18d1b27c5a15ce29"
+    },
+    {
+      "path": "scripts/inventory_ribonn_weights.py",
+      "sha256": "b64cc8a564745c5d61abe51eb1a0146016527f940f1c8c4c376cb87935153c94"
+    },
+    {
+      "path": "scripts/acquire_ribonn_weights.py",
+      "sha256": "dc639ad3236bf643dd7bd66948412e305711dd36b0d4a60c593f3181b0b09df1"
+    },
+    {
+      "path": "scripts/acquire_strand_methods.py",
+      "sha256": "49d2ba4e3d6001659c18558930c3a2a69b853bcecc459b95b5027f25142048a9"
+    },
+    {
+      "path": "scripts/reproduce_strand_reference.py",
+      "sha256": "174e4f61286e67c845660e99b801203668de6605bf3e1cefa0868a6109683170"
+    },
+    {
+      "path": "scripts/reproduce_strand_reference.R",
+      "sha256": "9364e969dee465a746d39928ff71866bae0ef611f4c0dbf2692a8503f97aa203"
+    },
+    {
+      "path": "scripts/replay_strand_reference.R",
+      "sha256": "10829a52b0c0c5d55ff0d5df725cc72311fd6f41c28b63f886e90ab52a14af61"
+    },
+    {
+      "path": "scripts/run_ribonn_fixed_inference.py",
+      "sha256": "a7a7bc4291389c54f87fab79355cfc3a09f07e4575714e51ed23188d86a32142"
+    },
+    {
+      "path": "scripts/ribonn_inference_worker.py",
+      "sha256": "584d0ba639d4f0f84ee032c0e478c53beb20a7d6fd9da0e69115cf0bdd8ddcc5"
+    },
+    {
+      "path": "configs/four_component_build_v1_2026-10-18.json",
+      "sha256": "911dab9f8890af79f802e391dde81a709b9a98375651f1995995febc601ff121"
+    },
+    {
+      "path": "configs/four_component_optimizer_requirements_2026-10-18.txt",
+      "sha256": "a62fdacaa8ccde46c9b16b4c1b5ae4214508824a18a267f081af5067f7eed69a"
+    },
+    {
+      "path": "configs/strand_reference_reproduction_v1_2026-10-18.json",
+      "sha256": "25ca159a375125c1384718440fe938a416fe6bed83f540d2ba3106094801cb4b"
+    },
+    {
+      "path": "configs/ribonn_fixed_inference_v1_2026-10-18.json",
+      "sha256": "db9bd9b08f27e2ac57079c955056fd994292e2b6635f3788b3a466ddd63cdc7f"
+    },
+    {
+      "path": "docs/four_component_integration_2026-10-18.md",
+      "sha256": "674297b9bb8bdd2f2ba9216a42cf85d2e6a02ff2f82ef008a18e6a966543810f"
+    },
+    {
+      "path": "reports/four_component_source_inventory_2026-10-18.json",
+      "sha256": "af5ab57d64c072ae7a26c293d08b0e6cc5119128c75e240fdefe8464c8d8fd69"
+    },
+    {
+      "path": "reports/strand_reference_reproduction_review_2026-10-18.md",
+      "sha256": "82dc999917115b8741cdb5437f154729db7f5d317a10a91a7fa5f0b7aede0f72"
+    },
+    {
+      "path": "reports/ribonn_fixed_inference_review_2026-10-18.md",
+      "sha256": "dd0917ae0c5ff9723fd8f09cb4aad6afceb7cf59b953d277abbabaa0b9c54a8d"
+    },
+    {
+      "path": "reports/ribonn_checkpoint_inventory_2026-10-18.json",
+      "sha256": "cd02db33acbddf71e4f3a338d7eb817f0fc99dfd033c433b5a8dc2188896d638"
+    },
+    {
+      "path": "reports/four-component-build-focused-tests-2026-10-18.log",
+      "sha256": "87398e2a03c84fce2d9f84121cf4b532e591ceef18d1743e8825f76fafeb6d3e"
+    },
+    {
+      "path": "reports/four-component-build-artifact-and-resume-checks-2026-10-18.log",
+      "sha256": "c27fc6242dc0ec15f7bb3f1119fada18441ec4e4d69ad04fdea6bac7171eec91"
+    },
+    {
+      "path": "reports/strand-reference-focused-tests-2026-10-18.log",
+      "sha256": "f25de270ed31d8294b7e5a309d896ef8974327d6d05909a3cf40c5f0dd7ece9a"
+    },
+    {
+      "path": "reports/strand-reference-replay-checks-2026-10-18.log",
+      "sha256": "617203137c32053778d3ea36edf39bea4d18a1bc2ba7de87a1cc43386ab89182"
+    },
+    {
+      "path": "reports/ribonn-fixed-inference-focused-tests-2026-10-18.log",
+      "sha256": "b352ca0b7adb25de94d1f62145cf0729e748d34b3e34fd07be96d9976e8838fe"
+    },
+    {
+      "path": "reports/ribonn-fixed-inference-replay-checks-2026-10-18.log",
+      "sha256": "d94f4cff18f9b1241ca813d538ac1b8de17afb595c1f9f05adfd138a1eb40391"
+    },
+    {
+      "path": "tests/test_component_integration.py",
+      "sha256": "c43f0d289a0a2398de848a0f9177756c169d330511ab2278d1aa81e5d0c2d23c"
+    },
+    {
+      "path": "tests/test_discrete_bo.py",
+      "sha256": "3f1a6711046d06f40a242c011f76fddd00a8d4eee4719a515535347cae566599"
+    },
+    {
+      "path": "tests/test_strand_reference.py",
+      "sha256": "b064be85b1c4b287d7c6fd7b974f88c8c8428cc474f945582f573c56efaaea11"
+    },
+    {
+      "path": "tests/test_ribonn_integration.py",
+      "sha256": "ac6e8d1fce06e6caea9cad7a132c5328544ec2cb4fc875fd4d34e59b9e721c4b"
+    },
+    {
+      "path": "tests/fixtures/strand_reference_r_export_2026-10-18.json",
+      "sha256": "9b819621406b1d734c5d2b3b71578651624e44f5e0c704ab9478bf0a6a019ba2"
+    },
+    {
+      "path": "tests/fixtures/strand_reference_r_export_2026-10-18_PROVENANCE.md",
+      "sha256": "235d42e02e6b3f74d88dd6c5c5a919075f1828ad46ab11292ea0ba8799b6c13d"
+    },
+    {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-18_V8.md",
+      "sha256": "89d3b80c367ee99b55fda1874039aa00266728f2fd55f0ac72d1643bc8666da2"
+    },
+    {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-18_V9.md",
+      "sha256": "1574cc372708d46884d4b81cd97f7d906ae5b06c06f155c2fe28fcb1dafda950"
+    },
+    {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-18_V10.md",
+      "sha256": "1085c9a8d3aa9e30e5e938d83d39fc689b0d4416708a54fa1e95ace35408f7a9"
+    },
+    {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-18_V11.md",
+      "sha256": "cf52009fc33cefdfc0d9279ecb31362efc6db8b1917eb0cf543cd73cd3376fe9"
+    },
+    {
+      "path": "reports/RNA-StableAI_HANDOFF_2026-10-18_V12.md",
+      "sha256": "632881962f95ef08d7f14b50b4abf4ba7d7b8b49ebe03b12d057da8f6e9e97be"
+    },
+    {
+      "path": "docs/third_party/STRAND_LICENSE.txt",
+      "sha256": "0243e3cdb666e3400cead0b67a64e59e2b4bbc2e339e565338fb7f7db9d15e9d"
+    },
+    {
+      "path": "docs/third_party/RiboNN_LICENSE.txt",
+      "sha256": "5a7572b7e61d99239428c326047e240a1693537e6cf12518309f4e1304007d60"
+    },
+    {
+      "path": "docs/third_party/RiboNN_MODEL_WEIGHTS_LICENSE.txt",
+      "sha256": "ce6b253151d10e66606a52a1c99ac08854051d912f01ad1d01331941310cc49b"
+    },
+    {
+      "path": "diagram_10182026.png",
+      "sha256": "baa831ce16df27ed44a41c2a3b481455a213b328122227b9b2a3820dda47cff1"
+    }
+  ],
+  "omitted": "Raw upstream datasets/article, weight ZIP/state dictionaries, full sequence/probability/prediction arrays, full run directories and installed environments remain local.",
+  "replay_limit": "Concise copies are not complete replay bundles. Drivers require exact ignored local artifacts; use newly versioned protocols for new acquisitions.",
+  "upstream_image_tags_before_requested_replacement": [
+    "<img width=\"1774\" height=\"887\" alt=\"image\" src=\"https://github.com/user-attachments/assets/4da2605a-3a6d-4130-9014-950dc75bd34d\" />"
+  ],
+  "upstream_markdown_images_before_requested_replacement": [],
+  "readme_image_update": {
+    "authorization": "User explicitly requested replacing the README diagram with workspace diagram_10182026.png during this publication task.",
+    "source_path": "/home/zyliu/Documents/rna-stable-ai/diagram_10182026.png",
+    "published_path": "diagram_10182026.png",
+    "sha256": "baa831ce16df27ed44a41c2a3b481455a213b328122227b9b2a3820dda47cff1",
+    "bytes": 1693715,
+    "old_picture_asset_policy": "Replace the single old README attachment reference as requested; do not delete any historical repository assets."
+  },
+  "publication_readme_sha256": "19e855d8705391ecfcb18494af8fbe40fa6ad3dc24cafc6ebd7b1270c48e6770",
+  "publication_roadmap_sha256": "bccbb37858f987af017b5512a25e324165f9921fe659ceeb3228ba7a5f3c5833",
+  "publication_verification": {
+    "focused_tests_passed": 91,
+    "seconds": 3.43,
+    "log": "reports/component-integration-publication-focused-tests-2026-10-18.log",
+    "full_suite": false,
+    "new_fit_or_inference": false
+  }
+}

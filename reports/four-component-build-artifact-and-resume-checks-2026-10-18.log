@@ -1,0 +1,21 @@
+.venv/bin/python scripts/build_four_component_integration.py --resume /home/zyliu/Documents/rna-stable-ai/results/four_component_resume_checks/20261019T041647.844691Z
+/home/zyliu/Documents/rna-stable-ai/results/four_component_resume_checks/20261019T041647.844691Z
+fold fixed_synthetic_64 ok 0.010966105997795239
+fold fixed_synthetic_400 ok 0.34554718200161005
+fold fixed_synthetic_1000 ok 3.1707106079993537
+fold fixed_synthetic_2000 ok 18.886571123002796
+fold fixed_synthetic_2999 ok 64.64415346600072
+toy 7 1.0391607991935734
+toy 1729 1.0391607991935734
+toy 20261015 1.0391607991935734
+/home/zyliu/Documents/rna-stable-ai/results/four_component_resume_checks/20261019T041647.844691Z/summary.json
+
+Exit code: 0
+{
+  "artifacts_verified": 19,
+  "transcripts_verified": 5,
+  "summary_sha256": "b3510cc384218957c99b92c79dac01a73d64290a42e9988c695fe2010ce2c54e",
+  "checks": "artifact and identity audit only; no inference or retraining"
+}
+Resume toy histories byte-identical; original summary unchanged.
+Corruption check rejected modified artifact; exact bytes restored.

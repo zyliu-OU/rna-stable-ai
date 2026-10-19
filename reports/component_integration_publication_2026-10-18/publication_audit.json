@@ -1,0 +1,34 @@
+{
+  "files": 67,
+  "python_files_ast_parsed": 18,
+  "local_markdown_links_verified": 134,
+  "summary_copies_sha256_verified": 16,
+  "diagram_sha256": "baa831ce16df27ed44a41c2a3b481455a213b328122227b9b2a3820dda47cff1",
+  "largest_files": [
+    [
+      1693715,
+      "diagram_10182026.png"
+    ],
+    [
+      34653,
+      "reports/component_integration_publication_2026-10-18/ribonn_summary.json"
+    ],
+    [
+      28758,
+      "reports/RNA-StableAI_HANDOFF_2026-10-18_V10.md"
+    ]
+  ],
+  "tracked_deletions": 0,
+  "readme_replacement": "Explicit user request; original PNG bytes preserved",
+  "staged_files": 68,
+  "whitespace_check": "Passed outside exact preserved upstream license text and deliberate two-space Markdown metadata breaks in V9\u2013V12; all exceptions independently checked byte-identical.",
+  "whitespace_preserved_paths": [
+    "docs/third_party/RiboNN_LICENSE.txt",
+    "docs/third_party/RiboNN_MODEL_WEIGHTS_LICENSE.txt",
+    "reports/RNA-StableAI_HANDOFF_2026-10-18_V9.md",
+    "reports/RNA-StableAI_HANDOFF_2026-10-18_V10.md",
+    "reports/RNA-StableAI_HANDOFF_2026-10-18_V11.md",
+    "reports/RNA-StableAI_HANDOFF_2026-10-18_V12.md"
+  ],
+  "freshly_fetched_remote_base": "e1758333075e1c7eaaeea3d22c55d79d1d462c59"
+}
