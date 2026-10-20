@@ -1,0 +1,164 @@
+{
+  "applied": true,
+  "authorized_by": "user, 2026-10-20: purge the retired model entirely, accepting that the three native-control evidence generators break; and remove all data at or above 3000 nt after re-issuing the requirement 5 checks on the in-scope subset",
+  "built_utc": "2026-10-20T20:24:02.524796+00:00",
+  "groups": {
+    "long_data": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "long_runs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_configs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_modules": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_runs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_scripts": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_tests": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "orphan_tests": {
+      "bytes": 31709,
+      "count": 14,
+      "entries": [
+        {
+          "bytes": 962,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_bprna_length_pilot.py",
+          "sha256": "caff8cb9cb1cf2842249aa1d6c33c25bb5f38d1e0e273efb9aa0f4de7266bcd9"
+        },
+        {
+          "bytes": 1599,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_bprna_training_subset.py",
+          "sha256": "650b6a60f592bcd8f1ba438b9f7404a3188544afbe8533c416e7a8e661ec4a32"
+        },
+        {
+          "bytes": 1532,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_bprna_training_subset_v2.py",
+          "sha256": "833aa23b7ccea8618e9eae1a7c17c974826159bdb8f73d4ad2df8a7196a3fcba"
+        },
+        {
+          "bytes": 2872,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_command_logging.py",
+          "sha256": "b4888194b3a113ab1f5c348a799dc38d041b11a818ace7f84cad2d3a2cee94e4"
+        },
+        {
+          "bytes": 2876,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_family_provenance_source.py",
+          "sha256": "c61c8efdf85747826a437bbc945da54108493a09371233ec8db073347acb32f1"
+        },
+        {
+          "bytes": 1054,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_fresh_structure_inventory.py",
+          "sha256": "1379b030e60597aaea4bdeeaaa6a905c12a9515d4e1ba81c4c3831b38c008151"
+        },
+        {
+          "bytes": 789,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_fresh_structure_metadata.py",
+          "sha256": "2a4e5cec646d38f38341d849d8a0ccaadad237c6e3e65a82043c64ac20d83624"
+        },
+        {
+          "bytes": 1070,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_fresh_structure_readiness.py",
+          "sha256": "a17bcb31026be6971ddaac5e578dc4297eaf77f149b1f47e965d12f81f58d80b"
+        },
+        {
+          "bytes": 1493,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_helix_ensemble_development.py",
+          "sha256": "efafd5355700c6d840203743330deed5afe6a8ebd0c2c84539f2b9cebaae7382"
+        },
+        {
+          "bytes": 4621,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_helix_replication_runner.py",
+          "sha256": "7c233f1e54d5592a41553c9cba6dedfa243eaa494783d93cb77a9125c48e43f4"
+        },
+        {
+          "bytes": 1606,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_long_validation_family.py",
+          "sha256": "7f746ff0d12f14941251babc1511c78824b0b3023133dc31d731405597fbdee2"
+        },
+        {
+          "bytes": 5524,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_reference_extension.py",
+          "sha256": "2ecce0b89d3079f0325eb5b6ca66cd147766732f3ca75202cb03ce0c20c42612"
+        },
+        {
+          "bytes": 3841,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_sequence_diverse_structure_panel.py",
+          "sha256": "67390542b9cbb6b5eb380c70d89130af7bdd18b8a2ac3ece04566083d15144b5"
+        },
+        {
+          "bytes": 1870,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_structure_pool_sequences.py",
+          "sha256": "2cbbc9edb9b8b386e22bcc59297ae7d174e89d3e68940e0269b884abbaf6b9c9"
+        }
+      ]
+    }
+  },
+  "maximum_length_nt": 3000,
+  "no_claim": [
+    "Removing the model's artifacts does not change any measurement.",
+    "The retirement decision rests on figures recorded in the gate chain, not on the artifacts removed here."
+  ],
+  "purpose": "Inventory of the retired learned pair model and of data above the active length scope, recorded before removal.",
+  "total_bytes": 31709,
+  "what_this_destroys": [
+    "The ability to regenerate gate v5's requirements 2, 3, 4 and 5 evidence from source. The artifacts remain; the generators do not.",
+    "Every learned-model run artifact. Most of results/ was never published, so those are not recoverable from git history.",
+    "The deferred-work status of material at or above 3000 nt, which docs/LENGTH_SCOPE.md previously recorded as preserved rather than deleted."
+  ],
+  "what_this_preserves": [
+    "Every figure the gate chain cites, because gates v4, v5 and v6 embed them as literal values rather than by reference.",
+    "The handoffs and reports, which are the narrative record of the retirement.",
+    "This manifest, which records what existed so a later reader can distinguish 'never run' from 'run and then deliberately removed'.",
+    "The native controls, the STRAND calibration, RiboNN, the design workflow and every artifact at or below the length scope."
+  ]
+}

@@ -1,9 +1,0 @@
-{
-  "started_utc": "2026-10-12T02:01:22.362584+00:00",
-  "resume": true,
-  "manifest_sha256": "ac958c9c3156257401b9796d40ebda812ad117f660bbac9cf4d7dbfee28bc3d2",
-  "original_deadline_utc": "2026-10-07T04:00:00+00:00",
-  "execution_deadline_utc": "2026-10-12T04:01:16+00:00",
-  "driver_sha256": "2104510168b2e0621e6d62f1c68e01c1526882a8433c38d4985c162c7922ad30",
-  "policy": "Execution deadline only; frozen child code, model, config and native retry policy remain bound to the original study."
-}

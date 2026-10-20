@@ -33,11 +33,16 @@ def test_all_three_legs_are_present_and_passed(payload):
     assert payload["resources"]
 
 
-def test_replay_covers_the_whole_frozen_cohort_for_both_methods(payload):
-    assert payload["cohort"]["records"] == 11
+def test_replay_covers_the_in_scope_cohort_for_both_methods(payload):
+    """6 in-scope records, not the frozen 11: data at or above 3000 nt was removed."""
+    assert payload["cohort"]["records"] == 6
+    assert payload["cohort"]["frozen_selection_size"] == 11
+    assert payload["cohort"]["excluded_as_out_of_scope"] == 5
+    assert "length_nt < 3000" in payload["cohort"]["in_scope_filter"]
+    assert "superseded, not corrected" in payload["cohort"]["why"]
     assert set(payload["methods"]) == {"LinearFold", "ViennaRNA"}
-    assert payload["replay"]["checked"] == 22
-    assert payload["replay"]["reproduced_exactly"] == 22
+    assert payload["replay"]["checked"] == 12
+    assert payload["replay"]["reproduced_exactly"] == 12
 
 
 def test_replay_compares_structure_and_energy_against_the_frozen_rows(payload):
@@ -53,7 +58,7 @@ def test_replay_compares_structure_and_energy_against_the_frozen_rows(payload):
 def test_constraint_decoder_enforced_real_pairs_on_every_record(payload):
     """An empty constraint string would pass trivially."""
     rows = payload["constraint_decoder"]["rows"]
-    assert len(rows) == 22
+    assert len(rows) == 12
     for row in rows:
         assert row["enforced_pairs"] > 0
         assert row["enforced_pairs_absent_from_fold"] == 0
@@ -81,6 +86,8 @@ def test_resources_are_measured_against_the_frozen_limits(payload):
         stats = payload["resources"][method]
         limits = stats["limits_from_frozen_config"]
         assert limits == {"timeout_seconds": 30, "memory_limit_gib": 4}
+        assert "out_of_band" not in stats["unconstrained_by_band"], \
+            "an out-of-scope record would mean long data survived the removal"
         for band in stats["unconstrained_by_band"].values():
             assert band["max_wall_seconds"] < limits["timeout_seconds"]
             assert band["max_peak_rss_mib"] < limits["memory_limit_gib"] * 1024

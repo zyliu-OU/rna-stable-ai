@@ -1,0 +1,1466 @@
+{
+  "applied": true,
+  "authorized_by": "user, 2026-10-20: purge the retired model entirely, accepting that the three native-control evidence generators break; and remove all data at or above 3000 nt after re-issuing the requirement 5 checks on the in-scope subset",
+  "built_utc": "2026-10-20T20:22:27.200008+00:00",
+  "groups": {
+    "long_data": {
+      "bytes": 30472,
+      "count": 4,
+      "entries": [
+        {
+          "bytes": 10147,
+          "files": 1,
+          "kind": "file",
+          "path": "data/synthetic/mixed_10000_seed1729.fasta",
+          "sha256": "a55359e78b44fb21fd02e6cb6f2ef8bff25eed560580c902b87ac8495b5da7af"
+        },
+        {
+          "bytes": 5084,
+          "files": 1,
+          "kind": "file",
+          "path": "data/synthetic/mixed_5000_seed1729.fasta",
+          "sha256": "0b901580f93f129a74b5e91f22c9edd62003f72769275e13b40b4e0bd4254d50"
+        },
+        {
+          "bytes": 10152,
+          "files": 1,
+          "kind": "file",
+          "path": "data/synthetic/structured_10000_seed1729.fasta",
+          "sha256": "a807b74af6b372d52ca2f7a96c922255295550a5f6be7c619eb196fd85682728"
+        },
+        {
+          "bytes": 5089,
+          "files": 1,
+          "kind": "file",
+          "path": "data/synthetic/structured_5000_seed1729.fasta",
+          "sha256": "04307a82bdf588eb6107340b90f13b40810161a6ff4c89266b8c5f726d7a602c"
+        }
+      ]
+    },
+    "long_runs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_configs": {
+      "bytes": 7414,
+      "count": 21,
+      "entries": [
+        {
+          "bytes": 446,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/bprna_long_training_smoke_2026-10-16.json",
+          "sha256": "a3af76843cb17d473456baf38e3ebbb4574f44e3080b8d4f69244239400bb0cf"
+        },
+        {
+          "bytes": 306,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/checkpoint_prior_pilot.json",
+          "sha256": "562bb3c040d40d3368f0bde4c4393e639b1841e6b275fd50f07b9134eff95dc6"
+        },
+        {
+          "bytes": 263,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/context_development.json",
+          "sha256": "ea7ab46daac0785d096f1739d077a49d709044490056f9842fc50e214885c4eb"
+        },
+        {
+          "bytes": 319,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/context_development_balanced.json",
+          "sha256": "33f1e40658ae019f8e3577acbf6ae93541a45c02e746566ce0f14c42fd8cdf77"
+        },
+        {
+          "bytes": 284,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/context_development_span128.json",
+          "sha256": "527819522d4ffede0cff5a092f1167b7fc385af9ac2430036e83bf5c667c3de3"
+        },
+        {
+          "bytes": 72,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/crw_development_data.json",
+          "sha256": "015cf318fae0bf8d519cc3507cba40a677e24afac070d067691362027a73dd8e"
+        },
+        {
+          "bytes": 378,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/evaluation_equal_budget.json",
+          "sha256": "cb0bf5673382161f8ae6a0b393b302b525ef726cbf6b1e51142c0280a19185e7"
+        },
+        {
+          "bytes": 411,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/evaluation_equal_budget_long.json",
+          "sha256": "2868c55e489e7f0d8cbef3058800209f83026d8a81e41e4f950e7a8d5853ced7"
+        },
+        {
+          "bytes": 314,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/evaluation_replication.json",
+          "sha256": "d1499ed05f4445296d9568e3a237d3451935ca0f7f7f74faedeeb888333e701b"
+        },
+        {
+          "bytes": 253,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/evaluation_sweep.json",
+          "sha256": "c27d01ed09061d57411b3a4eb2b447b7e42648dc0526c6672e8aca14876f3216"
+        },
+        {
+          "bytes": 380,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/exact_comparative_development.json",
+          "sha256": "6dac5985d7320c16e2ac59d55b2954aaa8014ded425ee944c4a69f803f8e2ea3"
+        },
+        {
+          "bytes": 291,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/experimental_pilot.json",
+          "sha256": "83793cc1c76f49743507313b7b50af125257623a39cee617ad0f44dd098cc495"
+        },
+        {
+          "bytes": 537,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/family_trial.json",
+          "sha256": "1de6cdd9029b0da6576ec628f1bfeb6d3da3486bc736960f711dc0b680da7e3a"
+        },
+        {
+          "bytes": 317,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/global_sparse_development.json",
+          "sha256": "4902144740da9429276893cdf4322c3e0197402ae3a36837c65894ba4574a62c"
+        },
+        {
+          "bytes": 425,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/helix_comparative_development.json",
+          "sha256": "54bd2279e8b25c4a3a530a8938c94ed4030eb502ed5d221610bebb9286b3c70b"
+        },
+        {
+          "bytes": 410,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/long_comparative_development.json",
+          "sha256": "c38912209d622a3acc5384af31b1c52cdeb81d816311680301bb8909cf41d2c4"
+        },
+        {
+          "bytes": 232,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/pair_development.json",
+          "sha256": "251aee0426bf31ce018ce68753c2cf0917911b15b1644a3c4a723d066584e629"
+        },
+        {
+          "bytes": 197,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/pair_head_development_study.json",
+          "sha256": "b0042d46f0bfa4e39294bc8d156388184ba8db13efbb154ee794ac27dbd2a729"
+        },
+        {
+          "bytes": 598,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/sampled_comparative_development.json",
+          "sha256": "966e98ca4018a226bb051fab55a12b2465967cd687e7abcd04e0c517e0232686"
+        },
+        {
+          "bytes": 424,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/stack_comparative_development.json",
+          "sha256": "e79b02dbe6d380913088616501d425f6644d2130b67d1e7329a798cf93d852fd"
+        },
+        {
+          "bytes": 557,
+          "files": 1,
+          "kind": "file",
+          "path": "configs/structured_comparative_development.json",
+          "sha256": "fb225c57a4b86d43fa38eaab8b37d0aff24584692defca3fe3bc4f41fa2d6bcd"
+        }
+      ]
+    },
+    "model_modules": {
+      "bytes": 69405,
+      "count": 13,
+      "entries": [
+        {
+          "bytes": 4344,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/checkpoint_prior.py",
+          "sha256": "c4c26db0852cbc7e26cc78c2ff55e02e4aa412bd34f5b455f55fee3820fc374b"
+        },
+        {
+          "bytes": 11753,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/context_training.py",
+          "sha256": "5e67f8d93f2b69b19dc94c5573301de9581621ef24e859309a7c9c02072c1fc1"
+        },
+        {
+          "bytes": 902,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/full_pair_supervision.py",
+          "sha256": "180ae74fffb21c114e561306bffe6de957d7435d104af8b985e2cddc2b1f7f61"
+        },
+        {
+          "bytes": 3106,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/hard_negative_supervision.py",
+          "sha256": "f0d4c4cb582fedf97b81f583d53d222239264cde9660d057e0c0c0dc0e7ea971"
+        },
+        {
+          "bytes": 5631,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/long_training_data.py",
+          "sha256": "d1fcf8d86ae6bdd311ead531348c579eb2410ac2a6551d55de62ed710217f139"
+        },
+        {
+          "bytes": 1093,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/negative_sampling.py",
+          "sha256": "8d998a8520169c6ea5c99f93ce316b58c4b66119f0be2ce2ac3f5c7563d4ccb9"
+        },
+        {
+          "bytes": 10748,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/pair_head_study.py",
+          "sha256": "bf0daa3788e0344098e36ee93c02379b8f805459b888bea3ad4da8ea8f942fde"
+        },
+        {
+          "bytes": 4507,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/pair_model.py",
+          "sha256": "9d2b406acf7f1147dcbfb735281e899d11c98af9f804238a577a26c0162b4b02"
+        },
+        {
+          "bytes": 7264,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/pair_set_training.py",
+          "sha256": "ca57635ab6b14e3767ce085e8e4799dd4185dcd751d8535c1ba9b928ec9cb25a"
+        },
+        {
+          "bytes": 7263,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/penalty_development.py",
+          "sha256": "4c6a2988fa554e76db8ad14e7038aa397ac4885fe3251985b5006fafd70960c8"
+        },
+        {
+          "bytes": 2782,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/sampled_pair_supervision.py",
+          "sha256": "4806c5bdb3f29486c79085e727518ec842accf63d0a0fb1fcf2f0442ddc57837"
+        },
+        {
+          "bytes": 6698,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/structure_model.py",
+          "sha256": "01696835cfee1e7f9cd35f6f0634f27a9fec8add90ee8b4509bf83f4874ce8fe"
+        },
+        {
+          "bytes": 3314,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/structured_pair_loss.py",
+          "sha256": "e94c96a64dc2fbe4390f66264478827e7dddda6b105f2c8845b63a95bbc6c7e6"
+        }
+      ]
+    },
+    "model_runs": {
+      "bytes": 235287499,
+      "count": 75,
+      "entries": [
+        {
+          "bytes": 57672,
+          "files": 4,
+          "kind": "directory",
+          "path": "results/banded_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 790,
+          "files": 1,
+          "kind": "directory",
+          "path": "results/bprna_candidate_clans_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 12220,
+          "files": 2,
+          "kind": "directory",
+          "path": "results/bprna_candidate_clans_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 1169,
+          "files": 1,
+          "kind": "directory",
+          "path": "results/bprna_candidate_sequence_binding_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 179244,
+          "files": 2,
+          "kind": "directory",
+          "path": "results/bprna_candidate_sequence_binding_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 1628,
+          "files": 1,
+          "kind": "directory",
+          "path": "results/bprna_family_separated_candidates_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 92848,
+          "files": 2,
+          "kind": "directory",
+          "path": "results/bprna_family_separated_candidates_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 1832,
+          "files": 1,
+          "kind": "directory",
+          "path": "results/bprna_family_separated_candidates_v2_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 89994,
+          "files": 2,
+          "kind": "directory",
+          "path": "results/bprna_family_separated_candidates_v2_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 1658,
+          "files": 1,
+          "kind": "directory",
+          "path": "results/bprna_family_separated_candidates_v3_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 89834,
+          "files": 2,
+          "kind": "directory",
+          "path": "results/bprna_family_separated_candidates_v3_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 19419936,
+          "files": 6,
+          "kind": "directory",
+          "path": "results/bprna_long_training_smoke_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 1061224,
+          "files": 5,
+          "kind": "directory",
+          "path": "results/bprna_long_training_smoke_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 1721764,
+          "files": 5,
+          "kind": "directory",
+          "path": "results/candidate_budget_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 397660,
+          "files": 4,
+          "kind": "directory",
+          "path": "results/candidate_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 150717,
+          "files": 7,
+          "kind": "directory",
+          "path": "results/candidate_diagnostic_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 70926,
+          "files": 1,
+          "kind": "directory",
+          "path": "results/checkpoint_prior_comparison_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 32021739,
+          "files": 717,
+          "kind": "directory",
+          "path": "results/checkpoint_prior_pilot_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 133038,
+          "files": 15,
+          "kind": "directory",
+          "path": "results/checkpoint_prior_replication_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 117753,
+          "files": 2,
+          "kind": "directory",
+          "path": "results/context_comparison_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 1042285,
+          "files": 51,
+          "kind": "directory",
+          "path": "results/context_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 781501,
+          "files": 56,
+          "kind": "directory",
+          "path": "results/context_family_trial_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 158652,
+          "files": 55,
+          "kind": "directory",
+          "path": "results/context_inference_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 42709,
+          "files": 5,
+          "kind": "directory",
+          "path": "results/context_scalability_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 555740,
+          "files": 4,
+          "kind": "directory",
+          "path": "results/development_slices_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 8602795,
+          "files": 682,
+          "kind": "directory",
+          "path": "results/equal_budget_batch_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 4914902,
+          "files": 719,
+          "kind": "directory",
+          "path": "results/equal_budget_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 569983,
+          "files": 18,
+          "kind": "directory",
+          "path": "results/exact_comparative_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 1204945,
+          "files": 9,
+          "kind": "directory",
+          "path": "results/exact_sparse_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 611383,
+          "files": 55,
+          "kind": "directory",
+          "path": "results/experimental_pilot_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 16405956,
+          "files": 6,
+          "kind": "directory",
+          "path": "results/family_coverage_development_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 673833,
+          "files": 6,
+          "kind": "directory",
+          "path": "results/family_coverage_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 491113,
+          "files": 48,
+          "kind": "directory",
+          "path": "results/family_trial_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 347628,
+          "files": 17,
+          "kind": "directory",
+          "path": "results/global_sparse_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 570453,
+          "files": 18,
+          "kind": "directory",
+          "path": "results/helix_comparative_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 44584,
+          "files": 4,
+          "kind": "directory",
+          "path": "results/helix_ensemble_development_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 29799,
+          "files": 6,
+          "kind": "directory",
+          "path": "results/helix_ensemble_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 10996,
+          "files": 4,
+          "kind": "directory",
+          "path": "results/helix_ensemble_development_v2_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 28925,
+          "files": 6,
+          "kind": "directory",
+          "path": "results/helix_ensemble_development_v2_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 2989016,
+          "files": 39,
+          "kind": "directory",
+          "path": "results/helix_objective_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 71663,
+          "files": 1,
+          "kind": "directory",
+          "path": "results/helix_prior_execution_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 66992614,
+          "files": 1794,
+          "kind": "directory",
+          "path": "results/helix_prior_replication_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 6232,
+          "files": 1,
+          "kind": "directory",
+          "path": "results/long_candidate_budget_matched_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 1131806,
+          "files": 14,
+          "kind": "directory",
+          "path": "results/long_candidate_budget_matched_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 2986,
+          "files": 1,
+          "kind": "directory",
+          "path": "results/long_candidate_budget_pilot_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 162808,
+          "files": 3,
+          "kind": "directory",
+          "path": "results/long_candidate_budget_pilot_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 2989,
+          "files": 1,
+          "kind": "directory",
+          "path": "results/long_candidate_budget_pilot_v2_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 189367,
+          "files": 3,
+          "kind": "directory",
+          "path": "results/long_candidate_budget_pilot_v2_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 755022,
+          "files": 20,
+          "kind": "directory",
+          "path": "results/long_comparative_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 335910,
+          "files": 5,
+          "kind": "directory",
+          "path": "results/long_pair_candidate_diagnostic_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 40064,
+          "files": 4,
+          "kind": "directory",
+          "path": "results/long_pair_candidate_diagnostic_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 66097,
+          "files": 5,
+          "kind": "directory",
+          "path": "results/long_population_training_data_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 7903,
+          "files": 1,
+          "kind": "directory",
+          "path": "results/long_score_offset_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 1473378,
+          "files": 14,
+          "kind": "directory",
+          "path": "results/long_score_offset_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 126331,
+          "files": 16,
+          "kind": "directory",
+          "path": "results/pair_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 5246056,
+          "files": 177,
+          "kind": "directory",
+          "path": "results/pair_head_development_study_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 2377110,
+          "files": 58,
+          "kind": "directory",
+          "path": "results/pair_penalty_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 2973310,
+          "files": 62,
+          "kind": "directory",
+          "path": "results/population_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 784250,
+          "files": 21,
+          "kind": "directory",
+          "path": "results/population_resource_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 1532,
+          "files": 1,
+          "kind": "directory",
+          "path": "results/rfam_seed_long_candidate_audit_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 188392,
+          "files": 2,
+          "kind": "directory",
+          "path": "results/rfam_seed_long_candidate_audit_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 813601,
+          "files": 20,
+          "kind": "directory",
+          "path": "results/sampled_comparative_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 1063622,
+          "files": 6,
+          "kind": "directory",
+          "path": "results/sampled_long_development_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 925716,
+          "files": 27,
+          "kind": "directory",
+          "path": "results/sampled_long_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 569913,
+          "files": 18,
+          "kind": "directory",
+          "path": "results/stack_comparative_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 1270083,
+          "files": 19,
+          "kind": "directory",
+          "path": "results/structured_comparative_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 36756696,
+          "files": 4247,
+          "kind": "directory",
+          "path": "results/sweep_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 1364062,
+          "files": 4,
+          "kind": "directory",
+          "path": "results/under3000_development_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 772410,
+          "files": 26,
+          "kind": "directory",
+          "path": "results/under3000_development_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 899833,
+          "files": 4,
+          "kind": "directory",
+          "path": "results/under3000_endpoint_assignment_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 449905,
+          "files": 14,
+          "kind": "directory",
+          "path": "results/under3000_endpoint_assignment_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 899764,
+          "files": 4,
+          "kind": "directory",
+          "path": "results/under3000_endpoint_ranking_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 446789,
+          "files": 15,
+          "kind": "directory",
+          "path": "results/under3000_endpoint_ranking_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 900549,
+          "files": 4,
+          "kind": "directory",
+          "path": "results/under3000_hard_negative_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 9517892,
+          "files": 343,
+          "kind": "directory",
+          "path": "results/under3000_hard_negative_runs",
+          "sha256": null
+        }
+      ]
+    },
+    "model_scripts": {
+      "bytes": 580229,
+      "count": 64,
+      "entries": [
+        {
+          "bytes": 8168,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/analyze_candidate_development.py",
+          "sha256": "0e3e4ab764e0af46c288d9e6cdf802bb4fc666d30488ce60b46ee6e8e6a83947"
+        },
+        {
+          "bytes": 15970,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/compare_candidate_budgets.py",
+          "sha256": "17e1cc249da7649c143f7bb11a4ef7f3185b2ec2ed150b9b13b6127c8903f549"
+        },
+        {
+          "bytes": 5548,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/diagnose_expanded_candidates.py",
+          "sha256": "3b157a51c647463afa5768f09c0f25585209e5379a917b5d9df4020c463bac48"
+        },
+        {
+          "bytes": 8784,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/diagnose_long_pair_candidates.py",
+          "sha256": "d6203770f1d0c6e3029f730eede96214bc3d21d4d513d233809862b0bf65a4a8"
+        },
+        {
+          "bytes": 10614,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/evaluate_bprna_five_clan_feasibility.py",
+          "sha256": "a7951c074f9c2798e3700dc9eaf64ecae0a4318d4d8981248e920b364f40e92a"
+        },
+        {
+          "bytes": 9897,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/evaluate_long_length_checkpoints.py",
+          "sha256": "5a65780ceae22a1ef48914300eff04a83cedb373eb245a1a12e0444847edc3b0"
+        },
+        {
+          "bytes": 10586,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/evaluate_long_length_checkpoints_v2.py",
+          "sha256": "e773a70ec21cfcd27c5b9f0d73789833dd246c8848c7b512d51c1d2ce2dfd11a"
+        },
+        {
+          "bytes": 10724,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/evaluate_long_length_checkpoints_v3.py",
+          "sha256": "285c62e7ef3953c4bc217ba5fbe33dbbdcb4579912c356975b055c66837ac3a2"
+        },
+        {
+          "bytes": 10645,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/expand_band_native_controls.py",
+          "sha256": "20b51df4b58e2e084975980236da7005d51c5a455e9b536e0311f04bd54155c8"
+        },
+        {
+          "bytes": 10152,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/extend_long_validation_coverage.py",
+          "sha256": "47dcfbaeef0c7806b237167814771fcc4debb4801f8fc8b8e558da55c5fd06cd"
+        },
+        {
+          "bytes": 14856,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/prepare_bprna_training_subset.py",
+          "sha256": "e5dd8e6e933590c3539d73ce1a3ecf5920c8725cc76583b109eac19470f015d4"
+        },
+        {
+          "bytes": 8104,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/prepare_long_population_training.py",
+          "sha256": "be7a597d5e9db371331bf1a6e9cca49c136125fea7f5fa191c0bacff1c0bf76d"
+        },
+        {
+          "bytes": 10336,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/prepare_long_validation_family.py",
+          "sha256": "f8a78019a0a07959bf17b1580950304de3f37d3a59b8db6eeb01dad68d814d93"
+        },
+        {
+          "bytes": 10351,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/prepare_long_validation_family_v2.py",
+          "sha256": "fd92f46fd2578eb27243c943b8df1dd5852252c6b65cdd21300591464a6654cc"
+        },
+        {
+          "bytes": 4542,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_banded_development.py",
+          "sha256": "6da7a1dfd349449b6e2f3debc3827203805447c8c9c4567eeb5d56b73f0ad9bb"
+        },
+        {
+          "bytes": 13990,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_bprna_length_pilot.py",
+          "sha256": "842c48ea6914c0cae5ecf2caa298a4b599b628c8408b6fa4d85950ce9ef3f4d0"
+        },
+        {
+          "bytes": 8399,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_bprna_long_training_smoke.py",
+          "sha256": "832365a8195ce374c551032d0666404b1742464e5ec8764b32f05429fb5a9841"
+        },
+        {
+          "bytes": 17038,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_checkpoint_prior_pilot.py",
+          "sha256": "5f5e8867dc12805d1eabb79ca654fb1dd7e9bd645501691129c8252b24c1243a"
+        },
+        {
+          "bytes": 8420,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_context_family_trial.py",
+          "sha256": "9897a14c8f5c561b6b3511a17f5ba822e1fb2750b2c9adee490c09302ff8e814"
+        },
+        {
+          "bytes": 6152,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_experimental_pilot.py",
+          "sha256": "b588392622b6812b8a71f889b6152b0141c5c04b8114e2c9862d6007a293e7c5"
+        },
+        {
+          "bytes": 16155,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_family_pair_set_training.py",
+          "sha256": "9217f31bc81efc175925bc994741c23a230f8b25b32dca3655a71522cb3819b2"
+        },
+        {
+          "bytes": 9338,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_family_trial.py",
+          "sha256": "05c5bbb6cf063577c3f9a58292b73f32f4664916e668542c2f46462e01700c5d"
+        },
+        {
+          "bytes": 6128,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_global_sparse_scalability.py",
+          "sha256": "10eb254a3903e686eec3136b4459703068f5ab9ef5e273e0b811346143e02db6"
+        },
+        {
+          "bytes": 13788,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_helix_ensemble_development.py",
+          "sha256": "f6388f6617c9b795b182c174cf16382ef642c209b594a6bf3d7ad49c9d2a331f"
+        },
+        {
+          "bytes": 31088,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_helix_objective_development.py",
+          "sha256": "c3dd0c06d0c6585fc4075b5489ea48ef6e40b6bb383eff7c55a9a07216bf0e9b"
+        },
+        {
+          "bytes": 10814,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_pair_head_development_study.py",
+          "sha256": "b46a88fa2542592f76a9087ceb1eff4f74aac2774233757e7cd9a69db931d598"
+        },
+        {
+          "bytes": 6323,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_pair_penalty_development.py",
+          "sha256": "e6a810e7f2a01d5339ce9649e0d084350b8c42b8e4febd4961c7d105f453d36d"
+        },
+        {
+          "bytes": 8801,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_under3000_development.py",
+          "sha256": "7abb6e364893cbc2701a0187a827cd43012b3bb8315a38a37e6499558e25f5de"
+        },
+        {
+          "bytes": 2634,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/smoke_sampled_pair_training.py",
+          "sha256": "7a96221d3eb0189aa3ae0c120eb476242c1a0c6aaf089caa7088b5bfa32d7d35"
+        },
+        {
+          "bytes": 10899,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/study_long_candidate_budget.py",
+          "sha256": "e6de8ff3085becac5f59effebeb748ee79692a2630ff494da370fba1d14cbf39"
+        },
+        {
+          "bytes": 12623,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/study_long_candidate_budget_matched.py",
+          "sha256": "b3eaa320f56ba8321d7600c45e8aabd23d0773ebff289ff9fdcee9077c84e80d"
+        },
+        {
+          "bytes": 9768,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/study_long_score_offset.py",
+          "sha256": "752cd23c42910267502267c6d40c573a7e81f8362ba4d88c388cd6586a801ff0"
+        },
+        {
+          "bytes": 14497,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/study_under3000_endpoint_assignment.py",
+          "sha256": "d39b9bf2f90a4f9a75f55b91093abbf33037e905bba31a3e99770fa49b5f12a7"
+        },
+        {
+          "bytes": 13484,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/study_under3000_endpoint_ranking.py",
+          "sha256": "03af9ebc428ac83b882133eec6a9a481f9200775dd855cb7676e5d6ce64b64f6"
+        },
+        {
+          "bytes": 16916,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/study_under3000_hard_negatives.py",
+          "sha256": "84b1330769edc1846f1271331670970eef8cba26c492f19bbaafa84ed3dd7435"
+        },
+        {
+          "bytes": 5975,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/summarize_family_pair_set_training.py",
+          "sha256": "2add034de1d93f7f1e3b04e17e09b33bef0cdea5e1234b51a601f7bb6b434d65"
+        },
+        {
+          "bytes": 5223,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/train_context_development.py",
+          "sha256": "f9c0fd95883c29101bdb900e0a46f2ff537cd6329ab5753fb5cc08cb79087250"
+        },
+        {
+          "bytes": 4458,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/train_exact_comparative_development.py",
+          "sha256": "7d23529ba06a8624cc4c2e5bcf026613e50aba5fefc801c382cda5b5677f7720"
+        },
+        {
+          "bytes": 4308,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/train_global_sparse_development.py",
+          "sha256": "fdedf7f67d9e0bce1c241c071cafb35fb72181f77795da2b15f190749f7d7472"
+        },
+        {
+          "bytes": 4650,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/train_helix_comparative_development.py",
+          "sha256": "aa2337c5feb766a8d0b024f76032cf477fd69e225cc39995d0e5de2263b99171"
+        },
+        {
+          "bytes": 5681,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/train_long_comparative_development.py",
+          "sha256": "602de17dfc7531daf33825acbc176d3359a6159997441ab9bebc6550d8e837fa"
+        },
+        {
+          "bytes": 8993,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/train_pair_development.py",
+          "sha256": "ef1c8bed0c6648fbd92a29fd478a2072d835504c76a6132eb13e8eff6b5cd76d"
+        },
+        {
+          "bytes": 6488,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/train_sampled_comparative_development.py",
+          "sha256": "090ac8263f576126a067080774f5f57e10c00acb1c4337d90a31456d47d92d22"
+        },
+        {
+          "bytes": 12508,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/train_sampled_long_development.py",
+          "sha256": "e51a68c4bc5378e0f2d2ad0342998cc312d3a9bd4de71a0deaf420ffb4033d12"
+        },
+        {
+          "bytes": 4597,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/train_stack_comparative_development.py",
+          "sha256": "599e01cad5b026e8a6f6ab4384c8dad31416e61f3ba2892ce7a12d811db047bb"
+        },
+        {
+          "bytes": 6197,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/train_structured_comparative_development.py",
+          "sha256": "c9edd2f699bbb9cb66160a2e623cc74e32b150a57d5acfc1f179821e9ed818b4"
+        },
+        {
+          "bytes": 4077,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_banded_development.py",
+          "sha256": "cb45dea7b2ec7e81648ffd9e39527244025129e3d06240d7a7497ebf263f6134"
+        },
+        {
+          "bytes": 11274,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_checkpoint_prior_pilot.py",
+          "sha256": "9b4a22e0e1169cfa66f09fdbeadc904ea2c1562adcc88793b24c622f04587aed"
+        },
+        {
+          "bytes": 6338,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_context_development.py",
+          "sha256": "ea8e58b11f39e6c4b5dc3cd5ca99c53060910a4a23ee85824151d0db69fda5a4"
+        },
+        {
+          "bytes": 10386,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_context_family_trial.py",
+          "sha256": "394714bad9b20b957fba2e37ecabdb49afcb692dad226baabf378db7e06184bb"
+        },
+        {
+          "bytes": 6523,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_exact_comparative_development.py",
+          "sha256": "4d33c2d346dff1ad2e65ec10d1b18b1cdfddaa9bc95046459e386098a444a749"
+        },
+        {
+          "bytes": 9310,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_experimental_pilot.py",
+          "sha256": "d3f02d49ec579a359285a259fc98d4cc693222c4b598293d0cc4e623c65aee78"
+        },
+        {
+          "bytes": 9029,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_family_trial.py",
+          "sha256": "a5c4f320851e3d7bddfedaaae3711e0ed15ec5c8c350546fdde2c74556846563"
+        },
+        {
+          "bytes": 6421,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_global_sparse_development.py",
+          "sha256": "ab784016bb3ee14b23661e0717c08243acfe5f146a41e8f324e84ff71bef105f"
+        },
+        {
+          "bytes": 7058,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_helix_comparative_development.py",
+          "sha256": "3217296e71fc4b45efdefa218b0693749707c69954ed186dc19da8a002202a78"
+        },
+        {
+          "bytes": 7490,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_long_comparative_development.py",
+          "sha256": "42f66eebf86d662b70bc17a0da217d2c47a39a1225860d099ffd8287e06a768e"
+        },
+        {
+          "bytes": 3928,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_long_length_checkpoints_v2.py",
+          "sha256": "9d86254a5f721dc585982d7c2a661f39893d1c61a5d127d16d359820c3f703de"
+        },
+        {
+          "bytes": 3942,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_long_length_checkpoints_v3.py",
+          "sha256": "9fd1ca11bcc3a2db85aeb4e25b8da2044adac35ee155927dc9255f7fe0335f06"
+        },
+        {
+          "bytes": 5323,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_long_validation_coverage.py",
+          "sha256": "3840b258e4a2e0ff9a44d593a5f39b7555b9e7ce68f17b253eebf3e221899d87"
+        },
+        {
+          "bytes": 5111,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_long_validation_family.py",
+          "sha256": "a4a3ebb4c56d48aa300315e3dfa76b513e6850f8c4823aa051313df0be0a85ae"
+        },
+        {
+          "bytes": 5604,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_pair_development.py",
+          "sha256": "30af47542b6cdb53a441832f72182915caddcd29a8d9a5bd48e4b23cdad76211"
+        },
+        {
+          "bytes": 7099,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_sampled_comparative_development.py",
+          "sha256": "d14346f045d311a4bccd420e5ddb987ec5dfe867ab12e430dc391c5d10b74223"
+        },
+        {
+          "bytes": 6950,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_stack_comparative_development.py",
+          "sha256": "6a0e5e8d80d4e892bc0fa536c96e43548b1959cc6fa16e2d66b5803c28bf61fd"
+        },
+        {
+          "bytes": 8756,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_structured_comparative_development.py",
+          "sha256": "2a8886c4771782485fcb081c87e3c32e1397da5c0b7be63ff40fc388abbfaa11"
+        }
+      ]
+    },
+    "model_tests": {
+      "bytes": 98554,
+      "count": 23,
+      "entries": [
+        {
+          "bytes": 6382,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_banded_pairs.py",
+          "sha256": "48a9069c4544f6fe6084eadcf2f848d0ee1ba8b467b3bc0759a21c5bce88feb4"
+        },
+        {
+          "bytes": 2381,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_checkpoint_prior.py",
+          "sha256": "21def3526ec8720fbfec910a5b3ac56dc9d687bc85194bd81425ca0432133b85"
+        },
+        {
+          "bytes": 12909,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_context_training_loss_callback.py",
+          "sha256": "d01ca5fe7f6f98f10ec8584e44cae564f86870266b1d273f3ff7a2d94d3fb777"
+        },
+        {
+          "bytes": 3731,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_crw_development_data.py",
+          "sha256": "04d9b5a82576a0365da788924bebba7f67c22953a40b8a35fb5a63858aafcd42"
+        },
+        {
+          "bytes": 3351,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_exact_sparse_pairs.py",
+          "sha256": "8eab12534915e6682d3360dc6e8e4bc1c8fde832f53da702617c34715e59a31e"
+        },
+        {
+          "bytes": 5926,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_experimental.py",
+          "sha256": "08fa3546c9966c0a659caadaa52e8e8eeffe4541c4bdeedf2020db03d71fd560"
+        },
+        {
+          "bytes": 1353,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_family_pair_set_training.py",
+          "sha256": "a0fb7193c9a61be97008f14a61f1bfcd3d64a407a807fbbc128b803d5f0cdd68"
+        },
+        {
+          "bytes": 3890,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_global_sparse_pairs.py",
+          "sha256": "47ba194fda6d1a07913169100d7809dd9c687db89587899e31825aa8acdbd1b3"
+        },
+        {
+          "bytes": 2707,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_hard_negative_supervision.py",
+          "sha256": "a3672d8eb8a4981926c38fe430b3210fd23d0ea81fa3f815d8597be7e058d29d"
+        },
+        {
+          "bytes": 5598,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_helix_objective_development.py",
+          "sha256": "a66cb864462b67f42c07b6b1fb02264094531554d57996272b74582cde985d04"
+        },
+        {
+          "bytes": 3813,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_helix_pairs.py",
+          "sha256": "566e454b302ef591ed296324d2a50cdf15aa93c0bdc1e1f27ac3e8e3656eb0ea"
+        },
+        {
+          "bytes": 1842,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_long_training_data.py",
+          "sha256": "f81232c9a074bdcacaea9325d4a22149abc8bd8c149866cc2524a010c032afa9"
+        },
+        {
+          "bytes": 2043,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_negative_sampling.py",
+          "sha256": "cb9a01bfb634de94ecf26ce35c841b098a48c6d6f3d39ca4f0ecadfdecb0928e"
+        },
+        {
+          "bytes": 9002,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_pair_development.py",
+          "sha256": "c93f5b66eb870e3ddf95068020d035507211a63347cbda6c05e27e8cb0320588"
+        },
+        {
+          "bytes": 3654,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_pair_head_study.py",
+          "sha256": "585adcd90b96ce272d9ef2eb0a06555a74395d12c7def91917333e7081bda3f8"
+        },
+        {
+          "bytes": 7254,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_pooled_native.py",
+          "sha256": "4374d0e2a2ff99f5f637edc45d0f40d836132335638bb0ebd6712015766ef669"
+        },
+        {
+          "bytes": 3248,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_pooled_proposals.py",
+          "sha256": "56632a12978ee29066f601158486a12a4c2dfdb07385b5ab2954313efc7e3860"
+        },
+        {
+          "bytes": 2273,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_population_resource.py",
+          "sha256": "82f1abf797cda2ecde34a2dc050825eec239c12a097cca43437405c52cab990a"
+        },
+        {
+          "bytes": 4932,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_population_sampling.py",
+          "sha256": "13a83542f928000befcbafa6c8428548d5c09f95137ba9ed0890be8f8147a7d0"
+        },
+        {
+          "bytes": 2391,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_sampled_pair_supervision.py",
+          "sha256": "01d55262acb30a21146fb7985a2ff36fae5b8e4af81651154830d1d0758804d1"
+        },
+        {
+          "bytes": 2809,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_sparse_refinement.py",
+          "sha256": "c246f70e1f912fcf30b9a69135dfb1411c38fe13d98d88a8a82b4a4270bb48cd"
+        },
+        {
+          "bytes": 3328,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_stack_pairs.py",
+          "sha256": "a048c900cc173265e27f97c1ef78ce15f2bcdc009a303e71a4b33d21ccc15c84"
+        },
+        {
+          "bytes": 3737,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_structured_pair_loss.py",
+          "sha256": "9dc2c0868f58e6528407b778e794591c8894fcee7c187f2c903ff07afd322eb9"
+        }
+      ]
+    }
+  },
+  "maximum_length_nt": 3000,
+  "no_claim": [
+    "Removing the model's artifacts does not change any measurement.",
+    "The retirement decision rests on figures recorded in the gate chain, not on the artifacts removed here."
+  ],
+  "purpose": "Inventory of the retired learned pair model and of data above the active length scope, recorded before removal.",
+  "total_bytes": 236073573,
+  "what_this_destroys": [
+    "The ability to regenerate gate v5's requirements 2, 3, 4 and 5 evidence from source. The artifacts remain; the generators do not.",
+    "Every learned-model run artifact. Most of results/ was never published, so those are not recoverable from git history.",
+    "The deferred-work status of material at or above 3000 nt, which docs/LENGTH_SCOPE.md previously recorded as preserved rather than deleted."
+  ],
+  "what_this_preserves": [
+    "Every figure the gate chain cites, because gates v4, v5 and v6 embed them as literal values rather than by reference.",
+    "The handoffs and reports, which are the narrative record of the retirement.",
+    "This manifest, which records what existed so a later reader can distinguish 'never run' from 'run and then deliberately removed'.",
+    "The native controls, the STRAND calibration, RiboNN, the design workflow and every artifact at or below the length scope."
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "applied": true,
+  "authorized_by": "user, 2026-10-20: purge the retired model entirely, accepting that the three native-control evidence generators break; and remove all data at or above 3000 nt after re-issuing the requirement 5 checks on the in-scope subset",
+  "built_utc": "2026-10-20T20:23:23.113006+00:00",
+  "groups": {
+    "long_data": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "long_runs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_configs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_modules": {
+      "bytes": 93451,
+      "count": 16,
+      "entries": [
+        {
+          "bytes": 4908,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/banded_pairs.py",
+          "sha256": "95580a3fa213bdab74dc103d190c9388dac14266de7831fb9af31137353d6197"
+        },
+        {
+          "bytes": 2778,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/candidate_diagnostics.py",
+          "sha256": "6576f7dd51b9111bc68cabeb505e6e9190840a80c8b416c94ead399f3fde3bc8"
+        },
+        {
+          "bytes": 21216,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/context_inference.py",
+          "sha256": "36480834a765916654f21bded6ab1113b4ac44a28316cd02935ded7ec3a566c5"
+        },
+        {
+          "bytes": 2522,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/context_pairs.py",
+          "sha256": "f103e56bb315e35ae2646ff33717b53d58f163464787893699129f28a2585756"
+        },
+        {
+          "bytes": 3611,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/endpoint_assignment.py",
+          "sha256": "12c977b689a8b7591b5bfc0f9764d484b9bb2359d0202cdea000e3aa674c1b66"
+        },
+        {
+          "bytes": 2447,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/exact_sparse_pairs.py",
+          "sha256": "19d25a49142f314801addf9b21911358c2d8e5bacb363f609fa401566ca143bc"
+        },
+        {
+          "bytes": 6707,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/global_sparse_pairs.py",
+          "sha256": "9cd50c88b5d497ee9a6d8d4e6a6f6289977d9fff96e94a823b92b5bcb72c2dc7"
+        },
+        {
+          "bytes": 3427,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/helix_pairs.py",
+          "sha256": "980bd05466a85d7644a4cb3fb446e2dcb2d60dd01b94020ecb3194665032a610"
+        },
+        {
+          "bytes": 3145,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/long_exact_sparse_pairs.py",
+          "sha256": "5ab25f5e2ac4633b240840f8f518d2a0bc498473b14a59e931bcd3c463816af0"
+        },
+        {
+          "bytes": 3424,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/pooled_proposals.py",
+          "sha256": "1403ded49adb7e1c7e8bb69594a561c4e2779e1af5450df2cd687df415cb8145"
+        },
+        {
+          "bytes": 14487,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/population_development.py",
+          "sha256": "15299c8b322888cd22fa02929f17dc37609a8a4ee3bbe6e1d9cb9bc2957efe70"
+        },
+        {
+          "bytes": 3335,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/population_resource.py",
+          "sha256": "90d0ada661f78b27a76588f246e785c31d48be0c0e3e46d1f4f8998a002155e6"
+        },
+        {
+          "bytes": 9401,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/population_sampling.py",
+          "sha256": "c97f01bfae5702a0106d84742d12476c387bd839f247594520641cebb2aab208"
+        },
+        {
+          "bytes": 5404,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/recovery_ceiling.py",
+          "sha256": "12b4368b0007aaffbf007e63f6c1e306c39b45d006e6dbe98d47e025b2f7966b"
+        },
+        {
+          "bytes": 4609,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/sparse_refinement.py",
+          "sha256": "dd62f857b0cd7ccf75bb7e608e9332cbc24afcadc6e9db8ef039e7b5c9e9ae5c"
+        },
+        {
+          "bytes": 2030,
+          "files": 1,
+          "kind": "file",
+          "path": "src/rnastable/stack_pairs.py",
+          "sha256": "1e50893ea29c933104eb44e84569e6acfe6278ebb9ab3f445b65c9cf73683af0"
+        }
+      ]
+    },
+    "model_runs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_scripts": {
+      "bytes": 209497,
+      "count": 20,
+      "entries": [
+        {
+          "bytes": 13289,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/audit_checkpoint_lineage.py",
+          "sha256": "5bb97d73e838ce9d8347c92692ca46456ab4119946acdbd491a3a472bb9770c0"
+        },
+        {
+          "bytes": 6154,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/compare_exact_sparse_development.py",
+          "sha256": "f40b7597e79816568a331ac60e314534707808bd85971c6ddd7de071811615b7"
+        },
+        {
+          "bytes": 13835,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/diagnose_under3000_recovery_ceiling.py",
+          "sha256": "a638b197dc5bb45a7e78771e627d7b51ab60c1de0affbf306cd2b0b0357adfad"
+        },
+        {
+          "bytes": 23075,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/evaluate_degradation_pilot.py",
+          "sha256": "a7eac60bd00b09bddfdf585f20fe4ce2149e9d627e7aa7e46ef5399d1f87e9d1"
+        },
+        {
+          "bytes": 28232,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/evaluate_prospective_panel.py",
+          "sha256": "335e290d95729ef93424948f3f88a79cfeeae9b1a9571ab83319ee85383dd8cd"
+        },
+        {
+          "bytes": 16841,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/evaluate_raw_structure_feasibility.py",
+          "sha256": "a1378f60ef4ea1dc2aae5917ed5757194f80954ff7ddfedf6f1e7c618de29df7"
+        },
+        {
+          "bytes": 1257,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/predict_context.py",
+          "sha256": "1f6d873250a55fab543793409575df48f1e161b25cfc0b9f1444cdbb67e198ea"
+        },
+        {
+          "bytes": 12280,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/prepare_degradation_source.py",
+          "sha256": "ead79123caff7363b0edd31c28ecd2a6c98667de8e17944a29defbfa1e5a72ff"
+        },
+        {
+          "bytes": 18028,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/prepare_prospective_family_panel.py",
+          "sha256": "2b679a4f6373cbf125f5a14bf305af979dc5e1fab21d064853c92690336343cb"
+        },
+        {
+          "bytes": 15835,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/prepare_structure_derived_source.py",
+          "sha256": "d1dd5fc411ca28ee110dfe510fed8ba48440ba2efc52dd13b3d319c03bb87426"
+        },
+        {
+          "bytes": 3515,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_context_scalability.py",
+          "sha256": "8df136da7d2876650f376fc0b96254e5de6e8763c5747b312d12812c0917f666"
+        },
+        {
+          "bytes": 8509,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_helix_scalability.py",
+          "sha256": "5d52a1168bc402d8bda64dd94b6663b26a74a591c295baa36079ceaf2c884e95"
+        },
+        {
+          "bytes": 8615,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_population_development.py",
+          "sha256": "2830995949b92c90226a1ee1205a0207c2636c52db9b89a723cc42cb00a46636"
+        },
+        {
+          "bytes": 11671,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_population_resource.py",
+          "sha256": "f218c2486f202512ba7032e398db424c3aa642fce582254cf7178fe4749f3469"
+        },
+        {
+          "bytes": 5170,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_sparse_refinement_development.py",
+          "sha256": "fe2689269fff232cea196f3548a9eda562f865b5087f1246924003269e34f04f"
+        },
+        {
+          "bytes": 8509,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_stack_scalability.py",
+          "sha256": "e6a49987f596702adc5231ff9d29c7db3cbfc108722cffc41a486ebe3d7bb7cc"
+        },
+        {
+          "bytes": 621,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_context_inference.py",
+          "sha256": "b52d33df3b0a4aadb28c0b5aa940e58b94bab0b2a28cbdab53cbddf0082f345f"
+        },
+        {
+          "bytes": 3315,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_context_scalability.py",
+          "sha256": "f5b670e1e146a784a1b455e321883be44ee5420ee627e9b22b9a36cd89517b0a"
+        },
+        {
+          "bytes": 4645,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_global_sparse_scalability.py",
+          "sha256": "1712a92bcb5bcb85364c287c0bc1f26458b699fa4a1bb8362934c6f4acd8c2ab"
+        },
+        {
+          "bytes": 6101,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_sparse_refinement.py",
+          "sha256": "10606da836d65882b057ca8f841e905bab418e344a1411af251fe9602c7f3212"
+        }
+      ]
+    },
+    "model_tests": {
+      "bytes": 31290,
+      "count": 8,
+      "entries": [
+        {
+          "bytes": 5994,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_candidate_budgets.py",
+          "sha256": "7d3be71fd75bd85c4bbf02aef1a151c9cdd49216d08c32e425b44b3ac6d49ecf"
+        },
+        {
+          "bytes": 1878,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_candidate_diagnostics.py",
+          "sha256": "5ada86258ac8bb55d0a7e102baabd7d9b322a7089459e034e0e1e181d8403091"
+        },
+        {
+          "bytes": 8864,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_context_inference.py",
+          "sha256": "e64e251a6a6f1068f247140e1cad306f8c6f86d411cdff95573fcb20cb305c15"
+        },
+        {
+          "bytes": 3011,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_endpoint_assignment.py",
+          "sha256": "0a6844876adfabd745fb4df59606b5fcd5313da2e731460ee9f8505eb7642092"
+        },
+        {
+          "bytes": 1226,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_long_exact_sparse_pairs.py",
+          "sha256": "8182b5b43e475c3d7e0e6b2fe3b64a6c3999ea4f4161718d39ea6355d14c7391"
+        },
+        {
+          "bytes": 2862,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_pair_penalty.py",
+          "sha256": "996f380281a1bf6057fa3b19b1f901a9d294feffe6d038e7285ba50d601331f4"
+        },
+        {
+          "bytes": 4103,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_population_development.py",
+          "sha256": "54cbea6451dad289a3430e7b50989b9b3b1622f1298a88623f473439f41066f9"
+        },
+        {
+          "bytes": 3352,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_recovery_ceiling.py",
+          "sha256": "cf096a4e33e7a087275ff84b556127142f2b6fdd5107143a0cba8e1ea1edee40"
+        }
+      ]
+    }
+  },
+  "maximum_length_nt": 3000,
+  "no_claim": [
+    "Removing the model's artifacts does not change any measurement.",
+    "The retirement decision rests on figures recorded in the gate chain, not on the artifacts removed here."
+  ],
+  "purpose": "Inventory of the retired learned pair model and of data above the active length scope, recorded before removal.",
+  "total_bytes": 334238,
+  "what_this_destroys": [
+    "The ability to regenerate gate v5's requirements 2, 3, 4 and 5 evidence from source. The artifacts remain; the generators do not.",
+    "Every learned-model run artifact. Most of results/ was never published, so those are not recoverable from git history.",
+    "The deferred-work status of material at or above 3000 nt, which docs/LENGTH_SCOPE.md previously recorded as preserved rather than deleted."
+  ],
+  "what_this_preserves": [
+    "Every figure the gate chain cites, because gates v4, v5 and v6 embed them as literal values rather than by reference.",
+    "The handoffs and reports, which are the narrative record of the retirement.",
+    "This manifest, which records what existed so a later reader can distinguish 'never run' from 'run and then deliberately removed'.",
+    "The native controls, the STRAND calibration, RiboNN, the design workflow and every artifact at or below the length scope."
+  ]
+}

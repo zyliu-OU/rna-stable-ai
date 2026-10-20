@@ -1,0 +1,403 @@
+{
+  "built_utc": "2026-10-20T20:20:50.166450+00:00",
+  "cohort": {
+    "excluded_as_out_of_scope": 5,
+    "frozen_rows": "results/long_native_controls_runs/20261017T034318.804594Z/rows.json",
+    "frozen_selection_size": 11,
+    "in_scope_filter": "length_nt < 3000",
+    "records": 6,
+    "source": "results/long_validation_coverage_runs/20261017T033935.363253Z",
+    "why": "Data at or above 3000 nt was removed from the project on 2026-10-20 by user decision. This run re-issues the checks on the in-scope subset so the evidence matches what remains. The earlier 11-record run is superseded, not corrected: it was correct for the cohort it covered."
+  },
+  "config": {
+    "beam_size": 100,
+    "memory_limit_gib": 4,
+    "temperature_c": 37,
+    "timeout_seconds": 30
+  },
+  "constraint_decoder": {
+    "checked": 12,
+    "conventions": {
+      "LinearFold": "?",
+      "ViennaRNA": "."
+    },
+    "criterion": "every enforced reference pair present in the returned structure, under the same time and memory bounds",
+    "honoured": 12,
+    "maximum_enforced_pairs_per_record": 20,
+    "passed": true,
+    "rows": [
+      {
+        "enforced_pairs": 20,
+        "enforced_pairs_absent_from_fold": 0,
+        "first_absent_pair": null,
+        "id": "RF00177:CP000159.1/3330048-3328509",
+        "length_nt": 1540,
+        "method": "LinearFold",
+        "outcome": "ok",
+        "peak_rss_mib": 42.18359375,
+        "status": "ok",
+        "wall_seconds": 0.5164942120027263
+      },
+      {
+        "enforced_pairs": 20,
+        "enforced_pairs_absent_from_fold": 0,
+        "first_absent_pair": null,
+        "id": "RF00177:CP000159.1/3330048-3328509",
+        "length_nt": 1540,
+        "method": "ViennaRNA",
+        "outcome": "ok",
+        "peak_rss_mib": 39.5703125,
+        "status": "ok",
+        "wall_seconds": 0.9670969259896083
+      },
+      {
+        "enforced_pairs": 20,
+        "enforced_pairs_absent_from_fold": 0,
+        "first_absent_pair": null,
+        "id": "RF00177:CP001998.1/1562911-1561358",
+        "length_nt": 1554,
+        "method": "LinearFold",
+        "outcome": "ok",
+        "peak_rss_mib": 42.6875,
+        "status": "ok",
+        "wall_seconds": 0.5666337680013385
+      },
+      {
+        "enforced_pairs": 20,
+        "enforced_pairs_absent_from_fold": 0,
+        "first_absent_pair": null,
+        "id": "RF00177:CP001998.1/1562911-1561358",
+        "length_nt": 1554,
+        "method": "ViennaRNA",
+        "outcome": "ok",
+        "peak_rss_mib": 39.6640625,
+        "status": "ok",
+        "wall_seconds": 1.017075997995562
+      },
+      {
+        "enforced_pairs": 20,
+        "enforced_pairs_absent_from_fold": 0,
+        "first_absent_pair": null,
+        "id": "RF00177:CP002683.1/865959-864386",
+        "length_nt": 1574,
+        "method": "LinearFold",
+        "outcome": "ok",
+        "peak_rss_mib": 43.14453125,
+        "status": "ok",
+        "wall_seconds": 0.566450521000661
+      },
+      {
+        "enforced_pairs": 20,
+        "enforced_pairs_absent_from_fold": 0,
+        "first_absent_pair": null,
+        "id": "RF00177:CP002683.1/865959-864386",
+        "length_nt": 1574,
+        "method": "ViennaRNA",
+        "outcome": "ok",
+        "peak_rss_mib": 40.34375,
+        "status": "ok",
+        "wall_seconds": 1.0172286060114857
+      },
+      {
+        "enforced_pairs": 20,
+        "enforced_pairs_absent_from_fold": 0,
+        "first_absent_pair": null,
+        "id": "RF02541:ADVG01000004.1/1322171-1319199",
+        "length_nt": 2973,
+        "method": "LinearFold",
+        "outcome": "ok",
+        "peak_rss_mib": 348.9453125,
+        "status": "ok",
+        "wall_seconds": 4.97449169200263
+      },
+      {
+        "enforced_pairs": 20,
+        "enforced_pairs_absent_from_fold": 0,
+        "first_absent_pair": null,
+        "id": "RF02541:ADVG01000004.1/1322171-1319199",
+        "length_nt": 2973,
+        "method": "ViennaRNA",
+        "outcome": "ok",
+        "peak_rss_mib": 73.54296875,
+        "status": "ok",
+        "wall_seconds": 4.923289078011294
+      },
+      {
+        "enforced_pairs": 20,
+        "enforced_pairs_absent_from_fold": 0,
+        "first_absent_pair": null,
+        "id": "RF02542:AF024658.1/1-1399",
+        "length_nt": 1399,
+        "method": "LinearFold",
+        "outcome": "ok",
+        "peak_rss_mib": 38.69140625,
+        "status": "ok",
+        "wall_seconds": 0.5163705680024577
+      },
+      {
+        "enforced_pairs": 20,
+        "enforced_pairs_absent_from_fold": 0,
+        "first_absent_pair": null,
+        "id": "RF02542:AF024658.1/1-1399",
+        "length_nt": 1399,
+        "method": "ViennaRNA",
+        "outcome": "ok",
+        "peak_rss_mib": 37.98046875,
+        "status": "ok",
+        "wall_seconds": 0.8668871060071979
+      },
+      {
+        "enforced_pairs": 20,
+        "enforced_pairs_absent_from_fold": 0,
+        "first_absent_pair": null,
+        "id": "RF02542:FJ843105.1/1-1437",
+        "length_nt": 1437,
+        "method": "LinearFold",
+        "outcome": "ok",
+        "peak_rss_mib": 40.19140625,
+        "status": "ok",
+        "wall_seconds": 0.5165902739972807
+      },
+      {
+        "enforced_pairs": 20,
+        "enforced_pairs_absent_from_fold": 0,
+        "first_absent_pair": null,
+        "id": "RF02542:FJ843105.1/1-1437",
+        "length_nt": 1437,
+        "method": "ViennaRNA",
+        "outcome": "ok",
+        "peak_rss_mib": 38.4375,
+        "status": "ok",
+        "wall_seconds": 0.866944825000246
+      }
+    ]
+  },
+  "learned_model_involved": false,
+  "methods": [
+    "LinearFold",
+    "ViennaRNA"
+  ],
+  "model_fitted": false,
+  "no_claim": [
+    "Reproducing a frozen fold is determinism, not accuracy.",
+    "Honouring a constraint is decoder correctness, not structural correctness: a constrained fold is not evidence that the constrained pairs are real.",
+    "Measured wall time and memory are from this machine and this cohort only.",
+    "No model was fitted and no learned component was involved.",
+    "Satisfying a requirement is a gate-review judgement, not an output of this script."
+  ],
+  "purpose": "Constraint-decoder, resource and replay checks re-scoped onto the native controls the project relies on, for gate requirement 5.",
+  "refusal_control": {
+    "criterion": "a pair below the minimum hairpin size must be refused, not dropped while a successful fold is reported",
+    "passed": true,
+    "rows": [
+      {
+        "constraint": "(?)??????????????????",
+        "error": "Dot-bracket structure / energy missing",
+        "impossible_pair_reported_as_honoured": false,
+        "method": "LinearFold",
+        "outcome": "refused",
+        "refused": true,
+        "status": "parse_error"
+      },
+      {
+        "constraint": "(.)..................",
+        "error": "Enforced constraint silently dropped; 1 requested pairs absent from the fold, first (0, 2)",
+        "impossible_pair_reported_as_honoured": false,
+        "method": "ViennaRNA",
+        "outcome": "refused",
+        "refused": true,
+        "status": "error"
+      }
+    ]
+  },
+  "replay": {
+    "checked": 12,
+    "criterion": "dot-bracket structure AND MFE identical to the frozen row",
+    "passed": true,
+    "reproduced_exactly": 12,
+    "rows": [
+      {
+        "energy_reproduced": true,
+        "frozen_mfe_kcal_mol": -644.8,
+        "id": "RF00177:CP000159.1/3330048-3328509",
+        "length_nt": 1540,
+        "method": "LinearFold",
+        "outcome": "ok",
+        "replayed_mfe_kcal_mol": -644.8,
+        "status": "ok",
+        "structure_reproduced": true
+      },
+      {
+        "energy_reproduced": true,
+        "frozen_mfe_kcal_mol": -645.8,
+        "id": "RF00177:CP000159.1/3330048-3328509",
+        "length_nt": 1540,
+        "method": "ViennaRNA",
+        "outcome": "ok",
+        "replayed_mfe_kcal_mol": -645.8,
+        "status": "ok",
+        "structure_reproduced": true
+      },
+      {
+        "energy_reproduced": true,
+        "frozen_mfe_kcal_mol": -580.7,
+        "id": "RF00177:CP001998.1/1562911-1561358",
+        "length_nt": 1554,
+        "method": "LinearFold",
+        "outcome": "ok",
+        "replayed_mfe_kcal_mol": -580.7,
+        "status": "ok",
+        "structure_reproduced": true
+      },
+      {
+        "energy_reproduced": true,
+        "frozen_mfe_kcal_mol": -583.4,
+        "id": "RF00177:CP001998.1/1562911-1561358",
+        "length_nt": 1554,
+        "method": "ViennaRNA",
+        "outcome": "ok",
+        "replayed_mfe_kcal_mol": -583.4,
+        "status": "ok",
+        "structure_reproduced": true
+      },
+      {
+        "energy_reproduced": true,
+        "frozen_mfe_kcal_mol": -735.8,
+        "id": "RF00177:CP002683.1/865959-864386",
+        "length_nt": 1574,
+        "method": "LinearFold",
+        "outcome": "ok",
+        "replayed_mfe_kcal_mol": -735.8,
+        "status": "ok",
+        "structure_reproduced": true
+      },
+      {
+        "energy_reproduced": true,
+        "frozen_mfe_kcal_mol": -739.4,
+        "id": "RF00177:CP002683.1/865959-864386",
+        "length_nt": 1574,
+        "method": "ViennaRNA",
+        "outcome": "ok",
+        "replayed_mfe_kcal_mol": -739.4,
+        "status": "ok",
+        "structure_reproduced": true
+      },
+      {
+        "energy_reproduced": true,
+        "frozen_mfe_kcal_mol": -1124.9,
+        "id": "RF02541:ADVG01000004.1/1322171-1319199",
+        "length_nt": 2973,
+        "method": "LinearFold",
+        "outcome": "ok",
+        "replayed_mfe_kcal_mol": -1124.9,
+        "status": "ok",
+        "structure_reproduced": true
+      },
+      {
+        "energy_reproduced": true,
+        "frozen_mfe_kcal_mol": -1135.7,
+        "id": "RF02541:ADVG01000004.1/1322171-1319199",
+        "length_nt": 2973,
+        "method": "ViennaRNA",
+        "outcome": "ok",
+        "replayed_mfe_kcal_mol": -1135.7,
+        "status": "ok",
+        "structure_reproduced": true
+      },
+      {
+        "energy_reproduced": true,
+        "frozen_mfe_kcal_mol": -399.0,
+        "id": "RF02542:AF024658.1/1-1399",
+        "length_nt": 1399,
+        "method": "LinearFold",
+        "outcome": "ok",
+        "replayed_mfe_kcal_mol": -399.0,
+        "status": "ok",
+        "structure_reproduced": true
+      },
+      {
+        "energy_reproduced": true,
+        "frozen_mfe_kcal_mol": -402.2,
+        "id": "RF02542:AF024658.1/1-1399",
+        "length_nt": 1399,
+        "method": "ViennaRNA",
+        "outcome": "ok",
+        "replayed_mfe_kcal_mol": -402.2,
+        "status": "ok",
+        "structure_reproduced": true
+      },
+      {
+        "energy_reproduced": true,
+        "frozen_mfe_kcal_mol": -418.6,
+        "id": "RF02542:FJ843105.1/1-1437",
+        "length_nt": 1437,
+        "method": "LinearFold",
+        "outcome": "ok",
+        "replayed_mfe_kcal_mol": -418.6,
+        "status": "ok",
+        "structure_reproduced": true
+      },
+      {
+        "energy_reproduced": true,
+        "frozen_mfe_kcal_mol": -419.5,
+        "id": "RF02542:FJ843105.1/1-1437",
+        "length_nt": 1437,
+        "method": "ViennaRNA",
+        "outcome": "ok",
+        "replayed_mfe_kcal_mol": -419.5,
+        "status": "ok",
+        "structure_reproduced": true
+      }
+    ]
+  },
+  "rescope_record": {
+    "authorised_by": "pending gate review; this script authorises nothing",
+    "original_replay_target": "learned-model checkpoints under results/sampled_long_development_runs/, deleted 2026-10-20 when the model was retired",
+    "what_was_not_restored": "The learned-model replay leg. It has no artifact to replay and is not reinstated by this run.",
+    "why_rescoped": "The deleted checkpoints cannot be replayed, and nothing in the production path loads them. The components the project relies on are LinearFold and ViennaRNA, so the checks were moved onto those rather than dropped."
+  },
+  "resources": {
+    "LinearFold": {
+      "constrained_max_wall_seconds": 4.97449169200263,
+      "limits_from_frozen_config": {
+        "memory_limit_gib": 4,
+        "timeout_seconds": 30
+      },
+      "unconstrained_by_band": {
+        "1000_1999": {
+          "max_peak_rss_mib": 50.22265625,
+          "max_wall_seconds": 0.6665093760093441,
+          "mean_wall_seconds": 0.6268621970026288,
+          "n": 5
+        },
+        "2000_2999": {
+          "max_peak_rss_mib": 96.875,
+          "max_wall_seconds": 1.2675162980012828,
+          "mean_wall_seconds": 1.2675162980012828,
+          "n": 1
+        }
+      }
+    },
+    "ViennaRNA": {
+      "constrained_max_wall_seconds": 4.923289078011294,
+      "limits_from_frozen_config": {
+        "memory_limit_gib": 4,
+        "timeout_seconds": 30
+      },
+      "unconstrained_by_band": {
+        "1000_1999": {
+          "max_peak_rss_mib": 36.83203125,
+          "max_wall_seconds": 1.7202585929917404,
+          "mean_wall_seconds": 1.6385629961965607,
+          "n": 5
+        },
+        "2000_2999": {
+          "max_peak_rss_mib": 70.203125,
+          "max_wall_seconds": 6.727657101000659,
+          "mean_wall_seconds": 6.727657101000659,
+          "n": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "applied": true,
+  "authorized_by": "user, 2026-10-20: purge the retired model entirely, accepting that the three native-control evidence generators break; and remove all data at or above 3000 nt after re-issuing the requirement 5 checks on the in-scope subset",
+  "built_utc": "2026-10-20T20:24:51.178676+00:00",
+  "groups": {
+    "broken_scripts": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "long_data": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "long_runs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_configs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_modules": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_runs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_scripts": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_tests": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "orphan_tests": {
+      "bytes": 8074,
+      "count": 6,
+      "entries": [
+        {
+          "bytes": 1169,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_bgsu_family_lineage.py",
+          "sha256": "a8e2af46ec2416edae4bc9d2886cb346c596b05528c272de154800d706c544e5"
+        },
+        {
+          "bytes": 2190,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_bgsu_nr_metadata.py",
+          "sha256": "a7c146fb9c4d307fc28196d87223390e4800712817eb613c71bae0890b606699"
+        },
+        {
+          "bytes": 860,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_bgsu_pool_sequences.py",
+          "sha256": "ea2f650e8ab0052828338c08d037f068ef9d49769fd94093b9adfe6b172b795e"
+        },
+        {
+          "bytes": 1294,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_bgsu_sequence_pool.py",
+          "sha256": "e9bf3ead9748253bc9dcd8c47ef3f8c566d9de21e14402296b6838ce86ad1d81"
+        },
+        {
+          "bytes": 1424,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_bgsu_sequence_readiness.py",
+          "sha256": "f7bd3fc6b7841252ada1c8fb698aed504946751fb010d6dc88fa6357c2696e00"
+        },
+        {
+          "bytes": 1137,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_stage2_scope_audit.py",
+          "sha256": "e401b6a03298a2b4d7aa8f865f6a292c0152c61a79c3f53361687ae19a1d1b69"
+        }
+      ]
+    }
+  },
+  "maximum_length_nt": 3000,
+  "no_claim": [
+    "Removing the model's artifacts does not change any measurement.",
+    "The retirement decision rests on figures recorded in the gate chain, not on the artifacts removed here."
+  ],
+  "purpose": "Inventory of the retired learned pair model and of data above the active length scope, recorded before removal.",
+  "total_bytes": 8074,
+  "what_this_destroys": [
+    "The ability to regenerate gate v5's requirements 2, 3, 4 and 5 evidence from source. The artifacts remain; the generators do not.",
+    "Every learned-model run artifact. Most of results/ was never published, so those are not recoverable from git history.",
+    "The deferred-work status of material at or above 3000 nt, which docs/LENGTH_SCOPE.md previously recorded as preserved rather than deleted."
+  ],
+  "what_this_preserves": [
+    "Every figure the gate chain cites, because gates v4, v5 and v6 embed them as literal values rather than by reference.",
+    "The handoffs and reports, which are the narrative record of the retirement.",
+    "This manifest, which records what existed so a later reader can distinguish 'never run' from 'run and then deliberately removed'.",
+    "The native controls, the STRAND calibration, RiboNN, the design workflow and every artifact at or below the length scope."
+  ]
+}

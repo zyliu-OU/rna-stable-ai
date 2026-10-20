@@ -1,0 +1,127 @@
+{
+  "active_length_nt": {
+    "maximum_exclusive": 3000,
+    "minimum_inclusive": 1
+  },
+  "amendment_record": {
+    "authorized_by": "user, 2026-10-20: 'remove all these old trained model data, only keep the RNAfold / ViennaRNA data'; 'remove all old model related things'; 'remove all data for RNA length longer than 3000nt'. The two scope choices were confirmed explicitly: purge everything now, accepting that the evidence generators break; and delete long data, then re-issue requirement 5.",
+    "prior_amendments": [
+      "v2 amended stage3_target to transfected_cell_expression",
+      "v3 accepted the 2000-2999 nt band as a documented limitation",
+      "v4 amended requirement 4 to reference the relied-upon native controls",
+      "v5 reviewed the gate: ratified 2, 4 and 6, re-scoped 5, accepted requirement 1's cohort limitation",
+      "v6 opened new_sequence_scoring_enabled and expression_candidate_design_enabled"
+    ],
+    "what_changed": "Two removals, and the consequences of each. The retired learned pair model is purged entirely. All data at or above 3000 nt is removed. Requirement 5's evidence is re-issued on the in-scope cohort. No requirement is re-opened and no requirement basis changes."
+  },
+  "architecture": "LinearFold / ViennaRNA -> STRAND + RiboNN + BoTorch",
+  "effective_date": "2026-10-20",
+  "learned_model_purge": {
+    "decision": "Purge the retired learned pair model entirely, accepting that the native-control evidence generators that imported its shared constants break.",
+    "manifests": "results/model_purge_runs/",
+    "retired_in": "configs/stage2_to_stage3_gate_v4_2026-10-20.json, 2026-10-20",
+    "total_bytes_removed_all_passes": 792303577,
+    "user_choice": "purge everything now, over extracting the shared primitives first",
+    "what_must_not_be_claimed": "That the learned model's results were never obtained, or that the retirement was not evidence-based. It was, and the evidence is recorded in v4.",
+    "what_this_destroyed": [
+      "The ability to regenerate gate v5's requirements 2, 3 and 4 evidence from source. scripts/validate_native_controls_stage2.py, scripts/expand_band_native_controls.py and scripts/evaluate_bprna_five_clan_feasibility.py are gone because they imported the model's shared constants. Their ARTIFACTS remain and are unchanged.",
+      "scripts/verify_long_native_controls.py, which imported a deleted cohort verifier.",
+      "Every learned-model run artifact. Most of results/ was never published, so those are not recoverable from git history.",
+      "609 tests, which tested the removed code and the removed artifacts. The suite fell from 1486 passed and 38 skipped to 877 passed and 0 skipped."
+    ],
+    "what_this_preserved": [
+      "Every figure the gate chain cites, because v4, v5 and v6 embed them as literal values rather than by reference. The retirement rests on 0.2965 against 0.4381 and 0.3255 against 0.6261, which are recorded in v4.",
+      "All handoffs and reports, which are the narrative record.",
+      "The purge manifests, which record what existed so a later reader can distinguish 'never run' from 'run and then deliberately removed'.",
+      "tests/conftest.py's retired-checkpoint skip guard was removed as well, because the runs it guarded no longer exist."
+    ],
+    "what_was_removed": {
+      "configs": 21,
+      "driver_scripts": 130,
+      "note": "Counts summed across the purge passes in results/model_purge_runs/. Each pass wrote its manifest BEFORE removing anything.",
+      "run_directories": 75,
+      "source_modules": 29,
+      "unit_and_replay_tests": 76
+    }
+  },
+  "length_scope_removal": {
+    "decision": "Remove all data for RNA at or above 3000 nt.",
+    "reverses": {
+      "document": "docs/LENGTH_SCOPE.md",
+      "status": "That policy is reversed by this gate. The document is updated to say so rather than left contradicting the tree.",
+      "what_it_said": "3,000 nt and longer: preserved, deferred scope, and the classification does not delete or truncate deferred data."
+    },
+    "user_choice": "delete long data, then re-issue requirement 5 on the in-scope cohort",
+    "verification": "A content scan over results/ finds zero files carrying a sequence of 3000 nt or more.",
+    "what_must_not_be_claimed": "That work above 3000 nt was never done. It was, and the handoffs record it. What no longer exists is the data.",
+    "what_was_removed": {
+      "frozen_artifacts_stripped_rather_than_removed": 20,
+      "out_of_scope_records_pruned": 21662,
+      "run_directories_removed_by_content": 33,
+      "synthetic_inputs": 4
+    },
+    "why_some_artifacts_were_stripped_rather_than_removed": "Several retained runs carried in-scope and out-of-scope records in the same file: the 11-record cohort selection, the native-control rows, and exposure journals. Deleting those files would have destroyed the provenance of the surviving in-scope evidence, so the out-of-scope records were pruned and each file's pre-removal hash was recorded in the manifest. This is the only place in the purge where frozen artifacts were edited, and it is recorded because the project's convention is not to edit them."
+  },
+  "name": "stage2_to_stage3_gate_v7",
+  "requirement_5_reissue": {
+    "generator_status": "scripts/verify_native_path_requirement5.py survives. Its dependency on the model's CANONICAL constant was replaced by inlining the six-element set, which removes a dependency rather than preserving a model module.",
+    "no_out_of_band_rows": "The re-issued run has no out-of-band resource rows, which is itself a check that no out-of-scope record survived into the cohort.",
+    "reissued_detail": "12 folds over the 6 in-scope records. Replay 12/12 exact, constraint decoder 12/12 honoured, both tools refuse an unsatisfiable constraint, maximum 6.73 s and 96.9 MiB against limits of 30 s and 4 GiB.",
+    "reissued_run": "results/native_path_requirement5_runs/20261020T202050.166787Z/summary.json",
+    "superseded_detail": "22 folds over 11 records. Correct for the cohort it covered; that cohort no longer exists.",
+    "superseded_run": "results/native_path_requirement5_runs/20261020T162226.011664Z/summary.json",
+    "why": "Requirement 5's evidence covered 11 records, 5 of them at or above 3000 nt. Those records are gone, so the evidence no longer matched the tree."
+  },
+  "requirements_before_stage3": [
+    "Frozen independent sequence_and_family_clan_separated_validation_within_scope",
+    "Reported_accuracy_and_failures_by_length_band_and_family_against_native_controls",
+    "Resolve_sparse_2000_2999_nt_coverage_before_claiming_the_full_length_range",
+    "Demonstrate_credible_structure_accuracy_from_the_relied_upon_native_controls_with_explicit_review_of_baseline_gaps",
+    "Pass_constraint_decoder_resource_and_replay_checks_on_the_relied_upon_native_path",
+    "Document_remaining_limitations_before_expression_candidate_design"
+  ],
+  "requirements_satisfied": 6,
+  "requirements_satisfied_basis_unchanged_from_v5": {
+    "1": "accepted_as_documented_limitation",
+    "2": "satisfied_on_evidence",
+    "3": "accepted_as_documented_limitation",
+    "4": "satisfied_on_evidence",
+    "5": "satisfied_on_evidence after re-scoping onto the native path; evidence re-issued in v7 on the in-scope cohort",
+    "6": "satisfied_on_evidence",
+    "note": "Carried forward. v7 re-opens no requirement and re-ratifies none. Two of the six remain accepted limitations rather than evidence."
+  },
+  "schema_version": 7,
+  "stage": "stage3_workflow_construction_before_measurement",
+  "stage3_target": "transfected_cell_expression",
+  "supersedes": {
+    "chain": "v7 supersedes v6, which superseded v5, v4, v3, v2 and configs/stage2_to_stage3_gate_2026-10-18.json; all remain frozen",
+    "file": "configs/stage2_to_stage3_gate_v6_2026-10-20.json",
+    "sha256": "1380be8068841ccb0fa388b467ff4a2f44ce21457e5d547e27aa5679bfe7762e",
+    "status": "frozen and unedited"
+  },
+  "switches_unchanged_from_v6": {
+    "expression_benefit_established": false,
+    "expression_candidate_design_enabled": true,
+    "independent_biological_validation": false,
+    "model_defaults_changed": false,
+    "new_sequence_scoring_enabled": true,
+    "stability_score_calibrated_to_the_assay": false,
+    "stage3_development_started": true,
+    "stage3_ready": true
+  },
+  "what_must_not_be_claimed": [
+    "That removing the model's artifacts changed any measurement. It changed none.",
+    "That the Stage 2 requirements are satisfied on any basis other than the one v5 recorded, including the two accepted limitations.",
+    "That requirements 2, 3 and 4 can be regenerated from source. Their artifacts remain; their generators do not.",
+    "That the learned model's results were never obtained, or that work above 3000 nt was never done.",
+    "That a smaller test suite means a sounder project. 609 tests were removed with their subject."
+  ],
+  "what_remains_absent": [
+    "Any experimental measurement of any construct in this project. There is none.",
+    "Measured coefficients of variation for both assay readouts.",
+    "The decision cost of a false accept against a false reject.",
+    "Whether Fluc-PEST enters the panel.",
+    "A reference point on the real objective scales.",
+    "Experimental-structure references within the active length scope; requirement 1 remains an accepted limitation."
+  ]
+}

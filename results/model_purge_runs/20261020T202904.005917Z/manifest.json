@@ -1,0 +1,416 @@
+{
+  "applied": true,
+  "authorized_by": "user, 2026-10-20: purge the retired model entirely, accepting that the three native-control evidence generators break; and remove all data at or above 3000 nt after re-issuing the requirement 5 checks on the in-scope subset",
+  "built_utc": "2026-10-20T20:29:04.005899+00:00",
+  "groups": {
+    "broken_scripts": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "long_data": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "long_records_stripped_from_retained_runs": {
+      "bytes": 0,
+      "count": 17,
+      "entries": [
+        {
+          "long_records_removed": 5,
+          "path": "results/long_native_controls_protocol_runs/20261017T034316.983773Z/records.json",
+          "sha256_after": "0a199f2e6b5b0c15259a5d613f495fba8aaa994f8775767a1b8fe213d867a65e",
+          "sha256_before": "d54277356f380993a8dc212d1979b7024cf0c8edf2aae01b84abc60d23e1922e"
+        },
+        {
+          "long_records_removed": 5,
+          "path": "results/long_native_controls_runs/20261017T034318.804594Z/exposures/20261017T034318.816988Z.json",
+          "sha256_after": "1403391158dd007f4bc07be0b9b75e697be601efc517fd3e8bd3832d8e735608",
+          "sha256_before": "a1d3b35e1f02ccdd256cd212fbfd1afef779fc3a46a1cd774bfb382bb5e8a561"
+        },
+        {
+          "long_records_removed": 1961,
+          "path": "results/long_validation_coverage_protocol_runs/20261017T033932.885873Z/exposures.json",
+          "sha256_after": "37f2d67607a0ac0019225c981c40e05cc6eb2a081cca2c955eecdca4b09e1a92",
+          "sha256_before": "49b32fa9cca935ed7dfaf58129a6cb09f3c3378b28985c26f4ff6f77dedddfeb"
+        },
+        {
+          "long_records_removed": 54,
+          "path": "results/long_validation_coverage_runs/20261017T033935.363253Z/exposures/20261017T033935.388699Z.json",
+          "sha256_after": "defcd500080d347a48f6779c1678c05f1353b5316e2dbcda88bae3407d7919ab",
+          "sha256_before": "52b570325d90ca201871b721a09b87c3d3eceb3f3c216c3bd67c413baff10252"
+        },
+        {
+          "long_records_removed": 1956,
+          "path": "results/long_validation_family_protocol_runs/20261017T033502.471793Z/exposures.json",
+          "sha256_after": "b1e930b98f45615a76f958a8187e30b57c60d2a4d8160614b60902c5cb569a93",
+          "sha256_before": "94c23947a7129584a4a613a39b731cb74c55e43119f21d6d3ca8f6ea3b52635d"
+        },
+        {
+          "long_records_removed": 2,
+          "path": "results/long_validation_family_runs/20261017T033513.077462Z/binding.json",
+          "sha256_after": "60545550b5b7efcfb32e4d30d4247c1ab00f5139c03f8c2ed78f6791ec467c75",
+          "sha256_before": "bd9f131ecd61399b3c59b7687b7245338906af05ef6a73bace6dcc6cd66cbf79"
+        },
+        {
+          "long_records_removed": 2,
+          "path": "results/long_validation_family_runs/20261017T033513.077462Z/exposures/20261017T033526.015110Z.json",
+          "sha256_after": "e668b6d89f7457d1105c2c7ddfae6c1cba9775f54bc579d4c724179d71baf283",
+          "sha256_before": "2f645f5dba770ea5d522615a7c4e6639d3cc512e7230ea3c352a82814b4958de"
+        },
+        {
+          "long_records_removed": 2,
+          "path": "results/long_validation_family_runs/20261017T033513.077462Z/selection.json",
+          "sha256_after": "7ca55cfb077ac1f524cf181f8abef3dbdcf5962d746cf0d4872d22b299ad2fca",
+          "sha256_before": "33d70ee82d74ccf3b0c1e9af429ab0d8bd5e714746c6059e5f487e8a2b254efe"
+        },
+        {
+          "long_records_removed": 1958,
+          "path": "results/long_validation_family_v2_protocol_runs/20261017T033622.814986Z/exposures.json",
+          "sha256_after": "7783476067ad880b68a9197661778c201f865c244428966c09fa60380dcc1fd7",
+          "sha256_before": "696b6fa0df5e802df6167d2304474ca9ec7b8b97fd2bce5f46227b052bdc55f3"
+        },
+        {
+          "long_records_removed": 1956,
+          "path": "results/raw_structure_panel_metadata_runs/20261015T024608.691241Z/exposure.json",
+          "sha256_after": "69d2b6b3124ad109fb3723600fc3370ab7766e670b3fd317e01caed2206b222d",
+          "sha256_before": "ad0623b1ffe00cb1bf739854fce69305a889d244f573d5cdf8dec0f52dc40149"
+        },
+        {
+          "long_records_removed": 1956,
+          "path": "results/raw_structure_panel_metadata_runs/20261015T024650.695305Z/exposure.json",
+          "sha256_after": "69d2b6b3124ad109fb3723600fc3370ab7766e670b3fd317e01caed2206b222d",
+          "sha256_before": "ad0623b1ffe00cb1bf739854fce69305a889d244f573d5cdf8dec0f52dc40149"
+        },
+        {
+          "long_records_removed": 1956,
+          "path": "results/raw_structure_panel_protocol_runs/20261015T024603.141857Z/exposure.json",
+          "sha256_after": "69d2b6b3124ad109fb3723600fc3370ab7766e670b3fd317e01caed2206b222d",
+          "sha256_before": "ad0623b1ffe00cb1bf739854fce69305a889d244f573d5cdf8dec0f52dc40149"
+        },
+        {
+          "long_records_removed": 1956,
+          "path": "results/raw_structure_references_protocol_runs/20261015T025018.239045Z/exposure.json",
+          "sha256_after": "69d2b6b3124ad109fb3723600fc3370ab7766e670b3fd317e01caed2206b222d",
+          "sha256_before": "ad0623b1ffe00cb1bf739854fce69305a889d244f573d5cdf8dec0f52dc40149"
+        },
+        {
+          "long_records_removed": 1956,
+          "path": "results/raw_structure_references_runs/20261015T025029.028438Z/exposure_before.json",
+          "sha256_after": "69d2b6b3124ad109fb3723600fc3370ab7766e670b3fd317e01caed2206b222d",
+          "sha256_before": "ad0623b1ffe00cb1bf739854fce69305a889d244f573d5cdf8dec0f52dc40149"
+        },
+        {
+          "long_records_removed": 1956,
+          "path": "results/raw_structure_references_runs/20261015T025107.807266Z/exposure_before.json",
+          "sha256_after": "69d2b6b3124ad109fb3723600fc3370ab7766e670b3fd317e01caed2206b222d",
+          "sha256_before": "ad0623b1ffe00cb1bf739854fce69305a889d244f573d5cdf8dec0f52dc40149"
+        },
+        {
+          "long_records_removed": 1956,
+          "path": "results/reference_readiness_runs/20261015T020727.857457Z/exposure.json",
+          "sha256_after": "ae740565499354c92e86515dfaa7882448f50c00fcc90a8cd83aa59b0f91383a",
+          "sha256_before": "54e07198a4c0d35be4ccdc016c5122d1266e8ea84b60900ff8e1c8e5ed2e5923"
+        },
+        {
+          "long_records_removed": 1956,
+          "path": "results/reference_readiness_runs/20261015T020926.389903Z/exposure.json",
+          "sha256_after": "ae740565499354c92e86515dfaa7882448f50c00fcc90a8cd83aa59b0f91383a",
+          "sha256_before": "54e07198a4c0d35be4ccdc016c5122d1266e8ea84b60900ff8e1c8e5ed2e5923"
+        }
+      ],
+      "note": "Run directories the current pipeline still depends on carried out-of-scope sequences inside exposure journals, binding records and selection files. Removing the directories would have destroyed in-scope evidence, so the out-of-scope records were pruned from the files and each file's pre-removal hash is recorded. Frozen artifacts were edited here, against the project's usual convention, because the alternative was deleting evidence the gate chain still relies on."
+    },
+    "long_runs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "longcontent_runs": {
+      "bytes": 555328352,
+      "count": 33,
+      "entries": [
+        {
+          "bytes": 16452212,
+          "files": 7,
+          "kind": "directory",
+          "path": "results/bgsu_pool_sequence_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 16515700,
+          "files": 6,
+          "kind": "directory",
+          "path": "results/bgsu_sequence_pool_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 37048,
+          "files": 4,
+          "kind": "directory",
+          "path": "results/bprna_long_training_step_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 7014,
+          "files": 3,
+          "kind": "directory",
+          "path": "results/bprna_long_training_step_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 19348587,
+          "files": 6,
+          "kind": "directory",
+          "path": "results/bprna_training_subset_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 861467,
+          "files": 51,
+          "kind": "directory",
+          "path": "results/checkpoint_prior_reference_extension_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 34203419,
+          "files": 9,
+          "kind": "directory",
+          "path": "results/degradation_binding_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 15943096,
+          "files": 6,
+          "kind": "directory",
+          "path": "results/degradation_source_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 17301952,
+          "files": 37,
+          "kind": "directory",
+          "path": "results/family_provenance_dataset_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 65542680,
+          "files": 24,
+          "kind": "directory",
+          "path": "results/family_provenance_dataset_source_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 16417128,
+          "files": 8,
+          "kind": "directory",
+          "path": "results/family_provenance_extension_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 17680600,
+          "files": 6,
+          "kind": "directory",
+          "path": "results/family_readiness_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 16502549,
+          "files": 5,
+          "kind": "directory",
+          "path": "results/fresh_structure_panel_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 16408045,
+          "files": 5,
+          "kind": "directory",
+          "path": "results/fresh_structure_references_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 16658323,
+          "files": 63,
+          "kind": "directory",
+          "path": "results/fresh_structure_references_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 2518999,
+          "files": 10,
+          "kind": "directory",
+          "path": "results/global_sparse_scalability_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 1890884,
+          "files": 9,
+          "kind": "directory",
+          "path": "results/helix_scalability_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 336728,
+          "files": 5,
+          "kind": "directory",
+          "path": "results/long_length_checkpoint_evaluation_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 30461,
+          "files": 2,
+          "kind": "directory",
+          "path": "results/long_length_checkpoint_evaluation_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 336735,
+          "files": 5,
+          "kind": "directory",
+          "path": "results/long_length_checkpoint_evaluation_v2_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 149431,
+          "files": 4,
+          "kind": "directory",
+          "path": "results/long_length_checkpoint_evaluation_v2_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 336894,
+          "files": 5,
+          "kind": "directory",
+          "path": "results/long_length_checkpoint_evaluation_v3_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 149558,
+          "files": 4,
+          "kind": "directory",
+          "path": "results/long_length_checkpoint_evaluation_v3_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 16384212,
+          "files": 4,
+          "kind": "directory",
+          "path": "results/prospective_binding_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 97584056,
+          "files": 54,
+          "kind": "directory",
+          "path": "results/prospective_family_acquisition_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 47784185,
+          "files": 18,
+          "kind": "directory",
+          "path": "results/prospective_family_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 32929757,
+          "files": 8,
+          "kind": "directory",
+          "path": "results/prospective_pair_binding_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 17388241,
+          "files": 5,
+          "kind": "directory",
+          "path": "results/rcsb_long_rna_survey_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 16550823,
+          "files": 5,
+          "kind": "directory",
+          "path": "results/sequence_screening_pool_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 1827496,
+          "files": 9,
+          "kind": "directory",
+          "path": "results/stack_scalability_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 16407579,
+          "files": 6,
+          "kind": "directory",
+          "path": "results/structure_derived_binding_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 16372014,
+          "files": 7,
+          "kind": "directory",
+          "path": "results/structure_derived_source_protocol_runs",
+          "sha256": null
+        },
+        {
+          "bytes": 16470479,
+          "files": 7,
+          "kind": "directory",
+          "path": "results/structure_pool_sequence_protocol_runs",
+          "sha256": null
+        }
+      ]
+    },
+    "model_configs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_modules": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_runs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_scripts": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_tests": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "orphan_tests": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    }
+  },
+  "maximum_length_nt": 3000,
+  "no_claim": [
+    "Removing the model's artifacts does not change any measurement.",
+    "The retirement decision rests on figures recorded in the gate chain, not on the artifacts removed here."
+  ],
+  "purpose": "Inventory of the retired learned pair model and of data above the active length scope, recorded before removal.",
+  "total_bytes": 555328352,
+  "what_this_destroys": [
+    "The ability to regenerate gate v5's requirements 2, 3, 4 and 5 evidence from source. The artifacts remain; the generators do not.",
+    "Every learned-model run artifact. Most of results/ was never published, so those are not recoverable from git history.",
+    "The deferred-work status of material at or above 3000 nt, which docs/LENGTH_SCOPE.md previously recorded as preserved rather than deleted."
+  ],
+  "what_this_preserves": [
+    "Every figure the gate chain cites, because gates v4, v5 and v6 embed them as literal values rather than by reference.",
+    "The handoffs and reports, which are the narrative record of the retirement.",
+    "This manifest, which records what existed so a later reader can distinguish 'never run' from 'run and then deliberately removed'.",
+    "The native controls, the STRAND calibration, RiboNN, the design workflow and every artifact at or below the length scope."
+  ]
+}

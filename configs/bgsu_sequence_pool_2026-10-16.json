@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "stage": "metadata_only_bgsu_sequence_screening_pool",
+  "families": ["RF00386", "RF01684", "RF02348", "RF03072"],
+  "candidate_order": "family_then_pdb_and_nr_class_unique_inventory_order",
+  "minimum_metadata_candidates_per_family": 3,
+  "screen_minimum_length": 20,
+  "screen_maximum_length": 512,
+  "sequence_similarity_threshold": 0.8,
+  "maximum_selected_per_family": 4,
+  "minimum_supported_total": 12,
+  "minimum_supported_families": 3,
+  "minimum_supported_per_family": 3,
+  "candidate_sequences_allowed_at_freeze": false,
+  "contact_labels_allowed_at_freeze": false,
+  "sequence_independence_established_at_freeze": false,
+  "contact_acquisition_authorized_at_freeze": false,
+  "model_inference_authorized_at_freeze": false
+}

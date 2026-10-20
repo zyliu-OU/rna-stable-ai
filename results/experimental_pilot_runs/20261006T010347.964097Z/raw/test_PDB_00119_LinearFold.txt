@@ -1,4 +1,0 @@
-GGACCCGGGCUCAACCUGGGUCC
-(((((((((.....))))))))) (-16.70)
-
-STDERR:

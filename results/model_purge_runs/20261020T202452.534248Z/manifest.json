@@ -1,0 +1,98 @@
+{
+  "applied": true,
+  "authorized_by": "user, 2026-10-20: purge the retired model entirely, accepting that the three native-control evidence generators break; and remove all data at or above 3000 nt after re-issuing the requirement 5 checks on the in-scope subset",
+  "built_utc": "2026-10-20T20:24:52.534233+00:00",
+  "groups": {
+    "broken_scripts": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "long_data": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "long_runs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_configs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_modules": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_runs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_scripts": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_tests": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "orphan_tests": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "orphan_tests_loaded_by_path": {
+      "bytes": 22647,
+      "count": 3,
+      "entries": [
+        {
+          "bytes": 5900,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_degradation_binding.py",
+          "sha256": "57e49b45a08c5bb3470dd3d642df11c9c944fde732a388f463d7a84d500b7637"
+        },
+        {
+          "bytes": 11666,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_degradation_pilot.py",
+          "sha256": "42eb062f0b6dc9e461f6033115a2742f2f377625d1e06b4d186a524f590bb6f8"
+        },
+        {
+          "bytes": 5081,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_degradation_source.py",
+          "sha256": "bbd5dee7283c7bae3cd5e73a73ee1f2528696c3197ba34dac2b19f491cdea59a"
+        }
+      ],
+      "note": "These tests load their subject script with importlib and an explicit path rather than a plain import, so the AST scan did not catch them. Their subject scripts were removed by an earlier pass."
+    }
+  },
+  "maximum_length_nt": 3000,
+  "no_claim": [
+    "Removing the model's artifacts does not change any measurement.",
+    "The retirement decision rests on figures recorded in the gate chain, not on the artifacts removed here."
+  ],
+  "purpose": "Inventory of the retired learned pair model and of data above the active length scope, recorded before removal.",
+  "total_bytes": 0,
+  "what_this_destroys": [
+    "The ability to regenerate gate v5's requirements 2, 3, 4 and 5 evidence from source. The artifacts remain; the generators do not.",
+    "Every learned-model run artifact. Most of results/ was never published, so those are not recoverable from git history.",
+    "The deferred-work status of material at or above 3000 nt, which docs/LENGTH_SCOPE.md previously recorded as preserved rather than deleted."
+  ],
+  "what_this_preserves": [
+    "Every figure the gate chain cites, because gates v4, v5 and v6 embed them as literal values rather than by reference.",
+    "The handoffs and reports, which are the narrative record of the retirement.",
+    "This manifest, which records what existed so a later reader can distinguish 'never run' from 'run and then deliberately removed'.",
+    "The native controls, the STRAND calibration, RiboNN, the design workflow and every artifact at or below the length scope."
+  ]
+}

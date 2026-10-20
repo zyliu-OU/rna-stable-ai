@@ -1,4 +1,0 @@
-
-STDERR:
-
-Exceeded 30s; killed process group

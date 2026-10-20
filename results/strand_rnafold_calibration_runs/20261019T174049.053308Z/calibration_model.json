@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "name": "strand_rnafold_calibration_v1",
+  "feature_source": "rnafold_ensemble_features",
+  "engine": "ViennaRNA 2.7.2, RNA_Turner2004, 37.0 C, dangles 2, noLP 0, max_bp_span -1, min_loop_size 3",
+  "parameter_file_sha256": "9521527a251d5e68e6149595f8aa72aa72c63e00dc5af41d7164e6ecaa664777",
+  "criterion_sha256": "4b63898b2080c39a6d723b832688f7c955d57902b0e3f42f41aad8976c635316",
+  "primary_arm": "without_alo",
+  "selected_ncomp": 1,
+  "component": {
+    "ncomp": 1,
+    "feature_order": [
+      "energy_per_length",
+      "GC",
+      "aup"
+    ],
+    "intercept": 0.4469112381319831,
+    "coefficients": {
+      "energy_per_length": -0.9395399443290398,
+      "GC": 0.016067115342313525,
+      "aup": -1.4900064074181592
+    },
+    "x_means": {
+      "energy_per_length": -0.4002407067197606,
+      "GC": 51.372801912052104,
+      "aup": 0.3454514642935896
+    },
+    "scaled_x_means": {
+      "energy_per_length": -5.02232894148939,
+      "GC": 11.459042877908463,
+      "aup": 7.571319062443726
+    },
+    "x_scale": {
+      "energy_per_length": 0.07969225261479343,
+      "GC": 4.483166915370581,
+      "aup": 0.045626325009488024
+    },
+    "y_mean": 1.1336412079710145,
+    "coefficient_input_scale": "raw_feature_units_scaling_already_absorbed"
+  },
+  "arms": {
+    "with_alo": {
+      "selected_ncomp": 1,
+      "component": {
+        "ncomp": 1,
+        "feature_order": [
+          "energy_per_length",
+          "GC",
+          "aup",
+          "alo"
+        ],
+        "intercept": 0.514798050758946,
+        "coefficients": {
+          "energy_per_length": -0.7074853861755883,
+          "GC": 0.012098739783546067,
+          "aup": -1.1219935511194798,
+          "alo": 0.06299586725197825
+        },
+        "x_means": {
+          "energy_per_length": -0.4002407067197606,
+          "GC": 51.372801912052104,
+          "aup": 0.3454514642935896,
+          "alo": 1.6148179804392835
+        },
+        "scaled_x_means": {
+          "energy_per_length": -5.02232894148939,
+          "GC": 11.459042877908463,
+          "aup": 7.571319062443726,
+          "alo": 2.2538078840935527
+        },
+        "x_scale": {
+          "energy_per_length": 0.07969225261479343,
+          "GC": 4.483166915370581,
+          "aup": 0.045626325009488024,
+          "alo": 0.7164843072189087
+        },
+        "y_mean": 1.1336412079710145,
+        "coefficient_input_scale": "raw_feature_units_scaling_already_absorbed"
+      }
+    },
+    "without_alo": {
+      "selected_ncomp": 1,
+      "component": {
+        "ncomp": 1,
+        "feature_order": [
+          "energy_per_length",
+          "GC",
+          "aup"
+        ],
+        "intercept": 0.4469112381319831,
+        "coefficients": {
+          "energy_per_length": -0.9395399443290398,
+          "GC": 0.016067115342313525,
+          "aup": -1.4900064074181592
+        },
+        "x_means": {
+          "energy_per_length": -0.4002407067197606,
+          "GC": 51.372801912052104,
+          "aup": 0.3454514642935896
+        },
+        "scaled_x_means": {
+          "energy_per_length": -5.02232894148939,
+          "GC": 11.459042877908463,
+          "aup": 7.571319062443726
+        },
+        "x_scale": {
+          "energy_per_length": 0.07969225261479343,
+          "GC": 4.483166915370581,
+          "aup": 0.045626325009488024
+        },
+        "y_mean": 1.1336412079710145,
+        "coefficient_input_scale": "raw_feature_units_scaling_already_absorbed"
+      }
+    }
+  },
+  "units": {
+    "GC": "percent",
+    "energy_per_length": "kcal/mol per nucleotide",
+    "aup": "fraction",
+    "alo": "natural log odds",
+    "target": "hours"
+  },
+  "is_published_strand": false,
+  "naming_rule": "This model must always be reported as strand_rnafold_calibration_v1. It must never be presented as published STRAND, as a reproduction of STRAND, or as STRAND with a different folding engine. Its coefficients are not the published coefficients.",
+  "independent_validation": false,
+  "new_sequence_scoring_enabled": false,
+  "stage3_ready": false
+}

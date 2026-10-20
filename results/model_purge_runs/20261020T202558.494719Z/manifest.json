@@ -1,0 +1,260 @@
+{
+  "applied": true,
+  "authorized_by": "user, 2026-10-20: purge the retired model entirely, accepting that the three native-control evidence generators break; and remove all data at or above 3000 nt after re-issuing the requirement 5 checks on the in-scope subset",
+  "built_utc": "2026-10-20T20:25:58.494709+00:00",
+  "groups": {
+    "broken_scripts": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "long_data": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "long_records_stripped_from_frozen_artifacts": {
+      "bytes": 0,
+      "count": 3,
+      "entries": [
+        {
+          "path": "results/long_validation_coverage_runs/20261017T033935.363253Z/selection.json",
+          "records_kept": 6,
+          "records_removed": 5,
+          "sha256_after": "2764149d7694f84e6d12c51fd72efb14b6be70d6862abf0daae947a239857d24",
+          "sha256_before": "8a08170227188f04c4a37fbdcecfbd8deadcce35b35b1ad88e593b647654d4ad"
+        },
+        {
+          "path": "results/long_validation_coverage_runs/20261017T033935.363253Z/candidates.json",
+          "records_kept": 284,
+          "records_removed": 54,
+          "sha256_after": "66922243bb2b4a37992e2f1f5a24cd3d38c85a05d218a9dbaeaa3f82cc4f3eb8",
+          "sha256_before": "65ec8bbd1bdb6c1125d8943d7df6ad9c4c9dc5761e69130209574e3ef73e0b79"
+        },
+        {
+          "path": "results/long_native_controls_runs/20261017T034318.804594Z/rows.json",
+          "records_kept": 12,
+          "records_removed": 10,
+          "sha256_after": "689300e3a96a10ba76c0bcfe07bcac308f7eb85ebc6767b94de1666bdf30be0e",
+          "sha256_before": "2dda64796a572dd23f4a4bce2560fc7e3b773bad4921528a6503f72d4e73b62a"
+        }
+      ],
+      "note": "These frozen artifacts carried both in-scope and out-of-scope records. Deleting the files would have destroyed the provenance of the surviving in-scope evidence, so the out-of-scope records were removed from them instead and the pre-removal hash of each file is recorded here. This is the only place in the purge where a frozen artifact was edited rather than removed, and it is recorded because the project's convention is not to edit frozen artifacts."
+    },
+    "long_runs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_configs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_modules": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_runs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_scripts": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_tests": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "orphan_tests": {
+      "bytes": 121198,
+      "count": 17,
+      "entries": [
+        {
+          "bytes": 6046,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_checkpoint_lineage.py",
+          "sha256": "8d50aed67f9ff32eb5ceb99e83c014cff3548786b9a1723dfafcec92063f4f4b"
+        },
+        {
+          "bytes": 1271,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_family_coverage_development.py",
+          "sha256": "aa97217a35d65c0f911ae5b5df54740c0b97d322e8a6fb6c9fb86f9014b5999f"
+        },
+        {
+          "bytes": 8389,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_family_provenance_dataset.py",
+          "sha256": "3e9a562014f23bfd5ccc6e54bce97cb343accabf5e3415988ca8b0bafe060f72"
+        },
+        {
+          "bytes": 3917,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_family_provenance_extension.py",
+          "sha256": "eca14d64b38f9f743fbe2dfa4948d09d3c6c40b3f7ad81409e215409d292b525"
+        },
+        {
+          "bytes": 6365,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_family_trial.py",
+          "sha256": "0d1ee4f0c9d6f08ff826e3d97da1c2776d3f4694d4cfb11d18bbe5e348a63ad2"
+        },
+        {
+          "bytes": 8275,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_prospective_binding.py",
+          "sha256": "75a65b199a8819e433e68228bd92adcf4ece3564ec094e21a4b639d18f6c036c"
+        },
+        {
+          "bytes": 10317,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_prospective_data.py",
+          "sha256": "c4a6260fd26938712557b11307ab780bfe63a12e0222abf7d22ec92136799c55"
+        },
+        {
+          "bytes": 5507,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_prospective_evidence.py",
+          "sha256": "b07c2e4bd8baacc6a8d5464d56df793aac75b5610cca9ccf8b2b98c05c001125"
+        },
+        {
+          "bytes": 9319,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_prospective_pair_integration.py",
+          "sha256": "5b60291079aa1a28c743c4af7d3073def9e438e8940af4862b8421a4d312a296"
+        },
+        {
+          "bytes": 9907,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_raw_structure_feasibility.py",
+          "sha256": "c09226d2ab14094d52f67f212a7b78fa506b483eda69edc7fb254401d7e836bc"
+        },
+        {
+          "bytes": 2546,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_raw_structure_identity.py",
+          "sha256": "c2e9ce8bd47580f802b81dfeebc202f9fe3359ffa9e941662b0aab0d4e79d382"
+        },
+        {
+          "bytes": 8326,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_raw_structure_panel.py",
+          "sha256": "2033996112acb9fb10193448e6c41b8da0a9457619efe382013ecc4f629196ea"
+        },
+        {
+          "bytes": 9366,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_raw_structure_references.py",
+          "sha256": "08b49f37f6af2526783e4005d9984ced973524adaf72d910cc43c54df175865d"
+        },
+        {
+          "bytes": 8918,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_reference_readiness.py",
+          "sha256": "196d36735e1f5fcb64a5351f4b9eaebc16edac7bfd3d8570fcb3bee46c04dc25"
+        },
+        {
+          "bytes": 6242,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_structure_contact_provenance.py",
+          "sha256": "5e4753d822ba18e8090fd85724127219d068ef961f24645a31ee0bef061556cf"
+        },
+        {
+          "bytes": 8121,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_structure_derived_binding.py",
+          "sha256": "334321c8e7d58c7fcec7dc194a68292a6db6fc6a8e73e2f6ec9fba966e6a2d71"
+        },
+        {
+          "bytes": 8366,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_structure_derived_source.py",
+          "sha256": "5eb2e375509bc2cdd3f0fa84e1859838708bd1097a3cff071967028d6ef9aa0b"
+        }
+      ]
+    },
+    "orphan_tests_of_deleted_run_artifacts": {
+      "bytes": 23939,
+      "count": 5,
+      "entries": [
+        {
+          "bytes": 7292,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_budget_study.py",
+          "sha256": "96f9de95d4b07800dd04c579377ea54b889f406ff62b825b9394490239b2148e"
+        },
+        {
+          "bytes": 6233,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_sweep.py",
+          "sha256": "f5c2ae50f8c13c1aafe6b81d960628396344236919d314652c7bfe6f7487c096"
+        },
+        {
+          "bytes": 6920,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_budget_batches.py",
+          "sha256": "cc7ab4994cfae811f4a34b71c0f4af5fc807682592f21568c06a761e73235d79"
+        },
+        {
+          "bytes": 1587,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_expanded_selection_report.py",
+          "sha256": "8621c3403275c1b71c07ea430726aa5bbfba268a02797b89bad695509df90576"
+        },
+        {
+          "bytes": 1907,
+          "files": 1,
+          "kind": "file",
+          "path": "tests/test_expanded_comparison.py",
+          "sha256": "8a978d06081550db3541273153f2ca35da48dcf2f2d3f70dee6fd2975aac8616"
+        }
+      ],
+      "note": "These tests assert against learned-model run artifacts that were removed: the equal-budget candidate studies and the hyperparameter sweeps. They import only surviving code, so no import scan catches them; their subject is the deleted evidence itself."
+    }
+  },
+  "maximum_length_nt": 3000,
+  "no_claim": [
+    "Removing the model's artifacts does not change any measurement.",
+    "The retirement decision rests on figures recorded in the gate chain, not on the artifacts removed here."
+  ],
+  "purpose": "Inventory of the retired learned pair model and of data above the active length scope, recorded before removal.",
+  "total_bytes": 121198,
+  "what_this_destroys": [
+    "The ability to regenerate gate v5's requirements 2, 3, 4 and 5 evidence from source. The artifacts remain; the generators do not.",
+    "Every learned-model run artifact. Most of results/ was never published, so those are not recoverable from git history.",
+    "The deferred-work status of material at or above 3000 nt, which docs/LENGTH_SCOPE.md previously recorded as preserved rather than deleted."
+  ],
+  "what_this_preserves": [
+    "Every figure the gate chain cites, because gates v4, v5 and v6 embed them as literal values rather than by reference.",
+    "The handoffs and reports, which are the narrative record of the retirement.",
+    "This manifest, which records what existed so a later reader can distinguish 'never run' from 'run and then deliberately removed'.",
+    "The native controls, the STRAND calibration, RiboNN, the design workflow and every artifact at or below the length scope."
+  ]
+}

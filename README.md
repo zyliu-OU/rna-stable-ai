@@ -28,7 +28,9 @@ that range.
 > retired component**, not current capability. See the
 > [gap diagnosis](reports/structure_model_gap_diagnosis_2026-10-20.md) and
 > [gate v4](configs/stage2_to_stage3_gate_v4_2026-10-20.json), carried forward in
-> [gate v5](configs/stage2_to_stage3_gate_v5_2026-10-20.json).
+> [gate v5](configs/stage2_to_stage3_gate_v5_2026-10-20.json). Its artifacts were purged
+> entirely later the same day; see
+> [gate v7](configs/stage2_to_stage3_gate_v7_2026-10-20.json).
 Existing work at 3,000 nt and above, including 5,000/10,000-nt studies, is preserved as
 deferred work; they are not deleted or counted as
 active-scope validation. Method-specific lower limits still apply. See the
@@ -68,6 +70,51 @@ The public snapshot contains code, portable tests and concise summaries; full
 local run artifacts, datasets, model weights and installed environments are not
 bundled. Original third-party [source](docs/third_party/RiboNN_LICENSE.txt) and
 [weight-license terms](docs/third_party/RiboNN_MODEL_WEIGHTS_LICENSE.txt) are retained.
+
+### 2026-10-20: the retired model and all out-of-scope data removed
+
+The learned pair model was retired earlier the same day; its artifacts were then **purged
+entirely**, and **all data for RNA at or above 3,000 nt was removed**. Both decisions are
+recorded in [gate v7](configs/stage2_to_stage3_gate_v7_2026-10-20.json), with the audit trail
+in `results/model_purge_runs/` — every pass wrote its manifest **before** removing anything.
+
+| | removed |
+|---|---|
+| learned-model source modules | 29 |
+| driver scripts | 130 |
+| unit and replay tests | 76 |
+| run directories | 75 |
+| configs | 21 |
+| out-of-scope run directories (found by content, not by name) | 33 |
+| synthetic inputs at or above 3,000 nt | 4 |
+| total | **792 MB** |
+
+Twenty retained artifacts were **stripped** of their out-of-scope records rather than
+deleted — the cohort selection, the native-control rows and several exposure journals carried
+in-scope evidence in the same files — pruning 21,662 records with every pre-removal hash
+recorded. That is the only place frozen artifacts were edited, and it is called out because
+the project's convention is not to edit them. A content scan now finds **zero** files under
+`results/` carrying a sequence of 3,000 nt or more.
+
+**What this destroyed, stated plainly.** Requirements 2, 3 and 4 can no longer be regenerated
+from source: `validate_native_controls_stage2.py`, `expand_band_native_controls.py` and
+`evaluate_bprna_five_clan_feasibility.py` imported the model's shared constants and are gone.
+Their **artifacts remain and are unchanged**. Most of `results/` was never published, so those
+run artifacts are not recoverable from git history. The suite fell from 1,486 passed and 38
+skipped to **896 passed and 0 skipped**: 609 tests were removed with their subject, and the
+retired-checkpoint skip guard went with the runs it guarded.
+
+Requirement 5's evidence covered 11 records, 5 of them out of scope, so it was **re-issued** on
+the 6 in-scope records: 12 folds, replay 12/12 exact, constraint decoder 12/12 honoured, both
+tools refusing an unsatisfiable constraint, and no out-of-band resource rows. Its generator
+survived by **losing** a dependency — the model's six-element `CANONICAL` set is now inlined —
+rather than by keeping a model module alive.
+
+This reverses the earlier policy in [docs/LENGTH_SCOPE.md](docs/LENGTH_SCOPE.md), which had
+recorded long material as preserved and never deleted; that document now carries the reversal.
+**What must not be claimed:** that the learned model's results were never obtained, or that
+work above 3,000 nt was never done. Both were, and the handoffs record them. What no longer
+exists is the data.
 
 ### 2026-10-20: the learned model retired, and the Stage 2 gate reviewed
 

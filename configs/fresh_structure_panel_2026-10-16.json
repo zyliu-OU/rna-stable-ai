@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "stage": "metadata_only_sequence_diverse_structure_panel",
+  "stage": "metadata_only_sequence_screening_pool",
   "families": [
     "RF00061",
-    "RF00177",
+    "RF00207",
     "RF00375",
     "RF00458",
     "RF01344",
@@ -14,7 +14,9 @@
   "minimum_pdb_chains_per_family": 5,
   "maximum_pdb_chains_per_family": 16,
   "candidate_order": "family_then_evenly_spaced_sorted_distinct_pdb_then_first_chain",
-  "family_selection_basis": "unexposed_metadata_candidates_with_distinct_known_clans_and_diverse_rna_roles",
+  "family_selection_basis": "unexposed_family_and_pdb_metadata_three_distinct_known_clans_varied_rna_roles",
+  "accession_spacing_is_sequence_diversity_evidence": false,
+  "sequence_screening_required_before_contact_selection": true,
   "future_binding": {
     "minimum_length": 20,
     "maximum_length": 512,

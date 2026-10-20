@@ -1,0 +1,393 @@
+{
+  "applied": true,
+  "authorized_by": "user, 2026-10-20: purge the retired model entirely, accepting that the three native-control evidence generators break; and remove all data at or above 3000 nt after re-issuing the requirement 5 checks on the in-scope subset",
+  "built_utc": "2026-10-20T20:24:50.495316+00:00",
+  "groups": {
+    "broken_scripts": {
+      "bytes": 406433,
+      "count": 46,
+      "entries": [
+        {
+          "bytes": 8390,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/acquire_fresh_structure_metadata.py",
+          "sha256": "168031eb92f2a4c580fa1677dc8d823e45100e10e228c8ef30fec8617aba0769"
+        },
+        {
+          "bytes": 5374,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/audit_bgsu_family_lineage.py",
+          "sha256": "b941b002639a35233081fd7a09a759b09e29b9c9ccb67a2df880b9ad447cedc4"
+        },
+        {
+          "bytes": 517,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/audit_bgsu_sequence_protocol.py",
+          "sha256": "27f1160fdd3b9aacf566da0283d6f428f7b0e441417c4078113e55e73f721181"
+        },
+        {
+          "bytes": 4545,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/audit_bgsu_sequence_readiness.py",
+          "sha256": "95a767ffa646ceb0f45aed24b79a3f03e37e9bf9ddce740b1881e654ce326afc"
+        },
+        {
+          "bytes": 5835,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/audit_fresh_structure_inventory.py",
+          "sha256": "e0f0126cfdc583f1a1e3ed130bd3a47a3dd89bcc1c289e227abcc18c536b2408"
+        },
+        {
+          "bytes": 3927,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/audit_fresh_structure_readiness.py",
+          "sha256": "c2eb271f7a8872f5f698b99770b1ff44e15137a3ea41862c25a1add523257e55"
+        },
+        {
+          "bytes": 14931,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/audit_reference_readiness.py",
+          "sha256": "e9392e2d98c4a455b93d3b2227b74a3542f5e99204f54ae7cf5d736959af9371"
+        },
+        {
+          "bytes": 7003,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/audit_stage2_under3000.py",
+          "sha256": "e070213f7e7b026d4f0357d1cc8988811e23d8d03a053bacb72d6d0281882ba8"
+        },
+        {
+          "bytes": 17670,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/audit_structure_contact_provenance.py",
+          "sha256": "a795d6b323b7a257a8420ff53611cfcdbedc52150374956e44f3c611390370c9"
+        },
+        {
+          "bytes": 4098,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/compare_checkpoint_priors.py",
+          "sha256": "744ae35498adccaa107a38037fb84358176a6454b2c4b526792a29a639731e24"
+        },
+        {
+          "bytes": 15507,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/derive_coverage_development_dataset.py",
+          "sha256": "bc33b04c0db1b361e809816d0cb20433460fe3e569a603afd4df92e604aff46c"
+        },
+        {
+          "bytes": 10789,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/download_prospective_evidence.py",
+          "sha256": "527fae8ec0ec3b710973801f291c1e4838b9e8ed97fae8597e469a5c53d55c6d"
+        },
+        {
+          "bytes": 15652,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/extend_family_provenance_dataset.py",
+          "sha256": "f3df28d9718fb5a9a948e6ccc76653f9bb0e6f5874820f36d3765e8063d7b753"
+        },
+        {
+          "bytes": 7524,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/freeze_bgsu_sequence_pool.py",
+          "sha256": "29f365748f68cee8ff4e9dc3f205c3d1b4435cdfeda4e6580e6f3af53d853f5b"
+        },
+        {
+          "bytes": 7996,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/freeze_fresh_structure_panel.py",
+          "sha256": "8d6c7cf55835f02c6940336c85322b10499664f3ca63e27aa0486876656c8b31"
+        },
+        {
+          "bytes": 8242,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/plan_bgsu_nr_metadata.py",
+          "sha256": "57d81e32937eea77fdf0afc7e97da509dfcd702c9aaaf872c0757edbc6b92a87"
+        },
+        {
+          "bytes": 21355,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/plan_family_provenance_dataset.py",
+          "sha256": "7bfc36d6cc1f200c24896c741bff2733474049790dd74ba75851e2f2d877dff2"
+        },
+        {
+          "bytes": 18633,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/plan_raw_structure_panel.py",
+          "sha256": "61d73d6cf550a724398a1082ed78506f3f982800f82f68943b2ecb2276575a8c"
+        },
+        {
+          "bytes": 9815,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/plan_sequence_diverse_structure_panel.py",
+          "sha256": "a2f4d355d2e4ed5bf29370d336abe41d158a42fbb0acf8f95948a40248862cd5"
+        },
+        {
+          "bytes": 4097,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/plot_degradation_pilot.py",
+          "sha256": "11ec3572455b2ff6eb9075e9edc292162e81004891dfb127db19a88386a973e4"
+        },
+        {
+          "bytes": 2766,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/plot_experimental_pilot.py",
+          "sha256": "2fe65dccc2d43084d9697a95a862de064069071b3d83413a59979b22471e40e2"
+        },
+        {
+          "bytes": 4550,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/plot_raw_structure_feasibility.py",
+          "sha256": "2094094d3c10f66364b739f32f7e4ae37fcc42de42da80431401dd1305438a06"
+        },
+        {
+          "bytes": 8721,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/prepare_bprna_long_training_smoke.py",
+          "sha256": "54c7d6e4e9094707ff34005e69f5965d7f95544a729dcd6726d1b5610076ffa7"
+        },
+        {
+          "bytes": 10891,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/prepare_bprna_training_subset_v2.py",
+          "sha256": "e725d7144515b438a96a98a3300ac18d6a63f82034471010b32f3e632cce54f4"
+        },
+        {
+          "bytes": 12084,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/prepare_degradation_binding.py",
+          "sha256": "634b8ce5d9cd845d5e082c68ade902e0ff082a703f8473e9f51e58bc53b8575d"
+        },
+        {
+          "bytes": 16726,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/prepare_family_provenance_dataset.py",
+          "sha256": "9554995dd3904b98b2f1f217dcf0ae358d9fec6fa4f1983208ee186f37e580f6"
+        },
+        {
+          "bytes": 12085,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/prepare_fresh_structure_references.py",
+          "sha256": "4894ec6e7433ce89e33591f4680a784cefa0e7fabb4a12bbbf8f35eb6c35a43e"
+        },
+        {
+          "bytes": 19700,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/prepare_raw_structure_references.py",
+          "sha256": "663455b6a81c5f2f69b6b4c6e0178d8703783d98187317684a13d643640c1751"
+        },
+        {
+          "bytes": 20125,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/prepare_structure_derived_binding.py",
+          "sha256": "d5461c4aaf31e434590ac10b71da7243cfce95ca09a895b0f32599a5d4f0998a"
+        },
+        {
+          "bytes": 1615,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_checkpoint_prior_reference_extension.py",
+          "sha256": "e75a3a67a9553d3b2c9c41d32e94c4589a8b2606261cd4b83f17e3c8fef64fb5"
+        },
+        {
+          "bytes": 8071,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_checkpoint_prior_replication.py",
+          "sha256": "0f551b722db6f2781c03a5db2f024a544633c3cc18527a4f02be26794110b515"
+        },
+        {
+          "bytes": 8358,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/run_helix_ensemble_development_v2.py",
+          "sha256": "cb71e9df2fe21e6523979d838fb1e6c624cd081503ba3b08486d6f4d3522bf28"
+        },
+        {
+          "bytes": 13385,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/screen_bgsu_pool_sequences.py",
+          "sha256": "2e2aad545dd00f839fea0ffcbebc878111bd417cdcdc72793860574a20f9e741"
+        },
+        {
+          "bytes": 7900,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/screen_bprna_five_clan_references.py",
+          "sha256": "82b5c1dc0f984593d6b60a0bae90b8218106a424893ede055cbba76034704b8e"
+        },
+        {
+          "bytes": 16606,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/screen_structure_pool_sequences.py",
+          "sha256": "57270bec745c5e162e0c150c30a71c8b332b7ed44f11c3885fb7498f82768898"
+        },
+        {
+          "bytes": 4935,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/summarize_context_development.py",
+          "sha256": "220a0b00e780cf89203dd952605c6fda136e118f5fc8559db836f23c2721a4e1"
+        },
+        {
+          "bytes": 2248,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/summarize_under3000_hard_negatives.py",
+          "sha256": "0a50ea556d14677504cdc770284d4b8484f7223c3678689ed3501795f4490d1b"
+        },
+        {
+          "bytes": 1922,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/summarize_under3000_ranking.py",
+          "sha256": "80e7b3a0fa7cff9f293292b725e0055b818742b4d6f4b06bea389454719d4a86"
+        },
+        {
+          "bytes": 11320,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/validate_native_controls_stage2.py",
+          "sha256": "8ae64f1f750ea9f2cea7c5f0d33c433f18e3efc7d577cab389e6b3bfec7503f4"
+        },
+        {
+          "bytes": 4774,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_bprna_long_training_smoke.py",
+          "sha256": "63f20873fa5f0f7d1bccede1c2d84569fa0d8c1c3df6fa490a3cee02e6c5eb4a"
+        },
+        {
+          "bytes": 2557,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_context_comparison.py",
+          "sha256": "4fe7aa38473c066d2d76ff474eca3737e54eeccf01dff7a20428cf6fca5572f1"
+        },
+        {
+          "bytes": 3000,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_exact_sparse_development.py",
+          "sha256": "80d92dc925a4a412e8f6e37f66c0c74dbc3886e80ef9dfe3989f022a07c3bf64"
+        },
+        {
+          "bytes": 2497,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_expanded_candidate_diagnostics.py",
+          "sha256": "d426a0639c03e5827df94c6202c7fa0bc3b5b388c89b24e7b373ec6f7a1a15cf"
+        },
+        {
+          "bytes": 3850,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_long_native_controls.py",
+          "sha256": "8ba03a378cc8f82de7133d3159c0decd29fde05696dbab66d34fc1fdffedbb7e"
+        },
+        {
+          "bytes": 7774,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_raw_structure_identity.py",
+          "sha256": "77ec8e574741ee15e8e20561a012a8189f04aedaa8ccdbac167422c6801ec80d"
+        },
+        {
+          "bytes": 6073,
+          "files": 1,
+          "kind": "file",
+          "path": "scripts/verify_sampled_long_development.py",
+          "sha256": "be6a6386aa244a153761977b9016efa6a034e4a99fbee8490ef80452a38187f3"
+        }
+      ]
+    },
+    "long_data": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "long_runs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_configs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_modules": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_runs": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_scripts": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "model_tests": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    },
+    "orphan_tests": {
+      "bytes": 0,
+      "count": 0,
+      "entries": []
+    }
+  },
+  "maximum_length_nt": 3000,
+  "no_claim": [
+    "Removing the model's artifacts does not change any measurement.",
+    "The retirement decision rests on figures recorded in the gate chain, not on the artifacts removed here."
+  ],
+  "purpose": "Inventory of the retired learned pair model and of data above the active length scope, recorded before removal.",
+  "total_bytes": 406433,
+  "what_this_destroys": [
+    "The ability to regenerate gate v5's requirements 2, 3, 4 and 5 evidence from source. The artifacts remain; the generators do not.",
+    "Every learned-model run artifact. Most of results/ was never published, so those are not recoverable from git history.",
+    "The deferred-work status of material at or above 3000 nt, which docs/LENGTH_SCOPE.md previously recorded as preserved rather than deleted."
+  ],
+  "what_this_preserves": [
+    "Every figure the gate chain cites, because gates v4, v5 and v6 embed them as literal values rather than by reference.",
+    "The handoffs and reports, which are the narrative record of the retirement.",
+    "This manifest, which records what existed so a later reader can distinguish 'never run' from 'run and then deliberately removed'.",
+    "The native controls, the STRAND calibration, RiboNN, the design workflow and every artifact at or below the length scope."
+  ]
+}

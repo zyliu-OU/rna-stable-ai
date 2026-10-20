@@ -40,11 +40,18 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts")]
 from rnastable.folding import fold_sequence, parse_output, run_bounded, tool_commands
-from rnastable.pair_model import CANONICAL
 from rnastable.scoring import base_pairs
 from evaluate_long_native_controls import CONFIG, COHORT, METHODS
 
 FROZEN = ROOT / "results/long_native_controls_runs/20261017T034318.804594Z/rows.json"
+# The canonical base pairs, inlined rather than imported. The module that held
+# this constant belonged to the retired learned model and was removed; a
+# six-element set is not a dependency worth keeping a model module alive for.
+CANONICAL = {"AU", "UA", "GC", "CG", "GU", "UG"}
+# The active length scope. Data at or above 3000 nt was removed from the
+# project on 2026-10-20, so this cohort is the in-scope subset of the frozen
+# 11-record selection rather than all of it.
+MAXIMUM_LENGTH_NT = 3000
 BANDS = (("1_999", 1, 1000), ("1000_1999", 1000, 2000), ("2000_2999", 2000, 3000))
 # Unconstrained filler per tool. These are not interchangeable; see the module
 # docstring.
@@ -53,9 +60,19 @@ MAX_ENFORCED_PAIRS = 20
 
 
 def cohort_records():
-    records = json.loads((COHORT / "selection.json").read_text())["selected"]
-    if len(records) != 11:
-        raise SystemExit(f"Expected the frozen 11-record cohort, found {len(records)}")
+    """The in-scope subset of the frozen selection.
+
+    The frozen selection holds 11 records, 5 of them at or above 3000 nt. Those
+    are outside the active length scope and their data was removed, so this
+    returns the 6 in-scope records. The frozen selection file itself is not
+    edited; the filter is applied here and recorded in the run.
+    """
+    selected = json.loads((COHORT / "selection.json").read_text())["selected"]
+    records = [r for r in selected if len(r["sequence"]) < MAXIMUM_LENGTH_NT]
+    if len(records) != 6:
+        raise SystemExit(
+            f"Expected 6 in-scope records below {MAXIMUM_LENGTH_NT} nt, "
+            f"found {len(records)} of {len(selected)} selected")
     return records
 
 
@@ -272,6 +289,14 @@ def main(argv=None):
             "source": str(COHORT.relative_to(ROOT)),
             "records": len(records),
             "frozen_rows": str(FROZEN.relative_to(ROOT)),
+            "frozen_selection_size": 11,
+            "in_scope_filter": f"length_nt < {MAXIMUM_LENGTH_NT}",
+            "excluded_as_out_of_scope": 5,
+            "why": ("Data at or above 3000 nt was removed from the project on "
+                    "2026-10-20 by user decision. This run re-issues the checks on "
+                    "the in-scope subset so the evidence matches what remains. The "
+                    "earlier 11-record run is superseded, not corrected: it was "
+                    "correct for the cohort it covered."),
         },
         "model_fitted": False,
         "learned_model_involved": False,
