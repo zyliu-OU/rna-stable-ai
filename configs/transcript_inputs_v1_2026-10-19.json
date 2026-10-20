@@ -161,7 +161,19 @@
       "why_it_is_not_decided_silently": "assay_definition_v3 states that a supplied poly(A) counts toward scope, which argues for including it. Against that, RiboNN and the STRAND features were derived from transcript representations that do not generally carry long homopolymeric poly(A) tails, so appending 103 adenosines may push the input out of distribution and change 3' region sizes that RiboNN consumes.",
       "current_behaviour": "scripts/assemble_reference_transcript.py assembles the 1811 nt core by default and appends the recorded poly(A) only when --poly-a is passed. Both lengths are reported.",
       "recommendation": "Score both, and treat any difference between them as a measure of the stack's sensitivity to poly(A) representation rather than as a biological result.",
-      "status": "open; no default is asserted to be correct"
+      "status": "measured_2026-10-19_recommendation_recorded_user_decision_still_required",
+      "measurement": {
+        "report": "reports/polya_representation_sensitivity_2026-10-19.md",
+        "artifacts": [
+          "results/reference_fold/FLUC-REF-V1_core.json",
+          "results/reference_fold/FLUC-REF-V1_polyA.json"
+        ],
+        "finding": "The 103 nt poly(A) tail is thermodynamically inert in this construct: MFE identical to six decimal places, ensemble free energy shifted 0.017 of 772 kcal/mol, the core MFE structure an exact prefix of the tailed one, the tail entirely unpaired, and every other region's mean unpaired probability unchanged to the fourth decimal.",
+        "but": "The STRAND average-log-odds feature falls 48 percent, 1.143062 to 0.594838. That change is dilution of a positional mean by 103 maximally unpaired positions, not structure.",
+        "consequence": "strand_alo is not invariant to poly(A) representation while the energy terms essentially are. The convention must be fixed and recorded for any comparison, and if candidates ever differ in tail length strand_alo would rank them partly by tail length rather than structure.",
+        "recommendation": "Exclude the poly(A) tail from the FOLDING input and fold the 1811 nt core. Evidence-based: the tail adds no structural information and only dilutes a length-normalized feature.",
+        "scope_limit": "Covers the folding input only. Whether RiboNN should see the tail is a separate question about a different model's training distribution and was not measured."
+      }
     },
     "two_constructs_not_one": {
       "issue": "Fluc and Fluc-PEST are different sequences with different hashes and different lengths.",
