@@ -100,6 +100,25 @@ Six of six satisfied does not mean the structure evidence is strong. Two are sat
 narrowing what may be claimed. `stage3_ready` is true; candidate design, new-sequence
 scoring and the assay remain disabled, each behind its own decision.
 
+**BoTorch restored, and the objective formulated as a Pareto front.** `botorch 0.18.1`
+is installed — the versions the four-component build pins — and a fresh integration build
+reproduces its three toy seeds exactly (`best_value 1.0391607991935734`). The optimizer is
+now asked for a **Pareto front over the two score sides, never a single best candidate**
+([formulation v1](configs/pareto_objective_formulation_v1_2026-10-20.json)). Dominance
+compares objectives coordinate-wise, so it needs neither a shared unit nor a weight: the
+formulation respects the prohibition on a composite score rather than evading it, and
+hypervolume is reported only as a diagnostic of a *set*, never as a candidate's score.
+Mechanics verified on deliberately conflicting toy objectives across three seeds — fronts
+non-dominated, resumes exact, optimizer ahead of a random baseline of equal budget — with
+the artifact recording that the three seeds select the same points and are therefore **not**
+three independent confirmations.
+
+No RNA was designed, proposed or scored. Before any real campaign: the synonymous design
+space is ~10²⁷³ variants (551 codons, 535 with synonyms), so a reduced parameterization must
+be chosen and frozen; a reference point on the real scales does not exist; the span policy
+is unresolved; and the objectives rest on structure at 0.42–0.44 pair F1 feeding two proxies
+that predict neither of the assay's units.
+
 ### 2026-10-19: engine agreement, a named calibration, score records and a Stage 2 census
 
 Four protocols were frozen before the work they govern, then run once. Each writes a

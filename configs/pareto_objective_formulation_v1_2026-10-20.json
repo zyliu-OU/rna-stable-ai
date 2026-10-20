@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "name": "pareto_objective_formulation_v1",
+  "effective_date": "2026-10-20",
+  "decision": "The optimizer is asked for a Pareto front over the two score sides. It is never asked for a single best candidate.",
+  "decided_by": "user, 2026-10-20, choosing 'Pareto front over both sides' over 'one side maximized subject to a floor on the other'",
+  "why": {
+    "problem": "The two score sides are incommensurable. Stability is in hours on the released STRAND in-solution scale; translation is on a released RiboNN task scale with no inverse transform and no physical unit. No weighting between them is justified and no floor has been selected.",
+    "why_pareto_is_not_a_workaround": "Dominance compares objectives coordinate-wise. It needs neither a shared unit nor a weight, and it never produces a single number standing for both sides. The formulation therefore respects configs score_record_schema_v1's prohibition on a composite rather than evading it.",
+    "what_was_rejected": "A weighted sum or any other scalarisation, because the weights would be arbitrary and would silently encode a trade-off nobody has justified. Also a single-objective run with a floor on the other side, because the floor is a number that does not exist yet."
+  },
+  "objectives": [
+    {
+      "index": 0,
+      "side": "stability",
+      "quantity": "in-solution half-life of purified RNA in buffer",
+      "unit": "hours",
+      "direction": "maximize",
+      "source": "strand_rnafold_calibration_v1",
+      "caveat": "Predicts in-solution half-life in buffer, NOT in-cell mRNA decay as measured by RT-qPCR. The calibration refit is unpublished and unvalidated."
+    },
+    {
+      "index": 1,
+      "side": "translation",
+      "quantity": "predicted translational efficiency",
+      "unit": "released RiboNN task scale; no inverse transform, no physical unit",
+      "direction": "maximize",
+      "source": "RiboNN task predicted_TE_A549, 50 released human checkpoints, 10 folds x top-5",
+      "caveat": "Predicts translational efficiency of endogenous human transcripts, NOT luminescence from a designed reporter. The activated CD3+ T-cell arm is model-blind; no released task matches it."
+    }
+  ],
+  "method": {
+    "acquisition": "qLogNoisyExpectedHypervolumeImprovement",
+    "model": "ModelListGP of independent SingleTaskGP, one per objective",
+    "why_independent_models": "A multi-output model would impose a correlation between the stability and translation sides that nothing in this project establishes.",
+    "noise_variance": 1e-6,
+    "fit_maxiter": 50,
+    "domain": "finite pool, discrete acquisition via optimize_acqf_discrete",
+    "determinism": "torch.manual_seed inside torch.random.fork_rng, so the caller's RNG state is preserved and runs are reproducible",
+    "implementation": "src/rnastable/multi_objective_bo.py",
+    "bookkeeping": "src/rnastable/pareto.py, which imports neither torch nor botorch so the dominance and hypervolume logic is auditable without the optimizer"
+  },
+  "reference_point_policy": {
+    "required": true,
+    "inferred": false,
+    "why": "Hypervolume is only comparable across runs that share a reference point. botorch's infer_reference_point would move with the observations and make the diagnostic drift silently, so the reference is passed explicitly and recorded in every run's protocol.",
+    "values_for_the_real_scales": "NOT SELECTED. Choosing them requires the measured assay scales, which do not exist yet. The toy mechanics runs use (0.0, 0.0), which is meaningful only for the toy objectives."
+  },
+  "hypervolume_is_a_set_diagnostic": {
+    "statement": "Hypervolume reports how much objective space a SET of candidates covers.",
+    "prohibition": "It MUST NOT be attached to a candidate as that candidate's score. Doing so would be the forbidden composite reached by a different route.",
+    "reported_beside": "A random-selection baseline over the same budget. Without it a hypervolume number says nothing about the optimizer."
+  },
+  "current_scope": {
+    "status": "optimizer mechanics only",
+    "rna_designed": false,
+    "rna_scored": false,
+    "objectives_used": "toy mathematical functions over a finite pool, deliberately conflicting so a trade-off is exercised",
+    "why_not_real_candidates_yet": "Expression candidate design is disabled by configs/stage2_to_stage3_gate_v5_2026-10-20.json, and the items under blocking_before_a_real_campaign are unresolved.",
+    "evidence": "results/pareto_mechanics_runs/"
+  },
+  "blocking_before_a_real_campaign": [
+    {
+      "item": "design space parameterisation",
+      "detail": "The Fluc ORF is 1653 nt, 551 codons, 535 of them with synonyms, giving about 10^273 synonymous variants. A one-hot encoding over all positions is not a tractable BO domain. A reduced parameterisation (codon-usage targets, windowed edits, or a finite candidate pool) must be chosen and frozen before any campaign.",
+      "status": "not decided"
+    },
+    {
+      "item": "reference point on the real scales",
+      "detail": "Requires the measured assay scales. See reference_point_policy.",
+      "status": "not decided"
+    },
+    {
+      "item": "base-pair span policy",
+      "detail": "new_sequence_scoring_enabled is false in gate v5. The span investigation is closed unresolved; alo moves about 3x tolerance from the clipping convention alone, and the blinded 85-record evaluation set is unspent.",
+      "status": "unresolved"
+    },
+    {
+      "item": "assay side",
+      "detail": "Measured CVs for both readouts, the decision cost of a false accept against a false reject, and whether Fluc-PEST enters the panel.",
+      "status": "not available"
+    },
+    {
+      "item": "proxy quality",
+      "detail": "The objectives rest on structure at about 0.42-0.44 pair F1 against computational consensus, and on two proxies that predict neither of the assay's units. Optimising hard against a weak proxy produces candidates that win on the metric and not in the cell.",
+      "status": "known limitation, see reports/remaining_limitations_addendum_2026-10-20.md section N5"
+    }
+  ],
+  "does_not_change": {
+    "gate": "configs/stage2_to_stage3_gate_v5_2026-10-20.json is unchanged and is not superseded by this file.",
+    "expression_candidate_design_enabled": false,
+    "new_sequence_scoring_enabled": false,
+    "stability_score_enabled": false,
+    "model_defaults_changed": false,
+    "note": "Choosing how an objective would be formulated is not permission to run it. Enabling a campaign is a separate decision and should be recorded by a later gate version."
+  },
+  "no_claim": [
+    "Choosing a Pareto formulation establishes no stability, translation or expression benefit.",
+    "A toy mechanics run is software verification, not biological evidence.",
+    "A hypervolume improvement over a random baseline on a toy objective says nothing about RNA.",
+    "No RNA sequence has been designed, proposed or scored under this formulation."
+  ]
+}

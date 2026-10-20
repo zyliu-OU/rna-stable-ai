@@ -7,7 +7,7 @@ name = "RNA-StableAI"
 version = "0.1.0"
 description = "Reproducible long-RNA CPU folding and separate encoder benchmarks"
 requires-python = ">=3.12"
-dependencies = ["numpy", "scipy", "pandas", "biopython", "psutil", "tqdm", "pyyaml", "matplotlib", "torch", "ViennaRNA"]
+dependencies = ["numpy", "scipy", "pandas", "biopython", "psutil", "tqdm", "pyyaml", "matplotlib", "torch", "ViennaRNA", "botorch"]
 
 [project.optional-dependencies]
 test = ["pytest"]

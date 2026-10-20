@@ -1,0 +1,839 @@
+{
+  "all_fronts_non_dominated": true,
+  "all_resumes_reproduced": true,
+  "budget": 8,
+  "built_utc": "2026-10-20T17:10:40.509744+00:00",
+  "composite_score_emitted": false,
+  "formulation": "configs/pareto_objective_formulation_v1_2026-10-20.json",
+  "gate": "configs/stage2_to_stage3_gate_v5_2026-10-20.json",
+  "no_claim": [
+    "This is software verification of the optimizer mechanics, not biological evidence.",
+    "A hypervolume improvement on a toy objective says nothing about RNA.",
+    "No RNA sequence was designed, proposed or scored.",
+    "No single best candidate is reported; with two incommensurable objectives there is none, and inventing one would be the composite score_record_schema_v1 forbids.",
+    "Hypervolume is a diagnostic of a set and must not be attached to a candidate as its score.",
+    "The reference point (0.0, 0.0) is meaningful for the toy objectives only. No reference point has been selected for the real scales."
+  ],
+  "optimizer_ahead_of_random_on_every_seed": true,
+  "purpose": "Mechanics of the Pareto objective formulation: a front rather than a single best candidate, over two deliberately conflicting toy objectives.",
+  "reference_point": [
+    0.0,
+    0.0
+  ],
+  "rna_designed": false,
+  "rna_scored": false,
+  "seed_sensitivity": {
+    "distinct_optimizer_histories": 1,
+    "distinct_optimizer_hypervolumes": 1,
+    "interpretation": "The optimizer selects the same points on every seed, so the three runs are NOT three independent confirmations. The pool is 31 members with 25 feasible and a fixed 3-point initial design, so the acquisition ordering is effectively determined and the fit seed does not change it. Only the random baseline varies with the seed. This says the mechanics are stable on this pool; it does not demonstrate robustness to seed on a larger domain."
+  },
+  "seeds": {
+    "1729": {
+      "front_is_non_dominated": true,
+      "front_size": 7,
+      "history": [
+        {
+          "index": 0,
+          "log_acquisition": null,
+          "values": [
+            0.46710000000000007,
+            1.0
+          ]
+        },
+        {
+          "index": 10,
+          "log_acquisition": null,
+          "values": [
+            0.8446606359508424,
+            0.8075499102701248
+          ]
+        },
+        {
+          "index": 30,
+          "log_acquisition": null,
+          "values": [
+            0.9330950883865181,
+            0.0
+          ]
+        },
+        {
+          "index": 7,
+          "log_acquisition": -2.9476975087918436,
+          "values": [
+            0.7148695827419106,
+            0.8872892919740821
+          ]
+        },
+        {
+          "index": 19,
+          "log_acquisition": -2.4608296335218096,
+          "values": [
+            0.970329491838358,
+            0.49597913035565977
+          ]
+        },
+        {
+          "index": 11,
+          "log_acquisition": -4.591767964884658,
+          "values": [
+            0.8932487376197933,
+            0.777972307366184
+          ]
+        },
+        {
+          "index": 4,
+          "log_acquisition": -4.7619469718609375,
+          "values": [
+            0.6668464828182988,
+            0.9513135504439852
+          ]
+        },
+        {
+          "index": 22,
+          "log_acquisition": -4.5230890373363515,
+          "values": [
+            1.0391607991935734,
+            0.3720108517097048
+          ]
+        }
+      ],
+      "hypervolume": 0.9061813077448589,
+      "hypervolume_exceeds_random": true,
+      "pareto_front": [
+        [
+          0.46710000000000007,
+          1.0
+        ],
+        [
+          0.6668464828182988,
+          0.9513135504439852
+        ],
+        [
+          0.7148695827419106,
+          0.8872892919740821
+        ],
+        [
+          0.8446606359508424,
+          0.8075499102701248
+        ],
+        [
+          0.8932487376197933,
+          0.777972307366184
+        ],
+        [
+          0.970329491838358,
+          0.49597913035565977
+        ],
+        [
+          1.0391607991935734,
+          0.3720108517097048
+        ]
+      ],
+      "pareto_indices": [
+        0,
+        4,
+        7,
+        10,
+        11,
+        19,
+        22
+      ],
+      "protocol": {
+        "acquisition": "qLogNoisyExpectedHypervolumeImprovement",
+        "budget": 8,
+        "composite_score_emitted": false,
+        "feasible": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "features": [
+          [
+            0.0
+          ],
+          [
+            0.03333333333333333
+          ],
+          [
+            0.06666666666666667
+          ],
+          [
+            0.1
+          ],
+          [
+            0.13333333333333333
+          ],
+          [
+            0.16666666666666666
+          ],
+          [
+            0.2
+          ],
+          [
+            0.23333333333333334
+          ],
+          [
+            0.26666666666666666
+          ],
+          [
+            0.3
+          ],
+          [
+            0.3333333333333333
+          ],
+          [
+            0.36666666666666664
+          ],
+          [
+            0.4
+          ],
+          [
+            0.43333333333333335
+          ],
+          [
+            0.4666666666666667
+          ],
+          [
+            0.5
+          ],
+          [
+            0.5333333333333333
+          ],
+          [
+            0.5666666666666667
+          ],
+          [
+            0.6
+          ],
+          [
+            0.6333333333333333
+          ],
+          [
+            0.6666666666666666
+          ],
+          [
+            0.7
+          ],
+          [
+            0.7333333333333333
+          ],
+          [
+            0.7666666666666667
+          ],
+          [
+            0.8
+          ],
+          [
+            0.8333333333333334
+          ],
+          [
+            0.8666666666666667
+          ],
+          [
+            0.9
+          ],
+          [
+            0.9333333333333333
+          ],
+          [
+            0.9666666666666667
+          ],
+          [
+            1.0
+          ]
+        ],
+        "fit_maxiter": 50,
+        "gp": "ModelListGP_of_independent_SingleTaskGP",
+        "initial_indices": [
+          0,
+          10,
+          30
+        ],
+        "meaning": "optimizer_mechanics_only_no_RNA_or_biological_validation",
+        "noise_variance": 1e-06,
+        "objective_directions": [
+          "maximize",
+          "maximize"
+        ],
+        "objectives": "toy_conflicting_pair_v1",
+        "reference_point": [
+          0.0,
+          0.0
+        ],
+        "seed": 1729
+      },
+      "random_front_size": 4,
+      "random_hypervolume": 0.8673205776486941,
+      "resume_reproduces_the_run": true,
+      "unique_evaluations": 8
+    },
+    "20261015": {
+      "front_is_non_dominated": true,
+      "front_size": 7,
+      "history": [
+        {
+          "index": 0,
+          "log_acquisition": null,
+          "values": [
+            0.46710000000000007,
+            1.0
+          ]
+        },
+        {
+          "index": 10,
+          "log_acquisition": null,
+          "values": [
+            0.8446606359508424,
+            0.8075499102701248
+          ]
+        },
+        {
+          "index": 30,
+          "log_acquisition": null,
+          "values": [
+            0.9330950883865181,
+            0.0
+          ]
+        },
+        {
+          "index": 7,
+          "log_acquisition": -2.9744155981903506,
+          "values": [
+            0.7148695827419106,
+            0.8872892919740821
+          ]
+        },
+        {
+          "index": 19,
+          "log_acquisition": -2.460175030654485,
+          "values": [
+            0.970329491838358,
+            0.49597913035565977
+          ]
+        },
+        {
+          "index": 11,
+          "log_acquisition": -4.5916781651415,
+          "values": [
+            0.8932487376197933,
+            0.777972307366184
+          ]
+        },
+        {
+          "index": 4,
+          "log_acquisition": -4.761787300713312,
+          "values": [
+            0.6668464828182988,
+            0.9513135504439852
+          ]
+        },
+        {
+          "index": 22,
+          "log_acquisition": -4.525180837070524,
+          "values": [
+            1.0391607991935734,
+            0.3720108517097048
+          ]
+        }
+      ],
+      "hypervolume": 0.9061813077448589,
+      "hypervolume_exceeds_random": true,
+      "pareto_front": [
+        [
+          0.46710000000000007,
+          1.0
+        ],
+        [
+          0.6668464828182988,
+          0.9513135504439852
+        ],
+        [
+          0.7148695827419106,
+          0.8872892919740821
+        ],
+        [
+          0.8446606359508424,
+          0.8075499102701248
+        ],
+        [
+          0.8932487376197933,
+          0.777972307366184
+        ],
+        [
+          0.970329491838358,
+          0.49597913035565977
+        ],
+        [
+          1.0391607991935734,
+          0.3720108517097048
+        ]
+      ],
+      "pareto_indices": [
+        0,
+        4,
+        7,
+        10,
+        11,
+        19,
+        22
+      ],
+      "protocol": {
+        "acquisition": "qLogNoisyExpectedHypervolumeImprovement",
+        "budget": 8,
+        "composite_score_emitted": false,
+        "feasible": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "features": [
+          [
+            0.0
+          ],
+          [
+            0.03333333333333333
+          ],
+          [
+            0.06666666666666667
+          ],
+          [
+            0.1
+          ],
+          [
+            0.13333333333333333
+          ],
+          [
+            0.16666666666666666
+          ],
+          [
+            0.2
+          ],
+          [
+            0.23333333333333334
+          ],
+          [
+            0.26666666666666666
+          ],
+          [
+            0.3
+          ],
+          [
+            0.3333333333333333
+          ],
+          [
+            0.36666666666666664
+          ],
+          [
+            0.4
+          ],
+          [
+            0.43333333333333335
+          ],
+          [
+            0.4666666666666667
+          ],
+          [
+            0.5
+          ],
+          [
+            0.5333333333333333
+          ],
+          [
+            0.5666666666666667
+          ],
+          [
+            0.6
+          ],
+          [
+            0.6333333333333333
+          ],
+          [
+            0.6666666666666666
+          ],
+          [
+            0.7
+          ],
+          [
+            0.7333333333333333
+          ],
+          [
+            0.7666666666666667
+          ],
+          [
+            0.8
+          ],
+          [
+            0.8333333333333334
+          ],
+          [
+            0.8666666666666667
+          ],
+          [
+            0.9
+          ],
+          [
+            0.9333333333333333
+          ],
+          [
+            0.9666666666666667
+          ],
+          [
+            1.0
+          ]
+        ],
+        "fit_maxiter": 50,
+        "gp": "ModelListGP_of_independent_SingleTaskGP",
+        "initial_indices": [
+          0,
+          10,
+          30
+        ],
+        "meaning": "optimizer_mechanics_only_no_RNA_or_biological_validation",
+        "noise_variance": 1e-06,
+        "objective_directions": [
+          "maximize",
+          "maximize"
+        ],
+        "objectives": "toy_conflicting_pair_v1",
+        "reference_point": [
+          0.0,
+          0.0
+        ],
+        "seed": 20261015
+      },
+      "random_front_size": 5,
+      "random_hypervolume": 0.8619247768523758,
+      "resume_reproduces_the_run": true,
+      "unique_evaluations": 8
+    },
+    "7": {
+      "front_is_non_dominated": true,
+      "front_size": 7,
+      "history": [
+        {
+          "index": 0,
+          "log_acquisition": null,
+          "values": [
+            0.46710000000000007,
+            1.0
+          ]
+        },
+        {
+          "index": 10,
+          "log_acquisition": null,
+          "values": [
+            0.8446606359508424,
+            0.8075499102701248
+          ]
+        },
+        {
+          "index": 30,
+          "log_acquisition": null,
+          "values": [
+            0.9330950883865181,
+            0.0
+          ]
+        },
+        {
+          "index": 7,
+          "log_acquisition": -2.9580182424501515,
+          "values": [
+            0.7148695827419106,
+            0.8872892919740821
+          ]
+        },
+        {
+          "index": 19,
+          "log_acquisition": -2.4612744531040582,
+          "values": [
+            0.970329491838358,
+            0.49597913035565977
+          ]
+        },
+        {
+          "index": 11,
+          "log_acquisition": -4.591657400619678,
+          "values": [
+            0.8932487376197933,
+            0.777972307366184
+          ]
+        },
+        {
+          "index": 4,
+          "log_acquisition": -4.761982754288969,
+          "values": [
+            0.6668464828182988,
+            0.9513135504439852
+          ]
+        },
+        {
+          "index": 22,
+          "log_acquisition": -4.51425933999189,
+          "values": [
+            1.0391607991935734,
+            0.3720108517097048
+          ]
+        }
+      ],
+      "hypervolume": 0.9061813077448589,
+      "hypervolume_exceeds_random": true,
+      "pareto_front": [
+        [
+          0.46710000000000007,
+          1.0
+        ],
+        [
+          0.6668464828182988,
+          0.9513135504439852
+        ],
+        [
+          0.7148695827419106,
+          0.8872892919740821
+        ],
+        [
+          0.8446606359508424,
+          0.8075499102701248
+        ],
+        [
+          0.8932487376197933,
+          0.777972307366184
+        ],
+        [
+          0.970329491838358,
+          0.49597913035565977
+        ],
+        [
+          1.0391607991935734,
+          0.3720108517097048
+        ]
+      ],
+      "pareto_indices": [
+        0,
+        4,
+        7,
+        10,
+        11,
+        19,
+        22
+      ],
+      "protocol": {
+        "acquisition": "qLogNoisyExpectedHypervolumeImprovement",
+        "budget": 8,
+        "composite_score_emitted": false,
+        "feasible": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "features": [
+          [
+            0.0
+          ],
+          [
+            0.03333333333333333
+          ],
+          [
+            0.06666666666666667
+          ],
+          [
+            0.1
+          ],
+          [
+            0.13333333333333333
+          ],
+          [
+            0.16666666666666666
+          ],
+          [
+            0.2
+          ],
+          [
+            0.23333333333333334
+          ],
+          [
+            0.26666666666666666
+          ],
+          [
+            0.3
+          ],
+          [
+            0.3333333333333333
+          ],
+          [
+            0.36666666666666664
+          ],
+          [
+            0.4
+          ],
+          [
+            0.43333333333333335
+          ],
+          [
+            0.4666666666666667
+          ],
+          [
+            0.5
+          ],
+          [
+            0.5333333333333333
+          ],
+          [
+            0.5666666666666667
+          ],
+          [
+            0.6
+          ],
+          [
+            0.6333333333333333
+          ],
+          [
+            0.6666666666666666
+          ],
+          [
+            0.7
+          ],
+          [
+            0.7333333333333333
+          ],
+          [
+            0.7666666666666667
+          ],
+          [
+            0.8
+          ],
+          [
+            0.8333333333333334
+          ],
+          [
+            0.8666666666666667
+          ],
+          [
+            0.9
+          ],
+          [
+            0.9333333333333333
+          ],
+          [
+            0.9666666666666667
+          ],
+          [
+            1.0
+          ]
+        ],
+        "fit_maxiter": 50,
+        "gp": "ModelListGP_of_independent_SingleTaskGP",
+        "initial_indices": [
+          0,
+          10,
+          30
+        ],
+        "meaning": "optimizer_mechanics_only_no_RNA_or_biological_validation",
+        "noise_variance": 1e-06,
+        "objective_directions": [
+          "maximize",
+          "maximize"
+        ],
+        "objectives": "toy_conflicting_pair_v1",
+        "reference_point": [
+          0.0,
+          0.0
+        ],
+        "seed": 7
+      },
+      "random_front_size": 7,
+      "random_hypervolume": 0.8922581142987535,
+      "resume_reproduces_the_run": true,
+      "unique_evaluations": 8
+    }
+  },
+  "versions": {
+    "botorch": "0.18.1",
+    "gpytorch": "1.15.2",
+    "linear_operator": "0.6.1",
+    "torch": "2.14.1+cu130"
+  }
+}
