@@ -161,7 +161,7 @@
       "why_it_is_not_decided_silently": "assay_definition_v3 states that a supplied poly(A) counts toward scope, which argues for including it. Against that, RiboNN and the STRAND features were derived from transcript representations that do not generally carry long homopolymeric poly(A) tails, so appending 103 adenosines may push the input out of distribution and change 3' region sizes that RiboNN consumes.",
       "current_behaviour": "scripts/assemble_reference_transcript.py assembles the 1811 nt core by default and appends the recorded poly(A) only when --poly-a is passed. Both lengths are reported.",
       "recommendation": "Score both, and treat any difference between them as a measure of the stack's sensitivity to poly(A) representation rather than as a biological result.",
-      "status": "measured_on_both_sides_recommendation_recorded_user_decision_still_required",
+      "status": "DECIDED by user 2026-10-19: poly(A) excluded from the modelled transcript",
       "measurement": {
         "report": "reports/polya_representation_sensitivity_2026-10-19.md",
         "artifacts": [
@@ -187,12 +187,33 @@
           "replay": "Two independent worker processes produced bitwise-identical predictions across every released task."
         },
         "combined_conclusion": "Of the four quantities the stack produces, only strand_alo responds to the poly(A) convention, and that response is dilution of a positional mean rather than signal. MFE is exactly unchanged, ensemble free energy moves 0.002 percent, and RiboNN moves within noise. Use the 1811 nt core throughout, for both arms."
+      },
+      "decision": {
+        "value": "Use the 1811 nt core (5' UTR 44 + CDS 1653 + 3' UTR 114). The 103 nt template-encoded poly(A) is NOT part of the modelled transcript.",
+        "decided_by": "user, 2026-10-19",
+        "applies_to": "both arms and both folding and RiboNN inputs",
+        "basis": "Measured on both sides. The tail is thermodynamically inert: MFE identical to six decimal places, ensemble free energy shifted 0.017 of 772 kcal/mol, the core MFE structure an exact prefix of the tailed one, the tail entirely unpaired, every other region unchanged to the fourth decimal. RiboNN moves 0.085 percent, which is 0.019 of the between-fold standard deviation. Only strand_alo responds, falling 48 percent, and that is dilution of a positional mean by 103 maximally unpaired positions rather than signal.",
+        "why_one_representation": "Using the same transcript for both arms removes the risk of a comparison silently mixing conventions, which would rank constructs partly by tail length rather than by sequence.",
+        "scope_limit": "This decides the MODELLED transcript only. The real transfected molecule still carries the 103 nt tail; nothing here changes the construct.",
+        "reversal": "Appending the tail remains available behind the explicit --poly-a flag; the default is now the recorded decision rather than a convenience."
       }
     },
     "two_constructs_not_one": {
       "issue": "Fluc and Fluc-PEST are different sequences with different hashes and different lengths.",
       "consequence": "They cannot be pooled. A PEST tag changes protein turnover, so the relationship between luminescence and mRNA level differs between them. Any comparison must be within a construct, not across the two.",
       "status": "no decision taken on whether Fluc-PEST enters the panel"
+    },
+    "base_pair_span_policy": {
+      "status": "DECIDED by user 2026-10-19",
+      "decision": "max_bp_span = -1 (unlimited), adopted explicitly as a decision rather than inherited as a default.",
+      "decided_by": "user, 2026-10-19",
+      "basis": "On the burned STRAND selection set, bounding the span degrades agreement with the released LinearPartition features monotonically on every feature: 13/18 within tolerance at unlimited, 7/18 at 600, 2/18 at 200, 1/18 at 100. At unlimited span energy_per_length agrees to 1.4e-5. LinearPartition tracks the exact global partition function closely at these lengths rather than behaving locally.",
+      "standing_caveat": "Folding features on 1 to 2 kb transcripts remain partly determined by base pairs spanning more than a kilobase, a regime where an equilibrium MFE model is least trustworthy for mRNA that folds co-transcriptionally and is traversed by ribosomes. The released STRAND features SHARE this property, so it is inherent to the feature definition on long mRNA rather than introduced here. It is carried as a known limitation of the stability arm, not resolved.",
+      "not_claimed": "No determination is made that unlimited span is physically correct. What is shown is that it reproduces the reference engine best.",
+      "evidence": [
+        "reports/bp_span_policy_diagnostic_2026-10-20.md",
+        "results/bp_span_policy/span_vs_linearpartition_agreement.json"
+      ]
     }
   },
   "alphabet_handling": {
@@ -203,7 +224,6 @@
   "still_blocking": [
     "measured CVs for both readouts, to replace the 20 percent planning bound",
     "decision cost of a false accept versus a false reject",
-    "decision on whether poly(A) is included in the modelled transcript (see modelling_consequences)",
     "decision on whether Fluc-PEST enters the panel alongside Fluc"
   ],
   "parent_construct_identification": {
@@ -247,5 +267,10 @@
     "delivery resolved as IVT mRNA rather than plasmid DNA",
     "poly(A) resolved as 103 nt template-encoded",
     "cap chemistry and nucleoside modification resolved as cap 1 analogue plus N1-methylpseudouridine"
+  ],
+  "decisions_2026_10_19": [
+    "poly(A) excluded from the modelled transcript; use the 1811 nt core",
+    "max_bp_span -1 adopted explicitly as the base-pair span policy",
+    "alo engine-convention investigation closed; frozen rejected verdict stands; evaluation set unspent"
   ]
 }

@@ -457,6 +457,35 @@ def test_assembled_utr5_stays_within_the_ribonn_upstream_limit():
     assert load_inputs(REAL_CONFIG)["region_boundary_decision"]["consequence"]["utr5_length_nt"] <= 1381
 
 
+# --- frozen methodological decisions --------------------------------------
+
+def test_poly_a_decision_is_recorded_and_matches_the_default(tmp_path):
+    """The recorded decision and the code's default must not drift apart."""
+    recorded = load_inputs(REAL_CONFIG)["modelling_consequences"][
+        "poly_a_inclusion_is_an_open_decision"]
+    assert recorded["status"].startswith("DECIDED")
+    assert "1811" in recorded["decision"]["value"]
+    # The default path must produce the decided transcript.
+    path, cds = poly_a_config(tmp_path)
+    _, report = assemble(cds, path, "T", "p", "a")
+    assert report.poly_a_included is False
+    assert report.transcript_length_nt == 1811
+
+
+def test_span_policy_is_recorded_as_a_decision_with_its_caveat():
+    """Adopting the span must not quietly drop the limitation it carries."""
+    policy = load_inputs(REAL_CONFIG)["modelling_consequences"]["base_pair_span_policy"]
+    assert policy["status"].startswith("DECIDED")
+    assert "-1" in policy["decision"]
+    assert "known limitation" in policy["standing_caveat"]
+    assert "not claimed" in " ".join(policy).lower() or "not_claimed" in policy
+
+
+def test_poly_a_is_no_longer_listed_as_blocking():
+    blocking = " ".join(load_inputs(REAL_CONFIG)["still_blocking"])
+    assert "poly(A)" not in blocking
+
+
 # --- integration with the existing edit classifier ------------------------
 
 def test_assembled_transcript_is_usable_by_classify_construct_edit(tmp_path):

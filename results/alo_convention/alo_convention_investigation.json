@@ -1,6 +1,6 @@
 {
   "question": "Why does alo fail engine agreement when energy_per_length and aup pass?",
-  "status": "UNRESOLVED, but narrowed. Two hypotheses excluded, one partially supported and not adopted.",
+  "status": "CLOSED by user decision 2026-10-19. Unresolved and not pursued further.",
   "cohort": "Burned selection set only (6 records). The blinded 85-record evaluation set was NOT touched.",
   "tolerance_alo": 0.05132036110543378,
   "excluded_hypotheses": [
@@ -41,5 +41,13 @@
     "Nothing here changes the frozen rejected verdict.",
     "No floor is frozen and no gate requirement is satisfied.",
     "Agreement with a reference engine is not evidence about real RNA structure."
-  ]
+  ],
+  "closure": {
+    "decision": "Do not spend the blinded 85-record evaluation set on the cutoff hypothesis. The frozen verdict stands.",
+    "decided_by": "user, 2026-10-19",
+    "rationale": "The 1e-6 cutoff reached only 3/6 on six burned records whose differences were already visible, which at that n is indistinguishable from fitting noise. strand_rnafold_calibration_v1 already exists as a separately named refit, so the practical cost of leaving engine compatibility unresolved is low.",
+    "evaluation_set_state": "UNSPENT. The blinded 85-record set was never touched and remains available for a better-motivated, pre-registered hypothesis.",
+    "standing_verdict": "configs/strand_rnafold_agreement_criterion_v1 outcome rejected, feature_level_compatible false, unchanged_published_strand_applicable false.",
+    "reopening_condition": "Only with a single pre-registered hypothesis, one cutoff, one clipping rule and a stated pass criterion written down before any evaluation-set run, executed once."
+  }
 }

@@ -4,8 +4,12 @@
 - **Workspace:** `/home/zyliu/Documents/rna-stable-ai`
 - **Artifact:** `results/alo_convention/alo_convention_investigation.json`
 - **Follows:** `reports/bp_span_policy_diagnostic_2026-10-20.md`
-- **Status:** **UNRESOLVED.** Two hypotheses excluded, one partially supported
-  and deliberately **not adopted**.
+- **Status:** **CLOSED, unresolved.** Two hypotheses excluded, one partially
+  supported and deliberately **not adopted**.
+- **Closed by user decision, 2026-10-19:** do not spend the blinded evaluation
+  set on the cutoff hypothesis. The frozen `rejected` verdict stands, and the
+  **85-record evaluation set remains unspent** for a better-motivated,
+  pre-registered hypothesis later.
 
 ## The question
 
