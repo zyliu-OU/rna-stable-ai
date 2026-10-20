@@ -1,0 +1,107 @@
+{
+  "built_utc": "2026-10-20T19:29:57.720559+00:00",
+  "fit_all_widths": {
+    "half_life_range_fraction": {
+      "exponent": 0.4018621078556006,
+      "points": 3,
+      "prefactor": 0.004272741750619352,
+      "r_squared": 0.9998825418960761
+    },
+    "half_life_stdev": {
+      "exponent": 0.4217485232468504,
+      "points": 3,
+      "prefactor": 0.0008617854115929448,
+      "r_squared": 0.999532166096946
+    }
+  },
+  "held_out_prediction": {
+    "basis": "the fit was made from the earlier runs only, so the widest run can refute it",
+    "exponent_used": 0.3757567014326883,
+    "fitted_on_widths_nt": [
+      90,
+      150
+    ],
+    "measured_fraction_of_training_range": 0.08393281595066747,
+    "measured_over_predicted": 1.0737369342713323,
+    "predicted_for_width_nt": 1647,
+    "predicted_fraction_of_training_range": 0.07816888222032392,
+    "prefactor_used": 0.004834368210461689
+  },
+  "no_claim": [
+    "Every spread is a spread of PREDICTIONS from an unvalidated model. A scaling law over them describes the model's sensitivity to sequence, not biology.",
+    "No molecule in this project has been measured.",
+    "A power law over three points is a description of three points.",
+    "The widest run is a diagnostic probe, not a campaign design space; editing 90.9 percent of the transcript destroys regional attribution.",
+    "Whether the measured spread at the ceiling is acceptable is a judgement."
+  ],
+  "purpose": "Test the two-point window-width scaling against a third, wider run, and refit across every width.",
+  "runs": [
+    {
+      "bo_front_found": 5,
+      "bo_random_front_found": 1,
+      "design_space": "configs/synonymous_window_design_space_v1_2026-10-20.json",
+      "edit_count_max": 13,
+      "gc_mode": "neutral",
+      "half_life_range": 0.03435378461875094,
+      "half_life_range_fraction_of_training_range": 0.026221615485244817,
+      "half_life_stdev": 0.005822102617866915,
+      "n": 512,
+      "pareto_front_size": 10,
+      "pool_size": 512,
+      "run": "results/design_workflow_runs/20261020T174606.887363Z",
+      "seed": 1729,
+      "substitutable_positions": 13,
+      "translation_stdev": 0.012055352701127555,
+      "window_codons": 30,
+      "window_fraction_of_transcript": 0.04969630038652678,
+      "window_nt": 90
+    },
+    {
+      "bo_front_found": 5,
+      "bo_random_front_found": 1,
+      "design_space": "configs/synonymous_window_design_space_v2_2026-10-20.json",
+      "edit_count_max": 24,
+      "gc_mode": "neutral",
+      "half_life_range": 0.041623226555611126,
+      "half_life_range_fraction_of_training_range": 0.03177024756104293,
+      "half_life_stdev": 0.0070228259107326,
+      "n": 512,
+      "pareto_front_size": 6,
+      "pool_size": 512,
+      "run": "results/design_workflow_runs/20261020T181317.731918Z",
+      "seed": 1729,
+      "substitutable_positions": 24,
+      "translation_stdev": 0.011371985092580996,
+      "window_codons": 50,
+      "window_fraction_of_transcript": 0.08282716731087797,
+      "window_nt": 150
+    },
+    {
+      "bo_front_found": 1,
+      "bo_random_front_found": 0,
+      "design_space": "configs/whole_orf_window_diagnostic_v1_2026-10-20.json",
+      "edit_count_max": 262,
+      "gc_mode": "neutral",
+      "half_life_range": 0.10996309068894017,
+      "half_life_range_fraction_of_training_range": 0.08393281595066747,
+      "half_life_stdev": 0.01964280919242192,
+      "n": 512,
+      "pareto_front_size": 5,
+      "pool_size": 512,
+      "run": "results/design_workflow_runs/20261020T190152.300973Z",
+      "seed": 1729,
+      "substitutable_positions": 291,
+      "translation_stdev": 0.03279006498910473,
+      "window_codons": 549,
+      "window_fraction_of_transcript": 0.90944229707344,
+      "window_nt": 1647
+    }
+  ],
+  "spread_statistic": "standard deviation, and range expressed as a fraction of the calibration's training target range; not range alone, which is set by two members",
+  "window_axis_ceiling": {
+    "measured_fraction_of_training_range_at_the_ceiling": 0.08393281595066747,
+    "note": "This is the widest window the constraints permit for this construct, so it is the ceiling of the window axis, not an arbitrary largest case.",
+    "widest_window_codons": 549,
+    "widest_window_fraction_of_transcript": 0.90944229707344
+  }
+}

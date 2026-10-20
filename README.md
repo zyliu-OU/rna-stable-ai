@@ -159,13 +159,41 @@ matched 512-member runs:
 | predicted half-life spread (stdev) | **1.21×** |
 | predicted TE spread (stdev) | **0.94×** |
 
-The stability spread grew **sub-linearly** and the translation spread **did not grow at
-all**. Half-life still spans only 3.18% of the calibration's training range. Fitting the two
-points gives spread ∝ window^0.37, which would put a whole-ORF window at about 7.8% — so
-**the window is not the lever.** Two points do not establish an exponent, and the whole-ORF
-run has not been done. The diagnosis is that the design space is local while every
-calibration feature is a transcript-wide mean; the open remedy is region-local features,
-which is recorded rather than quietly substituted.
+The stability spread grew **sub-linearly** and the translation spread fell slightly over
+that step. Fitting the two points gave spread ∝ window^0.376, predicting about 7.8% for a
+whole-ORF window.
+
+**That prediction was then tested at the ceiling of the window axis** — every codon the
+constraints allow, 549 codons, 1,647 nt, 90.9% of the transcript, 291 GC-neutral
+substitutable positions, ~10⁹²·⁵ variants
+([diagnostic config](configs/whole_orf_window_diagnostic_v1_2026-10-20.json), which is a
+probe of a scaling relationship and deliberately **not** a design space, since editing 90.9%
+of the transcript destroys regional attribution):
+
+| window | % of transcript | half-life stdev | range as % of training range | TE stdev |
+|---|---|---|---|---|
+| 30 codons | 5.0% | 0.00582 | 2.62% | 0.01206 |
+| 50 codons | 8.3% | 0.00702 | 3.18% | 0.01137 |
+| 549 codons | 90.9% | 0.01964 | **8.39%** | 0.03279 |
+
+Fitted on the first two widths alone, the held-out prediction for the third was **7.82%**
+against a measured **8.39%** — a ratio of **1.07×**. Refitting across all three gives
+exponent **0.422** (R² 0.9995) for half-life stdev and 0.375 (R² 0.9546) for TE stdev.
+
+**Window width is exhausted as a lever.** An 18-fold increase in edited sequence bought
+3.37× the spread, and at the ceiling the predicted half-life still spans under a tenth of
+the calibration's training range. One earlier reading is corrected by the third point: the
+translation side *does* respond — TE spread is 2.72× larger at the whole-ORF width — and the
+30→50 dip was noise on a non-monotone pair, so two points misled on translation while
+happening to be right on stability.
+
+The limit is the features, not the design space: every calibration feature is a
+transcript-wide mean, the protein is fixed, and synonymous rewriting moves such means only
+at the margin. **But a model insensitive to synonymous rewriting may be insensitive because
+the biology is, or because the features are too coarse to see it — these runs cannot
+distinguish those cases.** The open remedy is region-local features, recorded rather than
+quietly substituted; the cost is that the STRAND calibration was fitted on transcript-wide
+features and would no longer apply as fitted.
 
 **One thing that did hold up:** at a budget of 32 of 512, qLogNEHVI recovered 5 of 10 front
 members at 30 codons and 5 of 6 at 50, against random finding 1 in both. That is the first
