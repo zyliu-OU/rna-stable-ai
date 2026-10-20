@@ -286,13 +286,13 @@ above, with `git -c user.name=zyliu-OU -c user.email=<the user's address> commit
 | Item | Value |
 |---|---|
 | Commit before this stretch | `716558e` Record the design-workflow commit hash in handoff 2026-10-20 V4 |
-| Commit published with this handoff | see §11.1 |
+| Commit published with this handoff | `2263a91` |
 | README picture | `diagram_10182026.png`, `sha256 baa831ce16df27ed44a41c2a3b481455a213b328122227b9b2a3820dda47cff1`, **byte-unchanged**, re-verified before publishing |
 | Gates | v5 frozen; **v6 current** |
 | Design spaces | v1 and v2 frozen; **v2 remains the campaign domain**; the whole-ORF config is a parallel diagnostic and supersedes nothing |
 
 ### 11.1 Publication record
 
-This handoff is published in the commit titled *"Run the whole-ORF window and close the
-window-width axis"*. Its hash is recorded by the commit immediately after it, since a file
-cannot contain the hash of the commit that adds it.
+`2263a91` — Run the whole-ORF window and close the window-width axis. The hash is recorded
+by the commit immediately after it, since a file cannot contain the hash of the commit that
+adds it.
