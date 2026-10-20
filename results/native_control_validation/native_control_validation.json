@@ -1,0 +1,195 @@
+{
+  "baseline_gaps": [
+    "Every long in-scope reference is a computational Rfam consensus, not an experimental structure. Accuracy against consensus annotation is not accuracy against measured structure.",
+    "The long in-scope cohort is 6 records across 3 families and 2 clans. That is a small and narrow basis for any accuracy statement.",
+    "The 2,000-2,999 nt band holds exactly one record, so its per-band figure carries no dispersion and no family or clan contrast. Gate v3 accepted this as a documented limitation; any statement spanning that band must carry it.",
+    "No native experimental-structure control exists for the 2,000-2,999 nt band.",
+    "The structure-derived cohort is a six-family feasibility set whose own run records broad_validation_gate_satisfied false and independence_certified false. It is not independent biological validation."
+  ],
+  "built_utc": "2026-10-20T14:49:14.408231+00:00",
+  "claimed_length_range": {
+    "active_length_nt_unchanged": {
+      "maximum_exclusive": 3000,
+      "minimum_inclusive": 1
+    },
+    "claimable_only_with_the_recorded_limitation": {
+      "maximum_exclusive": 3000,
+      "minimum_inclusive": 2000
+    },
+    "claimable_without_caveat": {
+      "maximum_exclusive": 2000,
+      "minimum_inclusive": 1
+    },
+    "rule": "The active scope bounds are unchanged; what changed is what may be CLAIMED. The band remains in scope for inference and is excluded from unqualified accuracy claims."
+  },
+  "cohorts": {
+    "LinearFold": {
+      "long_rfam_consensus": {
+        "bands": {
+          "1000_1999": {
+            "mean_pair_f1": 0.42851759049694793,
+            "n": 5
+          },
+          "1_999": {
+            "mean_pair_f1": null,
+            "n": 0
+          },
+          "2000_2999": {
+            "mean_pair_f1": 0.48621271806415306,
+            "n": 1
+          }
+        },
+        "clan_means": {
+          "CL00111": 0.42851759049694793,
+          "CL00112": 0.48621271806415306
+        },
+        "clans": 2,
+        "families": 3,
+        "family_means": {
+          "RF00177": 0.5050217991721809,
+          "RF02541": 0.48621271806415306,
+          "RF02542": 0.3137612774840986
+        },
+        "mean_clan_pair_f1": 0.45736515428055047,
+        "mean_family_pair_f1": 0.43499859824014414,
+        "mean_record_pair_f1": 0.43813344509148217,
+        "n": 6
+      },
+      "short_bprna_five_clan": {
+        "bands": {
+          "1000_1999": {
+            "mean_pair_f1": null,
+            "n": 0
+          },
+          "1_999": {
+            "mean_pair_f1": 0.33010743167430895,
+            "n": 13
+          },
+          "2000_2999": {
+            "mean_pair_f1": null,
+            "n": 0
+          }
+        },
+        "clan_means": {
+          "CL00002": 0.28469765808821607,
+          "CL00003": 0.29442924542808196,
+          "CL00013": 0.33311202898917974,
+          "CL00041": 0.6490566037735849,
+          "CL00114": 0.3018744034919994
+        },
+        "clans": 5,
+        "families": 5,
+        "family_means": {
+          "RF00010": 0.28469765808821607,
+          "RF01052": 0.33311202898917974,
+          "RF01267": 0.6490566037735849,
+          "RF01469": 0.3018744034919994,
+          "RF01502": 0.29442924542808196
+        },
+        "mean_clan_pair_f1": 0.3726339879542124,
+        "mean_family_pair_f1": 0.3726339879542124,
+        "mean_record_pair_f1": 0.33010743167430895,
+        "n": 13
+      },
+      "structure_derived": {
+        "mean_pair_f1": 0.6261156899493552,
+        "mean_pair_precision": 0.664709541959542,
+        "mean_pair_recall": 0.601108246807495,
+        "n": 10
+      }
+    },
+    "ViennaRNA": {
+      "long_rfam_consensus": {
+        "bands": {
+          "1000_1999": {
+            "mean_pair_f1": 0.41523182684439225,
+            "n": 5
+          },
+          "1_999": {
+            "mean_pair_f1": null,
+            "n": 0
+          },
+          "2000_2999": {
+            "mean_pair_f1": 0.4526610644257703,
+            "n": 1
+          }
+        },
+        "clan_means": {
+          "CL00111": 0.41523182684439225,
+          "CL00112": 0.4526610644257703
+        },
+        "clans": 2,
+        "families": 3,
+        "family_means": {
+          "RF00177": 0.4999503958595841,
+          "RF02541": 0.4526610644257703,
+          "RF02542": 0.28815397332160436
+        },
+        "mean_clan_pair_f1": 0.4339464456350813,
+        "mean_family_pair_f1": 0.4135884778689863,
+        "mean_record_pair_f1": 0.4214700331079552,
+        "n": 6
+      },
+      "short_bprna_five_clan": {
+        "bands": {
+          "1000_1999": {
+            "mean_pair_f1": null,
+            "n": 0
+          },
+          "1_999": {
+            "mean_pair_f1": 0.3346291105849216,
+            "n": 13
+          },
+          "2000_2999": {
+            "mean_pair_f1": null,
+            "n": 0
+          }
+        },
+        "clan_means": {
+          "CL00002": 0.28469765808821607,
+          "CL00003": 0.2991834021372903,
+          "CL00013": 0.33537319787375836,
+          "CL00041": 0.6867924528301886,
+          "CL00114": 0.3018744034919994
+        },
+        "clans": 5,
+        "families": 5,
+        "family_means": {
+          "RF00010": 0.28469765808821607,
+          "RF01052": 0.33537319787375836,
+          "RF01267": 0.6867924528301886,
+          "RF01469": 0.3018744034919994,
+          "RF01502": 0.2991834021372903
+        },
+        "mean_clan_pair_f1": 0.38158422288429056,
+        "mean_family_pair_f1": 0.38158422288429056,
+        "mean_record_pair_f1": 0.3346291105849216,
+        "n": 13
+      },
+      "structure_derived": {
+        "mean_pair_f1": 0.6261156899493552,
+        "mean_pair_precision": 0.664709541959542,
+        "mean_pair_recall": 0.601108246807495,
+        "n": 10
+      }
+    }
+  },
+  "methods": [
+    "LinearFold",
+    "ViennaRNA"
+  ],
+  "model_fitted": false,
+  "no_claim": [
+    "No new inference was performed and no model was fitted.",
+    "Accuracy against computational consensus references is not biological validation.",
+    "This does not establish any stability, translation or expression benefit.",
+    "Satisfying a requirement is a gate-review judgement, not an output of this script."
+  ],
+  "no_new_inference": true,
+  "purpose": "Evidence for gate v4 requirement 4: accuracy of the native controls the project relies on, by band, family and clan.",
+  "separation_argument": {
+    "claim": "Sequence-, family- and clan-separated validation is satisfied by construction for these controls.",
+    "reason": "LinearFold and ViennaRNA are Turner-model thermodynamic folders with no training set. Their parameters come from published optical-melting measurements, not from these references, so there is no exposure to separate from.",
+    "scope_limit": "Applies ONLY to the native controls. It would not apply to any learned component, and it is not a claim that the cohorts are large, diverse or representative."
+  }
+}
