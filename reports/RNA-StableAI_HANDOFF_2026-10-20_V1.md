@@ -412,7 +412,7 @@ goes through the clone above. Other clones exist in the scratchpad at earlier co
 | Item | Value |
 |---|---|
 | Commit before today's gate review | `9ed3fdf` Validate the native controls and expand the 2000-2999 nt band |
-| Commit published with this handoff | see §8.1 |
+| Commit published with this handoff | `dec1397` |
 | README picture | `diagram_10182026.png`, `sha256 baa831ce16df27ed44a41c2a3b481455a213b328122227b9b2a3820dda47cff1`, byte-unchanged |
 | README diagram | `workflow_10192026.svg` (the superseded `diagram_10192026.svg` was removed on user instruction) |
 | Disclosed by the public repo | Ping's unpublished Fluc and Fluc-PEST ORFs, IVT conditions, cap supplier part number (Hongene ON-134), under the user's "push everything" |
@@ -424,10 +424,9 @@ next step; the picture itself must not be touched.**
 
 ### 8.1 Publication record
 
-This handoff is published in the commit titled *"Close the Stage 2 gate: ratify
-requirements 2, 4 and 6, re-scope 5 onto the native path, accept requirement 1's cohort
-limitation"*, with its hash recorded in the immediately following commit so the file can
-name the hash it ships in. Run `git -C "$PUB" log --oneline -3` to see both.
+`dec1397` — Close the Stage 2 gate: ratify requirements 2, 4 and 6, re-scope 5 onto the
+native path, accept requirement 1's cohort limitation. The hash is recorded by the commit
+immediately after it, since a file cannot contain the hash of the commit that adds it.
 
 One incidental fix went out with it. `tests/test_stage2_gate_v4.py::test_every_cited_evidence_path_exists`
 **failed from a fresh clone**, because two artifacts gate v4 cites were never bundled into
