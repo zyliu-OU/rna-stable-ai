@@ -1,0 +1,149 @@
+{
+  "band": {
+    "maximum_exclusive": 3000,
+    "minimum_inclusive": 2000
+  },
+  "built_utc": "2026-10-20T16:24:19.296781+00:00",
+  "census_eligibility_correction": "The census recorded 55 further band records as eligible, and that count overstates what is usable. Selection checks the fixed family cap BEFORE attempting to bind a pair reference, so those records were never binding-tested. Only 5 bind; the other 50 fail with a missing annotated paired column and an incomplete reference. Any earlier statement that the band could be expanded by about 56 records should be read against this.",
+  "families": [
+    "RF02540",
+    "RF02541"
+  ],
+  "fold_failures": {},
+  "frozen_selection_modified": false,
+  "learned_model_involved": false,
+  "model_fitted": false,
+  "no_claim": [
+    "The references remain computational Rfam consensus annotations, not experimental structures. Accuracy against them is not biological validation.",
+    "Only RF02540 binds. Every record here is from that one family, so this cohort gives the band dispersion but no family contrast within itself. Taken together with the single RF02541 record in the frozen selection, the band spans two families in one clan, which is broader than one record and still narrow.",
+    "No model was fitted and no learned component was involved.",
+    "Satisfying a gate requirement is a gate-review judgement, not an output here."
+  ],
+  "per_method": {
+    "LinearFold": {
+      "families": 1,
+      "family_means": {
+        "RF02540": 0.5272664585439543
+      },
+      "max_pair_f1": 0.6033977738722905,
+      "mean_family_pair_f1": 0.5272664585439543,
+      "mean_record_pair_f1": 0.5272664585439543,
+      "median_pair_f1": 0.5440180586907449,
+      "min_pair_f1": 0.39454235361000567,
+      "n": 5,
+      "stdev_pair_f1": 0.08049671466312941
+    },
+    "ViennaRNA": {
+      "families": 1,
+      "family_means": {
+        "RF02540": 0.505647836234999
+      },
+      "max_pair_f1": 0.5863228699551569,
+      "mean_family_pair_f1": 0.505647836234999,
+      "mean_record_pair_f1": 0.505647836234999,
+      "median_pair_f1": 0.543746330005872,
+      "min_pair_f1": 0.3086350974930362,
+      "n": 5,
+      "stdev_pair_f1": 0.1116252065826537
+    }
+  },
+  "purpose": "Native-control accuracy across the full 2,000-2,999 nt band, giving the band the dispersion and family contrast a single record cannot.",
+  "records_evaluated": 5,
+  "relation_to_the_frozen_cohort": "The frozen development selection still holds exactly one band record and is unchanged. This is a separately named native-control band cohort evaluated beside it, not a replacement for it.",
+  "rows": [
+    {
+      "family_id": "RF02540",
+      "id": "RF02540:CP001365.1/22567-25488",
+      "length_nt": 2922,
+      "method": "LinearFold",
+      "pair_f1": 0.5739540365350618,
+      "pair_precision": 0.5345773874862788,
+      "pair_recall": 0.6195928753180662
+    },
+    {
+      "family_id": "RF02540",
+      "id": "RF02540:CP001365.1/22567-25488",
+      "length_nt": 2922,
+      "method": "ViennaRNA",
+      "pair_f1": 0.543746330005872,
+      "pair_precision": 0.504907306434024,
+      "pair_recall": 0.589058524173028
+    },
+    {
+      "family_id": "RF02540",
+      "id": "RF02540:CP001688.1/618088-615166",
+      "length_nt": 2923,
+      "method": "LinearFold",
+      "pair_f1": 0.6033977738722905,
+      "pair_precision": 0.5591748099891423,
+      "pair_recall": 0.6552162849872774
+    },
+    {
+      "family_id": "RF02540",
+      "id": "RF02540:CP001688.1/618088-615166",
+      "length_nt": 2923,
+      "method": "ViennaRNA",
+      "pair_f1": 0.5465116279069767,
+      "pair_precision": 0.5032119914346895,
+      "pair_recall": 0.5979643765903307
+    },
+    {
+      "family_id": "RF02540",
+      "id": "RF02540:CP001719.1/762872-765862",
+      "length_nt": 2991,
+      "method": "LinearFold",
+      "pair_f1": 0.39454235361000567,
+      "pair_precision": 0.3566289825282631,
+      "pair_recall": 0.44147582697201015
+    },
+    {
+      "family_id": "RF02540",
+      "id": "RF02540:CP001719.1/762872-765862",
+      "length_nt": 2991,
+      "method": "ViennaRNA",
+      "pair_f1": 0.3086350974930362,
+      "pair_precision": 0.2745292368681863,
+      "pair_recall": 0.3524173027989822
+    },
+    {
+      "family_id": "RF02540",
+      "id": "RF02540:CP002278.1/26764-23775",
+      "length_nt": 2990,
+      "method": "LinearFold",
+      "pair_f1": 0.5440180586907449,
+      "pair_precision": 0.48884381338742394,
+      "pair_recall": 0.6132315521628499
+    },
+    {
+      "family_id": "RF02540",
+      "id": "RF02540:CP002278.1/26764-23775",
+      "length_nt": 2990,
+      "method": "ViennaRNA",
+      "pair_f1": 0.5863228699551569,
+      "pair_precision": 0.5240480961923848,
+      "pair_recall": 0.6653944020356234
+    },
+    {
+      "family_id": "RF02540",
+      "id": "RF02540:CR937012.1/19041-21972",
+      "length_nt": 2932,
+      "method": "LinearFold",
+      "pair_f1": 0.5204200700116686,
+      "pair_precision": 0.48060344827586204,
+      "pair_recall": 0.5674300254452926
+    },
+    {
+      "family_id": "RF02540",
+      "id": "RF02540:CR937012.1/19041-21972",
+      "length_nt": 2932,
+      "method": "ViennaRNA",
+      "pair_f1": 0.5430232558139535,
+      "pair_precision": 0.5,
+      "pair_recall": 0.594147582697201
+    }
+  ],
+  "skipped": {
+    "binding_failed": 50
+  },
+  "why_the_cap_does_not_apply": "The fixed per-family cap bounded how much data a learned model could be trained and evaluated on. LinearFold and ViennaRNA have no training set, so evaluating them on more references is folding rather than fitting."
+}

@@ -1,0 +1,292 @@
+{
+  "schema_version": 5,
+  "name": "stage2_to_stage3_gate_v5",
+  "effective_date": "2026-10-20",
+  "supersedes": {
+    "file": "configs/stage2_to_stage3_gate_v4_2026-10-20.json",
+    "sha256": "1beeb67371fc0336a218387006d6770a56ec1ee6380cd8b19ea337862fa4f7f6",
+    "status": "frozen and unedited; retained because existing frozen runs reference it",
+    "chain": "v5 supersedes v4, which superseded v3, v2 and configs/stage2_to_stage3_gate_2026-10-18.json; all remain frozen"
+  },
+  "amendment_record": {
+    "what_changed": "This is the gate review. Requirements 2, 4 and 6 are ratified on evidence produced on 2026-10-20; requirement 5 is re-scoped onto the native path and satisfied there; requirement 1 is accepted as a documented limitation, in the same manner as requirement 3 in v3. requirements_satisfied moves from 1 to 6 and stage3_ready becomes true.",
+    "what_did_not_change": "The stage 3 target, the active length scope, the v3 band acceptance, the retirement of the learned model, and the text of every requirement except 5. No model defaults changed. Candidate design and new-sequence scoring remain disabled.",
+    "authorized_by": "user, 2026-10-20, approving the gate review set out in chat: ratify 2, 4 and 6; re-scope 5 to the native path; accept requirement 1's cohort limitation.",
+    "reversible": "If the user wants requirement 1 left open rather than accepted, this version should be superseded by v6 rather than edited.",
+    "prior_amendments": [
+      "v2 amended stage3_target to transfected_cell_expression",
+      "v3 accepted the 2000-2999 nt band as a documented limitation",
+      "v4 amended requirement 4 to reference the relied-upon native controls"
+    ]
+  },
+  "stage": "stage2_structure_validation_before_stage3",
+  "active_length_nt": {
+    "minimum_inclusive": 1,
+    "maximum_exclusive": 3000
+  },
+  "architecture": "LinearFold / ViennaRNA -> STRAND + RiboNN + BoTorch",
+  "stage3_target": "transfected_cell_expression",
+  "stage3_target_detail": {
+    "system": "transfected cells or in vivo",
+    "not_cell_free": true,
+    "readouts": [
+      "firefly luciferase luminescence, time course, for expression",
+      "RT-qPCR mRNA time course, for in-cell stability"
+    ],
+    "cell_types_stated": [
+      "A549",
+      "activated CD3+ T cells containing CD4+ and CD8+ populations"
+    ],
+    "assay_definition": "configs/assay_definition_v3_2026-10-19.json",
+    "note": "Unchanged from v4. Cell-free expression is not the Stage 3 target."
+  },
+  "requirements_before_stage3": [
+    "Frozen independent sequence_and_family_clan_separated_validation_within_scope",
+    "Reported_accuracy_and_failures_by_length_band_and_family_against_native_controls",
+    "Resolve_sparse_2000_2999_nt_coverage_before_claiming_the_full_length_range",
+    "Demonstrate_credible_structure_accuracy_from_the_relied_upon_native_controls_with_explicit_review_of_baseline_gaps",
+    "Pass_constraint_decoder_resource_and_replay_checks_on_the_relied_upon_native_path",
+    "Document_remaining_limitations_before_expression_candidate_design"
+  ],
+  "requirements_satisfied": 6,
+  "requirements_satisfied_detail": {
+    "satisfied": [
+      "Frozen independent sequence_and_family_clan_separated_validation_within_scope",
+      "Reported_accuracy_and_failures_by_length_band_and_family_against_native_controls",
+      "Resolve_sparse_2000_2999_nt_coverage_before_claiming_the_full_length_range",
+      "Demonstrate_credible_structure_accuracy_from_the_relied_upon_native_controls_with_explicit_review_of_baseline_gaps",
+      "Pass_constraint_decoder_resource_and_replay_checks_on_the_relied_upon_native_path",
+      "Document_remaining_limitations_before_expression_candidate_design"
+    ],
+    "not_satisfied": [],
+    "basis_by_requirement": {
+      "1": "accepted_as_documented_limitation, not satisfied by acquiring references",
+      "2": "satisfied_on_evidence",
+      "3": "accepted_as_documented_limitation in v3, carried forward, and expanded with native controls",
+      "4": "satisfied_on_evidence",
+      "5": "satisfied_on_evidence after re-scoping onto the native path",
+      "6": "satisfied_on_evidence"
+    },
+    "caution": "Two of the six are satisfied by accepting a documented limitation and narrowing what may be claimed, not by improving the underlying data. Six of six satisfied does NOT mean the structure evidence is strong. It means the gate's conditions, as written and as amended, are met and the limitations are recorded and binding."
+  },
+  "requirement_1_resolution": {
+    "requirement": "Frozen independent sequence_and_family_clan_separated_validation_within_scope",
+    "resolution": "accepted_as_documented_limitation",
+    "status": "satisfied_by_narrowing_the_claim_not_by_acquiring_references",
+    "decided_by": "user, 2026-10-20",
+    "precedent": "Same mechanism the user used for requirement 3 in v3.",
+    "what_is_genuinely_satisfied": {
+      "separation": "Sequence-, family- and clan-separation is satisfied BY CONSTRUCTION for the relied-upon components. LinearFold and ViennaRNA are Turner-model thermodynamic folders with no training set; their parameters come from published optical-melting measurements, not from these references, so there is no exposure to separate from.",
+      "scope_limit_of_that_argument": "Applies ONLY to these two tools. It would not apply to any learned component, including any future replacement for the retired model, and it is not a claim that the cohorts are large, diverse or representative.",
+      "frozen": "The cohort and its predictions are frozen: results/long_validation_coverage_runs/20261017T033935.363253Z and results/long_native_controls_runs/20261017T034318.804594Z, and the replay leg of requirement 5 reproduces all 22 folds exactly."
+    },
+    "what_the_limitation_is": {
+      "cohort_size": "6 in-scope records, across 3 families and 2 clans. The frozen cohort holds 11; the other 5 are at or above 3000 nt and outside the active scope.",
+      "label_provenance": "Every in-scope reference is a computational Rfam consensus annotation. There is NO experimental-structure reference in scope, and none at all for the 2000-2999 nt band.",
+      "independence": "The structure-derived cohort's own run records broad_validation_gate_satisfied false and independence_certified false. It is a feasibility set, not independent validation.",
+      "character_of_the_gap": "This is a data acquisition problem, not a compute problem. No run can close it."
+    },
+    "binding_consequence": [
+      "The word 'independent' MUST NOT be used of this validation without this limitation attached.",
+      "Accuracy against computational consensus MUST NOT be reported or implied as accuracy against measured structure, and is not biological validation.",
+      "Any accuracy statement must carry the cohort size and the label provenance.",
+      "The separation-by-construction argument MUST NOT be reused for any learned component."
+    ],
+    "what_would_close_it_properly": "Acquiring experimental-structure references within the 1-2999 nt scope, across more than 3 families and more than 2 clans, including the 2000-2999 nt band, and re-running the native controls against them. That would supersede this acceptance by a later gate version.",
+    "evidence": [
+      "results/native_control_validation/native_control_validation.json",
+      "results/native_path_requirement5_runs/20261020T162226.011664Z/summary.json",
+      "reports/remaining_limitations_addendum_2026-10-20.md"
+    ]
+  },
+  "requirement_2_ratification": {
+    "requirement": "Reported_accuracy_and_failures_by_length_band_and_family_against_native_controls",
+    "status": "satisfied_on_evidence",
+    "what_was_shown": "Accuracy for both native controls reported by length band, by family AND by clan, across all three available cohorts, with family and clan means reported beside the record mean because a record mean on cohorts this small is dominated by whichever family contributes most records.",
+    "results": {
+      "long_rfam_consensus_in_scope": {
+        "n": 6,
+        "LinearFold": {"record": 0.4381, "family": 0.435, "clan": 0.4574, "families": 3, "clans": 2},
+        "ViennaRNA": {"record": 0.4215, "family": 0.4136, "clan": 0.4339}
+      },
+      "short_bprna_five_clan": {
+        "n": 13,
+        "LinearFold": {"record": 0.3301, "family": 0.3726, "clan": 0.3726, "families": 5, "clans": 5},
+        "ViennaRNA": {"record": 0.3346, "family": 0.3816, "clan": 0.3816}
+      },
+      "structure_derived_feasibility": {"n": 10, "LinearFold": 0.6261, "ViennaRNA": 0.6261}
+    },
+    "failures_reported": "Fold failures and unscorable records are carried in the source runs; the 2000-2999 band expansion recorded zero fold failures across 10 folds.",
+    "evidence": [
+      "results/native_control_validation/native_control_validation.json",
+      "results/band_native_control_runs/20261020T162419.296842Z/summary.json"
+    ],
+    "evidence_sha256": {
+      "results/native_control_validation/native_control_validation.json": "2e5aa6082f7789566493c240bb4749dc73f5f0af4c72e1c74e6b3b68e35e5d48",
+      "results/band_native_control_runs/20261020T162419.296842Z/summary.json": "e2473cf7feba9e8c6d3a5b5a082c716aa1f0647862996cc870bbc46814a587ac"
+    },
+    "tests": ["tests/test_native_control_validation.py", "tests/test_band_native_controls.py"]
+  },
+  "requirement_3_resolution": {
+    "requirement": "Resolve_sparse_2000_2999_nt_coverage_before_claiming_the_full_length_range",
+    "resolution": "accepted_as_documented_limitation",
+    "status": "carried forward from v3, unchanged in substance, and partially expanded",
+    "decided_by": "user, 2026-10-19",
+    "carried_from": "configs/stage2_to_stage3_gate_v3_2026-10-19.json",
+    "expansion_on_2026_10_20": {
+      "what_was_done": "The band was evaluated with native controls beyond the frozen selection. The per-family cap that limited it existed to bound a learned model's training and evaluation exposure; the folders have no training set, so evaluating them on more references is folding rather than fitting.",
+      "records": "1 -> 5",
+      "LinearFold": {"n": 5, "mean_pair_f1": 0.5273, "stdev": 0.0805, "min": 0.3945, "max": 0.6034},
+      "ViennaRNA": {"n": 5, "mean_pair_f1": 0.5056, "stdev": 0.1116, "min": 0.3086, "max": 0.5863},
+      "frozen_selection_modified": false,
+      "what_is_still_limited": "All 5 bound records are RF02540, so this cohort gives the band dispersion but no family contrast within itself. With the frozen RF02541 record the band spans two families in one clan. No clan contrast within the band exists.",
+      "run": "results/band_native_control_runs/20261020T162419.296842Z/summary.json"
+    },
+    "correction_to_v3": {
+      "what_v3_said": "requirement_3_resolution.what_was_available_and_not_taken.family_level_expansion recorded 'available: 56 eligible records locally, RF02540 31 and RF02541 25'.",
+      "what_is_true": "That count overstates what is usable. Selection checks the fixed family cap BEFORE attempting to bind a pair reference, so those records were never binding-tested. Only 5 of the 55 further records bind; the other 50 fail with a missing annotated paired column and an incomplete reference.",
+      "handling": "v3 is frozen and is NOT edited. The correction is recorded here and in reports/remaining_limitations_addendum_2026-10-20.md, section N4."
+    },
+    "binding_consequence": "Unchanged from v3. The full 1 to 2999 nt length range MUST NOT be claimed. Any accuracy, coverage or capability statement spanning the 2000-2999 nt band must carry this limitation explicitly."
+  },
+  "requirement_4_ratification": {
+    "requirement": "Demonstrate_credible_structure_accuracy_from_the_relied_upon_native_controls_with_explicit_review_of_baseline_gaps",
+    "status": "satisfied_on_evidence",
+    "amended_in": "configs/stage2_to_stage3_gate_v4_2026-10-20.json",
+    "what_was_shown": "Accuracy of the relied-upon native controls, with the baseline gaps reviewed explicitly rather than implied, and with the separation argument stated and scope-limited.",
+    "what_credible_means_here": "About 0.42-0.44 mean pair F1 against computational consensus on the in-scope long references, and 0.6261 on the structure-derived feasibility set. This is credible as the accuracy of a published thermodynamic folder on consensus annotation. It is NOT a strong structural result, and the gate does not record it as one.",
+    "baseline_gaps_reviewed": [
+      "Every long in-scope reference is a computational Rfam consensus, not an experimental structure.",
+      "The long in-scope cohort is 6 records across 3 families and 2 clans.",
+      "The 2000-2999 nt band holds one frozen record and carries the v3 limitation.",
+      "No native experimental-structure control exists for the 2000-2999 nt band.",
+      "The structure-derived cohort records broad_validation_gate_satisfied false and independence_certified false."
+    ],
+    "downstream_consequence": "The architecture is LinearFold / ViennaRNA -> STRAND + RiboNN + BoTorch, so this accuracy is the quality of the INPUT to the STRAND calibration and the optimiser. Structure-derived features carry this error forward and no component downstream estimates or propagates it.",
+    "evidence": ["results/native_control_validation/native_control_validation.json"],
+    "evidence_sha256": {
+      "results/native_control_validation/native_control_validation.json": "2e5aa6082f7789566493c240bb4749dc73f5f0af4c72e1c74e6b3b68e35e5d48"
+    },
+    "tests": ["tests/test_stage2_gate_v4.py", "tests/test_native_control_validation.py"]
+  },
+  "requirement_5_rescope_and_ratification": {
+    "previous_text": "Pass_constraint_decoder_resource_and_replay_checks",
+    "new_text": "Pass_constraint_decoder_resource_and_replay_checks_on_the_relied_upon_native_path",
+    "status": "satisfied_on_evidence, after re-scoping",
+    "decided_by": "user, 2026-10-20",
+    "why_rescoped": "The replay leg meant reloading learned-model checkpoints. Those were deleted on 2026-10-20 when the model was retired, so the leg is permanently unrunnable as written, and nothing in the production path loads them. The checks were moved onto the components the project relies on rather than dropped.",
+    "what_was_not_restored": "The learned-model replay leg. It has no artifact to replay and is not reinstated. Requirement 5 MUST NOT be read as having been satisfied on its original terms.",
+    "legs": {
+      "replay": {
+        "passed": true,
+        "detail": "22 of 22 folds (11 frozen records x 2 methods) reproduce the frozen dot-bracket structure AND the frozen MFE exactly.",
+        "criterion": "compared against the frozen rows, not recomputed on both sides"
+      },
+      "constraint_decoder": {
+        "passed": true,
+        "detail": "22 of 22 constrained folds honour every enforced reference pair, up to 20 enforced pairs per record, under the same time and memory bounds as an unconstrained fold.",
+        "conventions": "Constraint strings are not interchangeable between the tools: ViennaRNA treats '.' as unconstrained, LinearFold treats '.' as forced-unpaired and '?' as unconstrained. Each is built with its own filler."
+      },
+      "refusal_control": {
+        "passed": true,
+        "detail": "A pair below the minimum hairpin size is refused by both tools rather than reported as a successful fold.",
+        "finding": "ViennaRNA 2.7.2 with CONSTRAINT_DB_ENFORCE_BP silently DROPS such a pair, folds without it and returns a finite energy, raising nothing. src/rnastable/vienna_constraint_worker.py therefore verifies every enforced pair against the returned structure and exits non-zero when any is absent. No other code path calls hc_add_from_db directly, and none should without the same check. LinearFold emits no parseable structure on the same input, which is a refusal in effect but not an explicit diagnostic."
+      },
+      "resource": {
+        "passed": true,
+        "detail": "Maximum 8.18 s wall and 101.5 MiB peak RSS across all records and both methods, against the frozen limits of 30 s and 4 GiB. Within the active scope: LinearFold 1.32 s / 97.2 MiB and ViennaRNA 7.08 s / 68.9 MiB at 2000-2999 nt.",
+        "caveat": "Measured on this machine and this cohort only."
+      }
+    },
+    "no_claim": [
+      "Reproducing a frozen fold is determinism, not accuracy.",
+      "Honouring a constraint is decoder correctness, not structural correctness: a constrained fold is no evidence that the constrained pairs are real."
+    ],
+    "evidence": ["results/native_path_requirement5_runs/20261020T162226.011664Z/summary.json"],
+    "evidence_sha256": {
+      "results/native_path_requirement5_runs/20261020T162226.011664Z/summary.json": "a13c44be79a2394bc9ac12978b15bb8a45d5eaa6f529bc67fb5dc90e1d41a6d5"
+    },
+    "script": "scripts/verify_native_path_requirement5.py",
+    "worker_added": "src/rnastable/vienna_constraint_worker.py",
+    "tests": ["tests/test_native_path_requirement5.py"]
+  },
+  "requirement_6_ratification": {
+    "requirement": "Document_remaining_limitations_before_expression_candidate_design",
+    "status": "satisfied_on_evidence",
+    "documents": [
+      "reports/remaining_limitations_before_candidate_design_2026-10-19.md",
+      "reports/remaining_limitations_addendum_2026-10-20.md"
+    ],
+    "documents_sha256": {
+      "reports/remaining_limitations_before_candidate_design_2026-10-19.md": "f007b1cb8250f805e417ae67fb72e7968654f9acdbfe17952e56602766329282",
+      "reports/remaining_limitations_addendum_2026-10-20.md": "8562652a87039d2545da90012d41ecc074541be2818d05953348ba832d374bc1"
+    },
+    "relationship": "The addendum extends the 2026-10-19 document, which is unedited and still stands in full. Both are frozen at the hashes above; a later change should add a further document rather than edit either.",
+    "limitations_recorded_today": [
+      "N1 the learned model is retired and its development runs can no longer be replayed from the tree; 789 of 886 deleted checkpoints are not recoverable",
+      "N2 requirement 5 was re-scoped, not restored",
+      "N3 ViennaRNA silently drops an unsatisfiable hard constraint",
+      "N4 the band expanded 1 -> 5 and the earlier 56-eligible availability figure was wrong",
+      "N5 native-control structure accuracy is modest and is the input to everything downstream",
+      "N6 requirement 1 is a data acquisition problem that no run can close",
+      "N7 BoTorch is absent, so the optimisation stage has never run end-to-end",
+      "N8 carried forward unresolved: m1-pseudouridine, incommensurable score sides, assay unit mismatch, the unresolved span policy with the blinded set unspent, unmeasured assay CVs, undecided decision costs, the unresolved power convention"
+    ]
+  },
+  "learned_model_status": {
+    "relied_upon": false,
+    "disposition": "RETIRED on 2026-10-20. Checkpoints deleted from the working tree.",
+    "carried_from": "configs/stage2_to_stage3_gate_v4_2026-10-20.json, unchanged",
+    "may_be_restored": "only by a later gate version, on evidence that it meets or exceeds the native controls",
+    "historical_runs_remain_development_evidence": true,
+    "test_consequence": "38 replay tests are skipped by tests/conftest.py with an explicit retirement reason, and only for a missing .pt/.pth under results/ that is not a RiboNN weight."
+  },
+  "claimed_length_range": {
+    "active_length_nt_unchanged": {
+      "minimum_inclusive": 1,
+      "maximum_exclusive": 3000
+    },
+    "claimable_without_caveat": {
+      "minimum_inclusive": 1,
+      "maximum_exclusive": 2000
+    },
+    "claimable_only_with_the_recorded_limitation": {
+      "minimum_inclusive": 2000,
+      "maximum_exclusive": 3000
+    },
+    "rule": "Unchanged from v3 and v4. The active scope bounds are unchanged; what is bounded is what may be CLAIMED."
+  },
+  "stage3_ready": true,
+  "stage3_ready_detail": {
+    "meaning": "The six Stage 2 gate requirements, as written and as amended, are met, and the limitations are recorded and binding. It does NOT mean the structure evidence is strong, that any expression or stability benefit is established, or that the assay can run.",
+    "two_of_six_are_accepted_limitations": "Requirements 1 and 3 are satisfied by narrowing what may be claimed, not by improving the data.",
+    "separate_switches_not_opened_here": {
+      "stage3_development_started": "false; opening it is its own decision",
+      "new_sequence_scoring_enabled": "false; requires a decision on the unresolved base-pair span policy, whose investigation is closed unresolved and whose blinded 85-record evaluation set is unspent",
+      "expression_candidate_design_enabled": "false; requires BoTorch to be installed and the optimisation stage exercised end-to-end, and requires the assay side to be unblocked",
+      "model_defaults_changed": "false"
+    },
+    "stage3_entry_preconditions_outside_this_gate": [
+      "measured coefficients of variation for both assay readouts",
+      "the decision cost of a false accept against a false reject",
+      "whether Fluc-PEST enters the panel",
+      "botorch installed in .venv; tests/test_discrete_bo.py currently skips",
+      "a decision on the power convention, lognormal_exact against log1p_cv; assay_definition_v3 is not superseded"
+    ]
+  },
+  "stage3_development_started": false,
+  "model_defaults_changed": false,
+  "expression_benefit_established": false,
+  "new_sequence_scoring_enabled": false,
+  "expression_candidate_design_enabled": false,
+  "historical_runs_remain_development_evidence": true,
+  "what_must_not_be_claimed": [
+    "That the Stage 2 structure evidence is strong, or that six of six satisfied means it is.",
+    "That the validation is independent, without the requirement 1 limitation attached.",
+    "That accuracy against computational consensus is accuracy against measured structure, or biological validation.",
+    "That requirement 5 passed on its original terms.",
+    "That the full 1-2999 nt range is claimable without the recorded band limitation.",
+    "That any stability, translation or expression benefit has been established.",
+    "That the retired model's development runs can be reproduced from the tree."
+  ]
+}

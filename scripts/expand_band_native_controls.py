@@ -174,6 +174,13 @@ def main(argv=None):
             "The frozen development selection still holds exactly one band record and is "
             "unchanged. This is a separately named native-control band cohort evaluated "
             "beside it, not a replacement for it."),
+        "census_eligibility_correction": (
+            "The census recorded 55 further band records as eligible, and that count "
+            "overstates what is usable. Selection checks the fixed family cap BEFORE "
+            "attempting to bind a pair reference, so those records were never "
+            "binding-tested. Only 5 bind; the other 50 fail with a missing annotated "
+            "paired column and an incomplete reference. Any earlier statement that the "
+            "band could be expanded by about 56 records should be read against this."),
         "why_the_cap_does_not_apply": (
             "The fixed per-family cap bounded how much data a learned model could be "
             "trained and evaluated on. LinearFold and ViennaRNA have no training set, so "
@@ -181,7 +188,11 @@ def main(argv=None):
         "no_claim": [
             "The references remain computational Rfam consensus annotations, not "
             "experimental structures. Accuracy against them is not biological validation.",
-            "Two families in one clan is broader than one record, and still narrow.",
+            "Only RF02540 binds. Every record here is from that one family, so this "
+            "cohort gives the band dispersion but no family contrast within itself. "
+            "Taken together with the single RF02541 record in the frozen selection, the "
+            "band spans two families in one clan, which is broader than one record and "
+            "still narrow.",
             "No model was fitted and no learned component was involved.",
             "Satisfying a gate requirement is a gate-review judgement, not an output here.",
         ],

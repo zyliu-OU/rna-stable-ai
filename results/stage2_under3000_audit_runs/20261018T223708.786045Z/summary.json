@@ -1,0 +1,2155 @@
+{
+  "scope": {
+    "minimum_inclusive": 1,
+    "maximum_exclusive": 3000
+  },
+  "stage3_target": "cell_free_expression",
+  "ready_for_stage3": false,
+  "reasons": [
+    "Learned model remains below both native controls on development references",
+    "Only one long development reference lies in 2000-2999 nt",
+    "Independent complete-reference validation remains unestablished",
+    "Existing checkpoints were trained with some now-deferred sequences"
+  ],
+  "long_development_reference_count": 6,
+  "long_reference_band_counts": {
+    "1000_1999": 5,
+    "2000_2999": 1
+  },
+  "excluded_deferred_references": [
+    {
+      "id": "RF02540:AE000666.1/1604009-1607048",
+      "length_nt": 3040
+    },
+    {
+      "id": "RF02540:AE009439.1/585271-588370",
+      "length_nt": 3100
+    },
+    {
+      "id": "RF02540:CP000077.1/1106933-1103895",
+      "length_nt": 3039
+    },
+    {
+      "id": "RF02541:CP001146.1/625787-628802",
+      "length_nt": 3016
+    },
+    {
+      "id": "RF02541:CP002683.1/863851-860827",
+      "length_nt": 3025
+    }
+  ],
+  "long_model_results": {
+    "control_88_top16": {
+      "mean_seed_record_pair_f1": 0.25368998285016114,
+      "per_seed": {
+        "7": {
+          "n": 6,
+          "mean_record_pair_f1": 0.2718270526528694,
+          "family_means": {
+            "RF00177": 0.312604051054384,
+            "RF02541": 0.2885948330182735,
+            "RF02542": 0.20227766486789545
+          },
+          "mean_family_pair_f1": 0.26782551631351764,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.2684734965797886
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.2885948330182735
+            }
+          }
+        },
+        "1729": {
+          "n": 6,
+          "mean_record_pair_f1": 0.22899246841999787,
+          "family_means": {
+            "RF00177": 0.2824577946967686,
+            "RF02541": 0.20634920634920634,
+            "RF02542": 0.1601161100402375
+          },
+          "mean_family_pair_f1": 0.21630770369540417,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.2335211208341562
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.20634920634920634
+            }
+          }
+        },
+        "20261015": {
+          "n": 6,
+          "mean_record_pair_f1": 0.2602504274776163,
+          "family_means": {
+            "RF00177": 0.3215364549173468,
+            "RF02541": 0.24532224532224534,
+            "RF02542": 0.17578547739570605
+          },
+          "mean_family_pair_f1": 0.24754805921176604,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.2632360639086905
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.24532224532224534
+            }
+          }
+        }
+      }
+    },
+    "control_88_top32": {
+      "mean_seed_record_pair_f1": 0.2694750065877726,
+      "per_seed": {
+        "7": {
+          "n": 6,
+          "mean_record_pair_f1": 0.27648645646274334,
+          "family_means": {
+            "RF00177": 0.30342342341639217,
+            "RF02541": 0.26690604428485937,
+            "RF02542": 0.24087121212121212
+          },
+          "mean_family_pair_f1": 0.2704002266074879,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.2784025388983201
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.26690604428485937
+            }
+          }
+        },
+        "1729": {
+          "n": 6,
+          "mean_record_pair_f1": 0.25363089017179835,
+          "family_means": {
+            "RF00177": 0.2868473457270941,
+            "RF02541": 0.26666666666666666,
+            "RF02542": 0.19728831859142062
+          },
+          "mean_family_pair_f1": 0.2502674436617271,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.2510237348728247
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.26666666666666666
+            }
+          }
+        },
+        "20261015": {
+          "n": 6,
+          "mean_record_pair_f1": 0.2783076731287761,
+          "family_means": {
+            "RF00177": 0.3252865417866801,
+            "RF02541": 0.27712418300653596,
+            "RF02542": 0.2084311152030402
+          },
+          "mean_family_pair_f1": 0.2702806133320854,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.2785443711532241
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.27712418300653596
+            }
+          }
+        }
+      }
+    },
+    "control_88_top64": {
+      "mean_seed_record_pair_f1": 0.26786652850690384,
+      "per_seed": {
+        "7": {
+          "n": 6,
+          "mean_record_pair_f1": 0.276715270303135,
+          "family_means": {
+            "RF00177": 0.3494062107235893,
+            "RF02541": 0.28734974241556954,
+            "RF02542": 0.16236162361623618
+          },
+          "mean_family_pair_f1": 0.2663725255851317,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.27458837588064805
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.28734974241556954
+            }
+          }
+        },
+        "1729": {
+          "n": 6,
+          "mean_record_pair_f1": 0.2436329646184947,
+          "family_means": {
+            "RF00177": 0.2701872140842669,
+            "RF02541": 0.2853453841187863,
+            "RF02542": 0.18294538066969063
+          },
+          "mean_family_pair_f1": 0.2461593262909146,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.2352904807184364
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.2853453841187863
+            }
+          }
+        },
+        "20261015": {
+          "n": 6,
+          "mean_record_pair_f1": 0.28325135059908185,
+          "family_means": {
+            "RF00177": 0.3426667529203478,
+            "RF02541": 0.28716002530044277,
+            "RF02542": 0.19217390976650234
+          },
+          "mean_family_pair_f1": 0.2740002293290977,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.2824696156588096
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.28716002530044277
+            }
+          }
+        }
+      }
+    },
+    "extended_105_top16": {
+      "mean_seed_record_pair_f1": 0.2787300886893506,
+      "per_seed": {
+        "7": {
+          "n": 6,
+          "mean_record_pair_f1": 0.2918051395753467,
+          "family_means": {
+            "RF00177": 0.3436861508933739,
+            "RF02541": 0.2607640994542147,
+            "RF02542": 0.22950414265887203
+          },
+          "mean_family_pair_f1": 0.27798479766882017,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.2980133475995731
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.2607640994542147
+            }
+          }
+        },
+        "1729": {
+          "n": 6,
+          "mean_record_pair_f1": 0.2602805845220419,
+          "family_means": {
+            "RF00177": 0.29869766771312084,
+            "RF02541": 0.28625,
+            "RF02542": 0.18967025199644444
+          },
+          "mean_family_pair_f1": 0.2582059732365218,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.2550867014264503
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.28625
+            }
+          }
+        },
+        "20261015": {
+          "n": 6,
+          "mean_record_pair_f1": 0.28410454197066315,
+          "family_means": {
+            "RF00177": 0.3117966559535759,
+            "RF02541": 0.3161131611316113,
+            "RF02542": 0.22656206141581992
+          },
+          "mean_family_pair_f1": 0.28482395950033573,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.27770281813847353
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.3161131611316113
+            }
+          }
+        }
+      }
+    },
+    "extended_105_top32": {
+      "mean_seed_record_pair_f1": 0.2964729669568961,
+      "per_seed": {
+        "7": {
+          "n": 6,
+          "mean_record_pair_f1": 0.30904393415961967,
+          "family_means": {
+            "RF00177": 0.3507087629814471,
+            "RF02541": 0.29285714285714287,
+            "RF02542": 0.25464008657811693
+          },
+          "mean_family_pair_f1": 0.29940199747223567,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.312281292420115
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.29285714285714287
+            }
+          }
+        },
+        "1729": {
+          "n": 6,
+          "mean_record_pair_f1": 0.27208118611539583,
+          "family_means": {
+            "RF00177": 0.30786403758172315,
+            "RF02541": 0.30335731414868106,
+            "RF02542": 0.20276884489926236
+          },
+          "mean_family_pair_f1": 0.2713300655432222,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.26582596050873886
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.30335731414868106
+            }
+          }
+        },
+        "20261015": {
+          "n": 6,
+          "mean_record_pair_f1": 0.30829378059567275,
+          "family_means": {
+            "RF00177": 0.35440188777248327,
+            "RF02541": 0.32597014925373136,
+            "RF02542": 0.23029343550142764
+          },
+          "mean_family_pair_f1": 0.3035551575092141,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.304758506864061
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.32597014925373136
+            }
+          }
+        }
+      }
+    },
+    "extended_105_top64": {
+      "mean_seed_record_pair_f1": 0.29493855177853806,
+      "per_seed": {
+        "7": {
+          "n": 6,
+          "mean_record_pair_f1": 0.3141588850990877,
+          "family_means": {
+            "RF00177": 0.3578941479330046,
+            "RF02541": 0.2966903073286052,
+            "RF02542": 0.2572902797334534
+          },
+          "mean_family_pair_f1": 0.3039582449983544,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.3176526006531841
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.2966903073286052
+            }
+          }
+        },
+        "1729": {
+          "n": 6,
+          "mean_record_pair_f1": 0.27342965447810963,
+          "family_means": {
+            "RF00177": 0.31780495479965953,
+            "RF02541": 0.2966002344665885,
+            "RF02542": 0.19528141400154536
+          },
+          "mean_family_pair_f1": 0.2698955344225978,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.2687955384804139
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.2966002344665885
+            }
+          }
+        },
+        "20261015": {
+          "n": 6,
+          "mean_record_pair_f1": 0.2972271157584169,
+          "family_means": {
+            "RF00177": 0.3339328267289847,
+            "RF02541": 0.33196480938416423,
+            "RF02542": 0.22479970248969153
+          },
+          "mean_family_pair_f1": 0.2968991128676135,
+          "bands": {
+            "1_999": {
+              "n": 0,
+              "mean_pair_f1": null
+            },
+            "1000_1999": {
+              "n": 5,
+              "mean_pair_f1": 0.29027957703326746
+            },
+            "2000_2999": {
+              "n": 1,
+              "mean_pair_f1": 0.33196480938416423
+            }
+          }
+        }
+      }
+    }
+  },
+  "long_native_results": {
+    "LinearFold": {
+      "n": 6,
+      "mean_record_pair_f1": 0.43813344509148217,
+      "family_means": {
+        "RF00177": 0.5050217991721809,
+        "RF02541": 0.48621271806415306,
+        "RF02542": 0.3137612774840986
+      },
+      "mean_family_pair_f1": 0.43499859824014414,
+      "bands": {
+        "1_999": {
+          "n": 0,
+          "mean_pair_f1": null
+        },
+        "1000_1999": {
+          "n": 5,
+          "mean_pair_f1": 0.42851759049694793
+        },
+        "2000_2999": {
+          "n": 1,
+          "mean_pair_f1": 0.48621271806415306
+        }
+      },
+      "failed_count": 0
+    },
+    "ViennaRNA": {
+      "n": 6,
+      "mean_record_pair_f1": 0.4214700331079552,
+      "family_means": {
+        "RF00177": 0.4999503958595841,
+        "RF02541": 0.4526610644257703,
+        "RF02542": 0.28815397332160436
+      },
+      "mean_family_pair_f1": 0.4135884778689863,
+      "bands": {
+        "1_999": {
+          "n": 0,
+          "mean_pair_f1": null
+        },
+        "1000_1999": {
+          "n": 5,
+          "mean_pair_f1": 0.41523182684439225
+        },
+        "2000_2999": {
+          "n": 1,
+          "mean_pair_f1": 0.4526610644257703
+        }
+      },
+      "failed_count": 0
+    }
+  },
+  "short_feasibility_results": {
+    "control_88_seed7": {
+      "mean_record_pair_f1": 0.16359344827094255,
+      "mean_clan_pair_f1": 0.19720582510279075,
+      "by_clan": {
+        "CL00002": 0.1336137472335199,
+        "CL00003": 0.1659212671791288,
+        "CL00013": 0.030476190476190476,
+        "CL00041": 0.41568627450980394,
+        "CL00114": 0.24033164611531058
+      },
+      "rows": [
+        {
+          "id": "bpRNA_RFAM_5453",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 400,
+          "reference_pairs": 108,
+          "predicted_pairs": 115,
+          "shared_pairs": 30,
+          "pair_precision": 0.2608695652173913,
+          "pair_recall": 0.2777777777777778,
+          "pair_f1": 0.26905829596412556,
+          "pair_jaccard": 0.15544041450777202,
+          "base_pair_distance": 163
+        },
+        {
+          "id": "bpRNA_RFAM_5479",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 417,
+          "reference_pairs": 108,
+          "predicted_pairs": 127,
+          "shared_pairs": 0,
+          "pair_precision": 0.0,
+          "pair_recall": 0.0,
+          "pair_f1": 0.0,
+          "pair_jaccard": 0.0,
+          "base_pair_distance": 235
+        },
+        {
+          "id": "bpRNA_RFAM_5361",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 520,
+          "reference_pairs": 109,
+          "predicted_pairs": 149,
+          "shared_pairs": 17,
+          "pair_precision": 0.11409395973154363,
+          "pair_recall": 0.1559633027522936,
+          "pair_f1": 0.13178294573643412,
+          "pair_jaccard": 0.07053941908713693,
+          "base_pair_distance": 224
+        },
+        {
+          "id": "bpRNA_RFAM_53507",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 402,
+          "reference_pairs": 91,
+          "predicted_pairs": 121,
+          "shared_pairs": 9,
+          "pair_precision": 0.0743801652892562,
+          "pair_recall": 0.0989010989010989,
+          "pair_f1": 0.08490566037735849,
+          "pair_jaccard": 0.04433497536945813,
+          "base_pair_distance": 194
+        },
+        {
+          "id": "bpRNA_RFAM_53569",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 521,
+          "reference_pairs": 104,
+          "predicted_pairs": 166,
+          "shared_pairs": 16,
+          "pair_precision": 0.0963855421686747,
+          "pair_recall": 0.15384615384615385,
+          "pair_f1": 0.11851851851851852,
+          "pair_jaccard": 0.06299212598425197,
+          "base_pair_distance": 238
+        },
+        {
+          "id": "bpRNA_RFAM_53561",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 533,
+          "reference_pairs": 99,
+          "predicted_pairs": 166,
+          "shared_pairs": 39,
+          "pair_precision": 0.23493975903614459,
+          "pair_recall": 0.3939393939393939,
+          "pair_f1": 0.2943396226415094,
+          "pair_jaccard": 0.17256637168141592,
+          "base_pair_distance": 187
+        },
+        {
+          "id": "bpRNA_RFAM_45541",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 445,
+          "reference_pairs": 38,
+          "predicted_pairs": 122,
+          "shared_pairs": 0,
+          "pair_precision": 0.0,
+          "pair_recall": 0.0,
+          "pair_f1": 0.0,
+          "pair_jaccard": 0.0,
+          "base_pair_distance": 160
+        },
+        {
+          "id": "bpRNA_RFAM_45543",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 449,
+          "reference_pairs": 38,
+          "predicted_pairs": 137,
+          "shared_pairs": 8,
+          "pair_precision": 0.058394160583941604,
+          "pair_recall": 0.21052631578947367,
+          "pair_f1": 0.09142857142857143,
+          "pair_jaccard": 0.04790419161676647,
+          "base_pair_distance": 159
+        },
+        {
+          "id": "bpRNA_RFAM_45563",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 493,
+          "reference_pairs": 38,
+          "predicted_pairs": 143,
+          "shared_pairs": 0,
+          "pair_precision": 0.0,
+          "pair_recall": 0.0,
+          "pair_f1": 0.0,
+          "pair_jaccard": 0.0,
+          "base_pair_distance": 181
+        },
+        {
+          "id": "bpRNA_RFAM_49603",
+          "family_id": "RF01267",
+          "clan_id": "CL00041",
+          "length_nt": 416,
+          "reference_pairs": 126,
+          "predicted_pairs": 129,
+          "shared_pairs": 53,
+          "pair_precision": 0.4108527131782946,
+          "pair_recall": 0.42063492063492064,
+          "pair_f1": 0.41568627450980394,
+          "pair_jaccard": 0.2623762376237624,
+          "base_pair_distance": 149
+        },
+        {
+          "id": "bpRNA_RFAM_53067",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 532,
+          "reference_pairs": 143,
+          "predicted_pairs": 159,
+          "shared_pairs": 40,
+          "pair_precision": 0.25157232704402516,
+          "pair_recall": 0.27972027972027974,
+          "pair_f1": 0.26490066225165565,
+          "pair_jaccard": 0.15267175572519084,
+          "base_pair_distance": 222
+        },
+        {
+          "id": "bpRNA_RFAM_53069",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 533,
+          "reference_pairs": 143,
+          "predicted_pairs": 154,
+          "shared_pairs": 41,
+          "pair_precision": 0.2662337662337662,
+          "pair_recall": 0.2867132867132867,
+          "pair_f1": 0.2760942760942761,
+          "pair_jaccard": 0.16015625,
+          "base_pair_distance": 215
+        },
+        {
+          "id": "bpRNA_RFAM_53071",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 535,
+          "reference_pairs": 143,
+          "predicted_pairs": 157,
+          "shared_pairs": 27,
+          "pair_precision": 0.17197452229299362,
+          "pair_recall": 0.1888111888111888,
+          "pair_f1": 0.18,
+          "pair_jaccard": 0.0989010989010989,
+          "base_pair_distance": 246
+        }
+      ]
+    },
+    "control_88_seed1729": {
+      "mean_record_pair_f1": 0.12957349423006648,
+      "mean_clan_pair_f1": 0.1341361087924944,
+      "by_clan": {
+        "CL00002": 0.07149025803054239,
+        "CL00003": 0.15384911026557516,
+        "CL00013": 0.06066566392841991,
+        "CL00041": 0.16379310344827586,
+        "CL00114": 0.22088240828965866
+      },
+      "rows": [
+        {
+          "id": "bpRNA_RFAM_5453",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 400,
+          "reference_pairs": 108,
+          "predicted_pairs": 103,
+          "shared_pairs": 17,
+          "pair_precision": 0.1650485436893204,
+          "pair_recall": 0.1574074074074074,
+          "pair_f1": 0.16113744075829384,
+          "pair_jaccard": 0.08762886597938144,
+          "base_pair_distance": 177
+        },
+        {
+          "id": "bpRNA_RFAM_5479",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 417,
+          "reference_pairs": 108,
+          "predicted_pairs": 92,
+          "shared_pairs": 0,
+          "pair_precision": 0.0,
+          "pair_recall": 0.0,
+          "pair_f1": 0.0,
+          "pair_jaccard": 0.0,
+          "base_pair_distance": 200
+        },
+        {
+          "id": "bpRNA_RFAM_5361",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 520,
+          "reference_pairs": 109,
+          "predicted_pairs": 116,
+          "shared_pairs": 6,
+          "pair_precision": 0.05172413793103448,
+          "pair_recall": 0.05504587155963303,
+          "pair_f1": 0.05333333333333334,
+          "pair_jaccard": 0.0273972602739726,
+          "base_pair_distance": 213
+        },
+        {
+          "id": "bpRNA_RFAM_53507",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 402,
+          "reference_pairs": 91,
+          "predicted_pairs": 89,
+          "shared_pairs": 6,
+          "pair_precision": 0.06741573033707865,
+          "pair_recall": 0.06593406593406594,
+          "pair_f1": 0.06666666666666667,
+          "pair_jaccard": 0.034482758620689655,
+          "base_pair_distance": 168
+        },
+        {
+          "id": "bpRNA_RFAM_53569",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 521,
+          "reference_pairs": 104,
+          "predicted_pairs": 141,
+          "shared_pairs": 11,
+          "pair_precision": 0.07801418439716312,
+          "pair_recall": 0.10576923076923077,
+          "pair_f1": 0.08979591836734693,
+          "pair_jaccard": 0.04700854700854701,
+          "base_pair_distance": 223
+        },
+        {
+          "id": "bpRNA_RFAM_53561",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 533,
+          "reference_pairs": 99,
+          "predicted_pairs": 137,
+          "shared_pairs": 36,
+          "pair_precision": 0.26277372262773724,
+          "pair_recall": 0.36363636363636365,
+          "pair_f1": 0.3050847457627119,
+          "pair_jaccard": 0.18,
+          "base_pair_distance": 164
+        },
+        {
+          "id": "bpRNA_RFAM_45541",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 445,
+          "reference_pairs": 38,
+          "predicted_pairs": 96,
+          "shared_pairs": 7,
+          "pair_precision": 0.07291666666666667,
+          "pair_recall": 0.18421052631578946,
+          "pair_f1": 0.1044776119402985,
+          "pair_jaccard": 0.05511811023622047,
+          "base_pair_distance": 120
+        },
+        {
+          "id": "bpRNA_RFAM_45543",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 449,
+          "reference_pairs": 38,
+          "predicted_pairs": 91,
+          "shared_pairs": 5,
+          "pair_precision": 0.054945054945054944,
+          "pair_recall": 0.13157894736842105,
+          "pair_f1": 0.07751937984496124,
+          "pair_jaccard": 0.04032258064516129,
+          "base_pair_distance": 119
+        },
+        {
+          "id": "bpRNA_RFAM_45563",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 493,
+          "reference_pairs": 38,
+          "predicted_pairs": 115,
+          "shared_pairs": 0,
+          "pair_precision": 0.0,
+          "pair_recall": 0.0,
+          "pair_f1": 0.0,
+          "pair_jaccard": 0.0,
+          "base_pair_distance": 153
+        },
+        {
+          "id": "bpRNA_RFAM_49603",
+          "family_id": "RF01267",
+          "clan_id": "CL00041",
+          "length_nt": 416,
+          "reference_pairs": 126,
+          "predicted_pairs": 106,
+          "shared_pairs": 19,
+          "pair_precision": 0.1792452830188679,
+          "pair_recall": 0.15079365079365079,
+          "pair_f1": 0.16379310344827586,
+          "pair_jaccard": 0.0892018779342723,
+          "base_pair_distance": 194
+        },
+        {
+          "id": "bpRNA_RFAM_53067",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 532,
+          "reference_pairs": 143,
+          "predicted_pairs": 124,
+          "shared_pairs": 31,
+          "pair_precision": 0.25,
+          "pair_recall": 0.21678321678321677,
+          "pair_f1": 0.23220973782771537,
+          "pair_jaccard": 0.13135593220338984,
+          "base_pair_distance": 205
+        },
+        {
+          "id": "bpRNA_RFAM_53069",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 533,
+          "reference_pairs": 143,
+          "predicted_pairs": 122,
+          "shared_pairs": 25,
+          "pair_precision": 0.20491803278688525,
+          "pair_recall": 0.17482517482517482,
+          "pair_f1": 0.18867924528301888,
+          "pair_jaccard": 0.10416666666666667,
+          "base_pair_distance": 215
+        },
+        {
+          "id": "bpRNA_RFAM_53071",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 535,
+          "reference_pairs": 143,
+          "predicted_pairs": 130,
+          "shared_pairs": 33,
+          "pair_precision": 0.25384615384615383,
+          "pair_recall": 0.23076923076923078,
+          "pair_f1": 0.24175824175824176,
+          "pair_jaccard": 0.1375,
+          "base_pair_distance": 207
+        }
+      ]
+    },
+    "control_88_seed20261015": {
+      "mean_record_pair_f1": 0.130759114558505,
+      "mean_clan_pair_f1": 0.14795660058273893,
+      "by_clan": {
+        "CL00002": 0.09624423085065842,
+        "CL00003": 0.11764110360942814,
+        "CL00013": 0.0440883229972742,
+        "CL00041": 0.2597402597402597,
+        "CL00114": 0.22206908571607423
+      },
+      "rows": [
+        {
+          "id": "bpRNA_RFAM_5453",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 400,
+          "reference_pairs": 108,
+          "predicted_pairs": 101,
+          "shared_pairs": 20,
+          "pair_precision": 0.19801980198019803,
+          "pair_recall": 0.18518518518518517,
+          "pair_f1": 0.19138755980861244,
+          "pair_jaccard": 0.10582010582010581,
+          "base_pair_distance": 169
+        },
+        {
+          "id": "bpRNA_RFAM_5479",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 417,
+          "reference_pairs": 108,
+          "predicted_pairs": 111,
+          "shared_pairs": 0,
+          "pair_precision": 0.0,
+          "pair_recall": 0.0,
+          "pair_f1": 0.0,
+          "pair_jaccard": 0.0,
+          "base_pair_distance": 219
+        },
+        {
+          "id": "bpRNA_RFAM_5361",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 520,
+          "reference_pairs": 109,
+          "predicted_pairs": 117,
+          "shared_pairs": 11,
+          "pair_precision": 0.09401709401709402,
+          "pair_recall": 0.10091743119266056,
+          "pair_f1": 0.09734513274336283,
+          "pair_jaccard": 0.05116279069767442,
+          "base_pair_distance": 204
+        },
+        {
+          "id": "bpRNA_RFAM_53507",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 402,
+          "reference_pairs": 91,
+          "predicted_pairs": 86,
+          "shared_pairs": 7,
+          "pair_precision": 0.08139534883720931,
+          "pair_recall": 0.07692307692307693,
+          "pair_f1": 0.07909604519774012,
+          "pair_jaccard": 0.041176470588235294,
+          "base_pair_distance": 163
+        },
+        {
+          "id": "bpRNA_RFAM_53569",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 521,
+          "reference_pairs": 104,
+          "predicted_pairs": 140,
+          "shared_pairs": 7,
+          "pair_precision": 0.05,
+          "pair_recall": 0.0673076923076923,
+          "pair_f1": 0.05737704918032787,
+          "pair_jaccard": 0.029535864978902954,
+          "base_pair_distance": 230
+        },
+        {
+          "id": "bpRNA_RFAM_53561",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 533,
+          "reference_pairs": 99,
+          "predicted_pairs": 132,
+          "shared_pairs": 25,
+          "pair_precision": 0.1893939393939394,
+          "pair_recall": 0.25252525252525254,
+          "pair_f1": 0.21645021645021645,
+          "pair_jaccard": 0.12135922330097088,
+          "base_pair_distance": 181
+        },
+        {
+          "id": "bpRNA_RFAM_45541",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 445,
+          "reference_pairs": 38,
+          "predicted_pairs": 95,
+          "shared_pairs": 2,
+          "pair_precision": 0.021052631578947368,
+          "pair_recall": 0.05263157894736842,
+          "pair_f1": 0.03007518796992481,
+          "pair_jaccard": 0.015267175572519083,
+          "base_pair_distance": 129
+        },
+        {
+          "id": "bpRNA_RFAM_45543",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 449,
+          "reference_pairs": 38,
+          "predicted_pairs": 99,
+          "shared_pairs": 7,
+          "pair_precision": 0.0707070707070707,
+          "pair_recall": 0.18421052631578946,
+          "pair_f1": 0.10218978102189781,
+          "pair_jaccard": 0.05384615384615385,
+          "base_pair_distance": 123
+        },
+        {
+          "id": "bpRNA_RFAM_45563",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 493,
+          "reference_pairs": 38,
+          "predicted_pairs": 106,
+          "shared_pairs": 0,
+          "pair_precision": 0.0,
+          "pair_recall": 0.0,
+          "pair_f1": 0.0,
+          "pair_jaccard": 0.0,
+          "base_pair_distance": 144
+        },
+        {
+          "id": "bpRNA_RFAM_49603",
+          "family_id": "RF01267",
+          "clan_id": "CL00041",
+          "length_nt": 416,
+          "reference_pairs": 126,
+          "predicted_pairs": 105,
+          "shared_pairs": 30,
+          "pair_precision": 0.2857142857142857,
+          "pair_recall": 0.23809523809523808,
+          "pair_f1": 0.2597402597402597,
+          "pair_jaccard": 0.14925373134328357,
+          "base_pair_distance": 171
+        },
+        {
+          "id": "bpRNA_RFAM_53067",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 532,
+          "reference_pairs": 143,
+          "predicted_pairs": 135,
+          "shared_pairs": 35,
+          "pair_precision": 0.25925925925925924,
+          "pair_recall": 0.24475524475524477,
+          "pair_f1": 0.2517985611510791,
+          "pair_jaccard": 0.1440329218106996,
+          "base_pair_distance": 208
+        },
+        {
+          "id": "bpRNA_RFAM_53069",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 533,
+          "reference_pairs": 143,
+          "predicted_pairs": 134,
+          "shared_pairs": 30,
+          "pair_precision": 0.22388059701492538,
+          "pair_recall": 0.2097902097902098,
+          "pair_f1": 0.21660649819494585,
+          "pair_jaccard": 0.1214574898785425,
+          "base_pair_distance": 217
+        },
+        {
+          "id": "bpRNA_RFAM_53071",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 535,
+          "reference_pairs": 143,
+          "predicted_pairs": 130,
+          "shared_pairs": 27,
+          "pair_precision": 0.2076923076923077,
+          "pair_recall": 0.1888111888111888,
+          "pair_f1": 0.1978021978021978,
+          "pair_jaccard": 0.10975609756097561,
+          "base_pair_distance": 219
+        }
+      ]
+    },
+    "extended_105_seed7": {
+      "mean_record_pair_f1": 0.15719626381161528,
+      "mean_clan_pair_f1": 0.16301052368358732,
+      "by_clan": {
+        "CL00002": 0.14787728841104378,
+        "CL00003": 0.13211631224750844,
+        "CL00013": 0.06175889328063241,
+        "CL00041": 0.20080321285140562,
+        "CL00114": 0.2724969116273464
+      },
+      "rows": [
+        {
+          "id": "bpRNA_RFAM_5453",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 400,
+          "reference_pairs": 108,
+          "predicted_pairs": 111,
+          "shared_pairs": 32,
+          "pair_precision": 0.2882882882882883,
+          "pair_recall": 0.2962962962962963,
+          "pair_f1": 0.2922374429223744,
+          "pair_jaccard": 0.1711229946524064,
+          "base_pair_distance": 155
+        },
+        {
+          "id": "bpRNA_RFAM_5479",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 417,
+          "reference_pairs": 108,
+          "predicted_pairs": 118,
+          "shared_pairs": 0,
+          "pair_precision": 0.0,
+          "pair_recall": 0.0,
+          "pair_f1": 0.0,
+          "pair_jaccard": 0.0,
+          "base_pair_distance": 226
+        },
+        {
+          "id": "bpRNA_RFAM_5361",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 520,
+          "reference_pairs": 109,
+          "predicted_pairs": 142,
+          "shared_pairs": 19,
+          "pair_precision": 0.13380281690140844,
+          "pair_recall": 0.1743119266055046,
+          "pair_f1": 0.15139442231075698,
+          "pair_jaccard": 0.08189655172413793,
+          "base_pair_distance": 213
+        },
+        {
+          "id": "bpRNA_RFAM_53507",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 402,
+          "reference_pairs": 91,
+          "predicted_pairs": 116,
+          "shared_pairs": 10,
+          "pair_precision": 0.08620689655172414,
+          "pair_recall": 0.10989010989010989,
+          "pair_f1": 0.0966183574879227,
+          "pair_jaccard": 0.050761421319796954,
+          "base_pair_distance": 187
+        },
+        {
+          "id": "bpRNA_RFAM_53569",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 521,
+          "reference_pairs": 104,
+          "predicted_pairs": 168,
+          "shared_pairs": 20,
+          "pair_precision": 0.11904761904761904,
+          "pair_recall": 0.19230769230769232,
+          "pair_f1": 0.14705882352941177,
+          "pair_jaccard": 0.07936507936507936,
+          "base_pair_distance": 232
+        },
+        {
+          "id": "bpRNA_RFAM_53561",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 533,
+          "reference_pairs": 99,
+          "predicted_pairs": 163,
+          "shared_pairs": 20,
+          "pair_precision": 0.12269938650306748,
+          "pair_recall": 0.20202020202020202,
+          "pair_f1": 0.15267175572519084,
+          "pair_jaccard": 0.08264462809917356,
+          "base_pair_distance": 222
+        },
+        {
+          "id": "bpRNA_RFAM_45541",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 445,
+          "reference_pairs": 38,
+          "predicted_pairs": 123,
+          "shared_pairs": 7,
+          "pair_precision": 0.056910569105691054,
+          "pair_recall": 0.18421052631578946,
+          "pair_f1": 0.08695652173913043,
+          "pair_jaccard": 0.045454545454545456,
+          "base_pair_distance": 147
+        },
+        {
+          "id": "bpRNA_RFAM_45543",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 449,
+          "reference_pairs": 38,
+          "predicted_pairs": 123,
+          "shared_pairs": 7,
+          "pair_precision": 0.056910569105691054,
+          "pair_recall": 0.18421052631578946,
+          "pair_f1": 0.08695652173913043,
+          "pair_jaccard": 0.045454545454545456,
+          "base_pair_distance": 147
+        },
+        {
+          "id": "bpRNA_RFAM_45563",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 493,
+          "reference_pairs": 38,
+          "predicted_pairs": 138,
+          "shared_pairs": 1,
+          "pair_precision": 0.007246376811594203,
+          "pair_recall": 0.02631578947368421,
+          "pair_f1": 0.011363636363636364,
+          "pair_jaccard": 0.005714285714285714,
+          "base_pair_distance": 174
+        },
+        {
+          "id": "bpRNA_RFAM_49603",
+          "family_id": "RF01267",
+          "clan_id": "CL00041",
+          "length_nt": 416,
+          "reference_pairs": 126,
+          "predicted_pairs": 123,
+          "shared_pairs": 25,
+          "pair_precision": 0.2032520325203252,
+          "pair_recall": 0.1984126984126984,
+          "pair_f1": 0.20080321285140562,
+          "pair_jaccard": 0.11160714285714286,
+          "base_pair_distance": 199
+        },
+        {
+          "id": "bpRNA_RFAM_53067",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 532,
+          "reference_pairs": 143,
+          "predicted_pairs": 157,
+          "shared_pairs": 45,
+          "pair_precision": 0.28662420382165604,
+          "pair_recall": 0.3146853146853147,
+          "pair_f1": 0.3,
+          "pair_jaccard": 0.17647058823529413,
+          "base_pair_distance": 210
+        },
+        {
+          "id": "bpRNA_RFAM_53069",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 533,
+          "reference_pairs": 143,
+          "predicted_pairs": 156,
+          "shared_pairs": 41,
+          "pair_precision": 0.26282051282051283,
+          "pair_recall": 0.2867132867132867,
+          "pair_f1": 0.27424749163879597,
+          "pair_jaccard": 0.15891472868217055,
+          "base_pair_distance": 217
+        },
+        {
+          "id": "bpRNA_RFAM_53071",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 535,
+          "reference_pairs": 143,
+          "predicted_pairs": 153,
+          "shared_pairs": 36,
+          "pair_precision": 0.23529411764705882,
+          "pair_recall": 0.2517482517482518,
+          "pair_f1": 0.24324324324324326,
+          "pair_jaccard": 0.13846153846153847,
+          "base_pair_distance": 224
+        }
+      ]
+    },
+    "extended_105_seed1729": {
+      "mean_record_pair_f1": 0.1592602674440423,
+      "mean_clan_pair_f1": 0.16078979276044641,
+      "by_clan": {
+        "CL00002": 0.1579367796416752,
+        "CL00003": 0.16153971193124797,
+        "CL00013": 0.06830516559023346,
+        "CL00041": 0.17073170731707318,
+        "CL00114": 0.2454355993220022
+      },
+      "rows": [
+        {
+          "id": "bpRNA_RFAM_5453",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 400,
+          "reference_pairs": 108,
+          "predicted_pairs": 122,
+          "shared_pairs": 40,
+          "pair_precision": 0.32786885245901637,
+          "pair_recall": 0.37037037037037035,
+          "pair_f1": 0.34782608695652173,
+          "pair_jaccard": 0.21052631578947367,
+          "base_pair_distance": 150
+        },
+        {
+          "id": "bpRNA_RFAM_5479",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 417,
+          "reference_pairs": 108,
+          "predicted_pairs": 118,
+          "shared_pairs": 0,
+          "pair_precision": 0.0,
+          "pair_recall": 0.0,
+          "pair_f1": 0.0,
+          "pair_jaccard": 0.0,
+          "base_pair_distance": 226
+        },
+        {
+          "id": "bpRNA_RFAM_5361",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 520,
+          "reference_pairs": 109,
+          "predicted_pairs": 145,
+          "shared_pairs": 16,
+          "pair_precision": 0.1103448275862069,
+          "pair_recall": 0.14678899082568808,
+          "pair_f1": 0.12598425196850394,
+          "pair_jaccard": 0.06722689075630252,
+          "base_pair_distance": 222
+        },
+        {
+          "id": "bpRNA_RFAM_53507",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 402,
+          "reference_pairs": 91,
+          "predicted_pairs": 109,
+          "shared_pairs": 5,
+          "pair_precision": 0.045871559633027525,
+          "pair_recall": 0.054945054945054944,
+          "pair_f1": 0.05,
+          "pair_jaccard": 0.02564102564102564,
+          "base_pair_distance": 190
+        },
+        {
+          "id": "bpRNA_RFAM_53569",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 521,
+          "reference_pairs": 104,
+          "predicted_pairs": 159,
+          "shared_pairs": 20,
+          "pair_precision": 0.12578616352201258,
+          "pair_recall": 0.19230769230769232,
+          "pair_f1": 0.1520912547528517,
+          "pair_jaccard": 0.0823045267489712,
+          "base_pair_distance": 223
+        },
+        {
+          "id": "bpRNA_RFAM_53561",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 533,
+          "reference_pairs": 99,
+          "predicted_pairs": 170,
+          "shared_pairs": 38,
+          "pair_precision": 0.2235294117647059,
+          "pair_recall": 0.3838383838383838,
+          "pair_f1": 0.2825278810408922,
+          "pair_jaccard": 0.1645021645021645,
+          "base_pair_distance": 193
+        },
+        {
+          "id": "bpRNA_RFAM_45541",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 445,
+          "reference_pairs": 38,
+          "predicted_pairs": 115,
+          "shared_pairs": 7,
+          "pair_precision": 0.06086956521739131,
+          "pair_recall": 0.18421052631578946,
+          "pair_f1": 0.0915032679738562,
+          "pair_jaccard": 0.04794520547945205,
+          "base_pair_distance": 139
+        },
+        {
+          "id": "bpRNA_RFAM_45543",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 449,
+          "reference_pairs": 38,
+          "predicted_pairs": 118,
+          "shared_pairs": 7,
+          "pair_precision": 0.059322033898305086,
+          "pair_recall": 0.18421052631578946,
+          "pair_f1": 0.08974358974358974,
+          "pair_jaccard": 0.04697986577181208,
+          "base_pair_distance": 142
+        },
+        {
+          "id": "bpRNA_RFAM_45563",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 493,
+          "reference_pairs": 38,
+          "predicted_pairs": 131,
+          "shared_pairs": 2,
+          "pair_precision": 0.015267175572519083,
+          "pair_recall": 0.05263157894736842,
+          "pair_f1": 0.023668639053254437,
+          "pair_jaccard": 0.011976047904191617,
+          "base_pair_distance": 165
+        },
+        {
+          "id": "bpRNA_RFAM_49603",
+          "family_id": "RF01267",
+          "clan_id": "CL00041",
+          "length_nt": 416,
+          "reference_pairs": 126,
+          "predicted_pairs": 120,
+          "shared_pairs": 21,
+          "pair_precision": 0.175,
+          "pair_recall": 0.16666666666666666,
+          "pair_f1": 0.17073170731707318,
+          "pair_jaccard": 0.09333333333333334,
+          "base_pair_distance": 204
+        },
+        {
+          "id": "bpRNA_RFAM_53067",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 532,
+          "reference_pairs": 143,
+          "predicted_pairs": 152,
+          "shared_pairs": 36,
+          "pair_precision": 0.23684210526315788,
+          "pair_recall": 0.2517482517482518,
+          "pair_f1": 0.2440677966101695,
+          "pair_jaccard": 0.138996138996139,
+          "base_pair_distance": 223
+        },
+        {
+          "id": "bpRNA_RFAM_53069",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 533,
+          "reference_pairs": 143,
+          "predicted_pairs": 149,
+          "shared_pairs": 33,
+          "pair_precision": 0.2214765100671141,
+          "pair_recall": 0.23076923076923078,
+          "pair_f1": 0.22602739726027396,
+          "pair_jaccard": 0.1274131274131274,
+          "base_pair_distance": 226
+        },
+        {
+          "id": "bpRNA_RFAM_53071",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 535,
+          "reference_pairs": 143,
+          "predicted_pairs": 150,
+          "shared_pairs": 39,
+          "pair_precision": 0.26,
+          "pair_recall": 0.2727272727272727,
+          "pair_f1": 0.26621160409556316,
+          "pair_jaccard": 0.15354330708661418,
+          "base_pair_distance": 215
+        }
+      ]
+    },
+    "extended_105_seed20261015": {
+      "mean_record_pair_f1": 0.1842206408565965,
+      "mean_clan_pair_f1": 0.18390031298480788,
+      "by_clan": {
+        "CL00002": 0.1554096800218233,
+        "CL00003": 0.19420623768350784,
+        "CL00013": 0.1246023053251969,
+        "CL00041": 0.18181818181818182,
+        "CL00114": 0.26346516007532955
+      },
+      "rows": [
+        {
+          "id": "bpRNA_RFAM_5453",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 400,
+          "reference_pairs": 108,
+          "predicted_pairs": 119,
+          "shared_pairs": 26,
+          "pair_precision": 0.2184873949579832,
+          "pair_recall": 0.24074074074074073,
+          "pair_f1": 0.2290748898678414,
+          "pair_jaccard": 0.12935323383084577,
+          "base_pair_distance": 175
+        },
+        {
+          "id": "bpRNA_RFAM_5479",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 417,
+          "reference_pairs": 108,
+          "predicted_pairs": 121,
+          "shared_pairs": 0,
+          "pair_precision": 0.0,
+          "pair_recall": 0.0,
+          "pair_f1": 0.0,
+          "pair_jaccard": 0.0,
+          "base_pair_distance": 229
+        },
+        {
+          "id": "bpRNA_RFAM_5361",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 520,
+          "reference_pairs": 109,
+          "predicted_pairs": 144,
+          "shared_pairs": 30,
+          "pair_precision": 0.20833333333333334,
+          "pair_recall": 0.27522935779816515,
+          "pair_f1": 0.23715415019762845,
+          "pair_jaccard": 0.13452914798206278,
+          "base_pair_distance": 193
+        },
+        {
+          "id": "bpRNA_RFAM_53507",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 402,
+          "reference_pairs": 91,
+          "predicted_pairs": 110,
+          "shared_pairs": 13,
+          "pair_precision": 0.11818181818181818,
+          "pair_recall": 0.14285714285714285,
+          "pair_f1": 0.12935323383084577,
+          "pair_jaccard": 0.06914893617021277,
+          "base_pair_distance": 175
+        },
+        {
+          "id": "bpRNA_RFAM_53569",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 521,
+          "reference_pairs": 104,
+          "predicted_pairs": 166,
+          "shared_pairs": 21,
+          "pair_precision": 0.12650602409638553,
+          "pair_recall": 0.20192307692307693,
+          "pair_f1": 0.15555555555555556,
+          "pair_jaccard": 0.08433734939759036,
+          "base_pair_distance": 228
+        },
+        {
+          "id": "bpRNA_RFAM_53561",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 533,
+          "reference_pairs": 99,
+          "predicted_pairs": 163,
+          "shared_pairs": 39,
+          "pair_precision": 0.2392638036809816,
+          "pair_recall": 0.3939393939393939,
+          "pair_f1": 0.29770992366412213,
+          "pair_jaccard": 0.17488789237668162,
+          "base_pair_distance": 184
+        },
+        {
+          "id": "bpRNA_RFAM_45541",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 445,
+          "reference_pairs": 38,
+          "predicted_pairs": 116,
+          "shared_pairs": 16,
+          "pair_precision": 0.13793103448275862,
+          "pair_recall": 0.42105263157894735,
+          "pair_f1": 0.2077922077922078,
+          "pair_jaccard": 0.11594202898550725,
+          "base_pair_distance": 122
+        },
+        {
+          "id": "bpRNA_RFAM_45543",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 449,
+          "reference_pairs": 38,
+          "predicted_pairs": 116,
+          "shared_pairs": 10,
+          "pair_precision": 0.08620689655172414,
+          "pair_recall": 0.2631578947368421,
+          "pair_f1": 0.12987012987012986,
+          "pair_jaccard": 0.06944444444444445,
+          "base_pair_distance": 134
+        },
+        {
+          "id": "bpRNA_RFAM_45563",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 493,
+          "reference_pairs": 38,
+          "predicted_pairs": 128,
+          "shared_pairs": 3,
+          "pair_precision": 0.0234375,
+          "pair_recall": 0.07894736842105263,
+          "pair_f1": 0.03614457831325301,
+          "pair_jaccard": 0.018404907975460124,
+          "base_pair_distance": 160
+        },
+        {
+          "id": "bpRNA_RFAM_49603",
+          "family_id": "RF01267",
+          "clan_id": "CL00041",
+          "length_nt": 416,
+          "reference_pairs": 126,
+          "predicted_pairs": 116,
+          "shared_pairs": 22,
+          "pair_precision": 0.1896551724137931,
+          "pair_recall": 0.1746031746031746,
+          "pair_f1": 0.18181818181818182,
+          "pair_jaccard": 0.1,
+          "base_pair_distance": 198
+        },
+        {
+          "id": "bpRNA_RFAM_53067",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 532,
+          "reference_pairs": 143,
+          "predicted_pairs": 157,
+          "shared_pairs": 42,
+          "pair_precision": 0.267515923566879,
+          "pair_recall": 0.2937062937062937,
+          "pair_f1": 0.28,
+          "pair_jaccard": 0.16279069767441862,
+          "base_pair_distance": 216
+        },
+        {
+          "id": "bpRNA_RFAM_53069",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 533,
+          "reference_pairs": 143,
+          "predicted_pairs": 157,
+          "shared_pairs": 43,
+          "pair_precision": 0.27388535031847133,
+          "pair_recall": 0.3006993006993007,
+          "pair_f1": 0.2866666666666667,
+          "pair_jaccard": 0.16731517509727625,
+          "base_pair_distance": 214
+        },
+        {
+          "id": "bpRNA_RFAM_53071",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 535,
+          "reference_pairs": 143,
+          "predicted_pairs": 152,
+          "shared_pairs": 33,
+          "pair_precision": 0.21710526315789475,
+          "pair_recall": 0.23076923076923078,
+          "pair_f1": 0.22372881355932203,
+          "pair_jaccard": 0.12595419847328243,
+          "base_pair_distance": 229
+        }
+      ]
+    },
+    "LinearFold": {
+      "mean_record_pair_f1": 0.33010743167430895,
+      "mean_clan_pair_f1": 0.3726339879542124,
+      "by_clan": {
+        "CL00002": 0.28469765808821607,
+        "CL00003": 0.29442924542808196,
+        "CL00013": 0.33311202898917974,
+        "CL00041": 0.6490566037735849,
+        "CL00114": 0.3018744034919994
+      },
+      "rows": [
+        {
+          "id": "bpRNA_RFAM_5453",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 400,
+          "reference_pairs": 108,
+          "predicted_pairs": 125,
+          "shared_pairs": 50,
+          "pair_precision": 0.4,
+          "pair_recall": 0.46296296296296297,
+          "pair_f1": 0.4291845493562232,
+          "pair_jaccard": 0.273224043715847,
+          "base_pair_distance": 133
+        },
+        {
+          "id": "bpRNA_RFAM_5479",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 417,
+          "reference_pairs": 108,
+          "predicted_pairs": 142,
+          "shared_pairs": 0,
+          "pair_precision": 0.0,
+          "pair_recall": 0.0,
+          "pair_f1": 0.0,
+          "pair_jaccard": 0.0,
+          "base_pair_distance": 250
+        },
+        {
+          "id": "bpRNA_RFAM_5361",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 520,
+          "reference_pairs": 109,
+          "predicted_pairs": 164,
+          "shared_pairs": 58,
+          "pair_precision": 0.35365853658536583,
+          "pair_recall": 0.5321100917431193,
+          "pair_f1": 0.4249084249084249,
+          "pair_jaccard": 0.26976744186046514,
+          "base_pair_distance": 157
+        },
+        {
+          "id": "bpRNA_RFAM_53507",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 402,
+          "reference_pairs": 91,
+          "predicted_pairs": 130,
+          "shared_pairs": 21,
+          "pair_precision": 0.16153846153846155,
+          "pair_recall": 0.23076923076923078,
+          "pair_f1": 0.19004524886877827,
+          "pair_jaccard": 0.105,
+          "base_pair_distance": 179
+        },
+        {
+          "id": "bpRNA_RFAM_53569",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 521,
+          "reference_pairs": 104,
+          "predicted_pairs": 173,
+          "shared_pairs": 57,
+          "pair_precision": 0.32947976878612717,
+          "pair_recall": 0.5480769230769231,
+          "pair_f1": 0.41155234657039713,
+          "pair_jaccard": 0.2590909090909091,
+          "base_pair_distance": 163
+        },
+        {
+          "id": "bpRNA_RFAM_53561",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 533,
+          "reference_pairs": 99,
+          "predicted_pairs": 185,
+          "shared_pairs": 40,
+          "pair_precision": 0.21621621621621623,
+          "pair_recall": 0.40404040404040403,
+          "pair_f1": 0.28169014084507044,
+          "pair_jaccard": 0.16393442622950818,
+          "base_pair_distance": 204
+        },
+        {
+          "id": "bpRNA_RFAM_45541",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 445,
+          "reference_pairs": 38,
+          "predicted_pairs": 148,
+          "shared_pairs": 32,
+          "pair_precision": 0.21621621621621623,
+          "pair_recall": 0.8421052631578947,
+          "pair_f1": 0.34408602150537637,
+          "pair_jaccard": 0.2077922077922078,
+          "base_pair_distance": 122
+        },
+        {
+          "id": "bpRNA_RFAM_45543",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 449,
+          "reference_pairs": 38,
+          "predicted_pairs": 152,
+          "shared_pairs": 32,
+          "pair_precision": 0.21052631578947367,
+          "pair_recall": 0.8421052631578947,
+          "pair_f1": 0.3368421052631579,
+          "pair_jaccard": 0.20253164556962025,
+          "base_pair_distance": 126
+        },
+        {
+          "id": "bpRNA_RFAM_45563",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 493,
+          "reference_pairs": 38,
+          "predicted_pairs": 163,
+          "shared_pairs": 32,
+          "pair_precision": 0.19631901840490798,
+          "pair_recall": 0.8421052631578947,
+          "pair_f1": 0.31840796019900497,
+          "pair_jaccard": 0.1893491124260355,
+          "base_pair_distance": 137
+        },
+        {
+          "id": "bpRNA_RFAM_49603",
+          "family_id": "RF01267",
+          "clan_id": "CL00041",
+          "length_nt": 416,
+          "reference_pairs": 126,
+          "predicted_pairs": 139,
+          "shared_pairs": 86,
+          "pair_precision": 0.6187050359712231,
+          "pair_recall": 0.6825396825396826,
+          "pair_f1": 0.6490566037735849,
+          "pair_jaccard": 0.48044692737430167,
+          "base_pair_distance": 93
+        },
+        {
+          "id": "bpRNA_RFAM_53067",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 532,
+          "reference_pairs": 143,
+          "predicted_pairs": 169,
+          "shared_pairs": 43,
+          "pair_precision": 0.25443786982248523,
+          "pair_recall": 0.3006993006993007,
+          "pair_f1": 0.27564102564102566,
+          "pair_jaccard": 0.15985130111524162,
+          "base_pair_distance": 226
+        },
+        {
+          "id": "bpRNA_RFAM_53069",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 533,
+          "reference_pairs": 143,
+          "predicted_pairs": 166,
+          "shared_pairs": 46,
+          "pair_precision": 0.27710843373493976,
+          "pair_recall": 0.32167832167832167,
+          "pair_f1": 0.2977346278317152,
+          "pair_jaccard": 0.17490494296577946,
+          "base_pair_distance": 217
+        },
+        {
+          "id": "bpRNA_RFAM_53071",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 535,
+          "reference_pairs": 143,
+          "predicted_pairs": 164,
+          "shared_pairs": 51,
+          "pair_precision": 0.31097560975609756,
+          "pair_recall": 0.35664335664335667,
+          "pair_f1": 0.3322475570032573,
+          "pair_jaccard": 0.19921875,
+          "base_pair_distance": 205
+        }
+      ]
+    },
+    "ViennaRNA": {
+      "mean_record_pair_f1": 0.3346291105849216,
+      "mean_clan_pair_f1": 0.38158422288429056,
+      "by_clan": {
+        "CL00002": 0.28469765808821607,
+        "CL00003": 0.2991834021372903,
+        "CL00013": 0.33537319787375836,
+        "CL00041": 0.6867924528301886,
+        "CL00114": 0.3018744034919994
+      },
+      "rows": [
+        {
+          "id": "bpRNA_RFAM_5453",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 400,
+          "reference_pairs": 108,
+          "predicted_pairs": 125,
+          "shared_pairs": 50,
+          "pair_precision": 0.4,
+          "pair_recall": 0.46296296296296297,
+          "pair_f1": 0.4291845493562232,
+          "pair_jaccard": 0.273224043715847,
+          "base_pair_distance": 133
+        },
+        {
+          "id": "bpRNA_RFAM_5479",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 417,
+          "reference_pairs": 108,
+          "predicted_pairs": 142,
+          "shared_pairs": 0,
+          "pair_precision": 0.0,
+          "pair_recall": 0.0,
+          "pair_f1": 0.0,
+          "pair_jaccard": 0.0,
+          "base_pair_distance": 250
+        },
+        {
+          "id": "bpRNA_RFAM_5361",
+          "family_id": "RF00010",
+          "clan_id": "CL00002",
+          "length_nt": 520,
+          "reference_pairs": 109,
+          "predicted_pairs": 164,
+          "shared_pairs": 58,
+          "pair_precision": 0.35365853658536583,
+          "pair_recall": 0.5321100917431193,
+          "pair_f1": 0.4249084249084249,
+          "pair_jaccard": 0.26976744186046514,
+          "base_pair_distance": 157
+        },
+        {
+          "id": "bpRNA_RFAM_53507",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 402,
+          "reference_pairs": 91,
+          "predicted_pairs": 130,
+          "shared_pairs": 21,
+          "pair_precision": 0.16153846153846155,
+          "pair_recall": 0.23076923076923078,
+          "pair_f1": 0.19004524886877827,
+          "pair_jaccard": 0.105,
+          "base_pair_distance": 179
+        },
+        {
+          "id": "bpRNA_RFAM_53569",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 521,
+          "reference_pairs": 104,
+          "predicted_pairs": 173,
+          "shared_pairs": 58,
+          "pair_precision": 0.3352601156069364,
+          "pair_recall": 0.5576923076923077,
+          "pair_f1": 0.4187725631768953,
+          "pair_jaccard": 0.2648401826484018,
+          "base_pair_distance": 161
+        },
+        {
+          "id": "bpRNA_RFAM_53561",
+          "family_id": "RF01502",
+          "clan_id": "CL00003",
+          "length_nt": 533,
+          "reference_pairs": 99,
+          "predicted_pairs": 185,
+          "shared_pairs": 41,
+          "pair_precision": 0.22162162162162163,
+          "pair_recall": 0.41414141414141414,
+          "pair_f1": 0.2887323943661972,
+          "pair_jaccard": 0.16872427983539096,
+          "base_pair_distance": 202
+        },
+        {
+          "id": "bpRNA_RFAM_45541",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 445,
+          "reference_pairs": 38,
+          "predicted_pairs": 148,
+          "shared_pairs": 32,
+          "pair_precision": 0.21621621621621623,
+          "pair_recall": 0.8421052631578947,
+          "pair_f1": 0.34408602150537637,
+          "pair_jaccard": 0.2077922077922078,
+          "base_pair_distance": 122
+        },
+        {
+          "id": "bpRNA_RFAM_45543",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 449,
+          "reference_pairs": 38,
+          "predicted_pairs": 150,
+          "shared_pairs": 32,
+          "pair_precision": 0.21333333333333335,
+          "pair_recall": 0.8421052631578947,
+          "pair_f1": 0.3404255319148936,
+          "pair_jaccard": 0.20512820512820512,
+          "base_pair_distance": 124
+        },
+        {
+          "id": "bpRNA_RFAM_45563",
+          "family_id": "RF01052",
+          "clan_id": "CL00013",
+          "length_nt": 493,
+          "reference_pairs": 38,
+          "predicted_pairs": 161,
+          "shared_pairs": 32,
+          "pair_precision": 0.19875776397515527,
+          "pair_recall": 0.8421052631578947,
+          "pair_f1": 0.32160804020100503,
+          "pair_jaccard": 0.19161676646706588,
+          "base_pair_distance": 135
+        },
+        {
+          "id": "bpRNA_RFAM_49603",
+          "family_id": "RF01267",
+          "clan_id": "CL00041",
+          "length_nt": 416,
+          "reference_pairs": 126,
+          "predicted_pairs": 139,
+          "shared_pairs": 91,
+          "pair_precision": 0.6546762589928058,
+          "pair_recall": 0.7222222222222222,
+          "pair_f1": 0.6867924528301886,
+          "pair_jaccard": 0.5229885057471264,
+          "base_pair_distance": 83
+        },
+        {
+          "id": "bpRNA_RFAM_53067",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 532,
+          "reference_pairs": 143,
+          "predicted_pairs": 169,
+          "shared_pairs": 43,
+          "pair_precision": 0.25443786982248523,
+          "pair_recall": 0.3006993006993007,
+          "pair_f1": 0.27564102564102566,
+          "pair_jaccard": 0.15985130111524162,
+          "base_pair_distance": 226
+        },
+        {
+          "id": "bpRNA_RFAM_53069",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 533,
+          "reference_pairs": 143,
+          "predicted_pairs": 166,
+          "shared_pairs": 46,
+          "pair_precision": 0.27710843373493976,
+          "pair_recall": 0.32167832167832167,
+          "pair_f1": 0.2977346278317152,
+          "pair_jaccard": 0.17490494296577946,
+          "base_pair_distance": 217
+        },
+        {
+          "id": "bpRNA_RFAM_53071",
+          "family_id": "RF01469",
+          "clan_id": "CL00114",
+          "length_nt": 535,
+          "reference_pairs": 143,
+          "predicted_pairs": 164,
+          "shared_pairs": 51,
+          "pair_precision": 0.31097560975609756,
+          "pair_recall": 0.35664335664335667,
+          "pair_f1": 0.3322475570032573,
+          "pair_jaccard": 0.19921875,
+          "base_pair_distance": 205
+        }
+      ]
+    }
+  },
+  "historical_extended_training_above_scope": [
+    {
+      "id": "bpRNA_CRW_55396",
+      "length_nt": 3946
+    },
+    {
+      "id": "bpRNA_RFAM_43122",
+      "length_nt": 3995
+    }
+  ],
+  "development_only": true,
+  "independent_test_claim": false,
+  "model_defaults_changed": false,
+  "new_inference_performed": false,
+  "inputs_sha256": {
+    "/home/zyliu/Documents/rna-stable-ai/configs/stage2_to_stage3_gate_2026-10-18.json": "956fef4d171a2d33d16a16e36b80d3def4696d321f930c74ea3396acbbd030dd",
+    "/home/zyliu/Documents/rna-stable-ai/configs/project_scope_2026-10-18.json": "0463ed94ba040c24b4fa97c836f38c1a4a481bb310dd23594fa4d92ecef6767c",
+    "/home/zyliu/Documents/rna-stable-ai/results/long_validation_coverage_runs/20261017T033935.363253Z/selection.json": "8a08170227188f04c4a37fbdcecfbd8deadcce35b35b1ad88e593b647654d4ad",
+    "/home/zyliu/Documents/rna-stable-ai/results/bprna_five_clan_reference_screen_runs/20261017T191404.643416Z/references.json": "c7c9c06dff33b7e9084b5861da4852c87d1785715c4e2437107ce9bd3d679abe",
+    "/home/zyliu/Documents/rna-stable-ai/results/bprna_long_training_smoke_runs/20261017T033749.792816Z/selection.json": "b5bcb06b8d56f16a6741c12570fb933f5103c388f5a7d0fbdea06c968389eb75",
+    "/home/zyliu/Documents/rna-stable-ai/results/long_candidate_budget_matched_runs/20261017T183356.669629Z/control_88_seed7/summary.json": "bb0c19544191347a79e670e36e32ceb41a6824f7537938775c5c152e9dd74996",
+    "/home/zyliu/Documents/rna-stable-ai/results/long_candidate_budget_matched_runs/20261017T183356.669629Z/control_88_seed1729/summary.json": "7965c59c47ce347ac3cdc106767975101fc68f8bf3db5472f530039bd9e64159",
+    "/home/zyliu/Documents/rna-stable-ai/results/long_candidate_budget_matched_runs/20261017T183356.669629Z/control_88_seed20261015/summary.json": "09807aa3c774032092773e727092c0e18a69068871ff964c67a8d4ef49609c77",
+    "/home/zyliu/Documents/rna-stable-ai/results/long_candidate_budget_matched_runs/20261017T183356.669629Z/extended_105_seed7/summary.json": "61b862db52e4b6f28fa04d94400d76791682f59cc371acbfd70ee8623079879b",
+    "/home/zyliu/Documents/rna-stable-ai/results/long_candidate_budget_matched_runs/20261017T183356.669629Z/extended_105_seed1729/summary.json": "974bc4c774c97d9013d33edc9d7f0f7cefd64b948339cc49cc87053832ad11d2",
+    "/home/zyliu/Documents/rna-stable-ai/results/long_candidate_budget_matched_runs/20261017T183356.669629Z/extended_105_seed20261015/summary.json": "af780ebdd815789fc1b8a7515d8323ec801d3418202556c41e784a5a5dc32737",
+    "/home/zyliu/Documents/rna-stable-ai/results/long_native_controls_runs/20261017T034318.804594Z/rows.json": "2dda64796a572dd23f4a4bce2560fc7e3b773bad4921528a6503f72d4e73b62a",
+    "/home/zyliu/Documents/rna-stable-ai/results/bprna_five_clan_feasibility_evaluation_runs/20261017T191445.852927Z/control_88_seed7_predictions.json": "562c5ec48fdbedf4f9408997c27bbbbf795899a7144b3ffffdbfce62b2f6efa1",
+    "/home/zyliu/Documents/rna-stable-ai/results/bprna_five_clan_feasibility_evaluation_runs/20261017T191445.852927Z/control_88_seed1729_predictions.json": "843b3074319b71741a910469c9b1e7971532c5888e3a00b4909bbbd61a39f756",
+    "/home/zyliu/Documents/rna-stable-ai/results/bprna_five_clan_feasibility_evaluation_runs/20261017T191445.852927Z/control_88_seed20261015_predictions.json": "858ffa404e89244859c8a70d2b8c02f44643514de30331d43bf759445840e31f",
+    "/home/zyliu/Documents/rna-stable-ai/results/bprna_five_clan_feasibility_evaluation_runs/20261017T191445.852927Z/extended_105_seed7_predictions.json": "7d57463724c1df9e52c099520181f4479d080d3be91d3c3b271e801fab66d930",
+    "/home/zyliu/Documents/rna-stable-ai/results/bprna_five_clan_feasibility_evaluation_runs/20261017T191445.852927Z/extended_105_seed1729_predictions.json": "cba9264d1076186220ab18dfafddd2ba1c72036aa7527b6df0a8a7a8fae6f0d3",
+    "/home/zyliu/Documents/rna-stable-ai/results/bprna_five_clan_feasibility_evaluation_runs/20261017T191445.852927Z/extended_105_seed20261015_predictions.json": "eb1c7c6f2f08567736d4e074d5cc9fbf06ad9965461ccced88ca2a464df50c5b",
+    "/home/zyliu/Documents/rna-stable-ai/results/bprna_five_clan_feasibility_evaluation_runs/20261017T191445.852927Z/LinearFold_predictions.json": "cf53cfb45d61ff3a81ec2d55f5980cd882ccefcd731c1e9126e69551be701811",
+    "/home/zyliu/Documents/rna-stable-ai/results/bprna_five_clan_feasibility_evaluation_runs/20261017T191445.852927Z/ViennaRNA_predictions.json": "ae6bec2e5eda31eb42288b12f7185083fcdd2d5cbe9467040ab6d752dbfa7a54"
+  }
+}

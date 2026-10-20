@@ -7,6 +7,12 @@ rejected or blocked, grey paths sit behind the open Stage 2 gate. No stability, 
 expression benefit is established by any path shown. The earlier proposed-workflow
 picture is retained at [diagram_10182026.png](diagram_10182026.png).*
 
+*The diagram predates the 2026-10-20 gate review and still shows 0 of 6 requirements
+met. [Gate v5](configs/stage2_to_stage3_gate_v5_2026-10-20.json) now records 6 of 6 —
+two of them satisfied by accepting a documented limitation rather than by improving the
+data. The grey paths behind the gate are **not** switched on by that review: candidate
+design, new-sequence scoring and the assay all remain disabled.*
+
 Research prototype for RNA structure prediction, constrained sequence optimization,
 and reproducible folding benchmarks. Code, experimental checkpoints, input data,
 and results are available for inspection. No validated release yet.
@@ -25,7 +31,8 @@ that range.
 > learned-model results reported further below are **historical records of that
 > retired component**, not current capability. See the
 > [gap diagnosis](reports/structure_model_gap_diagnosis_2026-10-20.md) and
-> [gate v4](configs/stage2_to_stage3_gate_v4_2026-10-20.json).
+> [gate v4](configs/stage2_to_stage3_gate_v4_2026-10-20.json), carried forward in
+> [gate v5](configs/stage2_to_stage3_gate_v5_2026-10-20.json).
 Existing work at 3,000 nt and above, including 5,000/10,000-nt studies, is preserved as
 deferred work; they are not deleted or counted as
 active-scope validation. Method-specific lower limits still apply. See the
@@ -66,6 +73,33 @@ local run artifacts, datasets, model weights and installed environments are not
 bundled. Original third-party [source](docs/third_party/RiboNN_LICENSE.txt) and
 [weight-license terms](docs/third_party/RiboNN_MODEL_WEIGHTS_LICENSE.txt) are retained.
 
+### 2026-10-20: the learned model retired, and the Stage 2 gate reviewed
+
+The learned pair model was retired (see the note at the top), and the gate requirements
+were then reviewed against the components the project actually relies on. Recorded in
+[gate v5](configs/stage2_to_stage3_gate_v5_2026-10-20.json), which supersedes v4 and
+leaves it frozen and unedited.
+
+| # | Requirement | Outcome |
+|---:|---|---|
+| 1 | Frozen independent, family/clan-separated validation | **Accepted as a documented limitation.** Separation is satisfied by construction — thermodynamic folders have no training set, so there is no exposure to separate from — but the cohort is 6 in-scope records across 3 families and 2 clans, every one a computational Rfam consensus. There is no experimental-structure reference in scope. That is a data-acquisition problem no run can close. |
+| 2 | Accuracy and failures by length band and family | **Satisfied on evidence.** Both native controls reported by band, family and clan across three cohorts: 0.4381 / 0.4215 mean pair F1 on the in-scope long references, 0.3301 / 0.3346 short, 0.6261 / 0.6261 structure-derived. |
+| 3 | Resolve sparse 2,000–2,999 nt coverage | **Accepted as a documented limitation in v3**, and expanded here from 1 record to 5 with native controls: LinearFold 0.5273 ± 0.0805, ViennaRNA 0.5056 ± 0.1116. The frozen selection was not modified. All 5 are RF02540, so the cohort carries dispersion but no family contrast of its own. |
+| 4 | Credible accuracy from the relied-upon native controls | **Satisfied on evidence,** with the baseline gaps reviewed explicitly. About 0.42–0.44 pair F1 against computational consensus is credible for a published thermodynamic folder; it is not a strong structural result, and it is the quality of the *input* to STRAND and the optimiser. |
+| 5 | Constraint-decoder, resource and replay checks | **Re-scoped onto the native path, then satisfied.** Its replay leg reloaded learned-model checkpoints that no longer exist. On the native path: 22/22 folds reproduce the frozen structure *and* MFE exactly, 22/22 constrained folds honour every enforced pair, both tools refuse an unsatisfiable constraint, and the worst case is 8.18 s and 101 MiB against limits of 30 s and 4 GiB. The learned-model leg is **not** restored. |
+| 6 | Document remaining limitations | **Satisfied on evidence.** The [2026-10-19 document](reports/remaining_limitations_before_candidate_design_2026-10-19.md) stands unedited, extended by an [addendum](reports/remaining_limitations_addendum_2026-10-20.md) covering the retirement's cost, the re-scope, the band correction and the absent optimiser. |
+
+Two corrections belong in the record. The band's availability was overstated: the census
+counted 55 further eligible records, but selection checks the per-family cap *before*
+attempting to bind a pair reference, so none had been binding-tested — **only 5 of the 55
+bind.** And ViennaRNA 2.7.2 **silently drops** an enforced pair that violates the minimum
+hairpin size, folding without it and returning a finite energy; the constrained worker now
+verifies every enforced pair against the returned structure rather than trusting the tool.
+
+Six of six satisfied does not mean the structure evidence is strong. Two are satisfied by
+narrowing what may be claimed. `stage3_ready` is true; candidate design, new-sequence
+scoring and the assay remain disabled, each behind its own decision.
+
 ### 2026-10-19: engine agreement, a named calibration, score records and a Stage 2 census
 
 Four protocols were frozen before the work they govern, then run once. Each writes a
@@ -94,8 +128,8 @@ scored a single sequence on both its stability and its translation side, because
 released STRAND references carry UTR/CDS descriptions without numeric boundaries while
 the RiboNN inputs are synthetic sequences with no measured half-life.
 
-Zero of the six Stage 2 gate requirements are satisfied, and no gate review has taken
-place, so nothing behind the gate — parents, allowed edits, the biological objective,
+As of 2026-10-19, zero of the six Stage 2 gate requirements were satisfied and no gate
+review had taken place, so nothing behind the gate — parents, allowed edits, the biological objective,
 budgets, or the assay protocol — is frozen. Detail, limits and exact
 continuation commands are in handoffs
 [V1](reports/RNA-StableAI_HANDOFF_2026-10-19_V1.md),
