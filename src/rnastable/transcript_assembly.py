@@ -84,6 +84,11 @@ class AssemblyReport:
     synonymous_verified: bool | None = None
     substituted_codon_indices: tuple | None = None
     protein_sha256: str | None = None
+    # Populated only by assemble_designed. None elsewhere, so a designed
+    # transcript can never be mistaken for one built on the supplied UTRs.
+    utrs_designed: bool | None = None
+    utr5_edits: int | None = None
+    utr3_edits: int | None = None
 
     def to_dict(self):
         return asdict(self)
@@ -343,4 +348,121 @@ def assemble_variant(variant_cds_bases, config_path, tx_id, provenance, assay_co
         synonymous_verified=True,
         substituted_codon_indices=substituted,
         protein_sha256=hashlib.sha256(reference_protein.encode()).hexdigest(),
+    )
+
+
+def assemble_designed(utr5, cds_bases, utr3, config_path, tx_id, provenance, assay_context,
+                      reference_component="cds"):
+    """Assemble a transcript whose UTRs are DESIGNED, not the supplied ones.
+
+    `assemble_variant` holds the UTRs at the collaborator's supplied sequences and
+    allows only a synonymous CDS. This path additionally accepts redesigned UTR
+    composition, and is deliberately separate because the guarantee it can offer
+    is weaker: the protein is still verified exactly, but the UTRs no longer
+    carry the supplied sequences' provenance.
+
+    What is still enforced, because removing any of it would change the construct
+    for reasons unrelated to the composition being designed:
+
+    - the protein, verified by translating against the recorded reference CDS
+    - every length: the supplied UTR lengths and the reference CDS length
+    - the 5' UTR's final Kozak context and the 3' UTR's opening tandem stop
+    - no out-of-frame uAUG in the 5' UTR
+
+    The report records what was redesigned and marks the UTRs as designed, so a
+    designed transcript can never be mistaken for the supplied construct.
+    """
+    from .transcript_design import KOZAK_SUFFIX, TANDEM_STOP_PREFIX, out_of_frame_uaug
+    from .synonymous_window import split_codons, translate
+
+    data = load_inputs(config_path)
+    components = data["components"]
+    if reference_component not in components:
+        raise ValueError(f"Config records no CDS component named {reference_component!r}")
+    record = components[reference_component]
+    sequence_file = record.get("sequence_file")
+    if not sequence_file:
+        raise ValueError(f"Component {reference_component!r} records no sequence_file")
+
+    reference_path = Path(config_path).resolve().parents[1] / sequence_file
+    reference_dna = "".join(reference_path.read_text().split()).upper().replace("U", "T")
+    reference_hash = hashlib.sha256(reference_dna.encode()).hexdigest()
+    if reference_hash != record["sha256_dna_uppercase"]:
+        raise ValueError(
+            f"Recorded reference CDS {reference_component!r} does not match its own hash")
+
+    supplied5 = components["utr5"]["sequence_dna_uppercase"].upper()
+    supplied3 = components["utr3"]["sequence_dna_uppercase"].upper()
+    designed5 = utr5.strip().upper().replace("U", "T")
+    designed3 = utr3.strip().upper().replace("U", "T")
+    variant_dna = cds_bases.strip().upper().replace("U", "T")
+    for label, value in (("5' UTR", designed5), ("CDS", variant_dna), ("3' UTR", designed3)):
+        if not value or set(value) - set("ACGT"):
+            raise ValueError(f"{label} must be nonempty and canonical ACGT/ACGU")
+
+    for label, got, want in (("5' UTR", len(designed5), len(supplied5)),
+                             ("CDS", len(variant_dna), len(reference_dna)),
+                             ("3' UTR", len(designed3), len(supplied3))):
+        if got != want:
+            raise ValueError(
+                f"{label} length {got} nt differs from the recorded {want} nt. This path "
+                "designs composition only; lengths are fixed.")
+
+    if not designed5.endswith(KOZAK_SUFFIX):
+        raise ValueError(f"Designed 5' UTR does not preserve the Kozak context {KOZAK_SUFFIX}")
+    if not designed3.startswith(TANDEM_STOP_PREFIX):
+        raise ValueError(
+            f"Designed 3' UTR does not preserve the tandem stop {TANDEM_STOP_PREFIX}")
+    if out_of_frame_uaug(designed5):
+        raise ValueError("Designed 5' UTR contains an out-of-frame uAUG")
+
+    reference_codons = split_codons(reference_dna)
+    variant_codons = split_codons(variant_dna)
+    reference_protein = translate(reference_codons)
+    if translate(variant_codons) != reference_protein:
+        raise ValueError("Designed CDS does not translate to the reference protein")
+
+    substituted = tuple(i for i, (a, b) in enumerate(zip(reference_codons, variant_codons))
+                        if a != b)
+    sequence = to_rna(designed5) + to_rna(variant_dna) + to_rna(designed3)
+    transcript = Transcript(
+        tx_id=tx_id, sequence=sequence, cds_start=len(designed5),
+        cds_end=len(designed5) + len(variant_dna),
+        provenance=provenance, assay_context=assay_context)
+    leading = to_rna(designed3)[:3]
+
+    return transcript, AssemblyReport(
+        tx_id=tx_id,
+        transcript_length_nt=len(sequence),
+        utr5_length_nt=len(designed5),
+        cds_length_nt=len(variant_dna),
+        utr3_length_nt=len(designed3),
+        poly_a_length_nt=0,
+        poly_a_included=False,
+        cds_start=transcript.cds_start,
+        cds_end=transcript.cds_end,
+        protein_length_aa=len(variant_dna) // 3 - 1,
+        cds_sha256_dna_uppercase=hashlib.sha256(variant_dna.encode()).hexdigest(),
+        transcript_sha256_rna=digest(sequence),
+        identity_sha256=transcript.identity_sha256,
+        tandem_stop_present=leading in STOP_CODONS,
+        tandem_stop_codon=leading if leading in STOP_CODONS else None,
+        ribonn_exclusion=transcript.ribonn_exclusion(),
+        alphabet_conversion="supplied DNA uppercased and T converted to U",
+        cds_component=reference_component,
+        config_path=str(config_path),
+        no_claim=(
+            "A validated assembly of a DESIGNED transcript. The protein is preserved and "
+            "verified, and every length, the Kozak context and the tandem stop are unchanged. "
+            "The UTRs are DESIGNED and do NOT carry the supplied sequences' provenance: this "
+            "is a new construct, not the supplied construct with tweaks. Establishes no "
+            "stability, translation or expression claim, and has no measurement of any kind."),
+        variant_of=reference_component,
+        reference_cds_sha256_dna_uppercase=reference_hash,
+        synonymous_verified=True,
+        substituted_codon_indices=substituted,
+        protein_sha256=hashlib.sha256(reference_protein.encode()).hexdigest(),
+        utrs_designed=True,
+        utr5_edits=sum(1 for a, b in zip(supplied5, designed5) if a != b),
+        utr3_edits=sum(1 for a, b in zip(supplied3, designed3) if a != b),
     )

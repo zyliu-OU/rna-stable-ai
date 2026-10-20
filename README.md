@@ -71,6 +71,52 @@ local run artifacts, datasets, model weights and installed environments are not
 bundled. Original third-party [source](docs/third_party/RiboNN_LICENSE.txt) and
 [weight-license terms](docs/third_party/RiboNN_MODEL_WEIGHTS_LICENSE.txt) are retained.
 
+### 2026-10-20: the design domain is widened — the threshold clears, and the objective turns out to be a GC meter
+
+Gate v10 left two options open; v11 took the first, and this takes the second
+([design space v3](configs/full_transcript_design_space_v3_2026-10-20.json),
+[gate v12](configs/stage2_to_stage3_gate_v12_2026-10-20.json)). The domain becomes UTR
+composition **plus** synonymous codons, with every length fixed:
+
+```
+5'UTR   44 nt   38 editable   GCCACC preserved (Kozak)
+CDS   1653 nt  549 codons substitutable, synonymous only
+3'UTR  114 nt  111 editable   TAA preserved (tandem stop)
+transcript fixed at 1811 nt
+```
+
+One constraint is grounded in **our own measurement** rather than the literature: no
+out-of-frame uAUG in the 5′UTR, justified by the slopes measured in the m1Ψ check (−1.56 and
+−1.43 unmodified, −1.32 modified — large, and stable across the modification).
+
+**The resolvable threshold clears for the first time.** Widest predicted difference from the
+reference **2.0069×**, against a 1.25× threshold, with **239 of 512** members above it. The
+synonymous-only domain topped out at 1.0617×, below even the chance floor. The *constraint*
+really was the binding limit. And **458 of 512** members now sit inside the calibration's
+fitted GC range, where previously **none** did.
+
+**But zero members are resolvably better.** All 239 resolvable differences are degradations,
+and the diagnostic says why:
+
+```
+pearson, transcript GC vs predicted half-life:   +0.9897
+reference              GC 0.6444   1.3197 h
+highest in pool        GC 0.6576   1.4729 h      (higher GC, not lower)
+in calibration domain  n=458   median 1.0558 h
+extrapolating          n= 54   median 1.3223 h
+239 resolvably worse:  GC 0.3539 .. 0.5268
+```
+
+**In this domain the objective is effectively a GC readout.** GC is one of three inputs to a
+one-component PLS model, and here GC spans 0.354–0.658 while the other two features move far
+less, so it dominates the predictor. The consequence is a near-deterministic opposition:
+**entering the fitted domain requires lowering GC, which the model calls worse.**
+
+That makes **four independent findings now converging on GC** — m1Ψ rescales its slope ~3.7×
+(v9), it is the strongest single feature and cannot be dropped cheaply (v10), the reference
+extrapolates on it, and the objective collapses onto it (v12). The one axis the objective runs
+on is the least trustworthy one available.
+
 ### 2026-10-20: the pipeline is reframed as a coarse filter plus a diversity selector
 
 Taking the first of the two options gate v10 left open

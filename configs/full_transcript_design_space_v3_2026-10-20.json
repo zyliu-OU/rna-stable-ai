@@ -1,0 +1,89 @@
+{
+  "schema_version": 3,
+  "name": "full_transcript_design_space_v3",
+  "effective_date": "2026-10-20",
+  "decision": "The design domain is extended from synonymous codon substitution alone to synonymous codon substitution PLUS redesign of 5' and 3' UTR composition, with every length held fixed.",
+  "decided_by": "user, 2026-10-20: 'can we also let our method include redesigning the UTRs and the codons?' and 'fixed length is fine, go ahead'",
+  "supersedes": {
+    "file": "configs/synonymous_window_design_space_v2_2026-10-20.json",
+    "sha256": "d77a8482b583eb63db96509deb5ed55ac05c394a5c715e430a46fc81c1285cf4",
+    "status": "frozen and unedited; retained because three 512-member pool runs reference it",
+    "what_changed": "The UTRs become editable in composition. The window restriction on the CDS is dropped, since the window axis was measured to be exhausted. All lengths stay fixed."
+  },
+  "why_this_change": {
+    "measured_motivation": "Gate v10 records that the stability objective orders at chance below 1.10-fold differences, while the widest difference the synonymous-only design space could produce was 1.0617-fold, below even that floor. The constraint, not the model, was the binding limit.",
+    "external_magnitude_to_aim_at": "An independent group's method, which redesigns UTRs and codons together, reports predicted half-life moving 0.77 to 3.44 hours, a 4.45-fold predicted change. That is above this project's 1.25-fold resolvable threshold, where its own objective has measured concordance of 0.6902.",
+    "the_point": "Editing more of the transcript is not pursued for its own sake. It is the only available way to move predicted differences out of the regime where this project's objective was measured to be at chance.",
+    "what_it_does_not_fix": "It does not improve the objective. The objective's resolution is unchanged; only the size of the differences presented to it changes."
+  },
+  "what_is_gained_and_lost": {
+    "gained": [
+      "Transcript GC becomes steerable. The construct currently sits at 64.44 percent, which is 4.20 points ABOVE the calibration's training ceiling of 60.24 percent, which is why every member of every design run is flagged as extrapolating on GC. With UTR composition free and lengths fixed, reachable transcript GC spans roughly 59.91 to 68.14 percent, so the calibration's fitted domain becomes reachable, although only near the AU-rich edge.",
+      "Effect sizes should move toward the regime the objective can resolve."
+    ],
+    "lost": [
+      "The UTRs stop being the collaborator's supplied, hash-verified sequences. The 5' UTR is a shortened mRNA-1273 derivative and the 3' UTR is an exact 111 of 111 nucleotide match to human HBA1; both are deliberately chosen regulatory elements. A designed-UTR member is a NEW construct, not the supplied construct with tweaks, and loses the provenance guarantee for those regions.",
+      "The translation side becomes less trustworthy, not more. RiboNN has no measured resolution in this project at all, and designed UTRs are further outside its endogenous-transcript domain than natural ones. It remains excluded from filtering."
+    ],
+    "unchanged": "The protein is still preserved exactly and verified on every member."
+  },
+  "editable_and_preserved": {
+    "utr5": {
+      "length_nt": 44, "editable_nt": 38, "preserved_suffix": "GCCACC",
+      "why_preserved": "The last six nucleotides before the start codon are a canonical strong Kozak context. Redesigning them would change initiation efficiency for reasons unrelated to the composition being tested."
+    },
+    "cds": {
+      "length_nt": 1653, "codons": 551, "substitutable_codons": 549,
+      "restriction": "synonymous only; the start codon and the terminator are excluded",
+      "window_dropped": "The 30 and 50 codon windows of v1 and v2 are dropped. Measured scaling of spread against window width was 0.42 and the whole-ORF ceiling reached only 8.39 percent of the calibration's training range, so the window axis is exhausted and restricting it buys nothing."
+    },
+    "utr3": {
+      "length_nt": 114, "editable_nt": 111, "preserved_prefix": "TAA",
+      "why_preserved": "The 3' UTR opens with a second stop codon. The collaborator confirmed the tandem stop as a deliberate design, insurance against readthrough, so it is not something to vary."
+    },
+    "transcript_length_nt": 1811,
+    "why_lengths_are_fixed": "Fixing every length keeps all existing assembly and boundary checks meaningful, keeps the transcript inside the active scope, and isolates COMPOSITION as the single variable. Variable-length UTRs are a later option and are not taken here."
+  },
+  "constraints": {
+    "protein_preserved_exactly": "verified by translating the full ORF and comparing, on every member",
+    "start_codon_unchanged": true,
+    "terminator_unchanged": true,
+    "kozak_suffix_unchanged": true,
+    "tandem_stop_prefix_unchanged": true,
+    "all_lengths_unchanged": true,
+    "no_out_of_frame_uaug_in_the_utr5": {
+      "rule": "no ATG in the 5' UTR whose position is out of frame with the main start codon",
+      "grounded_in_this_project_own_measurement": "The m1-pseudouridine slope check measured the out-of-frame uAUG penalty on ribosome load at -1.5594 and -1.4273 unmodified and -1.3223 under m1-psi, a large effect that was STABLE across the modification. The supplied 5' UTR contains zero out-of-frame uAUGs, so this constraint preserves a property the reference already has.",
+      "source": "results/m1pseudouridine_slope_runs/20261020T214354.531676Z/summary.json"
+    },
+    "max_homopolymer_run": 6,
+    "why_six": "The reference transcript's own longest homopolymer run; a no-regression bound rather than a literature threshold",
+    "failures_are_discarded_not_repaired": true
+  },
+  "not_constrained_deliberately": [
+    "Secondary structure anywhere. Constraining it would bake a structural prior into the domain, which is the objective's job to evaluate rather than the generator's to presuppose.",
+    "Restriction sites. No cloning strategy has been stated.",
+    "Known regulatory motifs in the UTRs beyond the Kozak and the tandem stop. Nothing in this project establishes which others matter, and inventing a motif list would be worse than naming the gap.",
+    "Poly(A). It is template-encoded and recorded, and is not part of the design domain."
+  ],
+  "sampling": {
+    "member_0": "the unmodified reference transcript, so every pool contains the construct everything else is compared against",
+    "gc_steering": "Each member draws a TARGET transcript GC fraction uniformly across the reachable range, then codons and free UTR positions are chosen to approach it. GC is sampled deliberately rather than left to emerge, because GC is the feature the calibration depends on most, the axis the construct extrapolates on, and the relationship m1-psi was measured to rescale.",
+    "codon_choice": "per member, a GC preference drawn once and applied across substitutable codons, as in v1 and v2",
+    "utr_choice": "free positions sampled base by base with a GC probability solved to hit the member's target given the codon choices already made",
+    "seed": 1729,
+    "duplicates_rejected": true
+  },
+  "space_size": "Astronomically large: about 4^38 for the 5' UTR, 4^111 for the 3' UTR and 10^273 for synonymous codon choice. Enumeration is meaningless; pools are sampled.",
+  "selection_unchanged": {
+    "method": "configs/coarse_filter_diversity_panel_v1_2026-10-20.json",
+    "note": "Selection remains a coarse filter plus a diversity selector. Widening the design space does not restore ranking; if differences now clear the resolvable threshold, the filter will say so on its own terms."
+  },
+  "no_claim": [
+    "Widening the design space establishes no stability, translation or expression benefit.",
+    "A designed-UTR member is a new construct and carries none of the supplied UTRs' provenance.",
+    "Reaching the calibration's GC domain does not make its predictions correct, only in-domain.",
+    "The objective's resolution is unchanged by this; only the size of the differences changes.",
+    "Nothing here is measured. No molecule in this project has been assayed."
+  ]
+}
