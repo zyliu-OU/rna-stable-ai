@@ -71,6 +71,50 @@ local run artifacts, datasets, model weights and installed environments are not
 bundled. Original third-party [source](docs/third_party/RiboNN_LICENSE.txt) and
 [weight-license terms](docs/third_party/RiboNN_MODEL_WEIGHTS_LICENSE.txt) are retained.
 
+### 2026-10-20: the objective has no resolving power at the scale the design space works at
+
+Three questions answered in one run on the 123 held-out records, all models fitted on the 69
+the calibration was trained on and scored once
+([protocol](configs/stability_feature_ablation_v1_2026-10-20.json)).
+
+**The pipeline cannot order sequences that differ by less than 10%.** Pairwise concordance on
+held-out pairs, binned by how much the two records *actually* differ — chance is 0.5000:
+
+| measured fold difference | pairs | concordance |
+|---|---|---|
+| **1.00 – 1.10** | **2,958** | **0.5007** |
+| 1.10 – 1.25 | 2,230 | 0.5735 |
+| 1.25 – 1.50 | 1,091 | 0.6902 |
+| 1.50 – 2.00 | 230 | 0.7826 |
+| above 2.00 | 994 | 0.9598 |
+
+Spearman within measured quartiles: q1 **−0.091**, q2 +0.068, q3 +0.424, q4 +0.555.
+
+**This project's design space produces 3.2–8.4% differences — inside the chance bin.**
+[Gate v10](configs/stage2_to_stage3_gate_v10_2026-10-20.json) therefore prohibits presenting
+the design workflow's ordering of synonymous variants as a ranking or a recommendation. What
+stays permitted is the regime where it works: a **coarse filter**, concordance above 0.90 for
+differences beyond 2×.
+
+Two further results from the same run:
+
+**GC could not be dropped cheaply.** Removing it costs 0.083 held-out Spearman (0.3502 →
+0.2674), and `gc_only` at +0.2968 is the **strongest single feature**. So m1Ψ rescaling the GC
+relationship ~3.7× is a real liability, not an academic one.
+
+**The refit adds nothing.** `full` +0.3502, free `eternafold_only` +0.3248, and the
+combination is *worse* at +0.3033 — overfitting at n=69. The frozen PLS reference scores
++0.3268.
+
+**And the training join is now confirmed rather than inferred.** Recomputing
+`energy_per_length`, `GC` and `aup` from the sequences reproduces the frozen training table
+with **maximum absolute difference 0.0** across all 69 records — which also shows the project's
+ensemble worker reproduces the original R feature extraction exactly.
+
+Recorded as open decisions, not taken: reframe the pipeline as a coarse filter plus a
+diversity selector, which today's evidence supports and needs no new modelling; or change the
+objective so differences are larger, which would void the calibration as fitted.
+
 ### 2026-10-20: m1Ψ rescales the GC relationship — the right nucleoside, 40,000 sequences per arm
 
 The pseudouridine result below rested on six constructs of the **wrong** nucleoside. Sample et

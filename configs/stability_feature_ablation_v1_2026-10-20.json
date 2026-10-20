@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "name": "stability_feature_ablation_v1",
+  "effective_date": "2026-10-20",
+  "purpose": "Three questions in one run: is GC load-bearing, can the model order SIMILAR sequences at all, and does the refit add anything over a free published predictor.",
+  "authorized_by": "user, 2026-10-20: 'sure start with A, B and C as one run'",
+  "status": "PROTOCOL AND CRITERIA DECLARED BEFORE ANY ABLATION, CONCORDANCE OR COMBINED FIT WAS COMPUTED. The only prior results are those already published in results/external_validation_leppek_runs/20261020T210948.866079Z.",
+  "motivation": {
+    "A_is_gc_load_bearing": "m1-pseudouridine rescales the GC-to-ribosome-load slope by about 3.7 times (gate v9), GC is one of only three inputs to strand_rnafold_calibration_v1, the model is a one-component PLS so all three collapse into a single weighted direction, and this project's own construct extrapolates on GC at 64.4 percent against a 39.4 to 60.2 percent training range. Four problems on one feature. If GC carries little signal, dropping it removes all four at no cost.",
+    "B_can_it_order_similar_sequences": "Pearson on log 0.5871 against Spearman 0.3268 on the same records suggests coarse discrimination with poor fine ordering. The design space produces differences of 3.2 to 8.4 percent of the training range, which is exactly the fine regime. This converts that inference into a measurement.",
+    "C_does_the_refit_earn_its_keep": "A free per-nucleotide EternaFold score reached 0.3248 against the refit's 0.3268 on the same 123 records. Either the combination beats both, or the simpler free predictor should be preferred."
+  },
+  "data": {
+    "source": "configs/external_validation_leppek_v1_2026-10-20.json",
+    "workbook_sha256": "9a8b6b4314ab892aa3e4a4476993189dff1245d4ab55494723782e6afebae0e7",
+    "sheet": "Fig_S8a",
+    "split": "the 69 rows matching the calibration's training table are the FIT set; the other 123 are the HELD-OUT set, identified by exact match on GC and half-life as in the earlier protocol",
+    "no_tuning_on_held_out": "Every model is fitted on the 69 fit rows only. The 123 held-out rows are scored once per model and never used to choose a model, a feature set or a threshold."
+  },
+  "features": {
+    "recomputed": "All 192 rows are folded in this run with rnastable.ensemble_worker, so every model uses internally consistent features rather than mixing this project's worker output with the frozen training table from the original R pipeline.",
+    "set": ["energy_per_length", "GC", "aup"],
+    "extra": "eternafold_per_nt, the sheet's SUP EternaFold FULL column divided by sequence length, because that column is a sum over nucleotides and correlates with length at Spearman +0.94",
+    "provenance_check": "The recomputed features for the 69 fit rows are compared against the frozen results/strand_rnafold_calibration_runs/20261019T174049.053308Z/features/train_features.csv. Agreement would confirm the inferred training provenance; disagreement would be reported and would weaken it."
+  },
+  "estimator": {
+    "method": "ordinary least squares",
+    "why_not_pls": "The frozen model is a one-component PLS fitted in R and cannot be reproduced exactly here. Pretending to reproduce it would be worse than not. OLS is used for EVERY variant so the ablation is internally apples-to-apples, and the frozen PLS model is scored alongside as a separately labelled reference rather than as one of the variants.",
+    "target": "measured in-solution half-life in hours"
+  },
+  "variants_to_fit": [
+    "full: energy_per_length + GC + aup",
+    "without_gc: energy_per_length + aup",
+    "without_aup: energy_per_length + GC",
+    "without_energy: GC + aup",
+    "energy_only", "gc_only", "aup_only",
+    "eternafold_only: eternafold_per_nt",
+    "full_plus_eternafold: energy_per_length + GC + aup + eternafold_per_nt"
+  ],
+  "declared_criteria": {
+    "A_gc_ablation": {
+      "statistic": "held-out Spearman of without_gc minus held-out Spearman of full",
+      "not_load_bearing": "absolute change at or below 0.05, meaning GC can be dropped at no cost and the m1-psi and extrapolation liabilities go with it",
+      "load_bearing": "drop greater than 0.10, meaning GC carries real signal and the m1-psi rescaling is a serious problem rather than an academic one",
+      "ambiguous": "between 0.05 and 0.10"
+    },
+    "B_fine_ordering": {
+      "statistic": "pairwise concordance: over all held-out pairs, the fraction ordered correctly by prediction, binned by the measured fold difference between the pair",
+      "bins": ["1.00-1.10", "1.10-1.25", "1.25-1.50", "1.50-2.00", "above 2.00"],
+      "why_concordance": "It is the direct question. Chance is 0.50. The design space produces differences inside the first bin, so that bin is the one that matters for ranking synonymous variants.",
+      "cannot_order_similar": "concordance at or below 0.55 in the 1.00-1.10 bin",
+      "can_order_similar": "concordance at or above 0.65 in the 1.00-1.10 bin",
+      "secondary": "Spearman within each quartile of measured half-life"
+    },
+    "C_combination": {
+      "statistic": "held-out Spearman of full_plus_eternafold against the better of full and eternafold_only",
+      "combination_has_value": "improvement of at least 0.05 over BOTH",
+      "prefer_the_free_predictor": "if the combination does not clear that, and eternafold_only is within 0.05 of full, then the unvalidated refit should be retired in favour of the free published score"
+    },
+    "all_outcomes_reportable": "Each criterion can come out against this project's existing choices, and will be reported either way."
+  },
+  "what_this_cannot_establish": [
+    "Absolute accuracy of any variant. These are rank statistics on 123 records.",
+    "That a better-performing variant should become the project default. That is a gate decision, not an output of this run.",
+    "Anything about the translation side, about in-cell stability, or about the project's own 1811 nt construct, which lies outside this dataset's length and GC ranges.",
+    "That OLS results transfer to the frozen one-component PLS model. The PLS model is scored as a labelled reference only."
+  ]
+}

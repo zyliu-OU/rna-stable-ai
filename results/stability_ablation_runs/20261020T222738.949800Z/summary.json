@@ -1,0 +1,363 @@
+{
+  "A_gc_ablation": {
+    "criteria": {
+      "ambiguous": "between 0.05 and 0.10",
+      "load_bearing": "drop greater than 0.10, meaning GC carries real signal and the m1-psi rescaling is a serious problem rather than an academic one",
+      "not_load_bearing": "absolute change at or below 0.05, meaning GC can be dropped at no cost and the m1-psi and extrapolation liabilities go with it",
+      "statistic": "held-out Spearman of without_gc minus held-out Spearman of full"
+    },
+    "delta": -0.08288297584192128,
+    "full_spearman": 0.35024054894171364,
+    "verdict": "ambiguous",
+    "without_gc_spearman": 0.26735757309979236
+  },
+  "B_fine_ordering": {
+    "criteria": {
+      "bins": [
+        "1.00-1.10",
+        "1.10-1.25",
+        "1.25-1.50",
+        "1.50-2.00",
+        "above 2.00"
+      ],
+      "can_order_similar": "concordance at or above 0.65 in the 1.00-1.10 bin",
+      "cannot_order_similar": "concordance at or below 0.55 in the 1.00-1.10 bin",
+      "secondary": "Spearman within each quartile of measured half-life",
+      "statistic": "pairwise concordance: over all held-out pairs, the fraction ordered correctly by prediction, binned by the measured fold difference between the pair",
+      "why_concordance": "It is the direct question. Chance is 0.50. The design space produces differences inside the first bin, so that bin is the one that matters for ranking synonymous variants."
+    },
+    "narrowest_bin_concordance": 0.5006761325219743,
+    "pairwise_concordance_by_measured_fold_difference": {
+      "1.00-1.10": {
+        "concordance": 0.5006761325219743,
+        "concordant": 1481,
+        "pairs": 2958
+      },
+      "1.10-1.25": {
+        "concordance": 0.5735426008968609,
+        "concordant": 1279,
+        "pairs": 2230
+      },
+      "1.25-1.50": {
+        "concordance": 0.69019248395967,
+        "concordant": 753,
+        "pairs": 1091
+      },
+      "1.50-2.00": {
+        "concordance": 0.782608695652174,
+        "concordant": 180,
+        "pairs": 230
+      },
+      "above_2.00": {
+        "concordance": 0.959758551307847,
+        "concordant": 954,
+        "pairs": 994
+      }
+    },
+    "spearman_within_measured_quartiles": {
+      "q1": {
+        "measured_range": [
+          0.86498944,
+          1.19509165
+        ],
+        "n": 30,
+        "spearman": -0.09098998887652948
+      },
+      "q2": {
+        "measured_range": [
+          1.2016719,
+          1.29123133
+        ],
+        "n": 30,
+        "spearman": 0.06829810901001113
+      },
+      "q3": {
+        "measured_range": [
+          1.29288594,
+          1.39047692
+        ],
+        "n": 30,
+        "spearman": 0.4242491657397108
+      },
+      "q4": {
+        "measured_range": [
+          1.39332788,
+          4.36040349
+        ],
+        "n": 33,
+        "spearman": 0.55548128342246
+      }
+    },
+    "verdict": "cannot_order_similar",
+    "why_the_narrowest_bin_matters": "This project's design space produces differences of 3 to 8 percent, which fall inside the 1.00 to 1.10 bin. Chance is 0.50."
+  },
+  "C_combination": {
+    "combined_spearman": 0.30331093369103973,
+    "criteria": {
+      "combination_has_value": "improvement of at least 0.05 over BOTH",
+      "prefer_the_free_predictor": "if the combination does not clear that, and eternafold_only is within 0.05 of full, then the unvalidated refit should be retired in favour of the free published score",
+      "statistic": "held-out Spearman of full_plus_eternafold against the better of full and eternafold_only"
+    },
+    "eternafold_only_spearman": 0.32478621454643947,
+    "full_spearman": 0.35024054894171364,
+    "gain_over_best_single": -0.046929615250673906,
+    "verdict": "prefer_the_free_predictor"
+  },
+  "built_utc": "2026-10-20T22:27:38.949582+00:00",
+  "counts": {
+    "fit": 69,
+    "held_out": 123,
+    "rows": 192
+  },
+  "estimator": {
+    "method": "ordinary least squares",
+    "target": "measured in-solution half-life in hours",
+    "why_not_pls": "The frozen model is a one-component PLS fitted in R and cannot be reproduced exactly here. Pretending to reproduce it would be worse than not. OLS is used for EVERY variant so the ablation is internally apples-to-apples, and the frozen PLS model is scored alongside as a separately labelled reference rather than as one of the variants."
+  },
+  "feature_provenance_check": {
+    "GC": {
+      "max_absolute_difference": 0.0,
+      "median_absolute_difference": 0.0,
+      "n": 69
+    },
+    "aup": {
+      "max_absolute_difference": 0.0,
+      "median_absolute_difference": 0.0,
+      "n": 69
+    },
+    "energy_per_length": {
+      "max_absolute_difference": 0.0,
+      "median_absolute_difference": 0.0,
+      "n": 69
+    }
+  },
+  "frozen_pls_reference": {
+    "held_out_mae_hours": 0.4131377820046264,
+    "held_out_n": 123,
+    "held_out_spearman": 0.32677251679973174,
+    "note": "frozen one-component PLS fitted in R; a labelled reference, not an OLS variant"
+  },
+  "no_claim": [
+    "These are rank statistics on 123 records, not a demonstration of absolute accuracy.",
+    "A better-performing variant does not become the project default here; that is a gate decision.",
+    "Every model was fitted on the 69 fit rows only and the held-out rows were scored once per model, so no variant was selected using them.",
+    "The frozen PLS model is reported as a labelled reference; OLS results do not transfer to it.",
+    "Nothing here touches the translation side, in-cell stability, or this project's own 1811 nt construct."
+  ],
+  "protocol": "configs/stability_feature_ablation_v1_2026-10-20.json",
+  "protocol_sha256": "f73cc44e48dd368ae8f5135f34b76b34c9509a70c8f3d0fe8855c701a13f44ae",
+  "purpose": "Three questions in one run: is GC load-bearing, can the model order SIMILAR sequences at all, and does the refit add anything over a free published predictor.",
+  "variants": {
+    "aup_only": {
+      "features": [
+        "aup"
+      ],
+      "fit_n": 69,
+      "fit_spearman_upper_bound": 0.4640847643405188,
+      "held_out_mae_hours": 0.46542484911768695,
+      "held_out_n": 123,
+      "held_out_pearson_log": 0.5632466104234672,
+      "held_out_spearman": 0.28381550605564226,
+      "model": {
+        "coefficients": {
+          "aup": -3.5553868440296275
+        },
+        "features": [
+          "aup"
+        ],
+        "intercept": 2.361854799371213
+      }
+    },
+    "energy_only": {
+      "features": [
+        "energy_per_length"
+      ],
+      "fit_n": 69,
+      "fit_spearman_upper_bound": 0.50153452685422,
+      "held_out_mae_hours": 0.41574971051372706,
+      "held_out_n": 123,
+      "held_out_pearson_log": 0.6373271382534369,
+      "held_out_spearman": 0.2867949594355806,
+      "model": {
+        "coefficients": {
+          "energy_per_length": -2.241888317310048
+        },
+        "features": [
+          "energy_per_length"
+        ],
+        "intercept": 0.23634624346406585
+      }
+    },
+    "eternafold_only": {
+      "features": [
+        "eternafold_per_nt"
+      ],
+      "fit_n": 69,
+      "fit_spearman_upper_bound": 0.4115454877603215,
+      "held_out_mae_hours": 0.42140694037779447,
+      "held_out_n": 123,
+      "held_out_pearson_log": 0.5691883437046695,
+      "held_out_spearman": 0.32478621454643947,
+      "model": {
+        "coefficients": {
+          "eternafold_per_nt": -2.2483429415325737
+        },
+        "features": [
+          "eternafold_per_nt"
+        ],
+        "intercept": 2.1274212506735686
+      }
+    },
+    "full": {
+      "features": [
+        "energy_per_length",
+        "GC",
+        "aup"
+      ],
+      "fit_n": 69,
+      "fit_spearman_upper_bound": 0.5533065400073073,
+      "held_out_mae_hours": 0.4097244075759123,
+      "held_out_n": 123,
+      "held_out_pearson_log": 0.5145578799995663,
+      "held_out_spearman": 0.35024054894171364,
+      "model": {
+        "coefficients": {
+          "GC": 0.030651956560603013,
+          "aup": -3.202243218380531,
+          "energy_per_length": 0.6377978688862078
+        },
+        "features": [
+          "energy_per_length",
+          "GC",
+          "aup"
+        ],
+        "intercept": 0.9204565939674741
+      }
+    },
+    "full_plus_eternafold": {
+      "features": [
+        "energy_per_length",
+        "GC",
+        "aup",
+        "eternafold_per_nt"
+      ],
+      "fit_n": 69,
+      "fit_spearman_upper_bound": 0.5274753379612714,
+      "held_out_mae_hours": 0.42074454771485564,
+      "held_out_n": 123,
+      "held_out_pearson_log": 0.5857928873188611,
+      "held_out_spearman": 0.30331093369103973,
+      "model": {
+        "coefficients": {
+          "GC": 0.029036363176819357,
+          "aup": -7.39142980986839,
+          "energy_per_length": -3.060582948471507,
+          "eternafold_per_nt": 7.170950904155448
+        },
+        "features": [
+          "energy_per_length",
+          "GC",
+          "aup",
+          "eternafold_per_nt"
+        ],
+        "intercept": -2.1992278051410112
+      }
+    },
+    "gc_only": {
+      "features": [
+        "GC"
+      ],
+      "fit_n": 69,
+      "fit_spearman_upper_bound": 0.3608057515157856,
+      "held_out_mae_hours": 0.3173565610817582,
+      "held_out_n": 123,
+      "held_out_pearson_log": 0.36015185282528006,
+      "held_out_spearman": 0.2968386227733612,
+      "model": {
+        "coefficients": {
+          "GC": 0.03833863413282468
+        },
+        "features": [
+          "GC"
+        ],
+        "intercept": -0.8359218489132274
+      }
+    },
+    "without_aup": {
+      "features": [
+        "energy_per_length",
+        "GC"
+      ],
+      "fit_n": 69,
+      "fit_spearman_upper_bound": 0.5024113993423457,
+      "held_out_mae_hours": 0.37393924003730944,
+      "held_out_n": 123,
+      "held_out_pearson_log": 0.5419757103900997,
+      "held_out_spearman": 0.3116882279346326,
+      "model": {
+        "coefficients": {
+          "GC": 0.021232201660857118,
+          "energy_per_length": -1.4481451694327423
+        },
+        "features": [
+          "energy_per_length",
+          "GC"
+        ],
+        "intercept": -0.5367231281555103
+      }
+    },
+    "without_energy": {
+      "features": [
+        "GC",
+        "aup"
+      ],
+      "fit_n": 69,
+      "fit_spearman_upper_bound": 0.5418341249543296,
+      "held_out_mae_hours": 0.40147686859179404,
+      "held_out_n": 123,
+      "held_out_pearson_log": 0.5305690183905025,
+      "held_out_spearman": 0.33630418800221845,
+      "model": {
+        "coefficients": {
+          "GC": 0.027420357558339867,
+          "aup": -2.2970584498197266
+        },
+        "features": [
+          "GC",
+          "aup"
+        ],
+        "intercept": 0.5185028158269671
+      }
+    },
+    "without_gc": {
+      "features": [
+        "energy_per_length",
+        "aup"
+      ],
+      "fit_n": 69,
+      "fit_spearman_upper_bound": 0.4925465838509317,
+      "held_out_mae_hours": 0.3922631581763377,
+      "held_out_n": 123,
+      "held_out_pearson_log": 0.624167497817593,
+      "held_out_spearman": 0.26735757309979236,
+      "model": {
+        "coefficients": {
+          "aup": 1.3970780290099178,
+          "energy_per_length": -2.998310469743817
+        },
+        "features": [
+          "energy_per_length",
+          "aup"
+        ],
+        "intercept": -0.5490273442583866
+      }
+    }
+  },
+  "what_this_cannot_establish": [
+    "Absolute accuracy of any variant. These are rank statistics on 123 records.",
+    "That a better-performing variant should become the project default. That is a gate decision, not an output of this run.",
+    "Anything about the translation side, about in-cell stability, or about the project's own 1811 nt construct, which lies outside this dataset's length and GC ranges.",
+    "That OLS results transfer to the frozen one-component PLS model. The PLS model is scored as a labelled reference only."
+  ],
+  "workbook_hash_verified": true
+}
