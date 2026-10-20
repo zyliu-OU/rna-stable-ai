@@ -37,6 +37,25 @@ def records_from_inventory(path):
     return records
 
 
+def reference_records(config):
+    """Build records from the recorded construct inputs instead of the synthetic set.
+
+    Used when a config names a reference_transcript block. The CDS is re-verified
+    against its recorded hash by assemble(), so a reference run cannot silently
+    score a different sequence than the one the project recorded.
+    """
+    from rnastable.transcript_assembly import assemble
+    spec = config["reference_transcript"]
+    records = []
+    for variant in spec["variants"]:
+        record, _ = assemble(
+            (ROOT/spec["cds_file"]).read_text(), ROOT/spec["inputs_config"],
+            variant["tx_id"], spec["provenance"], spec["assay_context"],
+            include_poly_a=variant["include_poly_a"])
+        records.append(record)
+    return records
+
+
 def verify(run):
     manifest=json.loads((run/"manifest.json").read_text())
     for relative,expected in manifest["artifacts"].items():
@@ -90,14 +109,22 @@ def main():
     out=ROOT/"results/ribonn_fixed_inference_runs"/stamp;out.mkdir(parents=True,exist_ok=False)
     print(out,flush=True)
     write(out/"protocol.json",config);write(out/"checkpoint_inventory.json",selected)
-    prior=ROOT/config["synthetic_input_run"]
-    prior_manifest=json.loads((prior/"artifacts.json").read_text())
-    if sha(prior/"fixed_inputs.json")!=prior_manifest["fixed_inputs.json"]:
-        raise ValueError("Original fixed input inventory changed")
-    records=records_from_inventory(prior/"fixed_inputs.json")
-    records += [Transcript("ribonn_empty_UTRs","AUGGCUUAA",0,9,"synthetic empty-UTR control","software mechanics only"),
-        Transcript("ribonn_utr5_1381","A"*1381+"AUGGCUUAA",1381,1390,"synthetic input-boundary control","software mechanics only"),
-        Transcript("ribonn_utr5_1382","A"*1382+"AUGGCUUAA",1382,1391,"synthetic exclusion control","software mechanics only")]
+    if "reference_transcript" in config:
+        # Scoring the supplied reference construct, not a designed candidate.
+        # The synthetic input inventory is deliberately not mixed in, so the run
+        # contains exactly the sequences the project recorded.
+        records=reference_records(config)
+        prior_identity=None
+    else:
+        prior=ROOT/config["synthetic_input_run"]
+        prior_manifest=json.loads((prior/"artifacts.json").read_text())
+        if sha(prior/"fixed_inputs.json")!=prior_manifest["fixed_inputs.json"]:
+            raise ValueError("Original fixed input inventory changed")
+        records=records_from_inventory(prior/"fixed_inputs.json")
+        records += [Transcript("ribonn_empty_UTRs","AUGGCUUAA",0,9,"synthetic empty-UTR control","software mechanics only"),
+            Transcript("ribonn_utr5_1381","A"*1381+"AUGGCUUAA",1381,1390,"synthetic input-boundary control","software mechanics only"),
+            Transcript("ribonn_utr5_1382","A"*1382+"AUGGCUUAA",1382,1391,"synthetic exclusion control","software mechanics only")]
+        prior_identity=sha(prior/"fixed_inputs.json")
     write(out/"input_inventory.json",[dict(asdict(r),input_sha256=r.sha256,identity_sha256=r.identity_sha256) for r in records])
     exclusions=export_ribonn(records,out/"validated_input.tsv");write(out/"expected_exclusions.json",exclusions)
     # Also send the excluded in-scope boundary control to upstream so that its
@@ -120,7 +147,7 @@ def main():
         shutil.copyfile(path,target);identities[str(path.relative_to(ROOT))]=sha(path)
     write(out/"identity.json",{"implementation":identities,"config_sha256":sha(args.config),
         "source_manifest_sha256":sha(ROOT/config["source_manifest"]),"weight_manifest_sha256":sha(ROOT/config["weight_manifest"]),
-        "fixed_input_inventory_sha256":sha(prior/"fixed_inputs.json")})
+        "fixed_input_inventory_sha256":prior_identity})
     shutil.copyfile(ROOT/config["weight_manifest"],out/"weight_manifest.json")
     shutil.copyfile(ROOT/config["source_manifest"],out/"source_manifest.json")
     envpath=(ROOT/config["python"]).parent.parent

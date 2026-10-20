@@ -161,7 +161,7 @@
       "why_it_is_not_decided_silently": "assay_definition_v3 states that a supplied poly(A) counts toward scope, which argues for including it. Against that, RiboNN and the STRAND features were derived from transcript representations that do not generally carry long homopolymeric poly(A) tails, so appending 103 adenosines may push the input out of distribution and change 3' region sizes that RiboNN consumes.",
       "current_behaviour": "scripts/assemble_reference_transcript.py assembles the 1811 nt core by default and appends the recorded poly(A) only when --poly-a is passed. Both lengths are reported.",
       "recommendation": "Score both, and treat any difference between them as a measure of the stack's sensitivity to poly(A) representation rather than as a biological result.",
-      "status": "measured_2026-10-19_recommendation_recorded_user_decision_still_required",
+      "status": "measured_on_both_sides_recommendation_recorded_user_decision_still_required",
       "measurement": {
         "report": "reports/polya_representation_sensitivity_2026-10-19.md",
         "artifacts": [
@@ -172,7 +172,21 @@
         "but": "The STRAND average-log-odds feature falls 48 percent, 1.143062 to 0.594838. That change is dilution of a positional mean by 103 maximally unpaired positions, not structure.",
         "consequence": "strand_alo is not invariant to poly(A) representation while the energy terms essentially are. The convention must be fixed and recorded for any comparison, and if candidates ever differ in tail length strand_alo would rank them partly by tail length rather than structure.",
         "recommendation": "Exclude the poly(A) tail from the FOLDING input and fold the 1811 nt core. Evidence-based: the tail adds no structural information and only dilutes a length-normalized feature.",
-        "scope_limit": "Covers the folding input only. Whether RiboNN should see the tail is a separate question about a different model's training distribution and was not measured."
+        "scope_limit": "Resolved. Both the folding features and RiboNN have now been measured.",
+        "ribonn": {
+          "run": "results/ribonn_fixed_inference_runs/20261020T020239.050049Z",
+          "protocol": "configs/ribonn_reference_inference_v1_2026-10-19.json",
+          "task": "predicted_TE_A549",
+          "core_mean_score": 0.8276722967624665,
+          "polya_mean_score": 0.8283721685409546,
+          "delta": 0.0006998717784881,
+          "relative_change_percent": 0.085,
+          "between_fold_sd": 0.03665,
+          "effect_in_sd_units": 0.0191,
+          "finding": "RiboNN is effectively insensitive to poly(A) representation: the shift is 0.019 of the between-fold standard deviation, per-fold differences alternate in sign, and neither variant is excluded.",
+          "replay": "Two independent worker processes produced bitwise-identical predictions across every released task."
+        },
+        "combined_conclusion": "Of the four quantities the stack produces, only strand_alo responds to the poly(A) convention, and that response is dilution of a positional mean rather than signal. MFE is exactly unchanged, ensemble free energy moves 0.002 percent, and RiboNN moves within noise. Use the 1811 nt core throughout, for both arms."
       }
     },
     "two_constructs_not_one": {

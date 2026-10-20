@@ -80,16 +80,72 @@ terms essentially are. Therefore:
 3. Because the tail is thermodynamically inert, including it buys no structural
    information and costs feature interpretability.
 
+## RiboNN: the same question, measured
+
+The folding result above left open whether RiboNN should see the tail. That has
+now been measured directly rather than argued.
+
+- **Run:** `results/ribonn_fixed_inference_runs/20261020T020239.050049Z`
+- **Protocol:** `configs/ribonn_reference_inference_v1_2026-10-19.json`
+- **Task:** `predicted_TE_A549`, the task selected for the A549 arm in
+  `configs/ribonn_task_selection_v1_2026-10-19.json`
+- **Models:** 50 released human checkpoints, 10 folds × top-5, 182 weight files
+  hash-verified, archive `2ce3bc1a…`
+- **Replay:** two independent worker processes produced **bitwise-identical**
+  predictions (`max_abs_difference` 0.0) across every released task, not only the
+  designated one.
+
+| Fold | core (1,811 nt) | +poly(A) (1,914 nt) | Δ |
+|---:|---:|---:|---:|
+| 0 | 0.763999 | 0.769519 | +0.005520 |
+| 1 | 0.888405 | 0.883308 | −0.005098 |
+| 2 | 0.838184 | 0.846833 | +0.008649 |
+| 3 | 0.824222 | 0.821954 | −0.002267 |
+| 4 | 0.832333 | 0.834633 | +0.002300 |
+| 5 | 0.827665 | 0.824487 | −0.003178 |
+| 6 | 0.793685 | 0.801914 | +0.008230 |
+| 7 | 0.821687 | 0.820089 | −0.001599 |
+| 8 | 0.807745 | 0.808071 | +0.000326 |
+| 9 | 0.878797 | 0.872914 | −0.005884 |
+| **mean** | **0.827672** | **0.828372** | **+0.000700** |
+
+Neither variant was excluded; both pass the 1,381 nt upstream-domain limit.
+
+**RiboNN is effectively insensitive to poly(A) representation.** The mean shift is
+**+0.085%**. Against a between-fold standard deviation of **0.036650**, the effect
+is **0.019 SD** — roughly fiftieth the size of the checkpoint-to-checkpoint
+spread. The per-fold differences alternate in sign and the largest is 0.0087,
+which is the signature of noise rather than a systematic shift.
+
+## Combined picture
+
+| Feature | Poly(A) sensitivity |
+|---|---|
+| MFE | **0.000000** — exactly none |
+| Ensemble free energy | 0.002% |
+| **STRAND average log odds** | **−48%** |
+| RiboNN `predicted_TE_A549` | +0.085%, 0.019 SD — noise |
+
+Of the four quantities the stack produces, **only `strand_alo` responds to the
+poly(A) convention, and its response is a normalization artifact rather than
+signal.** Both energy terms and the translation-side model are indifferent.
+
 ### Recommendation
 
-**Fold the 1,811 nt core and exclude the poly(A) tail from the folding input**,
-recording that choice explicitly. This is now an evidence-based decision rather
-than an arbitrary default: the tail contributes no structure, and its only effect
-on the feature set is to dilute a length-normalized metric.
+**Exclude the poly(A) tail from the folding input and fold the 1,811 nt core.**
+This is now evidence-based rather than an arbitrary default: the tail contributes
+no structure, and its only effect anywhere in the stack is to dilute one
+length-normalized metric.
 
-This recommendation covers the **folding** input only. It says nothing about
-whether RiboNN should see the tail, which is a separate question about a
-different model's training distribution and has not been measured here.
+For **RiboNN the choice does not matter**, so the same core transcript can be used
+for both arms without loss. Using one representation throughout is preferable to
+two, because it removes the risk of a comparison silently mixing conventions.
+
+The measured reference value for the A549 arm is `predicted_TE_A549` =
+**0.8277** (mean over 10 folds, core transcript). This is a released-task score on
+the task's own scale. It is **not** a prediction of luminescence in this assay and
+carries the documented out-of-distribution caveat for a designed reporter
+construct.
 
 ## What must not be claimed
 
