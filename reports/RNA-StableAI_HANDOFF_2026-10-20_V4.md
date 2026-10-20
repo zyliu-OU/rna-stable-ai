@@ -365,7 +365,7 @@ that clone has no committer identity.
 | Item | Value |
 |---|---|
 | Commit before this stretch | `9657ee0` Record the design-space commit hash in handoff 2026-10-20 V3 |
-| Commit published with this handoff | see §11.1 |
+| Commit published with this handoff | `ef299d3` |
 | README picture | `diagram_10182026.png`, `sha256 baa831ce16df27ed44a41c2a3b481455a213b328122227b9b2a3820dda47cff1`, **byte-unchanged**, re-verified before publishing |
 | Gates | v5 frozen; **v6 is now current** |
 | Design spaces | v1 frozen; **v2 is now current** |
@@ -375,6 +375,6 @@ it carries the correction. **Regenerating it needs the user's say-so and has not
 
 ### 11.1 Publication record
 
-This handoff is published in the commit titled *"Build the design workflow end to end and
-measure the window-width effect"*. Its hash is recorded by the commit immediately after it,
-since a file cannot contain the hash of the commit that adds it.
+`ef299d3` — Build the design workflow end to end and measure the window-width effect. The
+hash is recorded by the commit immediately after it, since a file cannot contain the hash of
+the commit that adds it.
