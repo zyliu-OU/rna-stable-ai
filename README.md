@@ -1,17 +1,13 @@
 # RNA-StableAI
 
-![RNA-StableAI four-component workflow: the transcript sequence feeds RNAfold and RiboNN; published STRAND is reference-only replay and substituting RNAfold features into it was rejected; a separately named calibration refit is unpublished and unvalidated; RiboNN contributes A549 ranking only; the three paths converge into versioned score records, whose composite score is blocked on incommensurable units with no floor selected; BoTorch and the transfected-cell assay in A549 and CD3+ T cells sit behind the Stage 2 to stage 3 gate, which is open with 0 of 6 requirements met](workflow_10192026.svg)
+![RNA-StableAI design workflow on 2026-10-20: the hash-verified 1811 nt reference construct feeds a 512-member GC-neutral pool of synonymous edits over codons 1 to 50; members are assembled through a variant path that keeps the reference hash gate and verifies the protein per member, folded by ViennaRNA, then scored on two incommensurable sides, a STRAND calibration refit predicting in-solution half-life in hours and a released RiboNN predicted_TE_A549 task; the two converge on a Pareto front that emits no composite score and a BoTorch hypervolume-maximising panel; the transfected-cell assay is unreached because no measurement of any construct exists; annotations record gate v6 at six of six with two accepted limitations, the closed window-width axis, the retired learned pair model, the rejected published STRAND coefficients, the blocked composite score, and what blocks the assay](workflow_10202026.svg)
 
-*Implementation state on 2026-10-19: green paths run and are replayed, red paths are
-rejected or blocked, grey paths sit behind the open Stage 2 gate. No stability, translation or
-expression benefit is established by any path shown. The earlier proposed-workflow
-picture is retained at [diagram_10182026.png](diagram_10182026.png).*
-
-*The diagram predates the 2026-10-20 gate review and still shows 0 of 6 requirements
-met. [Gate v5](configs/stage2_to_stage3_gate_v5_2026-10-20.json) now records 6 of 6 —
-two of them satisfied by accepting a documented limitation rather than by improving the
-data. The grey paths behind the gate are **not** switched on by that review: candidate
-design, new-sequence scoring and the assay all remain disabled.*
+*Implementation state on 2026-10-20: green boxes run and are replayed, red boxes are rejected,
+blocked or unreached, neutral boxes record state, and the blue box is a gate decision. Every value
+the green path produces is a prediction from an unvalidated model on a quantity the assay does not
+measure. No stability, translation or expression benefit is established by any path shown. The
+earlier proposed-workflow picture is retained at [diagram_10182026.png](diagram_10182026.png), and
+the superseded 2026-10-19 workflow diagram is in git history.*
 
 Research prototype for RNA structure prediction, constrained sequence optimization,
 and reproducible folding benchmarks. Code, experimental checkpoints, input data,
