@@ -4,9 +4,8 @@
 
 *Implementation state on 2026-10-19: green paths run and are replayed, red paths are
 rejected or blocked, grey paths sit behind the open Stage 2 gate. No stability, translation or
-expression benefit is established by any path shown. Earlier diagrams are retained at
-[diagram_10192026.svg](diagram_10192026.svg) and the proposed-workflow picture at
-[diagram_10182026.png](diagram_10182026.png).*
+expression benefit is established by any path shown. The earlier proposed-workflow
+picture is retained at [diagram_10182026.png](diagram_10182026.png).*
 
 Research prototype for RNA structure prediction, constrained sequence optimization,
 and reproducible folding benchmarks. Code, experimental checkpoints, input data,
