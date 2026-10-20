@@ -290,11 +290,11 @@ diff "$PUB/README.md" README.md
 | Item | Value |
 |---|---|
 | Commit before this stretch | `dce6141` Record the purge commit hash in handoff 2026-10-20 V6 |
-| Commit published with this handoff | see §10.1 |
+| Commit published with this handoff | `e21cee1` |
 | README picture | `diagram_10182026.png`, `sha256 baa831ce16df27ed44a41c2a3b481455a213b328122227b9b2a3820dda47cff1`, **byte-unchanged** |
 | Gates | v5 and v6 frozen; **v7 current**. This validation does not change a gate: it adds external evidence and opens no switch. |
 
 ### 10.1 Publication record
 
-This handoff is published in the commit titled *"Validate the stability calibration against
-123 held-out measured half-lives"*. Its hash is recorded by the commit immediately after it.
+`e21cee1` — Validate the stability calibration against 123 held-out measured half-lives. The
+hash is recorded by the commit immediately after it.
