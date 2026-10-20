@@ -12,8 +12,20 @@ and reproducible folding benchmarks. Code, experimental checkpoints, input data,
 and results are available for inspection. No validated release yet.
 
 **Current development focus: RNA sequences shorter than 3,000 nt (1–2,999 nt).**
-The selected architecture is **RNAfold + STRAND + RiboNN + BoTorch**; component
-integration and independent structure validation remain active within that range.
+The selected architecture is **LinearFold / ViennaRNA → STRAND + RiboNN + BoTorch**;
+component integration and independent structure validation remain active within
+that range.
+
+> **The learned pair model was retired on 2026-10-20.** It scored below both
+> native controls on every cohort measured — 0.2965 against LinearFold 0.4381 on
+> Rfam-consensus long references, and 0.3255 against 0.6261 on structure-derived
+> references — and the production path never used it. Structure now comes from
+> LinearFold and ViennaRNA. Its trained checkpoints were deleted; every run
+> metric is retained, so the evidence behind the decision stays auditable. The
+> learned-model results reported further below are **historical records of that
+> retired component**, not current capability. See the
+> [gap diagnosis](reports/structure_model_gap_diagnosis_2026-10-20.md) and
+> [gate v4](configs/stage2_to_stage3_gate_v4_2026-10-20.json).
 Existing work at 3,000 nt and above, including 5,000/10,000-nt studies, is preserved as
 deferred work; they are not deleted or counted as
 active-scope validation. Method-specific lower limits still apply. See the

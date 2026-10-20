@@ -1,0 +1,156 @@
+{
+  "schema_version": 4,
+  "name": "stage2_to_stage3_gate_v4",
+  "effective_date": "2026-10-20",
+  "supersedes": {
+    "file": "configs/stage2_to_stage3_gate_v3_2026-10-19.json",
+    "sha256": "2ef91eb9a5c02da0e23c69165ac3f2efa9a578b5de4173cf01ade16a34b3e012",
+    "status": "frozen and unedited; retained because existing frozen runs reference it",
+    "chain": "v3 superseded v2, which superseded configs/stage2_to_stage3_gate_2026-10-18.json; all remain frozen"
+  },
+  "amendment_record": {
+    "what_changed": "Requirement 4 only. It now concerns the accuracy of the native controls the project actually relies on, rather than the accuracy of the learned pair model.",
+    "what_did_not_change": "The other five requirements, the stage 3 target, the active length scope, and the v3 acceptance of the 2000-2999 nt band. requirements_satisfied is unchanged at 1.",
+    "authorized_by": "explicit user instruction on 2026-10-20: 'amend requirement 4 to reference native controls'",
+    "prior_amendments": [
+      "v2 amended stage3_target to transfected_cell_expression",
+      "v3 accepted the 2000-2999 nt band as a documented limitation"
+    ]
+  },
+  "stage": "stage2_structure_validation_before_stage3",
+  "active_length_nt": {
+    "minimum_inclusive": 1,
+    "maximum_exclusive": 3000
+  },
+  "stage3_target": "transfected_cell_expression",
+  "stage3_target_detail": {
+    "system": "transfected cells or in vivo",
+    "not_cell_free": true,
+    "readouts": [
+      "firefly luciferase luminescence, time course, for expression",
+      "RT-qPCR mRNA time course, for in-cell stability"
+    ],
+    "cell_types_stated": [
+      "A549",
+      "activated CD3+ T cells containing CD4+ and CD8+ populations"
+    ],
+    "assay_definition": "configs/assay_definition_v3_2026-10-19.json",
+    "note": "Cell-free expression is no longer the Stage 3 target. It is not prohibited as future work, but nothing in this project is currently aimed at it."
+  },
+  "stage3_development_started": false,
+  "immediate_priority": "improve_and_validate_stage2_within_active_length_scope",
+  "requirements_before_stage3": [
+    "Frozen independent sequence_and_family_clan_separated_validation_within_scope",
+    "Reported_accuracy_and_failures_by_length_band_and_family_against_native_controls",
+    "Resolve_sparse_2000_2999_nt_coverage_before_claiming_the_full_length_range",
+    "Demonstrate_credible_structure_accuracy_from_the_relied_upon_native_controls_with_explicit_review_of_baseline_gaps",
+    "Pass_constraint_decoder_resource_and_replay_checks",
+    "Document_remaining_limitations_before_expression_candidate_design"
+  ],
+  "requirements_satisfied": 1,
+  "requirement_status_reference": "results/stage2_band_coverage_census_runs/20261019T180243.655199Z/summary.json",
+  "requirement_3_note": "Resolved on 2026-10-19 by accepting the band as a documented limitation. The earlier note that the band was unreachable applied to CLAN coverage only; family-level expansion was available and was not taken. See requirement_3_resolution.",
+  "historical_runs_remain_development_evidence": true,
+  "model_defaults_changed": false,
+  "expression_benefit_established": false,
+  "new_sequence_scoring_enabled": false,
+  "expression_candidate_design_enabled": false,
+  "stage3_ready": false,
+  "requirement_3_resolution": {
+    "requirement": "Resolve_sparse_2000_2999_nt_coverage_before_claiming_the_full_length_range",
+    "resolution": "accepted_as_documented_limitation",
+    "status": "satisfied_by_narrowing_the_claim_not_by_improving_coverage",
+    "decided_by": "user, 2026-10-19",
+    "what_the_limitation_is": "The in-scope frozen selection holds 6 records across 3 families and 2 clans. The 2000-2999 nt band contributes exactly 1 record, from family RF02541 in clan CL00112. Its per-band accuracy figure therefore carries no dispersion and no family contrast, and no clan contrast within the band.",
+    "binding_consequence": "The full 1 to 2999 nt length range MUST NOT be claimed. Any reported accuracy, coverage or capability statement that spans the 2000-2999 nt band must carry this limitation explicitly. A claim about the band from a single record is not supported.",
+    "what_was_available_and_not_taken": {
+      "family_level_expansion": "available: 56 eligible records locally, RF02540 31 and RF02541 25, with RF02540 a family not currently in the selection",
+      "clan_level_expansion": "NOT available: the only out-of-baseline band clan CL00004, via family RF02462, is blocked by prior_exposure_overlap on both of its 2 records",
+      "note": "Recorded so a later reader knows the band was accepted as a limitation by choice, with family-level expansion available, rather than because nothing could be done. Expanding would have required an explicit gate review and new inference; the census records availability only and authorises no selection."
+    },
+    "evidence": [
+      "results/stage2_band_coverage_census_runs/20261019T180243.655199Z/summary.json",
+      "results/band_clan_availability_runs/20261019T185713.116447Z/summary.json",
+      "reports/remaining_limitations_before_candidate_design_2026-10-19.md"
+    ],
+    "reversible": "If the band is later expanded by gate review and new inference, this acceptance should be superseded by a further gate version rather than edited."
+  },
+  "requirements_satisfied_detail": {
+    "satisfied": [
+      "Resolve_sparse_2000_2999_nt_coverage_before_claiming_the_full_length_range"
+    ],
+    "basis": "Satisfied by accepting a documented limitation and narrowing the claim. Coverage of the band did not improve and is still one record.",
+    "not_satisfied": [
+      "Frozen independent sequence_and_family_clan_separated_validation_within_scope",
+      "Reported_accuracy_and_failures_by_length_band_and_family_against_native_controls",
+      "Demonstrate_credible_structure_accuracy_from_the_relied_upon_native_controls_with_explicit_review_of_baseline_gaps",
+      "Pass_constraint_decoder_resource_and_replay_checks",
+      "Document_remaining_limitations_before_expression_candidate_design"
+    ],
+    "caution": "One requirement satisfied is not progress toward structure accuracy. Nothing about the model changed. Requirement 4 was amended in v4 to reference the native controls; amending it did not satisfy it, and it remains not satisfied."
+  },
+  "claimed_length_range": {
+    "active_length_nt_unchanged": {
+      "minimum_inclusive": 1,
+      "maximum_exclusive": 3000
+    },
+    "claimable_without_caveat": {
+      "minimum_inclusive": 1,
+      "maximum_exclusive": 2000
+    },
+    "claimable_only_with_the_recorded_limitation": {
+      "minimum_inclusive": 2000,
+      "maximum_exclusive": 3000
+    },
+    "rule": "The active scope bounds are unchanged; what changed is what may be CLAIMED. The band remains in scope for inference and is excluded from unqualified accuracy claims."
+  },
+  "requirement_4_amendment": {
+    "previous_text": "Demonstrate_credible_structure_accuracy_with_explicit_review_of_native_baseline_gaps",
+    "new_text": "Demonstrate_credible_structure_accuracy_from_the_relied_upon_native_controls_with_explicit_review_of_baseline_gaps",
+    "decided_by": "user, 2026-10-20",
+    "reason": "The structure accuracy this project relies on comes from ViennaRNA and LinearFold, not from the learned pair model. The production mRNA path uses ViennaRNA directly and was verified not to import the learned model anywhere. Requiring the learned model to demonstrate credible accuracy therefore gated Stage 3 on a component nothing depends on.",
+    "evidence_of_the_gap": {
+      "rfam_consensus_long_refs": {
+        "learned_best": 0.2965,
+        "LinearFold": 0.4381,
+        "ViennaRNA": 0.4215,
+        "learned_as_fraction_of_native": 0.677
+      },
+      "structure_derived_refs": {
+        "learned_best_head": "helix 0.3255",
+        "native_both": 0.6261,
+        "learned_as_fraction_of_native": 0.52
+      },
+      "loss_attribution": "56.6 percent of missed gold pairs lost at score selection; not a threshold artifact, since the predicted to reference pair-count ratio is 1.056 with precision 0.311 beside recall 0.325",
+      "training_scale": "61 training records, 1235 positive pairs against 216942 negatives",
+      "report": "reports/structure_model_gap_diagnosis_2026-10-20.md"
+    },
+    "learned_model_status": {
+      "relied_upon": false,
+      "disposition": "RETIRED. The trained checkpoints were deleted from the working tree on 2026-10-20 by user decision.",
+      "user_statement": "the model was produced in a separate tool, later found worse than LinearFold and ViennaRNA; the project now uses LinearFold/ViennaRNA output as the input to the next step",
+      "what_was_deleted": "886 learned-model checkpoint files (.pt/.pth) totalling about 90 MB, of which 97 were tracked in git.",
+      "what_was_retained": [
+        "Every run summary, metric and F1 figure, so the evidence that the model was worse is intact and auditable.",
+        "The model source code, which frozen run source snapshots reference.",
+        "The deleted weights remain recoverable from git history for the 97 that were published."
+      ],
+      "test_consequence": "38 replay tests reload those checkpoints and can no longer run. They were NOT deleted; tests/conftest.py skips them with an explicit retirement reason when and only when the missing file is a retired checkpoint under results/. RiboNN weights are excluded from that guard, so a missing third-party weight still fails.",
+      "forward_architecture": "LinearFold / ViennaRNA -> STRAND + RiboNN + BoTorch",
+      "may_be_restored": "only by a later gate version, on evidence that it meets or exceeds the native controls",
+      "historical_runs_remain_development_evidence": true
+    },
+    "DOES_NOT_SATISFY_ITSELF": {
+      "requirement_4_status": "not_satisfied",
+      "why": "Amending what must be demonstrated does not demonstrate it. The best available native evidence is 0.6261 mean pair F1 across 10 structure-derived references in 6 families, and that run records broad_validation_gate_satisfied false and independence_certified false. It is a feasibility cohort, not independent validation.",
+      "what_would_now_satisfy_it": "An independent, family and clan separated validation of the native controls within the active length scope, with the baseline gaps reviewed explicitly, and with the 2000-2999 nt limitation recorded in v3 carried into any statement spanning that band.",
+      "what_changed_in_practice": "The requirement moved from one the evidence says is not reachable at the current data scale to one that is reachable by bounded validation work. It did not become satisfied."
+    },
+    "evidence": [
+      "reports/structure_model_gap_diagnosis_2026-10-20.md",
+      "results/stage2_under3000_audit_runs/20261018T223708.786045Z/summary.json",
+      "results/raw_structure_feasibility_runs/20261015T025936.192087Z/summary.json",
+      "results/under3000_recovery_ceiling_runs/20261018T234344.201186Z/summary.json"
+    ]
+  }
+}
