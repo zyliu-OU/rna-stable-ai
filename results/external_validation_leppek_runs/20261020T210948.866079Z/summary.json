@@ -1,0 +1,2467 @@
+{
+  "baseline_post_hoc_correction": {
+    "effect_on_the_primary_metric": "none; this project's own prediction was not touched",
+    "justification": "mechanical, a sum over a variable-length sequence",
+    "what_was_changed": "a per-nucleotide comparison is reported beside the declared raw one",
+    "what_was_declared": "compare the paper's predictor columns raw",
+    "what_was_wrong": "those columns are sums over nucleotides and correlate with sequence length at Spearman +0.94 to +0.98 on these records, so raw they encode length rather than degradation rate",
+    "when": "AFTER the primary result was computed; disclosed, not applied silently"
+  },
+  "baselines_beating_the_calibration": [],
+  "baselines_on_the_same_records": {
+    "SUP DegScore2.1 FULL": {
+      "absolute_spearman": 0.21663592627465142,
+      "n": 123,
+      "spearman_per_nucleotide": -0.21663592627465142,
+      "spearman_raw_as_declared": -0.06162696211837845,
+      "spearman_raw_vs_length": 0.9807381278498478,
+      "statistic_used_for_ranking": "per-nucleotide, see the post-hoc correction note"
+    },
+    "SUP EternaFold FULL": {
+      "absolute_spearman": 0.32478621454643947,
+      "n": 123,
+      "spearman_per_nucleotide": -0.32478621454643947,
+      "spearman_raw_as_declared": -0.07599540828829758,
+      "spearman_raw_vs_length": 0.9433109392565318,
+      "statistic_used_for_ranking": "per-nucleotide, see the post-hoc correction note"
+    },
+    "SUP Vienna FULL": {
+      "absolute_spearman": 0.2828546000954457,
+      "n": 123,
+      "spearman_per_nucleotide": -0.2828546000954457,
+      "spearman_raw_as_declared": -0.06082083295713973,
+      "spearman_raw_vs_length": 0.945442908548171,
+      "statistic_used_for_ranking": "per-nucleotide, see the post-hoc correction note"
+    }
+  },
+  "built_utc": "2026-10-20T21:09:48.865457+00:00",
+  "counts": {
+    "held_out": 123,
+    "held_out_in_domain": 122,
+    "held_out_scored": 123,
+    "sheet_rows": 192,
+    "training_overlap": 69
+  },
+  "held_out_in_domain_only": {
+    "label": "held_out_in_domain",
+    "mean_absolute_error_hours": 0.41321118028294024,
+    "measured_range": [
+      0.86498944,
+      4.36040349
+    ],
+    "n": 122,
+    "pearson_log": 0.5950782001967025,
+    "predicted_range": [
+      0.773143121074791,
+      1.3133282142823097
+    ],
+    "spearman": 0.3237217509690339
+  },
+  "length_confound_check": {
+    "note": "Length itself barely tracks half-life on these records, so length is not a confound in this project's prediction; it is a confound only in the paper's summed columns.",
+    "spearman_length_vs_measured_half_life": -0.0529670192243569
+  },
+  "no_claim": [
+    "A correlation is not a calibration. No absolute accuracy is established.",
+    "The held-out records are a different reporter and a wider length and half-life range than the training subset, so model failure and distribution shift cannot be separated with this data alone.",
+    "The training-subset figures are an upper bound on what the model can do, not a result; the model was fitted on those records.",
+    "This says nothing about the translation side, about in-cell stability, or about the project's own 1811 nt construct, which lies outside this dataset's ranges."
+  ],
+  "primary": {
+    "label": "held_out_all",
+    "mean_absolute_error_hours": 0.4131377820046264,
+    "measured_range": [
+      0.86498944,
+      4.36040349
+    ],
+    "n": 123,
+    "pearson_log": 0.5871317010698429,
+    "predicted_range": [
+      0.773143121074791,
+      1.3133282142823097
+    ],
+    "spearman": 0.32677251679973174
+  },
+  "protocol": "configs/external_validation_leppek_v1_2026-10-20.json",
+  "protocol_sha256": "b8f074ba187ac7da7df59999410942d2285e06b6ea1f75c778e830022e013093",
+  "purpose": "The first external test of strand_rnafold_calibration_v1 against measured values it was not fitted on.",
+  "refitting_performed": false,
+  "rows": [
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 436.36019,
+        "SUP EternaFold FULL": 626.626183,
+        "SUP Vienna FULL": 499.553133
+      },
+      "experiment": "eGFP",
+      "features": {
+        "GC": 44.77366255144033,
+        "aup": 0.4110605880473718,
+        "energy_per_length": -0.3004910190409594
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1215,
+      "measured_error_hours": 0.12264963,
+      "measured_hours": 0.86498944,
+      "name": "humanHBB_ModernaRef_egfp_lowstructure_HBB_F30Pepper",
+      "predicted_hours": 0.8361352439172576
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 159.231274,
+        "SUP EternaFold FULL": 211.664015,
+        "SUP Vienna FULL": 168.925138
+      },
+      "experiment": "MEV",
+      "features": {
+        "GC": 55.02958579881657,
+        "aup": 0.33315766716126244,
+        "energy_per_length": -0.46984520184217826
+      },
+      "features_outside_training_range": [],
+      "length_nt": 507,
+      "measured_error_hours": 0.76329828,
+      "measured_hours": 4.36040349,
+      "name": "humanHBB_HKWS_2_MEV+w_HBB_F30Pepper",
+      "predicted_hours": 1.2761092164326064
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 162.211274,
+        "SUP EternaFold FULL": 213.680089,
+        "SUP Vienna FULL": 172.900332
+      },
+      "experiment": "MEV",
+      "features": {
+        "GC": 56.01577909270217,
+        "aup": 0.34099091912814306,
+        "energy_per_length": -0.4670808028422399
+      },
+      "features_outside_training_range": [],
+      "length_nt": 507,
+      "measured_error_hours": 0.44339448,
+      "measured_hours": 3.36520054,
+      "name": "humanHBB_HKWS_3_MEV+w_HBB_F30Pepper",
+      "predicted_hours": 1.2776856389312041
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 374.05419,
+        "SUP EternaFold FULL": 500.393806,
+        "SUP Vienna FULL": 416.886034
+      },
+      "experiment": "eGFP",
+      "features": {
+        "GC": 57.03703703703704,
+        "aup": 0.34309085749272,
+        "energy_per_length": -0.46722095630787036
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1215,
+      "measured_error_hours": 0.09803236,
+      "measured_hours": 1.47010817,
+      "name": "humanHBB_ribotree_1_eGFP+deg_HBB_F30Pepper",
+      "predicted_hours": 1.2910970662779795
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 374.24019,
+        "SUP EternaFold FULL": 503.021926,
+        "SUP Vienna FULL": 424.365839
+      },
+      "experiment": "eGFP",
+      "features": {
+        "GC": 56.79012345679012,
+        "aup": 0.3492383502371711,
+        "energy_per_length": -0.4641014318897891
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1215,
+      "measured_error_hours": 0.11186364,
+      "measured_hours": 1.24867085,
+      "name": "humanHBB_ribotree_3_eGFP+deg_HBB_F30Pepper",
+      "predicted_hours": 1.2750391559276828
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 167.486274,
+        "SUP EternaFold FULL": 212.769927,
+        "SUP Vienna FULL": 170.0575
+      },
+      "experiment": "MEV",
+      "features": {
+        "GC": 55.62130177514793,
+        "aup": 0.3353876913261909,
+        "energy_per_length": -0.45524254070936576
+      },
+      "features_outside_training_range": [],
+      "length_nt": 507,
+      "measured_error_hours": 1.45732955,
+      "measured_hours": 3.27070383,
+      "name": "humanHBB_HKWS_1_MEV+W_HBB_F30Pepper",
+      "predicted_hours": 1.2685738515519929
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 158.40316,
+        "SUP EternaFold FULL": 207.349863,
+        "SUP Vienna FULL": 162.699827
+      },
+      "experiment": "MEV",
+      "features": {
+        "GC": 53.96825396825397,
+        "aup": 0.3227904860328735,
+        "energy_per_length": -0.4603308723086402
+      },
+      "features_outside_training_range": [],
+      "length_nt": 504,
+      "measured_error_hours": 0.6525321,
+      "measured_hours": 3.53866785,
+      "name": "humanHBB_Eterna_MEV_HBB_F30Pepper_61 pair_ -101.3 kcal Enforcer",
+      "predicted_hours": 1.265564749162384
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 158.28216,
+        "SUP EternaFold FULL": 214.366242,
+        "SUP Vienna FULL": 162.185564
+      },
+      "experiment": "MEV",
+      "features": {
+        "GC": 53.17460317460318,
+        "aup": 0.3217666686057431,
+        "energy_per_length": -0.4706424228728764
+      },
+      "features_outside_training_range": [],
+      "length_nt": 504,
+      "measured_error_hours": 0.65443626,
+      "measured_hours": 3.50375161,
+      "name": "humanHBB_Eterna_MEV_HBB_F30Pepper_Astro Snake -106.2 #61 pairs #coaxial stacking",
+      "predicted_hours": 1.2640266784887972
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 158.38516,
+        "SUP EternaFold FULL": 212.066252,
+        "SUP Vienna FULL": 169.458448
+      },
+      "experiment": "MEV",
+      "features": {
+        "GC": 54.563492063492056,
+        "aup": 0.3362009864637711,
+        "energy_per_length": -0.47860054742722286
+      },
+      "features_outside_training_range": [],
+      "length_nt": 504,
+      "measured_error_hours": 0.65630308,
+      "measured_hours": 3.63119113,
+      "name": "humanHBB_Eterna_MEV_HBB_F30Pepper_C.3",
+      "predicted_hours": 1.2723118662698147
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 152.48716,
+        "SUP EternaFold FULL": 203.183844,
+        "SUP Vienna FULL": 156.649024
+      },
+      "experiment": "MEV",
+      "features": {
+        "GC": 55.158730158730165,
+        "aup": 0.3107823596959419,
+        "energy_per_length": -0.47176600259447854
+      },
+      "features_outside_training_range": [],
+      "length_nt": 504,
+      "measured_error_hours": 0.33954502,
+      "measured_hours": 3.19215248,
+      "name": "humanHBB_Eterna_MEV_HBB_F30Pepper_Astros-D'Wydd-mod63P-105.8Kcal",
+      "predicted_hours": 1.3133282142823097
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 158.33816,
+        "SUP EternaFold FULL": 209.977126,
+        "SUP Vienna FULL": 164.443206
+      },
+      "experiment": "MEV",
+      "features": {
+        "GC": 55.158730158730165,
+        "aup": 0.3262439981049115,
+        "energy_per_length": -0.44629160563151044
+      },
+      "features_outside_training_range": [],
+      "length_nt": 504,
+      "measured_error_hours": 0.30619336,
+      "measured_hours": 3.14915168,
+      "name": "humanHBB_Eterna_MEV_HBB_F30Pepper_Steve's Mod of Omei's 59 pairs Epitope #4",
+      "predicted_hours": 1.2663560604793593
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 374.691909,
+        "SUP EternaFold FULL": 541.837007,
+        "SUP Vienna FULL": 426.882365
+      },
+      "experiment": "eGFP",
+      "features": {
+        "GC": 49.26406926406926,
+        "aup": 0.369550245730426,
+        "energy_per_length": -0.37170497349330356
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1155,
+      "measured_error_hours": 0.08876542,
+      "measured_hours": 0.89571721,
+      "name": "humanHBB_Eterna_eGFP_HBB_F30Pepper_MS2 bacteriophage genome style #267 #275.2",
+      "predicted_hours": 1.037042157330942
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 341.617909,
+        "SUP EternaFold FULL": 427.253905,
+        "SUP Vienna FULL": 342.429192
+      },
+      "experiment": "eGFP",
+      "features": {
+        "GC": 51.42857142857142,
+        "aup": 0.29645879756143484,
+        "energy_per_length": -0.4864462319906656
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1155,
+      "measured_error_hours": 0.09530749,
+      "measured_hours": 1.43697354,
+      "name": "humanHBB_Eterna_eGFP_HBB_F30Pepper_MutGen.1 300 pairs",
+      "predicted_hours": 1.2885301849868103
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 347.045909,
+        "SUP EternaFold FULL": 454.681083,
+        "SUP Vienna FULL": 372.177287
+      },
+      "experiment": "eGFP",
+      "features": {
+        "GC": 54.8051948051948,
+        "aup": 0.3222105013634855,
+        "energy_per_length": -0.470190006933171
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1155,
+      "measured_error_hours": 0.06586679,
+      "measured_hours": 1.13282111,
+      "name": "humanHBB_Eterna_eGFP_HBB_F30Pepper_281/ -401_2 kcal",
+      "predicted_hours": 1.2891392057940614
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 359.861909,
+        "SUP EternaFold FULL": 493.590174,
+        "SUP Vienna FULL": 369.660914
+      },
+      "experiment": "eGFP",
+      "features": {
+        "GC": 49.523809523809526,
+        "aup": 0.32001984356160185,
+        "energy_per_length": -0.43143624970407196
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1155,
+      "measured_error_hours": 0.0928575,
+      "measured_hours": 0.99024704,
+      "name": "humanHBB_Eterna_eGFP_HBB_F30Pepper_Bat Dragon 3",
+      "predicted_hours": 1.1711359705625455
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 349.901909,
+        "SUP EternaFold FULL": 476.471935,
+        "SUP Vienna FULL": 376.56492
+      },
+      "experiment": "eGFP",
+      "features": {
+        "GC": 53.333333333333336,
+        "aup": 0.3260056730613062,
+        "energy_per_length": -0.40660651401007847
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1155,
+      "measured_error_hours": 0.08408922,
+      "measured_hours": 1.09139505,
+      "name": "humanHBB_Eterna_eGFP_HBB_F30Pepper_AK1.3-gfp-mRNA",
+      "predicted_hours": 1.2000965762095428
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 166.42216,
+        "SUP EternaFold FULL": 228.132947,
+        "SUP Vienna FULL": 179.216934
+      },
+      "experiment": "MEV",
+      "features": {
+        "GC": 51.587301587301596,
+        "aup": 0.3555667807459668,
+        "energy_per_length": -0.3916300516279917
+      },
+      "features_outside_training_range": [],
+      "length_nt": 504,
+      "measured_error_hours": 0.43036014,
+      "measured_hours": 2.88551629,
+      "name": "humanHBB_Eterna_MEV_start_HBB_F30Pepper",
+      "predicted_hours": 1.1139256582614754
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 381.68419,
+        "SUP EternaFold FULL": 551.780201,
+        "SUP Vienna FULL": 462.069593
+      },
+      "experiment": "eGFP",
+      "features": {
+        "GC": 59.25925925925925,
+        "aup": 0.38027059298244215,
+        "energy_per_length": -0.4149994775591564
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1215,
+      "measured_error_hours": 0.10819071,
+      "measured_hours": 1.43607742,
+      "name": "humanHBB_ModernaRef_egfp_highstructure_HBB_F30Pepper",
+      "predicted_hours": 1.2223395576965308
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 383.92219,
+        "SUP EternaFold FULL": 571.41646,
+        "SUP Vienna FULL": 476.416305
+      },
+      "experiment": "eGFP",
+      "features": {
+        "GC": 60.0,
+        "aup": 0.3920721711708996,
+        "energy_per_length": -0.40745907379275975
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1215,
+      "measured_error_hours": 0.18195851,
+      "measured_hours": 1.7322227,
+      "name": "humanHBB_ModernaRef_egfp_highstructure_HBB_F30Pepper",
+      "predicted_hours": 1.2095721869634164
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 396.97419,
+        "SUP EternaFold FULL": 600.829009,
+        "SUP Vienna FULL": 504.504316
+      },
+      "experiment": "eGFP",
+      "features": {
+        "GC": 56.8724279835391,
+        "aup": 0.4151383408158286,
+        "energy_per_length": -0.36390318066004373
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1215,
+      "measured_error_hours": 0.05363509,
+      "measured_hours": 0.91117135,
+      "name": "humanHBB_ModernaRef_egfp_medstructure_HBB_F30Pepper",
+      "predicted_hours": 1.084029884658895
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 400.65419,
+        "SUP EternaFold FULL": 597.768471,
+        "SUP Vienna FULL": 489.916114
+      },
+      "experiment": "eGFP",
+      "features": {
+        "GC": 56.95473251028807,
+        "aup": 0.40316512554915657,
+        "energy_per_length": -0.36074083116319444
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1215,
+      "measured_error_hours": 0.09588254,
+      "measured_hours": 1.45431561,
+      "name": "humanHBB_ModernaRef_egfp_medstructure_HBB_F30Pepper",
+      "predicted_hours": 1.1002212947778847
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 418.22319,
+        "SUP EternaFold FULL": 629.858095,
+        "SUP Vienna FULL": 492.156706
+      },
+      "experiment": "eGFP",
+      "features": {
+        "GC": 45.76131687242798,
+        "aup": 0.4049412177036328,
+        "energy_per_length": -0.3028935436358668
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1215,
+      "measured_error_hours": 0.08929916,
+      "measured_hours": 0.95142605,
+      "name": "humanHBB_ModernaRef_egfp_lowstructure_HBB_F30Pepper",
+      "predicted_hours": 0.8633791686565848
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 292.610036,
+        "SUP EternaFold FULL": 436.375563,
+        "SUP Vienna FULL": 343.231328
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 51.78365937859609,
+        "aup": 0.3949002354392577,
+        "energy_per_length": -0.34103793900361407
+      },
+      "features_outside_training_range": [],
+      "length_nt": 869,
+      "measured_error_hours": 0.05063193,
+      "measured_hours": 1.105126,
+      "name": "mRpl18a_Nluc_hHBB",
+      "predicted_hours": 1.0109401513450744
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 304.077747,
+        "SUP EternaFold FULL": 452.365799,
+        "SUP Vienna FULL": 367.906353
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 53.7199124726477,
+        "aup": 0.40243133005218856,
+        "energy_per_length": -0.34462749723271674
+      },
+      "features_outside_training_range": [],
+      "length_nt": 914,
+      "measured_error_hours": 0.07039833,
+      "measured_hours": 1.23893539,
+      "name": "hACTB_Nluc_hHBB",
+      "predicted_hours": 1.0342013072497105
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 316.215306,
+        "SUP EternaFold FULL": 465.8005,
+        "SUP Vienna FULL": 381.933515
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 54.03141361256545,
+        "aup": 0.39984661413780576,
+        "energy_per_length": -0.3560069458646924
+      },
+      "features_outside_training_range": [],
+      "length_nt": 955,
+      "measured_error_hours": 0.06414773,
+      "measured_hours": 1.17989327,
+      "name": "P4_hACTB_Nluc_hHBB",
+      "predicted_hours": 1.053748921801999
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 319.660773,
+        "SUP EternaFold FULL": 469.0088,
+        "SUP Vienna FULL": 379.837764
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 53.13496280552603,
+        "aup": 0.4035607438556126,
+        "energy_per_length": -0.34704181213054597
+      },
+      "features_outside_training_range": [],
+      "length_nt": 941,
+      "measured_error_hours": 0.04793287,
+      "measured_hours": 1.208186,
+      "name": "mActb_Nluc_hHBB",
+      "predicted_hours": 1.0253883649595898
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 322.813332,
+        "SUP EternaFold FULL": 490.371512,
+        "SUP Vienna FULL": 384.186364
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 53.462321792260695,
+        "aup": 0.3911393501821623,
+        "energy_per_length": -0.3484054534352724
+      },
+      "features_outside_training_range": [],
+      "length_nt": 982,
+      "measured_error_hours": 0.04767691,
+      "measured_hours": 1.17314753,
+      "name": "P4_mActb_Nluc_hHBB",
+      "predicted_hours": 1.0504372311958303
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 309.611773,
+        "SUP EternaFold FULL": 456.438239,
+        "SUP Vienna FULL": 360.771027
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 53.13496280552603,
+        "aup": 0.38330389466531023,
+        "energy_per_length": -0.3593726973984624
+      },
+      "features_outside_training_range": [],
+      "length_nt": 941,
+      "measured_error_hours": 0.03620449,
+      "measured_hours": 1.29288594,
+      "name": "mActb_inv_Nluc_hHBB",
+      "predicted_hours": 1.0671565593053896
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 311.102332,
+        "SUP EternaFold FULL": 461.766819,
+        "SUP Vienna FULL": 352.185973
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 53.462321792260695,
+        "aup": 0.3585899507101318,
+        "energy_per_length": -0.36471933648445454
+      },
+      "features_outside_training_range": [],
+      "length_nt": 982,
+      "measured_error_hours": 0.01014301,
+      "measured_hours": 1.14400545,
+      "name": "P4_mActb_inv_Nluc_hHBB",
+      "predicted_hours": 1.1142635897385882
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 319.689762,
+        "SUP EternaFold FULL": 466.438085,
+        "SUP Vienna FULL": 376.910151
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 53.05067218200621,
+        "aup": 0.3897212496459004,
+        "energy_per_length": -0.3606249583420857
+      },
+      "features_outside_training_range": [],
+      "length_nt": 967,
+      "measured_error_hours": 0.0372716,
+      "measured_hours": 1.16371521,
+      "name": "hCOL1A2_Nluc_hHBB",
+      "predicted_hours": 1.0574169012725223
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 284.86158,
+        "SUP EternaFold FULL": 426.518222,
+        "SUP Vienna FULL": 344.310982
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 54.95915985997666,
+        "aup": 0.40168699308685213,
+        "energy_per_length": -0.3526543669550394
+      },
+      "features_outside_training_range": [],
+      "length_nt": 857,
+      "measured_error_hours": 0.09227889,
+      "measured_hours": 1.43630953,
+      "name": "hHBB_Nluc_hHBA1",
+      "predicted_hours": 1.0627630695392627
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 443.317056,
+        "SUP EternaFold FULL": 638.713051,
+        "SUP Vienna FULL": 512.400153
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 54.87714072970961,
+        "aup": 0.38147008579661823,
+        "energy_per_length": -0.36488197991320737
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1343,
+      "measured_error_hours": 0.14533464,
+      "measured_hours": 1.75245603,
+      "name": "hHBB_Nluc_WPRE",
+      "predicted_hours": 1.1030569109116073
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 373.449628,
+        "SUP EternaFold FULL": 545.049387,
+        "SUP Vienna FULL": 427.592588
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.77168949771689,
+        "aup": 0.3904062904471046,
+        "energy_per_length": -0.34249568573416095
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1095,
+      "measured_error_hours": 0.08666449,
+      "measured_hours": 1.43632441,
+      "name": "CoV2_Nluc_hHBB",
+      "predicted_hours": 0.9866792173186842
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 368.261818,
+        "SUP EternaFold FULL": 546.788048,
+        "SUP Vienna FULL": 430.648276
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.63636363636363,
+        "aup": 0.3913903119822052,
+        "energy_per_length": -0.3435024192116477
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1100,
+      "measured_error_hours": 0.03840051,
+      "measured_hours": 1.26554839,
+      "name": "CoV2_P4_Nluc_hHBB",
+      "predicted_hours": 1.0000517043608919
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 376.669628,
+        "SUP EternaFold FULL": 550.161221,
+        "SUP Vienna FULL": 430.259302
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.77168949771689,
+        "aup": 0.3928445156240231,
+        "energy_per_length": -0.3410550330871861
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1095,
+      "measured_error_hours": 0.04948708,
+      "measured_hours": 1.18964998,
+      "name": "CoV2_TTG_Nluc_hHBB",
+      "predicted_hours": 0.9816926954746112
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 294.646454,
+        "SUP EternaFold FULL": 440.37394,
+        "SUP Vienna FULL": 354.855452
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.56818181818182,
+        "aup": 0.40317529199665714,
+        "energy_per_length": -0.33889767039905894
+      },
+      "features_outside_training_range": [],
+      "length_nt": 880,
+      "measured_error_hours": 0.04102288,
+      "measured_hours": 1.07451185,
+      "name": "TEV_Nluc_hHBB",
+      "predicted_hours": 0.9770701780480586
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 336.251233,
+        "SUP EternaFold FULL": 515.123164,
+        "SUP Vienna FULL": 390.482872
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.616279069767444,
+        "aup": 0.378319781013259,
+        "energy_per_length": -0.3486185887063196
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1032,
+      "measured_error_hours": 0.01927,
+      "measured_hours": 1.27263998,
+      "name": "TEV_P4_mActb_Nluc_hHBB",
+      "predicted_hours": 1.0561452544917067
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 344.206233,
+        "SUP EternaFold FULL": 509.621622,
+        "SUP Vienna FULL": 417.236964
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.616279069767444,
+        "aup": 0.4042235202053275,
+        "energy_per_length": -0.3445306230885114
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1032,
+      "measured_error_hours": 0.06837679,
+      "measured_hours": 1.04705487,
+      "name": "P4_TEV_mActb_Nluc_hHBB",
+      "predicted_hours": 1.0137077101304612
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 309.185051,
+        "SUP EternaFold FULL": 461.276039,
+        "SUP Vienna FULL": 364.635645
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 51.30151843817787,
+        "aup": 0.3954041571871226,
+        "energy_per_length": -0.3359799995339615
+      },
+      "features_outside_training_range": [],
+      "length_nt": 922,
+      "measured_error_hours": 0.0248433,
+      "measured_hours": 1.15541861,
+      "name": "mRpl18a_hHBB_Nluc_hHBB",
+      "predicted_hours": 0.9976905544432304
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 344.592929,
+        "SUP EternaFold FULL": 504.577352,
+        "SUP Vienna FULL": 400.493293
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 53.61328125,
+        "aup": 0.3910258730467391,
+        "energy_per_length": -0.3542727828025818
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1024,
+      "measured_error_hours": 0.02093109,
+      "measured_hours": 1.16367809,
+      "name": "mRpl18a_P4_mActb_Nluc_hHBB",
+      "predicted_hours": 1.0585443861813388
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 304.600987,
+        "SUP EternaFold FULL": 450.496924,
+        "SUP Vienna FULL": 350.806091
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.78299776286354,
+        "aup": 0.392337174668832,
+        "energy_per_length": -0.33646752956996295
+      },
+      "features_outside_training_range": [],
+      "length_nt": 894,
+      "measured_error_hours": 0.03968201,
+      "measured_hours": 1.19336537,
+      "name": "TOP_hHBB_Nluc_hHBB",
+      "predicted_hours": 0.9943873004921566
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 336.128926,
+        "SUP EternaFold FULL": 489.320989,
+        "SUP Vienna FULL": 396.679706
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.79365079365079,
+        "aup": 0.4196723168195731,
+        "energy_per_length": -0.3254988090071098
+      },
+      "features_outside_training_range": [],
+      "length_nt": 945,
+      "measured_error_hours": 0.03601596,
+      "measured_hours": 1.17357061,
+      "name": "TEV_CERT_hHBB_Nluc_hHBB",
+      "predicted_hours": 0.9435233759072863
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 387.756947,
+        "SUP EternaFold FULL": 577.208856,
+        "SUP Vienna FULL": 451.994226
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 51.64359861591695,
+        "aup": 0.3909100213019047,
+        "energy_per_length": -0.3528198189388922
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1156,
+      "measured_error_hours": 0.02810137,
+      "measured_hours": 1.05123442,
+      "name": "mHoxa9_IRES_Nluc_hHBB",
+      "predicted_hours": 1.0257047703662854
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 361.390944,
+        "SUP EternaFold FULL": 530.272564,
+        "SUP Vienna FULL": 418.562322
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.30362116991643,
+        "aup": 0.38854938367074593,
+        "energy_per_length": -0.32858548390168
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1077,
+      "measured_error_hours": 0.05280277,
+      "measured_hours": 1.29123133,
+      "name": "hHBB_Nluc_CoV2",
+      "predicted_hours": 0.9688563222472883
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 362.502157,
+        "SUP EternaFold FULL": 520.236165,
+        "SUP Vienna FULL": 393.447432
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 47.0873786407767,
+        "aup": 0.3819212508736911,
+        "energy_per_length": -0.3192594065249545
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1030,
+      "measured_error_hours": 0.04129857,
+      "measured_hours": 1.18045188,
+      "name": "hHBB_Nluc_CrPV",
+      "predicted_hours": 0.9343614360225525
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 323.786952,
+        "SUP EternaFold FULL": 451.136887,
+        "SUP Vienna FULL": 365.351438
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.05761316872428,
+        "aup": 0.3758098596593946,
+        "energy_per_length": -0.37142350938585067
+      },
+      "features_outside_training_range": [],
+      "length_nt": 972,
+      "measured_error_hours": 0.05098517,
+      "measured_hours": 1.20987098,
+      "name": "hHBB_Nluc_TSV",
+      "predicted_hours": 1.072335037826877
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 276.659755,
+        "SUP EternaFold FULL": 413.024282,
+        "SUP Vienna FULL": 327.557198
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.803461063040785,
+        "aup": 0.40482746978698864,
+        "energy_per_length": -0.333224189296199
+      },
+      "features_outside_training_range": [],
+      "length_nt": 809,
+      "measured_error_hours": 0.06688615,
+      "measured_hours": 1.3009275,
+      "name": "hHBB_Nluc_SINV_URE",
+      "predicted_hours": 0.9730582191995394
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 393.09562,
+        "SUP EternaFold FULL": 587.782237,
+        "SUP Vienna FULL": 475.238113
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 51.66666666666667,
+        "aup": 0.3959848603081041,
+        "energy_per_length": -0.3497868092854818
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1200,
+      "measured_error_hours": 0.08293879,
+      "measured_hours": 1.27809588,
+      "name": "hHBB_Nluc_DV",
+      "predicted_hours": 1.0156642310416362
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 287.476454,
+        "SUP EternaFold FULL": 422.334094,
+        "SUP Vienna FULL": 337.356293
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.27272727272727,
+        "aup": 0.3832853078751377,
+        "energy_per_length": -0.3631236336447976
+      },
+      "features_outside_training_range": [],
+      "length_nt": 880,
+      "measured_error_hours": 0.0621871,
+      "measured_hours": 1.37709263,
+      "name": "hHBB_Nluc_BMV",
+      "predicted_hours": 1.0568547704161848
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 271.284059,
+        "SUP EternaFold FULL": 403.836065,
+        "SUP Vienna FULL": 320.458093
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.141982864137084,
+        "aup": 0.39219629094537495,
+        "energy_per_length": -0.35044149261063723
+      },
+      "features_outside_training_range": [],
+      "length_nt": 817,
+      "measured_error_hours": 0.03172415,
+      "measured_hours": 1.16564088,
+      "name": "hHBB_Nluc_PV",
+      "predicted_hours": 1.0295612849707474
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 403.354848,
+        "SUP EternaFold FULL": 589.212581,
+        "SUP Vienna FULL": 463.829271
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.58043117744611,
+        "aup": 0.3845244036622015,
+        "energy_per_length": -0.3465442309529825
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1206,
+      "measured_error_hours": 0.10436315,
+      "measured_hours": 1.53927352,
+      "name": "hHBB_Nluc_RV",
+      "predicted_hours": 1.012241182115749
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 394.846798,
+        "SUP EternaFold FULL": 573.968572,
+        "SUP Vienna FULL": 469.262662
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 53.12753858651503,
+        "aup": 0.38114817148371133,
+        "energy_per_length": -0.36932923404498375
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1231,
+      "measured_error_hours": 0.07476835,
+      "measured_hours": 1.37169676,
+      "name": "HCV_IRES_Nluc_hHBB",
+      "predicted_hours": 1.0796038787619981
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 295.779416,
+        "SUP EternaFold FULL": 430.354167,
+        "SUP Vienna FULL": 342.506331
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 51.19453924914675,
+        "aup": 0.3895719031502295,
+        "energy_per_length": -0.3394539304696388
+      },
+      "features_outside_training_range": [],
+      "length_nt": 879,
+      "measured_error_hours": 0.11265027,
+      "measured_hours": 1.43601792,
+      "name": "scrUTR_Nluc_hHBB",
+      "predicted_hours": 1.0079257002364104
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 307.487329,
+        "SUP EternaFold FULL": 456.708621,
+        "SUP Vienna FULL": 365.193863
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.71982281284607,
+        "aup": 0.40436044461521076,
+        "energy_per_length": -0.3346992906673934
+      },
+      "features_outside_training_range": [],
+      "length_nt": 903,
+      "measured_error_hours": 0.04327514,
+      "measured_hours": 1.25174436,
+      "name": "PoV_pA_scrUTR_Nluc_hHBB",
+      "predicted_hours": 0.9737961809451778
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 307.793481,
+        "SUP EternaFold FULL": 460.664467,
+        "SUP Vienna FULL": 365.250584
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.49614112458654,
+        "aup": 0.40264031105790826,
+        "energy_per_length": -0.336481029169825
+      },
+      "features_outside_training_range": [],
+      "length_nt": 907,
+      "measured_error_hours": 0.05066926,
+      "measured_hours": 1.3002442,
+      "name": "PoV_pA_hHBB_Nluc_hHBB",
+      "predicted_hours": 0.9744392859753278
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 270.105907,
+        "SUP EternaFold FULL": 403.415494,
+        "SUP Vienna FULL": 326.590655
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 54.48954489544895,
+        "aup": 0.401629619685912,
+        "energy_per_length": -0.35376378208362164
+      },
+      "features_outside_training_range": [],
+      "length_nt": 813,
+      "measured_error_hours": 0.05424301,
+      "measured_hours": 1.31754487,
+      "name": "hHBB_Nluc_CYBA",
+      "predicted_hours": 1.0563455383008817
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 287.228846,
+        "SUP EternaFold FULL": 430.216574,
+        "SUP Vienna FULL": 350.121072
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 55.32407407407407,
+        "aup": 0.4051291184030014,
+        "energy_per_length": -0.35723227041739003
+      },
+      "features_outside_training_range": [],
+      "length_nt": 864,
+      "measured_error_hours": 0.0651606,
+      "measured_hours": 1.25671681,
+      "name": "hHBB_Nluc_CYBA_1.5x",
+      "predicted_hours": 1.0677985226951774
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 290.145036,
+        "SUP EternaFold FULL": 427.701106,
+        "SUP Vienna FULL": 338.211812
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.243958573072504,
+        "aup": 0.3891132936566909,
+        "energy_per_length": -0.34796774702873273
+      },
+      "features_outside_training_range": [],
+      "length_nt": 869,
+      "measured_error_hours": 0.039302,
+      "measured_hours": 1.21371395,
+      "name": "CYBA_Nluc_hHBB",
+      "predicted_hours": 1.0334692433762123
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 297.062569,
+        "SUP EternaFold FULL": 440.594029,
+        "SUP Vienna FULL": 350.936265
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.962627406568515,
+        "aup": 0.3973647863627398,
+        "energy_per_length": -0.336580235447781
+      },
+      "features_outside_training_range": [],
+      "length_nt": 883,
+      "measured_error_hours": 0.0379846,
+      "measured_hours": 1.12373393,
+      "name": "hHBB_Nluc_hHBB",
+      "predicted_hours": 0.9898881487327008
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 438.531117,
+        "SUP EternaFold FULL": 614.12444,
+        "SUP Vienna FULL": 491.543762
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 48.529411764705884,
+        "aup": 0.3803752622546026,
+        "energy_per_length": -0.3369985054890069
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1292,
+      "measured_error_hours": 0.05413922,
+      "measured_hours": 1.30512351,
+      "name": "CoV2_Nluc_CoV2",
+      "predicted_hours": 0.97650087355353
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 440.573307,
+        "SUP EternaFold FULL": 621.578532,
+        "SUP Vienna FULL": 485.367113
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.26754047802621,
+        "aup": 0.37415392392472174,
+        "energy_per_length": -0.33888276393540384
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1297,
+      "measured_error_hours": 0.06753403,
+      "measured_hours": 1.32481246,
+      "name": "CoV2_P4_Nluc_CoV2",
+      "predicted_hours": 0.9994006427779892
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 439.418117,
+        "SUP EternaFold FULL": 623.816488,
+        "SUP Vienna FULL": 496.515535
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 48.529411764705884,
+        "aup": 0.3842173710147321,
+        "energy_per_length": -0.33302510264488194
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1292,
+      "measured_error_hours": 0.05522311,
+      "measured_hours": 1.32511892,
+      "name": "CoV2_TTG_Nluc_CoV2",
+      "predicted_hours": 0.9670429361959736
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 351.115663,
+        "SUP EternaFold FULL": 514.227996,
+        "SUP Vienna FULL": 398.552299
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.26253687315634,
+        "aup": 0.3918228428734387,
+        "energy_per_length": -0.327055354385601
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1017,
+      "measured_error_hours": 0.08717781,
+      "measured_hours": 1.30369977,
+      "name": "hHBB_Nluc_hHBBx2",
+      "predicted_hours": 0.9618811231256987
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 495.047401,
+        "SUP EternaFold FULL": 731.392479,
+        "SUP Vienna FULL": 568.404562
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 46.9601677148847,
+        "aup": 0.3971389092438685,
+        "energy_per_length": -0.3177369315669222
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1431,
+      "measured_error_hours": 0.05840405,
+      "measured_hours": 1.30177285,
+      "name": "hHBB_Nluc_mActb",
+      "predicted_hours": 0.9082126888886664
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 475.769284,
+        "SUP EternaFold FULL": 699.613118,
+        "SUP Vienna FULL": 545.656873
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 48.33209785025945,
+        "aup": 0.40438215421311574,
+        "energy_per_length": -0.31636806343819496
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1349,
+      "measured_error_hours": 0.08407945,
+      "measured_hours": 1.51071043,
+      "name": "hHBB_Nluc_hActb",
+      "predicted_hours": 0.9181770609151925
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 575.38637,
+        "SUP EternaFold FULL": 846.448227,
+        "SUP Vienna FULL": 659.394019
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 42.12846347607053,
+        "aup": 0.41510427073168904,
+        "energy_per_length": -0.2850938119576019
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1588,
+      "measured_error_hours": 0.07005346,
+      "measured_hours": 1.39332788,
+      "name": "hHBB_Nluc_hCOL1A2",
+      "predicted_hours": 0.773143121074791
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 406.192342,
+        "SUP EternaFold FULL": 596.656869,
+        "SUP Vienna FULL": 469.468589
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.86136177194421,
+        "aup": 0.38505154356196575,
+        "energy_per_length": -0.35900495871840393
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1219,
+      "measured_error_hours": 0.04781091,
+      "measured_hours": 1.2341749,
+      "name": "CoV2_Nluc_TCV",
+      "predicted_hours": 1.0276768360235036
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 409.318532,
+        "SUP EternaFold FULL": 607.900343,
+        "SUP Vienna FULL": 484.767468
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 51.633986928104584,
+        "aup": 0.3959535648630178,
+        "energy_per_length": -0.3607693341822406
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1224,
+      "measured_error_hours": 0.03462731,
+      "measured_hours": 1.16749426,
+      "name": "CoV2_P4_Nluc_TCV",
+      "predicted_hours": 1.025504313156597
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 410.694342,
+        "SUP EternaFold FULL": 602.601028,
+        "SUP Vienna FULL": 479.280407
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.86136177194421,
+        "aup": 0.39308221976612767,
+        "energy_per_length": -0.3583068346957675
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1219,
+      "measured_error_hours": 0.05435696,
+      "measured_hours": 1.30035885,
+      "name": "CoV2_TTG_Nluc_TCV",
+      "predicted_hours": 1.0150551616180392
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 365.682868,
+        "SUP EternaFold FULL": 539.868599,
+        "SUP Vienna FULL": 429.020704
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.83720930232558,
+        "aup": 0.3989882342850076,
+        "energy_per_length": -0.3507611793695494
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1075,
+      "measured_error_hours": 0.15639927,
+      "measured_hours": 1.57477975,
+      "name": "CoV2_Nluc_hHBA1",
+      "predicted_hours": 1.030911887726945
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 365.447058,
+        "SUP EternaFold FULL": 538.006088,
+        "SUP Vienna FULL": 428.100033
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 53.70370370370371,
+        "aup": 0.39627378998252644,
+        "energy_per_length": -0.35485588356300635
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1080,
+      "measured_error_hours": 0.20491853,
+      "measured_hours": 1.6371712,
+      "name": "CoV2_P4_Nluc_hHBA1",
+      "predicted_hours": 1.0527256307705974
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 364.428868,
+        "SUP EternaFold FULL": 538.581727,
+        "SUP Vienna FULL": 423.389443
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.83720930232558,
+        "aup": 0.39375374299596944,
+        "energy_per_length": -0.35284560092659883
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1075,
+      "measured_error_hours": 0.12884843,
+      "measured_hours": 1.53638368,
+      "name": "CoV2_TTG_Nluc_hHBA1",
+      "predicted_hours": 1.040669710600855
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 384.835289,
+        "SUP EternaFold FULL": 575.726833,
+        "SUP Vienna FULL": 459.97251
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 51.58798283261803,
+        "aup": 0.39473679068993833,
+        "energy_per_length": -0.3538255945295735
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1165,
+      "measured_error_hours": 0.05026053,
+      "measured_hours": 1.26438029,
+      "name": "CoV2_Nluc_BYDV",
+      "predicted_hours": 1.0200542405957629
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 385.222479,
+        "SUP EternaFold FULL": 583.686933,
+        "SUP Vienna FULL": 463.720838
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.3931623931624,
+        "aup": 0.39623852056368186,
+        "energy_per_length": -0.3544896574101896
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1170,
+      "measured_error_hours": 0.0533129,
+      "measured_hours": 1.23460136,
+      "name": "CoV2_P4_Nluc_BYDV",
+      "predicted_hours": 1.0313774799340985
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 382.911289,
+        "SUP EternaFold FULL": 582.611161,
+        "SUP Vienna FULL": 462.890133
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 51.58798283261803,
+        "aup": 0.3972364263692189,
+        "energy_per_length": -0.3513309855317865
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1165,
+      "measured_error_hours": 0.04544915,
+      "measured_hours": 1.32356278,
+      "name": "CoV2_TTG_Nluc_BYDV",
+      "predicted_hours": 1.0139859826185202
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 523.559344,
+        "SUP EternaFold FULL": 748.174296,
+        "SUP Vienna FULL": 596.20954
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 53.42729019859065,
+        "aup": 0.38186568675338883,
+        "energy_per_length": -0.3616363896840967
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1561,
+      "measured_error_hours": 0.08176829,
+      "measured_hours": 1.33591436,
+      "name": "CoV2_Nluc_WPRE",
+      "predicted_hours": 1.076123185575462
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 519.826534,
+        "SUP EternaFold FULL": 750.270554,
+        "SUP Vienna FULL": 602.705203
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 54.02298850574713,
+        "aup": 0.38478946664292957,
+        "energy_per_length": -0.36379763236600016
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1566,
+      "measured_error_hours": 0.09633558,
+      "measured_hours": 1.39047692,
+      "name": "CoV2_P4_Nluc_WPRE",
+      "predicted_hours": 1.083368462045507
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 522.037344,
+        "SUP EternaFold FULL": 746.153126,
+        "SUP Vienna FULL": 591.032997
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 53.42729019859065,
+        "aup": 0.3785551798143985,
+        "energy_per_length": -0.3632920025099095
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1561,
+      "measured_error_hours": 0.11926445,
+      "measured_hours": 1.50102685,
+      "name": "CoV2_TTG_Nluc_WPRE",
+      "predicted_hours": 1.0826113765085545
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 358.92283,
+        "SUP EternaFold FULL": 547.942913,
+        "SUP Vienna FULL": 428.35914
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 48.97579143389199,
+        "aup": 0.39876284169344456,
+        "energy_per_length": -0.3229648867132943
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1074,
+      "measured_error_hours": 0.07449306,
+      "measured_hours": 1.31374664,
+      "name": "TEV_Nluc_CoV2",
+      "predicted_hours": 0.9430901506007541
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 363.997438,
+        "SUP EternaFold FULL": 547.57411,
+        "SUP Vienna FULL": 432.793565
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.54128440366973,
+        "aup": 0.39696651692555457,
+        "energy_per_length": -0.32429546391198394
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1090,
+      "measured_error_hours": 0.06150709,
+      "measured_hours": 1.31501777,
+      "name": "TCV_Nluc_CoV2",
+      "predicted_hours": 0.9561026572125827
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 393.480821,
+        "SUP EternaFold FULL": 592.448446,
+        "SUP Vienna FULL": 459.559003
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 51.48430873621713,
+        "aup": 0.38967086202365425,
+        "energy_per_length": -0.33614843108069603
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1179,
+      "measured_error_hours": 0.04948101,
+      "measured_hours": 1.25468085,
+      "name": "P4_mActb_Nluc_CoV2",
+      "predicted_hours": 1.0093283619405127
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 300.223002,
+        "SUP EternaFold FULL": 472.526666,
+        "SUP Vienna FULL": 376.934684
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.798310454065465,
+        "aup": 0.39798551533373416,
+        "energy_per_length": -0.35153050004743597
+      },
+      "features_outside_training_range": [],
+      "length_nt": 947,
+      "measured_error_hours": 0.04763327,
+      "measured_hours": 1.26223899,
+      "name": "TEV_Nluc_BYDV",
+      "predicted_hours": 1.0325037606143763
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 311.40361,
+        "SUP EternaFold FULL": 486.292827,
+        "SUP Vienna FULL": 390.170521
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 53.374870197300105,
+        "aup": 0.4050762445321747,
+        "energy_per_length": -0.3489840340143919
+      },
+      "features_outside_training_range": [],
+      "length_nt": 963,
+      "measured_error_hours": 0.03856687,
+      "measured_hours": 1.24074504,
+      "name": "TCV_Nluc_BYDV",
+      "predicted_hours": 1.0288096740167965
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 335.406993,
+        "SUP EternaFold FULL": 510.878304,
+        "SUP Vienna FULL": 413.409707
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 55.22813688212928,
+        "aup": 0.3928882070717229,
+        "energy_per_length": -0.36419666130733125
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1052,
+      "measured_error_hours": 0.06322171,
+      "measured_hours": 1.27753759,
+      "name": "P4_mActb_Nluc_BYDV",
+      "predicted_hours": 1.0910394485118462
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 277.26958,
+        "SUP EternaFold FULL": 414.731895,
+        "SUP Vienna FULL": 337.187913
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 54.4924154025671,
+        "aup": 0.3933840318014565,
+        "energy_per_length": -0.35598249223991757
+      },
+      "features_outside_training_range": [],
+      "length_nt": 857,
+      "measured_error_hours": 0.20036048,
+      "measured_hours": 1.73067,
+      "name": "TEV_Nluc_hHBA1",
+      "predicted_hours": 1.0707622046673366
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 292.031188,
+        "SUP EternaFold FULL": 442.476708,
+        "SUP Vienna FULL": 361.182312
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 55.09736540664376,
+        "aup": 0.413622736742242,
+        "energy_per_length": -0.34769714984697164
+      },
+      "features_outside_training_range": [],
+      "length_nt": 873,
+      "measured_error_hours": 0.15590609,
+      "measured_hours": 1.53357932,
+      "name": "TCV_Nluc_hHBA1",
+      "predicted_hours": 1.042541795988938
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 312.819572,
+        "SUP EternaFold FULL": 467.236626,
+        "SUP Vienna FULL": 379.289252
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 56.96465696465697,
+        "aup": 0.3941660066261185,
+        "energy_per_length": -0.3619631888217093
+      },
+      "features_outside_training_range": [],
+      "length_nt": 962,
+      "measured_error_hours": 0.23257396,
+      "measured_hours": 1.739251,
+      "name": "P4_mActb_Nluc_hHBA1",
+      "predicted_hours": 1.1149379508338153
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 333.079054,
+        "SUP EternaFold FULL": 493.441919,
+        "SUP Vienna FULL": 403.880988
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 51.84815184815184,
+        "aup": 0.4034245287691049,
+        "energy_per_length": -0.3599041339519855
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1001,
+      "measured_error_hours": 0.04676815,
+      "measured_hours": 1.22717406,
+      "name": "TEV_Nluc_TCV",
+      "predicted_hours": 1.0170006513634469
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 332.182663,
+        "SUP EternaFold FULL": 503.83056,
+        "SUP Vienna FULL": 406.427759
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.409046214355946,
+        "aup": 0.39955657038749687,
+        "energy_per_length": -0.3595982254313391
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1017,
+      "measured_error_hours": 0.03145514,
+      "measured_hours": 1.11027722,
+      "name": "TCV_Nluc_TCV",
+      "predicted_hours": 1.0314884753378668
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 355.974046,
+        "SUP EternaFold FULL": 540.327082,
+        "SUP Vienna FULL": 430.752143
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 54.249547920434,
+        "aup": 0.38936636300686456,
+        "energy_per_length": -0.36745451501222026
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1106,
+      "measured_error_hours": 0.03102154,
+      "measured_hours": 1.16921351,
+      "name": "P4_mActb_Nluc_TCV",
+      "predicted_hours": 1.0836248007026636
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 440.123056,
+        "SUP EternaFold FULL": 644.732543,
+        "SUP Vienna FULL": 503.205897
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 54.57930007446017,
+        "aup": 0.374633184520232,
+        "energy_per_length": -0.3658032108400619
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1343,
+      "measured_error_hours": 0.0674771,
+      "measured_hours": 1.3525694,
+      "name": "TEV_Nluc_WPRE",
+      "predicted_hours": 1.1093240307125165
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 449.926664,
+        "SUP EternaFold FULL": 652.452782,
+        "SUP Vienna FULL": 523.646741
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 54.966887417218544,
+        "aup": 0.38525597157739394,
+        "energy_per_length": -0.3625458414893189
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1359,
+      "measured_error_hours": 0.10106196,
+      "measured_hours": 1.39468759,
+      "name": "TCV_Nluc_WPRE",
+      "predicted_hours": 1.09666299185557
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 477.265048,
+        "SUP EternaFold FULL": 695.050586,
+        "SUP Vienna FULL": 549.471852
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 56.21546961325967,
+        "aup": 0.3793968563244554,
+        "energy_per_length": -0.3721807490396236
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1448,
+      "measured_error_hours": 0.14502187,
+      "measured_hours": 1.50734305,
+      "name": "P4_mActb_Nluc_WPRE",
+      "predicted_hours": 1.1345066057858304
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 306.409671,
+        "SUP EternaFold FULL": 434.294995,
+        "SUP Vienna FULL": 346.346825
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.877192982456144,
+        "aup": 0.37968566884670296,
+        "energy_per_length": -0.3575460199724164
+      },
+      "features_outside_training_range": [],
+      "length_nt": 912,
+      "measured_error_hours": 0.1102731,
+      "measured_hours": 1.51411273,
+      "name": "hHBB_Nluc_AMV",
+      "predicted_hours": 1.0345556543877672
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 308.817253,
+        "SUP EternaFold FULL": 471.898897,
+        "SUP Vienna FULL": 377.133978
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.27857935627081,
+        "aup": 0.41850437553517855,
+        "energy_per_length": -0.32078699584012554
+      },
+      "features_outside_training_range": [],
+      "length_nt": 901,
+      "measured_error_hours": 0.0449639,
+      "measured_hours": 1.24204344,
+      "name": "TMV_Nluc_hHBB",
+      "predicted_hours": 0.9164938516876964
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 304.261317,
+        "SUP EternaFold FULL": 443.959614,
+        "SUP Vienna FULL": 347.517575
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.269106566200215,
+        "aup": 0.3740115261926538,
+        "energy_per_length": -0.34422050944185617
+      },
+      "features_outside_training_range": [],
+      "length_nt": 929,
+      "measured_error_hours": 0.06406794,
+      "measured_hours": 1.31047054,
+      "name": "DEN2_Nluc_hHBB",
+      "predicted_hours": 1.0207201192887885
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 396.21562,
+        "SUP EternaFold FULL": 582.245797,
+        "SUP Vienna FULL": 477.056939
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 51.66666666666667,
+        "aup": 0.39748916117623817,
+        "energy_per_length": -0.3478563181559245
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1200,
+      "measured_error_hours": 0.11655133,
+      "measured_hours": 1.41696311,
+      "name": "hHBB_Nluc_DEN2",
+      "predicted_hours": 1.0116090395810398
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 408.711368,
+        "SUP EternaFold FULL": 603.85947,
+        "SUP Vienna FULL": 486.632525
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 51.12359550561798,
+        "aup": 0.3904823704928763,
+        "energy_per_length": -0.3488523137320676
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1246,
+      "measured_error_hours": 0.09258903,
+      "measured_hours": 1.35575198,
+      "name": "DEN2_Nluc_DEN2",
+      "predicted_hours": 1.0142593932391946
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 300.563987,
+        "SUP EternaFold FULL": 449.303633,
+        "SUP Vienna FULL": 364.635543
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.23713646532438,
+        "aup": 0.4078176808183999,
+        "energy_per_length": -0.3365344019810892
+      },
+      "features_outside_training_range": [],
+      "length_nt": 894,
+      "measured_error_hours": 0.07618025,
+      "measured_hours": 1.25032637,
+      "name": "C3_Nluc_hHBB",
+      "predicted_hours": 0.9947478906968114
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 288.757922,
+        "SUP EternaFold FULL": 429.681472,
+        "SUP Vienna FULL": 341.358094
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.54041570438799,
+        "aup": 0.39410495589139943,
+        "energy_per_length": -0.34678167118486575
+      },
+      "features_outside_training_range": [],
+      "length_nt": 866,
+      "measured_error_hours": 0.07405974,
+      "measured_hours": 1.33494182,
+      "name": "CYP2E1_Nluc_hHBB",
+      "predicted_hours": 1.0296804799534098
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 303.150873,
+        "SUP EternaFold FULL": 446.257935,
+        "SUP Vienna FULL": 356.280708
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.07631874298541,
+        "aup": 0.3998008416337479,
+        "energy_per_length": -0.34078362975457704
+      },
+      "features_outside_training_range": [],
+      "length_nt": 891,
+      "measured_error_hours": 0.06453757,
+      "measured_hours": 1.19509165,
+      "name": "APOA2_Nluc_hHBB",
+      "predicted_hours": 1.0081014747810197
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 461.252559,
+        "SUP EternaFold FULL": 680.395083,
+        "SUP Vienna FULL": 565.530136
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 47.8017585931255,
+        "aup": 0.45197237258387923,
+        "energy_per_length": -0.29437050945181353
+      },
+      "features_outside_training_range": [
+        "aup"
+      ],
+      "length_nt": 1251,
+      "measured_error_hours": 0.03996746,
+      "measured_hours": 1.22226192,
+      "name": "RBCS1A_Nluc_hHBB",
+      "predicted_hours": 0.8180787279496575
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 320.304849,
+        "SUP EternaFold FULL": 472.795849,
+        "SUP Vienna FULL": 374.392652
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.840933191940614,
+        "aup": 0.3969352027924665,
+        "energy_per_length": -0.32812477346442537
+      },
+      "features_outside_training_range": [],
+      "length_nt": 943,
+      "measured_error_hours": 0.11379212,
+      "measured_hours": 1.34109413,
+      "name": "RBCS3B_Nluc_hHBB",
+      "predicted_hours": 0.964561596398579
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 291.655226,
+        "SUP EternaFold FULL": 427.969285,
+        "SUP Vienna FULL": 342.53924
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 51.830663615560645,
+        "aup": 0.39185929174871553,
+        "energy_per_length": -0.34732942559353547
+      },
+      "features_outside_training_range": [],
+      "length_nt": 874,
+      "measured_error_hours": 0.06663472,
+      "measured_hours": 1.30811364,
+      "name": "RpS25_Nluc_hHBB",
+      "predicted_hours": 1.0221375023859087
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 309.444861,
+        "SUP EternaFold FULL": 453.998541,
+        "SUP Vienna FULL": 364.471343
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.453653217012,
+        "aup": 0.3973856441820683,
+        "energy_per_length": -0.342901930814221
+      },
+      "features_outside_training_range": [],
+      "length_nt": 917,
+      "measured_error_hours": 0.07402668,
+      "measured_hours": 1.38096384,
+      "name": "RpL31_Nluc_hHBB",
+      "predicted_hours": 1.0197530394356686
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 303.604633,
+        "SUP EternaFold FULL": 446.197365,
+        "SUP Vienna FULL": 356.641742
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.689352360043905,
+        "aup": 0.39139615633298164,
+        "energy_per_length": -0.34923559329119785
+      },
+      "features_outside_training_range": [],
+      "length_nt": 911,
+      "measured_error_hours": 0.0648493,
+      "measured_hours": 1.29894304,
+      "name": "RpL38_Nluc_hHBB",
+      "predicted_hours": 1.0384151489161568
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 316.373268,
+        "SUP EternaFold FULL": 459.358836,
+        "SUP Vienna FULL": 376.123146
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 52.51572327044025,
+        "aup": 0.39419509417287724,
+        "energy_per_length": -0.35266756261669613
+      },
+      "features_outside_training_range": [],
+      "length_nt": 954,
+      "measured_error_hours": 0.04939321,
+      "measured_hours": 1.2231786,
+      "name": "Tubb2b_Nluc_hHBB",
+      "predicted_hours": 1.0346794672603221
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 360.839716,
+        "SUP EternaFold FULL": 538.748711,
+        "SUP Vienna FULL": 411.50316
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.85994397759104,
+        "aup": 0.38413776969004815,
+        "energy_per_length": -0.341752737064878
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1071,
+      "measured_error_hours": 0.05303463,
+      "measured_hours": 1.26821354,
+      "name": "CoV-2-TTG-dSL1_Nluc_hHBB",
+      "predicted_hours": 0.9967393183679685
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 372.447172,
+        "SUP EternaFold FULL": 545.191663,
+        "SUP Vienna FULL": 429.025228
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.86149584487535,
+        "aup": 0.3960578990987585,
+        "energy_per_length": -0.3394954607427285
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1083,
+      "measured_error_hours": 0.05791462,
+      "measured_hours": 1.26206202,
+      "name": "CoV-2-TTG-dSL2_Nluc_hHBB",
+      "predicted_hours": 0.9768823819323418
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 367.722172,
+        "SUP EternaFold FULL": 540.500155,
+        "SUP Vienna FULL": 424.178032
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.86149584487535,
+        "aup": 0.39158436186457085,
+        "energy_per_length": -0.34359549595488514
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1083,
+      "measured_error_hours": 0.08807038,
+      "measured_hours": 1.40324273,
+      "name": "CoV-2-TTG-dSL3_Nluc_hHBB",
+      "predicted_hours": 0.9874001279300819
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 362.916069,
+        "SUP EternaFold FULL": 535.368761,
+        "SUP Vienna FULL": 419.61627
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.33586337760911,
+        "aup": 0.39802139703067335,
+        "energy_per_length": -0.33378132018463885
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1054,
+      "measured_error_hours": 0.06945578,
+      "measured_hours": 1.30493432,
+      "name": "CoV-2-TTG-dSL4-1_Nluc_hHBB",
+      "predicted_hours": 0.960142696651769
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 368.39102,
+        "SUP EternaFold FULL": 534.839036,
+        "SUP Vienna FULL": 418.839868
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.5097312326228,
+        "aup": 0.38808769808957777,
+        "energy_per_length": -0.34757753784066553
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1079,
+      "measured_error_hours": 0.03812566,
+      "measured_hours": 1.22686346,
+      "name": "CoV-2-TTG-dSL4-2_Nluc_hHBB",
+      "predicted_hours": 1.006766739514998
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 354.842347,
+        "SUP EternaFold FULL": 516.940161,
+        "SUP Vienna FULL": 407.636495
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.14492753623189,
+        "aup": 0.39377201179467275,
+        "energy_per_length": -0.34178189632397343
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1035,
+      "measured_error_hours": 0.04918694,
+      "measured_hours": 1.15947933,
+      "name": "CoV-2-TTG-dSL4-full_Nluc_hHBB",
+      "predicted_hours": 0.9869904958974727
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 357.827107,
+        "SUP EternaFold FULL": 524.131216,
+        "SUP Vienna FULL": 411.99592
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.47867298578199,
+        "aup": 0.390426641060031,
+        "energy_per_length": -0.33503169199866706
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1055,
+      "measured_error_hours": 0.05516071,
+      "measured_hours": 1.23903726,
+      "name": "CoV-2-TTG-dSL5A_Nluc_hHBB",
+      "predicted_hours": 0.9749282444218503
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 366.563411,
+        "SUP EternaFold FULL": 522.910262,
+        "SUP Vienna FULL": 415.293502
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.576669802445906,
+        "aup": 0.390602234296778,
+        "energy_per_length": -0.34438877338972834
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1063,
+      "measured_error_hours": 0.03625752,
+      "measured_hours": 1.19124881,
+      "name": "CoV-2-TTG-dSL5B_C_Nluc_hHBB",
+      "predicted_hours": 0.9850324872597567
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 354.119701,
+        "SUP EternaFold FULL": 514.296851,
+        "SUP Vienna FULL": 404.626171
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.214145383104125,
+        "aup": 0.3973864103579253,
+        "energy_per_length": -0.3318216140237445
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1018,
+      "measured_error_hours": 0.07022192,
+      "measured_hours": 1.32201533,
+      "name": "CoV-2-TTG-dSL5A-C_Nluc_hHBB",
+      "predicted_hours": 0.9572919515885341
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 340.028332,
+        "SUP EternaFold FULL": 494.359755,
+        "SUP Vienna FULL": 392.399142
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.38900203665988,
+        "aup": 0.3995126727788384,
+        "energy_per_length": -0.33150629793310843
+      },
+      "features_outside_training_range": [],
+      "length_nt": 982,
+      "measured_error_hours": 0.06873156,
+      "measured_hours": 1.32517719,
+      "name": "CoV-2-TTG-dSL5_Nluc_hHBB",
+      "predicted_hours": 0.9566369969163302
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 344.918891,
+        "SUP EternaFold FULL": 506.917764,
+        "SUP Vienna FULL": 396.335234
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.635386119257085,
+        "aup": 0.3873552996614327,
+        "energy_per_length": -0.3468621366767473
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1023,
+      "measured_error_hours": 0.04303627,
+      "measured_hours": 1.2016719,
+      "name": "CoV-2-TTG-dSL1-3_Nluc_hHBB",
+      "predicted_hours": 1.009204781452875
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 312.792823,
+        "SUP EternaFold FULL": 463.414256,
+        "SUP Vienna FULL": 370.398295
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.78165938864629,
+        "aup": 0.4042876600434449,
+        "energy_per_length": -0.330804383390335
+      },
+      "features_outside_training_range": [],
+      "length_nt": 916,
+      "measured_error_hours": 0.06014683,
+      "measured_hours": 1.22059601,
+      "name": "CoV-2-TTG-dSL4-5_Nluc_hHBB",
+      "predicted_hours": 0.9551716295106583
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 385.032073,
+        "SUP EternaFold FULL": 565.733475,
+        "SUP Vienna FULL": 440.302462
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 49.69108561341571,
+        "aup": 0.38853861912486487,
+        "energy_per_length": -0.3405426914252124
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1133,
+      "measured_error_hours": 0.03480723,
+      "measured_hours": 1.21751297,
+      "name": "CoV-2-TTG-TTGfull\u221a\u00c7\u00ac\u2260\u221a\u00c7\u00ac\u2260_Nluc_hHBB",
+      "predicted_hours": 0.9863320714853624
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 353.477221,
+        "SUP EternaFold FULL": 525.133534,
+        "SUP Vienna FULL": 408.028961
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 50.567107750472594,
+        "aup": 0.3855843454803036,
+        "energy_per_length": -0.3449660879903119
+      },
+      "features_outside_training_range": [],
+      "length_nt": 1058,
+      "measured_error_hours": 0.07671043,
+      "measured_hours": 1.33275493,
+      "name": "CoV-2-TTG-TTGfull\u221a\u00c7\u00ac\u2260\u221a\u00c7\u00ac\u2260-dSL1-3_Nluc_hHBB",
+      "predicted_hours": 1.0089650646260573
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 301.839253,
+        "SUP EternaFold FULL": 448.087719,
+        "SUP Vienna FULL": 348.701506
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 51.6093229744728,
+        "aup": 0.38696159225929755,
+        "energy_per_length": -0.3494051680316142
+      },
+      "features_outside_training_range": [],
+      "length_nt": 901,
+      "measured_error_hours": 0.06795951,
+      "measured_hours": 1.15425072,
+      "name": "hHBB_NlucP_hHBB",
+      "predicted_hours": 1.027829043331164
+    },
+    {
+      "baselines": {
+        "SUP DegScore2.1 FULL": 298.885975,
+        "SUP EternaFold FULL": 435.65234,
+        "SUP Vienna FULL": 343.936589
+      },
+      "experiment": "NLuc Barna lab",
+      "features": {
+        "GC": 51.52173913043478,
+        "aup": 0.3737618720696562,
+        "energy_per_length": -0.3638032332710598
+      },
+      "features_outside_training_range": [],
+      "length_nt": 920,
+      "measured_error_hours": 0.04621091,
+      "measured_hours": 1.35783682,
+      "name": "hHBB_Nluc_ENE_Wilusz",
+      "predicted_hours": 1.059617048679089
+    }
+  ],
+  "source": {
+    "doi": "10.1038/s41467-022-28776-w",
+    "file_sha256": "9a8b6b4314ab892aa3e4a4476993189dff1245d4ab55494723782e6afebae0e7",
+    "measured_quantity": "in-solution half-life in hours, from In-line-seq degradation fitted to a single exponential",
+    "sheet": "Fig_S8a"
+  },
+  "training_subset_upper_bound": {
+    "label": "training_subset",
+    "mean_absolute_error_hours": 0.23615202210582137,
+    "measured_range": [
+      0.71963478,
+      2.02976705
+    ],
+    "n": 69,
+    "pearson_log": 0.5138807742256409,
+    "predicted_range": [
+      0.702875966962434,
+      1.494929400248885
+    ],
+    "spearman": 0.5290464011691633
+  },
+  "verdict": {
+    "adds_nothing_over_published_baselines": false,
+    "declared_falsification": "Spearman rho at or below 0 means the calibration does not transfer to records it was not fitted on. That outcome is reportable and will be reported.",
+    "declared_weak_threshold": "rho below 0.3 is to be described as no useful transfer rather than as weak success",
+    "falsified": false,
+    "spearman": 0.32677251679973174,
+    "transfers": true
+  },
+  "what_this_cannot_establish": [
+    "Absolute accuracy. A correlation is not a calibration.",
+    "That the calibration transfers to the project's own construct, which is 1811 nt and 64.4 percent GC, outside this dataset's length and GC ranges.",
+    "Anything about the translation side. RiboNN is untouched by this run.",
+    "Anything about in-cell stability, which is a different quantity again.",
+    "That a positive result validates the design workflow. The workflow's predicted differences between synonymous variants span a few percent, far below the spread tested here."
+  ],
+  "workbook_hash_verified": true
+}

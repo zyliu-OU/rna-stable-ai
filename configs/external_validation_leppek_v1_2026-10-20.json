@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "name": "external_validation_leppek_v1",
+  "effective_date": "2026-10-20",
+  "purpose": "The first external test of strand_rnafold_calibration_v1 against measured values it was not fitted on.",
+  "authorized_by": "user, 2026-10-20: 'run it on the 123 held-out records'",
+  "status": "PROTOCOL DECLARED BEFORE ANY CORRELATION WAS COMPUTED. The criteria below were written and frozen first, so the result can fail.",
+  "source": {
+    "paper": "Leppek K, Byeon GW, Kladwang W, et al. Combinatorial optimization of mRNA structure, stability, and translation for RNA-based therapeutics. Nat Commun 13, 1536 (2022).",
+    "doi": "10.1038/s41467-022-28776-w",
+    "file_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-022-28776-w/MediaObjects/41467_2022_28776_MOESM6_ESM.xlsx",
+    "file_sha256": "9a8b6b4314ab892aa3e4a4476993189dff1245d4ab55494723782e6afebae0e7",
+    "file_bytes": 6256259,
+    "sheet": "Fig_S8a",
+    "rows_with_sequence_and_half_life": 192,
+    "measured_quantity": "in-solution half-life in hours, from In-line-seq degradation fitted to a single exponential",
+    "redistribution": "Not republished here. The protocol records the URL and hash so the dataset can be re-acquired; only derived metrics are published. This matches how the project treats RiboNN weights and Rfam sources."
+  },
+  "why_this_dataset": {
+    "quantity_match": "strand_rnafold_calibration_v1 predicts in-solution half-life of purified RNA in buffer, in hours. This sheet measures exactly that. Every other dataset considered would have tested the model on a different quantity, where a poor result could not distinguish model failure from quantity mismatch.",
+    "rejected_alternatives": [
+      "Eterna OpenVaccine: per-base degradation, not a transcript half-life, and 107 nt against our 1811 nt reference.",
+      "Saluki compendium: in-cell decay of endogenous transcripts, a different quantity.",
+      "Sample 2019 5'UTR MPRA: mean ribosome load, which would test the translation side instead."
+    ]
+  },
+  "training_overlap": {
+    "finding": "All 69 records in the calibration's training feature table are rows of this sheet. The calibration was fitted on a subset of this dataset.",
+    "evidence": "69 of 69 training rows match a paper row exactly on BOTH whole-sequence GC percent and half-life in hours.",
+    "join_method": "exact numeric match on GC and half_life, because the training table uses barcodes such as X310001T1 while the sheet uses human-readable names, with zero overlap by name",
+    "join_risk": "This is an INFERRED join, not a recorded one. Two independent float columns agreeing across all 69 records makes coincidence implausible, but the provenance link is reconstructed rather than documented.",
+    "consequence": "Scoring the full 192 rows would be testing the model on its own training data. Only the 123 non-overlapping rows are used.",
+    "feature_window_confirmed": "Because training GC matches GC computed from the FULL RNA_sequence column, the training features were computed on the full sequence, not on the RT-PCR amplicon window. This run therefore folds the full sequence. The paper also reports amplicon-window predictions, which this run does not replicate."
+  },
+  "held_out_set": {
+    "n": 123,
+    "experiment_types": {"NLuc Barna lab": 101, "eGFP": 13, "MEV": 9},
+    "length_nt": {"minimum": 504, "maximum": 1588},
+    "half_life_hours": {"minimum": 0.865, "maximum": 4.36},
+    "records_above_the_training_half_life_maximum": 9,
+    "training_subset_for_contrast": {
+      "n": 69, "experiment_types": {"NLuc Eterna": 69},
+      "length_nt": {"minimum": 928, "maximum": 984},
+      "half_life_hours": {"minimum": 0.72, "maximum": 2.0298}
+    },
+    "this_is_a_distribution_shift_not_only_a_split": "The held-out records are different reporters and span wider lengths and half-lives. If transfer is poor, the shift and the model cannot be separated with this data alone. That limitation is declared here, before the result is known."
+  },
+  "prediction_procedure": {
+    "folding": "rnastable.ensemble_worker, ViennaRNA 2.7.2, RNA_Turner2004, 37 C, dangles 2, max_bp_span -1, min_loop_size 3, compute_bpp 1. The same settings as the frozen reference record.",
+    "features": ["energy_per_length = ensemble free energy per nucleotide",
+                 "GC = whole-sequence GC percent",
+                 "aup = mean unpaired probability"],
+    "model": "strand_rnafold_calibration_v1, without_alo arm, prediction = intercept + sum(coefficient * feature)",
+    "calibration_run": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z",
+    "no_refitting": "Nothing is refitted, rescaled or tuned. The frozen coefficients are applied as recorded."
+  },
+  "declared_criteria": {
+    "primary_metric": "Spearman rank correlation between predicted and measured half-life over the 123 held-out records",
+    "why_spearman_is_primary": "The project permits ranking and correlation claims only; the calibration has no demonstrated absolute accuracy and this run does not create one.",
+    "secondary_metrics": [
+      "Pearson correlation on log half-life",
+      "mean absolute error in hours, reported for completeness and NOT as a claim of absolute accuracy",
+      "the same metrics on the 69 training records, as an upper bound rather than a result"
+    ],
+    "expected_direction": "positive Spearman correlation",
+    "falsification": "Spearman rho at or below 0 means the calibration does not transfer to records it was not fitted on. That outcome is reportable and will be reported.",
+    "weak_transfer_threshold": "rho below 0.3 is to be described as no useful transfer rather than as weak success",
+    "baseline_comparison": {
+      "baselines": ["SUP DegScore2.1 FULL", "SUP Vienna FULL", "SUP EternaFold FULL"],
+      "source": "the paper's own predictor columns in the same sheet, on the same records",
+      "decision_rule": "If the calibration's Spearman is below every one of these baselines, the refit adds nothing over published predictors and must be reported as such.",
+      "sign_note": "The baselines are degradation or structure scores, so a baseline may correlate NEGATIVELY with half-life. Absolute Spearman is used for ranking the predictors, and the sign is reported."
+    },
+    "extrapolation_handling": "Records whose features fall outside the calibration's training ranges are flagged, and the primary metric is reported both over all 123 records and over the in-domain subset only. Neither is presented as the headline alone."
+  },
+  "what_this_cannot_establish": [
+    "Absolute accuracy. A correlation is not a calibration.",
+    "That the calibration transfers to the project's own construct, which is 1811 nt and 64.4 percent GC, outside this dataset's length and GC ranges.",
+    "Anything about the translation side. RiboNN is untouched by this run.",
+    "Anything about in-cell stability, which is a different quantity again.",
+    "That a positive result validates the design workflow. The workflow's predicted differences between synonymous variants span a few percent, far below the spread tested here."
+  ]
+}

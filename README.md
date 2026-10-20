@@ -71,6 +71,48 @@ local run artifacts, datasets, model weights and installed environments are not
 bundled. Original third-party [source](docs/third_party/RiboNN_LICENSE.txt) and
 [weight-license terms](docs/third_party/RiboNN_MODEL_WEIGHTS_LICENSE.txt) are retained.
 
+### 2026-10-20: first external validation — the calibration transfers, and matches a free baseline
+
+`strand_rnafold_calibration_v1` was tested against **measured** in-solution half-lives it was
+never fitted on. Protocol, metric, expected direction and falsification criterion were frozen
+**before** any correlation was computed
+([protocol](configs/external_validation_leppek_v1_2026-10-20.json)).
+
+The source is [Leppek et al. 2022](https://www.nature.com/articles/s41467-022-28776-w)
+Supplementary `Fig_S8a`, which measures in-solution half-life in hours — the exact quantity
+the calibration predicts. **All 69 of the calibration's training records turned out to be rows
+of that sheet**, matching exactly on both whole-sequence GC and half-life, so scoring the full
+192 rows would have been testing the model on its own training data. Only the **123
+non-overlapping records** were used: a different reporter, 504–1,588 nt, half-lives to 4.36 h,
+9 of them beyond the training maximum.
+
+| | Spearman | Pearson (log) | MAE |
+|---|---|---|---|
+| **held out, 123** | **+0.3268** | +0.5871 | 0.413 h |
+| held out, in-domain 122 | +0.3237 | +0.5951 | 0.413 h |
+| training subset, 69 — *upper bound, not a result* | +0.5290 | — | 0.236 h |
+
+The paper's own predictors on the same 123 records, per nucleotide: EternaFold **−0.3248**,
+Vienna −0.2829, DegScore 2.1 −0.2166.
+
+**Two conclusions, both load-bearing.** The calibration is **not fitting noise** — it carries
+real signal to records it never saw, across a reporter change and beyond its training range.
+And it **adds nothing over a per-nucleotide EternaFold score**, which is free and needs no
+refit; our 0.327 is indistinguishable from EternaFold's 0.325. The generalisation gap is now
+measured: 0.529 on training against 0.327 held out.
+
+**A correction recorded in the artifact.** The declared baseline comparison used the paper's
+predictor columns raw, and that was wrong: they are sums over nucleotides and correlate with
+sequence length at ρ +0.94 to +0.98, so raw they encode length rather than degradation. The
+first run therefore flattered this project five-fold. The per-nucleotide comparison is marked
+explicitly post-hoc, justified mechanically rather than by its effect, and the primary metric
+was untouched.
+
+Pearson on log (+0.587) well above Spearman (+0.327) says the model separates fast- from
+slow-degrading RNA better than it orders similar ones — which is precisely the regime the
+synonymous-variant work lives in, and this result does not rescue it. It also says nothing
+about the project's own construct, at 1,811 nt and 64.4% GC, outside this dataset entirely.
+
 ### 2026-10-20: the retired model and all out-of-scope data removed
 
 The learned pair model was retired earlier the same day; its artifacts were then **purged
