@@ -1,0 +1,183 @@
+{
+  "built_utc": "2026-10-20T04:19:14.374423+00:00",
+  "calibration_training_domain": {
+    "GC": {
+      "max": 60.23706896551724,
+      "min": 39.439655172413794
+    },
+    "aup": {
+      "max": 0.43978508479330203,
+      "min": 0.24164721411946694
+    },
+    "energy_per_length": {
+      "max": -0.24143260100792194,
+      "min": -0.5828204319394868
+    },
+    "target_hours": {
+      "max": 2.02976705,
+      "min": 0.71963478
+    }
+  },
+  "composite_score_emitted": false,
+  "coverage": {
+    "excluded_per_component": {
+      "ribonn_released_task": 0,
+      "strand_reference_replay": 1,
+      "strand_rnafold_calibration_v1": 0
+    },
+    "joint_scoring_available": true,
+    "records": 1,
+    "records_with_both_sides": 1,
+    "records_with_stability_score": 1,
+    "records_with_translation_score": 1,
+    "scored_per_component": {
+      "ribonn_released_task": 1,
+      "strand_reference_replay": 0,
+      "strand_rnafold_calibration_v1": 1
+    }
+  },
+  "features_outside_training_domain": [
+    "GC"
+  ],
+  "no_claim": [
+    "A bound score record. It establishes no stability, translation or expression benefit.",
+    "The two scores are incommensurable and are deliberately not combined.",
+    "No floor is selected, no gate requirement is satisfied, and no candidate was designed or scored."
+  ],
+  "records": [
+    {
+      "annotation": {
+        "cds_end": 1697,
+        "cds_size": 1653,
+        "cds_start": 44,
+        "numeric_boundaries_available": true,
+        "utr3_size": 114,
+        "utr5_size": 44
+      },
+      "composite_blocked_reason": "Incommensurable units across components and no selected floor; no weighting is justified.",
+      "composite_score": null,
+      "exclusions": [
+        {
+          "component": "strand_reference_replay",
+          "reason": "The published STRAND model is not applicable to RNAfold-derived features. configs/strand_rnafold_agreement_criterion_v1 returned feature_level_compatible false, output_level_equivalent false and outcome rejected, so the unchanged published coefficients may not be applied to this sequence.",
+          "run": "results/strand_rnafold_agreement_runs/20261019T172402.804593Z"
+        }
+      ],
+      "independent_validation": false,
+      "record_id": "403a45c5cbddc24b44641d09b870b283886072e102e874f12ac920e51e8be6dc",
+      "schema_version": 1,
+      "scores": [
+        {
+          "component": "strand_rnafold_calibration_v1",
+          "independent_validation": false,
+          "interpretation": "A separately named refit, NOT the published STRAND model, which this project's frozen agreement criterion rejected for RNAfold-derived features. The calibration is unvalidated: it has no independent evaluation against held-out measurements. EXTRAPOLATION: GC = 64.4395 lies outside the training range [39.4397, 60.2371] It predicts in-solution half-life of purified RNA in buffer, whereas the planned assay measures in-cell mRNA decay by RT-qPCR, so the two are different quantities. Every uridine in the assayed molecule is N1-methylpseudouridine, which neither the folding engine nor the calibration represents. This number ranks nothing and establishes no stability benefit.",
+          "model_identity": {
+            "arm": "without_alo",
+            "calibration_model_sha256": "9daa59f2e75537d961eaf215b207a7e96c9c4bf9af65e45c26bc6ca4a636d52c",
+            "criterion_sha256": "4b63898b2080c39a6d723b832688f7c955d57902b0e3f42f41aad8976c635316",
+            "name": "strand_rnafold_calibration_v1",
+            "ncomp": 1
+          },
+          "raw_artifact_paths": [
+            "results/reference_fold/FLUC-REF-V1_core.json",
+            "results/reference_transcript/FLUC-REF-V1.json",
+            "results/strand_rnafold_calibration_runs/20261019T174049.053308Z/calibration_model.json"
+          ],
+          "run": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z",
+          "score_name": "predicted_in_solution_half_life",
+          "settings": {
+            "constraints": null,
+            "dangles": 2,
+            "energy_hypothesis": "ensemble_energy_per_nt",
+            "feature_order": [
+              "energy_per_length",
+              "GC",
+              "aup"
+            ],
+            "features": {
+              "GC": 64.43953616786305,
+              "aup": 0.37788912883712805,
+              "energy_per_length": -0.42627148599271814
+            },
+            "full_model_details": "{ temperature: 37, dangles: 2, betaScale: 1, pf_smooth: 1, special_hp: 1, noLP: 0, noGU: 0, noGUclosure: 0, logML: 0, circ: 0, circ_penalty: 1, gquad: 0, uniq_ML: 0, energy_set: 0, backtrack: 1, backtrack_type: F, compute_bpp: 1, max_bp_span: -1, min_loop_size: 3, window_size: -1, oldAliEn: 0, ribo: 0, cv_fact: 1, nc_fact: 1, sfact: 1.07, salt: 1.021, saltMLLower: 6, saltMLUpper: 24, saltDPXInit: 99999, saltDPXInitFact: -45.324, helical_rise: 2.8, backbone_length: 6 }",
+            "parameter_file_sha256": "9521527a251d5e68e6149595f8aa72aa72c63e00dc5af41d7164e6ecaa664777",
+            "parameter_set": "RNA_Turner2004",
+            "precision": "binding_default",
+            "temperature_c": 37.0
+          },
+          "target_scale": "released STRAND in-solution half-life of purified RNA in buffer",
+          "tool_identity": {
+            "parameter_file_sha256": "9521527a251d5e68e6149595f8aa72aa72c63e00dc5af41d7164e6ecaa664777",
+            "tool": "ViennaRNA",
+            "version": "2.7.2"
+          },
+          "units": "hours",
+          "value": 1.3197105633038912
+        },
+        {
+          "component": "ribonn_released_task",
+          "independent_validation": false,
+          "interpretation": "Released-task score for the A549 arm only, on the task's own scale. It is not a prediction of luminescence in the planned assay and carries the documented out-of-distribution caveat for a designed reporter construct rather than an endogenous human transcript. The T-cell arm is declared model-blind and receives no translation score. Every uridine is N1-methylpseudouridine, which RiboNN does not represent.",
+          "model_identity": {
+            "checkpoints": 50,
+            "folds": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "task": "predicted_TE_A549",
+            "weight_archive_sha256": "2ce3bc1adb38ec6752c79147241a4fb2664e9804e806b3eab1287489a15d8b64"
+          },
+          "raw_artifact_paths": [
+            "results/ribonn_fixed_inference_runs/20261020T021707.178744Z/joined_predictions.json",
+            "results/ribonn_fixed_inference_runs/20261020T021707.178744Z/summary.json"
+          ],
+          "run": "results/ribonn_fixed_inference_runs/20261020T021707.178744Z",
+          "score_name": "predicted_TE_A549",
+          "settings": {
+            "aggregation": "mean over released per-fold checkpoint predictions",
+            "fold_scores": {
+              "0": 0.763998806476593,
+              "1": 0.8884053230285645,
+              "2": 0.8381839990615845,
+              "3": 0.8242216110229492,
+              "4": 0.832332968711853,
+              "5": 0.8276653289794922,
+              "6": 0.7936848402023315,
+              "7": 0.8216874003410339,
+              "8": 0.8077453374862671,
+              "9": 0.8787973523139954
+            },
+            "poly_a_included": false
+          },
+          "target_scale": "RiboNN predicted_TE_A549, released task scale",
+          "tool_identity": {
+            "bitwise_replay_across_processes": true,
+            "component": "ribonn-inference",
+            "numpy_version": "1.22.4",
+            "torch_version": "1.13.1",
+            "weight_archive_sha256": "2ce3bc1adb38ec6752c79147241a4fb2664e9804e806b3eab1287489a15d8b64",
+            "weights_files_verified": 182
+          },
+          "units": "released RiboNN predicted translational-efficiency task scale",
+          "value": 0.8276722967624665
+        }
+      ],
+      "sequence": {
+        "alphabet": "ACGU",
+        "length": 1811,
+        "sha256": "403a45c5cbddc24b44641d09b870b283886072e102e874f12ac920e51e8be6dc"
+      }
+    }
+  ],
+  "schema_sha256": "3fbdec9d9120998f9557affbf4a5aecdc35910650097f15193c89a28d00d4d56",
+  "schema_version": 1,
+  "tx_id": "FLUC-REF-V1"
+}
