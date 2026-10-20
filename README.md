@@ -71,6 +71,40 @@ local run artifacts, datasets, model weights and installed environments are not
 bundled. Original third-party [source](docs/third_party/RiboNN_LICENSE.txt) and
 [weight-license terms](docs/third_party/RiboNN_MODEL_WEIGHTS_LICENSE.txt) are retained.
 
+### 2026-10-20: the modification-constancy assumption does not survive testing
+
+The project has carried one assumption that licenses ranking a modified panel: that because
+every uridine is **N1-methylpseudouridine** and the modification is constant across the panel,
+it shifts every construct equally and leaves the **order** unchanged. It was recorded as
+unverified. Leppek et al. measured six constructs both unmodified and pseudouridine-modified,
+by two independent readouts, so it is now testable
+([protocol](configs/pseudouridine_effect_check_v1_2026-10-20.json)).
+
+| readout | fold-change range | same direction | dispersion ratio | verdict |
+|---|---|---|---|---|
+| in-solution half-life | 1.230 – 2.683× | **yes** | 1.76 | ambiguous |
+| protein output, 6 h | 0.234 – 1.250× | **no** | 23.14 | **construct-dependent** |
+| protein output, 24 h | 0.256 – 3.309× | **no** | 19.84 | **construct-dependent** |
+
+On expression the effect spans **13-fold and changes sign** — it cuts output 4× for one
+construct and raises it 3.3× for another, with the CDS dominating. **A modification that
+inverts the ordering cannot be treated as a constant shift.** On stability the assumption is
+not contradicted but not supported either: every construct moved the same way, and the
+magnitude still varied 2.2-fold.
+
+[Gate v8](configs/stage2_to_stage3_gate_v8_2026-10-20.json) therefore adds a prohibition
+rather than a permission — the first gate version in this project to **remove** a licence to
+claim something: *a predicted ordering of modified constructs must not be presented as the
+expected measured ordering.* That applies to the Pareto fronts and panels in
+`results/design_workflow_runs/`.
+
+**Three caveats travel with the finding and cut the other way.** This is **Ψ, not m1Ψ** —
+different nucleosides, and m1Ψ is used in therapeutic mRNA partly because it behaves better
+than Ψ; this cannot be resolved with this dataset. The dispersion ratio of 23 compares
+biological differences against *technical* replicate noise, so the robust part is the 13-fold
+span and the sign change, not the number. And protein output is translation × stability, which
+this design cannot separate. Six constructs support no significance claim and none is made.
+
 ### 2026-10-20: first external validation — the calibration transfers, and matches a free baseline
 
 `strand_rnafold_calibration_v1` was tested against **measured** in-solution half-lives it was

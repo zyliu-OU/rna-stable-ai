@@ -1,0 +1,326 @@
+{
+  "built_utc": "2026-10-20T21:21:32.473566+00:00",
+  "consequence_for_this_project": "The ranking argument does not hold. Predictions made on the unmodified sequence would not order the modified molecules, and every ranking claim in this project inherits that limitation.",
+  "disclosure_about_declaration_order": {
+    "mitigation": "The decision rule below is a fixed threshold on a ratio of dispersions, not a p-value chosen after the fact, and both readouts are reported whatever they show.",
+    "statement": "These criteria were written before any statistical test was computed, but AFTER the raw per-construct values were visible during inspection of the workbook.",
+    "why_it_is_recorded": "The in-solution half-life validation (external_validation_leppek_v1) was declared before its numbers were seen at all. This check is a weaker guarantee and should not be read as the same standard."
+  },
+  "in_solution_half_life": {
+    "all_same_direction": true,
+    "constructs": [
+      {
+        "construct": "Eterna_hHBB+3XHANluc+JEV+hHBB+F30Pepper_John2000_LinearDesign-LocalDesign_w50",
+        "fold_change": 1.2301811575919666,
+        "log2_fold_change": 0.298870783788016,
+        "log2_fold_change_uncertainty": 0.4780428547680665,
+        "psu_hours": 1.748870112933202,
+        "unmodified_hours": 1.421636237996483
+      },
+      {
+        "construct": "Eterna_hHBB+3XHANluc+JEV+hHBB+F30Pepper_jiabei618_LinearDesign-1",
+        "fold_change": 1.5828025477707006,
+        "log2_fold_change": 0.6624812926706591,
+        "log2_fold_change_uncertainty": 0.25719823153118093,
+        "psu_hours": 5.133663017034108,
+        "unmodified_hours": 3.243400779373662
+      },
+      {
+        "construct": "Eterna_hHBB+3XHANluc+JEV+hHBB+F30Pepper_EiFisker_Yellowstone",
+        "fold_change": 1.5955152101533825,
+        "log2_fold_change": 0.6740223619912524,
+        "log2_fold_change_uncertainty": 0.16228291721177976,
+        "psu_hours": 1.972474262428347,
+        "unmodified_hours": 1.236261647570709
+      },
+      {
+        "construct": "Eterna_hHBB+3XHANluc+JEV+hHBB+F30Pepper_GC-rich_2",
+        "fold_change": 2.6073246933580188,
+        "log2_fold_change": 1.3825702546528755,
+        "log2_fold_change_uncertainty": 0.5795978331219654,
+        "psu_hours": 4.010340086553722,
+        "unmodified_hours": 1.538105360168524
+      },
+      {
+        "construct": "hHBB_Nluc_hHBB",
+        "fold_change": 2.6512245397058307,
+        "log2_fold_change": 1.4066588613035882,
+        "log2_fold_change_uncertainty": 0.2892909401195197,
+        "psu_hours": 2.421644064423524,
+        "unmodified_hours": 0.9134058727037204
+      },
+      {
+        "construct": "Eterna_hHBB+3XHANluc+JEV+hHBB+F30Pepper_-423.7 kCal",
+        "fold_change": 2.6825038841276996,
+        "log2_fold_change": 1.4235802599315506,
+        "log2_fold_change_uncertainty": 0.26686998705662274,
+        "psu_hours": 3.473899566781663,
+        "unmodified_hours": 1.29502126253633
+      }
+    ],
+    "dispersion": {
+      "between_construct_sd": 0.48970864458215896,
+      "decision_rule": {
+        "ambiguous": "ratio between 1.0 and 2.0",
+        "consistent_with_constant": "ratio at or below 1.0",
+        "construct_dependent": "ratio above 2.0"
+      },
+      "dispersion_ratio": 1.7610321784689582,
+      "median_within_construct_uncertainty": 0.27808046358807126,
+      "verdict": "ambiguous"
+    },
+    "fold_change_range": [
+      1.2301811575919666,
+      2.6825038841276996
+    ],
+    "fold_change_spread": 2.180576305833362,
+    "mean_fold_change": 2.0582586721179332,
+    "n_constructs": 6,
+    "readout": "in_solution_half_life_hours"
+  },
+  "modification_identity": {
+    "consequence": "This check tests \u03a8, not m1\u03a8. A construct-dependent \u03a8 effect is evidence that a uridine modification's effect CAN depend on sequence; it is not a measurement of m1\u03a8. A constant \u03a8 effect would likewise not prove m1\u03a8 is constant. This limitation cannot be removed with this dataset.",
+    "these_are_not_the_same_nucleoside": true,
+    "what_the_paper_used": "pseudouridine, recorded as PSU against Unmodified in the source sheets",
+    "what_this_project_uses": "N1-methylpseudouridine (m1\u03a8), confirmed by the collaborator"
+  },
+  "no_claim": [
+    "This tests pseudouridine, NOT N1-methylpseudouridine. They are different nucleosides and no quantitative statement about m1-psi follows.",
+    "Six constructs support no significance claim and none is made.",
+    "A dispersion ratio is a description of six numbers against their own error bars.",
+    "Nothing here says the predictions are correct, only whether a modification would preserve their order."
+  ],
+  "protein_output": {
+    "readout": "protein_output_log2_nluc_over_fluc",
+    "timepoints": {
+      "24h": {
+        "all_same_direction": false,
+        "constructs": [
+          {
+            "cds": "LinearDesign-1",
+            "fold_change": 0.2560592418958416,
+            "id": "1120172B1",
+            "log2_effect": -1.9654504639525596,
+            "log2_effect_standard_error": 0.07312618193083668,
+            "replicates": {
+              "psu": 4,
+              "unmodified": 4
+            },
+            "utr5": "CoV-2-TTG-TTGfull\u00ad\u00ad-dSL1-3"
+          },
+          {
+            "cds": "LinearDesign-1",
+            "fold_change": 0.4636578488795413,
+            "id": "1120178B1",
+            "log2_effect": -1.1088675175744118,
+            "log2_effect_standard_error": 0.04648785005525736,
+            "replicates": {
+              "psu": 4,
+              "unmodified": 4
+            },
+            "utr5": "C3"
+          },
+          {
+            "cds": "LinearDesign-1",
+            "fold_change": 0.5690633464491021,
+            "id": "1120166B1",
+            "log2_effect": -0.8133388368701304,
+            "log2_effect_standard_error": 0.029984395425977757,
+            "replicates": {
+              "psu": 4,
+              "unmodified": 4
+            },
+            "utr5": "hHBB"
+          },
+          {
+            "cds": "Nluc_start",
+            "fold_change": 0.6228130754557041,
+            "id": "1120173B1",
+            "log2_effect": -0.6831288619394487,
+            "log2_effect_standard_error": 0.06171074078343801,
+            "replicates": {
+              "psu": 4,
+              "unmodified": 4
+            },
+            "utr5": "CoV-2-TTG-TTGfull\u00ad\u00ad-dSL1-3"
+          },
+          {
+            "cds": "Nluc_start",
+            "fold_change": 1.2284229496858154,
+            "id": "1120167B1",
+            "log2_effect": 0.296807370445503,
+            "log2_effect_standard_error": 0.0674617753452485,
+            "replicates": {
+              "psu": 4,
+              "unmodified": 4
+            },
+            "utr5": "hHBB"
+          },
+          {
+            "cds": "Nluc_start",
+            "fold_change": 3.309453529113612,
+            "id": "1120179B1",
+            "log2_effect": 1.7265930128254219,
+            "log2_effect_standard_error": 0.10350779375957617,
+            "replicates": {
+              "psu": 4,
+              "unmodified": 4
+            },
+            "utr5": "C3"
+          }
+        ],
+        "dispersion": {
+          "between_construct_sd": 1.2812850743293807,
+          "decision_rule": {
+            "ambiguous": "ratio between 1.0 and 2.0",
+            "consistent_with_constant": "ratio at or below 1.0",
+            "construct_dependent": "ratio above 2.0"
+          },
+          "dispersion_ratio": 19.838354360968182,
+          "median_within_construct_uncertainty": 0.06458625806434326,
+          "verdict": "construct_dependent"
+        },
+        "factorial": {
+          "by_cds": {
+            "LinearDesign-1": -1.2958856061323674,
+            "Nluc_start": 0.44675717377715873
+          },
+          "by_utr5": {
+            "C3": 0.30886274762550503,
+            "CoV-2-TTG-TTGfull\u00ad\u00ad-dSL1-3": -1.3242896629460041,
+            "hHBB": -0.2582657332123137
+          }
+        },
+        "fold_change_range": [
+          0.2560592418958416,
+          3.309453529113612
+        ],
+        "fold_change_spread": 12.92456192797686,
+        "mean_fold_change": 1.0749116652466026,
+        "n_constructs": 6
+      },
+      "6h": {
+        "all_same_direction": false,
+        "constructs": [
+          {
+            "cds": "LinearDesign-1",
+            "fold_change": 0.23428514821625676,
+            "id": "1120172B1",
+            "log2_effect": -2.0936625929862576,
+            "log2_effect_standard_error": 0.05013186027475163,
+            "replicates": {
+              "psu": 4,
+              "unmodified": 4
+            },
+            "utr5": "CoV-2-TTG-TTGfull\u00ad\u00ad-dSL1-3"
+          },
+          {
+            "cds": "LinearDesign-1",
+            "fold_change": 0.2612051841099945,
+            "id": "1120178B1",
+            "log2_effect": -1.9367445647122006,
+            "log2_effect_standard_error": 0.03329417743270311,
+            "replicates": {
+              "psu": 4,
+              "unmodified": 4
+            },
+            "utr5": "C3"
+          },
+          {
+            "cds": "Nluc_start",
+            "fold_change": 0.4195919406668457,
+            "id": "1120173B1",
+            "log2_effect": -1.252941127343103,
+            "log2_effect_standard_error": 0.04555872224473519,
+            "replicates": {
+              "psu": 4,
+              "unmodified": 4
+            },
+            "utr5": "CoV-2-TTG-TTGfull\u00ad\u00ad-dSL1-3"
+          },
+          {
+            "cds": "LinearDesign-1",
+            "fold_change": 0.824817083677988,
+            "id": "1120166B1",
+            "log2_effect": -0.27785388065579397,
+            "log2_effect_standard_error": 0.04237272700774556,
+            "replicates": {
+              "psu": 4,
+              "unmodified": 4
+            },
+            "utr5": "hHBB"
+          },
+          {
+            "cds": "Nluc_start",
+            "fold_change": 0.9455062425375873,
+            "id": "1120167B1",
+            "log2_effect": -0.08084111154226825,
+            "log2_effect_standard_error": 0.06631919310743119,
+            "replicates": {
+              "psu": 4,
+              "unmodified": 4
+            },
+            "utr5": "hHBB"
+          },
+          {
+            "cds": "Nluc_start",
+            "fold_change": 1.2495559686402604,
+            "id": "1120179B1",
+            "log2_effect": 0.3214155223701063,
+            "log2_effect_standard_error": 0.03797970705681817,
+            "replicates": {
+              "psu": 4,
+              "unmodified": 4
+            },
+            "utr5": "C3"
+          }
+        ],
+        "dispersion": {
+          "between_construct_sd": 1.0171656779650022,
+          "decision_rule": {
+            "ambiguous": "ratio between 1.0 and 2.0",
+            "consistent_with_constant": "ratio at or below 1.0",
+            "construct_dependent": "ratio above 2.0"
+          },
+          "dispersion_ratio": 23.135423937899116,
+          "median_within_construct_uncertainty": 0.04396572462624038,
+          "verdict": "construct_dependent"
+        },
+        "factorial": {
+          "by_cds": {
+            "LinearDesign-1": -1.4360870127847507,
+            "Nluc_start": -0.337455572171755
+          },
+          "by_utr5": {
+            "C3": -0.8076645211710471,
+            "CoV-2-TTG-TTGfull\u00ad\u00ad-dSL1-3": -1.6733018601646803,
+            "hHBB": -0.1793474960990311
+          }
+        },
+        "fold_change_range": [
+          0.23428514821625676,
+          1.2495559686402604
+        ],
+        "fold_change_spread": 5.33348348435155,
+        "mean_fold_change": 0.6558269279748221,
+        "n_constructs": 6
+      }
+    }
+  },
+  "protocol": "configs/pseudouridine_effect_check_v1_2026-10-20.json",
+  "protocol_sha256": "d3d434dca0d6fe3bc2d92952df002de0895f531a16dd6803272bd2c87baac91c",
+  "purpose": "Test whether a pseudouridine modification's effect is constant across constructs, which is the unverified assumption that licenses every ranking claim this project makes about a modified panel.",
+  "readouts_agree": false,
+  "verdicts": {
+    "half_life": "ambiguous",
+    "protein_24h": "construct_dependent",
+    "protein_6h": "construct_dependent"
+  },
+  "what_this_cannot_establish": [
+    "Anything quantitative about m1\u03a8, which is a different nucleoside from the \u03a8 used here.",
+    "Anything about the project's own construct, which is not in this dataset.",
+    "That a constant effect would make the predictions correct; it would only mean the modification does not reorder them.",
+    "A significance claim. Six constructs cannot support one, and none is made."
+  ],
+  "workbook_hash_verified": true
+}

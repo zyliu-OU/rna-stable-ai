@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "name": "pseudouridine_effect_check_v1",
+  "effective_date": "2026-10-20",
+  "purpose": "Test whether a pseudouridine modification's effect is constant across constructs, which is the unverified assumption that licenses every ranking claim this project makes about a modified panel.",
+  "authorized_by": "user, 2026-10-20: 'do the m1Ψ check first and then start the MPRA acquisition'",
+  "why_this_matters": {
+    "the_assumption": "Every uridine in the molecules the collaborator will assay is N1-methylpseudouridine. No component in the stack represents it: ViennaRNA, strand_rnafold_calibration_v1 and RiboNN all treat the sequence as canonical U. The project has therefore argued that because the modification is CONSTANT ACROSS THE PANEL, it does not confound a RANKING of constructs.",
+    "what_that_argument_needs": "That argument requires the modification's effect to be sequence-independent, so that it shifts every construct by the same factor and leaves the order unchanged.",
+    "status_before_this_check": "Recorded as unverified in configs/transcript_inputs_v1_2026-10-19.json and in reports/remaining_limitations_before_candidate_design_2026-10-19.md section A1. There was no evidence either way.",
+    "consequence_if_the_effect_is_construct_dependent": "The ranking argument does not hold. Predictions made on the unmodified sequence would not order the modified molecules, and every ranking claim in this project inherits that limitation."
+  },
+  "disclosure_about_declaration_order": {
+    "statement": "These criteria were written before any statistical test was computed, but AFTER the raw per-construct values were visible during inspection of the workbook.",
+    "why_it_is_recorded": "The in-solution half-life validation (external_validation_leppek_v1) was declared before its numbers were seen at all. This check is a weaker guarantee and should not be read as the same standard.",
+    "mitigation": "The decision rule below is a fixed threshold on a ratio of dispersions, not a p-value chosen after the fact, and both readouts are reported whatever they show."
+  },
+  "modification_identity": {
+    "what_the_paper_used": "pseudouridine, recorded as PSU against Unmodified in the source sheets",
+    "what_this_project_uses": "N1-methylpseudouridine (m1Ψ), confirmed by the collaborator",
+    "these_are_not_the_same_nucleoside": true,
+    "consequence": "This check tests Ψ, not m1Ψ. A construct-dependent Ψ effect is evidence that a uridine modification's effect CAN depend on sequence; it is not a measurement of m1Ψ. A constant Ψ effect would likewise not prove m1Ψ is constant. This limitation cannot be removed with this dataset."
+  },
+  "source": {
+    "paper": "Leppek K, Byeon GW, Kladwang W, et al. Nat Commun 13, 1536 (2022).",
+    "doi": "10.1038/s41467-022-28776-w",
+    "file_sha256": "9a8b6b4314ab892aa3e4a4476993189dff1245d4ab55494723782e6afebae0e7",
+    "sheets": {
+      "Fig_S8b": "in-solution half-life in hours, 6 constructs x {Unmodified, PSU}, with reported errors",
+      "Fig_4a": "Nluc and Fluc luminescence, 6 paired constructs as a 3 x 2 factorial of three 5'UTRs by two CDSs, 4 replicates per cell, at 6 h and 24 h"
+    },
+    "redistribution": "Not republished. The hash is pinned so the source can be re-acquired; only derived metrics are published."
+  },
+  "readouts": {
+    "in_solution_half_life": {
+      "statistic": "per-construct log2 fold change, PSU over Unmodified",
+      "n_constructs": 6,
+      "uncertainty": "propagated from the reported half-life errors on both arms"
+    },
+    "protein_output": {
+      "statistic": "per-construct difference in mean log2(Nluc/Fluc), PSU minus Unmodified, computed separately at 6 h and 24 h",
+      "why_normalised": "Nluc is the construct's reporter and Fluc the co-transfected control; the ratio removes transfection efficiency, and the magnitudes in the sheet are consistent with that role",
+      "n_constructs": 6,
+      "replicates_per_cell": 4,
+      "uncertainty": "within-cell standard deviation over the 4 replicates"
+    }
+  },
+  "declared_criteria": {
+    "question": "Is the modification's effect constant across constructs?",
+    "primary_statistic": "the ratio of the between-construct standard deviation of the effect to the median within-construct uncertainty of the effect",
+    "decision_rule": {
+      "consistent_with_constant": "ratio at or below 1.0",
+      "ambiguous": "ratio between 1.0 and 2.0",
+      "construct_dependent": "ratio above 2.0"
+    },
+    "why_a_dispersion_ratio": "With six constructs, a significance test has almost no power and a null result would be uninformative. Comparing the spread of the effect against the noise on the effect answers the question that matters: is the variation in the effect larger than the measurement can explain.",
+    "secondary": [
+      "the factorial breakdown: does the effect differ by 5'UTR and by CDS",
+      "the range of fold changes, reported directly, because a reader can judge a 1.2-fold against a 2.7-fold effect without any statistic",
+      "whether the two readouts agree with each other, since they are independent measurements"
+    ],
+    "both_outcomes_are_reportable": "A constant effect would support the project's ranking argument for Ψ and would be reported as such, with the m1Ψ caveat intact. A construct-dependent effect undermines it and will be reported in the same place."
+  },
+  "what_this_cannot_establish": [
+    "Anything quantitative about m1Ψ, which is a different nucleoside from the Ψ used here.",
+    "Anything about the project's own construct, which is not in this dataset.",
+    "That a constant effect would make the predictions correct; it would only mean the modification does not reorder them.",
+    "A significance claim. Six constructs cannot support one, and none is made."
+  ]
+}
