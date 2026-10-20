@@ -270,12 +270,12 @@ the deletions up.
 | Item | Value |
 |---|---|
 | Commit before this stretch | `df0ee14` Replace the workflow diagram with the state the finished pipeline is actually in |
-| Commit published with this handoff | see §10.1 |
+| Commit published with this handoff | `188a78e` |
 | README picture | `diagram_10182026.png`, `sha256 baa831ce16df27ed44a41c2a3b481455a213b328122227b9b2a3820dda47cff1`, **byte-unchanged** |
 | Workflow diagram | `workflow_10202026.svg`; it needs no change, since it never depicted the learned model as live |
 | Gates | v5 and v6 frozen; **v7 current** |
 
 ### 10.1 Publication record
 
-This handoff is published in the commit titled *"Purge the retired learned model and all data
-at or above 3,000 nt"*. Its hash is recorded by the commit immediately after it.
+`188a78e` — Purge the retired learned model and all data at or above 3,000 nt. The hash is
+recorded by the commit immediately after it.
