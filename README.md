@@ -113,11 +113,29 @@ non-dominated, resumes exact, optimizer ahead of a random baseline of equal budg
 the artifact recording that the three seeds select the same points and are therefore **not**
 three independent confirmations.
 
-No RNA was designed, proposed or scored. Before any real campaign: the synonymous design
-space is ~10²⁷³ variants (551 codons, 535 with synonyms), so a reduced parameterization must
-be chosen and frozen; a reference point on the real scales does not exist; the span policy
-is unresolved; and the objectives rest on structure at 0.42–0.44 pair F1 feeding two proxies
-that predict neither of the assay's units.
+No RNA was designed, proposed or scored. Before any real campaign: a reference point on the
+real scales does not exist; the span policy is unresolved; and the objectives rest on
+structure at 0.42–0.44 pair F1 feeding two proxies that predict neither of the assay's units.
+
+**The design space is windowed synonymous edits at the 5′ end of the ORF**
+([specification v1](configs/synonymous_window_design_space_v1_2026-10-20.json)). The
+whole-ORF synonymous space is ~10²⁷³ variants and is not a domain; a 30-codon window is
+~10¹³, so even the window is sampled into a finite pool the optimizer selects from. The
+protein is preserved exactly and verified on every member, edits are confined to the window,
+the start codon and the confirmed tandem stop are untouched, and no homopolymer run exceeds
+the reference's own longest run of 6. Members failing a constraint are discarded and counted
+by cause, never repaired.
+
+A confound worth knowing about: **the reference 5′ window is GC-maximal for this protein
+segment**, so every synonymous edit moves GC down or sideways, and window GC stays
+correlated with edit distance at r = −0.88 even after decorrelating the sampler (−0.98
+without). That is a property of editing away from a GC-optimised reference, not a sampler
+artifact — in free mode, edit distance and GC content cannot be separated. A GC-neutral mode
+(only equal-GC synonyms) holds window GC exactly constant and removes the confound, at the
+cost of 13 substitutable positions instead of 29 and a space of ~8,000 variants, small
+enough to enumerate exhaustively. **Both pools are built and recorded; which is primary is
+not yet decided.** The 30-codon window and the choice of the 5′ region are declared choices,
+not findings of this project.
 
 ### 2026-10-19: engine agreement, a named calibration, score records and a Stage 2 census
 

@@ -1,0 +1,116 @@
+{
+  "all_members_verified": true,
+  "built_utc": "2026-10-20T17:29:50.906649+00:00",
+  "candidates_proposed_for_assay": false,
+  "codon_count": 551,
+  "formulation": "configs/pareto_objective_formulation_v1_2026-10-20.json",
+  "gate": "configs/stage2_to_stage3_gate_v5_2026-10-20.json",
+  "gc_confound": {
+    "consequence": "In free mode edit distance and GC content cannot be separated; any effect attributed to one could be the other. Neutral mode removes the confound by construction and costs space.",
+    "free_mode_pearson_substitutions_vs_window_gc": -0.877732632223593,
+    "neutral_mode_window_gc_is_constant": true,
+    "which_is_primary": "not decided; both are recorded so the choice rests on these numbers",
+    "why": "The reference 5' window is GC-maximal for this protein segment, so every synonymous edit moves GC down or sideways. The correlation is a property of editing away from a GC-optimised reference, not a sampler artifact, and sampling cannot remove it in free mode."
+  },
+  "max_homopolymer": 6,
+  "no_claim": [
+    "Specifying a design space establishes no stability, translation or expression benefit.",
+    "No member was scored, ranked or proposed for an assay.",
+    "The 30-codon window and the 5' region are declared choices, not findings of this project.",
+    "A free-mode pool cannot separate edit distance from GC content.",
+    "Protein preservation is verified; nothing else about a member is verified."
+  ],
+  "optimizer_features_emitted": false,
+  "orf_length_nt": 1653,
+  "per_mode": {
+    "free": {
+      "attempts": 612,
+      "distinct_substitution_counts": 30,
+      "gc_mode": "free",
+      "pearson_substitutions_vs_orf_gc3": -0.8726800099385167,
+      "pearson_substitutions_vs_window_gc": -0.877732632223593,
+      "rejected": {
+        "duplicate": 8,
+        "homopolymer_run_too_long": 93
+      },
+      "size": 512,
+      "substitutable_positions": 29,
+      "substitution_count_range": [
+        0,
+        29
+      ],
+      "unique_members": 512,
+      "window_gc_is_constant": false,
+      "window_gc_range": [
+        0.34444444444444444,
+        0.6666666666666666
+      ]
+    },
+    "neutral": {
+      "attempts": 684,
+      "distinct_substitution_counts": 14,
+      "gc_mode": "neutral",
+      "pearson_substitutions_vs_orf_gc3": null,
+      "pearson_substitutions_vs_window_gc": null,
+      "rejected": {
+        "duplicate": 173
+      },
+      "size": 512,
+      "substitutable_positions": 13,
+      "substitution_count_range": [
+        0,
+        13
+      ],
+      "unique_members": 512,
+      "window_gc_is_constant": true,
+      "window_gc_range": [
+        0.6666666666666666,
+        0.6666666666666666
+      ]
+    }
+  },
+  "protein_preserved_on_every_member": true,
+  "protein_sha256": "34992eaae9881fe7a485e4ac76faa40de50661dfacd338f06ee2ed17fb5afa2b",
+  "purpose": "The windowed synonymous design space, enumerated into finite pools. A specification of the optimisation domain, not a candidate set.",
+  "reference_orf_sha256": "86322fc15d89f604e34e3a3fb275f059adb834f7dc904f97f20c44498ba9168d",
+  "scored": false,
+  "seed": 1729,
+  "specification": "configs/synonymous_window_design_space_v1_2026-10-20.json",
+  "verification_failures": {
+    "free": [],
+    "neutral": []
+  },
+  "window_codon_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "window_codons": 30
+}
