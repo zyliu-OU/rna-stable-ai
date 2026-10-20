@@ -333,13 +333,12 @@ that clone has no committer identity configured.
 | Item | Value |
 |---|---|
 | Commit before this stretch | `415d081` Record the gate-review commit hash in handoff 2026-10-20 V1 |
-| Commit published with this handoff | see §9.1 |
+| Commit published with this handoff | `b41c821` |
 | README picture | `diagram_10182026.png`, `sha256 baa831ce16df27ed44a41c2a3b481455a213b328122227b9b2a3820dda47cff1`, **byte-unchanged**, re-verified before publishing |
 | Gate | `configs/stage2_to_stage3_gate_v5_2026-10-20.json`, **unchanged**; not superseded by the formulation config |
 
 ### 9.1 Publication record
 
-This handoff is published in the commit titled *"Install BoTorch and formulate the
-optimisation objective as a Pareto front over both score sides"*. Its hash is recorded by
-the commit immediately after it, since a file cannot contain the hash of the commit that
-adds it. Run `git -C "$PUB" log --oneline -3` to see both.
+`b41c821` — Install BoTorch and formulate the optimisation objective as a Pareto front
+over both score sides. The hash is recorded by the commit immediately after it, since a
+file cannot contain the hash of the commit that adds it.
