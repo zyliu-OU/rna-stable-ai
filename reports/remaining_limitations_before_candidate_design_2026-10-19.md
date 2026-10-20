@@ -173,14 +173,17 @@ translate less well.**
 |---|---|---|
 | 1 | Frozen independent sequence- and family/clan-separated validation | **not satisfied** |
 | 2 | Accuracy and failures by length band and family vs native controls | **partially satisfied** |
-| 3 | Resolve sparse 2,000–2,999 nt coverage | **blocked on acquisition** |
+| 3 | Resolve sparse 2,000–2,999 nt coverage | **satisfied** by accepted limitation (gate v3) |
 | 4 | Credible structure accuracy with review of native baseline gaps | **not satisfied** |
 | 5 | Constraint decoder resource and replay checks | **partially satisfied** |
 | 6 | Document remaining limitations | **partially satisfied** — *this document addresses it* |
 
 Statuses as recorded in
-`results/stage2_band_coverage_census_runs/20261019T180243.655199Z/summary.json`.
-"Partially satisfied" is not satisfied: `requirements_satisfied` is **0**.
+`results/stage2_band_coverage_census_runs/20261019T180243.655199Z/summary.json`,
+except requirement 3, resolved on 2026-10-19 by
+`configs/stage2_to_stage3_gate_v3_2026-10-19.json`. "Partially satisfied" is not
+satisfied: `requirements_satisfied` is **1 of 6**, and that one was satisfied by
+**narrowing a claim, not by improving coverage or accuracy**.
 
 ### D2. No experimental reference structures
 
@@ -204,7 +207,14 @@ RF02540 31 and RF02541 25, with RF02540 a new family), while **clan-level
 expansion is not** — the only out-of-baseline clan, CL00004 via RF02462, is
 blocked by prior-exposure overlap on both its records.
 
-*Evidence:* `results/stage2_band_coverage_census_runs/20261019T180243.655199Z/summary.json`,
+**Resolved 2026-10-19 by acceptance, not by acquisition.** Gate v3 records the
+band as a documented limitation. The binding consequence is that **the full
+1–2,999 nt range may not be claimed**: 1–1,999 nt is claimable without caveat,
+and any statement spanning 2,000–2,999 nt must carry this limitation. Family
+expansion was available and deliberately not taken.
+
+*Evidence:* `configs/stage2_to_stage3_gate_v3_2026-10-19.json`,
+`results/stage2_band_coverage_census_runs/20261019T180243.655199Z/summary.json`,
 `results/band_clan_availability_runs/20261019T185713.116447Z/summary.json`.
 
 ---
@@ -280,6 +290,7 @@ stability, translation or expression.
 - This document **does not** satisfy any requirement by itself; marking
   requirement 6 satisfied is a gate-review judgement recorded separately.
 - Listing a limitation is **not** resolving it. B3, B4 and D1–D4 remain open.
-- **0 of 6** gate requirements are satisfied at the time of writing.
+- **1 of 6** gate requirements is satisfied, and that one by narrowing a claim
+  rather than by improving coverage. Nothing about the model changed.
 - No floor is selected or frozen, `new_sequence_scoring_enabled` is false, and
   `expression_candidate_design_enabled` is false.
