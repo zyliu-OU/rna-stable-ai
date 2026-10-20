@@ -71,6 +71,47 @@ local run artifacts, datasets, model weights and installed environments are not
 bundled. Original third-party [source](docs/third_party/RiboNN_LICENSE.txt) and
 [weight-license terms](docs/third_party/RiboNN_MODEL_WEIGHTS_LICENSE.txt) are retained.
 
+### 2026-10-20: the pipeline is reframed as a coarse filter plus a diversity selector
+
+Taking the first of the two options gate v10 left open
+([protocol](configs/coarse_filter_diversity_panel_v1_2026-10-20.json),
+[gate v11](configs/stage2_to_stage3_gate_v11_2026-10-20.json)). Hypervolume-maximising
+selection presupposes the objectives order candidates; the measurement says they do not, at
+this scale. So selection now uses only the resolution the objective has demonstrated, and
+chooses the panel for **spread** rather than rank.
+
+Two thresholds, both taken from the measured concordance rather than picked: **1.10× is the
+chance floor** (concordance 0.5007) and **1.25× the resolvable threshold** (0.6902). Reporting
+one number alone would either license treating a 1.15× difference as real or hide where the
+measurement sits.
+
+Applied to all three pools:
+
+| window | pool | resolvably better | resolvably worse | unresolved | widest difference | panel spread |
+|---|---|---|---|---|---|---|
+| 30 codons | 512 | 0 | 0 | **512** | 1.0164× | 5 / 30 |
+| 50 codons | 512 | 0 | 0 | **512** | 1.0238× | 11 / 50 |
+| 549 codons | 512 | 0 | 0 | **512** | 1.0617× | 135 / 549 |
+
+**Every member of every pool is unresolved.** The widest predicted stability difference from
+the reference is 1.0617×, below even the chance floor. The design space lies entirely inside
+the objective's noise floor, and the run says so rather than producing a ranking anyway. A
+filter that resolves nothing is a true statement about the design space and more useful than a
+confident ordering of ties.
+
+The panel is now a **diversity panel over ties** — deterministic farthest-point traversal over
+the edit pattern, using **no predicted values**, anchored on the reference, with the minimum
+pairwise Hamming distance reported as the spread achieved.
+
+**The filter is stability-only, and that asymmetry is enforced in code.** RiboNN has never been
+evaluated against any measurement here, so it has no measured resolution and every translation
+difference is unresolved regardless of size. In the whole-ORF pool 11 members exceed the
+*stability* chance floor on translation and remain unresolved, because that floor was measured
+for a different model on a different quantity.
+
+**What this does not mean:** that the design space is bad. It means the objective cannot see
+it. Option 2 — changing the objective so differences are larger — is recorded as still open.
+
 ### 2026-10-20: the objective has no resolving power at the scale the design space works at
 
 Three questions answered in one run on the 123 held-out records, all models fitted on the 69

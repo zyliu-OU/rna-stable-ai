@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "name": "coarse_filter_diversity_panel_v1",
+  "effective_date": "2026-10-20",
+  "purpose": "Reframe the design pipeline from a ranked selector into a coarse filter plus a diversity selector, because the objective was measured to order at chance in the regime the design space occupies.",
+  "authorized_by": "user, 2026-10-20: 'ok go with option 1, reframe the pipeline'",
+  "what_this_replaces": {
+    "previous_output": "A Pareto front over two predicted objectives, then a panel chosen as the subset maximising dominated hypervolume.",
+    "why_it_is_replaced": "Hypervolume-maximising selection presupposes that the objectives order candidates meaningfully. Gate v10 records that for pairs differing by less than 1.10 times the stability objective's pairwise concordance is 0.5007 over 2958 held-out pairs, which is chance, while this project's design space produces differences of 3.2 to 8.4 percent. Selecting the top of that ordering is selecting noise.",
+    "what_is_kept": "The pool, the variant assembly with its protein verification, the folding, and both scores. Only the SELECTION changes, and what the output is allowed to claim."
+  },
+  "resolution_floor": {
+    "measured_from": "results/stability_ablation_runs/20261020T222738.949800Z/summary.json",
+    "concordance_by_measured_fold_difference": {
+      "1.00-1.10": 0.5007, "1.10-1.25": 0.5735, "1.25-1.50": 0.6902,
+      "1.50-2.00": 0.7826, "above_2.00": 0.9598
+    },
+    "chance_floor": 1.10,
+    "chance_floor_meaning": "At or below a 1.10-fold difference the objective was measured at chance. Differences below this MUST be treated as ties.",
+    "resolvable_threshold": 1.25,
+    "resolvable_threshold_meaning": "The first bin with concordance meaningfully above chance is 1.25 to 1.50 at 0.6902. A difference is called RESOLVABLE only at or above 1.25-fold. Between 1.10 and 1.25 is a declared grey band and is treated as unresolved.",
+    "why_two_numbers": "Reporting only the chance floor would license treating a 1.15-fold difference as real on the strength of 0.5735 concordance. Reporting only the resolvable threshold would hide where the measurement actually sits.",
+    "applies_to": "the stability objective ONLY"
+  },
+  "the_translation_side_has_no_measured_resolution": {
+    "statement": "RiboNN's predicted_TE_A549 has never been evaluated against any measurement in this project, so no concordance, no resolution floor and no threshold exist for it.",
+    "consequence": "The filter CANNOT be applied to the translation side. Every translation difference must be treated as unresolved, regardless of its size, until the translation side is externally validated.",
+    "why_this_matters_here": "Some design-pool variants differ from the reference by more than 1.10 times on the translation score. It would be easy to treat those as resolvable by analogy with the stability floor. They are not: the floor was measured for a different model on a different quantity.",
+    "not_a_reason_to_drop_the_score": "The translation prediction is still recorded per member. It is reported, never used to rank or to filter."
+  },
+  "filter_rule": {
+    "reference": "the unmodified reference construct, member 0 of every pool",
+    "decision_per_member": {
+      "worse_than_reference": "predicted stability below the reference by a factor at or above the resolvable threshold; excluded from the panel",
+      "better_than_reference": "predicted stability above the reference by a factor at or above the resolvable threshold; flagged as genuinely interesting",
+      "unresolved": "everything else, which is a TIE with the reference and with every other unresolved member"
+    },
+    "expected_outcome_on_the_current_pools": "Most or all members are expected to be unresolved, because the widest design space measured spans 1.085-fold on predicted stability. If that is what happens, the honest output is that the design space lies entirely inside the objective's noise floor, and the run must say so rather than produce a ranking anyway.",
+    "this_is_not_a_failure_of_the_run": "A filter that resolves nothing is a true statement about the design space, and is more useful than a confident ordering of ties."
+  },
+  "diversity_rule": {
+    "why_diversity": "If the objective cannot order the survivors, the panel should be chosen to learn the most from a measurement rather than to exploit a ranking. Spread over the design space maximises what a measured panel would teach.",
+    "representation": "the binary substituted-codon indicator vector already used as the optimizer domain, one coordinate per window position",
+    "metric": "Hamming distance between indicator vectors",
+    "algorithm": "farthest-point traversal, deterministic: start from the reference, then repeatedly add the member maximising the minimum Hamming distance to everything already chosen, breaking ties by lowest member index",
+    "why_farthest_point": "It is a standard k-centre heuristic, deterministic, needs no objective values, and gives a bounded approximation to maximum spread. It makes no use of the predictions, which is the point.",
+    "reference_always_included": "The reference is member 0 of the panel, because a panel without it cannot be interpreted.",
+    "panel_size": "a declared placeholder; the collaborator has not stated the assay's capacity"
+  },
+  "what_the_output_may_claim": [
+    "That the panel spans the design space, measured as the minimum pairwise Hamming distance achieved.",
+    "That each member's predicted values are recorded.",
+    "Where a member is resolvably worse or better than the reference on the STABILITY side, that it is so, with the fold difference and the concordance that licenses the claim."
+  ],
+  "what_the_output_may_not_claim": [
+    "That the panel is ranked, or that any unresolved member is better than another.",
+    "That the translation score distinguishes any member from any other.",
+    "That a panel member will outperform the reference in an assay.",
+    "That the absence of resolvable members means the design space is bad; it means the objective cannot see it."
+  ],
+  "what_this_cannot_establish": [
+    "Anything measured. No molecule in this project has been assayed.",
+    "That diversity is the right selection criterion for a real campaign; it is the defensible one given an objective that cannot rank.",
+    "That the resolution floor transfers to this project's construct, which at 1811 nt and 64.4 percent GC lies outside the dataset the floor was measured on."
+  ]
+}
