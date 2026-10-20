@@ -19,6 +19,17 @@ Both share the identical 44 nt 5′UTR and 114 nt 3′UTR, both carry the tandem
 stop, and neither triggers a RiboNN exclusion. Fluc-PEST is 123 nt (41 codons)
 longer, consistent with a C-terminal PEST degradation tag.
 
+> **CORRECTION, added 2026-10-20.** The section below reported a large 5′UTR
+> folding difference between the two ORF contexts and drew a design conclusion
+> from it. Follow-up work showed that effect is **an artifact of unbounded
+> base-pair span in the folding model, not a robust sequence property**. Bounding
+> the span to 200 nt or less makes the two contexts agree to four decimal places.
+> The design conclusion originally drawn here — that a 5′UTR cannot be evaluated
+> outside its final transcript — **is not supported** by this evidence and is
+> withdrawn. See `reports/utr_orf_coupling_is_a_span_artifact_2026-10-20.md` and
+> `results/utr_orf_coupling/bp_span_sensitivity.json`. The observation itself
+> stands; its interpretation does not.
+
 ## The headline result is not the score difference
 
 **The 5′UTR is byte-identical in both constructs, yet its folding changes

@@ -1,0 +1,45 @@
+{
+  "purpose": "Test whether the apparent 5' UTR / ORF coupling survives bounding the base-pair span.",
+  "method": "Identical 5' UTR and 3' UTR, two ORF contexts (Fluc 1653 nt, Fluc-PEST 1776 nt, differing only by a 123 nt insert at position 1650). Folded at several ViennaRNA max_bp_span values; all other settings identical to the standard worker (Turner 2004, 37 C, dangles 2).",
+  "metric": "mean unpaired probability over the 44 nt 5' UTR",
+  "results": [
+    {
+      "max_bp_span": "unlimited",
+      "fluc": 0.8389,
+      "fluc_pest": 0.57,
+      "abs_delta": 0.2689
+    },
+    {
+      "max_bp_span": 600,
+      "fluc": 0.8398,
+      "fluc_pest": 0.8813,
+      "abs_delta": 0.0415
+    },
+    {
+      "max_bp_span": 200,
+      "fluc": 0.9047,
+      "fluc_pest": 0.9048,
+      "abs_delta": 0.0001
+    },
+    {
+      "max_bp_span": 100,
+      "fluc": 0.8944,
+      "fluc_pest": 0.8944,
+      "abs_delta": 0.0
+    },
+    {
+      "max_bp_span": 50,
+      "fluc": 0.9352,
+      "fluc_pest": 0.9352,
+      "abs_delta": 0.0
+    }
+  ],
+  "finding": "The coupling vanishes once base pairs are bounded. At a span of 200 nt or less the 5' UTR folds identically in both ORF contexts to four decimal places. The entire effect requires base pairs spanning more than 600 nt.",
+  "interpretation": "The apparent UTR-ORF coupling is a property of unbounded global folding, not a robust sequence property. The sequence difference between the two contexts lies 1650 nt downstream of the 5' UTR, so only a very long-range pair can transmit it.",
+  "corrects": "reports/construct_comparison_fluc_vs_fluc_pest_2026-10-19.md, which reported the coupling without establishing its mechanism and drew a design conclusion from it.",
+  "no_claim": [
+    "No statement is made about which span is physically correct.",
+    "Every uridine is N1-methylpseudouridine, which ViennaRNA does not represent.",
+    "This is a model-behaviour result, not a measurement of RNA structure."
+  ]
+}

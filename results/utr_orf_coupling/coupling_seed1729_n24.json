@@ -1,0 +1,467 @@
+{
+  "contexts": {
+    "fluc": {
+      "cds_length_nt": 1653
+    },
+    "fluc_pest": {
+      "cds_length_nt": 1776
+    }
+  },
+  "metrics": {
+    "mfe_kcal_mol": {
+      "fluc_pest_spread": 10.0,
+      "fluc_spread": 10.5,
+      "mean_absolute_difference": 41.45600341796875,
+      "spearman_between_contexts": 0.854941641054095
+    },
+    "strand_alo": {
+      "fluc_pest_spread": 0.11105175622915042,
+      "fluc_spread": 0.10548120004622707,
+      "mean_absolute_difference": 0.14191753006071728,
+      "spearman_between_contexts": 0.5892307692307692
+    },
+    "utr5_mean_unpaired": {
+      "fluc_pest_spread": 0.2798326962220068,
+      "fluc_spread": 0.28191777208442914,
+      "mean_absolute_difference": 0.04614422559566059,
+      "spearman_between_contexts": 0.4307692307692308
+    }
+  },
+  "no_claim": [
+    "No variant here is a candidate; the shuffle destroys the Kozak context.",
+    "Every uridine in the real molecules is N1-methylpseudouridine, which ViennaRNA does not represent.",
+    "A folding computation establishes no stability, translation or expression benefit."
+  ],
+  "purpose": "Quantify whether 5' UTR folding features reorder across ORF contexts.",
+  "rows": [
+    {
+      "fluc": {
+        "mfe_kcal_mol": -740.4000244140625,
+        "strand_alo": 1.1430624950384656,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.838862465814599
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -782.4000244140625,
+        "strand_alo": 1.08245309081714,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.5700022411999774
+      },
+      "is_reference": true,
+      "utr5": "AAAUAAGAGAGAAAAGAAGAGUAAGAAGAAAUAUAAGAGCCACC",
+      "variant": "reference"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -743.2999877929688,
+        "strand_alo": 1.188623834124761,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.7064128203921032
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -784.2999877929688,
+        "strand_alo": 1.039406400129633,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.7094182356157177
+      },
+      "is_reference": false,
+      "utr5": "AAAAUAGAGAGAAAAACCCAGAAUAGUAAAAUAAGAGAGAGAGC",
+      "variant": "shuffle_001"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -742.0,
+        "strand_alo": 1.2275665174893022,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.5747558590381949
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -783.7999877929688,
+        "strand_alo": 1.0781201498556467,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.5754975926869033
+      },
+      "is_reference": false,
+      "utr5": "AGAAGACCAUAAUAAGAAAAGAGUAGAAAGAAGAAGAAUAAGCC",
+      "variant": "shuffle_002"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -739.7999877929688,
+        "strand_alo": 1.159168254403662,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.8232561395158288
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -782.0,
+        "strand_alo": 1.068779387094693,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.6414113552507463
+      },
+      "is_reference": false,
+      "utr5": "AGAAAAAGAUAAAAAGAGAGAGAUAGUAAGAAUAAGCAAGACCC",
+      "variant": "shuffle_003"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -741.4000244140625,
+        "strand_alo": 1.1653166444757201,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.7699081993215917
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -782.4000244140625,
+        "strand_alo": 1.007811220579463,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.7663768828334057
+      },
+      "is_reference": false,
+      "utr5": "AAAGAAAAAAGAAGUAUAGAGAAUAAGAAUAGCCCAGAGAGAAC",
+      "variant": "shuffle_004"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -742.2000122070312,
+        "strand_alo": 1.1968686554902654,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.7391608909965036
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -783.2000122070312,
+        "strand_alo": 1.0512797130140326,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.71113034737641
+      },
+      "is_reference": false,
+      "utr5": "AAAAGAAUAAGAGAGAGAGAUACCCAAAAAUAAGUAAAGAGAGC",
+      "variant": "shuffle_005"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -739.0,
+        "strand_alo": 1.2222984197234124,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.697970433095976
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -780.4000244140625,
+        "strand_alo": 1.0806032574039268,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.610076093993676
+      },
+      "is_reference": false,
+      "utr5": "AGAUAAGCAAGAAAAGAAGAAGAAGAGAGAAGUAUAAUAAACCC",
+      "variant": "shuffle_006"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -738.0999755859375,
+        "strand_alo": 1.1794807020472144,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.8522491877091457
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -780.7000122070312,
+        "strand_alo": 1.0795267782695672,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.6279098318370784
+      },
+      "is_reference": false,
+      "utr5": "AGAAGAAAGAAGAAGAAAAGAGAUAUAAAGCAUAGAGUAAACCC",
+      "variant": "shuffle_007"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -738.0999755859375,
+        "strand_alo": 1.1817504457371961,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.8487745794741596
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -779.5999755859375,
+        "strand_alo": 1.045646611327908,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.7658472508088696
+      },
+      "is_reference": false,
+      "utr5": "AAGAGAGUAAAUAAGAAGAAUAGAGAGAACCCAGAAUAAAAAGC",
+      "variant": "shuffle_008"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -738.4000244140625,
+        "strand_alo": 1.200539458027312,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.8199220721910457
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -779.7999877929688,
+        "strand_alo": 1.05660689400718,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.7617997056950107
+      },
+      "is_reference": false,
+      "utr5": "AAACCCAGAAGUAAGAGAAAUAAAGAGAGAAAGAUAGAAAUAGC",
+      "variant": "shuffle_009"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -741.5999755859375,
+        "strand_alo": 1.1972709151514704,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.6840170486024607
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -782.5999755859375,
+        "strand_alo": 1.0471840682122482,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.6840954391120535
+      },
+      "is_reference": false,
+      "utr5": "AGAGAGUAGAAAAAAAGCAUAUAAGAAAAAUAGAAGAGAGACCC",
+      "variant": "shuffle_010"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -742.4000244140625,
+        "strand_alo": 1.1762506554646,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.6897672835946653
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -783.4000244140625,
+        "strand_alo": 1.0264818529297777,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.6896132496843098
+      },
+      "is_reference": false,
+      "utr5": "AGAAUAAAGAGAGAAAGCCCAGAUAGUAAAAAGAGAGAAUAAAC",
+      "variant": "shuffle_011"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -748.5999755859375,
+        "strand_alo": 1.2248697355503992,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.6465032651516988
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -789.5999755859375,
+        "strand_alo": 1.0744810651290888,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.6465032613966641
+      },
+      "is_reference": false,
+      "utr5": "AAAGAUAGAAAAAAGAGCCAGAAGAAUAGAAGUAUAGAAAGACC",
+      "variant": "shuffle_012"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -741.0999755859375,
+        "strand_alo": 1.1735629973589703,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.7809683619827559
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -782.0999755859375,
+        "strand_alo": 1.0288971121855894,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.7726779086111848
+      },
+      "is_reference": false,
+      "utr5": "AAGAGAAAAUAGAAGAAAGAAUAAAGUAUAGAAGACCAGAAGCC",
+      "variant": "shuffle_013"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -741.7000122070312,
+        "strand_alo": 1.1693289023133497,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.8566736311226241
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -782.7000122070312,
+        "strand_alo": 0.9916240401308632,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.8251731377733781
+      },
+      "is_reference": false,
+      "utr5": "AAAAAAGAGAAGAUAGAUAAAGUAGAAAGAAUAAGAGCAGACCC",
+      "variant": "shuffle_014"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -740.5,
+        "strand_alo": 1.1244782435210643,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.7829959591736778
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -783.4000244140625,
+        "strand_alo": 0.9714013345879895,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.8498349374219842
+      },
+      "is_reference": false,
+      "utr5": "AAGAGAAAUAGAAAAGAGAGAGAGAGUAACAUAAAUAAAAGCCC",
+      "variant": "shuffle_015"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -747.4000244140625,
+        "strand_alo": 1.2035654231823465,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.7627924845707468
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -788.4000244140625,
+        "strand_alo": 1.054564691420214,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.7627921102688611
+      },
+      "is_reference": false,
+      "utr5": "AGAAAAGAAGAAAGAAUAAGUAAUAAUAGCCAGAAAGAGAGACC",
+      "variant": "shuffle_016"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -742.2999877929688,
+        "strand_alo": 1.1869816741387615,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.6753525082028654
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -783.2999877929688,
+        "strand_alo": 1.0382108707649917,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.6749663238209167
+      },
+      "is_reference": false,
+      "utr5": "AGAAAAAGAAAGAGCCAGAUAGAAGAAAUAGAAGAUAGUAAACC",
+      "variant": "shuffle_017"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -747.2999877929688,
+        "strand_alo": 1.223720220814114,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.7241640981239957
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -788.2999877929688,
+        "strand_alo": 1.0734316338280387,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.7241638683707147
+      },
+      "is_reference": false,
+      "utr5": "AAGAGAUAGAAAGAUAAGCCAAAGAAGUAAAUAGAAAAGAGACC",
+      "variant": "shuffle_018"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -741.2999877929688,
+        "strand_alo": 1.1480287955177453,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.7092196364132038
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -784.0,
+        "strand_alo": 0.9940635698106257,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.7716298244629264
+      },
+      "is_reference": false,
+      "utr5": "AAAGAAGAGAGAAUAGUAACAAAAAGAGAUAAUAGAAGAAGCCC",
+      "variant": "shuffle_019"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -742.5999755859375,
+        "strand_alo": 1.212145444155411,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.6792551496884701
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -783.5999755859375,
+        "strand_alo": 1.0634263016496117,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.6800533679191871
+      },
+      "is_reference": false,
+      "utr5": "AAUAGAGAUAUAGAAGUAGAGCCAAGAAGAAAAGAAAAGAAACC",
+      "variant": "shuffle_020"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -741.0,
+        "strand_alo": 1.188348156065722,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.8126586782561381
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -782.0,
+        "strand_alo": 1.0352275234765231,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.8116751693073144
+      },
+      "is_reference": false,
+      "utr5": "AAGAGUAGAAAGAGAAGAAGAAAGAUAGCCAAAUAAAUAGAACC",
+      "variant": "shuffle_021"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -738.7999877929688,
+        "strand_alo": 1.182744058759262,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.7995089198544364
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -779.7999877929688,
+        "strand_alo": 1.0232850728025924,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.7980459649121237
+      },
+      "is_reference": false,
+      "utr5": "AGUAAGAAUAAAGAAUAAGAAGAGAAGAGCAAAAGAUAAGACCC",
+      "variant": "shuffle_022"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -740.5,
+        "strand_alo": 1.1220853174430752,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.8437849795591151
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -783.4000244140625,
+        "strand_alo": 0.9765581628102312,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.8334862944673781
+      },
+      "is_reference": false,
+      "utr5": "AGAGAAGAAGAGAUAGAGAUAAAAAAGAUAAAGUAAAGCCAACC",
+      "variant": "shuffle_023"
+    },
+    {
+      "fluc": {
+        "mfe_kcal_mol": -742.0999755859375,
+        "strand_alo": 1.1880310917130168,
+        "transcript_length_nt": 1811,
+        "utr5_mean_unpaired": 0.717021709655493
+      },
+      "fluc_pest": {
+        "mfe_kcal_mol": -783.0999755859375,
+        "strand_alo": 1.0490780039511123,
+        "transcript_length_nt": 1934,
+        "utr5_mean_unpaired": 0.6859161746045122
+      },
+      "is_reference": false,
+      "utr5": "AGAUAGAAAUAUAGAGAAGAAAAAAGCCCAGAAGAAGUAGAAAC",
+      "variant": "shuffle_024"
+    }
+  ],
+  "scope": "Mechanics characterisation on synthetic shuffles. No candidate is designed, ranked as better, or recommended. No floor is frozen and no gate requirement is satisfied.",
+  "seed": 1729,
+  "shuffle": "dinucleotide-preserving Eulerian shuffle of the reference 5' UTR",
+  "variants": 25
+}
