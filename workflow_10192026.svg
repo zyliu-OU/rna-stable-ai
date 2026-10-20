@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="724" viewBox="0 0 680 724" role="img" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>RNA-StableAI four-component workflow and what is actually wired</title>
+<desc>Transcript sequence feeds RNAfold and RiboNN. Published STRAND replays released tables; feeding RNAfold features into it was rejected. A calibration refit is unvalidated. Three paths converge into score records v1, whose composite score is blocked. A gate to stage 3 is open with no requirements met, behind which BoTorch and transfected cells sit unreached.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+
+<rect x="0" y="0" width="680" height="724" fill="#ffffff"/>
+
+<rect x="250" y="40" width="180" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="340" y="62" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#444441">Transcript sequence</text>
+<text x="340" y="82" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#5F5E5A">1&#8211;2,999 nt &#183; ACGU</text>
+
+<path d="M280 96 V112 H120 V130" fill="none" stroke="#1D9E75" stroke-width="1" marker-end="url(#arrow)"/>
+<path d="M410 96 V112 H620 V236 H425 V250" fill="none" stroke="#1D9E75" stroke-width="1" marker-end="url(#arrow)"/>
+
+<rect x="20" y="130" width="200" height="66" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="120" y="152" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">RNAfold</text>
+<text x="120" y="171" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">ViennaRNA 2.7.2 &#183; 37 &#176;C</text>
+<text x="120" y="187" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">MFE + partition function</text>
+
+<rect x="330" y="130" width="210" height="66" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="435" y="152" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">Published STRAND</text>
+<text x="435" y="171" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">reference-only replay</text>
+<text x="435" y="187" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">unchanged coefficients</text>
+
+<line x1="222" y1="158" x2="326" y2="158" stroke="#E24B4A" stroke-width="1" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<text x="274" y="180" text-anchor="middle" font-size="12" fill="#A32D2D">rejected</text>
+
+<path d="M120 196 V250" fill="none" stroke="#1D9E75" stroke-width="1" marker-end="url(#arrow)"/>
+
+<rect x="20" y="250" width="250" height="80" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+<text x="145" y="274" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#791F1F">Calibration refit v1</text>
+<text x="145" y="295" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#A32D2D">strand_rnafold_calibration_v1</text>
+<text x="145" y="313" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#A32D2D">not published &#183; not validated</text>
+
+<rect x="310" y="250" width="230" height="80" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="425" y="274" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">RiboNN</text>
+<text x="425" y="295" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">50 checkpoints &#183; 78 TE tasks</text>
+<text x="425" y="313" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">A549 task &#183; ranking only</text>
+
+<path d="M435 196 V220 H288 V360" fill="none" stroke="#1D9E75" stroke-width="1" marker-end="url(#arrow)"/>
+<path d="M145 330 V345 H240 V360" fill="none" stroke="#1D9E75" stroke-width="1" marker-end="url(#arrow)"/>
+<path d="M425 330 V345 H440 V360" fill="none" stroke="#1D9E75" stroke-width="1" marker-end="url(#arrow)"/>
+
+<rect x="170" y="360" width="340" height="86" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="340" y="386" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">Score records v1</text>
+<text x="340" y="408" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#185FA5">99 records built &#183; provenance bound</text>
+<text x="340" y="428" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#185FA5">sequence &#183; tool &#183; units &#183; exclusion reason</text>
+
+<line x1="340" y1="446" x2="340" y2="472" stroke="#E24B4A" stroke-width="1" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+
+<rect x="170" y="476" width="340" height="60" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+<text x="340" y="498" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#791F1F">Composite score &#8212; blocked</text>
+<text x="340" y="518" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#A32D2D">incommensurable units &#183; no floor selected</text>
+
+<text x="340" y="556" text-anchor="middle" font-size="12" fill="#A32D2D">Stage 2 &#8594; stage 3 gate &#183; open &#183; 0 of 6 requirements met</text>
+<line x1="20" y1="568" x2="660" y2="568" stroke="#E24B4A" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="200" y1="570" x2="200" y2="588" stroke="#888780" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+<line x1="480" y1="570" x2="480" y2="588" stroke="#888780" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+
+<rect x="80" y="590" width="240" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5" stroke-dasharray="4 3"/>
+<text x="200" y="612" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#444441">BoTorch discrete BO</text>
+<text x="200" y="632" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#5F5E5A">software mechanics only</text>
+
+<rect x="360" y="590" width="240" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5" stroke-dasharray="4 3"/>
+<text x="480" y="612" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#444441">Transfected cells</text>
+<text x="480" y="632" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#5F5E5A">A549 + CD3+ T cells</text>
+
+<line x1="20" y1="682" x2="48" y2="682" stroke="#1D9E75" stroke-width="2"/>
+<text x="56" y="686" font-size="12" fill="#3d3d3a">runs and is replayed</text>
+<line x1="250" y1="682" x2="278" y2="682" stroke="#E24B4A" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="286" y="686" font-size="12" fill="#3d3d3a">rejected or blocked</text>
+<line x1="470" y1="682" x2="498" y2="682" stroke="#888780" stroke-width="2" stroke-dasharray="4 4"/>
+<text x="506" y="686" font-size="12" fill="#3d3d3a">behind the open gate</text>
+
+<text x="340" y="710" text-anchor="middle" font-size="12" fill="#3d3d3a">No stability or expression benefit is established by any path shown here</text>
+</svg>

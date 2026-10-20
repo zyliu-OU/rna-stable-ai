@@ -1,11 +1,12 @@
 # RNA-StableAI
 
-![RNA-StableAI four-component workflow: RNAfold feeds ensemble features to a separately named STRAND refit, substituting them into the published STRAND model is rejected, RiboNN scores released translational-efficiency tasks, both sides feed versioned score records, and a composite score plus BoTorch and the expression assay sit behind the open Stage 2 gate](diagram_10192026.svg)
+![RNA-StableAI four-component workflow: the transcript sequence feeds RNAfold and RiboNN; published STRAND is reference-only replay and substituting RNAfold features into it was rejected; a separately named calibration refit is unpublished and unvalidated; RiboNN contributes A549 ranking only; the three paths converge into versioned score records, whose composite score is blocked on incommensurable units with no floor selected; BoTorch and the transfected-cell assay in A549 and CD3+ T cells sit behind the Stage 2 to stage 3 gate, which is open with 0 of 6 requirements met](workflow_10192026.svg)
 
-*Implementation state on 2026-10-19: blue paths are implemented and replayed, red paths are
+*Implementation state on 2026-10-19: green paths run and are replayed, red paths are
 rejected or blocked, grey paths sit behind the open Stage 2 gate. No stability, translation or
-expression benefit is established by any path shown. The earlier proposed-workflow diagram is
-retained at [diagram_10182026.png](diagram_10182026.png).*
+expression benefit is established by any path shown. Earlier diagrams are retained at
+[diagram_10192026.svg](diagram_10192026.svg) and the proposed-workflow picture at
+[diagram_10182026.png](diagram_10182026.png).*
 
 Research prototype for RNA structure prediction, constrained sequence optimization,
 and reproducible folding benchmarks. Code, experimental checkpoints, input data,
