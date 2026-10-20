@@ -1,0 +1,72 @@
+{
+  "alo_clipping_epsilon": 1e-05,
+  "alo_is_numerically_fragile": {
+    "alo_by_clipping_epsilon_same_folding": {
+      "1e-10": 1.7401,
+      "1e-3": 1.6267,
+      "1e-4": 1.7618,
+      "1e-5": 1.7776,
+      "1e-6": 1.7504
+    },
+    "finding": "Changing only the clipping epsilon moves alo by about 0.15, roughly three times the tolerance, with the folding held identical. The released LinearPartition value lies inside that range. aup, which uses the same probabilities without the log transform, agrees to 0.0004.",
+    "positions_with_paired_probability_below_1e-5": "16 of 928",
+    "record": "X320004D1 (928 nt)",
+    "released_linearpartition_alo": 1.66408,
+    "tolerance": 0.05132
+  },
+  "by_span": {
+    "-1": {
+      "mean_abs_alo": 0.1476882375945939,
+      "mean_abs_aup": 0.0012465913132009333,
+      "mean_abs_energy_per_length": 1.3686625307105885e-05,
+      "of": 18,
+      "within_tolerance": 13
+    },
+    "100": {
+      "mean_abs_alo": 0.45123773391407934,
+      "mean_abs_aup": 0.04356124023438185,
+      "mean_abs_energy_per_length": 0.06325023893815816,
+      "of": 18,
+      "within_tolerance": 1
+    },
+    "200": {
+      "mean_abs_alo": 0.2955714172704313,
+      "mean_abs_aup": 0.021660122675519852,
+      "mean_abs_energy_per_length": 0.03849445026885436,
+      "of": 18,
+      "within_tolerance": 2
+    },
+    "600": {
+      "mean_abs_alo": 0.18740578446754008,
+      "mean_abs_aup": 0.0035121999678281494,
+      "mean_abs_energy_per_length": 0.006996186717750495,
+      "of": 18,
+      "within_tolerance": 7
+    }
+  },
+  "cohort_note": "Selection set only; recorded as burned by the frozen criterion. The blinded 85-record evaluation set was NOT touched.",
+  "conclusion": "Bounding the span degrades agreement monotonically and on every feature, so unlimited span is the evidence-backed choice rather than merely the inherited default. The feature-level incompatibility recorded in the frozen criterion is an alo convention problem, not a span or folding problem.",
+  "no_claim": [
+    "A diagnostic on burned records. It selects nothing and freezes nothing.",
+    "No determination is made about which span is physically correct."
+  ],
+  "per_feature_at_unlimited_span": {
+    "alo": "2/6 within tolerance \u2014 this is where the incompatibility lives",
+    "aup": "5/6 within tolerance",
+    "energy_per_length": "6/6 within tolerance; mean |delta| 1.4e-5, essentially exact"
+  },
+  "purpose": "Does bounding the base-pair span improve agreement with released LinearPartition features?",
+  "selection_set": [
+    "X320004D1",
+    "X310336T3",
+    "X310003T1",
+    "X130010D1",
+    "X130002D1",
+    "X130006D1"
+  ],
+  "tolerances": {
+    "alo": 0.05132036110543378,
+    "aup": 0.002807531325000001,
+    "energy_per_length": 0.005548940468588457
+  }
+}
