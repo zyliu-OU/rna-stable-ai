@@ -1,0 +1,261 @@
+{
+  "all_file_hashes_verified": true,
+  "arms": {
+    "m1pseudo_1": {
+      "depth_threshold": 2.7983828109100003e-05,
+      "excluded": {
+        "alphabet": 8,
+        "no_ribosome_load": 1391,
+        "suffix_missing": 0,
+        "wrong_length": 0
+      },
+      "gc_mean": 0.500167,
+      "gc_sd": 0.07078006326949639,
+      "mfe_mean": -8.886279752472602,
+      "out_of_frame_uaug_rate": 0.40065,
+      "raw_load_mean": 5.927749443330443,
+      "raw_load_sd": 1.0156509691861038,
+      "rows_after_depth_filter": 166289,
+      "rows_read": 333977,
+      "rows_usable": 332578,
+      "subsampled": 40000
+    },
+    "unmod_1": {
+      "depth_threshold": 890.0,
+      "excluded": {
+        "alphabet": 0,
+        "no_ribosome_load": 0,
+        "suffix_missing": 0,
+        "wrong_length": 0
+      },
+      "gc_mean": 0.49845,
+      "gc_sd": 0.07014157466162561,
+      "mfe_mean": -8.744595504200086,
+      "out_of_frame_uaug_rate": 0.42805,
+      "raw_load_mean": 6.383469391947487,
+      "raw_load_sd": 1.6493073347315104,
+      "rows_after_depth_filter": 163183,
+      "rows_read": 326033,
+      "rows_usable": 326033,
+      "subsampled": 40000
+    },
+    "unmod_2": {
+      "depth_threshold": 184.0,
+      "excluded": {
+        "alphabet": 0,
+        "no_ribosome_load": 0,
+        "suffix_missing": 0,
+        "wrong_length": 0
+      },
+      "gc_mean": 0.49749449999999995,
+      "gc_sd": 0.07043931084389458,
+      "mfe_mean": -8.716322003081254,
+      "out_of_frame_uaug_rate": 0.40095,
+      "raw_load_mean": 5.726714155322521,
+      "raw_load_sd": 1.3029652297357917,
+      "rows_after_depth_filter": 176256,
+      "rows_read": 351575,
+      "rows_usable": 351575,
+      "subsampled": 40000
+    }
+  },
+  "arms_excluded": {
+    "m1pseudo_2": {
+      "modal_length": 54,
+      "suffix_rate": 0.0,
+      "trim_suffix": false,
+      "usable": false
+    }
+  },
+  "built_utc": "2026-10-20T21:43:54.531480+00:00",
+  "comparison": {
+    "gc_fraction": {
+      "between_modification_difference": 0.7231062753410427,
+      "decision_rule": {
+        "ambiguous": "ratio between 1.0 and 2.0",
+        "consistent_with_constant": "ratio at or below 1.0",
+        "sequence_dependent": "ratio above 2.0"
+      },
+      "denominator_borrowed_from_unmodified_replicates": true,
+      "m1pseudo_mean": -0.27691229020841296,
+      "m1pseudo_slopes": [
+        -0.27691229020841296
+      ],
+      "ratio": 14.337291915446956,
+      "sign_changed": false,
+      "unmodified_mean": -1.0000185655494556,
+      "unmodified_slopes": [
+        -1.0252362384407347,
+        -0.9748008926581766
+      ],
+      "verdict": "sequence_dependent",
+      "within_modification_replicate_difference": 0.05043534578255815
+    },
+    "out_of_frame_uaug": {
+      "between_modification_difference": 0.1710557885495303,
+      "decision_rule": {
+        "ambiguous": "ratio between 1.0 and 2.0",
+        "consistent_with_constant": "ratio at or below 1.0",
+        "sequence_dependent": "ratio above 2.0"
+      },
+      "denominator_borrowed_from_unmodified_replicates": true,
+      "m1pseudo_mean": -1.3222742720159082,
+      "m1pseudo_slopes": [
+        -1.3222742720159082
+      ],
+      "ratio": 1.2953087936963157,
+      "sign_changed": false,
+      "unmodified_mean": -1.4933300605654385,
+      "unmodified_slopes": [
+        -1.559359021915034,
+        -1.427301099215843
+      ],
+      "verdict": "ambiguous",
+      "within_modification_replicate_difference": 0.13205792269919092
+    },
+    "vienna_mfe": {
+      "between_modification_difference": 0.004593810322897317,
+      "decision_rule": {
+        "ambiguous": "ratio between 1.0 and 2.0",
+        "consistent_with_constant": "ratio at or below 1.0",
+        "sequence_dependent": "ratio above 2.0"
+      },
+      "denominator_borrowed_from_unmodified_replicates": true,
+      "m1pseudo_mean": 0.03465868856816649,
+      "m1pseudo_slopes": [
+        0.03465868856816649
+      ],
+      "ratio": 1.0932755905609548,
+      "sign_changed": false,
+      "unmodified_mean": 0.030064878245269176,
+      "unmodified_slopes": [
+        0.027963939395742567,
+        0.03216581709479579
+      ],
+      "verdict": "ambiguous",
+      "within_modification_replicate_difference": 0.004201877699053221
+    }
+  },
+  "conventions_detected": {
+    "m1pseudo_1": {
+      "modal_length": 59,
+      "suffix_rate": 1.0,
+      "trim_suffix": true,
+      "usable": true
+    },
+    "m1pseudo_2": {
+      "modal_length": 54,
+      "suffix_rate": 0.0,
+      "trim_suffix": false,
+      "usable": false
+    },
+    "unmod_1": {
+      "modal_length": 50,
+      "suffix_rate": 0.0,
+      "trim_suffix": false,
+      "usable": true
+    },
+    "unmod_2": {
+      "modal_length": 59,
+      "suffix_rate": 1.0,
+      "trim_suffix": true,
+      "usable": true
+    }
+  },
+  "library_distribution_check": {
+    "gc_mean_difference_between_conditions": 0.001717000000000024,
+    "note": "The arms share no sequences, so a between-library slope comparison assumes both libraries are drawn from the same sequence distribution. A GC mean difference below 0.01 is treated as consistent with that.",
+    "same_distribution": true
+  },
+  "modification": "N1-methylpseudouridine, the nucleoside this project's molecules carry",
+  "no_claim": [
+    "A slope is an association within a random library, not causation.",
+    "Absolute ribosome load is not comparable between arms, because the unmodified library was fractionated into 14 polysome fractions and the m1psi library into 13. Only within-arm relationships are compared.",
+    "The three features were declared in advance for being mechanistically motivated and cheap. They are not a complete account of what determines ribosome load.",
+    "A 50 nt random UTR on eGFP in HEK293T is not this project's 1811 nt construct scored for A549 and T cells.",
+    "This says nothing about the stability side."
+  ],
+  "preprocessing_correction": {
+    "consequence": "m1pseudo_2 is excluded as not being the 50 nt library, so the m1-pseudouridine condition has NO replicate arm and the within-condition denominator is borrowed from the unmodified pair. This weakens the test and is recorded on every feature.",
+    "effect_on_features_or_decision_rule": "none; both are as declared",
+    "justification": "mechanical, decided from observed sequence conventions alone",
+    "what_is_actually_true": "the suffix is a PER-FILE export convention: unmod_2 carries it too, and m1pseudo_2 is a different library of 54 nt with no constant suffix",
+    "what_was_changed": "the suffix is detected per file from its observed frequency",
+    "what_was_declared": "the 9-nt ATGGGCGAA suffix is trimmed from the m1-pseudouridine records"
+  },
+  "protocol": "configs/m1pseudouridine_feature_slope_check_v1_2026-10-20.json",
+  "protocol_sha256": "3e84c238f61501d027d519cb5f49b767d0f371d38df112d022a5838c32d39030",
+  "purpose": "Test whether N1-methylpseudouridine changes the RELATIONSHIP between sequence features and ribosome load, which is the assumption that licenses ranking a modified panel from unmodified-sequence predictions.",
+  "slopes_per_arm": {
+    "m1pseudo_1": {
+      "gc_fraction": {
+        "n": 40000,
+        "slope": -0.27691229020841296,
+        "standard_error": 0.07062955683134974
+      },
+      "out_of_frame_uaug": {
+        "n": 40000,
+        "n_absent": 23974,
+        "n_present": 16026,
+        "slope": -1.3222742720159082,
+        "standard_error": 0.00808689749843355
+      },
+      "vienna_mfe": {
+        "n": 40000,
+        "slope": 0.03465868856816649,
+        "standard_error": 0.0013254036411080655
+      }
+    },
+    "unmod_1": {
+      "gc_fraction": {
+        "n": 40000,
+        "slope": -1.0252362384407347,
+        "standard_error": 0.07110162157112833
+      },
+      "out_of_frame_uaug": {
+        "n": 40000,
+        "n_absent": 22878,
+        "n_present": 17122,
+        "slope": -1.559359021915034,
+        "standard_error": 0.006729203760111288
+      },
+      "vienna_mfe": {
+        "n": 40000,
+        "slope": 0.027963939395742567,
+        "standard_error": 0.0013461355139805593
+      }
+    },
+    "unmod_2": {
+      "gc_fraction": {
+        "n": 40000,
+        "slope": -0.9748008926581766,
+        "standard_error": 0.07081732852705565
+      },
+      "out_of_frame_uaug": {
+        "n": 40000,
+        "n_absent": 23962,
+        "n_present": 16038,
+        "slope": -1.427301099215843,
+        "standard_error": 0.007934081432526077
+      },
+      "vienna_mfe": {
+        "n": 40000,
+        "slope": 0.03216581709479579,
+        "standard_error": 0.0013459904683171392
+      }
+    }
+  },
+  "supports_the_project_ranking_assumption": false,
+  "verdicts": {
+    "gc_fraction": "sequence_dependent",
+    "out_of_frame_uaug": "ambiguous",
+    "vienna_mfe": "ambiguous"
+  },
+  "what_this_cannot_establish": [
+    "Anything about the project's own construct: a 1811 nt mRNA with a 44 nt 5' UTR, scored in A549 and T cells, is not a 50 nt random UTR on eGFP in HEK293T.",
+    "Absolute ribosome load or expression under m1\u03a8, because the fraction counts differ between arms.",
+    "That these three features are the ones that matter. They were declared in advance for being mechanistically motivated and cheap, not for being complete.",
+    "Causation. A slope is an association within a random library.",
+    "Anything about the stability side. Ribosome load is a translation readout."
+  ]
+}

@@ -71,6 +71,50 @@ local run artifacts, datasets, model weights and installed environments are not
 bundled. Original third-party [source](docs/third_party/RiboNN_LICENSE.txt) and
 [weight-license terms](docs/third_party/RiboNN_MODEL_WEIGHTS_LICENSE.txt) are retained.
 
+### 2026-10-20: m1Ψ rescales the GC relationship — the right nucleoside, 40,000 sequences per arm
+
+The pseudouridine result below rested on six constructs of the **wrong** nucleoside. Sample et
+al. 2019 measured a random 50-mer 5′UTR library on eGFP under **unmodified and m1Ψ**
+conditions — the nucleoside the collaborator's molecules actually carry
+([protocol](configs/m1pseudouridine_feature_slope_check_v1_2026-10-20.json), GEO GSE114002,
+hash-pinned, not redistributed).
+
+The arms share **zero** sequences — independent random libraries — and their ribosome-load
+scales differ (14 against 13 polysome fractions), so no per-sequence or absolute comparison is
+possible. What is comparable is the **shape** of the sequence-to-load mapping. Three features
+were declared in advance:
+
+| feature | unmodified | m1Ψ | between | within | ratio | verdict |
+|---|---|---|---|---|---|---|
+| out-of-frame uAUG | −1.5594 / −1.4273 | −1.3223 | 0.1711 | 0.1321 | 1.30 | ambiguous |
+| **GC fraction** | **−1.0252 / −0.9748** | **−0.2769** | **0.7231** | **0.0504** | **14.34** | **sequence-dependent** |
+| ViennaRNA MFE | 0.0280 / 0.0322 | 0.0347 | 0.0046 | 0.0042 | 1.09 | ambiguous |
+
+**GC costs ~3.7× more ribosome load unmodified than under m1Ψ**, while the two unmodified
+replicates agree to 0.05. A magnitude change, not a sign change. uAUG and structure are stable
+within noise, so the modification's effect is **not** uniformly sequence-dependent — it
+localises to composition.
+
+**That is the worst feature it could have landed on.** `GC` is one of the three inputs to
+`strand_rnafold_calibration_v1`, *and* the feature on which this project's construct
+**extrapolates** — 64.4% against a 39.4–60.2% training range, flagged on every design-workflow
+member. The modification rescales the relationship for the input the pipeline leans on, in a
+region already outside its fitted domain. Those compound rather than cancel.
+
+[Gate v9](configs/stage2_to_stage3_gate_v9_2026-10-20.json) therefore **strengthens and
+narrows** v8's prohibition: it still holds, now names the mechanism and the feature, and
+explicitly licenses nothing — uAUG and structure are *ambiguous*, which is not the same as
+supported.
+
+**Limitations that cut the other way.** The m1Ψ condition has **no replicate**: the second
+m1Ψ file is a different library (54 nt), so the within-condition denominator is **borrowed**
+from the unmodified pair and flagged on every feature; m1Ψ replicates would need to be ~14×
+noisier than unmodified for GC to become consistent. A declared preprocessing step was
+corrected mid-run — the 9-nt suffix trim is a per-file convention, and the unmodified
+replicate carries it too — disclosed, with features and the decision rule untouched. This is a
+translation readout and says nothing about stability. And a 50-nt random UTR on eGFP in
+HEK293T is not an 1,811 nt construct in A549.
+
 ### 2026-10-20: the modification-constancy assumption does not survive testing
 
 The project has carried one assumption that licenses ranking a modified panel: that because

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "name": "m1pseudouridine_feature_slope_check_v1",
+  "effective_date": "2026-10-20",
+  "purpose": "Test whether N1-methylpseudouridine changes the RELATIONSHIP between sequence features and ribosome load, which is the assumption that licenses ranking a modified panel from unmodified-sequence predictions.",
+  "authorized_by": "user, 2026-10-20: 'm1Ψ test first, those three features'",
+  "status": "PROTOCOL DECLARED BEFORE ANY FEATURE-TO-RIBOSOME-LOAD RELATIONSHIP WAS COMPUTED. Only row counts, UTR lengths, the constant suffix and the marginal ribosome-load distributions had been inspected at the time of writing. No slope, correlation or feature effect had been looked at.",
+  "why_this_supersedes_the_earlier_check": {
+    "earlier": "configs/pseudouridine_effect_check_v1_2026-10-20.json, recorded in gate v8",
+    "earlier_limitation": "It used PSEUDOURIDINE on six constructs. Pseudouridine is a different nucleoside from N1-methylpseudouridine, and six constructs support no significance claim.",
+    "what_changes_here": "This uses N1-METHYLPSEUDOURIDINE, the nucleoside the collaborator's molecules actually carry, across hundreds of thousands of sequences with a replicate arm per condition.",
+    "what_does_not_change": "The earlier finding stands as what it was: evidence that a uridine modification's effect CAN be sequence-dependent. This test can confirm, refute or complicate it for m1Ψ specifically, and the outcome will be recorded either way."
+  },
+  "source": {
+    "paper": "Sample PJ, Wang B, Reid DW, et al. Human 5' UTR design and variant effect prediction from a massively parallel translation assay. Nat Biotechnol 37, 803-809 (2019).",
+    "accession": "GSE114002",
+    "files": {
+      "unmod_1": {"geo": "GSM3130435_egfp_unmod_1.csv.gz", "sha256": "23bbd468ff6c6905f11e7dfdd7509601730e0f99c8ad2a78f37f3dfe99c31719"},
+      "unmod_2": {"geo": "GSM3130436_egfp_unmod_2.csv.gz", "sha256": "0a067d1a053bd39ccdd12515205138fcd2365e703a01292e8dc40cc78188d85f"},
+      "m1pseudo_1": {"geo": "GSM3130439_egfp_m1pseudo_1.csv.gz", "sha256": "4bb54458e6846265cc5c3b1d73894fcb03569a0ab61b3a95a85f4d78aec287da"},
+      "m1pseudo_2": {"geo": "GSM3130440_egfp_m1pseudo_2.csv.gz", "sha256": "6bd42af41ea7bdc2806a37031fecb0c63c576b24c60fb898e8afe31a7d8cfd12"}
+    },
+    "assay": "polysome profiling of an IVT mRNA library in HEK293T, harvested at 12 h; ribosome load per UTR is the read-share-weighted sum over polysome fractions",
+    "redistribution": "Not republished. Accession and per-file hashes are pinned so the data can be re-acquired; only derived metrics are published."
+  },
+  "why_a_slope_comparison_rather_than_a_paired_test": {
+    "the_obvious_test_is_impossible": "Both arms are independently synthesised RANDOM 50-mers. With 4^50 possible sequences and about 330,000 drawn per arm, the number of UTRs measured in BOTH arms is zero, verified by intersection. There are no pairs.",
+    "absolute_ribosome_load_is_also_incomparable": "The unmodified library was fractionated into 14 polysome fractions and the m1Ψ library into 13. Ribosome load is a weighted sum over fractions, so the two scales differ by construction and the difference in their medians is not a modification effect.",
+    "what_is_comparable": "The SHAPE of the mapping from sequence to ribosome load within each arm. Sequence-independence of the modification predicts that a given feature costs or buys the same amount of ribosome load under m1Ψ as unmodified. Sequence-dependence predicts different amounts.",
+    "why_this_is_well_powered": "Each arm has about 330,000 sequences, and each condition has a replicate arm, so the between-replicate spread of a slope gives the right denominator for asking whether the between-modification difference is real."
+  },
+  "preprocessing": {
+    "suffix_trim": "m1Ψ records are 59 nt and end in the constant 9-nt ATGGGCGAA, the start codon plus two eGFP codons. That suffix is trimmed. Records not ending in it are excluded and counted.",
+    "length_requirement": "exactly 50 nt after trimming; others excluded and counted",
+    "alphabet": "ACGT only after uppercasing; others excluded and counted",
+    "depth_filter": "within each arm, keep rows at or above that arm's MEDIAN read depth. A within-arm quantile is used rather than an absolute count because the depth columns differ between arms (total_reads against total) and an absolute threshold would bias one arm.",
+    "ribosome_load_standardisation": "z-scored WITHIN each arm, because the 14-against-13 fraction difference makes absolute values incomparable. Slopes are therefore in units of within-arm standard deviations per feature unit.",
+    "subsample": "after filtering, a seeded random subsample of equal size per arm, so slope precision is comparable across arms rather than driven by arm size",
+    "subsample_size": 40000,
+    "seed": 1729
+  },
+  "features_declared_in_advance": [
+    {
+      "name": "out_of_frame_uaug",
+      "definition": "binary: at least one ATG in the 50-mer whose position is NOT in frame with the downstream main start codon. The UTR is followed immediately by the main ATG at position 50, so an upstream ATG at zero-based position p is in frame when (50 - p) % 3 == 0.",
+      "why": "an out-of-frame upstream start codon diverts initiation and is the best understood sequence determinant of ribosome load in this assay",
+      "statistic": "difference in mean standardised ribosome load, present minus absent"
+    },
+    {
+      "name": "gc_fraction",
+      "definition": "G and C count divided by 50",
+      "why": "composition is the simplest global determinant and is the feature this project's own stability calibration already depends on",
+      "statistic": "ordinary least squares slope of standardised ribosome load on GC fraction"
+    },
+    {
+      "name": "vienna_mfe",
+      "definition": "ViennaRNA minimum free energy of the 50-mer in kcal/mol, RNA_Turner2004, 37 C, dangles 2, computed in process",
+      "why": "secondary structure in the 5' UTR impedes scanning, and m1Ψ is known to alter base-pairing thermodynamics, so this is the feature where a modification effect is most mechanistically plausible",
+      "statistic": "ordinary least squares slope of standardised ribosome load on MFE"
+    }
+  ],
+  "declared_criteria": {
+    "question": "For each feature, is the slope the same under m1Ψ as unmodified?",
+    "primary_statistic": "the ratio of the between-modification slope difference to the larger within-modification replicate difference",
+    "decision_rule": {
+      "consistent_with_constant": "ratio at or below 1.0",
+      "ambiguous": "ratio between 1.0 and 2.0",
+      "sequence_dependent": "ratio above 2.0"
+    },
+    "why_replicates_are_the_denominator": "A slope difference only matters if it exceeds how much the same slope moves between two replicates of the same condition. That denominator is measured here rather than assumed.",
+    "expected_under_the_project_assumption": "all three ratios at or below 1.0, that is, every slope the same within replicate noise",
+    "falsification_of_the_project_assumption": "any ratio above 2.0 means the modification changes how that feature maps to ribosome load, so predictions made on the unmodified sequence would not order the modified molecules by that feature",
+    "secondary": [
+      "each slope with its standard error, per arm, so a reader can judge the comparison directly",
+      "a check that the two conditions' libraries are drawn from the same sequence distribution, by comparing their GC distributions; if they are not, a between-library slope comparison is weakened and that will be said",
+      "the sign of each slope, since a sign change is more consequential than a magnitude change"
+    ],
+    "both_outcomes_are_reportable": "Slopes equal within replicate noise would SUPPORT the project's ranking argument for m1Ψ and would partially rehabilitate it after the pseudouridine result. Slopes differing would confirm the prohibition added in gate v8 and extend it to the right nucleoside."
+  },
+  "what_this_cannot_establish": [
+    "Anything about the project's own construct: a 1811 nt mRNA with a 44 nt 5' UTR, scored in A549 and T cells, is not a 50 nt random UTR on eGFP in HEK293T.",
+    "Absolute ribosome load or expression under m1Ψ, because the fraction counts differ between arms.",
+    "That these three features are the ones that matter. They were declared in advance for being mechanistically motivated and cheap, not for being complete.",
+    "Causation. A slope is an association within a random library.",
+    "Anything about the stability side. Ribosome load is a translation readout."
+  ]
+}

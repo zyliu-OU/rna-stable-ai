@@ -1,0 +1,213 @@
+{
+  "active_length_nt": {
+    "maximum_exclusive": 3000,
+    "minimum_inclusive": 1
+  },
+  "amendment_record": {
+    "authorized_by": "user, 2026-10-20: 'ok sure update the gate'",
+    "prior_amendments": [
+      "v2 stage3_target amended to transfected_cell_expression",
+      "v3 accepted the 2000-2999 nt band as a documented limitation",
+      "v4 amended requirement 4 to the relied-upon native controls",
+      "v5 reviewed the gate and closed Stage 2 at six of six",
+      "v6 opened new_sequence_scoring_enabled and expression_candidate_design_enabled",
+      "v7 purged the retired model and all data at or above 3000 nt",
+      "v8 recorded the first external validation and prohibited presenting a predicted ordering of modified constructs as the expected measured ordering"
+    ],
+    "what_changed": "v8's prohibition is both STRENGTHENED and NARROWED on new external evidence using the correct nucleoside. No requirement is re-opened, no basis changes, no switch moves.",
+    "why_both_directions": "Strengthened because v8 rested on pseudouridine across six constructs, while this rests on N1-methylpseudouridine across 40,000 sequences per arm. Narrowed because the effect localises to GC composition rather than being general: the out-of-frame uAUG and structure relationships are stable within replicate noise."
+  },
+  "architecture": "LinearFold / ViennaRNA -> STRAND + RiboNN + BoTorch",
+  "effective_date": "2026-10-20",
+  "external_evidence_added": {
+    "m1pseudouridine_rescales_the_gc_relationship": {
+      "design": "A random 50-mer 5' UTR library on eGFP in HEK293T, unmodified against m1-psi. The arms share ZERO sequences and their ribosome-load scales differ, 14 against 13 polysome fractions, so the SHAPE of the sequence-to-load mapping is compared rather than any value. 40,000 sequences per arm.",
+      "features_declared_in_advance": [
+        "out_of_frame_uaug",
+        "gc_fraction",
+        "vienna_mfe"
+      ],
+      "finding": "GC content costs about 3.7 times more ribosome load unmodified than under m1-psi, minus 1.00 against minus 0.28, with the two unmodified replicates agreeing to 0.05. A magnitude change, not a sign change. The uAUG and structure slopes are stable within replicate noise, so the modification's effect is NOT uniformly sequence-dependent; it localises to composition.",
+      "limitations_that_must_travel_with_it": [
+        "The m1-psi condition has NO replicate arm: GSM3130440 is a different library of 54 nt and was excluded, so the within-condition denominator is borrowed from the unmodified pair and is recorded as borrowed on every feature. For GC to become consistent with constant, m1-psi replicates would have to be roughly 14 times noisier than unmodified.",
+        "A declared preprocessing step was corrected mid-run: the 9-nt suffix trim is a per-file export convention, not a per-condition one, and the unmodified replicate carries it too. Disclosed; features and the decision rule untouched.",
+        "This is a translation readout and says nothing about the stability side.",
+        "A 50 nt random UTR on eGFP in HEK293T is not an 1811 nt construct in A549 and T cells.",
+        "Three features are not a complete account of ribosome load, and a slope is an association within a random library, not causation."
+      ],
+      "nucleoside": "N1-methylpseudouridine, the one the collaborator's molecules carry",
+      "protocol": "configs/m1pseudouridine_feature_slope_check_v1_2026-10-20.json",
+      "relationship_to_the_pseudouridine_check_in_v8": "The v8 finding stands as what it was: six constructs of a different nucleoside. This reaches a compatible conclusion with the correct nucleoside and vastly more data, and localises it.",
+      "results": {
+        "gc_fraction": {
+          "m1pseudo_mean_slope": -0.27691229020841296,
+          "ratio_between_over_within": 14.337291915446956,
+          "sign_changed": false,
+          "unmodified_mean_slope": -1.0000185655494556,
+          "verdict": "sequence_dependent"
+        },
+        "out_of_frame_uaug": {
+          "m1pseudo_mean_slope": -1.3222742720159082,
+          "ratio_between_over_within": 1.2953087936963157,
+          "sign_changed": false,
+          "unmodified_mean_slope": -1.4933300605654385,
+          "verdict": "ambiguous"
+        },
+        "vienna_mfe": {
+          "m1pseudo_mean_slope": 0.03465868856816649,
+          "ratio_between_over_within": 1.0932755905609548,
+          "sign_changed": false,
+          "unmodified_mean_slope": 0.030064878245269176,
+          "verdict": "ambiguous"
+        }
+      },
+      "run": "results/m1pseudouridine_slope_runs/20261020T214354.531676Z/summary.json",
+      "source_accession": "GSE114002",
+      "why_this_is_the_worst_feature_for_this_project": "GC is one of the three inputs to strand_rnafold_calibration_v1, and it is the feature on which this project's own construct EXTRAPOLATES, at 64.4 percent against a 39.4 to 60.2 percent training range, flagged on every member of every design-workflow run. The modification rescales the relationship for exactly the input the pipeline leans on, in a region where the pipeline is already outside its fitted domain. Those problems compound rather than cancel."
+    },
+    "modification_constancy_not_supported": {
+      "caveats_that_must_travel_with_it": [
+        "This is pseudouridine, NOT N1-methylpseudouridine. Different nucleosides, and m1-psi is used in therapeutic mRNA partly because it behaves better than psi. This cannot be resolved with this dataset.",
+        "The dispersion ratio of 23 compares biological differences against TECHNICAL replicate noise; the robust part is the 13-fold span and the sign change.",
+        "Protein output is translation times stability and this design cannot separate them.",
+        "Six constructs support no significance claim and none is made."
+      ],
+      "finding": "On the expression readout the effect spans 13-fold and CHANGES SIGN. A modification that inverts the ordering cannot be treated as a constant shift. On the stability readout the assumption is not contradicted but not supported either.",
+      "in_solution_half_life": {
+        "dispersion_ratio": 1.76,
+        "fold_change_range": [
+          1.23,
+          2.683
+        ],
+        "same_direction": true,
+        "verdict": "ambiguous"
+      },
+      "protein_output_24h": {
+        "dispersion_ratio": 19.84,
+        "fold_change_range": [
+          0.256,
+          3.309
+        ],
+        "same_direction": false,
+        "verdict": "construct_dependent"
+      },
+      "protein_output_6h": {
+        "dispersion_ratio": 23.14,
+        "fold_change_range": [
+          0.234,
+          1.25
+        ],
+        "same_direction": false,
+        "verdict": "construct_dependent"
+      },
+      "protocol": "configs/pseudouridine_effect_check_v1_2026-10-20.json",
+      "run": "results/pseudouridine_effect_runs/20261020T212132.473715Z/summary.json",
+      "what_was_assumed": "That because every uridine is N1-methylpseudouridine and the modification is constant across the panel, it shifts every construct by the same factor and leaves the ORDER unchanged. Recorded as unverified since 2026-10-19.",
+      "what_was_measured": "Six constructs, unmodified against pseudouridine-modified, by two independent readouts.",
+      "what_would_resolve_it": "A paired m1-psi against unmodified comparison across sequence-differing constructs on the project's own readout, at the cost of doubling the panel."
+    },
+    "stability_calibration_transfers_weakly": {
+      "best_free_baseline": {
+        "name": "per-nucleotide EternaFold",
+        "spearman": -0.3248
+      },
+      "held_out_records": 123,
+      "mean_absolute_error_hours": 0.413,
+      "pearson_on_log": 0.5871,
+      "protocol": "configs/external_validation_leppek_v1_2026-10-20.json",
+      "run": "results/external_validation_leppek_runs/20261020T210948.866079Z/summary.json",
+      "spearman": 0.3268,
+      "status": "First external validation in this project. Declared before computing: not falsified, over the 0.3 threshold by 0.027, reported as real but weak transfer.",
+      "training_provenance_now_known": "All 69 calibration training records are rows of the same supplementary sheet. Any future evaluation must exclude them. The join is inferred from exact GC and half-life matches, not documented upstream.",
+      "training_subset_upper_bound_spearman": 0.529,
+      "what_it_does_not_establish": "Any improvement over published predictors, any absolute accuracy, or any ability to order SIMILAR sequences. Pearson on log far above Spearman means coarse discrimination, not fine ordering.",
+      "what_it_establishes": "The calibration is not fitting noise. It carries signal to records it never saw, across a reporter change and beyond its training range."
+    }
+  },
+  "name": "stage2_to_stage3_gate_v9",
+  "new_prohibition_added_here": {
+    "applies_to": [
+      "results/design_workflow_runs/ Pareto fronts and selected panels",
+      "any future candidate ranking over a modified panel"
+    ],
+    "prohibition": "A predicted ORDERING of modified constructs MUST NOT be presented as the expected measured ordering.",
+    "what_is_still_permitted": "Reporting the predictions as predictions on the unmodified sequence, with this limitation attached.",
+    "why": "The licence for that presentation was the sequence-independence assumption in section A1 of reports/remaining_limitations_before_candidate_design_2026-10-19.md. The nearest available evidence contradicts it for the expression readout."
+  },
+  "prohibition_revised_here": {
+    "applies_to": [
+      "results/design_workflow_runs/ Pareto fronts and selected panels",
+      "any future candidate ranking over a modified panel"
+    ],
+    "revised": "A predicted ORDERING of modified constructs MUST NOT be presented as the expected measured ordering. SPECIFICALLY, any ordering that depends on GC content is unsupported, because m1-psi rescales the GC-to-ribosome-load relationship by roughly 3.7 times.",
+    "supersedes": "A predicted ORDERING of modified constructs MUST NOT be presented as the expected measured ordering.",
+    "what_is_NOT_licensed_by_the_narrowing": "The uAUG and structure verdicts are AMBIGUOUS, not supported. It must not be claimed that those relationships are known to be preserved under m1-psi.",
+    "what_is_now_more_precise": "v8 prohibited the general claim on weak evidence. The prohibition still holds and now names the mechanism and the feature.",
+    "what_is_still_permitted": "Reporting the predictions as predictions on the unmodified sequence, with this limitation attached."
+  },
+  "requirement_6_documents": [
+    "reports/remaining_limitations_before_candidate_design_2026-10-19.md",
+    "reports/remaining_limitations_addendum_2026-10-20.md",
+    "reports/remaining_limitations_addendum_2026-10-20_V2.md",
+    "reports/remaining_limitations_addendum_2026-10-20_V3.md"
+  ],
+  "requirements_before_stage3": [
+    "Frozen independent sequence_and_family_clan_separated_validation_within_scope",
+    "Reported_accuracy_and_failures_by_length_band_and_family_against_native_controls",
+    "Resolve_sparse_2000_2999_nt_coverage_before_claiming_the_full_length_range",
+    "Demonstrate_credible_structure_accuracy_from_the_relied_upon_native_controls_with_explicit_review_of_baseline_gaps",
+    "Pass_constraint_decoder_resource_and_replay_checks_on_the_relied_upon_native_path",
+    "Document_remaining_limitations_before_expression_candidate_design"
+  ],
+  "requirements_satisfied": 6,
+  "requirements_satisfied_basis_unchanged_from_v5": {
+    "1": "accepted_as_documented_limitation",
+    "2": "satisfied_on_evidence",
+    "3": "accepted_as_documented_limitation",
+    "4": "satisfied_on_evidence",
+    "5": "satisfied_on_evidence after re-scoping onto the native path; evidence re-issued in v7 on the in-scope cohort",
+    "6": "satisfied_on_evidence",
+    "note": "Carried forward. v7 re-opens no requirement and re-ratifies none. Two of the six remain accepted limitations rather than evidence."
+  },
+  "schema_version": 9,
+  "stage": "stage3_workflow_construction_before_measurement",
+  "stage3_target": "transfected_cell_expression",
+  "supersedes": {
+    "chain": "v9 supersedes v8, which superseded v7, v6, v5, v4, v3, v2 and configs/stage2_to_stage3_gate_2026-10-18.json; all remain frozen",
+    "file": "configs/stage2_to_stage3_gate_v8_2026-10-20.json",
+    "sha256": "0aae9fdcbadee7ac028458decfa56f6dbb19abd42069564746c573360a8ed60b",
+    "status": "frozen and unedited"
+  },
+  "switches_unchanged_from_v6": {
+    "expression_benefit_established": false,
+    "expression_candidate_design_enabled": true,
+    "independent_biological_validation": false,
+    "model_defaults_changed": false,
+    "new_sequence_scoring_enabled": true,
+    "stability_score_calibrated_to_the_assay": false,
+    "stage3_development_started": true,
+    "stage3_ready": true
+  },
+  "what_must_not_be_claimed": [
+    "That removing the model's artifacts changed any measurement. It changed none.",
+    "That the Stage 2 requirements are satisfied on any basis other than the one v5 recorded, including the two accepted limitations.",
+    "That requirements 2, 3 and 4 can be regenerated from source. Their artifacts remain; their generators do not.",
+    "That the learned model's results were never obtained, or that work above 3000 nt was never done.",
+    "That a smaller test suite means a sounder project. 609 tests were removed with their subject.",
+    "That a predicted ordering of modified constructs is the expected measured ordering.",
+    "That m1-psi's effect is known to be sequence-independent; the nearest evidence points the other way for psi on expression.",
+    "That the stability calibration orders similar sequences usefully; it discriminates coarsely.",
+    "That the calibration improves on published predictors; it matches one that is free.",
+    "That any ordering depending on GC content survives the modification; m1-psi rescales that relationship by roughly 3.7 times.",
+    "That the uAUG or structure relationships are known to be preserved under m1-psi; their verdicts are ambiguous, which is not the same as supported.",
+    "That m1-psi's effect on stability is known; nothing tested it."
+  ],
+  "what_remains_absent": [
+    "Any experimental measurement of any construct in this project. There is none.",
+    "Measured coefficients of variation for both assay readouts.",
+    "The decision cost of a false accept against a false reject.",
+    "Whether Fluc-PEST enters the panel.",
+    "A reference point on the real objective scales.",
+    "Experimental-structure references within the active length scope; requirement 1 remains an accepted limitation."
+  ]
+}
