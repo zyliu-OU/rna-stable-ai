@@ -59,6 +59,8 @@ def main(argv=None):
                         help="where these CDS bases came from, e.g. 'supplied by Ping 2026-10-20'")
     parser.add_argument("--assay-context", default="assay_definition_v3_2026-10-19")
     parser.add_argument("--out", default=str(DEFAULT_OUT))
+    parser.add_argument("--cds-component", default="cds",
+                        help="which recorded CDS to verify against: cds (Fluc) or cds_fluc_pest")
     parser.add_argument("--poly-a", action="store_true",
                         help="append the recorded template-encoded poly(A) tail; off by default "
                              "because it may push the input out of the models' distribution")
@@ -72,7 +74,8 @@ def main(argv=None):
     try:
         transcript, report = assemble(
             read_sequence(args.cds), args.config, args.tx_id, args.provenance,
-            args.assay_context, include_poly_a=args.poly_a)
+            args.assay_context, include_poly_a=args.poly_a,
+            cds_component=args.cds_component)
     except ValueError as exc:
         raise SystemExit(f"Refused: {exc}")
 

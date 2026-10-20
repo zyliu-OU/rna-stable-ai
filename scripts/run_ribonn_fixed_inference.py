@@ -48,10 +48,12 @@ def reference_records(config):
     spec = config["reference_transcript"]
     records = []
     for variant in spec["variants"]:
+        component = variant.get("cds_component", "cds")
+        cds_file = spec["cds_files"][component] if "cds_files" in spec else spec["cds_file"]
         record, _ = assemble(
-            (ROOT/spec["cds_file"]).read_text(), ROOT/spec["inputs_config"],
+            (ROOT/cds_file).read_text(), ROOT/spec["inputs_config"],
             variant["tx_id"], spec["provenance"], spec["assay_context"],
-            include_poly_a=variant["include_poly_a"])
+            include_poly_a=variant["include_poly_a"], cds_component=component)
         records.append(record)
     return records
 

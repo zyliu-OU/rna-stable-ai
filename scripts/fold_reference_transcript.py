@@ -64,6 +64,8 @@ def main(argv=None):
     parser.add_argument("--tx-id", default="FLUC-REF-V1")
     parser.add_argument("--provenance", default="committed construct inputs")
     parser.add_argument("--assay-context", default="assay_definition_v3_2026-10-19")
+    parser.add_argument("--cds-component", default="cds",
+                        help="which recorded CDS to verify against")
     parser.add_argument("--poly-a", action="store_true",
                         help="include the recorded template-encoded poly(A) tail")
     parser.add_argument("--temperature", type=float, default=37.0)
@@ -75,7 +77,8 @@ def main(argv=None):
     try:
         transcript, report = assemble(
             Path(args.cds).read_text(), args.config, args.tx_id, args.provenance,
-            args.assay_context, include_poly_a=args.poly_a)
+            args.assay_context, include_poly_a=args.poly_a,
+            cds_component=args.cds_component)
     except ValueError as exc:
         raise SystemExit(f"Refused: {exc}")
 

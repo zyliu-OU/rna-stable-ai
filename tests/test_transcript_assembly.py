@@ -126,6 +126,68 @@ def test_assembly_is_deterministic(tmp_path):
     assert a.identity_sha256 == b.identity_sha256
 
 
+# --- selecting which recorded construct to assemble ----------------------
+
+def two_construct_config(tmp_path):
+    """A config recording two constructs of different length, as the real one does."""
+    path, fluc = write_config(tmp_path)
+    pest = synthetic_cds(592)
+    payload = json.loads(path.read_text())
+    payload["components"]["cds_fluc_pest"] = {
+        "sha256_dna_uppercase": hashlib.sha256(pest.encode()).hexdigest(),
+        "length_nt": len(pest),
+    }
+    path.write_text(json.dumps(payload))
+    return path, fluc, pest
+
+
+def test_second_construct_assembles_against_its_own_hash(tmp_path):
+    path, _, pest = two_construct_config(tmp_path)
+    _, report = assemble(pest, path, "PEST", "p", "a", cds_component="cds_fluc_pest")
+    assert report.cds_component == "cds_fluc_pest"
+    assert report.cds_length_nt == len(pest) == 1776
+    assert report.transcript_length_nt == 44 + 1776 + 114
+
+
+def test_each_construct_is_bound_to_its_own_hash(tmp_path):
+    """The central guarantee: one construct cannot pass as the other."""
+    path, fluc, pest = two_construct_config(tmp_path)
+    with pytest.raises(ValueError, match="does not match the recorded CDS 'cds_fluc_pest'"):
+        assemble(fluc, path, "T", "p", "a", cds_component="cds_fluc_pest")
+    with pytest.raises(ValueError, match="does not match the recorded CDS 'cds'"):
+        assemble(pest, path, "T", "p", "a")
+
+
+def test_the_two_constructs_differ_in_identity(tmp_path):
+    path, fluc, pest = two_construct_config(tmp_path)
+    _, a = assemble(fluc, path, "FLUC", "p", "a")
+    _, b = assemble(pest, path, "PEST", "p", "a", cds_component="cds_fluc_pest")
+    assert a.transcript_sha256_rna != b.transcript_sha256_rna
+    assert a.cds_sha256_dna_uppercase != b.cds_sha256_dna_uppercase
+
+
+def test_shared_utr_layout_still_applies_to_the_second_construct(tmp_path):
+    """UTRs and the tandem stop are shared; only the CDS length differs."""
+    path, _, pest = two_construct_config(tmp_path)
+    _, report = assemble(pest, path, "PEST", "p", "a", cds_component="cds_fluc_pest")
+    assert report.utr5_length_nt == 44
+    assert report.utr3_length_nt == 114
+    assert report.tandem_stop_present is True
+    assert report.cds_start == 44
+
+
+def test_unknown_cds_component_is_refused(tmp_path):
+    path, cds = write_config(tmp_path)
+    with pytest.raises(ValueError, match="records no CDS component"):
+        assemble(cds, path, "T", "p", "a", cds_component="cds_nonexistent")
+
+
+def test_real_config_records_both_constructs_with_distinct_lengths():
+    components = load_inputs(REAL_CONFIG)["components"]
+    assert components["cds"]["length_nt"] == 1653
+    assert components["cds_fluc_pest"]["length_nt"] == 1776
+
+
 # --- poly(A) ------------------------------------------------------------
 
 def poly_a_config(tmp_path, length=103):
@@ -184,7 +246,7 @@ def test_cds_failing_the_recorded_hash_is_refused(tmp_path):
     """The central guarantee: a different sequence cannot pass as the same one."""
     wrong = "ATG" + "GCA" * 549 + "TAA"
     path, _ = write_config(tmp_path, cds=synthetic_cds())
-    with pytest.raises(ValueError, match="does not match the recorded reference CDS"):
+    with pytest.raises(ValueError, match="does not match the recorded CDS"):
         assemble(wrong, path, "FLUC-REF", "wrong", "assay_definition_v3")
 
 
@@ -231,9 +293,12 @@ def test_the_refusal_points_at_the_decision_rather_than_offering_a_workaround(tm
     assert "must be revisited" in str(e.value)
 
 
-def test_cds_length_contradiction_is_refused(tmp_path):
-    cds = synthetic_cds()
-    path, _ = write_config(tmp_path, cds=cds, lengths={"utr5": 44, "cds": 1650, "utr3": 114})
+def test_cds_length_contradicting_its_own_component_record_is_refused(tmp_path):
+    """Guards a config whose recorded CDS length disagrees with its own hashed sequence."""
+    path, cds = write_config(tmp_path)
+    payload = json.loads(path.read_text())
+    payload["components"]["cds"]["length_nt"] = 1650
+    path.write_text(json.dumps(payload))
     with pytest.raises(ValueError, match="contradicts the recorded region boundary"):
         assemble(cds, path, "T", "p", "a")
 

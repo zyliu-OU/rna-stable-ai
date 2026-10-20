@@ -70,6 +70,7 @@ class AssemblyReport:
     tandem_stop_codon: str | None
     ribonn_exclusion: str | None
     alphabet_conversion: str
+    cds_component: str
     config_path: str
     no_claim: str = (
         "A validated assembly of supplied inputs. Establishes no stability, "
@@ -80,16 +81,26 @@ class AssemblyReport:
         return asdict(self)
 
 
-def assemble(cds_bases, config_path, tx_id, provenance, assay_context, include_poly_a=False):
-    """Assemble and validate the reference transcript from a supplied CDS.
+def assemble(cds_bases, config_path, tx_id, provenance, assay_context, include_poly_a=False,
+             cds_component="cds"):
+    """Assemble and validate a transcript from a supplied CDS.
 
     The CDS is verified against the hash recorded in the config before anything
     else happens, so a wrong sequence fails immediately rather than after
     producing a plausible-looking transcript.
+
+    `cds_component` names which recorded CDS to verify against. The project
+    records more than one construct (Fluc and Fluc-PEST), and they are different
+    sequences of different lengths. Naming the component explicitly keeps each
+    one bound to its own hash, so the second construct cannot be assembled by
+    relaxing the first one's gate.
     """
     data = load_inputs(config_path)
     components = data["components"]
     recorded = data["region_boundary_decision"]["consequence"]
+    if cds_component not in components:
+        raise ValueError(f"Config records no CDS component named {cds_component!r}")
+    cds_record = components[cds_component]
 
     cds_upper = cds_bases.upper().strip() if isinstance(cds_bases, str) else None
     if not cds_upper:
@@ -101,12 +112,12 @@ def assemble(cds_bases, config_path, tx_id, provenance, assay_context, include_p
     # supplied-sequence error rather than a convention error.
     cds_dna = cds_upper.replace("U", "T")
     observed = hashlib.sha256(cds_dna.encode()).hexdigest()
-    expected = components["cds"]["sha256_dna_uppercase"]
+    expected = cds_record["sha256_dna_uppercase"]
     if observed != expected:
         raise ValueError(
-            "Supplied CDS does not match the recorded reference CDS. "
+            f"Supplied CDS does not match the recorded CDS {cds_component!r}. "
             f"Expected sha256 {expected}, observed {observed} "
-            f"(supplied length {len(cds_dna)} nt, recorded {components['cds']['length_nt']} nt). "
+            f"(supplied length {len(cds_dna)} nt, recorded {cds_record['length_nt']} nt). "
             "This is a different sequence and must not be treated as the same construct."
         )
 
@@ -117,9 +128,13 @@ def assemble(cds_bases, config_path, tx_id, provenance, assay_context, include_p
     # The config carries the lengths the boundary decision was made under. If a
     # component were edited without that decision being revisited, the layout
     # would silently shift, so the two are cross-checked rather than trusted.
+    # The UTRs and the tandem-stop decision are shared across constructs, so
+    # they are checked against the boundary decision. The CDS length is checked
+    # against its own component record, because a second construct legitimately
+    # has a different length while sharing the same UTR layout.
     for label, observed_len, recorded_len in (
         ("utr5", len(utr5), recorded["utr5_length_nt"]),
-        ("cds", len(cds), recorded["cds_length_nt"]),
+        ("cds", len(cds), cds_record["length_nt"]),
         ("utr3", len(utr3), recorded["utr3_length_nt"]),
     ):
         if observed_len != recorded_len:
@@ -130,7 +145,11 @@ def assemble(cds_bases, config_path, tx_id, provenance, assay_context, include_p
             )
 
     sequence = utr5 + cds + utr3
-    if len(sequence) != recorded["transcript_length_nt"]:
+    expected_length = (recorded["utr5_length_nt"] + cds_record["length_nt"]
+                       + recorded["utr3_length_nt"])
+    if len(sequence) != expected_length:
+        raise ValueError("Assembled length contradicts the recorded component lengths")
+    if cds_component == "cds" and len(sequence) != recorded["transcript_length_nt"]:
         raise ValueError("Assembled length contradicts the recorded transcript length")
 
     # The real transfected molecule carries a template-encoded poly(A) tail, but
@@ -181,5 +200,6 @@ def assemble(cds_bases, config_path, tx_id, provenance, assay_context, include_p
         tandem_stop_codon=leading if tandem else None,
         ribonn_exclusion=transcript.ribonn_exclusion(),
         alphabet_conversion="supplied DNA uppercased and T converted to U",
+        cds_component=cds_component,
         config_path=str(config_path),
     )

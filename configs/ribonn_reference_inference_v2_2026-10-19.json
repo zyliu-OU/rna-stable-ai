@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "purpose": "Score both supplied constructs, Fluc and Fluc-PEST, with the selected A549 task in a single run so the comparison uses identical checkpoints",
+  "source_manifest": "results/four_component_source_runs/20261019T040820.389955Z/manifest.json",
+  "weight_manifest": "results/ribonn_weight_acquisition_runs/20261019T044334.430330Z/manifest.json",
+  "python": "external/ribonn-inference/bin/python",
+  "species": "human",
+  "score_column": "predicted_TE_A549",
+  "task_choice": "predicted_TE_A549, the task selected for the A549 arm in configs/ribonn_task_selection_v1_2026-10-19.json",
+  "expected_folds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "top_k_per_fold": 5,
+  "checkpoint_selection": "Released validation R2 descending; fail on selected/boundary ties",
+  "replay_processes": 2,
+  "cpu_threads": 2,
+  "batch_size": 2,
+  "dataloader_workers": 0,
+  "worker_timeout_seconds": 1800,
+  "required_versions": {
+    "torch": "1.13.1",
+    "numpy": "1.22.4",
+    "pandas": "2.2.3",
+    "pytorch-lightning": "1.8.5",
+    "torchmetrics": "1.3.1",
+    "lightning-utilities": "0.10.1",
+    "scikit-learn": "1.0.2"
+  },
+  "original_cpu_runtime_adjustment": "torch.load(map_location=cpu, weights_only=True), audited checkpoint hashes",
+  "controls": [
+    "empty_UTRs",
+    "utr5_1381_included",
+    "utr5_1382_excluded"
+  ],
+  "target_scale": "Released model task scale; no inverse transform or physical unit assumption",
+  "candidate_design_enabled": false,
+  "cell_free_calibrated": false,
+  "stage3_ready": false,
+  "reference_transcript": {
+    "inputs_config": "configs/transcript_inputs_v1_2026-10-19.json",
+    "provenance": "Fluc ORF supplied by Ping via the user 2026-10-19, hash-verified against assay_definition_v3",
+    "assay_context": "assay_definition_v3_2026-10-19",
+    "variants": [
+      {
+        "tx_id": "FLUC-REF-V1-core",
+        "include_poly_a": false,
+        "cds_component": "cds",
+        "note": "1811 nt: 5'UTR 44 + Fluc CDS 1653 + 3'UTR 114"
+      },
+      {
+        "tx_id": "FLUC-PEST-V1-core",
+        "include_poly_a": false,
+        "cds_component": "cds_fluc_pest",
+        "note": "1934 nt: 5'UTR 44 + Fluc-PEST CDS 1776 + 3'UTR 114"
+      }
+    ],
+    "cds_files": {
+      "cds": "data/constructs/fluc_orf.txt",
+      "cds_fluc_pest": "data/constructs/fluc_pest_orf.txt"
+    }
+  },
+  "scope": "Characterises the two supplied constructs. Scores no designed candidate, selects nothing, freezes no floor, and leaves every scope flag false.",
+  "no_claim": [
+    "Scoring the reference establishes no stability, translation or expression benefit.",
+    "A released-task TE score is not a prediction of luminescence in this assay.",
+    "Every uridine is N1-methylpseudouridine, which RiboNN does not represent.",
+    "The A549 arm only. The T-cell arm remains model-blind."
+  ]
+}
