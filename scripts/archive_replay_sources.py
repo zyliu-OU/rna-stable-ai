@@ -24,17 +24,22 @@ def sha(raw):
 
 
 def files(root, directories, pattern):
-    directories = [d for d in directories if (root / d).exists()]
-    if not directories:
-        return []
-    result = subprocess.run(
-        ["rg", "--files", "--hidden", "--no-ignore", *directories, "-g", pattern],
-        cwd=root,
-        capture_output=True,
-        text=True,
-    )
-    require(result.returncode in (0, 1), "Source inventory failed: " + result.stderr)
-    return sorted(root / name for name in result.stdout.splitlines())
+    """Inventory files by basename glob, hidden ones included, ignore files disregarded.
+
+    Deliberately pure Python: the inventory must not depend on an external search
+    binary being installed, because a missing binary would silently reduce the
+    recovered source set rather than fail loudly.
+    """
+    found = set()
+    for d in directories:
+        base = root / d
+        if not base.is_dir():
+            continue
+        for p in base.rglob(pattern):
+            if ".git" in p.parts or not p.is_file():
+                continue
+            found.add(p)
+    return sorted(found)
 
 
 def bindings(root, manifest_paths=None):

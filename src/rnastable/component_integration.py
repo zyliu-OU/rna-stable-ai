@@ -101,6 +101,83 @@ def check_synonymous_edit(parent, candidate, protected_positions=(), max_edits=0
             and Seq(parent.cds).translate(cds=True) == Seq(candidate.cds).translate(cds=True))
 
 
+def classify_construct_edit(parent, candidate):
+    """Classify a supplied pair against the assay_definition_v3 design space.
+
+    check_synonymous_edit holds a narrower frozen contract: identical transcript
+    geometry and untouched UTRs. That contract cannot express the recorded design
+    space, which opens 5' UTR, ORF and 3' UTR while requiring ORF edits to be
+    synonymous, so a UTR substitution is rejected there as if it were a missense
+    edit. This function separates the two questions and never proposes an edit.
+
+    Protein invariance is the binding constraint: the encoded protein must be
+    exactly the parent protein, so an in-frame indel that changes protein length
+    is invalid, not merely flagged. Returns a verdict; raises only on bad input.
+    """
+    for r in (parent, candidate):
+        if not isinstance(r, Transcript):
+            raise ValueError("Both arguments must be Transcript records")
+    if parent.translation_table != candidate.translation_table:
+        raise ValueError("Translation table differs; no cross-table comparison")
+
+    regions = {}
+    for name, a, b in (
+        ("utr5", parent.sequence[:parent.cds_start], candidate.sequence[:candidate.cds_start]),
+        ("orf", parent.cds, candidate.cds),
+        ("utr3", parent.sequence[parent.cds_end:], candidate.sequence[candidate.cds_end:]),
+    ):
+        regions[name] = {
+            "parent_length_nt": len(a),
+            "candidate_length_nt": len(b),
+            "length_delta_nt": len(b) - len(a),
+            "identical": a == b,
+            # Position-wise substitutions are only defined at equal length.
+            "substitutions": sum(x != y for x, y in zip(a, b)) if len(a) == len(b) else None,
+        }
+
+    parent_protein = str(Seq(parent.cds).translate(table=parent.translation_table, cds=True))
+    candidate_protein = str(Seq(candidate.cds).translate(table=candidate.translation_table, cds=True))
+    protein_invariant = parent_protein == candidate_protein
+    orf_changed = not regions["orf"]["identical"]
+
+    reasons = []
+    if not protein_invariant:
+        reasons.append("orf_edit_changes_encoded_protein")
+    if orf_changed and regions["orf"]["length_delta_nt"] != 0:
+        reasons.append("orf_length_changed")
+    if candidate.ribonn_exclusion():
+        reasons.append("candidate_" + candidate.ribonn_exclusion())
+
+    changed = sorted(n for n, d in regions.items() if not d["identical"])
+    return {
+        "parent_tx_id": parent.tx_id,
+        "candidate_tx_id": candidate.tx_id,
+        "parent_identity_sha256": parent.identity_sha256,
+        "candidate_identity_sha256": candidate.identity_sha256,
+        "regions": regions,
+        "regions_changed": changed,
+        "protein_invariant": protein_invariant,
+        "parent_protein_sha256": digest(parent_protein),
+        "candidate_protein_sha256": digest(candidate_protein),
+        "orf_synonymous": orf_changed and protein_invariant,
+        "orf_unchanged": not orf_changed,
+        "transcript_length_delta_nt": len(candidate.sequence) - len(parent.sequence),
+        "valid_under_assay_v3": not reasons,
+        "invalid_reasons": reasons,
+        # Recorded because assay_definition_v3 warns the regions are not
+        # independent in their effect on model scores.
+        "model_input_coupling": {
+            "strand_features_move": bool(changed),
+            "ribonn_region_sizes_move": bool(
+                regions["utr5"]["length_delta_nt"] or regions["orf"]["length_delta_nt"]
+                or regions["utr3"]["length_delta_nt"]
+            ),
+            "candidate_ribonn_exclusion": candidate.ribonn_exclusion(),
+        },
+        "no_claim": "Edit validity is a sequence-level check and establishes no stability, translation or expression benefit.",
+    }
+
+
 def export_ribonn(records, path):
     """Export full-transcript input to avoid empty-UTR NaN parsing upstream."""
     validate_pool(records)

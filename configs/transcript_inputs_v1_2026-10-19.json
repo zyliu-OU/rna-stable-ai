@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "name": "transcript_inputs_v1",
+  "date": "2026-10-19",
+  "status": "all_components_supplied_and_verified",
+  "purpose": "Durably record the transcript component sequences as supplied, with hashes, so that no supplied sequence survives only in conversation. The reference CDS was previously supplied and retained as a hash only; its bases were lost. This file exists so that does not recur.",
+  "governs": "configs/assay_definition_v3_2026-10-19.json",
+  "gate": "configs/stage2_to_stage3_gate_v2_2026-10-19.json",
+  "provenance": {
+    "source": "supplied directly by the user in conversation on 2026-10-19",
+    "verbatim_form": "5' UTR given as uppercase DNA; 3' UTR given as lowercase DNA",
+    "not_aligned_to_reference_database": false,
+    "identity_assessment": "Exact-match comparison against NCBI RefSeq was run on 2026-10-19 by E-utilities efetch; results recorded per component below."
+  },
+  "components": {
+    "utr5": {
+      "supplied": true,
+      "sequence_dna_uppercase": "AAATAAGAGAGAAAAGAAGAGTAAGAAGAAATATAAGAGCCACC",
+      "length_nt": 44,
+      "sha256_dna_uppercase": "60f37b93e3d0af40b7e7bf9d92be6d50139e776d5c109bbdce5da00bbd494088",
+      "sha256_rna_uppercase": "5022b01bb3f2cdd7413c418537fde7f69b013ff10a9fc4eb6b955599075a2f60",
+      "gc_fraction": 0.3182,
+      "a_fraction": 0.5909,
+      "identity": {
+        "stated_by_ping": "moderna 1273 5' UTR",
+        "assignment": "Derived from the Moderna mRNA-1273 5' UTR, but SHORTENED. Not an exact copy.",
+        "comparison": {
+          "mrna_1273_5utr": "GGGAAATAAGAGAGAAAAGAAGAGTAAGAAGAAATATAAGACCCCGGCGCCGCCACC",
+          "mrna_1273_length_nt": 57,
+          "supplied_length_nt": 44,
+          "shared_prefix_nt": 38,
+          "shared_prefix": "AAATAAGAGAGAAAAGAAGAGTAAGAAGAAATATAAGA",
+          "mrna_1273_continues": "CCCCGGCGCCGCCACC",
+          "supplied_continues": "GCCACC",
+          "difference": "The supplied sequence omits the leading GGG transcription start and the internal 10 nt CCCCGGCGCC, retaining the terminal GCCACC Kozak. It is not a substring of the mRNA-1273 5' UTR because of that internal deletion.",
+          "gc_fraction_mrna_1273": 0.474,
+          "gc_fraction_supplied": 0.318,
+          "source_of_reference": "Spike-encoding contig assembled from Moderna mRNA-1273, NAalytics public assembly"
+        },
+        "why_the_difference_matters": "The omitted CCCCGGCGCC is GC-rich and sits immediately 5' of the Kozak. Removing it changes 5' UTR length (a RiboNN input), overall GC, and the local folding near the start codon (a STRAND feature). The supplied sequence must not be modelled as if it were the full mRNA-1273 5' UTR.",
+        "to_confirm_with_ping": "Whether the shortening is deliberate, and whether the internal CCCCGGCGCC deletion is intended or an extraction artifact.",
+        "is_native_hba1_5utr": false,
+        "native_hba1_5utr_for_comparison": "ACTCTTCTGGTCCCCACAGACTCAGAGAGAACCCACC"
+      },
+      "observations": {
+        "kozak": "Terminal 6 nt are GCCACC, a canonical Kozak context, positioned to abut a downstream start codon.",
+        "upstream_aug_count": 0,
+        "upstream_aug_note": "No uAUG, so no alternative start competes with the annotated start codon.",
+        "ribonn_upstream_domain": "44 nt is far below the 1381 nt RiboNN upstream-domain limit, so this 5' UTR triggers no exclusion."
+      }
+    },
+    "utr3": {
+      "supplied": true,
+      "sequence_dna_uppercase": "TAAGCTGGAGCCTCGGTGGCCATGCTTCTTGCCCCTTGGGCCTCCCCCCAGCCCCTCCTCCCCTTCCTGCACCCGTACCCCCGTGGTCTTTGAATAAAGTCTGAGTGGGCGGCA",
+      "length_nt": 114,
+      "sha256_dna_uppercase": "019f34a7c2cf43d615098608c48b5e6061c231042e03453e54b2791be3e37050",
+      "sha256_rna_uppercase": "1c8a1301e7f58991df127f0a908245b847f033ad12d22810e5f0a2e27249b0de",
+      "gc_fraction": 0.6404,
+      "identity": {
+        "assignment": "Human HBA1 3' UTR, preceded by one TAA stop codon.",
+        "evidence": "The supplied sequence with its leading TAA removed is a 111 of 111 nt exact match to the HBA1 3' UTR (RefSeq NM_000558.5, mRNA length 577, CDS 38..466, so 3' UTR = positions 467..577).",
+        "paralogue_specificity": "Matches HBA1, not HBA2. The HBA2 3' UTR (NM_000517.6) is 110 nt and differs in sequence, so the assignment is to a specific paralogue rather than to alpha-globin generally.",
+        "native_stop_context": "The native HBA1 CDS terminates in TAA at positions 464..466, immediately 5' of that UTR, so the leading TAA of the supplied sequence is positionally coincident with the alpha-globin stop codon.",
+        "negative_control": "The supplied 5' UTR is not the native HBA1 5' UTR, so this match is not an artifact of recognising a whole familiar construct."
+      },
+      "observations": {
+        "polyadenylation_signal": "Single AATAAA hexamer at zero-based position 92, leaving 16 nt downstream of the hexamer.",
+        "polyadenylation_caveat": "Whether that hexamer is functional depends on an unresolved blocking input: in a plasmid DNA construct it is used for cleavage and polyadenylation, whereas in IVT mRNA the poly(A) tail is template-encoded or enzymatically added and the hexamer is inert. No claim is made either way.",
+        "internal_aug": "An ATG occurs within this region. It is 3' of the stop and so is not a translational start in the annotated frame; it is recorded only because it is a sequence feature, not because it implies any activity."
+      }
+    },
+    "cds": {
+      "supplied": true,
+      "status": "supplied_and_hash_verified",
+      "source_file": "Fluc and Fluc-PEST sequence.xlsx, sheet Sheet1, cell C2, supplied by Ping via the user 2026-10-19",
+      "sequence_file": "data/constructs/fluc_orf.txt",
+      "recorded_in": "configs/assay_definition_v3_2026-10-19.json",
+      "sha256_dna_uppercase": "86322fc15d89f604e34e3a3fb275f059adb834f7dc904f97f20c44498ba9168d",
+      "hash_verification": "The supplied ORF hashes to exactly the value recorded in assay_definition_v3 on an earlier date, so the sequence lost from this workspace is recovered and the provenance chain across sessions is intact. Verified 2026-10-19.",
+      "length_nt": 1653,
+      "codons": 551,
+      "protein_length_aa": 550,
+      "stop_codon_included": true,
+      "stop_codon": "TGA",
+      "gc_fraction": 0.6534,
+      "gc3_fraction": 0.9964
+    },
+    "cds_fluc_pest": {
+      "supplied": true,
+      "status": "second_construct_supplied_not_the_recorded_reference",
+      "source_file": "Fluc and Fluc-PEST sequence.xlsx, sheet Sheet1, cell C3",
+      "sequence_file": "data/constructs/fluc_pest_orf.txt",
+      "sha256_dna_uppercase": "37033351becbff1532b375fd29b17afc8ca33bbf477bdfe3762cf0243dbdfc95",
+      "length_nt": 1776,
+      "codons": 592,
+      "protein_length_aa": 591,
+      "stop_codon": "TGA",
+      "gc_fraction": 0.6464,
+      "gc3_fraction": 0.9611,
+      "relationship_to_fluc": "123 nt longer than Fluc, which is 41 additional codons, consistent with a C-terminal PEST degradation tag. It is a DIFFERENT sequence with a different hash and is not interchangeable with the recorded reference CDS.",
+      "assay_relevance": "A PEST tag shortens protein half-life. Luminescence from a PEST-tagged luciferase therefore tracks current mRNA level more closely than untagged luciferase, whose long-lived protein integrates past translation. This affects how a luminescence time course should be interpreted, and the two constructs must not be pooled.",
+      "no_claim": "Recorded as supplied. No decision has been taken on whether Fluc-PEST enters the panel, and no claim is made about its behaviour."
+    }
+  },
+  "region_boundary_decision": {
+    "question": "The supplied 3' UTR begins with TAA, a stop codon, while the recorded CDS already includes its own stop codon.",
+    "decision": "Intentional tandem stop codon. Concatenate as supplied.",
+    "decided_by": "user, 2026-10-19",
+    "quote": "for taa boundary question: Intentional tandem stop (a real and common design, insurance against readthrough) - concatenate as given, transcript = 44 + 1653 + 114",
+    "consequence": {
+      "transcript_length_nt": 1811,
+      "utr5_length_nt": 44,
+      "cds_length_nt": 1653,
+      "utr3_length_nt": 114,
+      "layout": "utr5 = [0, 44); cds = [44, 1697); utr3 = [1697, 1811), zero-based half-open"
+    },
+    "rationale": "A tandem stop codon is a recognised design guarding against stop-codon readthrough. The CDS retains its own terminator, so the ORF is unchanged and the second TAA sits in the 3' UTR region.",
+    "evidence_preserved": "The sequence evidence shows the 111 nt following that TAA is exactly the HBA1 3' UTR and that HBA1's own stop codon is TAA, so the supplied form is positionally identical to an extraction begun at the alpha-globin stop. The sequence data alone cannot distinguish a deliberate tandem stop from an extraction that started one codon early; the user resolved it as deliberate, and that decision governs.",
+    "why_it_matters": "RiboNN consumes CDS and UTR lengths as model inputs, and classify_construct_edit performs per-region accounting on these exact boundaries. The 3 nt are assigned to utr3, so utr3 length is 114 and the ORF length is 1653 for every downstream model input and region check.",
+    "consistency_check_required": "Because the second TAA is assigned to the UTR rather than the ORF, any future edit proposal touching the first 3 nt of utr3 is a UTR edit under the recorded design space and is not governed by the synonymous-only ORF constraint. A reader must not assume those 3 nt are protected as coding."
+  },
+  "construct_context_from_ping": {
+    "source": "answers from the colleague referred to as Ping, relayed by the user 2026-10-19",
+    "parent_baseline": {
+      "answer": "The construct supplied in the Excel sheet is the internal control, containing the Moderna 1273 5' UTR and the HBA1 3' UTR.",
+      "effect": "The parent/baseline blocking input is resolved. Candidates are compared against this internal control.",
+      "note": "This independently confirms the HBA1 3' UTR identification made here by exact RefSeq match before Ping answered."
+    },
+    "delivery": {
+      "answer": "IVT mRNA transfected into cells. Not plasmid DNA.",
+      "effect": "Resolves a blocking input and settles the polyadenylation question: the AATAAA hexamer in the 3' UTR is inert, because the poly(A) tail is template-encoded rather than produced by cleavage and polyadenylation. The earlier caveat recorded against that hexamer is resolved, not merely noted."
+    },
+    "poly_a": {
+      "answer": "The 3' UTR is directly followed by a 103 nt poly(A). Template-encoded.",
+      "length_nt": 103,
+      "encoding": "template_encoded",
+      "position": "immediately 3' of the 114 nt 3' UTR, with no linker stated",
+      "sequence_file": "data/constructs/polya_103.txt"
+    },
+    "cap_and_modifications": {
+      "cap": "natural cap 1 analogue, Hongene ON-134",
+      "nucleoside_modification": "N1-methylpseudouridine (m1Psi)",
+      "scope": "used in the IVT for these constructs"
+    },
+    "cds_history": {
+      "answer": "The history of the Fluc and Fluc-PEST CDS is unclear. Ping directs that the supplied CDS be used directly as the baseline and the RNA sequence improved from it.",
+      "effect_on_the_open_question": "Ping did NOT confirm whether the CDS is machine-designed or whether it corresponds to the GenScript F-Luc plus alpha-globin composition used as a baseline in the mRNAutilus preprint. That identification therefore remains indicated but UNCONFIRMED, and must not be reported as settled.",
+      "instruction": "Use the supplied CDS as the baseline and improve from it."
+    }
+  },
+  "modelling_consequences": {
+    "m1_pseudouridine_is_now_a_live_limitation": {
+      "issue": "Every uridine in the actual transfected molecule is N1-methylpseudouridine, not uridine. RNAfold, STRAND, strand_rnafold_calibration_v1 and RiboNN all represent the sequence as canonical U and have no representation of this modification.",
+      "status": "This was recorded in assay_definition_v3 as a hypothetical limitation. It is now confirmed to apply to every construct in the panel.",
+      "consequence_for_folding": "m1Psi alters base-pairing and stacking thermodynamics relative to uridine, so computed secondary structures and folding free energies are systematically not those of the molecule actually assayed. This bears directly on the stability arm, which rests on folding-derived features.",
+      "consequence_for_ranking": "Because the modification is constant across the whole panel, it does not by itself confound a RANKING of constructs that differ in sequence. It does invalidate any absolute or calibrated structural or stability prediction.",
+      "must_not_be_claimed": "No computed free energy, structure or half-life may be presented as the value for the assayed molecule. Only relative statements across the panel are permitted, and even those assume the modification's effect is sequence-independent, which is itself unverified."
+    },
+    "poly_a_inclusion_is_an_open_decision": {
+      "issue": "The real transfected molecule carries a 103 nt template-encoded poly(A) tail, giving a full length of 44 + 1653 + 114 + 103 = 1914 nt. The region boundary decision recorded above covers only the 1811 nt core.",
+      "why_it_is_not_decided_silently": "assay_definition_v3 states that a supplied poly(A) counts toward scope, which argues for including it. Against that, RiboNN and the STRAND features were derived from transcript representations that do not generally carry long homopolymeric poly(A) tails, so appending 103 adenosines may push the input out of distribution and change 3' region sizes that RiboNN consumes.",
+      "current_behaviour": "scripts/assemble_reference_transcript.py assembles the 1811 nt core by default and appends the recorded poly(A) only when --poly-a is passed. Both lengths are reported.",
+      "recommendation": "Score both, and treat any difference between them as a measure of the stack's sensitivity to poly(A) representation rather than as a biological result.",
+      "status": "open; no default is asserted to be correct"
+    },
+    "two_constructs_not_one": {
+      "issue": "Fluc and Fluc-PEST are different sequences with different hashes and different lengths.",
+      "consequence": "They cannot be pooled. A PEST tag changes protein turnover, so the relationship between luminescence and mRNA level differs between them. Any comparison must be within a construct, not across the two.",
+      "status": "no decision taken on whether Fluc-PEST enters the panel"
+    }
+  },
+  "alphabet_handling": {
+    "supplied_alphabet": "DNA, mixed case across the two components",
+    "required_by_code": "rnastable.component_integration.Transcript requires uppercase canonical ACGU RNA and performs no silent normalization",
+    "rule": "Case folding and T to U conversion are explicit, recorded transformations, never implicit. Both the DNA and RNA hashes are stored above so either form can be bound to its provenance."
+  },
+  "still_blocking": [
+    "measured CVs for both readouts, to replace the 20 percent planning bound",
+    "decision cost of a false accept versus a false reject",
+    "decision on whether poly(A) is included in the modelled transcript (see modelling_consequences)",
+    "decision on whether Fluc-PEST enters the panel alongside Fluc"
+  ],
+  "parent_construct_identification": {
+    "status": "strongly_indicated_not_confirmed",
+    "hypothesis": "The parent construct is the GenScript F-Luc CDS paired with human alpha-globin UTRs, which is the published in silico and in vitro baseline composition in the mRNAutilus preprint (arXiv:2605.31296).",
+    "supporting_evidence": [
+      "The supplied 3' UTR is an exact 111 nt match to human HBA1, an alpha-globin 3' UTR.",
+      "The recorded CDS encodes a 550 aa firefly luciferase at GC3 0.996, consistent with aggressive commercial codon optimization rather than wild-type.",
+      "GenScript USA, Inc. is an author affiliation on that preprint, and the user confirmed that the colleague referred to as Ping is Ping-Jung Lin, an author with that affiliation.",
+      "The preprint's Figure 4D-F compares its designs against 'a GenScript F-Luc mRNA coding sequence paired with human alpha-globin UTRs' in Jurkat, A549 and HepG2 cells. Two of those three cell types correspond to this project's own two assay arms."
+    ],
+    "contradicting_evidence": [
+      "The supplied 5' UTR is NOT the native HBA1 5' UTR. The native is 37 nt (ACTCTTCTGGTCCCCACAGACTCAGAGAGAACCCACC); the supplied one is 44 nt and A-rich. So the construct is not simply both native alpha-globin UTRs, and the correspondence is partial."
+    ],
+    "unresolved": "The preprint's exact HAB UTR composition is given in its Table S5, which is not publicly available: the arXiv listing carries no ancillary files, no supplementary PDF was found, and the Zenodo deposit is access-restricted and holds training data only. The 5' UTR therefore cannot be checked against their baseline.",
+    "corrects_earlier_speculation": "An earlier note in this project speculated that the parent CDS might itself be an mRNAutilus-designed sequence, which would have implied almost no headroom. The evidence points the other way: the parent appears to be the BASELINE that mRNAutilus designs were measured against, not their output. GC3 0.996 is consistent with GenScript commercial codon optimization, not with machine design under a multi-objective generative model.",
+    "to_confirm_with_ping": [
+      "Is the parent construct the same GenScript F-Luc plus alpha-globin UTR composition used as the baseline in the mRNAutilus work?",
+      "What exactly is the 5' UTR, and is it GenScript's standard 5' UTR rather than alpha-globin?",
+      "Was the CDS codon-optimized by GenScript, and by which method?"
+    ],
+    "note": "Recorded so the question is not lost. Nothing downstream may assume an answer, and no expression claim follows from construct identity."
+  },
+  "no_claim_permitted": [
+    "Receiving the two UTR sequences satisfies no Stage 2 gate requirement; 0 of 6 remain satisfied.",
+    "A canonical Kozak context and the absence of upstream AUGs are sequence observations. They establish no expression, stability or translation benefit for this construct.",
+    "Identifying the 3' UTR as HBA1 is a sequence identity result only. It establishes no stability or expression property of this construct, and alpha-globin UTRs are not thereby claimed to be optimal.",
+    "No sequence may be folded or scored until the CDS bases are supplied.",
+    "The 5' UTR has not been identified; no origin may be asserted for it.",
+    "Nothing in this file selects or freezes a floor."
+  ],
+  "floors_frozen": false,
+  "new_sequence_scoring_enabled": false,
+  "expression_candidate_design_enabled": false,
+  "stage3_ready": false,
+  "resolved_2026_10_19": [
+    "5' UTR and 3' UTR sequences supplied and recorded",
+    "region boundary decided by the user as an intentional tandem stop",
+    "reference CDS bases supplied and hash-verified against assay_definition_v3",
+    "parent/baseline identified as the supplied internal control construct",
+    "delivery resolved as IVT mRNA rather than plasmid DNA",
+    "poly(A) resolved as 103 nt template-encoded",
+    "cap chemistry and nucleoside modification resolved as cap 1 analogue plus N1-methylpseudouridine"
+  ]
+}

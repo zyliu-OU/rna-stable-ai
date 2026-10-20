@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "name": "external_design_evidence_v1",
+  "date": "2026-10-19",
+  "status": "evidence_record_no_decision_taken",
+  "purpose": "Record what four externally published mRNA design works establish that bears on this project's own stack and open decisions. Supplied by the user as PDFs in papers/ on 2026-10-19.",
+  "scope_limit": "Every figure below is a claim reported by the cited authors. None was reproduced, re-analysed or independently verified here. Nothing in this file changes a gate, a floor, or the model-blind declaration.",
+
+  "sources": [
+    {
+      "key": "mrnautilus",
+      "title": "mRNAutilus: Multi-Objective-Guided Discrete Generation of mRNA with Optimized Therapeutic Properties",
+      "venue": "arXiv:2605.31296 v1, submitted 2026-05-29",
+      "publication_status": "preprint; not peer reviewed. The local filename says NBT, but no journal reference exists on the arXiv listing.",
+      "local_copy": "papers/mRNAutilus_NBT.pdf",
+      "author_link": "The user confirmed that the colleague referred to as Ping is Ping-Jung Lin, an author of this work."
+    },
+    {
+      "key": "gemorna",
+      "title": "Deep generative models design mRNA sequences with enhanced translational capacity and stability",
+      "venue": "Science, 10.1126/science.adr8470, first release 2025-08-28",
+      "local_copy": "papers/science.adr8470 (1) (2).pdf"
+    },
+    {
+      "key": "parade",
+      "title": "A generative framework for enhanced cell-type specificity in rationally designed mRNAs",
+      "venue": "bioRxiv 10.1101/2024.12.31.630783, posted 2024-12-31; CC-BY-NC-ND",
+      "local_copy": "papers/2024.12.31.630783v1.full (1).pdf"
+    },
+    {
+      "key": "utailor",
+      "title": "Enhancing mRNA translation efficiency with discriminative and generative artificial intelligence by optimizing 5' UTR sequences",
+      "venue": "iScience 28, 113544, 2025-10-17",
+      "local_copy": "papers/PIIS258900422501805X.pdf"
+    }
+  ],
+
+  "bearing_on_the_t_cell_arm": {
+    "finding": "PARADE measured 5' and 3' UTR regulatory activity across six cell lines, one of which is Jurkat, a T-lineage line.",
+    "parade_design_as_reported": {
+      "library": "60,000 regions sampled from natural 5' and 3' UTRs; 30,000 5' UTR segments of 50 nt each",
+      "cell_lines": ["Jurkat (T cells)", "Nalm-6 (B cells)", "SW-480 (colon)", "PA-1 (ovary)", "MDA-MB-231 (breast)", "HepG2 (liver)"],
+      "assay": "MPRA on genome-integrated polycistronic eGFP-mCherry reporters; cells sorted into four bins by eGFP/mCherry ratio",
+      "readout": "protein output, with cap-independent mCherry as an internal control to decouple 5' UTR translational effects from transcriptional ones"
+    },
+    "does_not_lift_the_model_blind_declaration": {
+      "conclusion": "The T-cell arm stays model-blind. This evidence does not reopen that decision.",
+      "reason_1": "Jurkat is an immortalised leukaemic T-cell line. The lab's cells are activated primary CD3+ T cells containing CD4+ and CD8+ populations. This is the same class of mismatch that caused the RiboNN Primary_CD4+ task to be rejected, and V12 recorded explicitly that transformed lymphoid lines are worse biological matches than the primary task that was already declined.",
+      "reason_2": "PARADE models the regulatory activity of a UTR segment in a fixed reporter. It is not a translation-efficiency predictor for an arbitrary supplied transcript, so it does not fill the role RiboNN plays for the A549 arm.",
+      "reason_3": "Quantity mismatch. PARADE measures protein output from a genome-integrated eGFP/mCherry reporter; this project's T-cell arm measures luminescence from a transfected luciferase construct. These are different quantities in different delivery contexts."
+    },
+    "why_it_is_recorded_anyway": "It is the closest published T-lineage UTR-activity resource found so far. If the T-cell arm is ever revisited, this is the starting point, and the reasons above are the specific objections that would have to be answered."
+  },
+
+  "bearing_on_ribonn": {
+    "finding": "mRNAutilus steers generation with three XGBoost regressors over its own embeddings, predicting half-life, translation efficiency and protein abundance.",
+    "cited_sources_as_reported": {
+      "half_life": "Agarwal and Kelley, 2022 (Saluki)",
+      "translation_efficiency": "Zheng et al., 2025",
+      "protein_abundance": "Eichhorn et al., 2014"
+    },
+    "ribonn_link": {
+      "evidence": "The mRNAutilus data deposit (Zenodo 10.5281/zenodo.19600209) contains a file named Ribo-NN-human.xlsx alongside Saluki_hl.xlsx and protein_abundance.xlsx, which indicates the translation-efficiency regressor is trained on RiboNN-derived data.",
+      "unconfirmed": "It could not be confirmed from open sources that 'Zheng et al., 2025' is the RiboNN paper. The RiboNN preprint is bioRxiv 10.1101/2024.08.11.607362 with Vikram Agarwal (Sanofi) as senior author, and a Nature Biotechnology version is reported to exist. The first author of that published version was not verified.",
+      "access_note": "The Zenodo deposit is access-restricted, so its contents were read from the record description only, not opened."
+    },
+    "what_this_does_and_does_not_establish": {
+      "does": "An independent group building a full mRNA design stack chose the same public translation-efficiency resource this project uses for its A549 arm. That is weak external corroboration that RiboNN is a reasonable choice of component.",
+      "does_not": "It is not a validation of RiboNN for this project's assay. mRNAutilus uses it as a training signal for a regressor over its own embeddings, not as a direct score on supplied transcripts, and reports no evaluation of RiboNN itself.",
+      "note": "mRNAutilus reports the highest validation R2 on half-life among the embedding models it compared, and only 'competitive' performance on translation efficiency and protein abundance. The weaker of its three properties is therefore the one that overlaps this project's A549 arm."
+    },
+    "corroborated_limitation": "An independent description of RiboNN states that its translation efficiency reflects ribosome occupancy relative to mRNA level, not a direct measure of protein synthesis rate. This corroborates the quantity mismatch already recorded in configs/assay_definition_v3_2026-10-19.json, which permits ranking or correlation for the A549 arm only, never calibrated prediction."
+  },
+
+  "bearing_on_the_parent_construct": {
+    "finding": "This project's parent construct appears to be the published baseline composition in the mRNAutilus preprint, not an mRNAutilus design.",
+    "as_reported": "Figure 4D-F of mRNAutilus compares its designs against 'a GenScript F-Luc mRNA coding sequence paired with human alpha-globin UTRs' in Jurkat, A549 and HepG2 cells, and reports that the mRNAutilus designs outperformed it. The in silico benchmark is described as 'a human alpha-globin (HAB) UTR composition', with the composition itself given in Table S5.",
+    "cell_type_overlap": "Two of the three cell lines in that comparison, Jurkat and A549, correspond to this project's two assay arms. External data therefore exists on a closely related construct in closely related cell types.",
+    "match_quality": {
+      "utr3": "exact 111 nt match to human HBA1",
+      "cds": "consistent, a 550 aa firefly luciferase at GC3 0.996, and GenScript USA is an author affiliation on the preprint",
+      "utr5": "does NOT match the native HBA1 5' UTR, so the correspondence is partial",
+      "verdict": "strongly indicated, not confirmed"
+    },
+    "magnitudes_not_extractable": "The fold differences against the alpha-globin composition appear only in figure panels, not in the extractable text. The 400-fold figure is a separate comparison, against wild-type luciferase in HEK293T, and must not be read as the margin over this baseline.",
+    "implication_if_confirmed": {
+      "headroom": "If the parent is the HAB baseline rather than an optimized design, then substantial headroom over it has already been demonstrated by others in Jurkat and A549. This is the opposite of the earlier speculation in this project that the parent might itself be machine-optimized and therefore nearly unimprovable.",
+      "caution": "Demonstrated headroom for mRNAutilus-designed sequences is not headroom for this project's stack, which scores rather than generates, and is further constrained to synonymous-only ORF edits. The two are not interchangeable.",
+      "constraint_interaction": "At GC3 0.996 the synonymous ORF design space can realistically only reduce GC3, so under the recorded constraint the available headroom sits mainly in the UTRs."
+    },
+    "blocked_on": "Confirmation from Ping, and the Table S5 composition, which is not publicly available."
+  },
+
+  "bearing_on_the_target_effect": {
+    "finding": "Three of the four works report firefly luciferase expression gains, which makes their headline numbers superficially comparable to this project's 1.5-fold target. They are not comparable without knowing the baseline.",
+    "reported_figures": [
+      {"source": "mrnautilus", "claim": "over 400-fold higher expression than wild-type for zero-shot P. pyralis luciferase mRNAs", "baseline": "wild-type"},
+      {"source": "gemorna", "claim": "up to 41-fold increase in firefly luciferase expression in vitro", "baseline": "an optimized benchmark"}
+    ],
+    "why_the_baseline_matters": "A fold change is meaningless without its reference point. A 400-fold gain over wild-type and a 1.5-fold gain over an already-optimized parent are not the same kind of quantity. This project's recorded CDS sits at GC3 0.996, which is not a wild-type signature, so the 1.5-fold target is very likely measured from a far higher starting point than the 400-fold figure.",
+    "open_question": "Recorded in configs/transcript_inputs_v1_2026-10-19.json: whether this project's parent CDS was itself machine-designed, and against what baseline any reported improvement was measured. Until Ping answers, no comparison between these figures and the 1.5-fold target may be drawn."
+  },
+
+  "no_claim_permitted": [
+    "Nothing here satisfies any Stage 2 gate requirement; 0 of 6 remain satisfied.",
+    "No figure in this file was reproduced or verified. All are claims reported by their authors.",
+    "The T-cell arm remains model-blind. PARADE does not supply it a translation-side score.",
+    "The presence of Jurkat data in an external study is not evidence about activated primary CD3+ T cells.",
+    "mRNAutilus using RiboNN-derived data does not validate RiboNN for this project's assay.",
+    "No external fold-change figure may be compared to this project's 1.5-fold target until the parent baseline is known.",
+    "Nothing in this file selects or freezes a floor, or enables sequence scoring."
+  ],
+
+  "floors_frozen": false,
+  "new_sequence_scoring_enabled": false,
+  "expression_candidate_design_enabled": false,
+  "stage3_ready": false
+}
