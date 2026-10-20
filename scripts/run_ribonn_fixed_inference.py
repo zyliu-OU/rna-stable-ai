@@ -58,6 +58,37 @@ def reference_records(config):
     return records
 
 
+def design_pool_records(config):
+    """Build records from a design pool of synonymous variants.
+
+    Beside reference_records, and deliberately separate from it. Every member
+    goes through transcript_assembly.assemble_variant, which still hash-verifies
+    the recorded reference CDS and additionally requires the member to be a
+    synonymous variant of it. A member that changes the protein, the length or
+    the frame is refused rather than scored.
+    """
+    from rnastable.transcript_assembly import assemble_variant
+    spec = config["design_pool"]
+    pool = json.loads((ROOT/spec["pool_file"]).read_text())
+    members = pool["members"]
+    if spec.get("limit"):
+        members = members[:spec["limit"]]
+    records = []
+    for member in members:
+        record, report = assemble_variant(
+            member["orf"], ROOT/spec["inputs_config"],
+            spec["tx_id_prefix"].format(member=member["member"]),
+            spec["provenance"], spec["assay_context"],
+            include_poly_a=spec["include_poly_a"],
+            reference_component=spec.get("reference_component", "cds"))
+        if report.synonymous_verified is not True:
+            raise ValueError(f"Member {member['member']} failed synonymy verification")
+        if member["orf_sha256"] != report.cds_sha256_dna_uppercase:
+            raise ValueError(f"Member {member['member']} ORF hash does not match the pool")
+        records.append(record)
+    return records
+
+
 def verify(run):
     manifest=json.loads((run/"manifest.json").read_text())
     for relative,expected in manifest["artifacts"].items():
@@ -89,7 +120,19 @@ def main():
     if args.verify_run:verify(args.verify_run.resolve());return
     config=json.loads(args.config.read_text())
     if config["candidate_design_enabled"] or config["stage3_ready"]:
-        raise ValueError("Fixed input mechanics protocol only")
+        # The original guard refused any run with these flags set, because the
+        # protocol was for fixed inputs only. A design run legitimately sets
+        # them, so the guard now checks the authority instead of the flag: the
+        # config must name a gate file, and that gate must itself record the
+        # switch as open. A config cannot grant itself permission.
+        gate_path = config.get("authorizing_gate")
+        if not gate_path or "design_pool" not in config:
+            raise ValueError("Fixed input mechanics protocol only")
+        gate = json.loads((ROOT/gate_path).read_text())
+        if not gate.get("switches_opened_here", {}).get(
+                "expression_candidate_design_enabled", {}).get("now"):
+            raise ValueError(
+                f"{gate_path} does not record expression_candidate_design_enabled as open")
     sources=json.loads((ROOT/config["source_manifest"]).read_text())
     for row in sources["files"]:
         if sha(ROOT/row["local_path"])!=row["sha256"]:raise ValueError("Upstream source hash mismatch")
@@ -111,7 +154,13 @@ def main():
     out=ROOT/"results/ribonn_fixed_inference_runs"/stamp;out.mkdir(parents=True,exist_ok=False)
     print(out,flush=True)
     write(out/"protocol.json",config);write(out/"checkpoint_inventory.json",selected)
-    if "reference_transcript" in config:
+    if "design_pool" in config:
+        # Scoring designed synonymous variants. The pool is a specification of
+        # the domain; this run attaches predicted values to its members and
+        # selects nothing.
+        records=design_pool_records(config)
+        prior_identity=None
+    elif "reference_transcript" in config:
         # Scoring the supplied reference construct, not a designed candidate.
         # The synthetic input inventory is deliberately not mixed in, so the run
         # contains exactly the sequences the project recorded.
@@ -190,7 +239,10 @@ def main():
         "archive_sha256":weights["sha256"],"selected_models":len(selected),"folds":config["expected_folds"],
         "score_column":config["score_column"],"inputs":len(records),"raw_rows_per_process":len(raw[0]),
         "explicit_exclusions":exclusions,"replay":replay,"all_task_replays_equal":True,
-        "workers":worker_summaries,"cell_free_calibrated":False,"candidate_design_enabled":False,"stage3_ready":False})
+        "workers":worker_summaries,"cell_free_calibrated":False,
+        "candidate_design_enabled":config["candidate_design_enabled"],
+        "stage3_ready":config["stage3_ready"],
+        "design_pool":config.get("design_pool",{}).get("pool_file")})
     artifacts={str(p.relative_to(out)):sha(p) for p in sorted(out.rglob("*")) if p.is_file()}
     write(out/"manifest.json",{"artifacts":artifacts})
     verify(out);print(out/"summary.json",flush=True)

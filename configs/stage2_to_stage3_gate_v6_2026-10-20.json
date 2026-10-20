@@ -1,0 +1,97 @@
+{
+  "schema_version": 6,
+  "name": "stage2_to_stage3_gate_v6",
+  "effective_date": "2026-10-20",
+  "supersedes": {
+    "file": "configs/stage2_to_stage3_gate_v5_2026-10-20.json",
+    "sha256": "175046a34e94a1c74a01c1eb367350a6a9659b447d2d51616a8b8410ede5c2e9",
+    "status": "frozen and unedited; retained because existing frozen runs reference it",
+    "chain": "v6 supersedes v5, which superseded v4, v3, v2 and configs/stage2_to_stage3_gate_2026-10-18.json; all remain frozen"
+  },
+  "amendment_record": {
+    "what_changed": "new_sequence_scoring_enabled and expression_candidate_design_enabled move from false to true, so the design workflow can be built and run end to end on predicted quantities. Nothing else changed.",
+    "authorized_by": "user, 2026-10-20: 'currently I dont have experimental data, maybe just build the whole workflow, later we can verify and improve it?'",
+    "what_this_decision_is": "A decision to build and exercise the pipeline BEFORE the data that would validate it exists. That is a legitimate engineering choice and it is recorded as such, not as evidence.",
+    "what_this_decision_is_not": "It is not a finding that the pipeline's outputs are correct, and it does not lower any evidential standard. Every requirement satisfied in v5 is satisfied on exactly the same basis as before; two of them remain accepted limitations.",
+    "prior_amendments": [
+      "v2 amended stage3_target to transfected_cell_expression",
+      "v3 accepted the 2000-2999 nt band as a documented limitation",
+      "v4 amended requirement 4 to reference the relied-upon native controls",
+      "v5 reviewed the gate: ratified 2, 4 and 6, re-scoped 5 onto the native path, accepted requirement 1's cohort limitation"
+    ]
+  },
+  "stage": "stage3_workflow_construction_before_measurement",
+  "active_length_nt": {"minimum_inclusive": 1, "maximum_exclusive": 3000},
+  "architecture": "LinearFold / ViennaRNA -> STRAND + RiboNN + BoTorch",
+  "stage3_target": "transfected_cell_expression",
+  "requirements_before_stage3": [
+    "Frozen independent sequence_and_family_clan_separated_validation_within_scope",
+    "Reported_accuracy_and_failures_by_length_band_and_family_against_native_controls",
+    "Resolve_sparse_2000_2999_nt_coverage_before_claiming_the_full_length_range",
+    "Demonstrate_credible_structure_accuracy_from_the_relied_upon_native_controls_with_explicit_review_of_baseline_gaps",
+    "Pass_constraint_decoder_resource_and_replay_checks_on_the_relied_upon_native_path",
+    "Document_remaining_limitations_before_expression_candidate_design"
+  ],
+  "requirements_satisfied": 6,
+  "requirements_satisfied_basis_unchanged_from_v5": {
+    "1": "accepted_as_documented_limitation",
+    "2": "satisfied_on_evidence",
+    "3": "accepted_as_documented_limitation",
+    "4": "satisfied_on_evidence",
+    "5": "satisfied_on_evidence after re-scoping onto the native path",
+    "6": "satisfied_on_evidence",
+    "note": "Carried forward verbatim. v6 re-opens no requirement and re-ratifies none."
+  },
+  "switches_opened_here": {
+    "new_sequence_scoring_enabled": {
+      "now": true,
+      "was": false,
+      "why": "A workflow that cannot score a new sequence cannot be built or exercised at all.",
+      "binding_conditions": [
+        "The base-pair span policy remains UNRESOLVED. The workflow uses the SAME folding settings as the frozen reference record (ViennaRNA 2.7.2, RNA_Turner2004, 37 C, dangles 2, max_bp_span -1, min_loop_size 3), so variants are comparable to the reference and to each other. That reuse is a PROVISIONAL convention adopted for comparability, not a resolution of the policy.",
+        "The blinded 85-record evaluation set remains UNSPENT and MUST NOT be spent to unblock this workflow. It is the instrument for deciding the span policy and loses its value once used for anything else.",
+        "Every predicted value is PROVISIONAL and UNVALIDATED. No predicted half-life or translational-efficiency value may be reported as a measurement, a calibrated quantity, or a demonstrated benefit."
+      ]
+    },
+    "expression_candidate_design_enabled": {
+      "now": true,
+      "was": false,
+      "why": "The user asked for the whole workflow, whose last stage is selecting candidates. Building it requires the switch.",
+      "binding_conditions": [
+        "A selected panel is an ILLUSTRATION OF THE PIPELINE, not a recommendation to synthesise or assay anything. Nothing here has been validated against a measurement of any kind.",
+        "The assay panel size is UNKNOWN. No panel size has been supplied by the collaborator, so any panel count used by the workflow is a declared placeholder and must be labelled as one.",
+        "No composite score may be emitted. Selection is by Pareto dominance over the two objectives, per configs/pareto_objective_formulation_v1_2026-10-20.json.",
+        "Candidates must be synonymous variants of the recorded reference CDS, verified by translation, assembled through transcript_assembly.assemble_variant. The reference hash gate is NOT relaxed: a variant must prove it is a synonymous variant of the hash-verified reference."
+      ]
+    }
+  },
+  "switches_still_closed": {
+    "expression_benefit_established": false,
+    "model_defaults_changed": false,
+    "stability_score_calibrated_to_the_assay": false,
+    "independent_biological_validation": false
+  },
+  "stage3_ready": true,
+  "stage3_development_started": true,
+  "what_remains_absent": [
+    "Any experimental measurement of any construct in this project. There is none, and the user has stated so.",
+    "Measured coefficients of variation for both assay readouts, so no power statement or minimum detectable effect can be computed for a real panel.",
+    "The decision cost of a false accept against a false reject.",
+    "Whether Fluc-PEST enters the panel.",
+    "A reference point on the real objective scales, needed for hypervolume to mean anything across runs.",
+    "Experimental-structure references within the active length scope; requirement 1 remains an accepted limitation."
+  ],
+  "what_must_not_be_claimed": [
+    "That any predicted half-life or translational-efficiency value is a measurement, is calibrated to the assay, or demonstrates a benefit.",
+    "That a selected panel is validated, recommended for synthesis, or known to outperform the reference construct.",
+    "That running the workflow resolved the base-pair span policy.",
+    "That building the workflow improved the structure evidence, which is unchanged from v5.",
+    "That the Stage 2 requirements are satisfied on any basis other than the one v5 recorded, including the two accepted limitations.",
+    "That the absence of experimental data is a limitation of the workflow rather than of the evidence: the workflow is unverified, not merely unvalidated."
+  ],
+  "how_to_verify_this_later": [
+    "Run the panel in the stated assay, with measured CVs, and compare the measured ranking to the predicted Pareto front.",
+    "Report the comparison whichever way it comes out, including the case where the predicted front is uninformative.",
+    "Supersede this gate with a version that records the measured outcome rather than editing it."
+  ]
+}

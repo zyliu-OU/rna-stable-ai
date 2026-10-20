@@ -1,0 +1,110 @@
+{
+  "constraints": {
+    "changes_confined_to_the_window": true,
+    "failures_are_discarded_not_repaired": "A member violating any constraint is rejected and counted by cause, so a pool cannot contain a silently corrected sequence.",
+    "length_unchanged": true,
+    "max_homopolymer_run": 6,
+    "no_internal_in_frame_stop": "Guaranteed by synonymous substitution and checked anyway.",
+    "protein_preserved_exactly": "Checked by translating the full ORF and comparing, on every member.",
+    "start_codon_unchanged": true,
+    "stop_codon_unchanged": true,
+    "why_six": "The reference ORF's longest homopolymer run is exactly 6, so this admits the reference and rejects anything worse than it. It is a no-regression bound, not a literature threshold."
+  },
+  "current_scope": {
+    "candidates_proposed_for_assay": false,
+    "optimizer_features_emitted": false,
+    "scored": false,
+    "status": "design space specified and verified; pool enumerated",
+    "why_not": "new_sequence_scoring_enabled and expression_candidate_design_enabled are both false in configs/stage2_to_stage3_gate_v5_2026-10-20.json. A pool is a specification of the domain; scoring its members and promoting any of them to assay candidates are separate decisions."
+  },
+  "decided_by": "user, 2026-10-20: 'wider window then, 50 codons', after the 30-codon pool's predicted objectives were measured as nearly flat",
+  "decision": "The optimisation domain is synonymous codon substitution confined to a window at the 5' end of the Fluc ORF, sampled into a finite pool that the optimizer selects from.",
+  "does_not_change": {
+    "expression_candidate_design_enabled": false,
+    "gate": "configs/stage2_to_stage3_gate_v5_2026-10-20.json is unchanged and is not superseded by this file.",
+    "model_defaults_changed": false,
+    "new_sequence_scoring_enabled": false
+  },
+  "effective_date": "2026-10-20",
+  "gc_modes": {
+    "free": {
+      "consequence": "In this mode, edit distance and GC content cannot be separated. Any effect attributed to one could be the other, and no analysis of a free-mode pool may claim otherwise.",
+      "description": "Any synonym is allowed.",
+      "measured_confound": "Measured at the 30-codon width: Pearson r = -0.8777 after decorrelation and -0.9837 without it, on a 512-member pool at seed 1729. The mechanism is unchanged at 50 codons and the correlation is re-measured by each run rather than assumed.",
+      "why_it_cannot_be_removed_by_sampling": "The reference 5' window is GC-maximal for this protein segment: its window GC fraction of 0.6667 is the HIGHEST in the pool, so every synonymous edit moves GC down or sideways. The correlation is a property of editing away from a GC-optimised reference, not a sampler artifact."
+    },
+    "neutral": {
+      "cost": "24 of the 50 window positions have an equal-GC alternative, so the space is about 10^7.2. At the earlier 30-codon width it was about 8,000 variants and exhaustively enumerable; at this width it is not.",
+      "description": "Only synonyms with the same GC count as the reference codon.",
+      "effect": "Window GC is held EXACTLY constant at 0.6667, removing the confound by construction.",
+      "note": "About 8,000 variants is small enough to enumerate exhaustively rather than sample, if that is ever wanted."
+    },
+    "which_is_primary": "NOT DECIDED. Both pools are built and recorded so the choice can be made on the measurements rather than before them. The confound in free mode is the reason the question matters."
+  },
+  "name": "synonymous_window_design_space_v2",
+  "no_claim": [
+    "Specifying a design space establishes no stability, translation or expression benefit.",
+    "No member of either pool has been scored, ranked or proposed for an assay.",
+    "The 30-codon window and the 5' region are declared choices, not findings.",
+    "A GC-free-mode pool cannot separate edit distance from GC content.",
+    "Widening the window to 50 codons is a response to a measurement, not a finding that 50 codons is correct or optimal.",
+    "Widening does not resolve the local-design-space against global-objective-features mismatch; it only reduces it."
+  ],
+  "not_constrained_deliberately": [
+    "Restriction sites. No cloning strategy has been stated, so no site list can be justified.",
+    "Out-of-frame AUG creation. Plausible as a concern but speculative here, and inventing a constraint is worse than naming the gap.",
+    "Local secondary structure at the 5' end. Constraining it would bake a structural prior into the domain, which is the optimizer's job to explore, not the generator's to presuppose."
+  ],
+  "pairs_with": "configs/pareto_objective_formulation_v1_2026-10-20.json",
+  "reference": {
+    "codon_count": 551,
+    "note": "The Fluc ORF the collaborator supplied, whose hash matches the value recorded in assay_definition_v3 before the bases were lost. UTRs and poly(A) are NOT part of the design space and are held exactly as supplied.",
+    "orf": "data/constructs/fluc_orf.txt",
+    "orf_length_nt": 1653
+  },
+  "sampling": {
+    "determinism": "random.Random(seed), local to the call; the caller's global RNG state is untouched.",
+    "duplicates_rejected": true,
+    "gc_decorrelation": "A GC tendency is drawn once per member, independent of the edit count, and shared across that member's substitutions, so the pool spans the GC range at every edit distance.",
+    "member_0": "the unmodified reference, so the pool always contains the construct everything else is compared against",
+    "rule": "Per member: draw the number of substituted positions uniformly over 1..substitutable, then which positions without replacement, then a codon different from the reference at each.",
+    "seed": 1729,
+    "why_not_per_position_independent": "Drawing a codon independently per position concentrates every member near the same edit count; with 29 substitutable positions almost all members changed 14 to 19 of them, leaving nothing near the reference. Edit distance is the axis most likely to matter, so it is sampled evenly rather than left to emerge."
+  },
+  "schema_version": 2,
+  "supersedes": {
+    "file": "configs/synonymous_window_design_space_v1_2026-10-20.json",
+    "sha256": "d87774bf0c020f46e062222710ef405c29ca2b5e93ceebe5b4f04de436a0f8a0",
+    "status": "frozen and unedited; retained because the 30-codon pool run references it",
+    "what_changed": "The window widens from 30 to 50 codons. Nothing else changed."
+  },
+  "what_scoring_the_pool_would_require": [
+    "new_sequence_scoring_enabled true, which depends on the unresolved base-pair span policy; the blinded 85-record evaluation set is unspent",
+    "a transcript assembly path that accepts a variant CDS; transcript_assembly.assemble is hash-gated on the reference CDS and will refuse a variant by design",
+    "a reference point on the real objective scales, which does not exist"
+  ],
+  "why_a_window": {
+    "interpretability": "Edits confined to one region make a result attributable to that region. Whole-ORF sampling changes a dozen things at once.",
+    "region_choice": "The 5' end is the region usually implicated in initiation. That is the stated reason for the choice. NOTHING IN THIS PROJECT ESTABLISHES IT, and no measurement here shows that 5' edits matter more than edits elsewhere.",
+    "tractability": "The whole-ORF synonymous space is about 10^273 variants and is not a domain any optimizer can search. A 50-codon window is about 10^23.4 free and 10^7.2 GC-neutral, so both modes must be sampled into a pool rather than enumerated.",
+    "what_was_rejected": [
+      "Codon-usage targets: low-dimensional and GP-friendly, but per-site control is lost and the knobs are themselves confounded with structure.",
+      "Whole-ORF random synonymous sampling: simplest to implement, least interpretable, and most likely to produce candidates differing in many ways at once."
+    ]
+  },
+  "why_the_window_widened": {
+    "cost_of_widening": "The GC-neutral space grows from about 8,000 variants, small enough to enumerate exhaustively, to about 10^7.2, which is not. Exhaustive enumeration of the clean space is no longer available at this width.",
+    "falsifiable_expectation": "If widening helps, the objective spread across a 512-member pool should be wider at 50 codons than at 30. Both runs exist so the comparison is measured rather than assumed.",
+    "measurement_that_prompted_it": "At 30 codons the window is 90 nt of an 1811 nt transcript, 5.0 percent. Every calibration feature is a whole-transcript average, so predicted in-solution half-life spanned only 1.311 to 1.328 hours, about 1.3 percent of the calibration's 0.720 to 2.030 hour training target range.",
+    "what_widening_does": "50 codons is 150 nt, 8.3 percent of the transcript. That is 1.7 times more sequence, so more signal reaches a whole-transcript average.",
+    "what_widening_does_NOT_do": "It does not fix the mismatch. 8.3 percent of a transcript still cannot move a transcript-wide mean far. The underlying problem is that the design space is LOCAL and the objective features are GLOBAL. The alternative fix, region-local features such as 5' local unpaired probability, was NOT taken and remains open."
+  },
+  "window": {
+    "codon_indices": "1 through 50 inclusive, zero-based",
+    "codons": 50,
+    "nucleotides": "4 through 153 of the ORF",
+    "start_codon_excluded": "Position 0 is AUG, which is its own only synonym; changing it would not be a synonymous edit.",
+    "terminator_excluded": "The final codon is excluded. Its substitutions change the stop identity, and the tandem-stop arrangement (ORF ends TGA, 3'UTR begins TAA) is a deliberate design the collaborator confirmed, not something to vary.",
+    "window_size_is_a_declared_choice": "50 codons is declared, not derived. It was chosen because the 30-codon pool's predicted objectives were nearly flat: whole-transcript features moved about 1.3 percent of the calibration's training target range across 512 members. Widening the window is a response to that measurement, but it is NOT a finding that 50 is the right width, and 50 was not optimised."
+  }
+}

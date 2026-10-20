@@ -76,6 +76,14 @@ class AssemblyReport:
         "A validated assembly of supplied inputs. Establishes no stability, "
         "translation or expression claim."
     )
+    # Populated only by assemble_variant. A reference assembly leaves these
+    # None so that a variant can never be mistaken for the reference in a
+    # recorded artifact, or the reverse.
+    variant_of: str | None = None
+    reference_cds_sha256_dna_uppercase: str | None = None
+    synonymous_verified: bool | None = None
+    substituted_codon_indices: tuple | None = None
+    protein_sha256: str | None = None
 
     def to_dict(self):
         return asdict(self)
@@ -202,4 +210,137 @@ def assemble(cds_bases, config_path, tx_id, provenance, assay_context, include_p
         alphabet_conversion="supplied DNA uppercased and T converted to U",
         cds_component=cds_component,
         config_path=str(config_path),
+    )
+
+
+def assemble_variant(variant_cds_bases, config_path, tx_id, provenance, assay_context,
+                     include_poly_a=False, reference_component="cds"):
+    """Assemble a transcript from a SYNONYMOUS VARIANT of a recorded CDS.
+
+    `assemble` hash-gates the CDS against the config, which is exactly right for
+    the reference construct and refuses a designed variant by design. This is
+    the deliberate, separate path for variants, and it does not weaken that
+    gate -- it adds a stricter one.
+
+    The reference CDS is still read from the config's recorded `sequence_file`
+    and still verified against its recorded hash, so the UTR layout and the
+    region-boundary decision remain bound to the same reference as before. The
+    supplied variant must then prove it is a synonymous variant of that exact
+    sequence: identical length, identical translated protein, and a valid
+    reading frame. A variant that changes the protein, the length or the frame
+    is refused.
+
+    Both hashes and the substituted codon positions are recorded, so a variant
+    transcript can never be mistaken for the reference in a later artifact.
+    """
+    data = load_inputs(config_path)
+    components = data["components"]
+    if reference_component not in components:
+        raise ValueError(f"Config records no CDS component named {reference_component!r}")
+    record = components[reference_component]
+    sequence_file = record.get("sequence_file")
+    if not sequence_file:
+        raise ValueError(
+            f"Component {reference_component!r} records no sequence_file, so the "
+            "reference CDS cannot be read and a variant cannot be checked against it")
+
+    reference_path = Path(config_path).resolve().parents[1] / sequence_file
+    reference_dna = "".join(reference_path.read_text().split()).upper().replace("U", "T")
+    reference_hash = hashlib.sha256(reference_dna.encode()).hexdigest()
+    if reference_hash != record["sha256_dna_uppercase"]:
+        raise ValueError(
+            f"Recorded reference CDS {reference_component!r} does not match its own hash. "
+            f"Expected {record['sha256_dna_uppercase']}, observed {reference_hash} from "
+            f"{sequence_file}. The reference must be fixed before any variant is assembled.")
+
+    variant_upper = variant_cds_bases.upper().strip() if isinstance(variant_cds_bases, str) else None
+    if not variant_upper:
+        raise ValueError("Variant CDS bases must be a nonempty string")
+    if set(variant_upper) - set("ACGTU"):
+        raise ValueError("Variant CDS must contain only canonical ACGT/ACGU characters")
+    variant_dna = variant_upper.replace("U", "T")
+
+    if len(variant_dna) != len(reference_dna):
+        raise ValueError(
+            f"Variant length {len(variant_dna)} nt differs from the reference "
+            f"{len(reference_dna)} nt. A synonymous variant has the same length.")
+
+    from .synonymous_window import split_codons, translate
+
+    reference_codons = split_codons(reference_dna)
+    variant_codons = split_codons(variant_dna)
+    reference_protein = translate(reference_codons)
+    if translate(variant_codons) != reference_protein:
+        raise ValueError(
+            "Variant does not translate to the reference protein. This is not a "
+            "synonymous variant and must not be assembled as one.")
+
+    substituted = tuple(i for i, (a, b) in enumerate(zip(reference_codons, variant_codons))
+                        if a != b)
+    variant_hash = hashlib.sha256(variant_dna.encode()).hexdigest()
+
+    utr5 = to_rna(components["utr5"]["sequence_dna_uppercase"])
+    utr3 = to_rna(components["utr3"]["sequence_dna_uppercase"])
+    cds = to_rna(variant_dna)
+    recorded = data["region_boundary_decision"]["consequence"]
+    for label, observed_len, recorded_len in (
+        ("utr5", len(utr5), recorded["utr5_length_nt"]),
+        ("cds", len(cds), record["length_nt"]),
+        ("utr3", len(utr3), recorded["utr3_length_nt"]),
+    ):
+        if observed_len != recorded_len:
+            raise ValueError(
+                f"{label} length {observed_len} nt contradicts the recorded region "
+                f"boundary decision ({recorded_len} nt). The boundary decision must be "
+                "revisited before assembly, not worked around.")
+
+    sequence = utr5 + cds + utr3
+    poly_a = ""
+    if include_poly_a:
+        context = data.get("construct_context_from_ping", {}).get("poly_a")
+        if not context:
+            raise ValueError("No poly(A) is recorded in this config, so none can be appended")
+        poly_a = "A" * int(context["length_nt"])
+        sequence = sequence + poly_a
+
+    transcript = Transcript(
+        tx_id=tx_id,
+        sequence=sequence,
+        cds_start=len(utr5),
+        cds_end=len(utr5) + len(cds),
+        provenance=provenance,
+        assay_context=assay_context,
+    )
+    leading = utr3[:3]
+    tandem = leading in STOP_CODONS
+
+    return transcript, AssemblyReport(
+        tx_id=tx_id,
+        transcript_length_nt=len(sequence),
+        utr5_length_nt=len(utr5),
+        cds_length_nt=len(cds),
+        utr3_length_nt=len(utr3),
+        poly_a_length_nt=len(poly_a),
+        poly_a_included=bool(include_poly_a),
+        cds_start=transcript.cds_start,
+        cds_end=transcript.cds_end,
+        protein_length_aa=len(cds) // 3 - 1,
+        cds_sha256_dna_uppercase=variant_hash,
+        transcript_sha256_rna=digest(sequence),
+        identity_sha256=transcript.identity_sha256,
+        tandem_stop_present=tandem,
+        tandem_stop_codon=leading if tandem else None,
+        ribonn_exclusion=transcript.ribonn_exclusion(),
+        alphabet_conversion="supplied DNA uppercased and T converted to U",
+        cds_component=reference_component,
+        config_path=str(config_path),
+        no_claim=(
+            "A validated assembly of a synonymous variant of the recorded reference CDS. "
+            "The protein is preserved and verified. Establishes no stability, translation "
+            "or expression claim, and the variant has no measurement of any kind."),
+        variant_of=reference_component,
+        reference_cds_sha256_dna_uppercase=reference_hash,
+        synonymous_verified=True,
+        substituted_codon_indices=substituted,
+        protein_sha256=hashlib.sha256(reference_protein.encode()).hexdigest(),
     )

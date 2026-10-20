@@ -134,8 +134,48 @@ artifact — in free mode, edit distance and GC content cannot be separated. A G
 (only equal-GC synonyms) holds window GC exactly constant and removes the confound, at the
 cost of 13 substitutable positions instead of 29 and a space of ~8,000 variants, small
 enough to enumerate exhaustively. **Both pools are built and recorded; which is primary is
-not yet decided.** The 30-codon window and the choice of the 5′ region are declared choices,
+not yet decided.** The window width and the choice of the 5′ region are declared choices,
 not findings of this project.
+
+**The whole workflow now runs end to end**, twice, on 512 synonymous variants each:
+pool → assemble → fold → stability → translation → Pareto front → panel → BO replay
+(`scripts/run_design_workflow.py`). [Gate v6](configs/stage2_to_stage3_gate_v6_2026-10-20.json)
+records the decision to build it before the data that would validate it exists, opening
+`new_sequence_scoring_enabled` and `expression_candidate_design_enabled`. v5 stays frozen,
+its six-requirement basis is carried forward verbatim, the blinded 85-record set stays
+**unspent**, and the span policy stays **unresolved** — the workflow reuses the reference
+record's folding settings as a provisional convention, not a resolution. Variants go through
+a new `assemble_variant` path that does **not** relax the reference hash gate but adds a
+stricter one: the reference is still hash-verified, and the variant must then translate to
+the identical protein. Passing the reference through that path reproduces the reference
+assembly exactly.
+
+**The window was widened 30 → 50 codons and the result is mixed.** Measured across two
+matched 512-member runs:
+
+| ratio, 50 vs 30 codons | |
+|---|---|
+| window nucleotides | 1.67× |
+| predicted half-life spread (stdev) | **1.21×** |
+| predicted TE spread (stdev) | **0.94×** |
+
+The stability spread grew **sub-linearly** and the translation spread **did not grow at
+all**. Half-life still spans only 3.18% of the calibration's training range. Fitting the two
+points gives spread ∝ window^0.37, which would put a whole-ORF window at about 7.8% — so
+**the window is not the lever.** Two points do not establish an exponent, and the whole-ORF
+run has not been done. The diagnosis is that the design space is local while every
+calibration feature is a transcript-wide mean; the open remedy is region-local features,
+which is recorded rather than quietly substituted.
+
+**One thing that did hold up:** at a budget of 32 of 512, qLogNEHVI recovered 5 of 10 front
+members at 30 codons and 5 of 6 at 50, against random finding 1 in both. That is the first
+evidence here that the optimizer buys anything — over a landscape of its own predictions,
+so it measures search efficiency, not whether the landscape is right.
+
+No molecule in this project has been measured. Every value is a prediction from an
+unvalidated model on a quantity the planned assay does not measure, the selected panels
+illustrate the pipeline rather than recommending anything, and the panel size is a declared
+placeholder because the assay's capacity is unknown.
 
 ### 2026-10-19: engine agreement, a named calibration, score records and a Stage 2 census
 
