@@ -327,7 +327,7 @@ that clone has no committer identity configured.
 | Item | Value |
 |---|---|
 | Commit before this stretch | `e9d7685` Record the Pareto-formulation commit hash in handoff 2026-10-20 V2 |
-| Commit published with this handoff | see §11.1 |
+| Commit published with this handoff | `07020fa` |
 | README picture | `diagram_10182026.png`, `sha256 baa831ce16df27ed44a41c2a3b481455a213b328122227b9b2a3820dda47cff1`, **byte-unchanged**, re-verified before publishing |
 | Gate | `configs/stage2_to_stage3_gate_v5_2026-10-20.json`, **unchanged**; not superseded by either the formulation or the design-space config |
 
@@ -336,6 +336,6 @@ it carries the correction. **Regenerating it needs the user's say-so and has not
 
 ### 11.1 Publication record
 
-This handoff is published in the commit titled *"Specify the optimisation domain as windowed
-synonymous 5′ edits and enumerate it into pools"*. Its hash is recorded by the commit
-immediately after it, since a file cannot contain the hash of the commit that adds it.
+`07020fa` — Specify the optimisation domain as windowed synonymous 5′ edits and enumerate
+it into pools. The hash is recorded by the commit immediately after it, since a file cannot
+contain the hash of the commit that adds it.
