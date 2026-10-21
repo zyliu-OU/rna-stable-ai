@@ -1,0 +1,29 @@
+{
+  "all_full_length_equal": true,
+  "authoritative_field": "sequence_with_UTRs",
+  "constant_utr3_len": 209,
+  "constant_utr5_len": 53,
+  "distinct_proteins": 1,
+  "note_on_why_a_protein_check_misses_this": "All 24 are synonymous designs of one protein, so a permuted assignment still translates correctly. Protein identity passes on every bad row.",
+  "permutation_map_mismatched_row_to_holder_of_its_cds": {
+    "1220184B1": "1220186B1",
+    "1220185B1": "1220184B1",
+    "1220186B1": "1220185B1",
+    "1220187B1": "1220188B1",
+    "1220188B1": "1220187B1"
+  },
+  "permutation_resolves_every_mismatch": true,
+  "protein_identical_across_all_rows": true,
+  "protein_length_aa": 207,
+  "rows": 24,
+  "sequence_column_mismatch_count": 5,
+  "sequence_column_mismatched_rows": [
+    "1220184B1",
+    "1220185B1",
+    "1220186B1",
+    "1220187B1",
+    "1220188B1"
+  ],
+  "sequence_column_used_for_features": false,
+  "utr_features_have_zero_variance": true
+}

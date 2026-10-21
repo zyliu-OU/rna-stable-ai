@@ -1,0 +1,181 @@
+{
+    "schema_version": 1,
+    "name": "stage2_to_stage3_gate_v17",
+    "stage": "stage3_workflow_construction_before_measurement",
+    "effective_date": "2026-10-21",
+    "architecture": "LinearFold / ViennaRNA -> STRAND + RiboNN + BoTorch",
+    "supersedes": {
+        "chain": "v17 supersedes v16, which superseded v15 through v2 and configs/stage2_to_stage3_gate_2026-10-18.json; all remain frozen",
+        "file": "configs/stage2_to_stage3_gate_v16_2026-10-21.json",
+        "sha256": "f93bd803a537ecb3e3813c8bffd58d90a77657cfae6f429254abc73c7d72968b",
+        "status": "frozen and unedited"
+    },
+    "assay_definition": "configs/assay_definition_v5_2026-10-21.json",
+    "amendment_record": {
+        "authorized_by": "user, 2026-10-21: 'for new work flow, if we need to rebuild code and test for cell expression prediction, then yes, we need to do it'",
+        "what_changed": "The expression axis is measured for the first time, on 24 constructs that no fit or screen in this project had seen. One factual error in v16 is corrected. Two prohibitions are strengthened on new evidence, one is added, and the first MEASURED assay error in this project is recorded. No switch moves, no requirement is reopened, no prohibition is withdrawn, and requirements_satisfied stays at 6.",
+        "protocol": "configs/expression_axis_v1_2026-10-21.json, sha256 ece508fffb9df036705eded5d8710206261be1c6e1c268313b99c6c1228a8701, declared and hashed before any relationship was computed",
+        "run": "results/expression_axis_runs/20261021T164736.813440Z",
+        "prior_amendments": [
+            "v2 stage3_target amended to transfected_cell_expression",
+            "v3 accepted the 2000-2999 nt band as a documented limitation",
+            "v4 amended requirement 4 to the relied-upon native controls",
+            "v5 reviewed the gate and closed Stage 2 at six of six",
+            "v6 opened new_sequence_scoring_enabled and expression_candidate_design_enabled",
+            "v7 purged the retired model and all data at or above 3000 nt",
+            "v8 recorded the first external validation and prohibited presenting a predicted ordering of modified constructs as the expected measured ordering",
+            "v9 recorded that the objective has no resolving power at the design space's scale",
+            "v10 left two options open",
+            "v11 took option 1, reframing selection as a coarse filter plus diversity",
+            "v12 took option 2, widening the design domain to UTRs plus codons",
+            "v13 recorded the independent model comparison",
+            "v14 recorded the two-axis comparison and the then-believed free-folding loss",
+            "v15 corrected v14's defective baseline and withdrew one prohibition as factually wrong",
+            "v16 extended the target set, named the modeled axis, and added five prohibitions",
+            "v17 measured the expression axis, corrected v16's label count, and recorded the first measured assay CV"
+        ]
+    },
+    "correction_to_v16": {
+        "what_v16_said": "'122 to 203 records carry measured half-lives; 6 constructs carry measured protein output. Expression is not currently trainable on this data.'",
+        "why_it_is_wrong": "6 was the pseudouridine PAIRED subset, not the count of constructs with measured protein output. Supplementary Data 6 carries 24 CDS designs with measured Nluc/Fluc protein output at 6 h and 24 h, 4 replicates each with standard deviations, and Supplementary Data 5 carries the replicate counts and the paper's p-values for the same 24.",
+        "corrected_value": "24 constructs carry measured protein output, with a measured replicate error, matched in-cell half-life, and zero overlap with Supplementary Data 1.",
+        "status_of_v16": "remains frozen and unedited; it is superseded, not altered",
+        "does_the_untrainable_claim_survive": "In substance yes, but for a better reason. 24 labels still support no fit: v15 measured that 105 training records support about one feature. What changes is that the expression axis can now be MEASURED and CHARACTERISED rather than only inferred from stability, and that is what was done.",
+        "scope": "The error was confined to the label count and the sentence depending on it. The 13-fold sign-change evidence about the 6 PAIRED constructs is a different measurement and stands unaltered."
+    },
+    "expression_axis_measured_here": {
+        "construct_set": {
+            "n": 24,
+            "source": "Leppek et al. 2022 Supplementary Data 6 and 5",
+            "length_nt": 883,
+            "cds_nt": 621,
+            "utr5_nt": 53,
+            "utr3_nt": 209,
+            "protein": "one 207 aa protein across all 24; a pure synonymous panel",
+            "exposure": "zero of the 24 Sequence IDs appear in Supplementary Data 1, so the set is unexposed to the frozen calibration, the 122-construct two-axis set and the 203-record in-cell screen",
+            "why_it_matters": "Length and UTRs are CONSTANT, so no correlation on this set can be a length artifact. Both of this project's known length artifacts are structurally impossible here: the SUP region-fraction error corrected in v15, and cds_length as a ruler among the in-cell screen's performers."
+        },
+        "primary_confirmatory_result": {
+            "question": "Does measured in-cell mRNA half-life predict measured protein output on the same constructs?",
+            "declared_direction": "POSITIVE, threshold +0.30, declared before the number was computed",
+            "measured_spearman_vs_24h_expression": -0.03304347826086956,
+            "measured_spearman_vs_6h_expression": -0.3069565217391304,
+            "verdict": "FALSIFIED",
+            "falsification_reasons": [
+                "rho vs 24 h expression is -0.0330, below the declared +0.30",
+                "the sign reverses across design families with at least 4 members: Eterna n=8 at -0.5714 against Ribotree n=8 at +0.5476"
+            ],
+            "what_this_means": "On a synonymous panel with length and UTRs held constant, in-cell mRNA stability does NOT order protein output, and it fails in the same way measured ribosome load failed against stability: a family-dependent sign. The expression axis requires its own features and its own labels; it does not inherit the stability objective."
+        },
+        "notable_exploratory_results": {
+            "status": "EXPLORATORY. n=24, declared non-confirmatory in the protocol, and no feature is adopted by this gate.",
+            "frozen_calibration_on_an_unexposed_set": {
+                "spearman_vs_measured_in_cell_half_life": 0.5904347826086956,
+                "spearman_vs_24h_expression": 0.39217391304347826,
+                "spearman_vs_6h_expression": -0.1208695652173913,
+                "constructs_outside_the_training_range": 1,
+                "why_it_is_interesting": "This is the frozen calibration's strongest correlation anywhere in this project, on a set it never saw, and it beats free GC here (+0.1437 vs half-life) which is the first time in this project a fitted arm has beaten a free GC column.",
+                "why_it_is_not_a_claim": "n=24 and exploratory. Critically, the EXPRESSION correlation reverses sign between the two time points, -0.1209 at 6 h against +0.3922 at 24 h, which is one of the falsification criteria the primary test declared. The calibration must not be presented as predicting expression."
+            },
+            "cds_and_whole_molecule_structure_held_their_declared_direction": {
+                "cds_energy_per_nt": {"vs_half_life": -0.5764705882352941, "vs_24h_expression": -0.35130434782608694},
+                "cds_aup": {"vs_half_life": -0.5329411764705882, "vs_24h_expression": -0.24695652173913044},
+                "aup_whole_molecule": {"vs_half_life": -0.5921568627450981, "vs_24h_expression": -0.38869565217391305},
+                "energy_per_nt_whole_molecule": {"vs_half_life": -0.5374509803921569, "vs_24h_expression": -0.37647058823529413},
+                "why_it_is_interesting": "The in-cell screen's CDS-structure signal replicates on an unexposed panel at constant length, where it cannot be a length ruler. And structure correlates with expression more strongly than MEASURED stability does, which argues stability is not the mediator between structure and protein output.",
+                "why_it_is_not_a_claim": "Exploratory, n=24, one reporter, and no combined model was fitted."
+            },
+            "free_gc_baseline": {
+                "transcript_gc_vs_half_life": 0.14369747899159663,
+                "transcript_gc_vs_24h_expression": 0.2473043478260869,
+                "note": "Transcript GC and CDS GC give identical Spearman values on this set by construction: the UTRs are constant, so transcript GC is a monotonic affine function of CDS GC."
+            }
+        },
+        "first_measured_assay_error_in_this_project": {
+            "median_cv_6h": 0.06158,
+            "median_cv_24h": 0.07396,
+            "replicates": 4,
+            "planning_bound_assumed_in_v3_and_v4": 0.20,
+            "minimum_detectable_fold_change_at_the_measured_cv": {"6h": 1.126, "24h": 1.152},
+            "target_fold_change": 1.5,
+            "target_detectable_at_measured_cv_and_n4": true,
+            "resolution_on_this_panel": {"pairs": 276, "resolvable_24h": 232, "unresolvable_24h": 44},
+            "measured_expression_spread_across_the_panel": "4.237-fold between the lowest and highest 24 h construct",
+            "why_it_matters": "assay_definition_v3 and v4 record the 20 percent CV as a planning bound and name the absence of a measured error as a blocker on floor selection. At the assumed bound the design was underpowered for its own 1.5-fold target, needing 1.75-fold at n=3. At the MEASURED CV with n=4 the target is detectable. It also shows a real synonymous panel produces a 4.2-fold resolvable spread in protein output, against the 1.0617-fold predicted stability spread that made the design workflow's own pool entirely unresolved.",
+            "what_it_does_not_license": "No floor is frozen. This is the paper's assay and reporter, not the user's lab, so it bounds what that reporter achieved and does not predict the lab's CV."
+        },
+        "source_defect_found_and_enforced_against": {
+            "finding": "The 'Sequence' column in Supplementary Data 6 is exactly permuted against 'sequence_with_UTRs' for 5 of the 24 rows: a 2-cycle between Twist_1 and Genewiz_1, and a 3-cycle among LinearDesign, GC_rich_24x_2 and GC_rich_24x_1.",
+            "why_it_is_dangerous": "All 24 designs are synonymous variants of one protein, so every permuted row still translates to exactly the right protein. A protein-identity check passes on all 5 bad rows with 0 amino-acid differences.",
+            "affected_categories": "the only LinearDesign design, both GC-rich designs, and 2 of 3 Commercial designs, i.e. precisely the designed-comparison categories",
+            "rule_now_enforced_in_code": "Features are computed from sequence_with_UTRs only, with the CDS at [53:674]. The 'Sequence' column is never used, including for the 19 rows where it agrees. The permutation is re-detected at read time and recorded in the run artifact.",
+            "precedent": "This is the second defect found in this source by reading a column other than as labelled. The first produced the published +0.4190 figure that v15 had to correct."
+        }
+    },
+    "prohibitions_strengthened_here": [
+        {
+            "id": "v17_strengthens_v16_5",
+            "was": "v16_5 prohibited presenting in-cell stability as a validated expression proxy, on evidence from 6 paired constructs measured with and without pseudouridine.",
+            "now": "The same prohibition stands on a DIRECT, prespecified test on 24 constructs: rho -0.0330 against the declared +0.30, with a family sign reversal from -0.5714 to +0.5476. The prohibition is no longer an inference from a modification experiment; it is a measured result on a synonymous panel.",
+            "effect": "The prohibition is unchanged in text and stronger in basis."
+        },
+        {
+            "id": "v17_strengthens_v16_1",
+            "was": "v16_1 prohibited wiring RiboNN or measured ribosome load into the stability objective, because the coupling's sign reverses by design family.",
+            "now": "The family-dependent sign is now observed a SECOND time, in a different pair of quantities, on a different construct set: stability against expression, Eterna -0.5714 against Ribotree +0.5476. Family-dependent sign reversal is a recurring property of this biology, not a one-off.",
+            "effect": "Generalised in reasoning, unchanged in text."
+        }
+    ],
+    "prohibition_added_here": {
+        "id": "v17_1_no_single_axis_may_stand_in_for_expression",
+        "prohibition": "No single predicted or measured axis in this project MAY be presented as standing in for protein expression. Not the frozen calibration, not predicted or measured stability, not ribosome load, and not a structure feature.",
+        "basis": "Measured in-cell half-life does not order protein output on a synonymous panel (-0.0330). The frozen calibration's expression correlation reverses sign across time points (-0.1209 at 6 h, +0.3922 at 24 h). Measured ribosome load's coupling to stability reverses sign by family. Every single-axis route to expression tested in this project has failed a prespecified check.",
+        "what_is_still_permitted": "Reporting each axis as itself, on its own labels, with its own evidence; and keeping them as separate incommensurable Pareto axes, which is what the architecture already does.",
+        "what_would_lift_it": "Measured expression labels on enough constructs to fit and independently evaluate an expression model, on the system being designed for."
+    },
+    "prohibition_withdrawn_here": null,
+    "new_prohibition_added_here": "One added, none withdrawn; two strengthened on new evidence.",
+    "requirements_before_stage3": [
+        "Frozen independent sequence_and_family_clan_separated_validation_within_scope",
+        "Reported_accuracy_and_failures_by_length_band_and_family_against_native_controls",
+        "Resolve_sparse_2000_2999_nt_coverage_before_claiming_the_full_length_range",
+        "Demonstrate_credible_structure_accuracy_from_the_relied_upon_native_controls_with_explicit_review_of_baseline_gaps",
+        "Pass_constraint_decoder_resource_and_replay_checks_on_the_relied_upon_native_path",
+        "Document_remaining_limitations_before_expression_candidate_design"
+    ],
+    "requirements_satisfied": 6,
+    "requirements_satisfied_basis_unchanged_from_v5": true,
+    "stage3_target": {
+        "goal": "protein_expression",
+        "arms": [
+            "cell_free_ivtt_expression",
+            "transfected_cell_expression"
+        ],
+        "currently_modeled_axis": "in_cell_mrna_stability",
+        "unchanged_from_v16": true,
+        "note": "The goal and the arms are unchanged. What v17 adds is that the modeled axis has now been MEASURED against the goal, on 24 constructs, and does not predict it."
+    },
+    "switches_unchanged_from_v6": {
+        "expression_benefit_established": false,
+        "expression_candidate_design_enabled": true,
+        "independent_biological_validation": false,
+        "model_defaults_changed": false,
+        "new_sequence_scoring_enabled": true,
+        "stability_score_calibrated_to_the_assay": false,
+        "stage3_development_started": true,
+        "stage3_ready": true
+    },
+    "switches_unchanged_from_v16": {
+        "cell_free_scoring_enabled": false
+    },
+    "no_claim_permitted": [
+        "Measuring the expression axis satisfies no Stage 2 requirement; 6 of 6 remain satisfied on the v5 basis and nothing is reopened.",
+        "No expression benefit is established. The axis was characterised, not optimised.",
+        "The calibration's +0.5904 against in-cell half-life on 24 unexposed constructs is EXPLORATORY and must not be reported as validation. The calibration remains not independently validated.",
+        "The calibration must not be presented as predicting expression; its expression correlation reverses sign between the 6 h and 24 h labels.",
+        "No feature is adopted. The CDS-structure replication is exploratory at n=24.",
+        "No floor is frozen on the measured CV; it is the paper's assay and reporter, not the lab's.",
+        "Nothing here transfers to the project's own 1,811 nt construct, to a different reporter or protein, or to the cell-free arm.",
+        "utr5_frac_C, the in-cell screen's best feature, was NOT tested here and is not supported or refuted by this run; the UTRs are constant on this panel."
+    ]
+}

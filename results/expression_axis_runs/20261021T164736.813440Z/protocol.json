@@ -1,0 +1,118 @@
+{
+    "schema_version": 1,
+    "name": "expression_axis_v1",
+    "declared_date": "2026-10-21",
+    "gate": "configs/stage2_to_stage3_gate_v16_2026-10-21.json",
+    "assay_definition": "configs/assay_definition_v4_2026-10-21.json",
+    "status": "declared_before_any_relationship_was_computed",
+    "why_this_exists": {
+        "authorized_by": "user, 2026-10-21: 'for new work flow, if we need to rebuild code and test for cell expression prediction, then yes, we need to do it'",
+        "purpose": "Build the expression axis as its own measured quantity instead of inferring it from the stability axis. Gate v16 prohibits presenting in-cell stability as a validated expression proxy, on evidence from only 6 paired constructs. This protocol tests that premise directly, on 24 constructs with measured protein output.",
+        "correction_this_protocol_forces": "Handoff 2026-10-21 V1/V2, gate v16 and assay_definition_v4 all state that 6 constructs carry measured protein output. That is wrong. 6 was the pseudouridine PAIRED subset. Supplementary Data 6 carries 24 constructs with measured Nluc/Fluc protein output at two time points, 4 replicates each, with standard deviations, plus matched in-cell half-life. The claim 'expression is not currently trainable on this data' must be re-examined against 24, not 6."
+    },
+    "source": {
+        "archive": "Leppek et al. 2022, Nature Communications, 41467_2022_28776_MOESM4_ESM.zip",
+        "archive_sha256": "849ed7b49198c5b97049fec8d3636deea8812db4dd45ce0bcc448297703511c2",
+        "members": [
+            "Supplementary Data 6 - Attributes for 24 CDS designs_hkws_update_ESM.xlsx",
+            "Supplementary Data 5 - Significance tests for 24 CDS designs.xlsx"
+        ],
+        "member_hashes_recorded_in": "the run artifact, computed at read time and enforced against the archive hash above"
+    },
+    "why_this_construct_set_is_unusually_clean": {
+        "constant_length": "All 24 are 883 nt with UTRs and 621 nt of CDS. Length is CONSTANT, so no correlation found here can be a length artifact. Both of this project's known length artifacts are structurally impossible on this set: the SUP region-fraction error corrected in gate v15, and cds_length as a ruler among the in-cell screen's performers.",
+        "constant_utrs": "The 5' UTR is 53 nt and the 3' UTR is 209 nt, identical across all 24.",
+        "single_protein": "All 24 encode the same 207 aa protein from sequence_with_UTRs[53:674], every CDS starting AUG, ending in a stop, with no internal stop. This is a pure synonymous panel, which is exactly this project's declared design domain.",
+        "unexposed": "Zero of the 24 Sequence IDs appear in Supplementary Data 1. The frozen calibration, the 122-construct two-axis set and the 203-record in-cell screen all come from Data 1, so this set is unexposed to every fit and every screen in this project.",
+        "measured_replicate_error": "Data 6 carries Nluc_Fluc standard deviations and Data 5 carries replicate counts, n=4 at both time points. A MEASURED coefficient of variation is therefore available for the first time. assay_definition_v3 and v4 record the 20 percent CV as a planning bound and name the absence of a measured error as a blocker on floor selection."
+    },
+    "data_integrity_rule": {
+        "finding": "The 'Sequence' column is PERMUTED against 'sequence_with_UTRs' for 5 of the 24 rows, and the permutation is exact, 0 mismatching nucleotides after the swap.",
+        "cycles": [
+            "2-cycle: 1220187B1 (Twist_1) and 1220188B1 (Genewiz_1) hold each other's CDS",
+            "3-cycle: 1220184B1 (LinearDesign) -> 1220185B1 (GC_rich_24x_2) -> 1220186B1 (GC_rich_24x_1) -> 1220184B1"
+        ],
+        "why_it_is_invisible_to_an_obvious_check": "All 24 are synonymous variants of one protein, so every permuted assignment still translates to exactly the right protein. A protein-identity check passes on all 5 bad rows. aa_diffs is 0 for every one.",
+        "which_field_is_authoritative": "sequence_with_UTRs. It is internally consistent across all 24: constant 883 nt, constant UTRs, CDS at a constant offset of 53, valid ORF, single protein. The permutation is confined to the 'Sequence' column.",
+        "rule": "Every feature MUST be computed from sequence_with_UTRs. The CDS is sequence_with_UTRs[53:674]. The 'Sequence' column MUST NOT be used as a feature source for any row, including the 19 where it agrees.",
+        "consequence_if_violated": "5 of 24 constructs, 21 percent of the set, would carry another construct's features against their own measurements. The affected rows are the only LinearDesign design, both GC-rich designs and 2 of 3 Commercial designs, i.e. precisely the designed-comparison categories."
+    },
+    "design_limits_declared_up_front": {
+        "no_fit": "NOTHING is fitted here and no train/test split is made. n=24 supports neither. Gate v15 measured that held-out correlation fell from +0.3651 at one feature to +0.1317 at four on 105 training records; 24 records support less than one feature. This protocol is a CHARACTERISATION of the expression axis, declared as such.",
+        "utr_features_untestable": "The UTRs are constant, so every UTR feature has zero variance on this set. utr5_frac_C, the in-cell screen's best performer at +0.3857 held out, CANNOT be tested here. This set is blind to UTR composition in the same way the screen's first split was blind to it, with the roles reversed.",
+        "multiplicity": "One confirmatory test is declared, the primary below. Every other measurement is exploratory and must be reported as such. With 24 records, a single exploratory correlation near 0.40 is not evidence of anything on its own.",
+        "no_significance_claims": "No p-value is computed by this protocol. Data 5 carries the paper's own p-values and they are reported as the source's, not as ours.",
+        "one_protein_one_reporter": "Findings bind to this reporter, this UTR pair and this protein. They do not transfer to the project's own 1,811 nt construct, which has different UTRs and a different protein."
+    },
+    "primary_confirmatory_test": {
+        "question": "Does measured in-cell mRNA half-life predict measured protein output on the same constructs?",
+        "predictor": "half_life (Data 6, measured, in-cell, replicate n 2 to 4)",
+        "label": "Nluc_Fluc_24h_mean (Data 6, measured, n=4)",
+        "metric": "Spearman rho",
+        "declared_direction": "POSITIVE. A more stable mRNA should give more protein if stability is a usable route to expression.",
+        "why_this_is_the_primary": "Gate v16 prohibits treating stability as a validated expression proxy on the strength of 6 paired constructs. This is the same question on 24 constructs, on a synonymous panel, with length and UTRs held constant.",
+        "falsification_of_the_stability_route": "The premise that in-cell stability is a usable route to expression is FALSIFIED on this panel if ANY of: rho < +0.30 on the primary label; the sign differs between the 6 h and 24 h labels; or the sign reverses between the Eterna (n=8) and Ribotree (n=8) families.",
+        "what_will_be_recorded_on_failure": "That on a synonymous panel with length and UTRs constant, in-cell stability does not order protein output, and that the expression axis therefore requires its own features and its own labels rather than inheriting the stability objective. Gate v16's prohibition would then be CONFIRMED on 24 constructs rather than inferred from 6.",
+        "what_will_be_recorded_on_success": "That stability and expression are positively coupled on a synonymous panel, which would license stability as a declared PROXY input to the expression axis, still not as the expression axis itself, and still only for this reporter."
+    },
+    "exploratory_measurements_declared": [
+        {
+            "id": "E1_frozen_calibration_on_an_unexposed_set",
+            "what": "The frozen strand_rnafold_calibration_v1 predicted hours, from results/strand_rnafold_calibration_runs/20261019T174049.053308Z, scored on all 24 and correlated against measured half_life and against Nluc_Fluc_24h_mean.",
+            "declared_direction": "POSITIVE against both.",
+            "why": "These 24 are unexposed to the fit. This is the first test of the calibration on a synonymous panel at constant length. Its features are whole-molecule only, so no CDS annotation is needed.",
+            "declared_adverse_outcome": "rho < +0.20 against measured half_life would say the calibration does not transfer to a synonymous panel at all, which is the regime the design workflow actually operates in."
+        },
+        {
+            "id": "E2_free_baselines",
+            "what": "Transcript GC over the full 883 nt, and CDS GC over [53:674], against both labels.",
+            "declared_direction": "POSITIVE against both, following every earlier result in this project where GC tracked stability.",
+            "why": "A free single column has beaten the fitted calibration on its home axis twice in this project, at +0.3651 for GC (CDS) in-solution. It must be measured here before any model is credited."
+        },
+        {
+            "id": "E3_the_in_cell_screens_cds_structure_signal",
+            "what": "cds_aup and cds_energy_per_nt, computed by the project's own ViennaRNA path on [53:674], against both labels.",
+            "declared_direction": "NEGATIVE against half_life, reproducing the screen's -0.3864 and -0.3310; and, through the stability-to-expression chain the primary test examines, NEGATIVE against expression.",
+            "why": "These are the only two features the in-cell screen surfaced that are testable here. If they hold on an unexposed synonymous panel at constant length, that is independent support; if they invert, the screen's signal was specific to the 203-record set."
+        },
+        {
+            "id": "E4_whole_molecule_structure",
+            "what": "aup and ensemble energy per nt over the full 883 nt, against both labels.",
+            "declared_direction": "NEGATIVE against both.",
+            "why": "Separates whole-molecule from CDS-local structure, which is the distinction the in-cell screen raised and could not settle."
+        },
+        {
+            "id": "E5_family_stratified_primary",
+            "what": "The primary correlation recomputed within Eterna (n=8) and within Ribotree (n=8).",
+            "why": "Ribosome load against in-cell half-life reversed sign by design family, +0.4916 against -0.5551. Any aggregate on a mixed-family panel must be checked for the same failure before it is believed.",
+            "note": "n=8 per family supports no claim. This is a sign-consistency check, not an estimate."
+        }
+    ],
+    "measurement_error_analysis_declared": {
+        "what": "Coefficient of variation per construct, as Nluc_Fluc_sd divided by Nluc_Fluc_mean, at both time points, with n=4 from Data 5. Report median, minimum and maximum.",
+        "then": [
+            "Compare the measured CV against the 0.20 planning bound in assay_definition_v3 and v4.",
+            "Compute the minimum detectable fold change at the measured CV with n=4, by the same ln(1+CV) convention src/rnastable/assay_power.py already uses, so the number is comparable to the existing power table.",
+            "Count how many of the 276 construct pairs are resolvable at the measured CV, and report the unresolvable count as the headline, following the precedent of the design-workflow resolution analysis."
+        ],
+        "why_it_matters": "assay_definition_v3 and v4 record that no floor may be frozen on an assumed bound. A measured CV on 4 replicates of 24 constructs is the first evidence that could change that, for this reporter.",
+        "limit": "This CV is the paper's assay, not the user's lab. It bounds what their reporter achieved; it does not predict the lab's own CV, and no floor is frozen by this protocol."
+    },
+    "prohibitions_for_this_run": [
+        "Do not fit anything. Do not split train and test. Do not select a feature and report it as adopted.",
+        "Do not compute features from the 'Sequence' column.",
+        "Do not use any Data 1 record here; this protocol is confined to the 24 unexposed designs.",
+        "Do not claim significance. Do not compute p-values and present them as this project's.",
+        "Do not present any result here as transferring to the lab's construct, to a different reporter, or to the cell-free arm.",
+        "Do not revise this protocol after seeing a number. Supersede it with v2 and record why."
+    ],
+    "outputs": {
+        "run_directory": "results/expression_axis_runs/<UTC timestamp>/",
+        "must_contain": [
+            "protocol.json, a copy of this file with its sha256",
+            "summary.json, every declared measurement with the declared direction beside the measured value",
+            "features.csv, per construct, from sequence_with_UTRs only",
+            "integrity.json, the permutation finding and the authoritative-field rule as enforced at read time"
+        ]
+    }
+}

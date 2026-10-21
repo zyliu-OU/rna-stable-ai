@@ -1,8 +1,8 @@
 # RNA-StableAI
 
-![RNA-StableAI design workflow on 2026-10-20: the hash-verified 1811 nt reference construct feeds a 512-member GC-neutral pool of synonymous edits over codons 1 to 50; members are assembled through a variant path that keeps the reference hash gate and verifies the protein per member, folded by ViennaRNA, then scored on two incommensurable sides, a STRAND calibration refit predicting in-solution half-life in hours and a released RiboNN predicted_TE_A549 task; the two converge on a Pareto front that emits no composite score and a BoTorch hypervolume-maximising panel; the transfected-cell assay is unreached because no measurement of any construct exists; annotations record gate v6 at six of six with two accepted limitations, the closed window-width axis, the retired learned pair model, the rejected published STRAND coefficients, the blocked composite score, and what blocks the assay](workflow_10202026.svg)
+![RNA-StableAI design workflow on 2026-10-21: the hash-verified 1811 nt reference construct feeds a 512-member GC-neutral pool of synonymous edits over codons 1 to 50; members are assembled through a variant path that keeps the reference hash gate and verifies the protein per member, folded by ViennaRNA, then scored on two incommensurable sides, a STRAND calibration refit predicting in-solution half-life in hours and a released RiboNN predicted_TE_A549 task; the two converge on a Pareto front that emits no composite score and a BoTorch hypervolume-maximising panel; the expression assay is unreached on both of its arms, the transfected-cell arm and the cell-free in-vitro-translation arm reinstated on 2026-10-21 and declared without being defined, because no measurement of any construct exists on either; annotations record gate v17 with Stage 2 at six of six and two accepted limitations, that the goal is expression while in-cell stability is the modeled axis only, the closed window-width axis, the retired learned pair model, the rejected published STRAND coefficients, the blocked composite score, and what still blocks the assay; the caption records that on 24 unexposed synonymous constructs at constant length in-cell stability does not order protein output, at Spearman minus 0.03 with the sign reversing by design family](workflow_10202026.svg)
 
-*Implementation state on 2026-10-20: green boxes run and are replayed, red boxes are rejected,
+*Implementation state on 2026-10-21: green boxes run and are replayed, red boxes are rejected,
 blocked or unreached, neutral boxes record state, and the blue box is a gate decision. Every value
 the green path produces is a prediction from an unvalidated model on a quantity the assay does not
 measure. No stability, translation or expression benefit is established by any path shown. The
@@ -47,13 +47,15 @@ expression** — recorded in [gate v16](configs/stage2_to_stage3_gate_v16_2026-1
 [assay definition v4](configs/assay_definition_v4_2026-10-21.json).
 
 **In-cell mRNA stability (half-life / decay) is the axis currently being fitted and
-screened**, because it is the only expression-relevant quantity in the available data with
-enough measured labels: 122–203 records carry half-lives against **6** constructs with
-measured protein output. It is the modeled axis, **not the goal, and not a validated proxy for
-the goal** — on those 6 constructs pseudouridine moved in-solution half-life the same
-direction for all six while protein output spanned 13-fold **and changed sign**. Translation
-remains a separate, incommensurable Pareto axis and is never folded into the stability
-objective; the measurement that forced that separation is in the 2026-10-21 section below.
+screened**, because it is the only expression-relevant quantity with enough labels to fit:
+122–203 records carry half-lives against **24** constructs with measured protein output, and
+24 supports no fit. It is the modeled axis, **not the goal, and measured not to be a proxy for
+the goal** — on 24 synonymous constructs at constant length and constant UTRs, in-cell
+half-life orders protein output at **−0.0330** against a prespecified +0.30, with the sign
+reversing by design family. Translation remains a separate, incommensurable Pareto axis and is
+never folded into the stability objective. Both measurements are in the 2026-10-21 sections
+below, under [gate v17](configs/stage2_to_stage3_gate_v17_2026-10-21.json) and
+[assay definition v5](configs/assay_definition_v5_2026-10-21.json).
 
 | Step | Work | Progress |
 |---:|---|---|
@@ -87,6 +89,106 @@ The public snapshot contains code, portable tests and concise summaries; full
 local run artifacts, datasets, model weights and installed environments are not
 bundled. Original third-party [source](docs/third_party/RiboNN_LICENSE.txt) and
 [weight-license terms](docs/third_party/RiboNN_MODEL_WEIGHTS_LICENSE.txt) are retained.
+
+### 2026-10-21: the expression axis is measured for the first time — stability does not predict protein output, and the calibration posts its best result on a set it never saw
+
+The expression axis had never been measured here; it was only inferred from stability. It is
+now measured on **24 CDS designs** from Leppek et al. Supplementary Data 6 and 5, under
+[protocol `expression_axis_v1`](configs/expression_axis_v1_2026-10-21.json)
+(sha256 `ece508ff…`, declared and hashed **before any relationship was computed**),
+run `results/expression_axis_runs/20261021T164736.813440Z`, recorded by
+[gate v17](configs/stage2_to_stage3_gate_v17_2026-10-21.json).
+
+**First, a correction to this file.** The section below said 6 constructs carry measured
+protein output. **It is 24.** Six was the pseudouridine *paired* subset. Data 6 carries 24
+designs with Nluc/Fluc protein output at 6 h and 24 h, 4 replicates each with standard
+deviations, plus matched in-cell half-life. The claim that expression is not *fittable* on this
+data survives — gate v15 measured that 105 records support about one feature, so 24 supports
+none — but the axis can be **measured**, and was.
+
+**Why this construct set is the cleanest this project has used.** All 24 are **883 nt** with a
+**constant 53 nt 5′UTR and 209 nt 3′UTR**, a 621 nt CDS, and they all encode **one 207 aa
+protein** — a pure synonymous panel, exactly the declared design domain. **Length is constant,
+so no correlation here can be a length artifact**, which neither the two-axis set nor the
+in-cell screen could claim; both of this project's length artifacts (the SUP region-fraction
+error, `cds_length` as a ruler) are structurally impossible here. And **zero of the 24 appear
+in Supplementary Data 1**, so the set is unexposed to the frozen calibration, the 122-construct
+two-axis set and the 203-record screen.
+
+#### The primary test was prespecified, and it failed
+
+| | declared | measured |
+|---|---|---|
+| in-cell half-life vs 24 h protein output | **≥ +0.30, positive** | **−0.0330** |
+| in-cell half-life vs 6 h protein output | positive | −0.3070 |
+| Eterna family (n=8) | — | **−0.5714** |
+| Ribotree family (n=8) | — | **+0.5476** |
+
+**On a synonymous panel with length and UTRs held constant, in-cell mRNA stability does not
+order protein output** — and it fails in the *same way* measured ribosome load failed against
+stability: a **family-dependent sign**. That is now the second time this biology has shown a
+sign reversal by design family in a different pair of quantities. Gate v16 prohibited treating
+stability as a validated expression proxy on the strength of 6 paired constructs; that
+prohibition is now a **direct measurement on 24**, not an inference.
+
+#### The exploratory results, which must not be over-read
+
+n=24 and declared non-confirmatory in the protocol. **Nothing is adopted.**
+
+| predictor | declared | vs half-life | vs 24 h expression |
+|---|---|---|---|
+| **frozen calibration** | positive | **+0.5904** | +0.3922 |
+| transcript GC *(= CDS GC here)* | positive | +0.1437 | +0.2473 |
+| `cds_energy_per_nt` | negative | −0.5765 | −0.3513 |
+| `cds_aup` | negative | −0.5330 | −0.2470 |
+| AUP, whole molecule | negative | −0.5922 | −0.3887 |
+| energy per nt, whole molecule | negative | −0.5374 | −0.3765 |
+
+Three things worth noting, each with its caveat:
+
+1. **+0.5904 is the frozen calibration's strongest correlation anywhere in this project**, on a
+   set it never saw, with only 1 of 24 constructs outside its training range — and it is the
+   **first time a fitted arm here has beaten a free GC column** (+0.1437). It remains
+   exploratory and not independently validated. **It must not be called an expression
+   predictor**: its expression correlation *reverses sign across time points*, −0.1209 at 6 h
+   against +0.3922 at 24 h, which is one of the criteria the primary test declared as
+   falsifying.
+2. **The in-cell screen's CDS-structure signal replicates** on an unexposed panel where it
+   cannot be a length ruler. And structure tracks expression (−0.35 to −0.39) more strongly
+   than *measured* stability does (−0.03), which argues **stability is not the mediator**
+   between structure and protein output.
+3. `utr5_frac_C`, the screen's best feature at +0.3857, **could not be tested** — the UTRs are
+   constant, so UTR features have zero variance here. This panel is blind to UTR composition
+   exactly as the screen's first split was, with the roles reversed.
+
+#### The first measured assay error in this project
+
+| | 6 h | 24 h |
+|---|---|---|
+| median CV, n=4 | **0.0616** | **0.0740** |
+| minimum detectable fold-change | 1.126× | 1.152× |
+| unresolvable pairs of 276 | 66 | **44** |
+
+The frozen assay definition records 20% CV as a *planning bound* and names the missing measured
+error as a blocker on floor selection; at that bound the design was **underpowered for its own
+1.5× target**, needing 1.75× at n=3. At the measured CV with n=4 the target **is** detectable.
+The panel's measured protein output spans **4.24-fold** with 232 of 276 pairs resolvable —
+against the 1.0617× predicted stability spread that left the design workflow's own pool
+entirely unresolved. The design space is not in the noise floor; the *objective* was. **No
+floor is frozen on this**: it is the paper's reporter, not the lab's assay.
+
+#### A source defect that a protein check cannot catch
+
+The `Sequence` column in Data 6 is **exactly permuted** against `sequence_with_UTRs` for **5 of
+24 rows** — a 2-cycle (Twist_1 ↔ Genewiz_1) and a 3-cycle (LinearDesign → GC_rich_24x_2 →
+GC_rich_24x_1 →). Because every design is synonymous, **all five permuted rows still translate
+to exactly the right protein**, 0 amino-acid differences, so a protein-identity check passes on
+every one. It hits precisely the designed-comparison categories: the only LinearDesign design,
+both GC-rich designs, and 2 of 3 Commercial. Features are therefore computed from
+`sequence_with_UTRs` only, CDS at `[53:674]`, and the `Sequence` column is never used — the
+permutation is re-detected at read time and recorded in `integrity.json`. **This is the second
+defect found in this source by reading a column other than as labelled;** the first produced the
++0.4190 figure corrected below.
 
 ### 2026-10-21: the target set is extended, a published number is corrected, and translation is measured to be unusable as a stability feature
 
@@ -194,16 +296,21 @@ therefore stays a separate Pareto axis — which is what the architecture alread
 the **first measured evidence that keeping the two objectives incommensurable was correct**
 rather than merely cautious.
 
-**Gate state:** v5–v15 are frozen and
-**[v16](configs/stage2_to_stage3_gate_v16_2026-10-21.json) is current.** It withdraws no
-prohibition, moves no switch, reopens no requirement, and leaves Stage 2 at six of six. It
-adds five prohibitions: the three V11 specified and left unwritten — do not wire RiboNN into
+**Gate state:** v5–v16 are frozen and
+**[v17](configs/stage2_to_stage3_gate_v17_2026-10-21.json) is current.** v17 records the
+expression-axis measurement in the section above: it corrects v16's label count from 6 to 24,
+strengthens two prohibitions on new evidence, adds one — *no single axis may stand in for
+expression* — withdraws none, and moves no switch.
+
+[Gate v16](configs/stage2_to_stage3_gate_v16_2026-10-21.json) is what this section records. It
+withdrew no prohibition, moved no switch, reopened no requirement, and left Stage 2 at six of
+six. It added five prohibitions: the three V11 specified and left unwritten — do not wire RiboNN into
 the stability objective, do not claim any screened feature is adopted, do not claim the screen
 improved resolution — plus two that follow from extending the target set: no candidate
 ordering transfers across systems (cell-free to cells, or solution to cell), and in-cell
-stability is not a validated proxy for expression. The new `cell_free_scoring_enabled` switch
-is **closed**. Still open: no combined two-feature model has been fitted, and the screen's
-runs carry no tests of their own.
+stability is not a validated proxy for expression. Its `cell_free_scoring_enabled` switch is
+**closed**. Still open: no combined two-feature model has been fitted, and the in-cell
+screen's runs carry no tests of their own.
 
 ### 2026-10-20: the design domain is widened — the threshold clears, and the objective turns out to be a GC meter
 
@@ -681,10 +788,11 @@ This is a future optimization goal; current structure and stability proxies esta
 expression benefit.
 
 *How the modeled axis relates to this goal: in-cell mRNA stability is what is currently being
-fitted and screened, because expression has only 6 measured constructs in the available data.
-Stability is a means, not the goal, and this project has measured that it is not a reliable
-one — see the pseudouridine result below, where stability moved uniformly and expression
-changed sign. The cell-free arm has no assay parameters yet; its open questions are listed in
+fitted and screened, because expression has 24 measured constructs in the available data and
+24 supports no fit. Stability is a means, not the goal, and this project has now **measured
+that it is not a working one** — in-cell half-life orders protein output at −0.0330 on a
+synonymous panel; see the expression-axis section below. The cell-free arm has no assay
+parameters yet; its open questions are listed in
 [assay definition v4](configs/assay_definition_v4_2026-10-21.json), and no sequence may be
 scored for it until they are answered.*
 

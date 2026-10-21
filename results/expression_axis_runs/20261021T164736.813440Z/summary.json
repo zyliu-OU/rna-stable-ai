@@ -1,0 +1,201 @@
+{
+  "calibration_run": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z",
+  "constructs": 24,
+  "exploratory": {
+    "E1_frozen_calibration_on_an_unexposed_set": {
+      "constructs": 24,
+      "declared_direction": "POSITIVE",
+      "vs_expression_24h": 0.39217391304347826,
+      "vs_expression_6h": -0.1208695652173913,
+      "vs_half_life": 0.5904347826086956
+    },
+    "E2_cds_gc": {
+      "constructs": 24,
+      "declared_direction": "POSITIVE",
+      "vs_expression_24h": 0.24733318513531177,
+      "vs_expression_6h": 0.15501868645804753,
+      "vs_half_life": 0.1436970969976283
+    },
+    "E2_transcript_gc": {
+      "constructs": 24,
+      "declared_direction": "POSITIVE",
+      "vs_expression_24h": 0.24733318513531177,
+      "vs_expression_6h": 0.15501868645804753,
+      "vs_half_life": 0.1436970969976283
+    },
+    "E3_cds_aup": {
+      "constructs": 24,
+      "declared_direction": "NEGATIVE",
+      "vs_expression_24h": -0.24695652173913044,
+      "vs_expression_6h": 0.2234782608695652,
+      "vs_half_life": -0.5330434782608696
+    },
+    "E3_cds_energy_per_nt": {
+      "constructs": 24,
+      "declared_direction": "NEGATIVE",
+      "vs_expression_24h": -0.35130434782608694,
+      "vs_expression_6h": 0.09826086956521739,
+      "vs_half_life": -0.5765217391304348
+    },
+    "E4_aup": {
+      "constructs": 24,
+      "declared_direction": "NEGATIVE",
+      "vs_expression_24h": -0.38869565217391305,
+      "vs_expression_6h": 0.16608695652173913,
+      "vs_half_life": -0.5921739130434782
+    },
+    "E4_energy_per_nt": {
+      "constructs": 24,
+      "declared_direction": "NEGATIVE",
+      "vs_expression_24h": -0.3765217391304348,
+      "vs_expression_6h": 0.10347826086956521,
+      "vs_half_life": -0.5373913043478261
+    }
+  },
+  "extrapolation": {
+    "constructs_outside_the_calibration_training_range": 1,
+    "features_involved": [
+      "aup"
+    ]
+  },
+  "family_stratified_primary_E5": {
+    "Eterna": {
+      "constructs": 8,
+      "declared_direction": "POSITIVE",
+      "vs_expression_24h": -0.5714285714285714,
+      "vs_expression_6h": -0.07142857142857142,
+      "vs_half_life": 1.0
+    },
+    "Ribotree": {
+      "constructs": 8,
+      "declared_direction": "POSITIVE",
+      "vs_expression_24h": 0.5476190476190477,
+      "vs_expression_6h": 0.11904761904761904,
+      "vs_half_life": 1.0
+    }
+  },
+  "integrity": {
+    "all_full_length_equal": true,
+    "authoritative_field": "sequence_with_UTRs",
+    "constant_utr3_len": 209,
+    "constant_utr5_len": 53,
+    "distinct_proteins": 1,
+    "note_on_why_a_protein_check_misses_this": "All 24 are synonymous designs of one protein, so a permuted assignment still translates correctly. Protein identity passes on every bad row.",
+    "permutation_map_mismatched_row_to_holder_of_its_cds": {
+      "1220184B1": "1220186B1",
+      "1220185B1": "1220184B1",
+      "1220186B1": "1220185B1",
+      "1220187B1": "1220188B1",
+      "1220188B1": "1220187B1"
+    },
+    "permutation_resolves_every_mismatch": true,
+    "protein_identical_across_all_rows": true,
+    "protein_length_aa": 207,
+    "rows": 24,
+    "sequence_column_mismatch_count": 5,
+    "sequence_column_mismatched_rows": [
+      "1220184B1",
+      "1220185B1",
+      "1220186B1",
+      "1220187B1",
+      "1220188B1"
+    ],
+    "sequence_column_used_for_features": false,
+    "utr_features_have_zero_variance": true
+  },
+  "label_ranges": {
+    "half_life_hours": [
+      1.134837146,
+      3.340146398
+    ],
+    "nluc_fluc_24h": [
+      328.9111808,
+      1393.669969
+    ],
+    "nluc_fluc_24h_fold_span": 4.237222844204389
+  },
+  "limits_carried_from_the_protocol": {
+    "multiplicity": "One confirmatory test is declared, the primary below. Every other measurement is exploratory and must be reported as such. With 24 records, a single exploratory correlation near 0.40 is not evidence of anything on its own.",
+    "no_fit": "NOTHING is fitted here and no train/test split is made. n=24 supports neither. Gate v15 measured that held-out correlation fell from +0.3651 at one feature to +0.1317 at four on 105 training records; 24 records support less than one feature. This protocol is a CHARACTERISATION of the expression axis, declared as such.",
+    "no_significance_claims": "No p-value is computed by this protocol. Data 5 carries the paper's own p-values and they are reported as the source's, not as ours.",
+    "one_protein_one_reporter": "Findings bind to this reporter, this UTR pair and this protein. They do not transfer to the project's own 1,811 nt construct, which has different UTRs and a different protein.",
+    "utr_features_untestable": "The UTRs are constant, so every UTR feature has zero variance on this set. utr5_frac_C, the in-cell screen's best performer at +0.3857 held out, CANNOT be tested here. This set is blind to UTR composition in the same way the screen's first split was blind to it, with the roles reversed."
+  },
+  "measurement_error": {
+    "24h": {
+      "constructs": 24,
+      "fraction_unresolvable": 0.15942028985507245,
+      "measured_cv": {
+        "max": 0.1307674191550295,
+        "median": 0.07395635557586883,
+        "min": 0.017382271177677974
+      },
+      "measured_cv_is_below_the_planning_bound": true,
+      "minimum_detectable_fold_change_at_measured_cv": 1.1518454840734678,
+      "pairs": 276,
+      "planning_bound_in_assay_definition_v3_and_v4": 0.2,
+      "replicates_per_construct": [
+        4
+      ],
+      "resolvable_pairs": 232,
+      "target_fold_change_in_assay_definition": 1.5,
+      "target_is_detectable_at_this_cv_and_n": true,
+      "unresolvable_pairs": 44
+    },
+    "6h": {
+      "constructs": 24,
+      "fraction_unresolvable": 0.2391304347826087,
+      "measured_cv": {
+        "max": 0.11003398957978551,
+        "median": 0.061602093760452774,
+        "min": 0.014737126817650586
+      },
+      "measured_cv_is_below_the_planning_bound": true,
+      "minimum_detectable_fold_change_at_measured_cv": 1.1257407586963413,
+      "pairs": 276,
+      "planning_bound_in_assay_definition_v3_and_v4": 0.2,
+      "replicates_per_construct": [
+        4
+      ],
+      "resolvable_pairs": 210,
+      "target_fold_change_in_assay_definition": 1.5,
+      "target_is_detectable_at_this_cv_and_n": true,
+      "unresolvable_pairs": 66
+    }
+  },
+  "no_train_test_split_was_made": true,
+  "nothing_was_fitted": true,
+  "primary_confirmatory_test": {
+    "declared_direction": "POSITIVE",
+    "declared_threshold": 0.3,
+    "falsification_reasons": [
+      "rho vs 24 h expression is -0.03304347826086956, below the declared +0.30",
+      "the sign reverses across design families with at least 4 members"
+    ],
+    "label": "Nluc_Fluc_24h_mean",
+    "predictor": "measured in-cell half_life",
+    "question": "Does measured in-cell mRNA half-life predict measured protein output on the same constructs?",
+    "spearman_vs_expression_24h": -0.03304347826086956,
+    "spearman_vs_expression_6h": -0.30695652173913046,
+    "stability_route_falsified": true,
+    "verdict": "That on a synonymous panel with length and UTRs constant, in-cell stability does not order protein output, and that the expression axis therefore requires its own features and its own labels rather than inheriting the stability objective. Gate v16's prohibition would then be CONFIRMED on 24 constructs rather than inferred from 6."
+  },
+  "protocol": {
+    "file": "configs/expression_axis_v1_2026-10-21.json",
+    "name": "expression_axis_v1",
+    "sha256": "ece508fffb9df036705eded5d8710206261be1c6e1c268313b99c6c1228a8701"
+  },
+  "source": {
+    "archive_sha256": "849ed7b49198c5b97049fec8d3636deea8812db4dd45ce0bcc448297703511c2",
+    "members": [
+      {
+        "name": "Supplementary Data 6 - Attributes for 24 CDS designs_hkws_update_ESM.xlsx",
+        "sha256": "dda17ad0ea2e5c9848d885ded39a92e4a2c4b8d7ded10b471f063451248034d1"
+      },
+      {
+        "name": "Supplementary Data 5 - Significance tests for 24 CDS designs.xlsx",
+        "sha256": "7ee69c6ff89141c7291370eaf316603da7ebfbf2be5d29b33bb6c8834f4255c6"
+      }
+    ]
+  }
+}

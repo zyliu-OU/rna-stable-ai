@@ -1,0 +1,206 @@
+{
+    "schema_version": 1,
+    "name": "assay_definition_v5",
+    "frozen_date": "2026-10-21",
+    "supersedes": {
+        "v4": {
+            "file": "configs/assay_definition_v4_2026-10-21.json",
+            "sha256": "16f2990b554d263c266de237e5289cd14762a00f4dfaf2f961bea9c3b0f993fa"
+        },
+        "v3": {
+            "file": "configs/assay_definition_v3_2026-10-19.json",
+            "sha256": "97be8d631c563e1ba36c4ebaa41d8648d9c7e8319b9e7bbaf7ede34df2e0272b"
+        },
+        "status": "v1 through v4 remain frozen and unedited; code and tests continue to pin v3 by name, and this version changes no value they read",
+        "note": "v5 corrects the measured-protein-output label count that v4 got wrong, and records the first MEASURED assay error in this project. Target set and every assay parameter are unchanged from v4."
+    },
+    "status": "incomplete_pending_transcript_and_cell_free_parameters",
+    "gate": "configs/stage2_to_stage3_gate_v17_2026-10-21.json",
+    "decisions_recorded_2026_10_21": {
+        "goal_is_expression_stability_is_the_modeled_axis": {
+            "decision": "The Step 3 goal is protein expression. In-cell mRNA stability is the axis currently being fitted and screened, not the goal.",
+            "quote": "wait, for development, plan, we still want expression.",
+            "effect": "Corrects a README edit made earlier on 2026-10-21 that had restated the Step 3 GOAL as in-cell mRNA stability. The frozen gate chain never made that change: gate v15 records stage3_target as transfected_cell_expression, so the README edit, not the gate, was out of step.",
+            "reconciliation_with_v11": "Handoff 2026-10-20 V11 recorded the user's statement that the target axis is in-cell mRNA stability and not in-cell expression. That is retained here as a statement about WHICH MEASURED LABEL the model is fitted and screened against, because in-cell half-life is the only expression-relevant quantity in the available data with enough labels to fit. It is not a change of goal.",
+            "why_stability_is_the_modeled_axis": "The source data carries 122 to 203 records with measured half-lives and 24 constructs with measured protein output (Supplementary Data 6, Nluc/Fluc at 6 h and 24 h, 4 replicates with standard deviations). 24 labels still support no fit: gate v15 measured that 105 training records support about one feature. The axis can be measured and characterised, which gate v17 did, but not fitted."
+        },
+        "cell_free_expression_reinstated": {
+            "decision": "Cell-free (in-vitro translation) expression is reinstated as an active Stage 3 target alongside transfected-cell expression.",
+            "quote": "answered via option selection, 2026-10-21: 'Yes - bring it back as an active target'",
+            "effect": "Reverses the 2026-10-19 amendment recorded in assay_definition_v3 and in configs/stage2_to_stage3_gate_v2_2026-10-19.json, which set the target to transfected cells and set not_cell_free to true. Both of those remain frozen and unedited; this version supersedes them.",
+            "why_it_was_retired_in_the_first_place": "On 2026-10-19 the target was amended from cell-free to transfected cells because the user's lab works in transfected cells. Reinstating cell-free does NOT withdraw that fact: it adds an arm, and the lab-practice reason the transfected-cell arm exists is unchanged.",
+            "status": "declared, not defined. No cell-free assay parameters exist yet; see cell_free_arm.blocking_inputs."
+        }
+    },
+    "stage3_target": {
+        "goal": "protein_expression",
+        "arms": [
+            "cell_free_ivtt_expression",
+            "transfected_cell_expression"
+        ],
+        "currently_modeled_axis": "in_cell_mrna_stability",
+        "translation_axis": "separate and incommensurable; never combined into the stability objective or into a composite score"
+    },
+    "assay": {
+        "systems": [
+            "cell_free_in_vitro_translation",
+            "transfected_cells_or_in_vivo"
+        ],
+        "not_cell_free": false,
+        "not_cell_free_history": "v1 through v3 recorded not_cell_free true from 2026-10-19; false here as of 2026-10-21",
+        "readouts_transfected_cell_arm_unchanged_from_v3": [
+            {
+                "name": "luciferase_luminescence",
+                "measures": "protein output / expression",
+                "reporter": "firefly luciferase (Fluc)",
+                "units": "relative light units, instrument-dependent",
+                "design": "time_course"
+            },
+            {
+                "name": "rt_qpcr_mrna",
+                "measures": "in-cell mRNA abundance over time, used for RNA stability",
+                "units": "relative abundance; decay rate or half-life derived",
+                "design": "time_course"
+            }
+        ],
+        "cell_types_unchanged_from_v3": {
+            "a549": {
+                "name": "A549",
+                "model_supported": true,
+                "ribonn_task": "predicted_TE_A549"
+            },
+            "t_cell": {
+                "name": "activated CD3+ T cells containing CD4+ and CD8+ populations",
+                "model_supported": false,
+                "ribonn_task": null,
+                "reason": "declared model-blind; no released task matches"
+            }
+        },
+        "replicates": 3,
+        "target_effect": {
+            "fold_change": 1.5,
+            "direction": "enhancement"
+        },
+        "measurement_error": {
+            "status": "bound_supplied_not_measured",
+            "assumed_cv_upper_bound": 0.2,
+            "applies_to_both_readouts": true,
+            "carried_forward_unchanged_from_v3": true,
+            "power_consequence": {
+                "warning": "At the stated bound of CV 20 percent, 3 replicates give only 54.2 percent power to detect a 1.5-fold change, and the minimum detectable effect at n=3 becomes 1.75-fold, which exceeds the 1.5-fold target.",
+                "rule": "Planning at the upper bound means the design is underpowered for its own target. Either the measured CV must come in nearer 10 percent, or replicates must rise to 5, or the analysis must be paired, or the reported outcome must be the minimum detectable effect rather than the 1.5-fold target.",
+                "cell_free_arm": "This power calculation was derived for the transfected-cell readouts. It has NOT been redone for a cell-free arm, whose replicate structure and error model are undefined."
+            }
+        }
+    },
+    "cell_free_arm": {
+        "status": "declared_target_no_assay_defined",
+        "scoring_permitted": false,
+        "blocking_inputs": [
+            "which in-vitro translation system (rabbit reticulocyte lysate, wheat germ extract, PURE/reconstituted, E. coli lysate, or a commercial kit by name)",
+            "lysate versus reconstituted, because reconstituted systems lack most mRNA decay activity",
+            "reaction temperature and duration, and the time points read",
+            "input form: IVT mRNA, and whether capped and polyadenylated",
+            "cap chemistry and nucleoside modifications for this arm",
+            "the readout, its units, and whether RNA abundance is measured in parallel",
+            "replicate structure and whether a measured CV exists for this system",
+            "whether the parent/baseline construct is the same one as the transfected-cell arm"
+        ],
+        "known_biological_differences_from_the_transfected_cell_arm": [
+            "no delivery or uptake step, and no plasma membrane",
+            "no innate-immune sensing of the transcript (no RIG-I, PKR or IFIT1 response)",
+            "cellular mRNA decay pathways are absent or strongly attenuated (deadenylation, decapping, exosome, and NMD)",
+            "no nuclear or cytoplasmic compartmentalisation",
+            "short reaction times relative to a cellular time course"
+        ],
+        "transfer_is_unmeasured": "Whether a candidate ordering obtained cell-free transfers to transfected cells has NOT been measured in this project, and no data here bears on it. The closest available evidence is adverse: the two MEASURED stability axes in the source data, in-solution half-life and in-cell half-life, rank at only +0.0545 (results/two_axis_comparison_runs/20261021T042044.996926Z, measured_axes.spearman_between_the_two_measured_axes). Solution and cell disagree even about stability, which is a simpler quantity than expression."
+    },
+    "design_space_unchanged_from_v3": {
+        "regions_subject_to_change": [
+            "5_utr",
+            "orf",
+            "3_utr"
+        ],
+        "orf_constraint": "synonymous_only",
+        "protein_invariance": {
+            "status": "confirmed_by_user",
+            "validation_rule": "A proposed ORF variant must translate, under the standard genetic code, to exactly the parent protein. The parent protein is the 550 aa sequence whose reference CDS is recorded in v3."
+        },
+        "codon_usage_observation": "The supplied reference CDS sits at GC3 0.996, essentially maximal human codon optimization, so synonymous variation from this parent can realistically only reduce GC3.",
+        "coupling_warning": "Edits in all three regions move GC content and folding free energy, which are STRAND features, and UTR and CDS sizes are RiboNN inputs. The regions are not independent in their effect on model scores."
+    },
+    "reference_construct": {
+        "status": "unchanged_from_v3_cds_example_only_transcript_pending",
+        "see": "configs/assay_definition_v3_2026-10-19.json",
+        "blocking_inputs_still_open": true
+    },
+    "quantity_mismatches_recorded": [
+        {
+            "component": "strand_rnafold_calibration_v1 and published STRAND",
+            "predicts": "in-solution RNA half-life of purified RNA in buffer, hours",
+            "assay_measures": "in-cell mRNA decay by RT-qPCR",
+            "permitted_claim": "correlation with in-cell stability, explicitly labelled; not validation against the model's own target"
+        },
+        {
+            "component": "RiboNN predicted_TE_A549",
+            "predicts": "translational efficiency of endogenous human transcripts, released task scale",
+            "assay_measures": "luminescence from a designed reporter construct",
+            "permitted_claim": "ranking or correlation for the A549 arm only, not calibrated prediction"
+        },
+        {
+            "component": "none",
+            "predicts": "nothing in the stack predicts relative light units",
+            "assay_measures": "expression in the assay's own units",
+            "permitted_claim": "none until a model is fitted to the lab's own measurements and independently evaluated"
+        },
+        {
+            "component": "the whole stack, against the reinstated cell-free arm",
+            "predicts": "nothing was ever fitted or evaluated against a cell-free expression readout in this project",
+            "assay_measures": "undefined; the arm has no parameters yet",
+            "permitted_claim": "none"
+        }
+    ],
+    "no_claim_permitted": [
+        "Naming expression as the goal establishes no expression benefit. Nothing in this project has measured one.",
+        "Reinstating the cell-free arm establishes nothing about it, and permits no scoring for it. The arm is declared, not defined.",
+        "A candidate ordering obtained in one system must not be presented as the expected ordering in the other. Transfer between cell-free and transfected cells is unmeasured here.",
+        "In-cell mRNA stability must not be presented as a validated proxy for protein expression. Measured directly on 24 synonymous constructs at constant length and constant UTRs, in-cell half-life gives Spearman -0.0330 against 24 h protein output, against a declared +0.30, with the sign reversing by design family from -0.5714 to +0.5476. On the 6 PAIRED constructs measured with and without pseudouridine, stability moved uniformly while protein output spanned 13-fold AND CHANGED SIGN.",
+        "Measured ribosome load must not be wired into the stability objective; see the gate v16 prohibition.",
+        "No screened in-cell feature is adopted, validated, or in the production path.",
+        "The T-cell arm carries no translation-side model score and none may be inferred from the A549 arm.",
+        "Amending or extending the target set satisfies no Stage 2 requirement.",
+        "No single axis may stand in for expression; see gate v17 prohibition v17_1."
+    ],
+    "task_selected_for_a549": true,
+    "floors_frozen": false,
+    "new_sequence_scoring_enabled": true,
+    "expression_candidate_design_enabled": true,
+    "cell_free_scoring_enabled": false,
+    "expression_benefit_established": false,
+    "stage3_ready": true,
+    "correction_to_v4": {
+        "what_v4_said": "The source data carries 122 to 203 records with measured half-lives against 6 constructs with measured protein output.",
+        "why_it_is_wrong": "6 was the pseudouridine PAIRED subset, not the count of constructs carrying measured protein output. The correct count is 24.",
+        "status_of_v4": "remains frozen and unedited; superseded, not altered",
+        "scope": "Confined to the label count and the sentence depending on it. The 13-fold sign-change evidence about the 6 paired constructs is a different measurement and stands."
+    },
+    "measured_assay_error": {
+        "status": "MEASURED, from the source assay; supersedes nothing about the lab",
+        "source": "Leppek et al. Supplementary Data 6 standard deviations with Data 5 replicate counts",
+        "run": "results/expression_axis_runs/20261021T164736.813440Z",
+        "median_cv": {
+            "6h": 0.06158,
+            "24h": 0.07396
+        },
+        "replicates": 4,
+        "planning_bound_still_recorded_above": 0.2,
+        "minimum_detectable_fold_change": {
+            "6h": 1.126,
+            "24h": 1.152
+        },
+        "target_fold_change": 1.5,
+        "target_detectable": true,
+        "consequence": "At the assumed 20 percent bound the design was underpowered for its own 1.5-fold target, needing 1.75-fold at n=3. At this measured CV with n=4 the target is detectable. This is the paper reporter, not the lab assay.",
+        "floors_still_not_frozen": true
+    }
+}

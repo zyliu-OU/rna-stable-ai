@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="812" viewBox="0 0 760 812" role="img" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
-<title>RNA-StableAI design workflow as built on 2026-10-20, and where it stops</title>
-<desc>The reference construct feeds a windowed synonymous design space, whose members are assembled through a variant path that hash-verifies the reference and verifies the protein, folded by ViennaRNA, then scored on two incommensurable sides: a STRAND calibration refit predicting in-solution half-life in hours, and a released RiboNN task predicting translational efficiency. The two sides converge on a Pareto front that emits no composite score, and BoTorch selects a panel by maximising dominated hypervolume. Every stage shown in green has run and replayed. The transfected-cell assay is red and unreached because no experimental measurement of any construct exists. Gate v6 records Stage 2 satisfied six of six, two of them by accepted limitation, and opens new-sequence scoring and candidate design while leaving expression benefit unestablished. The learned pair model is retired and the window-width axis is closed at a measured 8.4 percent of the calibration training range.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="828" viewBox="0 0 760 828" role="img" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>RNA-StableAI design workflow as built on 2026-10-21, and where it stops</title>
+<desc>The reference construct feeds a windowed synonymous design space, whose members are assembled through a variant path that hash-verifies the reference and verifies the protein, folded by ViennaRNA, then scored on two incommensurable sides: a STRAND calibration refit predicting in-solution half-life in hours, and a released RiboNN task predicting translational efficiency. The two sides converge on a Pareto front that emits no composite score, and BoTorch selects a panel by maximising dominated hypervolume. Every stage shown in green has run and replayed. The transfected-cell assay is red and unreached because no experimental measurement of any construct exists. Gate v17 records Stage 2 satisfied six of six, two of them by accepted limitation, and keeps new-sequence scoring and candidate design open while leaving expression benefit unestablished. The Step 3 goal is protein expression in two arms, transfected cell and a reinstated cell-free in-vitro-translation arm that is declared but not defined and cannot be scored. In-cell mRNA stability is the modeled axis only: measured on 24 unexposed synonymous constructs at constant length it orders protein output at Spearman minus 0.03 against a prespecified plus 0.30, with the sign reversing by design family, so no single axis may stand in for expression. The learned pair model is retired and the window-width axis is closed at a measured 8.4 percent of the calibration training range.</desc>
 <defs>
 <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
 <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#E24B4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
@@ -64,18 +64,19 @@
 <line x1="222" y1="656" x2="222" y2="684" stroke="#E24B4A" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arrow-red)"/>
 
 <!-- flow: assay, unreached -->
-<rect x="36" y="686" width="372" height="62" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
-<text x="222" y="708" text-anchor="middle" font-size="14" font-weight="500" fill="#791F1F">Transfected-cell assay, unreached</text>
-<text x="222" y="728" text-anchor="middle" font-size="10.5" fill="#791F1F">A549 and activated CD3+ T cells; luminescence and RT-qPCR</text>
-<text x="222" y="742" text-anchor="middle" font-size="10.5" fill="#791F1F">no measurement of any construct exists</text>
+<rect x="36" y="686" width="372" height="76" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+<text x="222" y="704" text-anchor="middle" font-size="14" font-weight="500" fill="#791F1F">Expression assay, unreached &#8212; two arms</text>
+<text x="222" y="722" text-anchor="middle" font-size="10.5" fill="#791F1F">transfected cell: A549 and CD3+ T cells; luminescence, RT-qPCR</text>
+<text x="222" y="736" text-anchor="middle" font-size="10.5" fill="#791F1F">cell-free IVTT reinstated: declared, NOT defined, not scoreable</text>
+<text x="222" y="750" text-anchor="middle" font-size="10.5" fill="#791F1F">no measurement of any construct exists on either arm</text>
 
 <!-- annotations -->
 <rect x="440" y="56" width="284" height="90" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
-<text x="582" y="76" text-anchor="middle" font-size="12.5" font-weight="500" fill="#0C447C">Gate v6, 2026-10-20</text>
+<text x="582" y="76" text-anchor="middle" font-size="12.5" font-weight="500" fill="#0C447C">Gate v17, 2026-10-21</text>
 <text x="582" y="94" text-anchor="middle" font-size="10.5" fill="#0C447C">Stage 2 satisfied 6 of 6, two of them</text>
 <text x="582" y="108" text-anchor="middle" font-size="10.5" fill="#0C447C">by accepted limitation, not by evidence</text>
-<text x="582" y="124" text-anchor="middle" font-size="10.5" fill="#0C447C">new-sequence scoring and candidate</text>
-<text x="582" y="138" text-anchor="middle" font-size="10.5" fill="#0C447C">design open; benefit NOT established</text>
+<text x="582" y="124" text-anchor="middle" font-size="10.5" fill="#0C447C">goal is EXPRESSION; stability is the</text>
+<text x="582" y="138" text-anchor="middle" font-size="10.5" fill="#0C447C">modeled axis only; benefit NOT established</text>
 
 <rect x="440" y="160" width="284" height="76" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
 <text x="582" y="180" text-anchor="middle" font-size="12.5" font-weight="500" fill="#444441">Window axis closed</text>
@@ -109,7 +110,7 @@
 
 <rect x="440" y="568" width="284" height="90" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
 <text x="582" y="588" text-anchor="middle" font-size="12.5" font-weight="500" fill="#791F1F">Blocking the assay</text>
-<text x="582" y="606" text-anchor="middle" font-size="10.5" fill="#791F1F">measured CVs for both readouts;</text>
+<text x="582" y="606" text-anchor="middle" font-size="10.5" fill="#791F1F">the lab's own CVs (paper reporter: 7.4%);</text>
 <text x="582" y="620" text-anchor="middle" font-size="10.5" fill="#791F1F">panel capacity; cost of a false accept</text>
 <text x="582" y="634" text-anchor="middle" font-size="10.5" fill="#791F1F">against a false reject; whether</text>
 <text x="582" y="648" text-anchor="middle" font-size="10.5" fill="#791F1F">Fluc-PEST enters the panel</text>
@@ -128,6 +129,7 @@
 <rect x="602" y="718" width="12" height="12" rx="3" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
 <text x="622" y="728" font-size="10.5" fill="#444441">gate decision</text>
 
-<text x="380" y="780" text-anchor="middle" font-size="10.5" fill="#5F5E5A">Implementation state on 2026-10-20. Every value produced by the green path is a prediction from an unvalidated model</text>
-<text x="380" y="796" text-anchor="middle" font-size="10.5" fill="#5F5E5A">on a quantity the assay does not measure. No stability, translation or expression benefit is established by any path shown.</text>
+<text x="380" y="780" text-anchor="middle" font-size="10.5" fill="#5F5E5A">Implementation state on 2026-10-21. Every value produced by the green path is a prediction from an unvalidated model</text>
+<text x="380" y="796" text-anchor="middle" font-size="10.5" fill="#5F5E5A">on a quantity the assay does not measure. Measured on 24 unexposed synonymous constructs at constant length: in-cell</text>
+<text x="380" y="812" text-anchor="middle" font-size="10.5" fill="#5F5E5A">stability does NOT order protein output (&#961; &#8722;0.03, sign reverses by family). No expression benefit is established.</text>
 </svg>
