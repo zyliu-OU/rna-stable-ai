@@ -359,11 +359,13 @@ this session to free disk; `pub2` was recreated for this stretch.
 | Item | Value |
 |---|---|
 | Commit before this stretch | `855345e` Widen the design domain to UTRs plus codons: the threshold clears, the objective turns out to be a GC meter |
-| Commits published with this handoff | see §8.1 |
+| Commits published with this handoff | `db37230` (content + this handoff), then the commit recording its hash |
 | README picture | `diagram_10182026.png`, sha256 `baa831ce16df27ed44a41c2a3b481455a213b328122227b9b2a3820dda47cff1`, **byte-unchanged**; `workflow_10202026.svg` unchanged |
 | Gates | v5–v12 frozen; **v13 current**. v13 opens no switch and reopens no requirement. |
 | Diagram | **not regenerated.** The workflow did not change this stretch; nothing was added to the production path. |
 
 ### 8.1 Publication record
 
-Recorded by the commit immediately after, per the established pattern.
+`db37230` — Compare the objective against mRNAutilus: we rank better out of their domain, and
+their stability head is not a GC meter. The hash is recorded by the commit immediately after
+it, per the established pattern.
