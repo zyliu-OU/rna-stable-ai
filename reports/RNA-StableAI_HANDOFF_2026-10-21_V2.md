@@ -268,7 +268,7 @@ scratchpad, copy the changed files in, and commit there.
 | Item | Value |
 |---|---|
 | Commit before this stretch | `58fc810` Record the publication commit hash in handoff 2026-10-21 V1 |
-| Commits published with this handoff | `TARGET_COMMIT` (configs, test, README, this handoff), then the commit recording its hash |
+| Commits published with this handoff | `399a9ed` (configs, test, README, this handoff), then the commit recording its hash |
 | README picture | `diagram_10182026.png`, sha256 `baa831ce16df27ed44a41c2a3b481455a213b328122227b9b2a3820dda47cff1`, **byte-unchanged**; `workflow_10202026.svg` unchanged; both still referenced |
 | Gates | v5–v15 frozen; **v16 current** (written this stretch) |
 | Assay definition | v1–v3 frozen; **v4 current**; code and tests still pin v3 by name |
