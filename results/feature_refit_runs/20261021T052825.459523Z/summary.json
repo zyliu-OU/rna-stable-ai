@@ -1,0 +1,263 @@
+{
+  "arms": {
+    "all_free_columns": {
+      "available": true,
+      "coefficients": {
+        "AUP DegScore 2.1": -13.189473543937828,
+        "AUP EternaFold": 5.668729964642919,
+        "AUP Vienna": -1.2549972549767479,
+        "CAI": 0.37972822046333365,
+        "GC content (CDS)": -0.5286810746404464,
+        "dG(MFE) EternaFold": 7.739520776759261e-22,
+        "dG(MFE) Vienna": -0.0033118907936508304,
+        "intercept": 2.044137003516669
+      },
+      "columns": [
+        "GC content (CDS)",
+        "AUP EternaFold",
+        "AUP Vienna",
+        "AUP DegScore 2.1",
+        "dG(MFE) Vienna",
+        "dG(MFE) EternaFold",
+        "CAI"
+      ],
+      "n_features": 7,
+      "test_concordance_vs_in_solution": {
+        "1.00-1.10": {
+          "concordance": 0.5619179027250776,
+          "pairs": 2899
+        },
+        "1.10-1.25": {
+          "concordance": 0.6160877513711152,
+          "pairs": 2188
+        },
+        "1.25-1.50": {
+          "concordance": 0.5504162812210915,
+          "pairs": 1081
+        },
+        "1.50-2.00": {
+          "concordance": 0.4780701754385965,
+          "pairs": 228
+        },
+        "above_2.00": {
+          "concordance": 0.05989847715736041,
+          "pairs": 985
+        }
+      },
+      "test_spearman_vs_in_cell": -0.12750932684777327,
+      "test_spearman_vs_in_solution": -0.0022305127535762552,
+      "train_spearman": 0.6454146876141761
+    },
+    "frozen_form_from_table": {
+      "available": true,
+      "coefficients": {
+        "AUP Vienna": -3.5676242024895193,
+        "GC content (CDS)": 2.4354335269609084,
+        "dG(MFE) Vienna": 0.0014192895000851558,
+        "intercept": 1.5589381572409249
+      },
+      "columns": [
+        "dG(MFE) Vienna",
+        "GC content (CDS)",
+        "AUP Vienna"
+      ],
+      "n_features": 3,
+      "test_concordance_vs_in_solution": {
+        "1.00-1.10": {
+          "concordance": 0.45912383580545013,
+          "pairs": 2899
+        },
+        "1.10-1.25": {
+          "concordance": 0.41910420475319926,
+          "pairs": 2188
+        },
+        "1.25-1.50": {
+          "concordance": 0.5365402405180388,
+          "pairs": 1081
+        },
+        "1.50-2.00": {
+          "concordance": 0.7412280701754386,
+          "pairs": 228
+        },
+        "above_2.00": {
+          "concordance": 1.0,
+          "pairs": 985
+        }
+      },
+      "test_spearman_vs_in_cell": 0.11968435766189392,
+      "test_spearman_vs_in_solution": 0.12856675511613536,
+      "train_spearman": 0.5817683595177201
+    },
+    "gc_cds_only": {
+      "available": true,
+      "coefficients": {
+        "GC content (CDS)": 2.765796682222464,
+        "intercept": -0.338679872175468
+      },
+      "columns": [
+        "GC content (CDS)"
+      ],
+      "n_features": 1,
+      "test_concordance_vs_in_solution": {
+        "1.00-1.10": {
+          "concordance": 0.5094860296654019,
+          "pairs": 2899
+        },
+        "1.10-1.25": {
+          "concordance": 0.5548446069469836,
+          "pairs": 2188
+        },
+        "1.25-1.50": {
+          "concordance": 0.6318223866790009,
+          "pairs": 1081
+        },
+        "1.50-2.00": {
+          "concordance": 0.7675438596491229,
+          "pairs": 228
+        },
+        "above_2.00": {
+          "concordance": 0.9928934010152284,
+          "pairs": 985
+        }
+      },
+      "test_spearman_vs_in_cell": 0.07711688605334088,
+      "test_spearman_vs_in_solution": 0.3651494315051474,
+      "train_spearman": 0.3617357809446347
+    },
+    "gc_cds_plus_structure": {
+      "available": true,
+      "coefficients": {
+        "AUP EternaFold": -1.131042317342157,
+        "GC content (CDS)": 1.9154739628105586,
+        "intercept": 0.6056862781049155
+      },
+      "columns": [
+        "GC content (CDS)",
+        "AUP EternaFold"
+      ],
+      "n_features": 2,
+      "test_concordance_vs_in_solution": {
+        "1.00-1.10": {
+          "concordance": 0.5436357364608486,
+          "pairs": 2899
+        },
+        "1.10-1.25": {
+          "concordance": 0.5457038391224863,
+          "pairs": 2188
+        },
+        "1.25-1.50": {
+          "concordance": 0.5217391304347826,
+          "pairs": 1081
+        },
+        "1.50-2.00": {
+          "concordance": 0.7192982456140351,
+          "pairs": 228
+        },
+        "above_2.00": {
+          "concordance": 0.9959390862944163,
+          "pairs": 985
+        }
+      },
+      "test_spearman_vs_in_cell": -0.022354694485842028,
+      "test_spearman_vs_in_solution": 0.29564703044402074,
+      "train_spearman": 0.5353306540007308
+    },
+    "gc_cds_plus_structure_plus_energy": {
+      "available": true,
+      "coefficients": {
+        "AUP EternaFold": -1.1788873399063593,
+        "GC content (CDS)": 2.063380845774589,
+        "dG(MFE) EternaFold": 1.255794859025747e-21,
+        "intercept": 0.5404710718949017
+      },
+      "columns": [
+        "GC content (CDS)",
+        "AUP EternaFold",
+        "dG(MFE) EternaFold"
+      ],
+      "n_features": 3,
+      "test_concordance_vs_in_solution": {
+        "1.00-1.10": {
+          "concordance": 0.5398413245946878,
+          "pairs": 2899
+        },
+        "1.10-1.25": {
+          "concordance": 0.5598720292504571,
+          "pairs": 2188
+        },
+        "1.25-1.50": {
+          "concordance": 0.5411655874190564,
+          "pairs": 1081
+        },
+        "1.50-2.00": {
+          "concordance": 0.706140350877193,
+          "pairs": 228
+        },
+        "above_2.00": {
+          "concordance": 0.9918781725888325,
+          "pairs": 985
+        }
+      },
+      "test_spearman_vs_in_cell": -0.032129297041513974,
+      "test_spearman_vs_in_solution": 0.30621470420096425,
+      "train_spearman": 0.5442820606503471
+    }
+  },
+  "built_utc": "2026-10-21T05:28:25.459386+00:00",
+  "counts": {
+    "test": 122,
+    "train": 69
+  },
+  "estimator": {
+    "method": "ordinary least squares",
+    "no_in_cell_label_used": true,
+    "target": "measured in-solution half-life in hours",
+    "why_not_pls": "The frozen model is a one-component PLS fitted in R and cannot be reproduced exactly here. OLS is used for every arm so the comparison is internally apples-to-apples, and the frozen PLS arm is reported alongside as a labelled reference."
+  },
+  "protocol": "configs/folding_engine_swap_v1_2026-10-20.json",
+  "protocol_sha256": "50a2b964513ebeb57bb9cc1d277a8440de03b5882546b8c46382a374d0d5f217",
+  "reference_points": {
+    "best_valid_free_single_column_abs": 0.3651494315051474,
+    "frozen_vienna_arm_in_cell": 0.2208009358240175,
+    "frozen_vienna_arm_in_solution": 0.32001414310308934,
+    "gc_content_cds_alone": 0.3651494315051474
+  },
+  "source": {
+    "archive_sha256": "849ed7b49198c5b97049fec8d3636deea8812db4dd45ce0bcc448297703511c2",
+    "not_redistributed": "Only the URL and both hashes are pinned, as for the RiboNN weights, the Rfam sources and the mRNAutilus checkpoint. The archive and table are not copied into this repository.",
+    "table_sha256": "be534d17d5ded3056d66ad9c0f554ac7eb885a0d6f2d2ca645f73ecb783b0f53"
+  },
+  "step": "3 of 3: refit on the source paper's free columns",
+  "step_2_skipped": {
+    "what_was_skipped": "installing EternaFold and reproducing its column locally",
+    "why": "Step 1 showed the engines agree once properly normalised (AUP EternaFold -0.2648, AUP Vienna -0.2589, AUP DegScore -0.2170) and that the apparent EternaFold advantage was an artifact of dividing a sub-region sum by full RNA length. There is nothing for an engine swap to gain, so installing one would spend effort on a dead hypothesis."
+  },
+  "the_defective_baseline_that_prompted_this": {
+    "corrected_comparison": "Against properly normalised free structure scores the frozen calibration (+0.3200) WINS; the best is AUP EternaFold at -0.2648. The adverse finding survives in a different form: GC content (CDS), a single free column with no normalisation ambiguity, reaches +0.3651.",
+    "decomposition_on_the_122": {
+      "aup_alone": -0.2648,
+      "region_fraction_alone": -0.385,
+      "the_product_as_reported": -0.419
+    },
+    "scope_of_the_error": "Confined to two_axis_comparison_v1. On the 123-record Fig_S8a sheet the SUP columns are labelled FULL and SUP/length equals AUP FULL exactly on 123 of 123 records, so the post-hoc correction recorded in external_validation_leppek_v1 was correct and its -0.3248 figure stands.",
+    "what_it_actually_was": "AUP multiplied by a region-length ratio. In this table SUP is summed over a sub-region whose implied length is median 673 nt, not the RNA length of median 1034 nt, so dividing by RNA length does not yield a per-nucleotide structure score.",
+    "what_was_reported": "gate v14 recorded a free per-nucleotide EternaFold score at +0.4190 beating the frozen calibration at +0.3200, as the most adverse finding in any gate version",
+    "why_all_three_engines_clustered": "They share the one artifact, not a common ceiling. That inference in the step 1 verdict was wrong for the right numbers."
+  },
+  "verdict": {
+    "beats_best_free_single_column": false,
+    "beats_frozen_arm": true,
+    "best_arm": "gc_cds_only",
+    "best_arm_test_spearman": 0.3651494315051474,
+    "criterion_amended": "The protocol named the free EternaFold score at +0.4190 as the bar. That score is defective, so the bar is restated as the best VALID free single column, GC content (CDS) at +0.3651. The amendment is recorded rather than applied silently, and it lowers the bar, so it is stated explicitly.",
+    "success": false,
+    "success_criterion_declared_in_advance": "the refit must beat BOTH the frozen arm and the best free single column; beating only the frozen arm is not success"
+  },
+  "what_this_cannot_establish": [
+    "Nothing about constructs nobody measured.",
+    "Nothing about the in-cell axis beyond the carried diagnostic; no coefficient is fitted to an in-cell label.",
+    "No resolution claim. The narrow bin is at chance for every predictor tested so far and a better Spearman does not by itself change that.",
+    "Nothing about the translation side. RiboNN is not run here.",
+    "No claim that a better in-solution ranker is the right objective for this project. Which axis the project targets is an open decision recorded in gate v14."
+  ]
+}

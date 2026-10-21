@@ -1,0 +1,557 @@
+{
+  "active_length_nt": {
+    "maximum_exclusive": 3000,
+    "minimum_inclusive": 1
+  },
+  "amendment_record": {
+    "authorized_by": "user, 2026-10-20: 'sure, do 1, then do 2 and 3, see whether it will improve test results'",
+    "both_v10_options_now_taken": "v11 took option 1, reframing selection as a coarse filter plus diversity. v12 takes option 2 as well, widening the domain so differences reach the regime the filter can act on. They are complementary: option 1 made the output honest, option 2 made it non-empty.",
+    "prior_amendments": [
+      "v2 stage3_target amended to transfected_cell_expression",
+      "v3 accepted the 2000-2999 nt band as a documented limitation",
+      "v4 amended requirement 4 to the relied-upon native controls",
+      "v5 reviewed the gate and closed Stage 2 at six of six",
+      "v6 opened new_sequence_scoring_enabled and expression_candidate_design_enabled",
+      "v7 purged the retired model and all data at or above 3000 nt",
+      "v8 recorded the first external validation and prohibited presenting a predicted ordering of modified constructs as the expected measured ordering",
+      "v9 strengthened and narrowed the v8 prohibition onto GC using m1-pseudouridine",
+      "v10 prohibited presenting the design workflow's synonymous ordering as a ranking",
+      "v11 reframed selection as a coarse filter plus a diversity selector",
+      "v12 widened the design domain, clearing the resolvable threshold while exposing the GC collapse at r = +0.99",
+      "v13 recorded the first independent-model comparison, on in-solution half-life only",
+      "v14 recorded the symmetric two-axis comparison and that the two stability axes barely agree"
+    ],
+    "what_changed": "v15 CORRECTS a finding recorded in v14, records that the folding-engine swap hypothesis is dead, and records that refitting on more features actively hurts. No switch moves, no requirement is reopened or re-ratified, Stage 2 stays closed at six of six on the v5 basis. One prohibition is withdrawn as factually wrong, three are added, and the net count rises."
+  },
+  "architecture": "LinearFold / ViennaRNA -> STRAND + RiboNN + BoTorch",
+  "correction_to_v14": {
+    "but_the_adverse_finding_survives_in_another_form": {
+      "and_it_is_axis_specific": "GC content (CDS) reaches only +0.0771 on in-cell, where the frozen arm reaches +0.2208. Neither predictor wins both axes, consistent with the two axes ranking at +0.0545.",
+      "gc_content_cds_alone": 0.3651494315051474,
+      "statement": "GC content (CDS) is a single free column with no normalisation ambiguity and reaches +0.3651 on in-solution half-life, above the frozen calibration's +0.3200. A free single column still beats the fitted calibration on its own home axis. The identity of the baseline changes; the conclusion about the calibration does not."
+    },
+    "decomposition": {
+      "aup_alone_vs_in_solution": -0.2648,
+      "region_fraction_alone_vs_in_solution": -0.385,
+      "statement": "The length ratio, not the structure term, is the dominant factor. The reported baseline was mostly a length-composition artifact.",
+      "the_product_as_reported_in_v14": -0.419
+    },
+    "scope_of_the_error": "Confined to two_axis_comparison_v1 and the v14 entry that reports it. On the 123-record Fig_S8a sheet the SUP columns are labelled FULL, and SUP/length equals AUP FULL exactly on 123 of 123 records, with both giving -0.3248. The post-hoc correction recorded in external_validation_leppek_v1 was therefore CORRECT and its figure stands. No other artifact or gate entry is affected.",
+    "status": "v14 remains frozen and unedited; this entry corrects it going forward",
+    "the_corrected_comparison": {
+      "best_properly_normalised_free_structure_score": -0.2648,
+      "ours_frozen_arm_in_solution": 0.32,
+      "statement": "Against properly normalised free structure scores the frozen calibration WINS: the best is AUP EternaFold at -0.2648 against the calibration's +0.3200. v14's claim that the calibration loses to free folding does not hold."
+    },
+    "what_v14_claimed": "v14 recorded, as the most adverse finding in any gate version, that a free per-nucleotide EternaFold score reaches +0.4190 on in-solution half-life against the frozen calibration's +0.3200, so the calibration is beaten on its own home axis by an untrained baseline.",
+    "why_it_is_wrong": "The score was computed as SUP EternaFold divided by RNA length. In the PERSIST-seq Supplementary Data 1 table, SUP is summed over a SUB-REGION whose implied length is median 673 nt, not the molecule's median 1034 nt. Dividing by RNA length therefore yields AUP multiplied by a region-length ratio, not a per-nucleotide structure score.",
+    "why_the_step_1_clustering_inference_was_also_wrong": "All three engines' per-nucleotide scores clustered near 0.42 (DegScore -0.4225, EternaFold -0.4190, Vienna -0.3947). That was read as the feature family hitting a common ceiling. It was instead all three sharing the one artifact, since the region-length ratio is identical across engines."
+  },
+  "design_domain_widened": {
+    "and_the_calibration_domain_became_reachable": "458 of 512 members now sit inside the calibration's fitted GC range. In the synonymous-only domain every member extrapolated on GC.",
+    "constraint_grounded_in_own_measurement": "No out-of-frame uAUG in the 5' UTR, justified by this project's own m1-psi slope measurement of -1.56 and -1.43 unmodified and -1.32 modified, a large effect stable across the modification. The supplied 5' UTR already has none.",
+    "design_space": "configs/full_transcript_design_space_v3_2026-10-20.json",
+    "domain": "5' UTR 38 of 44 nt editable with the GCCACC Kozak preserved, 3' UTR 111 of 114 with the TAA tandem stop preserved, 549 codons synonymously substitutable, every length fixed and the transcript held at 1811 nt",
+    "result": {
+      "median_ratio": 1.2385107018767323,
+      "members_above_chance_floor": 405,
+      "members_above_resolvable_threshold": 239,
+      "previous_domain_ceiling": 1.0617,
+      "resolvably_better": 0,
+      "resolvably_worse": 239,
+      "unresolved": 273,
+      "widest_ratio_vs_reference": 2.006925956131509
+    },
+    "run": "results/full_transcript_design_runs/20261020T232952.639002Z/summary.json",
+    "supersedes_design_space": "configs/synonymous_window_design_space_v2_2026-10-20.json",
+    "what_it_exposed": {
+      "finding": "The objective collapses to a GC readout. Across the pool, predicted half-life correlates with transcript GC at Pearson +0.9897.",
+      "mechanism": "GC is one of only three inputs to a one-component PLS model, and in this domain GC varies over 0.354 to 0.658 while the other two features move far less, so GC dominates the linear predictor. This is an explanation, not a defect in the arithmetic.",
+      "the_opposition": "Entering the fitted domain requires LOWERING GC, which the model maps to lower predicted half-life. In-domain members have median 1.0558 hours against 1.3223 for the extrapolating ones, and all 239 resolvably-worse members are the low-GC ones. The two goals are in near-deterministic opposition.",
+      "why_this_matters_most": "The single axis the objective runs on is the same axis m1-pseudouridine was measured to rescale by about 3.7 times (gate v9), the same axis the reference extrapolates on, and the same axis the ablation found to be the strongest single feature (gate v10). Four independent findings now converge on GC."
+    },
+    "what_succeeded": "The resolvable threshold is cleared for the first time in this project: widest ratio 2.0069-fold against a 1.25-fold threshold, with 239 of 512 members above it. The synonymous-only domain topped out at 1.0617-fold, below even the chance floor. The CONSTRAINT was indeed the binding limit, as v10 suspected.",
+    "zero_members_are_resolvably_better": "Every resolvable difference is a degradation. On this objective the reference is at or near the top of the reachable space, and the highest-scoring member in the pool has HIGHER GC than the reference, not lower."
+  },
+  "effective_date": "2026-10-20",
+  "external_evidence_added": {
+    "m1pseudouridine_rescales_the_gc_relationship": {
+      "design": "A random 50-mer 5' UTR library on eGFP in HEK293T, unmodified against m1-psi. The arms share ZERO sequences and their ribosome-load scales differ, 14 against 13 polysome fractions, so the SHAPE of the sequence-to-load mapping is compared rather than any value. 40,000 sequences per arm.",
+      "features_declared_in_advance": [
+        "out_of_frame_uaug",
+        "gc_fraction",
+        "vienna_mfe"
+      ],
+      "finding": "GC content costs about 3.7 times more ribosome load unmodified than under m1-psi, minus 1.00 against minus 0.28, with the two unmodified replicates agreeing to 0.05. A magnitude change, not a sign change. The uAUG and structure slopes are stable within replicate noise, so the modification's effect is NOT uniformly sequence-dependent; it localises to composition.",
+      "limitations_that_must_travel_with_it": [
+        "The m1-psi condition has NO replicate arm: GSM3130440 is a different library of 54 nt and was excluded, so the within-condition denominator is borrowed from the unmodified pair and is recorded as borrowed on every feature. For GC to become consistent with constant, m1-psi replicates would have to be roughly 14 times noisier than unmodified.",
+        "A declared preprocessing step was corrected mid-run: the 9-nt suffix trim is a per-file export convention, not a per-condition one, and the unmodified replicate carries it too. Disclosed; features and the decision rule untouched.",
+        "This is a translation readout and says nothing about the stability side.",
+        "A 50 nt random UTR on eGFP in HEK293T is not an 1811 nt construct in A549 and T cells.",
+        "Three features are not a complete account of ribosome load, and a slope is an association within a random library, not causation."
+      ],
+      "nucleoside": "N1-methylpseudouridine, the one the collaborator's molecules carry",
+      "protocol": "configs/m1pseudouridine_feature_slope_check_v1_2026-10-20.json",
+      "relationship_to_the_pseudouridine_check_in_v8": "The v8 finding stands as what it was: six constructs of a different nucleoside. This reaches a compatible conclusion with the correct nucleoside and vastly more data, and localises it.",
+      "results": {
+        "gc_fraction": {
+          "m1pseudo_mean_slope": -0.27691229020841296,
+          "ratio_between_over_within": 14.337291915446956,
+          "sign_changed": false,
+          "unmodified_mean_slope": -1.0000185655494556,
+          "verdict": "sequence_dependent"
+        },
+        "out_of_frame_uaug": {
+          "m1pseudo_mean_slope": -1.3222742720159082,
+          "ratio_between_over_within": 1.2953087936963157,
+          "sign_changed": false,
+          "unmodified_mean_slope": -1.4933300605654385,
+          "verdict": "ambiguous"
+        },
+        "vienna_mfe": {
+          "m1pseudo_mean_slope": 0.03465868856816649,
+          "ratio_between_over_within": 1.0932755905609548,
+          "sign_changed": false,
+          "unmodified_mean_slope": 0.030064878245269176,
+          "verdict": "ambiguous"
+        }
+      },
+      "run": "results/m1pseudouridine_slope_runs/20261020T214354.531676Z/summary.json",
+      "source_accession": "GSE114002",
+      "why_this_is_the_worst_feature_for_this_project": "GC is one of the three inputs to strand_rnafold_calibration_v1, and it is the feature on which this project's own construct EXTRAPOLATES, at 64.4 percent against a 39.4 to 60.2 percent training range, flagged on every member of every design-workflow run. The modification rescales the relationship for exactly the input the pipeline leans on, in a region where the pipeline is already outside its fitted domain. Those problems compound rather than cancel."
+    },
+    "modification_constancy_not_supported": {
+      "caveats_that_must_travel_with_it": [
+        "This is pseudouridine, NOT N1-methylpseudouridine. Different nucleosides, and m1-psi is used in therapeutic mRNA partly because it behaves better than psi. This cannot be resolved with this dataset.",
+        "The dispersion ratio of 23 compares biological differences against TECHNICAL replicate noise; the robust part is the 13-fold span and the sign change.",
+        "Protein output is translation times stability and this design cannot separate them.",
+        "Six constructs support no significance claim and none is made."
+      ],
+      "finding": "On the expression readout the effect spans 13-fold and CHANGES SIGN. A modification that inverts the ordering cannot be treated as a constant shift. On the stability readout the assumption is not contradicted but not supported either.",
+      "in_solution_half_life": {
+        "dispersion_ratio": 1.76,
+        "fold_change_range": [
+          1.23,
+          2.683
+        ],
+        "same_direction": true,
+        "verdict": "ambiguous"
+      },
+      "protein_output_24h": {
+        "dispersion_ratio": 19.84,
+        "fold_change_range": [
+          0.256,
+          3.309
+        ],
+        "same_direction": false,
+        "verdict": "construct_dependent"
+      },
+      "protein_output_6h": {
+        "dispersion_ratio": 23.14,
+        "fold_change_range": [
+          0.234,
+          1.25
+        ],
+        "same_direction": false,
+        "verdict": "construct_dependent"
+      },
+      "protocol": "configs/pseudouridine_effect_check_v1_2026-10-20.json",
+      "run": "results/pseudouridine_effect_runs/20261020T212132.473715Z/summary.json",
+      "what_was_assumed": "That because every uridine is N1-methylpseudouridine and the modification is constant across the panel, it shifts every construct by the same factor and leaves the ORDER unchanged. Recorded as unverified since 2026-10-19.",
+      "what_was_measured": "Six constructs, unmodified against pseudouridine-modified, by two independent readouts.",
+      "what_would_resolve_it": "A paired m1-psi against unmodified comparison across sequence-differing constructs on the project's own readout, at the cost of doubling the panel."
+    },
+    "objective_has_no_fine_resolution": {
+      "combination": {
+        "combined": 0.30331093369103973,
+        "consequence": "The combination is worse than either part, and the free published score is within 0.05 of the refit. The refit adds nothing.",
+        "eternafold_only": 0.32478621454643947,
+        "full": 0.35024054894171364,
+        "verdict": "prefer_the_free_predictor"
+      },
+      "concordance_by_measured_fold_difference": {
+        "1.00-1.10": {
+          "concordance": 0.5006761325219743,
+          "pairs": 2958
+        },
+        "1.10-1.25": {
+          "concordance": 0.5735426008968609,
+          "pairs": 2230
+        },
+        "1.25-1.50": {
+          "concordance": 0.69019248395967,
+          "pairs": 1091
+        },
+        "1.50-2.00": {
+          "concordance": 0.782608695652174,
+          "pairs": 230
+        },
+        "above_2.00": {
+          "concordance": 0.959758551307847,
+          "pairs": 994
+        }
+      },
+      "design": "All models fitted on the 69 rows the calibration was trained on, scored once on the 123 held-out rows. Pairwise concordance over held-out pairs, binned by how much the two records actually differ. Chance is 0.50.",
+      "finding": "For pairs differing by less than 1.10 times, concordance is 0.5007 over 2958 pairs, which is chance. For pairs differing by more than 2 times it is 0.9598. The objective discriminates coarsely and has NO resolving power in the narrow regime.",
+      "gc_ablation": {
+        "consequence": "GC could NOT be dropped cheaply, and GC alone is the strongest single feature. The m1-psi rescaling of the GC relationship recorded in v9 is therefore a real liability rather than an academic one.",
+        "delta": -0.08288297584192128,
+        "full": 0.35024054894171364,
+        "verdict": "ambiguous",
+        "without_gc": 0.26735757309979236
+      },
+      "limitations": [
+        "Rank statistics on 123 records; no absolute accuracy is established.",
+        "The frozen one-component PLS model was scored as a labelled reference only; the ablation used ordinary least squares throughout so the variants are comparable to each other, not to the frozen model.",
+        "This is the stability side on an in-solution readout. It says nothing about the translation side or about in-cell stability.",
+        "The records are 504 to 1588 nt at 42 to 60 percent GC; this project's construct is 1811 nt at 64.4 percent GC and lies outside both ranges."
+      ],
+      "protocol": "configs/stability_feature_ablation_v1_2026-10-20.json",
+      "run": "results/stability_ablation_runs/20261020T222738.949800Z/summary.json",
+      "spearman_within_measured_quartiles": {
+        "q1": {
+          "measured_range": [
+            0.86498944,
+            1.19509165
+          ],
+          "n": 30,
+          "spearman": -0.09098998887652948
+        },
+        "q2": {
+          "measured_range": [
+            1.2016719,
+            1.29123133
+          ],
+          "n": 30,
+          "spearman": 0.06829810901001113
+        },
+        "q3": {
+          "measured_range": [
+            1.29288594,
+            1.39047692
+          ],
+          "n": 30,
+          "spearman": 0.4242491657397108
+        },
+        "q4": {
+          "measured_range": [
+            1.39332788,
+            4.36040349
+          ],
+          "n": 33,
+          "spearman": 0.55548128342246
+        }
+      },
+      "training_provenance_now_confirmed": "Recomputing energy_per_length, GC and aup from the sequences reproduces the frozen training table with maximum absolute difference 0.0 across all 69 records. The training-overlap join recorded as INFERRED in v8 is now CONFIRMED, and the project's ensemble worker reproduces the original R feature extraction exactly.",
+      "why_it_matters_here": "This project's design space produces predicted differences of 3.2 to 8.4 percent of the calibration's training range, which fall inside the chance bin. The Pareto fronts and selected panels in results/design_workflow_runs/ order variants at that scale."
+    },
+    "stability_calibration_transfers_weakly": {
+      "best_free_baseline": {
+        "name": "per-nucleotide EternaFold",
+        "spearman": -0.3248
+      },
+      "held_out_records": 123,
+      "mean_absolute_error_hours": 0.413,
+      "pearson_on_log": 0.5871,
+      "protocol": "configs/external_validation_leppek_v1_2026-10-20.json",
+      "run": "results/external_validation_leppek_runs/20261020T210948.866079Z/summary.json",
+      "spearman": 0.3268,
+      "status": "First external validation in this project. Declared before computing: not falsified, over the 0.3 threshold by 0.027, reported as real but weak transfer.",
+      "training_provenance_now_known": "All 69 calibration training records are rows of the same supplementary sheet. Any future evaluation must exclude them. The join is inferred from exact GC and half-life matches, not documented upstream.",
+      "training_subset_upper_bound_spearman": 0.529,
+      "what_it_does_not_establish": "Any improvement over published predictors, any absolute accuracy, or any ability to order SIMILAR sequences. Pearson on log far above Spearman means coarse discrimination, not fine ordering.",
+      "what_it_establishes": "The calibration is not fitting noise. It carries signal to records it never saw, across a reporter change and beyond its training range."
+    }
+  },
+  "folding_engine_swap": {
+    "authorized_by": "user, 2026-10-20",
+    "panel_run": "results/free_baseline_panel_runs/20261021T052432.989885Z",
+    "protocol": "configs/folding_engine_swap_v1_2026-10-20.json",
+    "protocol_sha256": "50a2b964513ebeb57bb9cc1d277a8440de03b5882546b8c46382a374d0d5f217",
+    "refit_run": "results/feature_refit_runs/20261021T052825.459523Z",
+    "step_1_verdict": "Dead hypothesis. Once properly normalised the engines agree: AUP EternaFold -0.2648, AUP Vienna -0.2589, AUP DegScore 2.1 -0.2170. There is no engine advantage to capture.",
+    "step_2_skipped_and_why": "Step 1 showed the engines agree once properly normalised (AUP EternaFold -0.2648, AUP Vienna -0.2589, AUP DegScore -0.2170) and that the apparent EternaFold advantage was an artifact of dividing a sub-region sum by full RNA length. There is nothing for an engine swap to gain, so installing one would spend effort on a dead hypothesis.",
+    "step_3_refitting_actively_hurts": {
+      "arms": {
+        "all_free_columns": {
+          "features": 7,
+          "test_spearman_vs_in_solution": -0.0022305127535762552,
+          "train_spearman": 0.6454146876141761
+        },
+        "frozen_form_from_table": {
+          "features": 3,
+          "test_spearman_vs_in_solution": 0.12856675511613536,
+          "train_spearman": 0.5817683595177201
+        },
+        "gc_cds_only": {
+          "features": 1,
+          "test_spearman_vs_in_solution": 0.3651494315051474,
+          "train_spearman": 0.3617357809446347
+        },
+        "gc_cds_plus_structure": {
+          "features": 2,
+          "test_spearman_vs_in_solution": 0.29564703044402074,
+          "train_spearman": 0.5353306540007308
+        },
+        "gc_cds_plus_structure_plus_energy": {
+          "features": 3,
+          "test_spearman_vs_in_solution": 0.30621470420096425,
+          "train_spearman": 0.5442820606503471
+        }
+      },
+      "best_arm": "gc_cds_only",
+      "best_arm_is_the_single_free_column": true,
+      "criterion_amendment_recorded": "The protocol named the free EternaFold score at +0.4190 as the bar. That score is defective, so the bar is restated as the best VALID free single column, GC content (CDS) at +0.3651. The amendment is recorded rather than applied silently, and it lowers the bar, so it is stated explicitly.",
+      "statement": "Fitted on the same 69 records as the frozen arm and tested on the 122 held-out constructs, train correlation rises monotonically with feature count (+0.3617 at one feature to +0.6454 at seven) while test correlation falls (+0.3651 to -0.0022). The seven-feature arm has no out-of-sample signal at all. With 69 training records this feature family supports about one feature.",
+      "success_by_declared_criterion": false
+    },
+    "the_conclusion_the_protocol_declared_in_advance_for_this_outcome": "The protocol declared: if the refit does not beat the best free single column, the conclusion to record is that the fitted layer adds no value over a single free feature on this axis, and the objective should be REDUCED to that feature rather than defended. That is the outcome, and that is the conclusion.",
+    "what_this_does_not_authorize": "No change to the production path and no new switch. Reducing the in-solution objective to a single free column is a design decision that interacts with the unresolved axis question, and is recorded as indicated, not taken."
+  },
+  "independent_model_comparison": {
+    "authorized_by": "user, 2026-10-20, before any change to this project's code",
+    "model": "mRNAutilus (AtomBioworks), the method behind the collaborator's paper",
+    "nothing_redistributed": "URLs and hashes only, as for the RiboNN weights and the Rfam sources. No mRNAutilus code or weights are vendored.",
+    "protocol": "configs/mrnautilus_comparison_v1_2026-10-20.json",
+    "protocol_sha256": "d78be7429af18ef4012615d5a7eb623eb9bfd1b92e4bdb41629ec94039c3c3ff",
+    "result_on_held_out_measured_records": {
+      "narrow_bin_both_at_chance": {
+        "ours": 0.4935767410412441,
+        "statement": "mRNAutilus is nominally ahead in the narrowest bin and both are at chance there over non-independent pairs. Neither side may claim that bin.",
+        "theirs": 0.5250169033130494
+      },
+      "records": 123,
+      "spearman_ours": 0.32677251679973174,
+      "spearman_theirs": 0.17470136897097582,
+      "their_head_is_below_chance_in": [
+        "1.25-1.50",
+        "1.50-2.00"
+      ],
+      "we_are_better_in_every_bin_at_or_above": "1.25x",
+      "why_this_is_not_a_symmetric_win": "This comparison is NOT symmetric and must not be cited as mRNAutilus being worse at its own task. On this test set this project is in-domain and mRNAutilus is out-of-domain. The only sound conclusion is about in-solution stability specifically."
+    },
+    "result_on_our_512_member_pool": {
+      "and_the_confound_is_not_cured_by_learning": "Their translation head correlates with transcript GC at +0.6811. A learned representation escaped the composition confound on one head and not on another, so 'use a learned model' is not by itself the remedy.",
+      "no_resolution_claim": "Their scores spread across the pool, but their outputs are on an arbitrary normalised scale and no measurement-derived error model exists for it. This project's resolution floor was derived from replicate measurement error in hours and cannot be transferred. It is therefore NOT established that mRNAutilus resolves members this project's objective leaves unresolved. Spread is not resolution.",
+      "our_objective_vs_transcript_gc": 0.9897,
+      "the_finding_that_matters": "An independent model scores the same 512 transcripts with near-zero GC dependence on its stability head. The GC collapse recorded in v12 is therefore a property of THIS project's one-component PLS calibration, not an unavoidable consequence of the design pool. It is escapable. It has not been escaped.",
+      "their_halflife_vs_our_objective": -0.22620392409358583,
+      "their_halflife_vs_transcript_gc": -0.26363085911437734,
+      "their_translation_vs_transcript_gc": 0.6810747693471068
+    },
+    "run": "results/mrnautilus_comparison_runs/20261021T032048.592878Z/summary.json",
+    "their_checkpoint_sha256": "07e1b534008df579c58d65d5df6ec6c4dcf944d149133330049cbc054c1c4e29",
+    "what_this_does_not_authorize": "No change to the production path, no adoption of mRNAutilus, and no new switch. The comparison is evidence about where this project's objective is weak; acting on it is a separate, separately recorded decision."
+  },
+  "name": "stage2_to_stage3_gate_v15",
+  "new_prohibition_added_here": "One prohibition withdrawn as factually wrong and recorded as such, four added: the calibration does not lose to free folding, nor is it the best predictor; refitting on more features does not help; and an engine swap is not an available improvement.",
+  "prohibition_added_here": {
+    "applies_to": [
+      "results/design_workflow_runs/ Pareto fronts, panels and BO replays",
+      "any future candidate ordering whose predicted differences are under about 1.25 times"
+    ],
+    "open_decision_recorded_not_taken": [
+      "Reframe the pipeline as a coarse filter plus a diversity selector, which today's evidence supports and which needs no new modelling.",
+      "Change the objective so differences are larger, for example region-local features, which would void the calibration as fitted."
+    ],
+    "prohibition": "The ordering of synonymous variants produced by the design workflow MUST NOT be presented as a ranking, a recommendation, or evidence that one variant is better than another. At the scale that design space produces, the objective orders at chance.",
+    "what_is_still_permitted": "Using the objective as a COARSE FILTER, where it is reliable: concordance above 0.90 for differences greater than 2 times. Reporting predictions as predictions, with this limitation attached.",
+    "what_would_lift_it": "Either a design space that produces predicted differences above about 1.25 times, or an objective with demonstrated resolution in the narrow regime. Neither exists today."
+  },
+  "prohibition_revised_here": {
+    "applies_to": [
+      "results/design_workflow_runs/ Pareto fronts and selected panels",
+      "any future candidate ranking over a modified panel"
+    ],
+    "revised": "A predicted ORDERING of modified constructs MUST NOT be presented as the expected measured ordering. SPECIFICALLY, any ordering that depends on GC content is unsupported, because m1-psi rescales the GC-to-ribosome-load relationship by roughly 3.7 times.",
+    "supersedes": "A predicted ORDERING of modified constructs MUST NOT be presented as the expected measured ordering.",
+    "what_is_NOT_licensed_by_the_narrowing": "The uAUG and structure verdicts are AMBIGUOUS, not supported. It must not be claimed that those relationships are known to be preserved under m1-psi.",
+    "what_is_now_more_precise": "v8 prohibited the general claim on weak evidence. The prohibition still holds and now names the mechanism and the feature.",
+    "what_is_still_permitted": "Reporting the predictions as predictions on the unmodified sequence, with this limitation attached."
+  },
+  "prohibition_withdrawn_here": {
+    "text": "Do not claim the frozen stability calibration beats free folding. On in-solution a free per-nucleotide EternaFold score ranks ABOVE it (+0.4190 versus +0.3200) on the two-axis test set.",
+    "why": "It was derived from the defective baseline corrected in this gate version. Against properly normalised free structure scores the calibration wins, so the prohibition as written is factually wrong. It is replaced by a narrower and correct one about GC content (CDS). A prohibition is withdrawn only when it is shown false, and the withdrawal is recorded with its reason."
+  },
+  "requirement_6_documents": [
+    "reports/remaining_limitations_before_candidate_design_2026-10-19.md",
+    "reports/remaining_limitations_addendum_2026-10-20.md",
+    "reports/remaining_limitations_addendum_2026-10-20_V2.md",
+    "reports/remaining_limitations_addendum_2026-10-20_V3.md"
+  ],
+  "requirements_before_stage3": [
+    "Frozen independent sequence_and_family_clan_separated_validation_within_scope",
+    "Reported_accuracy_and_failures_by_length_band_and_family_against_native_controls",
+    "Resolve_sparse_2000_2999_nt_coverage_before_claiming_the_full_length_range",
+    "Demonstrate_credible_structure_accuracy_from_the_relied_upon_native_controls_with_explicit_review_of_baseline_gaps",
+    "Pass_constraint_decoder_resource_and_replay_checks_on_the_relied_upon_native_path",
+    "Document_remaining_limitations_before_expression_candidate_design"
+  ],
+  "requirements_satisfied": 6,
+  "requirements_satisfied_basis_unchanged_from_v5": {
+    "1": "accepted_as_documented_limitation",
+    "2": "satisfied_on_evidence",
+    "3": "accepted_as_documented_limitation",
+    "4": "satisfied_on_evidence",
+    "5": "satisfied_on_evidence after re-scoping onto the native path; evidence re-issued in v7 on the in-scope cohort",
+    "6": "satisfied_on_evidence",
+    "note": "Carried forward. v7 re-opens no requirement and re-ratifies none. Two of the six remain accepted limitations rather than evidence."
+  },
+  "schema_version": 12,
+  "selection_reframe": {
+    "applied_to_all_three_pools": {
+      "30": {
+        "panel_minimum_pairwise_hamming": 5,
+        "panel_positions_available": 30,
+        "pool_size": 512,
+        "resolvably_better": 0,
+        "resolvably_worse": 0,
+        "run": "results/coarse_filter_panel_runs/20261020T230214.170452Z",
+        "unresolved": 512,
+        "widest_fold_difference_from_reference": 1.0164189356825775
+      },
+      "50": {
+        "panel_minimum_pairwise_hamming": 11,
+        "panel_positions_available": 50,
+        "pool_size": 512,
+        "resolvably_better": 0,
+        "resolvably_worse": 0,
+        "run": "results/coarse_filter_panel_runs/20261020T230214.268256Z",
+        "unresolved": 512,
+        "widest_fold_difference_from_reference": 1.0238432297863151
+      },
+      "549": {
+        "panel_minimum_pairwise_hamming": 135,
+        "panel_positions_available": 549,
+        "pool_size": 512,
+        "resolvably_better": 0,
+        "resolvably_worse": 0,
+        "run": "results/coarse_filter_panel_runs/20261020T230214.942060Z",
+        "unresolved": 512,
+        "widest_fold_difference_from_reference": 1.0617210009014173
+      }
+    },
+    "driver": "scripts/build_coarse_filter_diversity_panel.py",
+    "finding": "Every member of every pool is UNRESOLVED. The widest predicted stability difference from the reference is 1.0617-fold in the whole-ORF pool, below even the 1.10-fold chance floor, let alone the 1.25-fold resolvable threshold. The design space lies entirely inside the objective's noise floor.",
+    "protocol": "configs/coarse_filter_diversity_panel_v1_2026-10-20.json",
+    "replaces": "hypervolume-maximising subset selection, which presupposes the objectives order candidates meaningfully",
+    "resolution_floor": {
+      "applies_to": "the stability objective only",
+      "chance_floor": 1.1,
+      "measured_from": "results/stability_ablation_runs/20261020T222738.949800Z/summary.json",
+      "resolvable_threshold": 1.25,
+      "why_two_numbers": "A single number would either license treating a 1.15-fold difference as real, or hide where the measurement sits."
+    },
+    "retains": "the pool, variant assembly with protein verification, folding, and both recorded scores; only the selection and the permitted claims change",
+    "translation_side_excluded_from_the_filter": "RiboNN has never been evaluated against any measurement in this project, so it has no measured resolution. Every translation difference is unresolved regardless of size. In the whole-ORF pool 11 members exceed the STABILITY chance floor on translation and remain unresolved, because that floor was measured for a different model on a different quantity. This is enforced in code, not left to the reader.",
+    "what_it_does_not_mean": "The absence of resolvable members does NOT mean the design space is bad. It means the objective cannot see it.",
+    "what_the_panel_now_is": "A diversity panel over ties, selected by deterministic farthest-point traversal over the edit pattern, using NO predicted values, with the reference as the anchor. Minimum pairwise Hamming distance is reported as the spread achieved.",
+    "why_this_is_the_honest_output": "A filter that resolves nothing is a true statement about the design space and is more useful than a confident ordering of ties. The run says so rather than producing a ranking anyway."
+  },
+  "stage": "stage3_workflow_construction_before_measurement",
+  "stage3_target": "transfected_cell_expression",
+  "supersedes": {
+    "chain": "v15 supersedes v14, which superseded v13 through v2 and configs/stage2_to_stage3_gate_2026-10-18.json; all remain frozen",
+    "file": "configs/stage2_to_stage3_gate_v14_2026-10-20.json",
+    "sha256": "27dd7af27867cb6967425b94b282f5d461b47a5690669c42338fb115227f3e34",
+    "status": "frozen and unedited"
+  },
+  "switches_unchanged_from_v6": {
+    "expression_benefit_established": false,
+    "expression_candidate_design_enabled": true,
+    "independent_biological_validation": false,
+    "model_defaults_changed": false,
+    "new_sequence_scoring_enabled": true,
+    "stability_score_calibrated_to_the_assay": false,
+    "stage3_development_started": true,
+    "stage3_ready": true
+  },
+  "two_axis_comparison": {
+    "authorized_by": "user, 2026-10-20",
+    "protocol": "configs/two_axis_comparison_v1_2026-10-20.json",
+    "protocol_sha256": "ad804b82c4db7995a61848410431e76b60e8a4ec5210e0d2e3728feec522282f",
+    "refitting_performed": "none",
+    "run": "results/two_axis_comparison_runs/20261021T042044.996926Z/two_axis_summary.json",
+    "source_hashes": {
+      "archive_sha256": "849ed7b49198c5b97049fec8d3636deea8812db4dd45ce0bcc448297703511c2",
+      "doi": "10.1038/s41467-022-28776-w",
+      "not_redistributed": "Only the URL and both hashes are pinned, as for the RiboNN weights, the Rfam sources and the mRNAutilus checkpoint. The archive and table are not copied into this repository.",
+      "table_sha256": "be534d17d5ded3056d66ad9c0f554ac7eb885a0d6f2d2ca645f73ecb783b0f53"
+    },
+    "test_set": "122 designed constructs from Leppek et al. 2022 Supplementary Data 1 carrying BOTH an in-solution and an in-cell half-life, with declared 5'UTR/CDS/3'UTR boundaries; the 69 records in this project's calibration training set are excluded by half-life match",
+    "the_2x2": {
+      "free_eternafold_in_cell": -0.1313094596871995,
+      "free_eternafold_in_solution": 0.41903569150852055,
+      "mrnautilus_in_cell": 0.1395807620437401,
+      "mrnautilus_in_solution": 0.14493730596592055,
+      "ours_in_cell": 0.2208009358240175,
+      "ours_in_solution": 0.32001414310308934,
+      "transcript_gc_alone_in_cell": 0.22527964579878718,
+      "transcript_gc_alone_in_solution": 0.29790988555663184
+    },
+    "the_finding_that_dominates_everything_else": {
+      "spearman_between_the_two_measured_axes": 0.05452694955075821,
+      "statement": "In-solution and in-cell half-life of the SAME 122 constructs rank at Spearman +0.0545. They are very nearly unrelated orderings. This is the single most important number in this artifact: it means no predictor can rank both axes well, the two columns are separate tasks rather than two views of 'stability', and any method claiming to predict 'mRNA stability' must say which one it means."
+    },
+    "the_free_baseline_got_worse_not_better": {
+      "in_solution_free_eternafold": 0.41903569150852055,
+      "in_solution_ours": 0.32001414310308934,
+      "statement": "On this test set a free per-nucleotide EternaFold score reaches +0.4190 on in-solution half-life against this project's frozen calibration at +0.3200. The calibration is now BEATEN on its own home axis by an untrained baseline, where the earlier 123-record test showed a tie. This is the most adverse finding about this project's stability objective recorded in any gate version."
+    },
+    "the_gc_collapse_reproduces_on_real_constructs": {
+      "gc_alone_in_cell": 0.22527964579878718,
+      "gc_alone_in_solution": 0.29790988555663184,
+      "ours_vs_transcript_gc": 0.7812057209560138,
+      "statement": "On 122 real measured constructs the objective correlates with transcript GC at +0.7812, lower than the +0.99 recorded on the synthetic pool in v12 but still dominant. Transcript GC ALONE ranks in-solution at +0.2979 and in-cell at +0.2253, so the three-feature calibration adds little to nothing over base composition on either axis. The collapse is a property of the objective, not of the design pool."
+    },
+    "what_it_overturned_in_v13": {
+      "but_the_narrowing_is_partial": "Their head's home domain is in-cell decay of ENDOGENOUS human mRNAs. These are designed reporter constructs, so the measurement type is theirs and the sequence type is not. They are half in domain here, not fully. The v13 caveat is narrowed, not withdrawn.",
+      "net_effect_on_this_projects_claim": "This project still ranks in-solution better than mRNAutilus does, and still may not claim general superiority, because on in-cell the two are close (+0.2208 versus +0.1396) and mRNAutilus is clearly better in the above-2x in-cell bin.",
+      "v13_said": "v13 attributed mRNAutilus's weak in-solution ranking to being out of domain, and recorded that as the reason this project's win was not a symmetric result.",
+      "what_the_two_axis_test_shows": "mRNAutilus ranks in-cell at +0.1396 and in-solution at +0.1449 on the same constructs. It is essentially flat across the two axes and weakly predictive on both, so the measurement-domain excuse offered on its behalf in v13 does not hold on this test set."
+    },
+    "what_this_does_not_authorize": "No change to the production path and no new switch. The comparison is evidence about what the stability objective is worth and which axis it addresses; acting on it is a separate, separately recorded decision.",
+    "why_this_test_set_was_chosen_over_an_endogenous_atlas": "An endogenous in-cell atlas (RNAdecayCafe, 17412 human genes, 11 cell lines) was rejected because mRNAutilus's half-life head is trained on Agarwal and Kelley 2022, a compendium covering 13921 human genes, so leakage would be at the GENE level and date-filtering source datasets would not remove it. Designed constructs carry no gene identity and are leakage-free for their head by construction."
+  },
+  "what_must_not_be_claimed": [
+    "That removing the model's artifacts changed any measurement. It changed none.",
+    "That the Stage 2 requirements are satisfied on any basis other than the one v5 recorded, including the two accepted limitations.",
+    "That requirements 2, 3 and 4 can be regenerated from source. Their artifacts remain; their generators do not.",
+    "That the learned model's results were never obtained, or that work above 3000 nt was never done.",
+    "That a smaller test suite means a sounder project. 609 tests were removed with their subject.",
+    "That a predicted ordering of modified constructs is the expected measured ordering.",
+    "That m1-psi's effect is known to be sequence-independent; the nearest evidence points the other way for psi on expression.",
+    "That the stability calibration orders similar sequences usefully; it discriminates coarsely.",
+    "That the calibration improves on published predictors; it matches one that is free.",
+    "That any ordering depending on GC content survives the modification; m1-psi rescales that relationship by roughly 3.7 times.",
+    "That the uAUG or structure relationships are known to be preserved under m1-psi; their verdicts are ambiguous, which is not the same as supported.",
+    "That m1-psi's effect on stability is known; nothing tested it.",
+    "That the design workflow's ordering of synonymous variants is a ranking; at that scale the objective orders at chance, measured at 0.5007 concordance over 2958 held-out pairs.",
+    "That the stability refit adds anything over a free published per-nucleotide score.",
+    "That GC can be dropped from the objective cheaply; it is the strongest single feature.",
+    "That the diversity panel is ranked, or that any member of it is better than another.",
+    "That the stability resolution floor transfers to the translation side; RiboNN has no measured resolution at all.",
+    "That selecting for diversity is known to be the right criterion for a real campaign; it is the defensible one given an objective that cannot rank.",
+    "That widening the design domain produced a better candidate; zero members are resolvably better and all 239 resolvable differences are degradations.",
+    "That the objective evaluates sequence richly in this domain; it correlates with transcript GC at Pearson +0.99 and is effectively a GC readout.",
+    "That reaching the calibration's fitted GC domain makes its predictions correct; it makes them in-domain, and it requires moving in the direction the model calls worse.",
+    "Do not claim this project's method is better than mRNAutilus. On one held-out in-solution half-life set it ranks better overall and in every bin at or above 1.25x, on a test set where mRNAutilus is out of domain and this project is in domain. That is the only comparison that was run.",
+    "Do not claim mRNAutilus resolves this project's design pool. Its scores spread across the 512 members, but on an arbitrary normalised scale with no measurement-derived error model, and spread is not resolution.",
+    "Do not claim the GC collapse has been fixed or avoided. The comparison establishes only that it is escapable, because an independent model scores the same pool without it. This project's objective still collapses to GC at r = +0.99.",
+    "Do not describe anything in this project as predicting 'mRNA stability' without naming the axis. In-solution and in-cell half-life of the same 122 constructs rank at Spearman +0.0545. They are separate tasks and a result on one says nothing about the other.",
+    "Do not repeat v13's explanation that mRNAutilus's weak in-solution ranking is explained by domain mismatch alone. On the two-axis test it ranks its own in-cell axis no better than the in-solution axis, so that explanation does not hold on designed constructs; its sequence domain, not the measurement, is the remaining difference.",
+    "Do not claim the three-feature calibration adds predictive value over transcript GC. GC alone ranks in-solution at +0.2979 and in-cell at +0.2253, against the calibration's +0.3200 and +0.2208.",
+    "Do not claim the frozen stability calibration loses to free folding. That claim came from a defective baseline: SUP divided by RNA length in the PERSIST-seq table is not a per-nucleotide structure score, because SUP there covers a sub-region. Against properly normalised free structure scores the calibration wins (+0.3200 against -0.2648).",
+    "Do not claim the calibration is the best available in-solution predictor either. GC content (CDS) alone reaches +0.3651 against its +0.3200, needs no fitting, and is the best arm of every refit attempted.",
+    "Do not claim that refitting on more or better features improves this objective. Every multi-feature refit on the 69 training records overfits: train rises to +0.6454 at seven features while held-out falls to -0.0022. With this training-set size the family supports about one feature.",
+    "Do not claim a folding-engine swap is an available improvement. Once properly normalised, EternaFold, ViennaRNA and DegScore 2.1 agree within 0.05, and the apparent EternaFold advantage was a length-composition artifact."
+  ],
+  "what_remains_absent": [
+    "Any experimental measurement of any construct in this project. There is none.",
+    "Measured coefficients of variation for both assay readouts.",
+    "The decision cost of a false accept against a false reject.",
+    "Whether Fluc-PEST enters the panel.",
+    "A reference point on the real objective scales.",
+    "Experimental-structure references within the active length scope; requirement 1 remains an accepted limitation."
+  ]
+}

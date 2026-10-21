@@ -1,0 +1,168 @@
+{
+  "built_utc": "2026-10-21T05:24:32.989782+00:00",
+  "decision": {
+    "eternafold_best_abs": 0.41903569150852055,
+    "gap": -0.0034630775788858092,
+    "other_columns_within_0_03_of_eternafold": 2,
+    "rule_declared_in_advance": "Step 1 decision rule: if several unrelated free structure scores all cluster near +0.42 on in-solution, the feature family is at its ceiling and refitting cannot be expected to pass it, so steps 2 and 3 are diagnostic only. If EternaFold stands clearly above the other free scores, the engine is specifically better and the swap is worth building.",
+    "runner_up_best_abs": 0.42249876908740636,
+    "steps_2_and_3_warranted": false,
+    "verdict": "several unrelated free scores reach the same level, so this feature family is at its ceiling and a refit should not be expected to pass it; steps 2 and 3 are diagnostic only"
+  },
+  "engine_installed": "none",
+  "fitting_performed": "none",
+  "panel": {
+    "AUP DegScore 2.1": {
+      "available": true,
+      "form": "as given",
+      "spearman_vs_in_cell": -0.020798429709097763,
+      "spearman_vs_in_solution": -0.2170319775078047,
+      "spearman_vs_length": -0.017852362484021275
+    },
+    "AUP EternaFold": {
+      "available": true,
+      "form": "as given",
+      "spearman_vs_in_cell": 0.034990962292768844,
+      "spearman_vs_in_solution": -0.26481638749458897,
+      "spearman_vs_length": 0.04981837235401881
+    },
+    "AUP Vienna": {
+      "available": true,
+      "form": "as given",
+      "spearman_vs_in_cell": 0.11607588369610833,
+      "spearman_vs_in_solution": -0.2588815713384068,
+      "spearman_vs_length": -0.02607597793928174
+    },
+    "CAI": {
+      "available": true,
+      "form": "as given",
+      "spearman_vs_in_cell": 0.004470735792238973,
+      "spearman_vs_in_solution": 0.05391545485762953,
+      "spearman_vs_length": 0.19810633071627443
+    },
+    "GC content (CDS)": {
+      "available": true,
+      "form": "as given",
+      "spearman_vs_in_cell": 0.07711688605334088,
+      "spearman_vs_in_solution": 0.3651494315051474,
+      "spearman_vs_length": -0.262028935613885
+    },
+    "SUP DegScore2.1": {
+      "available": true,
+      "form": "as given",
+      "per_nucleotide": {
+        "spearman_vs_in_cell": 0.15863737149768192,
+        "spearman_vs_in_solution": -0.42249876908740636,
+        "spearman_vs_length": -0.41940710011175586
+      },
+      "spearman_vs_in_cell": 0.17319467713905815,
+      "spearman_vs_in_solution": -0.26820523497127596,
+      "spearman_vs_length": 0.19354327585435693
+    },
+    "SUP EternaFold": {
+      "available": true,
+      "form": "as given",
+      "per_nucleotide": {
+        "spearman_vs_in_cell": 0.1313094596871995,
+        "spearman_vs_in_solution": -0.41903569150852055,
+        "spearman_vs_length": -0.42471220146713007
+      },
+      "spearman_vs_in_cell": 0.17030873600972835,
+      "spearman_vs_in_solution": -0.3254136361984132,
+      "spearman_vs_length": 0.21291140106235187
+    },
+    "SUP Vienna": {
+      "available": true,
+      "form": "as given",
+      "per_nucleotide": {
+        "spearman_vs_in_cell": 0.15522055640553695,
+        "spearman_vs_in_solution": -0.3946751877761292,
+        "spearman_vs_length": -0.41246915136102036
+      },
+      "spearman_vs_in_cell": 0.2431126722864573,
+      "spearman_vs_in_solution": -0.35143298052679756,
+      "spearman_vs_length": 0.11013787056848863
+    },
+    "dG(MFE) EternaFold": {
+      "available": true,
+      "form": "as given",
+      "spearman_vs_in_cell": -0.020920695660676506,
+      "spearman_vs_in_solution": -0.15630545339530239,
+      "spearman_vs_length": -0.5606157459410103
+    },
+    "dG(MFE) Vienna": {
+      "available": true,
+      "form": "as given",
+      "spearman_vs_in_cell": 0.10718079965236361,
+      "spearman_vs_in_solution": 0.03615431259431202,
+      "spearman_vs_length": -0.9446961454944749
+    }
+  },
+  "protocol": "configs/folding_engine_swap_v1_2026-10-20.json",
+  "protocol_sha256": "50a2b964513ebeb57bb9cc1d277a8440de03b5882546b8c46382a374d0d5f217",
+  "purpose": "Test whether this project's stability objective is limited by its folding engine rather than by its fitted layer, and if so whether swapping ViennaRNA for EternaFold improves it.",
+  "ranking_by_best_in_solution_magnitude": [
+    {
+      "best_abs_spearman_vs_in_solution": 0.42249876908740636,
+      "column": "SUP DegScore2.1"
+    },
+    {
+      "best_abs_spearman_vs_in_solution": 0.41903569150852055,
+      "column": "SUP EternaFold"
+    },
+    {
+      "best_abs_spearman_vs_in_solution": 0.3946751877761292,
+      "column": "SUP Vienna"
+    },
+    {
+      "best_abs_spearman_vs_in_solution": 0.3651494315051474,
+      "column": "GC content (CDS)"
+    },
+    {
+      "best_abs_spearman_vs_in_solution": 0.26481638749458897,
+      "column": "AUP EternaFold"
+    },
+    {
+      "best_abs_spearman_vs_in_solution": 0.2588815713384068,
+      "column": "AUP Vienna"
+    },
+    {
+      "best_abs_spearman_vs_in_solution": 0.2170319775078047,
+      "column": "AUP DegScore 2.1"
+    },
+    {
+      "best_abs_spearman_vs_in_solution": 0.15630545339530239,
+      "column": "dG(MFE) EternaFold"
+    },
+    {
+      "best_abs_spearman_vs_in_solution": 0.05391545485762953,
+      "column": "CAI"
+    },
+    {
+      "best_abs_spearman_vs_in_solution": 0.03615431259431202,
+      "column": "dG(MFE) Vienna"
+    }
+  ],
+  "reference_points_from_the_two_axis_run": {
+    "ours_fitted_calibration_in_cell": 0.2208009358240175,
+    "ours_fitted_calibration_in_solution": 0.32001414310308934,
+    "transcript_gc_alone_in_solution": 0.29790988555663184
+  },
+  "source": {
+    "archive_sha256": "849ed7b49198c5b97049fec8d3636deea8812db4dd45ce0bcc448297703511c2",
+    "not_redistributed": "Only the URL and both hashes are pinned, as for the RiboNN weights, the Rfam sources and the mRNAutilus checkpoint. The archive and table are not copied into this repository.",
+    "table_sha256": "be534d17d5ded3056d66ad9c0f554ac7eb885a0d6f2d2ca645f73ecb783b0f53"
+  },
+  "step": "1 of 3: free baseline panel",
+  "test_set": {
+    "defined_by": "the two-axis comparison run, not re-derived",
+    "records": 122
+  },
+  "what_this_cannot_establish": [
+    "Nothing about constructs nobody measured.",
+    "Nothing about the in-cell axis beyond the carried diagnostic; no coefficient is fitted to an in-cell label.",
+    "No resolution claim. The narrow bin is at chance for every predictor tested so far and a better Spearman does not by itself change that.",
+    "Nothing about the translation side. RiboNN is not run here.",
+    "No claim that a better in-solution ranker is the right objective for this project. Which axis the project targets is an open decision recorded in gate v14."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "protocol": "folding_engine_swap_v1",
+  "date": "2026-10-20",
+  "purpose": "Test whether this project's stability objective is limited by its folding engine rather than by its fitted layer, and if so whether swapping ViennaRNA for EternaFold improves it.",
+  "what_prompted_this": {
+    "observation": "On the 122-construct two-axis test set a free per-nucleotide EternaFold score ranks in-solution half-life at +0.4190 while this project's fitted three-feature calibration reaches +0.3200.",
+    "the_diagnostic_already_run": "The fitted calibration beats every single ViennaRNA feature it is built from (-aup +0.2781, -energy_per_length +0.2803) and beats transcript GC alone (+0.2979). So the fitted layer is not destroying signal; it is extracting slightly more than its inputs hold. The two engines' unpaired-probability scores agree with each other at only +0.4945, so they disagree substantially about which nucleotides are paired, and EternaFold is the one that matches the measurements.",
+    "hypothesis": "The ceiling is the input features, not the regression. Refitting the same three-feature form on EternaFold-derived features should beat the frozen ViennaRNA arm on in-solution half-life.",
+    "authorized_by": "user, 2026-10-20: 'sure, do 1, then do 2 and 3, see whether it will improve test results'"
+  },
+  "declared_before_any_number_was_seen": [
+    "Rank statistics only, Spearman against each measured half-life axis, with the frozen concordance bins as secondary.",
+    "Step 1 is a free-baseline panel built ONLY from columns the source paper already provides. No engine is installed and no model is fitted in step 1. Its purpose is to decide whether steps 2 and 3 are worth doing.",
+    "Step 1 decision rule: if several unrelated free structure scores all cluster near +0.42 on in-solution, the feature family is at its ceiling and refitting cannot be expected to pass it, so steps 2 and 3 are diagnostic only. If EternaFold stands clearly above the other free scores, the engine is specifically better and the swap is worth building.",
+    "Step 2 requires reproduction before use: a locally run EternaFold must reproduce the paper's own precomputed column on these constructs. The agreement achieved is reported as measured, and if it is poor the refit in step 3 is reported as using locally computed features that do NOT reproduce the published column, not quietly substituted.",
+    "Step 3 refits ONLY on the same 69 training records the frozen ViennaRNA arm was fitted on. No in-cell label and no held-out in-solution label touches any coefficient. The frozen ViennaRNA arm is retained and reported alongside, never replaced in place.",
+    "Step 3 success criterion, declared in advance: the refit arm must beat BOTH the frozen ViennaRNA arm (+0.3200) and the free EternaFold score (+0.4190) on in-solution half-life over the 122 held-out constructs. Beating only the frozen arm is not success, because it would mean the fitted layer is still worth less than the free feature it is built from.",
+    "Step 3 falsification: if the refit arm does not beat the free EternaFold score, the conclusion to record is that the fitted layer adds no value over a single free structure feature on this axis, and the objective should be reduced to that feature rather than defended.",
+    "The in-cell axis is carried throughout and is expected to get WORSE under this swap, because the free EternaFold score has the wrong sign on in-cell (-0.1313) while transcript GC alone is the best single predictor there (+0.2253). A swap that improves in-solution and degrades in-cell must be reported as both."
+  ],
+  "step_1_free_baseline_panel": {
+    "source_columns": ["SUP DegScore2.1", "SUP Vienna", "SUP EternaFold",
+                       "AUP DegScore 2.1", "AUP Vienna", "AUP EternaFold",
+                       "dG(MFE) Vienna", "dG(MFE) EternaFold", "CAI", "GC content (CDS)"],
+    "normalisation": "A SUP column is a sum over nucleotides and so partly encodes length; it is additionally reported divided by length. An AUP column is already an average and is reported as given. This is the same post-hoc correction recorded in external_validation_leppek_v1.",
+    "reported": "signed Spearman against in-solution and in-cell half-life for every column, raw and where applicable per nucleotide, plus correlation with length so that any length ruler is visible"
+  },
+  "step_2_local_eternafold": {
+    "requirement": "install EternaFold, compute unpaired probabilities for the 122 test constructs and the 69 training constructs, and compare the locally computed per-nucleotide score against the paper's precomputed column on the 122",
+    "acceptance": "reported as measured; no threshold is declared because the purpose is to quantify reproduction, not to pass a bar. A poor agreement is itself the result and is recorded rather than worked around."
+  },
+  "step_3_refit": {
+    "form": "the same three-feature linear form as the frozen arm: intercept + c1*energy_per_length + c2*GC + c3*aup, with aup and energy taken from EternaFold instead of ViennaRNA where EternaFold provides them",
+    "estimator": "ordinary least squares, the same estimator used in stability_ablation_v1, chosen because the frozen one-component PLS was fitted in R and cannot be reproduced exactly here; pretending to reproduce it would be worse than not",
+    "training_records": 69,
+    "test_records": 122,
+    "frozen_arm_retained": true
+  },
+  "what_this_cannot_establish": [
+    "Nothing about constructs nobody measured.",
+    "Nothing about the in-cell axis beyond the carried diagnostic; no coefficient is fitted to an in-cell label.",
+    "No resolution claim. The narrow bin is at chance for every predictor tested so far and a better Spearman does not by itself change that.",
+    "Nothing about the translation side. RiboNN is not run here.",
+    "No claim that a better in-solution ranker is the right objective for this project. Which axis the project targets is an open decision recorded in gate v14."
+  ]
+}
