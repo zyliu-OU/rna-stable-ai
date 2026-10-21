@@ -1,0 +1,37 @@
+{
+  "protocol": "mrnautilus_comparison_v1",
+  "date": "2026-10-20",
+  "purpose": "Compare mRNAutilus (the method behind the collaborator's paper) against this project's objective on sequences this project has already scored, without changing this project's code first.",
+  "declared_before_any_number_was_seen": [
+    "Rank statistics only. Their config.yaml carries 'avg' normalisers (0.0212, -0.613, 1.503), so their head outputs are not physical units and absolute values are not comparable to hours.",
+    "Their half-life head is Saluki-trained on in-cell decay; the Leppek records measure in-solution degradation. On that test set this project is in-domain and mRNAutilus is not. This is not a symmetric comparison and must not be reported as one.",
+    "The Leppek records carry no declared CDS boundaries, so the three-segment tokeniser requires a declared ORF-finding step: longest ATG..in-frame-stop with no internal stop.",
+    "The narrow-bin pairwise concordance metric and its bin edges are the ones already frozen in stability_feature_ablation_v1; chance is 0.50."
+  ],
+  "their_artifacts_not_redistributed": {
+    "policy": "Only URLs and hashes are pinned, matching how RiboNN weights and Rfam sources are handled. No mRNAutilus code or weights are vendored into this repository.",
+    "repo": "https://huggingface.co/atombio/mrnautilus",
+    "checkpoint_sha256": "07e1b534008df579c58d65d5df6ec6c4dcf944d149133330049cbc054c1c4e29",
+    "checkpoint_bytes": 1780000000,
+    "strict_load_verified": "399 state-dict entries, 399 after prefix strip, 0 missing, 0 unexpected, 148.1M parameters",
+    "license": "CC BY-NC 4.0, (c) 2026 AtomBioworks",
+    "heads": ["halflife", "translation_rate", "ribo_seq"],
+    "pooling": "classifiers/scoring_functions.py:71 hidden.mean(dim=1)"
+  },
+  "environment_adaptations": [
+    "torch >= 2.6 defaults weights_only=True and their loader does not pass it; patched at the call site in the comparison script only. The checkpoint is the authors' own file at the pinned hash, whose strict load this project verified.",
+    "flash-attn 2.8.3 made fp32 rotary position indices unconditional, so RotaryEmbedding no longer accepts pos_idx_in_fp32; verified equivalent in the flash-attn source and the kwarg dropped. Original preserved as attention.py.orig.",
+    "flash-attn >= 2.7 appends used_seqlens_in_batch to unpad_input's return; their call unpacks four values. The fifth is informational and unused by their code, so it is discarded. Verified in flash_attn/bert_padding.py."
+  ],
+  "run_a_same_pool_both_methods": {
+    "sequences": "this project's reference plus the 512-member whole-transcript pool",
+    "pool_regenerated_deterministically": "build_pool at the frozen seed, then assemble_designed; all 512 transcript_sha256_rna values must match the stored run or the script aborts",
+    "comparison": "Spearman of each of their heads against this project's predicted in-solution half-life, and against transcript GC fraction"
+  },
+  "run_b_held_out_measured_records": {
+    "records": "the 123 held-out Leppek in-solution half-life records, the same set used for external_validation_leppek_v1",
+    "cds_inference": "longest ATG..in-frame-stop, no internal stop; 123 of 123 records yielded an ORF",
+    "layouts": "49 distinct (5'UTR length, CDS length) layouts, because their scorer slices at fixed offsets; the language model is loaded once and reused across all of them",
+    "metric": "Spearman plus pairwise concordance in the frozen measured-fold-difference bins"
+  }
+}
