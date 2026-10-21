@@ -1,0 +1,2545 @@
+{
+  "built_utc": "2026-10-21T04:20:44.985051+00:00",
+  "calibration_run": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z",
+  "counts": {
+    "dropped": {
+      "in_training_set": 69,
+      "missing_label": 42,
+      "missing_segment": 0,
+      "reconstruction_mismatch": 0
+    },
+    "records": 233,
+    "test_set": 122
+  },
+  "free_eternafold_per_nucleotide": {
+    "spearman_vs_in_cell": -0.1313094596871995,
+    "spearman_vs_in_solution": 0.41903569150852055
+  },
+  "gc_alone": {
+    "spearman_vs_in_cell": 0.22527964579878718,
+    "spearman_vs_in_solution": 0.29790988555663184
+  },
+  "measured_axes": {
+    "in_cell_range_hours": [
+      3.57406377,
+      11.3871462
+    ],
+    "in_solution_range_hours": [
+      0.86498944,
+      4.36040349
+    ],
+    "note": "This bounds how well any single predictor could rank both axes at once. If it is low, no predictor can win both columns.",
+    "spearman_between_the_two_measured_axes": 0.05452694955075821
+  },
+  "ours": {
+    "concordance_vs_in_cell": {
+      "1.00-1.10": {
+        "concordance": 0.4918032786885246,
+        "pairs": 1830
+      },
+      "1.10-1.25": {
+        "concordance": 0.5507590132827325,
+        "pairs": 2108
+      },
+      "1.25-1.50": {
+        "concordance": 0.6196754563894523,
+        "pairs": 1972
+      },
+      "1.50-2.00": {
+        "concordance": 0.6567524115755627,
+        "pairs": 1244
+      },
+      "above_2.00": {
+        "concordance": 0.5110132158590308,
+        "pairs": 227
+      }
+    },
+    "concordance_vs_in_solution": {
+      "1.00-1.10": {
+        "concordance": 0.4877543980682994,
+        "pairs": 2899
+      },
+      "1.10-1.25": {
+        "concordance": 0.5621572212065814,
+        "pairs": 2188
+      },
+      "1.25-1.50": {
+        "concordance": 0.6641998149861239,
+        "pairs": 1081
+      },
+      "1.50-2.00": {
+        "concordance": 0.75,
+        "pairs": 228
+      },
+      "above_2.00": {
+        "concordance": 0.966497461928934,
+        "pairs": 985
+      }
+    },
+    "correlation_with_transcript_gc": 0.7812057209560138,
+    "records_extrapolating_on_any_feature": 1,
+    "spearman_vs_in_cell": 0.2208009358240175,
+    "spearman_vs_in_solution": 0.32001414310308934
+  },
+  "protocol": "configs/two_axis_comparison_v1_2026-10-20.json",
+  "protocol_sha256": "ad804b82c4db7995a61848410431e76b60e8a4ec5210e0d2e3728feec522282f",
+  "purpose": "Compare this project's stability objective against mRNAutilus's half-life head on the SAME designed constructs, scored against BOTH in-solution and in-cell measured half-life, so that each method is tested inside and outside its own training domain.",
+  "refitting_performed": "none",
+  "rows": [
+    {
+      "baseline_eternafold_sup": 332.151244,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.07631874298541,
+        "aup": 0.3998008416337479,
+        "energy_per_length": -0.34078362975457704,
+        "gc_fraction": 0.5207631874298541
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 891,
+      "measured_in_cell_hours": 8.26185582,
+      "measured_in_solution_hours": 1.19509165,
+      "name": "APOA2_Nluc_hHBB",
+      "predicted_hours": 1.0081014747810197,
+      "sequence_id": "620128B1",
+      "utr5_len": 61
+    },
+    {
+      "baseline_eternafold_sup": 332.321957,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.23713646532438,
+        "aup": 0.4078176808183999,
+        "energy_per_length": -0.3365344019810892,
+        "gc_fraction": 0.5223713646532439
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 894,
+      "measured_in_cell_hours": 8.43076837,
+      "measured_in_solution_hours": 1.25032637,
+      "name": "C3_Nluc_hHBB",
+      "predicted_hours": 0.9947478906968114,
+      "sequence_id": "620126B1",
+      "utr5_len": 64
+    },
+    {
+      "baseline_eternafold_sup": 333.894909,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.83720930232558,
+        "aup": 0.3989882342850076,
+        "energy_per_length": -0.3507611793695494,
+        "gc_fraction": 0.5283720930232558
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1075,
+      "measured_in_cell_hours": 4.94426045,
+      "measured_in_solution_hours": 1.57477975,
+      "name": "CoV2_Nluc_hHBA1",
+      "predicted_hours": 1.030911887726945,
+      "sequence_id": "420064B1",
+      "utr5_len": 268
+    },
+    {
+      "baseline_eternafold_sup": 321.674245,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.77168949771689,
+        "aup": 0.3904062904471046,
+        "energy_per_length": -0.34249568573416095,
+        "gc_fraction": 0.4977168949771689
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1095,
+      "measured_in_cell_hours": 4.74472215,
+      "measured_in_solution_hours": 1.43632441,
+      "name": "CoV2_Nluc_hHBB",
+      "predicted_hours": 0.9866792173186842,
+      "sequence_id": "120018B1",
+      "utr5_len": 268
+    },
+    {
+      "baseline_eternafold_sup": 329.326537,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 51.58798283261803,
+        "aup": 0.39473679068993833,
+        "energy_per_length": -0.3538255945295735,
+        "gc_fraction": 0.5158798283261803
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1165,
+      "measured_in_cell_hours": 4.69584154,
+      "measured_in_solution_hours": 1.26438029,
+      "name": "CoV2_Nluc_BYDV",
+      "predicted_hours": 1.0200542405957629,
+      "sequence_id": "420067B1",
+      "utr5_len": 268
+    },
+    {
+      "baseline_eternafold_sup": 322.341132,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 53.42729019859065,
+        "aup": 0.38186568675338883,
+        "energy_per_length": -0.3616363896840967,
+        "gc_fraction": 0.5342729019859065
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1561,
+      "measured_in_cell_hours": 4.58445176,
+      "measured_in_solution_hours": 1.33591436,
+      "name": "CoV2_Nluc_WPRE",
+      "predicted_hours": 1.076123185575462,
+      "sequence_id": "520070B1",
+      "utr5_len": 268
+    },
+    {
+      "baseline_eternafold_sup": 314.429425,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 48.529411764705884,
+        "aup": 0.3803752622546026,
+        "energy_per_length": -0.3369985054890069,
+        "gc_fraction": 0.4852941176470588
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1292,
+      "measured_in_cell_hours": 4.56448757,
+      "measured_in_solution_hours": 1.30512351,
+      "name": "CoV2_Nluc_CoV2",
+      "predicted_hours": 0.97650087355353,
+      "sequence_id": "420054B1",
+      "utr5_len": 268
+    },
+    {
+      "baseline_eternafold_sup": 322.378703,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.86136177194421,
+        "aup": 0.38505154356196575,
+        "energy_per_length": -0.35900495871840393,
+        "gc_fraction": 0.5086136177194421
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1219,
+      "measured_in_cell_hours": 4.32566801,
+      "measured_in_solution_hours": 1.2341749,
+      "name": "CoV2_Nluc_TCV",
+      "predicted_hours": 1.0276768360235036,
+      "sequence_id": "420061B1",
+      "utr5_len": 268
+    },
+    {
+      "baseline_eternafold_sup": 321.403127,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.63636363636363,
+        "aup": 0.3913903119822052,
+        "energy_per_length": -0.3435024192116477,
+        "gc_fraction": 0.5063636363636363
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1100,
+      "measured_in_cell_hours": 4.88878416,
+      "measured_in_solution_hours": 1.26554839,
+      "name": "CoV2_P4_Nluc_hHBB",
+      "predicted_hours": 1.0000517043608919,
+      "sequence_id": "120019B1",
+      "utr5_len": 273
+    },
+    {
+      "baseline_eternafold_sup": 330.091341,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 53.70370370370371,
+        "aup": 0.39627378998252644,
+        "energy_per_length": -0.35485588356300635,
+        "gc_fraction": 0.5370370370370371
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1080,
+      "measured_in_cell_hours": 4.66065486,
+      "measured_in_solution_hours": 1.6371712,
+      "name": "CoV2_P4_Nluc_hHBA1",
+      "predicted_hours": 1.0527256307705974,
+      "sequence_id": "420065B1",
+      "utr5_len": 273
+    },
+    {
+      "baseline_eternafold_sup": 332.053637,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.3931623931624,
+        "aup": 0.39623852056368186,
+        "energy_per_length": -0.3544896574101896,
+        "gc_fraction": 0.523931623931624
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1170,
+      "measured_in_cell_hours": 4.60028703,
+      "measured_in_solution_hours": 1.23460136,
+      "name": "CoV2_P4_Nluc_BYDV",
+      "predicted_hours": 1.0313774799340985,
+      "sequence_id": "420068B1",
+      "utr5_len": 273
+    },
+    {
+      "baseline_eternafold_sup": 319.230989,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.26754047802621,
+        "aup": 0.37415392392472174,
+        "energy_per_length": -0.33888276393540384,
+        "gc_fraction": 0.4926754047802621
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1297,
+      "measured_in_cell_hours": 4.44147301,
+      "measured_in_solution_hours": 1.32481246,
+      "name": "CoV2_P4_Nluc_CoV2",
+      "predicted_hours": 0.9994006427779892,
+      "sequence_id": "420055B1",
+      "utr5_len": 273
+    },
+    {
+      "baseline_eternafold_sup": 323.044087,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 54.02298850574713,
+        "aup": 0.38478946664292957,
+        "energy_per_length": -0.36379763236600016,
+        "gc_fraction": 0.5402298850574713
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1566,
+      "measured_in_cell_hours": 4.40951054,
+      "measured_in_solution_hours": 1.39047692,
+      "name": "CoV2_P4_Nluc_WPRE",
+      "predicted_hours": 1.083368462045507,
+      "sequence_id": "520071B1",
+      "utr5_len": 273
+    },
+    {
+      "baseline_eternafold_sup": 331.738123,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 51.633986928104584,
+        "aup": 0.3959535648630178,
+        "energy_per_length": -0.3607693341822406,
+        "gc_fraction": 0.5163398692810458
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1224,
+      "measured_in_cell_hours": 4.40389557,
+      "measured_in_solution_hours": 1.16749426,
+      "name": "CoV2_P4_Nluc_TCV",
+      "predicted_hours": 1.025504313156597,
+      "sequence_id": "420062B1",
+      "utr5_len": 273
+    },
+    {
+      "baseline_eternafold_sup": 325.482655,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.77168949771689,
+        "aup": 0.3928445156240231,
+        "energy_per_length": -0.3410550330871861,
+        "gc_fraction": 0.4977168949771689
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1095,
+      "measured_in_cell_hours": 5.25416196,
+      "measured_in_solution_hours": 1.18964998,
+      "name": "CoV2_UUG_Nluc_hHBB",
+      "predicted_hours": 0.9816926954746112,
+      "sequence_id": "120020B1",
+      "utr5_len": 268
+    },
+    {
+      "baseline_eternafold_sup": 332.493741,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 51.58798283261803,
+        "aup": 0.3972364263692189,
+        "energy_per_length": -0.3513309855317865,
+        "gc_fraction": 0.5158798283261803
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1165,
+      "measured_in_cell_hours": 5.08017788,
+      "measured_in_solution_hours": 1.32356278,
+      "name": "CoV2_UUG_Nluc_BYDV",
+      "predicted_hours": 1.0139859826185202,
+      "sequence_id": "420069B1",
+      "utr5_len": 268
+    },
+    {
+      "baseline_eternafold_sup": 332.514525,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.83720930232558,
+        "aup": 0.39375374299596944,
+        "energy_per_length": -0.35284560092659883,
+        "gc_fraction": 0.5283720930232558
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1075,
+      "measured_in_cell_hours": 4.86670914,
+      "measured_in_solution_hours": 1.53638368,
+      "name": "CoV2_UUG_Nluc_hHBA1",
+      "predicted_hours": 1.040669710600855,
+      "sequence_id": "420066B1",
+      "utr5_len": 268
+    },
+    {
+      "baseline_eternafold_sup": 321.080469,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 48.529411764705884,
+        "aup": 0.3842173710147321,
+        "energy_per_length": -0.33302510264488194,
+        "gc_fraction": 0.4852941176470588
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1292,
+      "measured_in_cell_hours": 4.67906076,
+      "measured_in_solution_hours": 1.32511892,
+      "name": "CoV2_UUG_Nluc_CoV2",
+      "predicted_hours": 0.9670429361959736,
+      "sequence_id": "420056B1",
+      "utr5_len": 268
+    },
+    {
+      "baseline_eternafold_sup": 328.114733,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.86136177194421,
+        "aup": 0.39308221976612767,
+        "energy_per_length": -0.3583068346957675,
+        "gc_fraction": 0.5086136177194421
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1219,
+      "measured_in_cell_hours": 4.62750852,
+      "measured_in_solution_hours": 1.30035885,
+      "name": "CoV2_UUG_Nluc_TCV",
+      "predicted_hours": 1.0150551616180392,
+      "sequence_id": "420063B1",
+      "utr5_len": 268
+    },
+    {
+      "baseline_eternafold_sup": 319.959283,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 53.42729019859065,
+        "aup": 0.3785551798143985,
+        "energy_per_length": -0.3632920025099095,
+        "gc_fraction": 0.5342729019859065
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1561,
+      "measured_in_cell_hours": 4.12044172,
+      "measured_in_solution_hours": 1.50102685,
+      "name": "CoV2_UUG_Nluc_WPRE",
+      "predicted_hours": 1.0826113765085545,
+      "sequence_id": "520072B1",
+      "utr5_len": 268
+    },
+    {
+      "baseline_eternafold_sup": 325.556988,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.85994397759104,
+        "aup": 0.38413776969004815,
+        "energy_per_length": -0.341752737064878,
+        "gc_fraction": 0.49859943977591037
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1071,
+      "measured_in_cell_hours": 6.1356344,
+      "measured_in_solution_hours": 1.26821354,
+      "name": "CoV2_UUG_dSL1_Nluc_hHBB",
+      "predicted_hours": 0.9967393183679685,
+      "sequence_id": "720095B1",
+      "utr5_len": 241
+    },
+    {
+      "baseline_eternafold_sup": 324.484699,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.635386119257085,
+        "aup": 0.3873552996614327,
+        "energy_per_length": -0.3468621366767473,
+        "gc_fraction": 0.5063538611925709
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1023,
+      "measured_in_cell_hours": 7.12732586,
+      "measured_in_solution_hours": 1.2016719,
+      "name": "CoV2_UUG_dSL1_3_Nluc_hHBB",
+      "predicted_hours": 1.009204781452875,
+      "sequence_id": "720105B1",
+      "utr5_len": 193
+    },
+    {
+      "baseline_eternafold_sup": 326.399518,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.86149584487535,
+        "aup": 0.3960578990987585,
+        "energy_per_length": -0.3394954607427285,
+        "gc_fraction": 0.4986149584487535
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1083,
+      "measured_in_cell_hours": 5.40638868,
+      "measured_in_solution_hours": 1.26206202,
+      "name": "CoV2_UUG_dSL2_Nluc_hHBB",
+      "predicted_hours": 0.9768823819323418,
+      "sequence_id": "720096B1",
+      "utr5_len": 253
+    },
+    {
+      "baseline_eternafold_sup": 325.839334,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.86149584487535,
+        "aup": 0.39158436186457085,
+        "energy_per_length": -0.34359549595488514,
+        "gc_fraction": 0.4986149584487535
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1083,
+      "measured_in_cell_hours": 5.42423586,
+      "measured_in_solution_hours": 1.40324273,
+      "name": "CoV2_UUG_dSL3_Nluc_hHBB",
+      "predicted_hours": 0.9874001279300819,
+      "sequence_id": "720097B1",
+      "utr5_len": 253
+    },
+    {
+      "baseline_eternafold_sup": 326.136226,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.33586337760911,
+        "aup": 0.39802139703067335,
+        "energy_per_length": -0.33378132018463885,
+        "gc_fraction": 0.49335863377609107
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1054,
+      "measured_in_cell_hours": 5.43955832,
+      "measured_in_solution_hours": 1.30493432,
+      "name": "CoV2_UUG_dSL4_1_Nluc_hHBB",
+      "predicted_hours": 0.960142696651769,
+      "sequence_id": "720098B1",
+      "utr5_len": 224
+    },
+    {
+      "baseline_eternafold_sup": 323.935833,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.5097312326228,
+        "aup": 0.38808769808957777,
+        "energy_per_length": -0.34757753784066553,
+        "gc_fraction": 0.505097312326228
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1079,
+      "measured_in_cell_hours": 4.59542831,
+      "measured_in_solution_hours": 1.22686346,
+      "name": "CoV2_UUG_dSL4_2_Nluc_hHBB",
+      "predicted_hours": 1.006766739514998,
+      "sequence_id": "720099B1",
+      "utr5_len": 249
+    },
+    {
+      "baseline_eternafold_sup": 327.136484,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.78165938864629,
+        "aup": 0.4042876600434449,
+        "energy_per_length": -0.330804383390335,
+        "gc_fraction": 0.4978165938864629
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 916,
+      "measured_in_cell_hours": 5.43396258,
+      "measured_in_solution_hours": 1.22059601,
+      "name": "CoV2_UUG_dSL4_5_Nluc_hHBB",
+      "predicted_hours": 0.9551716295106583,
+      "sequence_id": "720106B1",
+      "utr5_len": 86
+    },
+    {
+      "baseline_eternafold_sup": 322.906385,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.14492753623189,
+        "aup": 0.39377201179467275,
+        "energy_per_length": -0.34178189632397343,
+        "gc_fraction": 0.5014492753623189
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1035,
+      "measured_in_cell_hours": 5.46590217,
+      "measured_in_solution_hours": 1.15947933,
+      "name": "CoV2_UUG_dSL4_full_Nluc_hHBB",
+      "predicted_hours": 0.9869904958974727,
+      "sequence_id": "720100B1",
+      "utr5_len": 205
+    },
+    {
+      "baseline_eternafold_sup": 325.966699,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.38900203665988,
+        "aup": 0.3995126727788384,
+        "energy_per_length": -0.33150629793310843,
+        "gc_fraction": 0.4938900203665988
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 982,
+      "measured_in_cell_hours": 5.7347387,
+      "measured_in_solution_hours": 1.32517719,
+      "name": "CoV2_UUG_dSL5_Nluc_hHBB",
+      "predicted_hours": 0.9566369969163302,
+      "sequence_id": "720104B1",
+      "utr5_len": 152
+    },
+    {
+      "baseline_eternafold_sup": 325.370531,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.47867298578199,
+        "aup": 0.390426641060031,
+        "energy_per_length": -0.33503169199866706,
+        "gc_fraction": 0.4947867298578199
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1055,
+      "measured_in_cell_hours": 4.85687542,
+      "measured_in_solution_hours": 1.23903726,
+      "name": "CoV2_UUG_dSL5A_Nluc_hHBB",
+      "predicted_hours": 0.9749282444218503,
+      "sequence_id": "720101B1",
+      "utr5_len": 225
+    },
+    {
+      "baseline_eternafold_sup": 327.266119,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.214145383104125,
+        "aup": 0.3973864103579253,
+        "energy_per_length": -0.3318216140237445,
+        "gc_fraction": 0.49214145383104124
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1018,
+      "measured_in_cell_hours": 5.09821436,
+      "measured_in_solution_hours": 1.32201533,
+      "name": "CoV2_UUG_dSL5A_C_Nluc_hHBB",
+      "predicted_hours": 0.9572919515885341,
+      "sequence_id": "720103B1",
+      "utr5_len": 188
+    },
+    {
+      "baseline_eternafold_sup": 323.932361,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.576669802445906,
+        "aup": 0.390602234296778,
+        "energy_per_length": -0.34438877338972834,
+        "gc_fraction": 0.49576669802445905
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1063,
+      "measured_in_cell_hours": 5.6100368,
+      "measured_in_solution_hours": 1.19124881,
+      "name": "CoV2_UUG_dSL5B.C_Nluc_hHBB",
+      "predicted_hours": 0.9850324872597567,
+      "sequence_id": "720102B1",
+      "utr5_len": 233
+    },
+    {
+      "baseline_eternafold_sup": 328.368006,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.69108561341571,
+        "aup": 0.38853861912486487,
+        "energy_per_length": -0.3405426914252124,
+        "gc_fraction": 0.4969108561341571
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1133,
+      "measured_in_cell_hours": 5.68725646,
+      "measured_in_solution_hours": 1.21751297,
+      "name": "CoV2_UUG_TTGfull.._Nluc_hHBB",
+      "predicted_hours": 0.9863320714853624,
+      "sequence_id": "720107B1",
+      "utr5_len": 303
+    },
+    {
+      "baseline_eternafold_sup": 329.092718,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.567107750472594,
+        "aup": 0.3855843454803036,
+        "energy_per_length": -0.3449660879903119,
+        "gc_fraction": 0.505671077504726
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1058,
+      "measured_in_cell_hours": 7.57524773,
+      "measured_in_solution_hours": 1.33275493,
+      "name": "CoV2_UUG_TTGfull.._dSL1_3_Nluc_hHBB",
+      "predicted_hours": 1.0089650646260573,
+      "sequence_id": "720108B1",
+      "utr5_len": 228
+    },
+    {
+      "baseline_eternafold_sup": 327.501674,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.243958573072504,
+        "aup": 0.3891132936566909,
+        "energy_per_length": -0.34796774702873273,
+        "gc_fraction": 0.522439585730725
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 869,
+      "measured_in_cell_hours": 7.48869309,
+      "measured_in_solution_hours": 1.21371395,
+      "name": "CYBA_Nluc_hHBB",
+      "predicted_hours": 1.0334692433762123,
+      "sequence_id": "320052B1",
+      "utr5_len": 39
+    },
+    {
+      "baseline_eternafold_sup": 327.191366,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.54041570438799,
+        "aup": 0.39410495589139943,
+        "energy_per_length": -0.34678167118486575,
+        "gc_fraction": 0.5254041570438799
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 866,
+      "measured_in_cell_hours": 7.65512514,
+      "measured_in_solution_hours": 1.33494182,
+      "name": "CYP2E1_Nluc_hHBB",
+      "predicted_hours": 1.0296804799534098,
+      "sequence_id": "620127B1",
+      "utr5_len": 36
+    },
+    {
+      "baseline_eternafold_sup": 316.670671,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 51.12359550561798,
+        "aup": 0.3904823704928763,
+        "energy_per_length": -0.3488523137320676,
+        "gc_fraction": 0.5112359550561798
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1246,
+      "measured_in_cell_hours": 4.66263555,
+      "measured_in_solution_hours": 1.35575198,
+      "name": "DEN2_Nluc_DEN2",
+      "predicted_hours": 1.0142593932391946,
+      "sequence_id": "620125B1",
+      "utr5_len": 99
+    },
+    {
+      "baseline_eternafold_sup": 319.097696,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.269106566200215,
+        "aup": 0.3740115261926538,
+        "energy_per_length": -0.34422050944185617,
+        "gc_fraction": 0.5026910656620022
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 929,
+      "measured_in_cell_hours": 4.30892487,
+      "measured_in_solution_hours": 1.31047054,
+      "name": "DEN2_Nluc_hHBB",
+      "predicted_hours": 1.0207201192887885,
+      "sequence_id": "620123B1",
+      "utr5_len": 99
+    },
+    {
+      "baseline_eternafold_sup": 326.247463,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 53.7199124726477,
+        "aup": 0.40243133005218856,
+        "energy_per_length": -0.34462749723271674,
+        "gc_fraction": 0.537199124726477
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 914,
+      "measured_in_cell_hours": 5.18085752,
+      "measured_in_solution_hours": 1.23893539,
+      "name": "hACTB_Nluc_hHBB",
+      "predicted_hours": 1.0342013072497105,
+      "sequence_id": "120003B1",
+      "utr5_len": 87
+    },
+    {
+      "baseline_eternafold_sup": 317.295725,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 53.05067218200621,
+        "aup": 0.3897212496459004,
+        "energy_per_length": -0.3606249583420857,
+        "gc_fraction": 0.5305067218200621
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 967,
+      "measured_in_cell_hours": 4.53079108,
+      "measured_in_solution_hours": 1.16371521,
+      "name": "hCOL1A2_Nluc_hHBB",
+      "predicted_hours": 1.0574169012725223,
+      "sequence_id": "120009B1",
+      "utr5_len": 140
+    },
+    {
+      "baseline_eternafold_sup": 308.745523,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 53.12753858651503,
+        "aup": 0.38114817148371133,
+        "energy_per_length": -0.36932923404498375,
+        "gc_fraction": 0.5312753858651503
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1231,
+      "measured_in_cell_hours": 10.0138301,
+      "measured_in_solution_hours": 1.37169676,
+      "name": "HCV_IRES_Nluc_hHBB",
+      "predicted_hours": 1.0796038787619981,
+      "sequence_id": "320046B1",
+      "utr5_len": 401
+    },
+    {
+      "baseline_eternafold_sup": 448.791557,
+      "cds_len": 855,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 60.0,
+        "aup": 0.3920721711708996,
+        "energy_per_length": -0.40745907379275975,
+        "gc_fraction": 0.6
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1215,
+      "measured_in_cell_hours": 5.87159541,
+      "measured_in_solution_hours": 1.7322227,
+      "name": "humanHBB_HighRSCU_highstruct4_eGFP.deg_HBB",
+      "predicted_hours": 1.2095721869634164,
+      "sequence_id": "130002D1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 429.257956,
+      "cds_len": 855,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 59.25925925925925,
+        "aup": 0.38027059298244215,
+        "energy_per_length": -0.4149994775591564,
+        "gc_fraction": 0.5925925925925926
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1215,
+      "measured_in_cell_hours": 6.36022697,
+      "measured_in_solution_hours": 1.43607742,
+      "name": "humanHBB_HighRSCU_highstruct5_eGFP.deg_HBB",
+      "predicted_hours": 1.2223395576965308,
+      "sequence_id": "130001D1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 476.023823,
+      "cds_len": 855,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 56.95473251028807,
+        "aup": 0.40316512554915657,
+        "energy_per_length": -0.36074083116319444,
+        "gc_fraction": 0.5695473251028806
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1215,
+      "measured_in_cell_hours": 6.03356055,
+      "measured_in_solution_hours": 1.45431561,
+      "name": "humanHBB_HighRSCU_midstruct2_eGFP.deg_HBB",
+      "predicted_hours": 1.1002212947778847,
+      "sequence_id": "130004D1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 474.32896,
+      "cds_len": 855,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 56.8724279835391,
+        "aup": 0.4151383408158286,
+        "energy_per_length": -0.36390318066004373,
+        "gc_fraction": 0.568724279835391
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1215,
+      "measured_in_cell_hours": 4.86741154,
+      "measured_in_solution_hours": 0.91117135,
+      "name": "humanHBB_HighRSCU_midstruct4_eGFP.deg_HBB",
+      "predicted_hours": 1.084029884658895,
+      "sequence_id": "130003D1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 380.611409,
+      "cds_len": 855,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 56.79012345679012,
+        "aup": 0.3492383502371711,
+        "energy_per_length": -0.4641014318897891,
+        "gc_fraction": 0.5679012345679012
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1215,
+      "measured_in_cell_hours": 5.55866795,
+      "measured_in_solution_hours": 1.24867085,
+      "name": "humanHBB_ribotree_3_eGFP.deg_HBB_F30Pepper",
+      "predicted_hours": 1.2750391559276828,
+      "sequence_id": "130012D1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 380.372528,
+      "cds_len": 855,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 57.03703703703704,
+        "aup": 0.34309085749272,
+        "energy_per_length": -0.46722095630787036,
+        "gc_fraction": 0.5703703703703704
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1215,
+      "measured_in_cell_hours": 6.17018601,
+      "measured_in_solution_hours": 1.47010817,
+      "name": "humanHBB_ribotree_1_eGFP.deg_HBB_F30Pepper",
+      "predicted_hours": 1.2910970662779795,
+      "sequence_id": "130010D1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 85.8212764,
+      "cds_len": 147,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 55.62130177514793,
+        "aup": 0.3353876913261909,
+        "energy_per_length": -0.45524254070936576,
+        "gc_fraction": 0.5562130177514792
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (MEV) variants",
+      "length_nt": 507,
+      "measured_in_cell_hours": 7.29003343,
+      "measured_in_solution_hours": 3.27070383,
+      "name": "humanHBB_HKWS_1_MEV.W_HBB_F30Pepper",
+      "predicted_hours": 1.2685738515519929,
+      "sequence_id": "130013D1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 331.883981,
+      "cds_len": 795,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 54.8051948051948,
+        "aup": 0.3222105013634855,
+        "energy_per_length": -0.470190006933171,
+        "gc_fraction": 0.548051948051948
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1155,
+      "measured_in_cell_hours": 6.48385764,
+      "measured_in_solution_hours": 1.13282111,
+      "name": "humanHBB_Eterna_eGFP_HBB_F30Pepper_281.._401.2.kcal",
+      "predicted_hours": 1.2891392057940614,
+      "sequence_id": "110008T1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 89.5784663,
+      "cds_len": 147,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 55.02958579881657,
+        "aup": 0.33315766716126244,
+        "energy_per_length": -0.46984520184217826,
+        "gc_fraction": 0.5502958579881657
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (MEV) variants",
+      "length_nt": 507,
+      "measured_in_cell_hours": 7.95103099,
+      "measured_in_solution_hours": 4.36040349,
+      "name": "humanHBB_HKWS_2_MEV.w_HBB_F30Pepper",
+      "predicted_hours": 1.2761092164326064,
+      "sequence_id": "130008D1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 360.308854,
+      "cds_len": 795,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 53.333333333333336,
+        "aup": 0.3260056730613062,
+        "energy_per_length": -0.40660651401007847,
+        "gc_fraction": 0.5333333333333333
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1155,
+      "measured_in_cell_hours": 4.39152962,
+      "measured_in_solution_hours": 1.09139505,
+      "name": "humanHBB_Eterna_eGFP_HBB_F30Pepper_AK1.3_gfp_mRNA",
+      "predicted_hours": 1.2000965762095428,
+      "sequence_id": "110010T1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 305.39514,
+      "cds_len": 795,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 51.42857142857142,
+        "aup": 0.29645879756143484,
+        "energy_per_length": -0.4864462319906656,
+        "gc_fraction": 0.5142857142857142
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1155,
+      "measured_in_cell_hours": 7.88305455,
+      "measured_in_solution_hours": 1.43697354,
+      "name": "humanHBB_Eterna_eGFP_HBB_F30Pepper_MutGen.1.300.pairs",
+      "predicted_hours": 1.2885301849868103,
+      "sequence_id": "110007T1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 91.3610493,
+      "cds_len": 147,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 56.01577909270217,
+        "aup": 0.34099091912814306,
+        "energy_per_length": -0.4670808028422399,
+        "gc_fraction": 0.5601577909270217
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (MEV) variants",
+      "length_nt": 507,
+      "measured_in_cell_hours": 7.21760719,
+      "measured_in_solution_hours": 3.36520054,
+      "name": "humanHBB_HKWS_3_MEV.w_HBB_F30Pepper",
+      "predicted_hours": 1.2776856389312041,
+      "sequence_id": "130009D1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 330.86454,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 54.95915985997666,
+        "aup": 0.40168699308685213,
+        "energy_per_length": -0.3526543669550394,
+        "gc_fraction": 0.5495915985997666
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 857,
+      "measured_in_cell_hours": 6.60454634,
+      "measured_in_solution_hours": 1.43630953,
+      "name": "hHBB_Nluc_hHBA1",
+      "predicted_hours": 1.0627630695392627,
+      "sequence_id": "120012B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 326.185912,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.26253687315634,
+        "aup": 0.3918228428734387,
+        "energy_per_length": -0.327055354385601,
+        "gc_fraction": 0.49262536873156343
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 1017,
+      "measured_in_cell_hours": 6.23531231,
+      "measured_in_solution_hours": 1.30369977,
+      "name": "hHBB_Nluc_hHBBx2",
+      "predicted_hours": 0.9618811231256987,
+      "sequence_id": "420057B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 322.984024,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.803461063040785,
+        "aup": 0.40482746978698864,
+        "energy_per_length": -0.333224189296199,
+        "gc_fraction": 0.5080346106304079
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 809,
+      "measured_in_cell_hours": 6.14045599,
+      "measured_in_solution_hours": 1.3009275,
+      "name": "hHBB_Nluc_SINV_URE",
+      "predicted_hours": 0.9730582191995394,
+      "sequence_id": "320041B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 312.814158,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 51.66666666666667,
+        "aup": 0.39748916117623817,
+        "energy_per_length": -0.3478563181559245,
+        "gc_fraction": 0.5166666666666667
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 1200,
+      "measured_in_cell_hours": 5.90743437,
+      "measured_in_solution_hours": 1.41696311,
+      "name": "hHBB_Nluc_DEN2",
+      "predicted_hours": 1.0116090395810398,
+      "sequence_id": "620124B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 315.481987,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 51.66666666666667,
+        "aup": 0.3959848603081041,
+        "energy_per_length": -0.3497868092854818,
+        "gc_fraction": 0.5166666666666667
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 1200,
+      "measured_in_cell_hours": 5.56707181,
+      "measured_in_solution_hours": 1.27809588,
+      "name": "hHBB_Nluc_DV",
+      "predicted_hours": 1.0156642310416362,
+      "sequence_id": "320042B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 325.716896,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.962627406568515,
+        "aup": 0.3973647863627398,
+        "energy_per_length": -0.336580235447781,
+        "gc_fraction": 0.5096262740656852
+      },
+      "features_outside_training_range": [],
+      "group": "hHBB Nluc",
+      "length_nt": 883,
+      "measured_in_cell_hours": 5.50614952,
+      "measured_in_solution_hours": 1.12373393,
+      "name": "hHBB_Nluc_hHBB.2",
+      "predicted_hours": 0.9898881487327008,
+      "sequence_id": "320053B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 328.375583,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 48.33209785025945,
+        "aup": 0.40438215421311574,
+        "energy_per_length": -0.31636806343819496,
+        "gc_fraction": 0.48332097850259453
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 1349,
+      "measured_in_cell_hours": 5.43973327,
+      "measured_in_solution_hours": 1.51071043,
+      "name": "hHBB_Nluc_hActb",
+      "predicted_hours": 0.9181770609151925,
+      "sequence_id": "420059B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 332.925084,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 55.32407407407407,
+        "aup": 0.4051291184030014,
+        "energy_per_length": -0.35723227041739003,
+        "gc_fraction": 0.5532407407407407
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 864,
+      "measured_in_cell_hours": 5.36401981,
+      "measured_in_solution_hours": 1.25671681,
+      "name": "hHBB_Nluc_CYBA_1.5x",
+      "predicted_hours": 1.0677985226951774,
+      "sequence_id": "320051B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 331.570315,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 54.48954489544895,
+        "aup": 0.401629619685912,
+        "energy_per_length": -0.35376378208362164,
+        "gc_fraction": 0.5448954489544895
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 813,
+      "measured_in_cell_hours": 5.30070172,
+      "measured_in_solution_hours": 1.31754487,
+      "name": "hHBB_Nluc_CYBA",
+      "predicted_hours": 1.0563455383008817,
+      "sequence_id": "320050B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 323.927883,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.141982864137084,
+        "aup": 0.39219629094537495,
+        "energy_per_length": -0.35044149261063723,
+        "gc_fraction": 0.5214198286413708
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 817,
+      "measured_in_cell_hours": 5.26471025,
+      "measured_in_solution_hours": 1.16564088,
+      "name": "hHBB_Nluc_PV",
+      "predicted_hours": 1.0295612849707474,
+      "sequence_id": "320044B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 328.08203,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 46.9601677148847,
+        "aup": 0.3971389092438685,
+        "energy_per_length": -0.3177369315669222,
+        "gc_fraction": 0.469601677148847
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 1431,
+      "measured_in_cell_hours": 5.07754152,
+      "measured_in_solution_hours": 1.30177285,
+      "name": "hHBB_Nluc_mActb",
+      "predicted_hours": 0.9082126888886664,
+      "sequence_id": "420058B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 329.665371,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.58043117744611,
+        "aup": 0.3845244036622015,
+        "energy_per_length": -0.3465442309529825,
+        "gc_fraction": 0.5058043117744611
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 1206,
+      "measured_in_cell_hours": 5.03784082,
+      "measured_in_solution_hours": 1.53927352,
+      "name": "hHBB_Nluc_RV",
+      "predicted_hours": 1.012241182115749,
+      "sequence_id": "320045B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 327.588273,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.27272727272727,
+        "aup": 0.3832853078751377,
+        "energy_per_length": -0.3631236336447976,
+        "gc_fraction": 0.5227272727272727
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 880,
+      "measured_in_cell_hours": 4.87383131,
+      "measured_in_solution_hours": 1.37709263,
+      "name": "hHBB_Nluc_BMV",
+      "predicted_hours": 1.0568547704161848,
+      "sequence_id": "320043B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 323.714858,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.05761316872428,
+        "aup": 0.3758098596593946,
+        "energy_per_length": -0.37142350938585067,
+        "gc_fraction": 0.5205761316872428
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 972,
+      "measured_in_cell_hours": 4.81949047,
+      "measured_in_solution_hours": 1.20987098,
+      "name": "hHBB_Nluc_TSV",
+      "predicted_hours": 1.072335037826877,
+      "sequence_id": "320040B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 321.04797,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.30362116991643,
+        "aup": 0.38854938367074593,
+        "energy_per_length": -0.32858548390168,
+        "gc_fraction": 0.49303621169916434
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 1077,
+      "measured_in_cell_hours": 4.6521864,
+      "measured_in_solution_hours": 1.29123133,
+      "name": "hHBB_Nluc_CoV2",
+      "predicted_hours": 0.9688563222472883,
+      "sequence_id": "220031B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 326.519297,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 47.0873786407767,
+        "aup": 0.3819212508736911,
+        "energy_per_length": -0.3192594065249545,
+        "gc_fraction": 0.470873786407767
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 1030,
+      "measured_in_cell_hours": 4.57468418,
+      "measured_in_solution_hours": 1.18045188,
+      "name": "hHBB_Nluc_CrPV",
+      "predicted_hours": 0.9343614360225525,
+      "sequence_id": "320039B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 327.42425,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.877192982456144,
+        "aup": 0.37968566884670296,
+        "energy_per_length": -0.3575460199724164,
+        "gc_fraction": 0.5087719298245614
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 912,
+      "measured_in_cell_hours": 4.5103814,
+      "measured_in_solution_hours": 1.51411273,
+      "name": "hHBB_Nluc_AMV",
+      "predicted_hours": 1.0345556543877672,
+      "sequence_id": "620121B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 327.512047,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 42.12846347607053,
+        "aup": 0.41510427073168904,
+        "energy_per_length": -0.2850938119576019,
+        "gc_fraction": 0.42128463476070527
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 1588,
+      "measured_in_cell_hours": 4.39967376,
+      "measured_in_solution_hours": 1.39332788,
+      "name": "hHBB_Nluc_hCOL1A2",
+      "predicted_hours": 0.773143121074791,
+      "sequence_id": "420060B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 323.505233,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 54.87714072970961,
+        "aup": 0.38147008579661823,
+        "energy_per_length": -0.36488197991320737,
+        "gc_fraction": 0.5487714072970961
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (3') variants",
+      "length_nt": 1343,
+      "measured_in_cell_hours": 3.99805887,
+      "measured_in_solution_hours": 1.75245603,
+      "name": "hHBB_Nluc_WPRE",
+      "predicted_hours": 1.1030569109116073,
+      "sequence_id": "120017B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 91.6183485,
+      "cds_len": 144,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 53.17460317460318,
+        "aup": 0.3217666686057431,
+        "energy_per_length": -0.4706424228728764,
+        "gc_fraction": 0.5317460317460317
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (MEV) variants",
+      "length_nt": 504,
+      "measured_in_cell_hours": 4.9603196,
+      "measured_in_solution_hours": 3.50375161,
+      "name": "humanHBB_Eterna_MEV_HBB_F30Pepper_Astro.Snake._106.2..61.pairs..coaxial.stacking",
+      "predicted_hours": 1.2640266784887972,
+      "sequence_id": "110002T1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 359.186522,
+      "cds_len": 639,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 51.6093229744728,
+        "aup": 0.38696159225929755,
+        "energy_per_length": -0.3494051680316142,
+        "gc_fraction": 0.516093229744728
+      },
+      "features_outside_training_range": [],
+      "group": "hHBB NlucP",
+      "length_nt": 901,
+      "measured_in_cell_hours": 7.16847284,
+      "measured_in_solution_hours": 1.15425072,
+      "name": "hHBB_NlucP_hHBB",
+      "predicted_hours": 1.027829043331164,
+      "sequence_id": "820117B1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 378.240415,
+      "cds_len": 795,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.523809523809526,
+        "aup": 0.32001984356160185,
+        "energy_per_length": -0.43143624970407196,
+        "gc_fraction": 0.49523809523809526
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1155,
+      "measured_in_cell_hours": 9.55804187,
+      "measured_in_solution_hours": 0.99024704,
+      "name": "humanHBB_Eterna_eGFP_HBB_F30Pepper_Bat.Dragon.3",
+      "predicted_hours": 1.1711359705625455,
+      "sequence_id": "110009T1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 81.261547,
+      "cds_len": 144,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 55.158730158730165,
+        "aup": 0.3107823596959419,
+        "energy_per_length": -0.47176600259447854,
+        "gc_fraction": 0.5515873015873016
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (MEV) variants",
+      "length_nt": 504,
+      "measured_in_cell_hours": 7.29321528,
+      "measured_in_solution_hours": 3.19215248,
+      "name": "humanHBB_Eterna_MEV_HBB_F30Pepper_Astros_D.Wydd_mod63P_105.8Kcal",
+      "predicted_hours": 1.3133282142823097,
+      "sequence_id": "110004T1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 427.78966,
+      "cds_len": 795,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.26406926406926,
+        "aup": 0.369550245730426,
+        "energy_per_length": -0.37170497349330356,
+        "gc_fraction": 0.49264069264069266
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1155,
+      "measured_in_cell_hours": 4.97905017,
+      "measured_in_solution_hours": 0.89571721,
+      "name": "humanHBB_Eterna_eGFP_HBB_F30Pepper_MS2.bacteriophage.genome.style..267..275.2",
+      "predicted_hours": 1.037042157330942,
+      "sequence_id": "110006T1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 508.600121,
+      "cds_len": 855,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 44.77366255144033,
+        "aup": 0.4110605880473718,
+        "energy_per_length": -0.3004910190409594,
+        "gc_fraction": 0.4477366255144033
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1215,
+      "measured_in_cell_hours": 11.3871462,
+      "measured_in_solution_hours": 0.86498944,
+      "name": "humanHBB_ModernaRef_egfp_lowstructure_HBB_F30Pepper",
+      "predicted_hours": 0.8361352439172576,
+      "sequence_id": "130006D1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 508.668611,
+      "cds_len": 855,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 45.76131687242798,
+        "aup": 0.4049412177036328,
+        "energy_per_length": -0.3028935436358668,
+        "gc_fraction": 0.4576131687242798
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1215,
+      "measured_in_cell_hours": 7.18792931,
+      "measured_in_solution_hours": 0.95142605,
+      "name": "humanHBB_MedRSCU_lowstruct1_eGFP.deg_HBB",
+      "predicted_hours": 0.8633791686565848,
+      "sequence_id": "130005D1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 86.6631633,
+      "cds_len": 144,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 55.158730158730165,
+        "aup": 0.3262439981049115,
+        "energy_per_length": -0.44629160563151044,
+        "gc_fraction": 0.5515873015873016
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (MEV) variants",
+      "length_nt": 504,
+      "measured_in_cell_hours": 5.6173562,
+      "measured_in_solution_hours": 3.14915168,
+      "name": "humanHBB_Eterna_MEV_HBB_F30Pepper_Steve.s.Mod.of.Omei.s.59.pairs.Epitope..4",
+      "predicted_hours": 1.2663560604793593,
+      "sequence_id": "110005T1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 100.50771,
+      "cds_len": 144,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 51.587301587301596,
+        "aup": 0.3555667807459668,
+        "energy_per_length": -0.3916300516279917,
+        "gc_fraction": 0.5158730158730159
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (MEV) variants",
+      "length_nt": 504,
+      "measured_in_cell_hours": 3.61039509,
+      "measured_in_solution_hours": 2.88551629,
+      "name": "humanHBB_Eterna_MEV_start_HBB_F30Pepper",
+      "predicted_hours": 1.1139256582614754,
+      "sequence_id": "1100011T1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 92.1304002,
+      "cds_len": 144,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 54.563492063492056,
+        "aup": 0.3362009864637711,
+        "energy_per_length": -0.47860054742722286,
+        "gc_fraction": 0.5456349206349206
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (MEV) variants",
+      "length_nt": 504,
+      "measured_in_cell_hours": 5.61321891,
+      "measured_in_solution_hours": 3.63119113,
+      "name": "humanHBB_Eterna_MEV_HBB_F30Pepper_C.3",
+      "predicted_hours": 1.2723118662698147,
+      "sequence_id": "110003T1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 86.9256521,
+      "cds_len": 144,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 53.96825396825397,
+        "aup": 0.3227904860328735,
+        "energy_per_length": -0.4603308723086402,
+        "gc_fraction": 0.5396825396825397
+      },
+      "features_outside_training_range": [],
+      "group": "CDS (MEV) variants",
+      "length_nt": 504,
+      "measured_in_cell_hours": 6.09244797,
+      "measured_in_solution_hours": 3.53866785,
+      "name": "humanHBB_Eterna_MEV_HBB_F30Pepper_61.pair.._101.3.kcal.Enforcer",
+      "predicted_hours": 1.265564749162384,
+      "sequence_id": "110001T1",
+      "utr5_len": 53
+    },
+    {
+      "baseline_eternafold_sup": 331.677791,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 53.13496280552603,
+        "aup": 0.4035607438556126,
+        "energy_per_length": -0.34704181213054597,
+        "gc_fraction": 0.5313496280552603
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 941,
+      "measured_in_cell_hours": 6.55043642,
+      "measured_in_solution_hours": 1.208186,
+      "name": "mActb_Nluc_hHBB",
+      "predicted_hours": 1.0253883649595898,
+      "sequence_id": "120005B1",
+      "utr5_len": 114
+    },
+    {
+      "baseline_eternafold_sup": 321.730106,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 53.13496280552603,
+        "aup": 0.38330389466531023,
+        "energy_per_length": -0.3593726973984624,
+        "gc_fraction": 0.5313496280552603
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 941,
+      "measured_in_cell_hours": 6.1797462,
+      "measured_in_solution_hours": 1.29288594,
+      "name": "mActb_inv_Nluc_hHBB",
+      "predicted_hours": 1.0671565593053896,
+      "sequence_id": "120007B1",
+      "utr5_len": 114
+    },
+    {
+      "baseline_eternafold_sup": 326.500063,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 51.64359861591695,
+        "aup": 0.3909100213019047,
+        "energy_per_length": -0.3528198189388922,
+        "gc_fraction": 0.5164359861591695
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1156,
+      "measured_in_cell_hours": 3.85639747,
+      "measured_in_solution_hours": 1.05123442,
+      "name": "mHoxa9_IRES_Nluc_hHBB",
+      "predicted_hours": 1.0257047703662854,
+      "sequence_id": "220030B1",
+      "utr5_len": 326
+    },
+    {
+      "baseline_eternafold_sup": 327.706463,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 51.30151843817787,
+        "aup": 0.3954041571871226,
+        "energy_per_length": -0.3359799995339615,
+        "gc_fraction": 0.5130151843817787
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 922,
+      "measured_in_cell_hours": 4.37982892,
+      "measured_in_solution_hours": 1.15541861,
+      "name": "mRpl18a_hHBB_Nluc_hHBB",
+      "predicted_hours": 0.9976905544432304,
+      "sequence_id": "220026B1",
+      "utr5_len": 92
+    },
+    {
+      "baseline_eternafold_sup": 326.104622,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 51.78365937859609,
+        "aup": 0.3949002354392577,
+        "energy_per_length": -0.34103793900361407,
+        "gc_fraction": 0.5178365937859609
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 869,
+      "measured_in_cell_hours": 4.01677392,
+      "measured_in_solution_hours": 1.105126,
+      "name": "mRpl18a_Nluc_hHBB",
+      "predicted_hours": 1.0109401513450744,
+      "sequence_id": "120001B1",
+      "utr5_len": 42
+    },
+    {
+      "baseline_eternafold_sup": 331.205901,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 53.61328125,
+        "aup": 0.3910258730467391,
+        "energy_per_length": -0.3542727828025818,
+        "gc_fraction": 0.5361328125
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1024,
+      "measured_in_cell_hours": 4.54189762,
+      "measured_in_solution_hours": 1.16367809,
+      "name": "mRpl18a_P4_mActb_Nluc_hHBB",
+      "predicted_hours": 1.0585443861813388,
+      "sequence_id": "220027B1",
+      "utr5_len": 194
+    },
+    {
+      "baseline_eternafold_sup": 322.67409,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 54.03141361256545,
+        "aup": 0.39984661413780576,
+        "energy_per_length": -0.3560069458646924,
+        "gc_fraction": 0.5403141361256545
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 955,
+      "measured_in_cell_hours": 7.08594789,
+      "measured_in_solution_hours": 1.17989327,
+      "name": "P4_hACTB_Nluc_hHBB",
+      "predicted_hours": 1.053748921801999,
+      "sequence_id": "120004B1",
+      "utr5_len": 128
+    },
+    {
+      "baseline_eternafold_sup": 332.773,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 53.462321792260695,
+        "aup": 0.3911393501821623,
+        "energy_per_length": -0.3484054534352724,
+        "gc_fraction": 0.5346232179226069
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 982,
+      "measured_in_cell_hours": 6.74805026,
+      "measured_in_solution_hours": 1.17314753,
+      "name": "P4_mActb_Nluc_hHBB",
+      "predicted_hours": 1.0504372311958303,
+      "sequence_id": "120006B1",
+      "utr5_len": 155
+    },
+    {
+      "baseline_eternafold_sup": 326.093233,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 55.22813688212928,
+        "aup": 0.3928882070717229,
+        "energy_per_length": -0.36419666130733125,
+        "gc_fraction": 0.5522813688212928
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1052,
+      "measured_in_cell_hours": 6.60784658,
+      "measured_in_solution_hours": 1.27753759,
+      "name": "P4_mActb_Nluc_BYDV",
+      "predicted_hours": 1.0910394485118462,
+      "sequence_id": "520078B1",
+      "utr5_len": 155
+    },
+    {
+      "baseline_eternafold_sup": 330.419202,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 56.96465696465697,
+        "aup": 0.3941660066261185,
+        "energy_per_length": -0.3619631888217093,
+        "gc_fraction": 0.5696465696465697
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 962,
+      "measured_in_cell_hours": 6.45912003,
+      "measured_in_solution_hours": 1.739251,
+      "name": "P4_mActb_Nluc_hHBA1",
+      "predicted_hours": 1.1149379508338153,
+      "sequence_id": "520081B1",
+      "utr5_len": 155
+    },
+    {
+      "baseline_eternafold_sup": 332.012244,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 51.48430873621713,
+        "aup": 0.38967086202365425,
+        "energy_per_length": -0.33614843108069603,
+        "gc_fraction": 0.5148430873621713
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1179,
+      "measured_in_cell_hours": 5.29402489,
+      "measured_in_solution_hours": 1.25468085,
+      "name": "P4_mActb_Nluc_CoV2",
+      "predicted_hours": 1.0093283619405127,
+      "sequence_id": "520075B1",
+      "utr5_len": 155
+    },
+    {
+      "baseline_eternafold_sup": 332.087454,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 56.21546961325967,
+        "aup": 0.3793968563244554,
+        "energy_per_length": -0.3721807490396236,
+        "gc_fraction": 0.5621546961325967
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1448,
+      "measured_in_cell_hours": 5.26867828,
+      "measured_in_solution_hours": 1.50734305,
+      "name": "P4_mActb_Nluc_WPRE",
+      "predicted_hours": 1.1345066057858304,
+      "sequence_id": "620088B1",
+      "utr5_len": 155
+    },
+    {
+      "baseline_eternafold_sup": 333.173862,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 54.249547920434,
+        "aup": 0.38936636300686456,
+        "energy_per_length": -0.36745451501222026,
+        "gc_fraction": 0.5424954792043399
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1106,
+      "measured_in_cell_hours": 5.07096115,
+      "measured_in_solution_hours": 1.16921351,
+      "name": "P4_mActb_Nluc_TCV",
+      "predicted_hours": 1.0836248007026636,
+      "sequence_id": "520084B1",
+      "utr5_len": 155
+    },
+    {
+      "baseline_eternafold_sup": 320.636301,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 53.462321792260695,
+        "aup": 0.3585899507101318,
+        "energy_per_length": -0.36471933648445454,
+        "gc_fraction": 0.5346232179226069
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 982,
+      "measured_in_cell_hours": 5.08897304,
+      "measured_in_solution_hours": 1.14400545,
+      "name": "P4_mActb_inv_Nluc_hHBB",
+      "predicted_hours": 1.1142635897385882,
+      "sequence_id": "120008B1",
+      "utr5_len": 155
+    },
+    {
+      "baseline_eternafold_sup": 331.727957,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.616279069767444,
+        "aup": 0.4042235202053275,
+        "energy_per_length": -0.3445306230885114,
+        "gc_fraction": 0.5261627906976745
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1032,
+      "measured_in_cell_hours": 5.10948706,
+      "measured_in_solution_hours": 1.04705487,
+      "name": "P4_TEV_mActb_Nluc_hHBB",
+      "predicted_hours": 1.0137077101304612,
+      "sequence_id": "220025B1",
+      "utr5_len": 202
+    },
+    {
+      "baseline_eternafold_sup": 325.24725,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.49614112458654,
+        "aup": 0.40264031105790826,
+        "energy_per_length": -0.336481029169825,
+        "gc_fraction": 0.5049614112458655
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 907,
+      "measured_in_cell_hours": 3.92698191,
+      "measured_in_solution_hours": 1.3002442,
+      "name": "PoV_pA_hHBB_Nluc_hHBB",
+      "predicted_hours": 0.9744392859753278,
+      "sequence_id": "320049B1",
+      "utr5_len": 77
+    },
+    {
+      "baseline_eternafold_sup": 326.359328,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.71982281284607,
+        "aup": 0.40436044461521076,
+        "energy_per_length": -0.3346992906673934,
+        "gc_fraction": 0.5071982281284607
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 903,
+      "measured_in_cell_hours": 4.32806131,
+      "measured_in_solution_hours": 1.25174436,
+      "name": "PoV_pA_scrUTR_Nluc_hHBB",
+      "predicted_hours": 0.9737961809451778,
+      "sequence_id": "320048B1",
+      "utr5_len": 73
+    },
+    {
+      "baseline_eternafold_sup": 330.892739,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 47.8017585931255,
+        "aup": 0.45197237258387923,
+        "energy_per_length": -0.29437050945181353,
+        "gc_fraction": 0.478017585931255
+      },
+      "features_outside_training_range": [
+        "aup"
+      ],
+      "group": "UTR (5') variants",
+      "length_nt": 1251,
+      "measured_in_cell_hours": 4.5783086,
+      "measured_in_solution_hours": 1.22226192,
+      "name": "RBCS1A_Nluc_hHBB",
+      "predicted_hours": 0.8180787279496575,
+      "sequence_id": "620129B1",
+      "utr5_len": 421
+    },
+    {
+      "baseline_eternafold_sup": 317.089946,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.840933191940614,
+        "aup": 0.3969352027924665,
+        "energy_per_length": -0.32812477346442537,
+        "gc_fraction": 0.4984093319194062
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 943,
+      "measured_in_cell_hours": 3.98840574,
+      "measured_in_solution_hours": 1.34109413,
+      "name": "RBCS3B_Nluc_hHBB",
+      "predicted_hours": 0.964561596398579,
+      "sequence_id": "620130B1",
+      "utr5_len": 113
+    },
+    {
+      "baseline_eternafold_sup": 326.315397,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.453653217012,
+        "aup": 0.3973856441820683,
+        "energy_per_length": -0.342901930814221,
+        "gc_fraction": 0.52453653217012
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 917,
+      "measured_in_cell_hours": 5.17387861,
+      "measured_in_solution_hours": 1.38096384,
+      "name": "RpL31_Nluc_hHBB",
+      "predicted_hours": 1.0197530394356686,
+      "sequence_id": "620090B1",
+      "utr5_len": 87
+    },
+    {
+      "baseline_eternafold_sup": 326.927125,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.689352360043905,
+        "aup": 0.39139615633298164,
+        "energy_per_length": -0.34923559329119785,
+        "gc_fraction": 0.5268935236004391
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 911,
+      "measured_in_cell_hours": 7.02228377,
+      "measured_in_solution_hours": 1.29894304,
+      "name": "RpL38_Nluc_hHBB",
+      "predicted_hours": 1.0384151489161568,
+      "sequence_id": "620091B1",
+      "utr5_len": 81
+    },
+    {
+      "baseline_eternafold_sup": 325.037413,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 51.830663615560645,
+        "aup": 0.39185929174871553,
+        "energy_per_length": -0.34732942559353547,
+        "gc_fraction": 0.5183066361556065
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 874,
+      "measured_in_cell_hours": 6.66024288,
+      "measured_in_solution_hours": 1.30811364,
+      "name": "RpS25_Nluc_hHBB",
+      "predicted_hours": 1.0221375023859087,
+      "sequence_id": "620089B1",
+      "utr5_len": 44
+    },
+    {
+      "baseline_eternafold_sup": 320.201905,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 51.19453924914675,
+        "aup": 0.3895719031502295,
+        "energy_per_length": -0.3394539304696388,
+        "gc_fraction": 0.5119453924914675
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 879,
+      "measured_in_cell_hours": 3.57406377,
+      "measured_in_solution_hours": 1.43601792,
+      "name": "scrUTR_Nluc_hHBB",
+      "predicted_hours": 1.0079257002364104,
+      "sequence_id": "320047B1",
+      "utr5_len": 49
+    },
+    {
+      "baseline_eternafold_sup": 335.716447,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 55.09736540664376,
+        "aup": 0.413622736742242,
+        "energy_per_length": -0.34769714984697164,
+        "gc_fraction": 0.5509736540664376
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 873,
+      "measured_in_cell_hours": 7.00222269,
+      "measured_in_solution_hours": 1.53357932,
+      "name": "TCV_Nluc_hHBA1",
+      "predicted_hours": 1.042541795988938,
+      "sequence_id": "520080B1",
+      "utr5_len": 66
+    },
+    {
+      "baseline_eternafold_sup": 333.903837,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 53.374870197300105,
+        "aup": 0.4050762445321747,
+        "energy_per_length": -0.3489840340143919,
+        "gc_fraction": 0.5337487019730011
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 963,
+      "measured_in_cell_hours": 6.72125109,
+      "measured_in_solution_hours": 1.24074504,
+      "name": "TCV_Nluc_BYDV",
+      "predicted_hours": 1.0288096740167965,
+      "sequence_id": "520077B1",
+      "utr5_len": 66
+    },
+    {
+      "baseline_eternafold_sup": 324.410346,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.54128440366973,
+        "aup": 0.39696651692555457,
+        "energy_per_length": -0.32429546391198394,
+        "gc_fraction": 0.4954128440366973
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1090,
+      "measured_in_cell_hours": 5.52745851,
+      "measured_in_solution_hours": 1.31501777,
+      "name": "TCV_Nluc_CoV2",
+      "predicted_hours": 0.9561026572125827,
+      "sequence_id": "520074B1",
+      "utr5_len": 66
+    },
+    {
+      "baseline_eternafold_sup": 327.141398,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.409046214355946,
+        "aup": 0.39955657038749687,
+        "energy_per_length": -0.3595982254313391,
+        "gc_fraction": 0.5240904621435595
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1017,
+      "measured_in_cell_hours": 5.2269867,
+      "measured_in_solution_hours": 1.11027722,
+      "name": "TCV_Nluc_TCV",
+      "predicted_hours": 1.0314884753378668,
+      "sequence_id": "520083B1",
+      "utr5_len": 66
+    },
+    {
+      "baseline_eternafold_sup": 323.869956,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 54.966887417218544,
+        "aup": 0.38525597157739394,
+        "energy_per_length": -0.3625458414893189,
+        "gc_fraction": 0.5496688741721855
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1359,
+      "measured_in_cell_hours": 5.06003121,
+      "measured_in_solution_hours": 1.39468759,
+      "name": "TCV_Nluc_WPRE",
+      "predicted_hours": 1.09666299185557,
+      "sequence_id": "620087B1",
+      "utr5_len": 66
+    },
+    {
+      "baseline_eternafold_sup": 322.204919,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 54.57930007446017,
+        "aup": 0.374633184520232,
+        "energy_per_length": -0.3658032108400619,
+        "gc_fraction": 0.5457930007446017
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1343,
+      "measured_in_cell_hours": 4.48316084,
+      "measured_in_solution_hours": 1.3525694,
+      "name": "TEV_Nluc_WPRE",
+      "predicted_hours": 1.1093240307125165,
+      "sequence_id": "520085B1",
+      "utr5_len": 50
+    },
+    {
+      "baseline_eternafold_sup": 324.393613,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 51.84815184815184,
+        "aup": 0.4034245287691049,
+        "energy_per_length": -0.3599041339519855,
+        "gc_fraction": 0.5184815184815185
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1001,
+      "measured_in_cell_hours": 4.12081911,
+      "measured_in_solution_hours": 1.22717406,
+      "name": "TEV_Nluc_TCV",
+      "predicted_hours": 1.0170006513634469,
+      "sequence_id": "520082B1",
+      "utr5_len": 50
+    },
+    {
+      "baseline_eternafold_sup": 322.982006,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.56818181818182,
+        "aup": 0.40317529199665714,
+        "energy_per_length": -0.33889767039905894,
+        "gc_fraction": 0.5056818181818182
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 880,
+      "measured_in_cell_hours": 4.11639981,
+      "measured_in_solution_hours": 1.07451185,
+      "name": "TEV_Nluc_hHBB",
+      "predicted_hours": 0.9770701780480586,
+      "sequence_id": "220022B1",
+      "utr5_len": 50
+    },
+    {
+      "baseline_eternafold_sup": 324.984365,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 48.97579143389199,
+        "aup": 0.39876284169344456,
+        "energy_per_length": -0.3229648867132943,
+        "gc_fraction": 0.4897579143389199
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1074,
+      "measured_in_cell_hours": 4.05135011,
+      "measured_in_solution_hours": 1.31374664,
+      "name": "TEV_Nluc_CoV2",
+      "predicted_hours": 0.9430901506007541,
+      "sequence_id": "520073B1",
+      "utr5_len": 50
+    },
+    {
+      "baseline_eternafold_sup": 323.100831,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.798310454065465,
+        "aup": 0.39798551533373416,
+        "energy_per_length": -0.35153050004743597,
+        "gc_fraction": 0.5279831045406547
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 947,
+      "measured_in_cell_hours": 4.02607182,
+      "measured_in_solution_hours": 1.26223899,
+      "name": "TEV_Nluc_BYDV",
+      "predicted_hours": 1.0325037606143763,
+      "sequence_id": "520076B1",
+      "utr5_len": 50
+    },
+    {
+      "baseline_eternafold_sup": 325.910752,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 54.4924154025671,
+        "aup": 0.3933840318014565,
+        "energy_per_length": -0.35598249223991757,
+        "gc_fraction": 0.544924154025671
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5'/3') variants",
+      "length_nt": 857,
+      "measured_in_cell_hours": 4.01546286,
+      "measured_in_solution_hours": 1.73067,
+      "name": "TEV_Nluc_hHBA1.1",
+      "predicted_hours": 1.0707622046673366,
+      "sequence_id": "520079B1",
+      "utr5_len": 50
+    },
+    {
+      "baseline_eternafold_sup": 326.953196,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.79365079365079,
+        "aup": 0.4196723168195731,
+        "energy_per_length": -0.3254988090071098,
+        "gc_fraction": 0.5079365079365079
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 945,
+      "measured_in_cell_hours": 4.30361316,
+      "measured_in_solution_hours": 1.17357061,
+      "name": "TEV_CERT_hHBB_Nluc_hHBB",
+      "predicted_hours": 0.9435233759072863,
+      "sequence_id": "220029B1",
+      "utr5_len": 115
+    },
+    {
+      "baseline_eternafold_sup": 329.515859,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.616279069767444,
+        "aup": 0.378319781013259,
+        "energy_per_length": -0.3486185887063196,
+        "gc_fraction": 0.5261627906976745
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 1032,
+      "measured_in_cell_hours": 4.62835456,
+      "measured_in_solution_hours": 1.27263998,
+      "name": "TEV_P4_mActb_Nluc_hHBB",
+      "predicted_hours": 1.0561452544917067,
+      "sequence_id": "220024B1",
+      "utr5_len": 202
+    },
+    {
+      "baseline_eternafold_sup": 326.720703,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 49.27857935627081,
+        "aup": 0.41850437553517855,
+        "energy_per_length": -0.32078699584012554,
+        "gc_fraction": 0.49278579356270813
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 901,
+      "measured_in_cell_hours": 4.16070727,
+      "measured_in_solution_hours": 1.24204344,
+      "name": "TMV_Nluc_hHBB",
+      "predicted_hours": 0.9164938516876964,
+      "sequence_id": "620122B1",
+      "utr5_len": 71
+    },
+    {
+      "baseline_eternafold_sup": 327.889103,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 50.78299776286354,
+        "aup": 0.392337174668832,
+        "energy_per_length": -0.33646752956996295,
+        "gc_fraction": 0.5078299776286354
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 894,
+      "measured_in_cell_hours": 4.18800394,
+      "measured_in_solution_hours": 1.19336537,
+      "name": "TOP_hHBB_Nluc_hHBB",
+      "predicted_hours": 0.9943873004921566,
+      "sequence_id": "220028B1",
+      "utr5_len": 64
+    },
+    {
+      "baseline_eternafold_sup": 324.342843,
+      "cds_len": 621,
+      "constant_region_layout": 0,
+      "features": {
+        "GC": 52.51572327044025,
+        "aup": 0.39419509417287724,
+        "energy_per_length": -0.35266756261669613,
+        "gc_fraction": 0.5251572327044025
+      },
+      "features_outside_training_range": [],
+      "group": "UTR (5') variants",
+      "length_nt": 954,
+      "measured_in_cell_hours": 6.83810298,
+      "measured_in_solution_hours": 1.2231786,
+      "name": "Tubb2b_Nluc_hHBB",
+      "predicted_hours": 1.0346794672603221,
+      "sequence_id": "620092B1",
+      "utr5_len": 124
+    }
+  ],
+  "source": {
+    "archive_sha256": "849ed7b49198c5b97049fec8d3636deea8812db4dd45ce0bcc448297703511c2",
+    "doi": "10.1038/s41467-022-28776-w",
+    "not_redistributed": "Only the URL and both hashes are pinned, as for the RiboNN weights, the Rfam sources and the mRNAutilus checkpoint. The archive and table are not copied into this repository.",
+    "table_sha256": "be534d17d5ded3056d66ad9c0f554ac7eb885a0d6f2d2ca645f73ecb783b0f53"
+  },
+  "their_side": "not in this artifact; produced in the isolated mRNAutilus environment and merged by scripts/build_two_axis_comparison.py",
+  "what_this_cannot_establish": [
+    "Nothing about constructs nobody measured. Every record here is a real measurement from the source paper.",
+    "Nothing about this project's translation side. RiboNN is not run here. mRNAutilus's translation head is trained on Zheng et al. 2025, which is RiboNN's own training source, so a translation-side comparison between these two methods would be partly circular and is deliberately out of scope.",
+    "No resolution claim on their arbitrary scale, and no claim that either method resolves the narrow bin.",
+    "No claim about mRNAutilus's generator. Only its half-life regressor is exercised."
+  ]
+}

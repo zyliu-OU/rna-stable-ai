@@ -1,0 +1,1364 @@
+{
+  "built_utc": "2026-10-21T04:20:44.985051+00:00",
+  "counts": {
+    "dropped": {
+      "in_training_set": 69,
+      "missing_label": 42,
+      "missing_segment": 0,
+      "reconstruction_mismatch": 0
+    },
+    "records": 233,
+    "test_set": 122
+  },
+  "domain_test": {
+    "declared_expectation": "The protocol declared, before any number was seen, that a sound pair of methods would each win their own column. Whatever happened is reported as measured.",
+    "mrnautilus": {
+      "in_cell_is_home": true,
+      "spearman_away": 0.14493730596592055,
+      "spearman_home": 0.1395807620437401
+    },
+    "ours": {
+      "in_solution_is_home": true,
+      "spearman_away": 0.2208009358240175,
+      "spearman_home": 0.32001414310308934
+    },
+    "ours_better_in_its_own_domain": true,
+    "question": "Is each method better inside its own training domain than outside it?",
+    "theirs_better_in_its_own_domain": false
+  },
+  "gc_diagnostic": {
+    "gc_alone_vs_in_cell": 0.22527964579878718,
+    "gc_alone_vs_in_solution": 0.29790988555663184,
+    "ours_vs_transcript_gc": 0.7812057209560138,
+    "statement": "Gate v12 recorded that this project's objective collapses to transcript GC at r = +0.99 on the synthetic design pool. Here, on 122 real measured constructs, the same objective correlates with GC at +0.7812, so the collapse is a property of the objective and not an artifact of the design pool's composition."
+  },
+  "in_cell_column": {
+    "concordance": {
+      "1.00-1.10": {
+        "mrnautilus": 0.5169398907103825,
+        "ours": 0.4918032786885246,
+        "pairs": 1830
+      },
+      "1.10-1.25": {
+        "mrnautilus": 0.5227703984819735,
+        "ours": 0.5507590132827325,
+        "pairs": 2108
+      },
+      "1.25-1.50": {
+        "mrnautilus": 0.5537525354969574,
+        "ours": 0.6196754563894523,
+        "pairs": 1972
+      },
+      "1.50-2.00": {
+        "mrnautilus": 0.5916398713826366,
+        "ours": 0.6567524115755627,
+        "pairs": 1244
+      },
+      "above_2.00": {
+        "mrnautilus": 0.7268722466960352,
+        "ours": 0.5110132158590308,
+        "pairs": 227
+      }
+    },
+    "measured_axis": "in-cell",
+    "spearman": {
+      "free_eternafold_per_nucleotide": -0.1313094596871995,
+      "mrnautilus": 0.1395807620437401,
+      "ours": 0.2208009358240175,
+      "transcript_gc_alone": 0.22527964579878718
+    }
+  },
+  "in_solution_column": {
+    "concordance": {
+      "1.00-1.10": {
+        "mrnautilus": 0.5253535701966195,
+        "ours": 0.4877543980682994,
+        "pairs": 2899
+      },
+      "1.10-1.25": {
+        "mrnautilus": 0.533363802559415,
+        "ours": 0.5621572212065814,
+        "pairs": 2188
+      },
+      "1.25-1.50": {
+        "mrnautilus": 0.36262719703977797,
+        "ours": 0.6641998149861239,
+        "pairs": 1081
+      },
+      "1.50-2.00": {
+        "mrnautilus": 0.3684210526315789,
+        "ours": 0.75,
+        "pairs": 228
+      },
+      "above_2.00": {
+        "mrnautilus": 0.8812182741116751,
+        "ours": 0.966497461928934,
+        "pairs": 985
+      }
+    },
+    "measured_axis": "in-solution",
+    "spearman": {
+      "free_eternafold_per_nucleotide": 0.41903569150852055,
+      "mrnautilus": 0.14493730596592055,
+      "ours": 0.32001414310308934,
+      "transcript_gc_alone": 0.29790988555663184
+    }
+  },
+  "no_claim": [
+    "Nothing here is a new measurement. Every label is from the source paper.",
+    "No claim about either method's translation side. RiboNN is not run here, and mRNAutilus's translation head is trained on Zheng et al. 2025, which is RiboNN's own training source, so that comparison would be partly circular.",
+    "No claim that either method resolves the narrow bin; chance is 0.50.",
+    "No resolution claim on mRNAutilus's arbitrary output scale.",
+    "No claim about mRNAutilus's generator. Only its half-life regressor was run.",
+    "Neither the source archive nor mRNAutilus's weights are redistributed here."
+  ],
+  "our_run": "results/two_axis_comparison_runs/20261021T042044.996926Z",
+  "protocol": "configs/two_axis_comparison_v1_2026-10-20.json",
+  "protocol_sha256": "ad804b82c4db7995a61848410431e76b60e8a4ec5210e0d2e3728feec522282f",
+  "purpose": "Compare this project's stability objective against mRNAutilus's half-life head on the SAME designed constructs, scored against BOTH in-solution and in-cell measured half-life, so that each method is tested inside and outside its own training domain.",
+  "refitting_performed": "none",
+  "rows": [
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 891,
+      "measured_in_cell_hours": 8.26185582,
+      "measured_in_solution_hours": 1.19509165,
+      "mrnautilus_halflife_score": 0.16426923871040344,
+      "ours_predicted_hours": 1.0081014747810197,
+      "sequence_id": "620128B1",
+      "transcript_gc_fraction": 0.5207631874298541
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 894,
+      "measured_in_cell_hours": 8.43076837,
+      "measured_in_solution_hours": 1.25032637,
+      "mrnautilus_halflife_score": 0.16282814741134644,
+      "ours_predicted_hours": 0.9947478906968114,
+      "sequence_id": "620126B1",
+      "transcript_gc_fraction": 0.5223713646532439
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1075,
+      "measured_in_cell_hours": 4.94426045,
+      "measured_in_solution_hours": 1.57477975,
+      "mrnautilus_halflife_score": -0.007934777066111565,
+      "ours_predicted_hours": 1.030911887726945,
+      "sequence_id": "420064B1",
+      "transcript_gc_fraction": 0.5283720930232558
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1095,
+      "measured_in_cell_hours": 4.74472215,
+      "measured_in_solution_hours": 1.43632441,
+      "mrnautilus_halflife_score": 0.033148858696222305,
+      "ours_predicted_hours": 0.9866792173186842,
+      "sequence_id": "120018B1",
+      "transcript_gc_fraction": 0.4977168949771689
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1165,
+      "measured_in_cell_hours": 4.69584154,
+      "measured_in_solution_hours": 1.26438029,
+      "mrnautilus_halflife_score": 0.12147711217403412,
+      "ours_predicted_hours": 1.0200542405957629,
+      "sequence_id": "420067B1",
+      "transcript_gc_fraction": 0.5158798283261803
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1561,
+      "measured_in_cell_hours": 4.58445176,
+      "measured_in_solution_hours": 1.33591436,
+      "mrnautilus_halflife_score": 0.6026950478553772,
+      "ours_predicted_hours": 1.076123185575462,
+      "sequence_id": "520070B1",
+      "transcript_gc_fraction": 0.5342729019859065
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1292,
+      "measured_in_cell_hours": 4.56448757,
+      "measured_in_solution_hours": 1.30512351,
+      "mrnautilus_halflife_score": 0.3822276294231415,
+      "ours_predicted_hours": 0.97650087355353,
+      "sequence_id": "420054B1",
+      "transcript_gc_fraction": 0.4852941176470588
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1219,
+      "measured_in_cell_hours": 4.32566801,
+      "measured_in_solution_hours": 1.2341749,
+      "mrnautilus_halflife_score": 0.30180826783180237,
+      "ours_predicted_hours": 1.0276768360235036,
+      "sequence_id": "420061B1",
+      "transcript_gc_fraction": 0.5086136177194421
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1100,
+      "measured_in_cell_hours": 4.88878416,
+      "measured_in_solution_hours": 1.26554839,
+      "mrnautilus_halflife_score": 0.0552484430372715,
+      "ours_predicted_hours": 1.0000517043608919,
+      "sequence_id": "120019B1",
+      "transcript_gc_fraction": 0.5063636363636363
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1080,
+      "measured_in_cell_hours": 4.66065486,
+      "measured_in_solution_hours": 1.6371712,
+      "mrnautilus_halflife_score": -0.016247417777776718,
+      "ours_predicted_hours": 1.0527256307705974,
+      "sequence_id": "420065B1",
+      "transcript_gc_fraction": 0.5370370370370371
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1170,
+      "measured_in_cell_hours": 4.60028703,
+      "measured_in_solution_hours": 1.23460136,
+      "mrnautilus_halflife_score": 0.14127704501152039,
+      "ours_predicted_hours": 1.0313774799340985,
+      "sequence_id": "420068B1",
+      "transcript_gc_fraction": 0.523931623931624
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1297,
+      "measured_in_cell_hours": 4.44147301,
+      "measured_in_solution_hours": 1.32481246,
+      "mrnautilus_halflife_score": 0.31398633122444153,
+      "ours_predicted_hours": 0.9994006427779892,
+      "sequence_id": "420055B1",
+      "transcript_gc_fraction": 0.4926754047802621
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1566,
+      "measured_in_cell_hours": 4.40951054,
+      "measured_in_solution_hours": 1.39047692,
+      "mrnautilus_halflife_score": 0.5100194215774536,
+      "ours_predicted_hours": 1.083368462045507,
+      "sequence_id": "520071B1",
+      "transcript_gc_fraction": 0.5402298850574713
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1224,
+      "measured_in_cell_hours": 4.40389557,
+      "measured_in_solution_hours": 1.16749426,
+      "mrnautilus_halflife_score": 0.23755943775177002,
+      "ours_predicted_hours": 1.025504313156597,
+      "sequence_id": "420062B1",
+      "transcript_gc_fraction": 0.5163398692810458
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1095,
+      "measured_in_cell_hours": 5.25416196,
+      "measured_in_solution_hours": 1.18964998,
+      "mrnautilus_halflife_score": 0.033148858696222305,
+      "ours_predicted_hours": 0.9816926954746112,
+      "sequence_id": "120020B1",
+      "transcript_gc_fraction": 0.4977168949771689
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1165,
+      "measured_in_cell_hours": 5.08017788,
+      "measured_in_solution_hours": 1.32356278,
+      "mrnautilus_halflife_score": 0.11864759027957916,
+      "ours_predicted_hours": 1.0139859826185202,
+      "sequence_id": "420069B1",
+      "transcript_gc_fraction": 0.5158798283261803
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1075,
+      "measured_in_cell_hours": 4.86670914,
+      "measured_in_solution_hours": 1.53638368,
+      "mrnautilus_halflife_score": -0.0033127106726169586,
+      "ours_predicted_hours": 1.040669710600855,
+      "sequence_id": "420066B1",
+      "transcript_gc_fraction": 0.5283720930232558
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1292,
+      "measured_in_cell_hours": 4.67906076,
+      "measured_in_solution_hours": 1.32511892,
+      "mrnautilus_halflife_score": 0.3974098265171051,
+      "ours_predicted_hours": 0.9670429361959736,
+      "sequence_id": "420056B1",
+      "transcript_gc_fraction": 0.4852941176470588
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1219,
+      "measured_in_cell_hours": 4.62750852,
+      "measured_in_solution_hours": 1.30035885,
+      "mrnautilus_halflife_score": 0.33496996760368347,
+      "ours_predicted_hours": 1.0150551616180392,
+      "sequence_id": "420063B1",
+      "transcript_gc_fraction": 0.5086136177194421
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1561,
+      "measured_in_cell_hours": 4.12044172,
+      "measured_in_solution_hours": 1.50102685,
+      "mrnautilus_halflife_score": 0.5945484042167664,
+      "ours_predicted_hours": 1.0826113765085545,
+      "sequence_id": "520072B1",
+      "transcript_gc_fraction": 0.5342729019859065
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1071,
+      "measured_in_cell_hours": 6.1356344,
+      "measured_in_solution_hours": 1.26821354,
+      "mrnautilus_halflife_score": 0.5914040207862854,
+      "ours_predicted_hours": 0.9967393183679685,
+      "sequence_id": "720095B1",
+      "transcript_gc_fraction": 0.49859943977591037
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1023,
+      "measured_in_cell_hours": 7.12732586,
+      "measured_in_solution_hours": 1.2016719,
+      "mrnautilus_halflife_score": 0.5065144300460815,
+      "ours_predicted_hours": 1.009204781452875,
+      "sequence_id": "720105B1",
+      "transcript_gc_fraction": 0.5063538611925709
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1083,
+      "measured_in_cell_hours": 5.40638868,
+      "measured_in_solution_hours": 1.26206202,
+      "mrnautilus_halflife_score": 0.39945027232170105,
+      "ours_predicted_hours": 0.9768823819323418,
+      "sequence_id": "720096B1",
+      "transcript_gc_fraction": 0.4986149584487535
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1083,
+      "measured_in_cell_hours": 5.42423586,
+      "measured_in_solution_hours": 1.40324273,
+      "mrnautilus_halflife_score": 0.5287848711013794,
+      "ours_predicted_hours": 0.9874001279300819,
+      "sequence_id": "720097B1",
+      "transcript_gc_fraction": 0.4986149584487535
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1054,
+      "measured_in_cell_hours": 5.43955832,
+      "measured_in_solution_hours": 1.30493432,
+      "mrnautilus_halflife_score": 0.48740044236183167,
+      "ours_predicted_hours": 0.960142696651769,
+      "sequence_id": "720098B1",
+      "transcript_gc_fraction": 0.49335863377609107
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1079,
+      "measured_in_cell_hours": 4.59542831,
+      "measured_in_solution_hours": 1.22686346,
+      "mrnautilus_halflife_score": 0.44031670689582825,
+      "ours_predicted_hours": 1.006766739514998,
+      "sequence_id": "720099B1",
+      "transcript_gc_fraction": 0.505097312326228
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 916,
+      "measured_in_cell_hours": 5.43396258,
+      "measured_in_solution_hours": 1.22059601,
+      "mrnautilus_halflife_score": 0.4063948690891266,
+      "ours_predicted_hours": 0.9551716295106583,
+      "sequence_id": "720106B1",
+      "transcript_gc_fraction": 0.4978165938864629
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1035,
+      "measured_in_cell_hours": 5.46590217,
+      "measured_in_solution_hours": 1.15947933,
+      "mrnautilus_halflife_score": 0.4089067280292511,
+      "ours_predicted_hours": 0.9869904958974727,
+      "sequence_id": "720100B1",
+      "transcript_gc_fraction": 0.5014492753623189
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 982,
+      "measured_in_cell_hours": 5.7347387,
+      "measured_in_solution_hours": 1.32517719,
+      "mrnautilus_halflife_score": 0.461826354265213,
+      "ours_predicted_hours": 0.9566369969163302,
+      "sequence_id": "720104B1",
+      "transcript_gc_fraction": 0.4938900203665988
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1055,
+      "measured_in_cell_hours": 4.85687542,
+      "measured_in_solution_hours": 1.23903726,
+      "mrnautilus_halflife_score": 0.4184859097003937,
+      "ours_predicted_hours": 0.9749282444218503,
+      "sequence_id": "720101B1",
+      "transcript_gc_fraction": 0.4947867298578199
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1018,
+      "measured_in_cell_hours": 5.09821436,
+      "measured_in_solution_hours": 1.32201533,
+      "mrnautilus_halflife_score": 0.4226851165294647,
+      "ours_predicted_hours": 0.9572919515885341,
+      "sequence_id": "720103B1",
+      "transcript_gc_fraction": 0.49214145383104124
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1063,
+      "measured_in_cell_hours": 5.6100368,
+      "measured_in_solution_hours": 1.19124881,
+      "mrnautilus_halflife_score": 0.41556516289711,
+      "ours_predicted_hours": 0.9850324872597567,
+      "sequence_id": "720102B1",
+      "transcript_gc_fraction": 0.49576669802445905
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1133,
+      "measured_in_cell_hours": 5.68725646,
+      "measured_in_solution_hours": 1.21751297,
+      "mrnautilus_halflife_score": 0.32207009196281433,
+      "ours_predicted_hours": 0.9863320714853624,
+      "sequence_id": "720107B1",
+      "transcript_gc_fraction": 0.4969108561341571
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1058,
+      "measured_in_cell_hours": 7.57524773,
+      "measured_in_solution_hours": 1.33275493,
+      "mrnautilus_halflife_score": 0.5157463550567627,
+      "ours_predicted_hours": 1.0089650646260573,
+      "sequence_id": "720108B1",
+      "transcript_gc_fraction": 0.505671077504726
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 869,
+      "measured_in_cell_hours": 7.48869309,
+      "measured_in_solution_hours": 1.21371395,
+      "mrnautilus_halflife_score": 0.574303925037384,
+      "ours_predicted_hours": 1.0334692433762123,
+      "sequence_id": "320052B1",
+      "transcript_gc_fraction": 0.522439585730725
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 866,
+      "measured_in_cell_hours": 7.65512514,
+      "measured_in_solution_hours": 1.33494182,
+      "mrnautilus_halflife_score": 0.28547340631484985,
+      "ours_predicted_hours": 1.0296804799534098,
+      "sequence_id": "620127B1",
+      "transcript_gc_fraction": 0.5254041570438799
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1246,
+      "measured_in_cell_hours": 4.66263555,
+      "measured_in_solution_hours": 1.35575198,
+      "mrnautilus_halflife_score": 0.3201775550842285,
+      "ours_predicted_hours": 1.0142593932391946,
+      "sequence_id": "620125B1",
+      "transcript_gc_fraction": 0.5112359550561798
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 929,
+      "measured_in_cell_hours": 4.30892487,
+      "measured_in_solution_hours": 1.31047054,
+      "mrnautilus_halflife_score": 0.14260509610176086,
+      "ours_predicted_hours": 1.0207201192887885,
+      "sequence_id": "620123B1",
+      "transcript_gc_fraction": 0.5026910656620022
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 914,
+      "measured_in_cell_hours": 5.18085752,
+      "measured_in_solution_hours": 1.23893539,
+      "mrnautilus_halflife_score": 0.3376868963241577,
+      "ours_predicted_hours": 1.0342013072497105,
+      "sequence_id": "120003B1",
+      "transcript_gc_fraction": 0.537199124726477
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 967,
+      "measured_in_cell_hours": 4.53079108,
+      "measured_in_solution_hours": 1.16371521,
+      "mrnautilus_halflife_score": 0.2789422869682312,
+      "ours_predicted_hours": 1.0574169012725223,
+      "sequence_id": "120009B1",
+      "transcript_gc_fraction": 0.5305067218200621
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1231,
+      "measured_in_cell_hours": 10.0138301,
+      "measured_in_solution_hours": 1.37169676,
+      "mrnautilus_halflife_score": 0.3215768337249756,
+      "ours_predicted_hours": 1.0796038787619981,
+      "sequence_id": "320046B1",
+      "transcript_gc_fraction": 0.5312753858651503
+    },
+    {
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1215,
+      "measured_in_cell_hours": 5.87159541,
+      "measured_in_solution_hours": 1.7322227,
+      "mrnautilus_halflife_score": 0.3664306700229645,
+      "ours_predicted_hours": 1.2095721869634164,
+      "sequence_id": "130002D1",
+      "transcript_gc_fraction": 0.6
+    },
+    {
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1215,
+      "measured_in_cell_hours": 6.36022697,
+      "measured_in_solution_hours": 1.43607742,
+      "mrnautilus_halflife_score": 0.3352799415588379,
+      "ours_predicted_hours": 1.2223395576965308,
+      "sequence_id": "130001D1",
+      "transcript_gc_fraction": 0.5925925925925926
+    },
+    {
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1215,
+      "measured_in_cell_hours": 6.03356055,
+      "measured_in_solution_hours": 1.45431561,
+      "mrnautilus_halflife_score": 0.46162348985671997,
+      "ours_predicted_hours": 1.1002212947778847,
+      "sequence_id": "130004D1",
+      "transcript_gc_fraction": 0.5695473251028806
+    },
+    {
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1215,
+      "measured_in_cell_hours": 4.86741154,
+      "measured_in_solution_hours": 0.91117135,
+      "mrnautilus_halflife_score": 0.37511998414993286,
+      "ours_predicted_hours": 1.084029884658895,
+      "sequence_id": "130003D1",
+      "transcript_gc_fraction": 0.568724279835391
+    },
+    {
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1215,
+      "measured_in_cell_hours": 5.55866795,
+      "measured_in_solution_hours": 1.24867085,
+      "mrnautilus_halflife_score": 0.27959322929382324,
+      "ours_predicted_hours": 1.2750391559276828,
+      "sequence_id": "130012D1",
+      "transcript_gc_fraction": 0.5679012345679012
+    },
+    {
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1215,
+      "measured_in_cell_hours": 6.17018601,
+      "measured_in_solution_hours": 1.47010817,
+      "mrnautilus_halflife_score": 0.2580064535140991,
+      "ours_predicted_hours": 1.2910970662779795,
+      "sequence_id": "130010D1",
+      "transcript_gc_fraction": 0.5703703703703704
+    },
+    {
+      "group": "CDS (MEV) variants",
+      "length_nt": 507,
+      "measured_in_cell_hours": 7.29003343,
+      "measured_in_solution_hours": 3.27070383,
+      "mrnautilus_halflife_score": 0.45409107208251953,
+      "ours_predicted_hours": 1.2685738515519929,
+      "sequence_id": "130013D1",
+      "transcript_gc_fraction": 0.5562130177514792
+    },
+    {
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1155,
+      "measured_in_cell_hours": 6.48385764,
+      "measured_in_solution_hours": 1.13282111,
+      "mrnautilus_halflife_score": 0.24269601702690125,
+      "ours_predicted_hours": 1.2891392057940614,
+      "sequence_id": "110008T1",
+      "transcript_gc_fraction": 0.548051948051948
+    },
+    {
+      "group": "CDS (MEV) variants",
+      "length_nt": 507,
+      "measured_in_cell_hours": 7.95103099,
+      "measured_in_solution_hours": 4.36040349,
+      "mrnautilus_halflife_score": 0.4811546206474304,
+      "ours_predicted_hours": 1.2761092164326064,
+      "sequence_id": "130008D1",
+      "transcript_gc_fraction": 0.5502958579881657
+    },
+    {
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1155,
+      "measured_in_cell_hours": 4.39152962,
+      "measured_in_solution_hours": 1.09139505,
+      "mrnautilus_halflife_score": 0.25931867957115173,
+      "ours_predicted_hours": 1.2000965762095428,
+      "sequence_id": "110010T1",
+      "transcript_gc_fraction": 0.5333333333333333
+    },
+    {
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1155,
+      "measured_in_cell_hours": 7.88305455,
+      "measured_in_solution_hours": 1.43697354,
+      "mrnautilus_halflife_score": 0.13741686940193176,
+      "ours_predicted_hours": 1.2885301849868103,
+      "sequence_id": "110007T1",
+      "transcript_gc_fraction": 0.5142857142857142
+    },
+    {
+      "group": "CDS (MEV) variants",
+      "length_nt": 507,
+      "measured_in_cell_hours": 7.21760719,
+      "measured_in_solution_hours": 3.36520054,
+      "mrnautilus_halflife_score": 0.5362836122512817,
+      "ours_predicted_hours": 1.2776856389312041,
+      "sequence_id": "130009D1",
+      "transcript_gc_fraction": 0.5601577909270217
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 857,
+      "measured_in_cell_hours": 6.60454634,
+      "measured_in_solution_hours": 1.43630953,
+      "mrnautilus_halflife_score": -0.07587172091007233,
+      "ours_predicted_hours": 1.0627630695392627,
+      "sequence_id": "120012B1",
+      "transcript_gc_fraction": 0.5495915985997666
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 1017,
+      "measured_in_cell_hours": 6.23531231,
+      "measured_in_solution_hours": 1.30369977,
+      "mrnautilus_halflife_score": 0.11512792110443115,
+      "ours_predicted_hours": 0.9618811231256987,
+      "sequence_id": "420057B1",
+      "transcript_gc_fraction": 0.49262536873156343
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 809,
+      "measured_in_cell_hours": 6.14045599,
+      "measured_in_solution_hours": 1.3009275,
+      "mrnautilus_halflife_score": 0.15825548768043518,
+      "ours_predicted_hours": 0.9730582191995394,
+      "sequence_id": "320041B1",
+      "transcript_gc_fraction": 0.5080346106304079
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 1200,
+      "measured_in_cell_hours": 5.90743437,
+      "measured_in_solution_hours": 1.41696311,
+      "mrnautilus_halflife_score": 0.10456790775060654,
+      "ours_predicted_hours": 1.0116090395810398,
+      "sequence_id": "620124B1",
+      "transcript_gc_fraction": 0.5166666666666667
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 1200,
+      "measured_in_cell_hours": 5.56707181,
+      "measured_in_solution_hours": 1.27809588,
+      "mrnautilus_halflife_score": 0.09290335327386856,
+      "ours_predicted_hours": 1.0156642310416362,
+      "sequence_id": "320042B1",
+      "transcript_gc_fraction": 0.5166666666666667
+    },
+    {
+      "group": "hHBB Nluc",
+      "length_nt": 883,
+      "measured_in_cell_hours": 5.50614952,
+      "measured_in_solution_hours": 1.12373393,
+      "mrnautilus_halflife_score": -0.07488039135932922,
+      "ours_predicted_hours": 0.9898881487327008,
+      "sequence_id": "320053B1",
+      "transcript_gc_fraction": 0.5096262740656852
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 1349,
+      "measured_in_cell_hours": 5.43973327,
+      "measured_in_solution_hours": 1.51071043,
+      "mrnautilus_halflife_score": 0.5888214707374573,
+      "ours_predicted_hours": 0.9181770609151925,
+      "sequence_id": "420059B1",
+      "transcript_gc_fraction": 0.48332097850259453
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 864,
+      "measured_in_cell_hours": 5.36401981,
+      "measured_in_solution_hours": 1.25671681,
+      "mrnautilus_halflife_score": -0.019927997142076492,
+      "ours_predicted_hours": 1.0677985226951774,
+      "sequence_id": "320051B1",
+      "transcript_gc_fraction": 0.5532407407407407
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 813,
+      "measured_in_cell_hours": 5.30070172,
+      "measured_in_solution_hours": 1.31754487,
+      "mrnautilus_halflife_score": 0.11665132641792297,
+      "ours_predicted_hours": 1.0563455383008817,
+      "sequence_id": "320050B1",
+      "transcript_gc_fraction": 0.5448954489544895
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 817,
+      "measured_in_cell_hours": 5.26471025,
+      "measured_in_solution_hours": 1.16564088,
+      "mrnautilus_halflife_score": 0.15329313278198242,
+      "ours_predicted_hours": 1.0295612849707474,
+      "sequence_id": "320044B1",
+      "transcript_gc_fraction": 0.5214198286413708
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 1431,
+      "measured_in_cell_hours": 5.07754152,
+      "measured_in_solution_hours": 1.30177285,
+      "mrnautilus_halflife_score": 0.672680139541626,
+      "ours_predicted_hours": 0.9082126888886664,
+      "sequence_id": "420058B1",
+      "transcript_gc_fraction": 0.469601677148847
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 1206,
+      "measured_in_cell_hours": 5.03784082,
+      "measured_in_solution_hours": 1.53927352,
+      "mrnautilus_halflife_score": 0.2658712863922119,
+      "ours_predicted_hours": 1.012241182115749,
+      "sequence_id": "320045B1",
+      "transcript_gc_fraction": 0.5058043117744611
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 880,
+      "measured_in_cell_hours": 4.87383131,
+      "measured_in_solution_hours": 1.37709263,
+      "mrnautilus_halflife_score": 0.016139555722475052,
+      "ours_predicted_hours": 1.0568547704161848,
+      "sequence_id": "320043B1",
+      "transcript_gc_fraction": 0.5227272727272727
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 972,
+      "measured_in_cell_hours": 4.81949047,
+      "measured_in_solution_hours": 1.20987098,
+      "mrnautilus_halflife_score": -0.10553881525993347,
+      "ours_predicted_hours": 1.072335037826877,
+      "sequence_id": "320040B1",
+      "transcript_gc_fraction": 0.5205761316872428
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 1077,
+      "measured_in_cell_hours": 4.6521864,
+      "measured_in_solution_hours": 1.29123133,
+      "mrnautilus_halflife_score": 0.08422932773828506,
+      "ours_predicted_hours": 0.9688563222472883,
+      "sequence_id": "220031B1",
+      "transcript_gc_fraction": 0.49303621169916434
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 1030,
+      "measured_in_cell_hours": 4.57468418,
+      "measured_in_solution_hours": 1.18045188,
+      "mrnautilus_halflife_score": 0.1913779377937317,
+      "ours_predicted_hours": 0.9343614360225525,
+      "sequence_id": "320039B1",
+      "transcript_gc_fraction": 0.470873786407767
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 912,
+      "measured_in_cell_hours": 4.5103814,
+      "measured_in_solution_hours": 1.51411273,
+      "mrnautilus_halflife_score": 0.12501861155033112,
+      "ours_predicted_hours": 1.0345556543877672,
+      "sequence_id": "620121B1",
+      "transcript_gc_fraction": 0.5087719298245614
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 1588,
+      "measured_in_cell_hours": 4.39967376,
+      "measured_in_solution_hours": 1.39332788,
+      "mrnautilus_halflife_score": 0.7427023649215698,
+      "ours_predicted_hours": 0.773143121074791,
+      "sequence_id": "420060B1",
+      "transcript_gc_fraction": 0.42128463476070527
+    },
+    {
+      "group": "UTR (3') variants",
+      "length_nt": 1343,
+      "measured_in_cell_hours": 3.99805887,
+      "measured_in_solution_hours": 1.75245603,
+      "mrnautilus_halflife_score": 0.3879707455635071,
+      "ours_predicted_hours": 1.1030569109116073,
+      "sequence_id": "120017B1",
+      "transcript_gc_fraction": 0.5487714072970961
+    },
+    {
+      "group": "CDS (MEV) variants",
+      "length_nt": 504,
+      "measured_in_cell_hours": 4.9603196,
+      "measured_in_solution_hours": 3.50375161,
+      "mrnautilus_halflife_score": 0.4936750531196594,
+      "ours_predicted_hours": 1.2640266784887972,
+      "sequence_id": "110002T1",
+      "transcript_gc_fraction": 0.5317460317460317
+    },
+    {
+      "group": "hHBB NlucP",
+      "length_nt": 901,
+      "measured_in_cell_hours": 7.16847284,
+      "measured_in_solution_hours": 1.15425072,
+      "mrnautilus_halflife_score": 0.1940564662218094,
+      "ours_predicted_hours": 1.027829043331164,
+      "sequence_id": "820117B1",
+      "transcript_gc_fraction": 0.516093229744728
+    },
+    {
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1155,
+      "measured_in_cell_hours": 9.55804187,
+      "measured_in_solution_hours": 0.99024704,
+      "mrnautilus_halflife_score": 0.3490634560585022,
+      "ours_predicted_hours": 1.1711359705625455,
+      "sequence_id": "110009T1",
+      "transcript_gc_fraction": 0.49523809523809526
+    },
+    {
+      "group": "CDS (MEV) variants",
+      "length_nt": 504,
+      "measured_in_cell_hours": 7.29321528,
+      "measured_in_solution_hours": 3.19215248,
+      "mrnautilus_halflife_score": 0.6334842443466187,
+      "ours_predicted_hours": 1.3133282142823097,
+      "sequence_id": "110004T1",
+      "transcript_gc_fraction": 0.5515873015873016
+    },
+    {
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1155,
+      "measured_in_cell_hours": 4.97905017,
+      "measured_in_solution_hours": 0.89571721,
+      "mrnautilus_halflife_score": 0.3382781445980072,
+      "ours_predicted_hours": 1.037042157330942,
+      "sequence_id": "110006T1",
+      "transcript_gc_fraction": 0.49264069264069266
+    },
+    {
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1215,
+      "measured_in_cell_hours": 11.3871462,
+      "measured_in_solution_hours": 0.86498944,
+      "mrnautilus_halflife_score": 0.9001978635787964,
+      "ours_predicted_hours": 0.8361352439172576,
+      "sequence_id": "130006D1",
+      "transcript_gc_fraction": 0.4477366255144033
+    },
+    {
+      "group": "CDS (eGFP) variants",
+      "length_nt": 1215,
+      "measured_in_cell_hours": 7.18792931,
+      "measured_in_solution_hours": 0.95142605,
+      "mrnautilus_halflife_score": 0.567013144493103,
+      "ours_predicted_hours": 0.8633791686565848,
+      "sequence_id": "130005D1",
+      "transcript_gc_fraction": 0.4576131687242798
+    },
+    {
+      "group": "CDS (MEV) variants",
+      "length_nt": 504,
+      "measured_in_cell_hours": 5.6173562,
+      "measured_in_solution_hours": 3.14915168,
+      "mrnautilus_halflife_score": 0.49232250452041626,
+      "ours_predicted_hours": 1.2663560604793593,
+      "sequence_id": "110005T1",
+      "transcript_gc_fraction": 0.5515873015873016
+    },
+    {
+      "group": "CDS (MEV) variants",
+      "length_nt": 504,
+      "measured_in_cell_hours": 3.61039509,
+      "measured_in_solution_hours": 2.88551629,
+      "mrnautilus_halflife_score": 0.5897858738899231,
+      "ours_predicted_hours": 1.1139256582614754,
+      "sequence_id": "1100011T1",
+      "transcript_gc_fraction": 0.5158730158730159
+    },
+    {
+      "group": "CDS (MEV) variants",
+      "length_nt": 504,
+      "measured_in_cell_hours": 5.61321891,
+      "measured_in_solution_hours": 3.63119113,
+      "mrnautilus_halflife_score": 0.476910799741745,
+      "ours_predicted_hours": 1.2723118662698147,
+      "sequence_id": "110003T1",
+      "transcript_gc_fraction": 0.5456349206349206
+    },
+    {
+      "group": "CDS (MEV) variants",
+      "length_nt": 504,
+      "measured_in_cell_hours": 6.09244797,
+      "measured_in_solution_hours": 3.53866785,
+      "mrnautilus_halflife_score": 0.49974900484085083,
+      "ours_predicted_hours": 1.265564749162384,
+      "sequence_id": "110001T1",
+      "transcript_gc_fraction": 0.5396825396825397
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 941,
+      "measured_in_cell_hours": 6.55043642,
+      "measured_in_solution_hours": 1.208186,
+      "mrnautilus_halflife_score": 0.1905192881822586,
+      "ours_predicted_hours": 1.0253883649595898,
+      "sequence_id": "120005B1",
+      "transcript_gc_fraction": 0.5313496280552603
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 941,
+      "measured_in_cell_hours": 6.1797462,
+      "measured_in_solution_hours": 1.29288594,
+      "mrnautilus_halflife_score": 0.4362078905105591,
+      "ours_predicted_hours": 1.0671565593053896,
+      "sequence_id": "120007B1",
+      "transcript_gc_fraction": 0.5313496280552603
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1156,
+      "measured_in_cell_hours": 3.85639747,
+      "measured_in_solution_hours": 1.05123442,
+      "mrnautilus_halflife_score": 0.4003284275531769,
+      "ours_predicted_hours": 1.0257047703662854,
+      "sequence_id": "220030B1",
+      "transcript_gc_fraction": 0.5164359861591695
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 922,
+      "measured_in_cell_hours": 4.37982892,
+      "measured_in_solution_hours": 1.15541861,
+      "mrnautilus_halflife_score": 0.1663367748260498,
+      "ours_predicted_hours": 0.9976905544432304,
+      "sequence_id": "220026B1",
+      "transcript_gc_fraction": 0.5130151843817787
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 869,
+      "measured_in_cell_hours": 4.01677392,
+      "measured_in_solution_hours": 1.105126,
+      "mrnautilus_halflife_score": 0.4846334457397461,
+      "ours_predicted_hours": 1.0109401513450744,
+      "sequence_id": "120001B1",
+      "transcript_gc_fraction": 0.5178365937859609
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1024,
+      "measured_in_cell_hours": 4.54189762,
+      "measured_in_solution_hours": 1.16367809,
+      "mrnautilus_halflife_score": 0.3902023732662201,
+      "ours_predicted_hours": 1.0585443861813388,
+      "sequence_id": "220027B1",
+      "transcript_gc_fraction": 0.5361328125
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 955,
+      "measured_in_cell_hours": 7.08594789,
+      "measured_in_solution_hours": 1.17989327,
+      "mrnautilus_halflife_score": 0.35033175349235535,
+      "ours_predicted_hours": 1.053748921801999,
+      "sequence_id": "120004B1",
+      "transcript_gc_fraction": 0.5403141361256545
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 982,
+      "measured_in_cell_hours": 6.74805026,
+      "measured_in_solution_hours": 1.17314753,
+      "mrnautilus_halflife_score": 0.006278553977608681,
+      "ours_predicted_hours": 1.0504372311958303,
+      "sequence_id": "120006B1",
+      "transcript_gc_fraction": 0.5346232179226069
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1052,
+      "measured_in_cell_hours": 6.60784658,
+      "measured_in_solution_hours": 1.27753759,
+      "mrnautilus_halflife_score": 0.06300868839025497,
+      "ours_predicted_hours": 1.0910394485118462,
+      "sequence_id": "520078B1",
+      "transcript_gc_fraction": 0.5522813688212928
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 962,
+      "measured_in_cell_hours": 6.45912003,
+      "measured_in_solution_hours": 1.739251,
+      "mrnautilus_halflife_score": 0.02599460259079933,
+      "ours_predicted_hours": 1.1149379508338153,
+      "sequence_id": "520081B1",
+      "transcript_gc_fraction": 0.5696465696465697
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1179,
+      "measured_in_cell_hours": 5.29402489,
+      "measured_in_solution_hours": 1.25468085,
+      "mrnautilus_halflife_score": 0.3175324499607086,
+      "ours_predicted_hours": 1.0093283619405127,
+      "sequence_id": "520075B1",
+      "transcript_gc_fraction": 0.5148430873621713
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1448,
+      "measured_in_cell_hours": 5.26867828,
+      "measured_in_solution_hours": 1.50734305,
+      "mrnautilus_halflife_score": 0.3975013196468353,
+      "ours_predicted_hours": 1.1345066057858304,
+      "sequence_id": "620088B1",
+      "transcript_gc_fraction": 0.5621546961325967
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1106,
+      "measured_in_cell_hours": 5.07096115,
+      "measured_in_solution_hours": 1.16921351,
+      "mrnautilus_halflife_score": 0.15584531426429749,
+      "ours_predicted_hours": 1.0836248007026636,
+      "sequence_id": "520084B1",
+      "transcript_gc_fraction": 0.5424954792043399
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 982,
+      "measured_in_cell_hours": 5.08897304,
+      "measured_in_solution_hours": 1.14400545,
+      "mrnautilus_halflife_score": 0.003493309486657381,
+      "ours_predicted_hours": 1.1142635897385882,
+      "sequence_id": "120008B1",
+      "transcript_gc_fraction": 0.5346232179226069
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1032,
+      "measured_in_cell_hours": 5.10948706,
+      "measured_in_solution_hours": 1.04705487,
+      "mrnautilus_halflife_score": 0.20641155540943146,
+      "ours_predicted_hours": 1.0137077101304612,
+      "sequence_id": "220025B1",
+      "transcript_gc_fraction": 0.5261627906976745
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 907,
+      "measured_in_cell_hours": 3.92698191,
+      "measured_in_solution_hours": 1.3002442,
+      "mrnautilus_halflife_score": 0.13183364272117615,
+      "ours_predicted_hours": 0.9744392859753278,
+      "sequence_id": "320049B1",
+      "transcript_gc_fraction": 0.5049614112458655
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 903,
+      "measured_in_cell_hours": 4.32806131,
+      "measured_in_solution_hours": 1.25174436,
+      "mrnautilus_halflife_score": 0.1356804072856903,
+      "ours_predicted_hours": 0.9737961809451778,
+      "sequence_id": "320048B1",
+      "transcript_gc_fraction": 0.5071982281284607
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1251,
+      "measured_in_cell_hours": 4.5783086,
+      "measured_in_solution_hours": 1.22226192,
+      "mrnautilus_halflife_score": 0.4826793372631073,
+      "ours_predicted_hours": 0.8180787279496575,
+      "sequence_id": "620129B1",
+      "transcript_gc_fraction": 0.478017585931255
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 943,
+      "measured_in_cell_hours": 3.98840574,
+      "measured_in_solution_hours": 1.34109413,
+      "mrnautilus_halflife_score": 0.2502986788749695,
+      "ours_predicted_hours": 0.964561596398579,
+      "sequence_id": "620130B1",
+      "transcript_gc_fraction": 0.4984093319194062
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 917,
+      "measured_in_cell_hours": 5.17387861,
+      "measured_in_solution_hours": 1.38096384,
+      "mrnautilus_halflife_score": 0.20112013816833496,
+      "ours_predicted_hours": 1.0197530394356686,
+      "sequence_id": "620090B1",
+      "transcript_gc_fraction": 0.52453653217012
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 911,
+      "measured_in_cell_hours": 7.02228377,
+      "measured_in_solution_hours": 1.29894304,
+      "mrnautilus_halflife_score": 0.5768291354179382,
+      "ours_predicted_hours": 1.0384151489161568,
+      "sequence_id": "620091B1",
+      "transcript_gc_fraction": 0.5268935236004391
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 874,
+      "measured_in_cell_hours": 6.66024288,
+      "measured_in_solution_hours": 1.30811364,
+      "mrnautilus_halflife_score": 0.3807887136936188,
+      "ours_predicted_hours": 1.0221375023859087,
+      "sequence_id": "620089B1",
+      "transcript_gc_fraction": 0.5183066361556065
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 879,
+      "measured_in_cell_hours": 3.57406377,
+      "measured_in_solution_hours": 1.43601792,
+      "mrnautilus_halflife_score": 0.30587512254714966,
+      "ours_predicted_hours": 1.0079257002364104,
+      "sequence_id": "320047B1",
+      "transcript_gc_fraction": 0.5119453924914675
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 873,
+      "measured_in_cell_hours": 7.00222269,
+      "measured_in_solution_hours": 1.53357932,
+      "mrnautilus_halflife_score": -0.09579086303710938,
+      "ours_predicted_hours": 1.042541795988938,
+      "sequence_id": "520080B1",
+      "transcript_gc_fraction": 0.5509736540664376
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 963,
+      "measured_in_cell_hours": 6.72125109,
+      "measured_in_solution_hours": 1.24074504,
+      "mrnautilus_halflife_score": -0.06245184689760208,
+      "ours_predicted_hours": 1.0288096740167965,
+      "sequence_id": "520077B1",
+      "transcript_gc_fraction": 0.5337487019730011
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1090,
+      "measured_in_cell_hours": 5.52745851,
+      "measured_in_solution_hours": 1.31501777,
+      "mrnautilus_halflife_score": 0.28918930888175964,
+      "ours_predicted_hours": 0.9561026572125827,
+      "sequence_id": "520074B1",
+      "transcript_gc_fraction": 0.4954128440366973
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1017,
+      "measured_in_cell_hours": 5.2269867,
+      "measured_in_solution_hours": 1.11027722,
+      "mrnautilus_halflife_score": 0.07468993961811066,
+      "ours_predicted_hours": 1.0314884753378668,
+      "sequence_id": "520083B1",
+      "transcript_gc_fraction": 0.5240904621435595
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1359,
+      "measured_in_cell_hours": 5.06003121,
+      "measured_in_solution_hours": 1.39468759,
+      "mrnautilus_halflife_score": 0.3182781934738159,
+      "ours_predicted_hours": 1.09666299185557,
+      "sequence_id": "620087B1",
+      "transcript_gc_fraction": 0.5496688741721855
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1343,
+      "measured_in_cell_hours": 4.48316084,
+      "measured_in_solution_hours": 1.3525694,
+      "mrnautilus_halflife_score": 0.38711974024772644,
+      "ours_predicted_hours": 1.1093240307125165,
+      "sequence_id": "520085B1",
+      "transcript_gc_fraction": 0.5457930007446017
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1001,
+      "measured_in_cell_hours": 4.12081911,
+      "measured_in_solution_hours": 1.22717406,
+      "mrnautilus_halflife_score": 0.024453293532133102,
+      "ours_predicted_hours": 1.0170006513634469,
+      "sequence_id": "520082B1",
+      "transcript_gc_fraction": 0.5184815184815185
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 880,
+      "measured_in_cell_hours": 4.11639981,
+      "measured_in_solution_hours": 1.07451185,
+      "mrnautilus_halflife_score": -0.025220345705747604,
+      "ours_predicted_hours": 0.9770701780480586,
+      "sequence_id": "220022B1",
+      "transcript_gc_fraction": 0.5056818181818182
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 1074,
+      "measured_in_cell_hours": 4.05135011,
+      "measured_in_solution_hours": 1.31374664,
+      "mrnautilus_halflife_score": 0.2717139422893524,
+      "ours_predicted_hours": 0.9430901506007541,
+      "sequence_id": "520073B1",
+      "transcript_gc_fraction": 0.4897579143389199
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 947,
+      "measured_in_cell_hours": 4.02607182,
+      "measured_in_solution_hours": 1.26223899,
+      "mrnautilus_halflife_score": -0.04136355221271515,
+      "ours_predicted_hours": 1.0325037606143763,
+      "sequence_id": "520076B1",
+      "transcript_gc_fraction": 0.5279831045406547
+    },
+    {
+      "group": "UTR (5'/3') variants",
+      "length_nt": 857,
+      "measured_in_cell_hours": 4.01546286,
+      "measured_in_solution_hours": 1.73067,
+      "mrnautilus_halflife_score": -0.10530413687229156,
+      "ours_predicted_hours": 1.0707622046673366,
+      "sequence_id": "520079B1",
+      "transcript_gc_fraction": 0.544924154025671
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 945,
+      "measured_in_cell_hours": 4.30361316,
+      "measured_in_solution_hours": 1.17357061,
+      "mrnautilus_halflife_score": 0.08961129188537598,
+      "ours_predicted_hours": 0.9435233759072863,
+      "sequence_id": "220029B1",
+      "transcript_gc_fraction": 0.5079365079365079
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 1032,
+      "measured_in_cell_hours": 4.62835456,
+      "measured_in_solution_hours": 1.27263998,
+      "mrnautilus_halflife_score": 0.18998129665851593,
+      "ours_predicted_hours": 1.0561452544917067,
+      "sequence_id": "220024B1",
+      "transcript_gc_fraction": 0.5261627906976745
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 901,
+      "measured_in_cell_hours": 4.16070727,
+      "measured_in_solution_hours": 1.24204344,
+      "mrnautilus_halflife_score": 0.3830569386482239,
+      "ours_predicted_hours": 0.9164938516876964,
+      "sequence_id": "620122B1",
+      "transcript_gc_fraction": 0.49278579356270813
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 894,
+      "measured_in_cell_hours": 4.18800394,
+      "measured_in_solution_hours": 1.19336537,
+      "mrnautilus_halflife_score": 0.14396001398563385,
+      "ours_predicted_hours": 0.9943873004921566,
+      "sequence_id": "220028B1",
+      "transcript_gc_fraction": 0.5078299776286354
+    },
+    {
+      "group": "UTR (5') variants",
+      "length_nt": 954,
+      "measured_in_cell_hours": 6.83810298,
+      "measured_in_solution_hours": 1.2231786,
+      "mrnautilus_halflife_score": 0.20976164937019348,
+      "ours_predicted_hours": 1.0346794672603221,
+      "sequence_id": "620092B1",
+      "transcript_gc_fraction": 0.5251572327044025
+    }
+  ],
+  "source": {
+    "archive_sha256": "849ed7b49198c5b97049fec8d3636deea8812db4dd45ce0bcc448297703511c2",
+    "doi": "10.1038/s41467-022-28776-w",
+    "not_redistributed": "Only the URL and both hashes are pinned, as for the RiboNN weights, the Rfam sources and the mRNAutilus checkpoint. The archive and table are not copied into this repository.",
+    "table_sha256": "be534d17d5ded3056d66ad9c0f554ac7eb885a0d6f2d2ca645f73ecb783b0f53"
+  },
+  "the_free_baseline": {
+    "in_cell": -0.1313094596871995,
+    "in_solution": 0.41903569150852055,
+    "ours_in_solution": 0.32001414310308934,
+    "statement": "A free per-nucleotide EternaFold score, which requires no training and no calibration, is carried in both columns because the protocol declared it. On in-solution it reaches +0.4190 against this project's calibration at +0.3200. On in-cell it has the wrong sign. The calibration therefore does not beat free folding on its own home axis, which is the same finding the v10 ablation recorded and this test does nothing to relieve."
+  },
+  "the_two_measured_axes_barely_agree": {
+    "consequence_for_this_comparison": "Winning one column implies nothing about the other. The earlier one-column comparison could not have been repaired by more in-solution data, which is what gate v13 recorded as a prohibition.",
+    "spearman_between_them": 0.05452694955075821,
+    "statement": "In-solution and in-cell half-life of the SAME 122 constructs rank at Spearman +0.0545. They are very nearly unrelated orderings. This is the single most important number in this artifact: it means no predictor can rank both axes well, the two columns are separate tasks rather than two views of 'stability', and any method claiming to predict 'mRNA stability' must say which one it means."
+  },
+  "what_this_changes": [
+    "The axis question is settled: in-solution and in-cell stability are nearly unrelated on identical constructs, so 'stability' is not one target.",
+    "The earlier head-to-head is now correctly bounded. It measured one column of a two-column problem, and the column it measured is the one this project trained on.",
+    "The free-baseline problem is worse than previously recorded, not better: on in-solution, free EternaFold now ranks ABOVE the frozen calibration."
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "protocol": "two_axis_comparison_v1",
+  "date": "2026-10-20",
+  "purpose": "Compare this project's stability objective against mRNAutilus's half-life head on the SAME designed constructs, scored against BOTH in-solution and in-cell measured half-life, so that each method is tested inside and outside its own training domain.",
+  "why_this_supersedes_the_earlier_comparison": {
+    "the_flaw_being_fixed": "mrnautilus_comparison_v1 tested only in-solution half-life. That is this project's training domain and NOT mRNAutilus's, so this project won a test the other side could not have won. Gate v13 records that asymmetry as a prohibition rather than a result.",
+    "what_this_protocol_adds": "The in-cell column. mRNAutilus's half-life head is trained on in-cell decay, so in-cell is ITS home domain and is OUT of domain for this project's in-solution calibration. Filling both cells on identical sequences turns a one-sided test into a symmetric 2x2.",
+    "why_rnadecaycafe_was_rejected": "An endogenous-transcript in-cell atlas (RNAdecayCafe, 17412 human genes across 11 cell lines) was the first candidate. It was rejected because mRNAutilus's half-life head is trained on Agarwal and Kelley 2022, a compendium of 39 human samples covering 13921 human genes, so leakage would be at the GENE level: a new measurement of a gene's half-life correlates with the old measurement the model trained on, and date-filtering the source datasets does not remove that. Designed constructs carry no such gene identity and are leakage-free for their head by construction."
+  },
+  "declared_before_any_number_was_seen": [
+    "Rank statistics only. Their head emits an arbitrary normalised scale; absolute values are never compared to hours.",
+    "The primary question is NOT which method scores higher. It is whether each method is better inside its own training domain than outside it, which is the claim an honest comparison can support.",
+    "The expected pattern if both methods are sound: this project wins the in-solution column, mRNAutilus wins the in-cell column, and each is weaker in the other's column. Any other pattern is informative and must be reported as measured.",
+    "The free per-nucleotide EternaFold baseline is carried in BOTH columns. This project's calibration ties it on in-solution (+0.3248 vs +0.3268), so if the calibration cannot beat it on in-cell either, the calibration adds nothing on either axis and that must be stated.",
+    "Falsification of this project's side: if the frozen calibration ranks in-cell half-life as well as or better than it ranks in-solution half-life, then its apparent in-solution competence is not domain-specific and the in-solution framing of the whole objective is wrong.",
+    "No refitting. The frozen one-component PLS coefficients are applied exactly as recorded. No coefficient is tuned on any in-cell label.",
+    "The narrow-bin resolution question is carried over unchanged: chance is 0.50 and the 1.00-1.10 bin is the regime the design space occupies."
+  ],
+  "test_set": {
+    "source": "Leppek K, Byeon GW, Kladwang W, et al. Combinatorial optimization of mRNA structure, stability, and translation for RNA-based therapeutics. Nat Commun 13, 1536 (2022). Supplementary Data 1, 'Attributes for pooled 233 sequences', inside Supplementary file MOESM4 (zip).",
+    "doi": "10.1038/s41467-022-28776-w",
+    "archive_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-022-28776-w/MediaObjects/41467_2022_28776_MOESM4_ESM.zip",
+    "archive_sha256": "849ed7b49198c5b97049fec8d3636deea8812db4dd45ce0bcc448297703511c2",
+    "table_sha256": "be534d17d5ded3056d66ad9c0f554ac7eb885a0d6f2d2ca645f73ecb783b0f53",
+    "not_redistributed": "Only the URL and both hashes are pinned, as for the RiboNN weights, the Rfam sources and the mRNAutilus checkpoint. The archive and table are not copied into this repository.",
+    "records_total": 233,
+    "records_with_both_half_lives": 191,
+    "records_in_this_projects_training_set": 69,
+    "declared_test_set_size": 122,
+    "exclusion_rule": "A record is excluded if its In-solution half-life matches, to four decimal places, any of the 69 values in the frozen calibration's train_features.csv. This is the same identification by which the training subset was found inside Supplementary Fig S8a.",
+    "why_this_set_is_right": [
+      "Both labels exist for the SAME construct, so neither axis differs in cell line, assay harmonisation, lab or sequence domain.",
+      "Declared Sequence 5 UTR, Sequence CDS and Sequence 3 UTR columns, so their three-segment tokeniser needs no ORF-finding step. The earlier comparison required one and it was a declared substitute.",
+      "Lengths 504 to 1588 nt, entirely inside this project's declared sub-3000 nt scope, so no length limitation applies.",
+      "Designed constructs, so they are absent from the endogenous gene compendium their half-life head was trained on."
+    ]
+  },
+  "segment_layout": {
+    "construct_order": "T7 promoter, then GGG, then 5 UTR, CDS, Constant1, Barcode, Constant2, 3 UTR, Constant3",
+    "declared_offsets_for_their_tokeniser": "five_utr_ind = 3 + len(Sequence 5 UTR), counting the transcribed GGG that begins the RNA and excluding the T7 promoter, which is not transcribed. cds_length = len(Sequence CDS). Everything 3-prime of the CDS, including Constant1, Barcode, Constant2, the 3 UTR and Constant3, is given as the third segment, because that is physically what it is.",
+    "verification_required": "The reconstruction GGG + 5 UTR + CDS + Constant1 + Barcode + Constant2 + 3 UTR + Constant3 must equal the RNA sequence column exactly, per record, or the record is dropped and the count reported. No offset is assumed without that check."
+  },
+  "this_projects_scoring": {
+    "path": "rnastable.ensemble_worker (ViennaRNA, Turner 2004, 37C, dangles 2, max_bp_span -1, min_loop_size 3, compute_bpp 1) then the frozen strand_rnafold_calibration_v1 'without_alo' arm",
+    "features": ["energy_per_length", "GC", "aup"],
+    "calibration_run": "results/strand_rnafold_calibration_runs/20261019T174049.053308Z",
+    "refitting": "none"
+  },
+  "their_scoring": {
+    "repo": "https://huggingface.co/atombio/mrnautilus",
+    "checkpoint_sha256": "07e1b534008df579c58d65d5df6ec6c4dcf944d149133330049cbc054c1c4e29",
+    "head": "halflife",
+    "head_training_data": "Agarwal and Kelley 2022, transcriptome-wide human half-life data across 16 publications, nearly 13000 transcripts across 39 human samples (their paper, Regressor Training)",
+    "environment": "isolated venv outside this repository; the three verified-equivalent API adaptations recorded in mrnautilus_comparison_v1 apply unchanged"
+  },
+  "metrics": {
+    "primary": "Spearman correlation against each measured half-life axis",
+    "secondary": "pairwise concordance binned by measured fold difference, bins 1.00-1.10, 1.10-1.25, 1.25-1.50, 1.50-2.00, above 2.00; chance 0.50",
+    "diagnostic": "correlation of each method's prediction with transcript GC fraction, to test whether the GC collapse recorded in gate v12 reproduces on measured constructs rather than only on the synthetic design pool",
+    "also_recorded": "the correlation between the two measured axes themselves, which bounds how well any single predictor could do on both"
+  },
+  "what_this_cannot_establish": [
+    "Nothing about constructs nobody measured. Every record here is a real measurement from the source paper.",
+    "Nothing about this project's translation side. RiboNN is not run here. mRNAutilus's translation head is trained on Zheng et al. 2025, which is RiboNN's own training source, so a translation-side comparison between these two methods would be partly circular and is deliberately out of scope.",
+    "No resolution claim on their arbitrary scale, and no claim that either method resolves the narrow bin.",
+    "No claim about mRNAutilus's generator. Only its half-life regressor is exercised."
+  ]
+}
