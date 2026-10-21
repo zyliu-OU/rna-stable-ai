@@ -383,7 +383,7 @@ Clone the real remote into the session scratchpad, copy the changed files in, co
 | Item | Value |
 |---|---|
 | Commit before this stretch | `d2cf078` Record the publication commit hash in handoff 2026-10-21 V2 |
-| Commits published with this handoff | `EXPR_COMMIT` (protocol, script, tests, run artifact, gate v17, assay v5, diagram, README, this handoff), then the commit recording its hash |
+| Commits published with this handoff | `d1c89f2` (protocol, script, tests, run artifact, gate v17, assay v5, diagram, README, this handoff), then the commit recording its hash |
 | README picture | `diagram_10182026.png`, sha256 `baa831ce16df27ed44a41c2a3b481455a213b328122227b9b2a3820dda47cff1`, **byte-unchanged**, still referenced |
 | Workflow diagram | **regenerated** to 2026-10-21 state; geometry verified, appearance not visually inspected |
 | Gates | v5–v16 frozen; **v17 current** |
