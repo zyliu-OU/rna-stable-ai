@@ -364,11 +364,13 @@ The working directory has **no commits** and `origin` is the placeholder
 | Item | Value |
 |---|---|
 | Commit before this stretch | `488cb1b` Record the comparison commit hash in handoff 2026-10-20 V8 |
-| Commits published with this handoff | see §10.1 |
+| Commits published with this handoff | `5bc4bf2` (content + this handoff), then the commit recording its hash |
 | README picture | `diagram_10182026.png`, sha256 `baa831ce16df27ed44a41c2a3b481455a213b328122227b9b2a3820dda47cff1`, **byte-unchanged**; `workflow_10202026.svg` unchanged |
 | Gates | v5–v13 frozen; **v14 current**. Opens no switch, reopens no requirement. |
 | Diagram | **not regenerated.** Nothing was added to the production path. |
 
 ### 10.1 Publication record
 
-Recorded by the commit immediately after, per the established pattern.
+`5bc4bf2` — Test both stability axes on the same constructs: they are nearly unrelated, and the
+objective loses to free folding. The hash is recorded by the commit immediately after it, per the
+established pattern.
