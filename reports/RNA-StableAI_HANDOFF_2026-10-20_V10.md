@@ -343,11 +343,13 @@ sha256sum "$PUB/diagram_10182026.png"   # must stay baa831ce16df27ed…
 | Item | Value |
 |---|---|
 | Commit before this stretch | `e0303d7` Record the two-axis comparison commit hash in handoff 2026-10-20 V9 |
-| Commits published with this handoff | see §9.1 |
+| Commits published with this handoff | `0dabc3c` (content + this handoff), then the commit recording its hash |
 | README picture | `diagram_10182026.png`, sha256 `baa831ce16df27ed44a41c2a3b481455a213b328122227b9b2a3820dda47cff1`, **byte-unchanged**; `workflow_10202026.svg` unchanged |
 | Gates | v5–v14 frozen; **v15 current**. Opens no switch, reopens no requirement, withdraws one prohibition as false. |
 | Diagram | **not regenerated.** Nothing was added to the production path. |
 
 ### 9.1 Publication record
 
-Recorded by the commit immediately after, per the established pattern.
+`0dabc3c` — Correct a published baseline, kill the engine-swap hypothesis, and measure that
+refitting makes the objective worse. The hash is recorded by the commit immediately after it,
+per the established pattern.
