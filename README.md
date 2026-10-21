@@ -41,17 +41,25 @@ active-scope validation. Method-specific lower limits still apply. See the
 Updated October 21, 2026. **Active work: validate and improve Stage 2 below 3,000 nt before Stage 3.**
 Independent biological validation remains a separate, unresolved release gate.
 
-**The design target is in-cell mRNA stability — half-life and decay — not in-cell
-expression.** This supersedes the 2026-10-19 amendment to transfected-cell expression and
-every earlier statement of the Stage 3 target in this file. Translation remains a separate,
-incommensurable Pareto axis and is never folded into the stability objective; the measurement
-that forced that separation is in the 2026-10-21 section below.
+**The Step 3 goal is protein expression.** It has two active arms as of 2026-10-21 —
+**cell-free (in-vitro translation) expression**, reinstated, and **transfected-cell
+expression** — recorded in [gate v16](configs/stage2_to_stage3_gate_v16_2026-10-21.json) and
+[assay definition v4](configs/assay_definition_v4_2026-10-21.json).
+
+**In-cell mRNA stability (half-life / decay) is the axis currently being fitted and
+screened**, because it is the only expression-relevant quantity in the available data with
+enough measured labels: 122–203 records carry half-lives against **6** constructs with
+measured protein output. It is the modeled axis, **not the goal, and not a validated proxy for
+the goal** — on those 6 constructs pseudouridine moved in-solution half-life the same
+direction for all six while protein output spanned 13-fold **and changed sign**. Translation
+remains a separate, incommensurable Pareto axis and is never folded into the stability
+objective; the measurement that forced that separation is in the 2026-10-21 section below.
 
 | Step | Work | Progress |
 |---:|---|---|
 | 1 | Reproducible foundations | Implemented: bounded native tools, request journals, input hashes, exposure tracking, and replay audits. |
 | **2** | **Structure validation and component integration** | **Current priority: independent validation below 3,000 nt and the RNAfold + STRAND + RiboNN + BoTorch architecture.** Fixed-input folding, STRAND reference fitting, RiboNN pretrained inference and toy optimizer replay are implemented. RNAfold-to-STRAND compatibility and independent biological validation remain open; Stage 3 is queued. Historical custom-model studies remain controls; defaults are unchanged. |
-| 3 | RNA sequence optimization for in-cell mRNA stability | Queued after Stage 2: protein-preserving design for **in-cell mRNA stability (half-life / decay)**, with synonymous ORF and permitted UTR edits, and time-matched RNA abundance as the measured outcome. Translation stays a separate Pareto axis. No stability or expression benefit is verified. |
+| 3 | RNA sequence optimization for protein expression | Queued after Stage 2: protein-preserving design for **protein expression**, in two arms — cell-free (IVTT, reinstated 2026-10-21) and transfected-cell — with synonymous ORF and permitted UTR edits. **Currently modeled axis: in-cell mRNA stability (half-life / decay)**, the only expression-relevant quantity with enough measured labels; translation stays a separate Pareto axis. The cell-free arm is declared but **not defined**, and no sequence may be scored for it. No stability or expression benefit is verified. |
 | 4 | Independent structure validation | Open release gate. Three prospective panels and a six-family raw-contact feasibility study evaluated; broader coverage/provenance remain limited. |
 | 5 | Length evidence and deferred 3,000+ nt work | Independent validation below 3,000 nt is needed, especially at 2,000–2,999 nt. New work at 3,000 nt or above is deferred; historical benchmarks remain preserved. Current full-pair training is capped at 1,024 nt. |
 | 6 | Measured stability and function | Public-assay pilot complete. Controlled mutation effects and retained function remain pending. |
@@ -68,21 +76,25 @@ that forced that separation is in the 2026-10-21 section below.
 | BoTorch | Feasible candidate selection | Discrete toy-objective budget, caching and resume checks passed; biological candidate optimization remains queued. |
 
 The diagram above shows implementation state, including rejected and gated paths.
-The Stage 3 target was amended on 2026-10-19 to transfected-cell expression, replacing the
-earlier cell-free target, and amended again on 2026-10-20 to **in-cell mRNA stability
-(half-life / decay)**, which is the current target. The architecture is unchanged by that
-amendment: RNAfold + STRAND + RiboNN + BoTorch. No candidate benefit or complete
-biological pipeline is established. See the [integration guide](docs/four_component_integration_2026-10-18.md)
+The Stage 3 target was amended on 2026-10-19 from cell-free to transfected-cell expression,
+because the lab works in transfected cells. On **2026-10-21 the cell-free (IVTT) arm was
+reinstated alongside it**, so expression now has two active arms; that reversal does not
+withdraw the lab-practice reason the transfected-cell arm exists, and the cell-free arm is
+declared without being defined. The architecture is unchanged: RNAfold + STRAND + RiboNN +
+BoTorch. No candidate benefit or complete biological pipeline is established. See the [integration guide](docs/four_component_integration_2026-10-18.md)
 and [publication evidence](reports/component_integration_publication_2026-10-18/README.md).
 The public snapshot contains code, portable tests and concise summaries; full
 local run artifacts, datasets, model weights and installed environments are not
 bundled. Original third-party [source](docs/third_party/RiboNN_LICENSE.txt) and
 [weight-license terms](docs/third_party/RiboNN_MODEL_WEIGHTS_LICENSE.txt) are retained.
 
-### 2026-10-21: the target axis is fixed as in-cell stability, a published number is corrected, and translation is measured to be unusable as a stability feature
+### 2026-10-21: the target set is extended, a published number is corrected, and translation is measured to be unusable as a stability feature
 
-Four things happened across this stretch, and two of them are adverse to earlier claims in
-this file. Full detail is in handoffs
+Expression remains the Step 3 goal and the cell-free arm is reinstated alongside the
+transfected-cell arm ([gate v16](configs/stage2_to_stage3_gate_v16_2026-10-21.json),
+[assay definition v4](configs/assay_definition_v4_2026-10-21.json)); in-cell mRNA stability is
+named explicitly as the modeled axis rather than the goal. Four measured findings sit behind
+that, and two of them are adverse to earlier claims in this file. Full detail is in handoffs
 [V9](reports/RNA-StableAI_HANDOFF_2026-10-20_V9.md),
 [V10](reports/RNA-StableAI_HANDOFF_2026-10-20_V10.md) and
 [V11](reports/RNA-StableAI_HANDOFF_2026-10-20_V11.md).
@@ -182,11 +194,16 @@ therefore stays a separate Pareto axis — which is what the architecture alread
 the **first measured evidence that keeping the two objectives incommensurable was correct**
 rather than merely cautious.
 
-**Gate state:** v5–v15 are frozen and **v15 remains current. Gate v16 has not been written**,
-so the three prohibitions implied above — do not wire RiboNN into the stability objective, do
-not claim any screened feature is adopted, do not claim the screen improved resolution — are
-recorded here and in V11 but are not yet in the gate chain. No combined two-feature model has
-been fitted, and the screen's runs carry no tests of their own.
+**Gate state:** v5–v15 are frozen and
+**[v16](configs/stage2_to_stage3_gate_v16_2026-10-21.json) is current.** It withdraws no
+prohibition, moves no switch, reopens no requirement, and leaves Stage 2 at six of six. It
+adds five prohibitions: the three V11 specified and left unwritten — do not wire RiboNN into
+the stability objective, do not claim any screened feature is adopted, do not claim the screen
+improved resolution — plus two that follow from extending the target set: no candidate
+ordering transfers across systems (cell-free to cells, or solution to cell), and in-cell
+stability is not a validated proxy for expression. The new `cell_free_scoring_enabled` switch
+is **closed**. Still open: no combined two-feature model has been fitted, and the screen's
+runs carry no tests of their own.
 
 ### 2026-10-20: the design domain is widened — the threshold clears, and the objective turns out to be a GC meter
 
@@ -654,20 +671,24 @@ continuation commands are in handoffs
 [V4](reports/RNA-StableAI_HANDOFF_2026-10-19_V4.md), with concise run evidence and a
 [manifest](reports/stage2_and_strand_calibration_publication_2026-10-19/MANIFEST.json).
 
-### Step 3 goal and plan: in-cell mRNA stability
+### Step 3 goal and plan: protein expression efficiency
 
-The Step 3 goal is improving **measured in-cell mRNA stability** — half-life and decay — while
-retaining the intended protein sequence and required RNA features. Development will remain
-within the active 1–2,999-nt range. This is a future optimization goal; current structure and
-stability proxies establish neither a stability nor an expression benefit.
+The Step 3 goal is improving **measured protein expression efficiency** from RNA sequences
+while retaining the intended protein sequence and required RNA features. It has two active
+arms: **cell-free (in-vitro translation) expression**, reinstated 2026-10-21, and
+**transfected-cell expression**. Development will remain within the active 1–2,999-nt range.
+This is a future optimization goal; current structure and stability proxies establish no
+expression benefit.
 
-*Target history, so the steps below are read correctly: the target was cell-free stability,
-amended 2026-10-19 to transfected-cell expression, and amended 2026-10-20 to in-cell mRNA
-stability. The numbered plan was written for the expression target and is retained for its
-process — prespecification, held-out evaluation, separated outcomes — with protein output now
-a secondary observation rather than the objective.*
+*How the modeled axis relates to this goal: in-cell mRNA stability is what is currently being
+fitted and screened, because expression has only 6 measured constructs in the available data.
+Stability is a means, not the goal, and this project has measured that it is not a reliable
+one — see the pseudouridine result below, where stability moved uniformly and expression
+changed sign. The cell-free arm has no assay parameters yet; its open questions are listed in
+[assay definition v4](configs/assay_definition_v4_2026-10-21.json), and no sequence may be
+scored for it until they are answered.*
 
-1. Define the target cell system, editable regions, protein and RNA
+1. Define each target system, editable regions, protein and RNA
    constraints, baseline sequences, and measurements before designing variants.
 2. Generate valid sequence variants, including synonymous coding changes and UTR
    changes only when the design permits them. Compare simple baselines with

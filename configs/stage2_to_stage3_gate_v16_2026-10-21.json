@@ -1,0 +1,128 @@
+{
+    "schema_version": 1,
+    "name": "stage2_to_stage3_gate_v16",
+    "stage": "stage3_workflow_construction_before_measurement",
+    "effective_date": "2026-10-21",
+    "architecture": "LinearFold / ViennaRNA -> STRAND + RiboNN + BoTorch",
+    "supersedes": {
+        "chain": "v16 supersedes v15, which superseded v14 through v2 and configs/stage2_to_stage3_gate_2026-10-18.json; all remain frozen",
+        "file": "configs/stage2_to_stage3_gate_v15_2026-10-20.json",
+        "sha256": "eb0b06808093f1c9c89efb374c2c261660f695c02f1eb153ce88c82a3cd755fa",
+        "status": "frozen and unedited"
+    },
+    "assay_definition": "configs/assay_definition_v4_2026-10-21.json",
+    "amendment_record": {
+        "authorized_by": "user, 2026-10-21: 'wait, for development, plan, we still want expression.' and, on the cell-free question, 'Yes - bring it back as an active target'",
+        "what_changed": "The target set is extended and the modeled axis is named explicitly. Three prohibitions are added, carried over from handoff 2026-10-20 V11, which this project left unwritten when that session ended early. No switch moves, no requirement is reopened, no prohibition is withdrawn, and requirements_satisfied stays at 6.",
+        "why_v16_was_pending": "V11 specified this gate's content and recorded that the writing script failed with KeyError 'split', because the preserved-split screen artifact predates the 'split' field added for the stratified run. The gate is written here by hand from V11 sections 1 to 3; no screen artifact was re-read and no number was recomputed.",
+        "prior_amendments": [
+            "v2 stage3_target amended to transfected_cell_expression",
+            "v3 accepted the 2000-2999 nt band as a documented limitation",
+            "v4 amended requirement 4 to the relied-upon native controls",
+            "v5 reviewed the gate and closed Stage 2 at six of six",
+            "v6 opened new_sequence_scoring_enabled and expression_candidate_design_enabled",
+            "v7 purged the retired model and all data at or above 3000 nt",
+            "v8 recorded the first external validation and prohibited presenting a predicted ordering of modified constructs as the expected measured ordering",
+            "v9 recorded that the objective has no resolving power at the design space's scale",
+            "v10 left two options open",
+            "v11 took option 1, reframing selection as a coarse filter plus diversity",
+            "v12 took option 2, widening the design domain to UTRs plus codons",
+            "v13 recorded the independent model comparison",
+            "v14 recorded the two-axis comparison and the then-believed free-folding loss",
+            "v15 corrected v14's defective baseline and withdrew one prohibition as factually wrong",
+            "v16 extends the target set, names the modeled axis, and adds three prohibitions from V11"
+        ]
+    },
+    "stage3_target": {
+        "goal": "protein_expression",
+        "arms": [
+            "cell_free_ivtt_expression",
+            "transfected_cell_expression"
+        ],
+        "currently_modeled_axis": "in_cell_mrna_stability",
+        "prior_value_in_v2_through_v15": "transfected_cell_expression",
+        "what_this_changes": "v2 amended the target from cell-free to transfected cells because the user's lab works in transfected cells. v16 reinstates the cell-free arm ALONGSIDE the transfected-cell arm; it does not remove the transfected-cell arm and does not withdraw the lab-practice reason that arm exists.",
+        "what_this_does_not_change": "The goal was never in-cell mRNA stability. v2 through v15 all recorded transfected_cell_expression, and a README edit made earlier on 2026-10-21 that restated the GOAL as in-cell stability was out of step with this chain, not the reverse. In-cell mRNA stability is the axis currently being fitted and screened, because it is the only expression-relevant quantity in the available data with enough measured labels.",
+        "label_availability_basis": "122 to 203 records carry measured half-lives; 6 constructs carry measured protein output. Expression is not currently trainable on this data."
+    },
+    "cell_free_arm_status": {
+        "declared": true,
+        "defined": false,
+        "scoring_permitted": false,
+        "blocking_inputs": "configs/assay_definition_v4_2026-10-21.json, cell_free_arm.blocking_inputs",
+        "rule": "The arm is a declared target with no parameters. No sequence may be scored for it, no candidate may be designed for it, and no transfer from it to the transfected-cell arm may be assumed."
+    },
+    "prohibitions_added_here": [
+        {
+            "id": "v16_1_ribonn_not_a_stability_feature",
+            "prohibition": "Measured ribosome load, and any RiboNN output, MUST NOT be wired into the stability objective, used as a stability feature, or presented as predicting in-cell mRNA stability.",
+            "basis": "Measured ribosome load against in-cell half-life is -0.3286 over the 122-record set, which beats the GC bar, but the sign REVERSES by design family: +0.4916 on 78 CDS (Nluc) variants and -0.5551 on 49 UTR (5') variants. The aggregate was the 5' UTR families outvoting the rest. On the family-balanced split the ceiling collapses to -0.1018 train and +0.0879 held out.",
+            "interpretation": "Translation and stability appear positively coupled when the coding sequence varies and negatively coupled when the 5' UTR varies. A pipeline that edits both regions cannot use one signed coupling for both.",
+            "what_is_still_permitted": "RiboNN remains a SEPARATE and incommensurable Pareto axis, which is what the architecture already does. This is the first measured evidence that the separation was correct rather than merely cautious.",
+            "source": "reports/RNA-StableAI_HANDOFF_2026-10-20_V11.md section 3.3"
+        },
+        {
+            "id": "v16_2_no_screened_feature_is_adopted",
+            "prohibition": "No feature from the in-cell feature screen MUST be presented as adopted, validated, or part of the production path. This includes utr5_frac_C and cds_energy_per_nt, the two best performers.",
+            "basis": "The screen was univariate by design, because gate v15 measured that this label-set size supports about one feature. 37 features were screened on 105 training records and 14 were promoted, so several would clear the bar by chance; only the held-out column counts. Nothing was fitted or adopted.",
+            "outstanding_caveats": [
+                "cds_length is a length ruler and was not discounted",
+                "utr5_frac_C has no mechanistic explanation and may proxy something else",
+                "no combined two-feature model has been fitted"
+            ],
+            "source": "reports/RNA-StableAI_HANDOFF_2026-10-20_V11.md section 3.2"
+        },
+        {
+            "id": "v16_3_resolution_is_unchanged",
+            "prohibition": "The in-cell feature screen MUST NOT be presented as having improved the objective's resolving power. The v11 coarse-filter-plus-diversity framing stands unchanged.",
+            "basis": "All five features that cleared the held-out bar sit between 0.500 and 0.523 in the 1.00-1.10 bin against chance 0.50. Only the Spearman improved.",
+            "source": "reports/RNA-StableAI_HANDOFF_2026-10-20_V11.md section 3.2"
+        },
+        {
+            "id": "v16_4_no_cross_system_transfer",
+            "prohibition": "A candidate ordering obtained in one system MUST NOT be presented as the expected ordering in another: not cell-free to transfected cells, and not in-solution to in-cell.",
+            "basis": "The two MEASURED stability axes in the source data rank at only +0.0545 (results/two_axis_comparison_runs/20261021T042044.996926Z, measured_axes.spearman_between_the_two_measured_axes). Solution and cell disagree even about stability, which is simpler than expression. Transfer between cell-free and transfected cells has not been measured in this project at all.",
+            "source": "handoffs V9 and V10; added here because v16 reinstates the cell-free arm"
+        },
+        {
+            "id": "v16_5_stability_is_not_a_validated_expression_proxy",
+            "prohibition": "In-cell mRNA stability MUST NOT be presented as a validated proxy for protein expression, and a predicted stability gain must not be reported as an expected expression gain.",
+            "basis": "On the 6 constructs measured both ways, pseudouridine moved in-solution half-life in the SAME direction for all 6, while protein output spanned 13-fold AND CHANGED SIGN, from 0.234x to 3.309x. Protein output is translation times stability and that design cannot separate them. Six constructs support no significance claim and none is made.",
+            "why_it_matters_here": "v16 names expression as the goal while the modeled axis is stability. That gap must be stated wherever the modeled axis is reported, or the goal statement will be read as a claim about it.",
+            "source": "README 2026-10-20 pseudouridine section; configs/pseudouridine_effect_check_v1_2026-10-20.json"
+        }
+    ],
+    "prohibition_withdrawn_here": null,
+    "new_prohibition_added_here": "Five added, none withdrawn. Three are V11's, written here for the first time. Two follow from extending the target set: no cross-system transfer, and stability is not a validated expression proxy.",
+    "requirements_before_stage3": [
+        "Frozen independent sequence_and_family_clan_separated_validation_within_scope",
+        "Reported_accuracy_and_failures_by_length_band_and_family_against_native_controls",
+        "Resolve_sparse_2000_2999_nt_coverage_before_claiming_the_full_length_range",
+        "Demonstrate_credible_structure_accuracy_from_the_relied_upon_native_controls_with_explicit_review_of_baseline_gaps",
+        "Pass_constraint_decoder_resource_and_replay_checks_on_the_relied_upon_native_path",
+        "Document_remaining_limitations_before_expression_candidate_design"
+    ],
+    "requirements_satisfied": 6,
+    "requirements_satisfied_basis_unchanged_from_v5": true,
+    "switches_unchanged_from_v6": {
+        "expression_benefit_established": false,
+        "expression_candidate_design_enabled": true,
+        "independent_biological_validation": false,
+        "model_defaults_changed": false,
+        "new_sequence_scoring_enabled": true,
+        "stability_score_calibrated_to_the_assay": false,
+        "stage3_development_started": true,
+        "stage3_ready": true
+    },
+    "switch_added_here": {
+        "cell_free_scoring_enabled": false,
+        "why": "The cell-free arm is declared but undefined, so it is opened as an explicit closed switch rather than left unrepresented."
+    },
+    "no_claim_permitted": [
+        "Extending the target set satisfies no Stage 2 requirement; 6 of 6 remain satisfied on the v5 basis and nothing is reopened.",
+        "Naming expression as the goal establishes no expression benefit. None has been measured in this project.",
+        "Reinstating the cell-free arm establishes nothing about it and permits no scoring for it.",
+        "No screened in-cell feature is adopted or validated.",
+        "The calibration remains not independently validated, and a free single column, GC content (CDS) at +0.3651, still beats it on its home axis."
+    ]
+}
