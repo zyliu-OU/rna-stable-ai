@@ -38,14 +38,20 @@ active-scope validation. Method-specific lower limits still apply. See the
 
 ## Development plan
 
-Updated October 18, 2026. **Active work: validate and improve Stage 2 below 3,000 nt before Stage 3.**
+Updated October 21, 2026. **Active work: validate and improve Stage 2 below 3,000 nt before Stage 3.**
 Independent biological validation remains a separate, unresolved release gate.
+
+**The design target is in-cell mRNA stability — half-life and decay — not in-cell
+expression.** This supersedes the 2026-10-19 amendment to transfected-cell expression and
+every earlier statement of the Stage 3 target in this file. Translation remains a separate,
+incommensurable Pareto axis and is never folded into the stability objective; the measurement
+that forced that separation is in the 2026-10-21 section below.
 
 | Step | Work | Progress |
 |---:|---|---|
 | 1 | Reproducible foundations | Implemented: bounded native tools, request journals, input hashes, exposure tracking, and replay audits. |
 | **2** | **Structure validation and component integration** | **Current priority: independent validation below 3,000 nt and the RNAfold + STRAND + RiboNN + BoTorch architecture.** Fixed-input folding, STRAND reference fitting, RiboNN pretrained inference and toy optimizer replay are implemented. RNAfold-to-STRAND compatibility and independent biological validation remain open; Stage 3 is queued. Historical custom-model studies remain controls; defaults are unchanged. |
-| 3 | RNA sequence optimization for stability and protein expression | Queued after Stage 2: protein-preserving design for **transfected-cell expression**, with synonymous-only ORF edits, measured protein output and time-matched RNA abundance. Expression benefits remain unverified. |
+| 3 | RNA sequence optimization for in-cell mRNA stability | Queued after Stage 2: protein-preserving design for **in-cell mRNA stability (half-life / decay)**, with synonymous ORF and permitted UTR edits, and time-matched RNA abundance as the measured outcome. Translation stays a separate Pareto axis. No stability or expression benefit is verified. |
 | 4 | Independent structure validation | Open release gate. Three prospective panels and a six-family raw-contact feasibility study evaluated; broader coverage/provenance remain limited. |
 | 5 | Length evidence and deferred 3,000+ nt work | Independent validation below 3,000 nt is needed, especially at 2,000–2,999 nt. New work at 3,000 nt or above is deferred; historical benchmarks remain preserved. Current full-pair training is capped at 1,024 nt. |
 | 6 | Measured stability and function | Public-assay pilot complete. Controlled mutation effects and retained function remain pending. |
@@ -62,14 +68,125 @@ Independent biological validation remains a separate, unresolved release gate.
 | BoTorch | Feasible candidate selection | Discrete toy-objective budget, caching and resume checks passed; biological candidate optimization remains queued. |
 
 The diagram above shows implementation state, including rejected and gated paths.
-The Stage 3 target was amended on 2026-10-19 to **transfected-cell expression**,
-replacing the earlier cell-free target. No candidate benefit or complete
+The Stage 3 target was amended on 2026-10-19 to transfected-cell expression, replacing the
+earlier cell-free target, and amended again on 2026-10-20 to **in-cell mRNA stability
+(half-life / decay)**, which is the current target. The architecture is unchanged by that
+amendment: RNAfold + STRAND + RiboNN + BoTorch. No candidate benefit or complete
 biological pipeline is established. See the [integration guide](docs/four_component_integration_2026-10-18.md)
 and [publication evidence](reports/component_integration_publication_2026-10-18/README.md).
 The public snapshot contains code, portable tests and concise summaries; full
 local run artifacts, datasets, model weights and installed environments are not
 bundled. Original third-party [source](docs/third_party/RiboNN_LICENSE.txt) and
 [weight-license terms](docs/third_party/RiboNN_MODEL_WEIGHTS_LICENSE.txt) are retained.
+
+### 2026-10-21: the target axis is fixed as in-cell stability, a published number is corrected, and translation is measured to be unusable as a stability feature
+
+Four things happened across this stretch, and two of them are adverse to earlier claims in
+this file. Full detail is in handoffs
+[V9](reports/RNA-StableAI_HANDOFF_2026-10-20_V9.md),
+[V10](reports/RNA-StableAI_HANDOFF_2026-10-20_V10.md) and
+[V11](reports/RNA-StableAI_HANDOFF_2026-10-20_V11.md).
+
+**1. A published baseline was wrong, and is corrected here.** Commit `5bc4bf2` published a
+free per-nucleotide EternaFold score of **+0.4190** on in-solution half-life, against the
+frozen calibration's +0.3200, and recorded it as the most adverse finding in the gate chain.
+That number was computed as `SUP ÷ RNA length`, but in the PERSIST-seq table `SUP` is summed
+over an unnamed **sub-region** (implied median 673 nt) rather than the molecule (median
+1,034 nt). The quantity was therefore **AUP × (region length ÷ RNA length)** — structure
+multiplied by a length ratio — and the ratio, not the structure, dominated it:
+
+| Component | ρ vs in-solution |
+|---|---|
+| AUP EternaFold alone, the structure term | −0.2648 |
+| **region fraction alone, the artifact** | **−0.3850** |
+| their product, as published in `5bc4bf2` | −0.4190 |
+
+The ratio is engine-independent, so the earlier reading that three engines clustering near
+0.42 showed "the feature family is at its ceiling" also falls. The separate −0.3248 EternaFold
+figure in the external-validation section below is **not** affected: there the columns are
+labelled `SUP … FULL`, and `SUP FULL ÷ length == AUP FULL` was verified on 123 of 123 records.
+
+**The adverse conclusion survives with a different baseline, and that matters more than the
+correction.** Against properly normalised scores the calibration wins (+0.3200 against AUP
+EternaFold −0.2648, AUP Vienna −0.2589, AUP DegScore 2.1 −0.2170) — but a single free column
+still beats it on its home axis:
+
+| Predictor | in-solution | in-cell |
+|---|---|---|
+| **GC content (CDS)** | **+0.3651** | +0.0771 |
+| ours, frozen calibration | +0.3200 | **+0.2208** |
+| transcript GC, whole molecule | +0.2979 | +0.2253 |
+
+The effect is axis-specific: GC (CDS) collapses to +0.0771 in-cell where the frozen arm holds
++0.2208, consistent with the two axes themselves ranking at only +0.0545.
+
+**2. The EternaFold refit direction is retired**, at the user's decision. Refitting was
+measured to make the objective **worse**, not better: across the surviving ViennaRNA and
+composition arms, training rises **+0.3617 → +0.5972** while held-out falls **+0.3651 →
++0.1317**. The arms kept in `scripts/run_feature_refit.py` are `gc_cds_only`,
+`frozen_form_from_table` and `vienna_plus_composition`.
+
+**3. An in-cell feature screen found two candidate signals — screened only, nothing adopted.**
+Protocol [in_cell_feature_screen_v1](configs/in_cell_feature_screen_v1_2026-10-20.json), hashed
+before any number was seen, univariate by design because gate v15 measured that this label-set
+size supports about one feature. The bar is transcript GC on in-cell, **+0.2253**.
+
+The first split could not answer the question: its training half is 78 of 81 CDS variants,
+which hold the UTRs fixed, so `utr5_gc` has 2 distinct training values against 46 held out.
+Zero of 24 features cleared the bar. A family-stratified split (105 train / 98 held out,
+seed 1729) was therefore substituted, and recorded as an amendment to the protocol's
+preserve-the-split clause. **In-cell results on that split are not comparable to the
+in-solution results, which keep the 122-record set; any in-cell claim must state its split.**
+
+| feature | train | **held out** |
+|---|---|---|
+| `utr5_frac_C` | +0.4242 | **+0.3857** |
+| `cds_energy_per_nt` | −0.2979 | **−0.3864** |
+| `cds_aup` | −0.2860 | −0.3310 |
+| `utr5_upa` | −0.3573 | −0.2776 |
+| `cds_length` | +0.2414 | +0.2802 |
+| *transcript GC, the bar* | — | *+0.2253* |
+
+The five collapse to **two nearly orthogonal signals**, the families only −0.182 apart:
+CDS-local structure (best `cds_energy_per_nt`, held out −0.3864, which is the existing
+ViennaRNA engine called on the CDS alone rather than the whole transcript — a change in how a
+component is used, not a new dependency) and 5′UTR composition (best `utr5_frac_C`, held out
++0.3857, no folding and no model at all).
+
+Three limits stated with the result: 37 features were screened on 105 training records and 14
+promoted, so **several would clear by chance and only the held-out column counts**;
+`cds_length` is a length ruler and was not discounted; `utr5_frac_C` has no mechanistic
+explanation and may proxy something else. **Resolution is unchanged** — all five sit between
+0.500 and 0.523 in the 1.00–1.10 bin against chance 0.50, so the coarse-filter-plus-diversity
+framing below still stands, and no screened feature is adopted or validated for production.
+
+**4. RiboNN must not be wired into the stability objective.** This looked like the strongest
+available addition and it fails. Measured `Ribosome load` against in-cell half-life is
+−0.3286 over the 122 records, better than the GC bar — but **the sign reverses by design
+family**:
+
+| family | n | ρ |
+|---|---|---|
+| CDS (Nluc) variants | 78 | **+0.4916** |
+| UTR (3′) variants | 19 | +0.5842 |
+| CDS (MEV) | 9 | +0.3167 |
+| CDS (eGFP) | 14 | +0.1121 |
+| **UTR (5′) variants** | 49 | **−0.5551** |
+| UTR (5′/3′) variants | 31 | −0.1988 |
+
+The −0.3286 aggregate was the 5′UTR families outvoting the rest; on the family-balanced split
+the ceiling collapses to −0.1018 train / +0.0879 held out. Translation and stability appear
+positively coupled when the **coding sequence** varies and negatively coupled when the **5′UTR**
+varies, and a pipeline that edits both regions cannot use one signed coupling for both. RiboNN
+therefore stays a separate Pareto axis — which is what the architecture already does. This is
+the **first measured evidence that keeping the two objectives incommensurable was correct**
+rather than merely cautious.
+
+**Gate state:** v5–v15 are frozen and **v15 remains current. Gate v16 has not been written**,
+so the three prohibitions implied above — do not wire RiboNN into the stability objective, do
+not claim any screened feature is adopted, do not claim the screen improved resolution — are
+recorded here and in V11 but are not yet in the gate chain. No combined two-feature model has
+been fitted, and the screen's runs carry no tests of their own.
 
 ### 2026-10-20: the design domain is widened — the threshold clears, and the objective turns out to be a GC meter
 
@@ -537,16 +654,20 @@ continuation commands are in handoffs
 [V4](reports/RNA-StableAI_HANDOFF_2026-10-19_V4.md), with concise run evidence and a
 [manifest](reports/stage2_and_strand_calibration_publication_2026-10-19/MANIFEST.json).
 
-### Step 3 goal and plan: protein expression efficiency
+### Step 3 goal and plan: in-cell mRNA stability
 
-The Step 3 goal includes improving **measured protein expression efficiency** from
-RNA sequences while retaining the intended protein sequence and required RNA
-features. The first target is **transfected-cell expression**, after Stage 2 review.
-Development will remain within the active 1–2,999-nt range. This is a
-future optimization goal; current structure and stability proxies do not establish
-an expression benefit.
+The Step 3 goal is improving **measured in-cell mRNA stability** — half-life and decay — while
+retaining the intended protein sequence and required RNA features. Development will remain
+within the active 1–2,999-nt range. This is a future optimization goal; current structure and
+stability proxies establish neither a stability nor an expression benefit.
 
-1. Define the target expression system, editable regions, protein and RNA
+*Target history, so the steps below are read correctly: the target was cell-free stability,
+amended 2026-10-19 to transfected-cell expression, and amended 2026-10-20 to in-cell mRNA
+stability. The numbered plan was written for the expression target and is retained for its
+process — prespecification, held-out evaluation, separated outcomes — with protein output now
+a secondary observation rather than the objective.*
+
+1. Define the target cell system, editable regions, protein and RNA
    constraints, baseline sequences, and measurements before designing variants.
 2. Generate valid sequence variants, including synonymous coding changes and UTR
    changes only when the design permits them. Compare simple baselines with
