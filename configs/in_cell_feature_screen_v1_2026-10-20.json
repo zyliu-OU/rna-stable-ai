@@ -1,0 +1,46 @@
+{
+  "protocol": "in_cell_feature_screen_v1",
+  "date": "2026-10-20",
+  "purpose": "Find which features, if added to the RNAfold + STRAND + RiboNN + BoTorch combination, would improve prediction of IN-CELL mRNA stability. Transcript GC alone already reaches +0.2253 on the held-out constructs, so the bar is set by a free single feature.",
+  "authorized_by": "user, 2026-10-20: 'transcript GC alone (free) is already very good, check which part we can add in the combination of RNAfold + STRAND + RiboNN + BoTorch so we can have even better result for in-cell stability'. The user also stated a preference for the in-cell axis and directed that the EternaFold refit direction be dropped.",
+  "the_axis_is_now_declared": {
+    "target": "in-cell mRNA half-life (In-cell half-life / In-cell degradation coefficient), i.e. mRNA DECAY inside cells",
+    "not_the_target": "in-cell expression. The source table reports Ribosome load as a separate measured quantity and Predicted expression as a derived prediction. Neither is the target here.",
+    "why_it_matters": "The frozen STRAND calibration was fitted entirely on IN-SOLUTION labels, and the two axes rank at Spearman +0.0545 on identical constructs. The project's stability objective has therefore never been fitted to the axis the user wants."
+  },
+  "declared_before_any_number_was_seen": [
+    "The screen is UNIVARIATE. The refit result in gate v15 measured that this label-set size supports about one feature: held-out correlation fell from +0.3651 at one feature to +0.1317 at four while training correlation rose. Screening multivariate combinations would repeat a mistake already paid for.",
+    "The bar to beat is transcript GC alone at +0.2253 on the 122 held-out constructs, with the frozen in-solution arm at +0.2208 as a second reference. A candidate is only interesting if it clears the free single feature.",
+    "Features are screened on the TRAINING records only. The 122 held-out constructs are scored once, for the candidates the training screen promotes, and the number of features screened is reported so a reader can discount for multiplicity.",
+    "The training records for this axis are the in-cell-labelled constructs that are NOT in the 122 held-out set. Their in-cell labels have never been used by anything in this project, so the existing split is preserved rather than redrawn.",
+    "Measured Ribosome load is included as a declared CEILING, not as a usable feature. It is a measurement, so it cannot be an input in production. Its purpose is to bound what a perfect translation predictor could contribute, because measured ribosome load correlates with in-cell half-life at -0.3286, which is stronger than transcript GC.",
+    "No feature is accepted into the production path by this screen. The screen ranks candidates; adopting one is a separate, separately recorded decision.",
+    "Sign is reported as measured. A negative correlation is as useful as a positive one and must not be silently flipped to look favourable."
+  ],
+  "candidate_feature_families": {
+    "region_local_composition": "GC fraction and A/C/G/U fractions computed separately over the 5'UTR, the CDS and the 3'UTR, plus GC at third codon positions (GC3). The project has so far used only whole-transcript GC and the table's CDS GC; region-local features have been on the backlog since gate v12.",
+    "region_local_structure": "ViennaRNA ensemble folding of each segment separately, giving per-region average unpaired probability and ensemble energy per nucleotide. The production path currently folds the whole transcript only.",
+    "decay_motifs": "AU-rich element counts (AUUUA and the stronger UUAUUUAUU) in the 3'UTR, DRACH m6A consensus counts, and out-of-frame upstream AUG counts in the 5'UTR. These are the classical sequence determinants of in-cell decay and none is in the current feature set.",
+    "dinucleotides": "CpG and UpA fractions, both associated with intracellular RNA turnover.",
+    "lengths": "5'UTR, CDS and 3'UTR lengths, reported so that any length ruler among the candidates is visible rather than mistaken for signal.",
+    "translation_ceiling": "measured Ribosome load, as a ceiling only"
+  },
+  "the_production_relevant_question": {
+    "observation": "RiboNN is already a component of the declared combination, but its output is used only as a separate objective axis. It is NOT an input to the stability model.",
+    "hypothesis": "Because measured ribosome load correlates with in-cell half-life at -0.3286, better than transcript GC's +0.2253, wiring RiboNN's predicted translation efficiency INTO the stability model is the most promising addition available from parts the project already has.",
+    "how_this_screen_tests_it": "The measured Ribosome load ceiling bounds the best case. If that ceiling is not clearly above the transcript GC bar, the wiring is not worth building and RiboNN's predicted value, which is necessarily weaker than the measurement, would be worth less still.",
+    "not_run_here": "RiboNN inference on these constructs is not performed in this screen. It is the follow-on step and is only warranted if the ceiling clears the bar."
+  },
+  "metrics": {
+    "primary": "Spearman correlation against measured in-cell half-life, on training records for the screen and on the 122 held-out constructs for promoted candidates",
+    "secondary": "pairwise concordance in the frozen measured-fold-difference bins for promoted candidates, since a better Spearman does not by itself change the narrow-bin resolution that every predictor has so far failed",
+    "reported_for_every_candidate": "correlation with each segment length, so length artifacts are visible"
+  },
+  "what_this_cannot_establish": [
+    "Nothing about constructs nobody measured.",
+    "No resolution claim. Every predictor tested in this project so far sits at chance below 1.10x, and a univariate screen will not change that.",
+    "Nothing about in-cell expression, which is not the target here and is not measured by the in-cell half-life columns.",
+    "No claim that a promoted feature improves the production path. The screen does not fit, adopt or wire anything.",
+    "Nothing about whether the in-cell orthogonality or these feature rankings hold for endogenous mRNAs rather than designed reporter constructs."
+  ]
+}

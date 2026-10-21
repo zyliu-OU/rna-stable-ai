@@ -43,14 +43,16 @@ PROTOCOL = ROOT / "configs/folding_engine_swap_v1_2026-10-20.json"
 TWO_AXIS = ROOT / "configs/two_axis_comparison_v1_2026-10-20.json"
 CALIBRATION = ROOT / "results/strand_rnafold_calibration_runs/20261019T174049.053308Z"
 
+# EternaFold-based arms are RETIRED at the user's direction (2026-10-20: "remove the
+# test result for EternaFold-based refit, we dont do that"). The engine swap was a dead
+# hypothesis and is not part of the plan, which stays RNAfold + STRAND + RiboNN + BoTorch.
+# The arms kept here are ViennaRNA- and composition-based and are retained for one reason
+# only: they carry the overfitting finding, which is about training-set size rather than
+# about any engine, and that finding constrains every future model in this project.
 ARMS = {
     "gc_cds_only": ["GC content (CDS)"],
     "frozen_form_from_table": ["dG(MFE) Vienna", "GC content (CDS)", "AUP Vienna"],
-    "gc_cds_plus_structure": ["GC content (CDS)", "AUP EternaFold"],
-    "gc_cds_plus_structure_plus_energy": ["GC content (CDS)", "AUP EternaFold",
-                                          "dG(MFE) EternaFold"],
-    "all_free_columns": ["GC content (CDS)", "AUP EternaFold", "AUP Vienna",
-                         "AUP DegScore 2.1", "dG(MFE) Vienna", "dG(MFE) EternaFold", "CAI"],
+    "vienna_plus_composition": ["GC content (CDS)", "AUP Vienna", "dG(MFE) Vienna", "CAI"],
 }
 
 

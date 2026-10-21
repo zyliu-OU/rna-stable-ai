@@ -111,8 +111,10 @@ def test_the_refit_overfits_monotonically(refit):
     assert widest["train_spearman"] > single["train_spearman"], "train must improve"
     assert widest["test_spearman_vs_in_solution"] < single["test_spearman_vs_in_solution"], (
         "held-out must degrade; this is the finding")
-    assert abs(widest["test_spearman_vs_in_solution"]) < 0.10, (
-        "the widest arm must have essentially no out-of-sample signal")
+    assert abs(widest["test_spearman_vs_in_solution"]) < 0.20, (
+        "the widest arm must lose most of its out-of-sample signal; the EternaFold arms that "
+        "reached -0.0022 were retired at the user's direction, and the ViennaRNA-based arms "
+        "that carry this finding bottom out near +0.13")
 
 
 def test_no_in_cell_label_touched_a_coefficient(refit):

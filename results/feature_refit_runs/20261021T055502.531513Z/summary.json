@@ -1,53 +1,5 @@
 {
   "arms": {
-    "all_free_columns": {
-      "available": true,
-      "coefficients": {
-        "AUP DegScore 2.1": -13.189473543937828,
-        "AUP EternaFold": 5.668729964642919,
-        "AUP Vienna": -1.2549972549767479,
-        "CAI": 0.37972822046333365,
-        "GC content (CDS)": -0.5286810746404464,
-        "dG(MFE) EternaFold": 7.739520776759261e-22,
-        "dG(MFE) Vienna": -0.0033118907936508304,
-        "intercept": 2.044137003516669
-      },
-      "columns": [
-        "GC content (CDS)",
-        "AUP EternaFold",
-        "AUP Vienna",
-        "AUP DegScore 2.1",
-        "dG(MFE) Vienna",
-        "dG(MFE) EternaFold",
-        "CAI"
-      ],
-      "n_features": 7,
-      "test_concordance_vs_in_solution": {
-        "1.00-1.10": {
-          "concordance": 0.5619179027250776,
-          "pairs": 2899
-        },
-        "1.10-1.25": {
-          "concordance": 0.6160877513711152,
-          "pairs": 2188
-        },
-        "1.25-1.50": {
-          "concordance": 0.5504162812210915,
-          "pairs": 1081
-        },
-        "1.50-2.00": {
-          "concordance": 0.4780701754385965,
-          "pairs": 228
-        },
-        "above_2.00": {
-          "concordance": 0.05989847715736041,
-          "pairs": 985
-        }
-      },
-      "test_spearman_vs_in_cell": -0.12750932684777327,
-      "test_spearman_vs_in_solution": -0.0022305127535762552,
-      "train_spearman": 0.6454146876141761
-    },
     "frozen_form_from_table": {
       "available": true,
       "coefficients": {
@@ -124,86 +76,50 @@
       "test_spearman_vs_in_solution": 0.3651494315051474,
       "train_spearman": 0.3617357809446347
     },
-    "gc_cds_plus_structure": {
+    "vienna_plus_composition": {
       "available": true,
       "coefficients": {
-        "AUP EternaFold": -1.131042317342157,
-        "GC content (CDS)": 1.9154739628105586,
-        "intercept": 0.6056862781049155
+        "AUP Vienna": -3.687748532970939,
+        "CAI": 0.7278872121260971,
+        "GC content (CDS)": 1.9108209232405153,
+        "dG(MFE) Vienna": 0.0015188767319000201,
+        "intercept": 1.377451918721315
       },
       "columns": [
         "GC content (CDS)",
-        "AUP EternaFold"
+        "AUP Vienna",
+        "dG(MFE) Vienna",
+        "CAI"
       ],
-      "n_features": 2,
+      "n_features": 4,
       "test_concordance_vs_in_solution": {
         "1.00-1.10": {
-          "concordance": 0.5436357364608486,
+          "concordance": 0.4584339427388755,
           "pairs": 2899
         },
         "1.10-1.25": {
-          "concordance": 0.5457038391224863,
+          "concordance": 0.4337294332723949,
           "pairs": 2188
         },
         "1.25-1.50": {
-          "concordance": 0.5217391304347826,
+          "concordance": 0.517113783533765,
           "pairs": 1081
         },
         "1.50-2.00": {
-          "concordance": 0.7192982456140351,
+          "concordance": 0.7149122807017544,
           "pairs": 228
         },
         "above_2.00": {
-          "concordance": 0.9959390862944163,
+          "concordance": 1.0,
           "pairs": 985
         }
       },
-      "test_spearman_vs_in_cell": -0.022354694485842028,
-      "test_spearman_vs_in_solution": 0.29564703044402074,
-      "train_spearman": 0.5353306540007308
-    },
-    "gc_cds_plus_structure_plus_energy": {
-      "available": true,
-      "coefficients": {
-        "AUP EternaFold": -1.1788873399063593,
-        "GC content (CDS)": 2.063380845774589,
-        "dG(MFE) EternaFold": 1.255794859025747e-21,
-        "intercept": 0.5404710718949017
-      },
-      "columns": [
-        "GC content (CDS)",
-        "AUP EternaFold",
-        "dG(MFE) EternaFold"
-      ],
-      "n_features": 3,
-      "test_concordance_vs_in_solution": {
-        "1.00-1.10": {
-          "concordance": 0.5398413245946878,
-          "pairs": 2899
-        },
-        "1.10-1.25": {
-          "concordance": 0.5598720292504571,
-          "pairs": 2188
-        },
-        "1.25-1.50": {
-          "concordance": 0.5411655874190564,
-          "pairs": 1081
-        },
-        "1.50-2.00": {
-          "concordance": 0.706140350877193,
-          "pairs": 228
-        },
-        "above_2.00": {
-          "concordance": 0.9918781725888325,
-          "pairs": 985
-        }
-      },
-      "test_spearman_vs_in_cell": -0.032129297041513974,
-      "test_spearman_vs_in_solution": 0.30621470420096425,
-      "train_spearman": 0.5442820606503471
+      "test_spearman_vs_in_cell": 0.13278325033622915,
+      "test_spearman_vs_in_solution": 0.13170599528783528,
+      "train_spearman": 0.5971867007672634
     }
   },
-  "built_utc": "2026-10-21T05:28:25.459386+00:00",
+  "built_utc": "2026-10-21T05:55:02.531365+00:00",
   "counts": {
     "test": 122,
     "train": 69
