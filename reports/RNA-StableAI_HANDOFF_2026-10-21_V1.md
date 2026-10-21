@@ -250,7 +250,7 @@ session scratchpad, copy the changed files in, and commit there.
 | Item | Value |
 |---|---|
 | Commit before this stretch | `b1cccb9` Retire the EternaFold direction and screen features for in-cell stability |
-| Commits published with this handoff | `README_COMMIT` (README + this handoff), then the commit recording its hash |
+| Commits published with this handoff | `cf3412d` (README + this handoff), then the commit recording its hash |
 | README picture | `diagram_10182026.png`, sha256 `baa831ce16df27ed44a41c2a3b481455a213b328122227b9b2a3820dda47cff1`, **byte-unchanged**; `workflow_10202026.svg` unchanged; both still referenced |
 | Gates | v5–v15 frozen; **v15 still current — v16 NOT written** (see §6) |
 | Diagram | not regenerated; nothing was added to the production path |
